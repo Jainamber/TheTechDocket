@@ -136,7 +136,7 @@ ymyl:
 # site code here. GA4 supported as an alternative (provider: ga4 + ga4_id).
 analytics:
   provider: "goatcounter"        # goatcounter | ga4 | none
-  goatcounter_code: ""           # e.g. "thetechdocket" -> thetechdocket.goatcounter.com
+  goatcounter_code: "thetechdocket" # e.g. "thetechdocket" -> thetechdocket.goatcounter.com
   ga4_id: ""                     # e.g. "G-XXXXXXXXXX" when provider: ga4
 
 # Learn & adapt: engine/feedback.py turns real performance data into scoring
