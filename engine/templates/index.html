@@ -1,18 +1,19 @@
 {% extends "base.html" %}
+{% block bodyclass %}home{% endblock %}
 {% block content %}
-<h1 class="home-h1">{{ site.name }}: {{ site.tagline }}</h1>
+<h1 class="home-h1"><span class="hh-name">{{ site.name }}</span><span class="hh-tag">{{ site.tagline }}</span></h1>
 {% if feature %}
 <div class="feature">
-  <a href="{{ base_path }}articles/{{ feature.slug }}/">
+  <a class="img" href="{{ base_path }}articles/{{ feature.slug }}/">
     <picture>
       <source type="image/webp" srcset="{{ feature.hero_webp }}">
       <img src="{{ feature.hero_jpg }}" width="1200" height="675" alt="{{ feature.hero_alt }}" fetchpriority="high" loading="eager">
     </picture>
   </a>
-  <div class="pad">
-    <span class="kicker">{{ feature.hub_name }} · {{ feature.date_human }}</span><br>
+  <div class="f-text">
+    <span class="kline"><a class="kicker k-{{ feature.hub }}" href="{{ base_path }}topics/{{ feature.hub }}/">{{ feature.hub_name }}</a> <span class="dt">· {{ feature.date_human }}</span></span>
     <a class="t" href="{{ base_path }}articles/{{ feature.slug }}/">{{ feature.title }}</a>
-    <p style="color:var(--muted);margin:.5em 0 0">{{ feature.description }}</p>
+    <p class="dek">{{ feature.description }}</p>
   </div>
 </div>
 {% endif %}
@@ -21,17 +22,19 @@
 <div class="grid">
   {% for a in articles %}
   <div class="card">
-    <a href="{{ base_path }}articles/{{ a.slug }}/">
+    <a class="img" href="{{ base_path }}articles/{{ a.slug }}/">
       <picture>
         <source type="image/webp" srcset="{{ a.hero_webp }}">
         <img src="{{ a.hero_jpg }}" width="1200" height="675" alt="{{ a.hero_alt }}" loading="lazy" decoding="async">
       </picture>
     </a>
-    <div class="pad">
+    <div>
+      <div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
       <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
-      <div class="m">{{ a.hub_name }} · {{ a.date_human }}</div>
+      <div class="d">{{ a.description }}</div>
     </div>
   </div>
   {% endfor %}
 </div>
+<a class="alllink" href="{{ base_path }}sitemap/">All articles →</a>
 {% endblock %}

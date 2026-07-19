@@ -184,6 +184,7 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
         "breadcrumb_jsonld": Markup(json.dumps(breadcrumb, ensure_ascii=False)),
         "faq_jsonld": Markup(json.dumps(faq_jsonld, ensure_ascii=False)) if faq_jsonld else None,
         "body_html": Markup(render_markdown(cfg, a["_body_md"])),
+        "read_min": max(2, round(len(a["_body_md"].split()) / 220)),
         "related": [article_summary(cfg, r) for r in related],
     }
 
