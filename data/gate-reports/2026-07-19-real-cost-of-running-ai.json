@@ -1,6 +1,6 @@
 {
   "slug": "real-cost-of-running-ai",
-  "checked_at": "2026-07-19T22:40:55.703374+05:30",
+  "checked_at": "2026-07-19T23:06:17.648547+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.00 vs 'ai-chatbot-data-privacy' (limit .30)"
+      "detail": "max 5-gram overlap 0.01 vs 'codex-context-window-cut' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",

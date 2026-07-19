@@ -1,6 +1,6 @@
 {
   "slug": "ai-chatbot-data-privacy",
-  "checked_at": "2026-07-19T22:40:55.266770+05:30",
+  "checked_at": "2026-07-19T23:06:17.217979+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.00 vs 'real-cost-of-running-ai' (limit .30)"
+      "detail": "max 5-gram overlap 0.00 vs 'codex-context-window-cut' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",
