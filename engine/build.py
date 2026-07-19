@@ -22,6 +22,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 from . import images
+from .docket import all_dockets
 from .util import IST, ROOT, all_articles, load_config, now_ist
 
 MD = md.Markdown(extensions=["tables", "fenced_code", "sane_lists", "smarty"])
@@ -202,6 +203,51 @@ def article_summary(cfg, a: dict) -> dict:
             "hero_alt": a.get("hero_alt", a["title"])}
 
 
+def _date_dt(cfg, date_str: str) -> datetime:
+    d = datetime.strptime(date_str, "%Y-%m-%d").date()
+    return datetime(d.year, d.month, d.day,
+                    cfg["publishing"]["publish_hour_ist"], 0, 0, tzinfo=IST)
+
+
+def docket_context(cfg, d: dict) -> dict:
+    """Render-ready context for one docket day (Today's Docket)."""
+    hubs = cfg["content"]["hubs"]
+    dk_cfg = cfg.get("docket") or {}
+    items = []
+    for it in d.get("items", []):
+        url = str(it.get("url") or "")
+        external = url.startswith("http")
+        href = url if external else base_path(cfg) + url.lstrip("/")
+        items.append({
+            "hub": it.get("hub", "explainers"),
+            "hub_name": hubs.get(it.get("hub"), it.get("hub", "")),
+            "headline": str(it.get("headline") or ""),
+            "dek": str(it.get("dek") or ""),
+            "source": str(it.get("source") or ""),
+            "lead": bool(it.get("lead")),
+            "rank": it.get("rank"),
+            "external": external,
+            "href": href,
+            "abs_url": url if external else abs_url(cfg, url),
+        })
+    date_human = _human(_date_dt(cfg, d["date"]))
+    itemlist = {
+        "@context": "https://schema.org", "@type": "ItemList",
+        "name": f"Today's Docket — {date_human}",
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "name": e["headline"], "url": e["abs_url"]}
+            for i, e in enumerate(items)],
+    }
+    # NB key is "entries", not "items" — dict.items collides with the method
+    # under Jinja attribute lookup
+    return {"date": d["date"], "date_human": date_human, "entries": items,
+            "pool": int(d.get("pool") or 12),
+            "show_chips": bool(dk_cfg.get("show_chips")),
+            "itemlist_jsonld": Markup(json.dumps(itemlist, ensure_ascii=False))}
+
+
 def _analytics_snippet(cfg) -> Markup:
     a = cfg.get("analytics") or {}
     if a.get("provider") == "goatcounter" and a.get("goatcounter_code"):
@@ -237,9 +283,15 @@ def _common(cfg, nav_hubs=None, **kw) -> dict:
     else:
         m = re.match(r"^([A-Z][a-z0-9]+)([A-Z].*)$", _name)
         brand_a, brand_b = (m.group(1), m.group(2)) if m else (_name, "")
+    dk_dir = ROOT / "data" / "docket"
+    has_docket = (bool((cfg.get("docket") or {}).get("enabled", True))
+                  and dk_dir.exists()
+                  and any(re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)
+                          for p in dk_dir.glob("*.md")))
     d = {"site": cfg["site"], "author": cfg["author"],
          "hubs": cfg["content"]["hubs"],
          "nav_hubs": nav_hubs,
+         "has_docket": has_docket,
          "brand_a": brand_a, "brand_b": brand_b,
          "base_path": base_path(cfg), "year": now_ist().year,
          "analytics_snippet": _analytics_snippet(cfg),
@@ -364,6 +416,10 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
     for hub in cfg["content"]["hubs"]:
         if hub in active:  # empty hubs stay out of the sitemap until filled
             urls.append((abs_url(cfg, f"topics/{hub}/"), None))
+    # dated docket pages are the canonical daily-shorts units
+    if (cfg.get("docket") or {}).get("enabled", True):
+        for d in all_dockets():
+            urls.append((abs_url(cfg, f"docket/{d['date']}/"), d["date"]))
     for p in ("about/", "editorial-policy/", "sitemap/",
               f"authors/{cfg['author']['slug']}/"):
         urls.append((abs_url(cfg, p), None))
@@ -470,6 +526,47 @@ def build_site() -> Path:
 
     summaries = [article_summary(cfg, a) for a in arts]
 
+    # Today's Docket — daily shorts strip (/docket/<date>/ canonical,
+    # /docket/ = latest alias, homepage strip). Separate content class:
+    # never touches history.json, never counts as the daily article.
+    dockets = all_dockets() if (cfg.get("docket") or {}).get("enabled", True) else []
+    docket_strip = None
+    if dockets:
+        dk_tpl = env.get_template("docket.html")
+        latest_date = dockets[0]["date"]
+        for d in dockets:
+            ctx_d = docket_context(cfg, d)
+            dk_dir_out = out / "docket" / d["date"]
+            card16 = dk_dir_out / f"docket-{d['date']}-16x9.jpg"
+            if not card16.exists():
+                images.generate_docket_card(d["date"], ctx_d["date_human"],
+                                            cfg["site"]["name"], dk_dir_out)
+            prev = [{"date": x["date"],
+                     "date_human": _human(_date_dt(cfg, x["date"]))}
+                    for x in dockets if x["date"] != d["date"]][:14]
+            meta = _meta_desc(
+                f"Today in tech, {ctx_d['date_human']}: "
+                + " · ".join(e["headline"] for e in ctx_d["entries"][:4]))
+            page_kw = dict(
+                page_title=(f"Today's Docket, {ctx_d['date_human']} — "
+                            f"{cfg['site']['name']}"),
+                meta_description=meta,
+                og_image=abs_url(cfg, f"docket/{d['date']}/docket-{d['date']}-16x9.jpg"),
+                og_image_alt=f"Today's Docket — {ctx_d['date_human']}",
+                current_hub="_docket", dk=ctx_d, prev=prev,
+                canonical=abs_url(cfg, f"docket/{d['date']}/"))
+            _write(dk_dir_out / "index.html",
+                   dk_tpl.render(**_common(cfg, **page_kw)))
+            if d["date"] == latest_date:
+                # /docket/ serves the same content; canonical stays on the
+                # dated page (GitHub Pages cannot 301)
+                _write(out / "docket" / "index.html",
+                       dk_tpl.render(**_common(cfg, **page_kw)))
+                docket_strip = {
+                    "date_human": ctx_d["date_human"],
+                    "entries": [e for e in ctx_d["entries"]
+                                if not e["lead"]][:4]}
+
     # home
     home_img = (summaries[0]["hero_jpg"] if summaries
                 else abs_url(cfg, "assets/logo-512.png"))
@@ -481,6 +578,7 @@ def build_site() -> Path:
         canonical=cfg["site"]["base_url"], og_image=home_img,
         og_image_alt=cfg["site"]["name"],
         feature=summaries[0] if summaries else None,
+        docket=docket_strip,
         articles=summaries[1:13] if len(summaries) > 1 else [])))
 
     # hubs

@@ -18,6 +18,20 @@
 </div>
 {% endif %}
 
+{% if docket %}
+<h2 class="sect">Today's Docket <span class="dt">· {{ docket.date_human }}</span></h2>
+<div class="docketstrip">
+  {% for e in docket.entries %}
+  <a class="dcard" href="{{ e.href }}"{% if e.external %} rel="noopener" target="_blank"{% endif %}>
+    <span class="kicker k-{{ e.hub }}">{{ e.hub_name }}</span>
+    <span class="dtt">{{ e.headline }}</span>
+    <span class="dsrc">{{ e.source }}</span>
+  </a>
+  {% endfor %}
+  <a class="dcard dmore" href="{{ base_path }}docket/">Full docket →</a>
+</div>
+{% endif %}
+
 <h2 class="sect">Latest</h2>
 <div class="grid">
   {% for a in articles %}

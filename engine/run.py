@@ -7,6 +7,9 @@
   python -m engine.run gate --slug SLUG     # run compliance/SEO gates
   python -m engine.run publish --slug SLUG  # gate + history + git commit/push
   python -m engine.run publish --slug SLUG --no-push
+  python -m engine.run docket-draft         # pre-draft Today's Docket from candidates
+  python -m engine.run docket [--date D]    # run D-gates on the built docket
+  python -m engine.run docket-publish [--date D] [--no-push]
   python -m engine.run status               # engine state overview
 """
 from __future__ import annotations
@@ -33,6 +36,13 @@ def main(argv=None):
     p.add_argument("--slug", required=True)
     p.add_argument("--no-push", action="store_true")
     sub.add_parser("feedback")
+    dd = sub.add_parser("docket-draft")
+    dd.add_argument("--date", default=None)
+    dg = sub.add_parser("docket")
+    dg.add_argument("--date", default=None)
+    dp = sub.add_parser("docket-publish")
+    dp.add_argument("--date", default=None)
+    dp.add_argument("--no-push", action="store_true")
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -84,6 +94,19 @@ def main(argv=None):
         from .feedback import build_insights
         build_insights()
 
+    elif args.cmd == "docket-draft":
+        from .docket import write_draft
+        print(f"docket draft: {write_draft(args.date)}")
+
+    elif args.cmd == "docket":
+        from .docket import run_docket_gates
+        rep = run_docket_gates(args.date)
+        sys.exit(0 if rep["passed"] else 1)
+
+    elif args.cmd == "docket-publish":
+        from .docket import docket_publish
+        docket_publish(args.date, push=not args.no_push)
+
     elif args.cmd == "status":
         cfg = load_config()
         arts = all_articles()
@@ -98,6 +121,7 @@ def main(argv=None):
             "today_inbox": (ROOT / "data" / "inbox" / f"{day}.json").exists(),
             "today_brief": (ROOT / "data" / "briefs" / f"{day}.md").exists(),
             "today_article": any(str(a.get("date")) == day for a in arts),
+            "today_docket": (ROOT / "data" / "docket" / f"{day}.md").exists(),
         }, indent=2, ensure_ascii=False, default=str))
 
 

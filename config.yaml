@@ -126,6 +126,19 @@ content:
   # v1 policy: no monetized/affiliate links at all (compliance gate 23)
   allow_affiliate: false
 
+# Today's Docket — the daily shorts strip (/docket/). A separate content
+# class from articles: it never touches history.json and never counts as
+# the daily article. Gated by D01-D09 (engine/docket.py).
+docket:
+  enabled: true
+  min_items: 4
+  max_items: 8
+  max_headline_chars: 80
+  max_item_words: 60             # headline + dek combined — gate D05
+  # Momentum chips ("#2 of 12 today") stay OFF until the corroboration-
+  # accuracy fix from the Signal Box batch lands (V2.1 recheck §4.1).
+  show_chips: false
+
 ymyl:
   finance_terms: [invest, investment, stock, share price, crypto, bitcoin, trading, loan, tax, mutual fund, returns, portfolio, insurance]
   health_terms: [cure, treatment, diagnosis, symptom, disease, mental health, therapy, medicine, medical, dosage, supplement]

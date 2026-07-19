@@ -63,6 +63,7 @@ nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(
 nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
 nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent)}
+nav.hubs a.navdocket{color:var(--accent-ink);font-weight:700}
 main{padding:32px 0 46px}
 .kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
 a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
@@ -136,6 +137,39 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .listh1{font-size:clamp(26px,4vw,34px)}
 .intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
 .empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:15px 16px;text-decoration:none;min-height:118px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-color:var(--accent)}
+.dcard.dmore{justify-content:center;background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 2px 22px 66px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry .dno{position:absolute;left:2px;top:24px;font-family:var(--fm);font-size:19px;font-weight:400;padding:0}
+.dentry h2{font-family:var(--fs);font-size:21.5px;line-height:1.26;margin:5px 0 7px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.62;color:var(--ink2);max-width:60ch}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px}
+.dchip{font-family:var(--fm);font-size:11px;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 9px;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+@media (max-width:719px){
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:8px 2px 14px}
+.dentry{flex:0 0 84%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry .dno{position:static;display:block;font-size:15px;margin:0 0 6px}
+.dentry h2{font-size:19px}
+.swipehint{display:block}
+}
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
 footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
 footer.site a{color:var(--muted);text-decoration:none}
@@ -157,7 +191,7 @@ footer.site p a{text-decoration:underline}
       <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/explainers/" aria-current="page">How-To &amp; Explainers</a>
+      <a class="navdocket" href="/docket/">Today's Docket</a><a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/explainers/" aria-current="page">How-To &amp; Explainers</a>
     </nav>
   </div>
 </header>
@@ -313,6 +347,8 @@ footer.site p a{text-decoration:underline}
     <a href="/editorial-policy/">editorial policy</a>.
     Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: spot-ai-generated-images-videos">Email a correction</a>.
   </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
 
   
   <section class="related">

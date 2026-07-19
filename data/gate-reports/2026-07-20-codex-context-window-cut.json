@@ -1,6 +1,6 @@
 {
   "slug": "codex-context-window-cut",
-  "checked_at": "2026-07-20T00:01:58.452635+05:30",
+  "checked_at": "2026-07-20T00:31:44.653905+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 36KB (<=90), hero 68KB (<=320)"
+      "detail": "html 39KB (<=90), hero 68KB (<=320)"
     },
     {
       "gate": "G22-ymyl",

@@ -163,10 +163,46 @@ python -m engine.run publish --slug <slug>
 GitHub Pages redeploys automatically; the `on-publish` workflow pings
 IndexNow + WebSub.
 
+## Step 7.5 — Today's Docket (OPTIONAL — never blocks the article)
+
+The docket is the day's shorts strip: 4–8 tiny sourced entries at `/docket/`,
+built from the same candidates you already scored. **Run it only after the
+article publish succeeded.** If anything in this step fails or time is short,
+skip the whole step and note "docket: skipped" in the report — a missing
+docket is fine; a bad one is not.
+
+```bash
+python -m engine.run docket-draft        # -> data/docket/<date>-draft.md
+```
+
+Edit the draft into `data/docket/<date>.md`:
+
+- Item 1 = today's article (`lead: true`, internal `/articles/<slug>/` URL).
+- Then pick 3–7 candidates genuinely worth a reader's minute; skip weak or
+  off-topic ones (the deny/allow filters are keyword-based; you are the
+  semantic filter here too).
+- **Paraphrase headlines — never copy them.** ≤80-char headline, ≤60 words
+  per item (headline + dek). No clickbait. Gates D04/D05 enforce this.
+- Deks are observations backed by the linked source: WebFetch each source
+  URL and verify every claim before writing it. No causal claims, no numbers
+  absent from the source, no invented context. Same spine as articles.
+- Keep each item's source URL and a short source label.
+
+```bash
+python -m engine.run build               # renders /docket/ + /docket/<date>/
+python -m engine.run docket              # D-gates; exit 0 = pass
+python -m engine.run docket-publish      # separate commit + push
+```
+
+The docket never writes `data/history.json` and never counts as the daily
+article — `docket-publish` refuses to run if it would.
+
 ## Step 8 — Report
 
-End with a 5-line summary: topic picked & why, score, gate result,
-published URL, anything needing the owner's attention. Nothing else.
+End with a 6-line summary: topic picked & why, score, gate result,
+published URL, docket status ("/docket/ published, N entries" or
+"docket: skipped" + why), anything needing the owner's attention.
+Nothing else.
 
 ## Failure playbook
 

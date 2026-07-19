@@ -1,0 +1,63 @@
+{
+  "slug": "docket-2026-07-19",
+  "checked_at": "2026-07-20T00:32:42.207601+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "soft_warnings": 0,
+  "results": [
+    {
+      "gate": "D01-docket-built",
+      "level": "hard",
+      "ok": true,
+      "detail": "docs/docket/<date>/ + docs/docket/ must exist and carry data-date=2026-07-19 — run `build` first"
+    },
+    {
+      "gate": "D02-item-count",
+      "level": "hard",
+      "ok": true,
+      "detail": "6 items (need 4-8)"
+    },
+    {
+      "gate": "D03-item-sources",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "D04-no-clickbait",
+      "level": "hard",
+      "ok": true,
+      "detail": "clickbait/caps headlines: "
+    },
+    {
+      "gate": "D05-tiny-format",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "D06-lead-is-article",
+      "level": "hard",
+      "ok": true,
+      "detail": "lead slug 'codex-context-window-cut' not found in content/articles/"
+    },
+    {
+      "gate": "D07-zero-js",
+      "level": "hard",
+      "ok": true,
+      "detail": "unexpected scripts: "
+    },
+    {
+      "gate": "D08-page-weight",
+      "level": "soft",
+      "ok": true,
+      "detail": "html 22KB (<=90)"
+    },
+    {
+      "gate": "D09-canonicals",
+      "level": "hard",
+      "ok": true,
+      "detail": "dated canonical must be https://thetechdocket.com/docket/2026-07-19/, /docket/ must point at the latest dated page, and the dated URL must be in sitemap.xml"
+    }
+  ]
+}

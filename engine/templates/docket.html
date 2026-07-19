@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block jsonld %}
+<script type="application/ld+json">{{ itemlist_jsonld }}</script>
+{% endblock %}
+
+{% block content %}
+<article class="docketpage">
+  <h1 class="listh1 dockh1"><span class="dash" aria-hidden="true"></span>Today's Docket</h1>
+  <p class="dateline">{{ dk.date_human }} · {{ dk.entries|length }} entries · about a 60-second read</p>
+  <p class="intro">The day's tech, heard in order: one long read and {{ dk.entries|length - 1 }} quick ones — every entry linked to its source, picked from the {{ dk.pool }} stories our tracking scored today.</p>
+  <ol class="docketlist" data-date="{{ dk.date }}">
+    {% for e in dk.entries %}
+    <li class="dentry" id="d{{ loop.index }}">
+      <span class="dno k-{{ e.hub }}" aria-hidden="true">{{ '%02d' % loop.index }}</span>
+      <div>
+        <span class="kline"><a class="kicker k-{{ e.hub }}" href="{{ base_path }}topics/{{ e.hub }}/">{{ e.hub_name }}</a>{% if e.lead %} <span class="dlead">Today's read</span>{% endif %}</span>
+        <h2><a href="{{ e.href }}"{% if e.external %} rel="noopener" target="_blank"{% endif %}>{{ e.headline }}</a></h2>
+        <p class="ddek">{{ e.dek }}</p>
+        <p class="dmeta">{% if e.external %}Source: <a href="{{ e.href }}" rel="noopener" target="_blank">{{ e.source }}</a>{% else %}{{ e.source }} · full article{% endif %}{% if dk.show_chips and e.rank %} <span class="dchip">#{{ e.rank }} of {{ dk.pool }} today</span>{% endif %}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="swipehint" aria-hidden="true">Swipe → for the rest of today's docket</p>
+  <p class="dfoot">How the docket is made: entries are picked from the {{ dk.pool }} stories our tracking scored today across independent source types, then written and checked under the same sourced-claims, no-clickbait rules as our articles — see the <a href="{{ base_path }}editorial-policy/">editorial policy</a>. The docket is a companion to, never a replacement for, the day's <a href="{{ base_path }}sitemap/">full articles</a>.{% if prev %} Previous dockets: {% for p in prev %}<a href="{{ base_path }}docket/{{ p.date }}/">{{ p.date_human }}</a>{% if not loop.last %} · {% endif %}{% endfor %}.{% endif %}</p>
+</article>
+{% endblock %}

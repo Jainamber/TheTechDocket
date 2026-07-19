@@ -24,6 +24,9 @@ Google-policy compliance enforced by machine-checkable gates.
              build    → docs/ static site (hero images auto-generated)
              gate     → 40+ compliance & SEO checks (below) — hard-fail = no publish
              publish  → git push → GitHub Pages deploys
+             docket   → Today's Docket: 4–8 tiny sourced shorts at /docket/
+                        from the day's remaining scored candidates (own gate
+                        suite D01–D09; optional — never blocks the article)
 
 on push    GitHub Action `on-publish` pings IndexNow (Bing ecosystem) and
            WebSub (instant feed notification). Google indexes via sitemap/feed.
@@ -72,6 +75,7 @@ engine/templates/      ← Jinja2 HTML (inline CSS, zero JS)
 content/articles/      ← one markdown file per article (front-matter contract)
 data/inbox/            ← raw daily trend signals (committed for auditability)
 data/briefs/           ← daily briefs + scored candidate lists
+data/docket/           ← Today's Docket entries (daily shorts strip, /docket/)
 data/gate-reports/     ← per-publish compliance reports
 data/history.json      ← publish log (dedup memory)
 docs/                  ← BUILT SITE (GitHub Pages serves this)

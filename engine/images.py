@@ -116,6 +116,18 @@ def generate_hero(title: str, slug: str, hub: str, site_name: str,
     return outputs
 
 
+def generate_docket_card(date_str: str, date_human: str, site_name: str,
+                         outdir: Path) -> dict:
+    """OG card for a Today's Docket page (1200x675 + webp), same card system."""
+    outdir.mkdir(parents=True, exist_ok=True)
+    img = _card(1200, 675, f"Today's Docket — {date_human}", site_name,
+                "docket", kicker="the daily shorts · 60-second read")
+    base = outdir / f"docket-{date_str}-16x9"
+    img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
+    img.save(f"{base}.webp", quality=84, method=6)
+    return {"jpg": f"{base.name}.jpg", "webp": f"{base.name}.webp"}
+
+
 def generate_site_assets(site_name: str, assets_dir: Path) -> None:
     assets_dir.mkdir(parents=True, exist_ok=True)
     accent = (129, 140, 248)
