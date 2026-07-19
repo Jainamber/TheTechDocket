@@ -71,6 +71,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-15-bonsai-27b-ai-model-phone.json",
       "url": "https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/"
+    },
+    {
+      "date": "2026-07-19",
+      "slug": "codex-context-window-cut",
+      "title": "Codex Context Window Cut to 272K: What OpenAI Rolled Back",
+      "keyword": "codex context window",
+      "hub": "ai-tools",
+      "published_at": "2026-07-19T23:06:14.557301+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-19T23:35:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-19-codex-context-window-cut.json",
+      "url": "https://thetechdocket.com/articles/codex-context-window-cut/"
     }
   ]
 }

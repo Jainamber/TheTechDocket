@@ -1,0 +1,277 @@
+{
+  "date": "2026-07-19",
+  "candidates": [
+    {
+      "title": "OpenAI reduces Codex model context size from 372k to 272k tokens",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.9535439263028225,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "hn:search_by_date fallback (fresh AI stories, 2026-07-19)",
+          "outlet": "GitHub / Hacker News"
+        },
+        {
+          "source": "hn",
+          "points": 186,
+          "comments": 89,
+          "url": "https://github.com/openai/codex/pull/33972/files"
+        }
+      ],
+      "score": 0.7605,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "\"AI Mania Is Eviscerating Global Decision-Making\" - viral essay trending on HN",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "hn:search_by_date fallback (fresh AI stories, 2026-07-19)",
+          "outlet": "ludic.mataroa.blog"
+        },
+        {
+          "source": "hn",
+          "points": 336,
+          "comments": 182,
+          "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"
+        }
+      ],
+      "score": 0.7267,
+      "topic_fit": 0.84,
+      "corroboration": 0.5
+    },
+    {
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 268,
+          "comments": 117,
+          "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard"
+        }
+      ],
+      "score": 0.6501,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Qwen 3.8 Max Preview",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 213,
+          "comments": 1,
+          "url": "https://www.qwencloud.com/pricing/token-plan"
+        }
+      ],
+      "score": 0.58,
+      "topic_fit": 0.7,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Transcribe.cpp",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 657,
+          "comments": 139,
+          "url": "https://workshop.cjpais.com/projects/transcribe-cpp"
+        }
+      ],
+      "score": 0.568,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Minecraft: Java Edition now uses SDL3",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 167,
+          "comments": 111,
+          "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4"
+        }
+      ],
+      "score": 0.568,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Code uses Bun written in Rust now",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 219,
+          "comments": 306,
+          "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
+        }
+      ],
+      "score": 0.5668,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Better and Cheaper Than IPTV",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9757315690346673,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 270,
+          "comments": 89,
+          "url": "https://github.com/stupside/castor"
+        }
+      ],
+      "score": 0.5561,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "I joined the IndieWeb, here's what I learned",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.766369904267472,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 80,
+          "comments": 48,
+          "url": "https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/"
+        }
+      ],
+      "score": 0.5308,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Harness Engineering",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6612685007147099,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 72,
+          "comments": 30,
+          "url": "https://github.com/lopopolo/harness-engineering"
+        }
+      ],
+      "score": 0.5224,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "I burned all my tokens researching how to save tokens",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7631702081761937,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 74,
+          "comments": 106,
+          "url": "https://quesma.com/blog/custom-deep-research-pipeline/"
+        }
+      ],
+      "score": 0.5148,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Bananas sprout in Rayleigh Garden UK after 15 years",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7187066354495142,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 54,
+          "comments": 30,
+          "url": "https://www.bbc.com/news/articles/cvg8edqq5g5o"
+        }
+      ],
+      "score": 0.5091,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "OpenAI reduces Codex model context size from 372k to 272k tokens",
+    "sources": [
+      "gnews:US",
+      "hn"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.9535439263028225,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "hn:search_by_date fallback (fresh AI stories, 2026-07-19)",
+        "outlet": "GitHub / Hacker News"
+      },
+      {
+        "source": "hn",
+        "points": 186,
+        "comments": 89,
+        "url": "https://github.com/openai/codex/pull/33972/files"
+      }
+    ],
+    "score": 0.7605,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false
+}

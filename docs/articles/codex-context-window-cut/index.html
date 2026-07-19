@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codex Context Window Cut to 272K: What OpenAI Rolled Back — The Tech Docket</title>
+<meta name="description" content="OpenAI cut Codex&#39;s default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.">
+<link rel="canonical" href="https://thetechdocket.com/articles/codex-context-window-cut/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Codex Context Window Cut to 272K: What OpenAI Rolled Back">
+<meta property="og:description" content="OpenAI cut Codex&#39;s default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.">
+<meta property="og:url" content="https://thetechdocket.com/articles/codex-context-window-cut/">
+<meta property="og:image" content="https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Illustration of a code editor with a context gauge being dialed down from 372K to 272K tokens">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="AI Tools &amp; Apps">
+<meta property="article:tag" content="openai">
+<meta property="article:tag" content="codex">
+<meta property="article:tag" content="coding-agents">
+<meta property="article:tag" content="context-window">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Codex Context Window Cut to 272K: What OpenAI Rolled Back">
+<meta name="twitter:description" content="OpenAI cut Codex&#39;s default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/codex-context-window-cut/"}, "headline": "Codex Context Window Cut to 272K: What OpenAI Rolled Back", "description": "OpenAI cut Codex's default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.", "image": ["https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-16x9.jpg", "https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-4x3.jpg", "https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-1x1.jpg"], "datePublished": "2026-07-19T07:00:00+05:30", "dateModified": "2026-07-19T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Tools & Apps", "item": "https://thetechdocket.com/topics/ai-tools/"}, {"@type": "ListItem", "position": 3, "name": "Codex Context Window Cut to 272K: What OpenAI Rolled Back"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a context window in an AI coding tool?", "acceptedAnswer": {"@type": "Answer", "text": "It is the amount of text — code, instructions, and conversation — the model can consider at once, measured in tokens (a token is roughly three-quarters of an English word). When a session exceeds it, tools like Codex compress older material into a summary, a process called compaction, which can lose detail on large projects."}}, {"@type": "Question", "name": "Did the Codex model itself get smaller or worse?", "acceptedAnswer": {"@type": "Answer", "text": "No. The change is a product setting, not a model change. OpenAI's model page still lists GPT-5.6 Sol with a 1.05-million-token context window via the API. What moved is the Codex app's default cap, which went from 372K back down to 272K tokens — the exact point where OpenAI's own long-request surcharge begins."}}, {"@type": "Question", "name": "Can I still use a larger context window in Codex?", "acceptedAnswer": {"@type": "Answer", "text": "Codex exposes a model_context_window setting in its config.toml, and the underlying API accepts far larger requests. But OpenAI's pricing doc says requests beyond 272K input tokens are billed at double the input rate and 1.5 times the output rate for the whole request, so raising the cap can cost disproportionately more or burn subscription quota faster."}}, {"@type": "Question", "name": "Which coding assistant has the biggest context window right now?", "acceptedAnswer": {"@type": "Answer", "text": "On paper, several vendors market 1M-class windows. Anthropic documents a 1M-token window at flat per-token pricing on its current Claude models, while Google's Gemini Pro models offer 1M tokens but roughly double their price above 200K tokens. Advertised size and affordable, usable size are not the same thing — which is exactly what the Codex change illustrates."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#16181d;--muted:#5a6270;--bg:#ffffff;--soft:#f3f5f9;--line:#e3e7ee;--accent:#4348c8;--accent-ink:#32379e}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}a:hover{text-decoration-thickness:2px}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:18px 0 10px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-size:14px}
+nav.hubs{display:flex;gap:4px 18px;flex-wrap:wrap;padding:0 0 12px;font-size:14.5px}
+nav.hubs a{text-decoration:none;color:var(--muted);font-weight:600}
+nav.hubs a:hover,nav.hubs a[aria-current]{color:var(--accent-ink)}
+main{padding:28px 0 40px}
+article.post{max-width:720px;margin:0 auto}
+.crumbs{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.crumbs a{color:var(--muted)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.18;letter-spacing:-.8px;margin:.2em 0 .35em}
+.byline{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:14.5px;margin-bottom:18px;flex-wrap:wrap}
+.byline a{font-weight:600}
+.hub-chip{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 11px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--accent-ink)}
+figure.hero{margin:0 0 26px}figure.hero img{width:100%;height:auto;border-radius:10px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.post h2{font-size:24px;margin:1.5em 0 .5em;letter-spacing:-.4px}
+.post h3{font-size:19px;margin:1.2em 0 .4em}
+.post p,.post li{font-size:17.5px}
+.post img{max-width:100%;height:auto}
+.post table{border-collapse:collapse;width:100%;font-size:15.5px;margin:1em 0}
+.post th,.post td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.post th{background:var(--soft)}
+.post blockquote{border-left:3px solid var(--accent);margin:1em 0;padding:.2em 1em;color:var(--muted)}
+.answer-first{font-size:19px;color:#232733;background:var(--soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 10px 10px 0}
+.disclaimer,.methodology{font-size:14px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:22px 0}
+.sources{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.sources h2{font-size:19px}
+.sources ol{padding-left:20px;font-size:15px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0;font-size:14px}
+.share a{border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none;font-weight:600;color:var(--ink);background:var(--soft)}
+.related{margin-top:34px}
+.cardlist{list-style:none;padding:0;display:grid;gap:14px}
+.cardlist li{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.cardlist a.t{font-weight:700;text-decoration:none;color:var(--ink);font-size:17px}
+.cardlist .m{color:var(--muted);font-size:13.5px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.card img{width:100%;height:auto;display:block}
+.card .pad{padding:14px 16px 16px}
+.card a.t{font-weight:750;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.3;display:block}
+.card .m{color:var(--muted);font-size:13.5px;margin-top:8px}
+.feature{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:30px;background:var(--bg)}
+.feature .pad{padding:18px 22px 22px}
+.feature a.t{font-size:clamp(22px,3.4vw,30px);font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none;line-height:1.2}
+.kicker{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer.site nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer.site a{color:var(--muted)}
+h2.sect{font-size:20px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:34px 0 16px}
+@media (prefers-color-scheme: dark){
+:root{--ink:#e8eaf1;--muted:#9aa3b2;--bg:#0e1015;--soft:#181b23;--line:#262a35;--accent:#818cf8;--accent-ink:#a5b0ff}
+.answer-first{color:#d9dcea}
+}
+.home-h1{font-size:1.05rem;font-weight:600;color:var(--muted);margin:.2em 0 1.2em;letter-spacing:.01em}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/" aria-current="page">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/topics/ai-tools/">AI Tools &amp; Apps</a> › <span>Codex Context Window Cut to 272K: What OpenAI Rolled Back</span>
+  </nav>
+  <span class="kicker">AI Tools &amp; Apps</span>
+  <h1>Codex Context Window Cut to 272K: What OpenAI Rolled Back</h1>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-19T07:00:00+05:30">Published July 19, 2026</time>
+    
+    <a class="hub-chip" href="/topics/ai-tools/">AI Tools &amp; Apps</a>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-16x9.webp">
+      <img src="https://thetechdocket.com/articles/codex-context-window-cut/codex-context-window-cut-16x9.jpg" width="1200" height="675" alt="Illustration of a code editor with a context gauge being dialed down from 372K to 272K tokens" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  <p>OpenAI has reduced the default context window in Codex, its AI coding agent, from 372,000 back to 272,000 tokens for the GPT-5.6 Sol, Terra, and Luna models. The change shipped quietly on July 18, 2026 through two config updates in the open-source Codex repository, with no changelog entry. It is best understood as a rollback, not a fresh cut: 372K was a short-lived increase that, by OpenAI&rsquo;s own account, was burning through subscribers&rsquo; usage quotas unexpectedly fast — because it pushed sessions past the exact point where OpenAI&rsquo;s pricing doubles.</p>
+<h2>What exactly changed</h2>
+<p>The change is visible in the open-source Codex repository. <a href="https://github.com/openai/codex/pull/33972" rel="noopener" target="_blank">Pull request #33972</a>, merged on July 18 by an OpenAI staff account, updates the bundled model metadata for the stable 0.144 release: <code>context_window</code> and <code>max_context_window</code> for GPT-5.6 Sol and Terra drop from 372,000 to 272,000 tokens. A companion change, <a href="https://github.com/openai/codex/pull/34009" rel="noopener" target="_blank">PR #34009</a>, confirms the 272K cap applies to all three GPT-5.6 variants — Sol, Terra, and Luna. It is a configuration-only change: one file, no model weights touched.</p>
+<p>Nothing about it appears in the <a href="https://developers.openai.com/codex/changelog" rel="noopener" target="_blank">official Codex changelog</a>, whose latest entry as of this writing is a July 16 release note about command-safety improvements. Users noticed anyway. A <a href="https://github.com/openai/codex/issues/32806" rel="noopener" target="_blank">GitHub issue filed July 13</a> had already flagged the reduction rolling out silently, calling it a regression against an advertised million-token model. By the morning of July 19, the PR diff was on the <a href="https://news.ycombinator.com/item?id=48965850" rel="noopener" target="_blank">Hacker News front page</a>, where it drew 189 points and 89 comments.</p>
+<p>The reaction split into two camps. Developers on large codebases said the smaller window forces more &ldquo;compaction&rdquo; — the lossy summarisation coding agents perform when a session outgrows its context. As commenter <a href="https://news.ycombinator.com/item?id=48967382" rel="noopener" target="_blank">skerit put it</a>: &ldquo;No matter how good compaction is, on some big projects it needs to read a lot of files… when I use Codex a single session has to compact over and over again.&rdquo; Others argued compaction handles it fine and the cut is a sensible cost move — one commenter reported a 9.5-hour unattended Codex session completing without trouble.</p>
+<h2>Why OpenAI pulled 372K back</h2>
+<p>The most useful frame comes from OpenAI&rsquo;s own pricing documentation. The <a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">GPT-5.6 Sol model page</a> states that requests exceeding 272K input tokens are charged at doubled input rates and 1.5× output rates for the complete request. In other words, 272,000 tokens is an official pricing cliff. A default window of 372K meant an ordinary long session could drift roughly 100K tokens past that cliff by default — silently paying the premium, or draining subscription quota at the premium rate. A <a href="https://github.com/openai/codex/issues/32486" rel="noopener" target="_blank">user-filed issue from July 11</a> documented exactly this mechanism a week before OpenAI acted.</p>
+<p>OpenAI&rsquo;s Codex engineering lead, Thibault Sottiaux, <a href="https://x.com/thsottiaux/status/2076495156757577895" rel="noopener" target="_blank">addressed the change on X</a>, saying it landed alongside inference optimisations that should give Sol subscribers roughly 10% more usage, and framing it as &ldquo;no nerfing.&rdquo; Developer summaries of <a href="https://x.com/thsottiaux/status/2076543065045795309" rel="noopener" target="_blank">his follow-up post</a> — linked repeatedly in the HN thread — say the 372K rollout was a main source of unexpectedly high usage burn, and that OpenAI intends to restore the larger window once that is fixed. There is still no formal announcement; as of publish time, a staff X thread and two pull requests are the entire paper trail.</p>
+<p>The economics behind the cliff are not mysterious. Long contexts are expensive to serve: attention computation grows steeply with sequence length, and the memory a GPU must hold for a session (the KV cache) <a href="https://melchi.me/posts/kv-cache/" rel="noopener" target="_blank">scales linearly with every token kept in context</a>. Longer default windows mean fewer concurrent users per GPU. We looked at what those serving costs translate to in rupee terms in our breakdown of <a href="/articles/real-cost-of-running-ai/">the real cost of running AI</a> — the same arithmetic is what turns a &ldquo;free&rdquo; context increase into a quota problem at scale.</p>
+<h2>The 1M-token asterisk</h2>
+<p>Here is the part most coverage misses: GPT-5.6 Sol&rsquo;s advertised context window never changed. OpenAI&rsquo;s <a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">model reference</a> still lists 1,050,000 input tokens. What changed is the <em>product default</em> in Codex — which now sits exactly on the pricing boundary. The advertised number is what the model accepts via the API if you pay for it; the default is what OpenAI thinks a subscription can sustainably absorb. The July 18 change closed the gap between marketing and metering.</p>
+<p>That distinction applies across the industry, and it is why &ldquo;which model has the biggest context window&rdquo; is usually the wrong question. The better question is what a long request costs.</p>
+<h2>How rivals price long context</h2>
+<table>
+<thead>
+<tr>
+<th>Product / model</th>
+<th>Advertised window</th>
+<th>Default in coding tool</th>
+<th>Long-request pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI GPT-5.6 Sol (Codex)</td>
+<td><a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">1.05M tokens</a></td>
+<td>272K (was 372K)</td>
+<td>2× input, 1.5× output above 272K</td>
+</tr>
+<tr>
+<td>Anthropic Claude (Opus 4.8, Sonnet 5, etc.)</td>
+<td><a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" rel="noopener" target="_blank">1M tokens</a></td>
+<td>model window applies</td>
+<td><a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener" target="_blank">Flat per-token rate at any length</a></td>
+</tr>
+<tr>
+<td>Google Gemini 3.1 Pro Preview</td>
+<td><a href="https://gemini.google/overview/long-context/" rel="noopener" target="_blank">1M tokens</a></td>
+<td>model window applies</td>
+<td><a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">$2→$4 input, $12→$18 output above 200K</a></td>
+</tr>
+<tr>
+<td>Google Gemini 2.5 Pro</td>
+<td>1M tokens</td>
+<td>model window applies</td>
+<td><a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">$1.25→$2.50 input, $10→$15 output above 200K</a></td>
+</tr>
+</tbody>
+</table>
+<p>Two of the three major vendors charge a premium once a request crosses a length threshold — Google&rsquo;s Pro-tier Gemini models double input pricing above 200K tokens, the same mechanic OpenAI applies above 272K. Anthropic is currently the outlier: its documentation states a 900K-token request is billed at the same per-token rate as a 9K one. GitHub Copilot, which <a href="https://docs.github.com/en/copilot/reference/ai-models/supported-models" rel="noopener" target="_blank">offers these same GPT-5.6 and Claude models</a>, describes million-token windows as applying to &ldquo;select models,&rdquo; so what Copilot users get depends on the model they pick.</p>
+<h2>The India angle</h2>
+<p>Context-window economics land differently in a market this large and this price-sensitive. India is now the world&rsquo;s second-largest developer base — <a href="https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/" rel="noopener" target="_blank">21.9 million developers on GitHub, up from 4.5 million in 2020</a>, ranking first globally in open-source contributions, with GitHub projecting 57.5 million by 2030. Codex&rsquo;s <a href="https://developers.openai.com/codex/pricing" rel="noopener" target="_blank">official plans</a> are priced in dollars everywhere: free, $8, $20, and $100-plus tiers. OpenAI has shown it will localise consumer pricing — ChatGPT Go launched India-first at ₹399/month — but there is no rupee pricing for its coding product, so Indian developers and startups pay the same dollar rates as Silicon Valley, with quota burn as the real bill.</p>
+<p>For that audience, the rollback is arguably good news in disguise: a default that quietly charged premium rates was worst for exactly the users who cannot shrug off a doubled token bill. The practical playbook for cost-sensitive teams is unchanged — keep sessions lean, let compaction work, and treat anything past 200K tokens as a deliberate, priced decision rather than a default. We track shifts like this across coding agents and assistants in our <a href="/topics/ai-tools/">AI tools and apps</a> coverage.</p>
+<h2>What to watch</h2>
+<p>Three things will tell us where this settles. First, whether 372K actually returns — Sottiaux&rsquo;s posts suggest it will once the usage-burn problem is fixed; a return would confirm the rollback framing. Second, whether OpenAI starts documenting changes like this formally: a usage-affecting default shipped via a hotfix PR and a staff tweet is a communication pattern developers have now noticed twice in one week. Third, whether Anthropic&rsquo;s flat-rate 1M pricing survives as a competitive lever, or converges toward the tiered model OpenAI and Google share. And in the background, the pressure that makes all of this matter keeps building from below: smaller models that run locally, like the phone-scale <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B</a>, sidestep per-token context economics entirely — every token processed on-device is one nobody meters.</p>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is a context window in an AI coding tool?</h3>
+  <p>It is the amount of text — code, instructions, and conversation — the model can consider at once, measured in tokens (a token is roughly three-quarters of an English word). When a session exceeds it, tools like Codex compress older material into a summary, a process called compaction, which can lose detail on large projects.</p>
+  
+  <h3>Did the Codex model itself get smaller or worse?</h3>
+  <p>No. The change is a product setting, not a model change. OpenAI&#39;s model page still lists GPT-5.6 Sol with a 1.05-million-token context window via the API. What moved is the Codex app&#39;s default cap, which went from 372K back down to 272K tokens — the exact point where OpenAI&#39;s own long-request surcharge begins.</p>
+  
+  <h3>Can I still use a larger context window in Codex?</h3>
+  <p>Codex exposes a model_context_window setting in its config.toml, and the underlying API accepts far larger requests. But OpenAI&#39;s pricing doc says requests beyond 272K input tokens are billed at double the input rate and 1.5 times the output rate for the whole request, so raising the cap can cost disproportionately more or burn subscription quota faster.</p>
+  
+  <h3>Which coding assistant has the biggest context window right now?</h3>
+  <p>On paper, several vendors market 1M-class windows. Anthropic documents a 1M-token window at flat per-token pricing on its current Claude models, while Google&#39;s Gemini Pro models offer 1M tokens but roughly double their price above 200K tokens. Advertised size and affordable, usable size are not the same thing — which is exactly what the Codex change illustrates.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/codex-context-window-cut/&text=Codex%20Context%20Window%20Cut%20to%20272K%3A%20What%20OpenAI%20Rolled%20Back" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/codex-context-window-cut/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Codex%20Context%20Window%20Cut%20to%20272K%3A%20What%20OpenAI%20Rolled%20Back%20https%3A//thetechdocket.com/articles/codex-context-window-cut/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/codex-context-window-cut/&title=Codex%20Context%20Window%20Cut%20to%20272K%3A%20What%20OpenAI%20Rolled%20Back" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/codex-context-window-cut/&t=Codex%20Context%20Window%20Cut%20to%20272K%3A%20What%20OpenAI%20Rolled%20Back" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://github.com/openai/codex/pull/33972" rel="noopener" target="_blank">PR #33972: Backport refreshed bundled model metadata to 0.144 — openai/codex</a> <em>(primary source)</em></li>
+      <li><a href="https://github.com/openai/codex/pull/34009" rel="noopener" target="_blank">PR #34009: Narrow 0.144 hotfix to GPT-5.6 prompts and context — openai/codex</a> <em>(primary source)</em></li>
+      <li><a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">GPT-5.6 Sol model reference — OpenAI</a> <em>(primary source)</em></li>
+      <li><a href="https://developers.openai.com/codex/pricing" rel="noopener" target="_blank">Codex pricing — OpenAI</a> <em>(primary source)</em></li>
+      <li><a href="https://x.com/thsottiaux/status/2076495156757577895" rel="noopener" target="_blank">Thibault Sottiaux (OpenAI Codex engineering lead) on X</a> <em>(primary source)</em></li>
+      <li><a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" rel="noopener" target="_blank">Context windows — Anthropic documentation</a> <em>(primary source)</em></li>
+      <li><a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener" target="_blank">Pricing — Anthropic documentation</a> <em>(primary source)</em></li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">Gemini API pricing — Google</a> <em>(primary source)</em></li>
+      <li><a href="https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/" rel="noopener" target="_blank">Octoverse 2025 — GitHub</a> <em>(primary source)</em></li>
+      <li><a href="https://github.com/openai/codex/issues/32806" rel="noopener" target="_blank">Issue #32806: GPT-5.6 Sol context cut despite advertised 1.05M — openai/codex</a></li>
+      <li><a href="https://github.com/openai/codex/issues/32486" rel="noopener" target="_blank">Issue #32486: Default GPT-5.6 context can cross the 272K higher-usage threshold — openai/codex</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=48965850" rel="noopener" target="_blank">HN discussion: OpenAI reduces Codex model context size</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: codex-context-window-cut">Email a correction</a>.
+  </div>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-chatbot-data-privacy/">AI Chatbot Data Privacy: What Happens to Your Chats</a>
+        <div class="m">AI Tools &amp; Apps · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</a>
+        <div class="m">AI Models · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/real-cost-of-running-ai/">The Real Cost of Running AI: Tokens, GPUs, Power</a>
+        <div class="m">Chips &amp; Hardware · July 15, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

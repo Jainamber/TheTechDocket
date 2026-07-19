@@ -1,0 +1,101 @@
+{
+  "date": "2026-07-19",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss_in": "stale: latest pub_date Fri 17 Jul 2026 21:10 -0700 (~1.5 days old at fetch time), zero tech/AI-relevant entries in top 10 (private-rocket launch aside, rest was a protest/hunger-strike story, footballer net worth, movie casting, MBBS seats, MLS/badminton sports, regional temple-land scam, weather) — kept only the one tech-relevant item (Skyroot rocket launch) and relied on websearch/HN for the rest",
+    "trends_rss_us": "ok: latest pub_date Sat 18 Jul 2026 20:00 -0700 (fresh, same-day IST), but zero tech/AI-relevant entries in top 10 (adult-film-star lawsuit, Atlanta homelessness, Canadian wildfire smoke, UFC, Iran strikes, SA-Wales rugby, lightning-strikes-bank, MLB x3) — relied on websearch/HN instead",
+    "hn": "ok: default tags=front_page endpoint returned stale cache on two attempts (1st: items dated 2026-05-09 to 05-13; 2nd, cache-busted: items dated 2026-06-13 to 06-15, neither anywhere near today); fell back to search_by_date?tags=story&numericFilters=points>30,created_at_i>1784246400 (after 2026-07-17T00:00Z) which returned genuinely fresh results spanning 2026-07-18T23:15Z to 2026-07-19T14:07Z"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "skyroot",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 17 Jul 2026 21:10:00 -0700",
+          "news": [
+            {"headline": "Vikram-1: India's first private space rocket by Skyroot to carry diamond...", "source": "BBC", "url": "https://www.bbc.com/news/articles/clyekv7rld3o"},
+            {"headline": "\"Zero To Hero\": Space Regulator Chief On Skyroot's Historic Vikram-1 Launch", "source": "NDTV", "url": "https://www.ndtv.com/india-news/in-space-zero-to-hero-space-regulator-chief-dr-pawan-goenka-on-skyroots-historic-vikram-1-launch-11787292"},
+            {"headline": "\"Historic new frontier\": PM Modi hails 'talent of youth' ahead of Skyroot's maiden orbital attempt with Vikram-1 launch", "source": "Times of India", "url": "https://timesofindia.indiatimes.com/india/historic-new-frontier-pm-modi-hails-talent-of-youth-ahead-of-skyroots-maiden-orbital-attempt-with-vikram-1-launch/articleshow/132473274.cms"}
+          ]
+        }
+      ],
+      "news": {
+        "websearch:india ai startup news july 2026": [
+          {"title": "Indian AI coding startup Emergent becomes a unicorn with $130 million Series C", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/", "pub_date": "2026-07-15"}
+        ],
+        "webfetch:tice.news india startup funding week": [
+          {"title": "India Startup Funding Jumps 332% in a Week as AI and Late-Stage Deals Fuel $346 Million Surge (Emergent, Udaan, Neo Group)", "source": "TICE News", "url": "https://www.tice.news/tice-trending/india-startup-funding-week-july-18-2026-12175881", "pub_date": "2026-07-18"}
+        ],
+        "websearch:india tech ai news july 18 2026": [
+          {"title": "Google's Gemini 3.5 Pro delayed; performance falls short of expectations", "source": "Business Today", "url": "https://www.businesstoday.in/technology/news/story/googles-gemini-3-5-pro-delayed-performance-falls-short-of-expectations-543524-2026-07-17", "pub_date": "2026-07-17"}
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "hn:search_by_date fallback (fresh AI stories, 2026-07-19)": [
+          {"title": "Alibaba's Qwen unveils preview of 2.4T-parameter flagship model Qwen3.8, says it's 'second only to Fable 5'", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model", "pub_date": "2026-07-19"},
+          {"title": "Claude Code now runs Bun compiled via Rust", "source": "Simon Willison", "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/", "pub_date": "2026-07-19"},
+          {"title": "OpenAI reduces Codex model context size from 372k to 272k tokens", "source": "GitHub / Hacker News", "url": "https://github.com/openai/codex/pull/33972/files", "pub_date": "2026-07-19"},
+          {"title": "\"AI Mania Is Eviscerating Global Decision-Making\" - viral essay trending on HN", "source": "ludic.mataroa.blog", "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/", "pub_date": "2026-07-19"}
+        ],
+        "websearch:biggest ai news / tech news roundups": [
+          {"title": "Apple overtakes Nvidia to become world's most valuable company, nears $5 trillion market cap", "source": "9to5Mac", "url": "https://9to5mac.com/2026/07/17/apple-reclaims-most-valuable-company-title-from-nvidia-as-it-barrels-toward-5t/", "pub_date": "2026-07-17"},
+          {"title": "Alphabet shares fall as Google's Gemini 3.5 Pro launch delayed over coding/reasoning shortfalls", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html", "pub_date": "2026-07-16"},
+          {"title": "China's Moonshot AI releases Kimi K3, a 2.8-trillion-parameter open-weight model beating rivals on coding benchmarks", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html", "pub_date": "2026-07-17"},
+          {"title": "Xi Jinping unveils World AI Cooperation Organization (WAICO) at WAIC 2026", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it", "pub_date": "2026-07-17"},
+          {"title": "Apple Intelligence approved for launch in China with Alibaba's Qwen and Baidu as partners", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/", "pub_date": "2026-07-16"},
+          {"title": "Anthropic's newest ad is creeping people out (still trending on HN days later)", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/", "pub_date": "2026-07-14"},
+          {"title": "DeepSeek eyes $70 billion-plus valuation in new funding round ahead of Shanghai IPO", "source": "South China Morning Post", "url": "https://www.scmp.com/tech/big-tech/article/3360626/ai-investor-mania-chinas-deepseek-chases-us70-billion-valuation-fresh-round", "pub_date": "2026-07-15"}
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {"title": "Transcribe.cpp", "points": 657, "comments": 139, "created_at": "2026-07-19T00:38:26Z", "url": "https://workshop.cjpais.com/projects/transcribe-cpp"},
+    {"title": "Qwen 3.8", "points": 512, "comments": 366, "created_at": "2026-07-19T08:44:57Z", "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291"},
+    {"title": "AI Mania Is Eviscerating Global Decision-Making", "points": 336, "comments": 182, "created_at": "2026-07-19T01:29:19Z", "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"},
+    {"title": "Better and Cheaper Than IPTV", "points": 270, "comments": 89, "created_at": "2026-07-19T00:59:55Z", "url": "https://github.com/stupside/castor"},
+    {"title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard", "points": 268, "comments": 117, "created_at": "2026-07-19T10:34:58Z", "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard"},
+    {"title": "Codex Resets", "points": 253, "comments": 168, "created_at": "2026-07-18T23:24:26Z", "url": "https://codex-resets.com/"},
+    {"title": "Claude Code uses Bun written in Rust now", "points": 219, "comments": 306, "created_at": "2026-07-19T10:03:23Z", "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"},
+    {"title": "Qwen 3.8 Max Preview", "points": 213, "comments": 1, "created_at": "2026-07-19T08:57:31Z", "url": "https://www.qwencloud.com/pricing/token-plan"},
+    {"title": "OpenAI reduces Codex Model Context Size from 372k to 272k", "points": 186, "comments": 89, "created_at": "2026-07-19T07:54:39Z", "url": "https://github.com/openai/codex/pull/33972/files"},
+    {"title": "Minecraft: Java Edition now uses SDL3", "points": 167, "comments": 111, "created_at": "2026-07-19T11:48:18Z", "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4"},
+    {"title": "FDA approves new kind of cholesterol pill", "points": 93, "comments": 59, "created_at": "2026-07-19T02:40:22Z", "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol"},
+    {"title": "I joined the IndieWeb, here's what I learned", "points": 80, "comments": 48, "created_at": "2026-07-19T11:14:38Z", "url": "https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/"},
+    {"title": "The death and rebirth of my home server", "points": 80, "comments": 49, "created_at": "2026-07-19T10:44:31Z", "url": "https://sgt.hootr.club/blog/home-server-rebirth/"},
+    {"title": "I burned all my tokens researching how to save tokens", "points": 74, "comments": 106, "created_at": "2026-07-19T12:01:53Z", "url": "https://quesma.com/blog/custom-deep-research-pipeline/"},
+    {"title": "Harness Engineering", "points": 72, "comments": 30, "created_at": "2026-07-18T23:27:36Z", "url": "https://github.com/lopopolo/harness-engineering"},
+    {"title": "Bananas sprout in Rayleigh Garden UK after 15 years", "points": 54, "comments": 30, "created_at": "2026-07-19T13:29:29Z", "url": "https://www.bbc.com/news/articles/cvg8edqq5g5o"},
+    {"title": "Deepsec", "points": 52, "comments": 5, "created_at": "2026-07-19T01:33:32Z", "url": "https://github.com/vercel-labs/deepsec"},
+    {"title": "Scrying the AMD GFX1250 LLVM Tea Leaves", "points": 51, "comments": 2, "created_at": "2026-07-19T05:07:08Z", "url": "https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea"},
+    {"title": "Perforce charges $500 for training videos.. and it's AI narrated", "points": 49, "comments": 76, "created_at": "2026-07-19T08:00:24Z", "url": "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic"},
+    {"title": "Ollama: All Aboard Open Models", "points": 49, "comments": 28, "created_at": "2026-07-19T07:59:44Z", "url": "https://ollama.com/blog/all-aboard-open-models"}
+  ],
+  "outlet_headlines": [
+    {"headline": "Alibaba's Qwen unveils preview of 2.4T-parameter flagship model Qwen3.8, says it's 'second only to Fable 5'", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model", "market": "global"},
+    {"headline": "Claude Code now runs Bun compiled via Rust", "source": "Simon Willison", "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/", "market": "global"},
+    {"headline": "OpenAI reduces Codex model context size from 372k to 272k tokens, sparks developer backlash", "source": "GitHub / Hacker News", "url": "https://github.com/openai/codex/pull/33972/files", "market": "global"},
+    {"headline": "\"AI Mania Is Eviscerating Global Decision-Making\" - viral essay tops Hacker News", "source": "ludic.mataroa.blog", "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/", "market": "global"},
+    {"headline": "Apple overtakes Nvidia to become world's most valuable company, nears $5 trillion market cap", "source": "9to5Mac", "url": "https://9to5mac.com/2026/07/17/apple-reclaims-most-valuable-company-title-from-nvidia-as-it-barrels-toward-5t/", "market": "global"},
+    {"headline": "Alphabet shares fall as Google's Gemini 3.5 Pro launch delayed over coding/reasoning shortfalls", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html", "market": "global"},
+    {"headline": "China's Moonshot AI releases Kimi K3, a 2.8-trillion-parameter open-weight model beating rivals on coding benchmarks", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html", "market": "global"},
+    {"headline": "Xi Jinping unveils World AI Cooperation Organization (WAICO) at WAIC 2026", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it", "market": "global"},
+    {"headline": "Apple Intelligence approved for launch in China with Alibaba's Qwen and Baidu as partners", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/", "market": "global"},
+    {"headline": "Anthropic's newest ad is creeping people out - still trending days later", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/", "market": "global"},
+    {"headline": "DeepSeek eyes $70 billion-plus valuation in new funding round ahead of Shanghai IPO", "source": "South China Morning Post", "url": "https://www.scmp.com/tech/big-tech/article/3360626/ai-investor-mania-chinas-deepseek-chases-us70-billion-valuation-fresh-round", "market": "global"},
+    {"headline": "Indian AI coding startup Emergent becomes a unicorn with $130 million Series C", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/", "market": "IN"},
+    {"headline": "India startup funding jumps 332% in a week to $346 million as AI and late-stage deals surge", "source": "TICE News", "url": "https://www.tice.news/tice-trending/india-startup-funding-week-july-18-2026-12175881", "market": "IN"},
+    {"headline": "Google's Gemini 3.5 Pro delay: performance falls short of expectations", "source": "Business Today", "url": "https://www.businesstoday.in/technology/news/story/googles-gemini-3-5-pro-delayed-performance-falls-short-of-expectations-543524-2026-07-17", "market": "IN"},
+    {"headline": "Vikram-1: India's first private space rocket by Skyroot conducts historic launch attempt", "source": "BBC", "url": "https://www.bbc.com/news/articles/clyekv7rld3o", "market": "IN"}
+  ],
+  "wikipedia_top": []
+}
