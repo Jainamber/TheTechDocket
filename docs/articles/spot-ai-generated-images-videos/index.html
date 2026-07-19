@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Spot AI-Generated Images and Videos in 2026 — The Tech Docket</title>
+<meta name="description" content="A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India&#39;s 2026 deepfake rules.">
+<link rel="canonical" href="https://thetechdocket.com/articles/spot-ai-generated-images-videos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="How to Spot AI-Generated Images and Videos in 2026">
+<meta property="og:description" content="A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India&#39;s 2026 deepfake rules.">
+<meta property="og:url" content="https://thetechdocket.com/articles/spot-ai-generated-images-videos/">
+<meta property="og:image" content="https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Split-screen comparison of a real photograph and an AI-generated image with a Content Credentials verification icon overlaid">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-15T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="How-To &amp; Explainers">
+<meta property="article:tag" content="deepfakes">
+<meta property="article:tag" content="ai images">
+<meta property="article:tag" content="media literacy">
+<meta property="article:tag" content="c2pa">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Spot AI-Generated Images and Videos in 2026">
+<meta name="twitter:description" content="A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India&#39;s 2026 deepfake rules.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/spot-ai-generated-images-videos/"}, "headline": "How to Spot AI-Generated Images and Videos in 2026", "description": "A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India's 2026 deepfake rules.", "image": ["https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-16x9.jpg", "https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-4x3.jpg", "https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-1x1.jpg"], "datePublished": "2026-07-15T07:00:00+05:30", "dateModified": "2026-07-19T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "How-To & Explainers", "item": "https://thetechdocket.com/topics/explainers/"}, {"@type": "ListItem", "position": 3, "name": "How to Spot AI-Generated Images and Videos in 2026"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can a Content Credentials label prove a photo is real?", "acceptedAnswer": {"@type": "Answer", "text": "It is strong evidence when present, since the metadata is cryptographically signed at the point of capture or edit. Coverage is still limited to certain flagship cameras and phones, and many platforms strip the metadata on re-upload, so a missing label does not prove a file is fake."}}, {"@type": "Question", "name": "Do YouTube, Instagram, and X all label AI content the same way?", "acceptedAnswer": {"@type": "Answer", "text": "No. YouTube and Meta combine creator disclosure with automatic detection to apply visible labels, while X mainly prohibits deceptive synthetic media without requiring a general disclosure label. The same clip could carry a label on one platform and none on another."}}, {"@type": "Question", "name": "How accurate are AI deepfake detection tools?", "acceptedAnswer": {"@type": "Answer", "text": "Less accurate than most marketing suggests. Independent testing on real-world deepfakes found commercial detectors fall short of trained human reviewers, and open-source tools perform far worse outside curated lab datasets. Treat any single tool's score as one input, not a verdict."}}, {"@type": "Question", "name": "What does India's 2026 deepfake law require of platforms?", "acceptedAnswer": {"@type": "Answer", "text": "Platforms must clearly label permitted synthetic media, and larger platforms must verify that label rather than rely only on a user's own declaration. They must also act on takedown orders within a few hours, though independent verification is still worth doing yourself since enforcement is new."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#16181d;--muted:#5a6270;--bg:#ffffff;--soft:#f3f5f9;--line:#e3e7ee;--accent:#4348c8;--accent-ink:#32379e}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}a:hover{text-decoration-thickness:2px}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:18px 0 10px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-size:14px}
+nav.hubs{display:flex;gap:4px 18px;flex-wrap:wrap;padding:0 0 12px;font-size:14.5px}
+nav.hubs a{text-decoration:none;color:var(--muted);font-weight:600}
+nav.hubs a:hover,nav.hubs a[aria-current]{color:var(--accent-ink)}
+main{padding:28px 0 40px}
+article.post{max-width:720px;margin:0 auto}
+.crumbs{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.crumbs a{color:var(--muted)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.18;letter-spacing:-.8px;margin:.2em 0 .35em}
+.byline{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:14.5px;margin-bottom:18px;flex-wrap:wrap}
+.byline a{font-weight:600}
+.hub-chip{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 11px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--accent-ink)}
+figure.hero{margin:0 0 26px}figure.hero img{width:100%;height:auto;border-radius:10px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.post h2{font-size:24px;margin:1.5em 0 .5em;letter-spacing:-.4px}
+.post h3{font-size:19px;margin:1.2em 0 .4em}
+.post p,.post li{font-size:17.5px}
+.post img{max-width:100%;height:auto}
+.post table{border-collapse:collapse;width:100%;font-size:15.5px;margin:1em 0}
+.post th,.post td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.post th{background:var(--soft)}
+.post blockquote{border-left:3px solid var(--accent);margin:1em 0;padding:.2em 1em;color:var(--muted)}
+.answer-first{font-size:19px;color:#232733;background:var(--soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 10px 10px 0}
+.disclaimer,.methodology{font-size:14px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:22px 0}
+.sources{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.sources h2{font-size:19px}
+.sources ol{padding-left:20px;font-size:15px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0;font-size:14px}
+.share a{border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none;font-weight:600;color:var(--ink);background:var(--soft)}
+.related{margin-top:34px}
+.cardlist{list-style:none;padding:0;display:grid;gap:14px}
+.cardlist li{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.cardlist a.t{font-weight:700;text-decoration:none;color:var(--ink);font-size:17px}
+.cardlist .m{color:var(--muted);font-size:13.5px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.card img{width:100%;height:auto;display:block}
+.card .pad{padding:14px 16px 16px}
+.card a.t{font-weight:750;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.3;display:block}
+.card .m{color:var(--muted);font-size:13.5px;margin-top:8px}
+.feature{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:30px;background:var(--bg)}
+.feature .pad{padding:18px 22px 22px}
+.feature a.t{font-size:clamp(22px,3.4vw,30px);font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none;line-height:1.2}
+.kicker{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer.site nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer.site a{color:var(--muted)}
+h2.sect{font-size:20px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:34px 0 16px}
+@media (prefers-color-scheme: dark){
+:root{--ink:#e8eaf1;--muted:#9aa3b2;--bg:#0e1015;--soft:#181b23;--line:#262a35;--accent:#818cf8;--accent-ink:#a5b0ff}
+.answer-first{color:#d9dcea}
+}
+.home-h1{font-size:1.05rem;font-weight:600;color:var(--muted);margin:.2em 0 1.2em;letter-spacing:.01em}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/explainers/" aria-current="page">How-To &amp; Explainers</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/topics/explainers/">How-To &amp; Explainers</a> › <span>How to Spot AI-Generated Images and Videos in 2026</span>
+  </nav>
+  <span class="kicker">How-To &amp; Explainers</span>
+  <h1>How to Spot AI-Generated Images and Videos in 2026</h1>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-15T07:00:00+05:30">Published July 15, 2026</time>
+    <span>·</span><time datetime="2026-07-19T07:00:00+05:30">Updated July 19, 2026</time>
+    <a class="hub-chip" href="/topics/explainers/">How-To &amp; Explainers</a>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-16x9.webp">
+      <img src="https://thetechdocket.com/articles/spot-ai-generated-images-videos/spot-ai-generated-images-videos-16x9.jpg" width="1200" height="675" alt="Split-screen comparison of a real photograph and an AI-generated image with a Content Credentials verification icon overlaid" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  <p>The most reliable way to check whether a photo or video is AI-generated is to work through three layers in order: look first for a provenance label such as Content Credentials or a platform&rsquo;s AI tag, look second for visual inconsistencies in hands, text, lighting, and physics, and look last at whether the file traces back to a credible original source. None of these checks is conclusive by itself in mid-2026 — generative models have improved enough that the old visual tells are fading fast, which is exactly why provenance standards, watermarking, and platform policy now carry more weight than a trained eye alone.</p>
+<h2>Start with provenance labels, not your eyes</h2>
+<p>Before scanning a photo for six-fingered hands, check whether it carries any provenance metadata. The Coalition for Content Provenance and Authenticity (C2PA) — whose steering committee includes Adobe, Amazon, BBC, Google, Meta, Microsoft, OpenAI, Sony, and Truepic — maintains an open standard called Content Credentials that works like a nutrition label for media, recording where a file came from and what has been done to it since (<a href="https://c2pa.org/" rel="noopener" target="_blank">C2PA</a>).</p>
+<p>By 2026, support has moved past the lab stage. Leica, Nikon&rsquo;s Z9, Z8, and Zf, Sony&rsquo;s a9 III and a1, and Canon&rsquo;s newsroom-focused Authenticity Imaging System all sign images at the point of capture (<a href="https://attesttrail.com/blog/c2pa-cameras-support" rel="noopener" target="_blank">AttestTrail</a>; <a href="https://global.canon/en/news/2026/20260511.html" rel="noopener" target="_blank">Canon Global</a>). Samsung&rsquo;s Galaxy S25 series and Google&rsquo;s Pixel line embed the same signing in hardware, part of a broader shift toward compact <a href="/articles/bonsai-27b-ai-model-phone/">on-device AI model</a> processing on phones that makes it easier to sign content the moment it&rsquo;s captured.</p>
+<p>The catch is coverage and durability. Content Credentials support is still mostly limited to flagship cameras and phones, and most social platforms strip the credential manifest the moment an image is re-encoded for upload, breaking the chain before most readers ever see it (<a href="https://attesttrail.com/blog/c2pa-cameras-support" rel="noopener" target="_blank">AttestTrail</a>). A missing label proves nothing by itself — it is still the exception, not the rule, on the budget phones and older cameras most people actually use.</p>
+<p>Google&rsquo;s parallel approach for its own tools is SynthID, an imperceptible watermark built into images, video, audio, and text produced by Gemini, Imagen, Veo, Lyria, and NotebookLM, engineered to survive cropping, compression, and filters (<a href="https://deepmind.google/models/synthid/" rel="noopener" target="_blank">Google DeepMind</a>). You can check a suspicious file by uploading it to Gemini and asking whether it carries a SynthID mark; Google has also opened a standalone SynthID Detector to journalists and media professionals through a waitlist. Both share one limit: they only catch content made with participating tools, so a fake from an outside generator carries no signal at all. Part of why synthetic content keeps multiplying is that <a href="/articles/real-cost-of-running-ai/">AI compute costs</a> for image and video generation keep falling, making a convincing fake cheaper to produce each year.</p>
+<h2>The visual tells that still work — for now</h2>
+<p>Manual inspection has not become useless, but it is no longer a reliable first line of defense. A few things are still worth a second look.</p>
+<h3>Hands, teeth, and fine detail</h3>
+<p>Extra or fused fingers, unnaturally smooth teeth, and jewellery that does not match between ears are still common failure points, though far less common than in older-generation models.</p>
+<h3>Text and typography</h3>
+<p>Generators still frequently mangle text inside an image — signage, book spines, number plates, or captions that dissolve into near-gibberish on close inspection.</p>
+<h3>Physics and consistency</h3>
+<p>Check whether shadows all point toward the same light source, look at reflections in glass or water, and watch for background objects that repeat in a tiling pattern or warp near the frame&rsquo;s edges.</p>
+<h3>Lighting and skin</h3>
+<p>A face lit slightly differently from its surroundings, or skin that looks uniformly airbrushed regardless of angle, can indicate a face swap or generative fill.</p>
+<p>The honest caveat: every one of these tells is a moving target. Newer models are trained to correct whatever made the last generation of fakes easy to catch, so a checklist that worked in 2024 catches fewer images in 2026. Treat visual inspection as a fast, free filter, not a verdict.</p>
+<h2>What YouTube, Meta, and X actually require</h2>
+<p>Platform labels are the layer most readers actually encounter, and the rules differ more than people assume:</p>
+<ul>
+<li><strong>YouTube</strong> requires creators to manually disclose &ldquo;realistic&rdquo; AI use, and now also auto-applies a label when its systems detect significant photorealistic AI content that was not disclosed — shown below the player for long-form videos and as an overlay on Shorts. Creators can dispute a wrong label, but the label alone does not change monetization eligibility (<a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/" rel="noopener" target="_blank">YouTube Blog</a>).</li>
+<li><strong>Meta</strong> applies &ldquo;AI info&rdquo; labels across Facebook, Instagram, and Threads based on industry-standard metadata signals plus creator disclosure, with a separate &ldquo;Imagined with AI&rdquo; label for photorealistic images made in Meta AI itself (<a href="https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/" rel="noopener" target="_blank">Meta</a>).</li>
+<li><strong>X</strong> takes a narrower approach: its authenticity policy prohibits synthetic media likely to cause confusion or harm, but does not generally require a disclosure label on AI content. It has said it will suspend creators from ad revenue sharing for unlabeled AI posts depicting armed conflict (<a href="https://help.x.com/en/rules-and-policies/authenticity" rel="noopener" target="_blank">X Help Center</a>).</li>
+</ul>
+<p>None of these systems is airtight — labels can be missed, disputed away, or simply not required on the platform you&rsquo;re using. Treat a label as useful evidence, not a guarantee.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>What it checks</th>
+<th>Reliability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C2PA Content Credentials</td>
+<td>Signed metadata on capture device and edit history</td>
+<td>High where present, but rare outside flagship gear and often stripped on upload</td>
+</tr>
+<tr>
+<td>SynthID watermark</td>
+<td>Invisible pattern embedded by Google&rsquo;s own generative models</td>
+<td>Strong for Google-made content; no signal from other generators</td>
+</tr>
+<tr>
+<td>Platform AI labels</td>
+<td>Creator disclosure plus automated detection</td>
+<td>Inconsistent; coverage and rules differ across YouTube, Meta, and X</td>
+</tr>
+<tr>
+<td>Third-party detection tools</td>
+<td>Statistical artifacts left in pixels or audio</td>
+<td>Moderate at best; accuracy drops sharply outside lab benchmarks</td>
+</tr>
+<tr>
+<td>Manual visual inspection</td>
+<td>Hands, text, shadows, reflections</td>
+<td>Declining fast as models correct known tells</td>
+</tr>
+</tbody>
+</table>
+<p>As the table shows, no single method is decisive alone; the sources cited throughout this piece — from <a href="https://c2pa.org/" rel="noopener" target="_blank">C2PA</a> and <a href="https://deepmind.google/models/synthid/" rel="noopener" target="_blank">Google DeepMind</a> to the platform policies above — describe layered systems, not one-check solutions.</p>
+<h2>Detection tools help, but don&rsquo;t treat them as proof</h2>
+<p>Dozens of commercial and free tools claim to flag AI-generated images, video, and audio, often with a confidence score attached, but it&rsquo;s worth being direct about their limits. A 2025 academic benchmark that tested detectors against deepfakes actually circulating in the wild — rather than curated lab datasets — found open-source detection models lost roughly 45-50% of their accuracy score compared with their performance on standard benchmarks, and none of the commercial tools evaluated reached 90% accuracy, the rough baseline that trained human forensic reviewers hit on the same content (<a href="https://arxiv.org/html/2503.02857v1" rel="noopener" target="_blank">Deepfake-Eval-2024, arXiv</a>).</p>
+<p>That gap exists because detectors are trained on yesterday&rsquo;s generators. Each time a new image or video model ships, it shifts the statistical fingerprint detectors look for, so a tool calibrated on last year&rsquo;s fakes can miss this year&rsquo;s. Use detection tools as one input, especially for audio and image checks where they perform better than on video, but never treat a single score as confirmation for high-stakes claims about a real, identifiable person.</p>
+<h2>The India angle</h2>
+<p>India has moved faster than most jurisdictions to regulate this space. Amendments to the IT Rules that took effect in February 2026 created a formal category called &ldquo;synthetically generated information&rdquo; (SGI) — AI-created or algorithmically altered audio, video, or images made to appear authentic — and require platforms to label permitted SGI clearly and prominently, embed metadata where feasible, and act on unlawful synthetic media within tight windows: three hours for court and government orders, two hours for high-risk categories such as non-consensual imagery or impersonation (<a href="https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn" rel="noopener" target="_blank">Freshfields</a>).</p>
+<p>An earlier draft had proposed watermarks covering a fixed share of an image or audio clip; the final rules dropped that threshold for a &ldquo;clear and prominent&rdquo; standard instead. Large platforms — those with more than 5 million users in India — must also verify SGI status with technical tools rather than rely on a user&rsquo;s declaration alone, and non-compliance can cost a platform its safe-harbour protection (<a href="https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn" rel="noopener" target="_blank">Freshfields</a>).</p>
+<p>This tightening followed several years of high-profile incidents — fabricated videos of political figures during election cycles and non-consensual synthetic images of film actors that led to public complaints and court cases — which pushed regulators to treat synthetic media as its own compliance category rather than fold it into general misinformation rules. The practical takeaway: a &ldquo;clearly labelled&rdquo; tag now carries some regulatory weight, but enforcement only began this year, and the takedown windows govern how fast platforms act on a report, not how quickly a label appears. Verifying independently — provenance check, then visual check, then source check — still matters.</p>
+<h2>A 60-second verification checklist</h2>
+<ol>
+<li>Look for a Content Credentials icon or an &ldquo;AI info&rdquo; / &ldquo;About this image&rdquo; label before anything else.</li>
+<li>Reverse-image-search the file or search key frames to see whether the same visual appears earlier, elsewhere, or attributed to a different event entirely.</li>
+<li>Check hands, text, shadows, and reflections for the tells above — quick, but never conclusive on their own.</li>
+<li>Run it through a detection tool if the stakes justify it, but read the result as a probability, not a verdict.</li>
+<li>If your process involves asking a chatbot to assess a suspicious image, it&rsquo;s worth understanding <a href="/articles/ai-chatbot-data-privacy/">chatbot data practices</a> before uploading anything sensitive.</li>
+<li>When still in doubt, trace the content back to the original poster or outlet rather than trusting a re-share.</li>
+</ol>
+<p>Detection tools and platform labels will keep changing under everyone&rsquo;s feet; the habits above are the durable part. For more practical, step-by-step guides like this one, browse our <a href="/topics/explainers/">how-to and explainers</a> hub.</p>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>Can a Content Credentials label prove a photo is real?</h3>
+  <p>It is strong evidence when present, since the metadata is cryptographically signed at the point of capture or edit. Coverage is still limited to certain flagship cameras and phones, and many platforms strip the metadata on re-upload, so a missing label does not prove a file is fake.</p>
+  
+  <h3>Do YouTube, Instagram, and X all label AI content the same way?</h3>
+  <p>No. YouTube and Meta combine creator disclosure with automatic detection to apply visible labels, while X mainly prohibits deceptive synthetic media without requiring a general disclosure label. The same clip could carry a label on one platform and none on another.</p>
+  
+  <h3>How accurate are AI deepfake detection tools?</h3>
+  <p>Less accurate than most marketing suggests. Independent testing on real-world deepfakes found commercial detectors fall short of trained human reviewers, and open-source tools perform far worse outside curated lab datasets. Treat any single tool&#39;s score as one input, not a verdict.</p>
+  
+  <h3>What does India&#39;s 2026 deepfake law require of platforms?</h3>
+  <p>Platforms must clearly label permitted synthetic media, and larger platforms must verify that label rather than rely only on a user&#39;s own declaration. They must also act on takedown orders within a few hours, though independent verification is still worth doing yourself since enforcement is new.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/spot-ai-generated-images-videos/&text=How%20to%20Spot%20AI-Generated%20Images%20and%20Videos%20in%202026" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/spot-ai-generated-images-videos/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=How%20to%20Spot%20AI-Generated%20Images%20and%20Videos%20in%202026%20https%3A//thetechdocket.com/articles/spot-ai-generated-images-videos/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/spot-ai-generated-images-videos/&title=How%20to%20Spot%20AI-Generated%20Images%20and%20Videos%20in%202026" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/spot-ai-generated-images-videos/&t=How%20to%20Spot%20AI-Generated%20Images%20and%20Videos%20in%202026" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://c2pa.org/" rel="noopener" target="_blank">C2PA — Coalition for Content Provenance and Authenticity</a> <em>(primary source)</em></li>
+      <li><a href="https://deepmind.google/models/synthid/" rel="noopener" target="_blank">SynthID — Google DeepMind</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/" rel="noopener" target="_blank">Improving AI labels for viewers and creators — YouTube Blog</a> <em>(primary source)</em></li>
+      <li><a href="https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/" rel="noopener" target="_blank">Meta&#39;s Approach to Labeling AI-Generated Content and Manipulated Media</a> <em>(primary source)</em></li>
+      <li><a href="https://help.x.com/en/rules-and-policies/authenticity" rel="noopener" target="_blank">Authenticity — X Help Center</a> <em>(primary source)</em></li>
+      <li><a href="https://attesttrail.com/blog/c2pa-cameras-support" rel="noopener" target="_blank">C2PA Cameras &amp; Phones 2026 — AttestTrail</a></li>
+      <li><a href="https://arxiv.org/html/2503.02857v1" rel="noopener" target="_blank">Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes (arXiv)</a></li>
+      <li><a href="https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn" rel="noopener" target="_blank">India targets deepfakes and AI-generated content: 2026 IT Rules changes — Freshfields</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: spot-ai-generated-images-videos">Email a correction</a>.
+  </div>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-chatbot-data-privacy/">AI Chatbot Data Privacy: What Happens to Your Chats</a>
+        <div class="m">AI Tools &amp; Apps · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</a>
+        <div class="m">AI Models · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/real-cost-of-running-ai/">The Real Cost of Running AI: Tokens, GPUs, Power</a>
+        <div class="m">Chips &amp; Hardware · July 15, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

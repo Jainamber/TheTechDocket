@@ -1,0 +1,53 @@
+# After each publish (push touching docs/), notify fast-indexing endpoints:
+#   - IndexNow  -> Bing / Yandex / Naver / Seznam / Yep (Google does not use it)
+#   - WebSub    -> Google's public hub, for instant feed subscribers
+# Google itself discovers via sitemap.xml + feed + Search Console.
+name: on-publish
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**"]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read config
+        id: cfg
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import yaml, urllib.parse
+          cfg = yaml.safe_load(open("config.yaml"))
+          base = cfg["site"]["base_url"]
+          host = urllib.parse.urlparse(base).netloc
+          print(f"base={base}")
+          print(f"host={host}")
+          print(f"key={cfg['seo']['indexnow_key']}")
+          EOF
+      - name: Recent article URLs
+        id: latest
+        # last 10, not just the newest — previously 3 of the 4 seed articles
+        # would never be pinged at launch (review adjunct to F6, 2026-07-16);
+        # IndexNow tolerates re-submits, so overlap across runs is harmless
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, pathlib
+          h = json.loads(pathlib.Path("data/history.json").read_text())
+          pubs = h.get("published", [])
+          print("urls_json=" + json.dumps([p["url"] for p in pubs[-10:]]))
+          print("count=" + str(len(pubs)))
+          EOF
+      - name: IndexNow ping
+        if: steps.cfg.outputs.key != 'REPLACED_AT_SETUP' && steps.latest.outputs.count != '0'
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{"host":"${{ steps.cfg.outputs.host }}","key":"${{ steps.cfg.outputs.key }}","keyLocation":"${{ steps.cfg.outputs.base }}${{ steps.cfg.outputs.key }}.txt","urlList":${{ steps.latest.outputs.urls_json }}}' \
+            -w "\nIndexNow HTTP %{http_code}\n"
+      - name: WebSub ping
+        run: |
+          curl -s -X POST "https://pubsubhubbub.appspot.com/" \
+            -d "hub.mode=publish" \
+            --data-urlencode "hub.url=${{ steps.cfg.outputs.base }}feed.xml" \
+            -w "\nWebSub HTTP %{http_code}\n"

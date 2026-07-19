@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="home-h1">{{ site.name }}: {{ site.tagline }}</h1>
+{% if feature %}
+<div class="feature">
+  <a href="{{ base_path }}articles/{{ feature.slug }}/">
+    <picture>
+      <source type="image/webp" srcset="{{ feature.hero_webp }}">
+      <img src="{{ feature.hero_jpg }}" width="1200" height="675" alt="{{ feature.hero_alt }}" fetchpriority="high" loading="eager">
+    </picture>
+  </a>
+  <div class="pad">
+    <span class="kicker">{{ feature.hub_name }} · {{ feature.date_human }}</span><br>
+    <a class="t" href="{{ base_path }}articles/{{ feature.slug }}/">{{ feature.title }}</a>
+    <p style="color:var(--muted);margin:.5em 0 0">{{ feature.description }}</p>
+  </div>
+</div>
+{% endif %}
+
+<h2 class="sect">Latest</h2>
+<div class="grid">
+  {% for a in articles %}
+  <div class="card">
+    <a href="{{ base_path }}articles/{{ a.slug }}/">
+      <picture>
+        <source type="image/webp" srcset="{{ a.hero_webp }}">
+        <img src="{{ a.hero_jpg }}" width="1200" height="675" alt="{{ a.hero_alt }}" loading="lazy" decoding="async">
+      </picture>
+    </a>
+    <div class="pad">
+      <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
+      <div class="m">{{ a.hub_name }} · {{ a.date_human }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

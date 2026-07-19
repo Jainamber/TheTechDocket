@@ -1,0 +1,166 @@
+# ============================================================
+# CONTENT ENGINE CONFIG — edit this file to retarget the engine
+# ============================================================
+
+site:
+  name: "The Tech Docket"
+  tagline: "Daily signal on tech & AI — what the world is searching, and why"
+  # Custom apex domain (Cloudflare DNS -> GitHub Pages). Keep the trailing slash.
+  base_url: "https://thetechdocket.com/"
+  language: "en"
+  locale: "en_US"
+  # Shown on About page; required for Google News/Discover trust signals.
+  contact_email: "jainamber88@gmail.com"
+  # Emitted as docs/CNAME at build time so GitHub Pages keeps the custom domain.
+  cname: "thetechdocket.com"
+  twitter_handle: ""            # e.g. "@thetechdocket" — optional
+  social_profiles: []           # sameAs links for Organization JSON-LD, e.g. ["https://x.com/...", "https://www.linkedin.com/company/..."]
+
+author:
+  name: "Saurab Jain"
+  slug: "saurab-jain"
+  bio: >-
+    Saurab Jain is the founder and editor of The Tech Docket. He tracks global and
+    Indian technology and AI trends daily, using search-demand data to decide
+    what to cover and first-party analysis to explain why it matters.
+  # Set true only after you confirm the bio above is accurate — compliance gate 13.
+  bio_verified: true
+  sameAs: []                    # e.g. ["https://www.linkedin.com/in/...", "https://github.com/..."]
+
+# --------------------------------------------------------------
+# THE BROAD TOPIC — this is the user-given niche the engine mines
+# --------------------------------------------------------------
+topic:
+  name: "Tech & AI"
+  description: "Technology and artificial intelligence: models, tools, big tech, chips, apps, and how they affect India and the world."
+  # Candidate trends MUST match at least one allow term (case-insensitive substring)
+  allow_keywords:
+    - ai, artificial intelligence, machine learning, deep learning, neural
+    - llm, gpt, chatgpt, gemini, claude, copilot, llama, mistral, deepseek, grok
+    - openai, anthropic, google, microsoft, apple, meta, amazon, nvidia, amd, intel, qualcomm, arm, tsmc
+    - chip, semiconductor, gpu, processor, data center, datacenter, cloud, aws, azure
+    - smartphone, iphone, android, pixel, galaxy, oneplus, xiaomi, laptop, macbook, tablet
+    - app, software, api, open source, github, coding, developer, programming
+    - startup, funding, ipo, acquisition, tech layoffs, big tech
+    - robot, robotics, humanoid, drone, autonomous, self-driving, tesla, waymo
+    - agent, agentic, chatbot, assistant, automation
+    - cybersecurity, data breach, hack, ransomware, phishing, privacy, encryption
+    - quantum, satellite, spacex, isro, starlink, 5g, 6g, telecom, jio, airtel
+    - vr, ar, xr, metaverse, wearable, smartwatch, gaming, playstation, xbox, nintendo, steam
+    - upi, paytm, phonepe, digital india, aadhaar, ondc, fintech app
+    - tcs, infosys, wipro, hcl, zoho, flipkart, swiggy, zomato, ola, byju
+    - deepfake, ai regulation, ai act, ai safety, ai jobs, ai video, ai image
+  # Candidates matching any deny term are dropped even if they match allow terms
+  deny_keywords:
+    - cricket, ipl, t20, odi, test match, football, fifa, tennis, olympics, kabaddi
+    - bollywood, hollywood, movie, film, trailer, box office, actor, actress, song
+    - horoscope, rashifal, astrology, temple, festival, puja
+    - weather, monsoon, rainfall, cyclone, typhoon, earthquake
+    - election result, exit poll, minister, lok sabha, vidhan sabha
+    - lottery, betting, casino, matka
+
+# Markets to track. Weights control the blend in scoring (must sum to 1.0).
+markets:
+  - geo: "IN"
+    label: "India"
+    news_params: "hl=en-IN&gl=IN&ceid=IN:en"
+    weight: 0.5
+  - geo: "US"
+    label: "Global (US proxy)"
+    news_params: "hl=en-US&gl=US&ceid=US:en"
+    weight: 0.5
+
+# News RSS seed queries rotated daily (fetcher picks by day-of-year)
+news_seed_queries:
+  - "artificial intelligence"
+  - "AI India"
+  - "new AI model"
+  - "tech layoffs"
+  - "smartphone launch"
+  - "AI regulation"
+  - "semiconductor India"
+  - "AI startup funding"
+
+scoring:
+  weights:
+    momentum: 0.30        # traffic / points / velocity
+    corroboration: 0.25   # same story in 2+ independent sources
+    topic_fit: 0.20       # strength of allow-keyword match
+    freshness: 0.10       # how recent the signal is
+    geo_spread: 0.10      # trending in both IN and US = viral potential
+    intent: 0.05          # question/comparison/how-to phrasing bonus
+  # If the best candidate scores below this, publish from evergreen_backlog
+  # instead of forcing a weak trend into an article ("never force a post").
+  min_publish_score: 0.35
+  # Penalize candidates too similar to anything published in the last N days
+  dedup_window_days: 21
+  dedup_max_similarity: 0.60
+
+# Quality-cadence safety valve: evergreen explainer ideas used on weak-trend days.
+evergreen_backlog:
+  - "What actually happens to your data when you use a free AI chatbot"
+  - "UPI vs credit cards vs wallets: where India's payment tech is heading"
+  - "How to spot AI-generated images and videos: a practical guide"
+  - "Small language models explained: why smaller is suddenly better"
+  - "The real cost of running AI: tokens, GPUs, and electricity"
+  - "How recommendation algorithms decide what 1.4 billion Indians watch"
+  - "On-device AI vs cloud AI: what it means for your phone and privacy"
+  - "How India's DPDP Act changes what apps can do with your data"
+
+content:
+  hubs:
+    ai-models:   "AI Models"
+    ai-tools:    "AI Tools & Apps"
+    big-tech:    "Big Tech"
+    hardware:    "Chips & Hardware"
+    policy:      "Policy & Society"
+    explainers:  "How-To & Explainers"
+  min_words: 900
+  max_words: 2200
+  # Analysis sections at least one of which must appear (compliance gate 10)
+  original_analysis_headings:
+    - "What it means"
+    - "The India angle"
+    - "Our take"
+    - "What to watch"
+  # v1 policy: no monetized/affiliate links at all (compliance gate 23)
+  allow_affiliate: false
+
+ymyl:
+  finance_terms: [invest, investment, stock, share price, crypto, bitcoin, trading, loan, tax, mutual fund, returns, portfolio, insurance]
+  health_terms: [cure, treatment, diagnosis, symptom, disease, mental health, therapy, medicine, medical, dosage, supplement]
+  safety_terms: [vulnerability, exploit, cve, password, scam, fraud, malware, ransomware, phishing, safety recall]
+
+# Traffic tracking. GoatCounter: free, no cookie banner needed, has an API the
+# feedback loop can read. Create an account at goatcounter.com and put your
+# site code here. GA4 supported as an alternative (provider: ga4 + ga4_id).
+analytics:
+  provider: "goatcounter"        # goatcounter | ga4 | none
+  goatcounter_code: ""           # e.g. "thetechdocket" -> thetechdocket.goatcounter.com
+  ga4_id: ""                     # e.g. "G-XXXXXXXXXX" when provider: ga4
+
+# Learn & adapt: engine/feedback.py turns real performance data into scoring
+# boosts and brief guidance. Sources: GoatCounter API (GOATCOUNTER_TOKEN env)
+# and Google Search Console CSV exports dropped into data/search-console/.
+feedback:
+  keyword_boost_cap: 0.15        # max score multiplier bonus from winning keywords
+  min_impressions: 20            # ignore queries below this (noise)
+
+seo:
+  title_min_chars: 35
+  title_max_chars: 65
+  meta_desc_min_chars: 110
+  meta_desc_max_chars: 165
+  internal_links_min: 2       # relaxed automatically while archive < 3 articles
+  outbound_citations_min: 2
+  hero_width: 1200
+  hero_height: 675
+  # 32-hex key; served at /<key>.txt and used by the on-publish workflow
+  indexnow_key: "7445f80e1dc521b8d8c38c579a78e367"
+
+publishing:
+  git_remote: "origin"
+  git_branch: "main"
+  output_dir: "docs"
+  # Publish time shown in metadata (IST). The scheduler controls actual timing.
+  publish_hour_ist: 7

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+{% if intro %}<p style="color:var(--muted);max-width:720px">{{ intro }}</p>{% endif %}
+<ul class="cardlist" style="margin-top:22px">
+  {% for a in articles %}
+  <li><a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
+    <div class="m">{{ a.hub_name }} · {{ a.date_human }} · {{ a.description }}</div></li>
+  {% endfor %}
+</ul>
+{% if not articles %}<p>No articles here yet — the engine publishes daily. Check back tomorrow.</p>{% endif %}
+{% endblock %}

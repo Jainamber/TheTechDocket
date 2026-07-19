@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained — The Tech Docket</title>
+<meta name="description" content="PrismML&#39;s Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What&#39;s verified, what&#39;s hype, and which phones in India can run it.">
+<link rel="canonical" href="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained">
+<meta property="og:description" content="PrismML&#39;s Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What&#39;s verified, what&#39;s hype, and which phones in India can run it.">
+<meta property="og:url" content="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/">
+<meta property="og:image" content="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Stylized graphic card reading Bonsai 27B, a 27-billion-parameter AI model compressed to run on a smartphone">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-15T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="AI Models">
+<meta property="article:tag" content="on-device AI">
+<meta property="article:tag" content="small models">
+<meta property="article:tag" content="quantization">
+<meta property="article:tag" content="PrismML">
+<meta property="article:tag" content="Qwen">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained">
+<meta name="twitter:description" content="PrismML&#39;s Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What&#39;s verified, what&#39;s hype, and which phones in India can run it.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/"}, "headline": "Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained", "description": "PrismML's Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What's verified, what's hype, and which phones in India can run it.", "image": ["https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-16x9.jpg", "https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-4x3.jpg", "https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-1x1.jpg"], "datePublished": "2026-07-15T07:00:00+05:30", "dateModified": "2026-07-19T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Models", "item": "https://thetechdocket.com/topics/ai-models/"}, {"@type": "ListItem", "position": 3, "name": "Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can my phone run Bonsai 27B?", "acceptedAnswer": {"@type": "Answer", "text": "Realistically, only recent flagships. PrismML's own guidance points to phones with about 12 GB of RAM, which leave roughly 6 GB free for apps. Most budget and mid-range phones ship with 4 to 6 GB of RAM, which is not enough for the full model."}}, {"@type": "Question", "name": "Is Bonsai 27B free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The weights are released under the permissive Apache 2.0 license and can be downloaded from Hugging Face. PrismML also launched an iOS app called Locally AI and a limited free developer preview of its API."}}, {"@type": "Question", "name": "Is the 1-bit version as good as the original model?", "acceptedAnswer": {"@type": "Answer", "text": "No. By PrismML's own numbers it retains roughly nine-tenths of the full-precision model's benchmark performance, and independent commenters flagged larger drops on tool-calling and multi-step agent tasks. The ternary version gives up less quality for a larger download."}}, {"@type": "Question", "name": "Does on-device AI keep my data private?", "acceptedAnswer": {"@type": "Answer", "text": "Largely yes for the model itself: prompts, photos and documents processed on the phone never leave it. You still need to trust the app around the model, since apps can sync data for other reasons."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#16181d;--muted:#5a6270;--bg:#ffffff;--soft:#f3f5f9;--line:#e3e7ee;--accent:#4348c8;--accent-ink:#32379e}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}a:hover{text-decoration-thickness:2px}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:18px 0 10px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-size:14px}
+nav.hubs{display:flex;gap:4px 18px;flex-wrap:wrap;padding:0 0 12px;font-size:14.5px}
+nav.hubs a{text-decoration:none;color:var(--muted);font-weight:600}
+nav.hubs a:hover,nav.hubs a[aria-current]{color:var(--accent-ink)}
+main{padding:28px 0 40px}
+article.post{max-width:720px;margin:0 auto}
+.crumbs{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.crumbs a{color:var(--muted)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.18;letter-spacing:-.8px;margin:.2em 0 .35em}
+.byline{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:14.5px;margin-bottom:18px;flex-wrap:wrap}
+.byline a{font-weight:600}
+.hub-chip{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 11px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--accent-ink)}
+figure.hero{margin:0 0 26px}figure.hero img{width:100%;height:auto;border-radius:10px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.post h2{font-size:24px;margin:1.5em 0 .5em;letter-spacing:-.4px}
+.post h3{font-size:19px;margin:1.2em 0 .4em}
+.post p,.post li{font-size:17.5px}
+.post img{max-width:100%;height:auto}
+.post table{border-collapse:collapse;width:100%;font-size:15.5px;margin:1em 0}
+.post th,.post td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.post th{background:var(--soft)}
+.post blockquote{border-left:3px solid var(--accent);margin:1em 0;padding:.2em 1em;color:var(--muted)}
+.answer-first{font-size:19px;color:#232733;background:var(--soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 10px 10px 0}
+.disclaimer,.methodology{font-size:14px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:22px 0}
+.sources{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.sources h2{font-size:19px}
+.sources ol{padding-left:20px;font-size:15px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0;font-size:14px}
+.share a{border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none;font-weight:600;color:var(--ink);background:var(--soft)}
+.related{margin-top:34px}
+.cardlist{list-style:none;padding:0;display:grid;gap:14px}
+.cardlist li{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.cardlist a.t{font-weight:700;text-decoration:none;color:var(--ink);font-size:17px}
+.cardlist .m{color:var(--muted);font-size:13.5px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.card img{width:100%;height:auto;display:block}
+.card .pad{padding:14px 16px 16px}
+.card a.t{font-weight:750;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.3;display:block}
+.card .m{color:var(--muted);font-size:13.5px;margin-top:8px}
+.feature{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:30px;background:var(--bg)}
+.feature .pad{padding:18px 22px 22px}
+.feature a.t{font-size:clamp(22px,3.4vw,30px);font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none;line-height:1.2}
+.kicker{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer.site nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer.site a{color:var(--muted)}
+h2.sect{font-size:20px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:34px 0 16px}
+@media (prefers-color-scheme: dark){
+:root{--ink:#e8eaf1;--muted:#9aa3b2;--bg:#0e1015;--soft:#181b23;--line:#262a35;--accent:#818cf8;--accent-ink:#a5b0ff}
+.answer-first{color:#d9dcea}
+}
+.home-h1{font-size:1.05rem;font-weight:600;color:var(--muted);margin:.2em 0 1.2em;letter-spacing:.01em}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a href="/topics/ai-models/" aria-current="page">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/topics/ai-models/">AI Models</a> › <span>Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</span>
+  </nav>
+  <span class="kicker">AI Models</span>
+  <h1>Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</h1>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-15T07:00:00+05:30">Published July 15, 2026</time>
+    <span>·</span><time datetime="2026-07-19T07:00:00+05:30">Updated July 19, 2026</time>
+    <a class="hub-chip" href="/topics/ai-models/">AI Models</a>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-16x9.webp">
+      <img src="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/bonsai-27b-ai-model-phone-16x9.jpg" width="1200" height="675" alt="Stylized graphic card reading Bonsai 27B, a 27-billion-parameter AI model compressed to run on a smartphone" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  <p>A 27-billion-parameter AI model on a phone was, until this week, a contradiction in terms — models of that class normally need a workstation GPU. On July 14, Pasadena startup PrismML <a href="https://prismml.com/news/bonsai-27b" rel="noopener" target="_blank">released Bonsai 27B</a>, an open-weight compression of Alibaba&rsquo;s Qwen3.6-27B that shrinks the model to as little as 3.9 GB, small enough to load on a flagship smartphone. The release is real and downloadable today, but the headline carries fine print: you need a high-end phone, quality drops on some tasks, and the most-shared demo wasn&rsquo;t fully live. Here is what actually happened, and what it means if you&rsquo;re reading this in India.</p>
+<h2>What PrismML actually released</h2>
+<p>Bonsai 27B is not a new model trained from scratch. PrismML&rsquo;s own <a href="https://docs.prismml.com/models/bonsai-27b" rel="noopener" target="_blank">technical documentation</a> is explicit that it is &ldquo;a low-bit representation of Qwen3.6-27B, not a new pretrain&rdquo; — the architecture, a dense hybrid-attention design from Alibaba&rsquo;s Qwen family, is unchanged. What PrismML built is an extreme compression of it, in two flavors, both released under the Apache 2.0 open-source license on <a href="https://huggingface.co/collections/prism-ml/bonsai-27b" rel="noopener" target="_blank">Hugging Face</a>:</p>
+<ul>
+<li>A <strong>1-bit (&ldquo;binary&rdquo;) variant</strong>, where every weight is either −1 or +1, working out to about 1.125 effective bits per weight and a 3.9 GB download, per <a href="https://prismml.com/news/bonsai-27b" rel="noopener" target="_blank">PrismML&rsquo;s announcement</a>.</li>
+<li>A <strong>ternary variant</strong>, where weights can be −1, 0 or +1 (about 1.71 effective bits per weight), at roughly 5.9 GB with noticeably better quality retention.</li>
+</ul>
+<p>For scale: the same model in its native FP16 precision weighs about 54 GB, and even a conventional 4-bit quantization runs to roughly 18 GB, according to <a href="https://prismml.com/news/prismml-releases-bonsai-27b" rel="noopener" target="_blank">PrismML&rsquo;s release notes</a> — so the 1-bit build is about 14 times smaller than the original.</p>
+<p>The model keeps Qwen3.6&rsquo;s multimodal abilities (text plus image input), tool calling, a reasoning mode, and an unusually large 262K-token context window, and runs on llama.cpp, Apple&rsquo;s MLX, CUDA and even, PrismML claims, inside a browser via WebGPU, per the <a href="https://docs.prismml.com/models/bonsai-27b" rel="noopener" target="_blank">docs</a>.</p>
+<h2>How 27 billion parameters fit into 3.9 GB</h2>
+<p>The interesting part is not that quantization exists — hobbyists have squeezed models for years — but how the quality survives it. Squeezing 27 billion parameters into a few gigabytes normally wrecks a model, because rounding every weight to one of two values destroys information the model needs, as coverage at <a href="https://www.marktechpost.com/2026/07/14/prismml-releases-bonsai-27b-1-bit-and-ternary-builds-of-qwen3-6-27b-that-run-on-laptops-and-phones/" rel="noopener" target="_blank">MarkTechPost</a> explains.</p>
+<p>PrismML&rsquo;s answer is <strong>quantization-aware training (QAT)</strong>: instead of compressing the finished model after the fact, the low-bit constraint is enforced during training itself, so the network learns to be accurate <em>within</em> the 1-bit or ternary format. Weights are grouped (one shared FP16 scale per 128 weights), the vision tower is kept at 4-bit, and a custom speculative-decoding scheme the company calls DSpark adds a claimed 1.37× decoding speedup on server GPUs, per the same <a href="https://www.marktechpost.com/2026/07/14/prismml-releases-bonsai-27b-1-bit-and-ternary-builds-of-qwen3-6-27b-that-run-on-laptops-and-phones/" rel="noopener" target="_blank">MarkTechPost breakdown</a>.</p>
+<p>One nuance the headlines skip, flagged in <a href="https://www.marktechpost.com/2026/07/14/prismml-releases-bonsai-27b-1-bit-and-ternary-builds-of-qwen3-6-27b-that-run-on-laptops-and-phones/" rel="noopener" target="_blank">MarkTechPost&rsquo;s analysis</a>: the 3.9 GB figure is the <em>weights only</em>. Using the full 262K context would add about 17.2 GB of KV-cache memory at FP16 (about 4.3 GB even with a 4-bit cache) — so on a phone you get the model, not the model at maximum context.</p>
+<h2>The fine print: speed, quality and a not-quite-live demo</h2>
+<p>How fast is it? The one number that is consistent across <a href="https://prismml.com/news/prismml-releases-bonsai-27b" rel="noopener" target="_blank">PrismML&rsquo;s site</a> and independent write-ups is <strong>11 tokens per second on an iPhone 17 Pro Max</strong> for the 1-bit build — usable for chat, slow for long documents. On bigger hardware, PrismML advertises up to 163 tokens per second on an RTX 5090 and 87 on an Apple M5 Max, though <a href="https://www.marktechpost.com/2026/07/14/prismml-releases-bonsai-27b-1-bit-and-ternary-builds-of-qwen3-6-27b-that-run-on-laptops-and-phones/" rel="noopener" target="_blank">MarkTechPost&rsquo;s benchmark table</a> lists a lower 66.4 tokens per second for the same M5 Max test — a discrepancy neither party has explained, likely down to benchmark methodology.</p>
+<p>Quality is the bigger caveat. PrismML claims the ternary build retains about 95% of the original model&rsquo;s performance across 15 benchmarks, and the 1-bit build about 90%, per its <a href="https://prismml.com/news/bonsai-27b" rel="noopener" target="_blank">announcement</a> — but those averages hide the weak spot. On tool-calling and agentic benchmarks, <a href="https://officechai.com/ai/prismml-announces-bonsai27b-the-first-27-billion-parameter-model-that-can-run-on-an-iphone/" rel="noopener" target="_blank">OfficeChai reports</a> scores falling from 80.0 (full precision) to 74.0 (ternary) to 66.0 (1-bit) — exactly the capability that matters for the agent-style assistants everyone wants to run locally.</p>
+<p>The community reception reflects that mix. The <a href="https://news.ycombinator.com/item?id=48910545" rel="noopener" target="_blank">Hacker News thread</a> crossed 400 points within a day, with genuine excitement alongside three recurring complaints: benchmark skepticism (&ldquo;fair comparison plots&rdquo; were demanded), reproducibility friction (several users couldn&rsquo;t get the GGUF or MLX builds running in LM Studio on day one), and warnings about &ldquo;doom loop&rdquo; behavior in multi-turn agent use. <a href="https://officechai.com/ai/prismml-announces-bonsai27b-the-first-27-billion-parameter-model-that-can-run-on-an-iphone/" rel="noopener" target="_blank">OfficeChai</a> also reported that the viral iPhone demo used cached, prefilled image context rather than a fully live end-to-end run. And there&rsquo;s a corporate subplot: PrismML&rsquo;s CEO told CNBC that Apple is &ldquo;really evaluating our technology right now,&rdquo; per <a href="https://appleinsider.com/articles/26/07/14/prismml-confirms-it-is-in-talks-with-apple-about-ai-model-shrinking-tech" rel="noopener" target="_blank">AppleInsider</a>, while <a href="https://9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/" rel="noopener" target="_blank">9to5Mac notes</a> that real Apple negotiations rarely get talked about publicly — read the Apple angle as unconfirmed.</p>
+<h2>How it compares with other phone-scale AI models</h2>
+<p>The &ldquo;AI on your phone&rdquo; race did not start this week. What is new is the <em>size class</em> — everything phone-viable until now sat in the roughly 1B–8B range or leaned on sparse tricks. A snapshot of the field, with sources per row:</p>
+<table>
+<thead>
+<tr>
+<th>Model (release)</th>
+<th>Size</th>
+<th>Phone footprint</th>
+<th>What stands out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bonsai 27B</strong> (PrismML, Jul 2026)</td>
+<td>~27B dense</td>
+<td>3.9–5.9 GB weights; ~6 GB free RAM needed</td>
+<td>Largest dense model shown running on a phone; open weights (<a href="https://docs.prismml.com/models/bonsai-27b" rel="noopener" target="_blank">PrismML</a>)</td>
+</tr>
+<tr>
+<td><strong>Apple AFM 3 Core Advanced</strong> (Jun 2026)</td>
+<td>20B sparse, 1–4B active</td>
+<td>Undisclosed; devices unconfirmed</td>
+<td>Closed; ships inside Apple Intelligence (<a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" rel="noopener" target="_blank">Apple</a>)</td>
+</tr>
+<tr>
+<td><strong>Liquid AI LFM2.5-8B-A1B</strong> (May 2026)</td>
+<td>8B MoE, ~1B active</td>
+<td>Runs in under 6 GB; ~30 tok/s on mobile</td>
+<td>Efficiency-first mixture-of-experts (<a href="https://www.liquid.ai/blog/lfm2-5-8b-a1b" rel="noopener" target="_blank">Liquid AI</a>)</td>
+</tr>
+<tr>
+<td><strong>Google Gemma 3n</strong> (2025)</td>
+<td>5–8B, acts like 2–4B</td>
+<td>2–3 GB dynamic footprint</td>
+<td>Co-designed with phone chipmakers (<a href="https://developers.googleblog.com/en/introducing-gemma-3n/" rel="noopener" target="_blank">Google</a>)</td>
+</tr>
+<tr>
+<td><strong>Qwen3.5 0.8B/2B</strong> (2026)</td>
+<td>0.8–2B</td>
+<td>Minimal; browser-capable</td>
+<td>Built for battery-constrained devices (<a href="https://venturebeat.com/technology/alibabas-small-open-source-qwen3-5-9b-beats-openais-gpt-oss-120b-and-can-run" rel="noopener" target="_blank">VentureBeat</a>)</td>
+</tr>
+<tr>
+<td><strong>Llama 3.2 1B/3B quantized</strong> (2024)</td>
+<td>1–3B</td>
+<td>~1–2 GB</td>
+<td>The early mobile milestone (<a href="https://ai.meta.com/blog/meta-llama-quantized-lightweight-models/" rel="noopener" target="_blank">Meta</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Two honest qualifiers to PrismML&rsquo;s &ldquo;first&rdquo; framing: Apple&rsquo;s 20B sparse model predates it by a month (though Apple has never confirmed which devices run it), and &ldquo;dense 27B on a phone&rdquo; is PrismML&rsquo;s own category definition. The defensible version of the claim is narrower but still notable — this is the largest open-weight model anyone has demonstrated generating usable output on a standard flagship phone.</p>
+<h2>The India angle</h2>
+<p>No major outlet covered what this means for the world&rsquo;s largest smartphone market by volume, so let&rsquo;s do it here.</p>
+<p><strong>Most phones sold in India can&rsquo;t run it — yet.</strong> Bonsai&rsquo;s ternary build wants roughly 6 GB of free app memory, which in practice means a phone with about 12 GB of total RAM. Budget bestsellers in India — the segment that moves the most units — ship with 4 or 6 GB (Galaxy M17 5G, Moto G45, POCO M7 Pro, realme P3x and similar), per <a href="https://www.91mobiles.com/list-of-phones/best-budget-smartphones" rel="noopener" target="_blank">91mobiles&rsquo; current budget listings</a>. You only reliably get 12–16 GB in the premium tier — devices like the Vivo X300 Pro at the top of <a href="https://www.cashify.in/best-phones-to-buy-in-2026" rel="noopener" target="_blank">Cashify&rsquo;s 2026 flagship list</a>. The smaller 1-bit build softens this, but its quality drop is the price. For most Indian users, phone-class frontier AI arrives with their <em>next</em> phone, not the current one.</p>
+<p><strong>Why on-device matters more in India than the discourse suggests.</strong> It isn&rsquo;t data cost — India has some of the world&rsquo;s cheapest mobile data, with long-validity plans working out to roughly ₹0.22–0.27 per GB on <a href="https://www.cashify.in/unlimited-data-plans-in-india-jio-airtel-bsnl" rel="noopener" target="_blank">BSNL&rsquo;s annual plans</a>. The stronger arguments are reliability (connectivity is far from uniform outside metros), and increasingly, regulation. India&rsquo;s DPDP regime restricts using personal data for AI training without purpose-specific consent, constrains cross-border transfers to an approved-country list, and carries penalties up to ₹250 crore, per <a href="https://www.levo.ai/resources/blogs/the-dpdp-india-2026-handbook---the-complete-guide-to-indias-new-data-protection-era" rel="noopener" target="_blank">this DPDP compliance guide</a>. A model that processes your documents entirely on your phone sidesteps most of that surface area by never moving the data at all — a genuinely attractive property for Indian fintech and health apps, and a sharp contrast with <a href="/articles/ai-chatbot-data-privacy/">what free cloud chatbots do with your conversations</a>.</p>
+<p><strong>The sovereign-AI question.</strong> India&rsquo;s own model-builders, most visibly <a href="https://www.sarvam.ai/models" rel="noopener" target="_blank">Sarvam AI</a> with its Indian-language speech and text models (22 Indian languages for translation and speech recognition), have so far targeted servers and APIs. Bonsai&rsquo;s technique — QAT compression of an existing strong model — is exactly the kind of approach that could put an Indian-language model of serious size on mid-range hardware. Whoever does that first gets a distribution advantage no app store can match.</p>
+<h2>What to watch</h2>
+<p>Three things will tell us within weeks whether this was a milestone or a demo. First, <strong>independent benchmarks</strong>: as of today, every quality number traces back to PrismML&rsquo;s own whitepaper; no neutral lab has reproduced them. Second, <strong>the reproducibility gap</strong>: if the day-one failures reported on <a href="https://news.ycombinator.com/item?id=48910545" rel="noopener" target="_blank">Hacker News</a> persist, &ldquo;runs on a phone&rdquo; stays theoretical for most people. Third, <strong>who licenses the technique</strong>: the Apple conversation is unconfirmed, but QAT-style compression being courted by device makers is the real story — the value may end up less in Bonsai the model and more in Bonsai the proof that flagship phones are now a viable deployment target for 27B-class intelligence.</p>
+<p>The safe conclusion: extreme-compression on-device AI graduated from research papers to shipping software this week. The unsafe conclusion — that your current phone is about to replace ChatGPT — will need cheaper RAM, better tool-calling retention, and probably one more hardware generation. For why on-device inference is such an economic unlock in the first place, see our breakdown of <a href="/articles/real-cost-of-running-ai/">the real cost of running AI</a>. We will keep following Bonsai and the rest of the compression race in our <a href="/topics/ai-models/">AI models</a> coverage as independent numbers land.</p>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>Can my phone run Bonsai 27B?</h3>
+  <p>Realistically, only recent flagships. PrismML&#39;s own guidance points to phones with about 12 GB of RAM, which leave roughly 6 GB free for apps. Most budget and mid-range phones ship with 4 to 6 GB of RAM, which is not enough for the full model.</p>
+  
+  <h3>Is Bonsai 27B free to use?</h3>
+  <p>Yes. The weights are released under the permissive Apache 2.0 license and can be downloaded from Hugging Face. PrismML also launched an iOS app called Locally AI and a limited free developer preview of its API.</p>
+  
+  <h3>Is the 1-bit version as good as the original model?</h3>
+  <p>No. By PrismML&#39;s own numbers it retains roughly nine-tenths of the full-precision model&#39;s benchmark performance, and independent commenters flagged larger drops on tool-calling and multi-step agent tasks. The ternary version gives up less quality for a larger download.</p>
+  
+  <h3>Does on-device AI keep my data private?</h3>
+  <p>Largely yes for the model itself: prompts, photos and documents processed on the phone never leave it. You still need to trust the app around the model, since apps can sync data for other reasons.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/bonsai-27b-ai-model-phone/&text=Bonsai%2027B%3A%20The%2027B%20AI%20Model%20That%20Runs%20on%20a%20Phone%2C%20Explained" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/bonsai-27b-ai-model-phone/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Bonsai%2027B%3A%20The%2027B%20AI%20Model%20That%20Runs%20on%20a%20Phone%2C%20Explained%20https%3A//thetechdocket.com/articles/bonsai-27b-ai-model-phone/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/bonsai-27b-ai-model-phone/&title=Bonsai%2027B%3A%20The%2027B%20AI%20Model%20That%20Runs%20on%20a%20Phone%2C%20Explained" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/bonsai-27b-ai-model-phone/&t=Bonsai%2027B%3A%20The%2027B%20AI%20Model%20That%20Runs%20on%20a%20Phone%2C%20Explained" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://prismml.com/news/bonsai-27b" rel="noopener" target="_blank">PrismML — Bonsai 27B announcement</a> <em>(primary source)</em></li>
+      <li><a href="https://docs.prismml.com/models/bonsai-27b" rel="noopener" target="_blank">PrismML — Bonsai 27B technical documentation</a> <em>(primary source)</em></li>
+      <li><a href="https://huggingface.co/collections/prism-ml/bonsai-27b" rel="noopener" target="_blank">Hugging Face — Bonsai 27B model collection</a> <em>(primary source)</em></li>
+      <li><a href="https://www.marktechpost.com/2026/07/14/prismml-releases-bonsai-27b-1-bit-and-ternary-builds-of-qwen3-6-27b-that-run-on-laptops-and-phones/" rel="noopener" target="_blank">MarkTechPost — technical breakdown of the 1-bit and ternary builds</a></li>
+      <li><a href="https://appleinsider.com/articles/26/07/14/prismml-confirms-it-is-in-talks-with-apple-about-ai-model-shrinking-tech" rel="noopener" target="_blank">AppleInsider — PrismML confirms talks with Apple (via CNBC)</a></li>
+      <li><a href="https://9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/" rel="noopener" target="_blank">9to5Mac — release coverage and Apple-talks skepticism</a></li>
+      <li><a href="https://officechai.com/ai/prismml-announces-bonsai27b-the-first-27-billion-parameter-model-that-can-run-on-an-iphone/" rel="noopener" target="_blank">OfficeChai — benchmark drops and demo caveat</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=48910545" rel="noopener" target="_blank">Hacker News — community discussion</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: bonsai-27b-ai-model-phone">Email a correction</a>.
+  </div>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-chatbot-data-privacy/">AI Chatbot Data Privacy: What Happens to Your Chats</a>
+        <div class="m">AI Tools &amp; Apps · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/real-cost-of-running-ai/">The Real Cost of Running AI: Tokens, GPUs, Power</a>
+        <div class="m">Chips &amp; Hardware · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/spot-ai-generated-images-videos/">How to Spot AI-Generated Images and Videos in 2026</a>
+        <div class="m">How-To &amp; Explainers · July 15, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

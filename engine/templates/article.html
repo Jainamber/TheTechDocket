@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block og_extra %}
+<meta property="article:published_time" content="{{ published_iso }}">
+<meta property="article:modified_time" content="{{ modified_iso }}">
+<meta property="article:author" content="{{ author_url }}">
+<meta property="article:section" content="{{ hub_name }}">
+{% for tag in tags %}<meta property="article:tag" content="{{ tag }}">
+{% endfor %}{% endblock %}
+
+{% block jsonld %}
+<script type="application/ld+json">{{ blogposting_jsonld }}</script>
+<script type="application/ld+json">{{ breadcrumb_jsonld }}</script>
+{% if faq_jsonld %}<script type="application/ld+json">{{ faq_jsonld }}</script>{% endif %}
+{% endblock %}
+
+{% block content %}
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="{{ base_path }}">Home</a> › <a href="{{ base_path }}topics/{{ hub }}/">{{ hub_name }}</a> › <span>{{ title }}</span>
+  </nav>
+  <span class="kicker">{{ hub_name }}</span>
+  <h1>{{ title }}</h1>
+  <div class="byline">
+    <span>By <a href="{{ author_url }}">{{ author.name }}</a></span>
+    <span>·</span>
+    <time datetime="{{ published_iso }}">Published {{ published_human }}</time>
+    {% if updated_human %}<span>·</span><time datetime="{{ modified_iso }}">Updated {{ updated_human }}</time>{% endif %}
+    <a class="hub-chip" href="{{ base_path }}topics/{{ hub }}/">{{ hub_name }}</a>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="{{ hero_webp }}">
+      <img src="{{ hero_jpg }}" width="1200" height="675" alt="{{ hero_alt }}" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  {% if ymyl_disclaimer %}<div class="disclaimer" role="note"><strong>Note:</strong> {{ ymyl_disclaimer }}</div>{% endif %}
+
+  {{ body_html }}
+
+  {% if faq %}
+  <h2 id="faq">Frequently asked questions</h2>
+  {% for item in faq %}
+  <h3>{{ item.q }}</h3>
+  <p>{{ item.a }}</p>
+  {% endfor %}
+  {% endif %}
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url={{ canonical | urlencode }}&text={{ title | urlencode }}" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical | urlencode }}" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text={{ (title ~ ' ' ~ canonical) | urlencode }}" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url={{ canonical | urlencode }}&title={{ title | urlencode }}" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u={{ canonical | urlencode }}&t={{ title | urlencode }}" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      {% for s in sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.primary %} <em>(primary source)</em>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by {{ author.name }}. Details in our
+    <a href="{{ base_path }}editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:{{ site.contact_email }}?subject=Correction: {{ slug }}">Email a correction</a>.
+  </div>
+
+  {% if related %}
+  <section class="related">
+    <h2 class="sect">Related on {{ site.name }}</h2>
+    <ul class="cardlist">
+      {% for r in related %}
+      <li><a class="t" href="{{ base_path }}articles/{{ r.slug }}/">{{ r.title }}</a>
+        <div class="m">{{ r.hub_name }} · {{ r.date_human }}</div></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

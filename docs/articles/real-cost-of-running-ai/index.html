@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Real Cost of Running AI: Tokens, GPUs, Power — The Tech Docket</title>
+<meta name="description" content="OpenAI, Google and Anthropic&#39;s live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.">
+<link rel="canonical" href="https://thetechdocket.com/articles/real-cost-of-running-ai/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="The Real Cost of Running AI: Tokens, GPUs, Power">
+<meta property="og:description" content="OpenAI, Google and Anthropic&#39;s live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.">
+<meta property="og:url" content="https://thetechdocket.com/articles/real-cost-of-running-ai/">
+<meta property="og:image" content="https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="A data center aisle of GPU servers with a rising electricity meter and dollar-per-token price tags overlaid on the racks">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-15T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="Chips &amp; Hardware">
+<meta property="article:tag" content="gpus">
+<meta property="article:tag" content="ai costs">
+<meta property="article:tag" content="tokens">
+<meta property="article:tag" content="data centers">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Real Cost of Running AI: Tokens, GPUs, Power">
+<meta name="twitter:description" content="OpenAI, Google and Anthropic&#39;s live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/real-cost-of-running-ai/"}, "headline": "The Real Cost of Running AI: Tokens, GPUs, Power", "description": "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.", "image": ["https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-4x3.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-1x1.jpg"], "datePublished": "2026-07-15T07:00:00+05:30", "dateModified": "2026-07-19T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "Chips & Hardware", "item": "https://thetechdocket.com/topics/hardware/"}, {"@type": "ListItem", "position": 3, "name": "The Real Cost of Running AI: Tokens, GPUs, Power"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a token in AI pricing, and why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "A token is the small chunk of text an AI model reads or writes, roughly three quarters of a word in English. Providers charge separately for the input tokens you send and the output tokens the model generates, and pricing differs enough between models that the same conversation can cost very different amounts depending on which model answers it."}}, {"@type": "Question", "name": "Why is AI output priced higher than input per token?", "acceptedAnswer": {"@type": "Answer", "text": "Generating new text token by token, a process called inference, takes more computation on the provider's chips than simply reading a prompt, since each new word depends on everything generated before it. That extra computation is why output pricing across major providers runs several times higher than input pricing on the same model."}}, {"@type": "Question", "name": "Is running AI models actually getting cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "For a fixed level of quality, yes: independent researchers have tracked steep drops in the price of matching older flagship performance, driven by competition between providers and more efficient chips and software. Overall spending is still climbing for many companies, though, because usage and model sizes are growing faster than per-unit prices are falling."}}, {"@type": "Question", "name": "How much electricity does one AI query actually use?", "acceptedAnswer": {"@type": "Answer", "text": "A single typical text prompt uses a small fraction of a watt hour of electricity, according to one major provider's own published accounting, roughly comparable to running a television for well under a minute. Multiplied across huge daily prompt volumes worldwide, though, that usage adds up to enough electricity to show up in national energy statistics, which is why data centers now draw scrutiny from grid planners."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#16181d;--muted:#5a6270;--bg:#ffffff;--soft:#f3f5f9;--line:#e3e7ee;--accent:#4348c8;--accent-ink:#32379e}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}a:hover{text-decoration-thickness:2px}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:18px 0 10px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-size:14px}
+nav.hubs{display:flex;gap:4px 18px;flex-wrap:wrap;padding:0 0 12px;font-size:14.5px}
+nav.hubs a{text-decoration:none;color:var(--muted);font-weight:600}
+nav.hubs a:hover,nav.hubs a[aria-current]{color:var(--accent-ink)}
+main{padding:28px 0 40px}
+article.post{max-width:720px;margin:0 auto}
+.crumbs{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.crumbs a{color:var(--muted)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.18;letter-spacing:-.8px;margin:.2em 0 .35em}
+.byline{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:14.5px;margin-bottom:18px;flex-wrap:wrap}
+.byline a{font-weight:600}
+.hub-chip{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 11px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--accent-ink)}
+figure.hero{margin:0 0 26px}figure.hero img{width:100%;height:auto;border-radius:10px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.post h2{font-size:24px;margin:1.5em 0 .5em;letter-spacing:-.4px}
+.post h3{font-size:19px;margin:1.2em 0 .4em}
+.post p,.post li{font-size:17.5px}
+.post img{max-width:100%;height:auto}
+.post table{border-collapse:collapse;width:100%;font-size:15.5px;margin:1em 0}
+.post th,.post td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.post th{background:var(--soft)}
+.post blockquote{border-left:3px solid var(--accent);margin:1em 0;padding:.2em 1em;color:var(--muted)}
+.answer-first{font-size:19px;color:#232733;background:var(--soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 10px 10px 0}
+.disclaimer,.methodology{font-size:14px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:22px 0}
+.sources{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.sources h2{font-size:19px}
+.sources ol{padding-left:20px;font-size:15px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0;font-size:14px}
+.share a{border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none;font-weight:600;color:var(--ink);background:var(--soft)}
+.related{margin-top:34px}
+.cardlist{list-style:none;padding:0;display:grid;gap:14px}
+.cardlist li{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.cardlist a.t{font-weight:700;text-decoration:none;color:var(--ink);font-size:17px}
+.cardlist .m{color:var(--muted);font-size:13.5px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.card img{width:100%;height:auto;display:block}
+.card .pad{padding:14px 16px 16px}
+.card a.t{font-weight:750;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.3;display:block}
+.card .m{color:var(--muted);font-size:13.5px;margin-top:8px}
+.feature{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:30px;background:var(--bg)}
+.feature .pad{padding:18px 22px 22px}
+.feature a.t{font-size:clamp(22px,3.4vw,30px);font-weight:800;letter-spacing:-.5px;color:var(--ink);text-decoration:none;line-height:1.2}
+.kicker{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer.site nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer.site a{color:var(--muted)}
+h2.sect{font-size:20px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:34px 0 16px}
+@media (prefers-color-scheme: dark){
+:root{--ink:#e8eaf1;--muted:#9aa3b2;--bg:#0e1015;--soft:#181b23;--line:#262a35;--accent:#818cf8;--accent-ink:#a5b0ff}
+.answer-first{color:#d9dcea}
+}
+.home-h1{font-size:1.05rem;font-weight:600;color:var(--muted);margin:.2em 0 1.2em;letter-spacing:.01em}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/" aria-current="page">Chips &amp; Hardware</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/topics/hardware/">Chips &amp; Hardware</a> › <span>The Real Cost of Running AI: Tokens, GPUs, Power</span>
+  </nav>
+  <span class="kicker">Chips &amp; Hardware</span>
+  <h1>The Real Cost of Running AI: Tokens, GPUs, Power</h1>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-15T07:00:00+05:30">Published July 15, 2026</time>
+    <span>·</span><time datetime="2026-07-19T07:00:00+05:30">Updated July 19, 2026</time>
+    <a class="hub-chip" href="/topics/hardware/">Chips &amp; Hardware</a>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.webp">
+      <img src="https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg" width="1200" height="675" alt="A data center aisle of GPU servers with a rising electricity meter and dollar-per-token price tags overlaid on the racks" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  <p>Running a large language model costs money in three separate places, and most explanations only cover one. There is the per-token price an API charges every time a prompt goes in and an answer comes out; the graphics processing units, or GPUs, that must be bought or rented to do the underlying math; and the electricity that keeps those chips running around the clock. Put together, these three layers explain why a &ldquo;free&rdquo; chatbot reply is never actually free — someone, somewhere, is paying for the tokens, the silicon, and the power that produced it.</p>
+<h2>What a token actually costs</h2>
+<p>A token is the basic unit AI providers bill for: roughly three-quarters of an English word, so a short sentence like this one runs about a dozen tokens. Every API call is billed twice — once for the tokens you send in (the prompt, plus any attached documents or chat history) and again, usually at a much higher rate, for the tokens the model writes back. Generating that reply is called inference; building the model in the first place, a far more expensive one-time process, is called training.</p>
+<p>Prices differ enormously by model tier and change often, so treat any figure here as a snapshot rather than a constant. As of July 2026, this is what the three largest API providers charge per 1M tokens, on their own official pricing pages:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Input ($ per 1M tokens)</th>
+<th>Output ($ per 1M tokens)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI GPT-5.6 Sol (flagship)</td>
+<td>$2.50</td>
+<td>$15.00</td>
+</tr>
+<tr>
+<td>OpenAI GPT-5.4 Nano (smallest)</td>
+<td>$0.10</td>
+<td>$0.625</td>
+</tr>
+<tr>
+<td>Google Gemini 3.1 Pro (up to 200k context)</td>
+<td>$2.00</td>
+<td>$12.00</td>
+</tr>
+<tr>
+<td>Google Gemini 2.5 Flash-Lite</td>
+<td>$0.10</td>
+<td>$0.40</td>
+</tr>
+<tr>
+<td>Anthropic Claude Opus 4.8</td>
+<td>$5.00</td>
+<td>$25.00</td>
+</tr>
+<tr>
+<td>Anthropic Claude Haiku 4.5</td>
+<td>$1.00</td>
+<td>$5.00</td>
+</tr>
+</tbody>
+</table>
+<p>Sourced from <a href="https://developers.openai.com/api/docs/pricing" rel="noopener" target="_blank">OpenAI&rsquo;s pricing page</a>, <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">Google&rsquo;s Gemini API pricing page</a>, and <a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener" target="_blank">Anthropic&rsquo;s Claude pricing page</a>. Anthropic is also running introductory pricing of $2 input and $10 output per 1M tokens on its newest Sonnet 5 model through the end of August 2026, reverting to a standard $3/$15 afterward — a reminder that even official rate cards carry expiry dates.</p>
+<p>Both Google and Anthropic also sell batch processing — queuing a request instead of demanding an instant reply — at roughly half the standard price, and OpenAI offers a comparable discounted asynchronous tier, according to <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">the same official pricing pages</a>. That gap alone can make overnight or non-urgent workloads dramatically cheaper than live chat traffic.</p>
+<h2>The hardware bill: buying or renting GPUs</h2>
+<p>Behind every API call sits a graphics processing unit — a chip originally built for video games, repurposed because it handles the parallel arithmetic neural networks need. Two figures matter here: what the chip costs, and how much power it draws at full load, known as its thermal design power, or TDP — the wattage the chip is engineered to dissipate as heat while running flat out.</p>
+<h3>Buying: still expensive at the high end</h3>
+<p>Nvidia&rsquo;s H100, the workhorse chip of the last few training cycles, lists for roughly <a href="https://intuitionlabs.ai/articles/nvidia-ai-gpu-pricing-guide" rel="noopener" target="_blank">$25,000 to $40,000 per unit</a> depending on configuration and vendor discount, with an eight-GPU server running about $216,000 in bulk. Its TDP runs close to 700 watts per chip, before counting the cooling and networking that surround it in a data center rack. The newer H200 costs $31,000 to $32,000 per chip, with a full eight-GPU DGX system — including the surrounding CPUs, chassis, and networking — reaching $400,000 to $500,000, per the same industry pricing guide.</p>
+<h3>Renting: cheaper, but it adds up</h3>
+<p>Buying hardware only makes sense at scale, which is why most startups rent GPU time by the hour instead. <a href="https://lambda.ai/pricing" rel="noopener" target="_blank">Lambda</a>, a large GPU cloud provider, lists on-demand H100 instances at $3.99 an hour and its newer B200 chips at $6.69 an hour. Rates vary widely elsewhere: a 2026 comparison of cloud vendors found H100 rental rates from $1.49 an hour on Vast.ai to $6.98 an hour on Microsoft Azure, with AWS and Google Cloud priced in between, according to <a href="https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison" rel="noopener" target="_blank">IntuitionLabs&rsquo; cloud GPU price comparison</a>. Renting one H100 around the clock for a month at Lambda&rsquo;s on-demand rate works out to roughly $2,870 — before storage, networking, or the engineers needed to keep it busy.</p>
+<h2>Electricity: the meter that never stops</h2>
+<p>Every GPU-hour shows up on an electricity bill, and multiplied across the industry, that bill is now large enough to appear in national energy statistics. The <a href="https://www.iea.org/reports/energy-and-ai/executive-summary" rel="noopener" target="_blank">International Energy Agency</a> estimates data centers consumed about 415 terawatt-hours of electricity in 2024 — around 1.5% of global electricity use — with demand growing roughly 12% a year since 2017, more than four times faster than overall electricity consumption. The agency projects data center demand will reach roughly 945 terawatt-hours by 2030, comparable to Japan&rsquo;s entire current electricity use, with the United States alone driving nearly half of that increase.</p>
+<p>Individual queries look tiny by comparison. Google reports that the median Gemini text prompt now uses about 0.24 watt-hours of electricity under its full accounting — equivalent to running a television for under nine seconds — and that this figure fell 33-fold over the twelve months to May 2025 as models and chips grew more efficient, according to <a href="https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference" rel="noopener" target="_blank">Google&rsquo;s own environmental accounting of AI inference</a>. Multiply that small number across the enormous volume of daily prompts worldwide, though, and the aggregate is exactly what shows up in the IEA&rsquo;s terawatt-hour figures above.</p>
+<h2>Why inference costs are falling — and where they aren&rsquo;t</h2>
+<p>By one widely cited measure, the cost of querying a model at a fixed quality bar — matching GPT-3.5&rsquo;s score on the MMLU benchmark, the model that powered ChatGPT&rsquo;s original 2022 launch — fell 280-fold in about two years: from $20 per 1M tokens in November 2022 to $0.07 per 1M tokens by October 2024, according to Stanford&rsquo;s 2025 AI Index Report, which drew on data from Epoch AI and Artificial Analysis, as <a href="https://siliconcanals.com/the-cost-of-running-a-top-tier-ai-query-dropped-280-fold-in-roughly-18-months-from-20-per-million-tokens-in-late-2022-to-seven-cents-by-late-2024-a-price-collapse-with-no-real-parallel-in/" rel="noopener" target="_blank">reported by Silicon Canals</a>. Three forces drive that curve: competition among OpenAI, Google, Anthropic, and Chinese labs pushes prices toward cost; more efficient architectures and quantization squeeze more answers out of the same chip; and smaller distilled models now handle tasks that once needed a flagship model.</p>
+<p>That last trend is why a wave of compact, on-device models has emerged — small enough to run offline on a phone rather than in a data center. PrismML&rsquo;s <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B compressed on-device model</a> is one example: pushing inference onto the device itself eliminates the per-token bill and the data-center electricity draw at once, shifting the cost to a chip the user already owns.</p>
+<p>Costs are not falling everywhere, though. Frontier &ldquo;reasoning&rdquo; models that work through multiple steps before answering — the category Opus 4.8 and Gemini 3.1 Pro belong to — carry a premium because they generate far more output tokens per answer than older chat models did, which can offset the per-token price drops entirely. Training the next frontier model also keeps getting more expensive even as serving a finished one gets cheaper, since labs are racing to build larger systems faster than they can learn to shrink them.</p>
+<p>None of this makes inference free, which matters for how &ldquo;free&rdquo; AI products actually work. Every message sent to a no-cost chatbot still consumes real tokens, GPU-hours, and electricity somewhere — one reason free tiers quietly monetize conversations in other ways, whether through advertising, model training, or data sharing, as <a href="/articles/ai-chatbot-data-privacy/">our explainer on what chatbots do with user data</a> lays out. Cheaper inference has a parallel effect on media, too: generating a synthetic image or short clip now costs a fraction of what it did three years ago, part of why so much AI-generated content circulates online — and why <a href="/articles/spot-ai-generated-images-videos/">learning to spot AI-generated images and videos</a> has become an everyday skill rather than a niche one.</p>
+<h2>The India angle</h2>
+<p>For Indian startups, the arithmetic above carries two extra layers: import costs and the rupee. Nvidia does not manufacture GPUs in India, so H100s and H200s arrive priced in dollars before customs and logistics are added on top — at <a href="https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&amp;From=USD&amp;To=INR" rel="noopener" target="_blank">₹96.3 to the dollar</a> in mid-July 2026, even the lower end of that $25,000 H100 price band already works out to roughly ₹24 lakh before any markup.</p>
+<p>That is why the government&rsquo;s own compute program matters so much locally. The IndiaAI Mission, backed by a ₹10,372 crore outlay, has onboarded more than 38,000 GPUs — including H100s, H200s, and older A100s — through empanelled providers such as E2E Networks, NxtGen, and Yotta Data Services, offering access that mission materials describe as up to 40% below market cost, according to the <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2245069&amp;reg=3&amp;lang=1" rel="noopener" target="_blank">Press Information Bureau&rsquo;s mission update</a> and <a href="https://indiaai.gov.in/hub/indiaai-compute-capacity" rel="noopener" target="_blank">IndiaAI&rsquo;s own compute capacity page</a>.</p>
+<p>Subsidized local compute changes the build-versus-rent calculus for training or fine-tuning smaller models inside India. It does less for the token bill, though: calls to GPT-5.6, Gemini 3.1, or Claude are still billed in dollars by providers based in the US, so a founder&rsquo;s per-token cost rises and falls with the rupee no matter how cheap domestic GPUs get. That is one more reason on-device and smaller open-weight models matter disproportionately for cost-sensitive Indian products — every prompt handled locally is one that never touches a dollar-denominated bill. The silicon side of that equation — GPUs, memory prices, and the supply chains behind them — is what we follow day to day in <a href="/topics/hardware/">chips and hardware</a>.</p>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is a token in AI pricing, and why does it matter?</h3>
+  <p>A token is the small chunk of text an AI model reads or writes, roughly three quarters of a word in English. Providers charge separately for the input tokens you send and the output tokens the model generates, and pricing differs enough between models that the same conversation can cost very different amounts depending on which model answers it.</p>
+  
+  <h3>Why is AI output priced higher than input per token?</h3>
+  <p>Generating new text token by token, a process called inference, takes more computation on the provider&#39;s chips than simply reading a prompt, since each new word depends on everything generated before it. That extra computation is why output pricing across major providers runs several times higher than input pricing on the same model.</p>
+  
+  <h3>Is running AI models actually getting cheaper?</h3>
+  <p>For a fixed level of quality, yes: independent researchers have tracked steep drops in the price of matching older flagship performance, driven by competition between providers and more efficient chips and software. Overall spending is still climbing for many companies, though, because usage and model sizes are growing faster than per-unit prices are falling.</p>
+  
+  <h3>How much electricity does one AI query actually use?</h3>
+  <p>A single typical text prompt uses a small fraction of a watt hour of electricity, according to one major provider&#39;s own published accounting, roughly comparable to running a television for well under a minute. Multiplied across huge daily prompt volumes worldwide, though, that usage adds up to enough electricity to show up in national energy statistics, which is why data centers now draw scrutiny from grid planners.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/real-cost-of-running-ai/&text=The%20Real%20Cost%20of%20Running%20AI%3A%20Tokens%2C%20GPUs%2C%20Power" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/real-cost-of-running-ai/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=The%20Real%20Cost%20of%20Running%20AI%3A%20Tokens%2C%20GPUs%2C%20Power%20https%3A//thetechdocket.com/articles/real-cost-of-running-ai/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/real-cost-of-running-ai/&title=The%20Real%20Cost%20of%20Running%20AI%3A%20Tokens%2C%20GPUs%2C%20Power" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/real-cost-of-running-ai/&t=The%20Real%20Cost%20of%20Running%20AI%3A%20Tokens%2C%20GPUs%2C%20Power" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://developers.openai.com/api/docs/pricing" rel="noopener" target="_blank">OpenAI API Pricing</a> <em>(primary source)</em></li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener" target="_blank">Gemini Developer API Pricing — Google AI for Developers</a> <em>(primary source)</em></li>
+      <li><a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener" target="_blank">Claude Platform Pricing — Anthropic</a> <em>(primary source)</em></li>
+      <li><a href="https://lambda.ai/pricing" rel="noopener" target="_blank">GPU Cloud Pricing — Lambda</a> <em>(primary source)</em></li>
+      <li><a href="https://www.iea.org/reports/energy-and-ai/executive-summary" rel="noopener" target="_blank">Energy and AI: Executive Summary — IEA</a> <em>(primary source)</em></li>
+      <li><a href="https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference" rel="noopener" target="_blank">Measuring the Environmental Impact of AI Inference — Google Cloud Blog</a> <em>(primary source)</em></li>
+      <li><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2245069&amp;reg=3&amp;lang=1" rel="noopener" target="_blank">IndiaAI Mission Expands AI Ecosystem with Affordable Compute and Startup Support — PIB, Government of India</a> <em>(primary source)</em></li>
+      <li><a href="https://siliconcanals.com/the-cost-of-running-a-top-tier-ai-query-dropped-280-fold-in-roughly-18-months-from-20-per-million-tokens-in-late-2022-to-seven-cents-by-late-2024-a-price-collapse-with-no-real-parallel-in/" rel="noopener" target="_blank">The cost of running a top-tier AI query dropped 280-fold — Silicon Canals, citing Stanford&#39;s AI Index Report</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: real-cost-of-running-ai">Email a correction</a>.
+  </div>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-chatbot-data-privacy/">AI Chatbot Data Privacy: What Happens to Your Chats</a>
+        <div class="m">AI Tools &amp; Apps · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</a>
+        <div class="m">AI Models · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/spot-ai-generated-images-videos/">How to Spot AI-Generated Images and Videos in 2026</a>
+        <div class="m">How-To &amp; Explainers · July 15, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

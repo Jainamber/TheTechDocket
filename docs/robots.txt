@@ -1,0 +1,27 @@
+# The Tech Docket — maximum-reach crawler policy.
+# Classic search + AI citation/search crawlers are all welcome.
+# (Training-only crawlers are also allowed by choice; blocking them would not
+#  affect AI-search citation visibility — see editorial policy.)
+
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+Sitemap: https://thetechdocket.com/sitemap.xml

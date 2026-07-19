@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block jsonld %}{% if extra_jsonld %}<script type="application/ld+json">{{ extra_jsonld }}</script>{% endif %}{% endblock %}
+{% block content %}
+<article class="post">
+  <h1>{{ heading }}</h1>
+  {{ body_html }}
+</article>
+{% endblock %}

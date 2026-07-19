@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>The Tech Docket</title>
+  <link>https://thetechdocket.com/</link>
+  <description>Daily signal on tech &amp; AI — what the world is searching, and why</description>
+  <language>en</language>
+  <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <item>
+    <title>AI Chatbot Data Privacy: What Happens to Your Chats</title>
+    <link>https://thetechdocket.com/articles/ai-chatbot-data-privacy/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/ai-chatbot-data-privacy/</guid>
+    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor's own policy pages.]]></description>
+  </item>
+  <item>
+    <title>Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</title>
+    <link>https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/</guid>
+    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[PrismML's Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What's verified, what's hype, and which phones in India can run it.]]></description>
+  </item>
+  <item>
+    <title>The Real Cost of Running AI: Tokens, GPUs, Power</title>
+    <link>https://thetechdocket.com/articles/real-cost-of-running-ai/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/real-cost-of-running-ai/</guid>
+    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.]]></description>
+  </item>
+  <item>
+    <title>How to Spot AI-Generated Images and Videos in 2026</title>
+    <link>https://thetechdocket.com/articles/spot-ai-generated-images-videos/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/spot-ai-generated-images-videos/</guid>
+    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India's 2026 deepfake rules.]]></description>
+  </item>
+</channel>
+</rss>

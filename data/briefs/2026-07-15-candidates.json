@@ -1,0 +1,303 @@
+{
+  "date": "2026-07-15",
+  "candidates": [
+    {
+      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "sources": [
+        "hn",
+        "outlet:Hacker News"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 480,
+          "comments": 176,
+          "url": "https://prismml.com/news/bonsai-27b"
+        },
+        {
+          "source": "outlet:Hacker News",
+          "outlet": "Hacker News"
+        }
+      ],
+      "score": 0.741,
+      "topic_fit": 0.88,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Data centers have hiked electricity prices on the public by $23B",
+      "sources": [
+        "hn",
+        "outlet:Fortune"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9688733389940116,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 102,
+          "comments": 52,
+          "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
+        },
+        {
+          "source": "outlet:Fortune",
+          "outlet": "Fortune"
+        }
+      ],
+      "score": 0.7197,
+      "topic_fit": 0.82,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Financing the AI boom: from cash flows to debt [pdf]",
+      "sources": [
+        "hn",
+        "outlet:Hacker News"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8717922234577489,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 110,
+          "comments": 62,
+          "url": "https://www.bis.org/publ/bisbull120.pdf"
+        },
+        {
+          "source": "outlet:Hacker News",
+          "outlet": "Hacker News"
+        }
+      ],
+      "score": 0.7025,
+      "topic_fit": 0.88,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 353,
+          "comments": 227,
+          "url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/"
+        }
+      ],
+      "score": 0.658,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Global Warming at 3C by 2050? What's Behind the New German Climate Warning",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9043044522142851,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 64,
+          "comments": 51,
+          "url": "https://worldcrunch.com/focus/green-or-gone/global-warming-at-3c-by-2050-what-s-behind-the-new-german-climate-warning/"
+        }
+      ],
+      "score": 0.6333,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 274,
+          "comments": 126,
+          "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left"
+        }
+      ],
+      "score": 0.608,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "How I use HTMX with Go",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9018447418188518,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 143,
+          "comments": 33,
+          "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go"
+        }
+      ],
+      "score": 0.5886,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8601163895431301,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 66,
+          "comments": 26,
+          "url": "https://tailscale.com/security-bulletins"
+        }
+      ],
+      "score": 0.566,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google faces another AI training lawsuit from major publishers",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:techcrunch.com",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.55,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "DeepSeek reportedly in talks to raise $1.5B, then IPO",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:techcrunch.com",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.55,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Google delays Gemini 3.5 Pro launch to July 17 for full architectural rebuild",
+      "sources": [
+        "gnews:US",
+        "gnews:US",
+        "outlet:Tech Times / Startup Fortune"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:gemini 3.5 pro launch july 17 2026",
+          "outlet": "BigGo Finance"
+        },
+        {
+          "source": "gnews:US",
+          "query": "websearch:gemini 3.5 pro launch july 17 2026",
+          "outlet": "Startup Fortune"
+        },
+        {
+          "source": "outlet:Tech Times / Startup Fortune",
+          "outlet": "Tech Times / Startup Fortune"
+        }
+      ],
+      "score": 0.55,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Global push for AI governance amid warnings of 'catastrophic harm' (UN Geneva summit, 40-member Independent International Scientific Panel first assessment)",
+      "sources": [
+        "gnews:US",
+        "outlet:UN News"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:global ai governance",
+          "outlet": "UN News"
+        },
+        {
+          "source": "outlet:UN News",
+          "outlet": "UN News"
+        }
+      ],
+      "score": 0.55,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    }
+  ],
+  "pick": {
+    "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+    "sources": [
+      "hn",
+      "outlet:Hacker News"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 480,
+        "comments": 176,
+        "url": "https://prismml.com/news/bonsai-27b"
+      },
+      {
+        "source": "outlet:Hacker News",
+        "outlet": "Hacker News"
+      }
+    ],
+    "score": 0.741,
+    "topic_fit": 0.88,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false
+}
