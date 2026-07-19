@@ -4,9 +4,10 @@
 {% if intro %}<p class="intro">{{ intro }}</p>{% endif %}
 <ul class="cardlist" style="margin-top:22px">
   {% for a in articles %}
-  <li><div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
+  <li><span class="no" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span><div>
+    <div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
     <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
-    <div class="m">{{ a.description }}</div></li>
+    <div class="m">{{ a.description }}</div></div></li>
   {% endfor %}
 </ul>
 {% if not articles %}<p class="empty">No articles here yet — the engine publishes daily. Check back tomorrow.</p>{% endif %}

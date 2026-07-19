@@ -22,6 +22,7 @@
 <div class="grid">
   {% for a in articles %}
   <div class="card">
+    <span class="no" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>
     <a class="img" href="{{ base_path }}articles/{{ a.slug }}/">
       <picture>
         <source type="image/webp" srcset="{{ a.hero_webp }}">
