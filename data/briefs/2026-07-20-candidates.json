@@ -1,0 +1,416 @@
+{
+  "date": "2026-07-20",
+  "candidates": [
+    {
+      "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "outlet:The Verge"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "webfetch:medianama + businesstoday (IN tech press)",
+          "outlet": "Business Today (pre-reservation at Rs 999 in India)"
+        },
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "The Verge / 9to5Google / PhoneArena"
+        },
+        {
+          "source": "outlet:The Verge",
+          "outlet": "The Verge"
+        }
+      ],
+      "score": 0.5824,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "LG monitors install software through Windows Update without consent",
+      "sources": [
+        "gnews:US",
+        "outlet:TechRadar"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "TechRadar / VideoCardz / heise / Notebookcheck"
+        },
+        {
+          "source": "outlet:TechRadar",
+          "outlet": "TechRadar"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "EU orders Google to open Android to rival AI assistants and share search data",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "gnews:US",
+        "gnews:US",
+        "gnews:US",
+        "gnews:US",
+        "outlet:The New York Times",
+        "outlet:AP News",
+        "outlet:WSJ"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "webfetch:medianama + businesstoday (IN tech press)",
+          "outlet": "MediaNama"
+        },
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "The Hacker News"
+        },
+        {
+          "source": "gnews:US",
+          "query": "websearch:eu google android dma corroboration",
+          "outlet": "European Commission (primary)"
+        },
+        {
+          "source": "gnews:US",
+          "query": "websearch:eu google android dma corroboration",
+          "outlet": "Euronews"
+        },
+        {
+          "source": "gnews:US",
+          "query": "websearch:eu google android dma corroboration",
+          "outlet": "SiliconANGLE"
+        },
+        {
+          "source": "gnews:US",
+          "query": "websearch:eu google android dma corroboration",
+          "outlet": "The Next Web"
+        },
+        {
+          "source": "outlet:The New York Times",
+          "outlet": "The New York Times"
+        },
+        {
+          "source": "outlet:AP News",
+          "outlet": "AP News"
+        },
+        {
+          "source": "outlet:WSJ",
+          "outlet": "WSJ"
+        }
+      ],
+      "score": 0.5526,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Apple Music and iCloud subscription prices rise",
+      "sources": [
+        "gnews:US",
+        "outlet:Engadget"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "The Verge / Engadget / Variety / 9to5Mac"
+        },
+        {
+          "source": "outlet:Engadget",
+          "outlet": "Engadget"
+        }
+      ],
+      "score": 0.5522,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "AI is reshaping entry-level professional services jobs",
+      "sources": [
+        "gnews:US",
+        "outlet:Financial Times (via Techmeme)"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:llm-stats + xcobean aggregators (items dated 2026-07-19)",
+          "outlet": "Financial Times via Techmeme"
+        },
+        {
+          "source": "outlet:Financial Times (via Techmeme)",
+          "outlet": "Financial Times (via Techmeme)"
+        }
+      ],
+      "score": 0.5522,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
+      "sources": [
+        "gnews:US",
+        "outlet:TechXplore",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:llm-stats + xcobean aggregators (items dated 2026-07-19)",
+          "outlet": "TechXplore / TechCrunch via aggregators"
+        },
+        {
+          "source": "outlet:TechXplore",
+          "outlet": "TechXplore"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.5415,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenAI first device is a screenless AI companion speaker",
+      "sources": [
+        "gnews:US",
+        "outlet:Bloomberg"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "Bloomberg / TechCrunch / Engadget / NBC News"
+        },
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.5383,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "iOS 27 public beta released with new AI features",
+      "sources": [
+        "gnews:US",
+        "outlet:MacRumors"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "Mashable / MacRumors / Fast Company"
+        },
+        {
+          "source": "outlet:MacRumors",
+          "outlet": "MacRumors"
+        }
+      ],
+      "score": 0.5377,
+      "topic_fit": 0.92,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Linus Torvalds tells anti-AI Linux programmers to fork it",
+      "sources": [
+        "gnews:US",
+        "outlet:Ars Technica"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "Ars Technica / The Register / ZDNET / Tom's Hardware"
+        },
+        {
+          "source": "outlet:Ars Technica",
+          "outlet": "Ars Technica"
+        }
+      ],
+      "score": 0.5365,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "San Francisco orders Apple and Google to remove AI nudify apps",
+      "sources": [
+        "gnews:US",
+        "outlet:WIRED"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+          "outlet": "TechCrunch / WIRED / Engadget / SF Chronicle"
+        },
+        {
+          "source": "outlet:WIRED",
+          "outlet": "WIRED"
+        }
+      ],
+      "score": 0.5225,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "TCS CEO dismisses AI job cut fears says workforce will grow",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "webfetch:medianama + businesstoday (IN tech press)",
+          "outlet": "Business Today"
+        }
+      ],
+      "score": 0.4333,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Huawei EMUI 16 ships Celia AI assistant one-command capability",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "webfetch:llm-stats + xcobean aggregators (items dated 2026-07-19)",
+          "outlet": "Huawei Central via xcobean"
+        }
+      ],
+      "score": 0.4326,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "EU orders Google to open Android to rival AI assistants and share search data",
+    "sources": [
+      "gnews:IN",
+      "gnews:US",
+      "gnews:US",
+      "gnews:US",
+      "gnews:US",
+      "gnews:US",
+      "outlet:The New York Times",
+      "outlet:AP News",
+      "outlet:WSJ"
+    ],
+    "geos": [
+      "IN",
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "webfetch:medianama + businesstoday (IN tech press)",
+        "outlet": "MediaNama"
+      },
+      {
+        "source": "gnews:US",
+        "query": "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)",
+        "outlet": "The Hacker News"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch:eu google android dma corroboration",
+        "outlet": "European Commission (primary)"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch:eu google android dma corroboration",
+        "outlet": "Euronews"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch:eu google android dma corroboration",
+        "outlet": "SiliconANGLE"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch:eu google android dma corroboration",
+        "outlet": "The Next Web"
+      },
+      {
+        "source": "outlet:The New York Times",
+        "outlet": "The New York Times"
+      },
+      {
+        "source": "outlet:AP News",
+        "outlet": "AP News"
+      },
+      {
+        "source": "outlet:WSJ",
+        "outlet": "WSJ"
+      }
+    ],
+    "score": 0.5526,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false,
+  "selection_note": "Editorial override (daily session): scorer pick was a pre-Unpacked leak roundup (speculation-heavy, no primary sources, event not yet held); #2 LG story niche with weak India angle. EU-Google DMA decision has a primary source (EC decision page), NYT/AP/WSJ corroboration, strong India relevance, and fills the empty policy hub per STRATEGY-90D Phase 1."
+}

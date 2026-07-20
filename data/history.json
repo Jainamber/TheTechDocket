@@ -89,6 +89,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-19-codex-context-window-cut.json",
       "url": "https://thetechdocket.com/articles/codex-context-window-cut/"
+    },
+    {
+      "date": "2026-07-20",
+      "slug": "eu-google-android-ai-assistants",
+      "title": "EU Orders Google to Open Android to Rival AI Assistants",
+      "keyword": "eu google android ai assistants",
+      "hub": "policy",
+      "published_at": "2026-07-20T07:08:47.833079+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-20T07:45:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-20-eu-google-android-ai-assistants.json",
+      "url": "https://thetechdocket.com/articles/eu-google-android-ai-assistants/"
     }
   ]
 }

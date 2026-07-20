@@ -1,0 +1,286 @@
+{
+  "date": "2026-07-20",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss_in": "blocked: WebFetch provenance gate refused trends.google.com RSS in unattended session (permission request timed out); no IN trends_rss data today",
+    "trends_rss_us": "blocked: same provenance gate; no US trends_rss data today",
+    "hn": "blocked: hn.algolia.com API refused by same provenance gate on two attempts; hacker_news list empty today — community momentum inferred only qualitatively from press coverage of HN-typical stories (Torvalds/Linux)",
+    "google_news_tech": "ok via webfetch of news.google.com Technology topic (fetched ~2026-07-20 06:45 IST; relative times in pub_date are relative to that)",
+    "aggregators": "ok: llm-stats.com/ai-news (Jul 19 items), xcobean.co.ke tech-in-brief 2026-07-19, businesstoday.in/technology (items Jul 9-11, mostly stale)"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [],
+      "news": {
+        "webfetch:medianama + businesstoday (IN tech press)": [
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "MediaNama",
+            "url": "https://www.medianama.com/2026/07/223-eu-orders-google-open-android-search-data-ai-rivals/",
+            "pub_date": "2026-07-16"
+          },
+          {
+            "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
+            "source": "Business Today (pre-reservation at Rs 999 in India)",
+            "url": "https://www.businesstoday.in/technology",
+            "pub_date": "2026-07-09"
+          },
+          {
+            "title": "TCS CEO dismisses AI job cut fears says workforce will grow",
+            "source": "Business Today",
+            "url": "https://www.businesstoday.in/technology",
+            "pub_date": "2026-07-10"
+          },
+          {
+            "title": "AI assistants close in on search engines as India online discovery habits shift",
+            "source": "Business Today / YouGov",
+            "url": "https://www.businesstoday.in/technology",
+            "pub_date": "2026-07-10"
+          },
+          {
+            "title": "India AI moment more about deployment than discovery",
+            "source": "Asia Times",
+            "url": "https://asiatimes.com/2026/07/indias-ai-moment-more-about-deployment-than-discovery/",
+            "pub_date": "2026-07"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)": [
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "The Hacker News",
+            "url": "",
+            "pub_date": "yesterday"
+          },
+          {
+            "title": "San Francisco orders Apple and Google to remove AI nudify apps",
+            "source": "TechCrunch / WIRED / Engadget / SF Chronicle",
+            "url": "",
+            "pub_date": "yesterday-6h ago"
+          },
+          {
+            "title": "Apple Music and iCloud subscription prices rise",
+            "source": "The Verge / Engadget / Variety / 9to5Mac",
+            "url": "",
+            "pub_date": "yesterday-16h ago"
+          },
+          {
+            "title": "iOS 27 public beta released with new AI features",
+            "source": "Mashable / MacRumors / Fast Company",
+            "url": "",
+            "pub_date": "12h-9min ago"
+          },
+          {
+            "title": "LG monitors install software through Windows Update without consent",
+            "source": "TechRadar / VideoCardz / heise / Notebookcheck",
+            "url": "",
+            "pub_date": "yesterday"
+          },
+          {
+            "title": "Linus Torvalds tells anti-AI Linux programmers to fork it",
+            "source": "Ars Technica / The Register / ZDNET / Tom's Hardware",
+            "url": "",
+            "pub_date": "1-2 days ago"
+          },
+          {
+            "title": "OpenAI first device is a screenless AI companion speaker",
+            "source": "Bloomberg / TechCrunch / Engadget / NBC News",
+            "url": "",
+            "pub_date": "2-4 days ago, still active 21h ago"
+          },
+          {
+            "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
+            "source": "The Verge / 9to5Google / PhoneArena",
+            "url": "",
+            "pub_date": "yesterday-6h ago"
+          },
+          {
+            "title": "Pixel 11 teaser and price leaks before launch",
+            "source": "Forbes / The Verge / Android Authority",
+            "url": "",
+            "pub_date": "9h-2h ago"
+          },
+          {
+            "title": "Valve says RAM prices are lagging and will only get worse",
+            "source": "Kotaku",
+            "url": "",
+            "pub_date": "5h ago"
+          },
+          {
+            "title": "EA wants in-game ads planned during game development",
+            "source": "Kotaku / Insider Gaming / Game World Observer",
+            "url": "",
+            "pub_date": "1-2 days ago"
+          },
+          {
+            "title": "GTA 6 preorders generate estimated 260 million dollars in first week",
+            "source": "GamesIndustry.biz / Forbes / VGC",
+            "url": "",
+            "pub_date": "yesterday-2 days ago"
+          }
+        ],
+        "webfetch:llm-stats + xcobean aggregators (items dated 2026-07-19)": [
+          {
+            "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
+            "source": "TechXplore / TechCrunch via aggregators",
+            "url": "",
+            "pub_date": "2026-07-19"
+          },
+          {
+            "title": "AI is reshaping entry-level professional services jobs",
+            "source": "Financial Times via Techmeme",
+            "url": "",
+            "pub_date": "2026-07-19"
+          },
+          {
+            "title": "AI text detectors struggle with style-imitated language",
+            "source": "The Decoder",
+            "url": "https://the-decoder.com/",
+            "pub_date": "2026-07-19"
+          },
+          {
+            "title": "AI chatbots reading X-rays dangerously confident when wrong",
+            "source": "The Decoder",
+            "url": "",
+            "pub_date": "2026-07-19"
+          },
+          {
+            "title": "Huawei EMUI 16 ships Celia AI assistant one-command capability",
+            "source": "Huawei Central via xcobean",
+            "url": "",
+            "pub_date": "2026-07-19"
+          },
+          {
+            "title": "AI role in insurance prior authorization questioned in government pilot",
+            "source": "Ars Technica via xcobean",
+            "url": "",
+            "pub_date": "2026-07-19"
+          }
+        ],
+        "websearch:eu google android dma corroboration": [
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "European Commission (primary)",
+            "url": "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en",
+            "pub_date": "2026-07-16"
+          },
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "Euronews",
+            "url": "https://www.euronews.com/my-europe/2026/07/16/eu-orders-google-to-share-search-data-open-android-to-ai-rivals-competitors",
+            "pub_date": "2026-07-16"
+          },
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "SiliconANGLE",
+            "url": "https://siliconangle.com/2026/07/16/eu-orders-google-share-search-data-rivals-broaden-android-feature-access/",
+            "pub_date": "2026-07-16"
+          },
+          {
+            "title": "EU orders Google to open Android to rival AI assistants and share search data",
+            "source": "The Next Web",
+            "url": "https://thenextweb.com/news/eu-google-android-ai-search-data-digital-markets-act",
+            "pub_date": "2026-07-16"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [],
+  "outlet_headlines": [
+    {
+      "title": "EU orders Google to open Android to rival AI assistants and share search data",
+      "outlet": "The New York Times",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "EU orders Google to open Android to rival AI assistants and share search data",
+      "outlet": "AP News",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "EU orders Google to open Android to rival AI assistants and share search data",
+      "outlet": "WSJ",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
+      "outlet": "TechXplore",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
+      "outlet": "TechCrunch",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "San Francisco orders Apple and Google to remove AI nudify apps",
+      "outlet": "WIRED",
+      "url": "https://www.wired.com/",
+      "market": "US"
+    },
+    {
+      "title": "Apple Music and iCloud subscription prices rise",
+      "outlet": "Engadget",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "iOS 27 public beta released with new AI features",
+      "outlet": "MacRumors",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "LG monitors install software through Windows Update without consent",
+      "outlet": "TechRadar",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "Linus Torvalds tells anti-AI Linux programmers to fork it",
+      "outlet": "Ars Technica",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "OpenAI first device is a screenless AI companion speaker",
+      "outlet": "Bloomberg",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
+      "outlet": "The Verge",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "ChatGPT Work mode can run a one-person business",
+      "outlet": "Entrepreneur / Forbes",
+      "url": "",
+      "market": "US"
+    },
+    {
+      "title": "AI is reshaping entry-level professional services jobs",
+      "outlet": "Financial Times (via Techmeme)",
+      "url": "",
+      "market": "US"
+    }
+  ],
+  "wikipedia_top": []
+}
