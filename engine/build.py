@@ -224,11 +224,13 @@ def docket_context(cfg, d: dict) -> dict:
     """Render-ready context for one docket day (Today's Docket)."""
     hubs = cfg["content"]["hubs"]
     dk_cfg = cfg.get("docket") or {}
+    watchlist = dk_cfg.get("watchlist") or {}
     items = []
     for it in d.get("items", []):
         url = str(it.get("url") or "")
         external = url.startswith("http")
         href = url if external else base_path(cfg) + url.lstrip("/")
+        tag = str(it.get("tag") or "").strip()
         items.append({
             "hub": it.get("hub", "explainers"),
             "hub_name": hubs.get(it.get("hub"), it.get("hub", "")),
@@ -236,6 +238,9 @@ def docket_context(cfg, d: dict) -> dict:
             "dek": str(it.get("dek") or ""),
             "source": str(it.get("source") or ""),
             "lead": bool(it.get("lead")),
+            "pick": bool(it.get("pick")),
+            "tag": tag,
+            "tag_label": (watchlist.get(tag) or {}).get("label", "") if tag else "",
             "rank": it.get("rank"),
             "external": external,
             "href": href,

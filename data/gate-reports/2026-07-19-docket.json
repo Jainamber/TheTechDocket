@@ -1,9 +1,9 @@
 {
   "slug": "docket-2026-07-19",
-  "checked_at": "2026-07-20T00:32:42.207601+05:30",
+  "checked_at": "2026-07-20T12:29:18.965232+05:30",
   "passed": true,
   "hard_failures": 0,
-  "soft_warnings": 0,
+  "soft_warnings": 1,
   "results": [
     {
       "gate": "D01-docket-built",
@@ -51,7 +51,19 @@
       "gate": "D08-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 22KB (<=90)"
+      "detail": "html 25KB (<=90)"
+    },
+    {
+      "gate": "D10-tags-picks",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "D11-watch-quota",
+      "level": "soft",
+      "ok": false,
+      "detail": "2/6 entries tagged (target >=half; wildcards are allowed and encouraged)"
     },
     {
       "gate": "D09-canonicals",

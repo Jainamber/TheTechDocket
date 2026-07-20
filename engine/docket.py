@@ -68,6 +68,17 @@ def all_dockets() -> list[dict]:
     return out
 
 
+def suggest_tag(title: str, cfg: dict) -> str:
+    """First watchlist key whose match-terms hit the title (suggestion only —
+    the daily session confirms or clears every tag)."""
+    t = (title or "").lower()
+    for key, spec in ((cfg.get("docket") or {}).get("watchlist") or {}).items():
+        terms = [x.strip().lower() for x in str(spec.get("match", "")).split(",")]
+        if any(term and term in t for term in terms):
+            return key
+    return ""
+
+
 def write_draft(date_str: str | None = None) -> Path:
     """Pre-draft today's docket from the day's scored candidates.
 
@@ -75,20 +86,28 @@ def write_draft(date_str: str | None = None) -> Path:
     paraphrase headlines, write a <=60-word item, keep the source URL.
     """
     day = date_str or today_str()
+    cfg = load_config()
     cand_path = ROOT / "data" / "briefs" / f"{day}-candidates.json"
     if not cand_path.exists():
         raise SystemExit(f"no candidates file for {day} — run `select` first")
     sel = json.loads(cand_path.read_text(encoding="utf-8"))
     cands = sel.get("candidates") or []
+    wl_keys = "|".join(((cfg.get("docket") or {}).get("watchlist") or {}))
     lines = ["---", f"date: {day}", f"pool: {len(cands)}",
              "items:",
              "  # Item 1 must be today's article (lead: true). Then pick 3-7 of",
              "  # the candidates below: paraphrase the headline (never copy),",
              "  # write a 1-2 sentence dek (<=60 words total, no clickbait,",
              "  # no claims absent from the source), keep the source URL.",
+             f"  # tag: ONE watchlist key ({wl_keys}) — only where it honestly",
+             "  #   applies; suggestions below are keyword guesses, confirm or",
+             "  #   clear them. Target >=half tagged; 1-3 wildcards stay open.",
+             "  # pick: true on up to 2 standout entries (\"Short of the day\"),",
+             "  #   placed immediately after the lead.",
              "  - hub: <hub-of-today's-article>",
              "    lead: true",
              "    rank: 1",
+             "    tag: \"\"",
              "    headline: \"<paraphrase of today's article>\"",
              "    dek: \"<why it matters, 1-2 sentences>\"",
              "    url: /articles/<today's-slug>/",
@@ -97,9 +116,11 @@ def write_draft(date_str: str | None = None) -> Path:
         url = next((e.get("url") for e in c.get("evidence", [])
                     if e.get("url")), "")
         host = urlparse(url).netloc.replace("www.", "") if url else "?"
+        tag = suggest_tag(c.get("title", ""), cfg)
         lines += [f"  # --- candidate rank {i}: {c.get('title', '')[:90]}",
                   "  # - hub: <ai-models|ai-tools|big-tech|hardware|policy|explainers>",
                   f"  #   rank: {i}",
+                  f"  #   tag: \"{tag}\"" + ("   # suggested" if tag else ""),
                   "  #   headline: \"\"",
                   "  #   dek: \"\"",
                   f"  #   url: {url}",
@@ -219,6 +240,31 @@ class DocketGateRunner:
         # D08 page weight (same proxy budget as G21)
         kb = (len(self.dated_path.read_bytes()) / 1024) if built else 999
         self.check("D08-page-weight", SOFT, kb <= 90, f"html {kb:.0f}KB (<=90)")
+
+        # D10 watchlist tags valid + picks bounded and ordered
+        wl = set(((self.cfg.get("docket") or {}).get("watchlist") or {}))
+        max_picks = int(self.dk_cfg.get("max_picks", 2))
+        bad = [f"item {i}: unknown tag '{it.get('tag')}'"
+               for i, it in enumerate(items, 1)
+               if str(it.get("tag") or "").strip()
+               and str(it.get("tag")).strip() not in wl]
+        picks = [i for i, it in enumerate(items) if it.get("pick")]
+        if len(picks) > max_picks:
+            bad.append(f"{len(picks)} picks (max {max_picks})")
+        if any(items[i].get("lead") for i in picks):
+            bad.append("lead entry cannot also be a pick")
+        expected = list(range(1, 1 + len(picks)))
+        if picks and picks != expected:
+            bad.append("picks must sit immediately after the lead "
+                       f"(positions {picks} != {expected})")
+        self.check("D10-tags-picks", HARD, not bad, "; ".join(bad[:4]))
+
+        # D11 watchlist coverage — a soft TARGET, never a filter:
+        # serendipity slots are the docket's differentiation
+        tagged = sum(1 for it in items if str(it.get("tag") or "").strip())
+        self.check("D11-watch-quota", SOFT, tagged * 2 >= len(items),
+                   f"{tagged}/{len(items)} entries tagged "
+                   "(target >=half; wildcards are allowed and encouraged)")
 
         # D09 canonicals + sitemap: dated page is the canonical unit
         expected = (self.cfg["site"]["base_url"].rstrip("/")

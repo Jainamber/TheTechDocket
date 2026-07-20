@@ -138,6 +138,24 @@ docket:
   # Momentum chips ("#2 of 12 today") stay OFF until the corroboration-
   # accuracy fix from the Signal Box batch lands (V2.1 recheck §4.1).
   show_chips: false
+  # Up to N entries may be flagged `pick: true` ("Short of the day"),
+  # placed immediately after the lead (gate D10).
+  max_picks: 2
+  # Watchlist: the entities readers track. An entry may carry ONE `tag:`
+  # (a key below), rendered as a chip in its headline row. This is a
+  # LAYER, not a filter: soft target >=half of entries tagged (gate D11,
+  # warn-only) — 1-3 wildcard slots stay open for off-watchlist gems.
+  # `match` terms feed the draft generator's tag suggestions only;
+  # the session confirms every tag. Edit freely.
+  watchlist:
+    openai:    {label: "OpenAI", match: "openai, chatgpt, gpt-, codex, sora, sam altman"}
+    anthropic: {label: "Claude", match: "anthropic, claude"}
+    google:    {label: "Google", match: "google, gemini, deepmind, android, pixel"}
+    nvidia:    {label: "NVIDIA", match: "nvidia, cuda, geforce, jensen huang"}
+    china:     {label: "China", match: "china, chinese, deepseek, qwen, alibaba, tencent, bytedance, huawei, xiaomi"}
+    india:     {label: "India", match: "india, indian, isro, jio, upi, aadhaar, tcs, infosys, flipkart"}
+    us:        {label: "US", match: "white house, congress, senate, fcc, ftc, pentagon, nasa, u.s. government"}
+    spacex:    {label: "SpaceX", match: "spacex, starship, starlink, falcon 9, elon musk"}
 
 ymyl:
   finance_terms: [invest, investment, stock, share price, crypto, bitcoin, trading, loan, tax, mutual fund, returns, portfolio, insurance]

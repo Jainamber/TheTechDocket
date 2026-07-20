@@ -181,6 +181,14 @@ Edit the draft into `data/docket/<date>.md`:
 - Then pick 3–7 candidates genuinely worth a reader's minute; skip weak or
   off-topic ones (the deny/allow filters are keyword-based; you are the
   semantic filter here too).
+- **Watchlist tags (`tag:`)** — one key from `config.yaml → docket.watchlist`
+  per entry, ONLY where it honestly applies (the draft's suggestions are
+  keyword guesses — confirm or clear each). Target ≥half of entries tagged;
+  when choosing among equal-quality candidates, prefer watchlist-relevant
+  ones — but 1–3 wildcard slots for off-watchlist gems are part of the
+  format, never force a tag (gate D11 is warn-only by design).
+- **Shorts of the day (`pick: true`)** — flag up to 2 standout non-lead
+  entries and place them immediately after the lead (gate D10).
 - **Paraphrase headlines — never copy them.** ≤80-char headline, ≤60 words
   per item (headline + dek). No clickbait. Gates D04/D05 enforce this.
 - Deks are observations backed by the linked source: WebFetch each source
