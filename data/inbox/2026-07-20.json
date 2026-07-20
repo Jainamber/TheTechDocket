@@ -1,286 +1,1783 @@
 {
   "date": "2026-07-20",
-  "generated_by": "daily-session-websearch",
+  "generated_by": "engine.fetchers",
   "sources_status": {
-    "websearch": "ok",
-    "trends_rss_in": "blocked: WebFetch provenance gate refused trends.google.com RSS in unattended session (permission request timed out); no IN trends_rss data today",
-    "trends_rss_us": "blocked: same provenance gate; no US trends_rss data today",
-    "hn": "blocked: hn.algolia.com API refused by same provenance gate on two attempts; hacker_news list empty today — community momentum inferred only qualitatively from press coverage of HN-typical stories (Torvalds/Linux)",
-    "google_news_tech": "ok via webfetch of news.google.com Technology topic (fetched ~2026-07-20 06:45 IST; relative times in pub_date are relative to that)",
-    "aggregators": "ok: llm-stats.com/ai-news (Jul 19 items), xcobean.co.ke tech-in-brief 2026-07-19, businesstoday.in/technology (items Jul 9-11, mostly stale)"
+    "trends_rss_IN": "ok",
+    "news_IN_AI India": "ok",
+    "news_IN_new AI model": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI India": "ok",
+    "news_US_new AI model": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
   },
   "markets": {
     "IN": {
       "label": "India",
-      "trends_rss": [],
+      "trends_rss": [
+        {
+          "title": "hdfc bank share",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "HDFC Bank stock outlook: Brokerages bullish post Q1 results on growth, asset quality; check target prices",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/hdfc-bank-stock-outlook-brokerages-bullish-post-q1-results-on-growth-asset-quality-check-target-prices-13978060.html"
+            },
+            {
+              "headline": "Banking sector outlook brightens as robust credit growth, FCNR inflows and clean balance sheets to support e..",
+              "source": "BFSI News",
+              "url": "https://bfsi.economictimes.indiatimes.com/news/industry/banking-sector-outlook-brightens-as-robust-credit-growth-fcnr-inflows-and-clean-balance-sheets-to-support-earnings-in-fy27-report/132475153"
+            },
+            {
+              "headline": "- The HinduBusinessLine",
+              "source": "BusinessLine",
+              "url": "https://www.thehindubusinessline.com/markets/stock-markets/q1-results-today-live-updates-hdfc-bank-icici-bank-axis-bank-kotak-mahindra-bank-pnb-idbi-bank-yes-bank-jk-cement-india-cement-results-18-july-2026/article71237100.ece"
+            }
+          ]
+        },
+        {
+          "title": "sbi ipo listing date",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "SBI Funds Management IPO Allotment Status: Steps to Verify Status & Key Issue Details",
+              "source": "Groww",
+              "url": "https://groww.in/blog/sbi-funds-management-ipo-allotment-status"
+            },
+            {
+              "headline": "Primary market action: Seven IPOs to hit Dalal Street, 5 listings lined up next week",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/ipo/primary-market-action-seven-ipos-to-hit-dalal-street-5-listings-lined-up-next-week-13977744.html"
+            },
+            {
+              "headline": "SBI Funds Management IPO Allotment Status: KFinTech, BSE, NSE",
+              "source": "INDmoney",
+              "url": "https://www.indmoney.com/blog/ipo/sbi-funds-management-ipo-allotment-status"
+            }
+          ]
+        },
+        {
+          "title": "icici bank share price",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "These 9 banking stocks have an upside potential of up to 28% in 1 year, according to analysts",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/these-9-banking-stocks-have-an-upside-potential-of-up-to-28-in-1-year-according-to-analysts/articleshow/132398183.cms"
+            },
+            {
+              "headline": "ICICI Bank, SBI, HDFC Bank, PNB, BOB, Kotak Bank: Price targets for top banking stocks",
+              "source": "MSN",
+              "url": "https://www.msn.com/en-in/money/general/icici-bank-sbi-hdfc-bank-pnb-bob-kotak-bank-price-targets-for-top-banking-stocks/ar-AA28cScF"
+            },
+            {
+              "headline": "HDFC Bank Vs ICICI Bank: Which stock is a better ‘Buy’? Nuvama names top bets",
+              "source": "The Financial Express",
+              "url": "https://www.financialexpress.com/market/hdfc-bank-vs-icici-bank-which-stock-is-a-better-buy-nuvama-names-top-bets-4296584/"
+            }
+          ]
+        },
+        {
+          "title": "axis bank share price",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Axis Bank Share Price Highlights: Axis Bank Stock Price History",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/stock-liveblog/axis-bank-stock-price-live-updates-17-jul-2026/liveblog/132451290.cms"
+            },
+            {
+              "headline": "Axis Bank Ltd. Technical Momentum Shifts to Mildly Bullish Amid Mixed Signals",
+              "source": "MarketsMojo",
+              "url": "https://www.marketsmojo.com/news/stocks-in-action/axis-bank-ltd-technical-momentum-shifts-to-mildly-bullish-amid-mixed-signals-4105578"
+            },
+            {
+              "headline": "Axis Bank Share Price Highlights: Axis Bank Stock Price History",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/stock-liveblog/axis-bank-share-price-live-updates-16-jul-2026/liveblog/132428273.cms"
+            }
+          ]
+        },
+        {
+          "title": "ipo gmp",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Indo-MIM IPO Date, Review, Price, Allotment Details",
+              "source": "IPO Watch",
+              "url": "https://ipowatch.in/indo-mim-ipo/"
+            },
+            {
+              "headline": "Indo-MIM sets IPO price band at Rs 461-485 per share; issue opens July 23",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/ipo/indo-mim-sets-ipo-price-band-at-rs-461-485-per-share-issue-opens-july-23-13977969.html"
+            },
+            {
+              "headline": "Indo-MIM IPO ₹500cr new issue and up to ₹3,312cr sale",
+              "source": "NewsBytes",
+              "url": "https://www.newsbytesapp.com/news/business/indo-mim-ipo-rs500cr-new-issue-and-up-to-rs3312cr-sale/tldr"
+            }
+          ]
+        },
+        {
+          "title": "nsc",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Confira o percurso da Corrida Verde em Florianópolis",
+              "source": "ge",
+              "url": "https://ge.globo.com/sc/noticia/2026/07/18/confira-o-percurso-da-corrida-verde-em-florianopolis.ghtml"
+            },
+            {
+              "headline": "Corrida Verde distribui 500 mudas de árvores nativas em Florianópolis",
+              "source": "NSC Total",
+              "url": "https://www.nsctotal.com.br/noticias/corrida-verde-distribui-500-mudas-de-arvores-nativas-em-florianopolis"
+            },
+            {
+              "headline": "Corrida Verde em Florianópolis entra na fase final de inscrições",
+              "source": "G1",
+              "url": "https://g1.globo.com/sc/santa-catarina/videos-nsc-noticias/video/corrida-verde-em-florianopolis-entra-na-fase-final-de-inscricoes-14789531.ghtml"
+            }
+          ]
+        },
+        {
+          "title": "sensex live",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Stock Market LIVE Updates, Sensex Today: Sensex Drops 350 Points Lower As Oil Tops $90 Amid US-Iran War",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-20-july-us-iran-war-oil-prices-11793990"
+            },
+            {
+              "headline": "First Tick: Top global cues to watch in today's trade",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/first-tick-top-global-cues-to-watch-in-today-s-trade-189-13976642.html"
+            },
+            {
+              "headline": "Gift Nifty at 24,300 indicates flat opening for Indian stocks",
+              "source": "BusinessLine",
+              "url": "https://www.thehindubusinessline.com/markets/gift-nifty-at-24300-indicates-flat-opening-for-indian-stocks/article71243692.ece"
+            }
+          ]
+        },
+        {
+          "title": "ipo",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "What to Know About the Chinese AI Models Rattling U.S. Stocks",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/tech/ai/what-to-know-about-the-chinese-ai-models-rattling-u-s-stocks-1a80a479"
+            },
+            {
+              "headline": "China Launches World's Largest Open AI Model To Rival US Tech Giants",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/artificial-intelligence/moonshot-kimi-k3-china-launches-worlds-largest-open-ai-model-to-rival-us-tech-giants-11790652"
+            },
+            {
+              "headline": "China's Moonshot AI pauses new Kimi K3 subscriptions amid surge in demand",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/tech/artificial-intelligence/chinas-moonshot-ai-pauses-new-kimi-k3-subscriptions-amid-surge-in-demand/articleshow/132504650.cms"
+            }
+          ]
+        },
+        {
+          "title": "vaishno devi",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "J&K: Amarnath, Vaishno Devi, Shiv Khori pilgrimages suspended amid rain forecast",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/amarnath-vaishno-devi-yatras-to-be-temporarily-suspended-from-july-19/article71239224.ece"
+            },
+            {
+              "headline": "Vaishno Devi & Amarnath yatras temporarily suspended due to rough weather forecast",
+              "source": "News On AIR",
+              "url": "https://newsonair.gov.in/amarnath-vaishno-devi-yatras-temporarily-suspended-due-to-rough-weather-forecast/"
+            },
+            {
+              "headline": "J-K: Control Room established in Katra for disaster management in monsoon conditions",
+              "source": "Rising Kashmir",
+              "url": "https://risingkashmir.com/jammu/jk-control-room-established-katra-disaster-management-monsoon-12178012"
+            }
+          ]
+        },
+        {
+          "title": "narendra modi",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Opposition seeks probe into Ayodhya finances over Ram temple trust donation theft claims",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/india/opposition-seeks-ayodhya-ram-temple-trust-finance-probe-before-parliament-session-begins-prnt/cid/2170844"
+            },
+            {
+              "headline": "Video | Ram Mandir Donation Theft Case: UP SIT Files Sealed Report In Supreme Court",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/video/ram-mandir-donation-theft-case-up-sit-files-sealed-report-in-supreme-court-1130015"
+            },
+            {
+              "headline": "Important cases listed in Supreme Court on Monday",
+              "source": "ThePrint",
+              "url": "https://theprint.in/india/important-cases-listed-in-supreme-court-on-monday-28/2990867/"
+            }
+          ]
+        }
+      ],
       "news": {
-        "webfetch:medianama + businesstoday (IN tech press)": [
+        "AI India": [
           {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "MediaNama",
-            "url": "https://www.medianama.com/2026/07/223-eu-orders-google-open-android-search-data-ai-rivals/",
-            "pub_date": "2026-07-16"
+            "title": "When AI Becomes a Colleague: The Future of India's Legal Profession - orfonline.org",
+            "source": "orfonline.org",
+            "pub_date": "Sat, 18 Jul 2026 10:03:22 GMT"
           },
           {
-            "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
-            "source": "Business Today (pre-reservation at Rs 999 in India)",
-            "url": "https://www.businesstoday.in/technology",
-            "pub_date": "2026-07-09"
+            "title": "Air India Group To Restore Full Middle East Network This Winter: Nipun Aggarwal - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sun, 19 Jul 2026 10:50:49 GMT"
           },
           {
-            "title": "TCS CEO dismisses AI job cut fears says workforce will grow",
-            "source": "Business Today",
-            "url": "https://www.businesstoday.in/technology",
-            "pub_date": "2026-07-10"
+            "title": "Tell us what happened: Air India crash victims' families demand black box data - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 20 Jul 2026 03:28:11 GMT"
           },
           {
-            "title": "AI assistants close in on search engines as India online discovery habits shift",
-            "source": "Business Today / YouGov",
-            "url": "https://www.businesstoday.in/technology",
-            "pub_date": "2026-07-10"
+            "title": "AI needs human hands. Indian workers fought back - openDemocracy",
+            "source": "openDemocracy",
+            "pub_date": "Fri, 17 Jul 2026 08:49:22 GMT"
           },
           {
-            "title": "India AI moment more about deployment than discovery",
-            "source": "Asia Times",
-            "url": "https://asiatimes.com/2026/07/indias-ai-moment-more-about-deployment-than-discovery/",
-            "pub_date": "2026-07"
+            "title": "AI-driven memory crunch jolts India’s smartphone market - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 17 Jul 2026 20:09:27 GMT"
+          },
+          {
+            "title": "5paisa Capital & OpenAI Bring AI Investing to India - Rediff MoneyWiz",
+            "source": "Rediff MoneyWiz",
+            "pub_date": "Sun, 19 Jul 2026 09:08:23 GMT"
+          },
+          {
+            "title": "Expansion on track; AI Express expects to induct 50-60 aircraft over 12-18 months | India News - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Sun, 19 Jul 2026 10:17:10 GMT"
+          },
+          {
+            "title": "Chinese CEO Yang Zhilin achieves huge AI milestone, Indian-origin entrepreneur says US was stupid enough - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 17 Jul 2026 15:14:00 GMT"
+          },
+          {
+            "title": "India crafting balanced AI regulatory framework: IT Secretary - EdexLive",
+            "source": "EdexLive",
+            "pub_date": "Sun, 19 Jul 2026 14:50:00 GMT"
+          },
+          {
+            "title": "South Africa’s $46-Billion Money Manager Cuts AI Bets, Buys India Rebound - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 17 Jul 2026 12:03:30 GMT"
+          },
+          {
+            "title": "Top world leaders to attend India-AI Impact Summit in New Delhi next week - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Sun, 19 Jul 2026 07:20:28 GMT"
+          },
+          {
+            "title": "Ntt data commits 1 5 billion for india ai data center expansion - Indiatimes",
+            "source": "Indiatimes",
+            "pub_date": "Mon, 20 Jul 2026 03:34:53 GMT"
+          },
+          {
+            "title": "Making India ‘food wise’; AI lifts VC inflow in startup ecosystem - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Mon, 20 Jul 2026 02:29:39 GMT"
+          },
+          {
+            "title": "Deepening our commitment to India’s AI ambition - blog.google",
+            "source": "blog.google",
+            "pub_date": "Tue, 14 Jul 2026 06:49:08 GMT"
+          },
+          {
+            "title": "Catching up in the AI race? India gets its second AI unicorn in a month - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 16 Jul 2026 09:03:27 GMT"
+          },
+          {
+            "title": "Air India AI-171 crash: Families demand black box data, ask what happened in final seconds - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Mon, 20 Jul 2026 03:12:26 GMT"
+          },
+          {
+            "title": "Telangana to establish India's first Green Pharma focused Applied AI Centre of Excellence - BioSpectrum India",
+            "source": "BioSpectrum India",
+            "pub_date": "Sun, 19 Jul 2026 14:12:27 GMT"
+          },
+          {
+            "title": "AI-171 crash victims’ kin press for black box data, memorial after AAIB affidavit - ThePrint",
+            "source": "ThePrint",
+            "pub_date": "Mon, 20 Jul 2026 02:45:26 GMT"
+          },
+          {
+            "title": "The true meaning of sovereign AI power | Hindustan Times - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 20 Jul 2026 02:05:36 GMT"
+          },
+          {
+            "title": "PwC India and Leah extend strategic partnership to help organisations drive AI-led business transformations leveraging Leah’s Agentic solutions - PwC India",
+            "source": "PwC India",
+            "pub_date": "Tue, 14 Jul 2026 13:49:17 GMT"
+          },
+          {
+            "title": "Controlling AI agents is an emerging business: IBM Software India GM - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Sun, 19 Jul 2026 17:42:53 GMT"
+          },
+          {
+            "title": "India roundup: India deepens semiconductor and AI ambitions as local ecosystem expands beyond fabs and assembly - digitimes",
+            "source": "digitimes",
+            "pub_date": "Mon, 20 Jul 2026 00:01:23 GMT"
+          },
+          {
+            "title": "India Working On 'Well-Calibrated' AI Law, Studying US And EU Models: MeitY Secretary - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Sun, 19 Jul 2026 10:48:02 GMT"
+          },
+          {
+            "title": "Argentine Envoy Hails India AI Impact Summit as Major Success - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Sun, 19 Jul 2026 10:50:46 GMT"
+          },
+          {
+            "title": "Protocol in Every Pocket: AI at India’s Healthcare Frontline - orfonline.org",
+            "source": "orfonline.org",
+            "pub_date": "Fri, 17 Jul 2026 12:57:12 GMT"
+          }
+        ],
+        "new AI model": [
+          {
+            "title": "China’s Latest A.I. Breakthrough Threatens America’s Lead - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Fri, 17 Jul 2026 19:13:57 GMT"
+          },
+          {
+            "title": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift - CNBC",
+            "source": "CNBC",
+            "pub_date": "Fri, 17 Jul 2026 08:38:30 GMT"
+          },
+          {
+            "title": "China's Moonshot unveils world's largest open AI model, closing in on US rivals - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 17 Jul 2026 09:20:36 GMT"
+          },
+          {
+            "title": "New Chinese AI model rattles US rivals Claude, ChatGPT - Telangana Today",
+            "source": "Telangana Today",
+            "pub_date": "Sat, 18 Jul 2026 13:12:21 GMT"
+          },
+          {
+            "title": "China’s Powerful New Moonshot AI Model Closes Gap With US Rivals - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Sat, 18 Jul 2026 02:32:00 GMT"
+          },
+          {
+            "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models - MacRumors",
+            "source": "MacRumors",
+            "pub_date": "Mon, 08 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Exclusive | Meta Keeps Delaying the Release of Its New AI Model to Developers - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 03 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Developers Claim OpenAI’s New AI Model is Going Rogue and Deleting Files - Gizmodo",
+            "source": "Gizmodo",
+            "pub_date": "Tue, 14 Jul 2026 19:35:25 GMT"
+          },
+          {
+            "title": "Meta releases latest update of AI model Muse Spark as tech giant accelerates AI push under Alexandr Wang - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 09 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Microsoft unveils seven homegrown AI models in new bid for ‘long term self-sufficiency’ - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 16 Jul 2026 11:15:12 GMT"
+          },
+          {
+            "title": "Alibaba previews Qwen3.8, claiming its strength trails only Anthropic’s Fable 5 - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Sun, 19 Jul 2026 13:20:24 GMT"
+          },
+          {
+            "title": "China's Moonshot AI pauses new Kimi K3 subscriptions amid surge in demand - ANI News",
+            "source": "ANI News",
+            "pub_date": "Mon, 20 Jul 2026 02:31:00 GMT"
+          },
+          {
+            "title": "What to Know About the Chinese AI Models Rattling U.S. Stocks - WSJ",
+            "source": "WSJ",
+            "pub_date": "Sat, 18 Jul 2026 12:00:00 GMT"
+          },
+          {
+            "title": "China’s Moonshot unveils new AI model - Taipei Times",
+            "source": "Taipei Times",
+            "pub_date": "Fri, 17 Jul 2026 16:00:00 GMT"
+          },
+          {
+            "title": "What Smart People Are Saying About China's Hot New Kimi K3 AI Model - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Fri, 17 Jul 2026 17:25:00 GMT"
+          },
+          {
+            "title": "New AI blood test predicts heart disease 15 years early - ScienceDaily",
+            "source": "ScienceDaily",
+            "pub_date": "Sun, 19 Jul 2026 14:58:29 GMT"
+          },
+          {
+            "title": "White House Weighs Regulator to Police AI Models - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Sun, 19 Jul 2026 22:18:25 GMT"
+          },
+          {
+            "title": "China's AI models are shrinking US lead - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 17 Jul 2026 18:55:55 GMT"
+          },
+          {
+            "title": "It’s Laughably Easy to Poison Open-Weight AI Models, Researcher Finds - Futurism",
+            "source": "Futurism",
+            "pub_date": "Sun, 19 Jul 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Qwen 3.8 arrives as Alibaba’s open AI rival - Lapaas Voice",
+            "source": "Lapaas Voice",
+            "pub_date": "Sun, 19 Jul 2026 16:41:47 GMT"
+          },
+          {
+            "title": "Chinese AI start-up Moonshot launches model challenging Anthropic’s lead - Financial Times",
+            "source": "Financial Times",
+            "pub_date": "Thu, 16 Jul 2026 09:51:11 GMT"
+          },
+          {
+            "title": "What Is Kimi K3? The Chinese AI Model That Has Wall Street Talking - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 17 Jul 2026 12:27:43 GMT"
+          },
+          {
+            "title": "China’s Moonshot AI Releases Model to Challenge Top U.S. Systems - WSJ",
+            "source": "WSJ",
+            "pub_date": "Fri, 17 Jul 2026 05:26:00 GMT"
+          },
+          {
+            "title": "Chinese AI Model Kimi K3 Sparks Sell-Off in US Chipmaker Stocks - KuCoin",
+            "source": "KuCoin",
+            "pub_date": "Sun, 19 Jul 2026 13:23:28 GMT"
           }
         ]
       },
-      "autocomplete": {}
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air quality index",
+          "air quality iowa",
+          "air quality",
+          "ai detector",
+          "aidvantage",
+          "ai checker",
+          "ai mode",
+          "airpods"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt login",
+          "chatgpt image generator",
+          "chatgpt free",
+          "chatgpt zero",
+          "chatgpt download",
+          "chatgpt work",
+          "chatgpt detector"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phones coming out in 2026",
+          "new phone who dis card game"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai companies",
+          "tech and ai news",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai index funds",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
     },
     "US": {
       "label": "Global (US proxy)",
-      "trends_rss": [],
+      "trends_rss": [
+        {
+          "title": "google play services",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "I turned off one Google app and gained nearly two hours of battery life",
+              "source": "MakeUseOf",
+              "url": "https://www.makeuseof.com/i-turned-off-one-google-app-and-gained-nearly-two-hours-of-battery-life/"
+            },
+            {
+              "headline": "All Android backup data now counts toward your Google Account storage [Update: Email]",
+              "source": "9to5Google",
+              "url": "https://9to5google.com/2026/07/18/android-backup-data-update/"
+            },
+            {
+              "headline": "Google makes big change on Android smartphones",
+              "source": "MyBroadband",
+              "url": "https://mybroadband.co.za/news/cloud-hosting/658776-google-makes-big-change-on-android-smartphones.html"
+            }
+          ]
+        },
+        {
+          "title": "legionnaires disease",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Two More Patients Die in Outbreak of Legionnaires’ Disease in Manhattan",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/07/19/nyregion/legionnaires-disease-second-death-nyc.html"
+            },
+            {
+              "headline": "Legionnaires' outbreak: 2nd victim to die in UES cluster was Air Force veteran, businessman",
+              "source": "ABC7 New York",
+              "url": "https://abc7ny.com/post/legionnaires-outbreak-2nd-victim-die-ues-cluster-was-air-force-veteran-businessman/19539175/"
+            },
+            {
+              "headline": "Three deaths reported in New York City Legionnaires’ disease cluster",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/07/17/health/legionnaires-death-nyc"
+            }
+          ]
+        },
+        {
+          "title": "ralph sampson",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 19 Jul 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "NBA all-star Ralph Sampson passes the ball to Lynchburg youth",
+              "source": "WSET",
+              "url": "https://wset.com/news/local/nba-all-star-ralph-sampson-passes-the-ball-to-lynchburg-youth-july-2026-boys-and-girls-club-sports"
+            },
+            {
+              "headline": "Basketball legend Ralph Sampson visits Lynchburg’s Boys & Girls Club",
+              "source": "NewsAdvance.com",
+              "url": "https://newsadvance.com/news/local/article_81f0210a-3f1e-43f2-bae6-9687d2a86ea9.html"
+            },
+            {
+              "headline": "Thunder send Dort to Hawks in 3-team trade; Mavericks get Risacher",
+              "source": "ESPN",
+              "url": "https://www.espn.com/nba/story/_/id/49400155/thunder-send-dort-hawks-three-team-trade-sources-say"
+            }
+          ]
+        },
+        {
+          "title": "yaxel lendeborg",
+          "approx_traffic": "5000+",
+          "pub_date": "Sun, 19 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "2026 NBA Summer League Championship: Warriors beat Grizzlies to take title",
+              "source": "NBA.com",
+              "url": "https://www.nba.com/news/2026-nba-summer-league-championship-warriors-grizzlies"
+            },
+            {
+              "headline": "Yaxel Lendeborg outduels Cameron Boozer to lead Warriors past Grizzlies for NBA Summer League championship",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/nba/breaking-news/article/yaxel-lendeborg-outduels-cameron-boozer-to-lead-warriors-past-grizzlies-for-nba-summer-league-championship-025314793.html"
+            },
+            {
+              "headline": "Warriors' Yaxel Lendeborg Wins 2026 NBA Summer League Championship Game MVP",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25456498-warriors-yaxel-lendeborg-wins-2026-nba-summer-league-championship-game-mvp"
+            }
+          ]
+        },
+        {
+          "title": "cedric coward",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Starting 5: Grizz, Warriors meet for Summer League crown tonight in Vegas (9 ET, ESPN)",
+              "source": "NBA.com",
+              "url": "https://www.nba.com/news/starting-5-grizz-warriors-meet-for-summer-league-crown-tonight-in-vegas-9-et-espn"
+            },
+            {
+              "headline": "Carson Cooper rocks the rim with powerful flush",
+              "source": "ESPN",
+              "url": "https://www.espn.com/video/clip/_/id/49406673/carson-cooper-rocks-rim-powerful-flush"
+            },
+            {
+              "headline": "How to Watch Warriors vs Grizzlies: Live Stream NBA Summer League Championship, TV Channel",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/watch-warriors-vs-grizzlies-live-233000441.html"
+            }
+          ]
+        },
+        {
+          "title": "how many episodes in house of the dragon season 3",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 19 Jul 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "'House of the Dragon,' Season 3, Episode 5: A not-so-secret door is just a door",
+              "source": "NPR",
+              "url": "https://www.npr.org/2026/07/19/nx-s1-5896201/house-of-the-dragon-recap-season-3-episode-5"
+            },
+            {
+              "headline": "Matt Smith explains Daemon’s new ‘foe’ and brutal loss of ‘his team of people’ in ‘House of the Dragon’ Episode 5",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/tv/articles/matt-smith-explains-daemon-foe-020700627.html"
+            },
+            {
+              "headline": "‘House of the Dragon’: 6 Fiery Predictions for Season 3, Episode 6",
+              "source": "Men's Journal",
+              "url": "https://www.mensjournal.com/news/house-of-the-dragon-6-fiery-predictions-for-season-3-episode-6"
+            }
+          ]
+        },
+        {
+          "title": "david bednar",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "David Bednar secures the save in Yankees' win",
+              "source": "Baseball Savant",
+              "url": "https://baseballsavant.mlb.com/sporty-videos?playId=dbf608bd-50f5-37ba-a2fe-b8fe3e036ee8"
+            },
+            {
+              "headline": "David Bednar News: Extends scoreless streak in save",
+              "source": "RotoWire",
+              "url": "https://www.rotowire.com/baseball/headlines/david-bednar-news-extends-scoreless-streak-in-save-1014312"
+            },
+            {
+              "headline": "David Bednar nails down another save as Yankees top Nationals",
+              "source": "FantasyPros",
+              "url": "https://www.fantasypros.com/mlb/news/596161/david-bednar-nails-down-another-save-yankees-top-nationals.php"
+            }
+          ]
+        },
+        {
+          "title": "taylor swift wedding invitation security",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 19 Jul 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "Taylor Swift wedding NDA 'had teeth': Guest divulges invitation process",
+              "source": "The Detroit News",
+              "url": "https://www.detroitnews.com/story/entertainment/music/2026/07/19/taylor-swift-wedding-nda-inviation-process/90974447007/"
+            },
+            {
+              "headline": "Travis Kelce Had to Tell Pat McAfee to RSVP to Taylor Swift Wedding After ESPN Host Thought Invite Was Fake",
+              "source": "People.com",
+              "url": "https://people.com/travis-kelce-had-to-text-pat-mcafee-to-rsvp-to-taylor-swift-wedding-12019650"
+            },
+            {
+              "headline": "“Wedding location revealed at 4AM”: American Century Investments CEO Jonathan Thomas reveals Taylor Swif",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/nfl/news/wedding-location-revealed-at-4am-american-century-investments-ceo-jonathan-thomas-reveals-taylor-swift-and-travis-kelce-wedding-details/articleshow/132482106.cms"
+            }
+          ]
+        },
+        {
+          "title": "todd blanche epstein file meeting",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 19 Jul 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "Epstein survivor on Blanche meeting: ‘We were gaslit’",
+              "source": "The Hill",
+              "url": "https://thehill.com/homenews/administration/5977111-epstein-survivor-blanche-meeting/"
+            },
+            {
+              "headline": "The Biggest Takeaway From Todd Blanche’s Confirmation Hearing",
+              "source": "The Atlantic",
+              "url": "https://www.theatlantic.com/ideas/2026/07/todd-blanche-attorney-general-confirmation-hearing/687933/"
+            },
+            {
+              "headline": "Todd Blanche meeting leaves Epstein survivors stunned and angry",
+              "source": "MS NOW",
+              "url": "https://www.ms.now/news/todd-blanche-meeting-epstein-survivors-nomination"
+            }
+          ]
+        },
+        {
+          "title": "bethesda fallout 5",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 19 Jul 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "A NOTE FROM BETHESDA GAME STUDIOS",
+              "source": "Bethesda.net",
+              "url": "https://bethesda.net/article/7wrffyXajE4BmCLJVpOkcN/a-note-from-bethesda-game-studios"
+            },
+            {
+              "headline": "Bethesda Announces New ‘Fallout’ Roadmap Following Xbox Reset",
+              "source": "Bloomberg.com",
+              "url": "https://www.bloomberg.com/news/articles/2026-07-17/bethesda-announces-new-fallout-roadmap-following-xbox-reset"
+            },
+            {
+              "headline": "Obviously, Bethesda Is Remastering ‘Fallout: New Vegas’ and ‘Fallout 3’",
+              "source": "Gizmodo",
+              "url": "https://gizmodo.com/obviously-bethesda-is-remastering-fallout-new-vegas-and-fallout-3-2000787259"
+            }
+          ]
+        }
+      ],
       "news": {
-        "webfetch:google-news-technology-latest (2026-07-20 ~06:45 IST)": [
+        "AI India": [
           {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "The Hacker News",
-            "url": "",
-            "pub_date": "yesterday"
+            "title": "AI-driven memory crunch jolts India’s smartphone market - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 17 Jul 2026 20:09:27 GMT"
           },
           {
-            "title": "San Francisco orders Apple and Google to remove AI nudify apps",
-            "source": "TechCrunch / WIRED / Engadget / SF Chronicle",
-            "url": "",
-            "pub_date": "yesterday-6h ago"
+            "title": "South Africa’s $46-Billion Money Manager Cuts AI Bets, Buys India Rebound - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 17 Jul 2026 12:03:30 GMT"
           },
           {
-            "title": "Apple Music and iCloud subscription prices rise",
-            "source": "The Verge / Engadget / Variety / 9to5Mac",
-            "url": "",
-            "pub_date": "yesterday-16h ago"
+            "title": "Xi Jinping's new AI bloc: China launches 'World AI Body' with Pakistan and Russia in, India out - WION",
+            "source": "WION",
+            "pub_date": "Sun, 19 Jul 2026 17:23:00 GMT"
           },
           {
-            "title": "iOS 27 public beta released with new AI features",
-            "source": "Mashable / MacRumors / Fast Company",
-            "url": "",
-            "pub_date": "12h-9min ago"
+            "title": "Chinese CEO Yang Zhilin achieves huge AI milestone, Indian-origin entrepreneur says US was stupid enough - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 17 Jul 2026 15:14:00 GMT"
           },
           {
-            "title": "LG monitors install software through Windows Update without consent",
-            "source": "TechRadar / VideoCardz / heise / Notebookcheck",
-            "url": "",
-            "pub_date": "yesterday"
+            "title": "India working on balanced AI regulatory framework with safeguards, innovation in focus: IT Secretary - The Hans India",
+            "source": "The Hans India",
+            "pub_date": "Sun, 19 Jul 2026 13:16:25 GMT"
           },
           {
-            "title": "Linus Torvalds tells anti-AI Linux programmers to fork it",
-            "source": "Ars Technica / The Register / ZDNET / Tom's Hardware",
-            "url": "",
-            "pub_date": "1-2 days ago"
+            "title": "AI needs human hands. Indian workers fought back - openDemocracy",
+            "source": "openDemocracy",
+            "pub_date": "Fri, 17 Jul 2026 08:49:22 GMT"
           },
           {
-            "title": "OpenAI first device is a screenless AI companion speaker",
-            "source": "Bloomberg / TechCrunch / Engadget / NBC News",
-            "url": "",
-            "pub_date": "2-4 days ago, still active 21h ago"
+            "title": "India's next terror threat may not cross the border. It may enter through your phone | WION Decodes - WION",
+            "source": "WION",
+            "pub_date": "Sat, 18 Jul 2026 09:19:00 GMT"
           },
           {
-            "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
-            "source": "The Verge / 9to5Google / PhoneArena",
-            "url": "",
-            "pub_date": "yesterday-6h ago"
+            "title": "India Is Moving Fast to Catch Up in A.I. A Coastal City Fears the Fallout. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Thu, 16 Jul 2026 05:22:08 GMT"
           },
           {
-            "title": "Pixel 11 teaser and price leaks before launch",
-            "source": "Forbes / The Verge / Android Authority",
-            "url": "",
-            "pub_date": "9h-2h ago"
+            "title": "India's Tata Consultancy Services plans up to 8,900 AI deployment engineers, seeks AI acquisitions - Reuters",
+            "source": "Reuters",
+            "pub_date": "Sun, 12 Jul 2026 08:37:43 GMT"
           },
           {
-            "title": "Valve says RAM prices are lagging and will only get worse",
-            "source": "Kotaku",
-            "url": "",
-            "pub_date": "5h ago"
+            "title": "Catching up in the AI race? India gets its second AI unicorn in a month - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 16 Jul 2026 09:03:27 GMT"
           },
           {
-            "title": "EA wants in-game ads planned during game development",
-            "source": "Kotaku / Insider Gaming / Game World Observer",
-            "url": "",
-            "pub_date": "1-2 days ago"
+            "title": "Chinese President Xi Jinping wants emergency response systems to keep AI in check - The Register",
+            "source": "The Register",
+            "pub_date": "Mon, 20 Jul 2026 00:38:54 GMT"
           },
           {
-            "title": "GTA 6 preorders generate estimated 260 million dollars in first week",
-            "source": "GamesIndustry.biz / Forbes / VGC",
-            "url": "",
-            "pub_date": "yesterday-2 days ago"
+            "title": "India roundup: India deepens semiconductor and AI ambitions as local ecosystem expands beyond fabs and assembly - digitimes",
+            "source": "digitimes",
+            "pub_date": "Mon, 20 Jul 2026 00:01:23 GMT"
+          },
+          {
+            "title": "Deepening our commitment to India’s AI ambition - blog.google",
+            "source": "blog.google",
+            "pub_date": "Tue, 14 Jul 2026 06:49:08 GMT"
+          },
+          {
+            "title": "Ntt data commits 1 5 billion for india ai data center expansion - Indiatimes",
+            "source": "Indiatimes",
+            "pub_date": "Mon, 20 Jul 2026 03:34:53 GMT"
+          },
+          {
+            "title": "India’s AI moment more about deployment than discovery - Asia Times",
+            "source": "Asia Times",
+            "pub_date": "Fri, 17 Jul 2026 04:58:42 GMT"
+          },
+          {
+            "title": "AI hiring outpaces overall IT recruitment in India, report shows - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 03 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Air India Rebuilds Its App With In-House Booking, Payments, and AI - Skift",
+            "source": "Skift",
+            "pub_date": "Thu, 16 Jul 2026 13:44:53 GMT"
+          },
+          {
+            "title": "Kazakhstan President calls for human-centric AI, echoing India's vision - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Sun, 19 Jul 2026 10:54:00 GMT"
+          },
+          {
+            "title": "India Uses AI To Stress-Test Nearly 500 Government Apps For Cyber Vulnerabilities - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Sun, 19 Jul 2026 11:04:15 GMT"
+          },
+          {
+            "title": "Anthropic starts localizing Claude pricing for India, its biggest market after the US - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 13 Jul 2026 15:34:59 GMT"
+          },
+          {
+            "title": "India stands out as a diversifier as North Asia’s AI boom supports IT services sector: UBS - CNBC",
+            "source": "CNBC",
+            "pub_date": "Fri, 17 Jul 2026 06:44:00 GMT"
+          },
+          {
+            "title": "You Can’t Spell Chai Latte Without AI. That Will Hurt India - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Tue, 14 Jul 2026 20:00:20 GMT"
+          },
+          {
+            "title": "'Misleading the families?' AI-171 victims' kin seek black box data, memorial after AAIB affidavit - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 20 Jul 2026 03:44:00 GMT"
+          },
+          {
+            "title": "India's LTM expects AI revenue to outpace traditional services, CEO says - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 14 Jul 2026 13:33:31 GMT"
+          },
+          {
+            "title": "AI monetization, model efficiency, and India's infrastructure gap define the industry's mid-2026 moment - MarketScale",
+            "source": "MarketScale",
+            "pub_date": "Sat, 18 Jul 2026 20:03:42 GMT"
           }
         ],
-        "webfetch:llm-stats + xcobean aggregators (items dated 2026-07-19)": [
+        "new AI model": [
           {
-            "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
-            "source": "TechXplore / TechCrunch via aggregators",
-            "url": "",
-            "pub_date": "2026-07-19"
+            "title": "China’s Latest A.I. Breakthrough Threatens America’s Lead - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Fri, 17 Jul 2026 19:13:57 GMT"
           },
           {
-            "title": "AI is reshaping entry-level professional services jobs",
-            "source": "Financial Times via Techmeme",
-            "url": "",
-            "pub_date": "2026-07-19"
+            "title": "What Smart People Are Saying About China's Hot New Kimi K3 AI Model - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Fri, 17 Jul 2026 17:25:00 GMT"
           },
           {
-            "title": "AI text detectors struggle with style-imitated language",
-            "source": "The Decoder",
-            "url": "https://the-decoder.com/",
-            "pub_date": "2026-07-19"
+            "title": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift - CNBC",
+            "source": "CNBC",
+            "pub_date": "Fri, 17 Jul 2026 08:38:30 GMT"
           },
           {
-            "title": "AI chatbots reading X-rays dangerously confident when wrong",
-            "source": "The Decoder",
-            "url": "",
-            "pub_date": "2026-07-19"
+            "title": "The White House is dictating access to frontier AI models, shifting power from tech giants, sources say - CNBC",
+            "source": "CNBC",
+            "pub_date": "Fri, 17 Jul 2026 22:04:13 GMT"
           },
           {
-            "title": "Huawei EMUI 16 ships Celia AI assistant one-command capability",
-            "source": "Huawei Central via xcobean",
-            "url": "",
-            "pub_date": "2026-07-19"
+            "title": "China's Moonshot unveils world's largest open AI model, closing in on US rivals - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 17 Jul 2026 09:20:36 GMT"
           },
           {
-            "title": "AI role in insurance prior authorization questioned in government pilot",
-            "source": "Ars Technica via xcobean",
-            "url": "",
-            "pub_date": "2026-07-19"
-          }
-        ],
-        "websearch:eu google android dma corroboration": [
-          {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "European Commission (primary)",
-            "url": "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en",
-            "pub_date": "2026-07-16"
+            "title": "AI memory, chip stocks dip amid Japan's Nikkei slump, Moonshot's new AI model - Seeking Alpha",
+            "source": "Seeking Alpha",
+            "pub_date": "Fri, 17 Jul 2026 14:25:00 GMT"
           },
           {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "Euronews",
-            "url": "https://www.euronews.com/my-europe/2026/07/16/eu-orders-google-to-share-search-data-open-android-to-ai-rivals-competitors",
-            "pub_date": "2026-07-16"
+            "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models - MacRumors",
+            "source": "MacRumors",
+            "pub_date": "Mon, 08 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "SiliconANGLE",
-            "url": "https://siliconangle.com/2026/07/16/eu-orders-google-share-search-data-rivals-broaden-android-feature-access/",
-            "pub_date": "2026-07-16"
+            "title": "Exclusive | Meta Keeps Delaying the Release of Its New AI Model to Developers - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 03 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "EU orders Google to open Android to rival AI assistants and share search data",
-            "source": "The Next Web",
-            "url": "https://thenextweb.com/news/eu-google-android-ai-search-data-digital-markets-act",
-            "pub_date": "2026-07-16"
+            "title": "Developers Claim OpenAI’s New AI Model is Going Rogue and Deleting Files - Gizmodo",
+            "source": "Gizmodo",
+            "pub_date": "Tue, 14 Jul 2026 19:35:25 GMT"
+          },
+          {
+            "title": "Meta releases latest update of AI model Muse Spark as tech giant accelerates AI push under Alexandr Wang - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 09 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Microsoft unveils seven homegrown AI models in new bid for ‘long term self-sufficiency’ - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Trump signs AI safety order seeking voluntary review of new models - NPR",
+            "source": "NPR",
+            "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Alibaba previews Qwen3.8, claiming its strength trails only Anthropic’s Fable 5 - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Sun, 19 Jul 2026 13:20:24 GMT"
+          },
+          {
+            "title": "China’s Powerful New Moonshot AI Model Closes Gap With US Rivals - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Sat, 18 Jul 2026 02:32:00 GMT"
+          },
+          {
+            "title": "China's AI models are shrinking US lead - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 17 Jul 2026 18:55:55 GMT"
+          },
+          {
+            "title": "China’s Moonshot unveils new AI model - Taipei Times",
+            "source": "Taipei Times",
+            "pub_date": "Fri, 17 Jul 2026 16:00:00 GMT"
+          },
+          {
+            "title": "China's open-weight Kimi model stuns AI world with frontier-level results - Axios",
+            "source": "Axios",
+            "pub_date": "Thu, 16 Jul 2026 22:49:00 GMT"
+          },
+          {
+            "title": "White House Weighs Regulator to Police AI Models - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Sun, 19 Jul 2026 22:18:25 GMT"
+          },
+          {
+            "title": "Chinese AI Model Takes U.S. by Surprise with Abilities Rivaling Claude and ChatGPT - Broadband Breakfast",
+            "source": "Broadband Breakfast",
+            "pub_date": "Sat, 18 Jul 2026 17:19:28 GMT"
+          },
+          {
+            "title": "What to Know About the Chinese AI Models Rattling U.S. Stocks - WSJ",
+            "source": "WSJ",
+            "pub_date": "Sat, 18 Jul 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Meet Kimi K3, the newest Chinese AI model haunting Silicon Valley - MarketWatch",
+            "source": "MarketWatch",
+            "pub_date": "Sat, 18 Jul 2026 01:17:00 GMT"
+          },
+          {
+            "title": "It’s Laughably Easy to Poison Open-Weight AI Models, Researcher Finds - Futurism",
+            "source": "Futurism",
+            "pub_date": "Sun, 19 Jul 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Meta Makes Big Moves Around AI Models and Chip Production - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Mon, 20 Jul 2026 00:48:00 GMT"
+          },
+          {
+            "title": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 16 Jul 2026 11:15:12 GMT"
+          },
+          {
+            "title": "What Is Kimi K3? The Chinese AI Model That Has Wall Street Talking - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 17 Jul 2026 12:27:43 GMT"
           }
         ]
       },
-      "autocomplete": {}
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air quality index",
+          "air quality iowa",
+          "air quality",
+          "ai detector",
+          "aidvantage",
+          "ai checker",
+          "ai mode",
+          "airpods"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt login",
+          "chatgpt image generator",
+          "chatgpt free",
+          "chatgpt zero",
+          "chatgpt download",
+          "chatgpt work",
+          "chatgpt detector"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone line deals",
+          "new phone who dis meme"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai companies",
+          "tech and ai news",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai index funds",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
     }
   },
-  "hacker_news": [],
-  "outlet_headlines": [
+  "hacker_news": [
     {
-      "title": "EU orders Google to open Android to rival AI assistants and share search data",
-      "outlet": "The New York Times",
-      "url": "",
-      "market": "US"
+      "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+      "url": null,
+      "points": 1743,
+      "comments": 187,
+      "created_at": "2026-07-19T14:41:16Z"
     },
     {
-      "title": "EU orders Google to open Android to rival AI assistants and share search data",
-      "outlet": "AP News",
-      "url": "",
-      "market": "US"
+      "title": "Qwen 3.8",
+      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+      "points": 812,
+      "comments": 568,
+      "created_at": "2026-07-19T08:44:57Z"
     },
     {
-      "title": "EU orders Google to open Android to rival AI assistants and share search data",
-      "outlet": "WSJ",
-      "url": "",
-      "market": "US"
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "points": 430,
+      "comments": 200,
+      "created_at": "2026-07-19T10:34:58Z"
     },
     {
-      "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
-      "outlet": "TechXplore",
-      "url": "",
-      "market": "US"
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "points": 419,
+      "comments": 588,
+      "created_at": "2026-07-19T10:03:23Z"
     },
     {
-      "title": "Kimi K3 open source AI model from Moonshot AI rattles US AI industry",
-      "outlet": "TechCrunch",
-      "url": "",
-      "market": "US"
+      "title": "AI advice made people less accurate but more confident – sudy",
+      "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+      "points": 299,
+      "comments": 165,
+      "created_at": "2026-07-19T21:18:10Z"
     },
     {
-      "title": "San Francisco orders Apple and Google to remove AI nudify apps",
-      "outlet": "WIRED",
-      "url": "https://www.wired.com/",
-      "market": "US"
+      "title": "Minecraft: Java Edition now uses SDL3",
+      "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+      "points": 286,
+      "comments": 189,
+      "created_at": "2026-07-19T11:48:18Z"
     },
     {
-      "title": "Apple Music and iCloud subscription prices rise",
-      "outlet": "Engadget",
-      "url": "",
-      "market": "US"
+      "title": "I joined the IndieWeb, here's what I learned",
+      "url": "https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/",
+      "points": 164,
+      "comments": 87,
+      "created_at": "2026-07-19T11:14:38Z"
     },
     {
-      "title": "iOS 27 public beta released with new AI features",
-      "outlet": "MacRumors",
-      "url": "",
-      "market": "US"
+      "title": "Bananas sprout in Rayleigh Garden UK after 15 years",
+      "url": "https://www.bbc.com/news/articles/cvg8edqq5g5o",
+      "points": 135,
+      "comments": 97,
+      "created_at": "2026-07-19T13:29:29Z"
     },
     {
-      "title": "LG monitors install software through Windows Update without consent",
-      "outlet": "TechRadar",
-      "url": "",
-      "market": "US"
+      "title": "The Zen of Parallel Programming",
+      "url": "https://smolnero.com/posts/the-zen-of-parallel-programming",
+      "points": 129,
+      "comments": 15,
+      "created_at": "2026-07-14T14:23:26Z"
     },
     {
-      "title": "Linus Torvalds tells anti-AI Linux programmers to fork it",
-      "outlet": "Ars Technica",
-      "url": "",
-      "market": "US"
+      "title": "Ollama: All Aboard Open Models",
+      "url": "https://ollama.com/blog/all-aboard-open-models",
+      "points": 119,
+      "comments": 49,
+      "created_at": "2026-07-19T07:59:44Z"
     },
     {
-      "title": "OpenAI first device is a screenless AI companion speaker",
-      "outlet": "Bloomberg",
-      "url": "",
-      "market": "US"
+      "title": "I burned all my tokens researching how to save tokens",
+      "url": "https://quesma.com/blog/custom-deep-research-pipeline/",
+      "points": 100,
+      "comments": 139,
+      "created_at": "2026-07-19T12:01:53Z"
     },
     {
-      "title": "Samsung Galaxy Z Fold 8 leaks ahead of Galaxy Unpacked",
-      "outlet": "The Verge",
-      "url": "",
-      "market": "US"
+      "title": "Orion Browser by Kagi",
+      "url": "https://orionbrowser.com/",
+      "points": 86,
+      "comments": 78,
+      "created_at": "2026-07-19T19:13:29Z"
     },
     {
-      "title": "ChatGPT Work mode can run a one-person business",
-      "outlet": "Entrepreneur / Forbes",
-      "url": "",
-      "market": "US"
+      "title": "UnifiedIR for Julia",
+      "url": "https://github.com/JuliaLang/julia/pull/62334",
+      "points": 86,
+      "comments": 17,
+      "created_at": "2026-07-18T21:28:38Z"
     },
     {
-      "title": "AI is reshaping entry-level professional services jobs",
-      "outlet": "Financial Times (via Techmeme)",
-      "url": "",
-      "market": "US"
+      "title": "Cagire: Live Coding in Forth",
+      "url": "https://cagire.raphaelforment.fr",
+      "points": 82,
+      "comments": 11,
+      "created_at": "2026-07-10T14:45:33Z"
+    },
+    {
+      "title": "HomeLab #1: MikroTik as a Home Router",
+      "url": "https://justsomebody.dev/blog/mikrotik-home-router",
+      "points": 77,
+      "comments": 65,
+      "created_at": "2026-07-19T18:57:01Z"
+    },
+    {
+      "title": "Terence McKenna's Mega Bad Trip (2025)",
+      "url": "https://psychedelics.community/cultural-icons/terence-mckennas-mega-bad-trip",
+      "points": 74,
+      "comments": 72,
+      "created_at": "2026-07-19T14:30:31Z"
+    },
+    {
+      "title": "Dupes took over the world",
+      "url": "https://www.vox.com/podcasts/493930/dupe-culture-fender-ugg-quince-tiktok-amazon-online-shopping",
+      "points": 69,
+      "comments": 65,
+      "created_at": "2026-07-14T15:33:42Z"
+    },
+    {
+      "title": "C64 Basic Dungeon Crawler: Goblin Attack (C64 Basic Part 8)",
+      "url": "https://retrogamecoders.com/c64-basic-dungeon-part8/",
+      "points": 63,
+      "comments": 4,
+      "created_at": "2026-07-19T15:20:22Z"
+    },
+    {
+      "title": "HMD Touch 4G",
+      "url": "https://www.hmd.com/en_int/hmd-touch-4g",
+      "points": 62,
+      "comments": 64,
+      "created_at": "2026-07-19T17:25:03Z"
+    },
+    {
+      "title": "A new Intel Itanium (IA-64) emulator that boots Windows",
+      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
+      "points": 61,
+      "comments": 44,
+      "created_at": "2026-07-19T20:50:42Z"
+    },
+    {
+      "title": "Ask HN: What are your favorite blogs not about AI?",
+      "url": null,
+      "points": 66,
+      "comments": 28,
+      "created_at": "2026-07-19T23:58:12Z"
+    },
+    {
+      "title": "AI advice made people less accurate but more confident – sudy",
+      "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+      "points": 299,
+      "comments": 167,
+      "created_at": "2026-07-19T21:18:10Z"
+    },
+    {
+      "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
+      "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+      "points": 240,
+      "comments": 99,
+      "created_at": "2026-07-19T16:02:25Z"
+    },
+    {
+      "title": "Perforce charges $500 for training training videos.. and it's AI narrated",
+      "url": "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic",
+      "points": 53,
+      "comments": 83,
+      "created_at": "2026-07-19T08:00:24Z"
+    },
+    {
+      "title": "I built a browser-based P2P file transfer tool using WebRTC",
+      "url": "https://airdows.com/",
+      "points": 43,
+      "comments": 21,
+      "created_at": "2026-07-19T02:17:03Z"
+    },
+    {
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
+      "points": 387,
+      "comments": 239,
+      "created_at": "2026-07-19T01:29:19Z"
+    },
+    {
+      "title": "NYC may require landlords and realtors to disclose the use of AI in listings",
+      "url": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
+      "points": 570,
+      "comments": 260,
+      "created_at": "2026-07-18T22:13:39Z"
+    },
+    {
+      "title": "LG ThinQ Terms of Use",
+      "url": null,
+      "points": 62,
+      "comments": 30,
+      "created_at": "2026-07-18T14:04:55Z"
+    },
+    {
+      "title": "What AI did to stackoverflow in a graph",
+      "url": "https://data.stackexchange.com/stackoverflow/query/1953768#graph",
+      "points": 450,
+      "comments": 549,
+      "created_at": "2026-07-18T11:12:46Z"
+    },
+    {
+      "title": "Why do AI company logos look like buttholes? (2025)",
+      "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+      "points": 441,
+      "comments": 146,
+      "created_at": "2026-07-18T11:06:50Z"
+    },
+    {
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/",
+      "points": 69,
+      "comments": 12,
+      "created_at": "2026-07-18T08:14:05Z"
+    },
+    {
+      "title": "A grumpy screed about AI in software engineering",
+      "url": "https://sam.sutch.net/posts/a-grumpy-ai-screed",
+      "points": 60,
+      "comments": 82,
+      "created_at": "2026-07-18T00:40:08Z"
+    },
+    {
+      "title": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+      "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+      "points": 559,
+      "comments": 376,
+      "created_at": "2026-07-17T22:26:30Z"
+    },
+    {
+      "title": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+      "url": "https://newrepublic.com/article/213004/everybody-weirded-ai-except-people-foist-us",
+      "points": 67,
+      "comments": 72,
+      "created_at": "2026-07-17T21:24:07Z"
+    },
+    {
+      "title": "FAA lets Boeing sign off on 737 MAX, 787 airworthiness certificates again",
+      "url": "https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html",
+      "points": 196,
+      "comments": 118,
+      "created_at": "2026-07-17T21:22:53Z"
+    },
+    {
+      "title": "The state of open source AI",
+      "url": "https://stateofopensource.ai/",
+      "points": 483,
+      "comments": 355,
+      "created_at": "2026-07-17T14:31:10Z"
+    },
+    {
+      "title": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+      "url": "https://blog.zksecurity.xyz/posts/openvm-bugs/",
+      "points": 100,
+      "comments": 9,
+      "created_at": "2026-07-17T14:21:35Z"
+    },
+    {
+      "title": "VulnHunter: Capital One's agentic AI code security tool",
+      "url": "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/",
+      "points": 78,
+      "comments": 35,
+      "created_at": "2026-07-17T12:42:12Z"
+    },
+    {
+      "title": "Ask HN: Any AWS billing issues known? Amazon forecast of 3 billion dollars",
+      "url": null,
+      "points": 203,
+      "comments": 1,
+      "created_at": "2026-07-17T10:45:21Z"
+    },
+    {
+      "title": "LM Studio Bionic: the AI agent for open models",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "points": 329,
+      "comments": 130,
+      "created_at": "2026-07-16T20:18:15Z"
     }
   ],
-  "wikipedia_top": []
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 8251678,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 1216489,
+      "rank": 2
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 1199464,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 714054,
+      "rank": 4
+    },
+    {
+      "article": "Odyssey",
+      "views": 391003,
+      "rank": 5
+    },
+    {
+      "article": "2026_FIFA_World_Cup",
+      "views": 319391,
+      "rank": 6
+    },
+    {
+      "article": "Kylian_Mbappé",
+      "views": 243564,
+      "rank": 7
+    },
+    {
+      "article": "Sonam_Wangchuk",
+      "views": 230297,
+      "rank": 8
+    },
+    {
+      "article": "Lamine_Yamal",
+      "views": 212473,
+      "rank": 9
+    },
+    {
+      "article": "List_of_FIFA_World_Cup_top_goalscorers",
+      "views": 208970,
+      "rank": 10
+    },
+    {
+      "article": "Lionel_Messi",
+      "views": 206605,
+      "rank": 11
+    },
+    {
+      "article": "Christopher_Nolan",
+      "views": 201014,
+      "rank": 12
+    },
+    {
+      "article": "Jude_Bellingham",
+      "views": 193429,
+      "rank": 13
+    },
+    {
+      "article": "Obsession_(2025_film)",
+      "views": 186066,
+      "rank": 14
+    },
+    {
+      "article": "Bukayo_Saka",
+      "views": 160389,
+      "rank": 15
+    },
+    {
+      "article": "FIFA_World_Cup",
+      "views": 148137,
+      "rank": 16
+    },
+    {
+      "article": "Brenda_Fricker",
+      "views": 138446,
+      "rank": 17
+    },
+    {
+      "article": "List_of_FIFA_World_Cup_finals",
+      "views": 135708,
+      "rank": 18
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 129543,
+      "rank": 19
+    },
+    {
+      "article": "Trojan_War",
+      "views": 123534,
+      "rank": 20
+    },
+    {
+      "article": "Odysseus",
+      "views": 123241,
+      "rank": 21
+    },
+    {
+      "article": "Zendaya",
+      "views": 112537,
+      "rank": 22
+    },
+    {
+      "article": "Matt_Damon",
+      "views": 109077,
+      "rank": 23
+    },
+    {
+      "article": "Troy_(film)",
+      "views": 106033,
+      "rank": 24
+    },
+    {
+      "article": "Agamemnon",
+      "views": 104348,
+      "rank": 25
+    },
+    {
+      "article": "Andy_Burnham",
+      "views": 104111,
+      "rank": 26
+    },
+    {
+      "article": "Iliad",
+      "views": 97322,
+      "rank": 27
+    },
+    {
+      "article": "Helen_of_Troy",
+      "views": 95978,
+      "rank": 28
+    },
+    {
+      "article": "Michael_Olise",
+      "views": 95619,
+      "rank": 29
+    },
+    {
+      "article": "Backrooms_(film)",
+      "views": 94687,
+      "rank": 30
+    },
+    {
+      "article": "Elliot_Page",
+      "views": 94127,
+      "rank": 31
+    },
+    {
+      "article": "Thomas_Tuchel",
+      "views": 93740,
+      "rank": 32
+    },
+    {
+      "article": "Cristiano_Ronaldo",
+      "views": 91800,
+      "rank": 33
+    },
+    {
+      "article": "Erling_Haaland",
+      "views": 90761,
+      "rank": 34
+    },
+    {
+      "article": "Anne_Hathaway",
+      "views": 89747,
+      "rank": 35
+    },
+    {
+      "article": "YouTube",
+      "views": 89211,
+      "rank": 36
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 88417,
+      "rank": 37
+    },
+    {
+      "article": "Garfield_Sobers",
+      "views": 87979,
+      "rank": 38
+    },
+    {
+      "article": "Laestrygonians",
+      "views": 87799,
+      "rank": 39
+    },
+    {
+      "article": "Homer",
+      "views": 84854,
+      "rank": 40
+    },
+    {
+      "article": "Josh_Kerr_(runner)",
+      "views": 83835,
+      "rank": 41
+    },
+    {
+      "article": "Morgan_Rogers",
+      "views": 81333,
+      "rank": 42
+    },
+    {
+      "article": "2026_FIFA_World_Cup_final",
+      "views": 79756,
+      "rank": 43
+    },
+    {
+      "article": "Murder_of_Jacob_Wetterling",
+      "views": 79428,
+      "rank": 44
+    },
+    {
+      "article": "Didier_Deschamps",
+      "views": 78922,
+      "rank": 45
+    },
+    {
+      "article": "Samantha_Morton",
+      "views": 78203,
+      "rank": 46
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 77572,
+      "rank": 47
+    },
+    {
+      "article": "2030_FIFA_World_Cup",
+      "views": 76815,
+      "rank": 48
+    },
+    {
+      "article": "Falkland_Islands",
+      "views": 76737,
+      "rank": 49
+    },
+    {
+      "article": "2022_FIFA_World_Cup",
+      "views": 75931,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Netflix paid $587M for Ben Affleck’s AI filmmaking startup"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "What to watch for after Jensen Huang’s Japan visit"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Can an Apple lawsuit derail OpenAI’s hardware plans?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "TechCrunch Mobility: The battle over robotaxi rules"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Nonprofit Current AI is racing to build the World Wide Web of AI, free for all"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Waymo says San Francisco service has resumed after one-hour pause"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Kimi: Threat or menace?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "All the EVs that were discontinued or killed off in the U.S. this year"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Federal employees can download TikTok on their work phones again"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A 600-mile road trip (and data) proves EV charging doesn’t suck anymore"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Neil Rimer thinks the AI money is coming back out"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Applications close in 48 hours — here’s everything Australian founders need to know about Stripe x Startup Battlefield"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Databricks hits $188B valuation, extending its run as AI’s favorite second act"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "This unpronounceable series of glyphs is an incredible side project from Kieran Hebden (aka Four Tet)"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Kodak EC35 is a dirt-cheap point-and-shoot film camera"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "I hate that I don’t hate this song made with Suno"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The FBI reportedly won’t investigate ICE anymore"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Orchid is a delightfully retro and approachable hipster synth"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Birdfy&#8217;s solar-powered smart feeder is down to one of its best prices"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "US Marshals arrest the Tate brothers in Miami"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Clapper was a bad smart home gadget — and a viral sensation"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The future of physical games is not looking great"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The grueling, 630-mile road race where the only fuel is sunlight"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "As mosquito ranges expand, better monitoring is key to preventing disease"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Will AI fix prior authorization—or make it worse?"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The Pentagon's Space Development Agency hasn't moved as fast as anyone would like"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Hegseth wants a \"High-T\" military; doctors call it a clinical minefield"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Taco Bell iceberg lettuce identified as source of cyclosporiasis in 5 states"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Troubling new details emerge on diabetes ouster controversy"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Will Russia's answer to the Falcon 9 rocket ever take flight?"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Fubo hikes prices by $15 after restoring some NBCU channels lost in November"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "San Francisco orders Apple, Google to remove nudify apps from app stores"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ars is looking for a senior technology reporter, and you might be it!"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The report oil companies are worried about: Climate attribution science"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "FCC took pricey gifts from Paramount as the company needed approval for deals"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "2026 Lucid Gravity Touring review: A strong act 2"
+    }
+  ]
 }
