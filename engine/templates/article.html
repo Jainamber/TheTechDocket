@@ -20,6 +20,7 @@
   </nav>
   <a class="kicker postkick k-{{ hub }}" href="{{ base_path }}topics/{{ hub }}/">{{ hub_name }}</a>
   <h1>{{ title }}</h1>
+  <div class="standfirst">{{ description }}</div>
   <div class="byline">
     <span>By <a href="{{ author_url }}">{{ author.name }}</a></span>
     <span>·</span>
@@ -35,7 +36,14 @@
   </figure>
   {% if ymyl_disclaimer %}<div class="disclaimer" role="note"><strong>Note:</strong> {{ ymyl_disclaimer }}</div>{% endif %}
 
-  {{ body_html }}
+  {% if toc %}
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol>{% for t in toc %}<li><a href="#{{ t.id }}">{{ t.text }}</a></li>{% endfor %}</ol>
+  </nav>
+  {% endif %}
+
+  <div class="body">{{ body_html }}</div>
 
   {% if faq %}
   <h2 id="faq">Frequently asked questions</h2>

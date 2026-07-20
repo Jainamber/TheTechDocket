@@ -176,6 +176,22 @@ footer.site a{color:var(--muted);text-decoration:none}
 footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
 footer.site p{margin:0;max-width:74ch;line-height:1.65}
 footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
 :root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
 .skip{color:#0d0f14}
@@ -203,6 +219,7 @@ footer.site p a{text-decoration:underline}
   </nav>
   <a class="kicker postkick k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a>
   <h1>Codex Context Window Cut to 272K: What OpenAI Rolled Back</h1>
+  <div class="standfirst">OpenAI cut Codex&#39;s default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.</div>
   <div class="byline">
     <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
     <span>·</span>
@@ -218,19 +235,26 @@ footer.site p a{text-decoration:underline}
   </figure>
   
 
-  <p>OpenAI has reduced the default context window in Codex, its AI coding agent, from 372,000 back to 272,000 tokens for the GPT-5.6 Sol, Terra, and Luna models. The change shipped quietly on July 18, 2026 through two config updates in the open-source Codex repository, with no changelog entry. It is best understood as a rollback, not a fresh cut: 372K was a short-lived increase that, by OpenAI&rsquo;s own account, was burning through subscribers&rsquo; usage quotas unexpectedly fast — because it pushed sessions past the exact point where OpenAI&rsquo;s pricing doubles.</p>
-<h2>What exactly changed</h2>
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#what-exactly-changed">What exactly changed</a></li><li><a href="#why-openai-pulled-372k-back">Why OpenAI pulled 372K back</a></li><li><a href="#the-1m-token-asterisk">The 1M-token asterisk</a></li><li><a href="#how-rivals-price-long-context">How rivals price long context</a></li><li><a href="#the-india-angle">The India angle</a></li><li><a href="#what-to-watch">What to watch</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>OpenAI has reduced the default context window in Codex, its AI coding agent, from 372,000 back to 272,000 tokens for the GPT-5.6 Sol, Terra, and Luna models. The change shipped quietly on July 18, 2026 through two config updates in the open-source Codex repository, with no changelog entry. It is best understood as a rollback, not a fresh cut: 372K was a short-lived increase that, by OpenAI&rsquo;s own account, was burning through subscribers&rsquo; usage quotas unexpectedly fast — because it pushed sessions past the exact point where OpenAI&rsquo;s pricing doubles.</p>
+<h2 id="what-exactly-changed">What exactly changed</h2>
 <p>The change is visible in the open-source Codex repository. <a href="https://github.com/openai/codex/pull/33972" rel="noopener" target="_blank">Pull request #33972</a>, merged on July 18 by an OpenAI staff account, updates the bundled model metadata for the stable 0.144 release: <code>context_window</code> and <code>max_context_window</code> for GPT-5.6 Sol and Terra drop from 372,000 to 272,000 tokens. A companion change, <a href="https://github.com/openai/codex/pull/34009" rel="noopener" target="_blank">PR #34009</a>, confirms the 272K cap applies to all three GPT-5.6 variants — Sol, Terra, and Luna. It is a configuration-only change: one file, no model weights touched.</p>
 <p>Nothing about it appears in the <a href="https://developers.openai.com/codex/changelog" rel="noopener" target="_blank">official Codex changelog</a>, whose latest entry as of this writing is a July 16 release note about command-safety improvements. Users noticed anyway. A <a href="https://github.com/openai/codex/issues/32806" rel="noopener" target="_blank">GitHub issue filed July 13</a> had already flagged the reduction rolling out silently, calling it a regression against an advertised million-token model. By the morning of July 19, the PR diff was on the <a href="https://news.ycombinator.com/item?id=48965850" rel="noopener" target="_blank">Hacker News front page</a>, where it drew 189 points and 89 comments.</p>
 <p>The reaction split into two camps. Developers on large codebases said the smaller window forces more &ldquo;compaction&rdquo; — the lossy summarisation coding agents perform when a session outgrows its context. As commenter <a href="https://news.ycombinator.com/item?id=48967382" rel="noopener" target="_blank">skerit put it</a>: &ldquo;No matter how good compaction is, on some big projects it needs to read a lot of files… when I use Codex a single session has to compact over and over again.&rdquo; Others argued compaction handles it fine and the cut is a sensible cost move — one commenter reported a 9.5-hour unattended Codex session completing without trouble.</p>
-<h2>Why OpenAI pulled 372K back</h2>
+<h2 id="why-openai-pulled-372k-back">Why OpenAI pulled 372K back</h2>
 <p>The most useful frame comes from OpenAI&rsquo;s own pricing documentation. The <a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">GPT-5.6 Sol model page</a> states that requests exceeding 272K input tokens are charged at doubled input rates and 1.5× output rates for the complete request. In other words, 272,000 tokens is an official pricing cliff. A default window of 372K meant an ordinary long session could drift roughly 100K tokens past that cliff by default — silently paying the premium, or draining subscription quota at the premium rate. A <a href="https://github.com/openai/codex/issues/32486" rel="noopener" target="_blank">user-filed issue from July 11</a> documented exactly this mechanism a week before OpenAI acted.</p>
 <p>OpenAI&rsquo;s Codex engineering lead, Thibault Sottiaux, <a href="https://x.com/thsottiaux/status/2076495156757577895" rel="noopener" target="_blank">addressed the change on X</a>, saying it landed alongside inference optimisations that should give Sol subscribers roughly 10% more usage, and framing it as &ldquo;no nerfing.&rdquo; Developer summaries of <a href="https://x.com/thsottiaux/status/2076543065045795309" rel="noopener" target="_blank">his follow-up post</a> — linked repeatedly in the HN thread — say the 372K rollout was a main source of unexpectedly high usage burn, and that OpenAI intends to restore the larger window once that is fixed. There is still no formal announcement; as of publish time, a staff X thread and two pull requests are the entire paper trail.</p>
 <p>The economics behind the cliff are not mysterious. Long contexts are expensive to serve: attention computation grows steeply with sequence length, and the memory a GPU must hold for a session (the KV cache) <a href="https://melchi.me/posts/kv-cache/" rel="noopener" target="_blank">scales linearly with every token kept in context</a>. Longer default windows mean fewer concurrent users per GPU. We looked at what those serving costs translate to in rupee terms in our breakdown of <a href="/articles/real-cost-of-running-ai/">the real cost of running AI</a> — the same arithmetic is what turns a &ldquo;free&rdquo; context increase into a quota problem at scale.</p>
-<h2>The 1M-token asterisk</h2>
+<h2 id="the-1m-token-asterisk">The 1M-token asterisk</h2>
 <p>Here is the part most coverage misses: GPT-5.6 Sol&rsquo;s advertised context window never changed. OpenAI&rsquo;s <a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol" rel="noopener" target="_blank">model reference</a> still lists 1,050,000 input tokens. What changed is the <em>product default</em> in Codex — which now sits exactly on the pricing boundary. The advertised number is what the model accepts via the API if you pay for it; the default is what OpenAI thinks a subscription can sustainably absorb. The July 18 change closed the gap between marketing and metering.</p>
 <p>That distinction applies across the industry, and it is why &ldquo;which model has the biggest context window&rdquo; is usually the wrong question. The better question is what a long request costs.</p>
-<h2>How rivals price long context</h2>
+<h2 id="how-rivals-price-long-context">How rivals price long context</h2>
 <table>
 <thead>
 <tr>
@@ -268,11 +292,11 @@ footer.site p a{text-decoration:underline}
 </tbody>
 </table>
 <p>Two of the three major vendors charge a premium once a request crosses a length threshold — Google&rsquo;s Pro-tier Gemini models double input pricing above 200K tokens, the same mechanic OpenAI applies above 272K. Anthropic is currently the outlier: its documentation states a 900K-token request is billed at the same per-token rate as a 9K one. GitHub Copilot, which <a href="https://docs.github.com/en/copilot/reference/ai-models/supported-models" rel="noopener" target="_blank">offers these same GPT-5.6 and Claude models</a>, describes million-token windows as applying to &ldquo;select models,&rdquo; so what Copilot users get depends on the model they pick.</p>
-<h2>The India angle</h2>
+<h2 id="the-india-angle">The India angle</h2>
 <p>Context-window economics land differently in a market this large and this price-sensitive. India is now the world&rsquo;s second-largest developer base — <a href="https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/" rel="noopener" target="_blank">21.9 million developers on GitHub, up from 4.5 million in 2020</a>, ranking first globally in open-source contributions, with GitHub projecting 57.5 million by 2030. Codex&rsquo;s <a href="https://developers.openai.com/codex/pricing" rel="noopener" target="_blank">official plans</a> are priced in dollars everywhere: free, $8, $20, and $100-plus tiers. OpenAI has shown it will localise consumer pricing — ChatGPT Go launched India-first at ₹399/month — but there is no rupee pricing for its coding product, so Indian developers and startups pay the same dollar rates as Silicon Valley, with quota burn as the real bill.</p>
 <p>For that audience, the rollback is arguably good news in disguise: a default that quietly charged premium rates was worst for exactly the users who cannot shrug off a doubled token bill. The practical playbook for cost-sensitive teams is unchanged — keep sessions lean, let compaction work, and treat anything past 200K tokens as a deliberate, priced decision rather than a default. We track shifts like this across coding agents and assistants in our <a href="/topics/ai-tools/">AI tools and apps</a> coverage.</p>
-<h2>What to watch</h2>
-<p>Three things will tell us where this settles. First, whether 372K actually returns — Sottiaux&rsquo;s posts suggest it will once the usage-burn problem is fixed; a return would confirm the rollback framing. Second, whether OpenAI starts documenting changes like this formally: a usage-affecting default shipped via a hotfix PR and a staff tweet is a communication pattern developers have now noticed twice in one week. Third, whether Anthropic&rsquo;s flat-rate 1M pricing survives as a competitive lever, or converges toward the tiered model OpenAI and Google share. And in the background, the pressure that makes all of this matter keeps building from below: smaller models that run locally, like the phone-scale <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B</a>, sidestep per-token context economics entirely — every token processed on-device is one nobody meters.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p>Three things will tell us where this settles. First, whether 372K actually returns — Sottiaux&rsquo;s posts suggest it will once the usage-burn problem is fixed; a return would confirm the rollback framing. Second, whether OpenAI starts documenting changes like this formally: a usage-affecting default shipped via a hotfix PR and a staff tweet is a communication pattern developers have now noticed twice in one week. Third, whether Anthropic&rsquo;s flat-rate 1M pricing survives as a competitive lever, or converges toward the tiered model OpenAI and Google share. And in the background, the pressure that makes all of this matter keeps building from below: smaller models that run locally, like the phone-scale <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B</a>, sidestep per-token context economics entirely — every token processed on-device is one nobody meters.</p></div>
 
   
   <h2 id="faq">Frequently asked questions</h2>

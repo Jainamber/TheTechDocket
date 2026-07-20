@@ -163,6 +163,22 @@ footer.site a{color:var(--muted);text-decoration:none}
 footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
 footer.site p{margin:0;max-width:74ch;line-height:1.65}
 footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
 :root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
 .skip{color:#0d0f14}
@@ -189,11 +205,11 @@ footer.site p a{text-decoration:underline}
   <p>This page explains <strong>who</strong> produces The Tech Docket, <strong>how</strong> every
 article is made, and <strong>why</strong> — following Google&rsquo;s people-first
 &ldquo;Who, How, Why&rdquo; disclosure framework.</p>
-<h2>Who</h2>
+<h2 id="who">Who</h2>
 <p>Every article is published under the byline of
 <a href="/authors/saurab-jain/">Saurab Jain</a>, who sets the
 editorial standards, owns the site, and is accountable for its accuracy.</p>
-<h2>How our articles are made (AI disclosure)</h2>
+<h2 id="how-our-articles-are-made-ai-disclosure">How our articles are made (AI disclosure)</h2>
 <p>We are transparent about our process, which combines data, AI assistance and
 defined quality gates:</p>
 <ol>
@@ -217,11 +233,11 @@ defined quality gates:</p>
    with subject &ldquo;Correction&rdquo;. Substantive fixes are made in the article with a
    visible &ldquo;Updated&rdquo; date; we never bump dates without a real change.</li>
 </ol>
-<h2>Why</h2>
+<h2 id="why">Why</h2>
 <p>We publish to help readers quickly understand what&rsquo;s moving in tech and AI and
 what it means for them — not to game search rankings. One article per day,
 each with original analysis, is a deliberate quality choice.</p>
-<h2>What we don&rsquo;t do</h2>
+<h2 id="what-we-dont-do">What we don&rsquo;t do</h2>
 <ul>
 <li>No sponsored posts, affiliate links or third-party contributed content.</li>
 <li>No health, financial or legal advice — sensitive topics carry disclaimers

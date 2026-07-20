@@ -175,6 +175,22 @@ footer.site a{color:var(--muted);text-decoration:none}
 footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
 footer.site p{margin:0;max-width:74ch;line-height:1.65}
 footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
 :root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
 .skip{color:#0d0f14}
@@ -202,6 +218,7 @@ footer.site p a{text-decoration:underline}
   </nav>
   <a class="kicker postkick k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a>
   <h1>AI Chatbot Data Privacy: What Happens to Your Chats</h1>
+  <div class="standfirst">ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor&#39;s own policy pages.</div>
   <div class="byline">
     <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
     <span>·</span>
@@ -217,8 +234,15 @@ footer.site p a{text-decoration:underline}
   </figure>
   
 
-  <p>When you type a message into a free AI chatbot, three things typically happen behind the scenes: the company running it stores the conversation on its servers, it may use that conversation to help train or improve future versions of its model unless you have turned a setting off, and it keeps the data for a defined period that ranges from a few days to several years depending on the vendor. OpenAI, Google, Anthropic and Meta each document this differently in their own policies, and the default behaviour is not the same across the four — which matters if you have been assuming that all &ldquo;free&rdquo; chatbots handle your prompts the same way.</p>
-<h2>Does your free chatbot train on your conversations?</h2>
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#does-your-free-chatbot-train-on-your-conversations">Does your free chatbot train on your conversations?</a></li><li><a href="#what-temporary-and-incognito-modes-really-change">What “Temporary” and “Incognito” modes really change</a></li><li><a href="#the-india-angle">The India angle</a></li><li><a href="#practical-steps-to-reduce-what-you-share">Practical steps to reduce what you share</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>When you type a message into a free AI chatbot, three things typically happen behind the scenes: the company running it stores the conversation on its servers, it may use that conversation to help train or improve future versions of its model unless you have turned a setting off, and it keeps the data for a defined period that ranges from a few days to several years depending on the vendor. OpenAI, Google, Anthropic and Meta each document this differently in their own policies, and the default behaviour is not the same across the four — which matters if you have been assuming that all &ldquo;free&rdquo; chatbots handle your prompts the same way.</p>
+<h2 id="does-your-free-chatbot-train-on-your-conversations">Does your free chatbot train on your conversations?</h2>
 <p>The honest answer is: it depends on the vendor, and often on a setting you have never opened.</p>
 <p>Per OpenAI&rsquo;s own explanation of <a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance" rel="noopener" target="_blank">how data is used to improve model performance</a>, ChatGPT Free and Plus conversations are used to train its models by default. You have to actively switch this off, either in the privacy portal or through <strong>Settings &gt; Data Controls &gt; &ldquo;Improve the model for everyone&rdquo;</strong>. Even with that toggle off, giving a response a thumbs-up or thumbs-down can pull that entire conversation back into training data, according to the same page.</p>
 <p>Google&rsquo;s <a href="https://support.google.com/gemini/answer/13594961?hl=en" rel="noopener" target="_blank">Gemini Apps Privacy Hub</a> describes a similar default. If your Gemini Apps Activity setting is switched on, which it is unless you turn it off, conversations can be used to &ldquo;maintain and improve&rdquo; Google&rsquo;s services — a category the hub says explicitly extends to generative AI models. A separate subset of conversations is also selected for human review to check quality and guard against misuse, independent of your activity setting.</p>
@@ -261,22 +285,22 @@ footer.site p a{text-decoration:underline}
 </tbody>
 </table>
 <p>These defaults come straight from each company&rsquo;s own documentation, linked above and in the sources list below. Bookmark them, since all four vendors have revised these exact policies at least once in the past two years.</p>
-<h2>What &ldquo;Temporary&rdquo; and &ldquo;Incognito&rdquo; modes really change</h2>
+<h2 id="what-temporary-and-incognito-modes-really-change">What &ldquo;Temporary&rdquo; and &ldquo;Incognito&rdquo; modes really change</h2>
 <p>All three US text chatbots now offer a version of a session that skips your saved history. They are not identical to each other, and none of them means the company never sees or briefly stores what you typed.</p>
 <p>ChatGPT&rsquo;s Temporary Chat &ldquo;won&rsquo;t appear in history, use or create memories, or be used to train our models,&rdquo; per OpenAI&rsquo;s <a href="https://help.openai.com/en/articles/8914046-temporary-chat-faq" rel="noopener" target="_blank">Temporary Chat FAQ</a> — but OpenAI still keeps a copy for up to 30 days for safety and abuse monitoring before deleting it for good.</p>
 <p>Gemini&rsquo;s Temporary Chats work on the same principle: they sit outside Gemini Apps Activity, are not used to improve the model unless you separately submit feedback on a reply, and are held for up to 72 hours rather than 30 days, according to Google&rsquo;s Privacy Hub.</p>
 <p>Claude&rsquo;s version is called Incognito chat. It skips your saved history and Claude&rsquo;s memory feature, is excluded from training &ldquo;even if you have enabled Model Improvement in your Privacy Settings,&rdquo; and is retained for 30 days by default, per <a href="https://support.claude.com/en/articles/12260368-use-incognito-chats" rel="noopener" target="_blank">Anthropic&rsquo;s help center</a>.</p>
 <p>Meta AI has no equivalent named mode in the documentation reviewed for this piece; deleting a chat with a command like &ldquo;/reset-ai&rdquo; is the closest available control.</p>
 <p>The pattern across all three: a &ldquo;temporary&rdquo; label changes whether a conversation is saved to your account and whether it feeds training. It does not mean the company receives nothing — every vendor above documents keeping a short-lived copy regardless.</p>
-<h2>The India angle</h2>
+<h2 id="the-india-angle">The India angle</h2>
 <p>India&rsquo;s core law here is the Digital Personal Data Protection Act, 2023, which treats any company processing an Indian resident&rsquo;s personal data — including a chatbot maker — as a &ldquo;Data Fiduciary&rdquo; with duties around consent, purpose limitation and data minimisation, per the <a href="https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf" rel="noopener" target="_blank">Act&rsquo;s official text published by MeitY</a>. The government notified the accompanying DPDP Rules in November 2025, which spell out consent-notice requirements, breach reporting and a Data Principal&rsquo;s right to access, correct or erase their own data.</p>
 <p>None of that is chatbot-specific, and none of the four companies above runs a distinct India privacy notice the way some maintain one for the European Union. OpenAI&rsquo;s own <a href="https://openai.com/policies/row-privacy-policy/" rel="noopener" target="_blank">policy for markets outside the EU, UK, Switzerland and South Korea</a> — the version that governs Indian users — applies the same global rules described above, with no India-specific carve-out mentioned.</p>
 <p>In practice, an Indian user&rsquo;s day-to-day recourse today is the same set of account settings and toggles described in this piece, not a chatbot-specific DPDP mechanism. The Rules carry a compliance runway of up to 18 months from notification, so pieces of the enforcement machinery, including the Data Protection Board&rsquo;s full working process, are still being put in place. Until that matures, the most concrete India-relevant step is the same one that applies anywhere: open each app&rsquo;s data-control settings directly rather than assume a free tier behaves like one you already know.</p>
-<h2>Practical steps to reduce what you share</h2>
+<h2 id="practical-steps-to-reduce-what-you-share">Practical steps to reduce what you share</h2>
 <p>A few habits carry across all four services. Treat a chatbot like a semi-public notebook — avoid pasting identity documents, financial account details, or anything you would not want sitting on a company&rsquo;s servers for months or years, regardless of which toggle you have set. Default to temporary or incognito mode for anything sensitive, and only use a saved conversation when you actually want its memory feature to carry context forward.</p>
 <p>It helps to understand why conversation data is valuable to these companies in the first place. Building and running large models is an extraordinarily expensive undertaking, and real usage data is one of the cheaper ways to keep improving a model after launch — our breakdown of <a href="/articles/real-cost-of-running-ai/">what it actually costs to run AI at scale</a> covers the economics behind that trade-off. It is also why some manufacturers are pushing the opposite direction, building smaller models that run directly on a phone instead of a remote server; PrismML&rsquo;s <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B on-device model</a> is one recent example, and it sidesteps much of this piece entirely because prompts never leave the device.</p>
 <p>One related literacy worth building alongside this: several of these same assistants, including Gemini and Meta AI, now generate images and video as part of a conversation, and those outputs circulate long after the chat itself is forgotten. Knowing <a href="/articles/spot-ai-generated-images-videos/">how to spot AI-generated images and video</a> is a useful adjacent skill if you are already thinking carefully about what these tools do with both your input and their output.</p>
-<p>None of this requires becoming an expert in any one company&rsquo;s fine print. It just means treating &ldquo;free&rdquo; as a description of price, not of what happens to what you type next. Vendor policies like these shift every few months, so we track them — along with the rest of the assistant landscape — in our <a href="/topics/ai-tools/">AI tools and apps</a> coverage.</p>
+<p>None of this requires becoming an expert in any one company&rsquo;s fine print. It just means treating &ldquo;free&rdquo; as a description of price, not of what happens to what you type next. Vendor policies like these shift every few months, so we track them — along with the rest of the assistant landscape — in our <a href="/topics/ai-tools/">AI tools and apps</a> coverage.</p></div>
 
   
   <h2 id="faq">Frequently asked questions</h2>

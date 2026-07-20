@@ -163,6 +163,22 @@ footer.site a{color:var(--muted);text-decoration:none}
 footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
 footer.site p{margin:0;max-width:74ch;line-height:1.65}
 footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
 :root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
 .skip{color:#0d0f14}
@@ -194,10 +210,10 @@ from real, same-day search-demand and community-interest data — so we write
 about what people are actually trying to understand right now, and we add the
 context, comparisons and India-vs-global perspective that a search results
 page can&rsquo;t.</p>
-<h2>Who is behind this site</h2>
+<h2 id="who-is-behind-this-site">Who is behind this site</h2>
 <p>The Tech Docket is written and edited by <strong><a href="/authors/saurab-jain/">Saurab Jain</a></strong>.
 Saurab Jain is the founder and editor of The Tech Docket. He tracks global and Indian technology and AI trends daily, using search-demand data to decide what to cover and first-party analysis to explain why it matters.</p>
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 <ul>
 <li>Email: <a href="mailto:jainamber88@gmail.com">jainamber88@gmail.com</a></li>
 <li>Corrections: email with subject &ldquo;Correction&rdquo; — see our <a href="/editorial-policy/">editorial policy</a>.</li>

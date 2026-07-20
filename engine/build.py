@@ -25,7 +25,7 @@ from . import images
 from .docket import all_dockets
 from .util import IST, ROOT, all_articles, load_config, now_ist
 
-MD = md.Markdown(extensions=["tables", "fenced_code", "sane_lists", "smarty"])
+MD = md.Markdown(extensions=["tables", "fenced_code", "sane_lists", "smarty", "toc"])
 
 
 def _env() -> Environment:
@@ -141,6 +141,16 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
                             "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
                            for f in a["faq"]]}
 
+    _body_html = render_markdown(cfg, a["_body_md"])
+    _words = len(a["_body_md"].split())
+    _toc = None
+    if _words > 1200:
+        _toc = [{"id": m.group(1),
+                 "text": html.unescape(re.sub(r"<[^>]+>", "", m.group(2)))}
+                for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', _body_html)]
+        if len(_toc) < 3:
+            _toc = None
+
     related = [r for r in arts
                if r["slug"] != slug and r.get("hub") == hub][:3]
     if len(related) < 3:
@@ -184,8 +194,9 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
         "blogposting_jsonld": Markup(json.dumps(blogposting, ensure_ascii=False)),
         "breadcrumb_jsonld": Markup(json.dumps(breadcrumb, ensure_ascii=False)),
         "faq_jsonld": Markup(json.dumps(faq_jsonld, ensure_ascii=False)) if faq_jsonld else None,
-        "body_html": Markup(render_markdown(cfg, a["_body_md"])),
-        "read_min": max(2, round(len(a["_body_md"].split()) / 220)),
+        "body_html": Markup(_body_html),
+        "read_min": max(2, round(_words / 220)),
+        "toc": _toc,
         "related": [article_summary(cfg, r) for r in related],
     }
 
