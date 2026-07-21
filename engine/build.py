@@ -220,6 +220,18 @@ def _date_dt(cfg, date_str: str) -> datetime:
                     cfg["publishing"]["publish_hour_ist"], 0, 0, tzinfo=IST)
 
 
+def _dek_html(text: str) -> Markup:
+    """Escape a docket dek, then honour a single **bold** lead-in span.
+
+    The daily session marks the story-at-a-glance lead-in with **…** (Smart
+    Brevity style); nothing else is interpreted, so this stays injection-safe
+    and zero-markdown-surprise. Autoescape is preserved via html.escape().
+    """
+    esc = html.escape(text or "")
+    esc = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", esc)
+    return Markup(esc)
+
+
 def docket_context(cfg, d: dict) -> dict:
     """Render-ready context for one docket day (Today's Docket)."""
     hubs = cfg["content"]["hubs"]
@@ -236,6 +248,9 @@ def docket_context(cfg, d: dict) -> dict:
             "hub_name": hubs.get(it.get("hub"), it.get("hub", "")),
             "headline": str(it.get("headline") or ""),
             "dek": str(it.get("dek") or ""),
+            "dek_html": _dek_html(str(it.get("dek") or "")),
+            "why": str(it.get("why") or "").strip(),
+            "counterpoint": str(it.get("counterpoint") or "").strip(),
             "source": str(it.get("source") or ""),
             "lead": bool(it.get("lead")),
             "pick": bool(it.get("pick")),

@@ -191,9 +191,23 @@ Edit the draft into `data/docket/<date>.md`:
   entries and place them immediately after the lead (gate D10).
 - **Paraphrase headlines — never copy them.** ≤80-char headline, ≤60 words
   per item (headline + dek). No clickbait. Gates D04/D05 enforce this.
-- Deks are observations backed by the linked source: WebFetch each source
-  URL and verify every claim before writing it. No causal claims, no numbers
-  absent from the source, no invented context. Same spine as articles.
+- **Bold the lead-in** of each dek with `**…**` — the 2–5 word "story at a
+  glance" fragment that opens it (Smart-Brevity style). Only the first
+  fragment; the renderer bolds nothing else.
+- **`why:` — a "Why it matters" line on every quick (non-lead) entry.** One
+  sharp, ≤35-word stakes sentence: what changes, who's affected, or the India
+  angle. This is the docket's whole differentiator over a wire feed — treat it
+  as required (gate D12 warns if missing; don't ship a docket relying on that
+  warning). The lead entry needs no `why` (it links to the full article).
+- **`counterpoint:` (optional, ≤35 words)** — add ONLY on a genuinely
+  contested story, to state the strongest opposing read. Renders as an amber
+  "Counterpoint" label. Don't manufacture one.
+- Deks and why/counterpoint are observations backed by the linked source:
+  WebFetch each source URL and verify every claim before writing it. No causal
+  claims beyond what the source supports, no numbers absent from the source,
+  no invented context. Same spine as articles.
+- **Watchlist tag** lives in the headline row; **momentum** (when enabled) and
+  the entry number ride the colour rail — you don't place those, the engine does.
 - Keep each item's source URL and a short source label.
 
 ```bash

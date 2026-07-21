@@ -22,7 +22,7 @@
 <h2 class="sect">Today's Docket <span class="dt">· {{ docket.date_human }}</span></h2>
 <div class="docketstrip">
   {% for e in docket.entries %}
-  <a class="dcard" href="{{ e.href }}"{% if e.external %} rel="noopener" target="_blank"{% endif %}>
+  <a class="dcard" href="{{ e.href }}"{% if e.external %} rel="noopener" target="_blank"{% endif %} style="--rail:var(--k-{{ e.hub }})">
     <span><span class="kicker k-{{ e.hub }}">{{ e.hub_name }}</span>{% if e.tag_label %} <span class="dtag">{{ e.tag_label }}</span>{% endif %}{% if e.pick %} <span class="dpick">Short of the day</span>{% endif %}</span>
     <span class="dtt">{{ e.headline }}</span>
     <span class="dsrc">{{ e.source }}</span>

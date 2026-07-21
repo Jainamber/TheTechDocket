@@ -138,24 +138,32 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
 .empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
 .docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
-.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:15px 16px;text-decoration:none;min-height:118px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
 .dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
-.dcard:hover{border-color:var(--accent)}
-.dcard.dmore{justify-content:center;background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
 .docketpage .dockh1{margin:.1em 0 .3em}
 .dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
 .docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
 .docketlist{list-style:none;margin:24px 0 0;padding:0}
-.dentry{position:relative;border-top:1px solid var(--line);padding:22px 2px 22px 66px}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
 .dentry:last-child{border-bottom:1px solid var(--line)}
-.dentry .dno{position:absolute;left:2px;top:24px;font-family:var(--fm);font-size:19px;font-weight:400;padding:0}
-.dentry h2{font-family:var(--fs);font-size:21.5px;line-height:1.26;margin:5px 0 7px;letter-spacing:-.2px}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
 .dentry h2 a{text-decoration:none;color:var(--ink)}
 .dentry h2 a:hover{color:var(--accent-ink)}
-.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.62;color:var(--ink2);max-width:60ch}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
 .dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
 .dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
 .dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px}
 .dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
 .dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
@@ -166,11 +174,14 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
 .docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
 @media (max-width:719px){
-.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:8px 2px 14px}
-.dentry{flex:0 0 84%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 85%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden}
 .dentry:last-child{border-bottom:1px solid var(--line)}
-.dentry .dno{position:static;display:block;font-size:15px;margin:0 0 6px}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
 .dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
 .swipehint{display:block}
 }
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}

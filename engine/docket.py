@@ -201,17 +201,25 @@ class DocketGateRunner:
         self.check("D04-no-clickbait", HARD, not bad,
                    "clickbait/caps headlines: " + ", ".join(bad[:4]))
 
-        # D05 tiny format is enforced, not aspirational
+        # D05 tiny format is enforced, not aspirational. headline + dek is the
+        # core "short"; the optional why/counterpoint lines are each separately
+        # capped so the Brief layer can't quietly turn a short into an essay.
         max_h = int(self.dk_cfg.get("max_headline_chars", 80))
         max_w = int(self.dk_cfg.get("max_item_words", 60))
+        max_why = int(self.dk_cfg.get("max_why_words", 35))
         bad = []
         for i, it in enumerate(items, 1):
             h = str(it.get("headline") or "")
-            words = len((h + " " + str(it.get("dek") or "")).split())
+            dek = str(it.get("dek") or "").replace("**", "")
+            words = len((h + " " + dek).split())
             if len(h) > max_h:
                 bad.append(f"item {i}: headline {len(h)}ch (max {max_h})")
             if words > max_w:
                 bad.append(f"item {i}: {words} words (max {max_w})")
+            for field in ("why", "counterpoint"):
+                fw = len(str(it.get(field) or "").split())
+                if fw > max_why:
+                    bad.append(f"item {i}: {field} {fw} words (max {max_why})")
         self.check("D05-tiny-format", HARD, not bad, "; ".join(bad[:4]))
 
         # D06 lead item is first, internal, and points at a real article
@@ -265,6 +273,17 @@ class DocketGateRunner:
         self.check("D11-watch-quota", SOFT, tagged * 2 >= len(items),
                    f"{tagged}/{len(items)} entries tagged "
                    "(target >=half; wildcards are allowed and encouraged)")
+
+        # D12 stakes coverage — the Brief layer's point is that every quick
+        # item earns a "Why it matters" line. SOFT by design: the lead links
+        # to the full article (its own analysis), so a missing lead `why` is
+        # fine; a missing why on a *quick* item just warns, never blocks the
+        # unattended run.
+        no_why = [i for i, it in enumerate(items, 1)
+                  if not it.get("lead") and not str(it.get("why") or "").strip()]
+        self.check("D12-stakes-line", SOFT, not no_why,
+                   f"quick items without a Why-it-matters line: {no_why} "
+                   "(recommended on every non-lead entry)")
 
         # D09 canonicals + sitemap: dated page is the canonical unit
         expected = (self.cfg["site"]["base_url"].rstrip("/")

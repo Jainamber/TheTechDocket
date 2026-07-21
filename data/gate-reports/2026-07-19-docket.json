@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-07-19",
-  "checked_at": "2026-07-20T12:29:18.965232+05:30",
+  "checked_at": "2026-07-21T10:52:46.040658+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 1,
@@ -51,7 +51,7 @@
       "gate": "D08-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 25KB (<=90)"
+      "detail": "html 27KB (<=90)"
     },
     {
       "gate": "D10-tags-picks",
@@ -64,6 +64,12 @@
       "level": "soft",
       "ok": false,
       "detail": "2/6 entries tagged (target >=half; wildcards are allowed and encouraged)"
+    },
+    {
+      "gate": "D12-stakes-line",
+      "level": "soft",
+      "ok": true,
+      "detail": "quick items without a Why-it-matters line: [] (recommended on every non-lead entry)"
     },
     {
       "gate": "D09-canonicals",

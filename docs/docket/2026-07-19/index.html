@@ -127,24 +127,32 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
 .empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
 .docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
-.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:15px 16px;text-decoration:none;min-height:118px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
 .dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
-.dcard:hover{border-color:var(--accent)}
-.dcard.dmore{justify-content:center;background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
 .docketpage .dockh1{margin:.1em 0 .3em}
 .dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
 .docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
 .docketlist{list-style:none;margin:24px 0 0;padding:0}
-.dentry{position:relative;border-top:1px solid var(--line);padding:22px 2px 22px 66px}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
 .dentry:last-child{border-bottom:1px solid var(--line)}
-.dentry .dno{position:absolute;left:2px;top:24px;font-family:var(--fm);font-size:19px;font-weight:400;padding:0}
-.dentry h2{font-family:var(--fs);font-size:21.5px;line-height:1.26;margin:5px 0 7px;letter-spacing:-.2px}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
 .dentry h2 a{text-decoration:none;color:var(--ink)}
 .dentry h2 a:hover{color:var(--accent-ink)}
-.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.62;color:var(--ink2);max-width:60ch}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
 .dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
 .dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
 .dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px}
 .dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
 .dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
@@ -155,11 +163,14 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
 .docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
 @media (max-width:719px){
-.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:8px 2px 14px}
-.dentry{flex:0 0 84%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 85%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden}
 .dentry:last-child{border-bottom:1px solid var(--line)}
-.dentry .dno{position:static;display:block;font-size:15px;margin:0 0 6px}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
 .dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
 .swipehint{display:block}
 }
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
@@ -211,62 +222,80 @@ footer.site p a{text-decoration:underline}
   <p class="intro">The day's tech, heard in order: one long read and 5 quick ones — every entry linked to its source, picked from the 12 stories our tracking scored today.</p>
   <ol class="docketlist" data-date="2026-07-19">
     
-    <li class="dentry" id="d1">
-      <span class="dno k-ai-tools" aria-hidden="true">01</span>
+    <li class="dentry" id="d1" style="--rail:var(--k-ai-tools)">
+      <span class="dno" aria-hidden="true">01</span>
+      
       <div>
         <span class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dtag">OpenAI</span> <span class="dlead">Today's read</span></span>
         <h2><a href="/articles/codex-context-window-cut/">OpenAI walks Codex&#39;s context window back to 272K</a></h2>
-        <p class="ddek">Our full story on the quiet rollback from 372K: what shrank, who feels it first, and the one number to check before you blame the model.</p>
+        <p class="ddek"><strong>Our full story</strong> on the quiet rollback from 372K: what shrank, who feels it first, and the workaround that costs nothing.</p>
+        
+        
         <p class="dmeta">The Tech Docket · <a href="/articles/codex-context-window-cut/">full article</a></p>
       </div>
     </li>
     
-    <li class="dentry" id="d2">
-      <span class="dno k-ai-tools" aria-hidden="true">02</span>
+    <li class="dentry" id="d2" style="--rail:var(--k-ai-tools)">
+      <span class="dno" aria-hidden="true">02</span>
+      
       <div>
         <span class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dpick">Short of the day</span></span>
         <h2><a href="https://workshop.cjpais.com/projects/transcribe-cpp" rel="noopener" target="_blank">One local library now runs 60+ speech-to-text models</a></h2>
-        <p class="ddek">CJ Pais&#39;s ggml-based transcribe.cpp spans 16 ASR model families with Vulkan, Metal and CUDA acceleration — on-device transcription, with Python, JavaScript, Rust and Swift bindings.</p>
+        <p class="ddek"><strong>CJ Pais&#x27;s transcribe.cpp</strong> spans 16 ASR model families with Vulkan, Metal and CUDA acceleration — on-device, with Python, JavaScript, Rust and Swift bindings.</p>
+        <p class="dwhy"><span class="lab">Why it matters</span>On-device transcription with no API keeps audio private and drops cost to zero — a quiet answer to cloud speech services.</p>
+        
         <p class="dmeta">Source: <a href="https://workshop.cjpais.com/projects/transcribe-cpp" rel="noopener" target="_blank">workshop.cjpais.com</a></p>
       </div>
     </li>
     
-    <li class="dentry" id="d3">
-      <span class="dno k-policy" aria-hidden="true">03</span>
+    <li class="dentry" id="d3" style="--rail:var(--k-policy)">
+      <span class="dno" aria-hidden="true">03</span>
+      
       <div>
         <span class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dpick">Short of the day</span></span>
         <h2><a href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/" rel="noopener" target="_blank">A consultant&#39;s blunt case that &#39;AI mania&#39; is breaking decision-making</a></h2>
-        <p class="ddek">The much-discussed Ludicity essay claims the AI projects its team has observed are failing — and that career risk keeps executives from saying so out loud.</p>
+        <p class="ddek"><strong>The much-discussed Ludicity essay</strong> claims the AI projects its team observed are failing — and that career risk keeps executives from admitting it.</p>
+        <p class="dwhy"><span class="lab">Why it matters</span>A useful counterweight to launch-day hype: a field argument that most enterprise AI isn&#39;t working yet, and everyone knows it.</p>
+        
         <p class="dmeta">Source: <a href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/" rel="noopener" target="_blank">ludic.mataroa.blog</a></p>
       </div>
     </li>
     
-    <li class="dentry" id="d4">
-      <span class="dno k-ai-tools" aria-hidden="true">04</span>
+    <li class="dentry" id="d4" style="--rail:var(--k-ai-tools)">
+      <span class="dno" aria-hidden="true">04</span>
+      
       <div>
         <span class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dtag">Claude</span></span>
         <h2><a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" rel="noopener" target="_blank">Claude Code now runs on a Rust port of Bun</a></h2>
-        <p class="ddek">Bun&#39;s creator says startup is about 10% faster on Linux; Simon Willison checked the shipping binary and found Bun 1.4.0 plus hundreds of Rust source files inside.</p>
+        <p class="ddek"><strong>Bun&#x27;s creator</strong> says startup is ~10% faster on Linux; Simon Willison found Bun 1.4.0 and hundreds of Rust files in the shipping binary.</p>
+        <p class="dwhy"><span class="lab">Why it matters</span>The agent-CLI race is now being fought on cold-start milliseconds and native speed, not just model quality.</p>
+        
         <p class="dmeta">Source: <a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" rel="noopener" target="_blank">simonwillison.net</a></p>
       </div>
     </li>
     
-    <li class="dentry" id="d5">
-      <span class="dno k-hardware" aria-hidden="true">05</span>
+    <li class="dentry" id="d5" style="--rail:var(--k-hardware)">
+      <span class="dno" aria-hidden="true">05</span>
+      
       <div>
         <span class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a></span>
         <h2><a href="https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard" rel="noopener" target="_blank">2,500 MIDI recorders later: hardware is as hard as you make it</a></h2>
-        <p class="ddek">Chip Weinberger&#39;s Jamcorder retrospective flips the cliché — the physical product proved manageable; the 200,000 lines of software behind it were the hard part.</p>
+        <p class="ddek"><strong>Chip Weinberger&#x27;s retrospective</strong> flips the cliché — the physical Jamcorder proved manageable; the 200,000 lines of software behind it were the hard part.</p>
+        <p class="dwhy"><span class="lab">Why it matters</span>A builder&#39;s reminder that in modern hardware the atoms are tractable; the firmware and app are where products die.</p>
+        
         <p class="dmeta">Source: <a href="https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard" rel="noopener" target="_blank">chipweinberger.com</a></p>
       </div>
     </li>
     
-    <li class="dentry" id="d6">
-      <span class="dno k-explainers" aria-hidden="true">06</span>
+    <li class="dentry" id="d6" style="--rail:var(--k-explainers)">
+      <span class="dno" aria-hidden="true">06</span>
+      
       <div>
         <span class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a></span>
         <h2><a href="https://quesma.com/blog/custom-deep-research-pipeline/" rel="noopener" target="_blank">Burning a month of AI tokens in 30 minutes, then fixing it</a></h2>
-        <p class="ddek">Bartosz Kotrys hit his subscription cap researching token costs, then restructured the pipeline to run roughly 10x longer on the same budget — and found invoices rarely match token counters.</p>
+        <p class="ddek"><strong>Bartosz Kotrys</strong> blew his subscription cap in half an hour, then restructured the pipeline to run ~10x longer on the same budget.</p>
+        <p class="dwhy"><span class="lab">Why it matters</span>A caution for anyone scaling agents: token counters and real invoices can diverge 7–11x once retries and context stack up.</p>
+        
         <p class="dmeta">Source: <a href="https://quesma.com/blog/custom-deep-research-pipeline/" rel="noopener" target="_blank">quesma.com</a></p>
       </div>
     </li>
