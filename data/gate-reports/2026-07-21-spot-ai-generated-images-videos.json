@@ -1,6 +1,6 @@
 {
   "slug": "spot-ai-generated-images-videos",
-  "checked_at": "2026-07-21T10:52:54.918518+05:30",
+  "checked_at": "2026-07-21T11:32:55.161569+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 45KB (<=90), hero 59KB (<=320)"
+      "detail": "html 45KB (<=90), hero 27KB (<=320)"
     },
     {
       "gate": "G22-ymyl",

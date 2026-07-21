@@ -12,7 +12,7 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 FONT_DIRS = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -29,6 +29,7 @@ PALETTES = {
     "hardware":   ((37, 17, 12), (120, 53, 15), (251, 191, 36)),
     "policy":     ((28, 25, 23), (68, 64, 60), (168, 162, 158)),
     "explainers": ((5, 46, 22), (21, 94, 60), (110, 231, 183)),
+    "docket":     ((17, 18, 34), (39, 42, 96), (129, 140, 248)),
 }
 DEFAULT_PALETTE = ((15, 23, 42), (51, 65, 85), (148, 163, 184))
 
@@ -40,65 +41,91 @@ def _font(size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.load_default()
 
 
-def _lerp(a, b, t):
+def _mix(a, b, t):
     return tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
 
-def _wrap(draw, text, font, max_w):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        trial = (cur + " " + w).strip()
-        if draw.textlength(trial, font=font) <= max_w:
-            cur = trial
-        else:
-            if cur:
-                lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
-    return lines
+def _dark(c, f):
+    return tuple(max(0, min(255, int(x * f))) for x in c)
 
 
-def _card(w: int, h: int, title: str, site: str, hub: str, kicker: str) -> Image.Image:
+def _blob(size, center, radius, color):
+    """A soft radial glow of `color` on black — screen-composite for light."""
+    w, h = size
+    lay = Image.new("RGB", (w, h), (0, 0, 0))
+    ImageDraw.Draw(lay).ellipse(
+        [center[0] - radius, center[1] - radius,
+         center[0] + radius, center[1] + radius], fill=color)
+    return lay.filter(ImageFilter.GaussianBlur(int(radius * 0.7)))
+
+
+def _vignette(size):
+    w, h = size
+    v = Image.new("L", (w, h), 0)
+    m = int(min(w, h) * 0.05)
+    ImageDraw.Draw(v).rectangle([m, m, w - m, h - m], fill=255)
+    return v.filter(ImageFilter.GaussianBlur(int(min(w, h) * 0.16)))
+
+
+def _cover(w: int, h: int, hub: str, key: str) -> Image.Image:
+    """A premium, TEXTLESS per-hub cover: deep gradient + one controlled
+    corner glow + fine concentric 'signal' arcs + grain + a small wordmark.
+    Deterministic per (hub, key). No headline text — the page already has it,
+    so a text-baked card just read as a cheap auto-OG placeholder.
+    """
+    ss = 2
+    W, H = w * ss, h * ss
     top, bottom, accent = PALETTES.get(hub, DEFAULT_PALETTE)
-    seed = int(hashlib.md5(title.encode()).hexdigest()[:6], 16)
-    img = Image.new("RGB", (w, h))
+    seed = int(hashlib.md5((hub + "|" + key).encode()).hexdigest()[:8], 16)
+    r = [((seed >> (i * 3)) & 1023) / 1023 for i in range(12)]
+    right = r[7] > 0.5
+
+    # deep base gradient — stays dark; the glow supplies the light
+    base_a = _dark(top, 0.62)
+    base_b = _dark(_mix(top, bottom, 0.55), 0.82)
+    img = Image.new("RGB", (W, H))
     d = ImageDraw.Draw(img)
-    for y in range(h):
-        d.line([(0, y), (w, y)], fill=_lerp(top, bottom, y / h))
-    # deterministic decorative circles
-    for i in range(3):
-        r = 120 + (seed >> (i * 4)) % 220
-        cx = (seed >> (i * 5)) % w
-        cy = (seed >> (i * 3)) % h
-        ring = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-        ImageDraw.Draw(ring).ellipse(
-            [cx - r, cy - r, cx + r, cy + r],
-            outline=(*accent, 46), width=10)
-        img = Image.alpha_composite(img.convert("RGBA"), ring).convert("RGB")
-    d = ImageDraw.Draw(img)
-    # accent bar + kicker
-    margin = int(w * 0.06)
-    d.rectangle([margin, margin, margin + int(w * 0.09), margin + 12], fill=accent)
-    d.text((margin, margin + 30), kicker.upper(), font=_font(int(h * 0.045)),
-           fill=(*accent,))
-    # headline
-    title_font = _font(int(h * 0.105))
-    lines = _wrap(d, title, title_font, w - 2 * margin)
-    while len(lines) > 4:
-        title_font = _font(int(title_font.size * 0.88))
-        lines = _wrap(d, title, title_font, w - 2 * margin)
-    line_h = int(title_font.size * 1.22)
-    total = len(lines) * line_h
-    y0 = max(int(h * 0.30), (h - total) // 2)
-    for i, line in enumerate(lines):
-        d.text((margin, y0 + i * line_h), line, font=title_font, fill=(255, 255, 255))
-    # site badge bottom
-    badge_font = _font(int(h * 0.05))
-    d.text((margin, h - margin - badge_font.size), site, font=badge_font,
-           fill=(255, 255, 255))
-    tw = d.textlength(site, font=badge_font)
-    d.rectangle([margin, h - margin + 6, margin + tw, h - margin + 10], fill=accent)
+    for y in range(H):
+        d.line([(0, y), (W, y)], fill=_mix(base_a, base_b, y / H))
+
+    # one controlled corner glow + a very dim counter-glow
+    gx, gy = W * (0.82 if right else 0.18), H * 0.92
+    img = ImageChops.screen(img, _blob(
+        (W, H), (int(gx), int(gy)), int(W * 0.34),
+        _dark(_mix(accent, top, 0.15), 0.62)))
+    img = ImageChops.screen(img, _blob(
+        (W, H), (int(W * (0.2 if right else 0.8)), int(H * 0.12)),
+        int(W * 0.26), _dark(_mix(accent, (255, 255, 255), 0.3), 0.30)))
+
+    # concentric 'signal' arcs from the glow corner — crisp, thin, fading out
+    arc = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ad = ImageDraw.Draw(arc)
+    line_col = _mix(accent, (255, 255, 255), 0.25)
+    for i in range(8):
+        rad = int(W * (0.14 + 0.108 * i))
+        ad.ellipse([gx - rad, gy - rad, gx + rad, gy + rad],
+                   outline=(*line_col, max(12, 70 - i * 6)),
+                   width=max(2, int(ss * 1.2)))
+    arc = arc.filter(ImageFilter.GaussianBlur(int(ss * 0.6)))
+    img = Image.alpha_composite(img.convert("RGBA"), arc).convert("RGB")
+
+    # framed vignette falloff
+    vmask = _vignette((W, H))
+    img = Image.composite(img, Image.blend(img, Image.new("RGB", (W, H), (0, 0, 0)), 0.55), vmask)
+
+    # fine grain — kills gradient banding, adds a printed texture
+    grain = Image.effect_noise((W, H), 16).convert("RGB")
+    img = Image.blend(img, ImageChops.overlay(img, grain), 0.045)
+
+    img = img.resize((w, h), Image.LANCZOS)
+
+    # small, letter-spaced wordmark, bottom-left (share branding only)
+    d2 = ImageDraw.Draw(img)
+    f = _font(max(10, int(h * 0.030)))
+    x, yb = int(w * 0.055), h - int(h * 0.095)
+    for ch in "THE TECH DOCKET":
+        d2.text((x, yb), ch, font=f, fill=(214, 220, 234))
+        x += f.getlength(ch) + max(2, int(h * 0.006))
     return img
 
 
@@ -107,7 +134,7 @@ def generate_hero(title: str, slug: str, hub: str, site_name: str,
     outdir.mkdir(parents=True, exist_ok=True)
     outputs = []
     for w, h, label in [(1200, 675, "16x9"), (1200, 900, "4x3"), (1200, 1200, "1x1")]:
-        img = _card(w, h, title, site_name, hub, kicker=hub.replace("-", " "))
+        img = _cover(w, h, hub, slug)
         base = outdir / f"{slug}-{label}"
         img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
         img.save(f"{base}.webp", quality=84, method=6)
@@ -118,10 +145,9 @@ def generate_hero(title: str, slug: str, hub: str, site_name: str,
 
 def generate_docket_card(date_str: str, date_human: str, site_name: str,
                          outdir: Path) -> dict:
-    """OG card for a Today's Docket page (1200x675 + webp), same card system."""
+    """OG card for a Today's Docket page (1200x675 + webp), textless cover."""
     outdir.mkdir(parents=True, exist_ok=True)
-    img = _card(1200, 675, f"Today's Docket — {date_human}", site_name,
-                "docket", kicker="the daily shorts · 60-second read")
+    img = _cover(1200, 675, "docket", date_str)
     base = outdir / f"docket-{date_str}-16x9"
     img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
     img.save(f"{base}.webp", quality=84, method=6)
