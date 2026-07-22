@@ -135,6 +135,7 @@ docket:
   max_items: 8
   max_headline_chars: 80
   max_item_words: 60             # headline + dek combined — gate D05
+  max_why_words: 35              # why / counterpoint each — gate D05
   # Momentum chips ("#2 of 12 today") stay OFF until the corroboration-
   # accuracy fix from the Signal Box batch lands (V2.1 recheck §4.1).
   show_chips: false

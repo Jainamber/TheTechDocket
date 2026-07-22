@@ -1,6 +1,6 @@
 {
-  "slug": "gemini-3-6-flash-what-google-launched",
-  "checked_at": "2026-07-22T08:51:00.104511+05:30",
+  "slug": "codex-context-window-cut",
+  "checked_at": "2026-07-22T08:51:00.660797+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -33,7 +33,7 @@
       "gate": "G04-date-valid",
       "level": "hard",
       "ok": true,
-      "detail": "date 2026-07-22 must not be future & must match JSON-LD"
+      "detail": "date 2026-07-19 must not be future & must match JSON-LD"
     },
     {
       "gate": "G05-real-update",
@@ -45,7 +45,7 @@
       "gate": "G06-citations",
       "level": "hard",
       "ok": true,
-      "detail": "14 external citation domains, 18 listed sources (need ≥2)"
+      "detail": "9 external citation domains, 12 listed sources (need ≥2)"
     },
     {
       "gate": "G07-stats-sourced",
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.01 vs 'codex-context-window-cut' (limit .30)"
+      "detail": "max 5-gram overlap 0.01 vs 'gemini-3-6-flash-what-google-launched' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",
@@ -123,13 +123,13 @@
       "gate": "G20-indexable",
       "level": "hard",
       "ok": true,
-      "detail": "canonical must be https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/"
+      "detail": "canonical must be https://thetechdocket.com/articles/codex-context-window-cut/"
     },
     {
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 46KB (<=90), hero 25KB (<=320)"
+      "detail": "html 43KB (<=90), hero 27KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
@@ -165,13 +165,13 @@
       "gate": "S01-title-length",
       "level": "hard",
       "ok": true,
-      "detail": "title 58 chars (need 35–65)"
+      "detail": "title 57 chars (need 35–65)"
     },
     {
       "gate": "S02-meta-desc",
       "level": "hard",
       "ok": true,
-      "detail": "meta description 157 chars"
+      "detail": "meta description 151 chars"
     },
     {
       "gate": "S03-single-h1",
@@ -183,13 +183,13 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 71 words (need ≥40 before any H2)"
+      "detail": "first paragraph 90 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
       "level": "hard",
       "ok": true,
-      "detail": "5 body H2 sections excl. template chrome (need ≥3)"
+      "detail": "6 body H2 sections excl. template chrome (need ≥3)"
     },
     {
       "gate": "S06-heading-hierarchy",
@@ -201,7 +201,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1638 words (need 900–2200)"
+      "detail": "1468 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",
@@ -219,7 +219,7 @@
       "gate": "S09-internal-links",
       "level": "hard",
       "ok": true,
-      "detail": "8 internal article links (need ≥2)"
+      "detail": "5 internal article links (need ≥2)"
     },
     {
       "gate": "S10-hub-link",

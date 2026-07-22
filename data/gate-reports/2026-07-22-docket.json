@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-07-22",
-  "checked_at": "2026-07-22T07:39:30.696014+05:30",
+  "checked_at": "2026-07-22T08:50:59.821761+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -39,7 +39,7 @@
       "gate": "D06-lead-is-article",
       "level": "hard",
       "ok": true,
-      "detail": "lead slug 'gemini-3-6-flash-what-google-launched' not found in content/articles/"
+      "detail": ""
     },
     {
       "gate": "D07-zero-js",
@@ -52,6 +52,12 @@
       "level": "soft",
       "ok": true,
       "detail": "html 27KB (<=90)"
+    },
+    {
+      "gate": "D13-hub-valid",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
     },
     {
       "gate": "D10-tags-picks",

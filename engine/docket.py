@@ -68,13 +68,29 @@ def all_dockets() -> list[dict]:
     return out
 
 
+def _term_hit(term: str, text: str) -> bool:
+    """Boundary-aware substring match. Raw `in` false-positived badly
+    ("machina"→china, "nasal"→us via nasa, "barracuda"→nvidia via cuda):
+    require a non-alphanumeric (or string) boundary before the match, and
+    after it too — unless the term itself ends non-alphanumeric (so "gpt-"
+    still matches "gpt-5")."""
+    for m in re.finditer(re.escape(term), text):
+        s, e = m.start(), m.end()
+        before_ok = s == 0 or not text[s - 1].isalnum()
+        after_ok = (e == len(text) or not term[-1].isalnum()
+                    or not text[e].isalnum())
+        if before_ok and after_ok:
+            return True
+    return False
+
+
 def suggest_tag(title: str, cfg: dict) -> str:
     """First watchlist key whose match-terms hit the title (suggestion only —
     the daily session confirms or clears every tag)."""
     t = (title or "").lower()
     for key, spec in ((cfg.get("docket") or {}).get("watchlist") or {}).items():
         terms = [x.strip().lower() for x in str(spec.get("match", "")).split(",")]
-        if any(term and term in t for term in terms):
+        if any(term and _term_hit(term, t) for term in terms):
             return key
     return ""
 
@@ -104,12 +120,18 @@ def write_draft(date_str: str | None = None) -> Path:
              "  #   clear them. Target >=half tagged; 1-3 wildcards stay open.",
              "  # pick: true on up to 2 standout entries (\"Short of the day\"),",
              "  #   placed immediately after the lead.",
+             "  # dek: open with a **bold lead-in** — the 2-5 word story-at-a-",
+             "  #   glance fragment (only the first **...** is bolded).",
+             "  # why: REQUIRED on every non-lead entry — one <=35-word stakes",
+             "  #   sentence (what changes / who's affected / the India angle).",
+             "  # counterpoint: optional, <=35 words, ONLY on genuinely",
+             "  #   contested stories. Never manufacture one.",
              "  - hub: <hub-of-today's-article>",
              "    lead: true",
              "    rank: 1",
              "    tag: \"\"",
              "    headline: \"<paraphrase of today's article>\"",
-             "    dek: \"<why it matters, 1-2 sentences>\"",
+             "    dek: \"**<bold lead-in>** <rest of the 1-2 sentence dek>\"",
              "    url: /articles/<today's-slug>/",
              "    source: \"The Tech Docket\""]
     for i, c in enumerate(cands[1:], start=2):
@@ -122,7 +144,8 @@ def write_draft(date_str: str | None = None) -> Path:
                   f"  #   rank: {i}",
                   f"  #   tag: \"{tag}\"" + ("   # suggested" if tag else ""),
                   "  #   headline: \"\"",
-                  "  #   dek: \"\"",
+                  "  #   dek: \"**<lead-in>** ...\"",
+                  "  #   why: \"\"   # required if used",
                   f"  #   url: {url}",
                   f"  #   source: \"{host}\""]
     lines += ["---", ""]
@@ -217,7 +240,7 @@ class DocketGateRunner:
             if words > max_w:
                 bad.append(f"item {i}: {words} words (max {max_w})")
             for field in ("why", "counterpoint"):
-                fw = len(str(it.get(field) or "").split())
+                fw = len(str(it.get(field) or "").replace("**", "").split())
                 if fw > max_why:
                     bad.append(f"item {i}: {field} {fw} words (max {max_why})")
         self.check("D05-tiny-format", HARD, not bad, "; ".join(bad[:4]))
@@ -231,8 +254,10 @@ class DocketGateRunner:
             if first.get("lead") and m and leads == [0]:
                 slug = m.group(1)
                 lead_ok = any(a.get("slug") == slug for a in all_articles())
-                detail = f"lead slug '{slug}' not found in content/articles/"
-        self.check("D06-lead-is-article", HARD, lead_ok, detail)
+                if not lead_ok:
+                    detail = f"lead slug '{slug}' not found in content/articles/"
+        self.check("D06-lead-is-article", HARD, lead_ok,
+                   "" if lead_ok else detail)
 
         # D07 zero JS beyond JSON-LD + the approved analytics snippet
         rogue = []
@@ -248,6 +273,15 @@ class DocketGateRunner:
         # D08 page weight (same proxy budget as G21)
         kb = (len(self.dated_path.read_bytes()) / 1024) if built else 999
         self.check("D08-page-weight", SOFT, kb <= 90, f"html {kb:.0f}KB (<=90)")
+
+        # D13 hub keys must be real — a typo'd hub silently loses its colour
+        # rail/number on the page (CSS var fallback can't catch a broken
+        # nested var()), so catch it here instead
+        hubs = set((self.cfg.get("content") or {}).get("hubs") or {})
+        bad = [f"item {i}: unknown hub '{it.get('hub')}'"
+               for i, it in enumerate(items, 1)
+               if str(it.get("hub") or "") not in hubs]
+        self.check("D13-hub-valid", HARD, not bad, "; ".join(bad[:4]))
 
         # D10 watchlist tags valid + picks bounded and ordered
         wl = set(((self.cfg.get("docket") or {}).get("watchlist") or {}))
