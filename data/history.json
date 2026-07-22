@@ -107,6 +107,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-20-eu-google-android-ai-assistants.json",
       "url": "https://thetechdocket.com/articles/eu-google-android-ai-assistants/"
+    },
+    {
+      "date": "2026-07-22",
+      "slug": "gemini-3-6-flash-what-google-launched",
+      "title": "Gemini 3.6 Flash: What Google Launched and What It Skipped",
+      "keyword": "gemini 3.6 flash",
+      "hub": "ai-models",
+      "published_at": "2026-07-22T07:37:29.191583+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-22T07:37:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-22-gemini-3-6-flash-what-google-launched.json",
+      "url": "https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/"
     }
   ]
 }

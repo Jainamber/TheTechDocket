@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemini 3.6 Flash: What Google Launched and What It Skipped — The Tech Docket</title>
+<meta name="description" content="Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.">
+<link rel="canonical" href="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Gemini 3.6 Flash: What Google Launched and What It Skipped">
+<meta property="og:description" content="Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.">
+<meta property="og:url" content="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/">
+<meta property="og:image" content="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Illustration of three lightning-bolt model chips labelled Flash, Flash-Lite and Cyber on a Google-blue circuit board, with a large empty socket labelled Pro">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-22T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-22T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="AI Models">
+<meta property="article:tag" content="google">
+<meta property="article:tag" content="gemini">
+<meta property="article:tag" content="ai-models">
+<meta property="article:tag" content="llm-pricing">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gemini 3.6 Flash: What Google Launched and What It Skipped">
+<meta name="twitter:description" content="Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/"}, "headline": "Gemini 3.6 Flash: What Google Launched and What It Skipped", "description": "Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.", "image": ["https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-16x9.jpg", "https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-4x3.jpg", "https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-1x1.jpg"], "datePublished": "2026-07-22T07:00:00+05:30", "dateModified": "2026-07-22T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Models", "item": "https://thetechdocket.com/topics/ai-models/"}, {"@type": "ListItem", "position": 3, "name": "Gemini 3.6 Flash: What Google Launched and What It Skipped"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Gemini 3.6 Flash?", "acceptedAnswer": {"@type": "Answer", "text": "It is Google's newest mid-tier 'Flash' model, released on July 21, 2026 alongside Gemini 3.5 Flash-Lite and a security-focused Gemini 3.5 Flash Cyber. Flash models trade some raw capability for speed and lower cost; Google is pitching 3.6 Flash specifically at agentic workloads — AI systems that run many steps, where token efficiency compounds."}}, {"@type": "Question", "name": "Is Gemini 3.6 Flash free to use?", "acceptedAnswer": {"@type": "Answer", "text": "The Gemini app has a free tier, and developers get a free usage tier through Google AI Studio, with paid API rates above it. In India, the paid routes are Google's AI Plus and AI Ultra subscription plans, or the Reliance Jio offer that bundles 18 months of Google AI Pro free — exact rupee prices, with sources, are in the India section of this article. Google has not published India-specific per-token pricing for this model."}}, {"@type": "Question", "name": "What happened to Gemini 3.5 Pro?", "acceptedAnswer": {"@type": "Answer", "text": "It has not shipped. The July 21 release was Flash-tier only, and multiple outlets note the frontier 3.5 Pro model is still in testing — one report says it has slipped past a previously signalled June window. Google, via API product lead Logan Kilpatrick, says 3.5 Pro is testing with partners while a Gemini 4 pre-training run has already begun."}}, {"@type": "Question", "name": "How is Gemini 3.6 Flash different from Gemini 3.5 Flash?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly speed and cost, not intelligence. Benchmarking firm Artificial Analysis says 3.6 Flash roughly halves time-per-task and improves token efficiency versus its predecessor, but does not score higher on its aggregate intelligence index. Coverage also describes it as priced below 3.5 Flash, which is unusual for a successor model."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent)}
+nav.hubs a.navdocket{color:var(--accent-ink);font-weight:700}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
+.feature a.img{display:block}
+.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card a.img{display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dlead{display:inline-block;white-space:nowrap}
+.dchip{font-family:var(--fm);font-size:11px;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:2px 9px;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+@media (max-width:719px){
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 85%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+@media (prefers-color-scheme: dark){
+:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
+.skip{color:#0d0f14}
+}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a href="/topics/ai-models/" aria-current="page">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/ai-models/">AI Models</a> / <span>Gemini 3.6 Flash: What Google Launched and What It Skipped</span>
+  </nav>
+  <a class="kicker postkick k-ai-models" href="/topics/ai-models/">AI Models</a>
+  <h1>Gemini 3.6 Flash: What Google Launched and What It Skipped</h1>
+  <div class="standfirst">Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-22T07:00:00+05:30">Published July 22, 2026</time>
+    
+    <span>·</span><span>5 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-16x9.webp">
+      <img src="https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/gemini-3-6-flash-what-google-launched-16x9.jpg" width="1200" height="675" alt="Illustration of three lightning-bolt model chips labelled Flash, Flash-Lite and Cyber on a Google-blue circuit board, with a large empty socket labelled Pro" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  
+
+  <div class="body"><p>Google released three new Gemini models on July 21, 2026 — Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, and a security-focused Gemini 3.5 Flash Cyber — in <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" rel="noopener" target="_blank">an official announcement</a> pitched at speed and cost rather than raw capability. The bigger story may be what was missing: the frontier Gemini 3.5 Pro did not ship, and a Google product lead confirmed instead that a pre-training run for Gemini 4 is already underway.</p>
+<h2 id="what-google-actually-shipped">What Google actually shipped</h2>
+<p>The launch is a refresh of Google&rsquo;s cheap-and-fast tier, not its flagship line. Flash models are the workhorses Google positions for high-volume tasks, and this generation leans hard into &ldquo;agentic&rdquo; use — AI systems that execute long chains of steps, where small per-step savings compound into large bills avoided. Coverage from <a href="https://www.marktechpost.com/2026/07/21/google-releases-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber-a-cheaper-more-token-efficient-flash-tier-built-for-agentic-workloads/" rel="noopener" target="_blank">MarkTechPost</a> describes the trio as a cheaper, more token-efficient Flash tier built for exactly those workloads, and <a href="https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way" rel="noopener" target="_blank">VentureBeat reports</a> Google&rsquo;s claim that 3.6 Flash cuts agent token costs by up to 65% on long-horizon engineering tasks — a vendor number worth watching for independent confirmation.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>What it is</th>
+<th>Where you can use it now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gemini 3.6 Flash</td>
+<td>New mid-tier generalist; <a href="https://www.marktechpost.com/2026/07/21/google-releases-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber-a-cheaper-more-token-efficient-flash-tier-built-for-agentic-workloads/" rel="noopener" target="_blank">reported cheaper than 3.5 Flash</a></td>
+<td><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash" rel="noopener" target="_blank">Gemini API</a>, Vertex AI, <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" rel="noopener" target="_blank">GitHub Copilot</a>, Google&rsquo;s Antigravity IDE</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite</td>
+<td>Smallest, cheapest tier; the one with a measured intelligence gain, <a href="https://x.com/ArtificialAnlys/status/2079596244339707956" rel="noopener" target="_blank">+11 index points per Artificial Analysis</a></td>
+<td>Gemini API and Google AI Studio</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash Cyber</td>
+<td>Specialised model for <a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" rel="noopener" target="_blank">finding and fixing software vulnerabilities</a></td>
+<td>Via the Gemini API, per DeepMind&rsquo;s announcement</td>
+</tr>
+</tbody>
+</table>
+<p>The same-day <a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" rel="noopener" target="_blank">GitHub Copilot rollout</a> matters more than it looks: distribution inside the world&rsquo;s default coding tool is how a mid-tier model becomes a daily driver. GitHub <a href="https://x.com/github/status/2079588576358998350" rel="noopener" target="_blank">says that in its testing</a> the model showed higher task-completion rates and better token efficiency than Gemini 3.5 Flash — the coding-agent economics we unpacked when <a href="/articles/codex-context-window-cut/">OpenAI cut Codex&rsquo;s default context window</a> apply here almost unchanged.</p>
+<h2 id="faster-and-cheaper-but-not-smarter">Faster and cheaper — but not smarter</h2>
+<p>The independent numbers tell a more precise story than the launch copy. Benchmarking firm Artificial Analysis <a href="https://x.com/ArtificialAnlys/status/2079596244339707956" rel="noopener" target="_blank">summarised the release</a> this way: both new Flash models roughly halve time-per-task versus their predecessors and improve token efficiency, Flash-Lite gains 11 points on its intelligence index — and Gemini 3.6 Flash does not improve in intelligence over 3.5 Flash at all. A successor model that is faster and cheaper but no smarter is a legitimate product choice; it is also an unusual thing to number-bump a generation for.</p>
+<p>Early tester reaction split along exactly that line. <a href="https://wccftech.com/google-just-released-gemini-3-6-flash-and-it-might-be-its-worst-model-to-date/" rel="noopener" target="_blank">Wccftech ran a headline</a> calling it possibly Google&rsquo;s worst model to date, and early testers on X converged on a specific complaint — that it <a href="https://x.com/synthwavedd/status/2079583963106922761" rel="noopener" target="_blank">trails rival models on coding tasks</a> while holding its own on vision and long-context work, a pattern one observer <a href="https://x.com/arrakis_ai/status/2079589951801622851" rel="noopener" target="_blank">read as a deliberate strategy shift</a> toward computer-use tasks rather than a failure. The launch was on <a href="https://news.ycombinator.com/item?id=48993130" rel="noopener" target="_blank">Hacker News</a> within hours of the announcement. None of this is a verdict; day-one takes on model quality have been wrong in both directions before. But &ldquo;faster, cheaper, flat on intelligence&rdquo; is Google&rsquo;s own independent-benchmark profile for this release, and it frames everything else.</p>
+<h2 id="what-it-means">What it means</h2>
+<p>Three readings fit the confirmed facts. First, the economics: model progress in 2026 is increasingly measured in cost-per-completed-task, not benchmark ceilings, and a Flash tier that halves time-per-task while cutting prices attacks that metric directly. We showed why serving costs dominate this calculus in our breakdown of <a href="/articles/real-cost-of-running-ai/">the real cost of running AI</a> — inference efficiency is where the margin war is being fought, and the pressure now comes from below too, from phone-scale models like <a href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B</a> that meter zero tokens.</p>
+<p>Second, the roadmap: shipping three Flash models while the frontier model slips is a tell. <a href="https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/" rel="noopener" target="_blank">TechCrunch&rsquo;s launch story</a> is literally headlined around the absent 3.5 Pro, and <a href="https://xenospectrum.com/en/google-gemini-flash-models-pro-delay/" rel="noopener" target="_blank">XenoSpectrum notes</a> the Pro model has slipped past a previously signalled June window. Google&rsquo;s API product lead Logan Kilpatrick simultaneously <a href="https://x.com/OfficialLoganK/status/2079594867161022817" rel="noopener" target="_blank">posted that Google has started</a> &ldquo;our most ambitious pre-training run yet, for Gemini 4.&rdquo; Read together: the frontier fight has moved to the next generation, and the current one is being monetised through efficiency.</p>
+<p>Third, the specialisation signal: a dedicated Cyber model, <a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" rel="noopener" target="_blank">announced by DeepMind</a> and covered by <a href="https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html" rel="noopener" target="_blank">The Hacker News</a> as a tool to find and fix software vulnerabilities, continues the trend of carving high-stakes domains out of generalist models — the same logic that produced coding-specific models last year. And the timing is not happening in a vacuum: the same week, the <a href="https://www.scmp.com/tech/article/3361172/kimi-k3-developer-suspends-new-subscriptions-amid-compute-constraints" rel="noopener" target="_blank">South China Morning Post reported</a> Moonshot AI suspending new Kimi K3 subscriptions under compute constraints, while <a href="https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model" rel="noopener" target="_blank">Bloomberg reported</a> Alibaba previewing its flagship Qwen model — the efficiency race and the frontier race are running simultaneously, on both sides of the Pacific.</p>
+<h2 id="the-india-angle">The India angle</h2>
+<p>No launch-day coverage flagged an India carve-out for the new models, and Google has not published an India-specific availability note either — worth knowing before you go looking for the model selector. What is confirmed is the access map around it. The cheapest paid route to Gemini in India is <a href="https://blog.google/intl/en-in/company-news/technology/do-more-with-ai-for-less-google-ai-plus-now-in-india/" rel="noopener" target="_blank">Google AI Plus at ₹199 a month</a>, which arrived in India in December 2025. At the top end, the <a href="https://www.gizbot.com/artificial-intelligence/google-ai-ultra-plan-details-and-features-014-125693.html" rel="noopener" target="_blank">AI Ultra plan is listed at ₹6,500 a month</a> in Indian coverage. And the widest on-ramp is the <a href="https://blog.google/intl/en-in/company-news/partnering-with-reliance-to-bring-the-best-of-google-ai-to-more-people-across-india/" rel="noopener" target="_blank">Reliance Jio partnership</a>, which gives eligible Jio users 18 months of Google AI Pro free — a bundle Google values at ₹35,100.</p>
+<p>For developers, the Gemini API&rsquo;s free tier remains the default sandbox; Google publishes global dollar pricing, and we found no rupee-denominated per-token rates for 3.6 Flash — treat any site quoting exact ₹-per-million-token figures for it with caution. The strategic backdrop is a year of deliberate Google-India plumbing: <a href="https://blog.google/products-and-platforms/products/chrome/chrome-expands-india-new-zealand-canada/" rel="noopener" target="_blank">Gemini in Chrome shipped to India with support for eight Indic languages</a> in March, and Gemini-powered ad tools for Indian businesses arrived at Marketing Live <a href="https://blog.google/intl/en-in/products/google-companies/google-marketing-live-2026-delivering-the-gemini-advantage-for-indian-businesses/" rel="noopener" target="_blank">twelve days before this launch</a>. A cheaper Flash tier is precisely the kind of model that makes ₹199-a-month economics — and free-tier economics at Jio scale — sustainable.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p>Whether independent benchmarks corroborate the <a href="https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way" rel="noopener" target="_blank">65% agent-cost claim</a> is the near-term test; vendor efficiency numbers have a way of shrinking under third-party measurement. Watch, too, for the Gemini 3.5 Pro release Google says is testing with partners — its arrival date will show whether the June slip was a polish delay or a capability wall — and for exact pricing pages to settle, since launch-day coverage confirmed the direction (cheaper) but not the figures. The deeper question sits with Gemini 4: Kilpatrick&rsquo;s &ldquo;most ambitious pre-training run yet&rdquo; is the clearest public signal in months that Google believes scale still has headroom. We track every release in this race in our <a href="/topics/ai-models/">AI models</a> coverage.</p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is Gemini 3.6 Flash?</h3>
+  <p>It is Google&#39;s newest mid-tier &#39;Flash&#39; model, released on July 21, 2026 alongside Gemini 3.5 Flash-Lite and a security-focused Gemini 3.5 Flash Cyber. Flash models trade some raw capability for speed and lower cost; Google is pitching 3.6 Flash specifically at agentic workloads — AI systems that run many steps, where token efficiency compounds.</p>
+  
+  <h3>Is Gemini 3.6 Flash free to use?</h3>
+  <p>The Gemini app has a free tier, and developers get a free usage tier through Google AI Studio, with paid API rates above it. In India, the paid routes are Google&#39;s AI Plus and AI Ultra subscription plans, or the Reliance Jio offer that bundles 18 months of Google AI Pro free — exact rupee prices, with sources, are in the India section of this article. Google has not published India-specific per-token pricing for this model.</p>
+  
+  <h3>What happened to Gemini 3.5 Pro?</h3>
+  <p>It has not shipped. The July 21 release was Flash-tier only, and multiple outlets note the frontier 3.5 Pro model is still in testing — one report says it has slipped past a previously signalled June window. Google, via API product lead Logan Kilpatrick, says 3.5 Pro is testing with partners while a Gemini 4 pre-training run has already begun.</p>
+  
+  <h3>How is Gemini 3.6 Flash different from Gemini 3.5 Flash?</h3>
+  <p>Mostly speed and cost, not intelligence. Benchmarking firm Artificial Analysis says 3.6 Flash roughly halves time-per-task and improves token efficiency versus its predecessor, but does not score higher on its aggregate intelligence index. Coverage also describes it as priced below 3.5 Flash, which is unusual for a successor model.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/&text=Gemini%203.6%20Flash%3A%20What%20Google%20Launched%20and%20What%20It%20Skipped" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Gemini%203.6%20Flash%3A%20What%20Google%20Launched%20and%20What%20It%20Skipped%20https%3A//thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/&title=Gemini%203.6%20Flash%3A%20What%20Google%20Launched%20and%20What%20It%20Skipped" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/&t=Gemini%203.6%20Flash%3A%20What%20Google%20Launched%20and%20What%20It%20Skipped" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" rel="noopener" target="_blank">Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber — Google</a> <em>(primary source)</em></li>
+      <li><a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" rel="noopener" target="_blank">Introducing Gemini 3.5 Flash Cyber — Google DeepMind</a> <em>(primary source)</em></li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash" rel="noopener" target="_blank">Gemini 3.6 Flash model reference — Google AI for Developers</a> <em>(primary source)</em></li>
+      <li><a href="https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/" rel="noopener" target="_blank">Gemini 3.6 Flash is now available in GitHub Copilot — GitHub Changelog</a> <em>(primary source)</em></li>
+      <li><a href="https://x.com/OfficialLoganK/status/2079594867161022817" rel="noopener" target="_blank">Logan Kilpatrick (Google) on the Gemini 4 pre-training run — X</a> <em>(primary source)</em></li>
+      <li><a href="https://x.com/ArtificialAnlys/status/2079596244339707956" rel="noopener" target="_blank">Artificial Analysis benchmark summary of the launch — X</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.google/intl/en-in/company-news/technology/do-more-with-ai-for-less-google-ai-plus-now-in-india/" rel="noopener" target="_blank">Google AI Plus now in India — Google India blog</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.google/intl/en-in/company-news/partnering-with-reliance-to-bring-the-best-of-google-ai-to-more-people-across-india/" rel="noopener" target="_blank">Partnering with Reliance to bring the best of Google AI to India — Google India blog</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.google/products-and-platforms/products/chrome/chrome-expands-india-new-zealand-canada/" rel="noopener" target="_blank">Gemini in Chrome expands to India with Indic language support — Google</a> <em>(primary source)</em></li>
+      <li><a href="https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/" rel="noopener" target="_blank">Google releases three new Gemini models, but no 3.5 Pro — TechCrunch</a></li>
+      <li><a href="https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way" rel="noopener" target="_blank">Gemini 3.6 Flash cuts agent token costs up to 65% — VentureBeat</a></li>
+      <li><a href="https://www.marktechpost.com/2026/07/21/google-releases-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber-a-cheaper-more-token-efficient-flash-tier-built-for-agentic-workloads/" rel="noopener" target="_blank">A cheaper, more token-efficient Flash tier — MarkTechPost</a></li>
+      <li><a href="https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html" rel="noopener" target="_blank">Google Launches Gemini 3.5 Flash Cyber to find and fix vulnerabilities — The Hacker News</a></li>
+      <li><a href="https://wccftech.com/google-just-released-gemini-3-6-flash-and-it-might-be-its-worst-model-to-date/" rel="noopener" target="_blank">Gemini 3.6 Flash might be Google&#39;s worst model to date — Wccftech</a></li>
+      <li><a href="https://www.gizbot.com/artificial-intelligence/google-ai-ultra-plan-details-and-features-014-125693.html" rel="noopener" target="_blank">Google AI Ultra plan details — Gizbot</a></li>
+      <li><a href="https://www.scmp.com/tech/article/3361172/kimi-k3-developer-suspends-new-subscriptions-amid-compute-constraints" rel="noopener" target="_blank">Kimi K3 developer suspends new subscriptions amid compute constraints — SCMP</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model" rel="noopener" target="_blank">Alibaba&#39;s Qwen unveils preview of flagship AI model — Bloomberg</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=48993130" rel="noopener" target="_blank">HN discussion: Gemini 3.6 Flash</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: gemini-3-6-flash-what-google-launched">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</a>
+        <div class="m">AI Models · July 15, 2026</div></li>
+      
+      <li><a class="t" href="/articles/eu-google-android-ai-assistants/">EU Orders Google to Open Android to Rival AI Assistants</a>
+        <div class="m">Policy &amp; Society · July 20, 2026</div></li>
+      
+      <li><a class="t" href="/articles/codex-context-window-cut/">Codex Context Window Cut to 272K: What OpenAI Rolled Back</a>
+        <div class="m">AI Tools &amp; Apps · July 19, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

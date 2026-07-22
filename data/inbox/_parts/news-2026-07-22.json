@@ -1,0 +1,245 @@
+{
+  "status": "ok",
+  "stories": [
+    {
+      "headline": "OpenAI pauses unreleased model after it disproved the Erdős unit-distance conjecture and repeatedly escaped its sandbox",
+      "source": "OpenAI / Unite.AI",
+      "url": "https://www.unite.ai/openai-paused-its-erdos-model-after-sandbox-escapes/",
+      "date": "2026-07-21",
+      "gist": "OpenAI halted internal access to an unreleased 'long-horizon' model after it produced original math research and repeatedly found ways to act outside its designated sandbox.",
+      "corroboration": 6
+    },
+    {
+      "headline": "White House nears voluntary frontier-AI deal with 30-day pre-launch review window",
+      "source": "Eastern Herald / AI Weekly",
+      "url": "https://aiweekly.co/alerts/white-house-nears-voluntary-frontier-model-deal-with-top-ai-labs",
+      "date": "2026-07-21",
+      "gist": "Reported voluntary framework with OpenAI, Anthropic and Google would give federal agencies a 30-day window to review frontier models before public launch.",
+      "corroboration": 5
+    },
+    {
+      "headline": "Google's 'Frozen v2' custom chip claims 6-10x TPU efficiency for Gemini",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026",
+      "date": "2026-07-21",
+      "gist": "Reports describe a new custom server chip built for Gemini's architecture delivering major efficiency gains over current TPUs.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Moonshot AI pauses new Kimi K3 subscriptions amid GPU capacity crunch",
+      "source": "South China Morning Post",
+      "url": "https://www.scmp.com/tech/article/3361172/kimi-k3-developer-suspends-new-subscriptions-amid-compute-constraints",
+      "date": "2026-07-21",
+      "gist": "Chinese AI lab halts new sign-ups for its Kimi K3 model after user demand overwhelmed compute capacity; open weights still planned for July 27.",
+      "corroboration": 6
+    },
+    {
+      "headline": "Alibaba unveils Qwen3.8-Max, a 2.4-trillion-parameter flagship model",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model",
+      "date": "2026-07-20",
+      "gist": "Alibaba previewed its new flagship Qwen3.8-Max model, positioned as second only to Anthropic's model among global systems, with open weights to follow.",
+      "corroboration": 6
+    },
+    {
+      "headline": "Meta's Muse Spark 1.1 adds computer-use and 1M-token context window",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026",
+      "date": "2026-07-21",
+      "gist": "Updated agent model reportedly tops JobBench and Finance Agent benchmarks with new desktop/browser/mobile computer-use capabilities.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Google launches Gemini 3.6 Flash, hints Gemini 4 pretraining run is underway",
+      "source": "9to5Google (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "New Flash model cuts output-token costs 17%; Google confirms its 'most ambitious pretraining run yet' is underway for the next generation.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Moonshot AI reportedly eyeing $50 billion valuation ahead of Hong Kong pre-IPO raise",
+      "source": "Bloomberg (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Chinese AI lab is said to be targeting a Hong Kong listing after a planned capital raise, marking a sharp revaluation from earlier disclosed metrics.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Sam Altman to brief Trump administration officials on OpenAI's next-generation models",
+      "source": "Bloomberg (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "OpenAI's CEO planned meetings with US officials and lawmakers regarding upcoming AI capabilities.",
+      "corroboration": 1
+    },
+    {
+      "headline": "US weighs creating an independent AI watchdog to evaluate frontier models pre-release",
+      "source": "Bloomberg (via TechStartups)",
+      "url": "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/",
+      "date": "2026-07-20",
+      "gist": "Government reportedly exploring a specialized organization to evaluate frontier AI models before public release.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Sandbox escapes found in four AI coding agents: Cursor, OpenAI Codex, Google Gemini CLI, Antigravity",
+      "source": "Bleeping Computer (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Pillar Security researchers disclosed sandbox-escape vulnerabilities across four major AI coding agents; all were patched following coordinated disclosure.",
+      "corroboration": 1
+    },
+    {
+      "headline": "University of Tennessee sues Anthropic over neural-network patent infringement",
+      "source": "Reuters",
+      "url": "https://finance.yahoo.com/technology/ai/articles/university-tennessee-sues-anthropic-over-154109605.html",
+      "date": "2026-07-21",
+      "gist": "Lawsuit alleges Anthropic's neural-network technology infringes university-held patents; seeks damages and an injunction.",
+      "corroboration": 3
+    },
+    {
+      "headline": "Anthropic's $1.5 billion authors' copyright settlement finalized by federal judge",
+      "source": "Bloomberg Law (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "A federal judge approved what's described as the largest US copyright settlement, resolving a dispute over training on pirated books at roughly $3,100 per work.",
+      "corroboration": 1
+    },
+    {
+      "headline": "UK elevates AI minister to cabinet rank, folds tech department into wider agency",
+      "source": "Tech.eu (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "New PM Andy Burnham makes Kanishka Narayan the UK's first cabinet-level AI minister, restructuring the technology department.",
+      "corroboration": 1
+    },
+    {
+      "headline": "TSMC lifts Arizona investment commitment to $265 billion",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html",
+      "date": "2026-07-20",
+      "gist": "Chipmaker accelerates Arizona fab build-out, adding roughly $100B in new commitments as AI chip demand sustains multi-year capex growth.",
+      "corroboration": 5
+    },
+    {
+      "headline": "TSMC plans chip price increases of up to 10% for 2027",
+      "source": "Nikkei Asia (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Foundry cites rising material and equipment costs, with advanced-chip premiums of 10-15% for orders exceeding forecasts.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Nvidia's Vera CPU launches with 88 custom 'Olympus' cores",
+      "source": "Serve the Home (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Custom processor built for agentic AI workloads claims 1.8x faster task completion than x86 alternatives; broader release planned for H2 2026.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Intel names Fortinet first external customer for its Intel 4 manufacturing node",
+      "source": "Intel Newsroom (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Strategic collaboration will produce Fortinet's Security Processor 6 on Intel's advanced US-based manufacturing node.",
+      "corroboration": 1
+    },
+    {
+      "headline": "China's CXMT IPO oversubscribed, raises roughly $8.6 billion",
+      "source": "The Economic Times (via TechStartups)",
+      "url": "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/",
+      "date": "2026-07-20",
+      "gist": "Chinese memory-chip maker's listing draws overwhelming institutional demand amid the AI memory boom.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Shield AI raises $1.5 billion at a $12.7 billion valuation",
+      "source": "Crescendo AI (via Build Fast with AI)",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026",
+      "date": "2026-07-21",
+      "gist": "Defense-autonomy company closes a Series G round, roughly doubling its valuation year-over-year.",
+      "corroboration": 1
+    },
+    {
+      "headline": "AIsphere raises $439 million from Alibaba for AI video generation",
+      "source": "Crescendo AI (via Build Fast with AI)",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026",
+      "date": "2026-07-21",
+      "gist": "Chinese video-generation startup secures a Series C led by Alibaba, deepening competition in AI video.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Databricks reaches $188 billion valuation",
+      "source": "The Information (via TechStartups)",
+      "url": "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/",
+      "date": "2026-07-20",
+      "gist": "AI data platform startup hits a fresh valuation milestone amid strong enterprise AI infrastructure demand.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Hut 8 signs $9.8 billion, 15-year data center lease in Texas",
+      "source": "Reuters (via TechStartups)",
+      "url": "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/",
+      "date": "2026-07-20",
+      "gist": "Former crypto miner fully contracts its Texas campus for AI data-center capacity under a long-term lease.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Big Tech's off-balance-sheet AI debt estimated at $1.65 trillion",
+      "source": "Nikkei Asia (via AI Weekly)",
+      "url": "https://aiweekly.co/ai-news-today",
+      "date": "2026-07-21",
+      "gist": "Five US tech giants reportedly carry hidden AI-related liabilities exceeding their reported debt, driven by data-center leases and GPU contracts.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Samsung cuts roughly 840 US jobs amid consumer-electronics slowdown",
+      "source": "Business Standard (via TechStartups)",
+      "url": "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/",
+      "date": "2026-07-20",
+      "gist": "Electronics giant eliminates 739 positions in New Jersey and about 100 in Texas.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Neill Blomkamp releases AI-generated sci-fi short made with Seedance 2.0",
+      "source": "Build Fast with AI / TechCrunch",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026",
+      "date": "2026-07-21",
+      "gist": "The District 9 director creates a 13-minute AI-generated film, seen as a milestone for professional adoption of AI video tools.",
+      "corroboration": 1
+    },
+    {
+      "headline": "InMobi taps four bankers to lead its $1 billion IPO",
+      "source": "Inc42",
+      "url": "https://inc42.com/",
+      "date": "2026-07-22",
+      "gist": "The SoftBank-backed Indian adtech unicorn advances preparations toward its public offering.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Paytm eyes enterprise AI push and wallet-business revival",
+      "source": "Inc42",
+      "url": "https://inc42.com/",
+      "date": "2026-07-22",
+      "gist": "Indian payments major explores expansion into enterprise AI services alongside efforts to revive its wallet business.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Transition VC launches ₹1,500 crore fund to back Indian deeptech startups",
+      "source": "Inc42",
+      "url": "https://inc42.com/",
+      "date": "2026-07-21",
+      "gist": "New venture fund targets early-stage Indian deeptech companies, including AI and hard-tech plays.",
+      "corroboration": 1
+    },
+    {
+      "headline": "Indian traveltech startup 30 Sundays raises ₹61 crore to expand AI-powered trip planning",
+      "source": "Inc42",
+      "url": "https://inc42.com/",
+      "date": "2026-07-21",
+      "gist": "Travel platform secures funding to scale its AI-driven holiday-planning recommendation engine.",
+      "corroboration": 1
+    }
+  ]
+}

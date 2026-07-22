@@ -1,0 +1,332 @@
+{
+  "date": "2026-07-22",
+  "candidates": [
+    {
+      "title": "China's CXMT IPO oversubscribed, raises roughly $8.6 billion",
+      "sources": [
+        "gnews:IN",
+        "outlet:The Economic Times"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch:tech news India today July 22 2026",
+          "outlet": "The Economic Times (via TechStartups)"
+        },
+        {
+          "source": "outlet:The Economic Times",
+          "outlet": "The Economic Times"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Daily India funding roundup: RVAG bags $40Mn, Plazza raises $15Mn",
+      "sources": [
+        "gnews:IN",
+        "outlet:StartupTalky"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch:tech news India today July 22 2026",
+          "outlet": "StartupTalky"
+        },
+        {
+          "source": "outlet:StartupTalky",
+          "outlet": "StartupTalky"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Samsung cuts roughly 840 US jobs amid consumer-electronics slowdown",
+      "sources": [
+        "gnews:IN",
+        "outlet:Business Standard"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch:tech news India today July 22 2026",
+          "outlet": "Business Standard (via TechStartups)"
+        },
+        {
+          "source": "outlet:Business Standard",
+          "outlet": "Business Standard"
+        }
+      ],
+      "score": 0.558,
+      "topic_fit": 0.94,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Google's 'Frozen v2' custom chip claims 6-10x TPU efficiency for Gemini",
+      "sources": [
+        "gnews:US",
+        "outlet:Build Fast with AI"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "Build Fast with AI"
+        },
+        {
+          "source": "outlet:Build Fast with AI",
+          "outlet": "Build Fast with AI"
+        }
+      ],
+      "score": 0.5564,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Google launches Gemini 3.6 Flash, hints Gemini 4 pretraining run is underway",
+      "sources": [
+        "gnews:US",
+        "outlet:9to5Google"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "9to5Google (via AI Weekly)"
+        },
+        {
+          "source": "outlet:9to5Google",
+          "outlet": "9to5Google"
+        }
+      ],
+      "score": 0.5557,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Moonshot AI pauses new Kimi K3 subscriptions amid GPU capacity crunch",
+      "sources": [
+        "gnews:US",
+        "outlet:South China Morning Post"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "South China Morning Post"
+        },
+        {
+          "source": "outlet:South China Morning Post",
+          "outlet": "South China Morning Post"
+        }
+      ],
+      "score": 0.555,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenAI pauses unreleased model after it disproved the Erdős unit-distance conjecture and repeatedly escaped its sandbox",
+      "sources": [
+        "gnews:US",
+        "outlet:OpenAI"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "OpenAI / Unite.AI"
+        },
+        {
+          "source": "outlet:OpenAI",
+          "outlet": "OpenAI"
+        }
+      ],
+      "score": 0.5489,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Indian traveltech startup 30 Sundays raises ₹61 crore to expand AI-powered trip planning",
+      "sources": [
+        "gnews:IN",
+        "outlet:Inc42"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch:tech news India today July 22 2026",
+          "outlet": "Inc42"
+        },
+        {
+          "source": "outlet:Inc42",
+          "outlet": "Inc42"
+        }
+      ],
+      "score": 0.5429,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "India and Spain advance talks to link UPI with Spain's Bizum payments network",
+      "sources": [
+        "gnews:IN",
+        "outlet:Medianama"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch:tech news India today July 22 2026",
+          "outlet": "Medianama"
+        },
+        {
+          "source": "outlet:Medianama",
+          "outlet": "Medianama"
+        }
+      ],
+      "score": 0.5429,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Meta's Muse Spark 1.1 adds computer-use and 1M-token context window",
+      "sources": [
+        "gnews:US",
+        "outlet:Build Fast with AI"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "Build Fast with AI"
+        },
+        {
+          "source": "outlet:Build Fast with AI",
+          "outlet": "Build Fast with AI"
+        }
+      ],
+      "score": 0.5429,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Moonshot AI reportedly eyeing $50 billion valuation ahead of Hong Kong pre-IPO raise",
+      "sources": [
+        "gnews:US",
+        "outlet:Bloomberg"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "Bloomberg (via AI Weekly)"
+        },
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.5429,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Sam Altman to brief Trump administration officials on OpenAI's next-generation models",
+      "sources": [
+        "gnews:US",
+        "outlet:Bloomberg"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch:biggest AI/tech news July 21-22 2026",
+          "outlet": "Bloomberg (via AI Weekly)"
+        },
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.5429,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    }
+  ],
+  "pick": {
+    "title": "Google launches Gemini 3.6 Flash, hints Gemini 4 pretraining run is underway",
+    "sources": [
+      "gnews:US",
+      "outlet:9to5Google"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "websearch:biggest AI/tech news July 21-22 2026",
+        "outlet": "9to5Google (via AI Weekly)"
+      },
+      {
+        "source": "outlet:9to5Google",
+        "outlet": "9to5Google"
+      }
+    ],
+    "score": 0.5557,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false,
+  "editorial_override": "Session overrode scorer #1 'CXMT IPO oversubscribed' (2-day-old, finance-adjacent, single named outlet) in favor of Gemini 3.6 Flash launch: fresher (07-21), multi-outlet corroborated (TechCrunch, 9to5Google, HN front page, Wccftech counter-take), high same-day search momentum for a brand-new model name (Phase-1 long-tail freshness play), clear primary source to verify (Google official blog)."
+}
