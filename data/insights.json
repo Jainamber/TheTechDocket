@@ -1,7 +1,44 @@
 {
-  "generated_at": "2026-07-22T09:12:00.624940+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-07-23T09:10:52.196740+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 6
+    },
+    "eu-google-android-ai-assistants": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "ai-chatbot-data-privacy": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 4
+    },
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 6,
+    "policy": 5,
+    "ai-tools": 9,
+    "hardware": 3,
+    "ai-models": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
