@@ -56,6 +56,51 @@ Write the collected signals to `data/inbox/<today>.json`:
 }
 ```
 
+## Step 1.5 — CN Trend Radar (MONDAYS only, ~20 min)
+
+Xiaohongshu (RED) and Bilibili surface lifestyle/tech/design trends months
+before TikTok/Reels. Once a week, mine them for early signals — as
+hypotheses, never facts (corroboration rule below). Use WebFetch/WebSearch
+only (these are JS-rendered pages; raw HTTP gets you a shell) — no scrapers,
+no logins, no third-party APIs (the main unofficial Bilibili API repo was
+C&D'd in Jan 2026; official pages + intermediaries are the durable path).
+
+Sweep:
+
+- Bilibili all-site ranking `https://www.bilibili.com/v/popular/rank/all/`
+  and weekly must-watch `https://www.bilibili.com/ranking/weekly`.
+- English intermediaries (they translate + contextualize faster than raw
+  numbers): Tech Buzz China, KrAsia, Pandaily, Sixth Tone, What's on Weibo,
+  China Skinny digests, RecodeChinaAI (tracks RED's AI discourse).
+- Quarterly bonus lens: `trends.pinterest.com` (how consumer audiences
+  package tech topics — creative direction for explainers, not news timing).
+
+Log 3–5 candidate signals into today's inbox JSON under a top-level
+`cn_incubator` key:
+
+```json
+"cn_incubator": [{
+  "title": "plain-English description of the rising signal",
+  "platform": "xiaohongshu | bilibili | <intermediary>",
+  "url": "where you saw it",
+  "provenance": "one line: why you believe it's rising",
+  "corroboration_url": ""
+}]
+```
+
+**HARD RULE (enforced in `engine/scoring.py`):** an entry without a
+`corroboration_url` — a non-CN-platform second source (Western outlet, HN
+thread, a Google Trends inflection) — is logged and BLOCKED from ever
+becoming the day's article topic. RED's algorithm rewards legible sameness
+and can manufacture trend-shaped noise (the "AI action figure" trend is
+routinely misattributed to RED). A CN signal is a lead to verify, not a
+story to write. Corroborated entries score like any candidate (the verified
+second source is what feeds the corroboration term) and may also become
+docket quick items — link the corroborating source as the entry's `url`.
+
+Uncorroborated signals aren't wasted: leave them in the inbox and re-check
+next Monday whether corroboration has appeared.
+
 ## Step 2 — Select the topic
 
 ```bash
@@ -202,6 +247,20 @@ Edit the draft into `data/docket/<date>.md`:
 - **`counterpoint:` (optional, ≤35 words)** — add ONLY on a genuinely
   contested story, to state the strongest opposing read. Renders as an amber
   "Counterpoint" label. Don't manufacture one.
+- **`stat_line:` — the card's ONE number or hard fact, ≤12 words** (e.g.
+  "$1.5B — first court-approved training-data price"). Expected on every
+  quick entry (gate D14 warns); it renders big in the hub colour. One claim
+  + one number is what makes a card land in 15 seconds — and it must come
+  from the linked source, same no-fabrication spine as everything else.
+- **`community_read:` + `community_attr:` (optional, max 2/day)** — a real,
+  ≤25-word reaction quote from the linked thread/community, with its venue
+  named ("Hacker News", "r/LocalLLaMA"). Quote marks are added by the
+  renderer. Never invent, never paraphrase-as-quote (gate D15 enforces the
+  caps; your no-fabrication duty covers authenticity).
+- **`save_worthy: true` on ≥1 entry per day** — the keeper: a checklist,
+  threshold table, or how-to framing readers bookmark and return to. It
+  renders a KEEP THIS chip, leads the Deck, and is the default pick if the
+  owner pins anything to Pinterest (gate D16 warns).
 - Deks and why/counterpoint are observations backed by the linked source:
   WebFetch each source URL and verify every claim before writing it. No causal
   claims beyond what the source supports, no numbers absent from the source,
@@ -211,20 +270,38 @@ Edit the draft into `data/docket/<date>.md`:
 - Keep each item's source URL and a short source label.
 
 ```bash
-python -m engine.run build               # renders /docket/ + /docket/<date>/
-python -m engine.run docket              # D-gates; exit 0 = pass
+python -m engine.run build               # renders /docket/, /docket/<date>/ + /deck/
+python -m engine.run docket              # D-gates (D01-D19); exit 0 = pass
 python -m engine.run docket-publish      # separate commit + push
 ```
+
+The Deck (`/deck/` — the masonry browse/save archive of every docket card)
+rebuilds automatically inside `build`; you never author it separately. Gate
+D18 checks it when you gate the latest docket.
 
 The docket never writes `data/history.json` and never counts as the daily
 article — `docket-publish` refuses to run if it would.
 
+## Step 7.6 — Social carousel export (OPTIONAL — owner posts manually)
+
+Only when the docket published cleanly and time permits:
+
+```bash
+python -m engine.run social              # -> data/social/<date>/slide-*.jpg + caption.txt
+```
+
+Renders the day's docket as Instagram-ready 1080×1350 slides (house gradient
+art only — never generative imagery) plus a caption file. `data/social/` is
+gitignored — the slides are deliverables for the owner, not site state.
+Mention "social: exported" in the report so the owner knows to collect them.
+NEVER post to any platform yourself.
+
 ## Step 8 — Report
 
-End with a 6-line summary: topic picked & why, score, gate result,
+End with a 7-line summary: topic picked & why, score, gate result,
 published URL, docket status ("/docket/ published, N entries" or
-"docket: skipped" + why), anything needing the owner's attention.
-Nothing else.
+"docket: skipped" + why), social export status ("social: exported" /
+"skipped"), anything needing the owner's attention. Nothing else.
 
 ## Failure playbook
 

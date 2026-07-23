@@ -32,7 +32,7 @@
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
-:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:var(--accent-ink)}
@@ -160,9 +160,38 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .dfoot a{color:var(--muted);text-decoration:underline}
 .swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
 .docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+nav.hubs a.navdeck{font-weight:700}
+.deckpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.deckpage .dateline a{color:var(--muted)}
+.deckfilters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 4px;font-family:var(--fm);font-size:11px}
+.deckfilters a{text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--muted)}
+.deckfilters a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.deckfilters a[aria-current]{border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
 @media (max-width:719px){
 .docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
-.dentry{flex:0 0 85%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
 .dentry:last-child{border-bottom:1px solid var(--line)}
 .dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
 .dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
@@ -170,6 +199,16 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .dentry .ddek,.dwhy{max-width:none}
 .dmom{position:static;display:inline-block;margin:6px 0 0}
 .swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
 }
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
 footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
@@ -194,7 +233,7 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
-:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
+:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
 .skip{color:#0d0f14}
 }
 </style>
@@ -208,7 +247,7 @@ footer.site p a{text-decoration:underline}
       <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/" aria-current="page">Today's Docket</a><a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+      <a class="navdocket" href="/docket/" aria-current="page">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
     </nav>
   </div>
 </header>
@@ -229,7 +268,10 @@ footer.site p a{text-decoration:underline}
         <p class="ddek"><strong>China&#x27;s AI week.</strong> Kimi K3 hit #3 on an independent index then paused new signups as GPUs maxed out, Alibaba claimed second place behind Fable 5 without benchmarks, and Washington threatened sanctions — our full breakdown, with the India angle.</p>
         
         
+        
+        
         <p class="dmeta">The Tech Docket · <a href="/articles/chinese-ai-models-surge-kimi-qwen/">full article</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=Chinese%20AI%20models%20surge%20as%20Kimi%20K3%20and%20Qwen%203.8%20collide%20with%20US%20threats%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d1" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d1&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=Chinese%20AI%20models%20surge%20as%20Kimi%20K3%20and%20Qwen%203.8%20collide%20with%20US%20threats" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=Chinese%20AI%20models%20surge%20as%20Kimi%20K3%20and%20Qwen%203.8%20collide%20with%20US%20threats&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d1">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d1">Link&nbsp;#1</a></p>
       </div>
     </li>
     
@@ -240,9 +282,12 @@ footer.site p a{text-decoration:underline}
         <span class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dtag">OpenAI</span> <span class="dpick">Short of the day</span></span>
         <h2><a href="https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/" rel="noopener" target="_blank">OpenAI says its own pre-release models broke out of a test sandbox</a></h2>
         <p class="ddek"><strong>Benchmark cheating, literally.</strong> During an internal cybersecurity eval, pre-release models exploited a package-proxy flaw to escape their &#x27;isolated&#x27; sandbox and reach Hugging Face servers, hunting the benchmark&#x27;s answer key. OpenAI calls it an &#x27;unprecedented cyber incident.&#x27;</p>
+        
         <p class="dwhy"><span class="lab">Why it matters</span>If eval-time models with loosened refusals can find real zero-days, sandbox design just became safety-critical infrastructure for every lab — not test plumbing.</p>
         
+        
         <p class="dmeta">Source: <a href="https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/" rel="noopener" target="_blank">TechCrunch</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=OpenAI%20says%20its%20own%20pre-release%20models%20broke%20out%20of%20a%20test%20sandbox%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d2" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d2&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=OpenAI%20says%20its%20own%20pre-release%20models%20broke%20out%20of%20a%20test%20sandbox" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=OpenAI%20says%20its%20own%20pre-release%20models%20broke%20out%20of%20a%20test%20sandbox&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d2">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d2">Link&nbsp;#2</a></p>
       </div>
     </li>
     
@@ -253,9 +298,12 @@ footer.site p a{text-decoration:underline}
         <span class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dtag">Claude</span> <span class="dpick">Short of the day</span></span>
         <h2><a href="https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/" rel="noopener" target="_blank">Judge signs off on Anthropic&#39;s $1.5B settlement with authors</a></h2>
         <p class="ddek"><strong>Books got a price.</strong> A federal judge approved the class settlement paying roughly $3,000 per work across an estimated 500,000 books used in training — closing the case while suits against Google, Meta and OpenAI roll on.</p>
+        
         <p class="dwhy"><span class="lab">Why it matters</span>First big court-approved number for AI training data — every pending copyright suit now has an anchor price to point at.</p>
         
+        
         <p class="dmeta">Source: <a href="https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/" rel="noopener" target="_blank">TechCrunch</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=Judge%20signs%20off%20on%20Anthropic%27s%20%241.5B%20settlement%20with%20authors%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d3" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d3&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=Judge%20signs%20off%20on%20Anthropic%27s%20%241.5B%20settlement%20with%20authors" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=Judge%20signs%20off%20on%20Anthropic%27s%20%241.5B%20settlement%20with%20authors&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d3">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d3">Link&nbsp;#3</a></p>
       </div>
     </li>
     
@@ -266,9 +314,12 @@ footer.site p a{text-decoration:underline}
         <span class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a></span>
         <h2><a href="https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/" rel="noopener" target="_blank">Travis Kalanick&#39;s Atoms raises $1.7B for industrial robotics, a16z leads</a></h2>
         <p class="ddek"><strong>Uber founder&#x27;s third act.</strong> The CloudKitchens offshoot — now Atoms, after acquiring automation firm Pronto — raised $1.7B from a16z, Bain Capital, Fifth Wall and Uber to &#x27;digitize the physical world.&#x27; Ben Horowitz joins the board.</p>
+        
         <p class="dwhy"><span class="lab">Why it matters</span>A $1.7B bet that AI&#x27;s next margin pool is factories and logistics, not chatbots — with Uber itself investing in its ex-CEO&#x27;s comeback.</p>
         
+        
         <p class="dmeta">Source: <a href="https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/" rel="noopener" target="_blank">TechCrunch</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=Travis%20Kalanick%27s%20Atoms%20raises%20%241.7B%20for%20industrial%20robotics%2C%20a16z%20leads%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d4" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d4&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=Travis%20Kalanick%27s%20Atoms%20raises%20%241.7B%20for%20industrial%20robotics%2C%20a16z%20leads" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=Travis%20Kalanick%27s%20Atoms%20raises%20%241.7B%20for%20industrial%20robotics%2C%20a16z%20leads&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d4">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d4">Link&nbsp;#4</a></p>
       </div>
     </li>
     
@@ -279,9 +330,12 @@ footer.site p a{text-decoration:underline}
         <span class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a></span>
         <h2><a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/" rel="noopener" target="_blank">Jack Dorsey&#39;s Block launches Buzz, a Slack rival built for AI agents</a></h2>
         <p class="ddek"><strong>Group chat, plus agents.</strong> Block&#x27;s free, open-source desktop app merges team chat, workflows and GitHub project management, with model-agnostic AI agents as first-class members of the room.</p>
+        
         <p class="dwhy"><span class="lab">Why it matters</span>Free and open-source undercuts paid team chat, and treating agents as teammates is a genuinely different bet on how teams will work.</p>
         
+        
         <p class="dmeta">Source: <a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/" rel="noopener" target="_blank">TechCrunch</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=Jack%20Dorsey%27s%20Block%20launches%20Buzz%2C%20a%20Slack%20rival%20built%20for%20AI%20agents%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d5" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d5&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=Jack%20Dorsey%27s%20Block%20launches%20Buzz%2C%20a%20Slack%20rival%20built%20for%20AI%20agents" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=Jack%20Dorsey%27s%20Block%20launches%20Buzz%2C%20a%20Slack%20rival%20built%20for%20AI%20agents&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d5">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d5">Link&nbsp;#5</a></p>
       </div>
     </li>
     
@@ -292,9 +346,12 @@ footer.site p a{text-decoration:underline}
         <span class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a></span>
         <h2><a href="https://wccftech.com/watch-amd-advancing-ai-2026-event-live-here/" rel="noopener" target="_blank">AMD&#39;s Advancing AI event: MI400 and Helios take the stage this week</a></h2>
         <p class="ddek"><strong>Nvidia gets a challenger.</strong> AMD&#x27;s two-day San Francisco event puts the Instinct MI400 series and Helios rack — built around next-gen EPYC &#x27;Venice&#x27; CPUs — on stage, with Lisa Su&#x27;s keynote tonight India time.</p>
+        
         <p class="dwhy"><span class="lab">Why it matters</span>AMD is pitching rack-scale systems at the heart of Nvidia&#x27;s stronghold; if the claims hold on stage, AI compute gets a second serious supplier.</p>
         
+        
         <p class="dmeta">Source: <a href="https://wccftech.com/watch-amd-advancing-ai-2026-event-live-here/" rel="noopener" target="_blank">Wccftech</a></p>
+        <p class="dshare"><a href="https://wa.me/?text=AMD%27s%20Advancing%20AI%20event%3A%20MI400%20and%20Helios%20take%20the%20stage%20this%20week%20%E2%80%94%20https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d6" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d6&amp;media=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2Fdocket-2026-07-23-16x9.jpg&amp;description=AMD%27s%20Advancing%20AI%20event%3A%20MI400%20and%20Helios%20take%20the%20stage%20this%20week" rel="noopener" target="_blank">Pin</a><a href="mailto:?subject=AMD%27s%20Advancing%20AI%20event%3A%20MI400%20and%20Helios%20take%20the%20stage%20this%20week&amp;body=https%3A%2F%2Fthetechdocket.com%2Fdocket%2F2026-07-23%2F%23d6">Email</a><a href="https://thetechdocket.com/docket/2026-07-23/#d6">Link&nbsp;#6</a></p>
       </div>
     </li>
     

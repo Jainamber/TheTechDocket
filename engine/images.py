@@ -154,6 +154,161 @@ def generate_docket_card(date_str: str, date_human: str, site_name: str,
     return {"jpg": f"{base.name}.jpg", "webp": f"{base.name}.webp"}
 
 
+def _wrap_text(draw: ImageDraw.ImageDraw, text: str,
+               font: ImageFont.FreeTypeFont, max_w: int) -> list[str]:
+    lines, cur = [], ""
+    for w in (text or "").split():
+        t = (cur + " " + w).strip()
+        if draw.textlength(t, font=font) <= max_w:
+            cur = t
+        else:
+            if cur:
+                lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def generate_carousel(date_str: str, date_human: str, entries: list[dict],
+                      site_url: str, outdir: Path, slide_w: int = 1080,
+                      slide_h: int = 1350, max_slides: int = 20) -> list[str]:
+    """Instagram-ready 4:5 carousel from a day's docket (proposal
+    2026-07-23 Phase B) — the text-baked sibling of the textless covers
+    (the DESIGN-COVER-2026-07-21 optional follow-up, now with a job).
+
+    Slide 1 = cover promise (the lead headline, RED-style specific promise),
+    one slide per entry (headline + stat + why), last slide = CTA. Every
+    slide carries the site host; house gradient art only — no generative
+    imagery (gate D19 / proposal S07 contract). Output is data/social/
+    (gitignored): deliverables for the owner to post manually, never
+    auto-published anywhere.
+    """
+    outdir.mkdir(parents=True, exist_ok=True)
+    host = site_url.replace("https://", "").replace("http://", "").strip("/")
+    body = entries[: max(1, max_slides - 2)]
+    total = len(body) + 2
+    made: list[str] = []
+    margin = int(slide_w * 0.074)
+    text_w = slide_w - 2 * margin
+
+    def _host_tag(d: ImageDraw.ImageDraw) -> None:
+        f = _font(int(slide_h * 0.019))
+        tw = d.textlength(host, font=f)
+        d.text((slide_w - tw - margin, slide_h - int(slide_h * 0.052)),
+               host, font=f, fill=(214, 220, 234))
+
+    def _counter(d: ImageDraw.ImageDraw, n: int) -> None:
+        f = _font(int(slide_h * 0.019))
+        d.text((margin, slide_h - int(slide_h * 0.052)), f"{n} / {total}",
+               font=f, fill=(150, 158, 180))
+
+    def _save(img: Image.Image, n: int) -> None:
+        p = outdir / f"slide-{n:02d}.jpg"
+        img.save(p, quality=88, optimize=True, progressive=True)
+        made.append(p.name)
+
+    # slide 1 — cover promise: the lead headline IS the promise
+    img = _cover(slide_w, slide_h, "docket", date_str + "-cover")
+    d = ImageDraw.Draw(img)
+    accent = PALETTES["docket"][2]
+    fk = _font(int(slide_h * 0.023))
+    d.text((margin, int(slide_h * 0.115)), "TODAY'S DOCKET", font=fk, fill=accent)
+    d.text((margin, int(slide_h * 0.115) + int(slide_h * 0.034)),
+           date_human.upper(), font=fk, fill=(190, 196, 214))
+    lead = next((e for e in body if e.get("lead")), body[0] if body else None)
+    y = int(slide_h * 0.29)
+    if lead:
+        fh = _font(int(slide_h * 0.05))
+        for ln in _wrap_text(d, str(lead.get("headline") or ""), fh, text_w)[:6]:
+            d.text((margin, y), ln, font=fh, fill=(238, 240, 248))
+            y += int(slide_h * 0.06)
+    fs = _font(int(slide_h * 0.024))
+    d.text((margin, y + int(slide_h * 0.024)),
+           f"+ {max(0, len(body) - 1)} more signals · a 60-second read",
+           font=fs, fill=(170, 178, 200))
+    d.text((margin, y + int(slide_h * 0.024) + int(slide_h * 0.036)),
+           "swipe →", font=fs, fill=accent)
+    _host_tag(d)
+    _counter(d, 1)
+    _save(img, 1)
+
+    # entry slides — one claim + one number, why-it-matters, source
+    for n, e in enumerate(body, start=2):
+        hub = str(e.get("hub") or "docket")
+        img = _cover(slide_w, slide_h, hub, f"{date_str}-{n}")
+        d = ImageDraw.Draw(img)
+        pal = PALETTES.get(hub, DEFAULT_PALETTE)
+        acc = _mix(pal[2], (255, 255, 255), 0.25)
+        fk = _font(int(slide_h * 0.021))
+        d.text((margin, int(slide_h * 0.082)),
+               str(e.get("hub_name") or hub).upper(), font=fk, fill=acc)
+        y = int(slide_h * 0.13)
+        fh = _font(int(slide_h * 0.042))
+        for ln in _wrap_text(d, str(e.get("headline") or ""), fh, text_w)[:5]:
+            d.text((margin, y), ln, font=fh, fill=(240, 242, 250))
+            y += int(slide_h * 0.052)
+        y += int(slide_h * 0.018)
+        stat = str(e.get("stat_line") or "").strip()
+        if stat:
+            fstat = _font(int(slide_h * 0.056))
+            for ln in _wrap_text(d, stat, fstat, text_w)[:2]:
+                d.text((margin, y), ln, font=fstat, fill=pal[2])
+                y += int(slide_h * 0.068)
+            y += int(slide_h * 0.012)
+        why = str(e.get("why") or "").strip()
+        if why:
+            flab = _font(int(slide_h * 0.018))
+            d.text((margin, y), "WHY IT MATTERS", font=flab, fill=acc)
+            y += int(slide_h * 0.032)
+            fw = _font(int(slide_h * 0.027))
+            for ln in _wrap_text(d, why, fw, text_w)[:5]:
+                d.text((margin, y), ln, font=fw, fill=(210, 216, 232))
+                y += int(slide_h * 0.038)
+        src = str(e.get("source") or "").strip()
+        if src:
+            fsrc = _font(int(slide_h * 0.019))
+            d.text((margin, min(y + int(slide_h * 0.022),
+                                slide_h - int(slide_h * 0.11))),
+                   f"Source: {src}", font=fsrc, fill=(150, 158, 180))
+        _host_tag(d)
+        _counter(d, n)
+        _save(img, n)
+
+    # CTA slide
+    img = _cover(slide_w, slide_h, "docket", date_str + "-cta")
+    d = ImageDraw.Draw(img)
+    fh = _font(int(slide_h * 0.05))
+    d.text((margin, int(slide_h * 0.34)), "That's today's docket.",
+           font=fh, fill=(238, 240, 248))
+    fs = _font(int(slide_h * 0.026))
+    d.text((margin, int(slide_h * 0.425)),
+           "One long read + the day's signals, every", font=fs,
+           fill=(200, 206, 224))
+    d.text((margin, int(slide_h * 0.425) + int(slide_h * 0.036)),
+           "morning. Every claim linked to its source.", font=fs,
+           fill=(200, 206, 224))
+    fbig = _font(int(slide_h * 0.034))
+    d.text((margin, int(slide_h * 0.55)), f"{host}/docket/",
+           font=fbig, fill=PALETTES["docket"][2])
+    _host_tag(d)
+    _counter(d, total)
+    _save(img, total)
+
+    # caption.txt — hook, contents line, link line, hashtags
+    lead_h = (str(lead.get("headline")) if lead
+              else f"Today's Docket, {date_human}")
+    others = [str(e.get("headline") or "") for e in body
+              if not e.get("lead")][:4]
+    cap = [lead_h, ""]
+    if others:
+        cap += ["Also today: " + " · ".join(o for o in others if o), ""]
+    cap += [f"Full docket with every source linked → {host}/docket/", "",
+            "#TechNews #AI #India #TheTechDocket #TechDaily"]
+    (outdir / "caption.txt").write_text("\n".join(cap), encoding="utf-8")
+    return made
+
+
 def generate_site_assets(site_name: str, assets_dir: Path) -> None:
     assets_dir.mkdir(parents=True, exist_ok=True)
     accent = (129, 140, 248)

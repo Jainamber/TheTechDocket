@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="deckpage">
+  <h1 class="listh1 dockh1"><span class="dash" aria-hidden="true"></span>{{ heading }}</h1>
+  <p class="dateline">{{ total }} card{{ 's' if total != 1 else '' }} · newest first{% if cards|length < total %} · showing the latest {{ cards|length }}{% endif %}</p>
+  <p class="intro">{{ intro }}</p>
+  <nav class="deckfilters" aria-label="Filter cards by hub">
+    <a href="{{ base_path }}deck/"{% if not hub_filter %} aria-current="page"{% endif %}>All</a>
+    {%- for hslug, hname in deck_hubs.items() %}
+    <a href="{{ base_path }}deck/{{ hslug }}/"{% if hub_filter == hslug %} aria-current="page"{% endif %}>{{ hname }}</a>
+    {%- endfor %}
+  </nav>
+  <div class="deckgrid">
+    {%- for c in cards %}
+    <article class="deckcard" style="--rail:var(--k-{{ c.hub }})">
+      <p class="kline"><a class="kicker k-{{ c.hub }}" href="{{ base_path }}topics/{{ c.hub }}/">{{ c.hub_name }}</a>{% if c.save_worthy %} <span class="dkeep">Keep this</span>{% endif %} <a class="dcdate" href="{{ c.docket_href }}">{{ c.date }}</a></p>
+      <h2><a href="{{ c.href }}"{% if c.external %} rel="noopener" target="_blank"{% endif %}>{{ c.headline }}</a></h2>
+      {% if c.stat_line %}<p class="dstat">{{ c.stat_line }}</p>{% endif %}
+      <p class="ddek">{{ c.dek_html }}</p>
+      <p class="dmeta">{% if c.external %}<a href="{{ c.href }}" rel="noopener" target="_blank">{{ c.source }}</a>{% else %}{{ c.source }}{% endif %} · <a href="{{ c.docket_href }}">that day's docket</a> · <a href="{{ c.pin_url }}" rel="noopener" target="_blank">pin</a></p>
+    </article>
+    {%- endfor %}
+  </div>
+  <p class="dfoot">The Deck is the browse-and-save archive of <a href="{{ base_path }}docket/">Today's Docket</a> — every card keeps its link back to that day's docket and to its original source. Older cards beyond the cap stay reachable through their hub pages and the dated dockets. New cards land every morning.</p>
+</section>
+{% endblock %}

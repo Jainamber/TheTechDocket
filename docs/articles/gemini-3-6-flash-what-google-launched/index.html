@@ -43,7 +43,7 @@
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
-:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:var(--accent-ink)}
@@ -171,9 +171,38 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .dfoot a{color:var(--muted);text-decoration:underline}
 .swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
 .docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+nav.hubs a.navdeck{font-weight:700}
+.deckpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.deckpage .dateline a{color:var(--muted)}
+.deckfilters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 4px;font-family:var(--fm);font-size:11px}
+.deckfilters a{text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--muted)}
+.deckfilters a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.deckfilters a[aria-current]{border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
 @media (max-width:719px){
 .docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
-.dentry{flex:0 0 85%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
 .dentry:last-child{border-bottom:1px solid var(--line)}
 .dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
 .dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
@@ -181,6 +210,16 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .dentry .ddek,.dwhy{max-width:none}
 .dmom{position:static;display:inline-block;margin:6px 0 0}
 .swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
 }
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
 footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
@@ -205,7 +244,7 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 @media (prefers-color-scheme: dark){
-:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7}
+:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
 .skip{color:#0d0f14}
 }
 </style>
@@ -219,7 +258,7 @@ footer.site p a{text-decoration:underline}
       <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/">Today's Docket</a><a href="/topics/ai-models/" aria-current="page">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/" aria-current="page">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
     </nav>
   </div>
 </header>

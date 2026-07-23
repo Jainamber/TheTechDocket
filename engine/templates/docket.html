@@ -14,12 +14,15 @@
       <span class="dno" aria-hidden="true">{{ '%02d' % loop.index }}</span>
       {% if dk.show_chips and e.rank %}<span class="dmom">&#9650; #{{ e.rank }} of {{ dk.pool }}</span>{% endif %}
       <div>
-        <span class="kline"><a class="kicker k-{{ e.hub }}" href="{{ base_path }}topics/{{ e.hub }}/">{{ e.hub_name }}</a>{% if e.tag_label %} <span class="dtag">{{ e.tag_label }}</span>{% endif %}{% if e.lead %} <span class="dlead">Today's read</span>{% elif e.pick %} <span class="dpick">Short of the day</span>{% endif %}</span>
+        <span class="kline"><a class="kicker k-{{ e.hub }}" href="{{ base_path }}topics/{{ e.hub }}/">{{ e.hub_name }}</a>{% if e.tag_label %} <span class="dtag">{{ e.tag_label }}</span>{% endif %}{% if e.lead %} <span class="dlead">Today's read</span>{% elif e.pick %} <span class="dpick">Short of the day</span>{% endif %}{% if e.save_worthy %} <span class="dkeep">Keep this</span>{% endif %}</span>
         <h2><a href="{{ e.href }}"{% if e.external %} rel="noopener" target="_blank"{% endif %}>{{ e.headline }}</a></h2>
         <p class="ddek">{{ e.dek_html }}</p>
+        {% if e.stat_line %}<p class="dstat">{{ e.stat_line }}</p>{% endif %}
         {% if e.why %}<p class="dwhy"><span class="lab">Why it matters</span>{{ e.why_html }}</p>{% endif %}
         {% if e.counterpoint %}<p class="dwhy cp"><span class="lab">Counterpoint</span>{{ e.counterpoint_html }}</p>{% endif %}
+        {% if e.community_read %}<p class="dcomm">&#8220;{{ e.community_read }}&#8221;{% if e.community_attr %} <span class="dattr">— {{ e.community_attr }}</span>{% endif %}</p>{% endif %}
         <p class="dmeta">{% if e.external %}Source: <a href="{{ e.href }}" rel="noopener" target="_blank">{{ e.source }}</a>{% else %}{{ e.source }} · <a href="{{ e.href }}">full article</a>{% endif %}</p>
+        <p class="dshare"><a href="{{ e.wa_url }}" rel="noopener" target="_blank">WhatsApp</a><a href="{{ e.pin_url }}" rel="noopener" target="_blank">Pin</a><a href="{{ e.mail_url }}">Email</a><a href="{{ e.share_url }}">Link&nbsp;#{{ loop.index }}</a></p>
       </div>
     </li>
     {% endfor %}

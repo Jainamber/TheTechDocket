@@ -10,6 +10,7 @@
   python -m engine.run docket-draft         # pre-draft Today's Docket from candidates
   python -m engine.run docket [--date D]    # run D-gates on the built docket
   python -m engine.run docket-publish [--date D] [--no-push]
+  python -m engine.run social [--date D]    # IG carousel slides + caption -> data/social/
   python -m engine.run status               # engine state overview
 """
 from __future__ import annotations
@@ -43,6 +44,8 @@ def main(argv=None):
     dp = sub.add_parser("docket-publish")
     dp.add_argument("--date", default=None)
     dp.add_argument("--no-push", action="store_true")
+    so = sub.add_parser("social")
+    so.add_argument("--date", default=None)
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -106,6 +109,29 @@ def main(argv=None):
     elif args.cmd == "docket-publish":
         from .docket import docket_publish
         docket_publish(args.date, push=not args.no_push)
+
+    elif args.cmd == "social":
+        # Phase B (proposal 2026-07-23): render the day's docket as an
+        # Instagram-ready carousel. Output is gitignored — the owner posts
+        # manually; skipping this step forever is fine.
+        from . import images
+        from .build import docket_context
+        from .docket import DOCKET_DIR, parse_docket
+        cfg = load_config()
+        scfg = cfg.get("social") or {}
+        if not scfg.get("enabled", True):
+            sys.exit("social export disabled in config.yaml")
+        day = args.date or today_str()
+        path = DOCKET_DIR / f"{day}.md"
+        if not path.exists():
+            sys.exit(f"no docket data file for {day} — nothing to export")
+        ctx = docket_context(cfg, parse_docket(path))
+        outdir = ROOT / "data" / "social" / day
+        files = images.generate_carousel(
+            day, ctx["date_human"], ctx["entries"], cfg["site"]["base_url"],
+            outdir, int(scfg.get("slide_w", 1080)),
+            int(scfg.get("slide_h", 1350)), int(scfg.get("max_slides", 20)))
+        print(f"social: {len(files)} slides + caption.txt -> {outdir}")
 
     elif args.cmd == "status":
         cfg = load_config()

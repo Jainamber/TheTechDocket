@@ -100,6 +100,28 @@ def extract_candidates(inbox: dict, cfg: dict) -> list[dict]:
         add(name, "wikipedia", None,
             min(0.6, math.log10((w.get("views") or 1)) / 8), {"views": w.get("views")})
 
+    # CN Trend Radar (proposal 2026-07-23): weekly RED/Bilibili early signals
+    # land in the inbox under `cn_incubator`. HARD rule: an uncorroborated CN
+    # signal is a hypothesis, never a candidate — RED's algorithm rewards
+    # legible sameness and can manufacture trend-shaped noise, so a second,
+    # non-CN-platform source URL is the price of entry. The corroborating
+    # source is added as its own evidence line (it is a real, verified second
+    # source — that's what corroboration_url MEANS), which is what feeds the
+    # scorer's corroboration term.
+    for c in (inbox.get("cn_incubator") or []):
+        title = str(c.get("title") or "")
+        corro = str(c.get("corroboration_url") or "").strip()
+        if not corro:
+            print(f"CN-RADAR blocked (no corroboration_url): {title[:70]}")
+            continue
+        platform = str(c.get("platform") or "cn").strip().lower()
+        add(title, f"cn:{platform}", None, 0.35,
+            {"platform": platform, "url": str(c.get("url") or ""),
+             "provenance": str(c.get("provenance") or ""),
+             "origin": "cn-incubator"})
+        add(title, "corroboration", None, 0.2,
+            {"url": corro, "origin": "cn-incubator"})
+
     return list(cands.values())
 
 
@@ -176,6 +198,10 @@ def select(inbox_path: Path | None = None) -> dict:
             "WebSearch/WebFetch data (see DAILY_RUN.md).")
     inbox = json.loads(inbox_path.read_text(encoding="utf-8"))
     ranked = score_candidates(extract_candidates(inbox, cfg), cfg)
+    # visibility only — blocked CN signals are recorded, never scored
+    cn_blocked = [str(c.get("title") or "")[:90]
+                  for c in (inbox.get("cn_incubator") or [])
+                  if not str(c.get("corroboration_url") or "").strip()]
     result = {
         "date": day,
         "candidates": ranked[:12],
@@ -183,6 +209,8 @@ def select(inbox_path: Path | None = None) -> dict:
         "use_evergreen": (not ranked
                           or ranked[0]["score"] < cfg["scoring"]["min_publish_score"]),
     }
+    if cn_blocked:
+        result["cn_blocked"] = cn_blocked
     out = ROOT / "data" / "briefs" / f"{day}-candidates.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")

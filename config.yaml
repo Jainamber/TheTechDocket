@@ -158,6 +158,24 @@ docket:
     us:        {label: "US", match: "white house, congress, senate, fcc, ftc, pentagon, nasa, u.s. government"}
     spacex:    {label: "SpaceX", match: "spacex, starship, starlink, falcon 9, elon musk"}
 
+# The Deck — /deck/: masonry browse/save archive of every docket card
+# (proposal 2026-07-23). Cards deep-link to their docket day + source;
+# deliberately NO per-card URLs (thin-content control). Gated by D18.
+deck:
+  enabled: true
+  max_cards: 90          # newest cards shown on /deck/ and each hub page
+  page_weight_kb: 150    # D18 budget for /deck/ index.html
+
+# Social carousel export (Instagram-first; proposal 2026-07-23 Phase B).
+# Generated ON DEMAND via `python -m engine.run social [--date D]` into
+# data/social/<date>/ (gitignored — deliverables, not site state). The
+# owner posts manually; nothing here auto-publishes anywhere. Gate D19.
+social:
+  enabled: true
+  slide_w: 1080
+  slide_h: 1350          # 4:5 portrait — IG carousel recommended size
+  max_slides: 20         # IG carousel cap (Aug 2024 expansion)
+
 ymyl:
   finance_terms: [invest, investment, stock, share price, crypto, bitcoin, trading, loan, tax, mutual fund, returns, portfolio, insurance]
   health_terms: [cure, treatment, diagnosis, symptom, disease, mental health, therapy, medicine, medical, dosage, supplement]

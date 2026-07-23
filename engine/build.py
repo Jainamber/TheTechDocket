@@ -15,7 +15,7 @@ import shutil
 from datetime import datetime
 from email.utils import format_datetime
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import markdown as md
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -238,12 +238,32 @@ def docket_context(cfg, d: dict) -> dict:
     dk_cfg = cfg.get("docket") or {}
     watchlist = dk_cfg.get("watchlist") or {}
     items = []
-    for it in d.get("items", []):
+    for idx, it in enumerate(d.get("items", []), start=1):
         url = str(it.get("url") or "")
         external = url.startswith("http")
         href = url if external else base_path(cfg) + url.lstrip("/")
         tag = str(it.get("tag") or "").strip()
+        headline = str(it.get("headline") or "")
+        # per-card share targets (proposal 2026-07-23): the anchor matches the
+        # template's stable id (d1..dN); pin/wa/mail links are plain URLs, so
+        # the whole share row stays zero-JS
+        share_url = abs_url(cfg, f"docket/{d['date']}/") + f"#d{idx}"
+        media = abs_url(cfg, f"docket/{d['date']}/docket-{d['date']}-16x9.jpg")
         items.append({
+            "anchor": f"d{idx}",
+            "share_url": share_url,
+            "pin_url": ("https://www.pinterest.com/pin/create/button/"
+                        "?url=" + quote(share_url, safe="")
+                        + "&media=" + quote(media, safe="")
+                        + "&description=" + quote(headline[:200], safe="")),
+            "wa_url": "https://wa.me/?text="
+                      + quote(f"{headline} — {share_url}", safe=""),
+            "mail_url": ("mailto:?subject=" + quote(headline, safe="")
+                         + "&body=" + quote(share_url, safe="")),
+            "stat_line": str(it.get("stat_line") or "").strip(),
+            "community_read": str(it.get("community_read") or "").strip(),
+            "community_attr": str(it.get("community_attr") or "").strip(),
+            "save_worthy": bool(it.get("save_worthy")),
             "hub": it.get("hub", "explainers"),
             "hub_name": hubs.get(it.get("hub"), it.get("hub", "")),
             "headline": str(it.get("headline") or ""),
@@ -321,10 +341,12 @@ def _common(cfg, nav_hubs=None, **kw) -> dict:
                   and dk_dir.exists()
                   and any(re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)
                           for p in dk_dir.glob("*.md")))
+    has_deck = has_docket and bool((cfg.get("deck") or {}).get("enabled"))
     d = {"site": cfg["site"], "author": cfg["author"],
          "hubs": cfg["content"]["hubs"],
          "nav_hubs": nav_hubs,
          "has_docket": has_docket,
+         "has_deck": has_deck,
          "brand_a": brand_a, "brand_b": brand_b,
          "base_path": base_path(cfg), "year": now_ist().year,
          "analytics_snippet": _analytics_snippet(cfg),
@@ -453,6 +475,17 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
     if (cfg.get("docket") or {}).get("enabled", True):
         for d in all_dockets():
             urls.append((abs_url(cfg, f"docket/{d['date']}/"), d["date"]))
+    # Deck pages (browse archive) — lastmod rides the newest docket
+    if ((cfg.get("deck") or {}).get("enabled")
+            and (cfg.get("docket") or {}).get("enabled", True)):
+        dks = all_dockets()
+        if dks:
+            urls.append((abs_url(cfg, "deck/"), dks[0]["date"]))
+            in_dockets = {str(it.get("hub") or "")
+                          for d in dks for it in d.get("items", [])}
+            for hub in cfg["content"]["hubs"]:
+                if hub in in_dockets:
+                    urls.append((abs_url(cfg, f"deck/{hub}/"), dks[0]["date"]))
     for p in ("about/", "editorial-policy/", "sitemap/",
               f"authors/{cfg['author']['slug']}/"):
         urls.append((abs_url(cfg, p), None))
@@ -599,6 +632,51 @@ def build_site() -> Path:
                     "date_human": ctx_d["date_human"],
                     "entries": [e for e in ctx_d["entries"]
                                 if not e["lead"]][:4]}
+
+    # The Deck — masonry browse/save archive of every docket card
+    # (/deck/ + /deck/<hub>/; proposal 2026-07-23). Cards are the entries of
+    # the dated dockets — no per-card URLs, no new content class, zero new
+    # data collection (the docket pattern, one level up).
+    deck_cfg = cfg.get("deck") or {}
+    if dockets and deck_cfg.get("enabled"):
+        deck_tpl = env.get_template("deck.html")
+        cap = int(deck_cfg.get("max_cards", 90))
+        all_cards = []
+        for d in dockets:  # all_dockets() is newest-first already
+            ctx_d = docket_context(cfg, d)
+            for e in ctx_d["entries"]:
+                c = dict(e)
+                c["date"] = d["date"]
+                c["date_human"] = ctx_d["date_human"]
+                c["docket_href"] = (base_path(cfg)
+                                    + f"docket/{d['date']}/#{e['anchor']}")
+                all_cards.append(c)
+        deck_hubs = {h: n for h, n in cfg["content"]["hubs"].items()
+                     if any(c["hub"] == h for c in all_cards)}
+        deck_og = abs_url(cfg, f"docket/{dockets[0]['date']}/"
+                               f"docket-{dockets[0]['date']}-16x9.jpg")
+        deck_intro = ("Every card from every Today's Docket — built to be "
+                      "saved and come back to. A card's date opens that "
+                      "day's full docket; its headline opens the source.")
+
+        def _deck_page(path: str, heading: str, cards: list[dict],
+                       hub: str | None = None) -> None:
+            _write(out / path / "index.html", deck_tpl.render(**_common(
+                cfg,
+                page_title=f"{heading} — {cfg['site']['name']}",
+                meta_description=_meta_desc(
+                    f"{heading}: the browse-and-save archive of Today's "
+                    "Docket — every card, newest first, each linked to its "
+                    "source and its day's docket."),
+                canonical=abs_url(cfg, path), og_image=deck_og,
+                og_image_alt=heading, current_hub="_deck",
+                heading=heading, intro=deck_intro, cards=cards[:cap],
+                hub_filter=hub, deck_hubs=deck_hubs, total=len(cards))))
+
+        _deck_page("deck/", "The Deck", all_cards)
+        for hslug, hname in deck_hubs.items():
+            _deck_page(f"deck/{hslug}/", f"The Deck — {hname}",
+                       [c for c in all_cards if c["hub"] == hslug], hub=hslug)
 
     # home
     home_img = (summaries[0]["hero_jpg"] if summaries

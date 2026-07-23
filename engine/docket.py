@@ -14,7 +14,11 @@ Hard rules (mirroring the article spine):
   * Entries are observations with sources — no causal claims, no stats
     absent from the linked source, no copied headlines, no clickbait.
 
-Gate namespace: D01-D09 (report: data/gate-reports/<date>-docket.json).
+Gate namespace: D01-D19 (report: data/gate-reports/<date>-docket.json).
+D14-D19 — grammar v2 (stat_line / community_read / save_worthy), per-card
+anchors, Deck integrity and social-slide checks — added 2026-07-24 per
+PROPOSAL-DECK-STORY-MODE-2026-07-23; dockets dated before GRAMMAR_V2_FROM
+are grandfathered on the new SOFT coverage gates (the D11 ramp pattern).
 Momentum chips (config docket.show_chips) stay OFF until the corroboration-
 accuracy fix from the Signal Box batch lands (V2.1 recheck §4.1).
 
@@ -37,6 +41,9 @@ from .util import ROOT, all_articles, load_config, now_ist, today_str
 
 DOCKET_DIR = ROOT / "data" / "docket"
 DATE_NAME_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# Dockets dated before this predate the grammar-v2 fields (stat_line /
+# community_read / save_worthy); D14/D16 stay green for them forever.
+GRAMMAR_V2_FROM = "2026-07-24"
 
 
 # ---------------- data ----------------
@@ -126,6 +133,17 @@ def write_draft(date_str: str | None = None) -> Path:
              "  #   sentence (what changes / who's affected / the India angle).",
              "  # counterpoint: optional, <=35 words, ONLY on genuinely",
              "  #   contested stories. Never manufacture one.",
+             "  # stat_line: the card's ONE number or hard fact, <=12 words",
+             "  #   (e.g. \"$1.5B — first court-approved training-data price\").",
+             "  #   Expected on every non-lead entry (gate D14 warns). Must",
+             "  #   come from the linked source — same no-fabrication spine.",
+             "  # community_read + community_attr: OPTIONAL, max 2 entries/day —",
+             "  #   a real <=25-word reaction quote from the linked thread,",
+             "  #   with its venue named (\"Hacker News\"). Never invent or",
+             "  #   paraphrase-as-quote (gate D15).",
+             "  # save_worthy: true on >=1 keeper/utility entry per day",
+             "  #   (checklist / threshold / how-to) — renders the KEEP THIS",
+             "  #   chip and leads the Deck (gate D16 warns).",
              "  - hub: <hub-of-today's-article>",
              "    lead: true",
              "    rank: 1",
@@ -145,6 +163,7 @@ def write_draft(date_str: str | None = None) -> Path:
                   f"  #   tag: \"{tag}\"" + ("   # suggested" if tag else ""),
                   "  #   headline: \"\"",
                   "  #   dek: \"**<lead-in>** ...\"",
+                  "  #   stat_line: \"\"   # one number/fact, <=12 words",
                   "  #   why: \"\"   # required if used",
                   f"  #   url: {url}",
                   f"  #   source: \"{host}\""]
@@ -158,7 +177,7 @@ def write_draft(date_str: str | None = None) -> Path:
 # ---------------- gates (D-namespace) ----------------
 
 class DocketGateRunner:
-    """D01-D09. Same report shape and location as the article gate suite."""
+    """D01-D19. Same report shape and location as the article gate suite."""
 
     def __init__(self, date_str: str | None = None):
         self.cfg = load_config()
@@ -318,6 +337,123 @@ class DocketGateRunner:
         self.check("D12-stakes-line", SOFT, not no_why,
                    f"quick items without a Why-it-matters line: {no_why} "
                    "(recommended on every non-lead entry)")
+
+        # ---- grammar v2 / Deck / social — D14-D19 (proposal 2026-07-23) ----
+
+        # D14 stat-line coverage — one number or hard fact per quick item
+        # (Bilibili Story-Mode discipline: one claim + one number, resolved
+        # in ~15s). SOFT, and only for dockets born after the grammar-v2
+        # cutover — old dockets stay green forever (the D11 ramp pattern).
+        v2 = self.date >= GRAMMAR_V2_FROM
+        bad = []
+        if v2:
+            for i, it in enumerate(items, 1):
+                s = str(it.get("stat_line") or "").strip()
+                if not it.get("lead") and not s:
+                    bad.append(f"item {i}: no stat_line")
+                if s and len(s.split()) > 12:
+                    bad.append(f"item {i}: stat_line {len(s.split())}w (max 12)")
+        self.check("D14-stat-line", SOFT, not bad,
+                   "; ".join(bad[:4]) if bad
+                   else ("" if v2 else f"pre-{GRAMMAR_V2_FROM} docket — exempt"))
+
+        # D15 community-read discipline — a real, attributed reaction quote,
+        # tightly bounded: <=2 per docket, <=25 words, venue named. HARD on
+        # the caps (old dockets lack the field and pass vacuously);
+        # authenticity itself rides the session's no-fabrication duty.
+        bad = []
+        present = [(i, str(it.get("community_read") or "").strip(),
+                    str(it.get("community_attr") or "").strip())
+                   for i, it in enumerate(items, 1)
+                   if str(it.get("community_read") or "").strip()]
+        if len(present) > 2:
+            bad.append(f"{len(present)} community_read entries (max 2)")
+        for i, q, attr in present:
+            if len(q.split()) > 25:
+                bad.append(f"item {i}: community_read {len(q.split())}w (max 25)")
+            if not attr:
+                bad.append(f"item {i}: community_read without community_attr")
+        self.check("D15-community-read", HARD, not bad, "; ".join(bad[:4]))
+
+        # D16 save-worthy presence — each day ships one keeper/utility card
+        # (the save economy is the Deck's whole point). SOFT + grandfathered.
+        ok16 = (not v2) or any(bool(it.get("save_worthy")) for it in items)
+        self.check("D16-save-worthy", SOFT, ok16,
+                   "no save_worthy entry — ship one keeper/utility card per day")
+
+        # D17 per-card anchors — the share row and the Deck deep-link into
+        # /docket/<date>/#dN, so the built page must carry stable, unique ids.
+        ids = [li.get("id") for li in
+               (dated_soup.select("ol.docketlist > li") if dated_soup else [])]
+        ok17 = (built and len(ids) == len(items)
+                and len(set(ids)) == len(ids)
+                and all(re.fullmatch(r"d\d+", x or "") for x in ids))
+        self.check("D17-card-anchors", HARD, ok17,
+                   f"li ids must be unique d1..dN — got {ids[:8]}")
+
+        # D18 Deck integrity — checked once, on the site's latest docket:
+        # /deck/ exists, stays inside its weight budget, stays zero-JS
+        # (same allowances as D07), and respects the card cap.
+        deck_cfg = self.cfg.get("deck") or {}
+        latest_all18 = all_dockets()
+        is_latest18 = bool(latest_all18) and latest_all18[0]["date"] == self.date
+        if deck_cfg.get("enabled") and is_latest18:
+            deck_path = self.out_dir / "deck" / "index.html"
+            bad = []
+            if not deck_path.exists():
+                bad.append("docs/deck/index.html missing — run `build`")
+            else:
+                kb = len(deck_path.read_bytes()) / 1024
+                budget = float(deck_cfg.get("page_weight_kb", 150))
+                if kb > budget:
+                    bad.append(f"deck {kb:.0f}KB (budget {budget:.0f}KB)")
+                deck_soup = BeautifulSoup(
+                    deck_path.read_text(encoding="utf-8"), "html.parser")
+                rogue = [(s.get("src") or "inline")[:60]
+                         for s in deck_soup.find_all("script")
+                         if s.get("type") != "application/ld+json"
+                         and not (s.get("src") or "").startswith(
+                             "https://gc.zgo.at/")]
+                if rogue:
+                    bad.append("unexpected scripts: " + ", ".join(rogue[:3]))
+                cards = deck_soup.select(".deckcard")
+                cap = int(deck_cfg.get("max_cards", 90))
+                if not cards:
+                    bad.append("deck has zero cards")
+                if len(cards) > cap:
+                    bad.append(f"{len(cards)} cards (cap {cap})")
+                hrefs = [a.get("href") or "" for c in cards[:12]
+                         for a in c.select("a.dcdate")]
+                if hrefs and not all(
+                        re.search(r"/docket/\d{4}-\d{2}-\d{2}/#d\d+$", h)
+                        for h in hrefs):
+                    bad.append("card date-links must hit /docket/<date>/#dN")
+            self.check("D18-deck-integrity", HARD, not bad, "; ".join(bad[:4]))
+        else:
+            self.check("D18-deck-integrity", HARD, True,
+                       "n/a (deck disabled or not the latest docket)")
+
+        # D19 social slides — only when an export exists for this date
+        # (data/social/ is optional + gitignored; absence is normal).
+        sdir = ROOT / "data" / "social" / self.date
+        if sdir.exists():
+            from PIL import Image as _Img
+            scfg = self.cfg.get("social") or {}
+            want = (int(scfg.get("slide_w", 1080)),
+                    int(scfg.get("slide_h", 1350)))
+            slides = sorted(sdir.glob("slide-*.jpg"))
+            bad = []
+            if not (3 <= len(slides) <= int(scfg.get("max_slides", 20))):
+                bad.append(f"{len(slides)} slides (need 3..max_slides)")
+            for p in slides:
+                with _Img.open(p) as im:
+                    if im.size != want:
+                        bad.append(f"{p.name}: {im.size[0]}x{im.size[1]}")
+            if not (sdir / "caption.txt").exists():
+                bad.append("caption.txt missing")
+            self.check("D19-social-slides", SOFT, not bad, "; ".join(bad[:4]))
+        else:
+            self.check("D19-social-slides", SOFT, True, "no export (optional)")
 
         # D09 canonicals + sitemap: dated page is the canonical unit
         expected = (self.cfg["site"]["base_url"].rstrip("/")

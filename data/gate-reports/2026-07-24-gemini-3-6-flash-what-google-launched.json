@@ -1,0 +1,261 @@
+{
+  "slug": "gemini-3-6-flash-what-google-launched",
+  "checked_at": "2026-07-24T01:37:18.402719+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "soft_warnings": 0,
+  "results": [
+    {
+      "gate": "G01-byline",
+      "level": "hard",
+      "ok": true,
+      "detail": "visible byline + JSON-LD author must equal config author"
+    },
+    {
+      "gate": "G02-author-name-plain",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G03-author-page",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G13-bio-verified",
+      "level": "hard",
+      "ok": true,
+      "detail": "config author.bio_verified must be attested true by the owner"
+    },
+    {
+      "gate": "G04-date-valid",
+      "level": "hard",
+      "ok": true,
+      "detail": "date 2026-07-22 must not be future & must match JSON-LD"
+    },
+    {
+      "gate": "G05-real-update",
+      "level": "hard",
+      "ok": true,
+      "detail": "dateModified must equal datePublished when never updated"
+    },
+    {
+      "gate": "G06-citations",
+      "level": "hard",
+      "ok": true,
+      "detail": "14 external citation domains, 18 listed sources (need ≥2)"
+    },
+    {
+      "gate": "G07-stats-sourced",
+      "level": "hard",
+      "ok": true,
+      "detail": "stat paragraphs missing inline source link: "
+    },
+    {
+      "gate": "G08-no-clickbait",
+      "level": "hard",
+      "ok": true,
+      "detail": "clickbait pattern / caps / missing review.title_promise_check"
+    },
+    {
+      "gate": "G09-originality",
+      "level": "hard",
+      "ok": true,
+      "detail": "max 5-gram overlap 0.01 vs 'codex-context-window-cut' (limit .30)"
+    },
+    {
+      "gate": "G10-original-analysis",
+      "level": "hard",
+      "ok": true,
+      "detail": "front-matter original_value + an analysis H2 (What it means, The India angle, Our take, What to watch) required"
+    },
+    {
+      "gate": "G11-review-log",
+      "level": "hard",
+      "ok": true,
+      "detail": "front-matter review block needs ['facts_verified', 'sources_checked', 'title_promise_check', 'no_fabrication', 'policy_pass'] + reviewed_at"
+    },
+    {
+      "gate": "G12-ai-disclosure",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G14-hero-crops",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G16-hero-img-tag",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G15-max-image-preview",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G17-og-image",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "G18-below-fold-lazy",
+      "level": "soft",
+      "ok": true,
+      "detail": "non-lazy below-fold imgs: "
+    },
+    {
+      "gate": "G19-jsonld",
+      "level": "hard",
+      "ok": true,
+      "detail": "BlogPosting needs 3 images, tz dates, headline<=110, publisher logo; BreadcrumbList required"
+    },
+    {
+      "gate": "G20-indexable",
+      "level": "hard",
+      "ok": true,
+      "detail": "canonical must be https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/"
+    },
+    {
+      "gate": "G21-page-weight",
+      "level": "soft",
+      "ok": true,
+      "detail": "html 49KB (<=90), hero 25KB (<=320)"
+    },
+    {
+      "gate": "G22-ymyl",
+      "level": "hard",
+      "ok": true,
+      "detail": "no YMYL trigger"
+    },
+    {
+      "gate": "G23-no-affiliate",
+      "level": "hard",
+      "ok": true,
+      "detail": "v1 forbids monetized links"
+    },
+    {
+      "gate": "G24-site-pages",
+      "level": "hard",
+      "ok": true,
+      "detail": "missing: "
+    },
+    {
+      "gate": "P01-static-meta",
+      "level": "hard",
+      "ok": true,
+      "detail": "static pages with out-of-bounds meta description: "
+    },
+    {
+      "gate": "G25-first-party",
+      "level": "hard",
+      "ok": true,
+      "detail": "single first-party byline only"
+    },
+    {
+      "gate": "S01-title-length",
+      "level": "hard",
+      "ok": true,
+      "detail": "title 58 chars (need 35–65)"
+    },
+    {
+      "gate": "S02-meta-desc",
+      "level": "hard",
+      "ok": true,
+      "detail": "meta description 157 chars"
+    },
+    {
+      "gate": "S03-single-h1",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S04-answer-first",
+      "level": "hard",
+      "ok": true,
+      "detail": "first paragraph 71 words (need ≥40 before any H2)"
+    },
+    {
+      "gate": "S05-h2-count",
+      "level": "hard",
+      "ok": true,
+      "detail": "5 body H2 sections excl. template chrome (need ≥3)"
+    },
+    {
+      "gate": "S06-heading-hierarchy",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S07-word-count",
+      "level": "hard",
+      "ok": true,
+      "detail": "1638 words (need 900–2200)"
+    },
+    {
+      "gate": "S08-slug",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S08b-slug-stable",
+      "level": "hard",
+      "ok": true,
+      "detail": "published slugs missing from content/: "
+    },
+    {
+      "gate": "S09-internal-links",
+      "level": "hard",
+      "ok": true,
+      "detail": "8 internal article links (need ≥2)"
+    },
+    {
+      "gate": "S10-hub-link",
+      "level": "hard",
+      "ok": true,
+      "detail": "one in-body link to the article's hub page required (nav/breadcrumb/chip links don't count)"
+    },
+    {
+      "gate": "S11-open-graph",
+      "level": "hard",
+      "ok": true,
+      "detail": "missing: "
+    },
+    {
+      "gate": "S12-twitter-card",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S13-img-alts",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S14-in-sitemap-feed",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "S15-desc-not-title",
+      "level": "soft",
+      "ok": true,
+      "detail": "meta description should not simply repeat the title"
+    }
+  ]
+}

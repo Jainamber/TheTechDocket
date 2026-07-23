@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-07-22",
-  "checked_at": "2026-07-22T08:50:59.821761+05:30",
+  "checked_at": "2026-07-24T01:37:07.717853+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -51,7 +51,7 @@
       "gate": "D08-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 27KB (<=90)"
+      "detail": "html 36KB (<=90)"
     },
     {
       "gate": "D13-hub-valid",
@@ -76,6 +76,42 @@
       "level": "soft",
       "ok": true,
       "detail": "quick items without a Why-it-matters line: [] (recommended on every non-lead entry)"
+    },
+    {
+      "gate": "D14-stat-line",
+      "level": "soft",
+      "ok": true,
+      "detail": "pre-2026-07-24 docket — exempt"
+    },
+    {
+      "gate": "D15-community-read",
+      "level": "hard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "gate": "D16-save-worthy",
+      "level": "soft",
+      "ok": true,
+      "detail": "no save_worthy entry — ship one keeper/utility card per day"
+    },
+    {
+      "gate": "D17-card-anchors",
+      "level": "hard",
+      "ok": true,
+      "detail": "li ids must be unique d1..dN — got ['d1', 'd2', 'd3', 'd4', 'd5', 'd6']"
+    },
+    {
+      "gate": "D18-deck-integrity",
+      "level": "hard",
+      "ok": true,
+      "detail": "n/a (deck disabled or not the latest docket)"
+    },
+    {
+      "gate": "D19-social-slides",
+      "level": "soft",
+      "ok": true,
+      "detail": "no export (optional)"
     },
     {
       "gate": "D09-canonicals",

@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .DS_Store
 .venv/
+# social carousel exports are deliverables, not site state (proposal 2026-07-23)
+data/social/
