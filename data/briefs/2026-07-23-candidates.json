@@ -1,0 +1,355 @@
+{
+  "date": "2026-07-23",
+  "candidates": [
+    {
+      "title": "Nativ: Run frontier open models locally on your Mac",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 282,
+          "comments": 92,
+          "url": "https://blaizzy.github.io/"
+        }
+      ],
+      "score": 0.6056,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Incremental - A library for incremental computations",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 205,
+          "comments": 35,
+          "url": "https://github.com/janestreet/"
+        }
+      ],
+      "score": 0.6032,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "How we measured AI writing across arXiv, and where the measurement breaks",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9149866436758387,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 225,
+          "comments": 154,
+          "url": "https://unslop.run/"
+        }
+      ],
+      "score": 0.5826,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Hacker wipes Romania's land registry database",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 647,
+          "comments": 360,
+          "url": "https://risky.biz/"
+        }
+      ],
+      "score": 0.576,
+      "topic_fit": 0.68,
+      "corroboration": 0.0
+    },
+    {
+      "title": "How OpenAI's human mistake led to the AI-powered hack on Hugging Face",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.5757,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Travis Kalanick's robotics company raises $1.7B, led by a16z",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Anthropic's landmark $1.5B copyright settlement is approved",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Agent swarms and the new model economics",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8866369093305817,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 197,
+          "comments": 87,
+          "url": "https://cursor.com/"
+        }
+      ],
+      "score": 0.5681,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Human mathematicians are being outcounterexampled",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 349,
+          "comments": 145,
+          "url": "https://xenaproject.wordpress.com/"
+        }
+      ],
+      "score": 0.568,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic's Fable",
+      "sources": [
+        "gnews:US",
+        "outlet:TechCrunch"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.566,
+      "topic_fit": 0.98,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Rippling co-founder Prasanna Sankar launches AI startup Vorflux with $15 million funding",
+      "sources": [
+        "gnews:IN",
+        "outlet:Indian Startup News"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "Indian Startup News"
+        },
+        {
+          "source": "outlet:Indian Startup News",
+          "outlet": "Indian Startup News"
+        }
+      ],
+      "score": 0.5564,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Agentic AI platform Procol appoints Shaivya Gupta as Chief Marketing Officer",
+      "sources": [
+        "gnews:IN",
+        "outlet:YourStory"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "YourStory"
+        },
+        {
+          "source": "outlet:YourStory",
+          "outlet": "YourStory"
+        }
+      ],
+      "score": 0.555,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    }
+  ],
+  "pick": {
+    "title": "Chinese open-weight AI models surge: Qwen 3.8 Max, Kimi K3, US sanctions threat",
+    "score": 0.53,
+    "topic_fit": 0.98,
+    "corroboration": 1.0,
+    "geos": [
+      "US"
+    ],
+    "sources": [
+      "gnews:US",
+      "hn",
+      "outlet:Associated Press",
+      "outlet:Financial Times",
+      "outlet:Reuters",
+      "outlet:TechCrunch",
+      "outlet:The Verge",
+      "outlet:Wall Street Journal"
+    ],
+    "hub": "ai-models",
+    "evidence": [
+      {
+        "cluster_member": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic's Fable",
+        "source": "gnews:US",
+        "query": "ai news",
+        "outlet": "TechCrunch"
+      },
+      {
+        "cluster_member": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic's Fable",
+        "source": "outlet:TechCrunch",
+        "outlet": "TechCrunch"
+      },
+      {
+        "cluster_member": "Who's afraid of Chinese models?",
+        "source": "hn",
+        "points": 651,
+        "comments": 456,
+        "url": "https://stratechery.com/"
+      },
+      {
+        "cluster_member": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
+        "source": "hn",
+        "points": 77,
+        "comments": 44,
+        "url": "https://qwen.ai/"
+      },
+      {
+        "cluster_member": "China's open-weights AI strategy is winning",
+        "source": "hn",
+        "points": 1114,
+        "comments": 843,
+        "url": "https://werd.io/"
+      },
+      {
+        "cluster_member": "Alibaba Unveils Qwen3.8 Max, Claims Second-Best AI Model Behind Anthropic's Fable 5",
+        "source": "outlet:Wall Street Journal",
+        "outlet": "Wall Street Journal"
+      },
+      {
+        "cluster_member": "China Considers Export Controls on Advanced AI Models, Chips, and Training Data",
+        "source": "outlet:Financial Times",
+        "outlet": "Financial Times"
+      },
+      {
+        "cluster_member": "Moonshot AI Pauses Kimi K3 Subscriptions as Demand Overwhelms Capacity",
+        "source": "outlet:Associated Press",
+        "outlet": "Associated Press"
+      },
+      {
+        "cluster_member": "US threatens sanctions against Chinese AI models over IP theft",
+        "source": "outlet:TechCrunch",
+        "outlet": "TechCrunch"
+      },
+      {
+        "cluster_member": "US and China plan first official AI talks under Trump administration",
+        "source": "outlet:Reuters",
+        "outlet": "Reuters"
+      },
+      {
+        "cluster_member": "Chinese AI models deliver one-two punch to U.S. dominance claims",
+        "source": "outlet:The Verge",
+        "outlet": "The Verge"
+      }
+    ],
+    "editorial_override": "Scorer pick 'Nativ' (0.606) is a single-source Show HN tool. The day's dominant story is the Chinese open-weight model surge, split by title-keying across 10+ candidates: HN 1114pts China's open-weights AI strategy is winning; HN 651pts Who's afraid of Chinese models?; HN 561pts Kimi Work; Qwen-Image-3.0; WSJ Qwen3.8 Max; TechCrunch Treasury sanctions/Moonshot distillation; Reuters US-China AI talks; China export-controls consideration; Moonshot pauses Kimi K3 subscriptions."
+  },
+  "use_evergreen": false
+}

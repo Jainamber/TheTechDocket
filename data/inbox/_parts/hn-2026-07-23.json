@@ -1,0 +1,4 @@
+{
+  "hacker_news": [],
+  "status": "error: WebFetch failed for both https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=40 and fallback https://hn.algolia.com/api/v1/search?tags=front_page with PROVENANCE_REQUIRED - permission request for the URL was not answered in time"
+}

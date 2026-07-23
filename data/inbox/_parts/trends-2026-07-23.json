@@ -1,0 +1,8 @@
+{
+  "IN": [],
+  "US": [],
+  "status": {
+    "trends_rss_IN": "error: WebFetch failed with PROVENANCE_REQUIRED - permission request for https://trends.google.com/trending/rss?geo=IN was not answered in time (2 attempts)",
+    "trends_rss_US": "error: WebFetch failed with PROVENANCE_REQUIRED - permission request for https://trends.google.com/trending/rss?geo=US was not answered in time (2 attempts)"
+  }
+}
