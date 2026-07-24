@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-24",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "trends_rss_IN": "error: WebFetch permission-gated in unattended session",
+    "trends_rss_US": "error: WebFetch permission-gated in unattended session",
+    "hn": "error: WebFetch permission-gated in unattended session",
+    "websearch": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [],
+      "news": {
+        "tech news india today": [
+          {"title": "India allows FDI in inventory-based e-commerce exclusively for exports", "source": "Business Standard", "url": "https://www.business-standard.com/economy/news/govt-allows-fdi-in-inventory-based-e-commerce-model-only-for-exports-126072301053_1.html"},
+          {"title": "InMobi lines up $1B IPO, shifts domicile to India", "source": "StartupTalky", "url": "https://startuptalky.com/news/daily-indian-funding-roundup-22-july-2026/"},
+          {"title": "Eternal Q1 profit triples YoY to Rs 92 Cr on Blinkit-led revenue surge", "source": "Inc42", "url": "https://inc42.com/buzz/eternal-q1-profit-rises-3x-yoy-to-%E2%82%B992-cr-but-declines-47-sequentially/"},
+          {"title": "NCLT stays BYJU'S insolvency bidding process until August 31", "source": "Business Standard", "url": "https://www.business-standard.com/companies/news/nclt-pauses-byju-s-insolvency-bidding-till-aug-31-giving-founders-relief-126072301153_1.html"},
+          {"title": "Fractal Q1 profit jumps 92% YoY to Rs 72 Cr, revenue at Rs 913 Cr", "source": "Inc42", "url": "https://inc42.com/buzz/fractal-q1-profit-zooms-92-yoy-to-%E2%82%B972-cr-revenue-at-%E2%82%B9913-cr/"}
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "biggest ai news today": [
+          {"title": "AMD to invest up to $5 billion in Anthropic under AI infrastructure deal", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html"},
+          {"title": "AMD unveils Zen 6 EPYC CPUs, Instinct MI400 series and Helios AI rack at Advancing AI 2026", "source": "Wccftech", "url": "https://wccftech.com/watch-amd-advancing-ai-2026-event-live-here/"},
+          {"title": "White House accuses Moonshot AI of distilling Anthropic model, using banned Nvidia chips via Thailand", "source": "CNBC", "url": "https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html"},
+          {"title": "OpenAI launches Presence, an enterprise platform for AI voice and chat agents", "source": "OpenAI", "url": "https://openai.com/index/introducing-openai-presence/"},
+          {"title": "OpenAI raises planned compute spending to $750 billion through 2030", "source": "WSJ via Yahoo Finance", "url": "https://finance.yahoo.com/technology/ai/articles/openai-lifts-planned-compute-spending-144917731.html"},
+          {"title": "OpenAI pre-release models breached Hugging Face after human configuration error", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/"},
+          {"title": "Anthropic updates Claude voice mode with Opus, Sonnet and Haiku models", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"},
+          {"title": "Nvidia is sending Jetson GPUs to the Moon", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/"},
+          {"title": "SenseTime launches Galaxy Project to scale China domestic AI chip infrastructure", "source": "AI News", "url": "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/"},
+          {"title": "DeepSeek V4 model nears full release amid China open-weight AI race", "source": "iGeekphone", "url": "https://www.igeekphone.com/deepseek-v4-official-release-expected-within-days-as-ai-community-anticipates-next-major-open-source-model/"},
+          {"title": "Hackers stole data from Craneware, billing software used by thousands of US hospitals", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/20/hackers-stole-significant-amount-of-data-from-tech-firm-relied-on-by-thousands-of-us-hospitals-and-pharmacies/"},
+          {"title": "Travis Kalanick robotics startup Atoms raises $1.7B led by a16z", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/"},
+          {"title": "Glow emerges from stealth at $1.2B valuation to rebuild endpoint security for the AI era", "source": "TechCrunch", "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/"},
+          {"title": "Google launches Gemini 3.6 Flash, 3.5 Flash-Lite and Flash Cyber cybersecurity model", "source": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"},
+          {"title": "Bristol Myers Squibb expands Nvidia AI supercomputer for drug discovery", "source": "AI News", "url": "https://www.artificialintelligence-news.com/news/bristol-myers-squibb-nvidia-ai-system-drug-discovery/"},
+          {"title": "Apple leaked Mac roadmap: MacBook Neo, M5 iMac, redesigned M7 MacBook Pro", "source": "AppleMust", "url": "https://www.applemust.com/core-apple-news-for-july-23/"},
+          {"title": "Ford to build Apple Maps into next-gen electric vehicle platform", "source": "AppleMust", "url": "https://www.applemust.com/core-apple-news-for-july-23/"}
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [],
+  "wikipedia_top": [],
+  "outlet_headlines": []
+}

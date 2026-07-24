@@ -143,6 +143,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-23-chinese-ai-models-surge-kimi-qwen.json",
       "url": "https://thetechdocket.com/articles/chinese-ai-models-surge-kimi-qwen/"
+    },
+    {
+      "date": "2026-07-24",
+      "slug": "amd-anthropic-deal-mi450",
+      "title": "AMD's $5B Anthropic Deal: 2GW of MI450 Chips, Explained",
+      "keyword": "amd anthropic deal",
+      "hub": "hardware",
+      "published_at": "2026-07-24T07:27:40.967335+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-24T08:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-24-amd-anthropic-deal-mi450.json",
+      "url": "https://thetechdocket.com/articles/amd-anthropic-deal-mi450/"
     }
   ]
 }

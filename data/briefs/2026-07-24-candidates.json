@@ -1,0 +1,277 @@
+{
+  "date": "2026-07-24",
+  "candidates": [
+    {
+      "title": "Anthropic updates Claude voice mode with Opus, Sonnet and Haiku models",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4339,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "InMobi lines up $1B IPO, shifts domicile to India",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "StartupTalky"
+        }
+      ],
+      "score": 0.4319,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "White House accuses Moonshot AI of distilling Anthropic model, using banned Nvidia chips via Thailand",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4248,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI launches Presence, an enterprise platform for AI voice and chat agents",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "OpenAI"
+        }
+      ],
+      "score": 0.4227,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "DeepSeek V4 model nears full release amid China open-weight AI race",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "iGeekphone"
+        }
+      ],
+      "score": 0.4216,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "NCLT stays BYJU'S insolvency bidding process until August 31",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "Business Standard"
+        }
+      ],
+      "score": 0.421,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    },
+    {
+      "title": "SenseTime launches Galaxy Project to scale China domestic AI chip infrastructure",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "AI News"
+        }
+      ],
+      "score": 0.4203,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI pre-release models breached Hugging Face after human configuration error",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4183,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia is sending Jetson GPUs to the Moon",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4153,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AMD to invest up to $5 billion in Anthropic under AI infrastructure deal",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "CNBC"
+        },
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "Wccftech"
+        }
+      ],
+      "score": 0.4099,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI raises planned compute spending to $750 billion through 2030",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "WSJ via Yahoo Finance"
+        }
+      ],
+      "score": 0.4052,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AMD unveils Zen 6 EPYC CPUs, Instinct MI400 series and Helios AI rack at Advancing AI 2026",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "Wccftech"
+        }
+      ],
+      "score": 0.3898,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "AMD to invest up to $5 billion in Anthropic under AI infrastructure deal",
+    "sources": [
+      "gnews:US"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "biggest ai news today",
+        "outlet": "CNBC"
+      },
+      {
+        "source": "gnews:US",
+        "query": "biggest ai news today",
+        "outlet": "Wccftech"
+      }
+    ],
+    "score": 0.4099,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false,
+  "editorial_override": "Scorer pick 'Claude voice mode update' (0.434) vs AMD-Anthropic (0.410): spread is single-source noise. AMD Advancing AI 2026 (MI400/Helios launch) + $5B Anthropic investment is the week's biggest hardware story, merges two inbox candidates, fresh long-tail keywords, hub=hardware; voice-mode story is an incremental product update."
+}
