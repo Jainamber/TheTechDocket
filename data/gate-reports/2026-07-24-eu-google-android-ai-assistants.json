@@ -1,6 +1,6 @@
 {
   "slug": "eu-google-android-ai-assistants",
-  "checked_at": "2026-07-24T01:37:18.161312+05:30",
+  "checked_at": "2026-07-24T08:55:04.531713+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 55KB (<=90), hero 26KB (<=320)"
+      "detail": "html 57KB (<=90), hero 26KB (<=320)"
     },
     {
       "gate": "G22-ymyl",

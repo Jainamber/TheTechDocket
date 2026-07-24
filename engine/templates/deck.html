@@ -3,14 +3,8 @@
 {% block content %}
 <section class="deckpage">
   <h1 class="listh1 dockh1"><span class="dash" aria-hidden="true"></span>{{ heading }}</h1>
-  <p class="dateline">{{ total }} card{{ 's' if total != 1 else '' }} · newest first{% if cards|length < total %} · showing the latest {{ cards|length }}{% endif %}</p>
+  <nav class="showrow" aria-label="Filter cards by hub"><span class="lab">{{ total }} card{{ 's' if total != 1 else '' }} · newest first{% if cards|length < total %} · latest {{ cards|length }} shown{% endif %} · show</span> <a href="{{ base_path }}deck/"{% if not hub_filter %} class="on" aria-current="page"{% endif %}>All</a>{% for hslug, hname in deck_hubs.items() %} · <a href="{{ base_path }}deck/{{ hslug }}/"{% if hub_filter == hslug %} class="on" aria-current="page"{% endif %}>{{ hubs_short.get(hslug, hname) }}</a>{% endfor %}</nav>
   <p class="intro">{{ intro }}</p>
-  <nav class="deckfilters" aria-label="Filter cards by hub">
-    <a href="{{ base_path }}deck/"{% if not hub_filter %} aria-current="page"{% endif %}>All</a>
-    {%- for hslug, hname in deck_hubs.items() %}
-    <a href="{{ base_path }}deck/{{ hslug }}/"{% if hub_filter == hslug %} aria-current="page"{% endif %}>{{ hname }}</a>
-    {%- endfor %}
-  </nav>
   <div class="deckgrid">
     {%- for c in cards %}
     <article class="deckcard" style="--rail:var(--k-{{ c.hub }})">

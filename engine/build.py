@@ -344,6 +344,7 @@ def _common(cfg, nav_hubs=None, **kw) -> dict:
     has_deck = has_docket and bool((cfg.get("deck") or {}).get("enabled"))
     d = {"site": cfg["site"], "author": cfg["author"],
          "hubs": cfg["content"]["hubs"],
+         "hubs_short": cfg["content"].get("hubs_short") or {},
          "nav_hubs": nav_hubs,
          "has_docket": has_docket,
          "has_deck": has_deck,

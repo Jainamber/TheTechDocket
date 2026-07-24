@@ -115,6 +115,16 @@ content:
     hardware:    "Chips & Hardware"
     policy:      "Policy & Society"
     explainers:  "How-To & Explainers"
+  # Short display labels for tight surfaces ONLY (mobile nav rail ≤719px,
+  # deck SHOW row). Display-only: slugs, URLs, hub-page titles keep the
+  # full names above. (Owner-approved N1 + short labels, 2026-07-24.)
+  hubs_short:
+    ai-models:   "AI Models"
+    ai-tools:    "AI Tools"
+    big-tech:    "Big Tech"
+    hardware:    "Chips"
+    policy:      "Policy"
+    explainers:  "How-To"
   min_words: 900
   max_words: 2200
   # Analysis sections at least one of which must appear (compliance gate 10)

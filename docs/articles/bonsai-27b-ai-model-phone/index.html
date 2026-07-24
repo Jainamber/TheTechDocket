@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
 <title>Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained — The Tech Docket</title>
 <meta name="description" content="PrismML&#39;s Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What&#39;s verified, what&#39;s hype, and which phones in India can run it.">
 <link rel="canonical" href="https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/">
@@ -63,8 +73,14 @@ header.site::before{content:"";display:block;height:3px;background:linear-gradie
 nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
 nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
-nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent)}
-nav.hubs a.navdocket{color:var(--accent-ink);font-weight:700}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
 main{padding:32px 0 46px}
 .kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
 a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
@@ -179,13 +195,11 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
 .dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
 .dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
-nav.hubs a.navdeck{font-weight:700}
-.deckpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
-.deckpage .dateline a{color:var(--muted)}
-.deckfilters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 4px;font-family:var(--fm);font-size:11px}
-.deckfilters a{text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--muted)}
-.deckfilters a:hover{border-color:var(--accent);color:var(--accent-ink)}
-.deckfilters a[aria-current]{border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
 .deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
 .deckcard .kline{margin:0 0 4px}
@@ -200,6 +214,11 @@ nav.hubs a.navdeck{font-weight:700}
 .deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
 .deckcard .dcdate:hover{color:var(--accent-ink)}
 @media (max-width:719px){
+nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
+nav.hubs::-webkit-scrollbar{display:none}
+nav.hubs a{flex:0 0 auto;white-space:nowrap}
+.nl-full{display:none}
+.nl-short{display:inline}
 .docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
 .dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
 .dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
@@ -244,10 +263,8 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
-@media (prefers-color-scheme: dark){
-:root{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
-.skip{color:#0d0f14}
-}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark] .skip{color:#0d0f14}
 </style>
 </head>
 <body class="">
@@ -257,9 +274,10 @@ footer.site p a{text-decoration:underline}
     <div class="brandbar">
       <a class="brand" href="/">The Tech <b>Docket</b></a>
       <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/" aria-current="page">AI Models</a><a href="/topics/ai-tools/">AI Tools &amp; Apps</a><a href="/topics/hardware/">Chips &amp; Hardware</a><a href="/topics/policy/">Policy &amp; Society</a><a href="/topics/explainers/">How-To &amp; Explainers</a>
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/" aria-current="page"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
     </nav>
   </div>
 </header>

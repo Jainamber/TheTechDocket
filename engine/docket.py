@@ -278,13 +278,19 @@ class DocketGateRunner:
         self.check("D06-lead-is-article", HARD, lead_ok,
                    "" if lead_ok else detail)
 
-        # D07 zero JS beyond JSON-LD + the approved analytics snippet
+        # D07 zero JS beyond JSON-LD, the approved analytics snippet, and the
+        # inline theme toggle (owner-approved T1, 2026-07-24 — pinned by id,
+        # inline-only, tiny, no network)
         rogue = []
         for s in (dated_soup.find_all("script") if dated_soup else []):
             if s.get("type") == "application/ld+json":
                 continue
             if (s.get("src") or "").startswith("https://gc.zgo.at/"):
-                continue  # GoatCounter — the one approved analytics exception
+                continue  # GoatCounter — approved analytics exception
+            if (s.get("id") == "ttd-theme" and not s.get("src")
+                    and len(s.get_text()) < 1500
+                    and "http" not in s.get_text()):
+                continue  # theme toggle — approved inline exception (T1)
             rogue.append((s.get("src") or "inline")[:60])
         self.check("D07-zero-js", HARD, built and not rogue,
                    "unexpected scripts: " + ", ".join(rogue[:3]))
@@ -413,7 +419,11 @@ class DocketGateRunner:
                          for s in deck_soup.find_all("script")
                          if s.get("type") != "application/ld+json"
                          and not (s.get("src") or "").startswith(
-                             "https://gc.zgo.at/")]
+                             "https://gc.zgo.at/")
+                         and not (s.get("id") == "ttd-theme"
+                                  and not s.get("src")
+                                  and len(s.get_text()) < 1500
+                                  and "http" not in s.get_text())]
                 if rogue:
                     bad.append("unexpected scripts: " + ", ".join(rogue[:3]))
                 cards = deck_soup.select(".deckcard")

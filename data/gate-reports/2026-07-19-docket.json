@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-07-19",
-  "checked_at": "2026-07-24T01:37:07.236350+05:30",
+  "checked_at": "2026-07-24T08:55:00.977096+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 1,
@@ -51,7 +51,7 @@
       "gate": "D08-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 35KB (<=90)"
+      "detail": "html 38KB (<=90)"
     },
     {
       "gate": "D13-hub-valid",

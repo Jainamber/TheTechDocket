@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-07-23",
-  "checked_at": "2026-07-24T01:37:43.525017+05:30",
+  "checked_at": "2026-07-24T08:55:02.090142+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -51,7 +51,7 @@
       "gate": "D08-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 37KB (<=90)"
+      "detail": "html 39KB (<=90)"
     },
     {
       "gate": "D13-hub-valid",
@@ -105,7 +105,7 @@
       "gate": "D18-deck-integrity",
       "level": "hard",
       "ok": true,
-      "detail": ""
+      "detail": "n/a (deck disabled or not the latest docket)"
     },
     {
       "gate": "D19-social-slides",
