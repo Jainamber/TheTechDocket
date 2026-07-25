@@ -1,0 +1,313 @@
+{
+  "date": "2026-07-25",
+  "candidates": [
+    {
+      "title": "Anthropic launches Claude Opus 5 at half the price of its previous flagship",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "gnews:US",
+        "outlet:AI Weekly"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "OfficeChai"
+        },
+        {
+          "source": "gnews:US",
+          "query": "new ai model",
+          "outlet": "Quartz"
+        },
+        {
+          "source": "gnews:US",
+          "query": "new ai model",
+          "outlet": "The Next Web"
+        },
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.57,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+      "sources": [
+        "gnews:IN",
+        "gnews:IN",
+        "gnews:IN",
+        "outlet:AI Weekly"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "Bar and Bench"
+        },
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "Business Standard"
+        },
+        {
+          "source": "gnews:IN",
+          "query": "ai india",
+          "outlet": "LiveLaw"
+        },
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.5586,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Alphabet cash burn raises alarm for Big Tech as AI spending climbs",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "new ai model",
+          "outlet": "Reuters"
+        },
+        {
+          "source": "hn",
+          "points": 0,
+          "comments": null,
+          "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/"
+        }
+      ],
+      "score": 0.5557,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "EU fines Google 890 million euros for competition breaches over search and apps",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "new ai model",
+          "outlet": "The Guardian"
+        },
+        {
+          "source": "hn",
+          "points": 0,
+          "comments": null,
+          "url": "https://www.theguardian.com/technology/2026/jul/23/eu-fines-google-for-competition-breaches-over-search-and-apps"
+        }
+      ],
+      "score": 0.5415,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Qualcomm announces double-digit chip price increases effective September 1",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.4,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Alphabet Q2 cloud revenue 24.77 billion dollars up 82 percent, Gemini reaches 950M users",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.3917,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI rolls out ChatGPT Voice on desktop with full-duplex capability",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.39,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Zenity Labs discloses AgentForger CSRF flaw in ChatGPT Workspace Agents",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.3895,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Big Tech coalition urges Congress against restricting open-weight AI models",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.3702,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI companies are trying to hide a staggering amount of debt",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 0,
+          "comments": null,
+          "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
+        }
+      ],
+      "score": 0.3211,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The arguments against open source AI are bad",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 0,
+          "comments": null,
+          "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/"
+        }
+      ],
+      "score": 0.3173,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Black Forest Labs unveils FLUX 3 multimodal model with 20-second video and synchronized audio",
+      "sources": [
+        "outlet:AI Weekly"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.3137,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+    "sources": [
+      "gnews:IN",
+      "gnews:IN",
+      "gnews:IN",
+      "outlet:AI Weekly"
+    ],
+    "geos": [
+      "IN"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "ai india",
+        "outlet": "Bar and Bench"
+      },
+      {
+        "source": "gnews:IN",
+        "query": "ai india",
+        "outlet": "Business Standard"
+      },
+      {
+        "source": "gnews:IN",
+        "query": "ai india",
+        "outlet": "LiveLaw"
+      },
+      {
+        "source": "outlet:AI Weekly",
+        "outlet": "AI Weekly"
+      }
+    ],
+    "score": 0.5586,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false,
+  "selection_note": "Editorial override of scorer #1 (Claude Opus 5 launch, 0.57): head-term story already saturated by major outlets; would be 3rd ai-models piece in 4 days and 2nd consecutive Anthropic story. Alternate #1 (Delhi HC ANI v. OpenAI fair-dealing ruling, 0.5322) is fresher long-tail territory, fills the under-served policy hub, and is the site's India-angle moat with clear synthesis value no single source has."
+}

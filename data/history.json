@@ -161,6 +161,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-24-amd-anthropic-deal-mi450.json",
       "url": "https://thetechdocket.com/articles/amd-anthropic-deal-mi450/"
+    },
+    {
+      "date": "2026-07-25",
+      "slug": "ani-vs-openai-fair-dealing-ruling",
+      "title": "ANI vs OpenAI: Delhi HC Calls ChatGPT Training Fair Dealing",
+      "keyword": "ani vs openai",
+      "hub": "policy",
+      "published_at": "2026-07-25T07:00:55.643276+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-25T07:25:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-25-ani-vs-openai-fair-dealing-ruling.json",
+      "url": "https://thetechdocket.com/articles/ani-vs-openai-fair-dealing-ruling/"
     }
   ]
 }

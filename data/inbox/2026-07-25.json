@@ -1,0 +1,168 @@
+{
+  "date": "2026-07-25",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss": "blocked (WebFetch provenance gate in unattended session)",
+    "hn_api": "blocked (titles recovered via orangebot.ai front-page mirror; points unavailable)"
+  },
+  "markets": {
+    "IN": {
+      "trends_rss": [],
+      "news": {
+        "ai india": [
+          {
+            "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+            "source": "Bar and Bench",
+            "url": "https://www.barandbench.com/news/litigation/openai-did-not-violate-copyright-laws-by-using-ani-news-to-train-chatgpt-delhi-high-court-declines-interim-relief"
+          },
+          {
+            "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+            "source": "Business Standard",
+            "url": "https://www.business-standard.com/industry/news/openai-use-of-ani-data-doesn-t-amount-to-infringement-says-delhi-hc-126072400913_1.html"
+          },
+          {
+            "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+            "source": "LiveLaw",
+            "url": "https://www.livelawbiz.com/copyright/openais-use-of-ani-content-to-train-chatgpt-is-not-prima-facie-copyright-infringement-delhi-high-court-542738"
+          },
+          {
+            "title": "Anthropic launches Claude Opus 5 at half the price of its previous flagship",
+            "source": "OfficeChai",
+            "url": "https://officechai.com/ai/claude-opus-5-benchmarks/"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "trends_rss": [],
+      "news": {
+        "new ai model": [
+          {
+            "title": "Anthropic launches Claude Opus 5 at half the price of its previous flagship",
+            "source": "Quartz",
+            "url": "https://qz.com/anthropic-claude-opus-5-fable-5-price-072426"
+          },
+          {
+            "title": "Anthropic launches Claude Opus 5 at half the price of its previous flagship",
+            "source": "The Next Web",
+            "url": "https://thenextweb.com/news/anthropic-claude-opus-5-launch-frontier-bench-coding"
+          },
+          {
+            "title": "Alphabet cash burn raises alarm for Big Tech as AI spending climbs",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/"
+          },
+          {
+            "title": "EU fines Google 890 million euros for competition breaches over search and apps",
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/jul/23/eu-fines-google-for-competition-breaches-over-search-and-apps"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Alphabet cash burn raises alarm for Big Tech as AI spending climbs",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/"
+    },
+    {
+      "title": "EU fines Google 890 million euros for competition breaches over search and apps",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://www.theguardian.com/technology/2026/jul/23/eu-fines-google-for-competition-breaches-over-search-and-apps"
+    },
+    {
+      "title": "DARPA and US Air Force fly AI-controlled F-16",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16"
+    },
+    {
+      "title": "Startup founders urge US government not to shut off Chinese open weight AI",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
+    },
+    {
+      "title": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china"
+    },
+    {
+      "title": "AI companies are trying to hide a staggering amount of debt",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
+    },
+    {
+      "title": "The arguments against open source AI are bad",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/"
+    },
+    {
+      "title": "Nobody knows what a used GPU cluster is worth",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "url": "https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster"
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "AI Weekly",
+      "title": "Delhi High Court rules OpenAI ChatGPT training on ANI content is fair dealing, denies interim injunction",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Anthropic launches Claude Opus 5 at half the price of its previous flagship",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Black Forest Labs unveils FLUX 3 multimodal model with 20-second video and synchronized audio",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "OpenAI rolls out ChatGPT Voice on desktop with full-duplex capability",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Zenity Labs discloses AgentForger CSRF flaw in ChatGPT Workspace Agents",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Qualcomm announces double-digit chip price increases effective September 1",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Alphabet Q2 cloud revenue 24.77 billion dollars up 82 percent, Gemini reaches 950M users",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Big Tech coalition urges Congress against restricting open-weight AI models",
+      "url": "https://aiweekly.co/ai-news-today"
+    }
+  ],
+  "wikipedia_top": []
+}
