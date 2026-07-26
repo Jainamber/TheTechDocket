@@ -1,0 +1,286 @@
+{
+  "date": "2026-07-26",
+  "candidates": [
+    {
+      "title": "Qualcomm notifies customers of double-digit Snapdragon chip price increase from September 1",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "outlet:Bloomberg (via XenoSpectrum summary)",
+        "outlet:The Verge (via Second Talent digest)"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech india",
+          "outlet": "AndroidPure"
+        },
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "9to5Google"
+        },
+        {
+          "source": "outlet:Bloomberg (via XenoSpectrum summary)",
+          "outlet": "Bloomberg (via XenoSpectrum summary)"
+        },
+        {
+          "source": "outlet:The Verge (via Second Talent digest)",
+          "outlet": "The Verge (via Second Talent digest)"
+        }
+      ],
+      "score": 0.5857,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenAI test models escaped isolation and hacked Hugging Face during evaluation",
+      "sources": [
+        "gnews:US",
+        "gnews:US",
+        "outlet:OpenAI (official disclosure)",
+        "outlet:Hugging Face (official disclosure)",
+        "outlet:TIME"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "CNBC"
+        },
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "CNN Business"
+        },
+        {
+          "source": "outlet:OpenAI (official disclosure)",
+          "outlet": "OpenAI (official disclosure)"
+        },
+        {
+          "source": "outlet:Hugging Face (official disclosure)",
+          "outlet": "Hugging Face (official disclosure)"
+        },
+        {
+          "source": "outlet:TIME",
+          "outlet": "TIME"
+        }
+      ],
+      "score": 0.5557,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Claude Opus 5 released by Anthropic July 23",
+      "sources": [
+        "gnews:US",
+        "outlet:ThursdAI"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "LLM-Stats"
+        },
+        {
+          "source": "outlet:ThursdAI",
+          "outlet": "ThursdAI"
+        }
+      ],
+      "score": 0.5532,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "India Semicon 2.0 approved: Rs 1.27 lakh crore chip program extended 12 years (Jul 15 - background)",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech india",
+          "outlet": "ANI"
+        }
+      ],
+      "score": 0.445,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Waymo exploring potential separation from Uber before 2028 contract ends",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "TechCrunch (via Second Talent digest)"
+        }
+      ],
+      "score": 0.445,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Meta smart glasses create moderation challenges amid privacy concerns",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "The Verge (via Second Talent digest)"
+        }
+      ],
+      "score": 0.4319,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia and SK Group announce $500B AI initiative with memory supply partnership",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "LLM-Stats"
+        }
+      ],
+      "score": 0.4227,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Alexa Plus gains AI capabilities for complex smart home instructions",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "The Verge (via Second Talent digest)"
+        }
+      ],
+      "score": 0.4015,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "HP fined 1.4 billion rupees in India over ink cartridge cartel",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech india",
+          "outlet": "Ars Technica (via Second Talent digest)"
+        }
+      ],
+      "score": 0.3641,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Patreon cuts 20 percent of workforce",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai tech",
+          "outlet": "TechCrunch (via Second Talent digest)"
+        }
+      ],
+      "score": 0.3597,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Qualcomm notifies customers of double-digit Snapdragon chip price increase from September 1",
+    "sources": [
+      "gnews:IN",
+      "gnews:US",
+      "outlet:Bloomberg (via XenoSpectrum summary)",
+      "outlet:The Verge (via Second Talent digest)"
+    ],
+    "geos": [
+      "IN",
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "tech india",
+        "outlet": "AndroidPure"
+      },
+      {
+        "source": "gnews:US",
+        "query": "ai tech",
+        "outlet": "9to5Google"
+      },
+      {
+        "source": "outlet:Bloomberg (via XenoSpectrum summary)",
+        "outlet": "Bloomberg (via XenoSpectrum summary)"
+      },
+      {
+        "source": "outlet:The Verge (via Second Talent digest)",
+        "outlet": "The Verge (via Second Talent digest)"
+      }
+    ],
+    "score": 0.5857,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false
+}

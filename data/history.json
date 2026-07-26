@@ -179,6 +179,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-25-ani-vs-openai-fair-dealing-ruling.json",
       "url": "https://thetechdocket.com/articles/ani-vs-openai-fair-dealing-ruling/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "qualcomm-snapdragon-price-hike",
+      "title": "Qualcomm Snapdragon Price Hike: What It Means for Phone Prices",
+      "keyword": "qualcomm snapdragon price hike",
+      "hub": "hardware",
+      "published_at": "2026-07-26T07:20:45.366980+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T07:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-qualcomm-snapdragon-price-hike.json",
+      "url": "https://thetechdocket.com/articles/qualcomm-snapdragon-price-hike/"
     }
   ]
 }
