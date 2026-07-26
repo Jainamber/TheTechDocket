@@ -97,15 +97,14 @@ scoring:
   dedup_max_similarity: 0.60
 
 # Quality-cadence safety valve: evergreen explainer ideas used on weak-trend days.
+# Pruned 2026-07-26 (owner-directed explainers batch): spot-AI-images, real-cost,
+# on-device-vs-cloud and DPDP are published; "free AI chatbot data" is covered by
+# ai-chatbot-data-privacy + free-ai-tiers-compared. Ready-to-write fact bases for
+# the two starred topics: 02-research/research-explainer-factbases-2026-07-26.md.
 evergreen_backlog:
-  - "What actually happens to your data when you use a free AI chatbot"
   - "UPI vs credit cards vs wallets: where India's payment tech is heading"
-  - "How to spot AI-generated images and videos: a practical guide"
-  - "Small language models explained: why smaller is suddenly better"
-  - "The real cost of running AI: tokens, GPUs, and electricity"
-  - "How recommendation algorithms decide what 1.4 billion Indians watch"
-  - "On-device AI vs cloud AI: what it means for your phone and privacy"
-  - "How India's DPDP Act changes what apps can do with your data"
+  - "Small language models explained: why smaller is suddenly better"    # fact base ready
+  - "How recommendation algorithms decide what 1.4 billion Indians watch" # fact base ready
 
 content:
   hubs:
