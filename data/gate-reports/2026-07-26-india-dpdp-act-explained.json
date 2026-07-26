@@ -1,6 +1,6 @@
 {
   "slug": "india-dpdp-act-explained",
-  "checked_at": "2026-07-26T20:26:04.794379+05:30",
+  "checked_at": "2026-07-26T20:50:50.134432+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 45KB (<=90), hero 27KB (<=320)"
+      "detail": "html 44KB (<=90), hero 27KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
@@ -183,7 +183,7 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 99 words (need ≥40 before any H2)"
+      "detail": "first paragraph 81 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
@@ -201,7 +201,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1231 words (need 900–2200)"
+      "detail": "938 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",

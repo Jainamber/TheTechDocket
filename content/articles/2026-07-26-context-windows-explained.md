@@ -8,7 +8,7 @@ description: "What a context window really is, why a million-token label rarely 
 hero_alt: "Illustration of a long scroll of text being fed into a language model with only portions highlighted as reliably attended"
 keyword: "context window explained"
 original_value: "SEO explainers report the advertised ceiling as the story. This piece cites the effective-context evidence by name — RULER, NoLiMa, Chroma's Context Rot, Fiction.liveBench — runs live cost math (8k vs 200k input is ~18x on current GPT-5.5 prices), and covers why vendors resize windows at all."
-selection_note: "Owner-directed explainers batch (2026-07-26); demand+gap validated in 02-research/research-explainer-factbases-2026-07-26.md."
+selection_note: "Owner-directed explainers batch (2026-07-26); demand+gap validated in 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."
 sources:
   - {title: "What are tokens and how to count them — OpenAI Help", url: "https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them", primary: true}
   - {title: "GPT-5.5 model page (context and pricing) — OpenAI API docs", url: "https://developers.openai.com/api/docs/models/gpt-5.5", primary: true}
@@ -31,29 +31,52 @@ review:
   title_promise_check: true
   no_fabrication: true
   policy_pass: true
-  reviewed_at: "2026-07-26T21:50:00+05:30"
+  reviewed_at: "2026-07-27T01:15:00+05:30"
 ---
 
-A context window is the total amount of text — measured in tokens — that a model can consider at once, covering your prompt, the conversation so far, and the reply it is writing. One token is roughly three-quarters of an English word ([OpenAI Help](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)), so a "1M context" label suggests about 750,000 words of working memory. The number on the box is real, but three other facts matter more: models usually can't use the whole window reliably, long prompts cost real money, and vendors resize these limits — up and down — for economic reasons they rarely explain.
+A context window is simply how much text an AI model can "hold on its desk" at one time — your question, the conversation so far, any pasted documents, and the answer it's writing, all counted together in tokens (a token is about three-quarters of an English word, per [OpenAI's own rule of thumb](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)). Three things about that desk matter more than its advertised size: the model doesn't use the whole desk equally well, a bigger desk costs real money to use, and companies quietly change desk sizes for business reasons.
 
-## The label, decoded
+## Tokens, translated
 
-Advertised windows in July 2026 run from 200,000 tokens (Claude Haiku 4.5) through the million-token class — GPT-5.5 lists 1,050,000 input tokens with 128,000 max output ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5)); Claude's current Opus, Sonnet and Fable models list 1,000,000 ([Anthropic docs](https://platform.claude.com/docs/en/about-claude/pricing)) — up to Meta's Llama 4 Scout, which advertises 10 million tokens while its own announcement notes the model was trained at 256,000-token lengths and extrapolated beyond ([Meta AI](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)). That gap between trained length and marketed length is the theme of this entire subject. Epoch AI's dataset across 123 models puts the marketing pace bluntly: advertised maximum context has grown roughly 30-fold per year since mid-2023 ([Epoch AI](https://epoch.ai/data-insights/context-windows)).
+| Tokens | Roughly… |
+|---|---|
+| 1,000 | 750 words — a long email |
+| 32,000 | ~80 pages — a thesis chapter |
+| 200,000 | ~500 pages — a full novel |
+| 1,000,000 | ~2,500 pages — an encyclopedia volume |
 
-One accounting note: whether "context" includes the model's output varies by vendor page, and the same company sometimes lists it both ways across model cards — architecturally, prompt and response share one budget, so read the specific model's card rather than assuming.
+Today's advertised windows sit at the big end: GPT-5.5 lists just over a million input tokens ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5)), Claude's current models list a million ([Anthropic docs](https://platform.claude.com/docs/en/about-claude/pricing)), and Meta's Llama 4 Scout advertises ten million — while Meta's own announcement notes it was *trained* at 256,000 and stretched from there ([Meta AI](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)). Keep that trained-versus-marketed gap in mind; it's the whole story in miniature. Across 123 models, the advertised maximum has grown about 30-fold per year since 2023 ([Epoch AI](https://epoch.ai/data-insights/context-windows)).
 
-## Advertised versus usable: what the benchmarks show
+One caveat for Indian readers: the word-count rules of thumb above are for English. Tokenizers — the software that chops text into tokens — are trained mostly on English, so Hindi, Tamil, Bengali and other non-Latin scripts typically get split into more pieces per word. The same letter or document costs more tokens, which means it fills the window faster and costs more to process. No vendor publishes a reliable per-language multiplier, so we won't invent one — just budget extra headroom when working in Indian languages.
 
-The famous "needle in a haystack" demo — hide one sentence in a long document, ask for it back — is the easy case, and modern models ace it. Harder, more realistic tests tell a different story. NVIDIA's RULER benchmark found that of 17 models advertising 32,000 tokens or more, only about half held up at even 32,000 when tasks required tracking and aggregating information ([RULER](https://arxiv.org/abs/2404.06654)). Adobe's NoLiMa removed word-overlap cues so the model must reason rather than pattern-match: ten of twelve models fell to half their short-context accuracy by 32,000 tokens — GPT-4o slid from 99.3% to 69.7% ([NoLiMa](https://arxiv.org/abs/2502.05167)). Chroma's 2025 "Context Rot" study across 18 models showed performance degrading non-uniformly as input grows even on trivially simple tasks ([Chroma Research](https://www.trychroma.com/research/context-rot)), and the foundational "Lost in the Middle" result — models attend best to the start and end of a prompt, worst to the middle — still replicates in newer work ([Liu et al.](https://arxiv.org/abs/2307.03172)). Progress is genuine: Epoch AI measured the input length at which top models keep 80% accuracy rising over 250-fold in nine months — yet at that mid-2025 snapshot, the best model cleared the bar only at 8,000 tokens. The practical translation: treat the advertised number as a hard ceiling and assume reliable performance at some fraction of it, especially for reasoning over scattered facts.
+## The number on the box vs the number that works
 
-## Why the number keeps changing
+Here's the part the spec sheets skip: **models get worse as the desk fills up.** The evidence, by name:
 
-Long context is expensive to serve. Every generated token attends to everything before it, and the memory holding that state — the KV cache — grows with length; for a 70-billion-parameter model it can reach tens of gigabytes per long session, which is GPU memory no one else can use. That economics shows up in pricing: GPT-5.5 charges a long-context surcharge beyond 272,000 input tokens, Google's Pro-tier pricing steps up past 200,000 tokens, while Anthropic currently prices its 1M window flat — proof the surcharge is a choice, not physics ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5); [Anthropic docs](https://platform.claude.com/docs/en/about-claude/pricing)). It also shows up as quiet product changes: earlier this month we reported [Codex's advertised context being halved](/articles/codex-context-window-cut/) with no changelog entry — the clearest recent case of a limit moving downward under load economics, consistent with the token-budget "compaction" machinery visible in that product's release notes. Serving costs ultimately trace back to hardware and electricity, a chain we unpacked in [the real cost of running AI](/articles/real-cost-of-running-ai/).
+- **RULER** (NVIDIA): of 17 models claiming 32k+ contexts, only about half performed acceptably *at* 32k on realistic tasks ([RULER](https://arxiv.org/abs/2404.06654)).
+- **NoLiMa** (Adobe): when the test removes word-matching shortcuts, 10 of 12 models lost half their accuracy by 32k tokens — GPT-4o fell from 99.3% to 69.7% ([NoLiMa](https://arxiv.org/abs/2502.05167)).
+- **Context Rot** (Chroma): performance degrades as input grows even on absurdly simple tasks, across 18 models ([Chroma Research](https://www.trychroma.com/research/context-rot)).
+- **Lost in the Middle**: models remember the start and end of a prompt best, and the middle worst ([Liu et al.](https://arxiv.org/abs/2307.03172)).
 
-Even when the window is huge and the price acceptable, stuffing it has its own bill. On GPT-5.5's current rates ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5)), the same question asked over an 8,000-token excerpt versus a 200,000-token dump costs about $0.055 versus $1.015 — roughly 18 times more — before any surcharge kicks in, purely from input scaling. Multiply by a team's daily usage and "just paste everything" becomes a line item.
+Models are improving fast — the length at which top models stay above 80% accuracy grew over 250-fold in nine months ([Epoch AI](https://epoch.ai/data-insights/context-windows)) — but at that snapshot the best still only cleared the bar at 8,000 tokens. Rule of thumb: trust the advertised number as a hard limit, and expect *reliable* performance at some fraction of it.
+
+## Why the limit keeps changing (follow the money)
+
+Serving a long conversation forces the provider to keep a growing "memory scratchpad" for you on a GPU — for a big model, tens of gigabytes per long session. That cost shows up in two ways:
+
+1. **Pricing steps.** GPT-5.5 charges extra beyond 272,000 input tokens; Google's Pro pricing steps up past 200,000; Anthropic currently prices its full million flat ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5); [Anthropic docs](https://platform.claude.com/docs/en/about-claude/pricing)). The surcharge is a choice, not physics.
+2. **Quiet cuts.** Limits can shrink without an announcement — as we reported when [Codex's context was halved](/articles/codex-context-window-cut/) with nothing in the changelog. When serving costs bite, the desk gets smaller. The electricity and hardware behind all this is its own story: [the real cost of running AI](/articles/real-cost-of-running-ai/).
+
+And filling a big window costs *you* too: the same question over an 8,000-token excerpt versus a 200,000-token dump runs about $0.055 versus $1.015 on current GPT-5.5 rates ([OpenAI API docs](https://developers.openai.com/api/docs/models/gpt-5.5)) — roughly 18 times more, before any surcharge.
 
 ## What it means for your prompts and your bill
 
-Put the material that matters at the start or end of a long prompt, never buried in the middle — that single habit tracks directly with the Lost-in-the-Middle evidence. For document work, follow the line Anthropic itself draws: under roughly 200,000 tokens (about 500 pages), including everything with prompt caching is defensible; beyond it, retrieval — fetching only relevant chunks — is both cheaper and more accurate, and their measured retrieval setup cut failure rates by 49% over naive approaches ([Anthropic](https://www.anthropic.com/news/contextual-retrieval)). When a chat assistant "forgets" your instructions from an hour ago, that's overflow management, not attitude: products truncate or compress old turns rather than refuse. And when comparing models — including [the free tiers we compared](/articles/free-ai-tiers-compared/), where Gemini's free window is 32,000 tokens against Claude's 200,000 — weigh the usable window, the price curve and the reset limits together, because a giant number you can't afford to fill, or that decays past 32k, is a spec-sheet victory only.
+Five habits that follow directly from the evidence:
 
-Context windows are the rare AI spec that is simultaneously real, oversold and unstable. Read the number, then ask the three questions that matter: how much of it holds up under load, what does filling it cost, and how quietly can it change. For more evidence-first guides, browse our [how-to and explainers](/topics/explainers/) hub.
+1. **Put the important stuff first or last.** Never bury the key instruction in the middle of a long prompt.
+2. **Paste less, not more.** A focused excerpt usually beats the full dump on both accuracy and cost.
+3. **Use the 500-page rule.** Under ~200,000 tokens of material, pasting it all is defensible; beyond that, use retrieval — Anthropic's measured setup cut retrieval failures by 49% ([Anthropic](https://www.anthropic.com/news/contextual-retrieval)).
+4. **Expect forgetting in long chats.** Products silently trim old turns when full. Re-state what matters.
+5. **Compare usable windows, not label windows** — especially on free tiers, where [the gap between 32k and 200k](/articles/free-ai-tiers-compared/) is the difference between chunking a PDF and swallowing it whole.
+
+The context window is the rare AI spec that's real, oversold and unstable all at once. Read the number, then ask: how much of it works, what does filling it cost, and how quietly can it shrink? More evidence-first guides on our [how-to and explainers](/topics/explainers/) hub.

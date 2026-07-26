@@ -1,6 +1,6 @@
 {
   "slug": "on-device-ai-vs-cloud-ai",
-  "checked_at": "2026-07-26T20:26:05.592100+05:30",
+  "checked_at": "2026-07-26T20:50:50.425100+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.01 vs 'india-dpdp-act-explained' (limit .30)"
+      "detail": "max 5-gram overlap 0.01 vs 'free-ai-tiers-compared' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 47KB (<=90), hero 27KB (<=320)"
+      "detail": "html 46KB (<=90), hero 27KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
@@ -183,13 +183,13 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 85 words (need ≥40 before any H2)"
+      "detail": "first paragraph 91 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
       "level": "hard",
       "ok": true,
-      "detail": "5 body H2 sections excl. template chrome (need ≥3)"
+      "detail": "6 body H2 sections excl. template chrome (need ≥3)"
     },
     {
       "gate": "S06-heading-hierarchy",
@@ -201,7 +201,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1212 words (need 900–2200)"
+      "detail": "1032 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",

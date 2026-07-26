@@ -1,6 +1,6 @@
 {
   "slug": "free-ai-tiers-compared",
-  "checked_at": "2026-07-26T20:26:06.306412+05:30",
+  "checked_at": "2026-07-26T20:50:50.703894+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -183,7 +183,7 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 101 words (need ≥40 before any H2)"
+      "detail": "first paragraph 93 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
@@ -201,7 +201,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1057 words (need 900–2200)"
+      "detail": "969 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",
@@ -219,7 +219,7 @@
       "gate": "S09-internal-links",
       "level": "hard",
       "ok": true,
-      "detail": "11 internal article links (need ≥2)"
+      "detail": "12 internal article links (need ≥2)"
     },
     {
       "gate": "S10-hub-link",
