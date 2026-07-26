@@ -251,6 +251,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-26-free-ai-tiers-compared.json",
       "url": "https://thetechdocket.com/articles/free-ai-tiers-compared/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "context-windows-explained",
+      "title": "Context Windows Explained: What the Token Number Means",
+      "keyword": "context window explained",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:07.126041+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T21:50:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-context-windows-explained.json",
+      "url": "https://thetechdocket.com/articles/context-windows-explained/"
     }
   ]
 }
