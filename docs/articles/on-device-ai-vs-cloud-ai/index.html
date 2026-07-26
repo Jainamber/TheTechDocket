@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
+<title>On-Device AI vs Cloud AI: What Your Phone Really Shares — The Tech Docket</title>
+<meta name="description" content="On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.">
+<link rel="canonical" href="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="On-Device AI vs Cloud AI: What Your Phone Really Shares">
+<meta property="og:description" content="On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.">
+<meta property="og:url" content="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/">
+<meta property="og:image" content="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Diagram of a smartphone splitting AI requests between an on-device chip and an attested private cloud data center">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-07-26T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-26T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="How-To &amp; Explainers">
+<meta property="article:tag" content="on-device ai">
+<meta property="article:tag" content="apple intelligence">
+<meta property="article:tag" content="gemini nano">
+<meta property="article:tag" content="privacy">
+<meta property="article:tag" content="npu">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="On-Device AI vs Cloud AI: What Your Phone Really Shares">
+<meta name="twitter:description" content="On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/"}, "headline": "On-Device AI vs Cloud AI: What Your Phone Really Shares", "description": "On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.", "image": ["https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-16x9.jpg", "https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-4x3.jpg", "https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-1x1.jpg"], "datePublished": "2026-07-26T07:00:00+05:30", "dateModified": "2026-07-26T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "How-To & Explainers", "item": "https://thetechdocket.com/topics/explainers/"}, {"@type": "ListItem", "position": 3, "name": "On-Device AI vs Cloud AI: What Your Phone Really Shares"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does turning off Apple Intelligence break Siri?", "acceptedAnswer": {"@type": "Answer", "text": "No. Basic Siri commands keep working. Switching off Apple Intelligence removes Writing Tools, notification and mail summaries, Image Playground, Genmoji and the ChatGPT handoff, and frees roughly 3GB of storage the on-device models occupy."}}, {"@type": "Question", "name": "Is 'private cloud' AI actually private or just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "It is architecturally stronger than ordinary cloud: Apple's PCC and Google's Private AI Compute claim ephemeral, non-logged processing, publish attestation designs, and invite outside scrutiny — Apple with a research environment and bounties up to a million dollars, Google with an independent NCC Group review. But you cannot personally verify a single request, so it is verifiable-by-experts, not self-evident."}}, {"@type": "Question", "name": "Can a phone under ₹20,000 run real on-device generative AI?", "acceptedAnswer": {"@type": "Answer", "text": "Effectively no in mid-2026. Google's own Gemini Intelligence tier requires 12GB of RAM and a flagship chip, and budget NPUs in the ~5-TOPS class are built for camera and voice tasks. Budget 'AI phone' marketing usually means cloud features or camera processing, not on-device generative AI."}}, {"@type": "Question", "name": "Does on-device AI drain more battery than cloud AI?", "acceptedAnswer": {"@type": "Answer", "text": "For sustained generative work, yes by a wide margin in the one independent measurement available — 21 to 37 times more energy per response in Greenspector's test — though that used generic open models rather than vendor-optimized ones, and chipmakers are actively narrowing the gap."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
+.feature a.img{display:block}
+.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card a.img{display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
+@media (max-width:719px){
+nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
+nav.hubs::-webkit-scrollbar{display:none}
+nav.hubs a{flex:0 0 auto;white-space:nowrap}
+.nl-full{display:none}
+.nl-short{display:inline}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark] .skip{color:#0d0f14}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/" aria-current="page"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/explainers/">How-To &amp; Explainers</a> / <span>On-Device AI vs Cloud AI: What Your Phone Really Shares</span>
+  </nav>
+  <a class="kicker postkick k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a>
+  <h1>On-Device AI vs Cloud AI: What Your Phone Really Shares</h1>
+  <div class="standfirst">On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-07-26T07:00:00+05:30">Published July 26, 2026</time>
+    
+    <span>·</span><span>5 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-16x9.webp">
+      <img src="https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/on-device-ai-vs-cloud-ai-16x9.jpg" width="1200" height="675" alt="Diagram of a smartphone splitting AI requests between an on-device chip and an attested private cloud data center" fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  
+
+  <div class="body"><p>&ldquo;On-device&rdquo; and &ldquo;cloud&rdquo; stopped being the only two answers in 2025: your phone&rsquo;s AI now runs in three places — locally on its chip, in an ordinary logged cloud account, or in a new middle tier of attested private cloud that both Apple and Google built precisely because frontier-quality models don&rsquo;t fit in a phone&rsquo;s power budget. What actually protects your privacy is knowing which of the three a given feature uses, because the honest answer changes app by app, and sometimes request by request.</p>
+<h2 id="what-genuinely-runs-on-the-phone-in-2026">What genuinely runs on the phone in 2026</h2>
+<p>Apple&rsquo;s current stack, announced at WWDC in June 2026, pairs two on-device foundation models — a 3-billion-parameter core and a sparse 20-billion-parameter &ldquo;Advanced&rdquo; variant on the newest silicon — with cloud models for heavy lifting; on-device work covers things like call context, voice control and Safari tab organization (<a href="https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/" rel="noopener" target="_blank">Apple Newsroom</a>). Google ships Gemini Nano through Android&rsquo;s AICore service for summarizing, proofreading, image description and transcription (<a href="https://developer.android.com/ai/gemini-nano" rel="noopener" target="_blank">Android Developers</a>). Samsung is openly hybrid: Live Translate, Interpreter and Audio Eraser stay on-device, while Generative Edit escalates to cloud &ldquo;as needed&rdquo; (<a href="https://news.samsung.com/us/your-privacy-secured-galaxy-ai-empowers-you-take-control-your-data/" rel="noopener" target="_blank">Samsung Newsroom</a>).</p>
+<p>The catch is hardware gating. Google&rsquo;s newest &ldquo;Gemini Intelligence&rdquo; tier demands 12GB of RAM plus a flagship-class chip — a bar that excludes even the Pixel 9 generation, never mind mid-rangers (<a href="https://www.androidauthority.com/gemini-intelligence-requirements-3667703/" rel="noopener" target="_blank">Android Authority</a>). A phone-sized model that punches upward is possible — we covered a <a href="/articles/bonsai-27b-ai-model-phone/">27B model running on a phone</a> — but products shipping today gate the good stuff to flagships, and rising chip prices are pushing that bar higher, as our report on the <a href="/articles/qualcomm-snapdragon-price-hike/">Snapdragon price hike</a> laid out.</p>
+<h2 id="the-third-tier-attested-private-cloud">The third tier: attested private cloud</h2>
+<p>The most important development most explainers still miss is the middle tier. Apple&rsquo;s Private Cloud Compute (PCC) processes heavy requests on servers that are stateless by design — data deleted after the response, no privileged runtime access, requests routed so no operator can target a specific user — with the design opened to outside researchers, key source code published, and up to $1,000,000 in bounties for a working attack (<a href="https://security.apple.com/blog/pcc-security-research/" rel="noopener" target="_blank">Apple Security Research</a>). In June 2026 Apple confirmed PCC&rsquo;s heaviest workloads now also run on Google Cloud hardware under the same attestation model — a sentence that would have sounded impossible two years ago (<a href="https://security.apple.com/blog/expanding-pcc/" rel="noopener" target="_blank">Apple Security Research</a>).</p>
+<p>Google&rsquo;s equivalent, Private AI Compute, launched in November 2025 on custom TPUs with &ldquo;Titanium Intelligence Enclaves,&rdquo; claiming even Google cannot read requests in flight; unusually, it shipped with an independent review — NCC Group spent roughly 100 person-days across its architecture, encryption design and attestation before launch (<a href="https://blog.google/technology/ai/google-private-ai-compute/" rel="noopener" target="_blank">Google</a>; <a href="https://www.nccgroup.com/research/public-report-google-private-ai-compute-review/" rel="noopener" target="_blank">NCC Group public report</a>).</p>
+<p>Two honest caveats. Audits cover the architecture, not every behavior — Apple&rsquo;s quarterly SOC 3 reports, for instance, scope only PCC&rsquo;s provisioning controls. And none of this applies when a request leaves the attested path entirely: when Siri hands a query to ChatGPT, Apple masks your IP and sends the request content, and if you&rsquo;ve connected a ChatGPT account, OpenAI&rsquo;s ordinary retention and training terms take over (<a href="https://www.apple.com/legal/privacy/data/en/chatgpt-extension/" rel="noopener" target="_blank">Apple legal disclosure</a>) — the same logged-account world we mapped in <a href="/articles/ai-chatbot-data-privacy/">what AI chatbots know about you</a>.</p>
+<h2 id="the-costs-nobody-prints-on-the-box">The costs nobody prints on the box</h2>
+<p>On-device AI&rsquo;s real price is energy and heat. The only rigorous public measurement we could find — Greenspector&rsquo;s 2025 lab test — found local LLM inference consumed 21 to 37 times more battery per response than sending the same request to the cloud, enough to cut a phone&rsquo;s autonomy to about two hours of sustained use (<a href="https://greenspector.com/en/artificial-intelligence-smartphone-autonomy/" rel="noopener" target="_blank">Greenspector</a>). Two fairness notes: the test used generic open models on a 2019 flagship, not vendor-optimized silicon, and Google has since published inference techniques claiming 50-per-cent-plus speedups for Nano-class models. Directionally, though, it explains why every vendor lands on hybrid: local for latency, offline reliability and small tasks; attested cloud for anything heavy.</p>
+<h2 id="what-you-can-actually-control">What you can actually control</h2>
+<p>On an iPhone: Settings → Apple Intelligence &amp; Siri → off removes the generative layer entirely; the ChatGPT extension is off by default and separately toggleable. There is no switch that keeps Apple Intelligence on while banning PCC — the split is decided per feature. On a Samsung: Settings → Advanced Intelligence → &ldquo;Process data only on device&rdquo; keeps translation and transcription while disabling the cloud-dependent features, and it&rsquo;s the clearest such switch in the industry. On Google&rsquo;s own Android there is no single master toggle — control is per-feature through Gemini Apps Activity and app permissions, which is the weakest control story of the three.</p>
+<p>Three misconceptions worth killing: &ldquo;on-device means nothing is collected&rdquo; (features can silently fall back to cloud when unsure); &ldquo;cloud AI means someone reads your chats&rdquo; (overstated for the attested tier, accurate enough for ordinary logged accounts); and &ldquo;on-device processing satisfies Indian law by itself&rdquo; (the DPDP framework turns on consent and purpose, not on where computation happens — see our <a href="/articles/india-dpdp-act-explained/">DPDP Act explainer</a>).</p>
+<h2 id="the-india-angle">The India angle</h2>
+<p>For Indian buyers the practical question is what the ₹15,000–25,000 band really delivers. Mid-range NPUs like the Exynos 1380&rsquo;s — rated at 4.9 trillion operations per second for photography and voice tasks, not generative models (<a href="https://semiconductor.samsung.com/processor/mobile-processor/exynos-1380/" rel="noopener" target="_blank">Samsung Semiconductor</a>) — sit well below the generative bar, and Samsung&rsquo;s cheapest Galaxy-AI-branded phone launched in India at ₹22,999 (<a href="https://news.samsung.com/in/galaxy-a26-5g-samsungs-most-affordable-ai-powered-smartphone-launches-in-india-starting-at-just-inr-22999" rel="noopener" target="_blank">Samsung Newsroom India</a>). Meanwhile 89% of Indian smartphone buyers say AI features influence their purchase, per Counterpoint&rsquo;s May 2026 survey with Flipkart (<a href="https://counterpointresearch.com/en/insights/India-Smartphone-Buyer-Prioritizing-Experience-and-AI-Counterpoint-Flipkart-Report" rel="noopener" target="_blank">Counterpoint Research</a>) — a gap between expectation and silicon that marketing happily fills. The classic &ldquo;data is expensive, so on-device wins&rdquo; argument has also aged: after the 2024–25 tariff hikes, entry plans work out to roughly ₹6.60 per GB (<a href="https://www.mappr.co/mobile-data-pricing-by-country/" rel="noopener" target="_blank">Mappr, via Cable.co.uk</a>) — cheap by global standards — so the stronger case for on-device in India is offline reliability where coverage is thin, not rupee savings.</p>
+<p>The bottom line: judge features, not slogans. Ask where each request runs, what the fallback is, and whether the cloud behind it is the logged kind or the attested kind — that one distinction carries most of the privacy weight in 2026. For more guides like this, browse our <a href="/topics/explainers/">how-to and explainers</a> hub.</p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>Does turning off Apple Intelligence break Siri?</h3>
+  <p>No. Basic Siri commands keep working. Switching off Apple Intelligence removes Writing Tools, notification and mail summaries, Image Playground, Genmoji and the ChatGPT handoff, and frees roughly 3GB of storage the on-device models occupy.</p>
+  
+  <h3>Is &#39;private cloud&#39; AI actually private or just marketing?</h3>
+  <p>It is architecturally stronger than ordinary cloud: Apple&#39;s PCC and Google&#39;s Private AI Compute claim ephemeral, non-logged processing, publish attestation designs, and invite outside scrutiny — Apple with a research environment and bounties up to a million dollars, Google with an independent NCC Group review. But you cannot personally verify a single request, so it is verifiable-by-experts, not self-evident.</p>
+  
+  <h3>Can a phone under ₹20,000 run real on-device generative AI?</h3>
+  <p>Effectively no in mid-2026. Google&#39;s own Gemini Intelligence tier requires 12GB of RAM and a flagship chip, and budget NPUs in the ~5-TOPS class are built for camera and voice tasks. Budget &#39;AI phone&#39; marketing usually means cloud features or camera processing, not on-device generative AI.</p>
+  
+  <h3>Does on-device AI drain more battery than cloud AI?</h3>
+  <p>For sustained generative work, yes by a wide margin in the one independent measurement available — 21 to 37 times more energy per response in Greenspector&#39;s test — though that used generic open models rather than vendor-optimized ones, and chipmakers are actively narrowing the gap.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/on-device-ai-vs-cloud-ai/&text=On-Device%20AI%20vs%20Cloud%20AI%3A%20What%20Your%20Phone%20Really%20Shares" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/on-device-ai-vs-cloud-ai/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=On-Device%20AI%20vs%20Cloud%20AI%3A%20What%20Your%20Phone%20Really%20Shares%20https%3A//thetechdocket.com/articles/on-device-ai-vs-cloud-ai/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/on-device-ai-vs-cloud-ai/&title=On-Device%20AI%20vs%20Cloud%20AI%3A%20What%20Your%20Phone%20Really%20Shares" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/on-device-ai-vs-cloud-ai/&t=On-Device%20AI%20vs%20Cloud%20AI%3A%20What%20Your%20Phone%20Really%20Shares" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/" rel="noopener" target="_blank">Apple Intelligence everyday experiences — Apple Newsroom (June 2026)</a> <em>(primary source)</em></li>
+      <li><a href="https://security.apple.com/blog/expanding-pcc/" rel="noopener" target="_blank">Expanding Private Cloud Compute — Apple Security Research (June 2026)</a> <em>(primary source)</em></li>
+      <li><a href="https://security.apple.com/blog/pcc-security-research/" rel="noopener" target="_blank">Security research on Private Cloud Compute — Apple</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.google/technology/ai/google-private-ai-compute/" rel="noopener" target="_blank">Google Private AI Compute — official announcement</a> <em>(primary source)</em></li>
+      <li><a href="https://www.nccgroup.com/research/public-report-google-private-ai-compute-review/" rel="noopener" target="_blank">Public report: Google Private AI Compute review — NCC Group</a> <em>(primary source)</em></li>
+      <li><a href="https://developer.android.com/ai/gemini-nano" rel="noopener" target="_blank">Gemini Nano via AICore — Android Developers</a> <em>(primary source)</em></li>
+      <li><a href="https://news.samsung.com/us/your-privacy-secured-galaxy-ai-empowers-you-take-control-your-data/" rel="noopener" target="_blank">Galaxy AI data control — Samsung Newsroom</a> <em>(primary source)</em></li>
+      <li><a href="https://www.apple.com/legal/privacy/data/en/chatgpt-extension/" rel="noopener" target="_blank">ChatGPT extension for Siri — Apple legal disclosure</a> <em>(primary source)</em></li>
+      <li><a href="https://greenspector.com/en/artificial-intelligence-smartphone-autonomy/" rel="noopener" target="_blank">AI vs smartphone battery life — Greenspector measurement study</a></li>
+      <li><a href="https://www.androidauthority.com/gemini-intelligence-requirements-3667703/" rel="noopener" target="_blank">Gemini Intelligence hardware requirements — Android Authority</a></li>
+      <li><a href="https://semiconductor.samsung.com/processor/mobile-processor/exynos-1380/" rel="noopener" target="_blank">Exynos 1380 — Samsung Semiconductor</a> <em>(primary source)</em></li>
+      <li><a href="https://news.samsung.com/in/galaxy-a26-5g-samsungs-most-affordable-ai-powered-smartphone-launches-in-india-starting-at-just-inr-22999" rel="noopener" target="_blank">Galaxy A26 5G launches in India at ₹22,999 — Samsung Newsroom India</a> <em>(primary source)</em></li>
+      <li><a href="https://counterpointresearch.com/en/insights/India-Smartphone-Buyer-Prioritizing-Experience-and-AI-Counterpoint-Flipkart-Report" rel="noopener" target="_blank">India smartphone buyers prioritizing AI — Counterpoint x Flipkart</a> <em>(primary source)</em></li>
+      <li><a href="https://www.mappr.co/mobile-data-pricing-by-country/" rel="noopener" target="_blank">Mobile data pricing by country — Mappr/Cable.co.uk</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: on-device-ai-vs-cloud-ai">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-voice-clone-scam-protection/">AI Voice-Clone Call Scams: How They Work, How to Respond</a>
+        <div class="m">How-To &amp; Explainers · July 26, 2026</div></li>
+      
+      <li><a class="t" href="/articles/context-windows-explained/">Context Windows Explained: What the Token Number Means</a>
+        <div class="m">How-To &amp; Explainers · July 26, 2026</div></li>
+      
+      <li><a class="t" href="/articles/free-ai-tiers-compared/">Free AI in 2026: ChatGPT, Gemini, Claude and Copilot Compared</a>
+        <div class="m">How-To &amp; Explainers · July 26, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
