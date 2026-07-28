@@ -1,0 +1,278 @@
+{
+ "date": "2026-07-28",
+ "candidates": [
+  {
+   "title": "apple music",
+   "sources": [
+    "gtrends:IN"
+   ],
+   "geos": [
+    "IN"
+   ],
+   "momentum_raw": 0.3340535622971071,
+   "evidence": [
+    {
+     "source": "gtrends:IN",
+     "traffic": "100+",
+     "news": []
+    }
+   ],
+   "score": 0.4502,
+   "topic_fit": 0.9,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Hugging Face CEO demands full breach logs and $100M compute commitment from OpenAI after autonomous breach",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "ai safety",
+     "outlet": "BuildFastWithAI roundup"
+    }
+   ],
+   "score": 0.4353,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Google discloses $94.1 billion SpaceX stake in Q2 filing",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "big tech",
+     "outlet": "Quartz"
+    },
+    {
+     "source": "gnews:US",
+     "query": "big tech",
+     "outlet": "Bloomberg"
+    }
+   ],
+   "score": 0.4326,
+   "topic_fit": 1.0,
+   "corroboration": 0.0,
+   "hub": "big-tech"
+  },
+  {
+   "title": "Google Discloses $94 Billion in SpaceX Shares Following IPO",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "big tech",
+     "outlet": "Bloomberg"
+    }
+   ],
+   "score": 0.4319,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Nvidia weighs US$250B backstop for OpenAI's Ohio data center",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "artificial intelligence",
+     "outlet": "DigiTimes"
+    }
+   ],
+   "score": 0.4238,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "OpenAI cyber models broke out of training environment to hack Hugging Face",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "ai safety",
+     "outlet": "CNBC"
+    }
+   ],
+   "score": 0.4227,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Microsoft prioritizes internal AI over Azure customer capacity due to compute shortage",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "big tech",
+     "outlet": "BuildFastWithAI roundup"
+    }
+   ],
+   "score": 0.4216,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark — Moonshot AI delivers largest open-weight AI model ever",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "artificial intelligence",
+     "outlet": "Tom's Hardware"
+    }
+   ],
+   "score": 0.4212,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Alphabet's Stake in SpaceX Just Swelled to $94.1 Billion, and Its Position in Anthropic Is Worth Even More",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "big tech",
+     "outlet": "The Motley Fool"
+    }
+   ],
+   "score": 0.4193,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "China's Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "artificial intelligence",
+     "outlet": "VentureBeat"
+    }
+   ],
+   "score": 0.4183,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "kapil sibal",
+   "sources": [
+    "gtrends:IN"
+   ],
+   "geos": [
+    "IN"
+   ],
+   "momentum_raw": 0.3838660095700815,
+   "evidence": [
+    {
+     "source": "gtrends:IN",
+     "traffic": "200+",
+     "news": []
+    }
+   ],
+   "score": 0.4172,
+   "topic_fit": 0.66,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Google pushes India from AI demos to daily deployment, focusing on startups, skilling, and agent safety",
+   "sources": [
+    "gnews:IN"
+   ],
+   "geos": [
+    "IN"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:IN",
+     "query": "AI India",
+     "outlet": "DigiTimes"
+    }
+   ],
+   "score": 0.4147,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  }
+ ],
+ "pick": {
+  "title": "Google discloses $94.1 billion SpaceX stake in Q2 filing",
+  "sources": [
+   "gnews:US"
+  ],
+  "geos": [
+   "US"
+  ],
+  "momentum_raw": 0.25,
+  "evidence": [
+   {
+    "source": "gnews:US",
+    "query": "big tech",
+    "outlet": "Quartz"
+   },
+   {
+    "source": "gnews:US",
+    "query": "big tech",
+    "outlet": "Bloomberg"
+   }
+  ],
+  "score": 0.4326,
+  "topic_fit": 1.0,
+  "corroboration": 0.0,
+  "hub": "big-tech"
+ },
+ "use_evergreen": false
+}

@@ -1,0 +1,173 @@
+{
+  "date": "2026-07-28",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss_IN": "via third-party mirror gtrends.iamrohit.in (direct RSS blocked: provenance)",
+    "trends_rss_US": "failed: WebFetch provenance block",
+    "hacker_news": "titles via orangebot.ai mirror; points unavailable (algolia blocked: provenance)"
+  },
+  "markets": {
+    "IN": {
+      "trends_rss": [
+        {
+          "title": "jana nayagan movie",
+          "approx_traffic": "500+",
+          "news": []
+        },
+        {
+          "title": "apple music",
+          "approx_traffic": "100+",
+          "news": []
+        },
+        {
+          "title": "kapil sibal",
+          "approx_traffic": "200+",
+          "news": []
+        },
+        {
+          "title": "chelsea",
+          "approx_traffic": "200+",
+          "news": []
+        },
+        {
+          "title": "roston chase",
+          "approx_traffic": "200+",
+          "news": []
+        }
+      ],
+      "news": {
+        "AI India": [
+          {
+            "title": "Google pushes India from AI demos to daily deployment, focusing on startups, skilling, and agent safety",
+            "source": "DigiTimes",
+            "url": "https://www.digitimes.com/news/a20260715VL209/google-2026-education-security-startup.html"
+          },
+          {
+            "title": "India AI Impact Summit 2026",
+            "source": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/India_AI_Impact_Summit_2026"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "trends_rss": [],
+      "news": {
+        "artificial intelligence": [
+          {
+            "title": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans",
+            "source": "CNBC",
+            "url": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html"
+          },
+          {
+            "title": "Nvidia weighs US$250B backstop for OpenAI's Ohio data center",
+            "source": "DigiTimes",
+            "url": "https://www.digitimes.com/news/a20260727VL209/nvidia-openai-data-center-infrastructure-finance.html"
+          },
+          {
+            "title": "Nvidia in talks to back OpenAI Ohio data center with $250 billion",
+            "source": "Quartz",
+            "url": "https://qz.com/nvidia-openai-ohio-data-center-financing-072726"
+          },
+          {
+            "title": "China's Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems",
+            "source": "VentureBeat",
+            "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"
+          },
+          {
+            "title": "Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark — Moonshot AI delivers largest open-weight AI model ever",
+            "source": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+          }
+        ],
+        "big tech": [
+          {
+            "title": "Google Discloses $94 Billion in SpaceX Shares Following IPO",
+            "source": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-07-23/google-says-it-holds-94-billion-in-spacex-shares-after-ipo"
+          },
+          {
+            "title": "Google discloses $94.1 billion SpaceX stake in Q2 filing",
+            "source": "Quartz",
+            "url": "https://qz.com/google-spacex-stake-94-billion-quarterly-filing-072326"
+          },
+          {
+            "title": "Alphabet's Stake in SpaceX Just Swelled to $94.1 Billion, and Its Position in Anthropic Is Worth Even More",
+            "source": "The Motley Fool",
+            "url": "https://www.fool.com/investing/2026/07/27/googl-stake-spacex-941-billion-anthropic-even-more/"
+          },
+          {
+            "title": "Microsoft prioritizes internal AI over Azure customer capacity due to compute shortage",
+            "source": "BuildFastWithAI roundup",
+            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+          }
+        ],
+        "ai safety": [
+          {
+            "title": "Hugging Face CEO demands full breach logs and $100M compute commitment from OpenAI after autonomous breach",
+            "source": "BuildFastWithAI roundup",
+            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+          },
+          {
+            "title": "OpenAI cyber models broke out of training environment to hack Hugging Face",
+            "source": "CNBC",
+            "url": "https://www.cnbc.com/2026/07/22/open-ai-cyber-models-hack-hugging-face.html"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake",
+      "url": "https://news.ycombinator.com/item?id=49057574",
+      "note": "front page rank 9, points unavailable"
+    },
+    {
+      "title": "Htmx 4.0, the first JavaScript library to release exclusively on the Game Boy",
+      "url": "https://swag.htmx.org",
+      "note": "front page rank 4"
+    },
+    {
+      "title": "Decker, a platform that builds on the legacy of Hypercard and classic macOS",
+      "url": "https://beyondloom.com",
+      "note": "front page rank 1"
+    },
+    {
+      "title": "Kill The Cookie Banner",
+      "url": "https://killthecookiebanner.eu",
+      "note": "front page rank 5"
+    },
+    {
+      "title": "Go Analysis Framework: modular static analysis by go team",
+      "url": "https://pkg.go.dev",
+      "note": "front page rank 8"
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "title": "Nvidia in talks to guarantee ~$250B financing for OpenAI 10GW Ohio data center",
+      "outlet": "BuildFastWithAI"
+    },
+    {
+      "title": "Moonshot AI releases Kimi K3 open weights: 2.8T parameters, 1.4TB download",
+      "outlet": "BuildFastWithAI"
+    },
+    {
+      "title": "Microsoft rations Azure compute, prioritizes internal AI workloads",
+      "outlet": "BuildFastWithAI"
+    },
+    {
+      "title": "DeepSeek V4 at $0.14/$0.28 per million tokens establishes production-ready open options",
+      "outlet": "BuildFastWithAI"
+    },
+    {
+      "title": "White House frontier AI framework expected before August 1",
+      "outlet": "BuildFastWithAI"
+    }
+  ],
+  "wikipedia_top": []
+}
