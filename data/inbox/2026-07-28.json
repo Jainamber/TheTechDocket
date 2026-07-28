@@ -1,173 +1,1778 @@
 {
   "date": "2026-07-28",
-  "generated_by": "daily-session-websearch",
+  "generated_by": "engine.fetchers",
   "sources_status": {
-    "websearch": "ok",
-    "trends_rss_IN": "via third-party mirror gtrends.iamrohit.in (direct RSS blocked: provenance)",
-    "trends_rss_US": "failed: WebFetch provenance block",
-    "hacker_news": "titles via orangebot.ai mirror; points unavailable (algolia blocked: provenance)"
+    "trends_rss_IN": "ok",
+    "news_IN_AI India": "ok",
+    "news_IN_new AI model": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI India": "ok",
+    "news_US_new AI model": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
   },
   "markets": {
     "IN": {
+      "label": "India",
       "trends_rss": [
         {
-          "title": "jana nayagan movie",
+          "title": "spider man brand new day",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 27 Jul 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "'Spider-Man: Brand New Day' eyes historic USD 800 million global debut! Tom Holland starrer tracking seco",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/box-office/spider-man-brand-new-day-eyes-historic-usd-800-million-global-debut-tom-holland-starrer-tracking-second-biggest-opening-after-aveners-endgame/articleshow/132672985.cms"
+            },
+            {
+              "headline": "Tom Holland is about to beat Tom Holland at the box office",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/movies/article/tom-holland-is-about-to-beat-tom-holland-at-the-box-office-172718394.html"
+            },
+            {
+              "headline": "‘Spider-Man,’ ‘The Odyssey’ face challenges amid tough summer box-office battle in China",
+              "source": "Global Times",
+              "url": "https://www.globaltimes.cn/page/202607/1366925.shtml"
+            }
+          ]
+        },
+        {
+          "title": "పావలా శ్యామల",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 27 Jul 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Pavala Shyamala: సినీనటి పావలా శ్యామల కన్నుమూత",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/movies/actress-pavala-shyamala-passes-away/0201/126133511"
+            },
+            {
+              "headline": "Pavala Syamala Struggles: పెళ్లైన మూడేళ్లకే భర్త మరణం, ఒంటరి చేసి పీడించిన సమాజం.. పావలా శ్యామల తెర వెనుక పోరాటం",
+              "source": "Asianet News Telugu",
+              "url": "https://telugu.asianetnews.com/gallery/entertainment/pavala-syamala-faced-many-struggles-after-husband-dies-shocking-story-6qbr1sx"
+            },
+            {
+              "headline": "Pavala Shyamala: టాలీవుడ్ లో విషాదం.. సీనియర్ నటి కన్నుమూత..!",
+              "source": "NTV Telugu",
+              "url": "https://ntvtelugu.com/news/veteran-tollywood-actress-pavala-shyamala-passes-away-after-cardiac-arrest-in-hyderabad-997631.html"
+            }
+          ]
+        },
+        {
+          "title": "chennai love story movies",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 27 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Chennai Love Story Movie: దుమ్మురేపుతున్న కిరణ్ అబ్బవరం 'చెన్నై లవ్ స్టోరీ' మూవీ కలెక్షన్లు.. 3 రోజుల్లో ఎన్ని కోట్లు వచ్చాయంటే?",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/photogallery/movies/kiran-abbavarams-chennai-love-story-movie-3-days-collections-bh-3189688.html"
+            },
+            {
+              "headline": "Chennai Love Story Box Office Day 3: రూ.50 కోట్ల దిశగా ‘చెన్నై లవ్ స్టోరీ’.. 3 రోజుల కలెక్షన్స్ ఎంతంటే?",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/telugu-movies/cinema-news/kiran-abbavaram-chennai-love-story-box-office-collection-in-3-days/articleshow/132659031.cms"
+            },
+            {
+              "headline": "Gouri Priya | చెన్నై లవ్ స్టోరీ సక్సెస్ మీట్‌లో భావోద్వేగానికి గురైన గౌరీ ప్రియా.. అమ్మ గుర్తొచ్చి కన్నీటి పర్యంతం",
+              "source": "Namasthe Telangana",
+              "url": "https://www.ntnews.com/cinema/gouri-priya-emotional-in-chennai-love-story-success-meet-2462389"
+            }
+          ]
+        },
+        {
+          "title": "జూలై 28",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 27 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "News Headlines for School Assembly Today:స్కూల్ అసెంబ్లీకి నేడు వార్తా శీర్షికలు",
+              "source": "Prime9News Telugu",
+              "url": "https://prime9news.com/national-news/school-assembly-news-headlines-july-27"
+            },
+            {
+              "headline": "School Assembly News Headlines Today:స్కూల్ అసెంబ్లీ వార్తలు - జూలై 23",
+              "source": "Prime9News Telugu",
+              "url": "https://www.prime9news.com/national-news/school-assembly-news-headlines-july-23"
+            },
+            {
+              "headline": "School Assembly News Headlines Today:స్కూల్ అసెంబ్లీ వార్తలు - జూలై 22",
+              "source": "Prime9News Telugu",
+              "url": "https://www.prime9news.com/national-news/school-assembly-news-headlines-july-22"
+            }
+          ]
+        },
+        {
+          "title": "కాజల్ అగర్వాల్",
           "approx_traffic": "500+",
-          "news": []
+          "pub_date": "Mon, 27 Jul 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "ఒంటరి ఉన్నప్పుడు సడెన్‌గా కారవాన్‌లోకి వచ్చి బట్టలిప్పేశాడు..!",
+              "source": "Oneindia Telugu",
+              "url": "https://telugu.oneindia.com/entertainment/kajal-aggarwal-recalls-shocking-incident-assistant-director-entered-caravan-without-permission-498951.html"
+            },
+            {
+              "headline": "Kajal: కాజల్‌ను వణికించిన ఘటన.. ఒంటరిగా ఉన్నప్పుడు కారవాన్‌లోకి దూసుకొచ్చిన అసిస్టెంట్ డైరెక్టర్.. షర్ట్ విప్పేసి, బాబోయ్ అరాచకం..!",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/photogallery/movies/kajal-aggarwal-reveals-shocking-incident-happend-during-shooting-spot-bh-3188181.html"
+            },
+            {
+              "headline": "సడెన్‌గా నా కార్‌వ్యాన్‌లోకి వచ్చి షర్ట్ విప్పేశాడు... షాకింగ్ ఘటనను షేర్ చేసుకున్న చందమామ",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/telugu-movies/cinema-news/unpermitted-entry-left-me-terrified-kajal-aggarwal-opens-up-about-unsettling-fan-encounter/articleshow/132599989.cms"
+            }
+          ]
         },
         {
-          "title": "apple music",
-          "approx_traffic": "100+",
-          "news": []
-        },
-        {
-          "title": "kapil sibal",
+          "title": "हनुमा विहारी",
           "approx_traffic": "200+",
-          "news": []
+          "pub_date": "Mon, 27 Jul 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "IND vs ZIM: अभिषेक शर्मा ने रचा इतिहास, बल्ले से नहीं चला जादू तो गेंद से बना दिया 'महारिकॉर्ड'",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/sports/cricket/story/abhishek-sharma-creates-history-best-bowling-by-indian-opener-in-t20i-ind-vs-zim-tspoa-dskc-2609239-2026-07-26"
+            },
+            {
+              "headline": "‘संजू की 100 प्रतिशत वापसी होगी’: अभिषेक शर्मा पर भड़के वर्ल्ड कप चैंपियन, कहा- चयनकर्ताओं को लेना होगा कड़ा फैसला",
+              "source": "Jansatta",
+              "url": "https://www.jansatta.com/khel/sanju-samson-100-percent-will-receive-call-up-abhishek-sharma-tough-call-demand-team-india-kris-srikkanth/4636796/"
+            },
+            {
+              "headline": "संजू सैमसन और अभिषेक शर्मा के लिए टीम इंडिया का दोहरा व्यवहार! उठे गंभीर सवाल",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/sports/cricket/indian-team-double-standard-for-sanju-samson-and-abhishek-sharma-hanuma-vihari-raise-question-3166526"
+            }
+          ]
         },
         {
-          "title": "chelsea",
-          "approx_traffic": "200+",
-          "news": []
+          "title": "delhi weather today",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 27 Jul 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Rain lashes parts of Delhi; IMD forecasts ‘Yellow Alert’ for thunderstorms, gusty winds",
+              "source": "ThePrint",
+              "url": "https://theprint.in/india/rain-lashes-parts-of-delhi-imd-forecasts-yellow-alert-for-thunderstorms-gusty-winds/2998100/"
+            },
+            {
+              "headline": "Delhi flight status today: Check latest advisory by IGI airport as IMD predicts rain in the national capit",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/news/new-updates/delhi-flight-status-today-check-latest-advisory-by-igi-airport-as-imd-predicts-rain-in-the-national-capital/articleshow/132673887.cms"
+            },
+            {
+              "headline": "City swelters, but rain relief likely tomorrow",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/delhi/city-swelters-but-rain-relief-likely-tomorrow/articleshow/132644775.cms"
+            }
+          ]
         },
         {
-          "title": "roston chase",
+          "title": "kospi index",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 27 Jul 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "U.S. and Korean tech stocks are now tightly linked — and that could be a worry for investors",
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html"
+            },
+            {
+              "headline": "South Korea's KOSPI drops 7% as global chipmaker selloff deepens",
+              "source": "Reuters",
+              "url": "https://www.reuters.com/world/asia-pacific/south-koreas-kospi-drops-7-global-chipmaker-selloff-deepens-2026-07-28/"
+            },
+            {
+              "headline": "South Korean shares turn lower as chipmakers fall ahead of earnings",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/us-stocks/news/south-korean-shares-turn-lower-as-chipmakers-fall-ahead-of-earnings/articleshow/132651312.cms"
+            }
+          ]
+        },
+        {
+          "title": "frances tiafoe",
           "approx_traffic": "200+",
-          "news": []
+          "pub_date": "Mon, 27 Jul 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Hot Shot: Tiafoe's fiery return winner lights up Washington 2026 crowd",
+              "source": "ATP Tour",
+              "url": "https://www.atptour.com/en/video/hot-shot-tiafoes-fiery-return-winner-lights-up-washington-2026-crowd"
+            },
+            {
+              "headline": "Who Is Terence Atmane? Meet Frances Tiafoe’s First-Round Opponent at the Washington Open",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/terence-atmane-meet-frances-tiafoe-000000750.html"
+            },
+            {
+              "headline": "Tiafoe vs Atmane Predictions, Picks & Betting Lines for ATP Washington",
+              "source": "Sports Betting Dime",
+              "url": "https://www.sportsbettingdime.com/news/tennis/tiafoe-vs-atmane-predictions-picks-betting-lines-atp-washington/"
+            }
+          ]
+        },
+        {
+          "title": "sara",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 27 Jul 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Influencer killed by husband, police say, after she accused him of pedophilia on TikTok",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/news/us-news/influencer-sara-gilson-killed-rcna589211"
+            },
+            {
+              "headline": "Sara Gilson’s Ex ‘Begged’ Her to Break Up with Estranged Husband Before Murder (Exclusive)",
+              "source": "People.com",
+              "url": "https://people.com/sara-gilsons-ex-says-he-begged-her-to-break-up-with-estranged-husband-before-murder-12027101"
+            },
+            {
+              "headline": "Family identify two killed in apparent murder-suicide in Owasso",
+              "source": "KTUL",
+              "url": "https://ktul.com/news/crime/owasso-police-investigating-fatal-double-shooting-thursday-night-07-24-2026"
+            }
+          ]
         }
       ],
       "news": {
         "AI India": [
           {
-            "title": "Google pushes India from AI demos to daily deployment, focusing on startups, skilling, and agent safety",
-            "source": "DigiTimes",
-            "url": "https://www.digitimes.com/news/a20260715VL209/google-2026-education-security-startup.html"
+            "title": "AI’s next test — reaching India’s informal women worker - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Mon, 27 Jul 2026 18:38:00 GMT"
           },
           {
-            "title": "India AI Impact Summit 2026",
-            "source": "Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/India_AI_Impact_Summit_2026"
+            "title": "Tata Boss Sees Air India Overhaul as a Decade-Long Journey - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Mon, 27 Jul 2026 16:42:21 GMT"
+          },
+          {
+            "title": "Rebuilding Air India is a long journey: Tata Sons Chairman - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Mon, 27 Jul 2026 16:37:25 GMT"
+          },
+          {
+            "title": "Tata Sons' Chandrasekaran says Air India turnaround could take a decade amid deepening losses - livemint.com",
+            "source": "livemint.com",
+            "pub_date": "Mon, 27 Jul 2026 16:00:19 GMT"
+          },
+          {
+            "title": "India's Sovereign AI: On Whose Terms? - orfonline.org",
+            "source": "orfonline.org",
+            "pub_date": "Sat, 25 Jul 2026 08:44:36 GMT"
+          },
+          {
+            "title": "Nitin Gadkari can sue Meta, X over AI deepfakes on E20 rules: Bombay High Court - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Mon, 27 Jul 2026 21:24:00 GMT"
+          },
+          {
+            "title": "Local welfare organization questions benefits of Air India's new hub-and-spoke connectivity model - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 27 Jul 2026 15:01:00 GMT"
+          },
+          {
+            "title": "AI workloads outpace traditional data use as Indian firms earmark dedicated budgets: Snowflake - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Mon, 27 Jul 2026 07:53:39 GMT"
+          },
+          {
+            "title": "The hidden cost of hosting the world’s AI infrastructure in India - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Sat, 25 Jul 2026 23:23:16 GMT"
+          },
+          {
+            "title": "No delay in Air India Dreamliner crash probe, investigation progressing as per procedure: Civil Aviation Ministry - Telangana Today",
+            "source": "Telangana Today",
+            "pub_date": "Mon, 27 Jul 2026 11:45:13 GMT"
+          },
+          {
+            "title": "Tourism ministry inks MoU with Air India to promote India as premier global destination - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Mon, 27 Jul 2026 16:24:17 GMT"
+          },
+          {
+            "title": "Air India, tourism ministry sign MoU to promote nation as major aviation and transit hub - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Mon, 27 Jul 2026 15:27:50 GMT"
+          },
+          {
+            "title": "Air India Signs Pact With Tourism Ministry To Promote India As Tourist Hub - Deccan Chronicle",
+            "source": "Deccan Chronicle",
+            "pub_date": "Mon, 27 Jul 2026 13:22:26 GMT"
+          },
+          {
+            "title": "Government Debunks Fake AI Videos of PM, Minister, Blames Pakistani Handles - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 25 Jul 2026 03:11:57 GMT"
+          },
+          {
+            "title": "Modi faces challenge from activists over AI surveillance at India youth protest - The Japan Times",
+            "source": "The Japan Times",
+            "pub_date": "Tue, 28 Jul 2026 00:46:00 GMT"
+          },
+          {
+            "title": "India’s DPI export strategy evolves beyond identity and payments to AI - Biometric Update",
+            "source": "Biometric Update",
+            "pub_date": "Mon, 27 Jul 2026 22:03:00 GMT"
+          },
+          {
+            "title": "US firms training AI using Chinese examples: Beijing - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 28 Jul 2026 01:28:00 GMT"
+          },
+          {
+            "title": "M&A in AI: Redefining dealmaking - Law.asia",
+            "source": "Law.asia",
+            "pub_date": "Mon, 27 Jul 2026 14:59:29 GMT"
+          },
+          {
+            "title": "Digital India BHASHINI organises AI workshop for Haryana Vidhan Sabha Secretariat officials - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Mon, 27 Jul 2026 15:48:22 GMT"
+          },
+          {
+            "title": "The Geopolitics of AI: China’s WAICO Push and India’s BRICS Standing - Centre for Public Policy Research (CPPR)",
+            "source": "Centre for Public Policy Research (CPPR)",
+            "pub_date": "Mon, 27 Jul 2026 08:00:35 GMT"
+          },
+          {
+            "title": "Fresh year, no fresh start for India’s largest IT firms - The Daily Brief by Zerodha",
+            "source": "The Daily Brief by Zerodha",
+            "pub_date": "Tue, 28 Jul 2026 01:51:42 GMT"
+          },
+          {
+            "title": "Shop-floor AI drives Zebra’s India plans - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Tue, 28 Jul 2026 00:31:00 GMT"
+          },
+          {
+            "title": "'Worst quality AI in market': Meta AI's moderation fail hits PM Modi and Indian Democracy - WION",
+            "source": "WION",
+            "pub_date": "Tue, 28 Jul 2026 02:02:00 GMT"
+          },
+          {
+            "title": "IndiaAI Mission's Safe & Trusted AI pillar advances responsible AI, 13 projects approved to tackle deepfakes and bias - DD India",
+            "source": "DD India",
+            "pub_date": "Mon, 27 Jul 2026 12:52:00 GMT"
+          },
+          {
+            "title": "OpenAI gains upper hand in India’s first major AI copyright dispute - World IP Review",
+            "source": "World IP Review",
+            "pub_date": "Mon, 27 Jul 2026 23:26:15 GMT"
+          }
+        ],
+        "new AI model": [
+          {
+            "title": "Chinese A.I. Start-Up Shows the World What It Has Built - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Tue, 28 Jul 2026 01:10:34 GMT"
+          },
+          {
+            "title": "Anthropic's new AI model rivals Fable 5 and is cheaper as businesses fret about costs - CNBC",
+            "source": "CNBC",
+            "pub_date": "Fri, 24 Jul 2026 17:19:00 GMT"
+          },
+          {
+            "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber - blog.google",
+            "source": "blog.google",
+            "pub_date": "Tue, 21 Jul 2026 15:29:15 GMT"
+          },
+          {
+            "title": "Introducing Muse Spark 1.1 - AI at Meta",
+            "source": "AI at Meta",
+            "pub_date": "Thu, 09 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models - MacRumors",
+            "source": "MacRumors",
+            "pub_date": "Mon, 08 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Alibaba previews Qwen3.8, claiming its strength trails only Anthropic’s Fable 5 - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Sun, 19 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Anthropic’s New Fable AI Model Is Met With User Backlash Over Restrictions - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 10 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Wed, 15 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Alphabet's Google developing new chip for AI model, stock jumps - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 20 Jul 2026 20:33:42 GMT"
+          },
+          {
+            "title": "Exclusive: OpenAI Preps New AI Model, Expects To Go Public ‘Within the Next Year’ - The Information",
+            "source": "The Information",
+            "pub_date": "Wed, 10 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Rethinking security for the age of AI - The Official Microsoft Blog",
+            "source": "The Official Microsoft Blog",
+            "pub_date": "Mon, 27 Jul 2026 16:45:10 GMT"
+          },
+          {
+            "title": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security - NVIDIA Blog",
+            "source": "NVIDIA Blog",
+            "pub_date": "Mon, 27 Jul 2026 09:06:58 GMT"
+          },
+          {
+            "title": "Soil carbon effectively measured by new, efficient AI model - Phys.org",
+            "source": "Phys.org",
+            "pub_date": "Mon, 27 Jul 2026 20:00:06 GMT"
+          },
+          {
+            "title": "NIST unveils new AI evaluation platform - Nextgov/FCW",
+            "source": "Nextgov/FCW",
+            "pub_date": "Mon, 27 Jul 2026 20:56:00 GMT"
+          },
+          {
+            "title": "New Method Significantly Boosts AI Speed, Energy Efficiency on Existing Hardware - UC Davis College of Engineering",
+            "source": "UC Davis College of Engineering",
+            "pub_date": "Mon, 27 Jul 2026 17:48:09 GMT"
+          },
+          {
+            "title": "OpenAI and Hugging Face partner to address security incident during model evaluation - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Tue, 21 Jul 2026 20:10:21 GMT"
+          },
+          {
+            "title": "Anthropic rolls out Opus 5 AI model in efficiency upgrade - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Mon, 27 Jul 2026 04:23:28 GMT"
+          },
+          {
+            "title": "China’s new AI model is free, powerful and challenging America’s best: Why Moonshot’s Kimi K3 has... - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Fri, 24 Jul 2026 14:13:35 GMT"
+          },
+          {
+            "title": "Microsoft launches MAI-Cyber-1-Flash AI model a... - Pluang",
+            "source": "Pluang",
+            "pub_date": "Mon, 27 Jul 2026 18:52:02 GMT"
+          },
+          {
+            "title": "Microsoft escalates the AI security race with ‘Project Perception’ and a new in-house model - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Mon, 27 Jul 2026 19:56:03 GMT"
+          },
+          {
+            "title": "Microsoft’s Israeli cyber team helps build the company’s next-generation AI defense system - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 27 Jul 2026 18:40:00 GMT"
+          },
+          {
+            "title": "Alibaba Says New AI Model Is Just Second to Anthropic’s Fable 5 - WSJ",
+            "source": "WSJ",
+            "pub_date": "Mon, 20 Jul 2026 05:37:00 GMT"
+          },
+          {
+            "title": "Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 27 Jul 2026 18:32:11 GMT"
+          },
+          {
+            "title": "China's Moonshot, Z.AI, and DeepSeek are challenging U.S. AI labs—and beating them on cost - Fortune",
+            "source": "Fortune",
+            "pub_date": "Sun, 26 Jul 2026 21:00:00 GMT"
+          },
+          {
+            "title": "Inspired by how children learn, new AI framework learns to theorize the world from observations - Tech Xplore",
+            "source": "Tech Xplore",
+            "pub_date": "Mon, 27 Jul 2026 18:20:03 GMT"
           }
         ]
       },
-      "autocomplete": {}
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "ai mode",
+          "air force portal",
+          "ai checker",
+          "airpods",
+          "airport golf course",
+          "air quality map",
+          "air conditioner"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt image generator",
+          "chatgpt down",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt work",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone plan deals",
+          "new phone number",
+          "new phones coming out",
+          "new phone plans",
+          "new phone who dis meme"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
     },
     "US": {
-      "trends_rss": [],
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "tbt tournament",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 27 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "How to Watch TBT Today: Schedule, TV Channel, Streaming for Monday, July 27",
+              "source": "FOX Sports",
+              "url": "https://www.foxsports.com/stories/other/how-watch-tbt-today-schedule-tv-channel-streaming-monday-july-27"
+            },
+            {
+              "headline": "JHX Hoops vs AfterShocks live score updates: Kansas’ TBT run continues",
+              "source": "The Topeka Capital-Journal",
+              "url": "https://www.cjonline.com/story/sports/college/hawk-zone/2026/07/27/kansas-basketball-jhx-hoops-vs-wichita-state-aftershocks-live-score-updates-kansas-tbt-run-continues/91050413007/"
+            },
+            {
+              "headline": "‘They didn’t want to play us’: Why WSU-KU rivalry burns so hot in Wichita",
+              "source": "Wichita Eagle",
+              "url": "https://www.kansas.com/sports/college/wichita-state/article316667784.html"
+            }
+          ]
+        },
+        {
+          "title": "alex bregman",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 27 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "Pre-Gamin’: Cubs vs Pirates (12:35 CT) – Lineups, Broadcast Info, Game Thread",
+              "source": "Bleacher Nation",
+              "url": "https://www.bleachernation.com/cubs/2026/07/26/cubs-lineup-72626/"
+            },
+            {
+              "headline": "Alex Bregman getting a breather on Sunday",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-07-26/alex-bregman-getting-a-breather-on-sunday"
+            },
+            {
+              "headline": "Cubs' Alex Bregman: Heading to bench Sunday",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/fantasy/baseball/news/cubs-alex-bregman-heading-to-bench-sunday/"
+            }
+          ]
+        },
+        {
+          "title": "casey schmitt",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 27 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "Giants 3B Casey Schmitt exits early with apparent leg injury",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/49466648/giants-3b-casey-schmitt-exits-early-apparent-leg-injury"
+            },
+            {
+              "headline": "Schmitt leaves game after suffering leg injury on the bases",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/casey-schmitt-leaves-game-with-leg-injury"
+            },
+            {
+              "headline": "Casey Schmitt sustains apparent injury, limps off field in Giants-Brewers game",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/casey-schmitt-sustains-apparent-injury-194623240.html"
+            }
+          ]
+        },
+        {
+          "title": "playstation plus games august 2026",
+          "approx_traffic": "10000+",
+          "pub_date": "Mon, 27 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "PlayStation Plus' August 2026 lineup is already killer, thanks to one confirmed game",
+              "source": "Polygon.com",
+              "url": "https://www.polygon.com/ps-plus-august-2026-games-ps5/"
+            },
+            {
+              "headline": "PlayStation Plus Essential: First Day-One release in August confirmed",
+              "source": "PlayFront",
+              "url": "https://playfront.de/en/playstation-plus-essential-erster-day-one-release-im-august-steht-fest/"
+            },
+            {
+              "headline": "PS Plus Monthly Games Wish List for August 2026",
+              "source": "games.gg",
+              "url": "https://games.gg/news/ps-plus-august-2026-wish-list/"
+            }
+          ]
+        },
+        {
+          "title": "miracle watts",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 27 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Congratulations! Miracle Watts And Tyler Lepley’s Cabo Wedding Was A Black Love Fairytale",
+              "source": "HelloBeautiful",
+              "url": "https://hellobeautiful.com/4598538/miracle-watts-tyler-lepley-2/"
+            },
+            {
+              "headline": "Exclusive: Inside Miracle Watts And Tyler Lepley's Intimate Los Cabos Wedding",
+              "source": "Essence",
+              "url": "https://www.essence.com/love/weddings/miracle-watts-and-tyler-lepley-wedding/"
+            },
+            {
+              "headline": "Married! Tyler Lepley & Miracle Watts Tie the Knot in Stunning Wedding",
+              "source": "That Grape Juice.net",
+              "url": "https://thatgrapejuice.net/entertainment/2026/07/married-tyler-lepley-miracle-watts-tie-the-knot-in-stunning-wedding/"
+            }
+          ]
+        },
+        {
+          "title": "ali sanchez",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 27 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Jets reveal alternate 'White Out' helmet for Week 2 home opener vs. Packers",
+              "source": "NFL.com",
+              "url": "https://www.nfl.com/news/jets-alternate-white-out-helmet-2026-season"
+            },
+            {
+              "headline": "Game 106 Game Day Thread - Seattle Mariners @ Texas Rangers",
+              "source": "Lone Star Ball",
+              "url": "https://www.lonestarball.com/rangers-mlb-game-day-thread/92485/game-106-game-day-thread-seattle-mariners-texas-rangers"
+            },
+            {
+              "headline": "Jets' New White Helmet & Jerseys Revealed in Hype Video, Photo Ahead of 2026 NFL Season",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25456817-jets-new-white-helmet-jerseys-revealed-hype-video-photo-ahead-2026-nfl-season"
+            }
+          ]
+        },
+        {
+          "title": "amari kardashian",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 27 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Khloé Kardashian and Kris Jenner Wish Tristan Thompson’s Brother Amari a Happy Birthday",
+              "source": "People.com",
+              "url": "https://people.com/khloe-kardashian-kris-jenner-celebrate-tristan-thompson-brother-amari-birthday-12028058"
+            },
+            {
+              "headline": "Khloe Kardashian Celebrates Ex Tristan Thompson’s Brother Amari’s 20th Birthday: ‘Our Sweet Angel’",
+              "source": "Us Weekly",
+              "url": "https://www.usmagazine.com/celebrity-news/news/khloe-kardashian-celebrates-tristan-thompsons-brothers-birthday/"
+            },
+            {
+              "headline": "Khloe Kardashian Celebrates Ex Tristan Thompson’s Brother Amari’s 20th Birthday: ‘Our Sweet Angel’",
+              "source": "AOL.com",
+              "url": "https://www.aol.com/articles/khloe-kardashian-celebrates-ex-tristan-225122000.html"
+            }
+          ]
+        },
+        {
+          "title": "tyler soderstrom",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 27 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Tyler Soderstrom's solo home run (17)",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/videos/tyler-soderstroms-solo-home-run-015130237.html"
+            },
+            {
+              "headline": "Red Sox Athletics Baseball",
+              "source": "Journal-News.com",
+              "url": "https://www.journal-news.com/nation-world/red-sox-athletics-baseball/image_178f6b2f-bf4c-57d0-b3c2-f49592d7027c.html"
+            },
+            {
+              "headline": "Tyler Soderstrom hits an RBI single",
+              "source": "ESPN",
+              "url": "https://www.espn.com/video/clip/_/id/49443553/tyler-soderstrom-hits-rbi-single"
+            }
+          ]
+        },
+        {
+          "title": "cooper flagg",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 27 Jul 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Masai Ujiri Has Run Mavericks With Little Input From Mark Cuban",
+              "source": "roundtable.io",
+              "url": "https://roundtable.io/sports/nba/mavericks/news/masai-ujiri-has-run-mavericks-with-little-input-from-mark-cuban"
+            },
+            {
+              "headline": "Masai Ujiri isn’t messing around with Mavericks",
+              "source": "Mavs Moneyball",
+              "url": "https://www.mavsmoneyball.com/mavericks-news/61134/masai-ujiri-isnt-messing-around-with-mavericks"
+            },
+            {
+              "headline": "Pistons Proposed to Land Stephen Curry in Eye-Popping 3-Team Trade for 4 Stars",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/pistons-proposed-land-stephen-curry-003311392.html"
+            }
+          ]
+        },
+        {
+          "title": "mindy kaling",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 27 Jul 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Mindy Kaling Swears by This Drugstore Face Cleanser to Control Oily Skin — And It’s Only $17",
+              "source": "Yahoo",
+              "url": "https://shopping.yahoo.com/beauty/skincare/articles/mindy-kaling-swears-drugstore-face-213022389.html"
+            },
+            {
+              "headline": "Mindy Kaling Swears by This Drugstore Face Cleanser to Control Oily Skin — And It’s Only $17",
+              "source": "AOL.com",
+              "url": "https://www.aol.com/articles/mindy-kaling-swears-drugstore-face-213022000.html"
+            }
+          ]
+        }
+      ],
       "news": {
-        "artificial intelligence": [
+        "AI India": [
           {
-            "title": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans",
+            "title": "Japan courts India, Malaysia to escape US-China AI duopoly - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Sat, 25 Jul 2026 04:57:39 GMT"
+          },
+          {
+            "title": "The hidden cost of hosting the world’s AI infrastructure in India - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Sat, 25 Jul 2026 23:23:16 GMT"
+          },
+          {
+            "title": "How PR lessons from Boston University and AI helped Abhijeet Dipke power the CJP movement | India News - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 27 Jul 2026 14:34:41 GMT"
+          },
+          {
+            "title": "'Aw Shit': How One Marine Colonel Forced AI Into America's Wars, And What Project Maven Reveals About India - Swarajya",
+            "source": "Swarajya",
+            "pub_date": "Sat, 25 Jul 2026 05:45:15 GMT"
+          },
+          {
+            "title": "India’s workers are training AI robots to take their jobs - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Thu, 11 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "India's TCS partners with Anthropic to drive enterprise AI scaling - Reuters",
+            "source": "Reuters",
+            "pub_date": "Wed, 10 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Inside India newsletter: Hollywood is debating AI. India's filmmakers are embracing it - CNBC",
             "source": "CNBC",
-            "url": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html"
+            "pub_date": "Wed, 10 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "Nvidia weighs US$250B backstop for OpenAI's Ohio data center",
-            "source": "DigiTimes",
-            "url": "https://www.digitimes.com/news/a20260727VL209/nvidia-openai-data-center-infrastructure-finance.html"
+            "title": "Meta Partners With Reliance on AI-Enabled Data Center in India - Meta Store",
+            "source": "Meta Store",
+            "pub_date": "Tue, 09 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "Nvidia in talks to back OpenAI Ohio data center with $250 billion",
-            "source": "Quartz",
-            "url": "https://qz.com/nvidia-openai-ohio-data-center-financing-072726"
+            "title": "India Is Moving Fast to Catch Up in A.I. A Coastal City Fears the Fallout. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Thu, 16 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "China's Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems",
-            "source": "VentureBeat",
-            "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"
+            "title": "Deepening our commitment to India’s AI ambition - blog.google",
+            "source": "blog.google",
+            "pub_date": "Tue, 14 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark — Moonshot AI delivers largest open-weight AI model ever",
-            "source": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+            "title": "India’s DPI export strategy evolves beyond identity and payments to AI - Biometric Update",
+            "source": "Biometric Update",
+            "pub_date": "Mon, 27 Jul 2026 22:03:00 GMT"
+          },
+          {
+            "title": "OpenAI gains upper hand in India’s first major AI copyright dispute - World IP Review",
+            "source": "World IP Review",
+            "pub_date": "Mon, 27 Jul 2026 23:26:15 GMT"
+          },
+          {
+            "title": "India's Coforge secures over $230 million AI transformation contract with European client - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 24 Jul 2026 05:19:00 GMT"
+          },
+          {
+            "title": "Modi faces challenge from activists over AI surveillance at India youth protest - The Japan Times",
+            "source": "The Japan Times",
+            "pub_date": "Tue, 28 Jul 2026 00:46:00 GMT"
+          },
+          {
+            "title": "US firms training AI using Chinese examples: Beijing - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 28 Jul 2026 01:28:00 GMT"
+          },
+          {
+            "title": "Shop-floor AI drives Zebra’s India plans - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Tue, 28 Jul 2026 00:31:00 GMT"
+          },
+          {
+            "title": "Two Indian American Duke researchers selected for federal AI research program - The American Bazaar",
+            "source": "The American Bazaar",
+            "pub_date": "Mon, 27 Jul 2026 09:25:54 GMT"
+          },
+          {
+            "title": "Catching up in the AI race? India gets its second AI unicorn in a month - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 16 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Dassault Aviation (ENXTPA:AM) Advances India Rafale Deal And Tests AI Warfare System - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Sat, 25 Jul 2026 19:09:28 GMT"
+          },
+          {
+            "title": "India's 'cockroach' protests | Andy Burnham's policy 'pause' | Saudi deal upended | AI gone rogue - Channel 4 News | Substack",
+            "source": "Channel 4 News | Substack",
+            "pub_date": "Fri, 24 Jul 2026 14:58:33 GMT"
+          },
+          {
+            "title": "OpenAI ruling shifts India's AI copyright fight from training to outputs - MLex",
+            "source": "MLex",
+            "pub_date": "Mon, 27 Jul 2026 06:31:00 GMT"
+          },
+          {
+            "title": "Nvidia is making an Open Secure AI alliance, OpenAI and Anthropic are not joining it - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 27 Jul 2026 13:20:12 GMT"
+          },
+          {
+            "title": "Google AI Cash Burn China Nuclear Boom Japan Bonds India Brain Drain - YouTube",
+            "source": "YouTube",
+            "pub_date": "Tue, 28 Jul 2026 01:00:13 GMT"
+          },
+          {
+            "title": "Foxconn drops VMware, adopts hyperconverged upstart Arcfra for workloads including AI - The Register",
+            "source": "The Register",
+            "pub_date": "Mon, 27 Jul 2026 00:07:27 GMT"
+          },
+          {
+            "title": "Trump's Official Says US, India Expanding Defence, Civil Nuclear Cooperation With AI Push - News18",
+            "source": "News18",
+            "pub_date": "Mon, 27 Jul 2026 23:55:00 GMT"
           }
         ],
-        "big tech": [
+        "new AI model": [
           {
-            "title": "Google Discloses $94 Billion in SpaceX Shares Following IPO",
-            "source": "Bloomberg",
-            "url": "https://www.bloomberg.com/news/articles/2026-07-23/google-says-it-holds-94-billion-in-spacex-shares-after-ipo"
+            "title": "Chinese A.I. Start-Up Shows the World What It Has Built - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Tue, 28 Jul 2026 01:10:34 GMT"
           },
           {
-            "title": "Google discloses $94.1 billion SpaceX stake in Q2 filing",
-            "source": "Quartz",
-            "url": "https://qz.com/google-spacex-stake-94-billion-quarterly-filing-072326"
-          },
-          {
-            "title": "Alphabet's Stake in SpaceX Just Swelled to $94.1 Billion, and Its Position in Anthropic Is Worth Even More",
-            "source": "The Motley Fool",
-            "url": "https://www.fool.com/investing/2026/07/27/googl-stake-spacex-941-billion-anthropic-even-more/"
-          },
-          {
-            "title": "Microsoft prioritizes internal AI over Azure customer capacity due to compute shortage",
-            "source": "BuildFastWithAI roundup",
-            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
-          }
-        ],
-        "ai safety": [
-          {
-            "title": "Hugging Face CEO demands full breach logs and $100M compute commitment from OpenAI after autonomous breach",
-            "source": "BuildFastWithAI roundup",
-            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
-          },
-          {
-            "title": "OpenAI cyber models broke out of training environment to hack Hugging Face",
+            "title": "Anthropic's new AI model rivals Fable 5 and is cheaper as businesses fret about costs - CNBC",
             "source": "CNBC",
-            "url": "https://www.cnbc.com/2026/07/22/open-ai-cyber-models-hack-hugging-face.html"
+            "pub_date": "Fri, 24 Jul 2026 17:00:01 GMT"
+          },
+          {
+            "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber - blog.google",
+            "source": "blog.google",
+            "pub_date": "Tue, 21 Jul 2026 15:29:15 GMT"
+          },
+          {
+            "title": "Introducing Muse Spark 1.1 - AI at Meta",
+            "source": "AI at Meta",
+            "pub_date": "Thu, 09 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models - MacRumors",
+            "source": "MacRumors",
+            "pub_date": "Mon, 08 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Anthropic Releases New ‘Mythos-Class’ Model to General Public With Guardrails - WSJ",
+            "source": "WSJ",
+            "pub_date": "Tue, 09 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Alibaba previews Qwen3.8, claiming its strength trails only Anthropic’s Fable 5 - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Sun, 19 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI is launching new corporate software that takes it beyond the AI model war - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 22 Jul 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Wed, 15 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Alphabet's Google developing new chip for AI model, stock jumps - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 20 Jul 2026 20:33:42 GMT"
+          },
+          {
+            "title": "Rethinking security for the age of AI - The Official Microsoft Blog",
+            "source": "The Official Microsoft Blog",
+            "pub_date": "Mon, 27 Jul 2026 16:45:10 GMT"
+          },
+          {
+            "title": "Cheaper, open and intelligent: Chinese AI models gain ground, as they make inroads in the US - ABC News - Breaking News, Latest News and Videos",
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "pub_date": "Mon, 27 Jul 2026 19:34:54 GMT"
+          },
+          {
+            "title": "Soil carbon effectively measured by new, efficient AI model - Phys.org",
+            "source": "Phys.org",
+            "pub_date": "Mon, 27 Jul 2026 20:00:06 GMT"
+          },
+          {
+            "title": "NIST unveils new AI evaluation platform - Nextgov/FCW",
+            "source": "Nextgov/FCW",
+            "pub_date": "Mon, 27 Jul 2026 20:56:00 GMT"
+          },
+          {
+            "title": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security - NVIDIA Blog",
+            "source": "NVIDIA Blog",
+            "pub_date": "Mon, 27 Jul 2026 09:06:58 GMT"
+          },
+          {
+            "title": "Microsoft escalates the AI security race with ‘Project Perception’ and a new in-house model - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Mon, 27 Jul 2026 19:56:03 GMT"
+          },
+          {
+            "title": "OpenAI CEO to push for new AI model approval - WFAA",
+            "source": "WFAA",
+            "pub_date": "Mon, 27 Jul 2026 21:59:00 GMT"
+          },
+          {
+            "title": "New Method Significantly Boosts AI Speed, Energy Efficiency on Existing Hardware - UC Davis College of Engineering",
+            "source": "UC Davis College of Engineering",
+            "pub_date": "Mon, 27 Jul 2026 17:48:09 GMT"
+          },
+          {
+            "title": "Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 27 Jul 2026 18:32:11 GMT"
+          },
+          {
+            "title": "Microsoft’s Israeli cyber team helps build the company’s next-generation AI defense system - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 27 Jul 2026 18:40:00 GMT"
+          },
+          {
+            "title": "Breakthroughs in Chinese AI models threaten U.S. lead in tech race - PBS",
+            "source": "PBS",
+            "pub_date": "Wed, 22 Jul 2026 22:35:28 GMT"
+          },
+          {
+            "title": "China's Moonshot, Z.AI, and DeepSeek are challenging U.S. AI labs—and beating them on cost - Fortune",
+            "source": "Fortune",
+            "pub_date": "Sun, 26 Jul 2026 21:00:00 GMT"
+          },
+          {
+            "title": "Microsoft wants AI agents fixing bugs before hackers find them - Axios",
+            "source": "Axios",
+            "pub_date": "Mon, 27 Jul 2026 18:55:35 GMT"
+          },
+          {
+            "title": "Microsoft Unveils A.I. Cybersecurity Tools - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 27 Jul 2026 16:51:15 GMT"
+          },
+          {
+            "title": "Anthropic CEO Dario Amodei says AI company isn't advocating for ban of open-weight models - CNBC",
+            "source": "CNBC",
+            "pub_date": "Mon, 27 Jul 2026 23:42:46 GMT"
           }
         ]
       },
-      "autocomplete": {}
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "ai mode",
+          "air force portal",
+          "ai checker",
+          "airpods",
+          "airport golf course",
+          "air quality map",
+          "air conditioner"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt image generator",
+          "chatgpt down",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt work",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phone line deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
     }
   },
   "hacker_news": [
     {
-      "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake",
-      "url": "https://news.ycombinator.com/item?id=49057574",
-      "note": "front page rank 9, points unavailable"
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "points": 550,
+      "comments": 774,
+      "created_at": "2026-07-27T22:03:49Z"
     },
     {
-      "title": "Htmx 4.0, the first JavaScript library to release exclusively on the Game Boy",
-      "url": "https://swag.htmx.org",
-      "note": "front page rank 4"
+      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
+      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
+      "points": 282,
+      "comments": 105,
+      "created_at": "2026-07-27T18:15:35Z"
     },
     {
-      "title": "Decker, a platform that builds on the legacy of Hypercard and classic macOS",
-      "url": "https://beyondloom.com",
-      "note": "front page rank 1"
+      "title": "Netflix employee fired for sharing personal details in retreat trust exercise",
+      "url": "https://nypost.com/2026/07/26/us-news/netflix-exec-goes-ballistic-after-being-fired-for-stunning-trust-exercise-confession-at-retreat-suit/",
+      "points": 195,
+      "comments": 129,
+      "created_at": "2026-07-27T23:21:37Z"
     },
     {
-      "title": "Kill The Cookie Banner",
-      "url": "https://killthecookiebanner.eu",
-      "note": "front page rank 5"
+      "title": "Paged Out #9 [pdf]",
+      "url": "https://pagedout.institute/download/PagedOut_009.pdf",
+      "points": 188,
+      "comments": 22,
+      "created_at": "2026-07-27T14:22:34Z"
     },
     {
-      "title": "Go Analysis Framework: modular static analysis by go team",
-      "url": "https://pkg.go.dev",
-      "note": "front page rank 8"
+      "title": "A missing underscore sent innocent man to prison for 18 months",
+      "url": "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/",
+      "points": 184,
+      "comments": 92,
+      "created_at": "2026-07-27T22:10:15Z"
+    },
+    {
+      "title": "Watching Go's new garbage collector move through the heap",
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "points": 180,
+      "comments": 17,
+      "created_at": "2026-07-25T07:55:19Z"
+    },
+    {
+      "title": "The computer that helped win World War II",
+      "url": "https://spectrum.ieee.org/colossus-computer-ieee-milestone",
+      "points": 179,
+      "comments": 72,
+      "created_at": "2026-07-22T19:40:44Z"
+    },
+    {
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "points": 166,
+      "comments": 40,
+      "created_at": "2026-07-27T22:37:52Z"
+    },
+    {
+      "title": "Glue bonds to nonstick surfaces and wipes clean with ethanol",
+      "url": "https://cen.acs.org/materials/adhesives/glue-bonds-nonstick-surfaces-wipes-clean/104/web/2026/07",
+      "points": 157,
+      "comments": 89,
+      "created_at": "2026-07-23T13:08:52Z"
+    },
+    {
+      "title": "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
+      "url": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
+      "points": 140,
+      "comments": 46,
+      "created_at": "2026-07-27T15:08:16Z"
+    },
+    {
+      "title": "Self-contained highly-portable Python distributions",
+      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+      "points": 123,
+      "comments": 27,
+      "created_at": "2026-07-27T18:43:31Z"
+    },
+    {
+      "title": "Astronauts describe persistent 'observer' sensation after 6 month missions",
+      "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
+      "points": 104,
+      "comments": 46,
+      "created_at": "2026-07-27T23:19:19Z"
+    },
+    {
+      "title": "Show HN: FeyNoBg – Automatic background removal model and training library",
+      "url": "https://usefeyn.com/blog/feynobg/",
+      "points": 97,
+      "comments": 22,
+      "created_at": "2026-07-27T16:59:08Z"
+    },
+    {
+      "title": "Ray tracing massive amounts of animated geometry using tetrahedral cages",
+      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/",
+      "points": 82,
+      "comments": 10,
+      "created_at": "2026-07-23T13:10:06Z"
+    },
+    {
+      "title": "Securing Services with Rootless Containers",
+      "url": "https://blog.coderspirit.xyz/blog/2026/07/06/securing-services-with-rootless-containers/",
+      "points": 74,
+      "comments": 24,
+      "created_at": "2026-07-23T13:11:30Z"
+    },
+    {
+      "title": "Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals",
+      "url": "https://www.rise-reforming.com",
+      "points": 61,
+      "comments": 25,
+      "created_at": "2026-07-27T19:58:22Z"
+    },
+    {
+      "title": "DConf 2026 in London",
+      "url": "https://dconf.org/2026/index.html",
+      "points": 57,
+      "comments": 25,
+      "created_at": "2026-07-27T23:14:19Z"
+    },
+    {
+      "title": "How real are real numbers? (2004)",
+      "url": "https://arxiv.org/abs/math/0411418",
+      "points": 56,
+      "comments": 47,
+      "created_at": "2026-07-27T15:40:17Z"
+    },
+    {
+      "title": "RTX 2080 Ti Memory Upgrade to 22 GB",
+      "url": "https://gpusolutions.net/rbservices/graphics-card-upgrade/",
+      "points": 41,
+      "comments": 24,
+      "created_at": "2026-07-24T20:35:21Z"
+    },
+    {
+      "title": "C/C++ projects packaged for Zig",
+      "url": "https://github.com/allyourcodebase",
+      "points": 33,
+      "comments": 22,
+      "created_at": "2026-07-27T23:09:50Z"
+    },
+    {
+      "title": "Professor's invisible prompt trap catches 32/35 students cheating with AI",
+      "url": "https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html",
+      "points": 92,
+      "comments": 80,
+      "created_at": "2026-07-27T19:46:05Z"
+    },
+    {
+      "title": "Jensen Huang's first post on Twitter is in defense of open access to AI models",
+      "url": "https://www.pcgamer.com/software/ai/jensen-huangs-first-ever-post-on-x-is-in-defense-of-open-access-to-ai-models-alongside-google-openai-and-meta/",
+      "points": 47,
+      "comments": 18,
+      "created_at": "2026-07-27T17:56:20Z"
+    },
+    {
+      "title": "Show HN: FeyNoBg – Automatic background removal model and training library",
+      "url": "https://usefeyn.com/blog/feynobg/",
+      "points": 97,
+      "comments": 22,
+      "created_at": "2026-07-27T16:59:08Z"
+    },
+    {
+      "title": "MAI-Cyber-1-Flash inside MDASH",
+      "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+      "points": 222,
+      "comments": 108,
+      "created_at": "2026-07-27T16:52:22Z"
+    },
+    {
+      "title": "Nvidia's $750B in Deals Reignite Circular AI Fears",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-s-750-billion-deals-revive-fear-of-ai-circular-financing",
+      "points": 80,
+      "comments": 73,
+      "created_at": "2026-07-27T16:02:00Z"
+    },
+    {
+      "title": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
+      "url": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+      "points": 236,
+      "comments": 312,
+      "created_at": "2026-07-27T14:42:41Z"
+    },
+    {
+      "title": "AI companies spend record sums on Washington lobbying",
+      "url": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
+      "points": 257,
+      "comments": 139,
+      "created_at": "2026-07-27T14:07:48Z"
+    },
+    {
+      "title": "We Tested Nonstick Cookware: Coatings Don't Need to Look Worn to Shed Particles",
+      "url": "https://www.rtings.com/air-fryer/learn/research/ptfe-cookware-shedding",
+      "points": 86,
+      "comments": 89,
+      "created_at": "2026-07-27T13:29:12Z"
+    },
+    {
+      "title": "AI companies are shredding rare books",
+      "url": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
+      "points": 745,
+      "comments": 472,
+      "created_at": "2026-07-27T12:32:12Z"
+    },
+    {
+      "title": "How is the Bun rewrite in Rust going?",
+      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "points": 457,
+      "comments": 355,
+      "created_at": "2026-07-27T11:12:26Z"
+    },
+    {
+      "title": "Meta launched a new AI optimism ad set to a song about human extinction",
+      "url": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/",
+      "points": 43,
+      "comments": 16,
+      "created_at": "2026-07-27T08:09:32Z"
+    },
+    {
+      "title": "Show HN: Distill and serve models with frontier quality for half the cost",
+      "url": "https://github.com/experientiallabs/world-model-optimizer",
+      "points": 44,
+      "comments": 21,
+      "created_at": "2026-07-26T23:35:15Z"
+    },
+    {
+      "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+      "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+      "points": 1264,
+      "comments": 1016,
+      "created_at": "2026-07-26T22:21:41Z"
+    },
+    {
+      "title": "This July I Was Fired from Simple AI (A Deeply YC Company)",
+      "url": "https://andys.blog/this-july-i-was-fired-from-simple-ai/",
+      "points": 54,
+      "comments": 171,
+      "created_at": "2026-07-26T16:14:46Z"
+    },
+    {
+      "title": "London Gatwick has launched a robotic airport parking service",
+      "url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/",
+      "points": 288,
+      "comments": 259,
+      "created_at": "2026-07-26T14:40:27Z"
+    },
+    {
+      "title": "The New AI Superpowers: Focus and Followthrough",
+      "url": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
+      "points": 214,
+      "comments": 79,
+      "created_at": "2026-07-26T13:13:03Z"
+    },
+    {
+      "title": "Terence Tao: Mathematics in the Age of AI [pdf]",
+      "url": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+      "points": 157,
+      "comments": 62,
+      "created_at": "2026-07-26T10:32:35Z"
+    },
+    {
+      "title": "What is happening to jobs? Separating AI hype from reality",
+      "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+      "points": 291,
+      "comments": 377,
+      "created_at": "2026-07-25T22:51:10Z"
+    },
+    {
+      "title": "Cloudflare's new AI traffic options for customers",
+      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "points": 193,
+      "comments": 156,
+      "created_at": "2026-07-25T22:50:49Z"
+    },
+    {
+      "title": "'AI Mania Is Eviscerating Global Decision-Making'",
+      "url": "https://daringfireball.net/linked/2026/07/25/ai-mania-nikhil-suresh",
+      "points": 61,
+      "comments": 19,
+      "created_at": "2026-07-25T21:18:06Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 7112021,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 1286405,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 696497,
+      "rank": 3
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 676433,
+      "rank": 4
+    },
+    {
+      "article": "Pralhad_Joshi",
+      "views": 481040,
+      "rank": 5
+    },
+    {
+      "article": ".xyz",
+      "views": 380564,
+      "rank": 6
+    },
+    {
+      "article": "David_Jonsson",
+      "views": 340693,
+      "rank": 7
+    },
+    {
+      "article": "Jackson_Koivun",
+      "views": 279349,
+      "rank": 8
+    },
+    {
+      "article": "Odyssey",
+      "views": 252730,
+      "rank": 9
+    },
+    {
+      "article": "Jana_Nayagan",
+      "views": 145948,
+      "rank": 10
+    },
+    {
+      "article": "Masters_of_the_Universe_(2026_film)",
+      "views": 140883,
+      "rank": 11
+    },
+    {
+      "article": "2026_Commonwealth_Games",
+      "views": 140862,
+      "rank": 12
+    },
+    {
+      "article": "Wikipedia:Historical_archive/Changing_attribution_for_an_edit/Old_log_7",
+      "views": 140416,
+      "rank": 13
+    },
+    {
+      "article": "Christopher_Nolan",
+      "views": 139634,
+      "rank": 14
+    },
+    {
+      "article": "Obsession_(2025_film)",
+      "views": 132947,
+      "rank": 15
+    },
+    {
+      "article": "Wikipedia:Changing_attribution_for_an_edit/Old_log_7",
+      "views": 132189,
+      "rank": 16
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 128790,
+      "rank": 17
+    },
+    {
+      "article": "Dharmendra_Pradhan",
+      "views": 109848,
+      "rank": 18
+    },
+    {
+      "article": "Abhijeet_Dipke",
+      "views": 103964,
+      "rank": 19
+    },
+    {
+      "article": "Shawn_Levy",
+      "views": 102364,
+      "rank": 20
+    },
+    {
+      "article": "Errol_Spence_Jr.",
+      "views": 101274,
+      "rank": 21
+    },
+    {
+      "article": "Trojan_War",
+      "views": 101023,
+      "rank": 22
+    },
+    {
+      "article": "Avatar_Aang:_The_Last_Airbender",
+      "views": 95717,
+      "rank": 23
+    },
+    {
+      "article": "Agamemnon",
+      "views": 95107,
+      "rank": 24
+    },
+    {
+      "article": "List_of_Marvel_Cinematic_Universe_films",
+      "views": 95027,
+      "rank": 25
+    },
+    {
+      "article": "Zendaya",
+      "views": 91400,
+      "rank": 26
+    },
+    {
+      "article": "Ryan_Gosling",
+      "views": 89372,
+      "rank": 27
+    },
+    {
+      "article": "Yan_Diomande",
+      "views": 87572,
+      "rank": 28
+    },
+    {
+      "article": "India_at_the_2026_Commonwealth_Games",
+      "views": 87436,
+      "rank": 29
+    },
+    {
+      "article": "Odysseus",
+      "views": 86891,
+      "rank": 30
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 84929,
+      "rank": 31
+    },
+    {
+      "article": "The_Long_Walk_(2025_film)",
+      "views": 84330,
+      "rank": 32
+    },
+    {
+      "article": "Anthony_Joshua",
+      "views": 83527,
+      "rank": 33
+    },
+    {
+      "article": "2026_Formula_One_World_Championship",
+      "views": 83295,
+      "rank": 34
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 82577,
+      "rank": 35
+    },
+    {
+      "article": "Cockroach_Janta_Party",
+      "views": 81533,
+      "rank": 36
+    },
+    {
+      "article": "Avengers:_Doomsday",
+      "views": 80986,
+      "rank": 37
+    },
+    {
+      "article": "Project_Hail_Mary_(film)",
+      "views": 80705,
+      "rank": 38
+    },
+    {
+      "article": "Nicholas_Galitzine",
+      "views": 79910,
+      "rank": 39
+    },
+    {
+      "article": "Disclosure_Day",
+      "views": 74044,
+      "rank": 40
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 73472,
+      "rank": 41
+    },
+    {
+      "article": "Stella_Lefty",
+      "views": 71568,
+      "rank": 42
+    },
+    {
+      "article": "LeBron_James",
+      "views": 71467,
+      "rank": 43
+    },
+    {
+      "article": "Troy_(film)",
+      "views": 71271,
+      "rank": 44
+    },
+    {
+      "article": "Kristian_Prenga",
+      "views": 71145,
+      "rank": 45
+    },
+    {
+      "article": "Iliad",
+      "views": 70354,
+      "rank": 46
+    },
+    {
+      "article": "XXX_(film_series)",
+      "views": 70311,
+      "rank": 47
+    },
+    {
+      "article": "Andy_Burnham",
+      "views": 68745,
+      "rank": 48
+    },
+    {
+      "article": "Calypso_(mythology)",
+      "views": 68603,
+      "rank": 49
+    },
+    {
+      "article": "Helen_of_Troy",
+      "views": 67172,
+      "rank": 50
     }
   ],
   "outlet_headlines": [
     {
-      "title": "Nvidia in talks to guarantee ~$250B financing for OpenAI 10GW Ohio data center",
-      "outlet": "BuildFastWithAI"
+      "outlet": "TechCrunch",
+      "title": "Anthropic’s Dario Amodei responds: doesn’t oppose open-weight models, but fears Chinese AI"
     },
     {
-      "title": "Moonshot AI releases Kimi K3 open weights: 2.8T parameters, 1.4TB download",
-      "outlet": "BuildFastWithAI"
+      "outlet": "TechCrunch",
+      "title": "Satya Nadella says companies that trust one AI for everything may not survive"
     },
     {
-      "title": "Microsoft rations Azure compute, prioritizes internal AI workloads",
-      "outlet": "BuildFastWithAI"
+      "outlet": "TechCrunch",
+      "title": "Thea Energy lands $20M federal grant to build its magnets for fusion reactors"
     },
     {
-      "title": "DeepSeek V4 at $0.14/$0.28 per million tokens establishes production-ready open options",
-      "outlet": "BuildFastWithAI"
+      "outlet": "TechCrunch",
+      "title": "As rivals chase acquisitions, Peacock bets on bundles through a new deal with YouTube"
     },
     {
-      "title": "White House frontier AI framework expected before August 1",
-      "outlet": "BuildFastWithAI"
+      "outlet": "TechCrunch",
+      "title": "PSA: Your Claude shared chats and Artifacts may have ended up on Google"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple sued after alleged App Store crypto scam cost users $1.8M"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Amazon’s new satellite network for mobile phones could turn up the heat on SpaceX"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Antares raises $470M to build nuclear reactors for the US military"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s Hugging Face breach has reignited the debate over alignment and control"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Threads users can now chat with Meta AI in their DMs"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google’s AI search is rapidly becoming the default, new data shows"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Power up your AI infrastructure! A first look at the Smart Systems Stage agenda at TechCrunch Disrupt 2026"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "This $9 key physically locks your most addictive apps"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "X Money is launching in the US starting today"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Razer’s analog Huntsman V3 Pro is over 20 percent off"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Xbox’s huge outage even blocked games on disc"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Nanoleaf&#8217;s colorful pegboard and shelf kit is half off"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Why China is giving away its best AI models"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "YouTube Premium will include Peacock starting next year"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Amazon&#8217;s trying to launch a global satellite cellphone network in 2028"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "This is my new favorite laptop, but thanks to RAMageddon the price already went up by $800"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Tariffs didn’t bring manufacturing jobs back to the US"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Samsung’s 27-inch QD-OLED gaming monitor is priced right at $299.99"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Microsoft unveils AI security tools it says outperform competing platforms"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump admin exempts SpaceX's Starlink from FCC ban on foreign-made routers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Epic diarrhea outbreak has 40% of Americans avoiding fruits and veggies"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "iOS and macOS 26.6 arrive today, paving the way for iOS and macOS 27"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A missing underscore sent innocent man to prison for 18 months"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "“Google and Reddit do not own the Internet,\" web scraper says after court win"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "5th Circuit blocks Texas law requiring websites to filter \"harmful\" speech"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Verizon touts $1B dark fiber deal for Google data centers as first of many"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Experts warn current Starship heat shield tech is a \"dead end\" for rapid reuse"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "ChatGPT starts blocking direct requests to copy an author's style"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Activist charged with felony after giving border agent \"duress code\" that wiped his phone"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Framework Laptop 13 Pro review: Much better battery, much worse price"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "What public health professionals can learn from anti-vaccine storytelling"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Artist sues AI meme generator for selling deeply personal comic as ad template"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "First teaser for Apple TV's Neuromancer debuts at SDCC"
     }
-  ],
-  "wikipedia_top": []
+  ]
 }
