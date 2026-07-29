@@ -1,0 +1,177 @@
+{
+  "date": "2026-07-29",
+  "candidates": [
+    {
+      "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 920,
+          "comments": 713,
+          "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
+        }
+      ],
+      "score": 0.592,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Scriptc by Vercel: TypeScript-to-Native compiler, no JavaScript engine in binary",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 218,
+          "comments": 109,
+          "url": "https://github.com/vercel-labs"
+        }
+      ],
+      "score": 0.5928,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Chinese chipmaker shares surge 470%",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9817743262622192,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 110,
+          "comments": 96,
+          "url": "https://www.bbc.com/news/articles/chinese-chipmaker-cxmt-debut"
+        }
+      ],
+      "score": 0.5698,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI companies are shredding rare books",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8652916185574971,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 56,
+          "comments": 8,
+          "url": "https://xcancel.com/"
+        }
+      ],
+      "score": 0.5473,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Kimi-K3 Releases on HuggingFace 7/27",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 527,
+          "comments": 241,
+          "url": "https://huggingface.co/moonshotai"
+        }
+      ],
+      "score": 0.5346,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Measuring developer productivity with the DX Core 4",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6471205646114242,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 30,
+          "comments": 25,
+          "url": "https://getdx.com"
+        }
+      ],
+      "score": 0.4748,
+      "topic_fit": 0.78,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Elevated errors on Claude Opus 5",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6471205646114242,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 30,
+          "comments": 14,
+          "url": "https://claude.com/status"
+        }
+      ],
+      "score": 0.4611,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google Chrome Arrives on ARM64 Linux, Widevine DRM Included",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.44704267855941265,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 13,
+          "comments": 4,
+          "url": "https://www.omgubuntu.co.uk"
+        }
+      ],
+      "score": 0.4602,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 920,
+        "comments": 713,
+        "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
+      }
+    ],
+    "score": 0.592,
+    "topic_fit": 0.84,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

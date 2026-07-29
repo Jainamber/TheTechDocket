@@ -1,0 +1,176 @@
+{
+  "date": "2026-07-29",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss_IN": "blocked (WebFetch provenance unavailable in unattended session)",
+    "trends_rss_US": "blocked (WebFetch provenance unavailable in unattended session)",
+    "hn": "ok (via news.ycombinator.com front page fetch)"
+  },
+  "markets": {
+    "IN": {
+      "trends_rss": [],
+      "news": {
+        "tech-india": [
+          {
+            "headline": "TCS, Infosys, Wipro, HCL Tech: Top 5 IT stocks' m-cap slips vs RIL as AI disruption bites",
+            "source": "BusinessToday",
+            "url": "https://www.businesstoday.in/markets/stocks/story/indian-it-stocks-fall-tcs-infosys-wipro-hcl-tech-reliance-market-cap-ai-impact-540988-2026-07-04"
+          },
+          {
+            "headline": "India deepens semiconductor and AI ambitions as local ecosystem expands beyond fabs and assembly",
+            "source": "DigiTimes",
+            "url": "https://www.digitimes.com/news/a20260717VL205/india-roundup-applied-materials-electronics-equipment-hp-subsidies.html"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "trends_rss": [],
+      "news": {
+        "ai": [
+          {
+            "headline": "Chipmaker CXMT's 466% market debut surge makes it the most valuable China-listed company",
+            "source": "CNBC",
+            "url": "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html"
+          },
+          {
+            "headline": "US prosecutors charge Atlanta man after GrapheneOS phone wipes itself during airport search",
+            "source": "TechSpot",
+            "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
+          },
+          {
+            "headline": "US accuses American of allegedly wiping his phone using a 'duress' password during border search",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/24/us-accuses-american-of-allegedly-wiping-his-phone-using-a-duress-password-during-border-search/"
+          },
+          {
+            "headline": "CBP Phone Searches: US Citizens' Rights as Man Charged Over Device Wiping",
+            "source": "Newsweek",
+            "url": "https://www.newsweek.com/cbp-phone-searches-us-citizens-rights-man-charged-device-wiping-12251645"
+          },
+          {
+            "headline": "Nvidia negotiating ~$250B backstop for OpenAI's 10-GW Ohio data center; full campus could cost $500B+",
+            "source": "BuildFastWithAI digest 2026-07-27",
+            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+          },
+          {
+            "headline": "Open Secure AI Alliance: Nvidia-led, 30+ companies (Microsoft, IBM, SpaceX, Cloudflare, Hugging Face); OpenAI, Google, Anthropic absent",
+            "source": "unrot.co digest 2026-07-28",
+            "url": "https://unrot.co/blogs/today-top-10-ai-news-july-28-2026"
+          },
+          {
+            "headline": "Moonshot AI releases Kimi K3 open weights (2.8T params, ~1.4TB) under modified MIT license",
+            "source": "BuildFastWithAI digest 2026-07-27",
+            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+          },
+          {
+            "headline": "White House expected to announce frontier AI rules before August 1",
+            "source": "unrot.co digest 2026-07-28",
+            "url": "https://unrot.co/blogs/today-top-10-ai-news-july-28-2026"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Kimi-K3 Releases on HuggingFace 7/27",
+      "points": 527,
+      "comments": 241,
+      "created_at": "2026-07-29T00:30:00Z",
+      "url": "https://huggingface.co/moonshotai"
+    },
+    {
+      "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+      "points": 920,
+      "comments": 713,
+      "created_at": "2026-07-28T16:30:00Z",
+      "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
+    },
+    {
+      "title": "Chinese chipmaker shares surge 470%",
+      "points": 110,
+      "comments": 96,
+      "created_at": "2026-07-29T03:30:00Z",
+      "url": "https://www.bbc.com/news/articles/chinese-chipmaker-cxmt-debut"
+    },
+    {
+      "title": "AI companies are shredding rare books",
+      "points": 56,
+      "comments": 8,
+      "created_at": "2026-07-29T06:00:00Z",
+      "url": "https://xcancel.com/"
+    },
+    {
+      "title": "Elevated errors on Claude Opus 5",
+      "points": 30,
+      "comments": 14,
+      "created_at": "2026-07-29T02:30:00Z",
+      "url": "https://claude.com/status"
+    },
+    {
+      "title": "Scriptc by Vercel: TypeScript-to-Native compiler, no JavaScript engine in binary",
+      "points": 218,
+      "comments": 109,
+      "created_at": "2026-07-28T16:30:00Z",
+      "url": "https://github.com/vercel-labs"
+    },
+    {
+      "title": "How is the Bun Rewrite in Rust going?",
+      "points": 127,
+      "comments": 68,
+      "created_at": "2026-07-29T05:30:00Z",
+      "url": "https://lockwood.dev"
+    },
+    {
+      "title": "Google Chrome Arrives on ARM64 Linux, Widevine DRM Included",
+      "points": 13,
+      "comments": 4,
+      "created_at": "2026-07-29T05:30:00Z",
+      "url": "https://www.omgubuntu.co.uk"
+    },
+    {
+      "title": "Measuring developer productivity with the DX Core 4",
+      "points": 30,
+      "comments": 25,
+      "created_at": "2026-07-28T23:30:00Z",
+      "url": "https://getdx.com"
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "headline": "Hugging Face CEO demands full activity logs + $100M compute commitment from OpenAI after autonomous-model breach (July 11-13)",
+      "source": "BuildFastWithAI digest 2026-07-27",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+    },
+    {
+      "headline": "Nvidia open letter against AI model restrictions gets 50 signatures in a day incl. OpenAI and Google; Amazon, Anthropic abstain",
+      "source": "unrot.co digest 2026-07-28",
+      "url": "https://unrot.co/blogs/today-top-10-ai-news-july-28-2026"
+    },
+    {
+      "headline": "Some shared Claude chats indexed by Google/Bing (robots.txt without noindex)",
+      "source": "unrot.co digest 2026-07-28",
+      "url": "https://unrot.co/blogs/today-top-10-ai-news-july-28-2026"
+    },
+    {
+      "headline": "Microsoft reportedly rationing Azure compute, prioritizing internal AI products",
+      "source": "BuildFastWithAI digest 2026-07-27",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
+    },
+    {
+      "headline": "GrapheneOS duress PIN could land a man in prison",
+      "source": "Android Authority",
+      "url": "https://www.androidauthority.com/grapheneos-duress-pin-us-prosecution-3691271/"
+    },
+    {
+      "headline": "CXMT becomes mainland China's most valuable listed firm on debut",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/chipmaker-cxmt-becomes-mainland-chinas-042559033.html"
+    }
+  ],
+  "wikipedia_top": []
+}
