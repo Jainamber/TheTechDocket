@@ -1,53 +1,7 @@
 {
-  "generated_at": "2026-07-28T09:01:23.414817+05:30",
-  "page_stats": {
-    "spot-ai-generated-images-videos": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 19
-    },
-    "amd-anthropic-deal-mi450": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 3
-    },
-    "eu-google-android-ai-assistants": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 3
-    },
-    "codex-context-window-cut": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 3
-    },
-    "context-windows-explained": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "ai-voice-clone-scam-protection": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "qualcomm-snapdragon-price-hike": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "real-cost-of-running-ai": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    }
-  },
-  "hub_performance": {
-    "explainers": 21,
-    "hardware": 5,
-    "policy": 3,
-    "ai-tools": 3
-  },
+  "generated_at": "2026-07-29T09:05:06.430610+05:30",
+  "page_stats": {},
+  "hub_performance": {},
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
