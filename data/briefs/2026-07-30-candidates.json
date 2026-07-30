@@ -1,0 +1,248 @@
+{
+  "date": "2026-07-30",
+  "candidates": [
+    {
+      "title": "AI creators ask for slowdown; 1,100+ employees from OpenAI, Google and Meta warn of 'real risk'",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "AI India",
+          "outlet": "Business Today"
+        }
+      ],
+      "score": 0.416,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "GPTZero Identifies AI Hallucinations in PwC Reports",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "AI hallucinations consulting",
+          "outlet": "Financial Times (via llm-stats digest)"
+        }
+      ],
+      "score": 0.4153,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "White House reportedly approaches final framework for reviewing frontier models",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "new AI model",
+          "outlet": "DigiTimes"
+        }
+      ],
+      "score": 0.4054,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Semicon 2.0 Approved: India's Biggest Push Yet for Chips and Smartphone Manufacturing",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "semiconductor India",
+          "outlet": "TechnoSports"
+        }
+      ],
+      "score": 0.4045,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "PwC published 'thought leadership' reports marred by AI hallucinations",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "AI hallucinations consulting",
+          "outlet": "The Irish Times"
+        }
+      ],
+      "score": 0.4009,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI discloses Hugging Face breach details: rogue agent used credentials from four third-party accounts",
+      "sources": [
+        "outlet:Wired"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Wired",
+          "outlet": "Wired"
+        }
+      ],
+      "score": 0.3917,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic faces Silicon Valley backlash over competitive tactics and safety guardrails",
+      "sources": [
+        "outlet:Wall Street Journal"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Wall Street Journal",
+          "outlet": "Wall Street Journal"
+        }
+      ],
+      "score": 0.3895,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "ZuriQ raises $25.5M seed for trapped-ion quantum processors",
+      "sources": [
+        "outlet:Tech.eu"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tech.eu",
+          "outlet": "Tech.eu"
+        }
+      ],
+      "score": 0.3889,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Employees at the world's biggest AI companies are calling for a slowdown in AI development",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "AI slowdown letter",
+          "outlet": "CNN"
+        }
+      ],
+      "score": 0.3861,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+      "sources": [
+        "outlet:TechCrunch"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.3789,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI releases Codex Security CLI, an open-source security scanning tool",
+      "sources": [
+        "outlet:OpenAI (primary)"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:OpenAI (primary)",
+          "outlet": "OpenAI (primary)"
+        }
+      ],
+      "score": 0.3778,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Coordinated cyberattack targets 30+ Minnesota water systems as one plant goes offline",
+      "sources": [
+        "outlet:The Hacker News"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:The Hacker News",
+          "outlet": "The Hacker News"
+        }
+      ],
+      "score": 0.376,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "AI creators ask for slowdown; 1,100+ employees from OpenAI, Google and Meta warn of 'real risk'",
+    "sources": [
+      "gnews:IN"
+    ],
+    "geos": [
+      "IN"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "AI India",
+        "outlet": "Business Today"
+      }
+    ],
+    "score": 0.416,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-30",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "trends_rss_IN": "blocked (WebFetch provenance gate in scheduled session)",
+    "trends_rss_US": "blocked (WebFetch provenance gate in scheduled session)",
+    "hn": "blocked (WebFetch provenance gate in scheduled session)",
+    "autocomplete": "blocked",
+    "websearch": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [],
+      "news": {
+        "AI India": [
+          {"title": "AI creators ask for slowdown; 1,100+ employees from OpenAI, Google and Meta warn of 'real risk'", "source": "Business Today", "pub_date": "Wed, 29 Jul 2026", "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/ai-creators-ask-for-slowdown-1100-employees-from-openai-google-and-meta-warn-of-real-risk-545943-2026-07-29"}
+        ],
+        "semiconductor India": [
+          {"title": "Semicon 2.0 Approved: India's Biggest Push Yet for Chips and Smartphone Manufacturing", "source": "TechnoSports", "pub_date": "mid-July 2026 (not fresh)", "url": "https://technosports.co.in/semicon-2-0-approved-indias-biggest-push/"}
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "AI hallucinations consulting": [
+          {"title": "PwC published 'thought leadership' reports marred by AI hallucinations", "source": "The Irish Times", "pub_date": "Wed, 29 Jul 2026", "url": "https://www.irishtimes.com/business/2026/07/29/pwc-published-thought-leadership-reports-marred-by-ai-hallucinations/"},
+          {"title": "PwC thought leadership reports '100 per cent AI generated'", "source": "City A.M.", "pub_date": "Wed, 29 Jul 2026", "url": "https://www.cityam.com/pwc-thought-leadership-reports-found-to-contain-ai-hallucinations/"},
+          {"title": "GPTZero Identifies AI Hallucinations in PwC Reports", "source": "Financial Times (via llm-stats digest)", "pub_date": "Wed, 29 Jul 2026", "url": "https://llm-stats.com/ai-news"}
+        ],
+        "AI slowdown letter": [
+          {"title": "Employees at the world's biggest AI companies are calling for a slowdown in AI development", "source": "CNN", "pub_date": "Tue, 28 Jul 2026", "url": "https://www.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter"},
+          {"title": "1,134 AI staff ask the US for a way to pace AI", "source": "The Next Web", "pub_date": "Tue, 28 Jul 2026", "url": "https://thenextweb.com/news/pacing-the-frontier-ai-employees-letter-us-government"}
+        ],
+        "new AI model": [
+          {"title": "White House reportedly approaches final framework for reviewing frontier models", "source": "DigiTimes", "pub_date": "Wed, 29 Jul 2026", "url": "https://www.digitimes.com/news/a20260729VL219/government-anthropic-openai-licensing-cybersecurity.html"},
+          {"title": "Zuckerberg opposes ban on Chinese AI models in the US", "source": "Financial Times (via llm-stats digest)", "pub_date": "Tue, 28 Jul 2026", "url": "https://llm-stats.com/ai-news"}
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [],
+  "outlet_headlines": [
+    {"outlet": "GPTZero (primary)", "title": "Chasing the Hallucinations: PwC report hallucinates product and government customers", "url": "https://gptzero.me/news/investigations-pwc/"},
+    {"outlet": "The Next Web", "title": "PwC is the latest Big Four firm caught publishing AI slop", "url": "https://thenextweb.com/news/pwc-gptzero-ai-hallucinations-big-four-reports"},
+    {"outlet": "The Register", "title": "KPMG's AI report becomes an accidental demo of AI hallucinations", "url": "https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029"},
+    {"outlet": "TechTimes", "title": "Over 1,100 AI Employees Petition for US-Backed Pacing Mechanism After OpenAI's Sandbox Escape", "url": "https://www.techtimes.com/articles/321905/20260728/over-1100-ai-employees-petition-us-backed-pacing-mechanism-after-openais-sandbox-escape.htm"},
+    {"outlet": "OpenAI (primary)", "title": "OpenAI releases Codex Security CLI, an open-source security scanning tool", "url": "https://openai.com"},
+    {"outlet": "TechCrunch", "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents", "url": "https://techcrunch.com"},
+    {"outlet": "Wired", "title": "OpenAI discloses Hugging Face breach details: rogue agent used credentials from four third-party accounts", "url": "https://wired.com"},
+    {"outlet": "Wall Street Journal", "title": "Anthropic faces Silicon Valley backlash over competitive tactics and safety guardrails", "url": "https://wsj.com"},
+    {"outlet": "CBS News", "title": "xAI sues Minnesota attorney general over synthetic intimate imagery law", "url": "https://cbsnews.com"},
+    {"outlet": "Tech.eu", "title": "ZuriQ raises $25.5M seed for trapped-ion quantum processors", "url": "https://tech.eu"},
+    {"outlet": "The Hacker News", "title": "Coordinated cyberattack targets 30+ Minnesota water systems as one plant goes offline", "url": "https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html"}
+  ],
+  "wikipedia_top": []
+}
