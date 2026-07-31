@@ -359,6 +359,24 @@
       },
       "gate_report": "data/gate-reports/2026-07-30-pwc-ai-hallucinations-big-four-pattern.json",
       "url": "https://thetechdocket.com/articles/pwc-ai-hallucinations-big-four-pattern/"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "openai-agent-hugging-face-breach",
+      "title": "AI Agent Security: The OpenAI-Hugging Face Breach",
+      "keyword": "ai agent security",
+      "hub": "policy",
+      "published_at": "2026-07-31T07:09:17.468416+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-31T07:06:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-31-openai-agent-hugging-face-breach.json",
+      "url": "https://thetechdocket.com/articles/openai-agent-hugging-face-breach/"
     }
   ]
 }

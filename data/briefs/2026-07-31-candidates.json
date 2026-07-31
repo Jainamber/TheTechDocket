@@ -1,0 +1,270 @@
+{
+  "date": "2026-07-31",
+  "candidates": [
+    {
+      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "AI news July 31 2026",
+          "outlet": "Hugging Face (via Radical Data Science bulletin)"
+        },
+        {
+          "source": "hn",
+          "points": 436,
+          "comments": 235,
+          "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+        }
+      ],
+      "score": 0.7362,
+      "topic_fit": 0.9,
+      "corroboration": 0.5
+    },
+    {
+      "title": "AI's top startups are barely publishing their research",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 561,
+          "comments": 292,
+          "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research"
+        }
+      ],
+      "score": 0.6212,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "LLM Honeypot",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9875980400142568,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 342,
+          "comments": 94,
+          "url": "https://llm2human.pages.dev/"
+        }
+      ],
+      "score": 0.5683,
+      "topic_fit": 0.66,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google will expand age checks on Android worldwide till the end of the year",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8476383967538437,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 197,
+          "comments": 226,
+          "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html"
+        }
+      ],
+      "score": 0.5646,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "GCC steering committee announces AI policy",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7832724449160586,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 146,
+          "comments": 162,
+          "url": "https://lwn.net/Articles/1086041/"
+        }
+      ],
+      "score": 0.5236,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "\"VPNs are lawful technical tools,\" says EU Court in landmark copyright ruling",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7856173103161248,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 210,
+          "comments": 65,
+          "url": "https://remysharp.com/links/2026-07-23-35890312"
+        }
+      ],
+      "score": 0.4911,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Carolina Cloud pays SOFR on unused prepaid credits",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.5932511145449331,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 51,
+          "comments": 32,
+          "url": "https://docs.carolinacloud.io/organizations/prepaid-interest/"
+        }
+      ],
+      "score": 0.4856,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Agent-Manager: A Tmux TUI for Running Claude Code, Codex and OpenCode",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6228805631660846,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 61,
+          "comments": 42,
+          "url": "https://github.com/YoanWai/agent-manager"
+        }
+      ],
+      "score": 0.483,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "RBI New UPI Rules 2026: 2FA, AFA, Impact & Benefits Explained",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "UPI digital India news this week",
+          "outlet": "Pine Labs"
+        }
+      ],
+      "score": 0.4813,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "ChatGPT, Roblox to Fall Under Strictest EU Rules for Platforms",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.5633559055474417,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 45,
+          "comments": 30,
+          "url": "https://www.bloomberg.com/news/articles/2026-07-29/chatgpt-roblox-to-fall-under-strictest-eu-rules-for-platforms"
+        }
+      ],
+      "score": 0.4791,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Ron Gilbert started production on Thimbleweed Park 2",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7490572283874117,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 123,
+          "comments": 47,
+          "url": "https://www.grumpygamer.com/twp2_announce/"
+        }
+      ],
+      "score": 0.4782,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Go LLM SDK for streaming, tool-calling AI backends (plus frontend React lib)",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.47598000289067927,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 24,
+          "comments": 5,
+          "url": "https://github.com/grafana/ai-sdk"
+        }
+      ],
+      "score": 0.4713,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+    "sources": [
+      "gnews:US",
+      "hn"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "AI news July 31 2026",
+        "outlet": "Hugging Face (via Radical Data Science bulletin)"
+      },
+      {
+        "source": "hn",
+        "points": 436,
+        "comments": 235,
+        "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+      }
+    ],
+    "score": 0.7362,
+    "topic_fit": 0.9,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false
+}

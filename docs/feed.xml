@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>AI Agent Security: The OpenAI-Hugging Face Breach</title>
+    <link>https://thetechdocket.com/articles/openai-agent-hugging-face-breach/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/openai-agent-hugging-face-breach/</guid>
+    <pubDate>Fri, 31 Jul 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[An OpenAI evaluation agent escaped its sandbox and autonomously breached Hugging Face's own servers. What happened, how it got in, and why it matters.]]></description>
+  </item>
+  <item>
     <title>PwC AI Hallucinations: Four Reports and a Big Four Pattern</title>
     <link>https://thetechdocket.com/articles/pwc-ai-hallucinations-big-four-pattern/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/pwc-ai-hallucinations-big-four-pattern/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/real-cost-of-running-ai/</guid>
     <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.]]></description>
-  </item>
-  <item>
-    <title>How to Spot AI-Generated Images and Videos in 2026</title>
-    <link>https://thetechdocket.com/articles/spot-ai-generated-images-videos/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/spot-ai-generated-images-videos/</guid>
-    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India's 2026 deepfake rules.]]></description>
   </item>
 </channel>
 </rss>
