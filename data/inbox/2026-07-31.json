@@ -1,598 +1,1767 @@
 {
- "date": "2026-07-31",
- "generated_by": "daily-session-websearch",
- "sources_status": {
-  "trends_rss_IN": "error: WebFetch provenance-blocked in unattended session",
-  "trends_rss_US": "error: WebFetch provenance-blocked in unattended session",
-  "hn_algolia": "via-search: ok: fetched news.ycombinator.com front page directly via WebFetch; extracted 25 of 30 listed stories (dropped 4 old repo",
-  "websearch_global": "ok",
-  "websearch_india": "ok"
- },
- "markets": {
-  "IN": {
-   "label": "India",
-   "trends_rss": [],
-   "news": {
-    "tech news India today July 31 2026": [
-     {
-      "title": "SEBI Rolls Out 'GARUDA' Framework To Expedite Fund Launches",
-      "source": "Inc42",
-      "url": "https://inc42.com/",
-      "pub_date": "2026-07-31"
-     },
-     {
-      "title": "IPO-Bound PhonePe Bets On Transaction Data Monetisation With PulsePro",
-      "source": "Inc42",
-      "url": "https://inc42.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Now, Zee Moves Delhi HC Against Blinkit Over Alleged Copyright Violation",
-      "source": "Inc42",
-      "url": "https://inc42.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Swiggy Trims Q1 Net Loss 34% YoY To ₹791 Cr, Revenue Up 37%",
-      "source": "Inc42",
-      "url": "https://inc42.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "India's data privacy deadline nears: Are Indian companies ready?",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/technology/tech-news",
-      "pub_date": "2026-07-10"
-     },
-     {
-      "title": "Govt to decide next steps after Meta responds on CSEAM issue: IT secretary",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/technology/tech-news",
-      "pub_date": "2026-07-09"
-     }
-    ],
-    "AI India news this week": [
-     {
-      "title": "Catching up in the AI race? India gets its second AI unicorn in a month",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/16/catching-up-in-the-ai-race-india-gets-its-second-ai-unicorn-in-a-month.html",
-      "pub_date": "2026-07-16"
-     },
-     {
-      "title": "AI News Today July 29 2026: 16 Biggest Stories",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-29-2026",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Sarvam To Build Trillion-Parameter AI Model, Launches India-Hosted Inference Service",
-      "source": "Inc42",
-      "url": "https://inc42.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Indian Physical AI attracts $155 Mn in 2026 as robotics, real-world data gain traction",
-      "source": "Entrackr",
-      "url": "https://entrackr.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Why China's AI model export rethink may force India to revisit AI strategy",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/technology/tech-news",
-      "pub_date": "2026-07-09"
-     },
-     {
-      "title": "AI real threat to GCCs handling low-cost, repetitive work: CEA Nageswaran",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/technology/tech-news",
-      "pub_date": "2026-07-09"
-     }
-    ],
-    "India smartphone launch July 2026": [
-     {
-      "title": "July 2026: Top smartphones launching this month",
-      "source": "Deccan Herald",
-      "url": "https://www.deccanherald.com/technology/july-2026-top-smartphones-launching-this-month-4057422",
-      "pub_date": "2026-07-01"
-     },
-     {
-      "title": "Upcoming Smartphone Launches In India (July 2026): Oppo Reno 16 Series, Nothing Phone (4b), Samsung's Galaxy Z Fold 8 Ultra, & More",
-      "source": "Smartprix",
-      "url": "https://www.smartprix.com/bytes/upcoming-smartphone-launches-in-india-july-2026-oppo-reno-16-series-nothing-phone-4b-samsungs-galaxy-z-fold-8-ultra-more/",
-      "pub_date": null
-     },
-     {
-      "title": "Top 5 upcoming smartphone launches in July 2026",
-      "source": "Gizmochina",
-      "url": "https://www.gizmochina.com/2026/06/30/top-5-upcoming-smartphone-launches-in-july-2026/",
-      "pub_date": "2026-06-30"
-     }
-    ],
-    "India AI regulation policy news July 2026": [
-     {
-      "title": "Notes from the Asia-Pacific region: India signals shift on AI regulation",
-      "source": "IAPP",
-      "url": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-india-signals-shift-on-ai-regulation",
-      "pub_date": null
-     },
-     {
-      "title": "Legal AI News: July 2026 Roundup",
-      "source": "Judicio",
-      "url": "https://judicio.ai/blogs/legal-ai-news-july-2026",
-      "pub_date": null
-     },
-     {
-      "title": "AI Content Moderation Rules in India: Navigating the 2026 IT Rules Amendment",
-      "source": "India Policy Hub",
-      "url": "https://indiapolicyhub.in/2026/05/18/india-ai-content-moderation-rules-2026/",
-      "pub_date": "2026-05-18"
-     },
-     {
-      "title": "Methyl Isocyanate of Law: Supreme Court Quashes Verdict Based on AI-Generated Precedents",
-      "source": "The Hindu (via Judicio roundup)",
-      "url": "https://judicio.ai/blogs/legal-ai-news-july-2026",
-      "pub_date": "2026-07-02"
-     },
-     {
-      "title": "Regulations for Use of Artificial Intelligence in Courts, 2026",
-      "source": "Indian Express / Hindu Business Line (via Judicio roundup)",
-      "url": "https://judicio.ai/blogs/legal-ai-news-july-2026",
-      "pub_date": null
-     }
-    ],
-    "Indian startup funding AI this week": [
-     {
-      "title": "India's Startup Investors Look Beyond AI as Manufacturing and DeepTech Lead a $209 Million Funding Week",
-      "source": "TICE News",
-      "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
-      "pub_date": "2026-07-25"
-     },
-     {
-      "title": "Indian startups raised over $297 million from July 13 to July 18, 2026; AI startup Emergent tops the list",
-      "source": "Indian Startup News",
-      "url": "https://indianstartupnews.com/funding/indian-startups-raised-over-297-million-from-july-13-to-july-18-2026-ai-startup-emergent-tops-the-list-12179154",
-      "pub_date": "2026-07-19"
-     },
-     {
-      "title": "AI Startups Drive India's Weekly Funding to $432 Million Across 23 Deals",
-      "source": "FundsforNGOs News",
-      "url": "https://news.fundsforngos.org/2026/06/23/ai-startups-drive-indias-weekly-funding-to-432-million-across-23-deals/",
-      "pub_date": "2026-06-23"
-     },
-     {
-      "title": "Apna Mart raises Rs 120 Cr in Series C round led by Accel, Fundamentum",
-      "source": "Entrackr",
-      "url": "https://entrackr.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Sid's Farm raises over Rs 81 Cr in pre-Series B round",
-      "source": "Entrackr",
-      "url": "https://entrackr.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Arboreal Bioinnovations raises Rs 230 Cr in Series A led by Edelweiss's EAAA and Omnivore",
-      "source": "Entrackr",
-      "url": "https://entrackr.com/",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Drone startup SUIND raises Rs 20.5 Cr in seed round led by Transition VC",
-      "source": "Entrackr",
-      "url": "https://entrackr.com/",
-      "pub_date": "2026-07-30"
-     }
-    ],
-    "UPI digital India news this week": [
-     {
-      "title": "11 Years Digital India: UPI Hits 24,162 Cr Transactions",
-      "source": "NewKerala.com",
-      "url": "https://www.newkerala.com/news/a/11-years-digital-india-upi-leads-indias-digital-545.htm",
-      "pub_date": "2026-06-30"
-     },
-     {
-      "title": "RBI New UPI Rules 2026: 2FA, AFA, Impact & Benefits Explained",
-      "source": "Pine Labs",
-      "url": "https://www.pinelabs.com/blog/what-are-rbis-new-upi-rules-in-2026-latest-updates-impacts-benefits",
-      "pub_date": null
-     },
-     {
-      "title": "Swift launches blockchain platform for 24x7 cross-border payments",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/technology/tech-news",
-      "pub_date": "2026-07-09"
-     }
-    ]
-   },
-   "autocomplete": {}
+  "date": "2026-07-31",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_smartphone l": "ok",
+    "news_IN_AI regulatio": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_smartphone l": "ok",
+    "news_US_AI regulatio": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
   },
-  "US": {
-   "label": "Global (US proxy)",
-   "trends_rss": [],
-   "news": {
-    "biggest AI news today": [
-     {
-      "title": "Brookfield-NextEra plan $100B Kentucky AI campus, 1.2 GW by 2032",
-      "source": "Data Center Knowledge (via AI Weekly)",
-      "url": "https://aiweekly.co/ai-news-today",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Arm data-center royalties double, AGI CPU demand jumps to $2B",
-      "source": "Benzinga (via AI Weekly)",
-      "url": "https://aiweekly.co/ai-news-today",
-      "pub_date": "2026-07-30"
-     },
-     {
-      "title": "Ex-Perplexity engineer launches Polar AI browser with $5.7M seed",
-      "source": "TechCrunch (via AI Weekly)",
-      "url": "https://aiweekly.co/ai-news-today",
-      "pub_date": "2026-07-30"
-     }
-    ],
-    "AI news July 31 2026": [
-     {
-      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
-      "source": "Hugging Face (via Radical Data Science bulletin)",
-      "url": "https://radicaldatascience.wordpress.com/2026/07/29/ai-news-briefs-bulletin-board-for-july-2026/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Developer ships plug-and-play infinite memory prompt for any AI agent",
-      "source": "GitHub (via Radical Data Science bulletin)",
-      "url": "https://radicaldatascience.wordpress.com/2026/07/29/ai-news-briefs-bulletin-board-for-july-2026/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "DeepsecBench: evaluating model performance in finding cybersecurity vulnerabilities",
-      "source": "Vercel (via Radical Data Science bulletin)",
-      "url": "https://radicaldatascience.wordpress.com/2026/07/29/ai-news-briefs-bulletin-board-for-july-2026/",
-      "pub_date": "2026-07-28"
-     },
-     {
-      "title": "The new rules of context engineering for Claude 5 generation models",
-      "source": "Anthropic (via Radical Data Science bulletin)",
-      "url": "https://radicaldatascience.wordpress.com/2026/07/29/ai-news-briefs-bulletin-board-for-july-2026/",
-      "pub_date": "2026-07-27"
-     }
-    ],
-    "tech news today July 31 2026": [
-     {
-      "title": "Nvidia may backstop $250 billion in financing for OpenAI's massive Ohio AI data center",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/27/top-tech-news-today-july-27-2026-anthropic-monday-com-moonshot-ai-nvidia-openai-more/",
-      "pub_date": "2026-07-27"
-     },
-     {
-      "title": "Apple delays AI smart glasses launch amid privacy concerns stemming from Meta's devices",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/27/top-tech-news-today-july-27-2026-anthropic-monday-com-moonshot-ai-nvidia-openai-more/",
-      "pub_date": "2026-07-27"
-     },
-     {
-      "title": "Nvidia, Microsoft, and major tech companies launch Open Secure AI Alliance after Hugging Face breach",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/27/top-tech-news-today-july-27-2026-anthropic-monday-com-moonshot-ai-nvidia-openai-more/",
-      "pub_date": "2026-07-27"
-     },
-     {
-      "title": "Monday.com cuts about 20% of its workforce as it shifts toward an AI work platform",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/27/top-tech-news-today-july-27-2026-anthropic-monday-com-moonshot-ai-nvidia-openai-more/",
-      "pub_date": "2026-07-27"
-     }
-    ],
-    "new AI model launched this week July 2026": [
-     {
-      "title": "Seven Days, Seven Model Releases: The New AI Normal",
-      "source": "Digital Applied",
-      "url": "https://www.digitalapplied.com/blog/seven-days-seven-releases-july-2026-model-wave",
-      "pub_date": null
-     },
-     {
-      "title": "Releasing the model weights and technical report of Kimi K3",
-      "source": "GitHub / Moonshot AI (via Radical Data Science bulletin)",
-      "url": "https://radicaldatascience.wordpress.com/2026/07/29/ai-news-briefs-bulletin-board-for-july-2026/",
-      "pub_date": "2026-07-28"
-     }
-    ],
-    "big tech announcement July 30 2026": [
-     {
-      "title": "Anthropic's Claude Mythos Discovers New Cryptographic Weaknesses in Hours",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/29/top-tech-news-today-july-29-2026-amazon-google-microsoft-mit-nvidia-softbank-xai-more/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "OpenAI Models Escaped Sandbox and Breached Hugging Face During Cyber Benchmark Test",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/29/top-tech-news-today-july-29-2026-amazon-google-microsoft-mit-nvidia-softbank-xai-more/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "More Than 1,100 AI Employees Petition U.S. Government to Help Pace Automated AI Development",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/29/top-tech-news-today-july-29-2026-amazon-google-microsoft-mit-nvidia-softbank-xai-more/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "U.S. Blocks New Chinese Humanoid Robots Over National Security Concerns",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/29/top-tech-news-today-july-29-2026-amazon-google-microsoft-mit-nvidia-softbank-xai-more/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "UK Investigates Microsoft Over Copilot-Linked Microsoft 365 Price Increases",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/29/top-tech-news-today-july-29-2026-amazon-google-microsoft-mit-nvidia-softbank-xai-more/",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Nvidia Backs $50 Billion Texas AI Data Center Lease Using Its Own Chips",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/28/top-tech-news-today-july-28-2026-amazon-amd-google-microsoft-nvidia-openai-origin-energy-verizon-more/",
-      "pub_date": "2026-07-28"
-     },
-     {
-      "title": "Amazon's $200 Billion AI Infrastructure Plan Pushes It to Top of Global 500",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/28/top-tech-news-today-july-28-2026-amazon-amd-google-microsoft-nvidia-openai-origin-energy-verizon-more/",
-      "pub_date": "2026-07-28"
-     },
-     {
-      "title": "China's CXMT Debut Shakes Global Memory-Chip Stocks",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/28/top-tech-news-today-july-28-2026-amazon-amd-google-microsoft-nvidia-openai-origin-energy-verizon-more/",
-      "pub_date": "2026-07-28"
-     }
-    ],
-    "chip semiconductor news this week": [
-     {
-      "title": "Chip stocks shed more than $1 trillion as selloff hits companies powering AI boom",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "AMD and Micron surge, Lam Research climbs 17% as chip stocks rip higher",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/30/chip-stock-rally-lam-research-micron-amd.html",
-      "pub_date": "2026-07-30"
-     }
-    ],
-    "Meta Q2 2026 earnings AI capex $130 billion revenue": [
-     {
-      "title": "Meta Q2 Beats Revenue While Legal Charges and AI Spending Destroy Free Cash Flow",
-      "source": "Tech Times",
-      "url": "https://www.techtimes.com/articles/322139/20260729/meta-q2-beats-revenue-while-legal-charges-ai-spending-destroy-free-cash-flow.htm",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Meta Shares Slide After Record AI Spending Pledge Overshadows Earnings Beat",
-      "source": "Eastern Herald",
-      "url": "https://easternherald.com/2026/07/30/meta-q2-2026-earnings-ai-capex-selloff/",
-      "pub_date": "2026-07-30"
-     }
-    ],
-    "Microsoft Azure earnings Copilot 30 million seats July 2026": [
-     {
-      "title": "Azure Tops $100B, Copilot Paid Seats Jump to 30M in Microsoft Blowout Quarter",
-      "source": "Tech Times",
-      "url": "https://www.techtimes.com/articles/322143/20260729/azure-tops-100b-copilot-paid-seats-jump-30m-microsoft-blowout-quarter.htm",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Microsoft's cloud just hit a new milestone—Azure crosses $100 billion in annual revenue",
-      "source": "Fortune",
-      "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/",
-      "pub_date": "2026-07-29"
-     }
-    ],
-    "OpenAI agent breached Hugging Face sandbox escape cyber benchmark": [
-     {
-      "title": "The OpenAI lab leak was more extensive than we thought",
-      "source": "CNN Business",
-      "url": "https://www.cnn.com/2026/07/29/tech/openai-hugging-face-cyberattack",
-      "pub_date": "2026-07-29"
-     },
-     {
-      "title": "Scoop: Second account accessed by OpenAI's agent tied to cyber safety testing",
-      "source": "Axios",
-      "url": "https://www.axios.com/2026/07/29/openai-hugging-face-modal-cyber-benchmark",
-      "pub_date": "2026-07-29"
-     }
-    ],
-    "Samsung SK Hynix chip stocks selloff KOSPI circuit breaker July 2026": [
-     {
-      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning",
-      "source": "Tech Times",
-      "url": "https://www.techtimes.com/articles/321968/20260729/kospi-triggers-historic-back-back-circuit-breakers-ai-memory-rally-faces-structural-reckoning.htm",
-      "pub_date": "2026-07-29"
-     }
-    ]
-   },
-   "autocomplete": {}
-  }
- },
- "hacker_news": [
-  {
-   "title": "\"VPNs are lawful technical tools,\" says EU Court in landmark copyright ruling",
-   "points": 210,
-   "comments": 65,
-   "created_at": "2026-07-23T00:00:00+00:00",
-   "url": "https://remysharp.com/links/2026-07-23-35890312"
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "डसॉल्ट राफेल",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 20:20:00 -0700",
+          "news": []
+        },
+        {
+          "title": "moonpay",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "MoonPay launches PayBox, an AI payment vault for ChatGPT and Claude",
+              "source": "The Block",
+              "url": "https://www.theblock.co/post/410032/moonpay-paybox-chatgpt-claude"
+            },
+            {
+              "headline": "MoonPay’s PayBox Lets AI Agents Spend Without Taking Custody",
+              "source": "Unite.AI",
+              "url": "https://www.unite.ai/moonpays-paybox-lets-ai-agents-spend-without-taking-custody/"
+            },
+            {
+              "headline": "MoonPay launches universal AI shopping wallet for non-technical Claude and ChatGPT consumers",
+              "source": "Fortune",
+              "url": "https://fortune.com/2026/07/23/moonpay-launches-universal-ai-shopping-wallet-for-non-technical-claude-and-chatgpt-consumers/"
+            }
+          ]
+        },
+        {
+          "title": "nirmal purja",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 30 Jul 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Nirmal Purja: Renowned climber among 10 mountaineers feared missing after Pakistan avalanche",
+              "source": "BBC",
+              "url": "https://www.bbc.com/news/live/cjd42d4jvxkt"
+            },
+            {
+              "headline": "World-Famous Climber Nims Purja Is Among 10 Missing Following an Avalanche",
+              "source": "Outside Magazine",
+              "url": "https://www.outsideonline.com/outdoor-adventure/exploration-survival/nirmal-nims-purja-missing-after-avalanche-in-pakistan/"
+            },
+            {
+              "headline": "World-renowned climber Nirmal Purja among 10 feared missing after avalanche on Pakistan mountain",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/world/2026/jul/31/nirmal-purja-10-climbers-missing-pakistan-broad-peak-mountain"
+            }
+          ]
+        },
+        {
+          "title": "meet",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Sarvam Takes On Claude, Codex With Cheaper, India-Hosted Coding Agent",
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/sarvam-takes-on-claude-codex-with-cheaper-india-hosted-coding-agent/"
+            },
+            {
+              "headline": "Tech3 | Zepto pauses its IPO plans for now; India shouldn't be an AI colony, says Sarvam co-founder; and more",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/technology-startup/newsletters/MCTech3/tech3-zepto-pauses-its-ipo-plans-for-now-india-shouldn-t-be-an-ai-colony-says-sarvam-co-founder-and-more/"
+            },
+            {
+              "headline": "Sarvam plans a trillion-parameter AI model",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/bengaluru/sarvam-plans-a-trillion-parameter-ai-model/articleshow/132746286.cms"
+            }
+          ]
+        },
+        {
+          "title": "ai investor leopold aschenbrenner",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html"
+            },
+            {
+              "headline": "Exclusive | Citadel Buys Situational Awareness’s Stock Portfolio After Big Losses in AI",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b"
+            },
+            {
+              "headline": "Situational Awareness Drops to $10 Billion on Citadel Pact",
+              "source": "Bloomberg.com",
+              "url": "https://www.bloomberg.com/news/articles/2026-07-30/situational-awareness-assets-fall-to-10-billion-after-losses"
+            }
+          ]
+        },
+        {
+          "title": "राघव चड्ढा",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "NEET पेपर लीक पर अब तक क्यों नहीं बोले थे राघव चड्ढा, संसद में बताई वजह",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/india/news/story/raghav-chadha-supports-anti-paper-leak-bill-to-stop-neet-cheating-ntcpvp-dskc-2612070-2026-07-30"
+            },
+            {
+              "headline": "रिस्क मेरा और रील तुम्हारी, ये कैसी पार्टनरशिप; राज्यसभा में भाजपा की ओर से विपक्षी दलों पर खूब गरजे राघव चड्ढा",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/ncr/risk-is-mine-but-the-reel-is-yours-what-kind-of-partnership-is-this-raghav-chadha-for-bjp-in-rajya-sabha-201785440537287.html"
+            },
+            {
+              "headline": "Raghav Chadha on NEET:मैं अब तक इसलिए चुप था..., राज्यसभा में अब कैसे दहाड़े राघव चड्ढा",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/video/news/raghav-chadha-defends-anti-paper-leak-bill-in-rajya-sabha-says-students-anger-is-justified/videoshow/132749169.cms"
+            }
+          ]
+        },
+        {
+          "title": "western sydney wanderers",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Chelsea vs Western Sydney Wanderers as it happened: Joao Pedro's hat-trick seals victory in Xabi Alonso's first game",
+              "source": "ESPN India",
+              "url": "https://www.espn.in/football/story/_/id/49467964/chelsea-western-sydney-wanderers-live-preseason-friendly-latest-updates-commentary-score-result"
+            },
+            {
+              "headline": "Match report: Chelsea 6-4 Western Sydney Wanderers | News | Official Site",
+              "source": "Chelsea Football Club",
+              "url": "https://www.chelseafc.com/en/news/article/match-report-chelsea-6-4-western-sydney-wanderers"
+            },
+            {
+              "headline": "Chelsea news: Who is Dastan Satpaev?",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/football/articles/c5yreq1llnvo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D"
+            }
+          ]
+        },
+        {
+          "title": "morocco",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Spain migrant crisis: Military deployed as thousands cross border; 9 killed",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/world/europe/spain-migrant-crisis-military-deployed-as-thousands-cross-border-9-killed/articleshow/132753919.cms"
+            },
+            {
+              "headline": "Clashes near Morocco’s border with Spain over beefed up migrant security",
+              "source": "Al Jazeera",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/clashes-near-moroccos-border-with-spain-over-beefed-up-migrant-security"
+            },
+            {
+              "headline": "\"Absolute Chaos\": Thousands Breach Morocco Border With Spanish Territory",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/world-news/absolute-chaos-thousands-breach-morocco-border-with-spanish-territory-11844879"
+            }
+          ]
+        },
+        {
+          "title": "rrb group d admit card",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "RRB Group D Admit Card 2026 Soon Live- Get Download Link, Exam Pattern, Shift Timings Here",
+              "source": "Shiksha",
+              "url": "https://www.shiksha.com/news/sarkari-exams-rrb-group-d-2026-admit-card-live-updates-blogId-237419"
+            },
+            {
+              "headline": "RRB Group D 2026 Official Mock Test Link Active: Sign-in Page Live",
+              "source": "PW",
+              "url": "https://www.pw.live/railway/exams/rrb-group-d-2026-official-mock-test-link-active"
+            },
+            {
+              "headline": "RRB Group D 2025 exam city slip released at rrb.digialm.com; CBT scheduled from August 3",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/education/news/rrb-group-d-2025-exam-city-slip-released-at-rrb-digialm-com-cbt-scheduled-from-august-3/articleshow/132601634.cms"
+            }
+          ]
+        },
+        {
+          "title": "elina svitolina",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Licensable picture: DC: Mubadala DC Open Day 6",
+              "source": "Reuters Connect",
+              "url": "https://www.reutersconnect.com/item/dc-mubadala-dc-open-day-6/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBPQ1JENTU"
+            },
+            {
+              "headline": "Humbert vs. Shelton Prediction at the Citi Open – Thursday, July 30",
+              "source": "Bleacher Nation",
+              "url": "https://www.bleachernation.com/picks/2026/07/29/humbert-vs-shelton-prediction-at-the-citi-open-thursday-july-30/"
+            },
+            {
+              "headline": "Elina Svitolina returns in Washington, faces Kudermetova in WTA 500",
+              "source": "Межа. Новини України.",
+              "url": "https://mezha.net/eng/bukvy/d1bec12a_elina_svitolina_returns/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "smartphone launch": [
+          {
+            "title": "Galaxy Z Flip 8 rumors: Release date, colors, specs, and more - Mashable",
+            "source": "Mashable",
+            "pub_date": "Thu, 30 Jul 2026 23:03:15 GMT"
+          },
+          {
+            "title": "Redmi K100 Series Debut Seems Imminent as Firm Starts Teasing the Launch of a New Smartphone - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Tue, 28 Jul 2026 06:15:10 GMT"
+          },
+          {
+            "title": "Samsung Galaxy F70 Pro 5G India launch teased; Flipkart availability confirmed - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Thu, 30 Jul 2026 11:37:19 GMT"
+          },
+          {
+            "title": "Samsung Galaxy F70 Pro 5G India Launch Confirmed: Check Expected Price Range - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Fri, 31 Jul 2026 02:10:24 GMT"
+          },
+          {
+            "title": "Apple Pay and Google Pay Mobile Wallets Could Launch in Uzbekistan Within Months - The Times Of Central Asia",
+            "source": "The Times Of Central Asia",
+            "pub_date": "Thu, 30 Jul 2026 13:28:27 GMT"
+          },
+          {
+            "title": "Samsung reveals the Galaxy Tab S12 series' launch timeframe - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 30 Jul 2026 09:59:02 GMT"
+          },
+          {
+            "title": "Realme 16x 5G India Launch Tipped, 7,000mAh Battery, Dimensity 6300 Chip and 144Hz Display Leaked - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 30 Jul 2026 11:04:45 GMT"
+          },
+          {
+            "title": "NCTC, Prosurety Launch Complete Device Advantage for Mobile Providers - The Fast Mode",
+            "source": "The Fast Mode",
+            "pub_date": "Wed, 29 Jul 2026 01:20:30 GMT"
+          },
+          {
+            "title": "Google Pixel 11, Vivo S2 and 2 more: Top smartphones launching in India in August ahead of iPhone 18 Pro - India Today",
+            "source": "India Today",
+            "pub_date": "Tue, 28 Jul 2026 08:53:50 GMT"
+          },
+          {
+            "title": "Viltrox Launches DC-T1 5-Inch Phone Monitor for Mobile Content Creators - PetaPixel",
+            "source": "PetaPixel",
+            "pub_date": "Thu, 30 Jul 2026 14:43:30 GMT"
+          },
+          {
+            "title": "Vivo S2 5G Mobile Launch in India: All Details - News18",
+            "source": "News18",
+            "pub_date": "Thu, 30 Jul 2026 11:33:26 GMT"
+          },
+          {
+            "title": "Samsung Galaxy F70 Pro 5G India Launch Teased, Flipkart Availability Confirmed - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Thu, 30 Jul 2026 09:11:03 GMT"
+          },
+          {
+            "title": "Redmi Note 17 set to launch in India on August 6th; 8,000mAh battery confirmed - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 28 Jul 2026 06:33:16 GMT"
+          },
+          {
+            "title": "Redmi K100 Pro Design Leaked in New Poster, 185Hz Display and Dual-Core Processor Confirmed Ahead of Launch - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 30 Jul 2026 15:15:32 GMT"
+          },
+          {
+            "title": "Honor Robot Phone to launch on August 12, unboxing video leaks - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Mon, 27 Jul 2026 07:16:02 GMT"
+          },
+          {
+            "title": "Smartphone price hike roundup: list of phones that cost more now, revised prices, and why - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Mon, 27 Jul 2026 06:04:04 GMT"
+          },
+          {
+            "title": "Vivo T5e Launched in India With 5,500mAh Battery, 8-Megapixel Rear Camera: Price, Specifications - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Mon, 27 Jul 2026 08:32:58 GMT"
+          },
+          {
+            "title": "Vivo X500 Pro Display and Design Details Leaked Again Ahead of Expected September Launch - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 30 Jul 2026 12:34:23 GMT"
+          },
+          {
+            "title": "iQOO Z11 India Launch Tipped for August, Expected Price, Specifications and Features Leaked - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 30 Jul 2026 10:56:39 GMT"
+          },
+          {
+            "title": "Oppo A7 Pro Max Launch Set for August 4 With 10,000mAh Battery, Official Images and Storage Variants Revealed - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 30 Jul 2026 07:03:51 GMT"
+          },
+          {
+            "title": "CelcomDigi launches smartphone instalment offer with SPayLater - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Wed, 29 Jul 2026 08:29:19 GMT"
+          },
+          {
+            "title": "Redmi Note 17 India Launch Teased; Price in India Leaked Online - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Mon, 27 Jul 2026 13:52:23 GMT"
+          },
+          {
+            "title": "vivo S2 full specs and pricing leak ahead of launch - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Wed, 29 Jul 2026 08:49:02 GMT"
+          },
+          {
+            "title": "vivo T5e Launched in India at ₹13,999: Military-Grade Durability Meets a 5500mAh Battery - PaidFreeDroid",
+            "source": "PaidFreeDroid",
+            "pub_date": "Mon, 27 Jul 2026 10:50:26 GMT"
+          },
+          {
+            "title": "HMD Asha 305 debuts as a \"lite smartphone\" with a removable battery - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Tue, 28 Jul 2026 16:57:02 GMT"
+          }
+        ],
+        "AI regulation": [
+          {
+            "title": "OpenAI and Anthropic Researchers Sign Petition Calling for International AI Regulation - The420.in",
+            "source": "The420.in",
+            "pub_date": "Fri, 31 Jul 2026 03:35:42 GMT"
+          },
+          {
+            "title": "Adults have struggled to set rules for AI in school. These teens figured it out - npr.org",
+            "source": "npr.org",
+            "pub_date": "Thu, 30 Jul 2026 09:00:00 GMT"
+          },
+          {
+            "title": "The Worst Way to Regulate AI - The Atlantic",
+            "source": "The Atlantic",
+            "pub_date": "Tue, 28 Jul 2026 18:32:00 GMT"
+          },
+          {
+            "title": "The 60-25-15 rule reshaping AI compliance pilots - FinTech Global",
+            "source": "FinTech Global",
+            "pub_date": "Thu, 30 Jul 2026 11:58:00 GMT"
+          },
+          {
+            "title": "Q&A: Preparing for health AI oversight amid regulatory uncertainty - TechTarget",
+            "source": "TechTarget",
+            "pub_date": "Thu, 30 Jul 2026 12:41:51 GMT"
+          },
+          {
+            "title": "AI Office of Ireland established under the AI Regulation Bill 2026, Paul Byrne appointed as CEO - Department of Enterprise, Tourism and Employment",
+            "source": "Department of Enterprise, Tourism and Employment",
+            "pub_date": "Thu, 30 Jul 2026 07:14:02 GMT"
+          },
+          {
+            "title": "As Sam Altman Celebrates the Singularity, Palantir CEO Alex Karp Warns: ‘There Are Dangers… We Are Going to End Up Having to Regulate AI’ - Barchart.com",
+            "source": "Barchart.com",
+            "pub_date": "Thu, 30 Jul 2026 19:14:05 GMT"
+          },
+          {
+            "title": "Designing a FINRA for Frontier AI - Lawfare",
+            "source": "Lawfare",
+            "pub_date": "Thu, 30 Jul 2026 22:07:30 GMT"
+          },
+          {
+            "title": "State AGs Expand AI Enforcement Using Traditional Consumer Protection Laws - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Thu, 30 Jul 2026 15:20:06 GMT"
+          },
+          {
+            "title": "AI momentum shows no sign of slowing: recent regulatory developments in the EU and UK (via Passle) - Slaughter and May",
+            "source": "Slaughter and May",
+            "pub_date": "Thu, 30 Jul 2026 11:59:46 GMT"
+          },
+          {
+            "title": "Some of the biggest names in AI and tech industry have donated over $65 million on midterm elections to s - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 28 Jul 2026 11:58:00 GMT"
+          },
+          {
+            "title": "Expressions of Interest now invited for the London Region I AI Regulatory Sandbox. - Med-Tech Insights",
+            "source": "Med-Tech Insights",
+            "pub_date": "Thu, 30 Jul 2026 11:22:19 GMT"
+          },
+          {
+            "title": "The AI Act’s next big deadline is here (via Passle) - Bristows",
+            "source": "Bristows",
+            "pub_date": "Thu, 30 Jul 2026 16:21:16 GMT"
+          },
+          {
+            "title": "CDSCO issues guidance clarifying regulatory pathway for AI, software-based medical devices - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Wed, 29 Jul 2026 12:24:08 GMT"
+          },
+          {
+            "title": "Vietnam’s New AI Law and Its Strategic Implications - The Diplomat – Asia-Pacific",
+            "source": "The Diplomat – Asia-Pacific",
+            "pub_date": "Tue, 28 Jul 2026 07:10:28 GMT"
+          },
+          {
+            "title": "Nature Medicine’s 2026 Medical AI Superintelligence Framework Signals What FDA Benchmarking Guidance Has Not Yet Addressed - The Clinical Trial Vanguard",
+            "source": "The Clinical Trial Vanguard",
+            "pub_date": "Tue, 28 Jul 2026 06:51:04 GMT"
+          },
+          {
+            "title": "Federal Network Agency takes central role in AI Regulation monitoring - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Wed, 29 Jul 2026 11:35:27 GMT"
+          },
+          {
+            "title": "As India weighs AI regulation, experts split on need for a new law - CNBC TV18",
+            "source": "CNBC TV18",
+            "pub_date": "Wed, 29 Jul 2026 14:51:07 GMT"
+          },
+          {
+            "title": "How to manage the gap between enterprise AI use and AI regulation - TechTarget",
+            "source": "TechTarget",
+            "pub_date": "Mon, 27 Jul 2026 18:48:19 GMT"
+          },
+          {
+            "title": "Sam Altman signals rethink on AI race, says frontier models may need slower rollout - ETEnterpriseai.com",
+            "source": "ETEnterpriseai.com",
+            "pub_date": "Wed, 29 Jul 2026 07:54:53 GMT"
+          },
+          {
+            "title": "Armor Launches Sovereign AI: A whole-company AI work platform for regulated industries - PR Newswire",
+            "source": "PR Newswire",
+            "pub_date": "Thu, 30 Jul 2026 21:23:00 GMT"
+          },
+          {
+            "title": "Congress must pass a new federal law on AI governance - Brookings",
+            "source": "Brookings",
+            "pub_date": "Wed, 29 Jul 2026 20:43:10 GMT"
+          },
+          {
+            "title": "FTC Puts AI Developers at Center of Regulatory Crossfire - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Tue, 28 Jul 2026 16:22:09 GMT"
+          },
+          {
+            "title": "Brussels Effect: How the EU AI Act reaches firms beyond the bloc - Euronews.com",
+            "source": "Euronews.com",
+            "pub_date": "Thu, 30 Jul 2026 13:56:56 GMT"
+          },
+          {
+            "title": "MHRA calls for regulation of AI in healthcare - healthcaretoday.com",
+            "source": "healthcaretoday.com",
+            "pub_date": "Thu, 30 Jul 2026 04:52:02 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air quality spokane",
+          "ai detector",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airway heights",
+          "aidvantage",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt work",
+          "chatgpt desktop",
+          "chatgpt zero",
+          "chatgpt image generator"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phone line deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "robbie ray",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Giants Open To Covering Part Of Robbie Ray’s Salary In Trade",
+              "source": "MLB Trade Rumors",
+              "url": "https://www.mlbtraderumors.com/2026/07/giants-open-to-covering-part-of-robbie-rays-salary-in-trade.html"
+            },
+            {
+              "headline": "Three teams that might match up with the Giants’ biggest contracts at the trade deadline",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7472295/2026/07/27/sf-giants-trade-matches-matt-chapman-rafael-devers-willy-adames/"
+            },
+            {
+              "headline": "Cubs trade target: Robbie Ray",
+              "source": "Bleed Cubbie Blue",
+              "url": "https://www.bleedcubbieblue.com/chicago-cubs-rumors/226910/cubs-trade-target-robbie-ray"
+            }
+          ]
+        },
+        {
+          "title": "jarren duran",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Boston Red Sox Announce Jarren Duran Decision During Athletics Series",
+              "source": "Heavy.com",
+              "url": "https://heavy.com/sports/mlb/boston-red-sox/boston-red-sox-announce-jarren-duran-decision-during-athletics-series/"
+            },
+            {
+              "headline": "Jarren Duran sits on Wednesday against lefty",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-07-29/jarren-duran-sits-on-wednesday-against-lefty"
+            },
+            {
+              "headline": "Red Sox's Jarren Duran: Getting rest Wednesday",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-jarren-duran-getting-rest-wednesday/"
+            }
+          ]
+        },
+        {
+          "title": "north west",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Kim Kardashian’s Daughter North West, 13, Debuts Faux Thigh Stud Piercings to Complement Edgy Style",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/kim-kardashian-daughter-north-west-213543356.html"
+            },
+            {
+              "headline": "North West, 13, adds to her collection of piercings with faux thigh studs",
+              "source": "Page Six",
+              "url": "https://pagesix.com/2026/07/30/style/north-west-13-adds-to-her-collection-of-piercings-with-faux-thigh-studs/"
+            },
+            {
+              "headline": "North West, 13, turns heads with new thigh piercings and electric blue hair in Malibu",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/north-west-13-turns-heads-004445835.html"
+            }
+          ]
+        },
+        {
+          "title": "dalton rushing",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 30 Jul 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "Dalton Rushing Youth Baseball Camp Draws Hundreds",
+              "source": "MyBurbank.com",
+              "url": "https://myburbank.com/dalton-rushing-youth-baseball-camp-draws-hundreds/"
+            },
+            {
+              "headline": "Mariners Game #110 Preview and Discussion, 7/30/26: SEA at LAD",
+              "source": "Lookout Landing",
+              "url": "https://www.lookoutlanding.com/seattle-mariners-discussion/146996/mariners-game-110-preview-and-discussion-7-30-26-sea-at-lad"
+            },
+            {
+              "headline": "Mookie Betts's two-run double",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/dodgers/video/bryan-woo-in-play-run-s-to-mookie-betts"
+            }
+          ]
+        },
+        {
+          "title": "enrique hernandez",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 30 Jul 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "Edwin Díaz on his return, victory: 'I did my job'",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/dodgers/video/edwin-diaz-on-his-return-victory-i-did-my-job"
+            },
+            {
+              "headline": "Los Angeles Dodgers Announce Major Edwin Diaz News During Mariners Series",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/los-angeles-dodgers-announce-major-030505691.html"
+            },
+            {
+              "headline": "Fantasy Baseball Closer Report: Edwin Díaz steps back into closer role in his Dodgers return",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/baseball/news/fantasy-baseball-closer-report-edwin-diaz-steps-back-into-closer-role-in-his-dodgers-return"
+            }
+          ]
+        },
+        {
+          "title": "jenson brooksby",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 30 Jul 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "Sports News, Transfers, Scores | Watch Live Sport",
+              "source": "Sky Sports",
+              "url": "https://www.skysports.com/tennis/watch/8547185265269912112/mifel-tennis-open-by-telcel-oppo-2026"
+            },
+            {
+              "headline": "Jenson Brooksby vs. Corentin Moutet prediction, odds, picks for ATP Los Cabos Open 2026",
+              "source": "Dimers",
+              "url": "https://www.dimers.com/tennis/news/jenson-brooksby-vs-corentin-moutet-tennis-prediction-atp-los-cabos-open-2026-ac"
+            },
+            {
+              "headline": "Brooksby vs. Moutet Prediction at the Mifel Open – Tuesday, July 28",
+              "source": "Bleacher Nation",
+              "url": "https://www.bleachernation.com/picks/2026/07/26/brooksby-vs-moutet-prediction-at-the-mifel-open-tuesday-july-28/"
+            }
+          ]
+        },
+        {
+          "title": "dnd warcraft",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 30 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "'Dungeons & Dragons' Sets Star Wars, World of Warcraft Game",
+              "source": "Variety",
+              "url": "https://variety.com/2026/gaming/news/dungeons-and-dragons-star-wars-world-of-warcraft-games-1236824675/"
+            },
+            {
+              "headline": "D&D Rolls a Natural 20 on Nerd Collabs, Announcing World of Warcraft and Star Wars Sets",
+              "source": "CNET",
+              "url": "https://www.cnet.com/tech/gaming/dd-rolls-a-natural-20-on-nerd-collabs-announcing-world-of-warcraft-and-star-wars-sets/"
+            },
+            {
+              "headline": "Craft New Adventures with D&D: World of Warcraft",
+              "source": "Blizzard News",
+              "url": "https://news.blizzard.com/en-us/article/24293053/craft-new-adventures-with-d-d-world-of-warcraft"
+            }
+          ]
+        },
+        {
+          "title": "cathie wood nvidia stock purchase",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 30 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "Nvidia: This Onetime Market Darling Is Now Surprisingly Undervalued",
+              "source": "Morningstar",
+              "url": "https://www.morningstar.com/stocks/this-onetime-market-darling-is-now-surprisingly-undervalued"
+            },
+            {
+              "headline": "Why Nvidia (NVDA) Stock Is Bouncing Back Today",
+              "source": "Barron's",
+              "url": "https://www.barrons.com/articles/nvidia-stock-price-today-capex-aa091d3d"
+            },
+            {
+              "headline": "The Hyperscaler Prisoner’s Dilemma: Why I Keep Buying Nvidia",
+              "source": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/hyperscaler-prisoner-dilemma-why-keep-150847365.html"
+            }
+          ]
+        },
+        {
+          "title": "mets score",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "All eyes on Mets hurlers Peralta, Holmes as Trade Deadline nears",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/freddy-peralta-clay-holmes-trade-candidates-mets"
+            },
+            {
+              "headline": "Clay Holmes' Potential Landing Spots Include Yankees, Dodgers in New MLB Trade Rumors on Mets SP",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25459168-clay-holmes-potential-landing-spots-include-yankees-dodgers-new-mlb-trade-rumors-mets-sp"
+            },
+            {
+              "headline": "Mets Rumors: Holmes, Peralta, Alvarez, Torrens",
+              "source": "MLB Trade Rumors",
+              "url": "https://www.mlbtraderumors.com/2026/07/mets-trade-rumors-clay-holmes-freddy-peralta.html"
+            }
+          ]
+        },
+        {
+          "title": "hasan piker",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 30 Jul 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Libertarians: Use Hasan Piker’s Praise of Mao Zedong to Educate Youth About Socialism",
+              "source": "Cato Institute",
+              "url": "https://www.cato.org/blog/libertarians-use-hasan-pikers-praise-mao-zedong-educate-youth-about-socialism"
+            },
+            {
+              "headline": "Sky News host Rita Panahi condemns left-wing streamer Hasan Piker for his praise of dictator Mao.",
+              "source": "Facebook",
+              "url": "https://www.facebook.com/SkyNewsAustralia/posts/sky-news-host-rita-panahi-condemns-left-wing-streamer-hasan-piker-for-his-praise/1495345439289716/"
+            },
+            {
+              "headline": "‘He really means it’: Hasan Piker accused of pushing socialism",
+              "source": "Sky News Australia",
+              "url": "https://www.skynews.com.au/opinion/rita-panahi/he-really-means-it-hasan-piker-accused-of-pushing-socialism/video/527010da4bb20c074b6ff7693f086d86"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "smartphone launch": [
+          {
+            "title": "Galaxy Z Flip 8 rumors: Release date, colors, specs, and more - Mashable",
+            "source": "Mashable",
+            "pub_date": "Thu, 30 Jul 2026 23:03:15 GMT"
+          },
+          {
+            "title": "Viltrox Launches DC-T1 5-Inch Phone Monitor for Mobile Content Creators - PetaPixel",
+            "source": "PetaPixel",
+            "pub_date": "Thu, 30 Jul 2026 14:43:30 GMT"
+          },
+          {
+            "title": "Amazon Leo seeks FCC approval to launch 5,105 satellites that would connect with mobile devices - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Tue, 28 Jul 2026 05:15:36 GMT"
+          },
+          {
+            "title": "Kakao's K-Fantasy Mobile MMORPG 'Dokkaebi World' Set for Official October Launch - Inven Global",
+            "source": "Inven Global",
+            "pub_date": "Fri, 31 Jul 2026 01:25:35 GMT"
+          },
+          {
+            "title": "Apple Pay and Google Pay Mobile Wallets Could Launch in Uzbekistan Within Months - The Times Of Central Asia",
+            "source": "The Times Of Central Asia",
+            "pub_date": "Thu, 30 Jul 2026 13:28:27 GMT"
+          },
+          {
+            "title": "T-Mobile’s new student plans cut the cheapest Essentials line to $30 - Android Authority",
+            "source": "Android Authority",
+            "pub_date": "Thu, 30 Jul 2026 22:00:00 GMT"
+          },
+          {
+            "title": "Lumines Remastered - Official Mobile Launch Trailer - IGN",
+            "source": "IGN",
+            "pub_date": "Thu, 30 Jul 2026 17:00:14 GMT"
+          },
+          {
+            "title": "Amazon’s new satellite network for mobile phones could turn up the heat on SpaceX - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 27 Jul 2026 18:08:29 GMT"
+          },
+          {
+            "title": "Amazon Seeks FCC Nod to Beam Satellite Coverage to Mobile Phones - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Mon, 27 Jul 2026 14:28:25 GMT"
+          },
+          {
+            "title": "5 Things Your Android Phone's Power Button Can Do (Besides Turning It On) - bgr.com",
+            "source": "bgr.com",
+            "pub_date": "Tue, 28 Jul 2026 10:17:00 GMT"
+          },
+          {
+            "title": "OpenAI Unveiled Hardware Roadmap: First Launch Smart Speakers, Followed by Smartphones – Latest Official Update - 36 Kr",
+            "source": "36 Kr",
+            "pub_date": "Thu, 30 Jul 2026 02:02:33 GMT"
+          },
+          {
+            "title": "T-Mobile Fell 11% on an Earnings Beat, Then Rebounded 6% the Next Day. Here's What's Going On. - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Wed, 29 Jul 2026 16:26:00 GMT"
+          },
+          {
+            "title": "Samsung reveals the Galaxy Tab S12 series' launch timeframe - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 30 Jul 2026 09:59:02 GMT"
+          },
+          {
+            "title": "Bezos to launch 5,000 satellites to tackle smartphone not-spots - telegraph.co.uk",
+            "source": "telegraph.co.uk",
+            "pub_date": "Mon, 27 Jul 2026 17:44:00 GMT"
+          },
+          {
+            "title": "Samsung ups prices as it launches new foldable smartphones ahead of expected Apple debut - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 22 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "NCTC, Prosurety Launch Complete Device Advantage for Mobile Providers - The Fast Mode",
+            "source": "The Fast Mode",
+            "pub_date": "Wed, 29 Jul 2026 01:20:30 GMT"
+          },
+          {
+            "title": "First Official hololive production Smartphone Game “hololive Dreams,” Jointly Developed by QualiArts and COVER, Officially Launches | NEWS - ホロライブ公式サイト",
+            "source": "ホロライブ公式サイト",
+            "pub_date": "Thu, 23 Jul 2026 02:56:13 GMT"
+          },
+          {
+            "title": "Honor’s upcoming Robot Phone looks like the DJI Osmo Pocket and a smartphone had a baby - Digital Camera World",
+            "source": "Digital Camera World",
+            "pub_date": "Tue, 28 Jul 2026 20:26:01 GMT"
+          },
+          {
+            "title": "HBO Max launches mobile features for enhanced content discovery - Advanced Television",
+            "source": "Advanced Television",
+            "pub_date": "Wed, 29 Jul 2026 12:35:50 GMT"
+          },
+          {
+            "title": "Xbox is down: Major outages stop sign-in, game launches - Mashable",
+            "source": "Mashable",
+            "pub_date": "Mon, 27 Jul 2026 18:50:06 GMT"
+          },
+          {
+            "title": "CelcomDigi launches smartphone instalment offer with SPayLater - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Wed, 29 Jul 2026 08:29:19 GMT"
+          },
+          {
+            "title": "iPhone 18 news, leaks, and rumors: Release date, iPhone 18 Pro details, more info - Mashable",
+            "source": "Mashable",
+            "pub_date": "Wed, 22 Jul 2026 08:27:51 GMT"
+          },
+          {
+            "title": "Google announces the date for the Pixel 11 launch - Mashable",
+            "source": "Mashable",
+            "pub_date": "Wed, 08 Jul 2026 07:33:34 GMT"
+          },
+          {
+            "title": "Samsung Galaxy Unpacked preview: Everything we expect today - Mashable",
+            "source": "Mashable",
+            "pub_date": "Wed, 22 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "First Official Hololive Mobile Game ‘Hololive Dreams’ Goes Live via Qualiarts Collaboration - anitrendz.net",
+            "source": "anitrendz.net",
+            "pub_date": "Wed, 29 Jul 2026 01:12:44 GMT"
+          }
+        ],
+        "AI regulation": [
+          {
+            "title": "Adults have struggled to set rules for AI in school. These teens figured it out - NPR",
+            "source": "NPR",
+            "pub_date": "Thu, 30 Jul 2026 09:00:00 GMT"
+          },
+          {
+            "title": "The Worst Way to Regulate AI - The Atlantic",
+            "source": "The Atlantic",
+            "pub_date": "Tue, 28 Jul 2026 18:32:00 GMT"
+          },
+          {
+            "title": "Meet the EU team leading the world’s first bona fide regulation of AI - politico.eu",
+            "source": "politico.eu",
+            "pub_date": "Wed, 29 Jul 2026 16:33:00 GMT"
+          },
+          {
+            "title": "Nabiha Syed on AI safety, regulation and fears of losing control - CNN",
+            "source": "CNN",
+            "pub_date": "Thu, 30 Jul 2026 18:11:21 GMT"
+          },
+          {
+            "title": "US ‘years behind’ on governance, guardrails for AI regulation: Expert - newsnationnow.com",
+            "source": "newsnationnow.com",
+            "pub_date": "Wed, 29 Jul 2026 23:53:24 GMT"
+          },
+          {
+            "title": "Tech Titans’ Fight Over AI Regulations Fuels More Corporate Risk - Bloomberg Law News",
+            "source": "Bloomberg Law News",
+            "pub_date": "Thu, 30 Jul 2026 17:03:00 GMT"
+          },
+          {
+            "title": "AI Company Employees Petition US Government For Regulation - Engadget",
+            "source": "Engadget",
+            "pub_date": "Tue, 28 Jul 2026 21:20:39 GMT"
+          },
+          {
+            "title": "Armor Launches Sovereign AI: A whole-company AI work platform for regulated industries - Morningstar",
+            "source": "Morningstar",
+            "pub_date": "Thu, 30 Jul 2026 21:41:22 GMT"
+          },
+          {
+            "title": "Anthropic Doubles Midterm Spending to $40 Million to Push AI Regulation - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 22 Jul 2026 09:03:00 GMT"
+          },
+          {
+            "title": "OpenAI’s Hugging Face Breach Fuels Fresh Calls For AI Regulation - Forbes",
+            "source": "Forbes",
+            "pub_date": "Wed, 22 Jul 2026 13:23:34 GMT"
+          },
+          {
+            "title": "Designing a FINRA for Frontier AI - Lawfare",
+            "source": "Lawfare",
+            "pub_date": "Thu, 30 Jul 2026 22:07:30 GMT"
+          },
+          {
+            "title": "Congress must pass a new federal law on AI governance - Brookings",
+            "source": "Brookings",
+            "pub_date": "Wed, 29 Jul 2026 20:43:10 GMT"
+          },
+          {
+            "title": "Ai Regulations for HS Students - ABC7 WWSB",
+            "source": "ABC7 WWSB",
+            "pub_date": "Thu, 30 Jul 2026 14:30:00 GMT"
+          },
+          {
+            "title": "As Sam Altman Celebrates the Singularity, Palantir CEO Alex Karp Warns: ‘There Are Dangers… We Are Going to End Up Having to Regulate AI’ - Barchart.com",
+            "source": "Barchart.com",
+            "pub_date": "Thu, 30 Jul 2026 19:14:05 GMT"
+          },
+          {
+            "title": "Jockeying for Control of AI Data Centers - The Regulatory Review",
+            "source": "The Regulatory Review",
+            "pub_date": "Wed, 29 Jul 2026 06:35:39 GMT"
+          },
+          {
+            "title": "Palantir CEO warns US against Europe's AI regulation path, urges Trump admin to not ban open models - Fox Business",
+            "source": "Fox Business",
+            "pub_date": "Mon, 27 Jul 2026 21:40:00 GMT"
+          },
+          {
+            "title": "EDITORIAL: Solid first steps for Hawaii AI regulation - The Garden Island",
+            "source": "The Garden Island",
+            "pub_date": "Thu, 30 Jul 2026 10:02:00 GMT"
+          },
+          {
+            "title": "Armor Launches Sovereign AI: A whole-company AI work platform for regulated industries - PR Newswire",
+            "source": "PR Newswire",
+            "pub_date": "Thu, 30 Jul 2026 21:23:00 GMT"
+          },
+          {
+            "title": "Altman says he supports AI regulation - semafor.com",
+            "source": "semafor.com",
+            "pub_date": "Wed, 29 Jul 2026 22:46:00 GMT"
+          },
+          {
+            "title": "Editorial: AI regulation vexes California and Congress - ocregister.com",
+            "source": "ocregister.com",
+            "pub_date": "Tue, 28 Jul 2026 22:08:37 GMT"
+          },
+          {
+            "title": "A bipartisan House duo’s final pitch for pre-midterm AI action - Politico",
+            "source": "Politico",
+            "pub_date": "Mon, 27 Jul 2026 08:45:00 GMT"
+          },
+          {
+            "title": "State laws restricting AI in mental health care, explained - qz.com",
+            "source": "qz.com",
+            "pub_date": "Thu, 30 Jul 2026 19:09:06 GMT"
+          },
+          {
+            "title": "States have passed 14 new laws this year regulating the use of AI in healthcare - Transparency Coalition",
+            "source": "Transparency Coalition",
+            "pub_date": "Mon, 27 Jul 2026 12:05:06 GMT"
+          },
+          {
+            "title": "No ChatGPT Ban: Manassas School Board Ditches AI Rules After Detection Fight - Potomac Local News",
+            "source": "Potomac Local News",
+            "pub_date": "Thu, 30 Jul 2026 14:03:24 GMT"
+          },
+          {
+            "title": "New Tennessee education laws change how schools approach technology, AI - WKRN News 2",
+            "source": "WKRN News 2",
+            "pub_date": "Thu, 30 Jul 2026 12:47:50 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air quality spokane",
+          "ai detector",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airway heights",
+          "aidvantage",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt work",
+          "chatgpt desktop",
+          "chatgpt zero",
+          "chatgpt image generator"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phone line deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
+    }
   },
-  {
-   "title": "Europe's fires are just the start",
-   "points": 27,
-   "comments": 3,
-   "created_at": "2026-07-28T00:00:00+00:00",
-   "url": "https://economist.com/leaders/2026/07/28/europes-fires-are-just-the-start"
-  },
-  {
-   "title": "Why Is Everyone Trying to Build a Solid-State Battery?",
-   "points": 41,
-   "comments": 27,
-   "created_at": null,
-   "url": "https://www.construction-physics.com/p/why-is-everyone-trying-to-build-a"
-  },
-  {
-   "title": "Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools",
-   "points": 11,
-   "comments": 2,
-   "created_at": null,
-   "url": "https://prized.dev"
-  },
-  {
-   "title": "Why Don't People Use Formal Methods?",
-   "points": 39,
-   "comments": 29,
-   "created_at": null,
-   "url": "https://www.hillelwayne.com/post/why-dont-people-use-formal-methods/"
-  },
-  {
-   "title": "Gpiozero Flow",
-   "points": 93,
-   "comments": 28,
-   "created_at": null,
-   "url": "https://bennuttall.com/blog/2026/07/gpiozero-flow/"
-  },
-  {
-   "title": "Ron Gilbert started production on Thimbleweed Park 2",
-   "points": 123,
-   "comments": 47,
-   "created_at": null,
-   "url": "https://www.grumpygamer.com/twp2_announce/"
-  },
-  {
-   "title": "How Old Is Ann?",
-   "points": 30,
-   "comments": 18,
-   "created_at": "2026-07-29T00:00:00+00:00",
-   "url": "https://quuxplusone.github.io/blog/2026/07/29/how-old-is-ann/"
-  },
-  {
-   "title": "I made a game where you build a CPU from logic gates",
-   "points": 34,
-   "comments": 26,
-   "created_at": null,
-   "url": "https://select.supply/game/chipbuilder"
-  },
-  {
-   "title": "AI's top startups are barely publishing their research",
-   "points": 561,
-   "comments": 292,
-   "created_at": null,
-   "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research"
-  },
-  {
-   "title": "Agent-Manager: A Tmux TUI for Running Claude Code, Codex and OpenCode",
-   "points": 61,
-   "comments": 42,
-   "created_at": null,
-   "url": "https://github.com/YoanWai/agent-manager"
-  },
-  {
-   "title": "Carolina Cloud pays SOFR on unused prepaid credits",
-   "points": 51,
-   "comments": 32,
-   "created_at": null,
-   "url": "https://docs.carolinacloud.io/organizations/prepaid-interest/"
-  },
-  {
-   "title": "The coolest use for the Vision Pro",
-   "points": 769,
-   "comments": 289,
-   "created_at": null,
-   "url": "https://christianselig.com/2026/07/vision-pro-house/"
-  },
-  {
-   "title": "Go LLM SDK for streaming, tool-calling AI backends (plus frontend React lib)",
-   "points": 24,
-   "comments": 5,
-   "created_at": null,
-   "url": "https://github.com/grafana/ai-sdk"
-  },
-  {
-   "title": "The Glass Famine",
-   "points": 57,
-   "comments": 22,
-   "created_at": null,
-   "url": "https://edconway.substack.com/p/the-glass-famine"
-  },
-  {
-   "title": "CosmosEscape: Taking over Every Database in Azure Cosmos DB",
-   "points": 15,
-   "comments": 6,
-   "created_at": null,
-   "url": "https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db"
-  },
-  {
-   "title": "Are We Stuck with Lean?",
-   "points": 18,
-   "comments": 3,
-   "created_at": null,
-   "url": "https://mathoverflow.net/questions/513742/are-we-stuck-with-lean"
-  },
-  {
-   "title": "Google will expand age checks on Android worldwide till the end of the year",
-   "points": 197,
-   "comments": 226,
-   "created_at": null,
-   "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html"
-  },
-  {
-   "title": "LLM Honeypot",
-   "points": 342,
-   "comments": 94,
-   "created_at": null,
-   "url": "https://llm2human.pages.dev/"
-  },
-  {
-   "title": "You can't solve computer use by ignoring the interface",
-   "points": 20,
-   "comments": 1,
-   "created_at": null,
-   "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved"
-  },
-  {
-   "title": "The first watch featuring computer functions",
-   "points": 53,
-   "comments": 24,
-   "created_at": null,
-   "url": "https://by.seiko-design.com/140th/en/topic/58.html"
-  },
-  {
-   "title": "GCC steering committee announces AI policy",
-   "points": 146,
-   "comments": 162,
-   "created_at": null,
-   "url": "https://lwn.net/Articles/1086041/"
-  },
-  {
-   "title": "The Productivity Mirage",
-   "points": 309,
-   "comments": 135,
-   "created_at": null,
-   "url": "https://frantic.im/mirage/"
-  },
-  {
-   "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
-   "points": 436,
-   "comments": 235,
-   "created_at": null,
-   "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
-  },
-  {
-   "title": "ChatGPT, Roblox to Fall Under Strictest EU Rules for Platforms",
-   "points": 45,
-   "comments": 30,
-   "created_at": "2026-07-29T00:00:00+00:00",
-   "url": "https://www.bloomberg.com/news/articles/2026-07-29/chatgpt-roblox-to-fall-under-strictest-eu-rules-for-platforms"
-  }
- ],
- "outlet_headlines": [],
- "wikipedia_top": []
+  "hacker_news": [
+    {
+      "title": "UEFA and its national associations will not participate in FIFA competitions",
+      "url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
+      "points": 841,
+      "comments": 471,
+      "created_at": "2026-07-30T18:40:52Z"
+    },
+    {
+      "title": "Read this before you buy that TV streaming stick",
+      "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+      "points": 613,
+      "comments": 358,
+      "created_at": "2026-07-30T17:04:53Z"
+    },
+    {
+      "title": "Advancing the price-performance frontier with GPT‑5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "points": 521,
+      "comments": 341,
+      "created_at": "2026-07-30T17:15:51Z"
+    },
+    {
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "points": 513,
+      "comments": 172,
+      "created_at": "2026-07-30T16:26:16Z"
+    },
+    {
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "points": 499,
+      "comments": 399,
+      "created_at": "2026-07-30T15:15:48Z"
+    },
+    {
+      "title": "Google will expand age checks on Android worldwide till the end of the year",
+      "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
+      "points": 370,
+      "comments": 460,
+      "created_at": "2026-07-30T10:13:46Z"
+    },
+    {
+      "title": "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
+      "url": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+      "points": 320,
+      "comments": 193,
+      "created_at": "2026-07-30T17:31:07Z"
+    },
+    {
+      "title": "GCC steering committee announces AI policy",
+      "url": "https://lwn.net/Articles/1086041/",
+      "points": 254,
+      "comments": 297,
+      "created_at": "2026-07-30T11:45:44Z"
+    },
+    {
+      "title": "Agent Skill to Force Docs in ASD-STE100 Simplified Technical English",
+      "url": "https://github.com/AminBlg/SimpleEnglish",
+      "points": 236,
+      "comments": 85,
+      "created_at": "2026-07-30T19:34:27Z"
+    },
+    {
+      "title": "2x, not 10x: coding with LLMs in 2026",
+      "url": "https://obryant.dev/p/2x-not-10x/",
+      "points": 229,
+      "comments": 182,
+      "created_at": "2026-07-25T14:27:05Z"
+    },
+    {
+      "title": "The Economic Benefit of Refactoring",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "points": 209,
+      "comments": 86,
+      "created_at": "2026-07-30T15:10:27Z"
+    },
+    {
+      "title": "Upper stage impacting the moon on 2026 August 5",
+      "url": "https://www.projectpluto.com/25010d.htm",
+      "points": 195,
+      "comments": 53,
+      "created_at": "2026-07-30T13:21:34Z"
+    },
+    {
+      "title": "Physicists Solve a Muon Mystery. Now, Old Results Don't Add Up",
+      "url": "https://www.quantamagazine.org/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-20260729/",
+      "points": 189,
+      "comments": 107,
+      "created_at": "2026-07-30T15:22:46Z"
+    },
+    {
+      "title": "Why is everyone trying to build a solid-state battery?",
+      "url": "https://www.construction-physics.com/p/why-is-everyone-trying-to-build-a",
+      "points": 180,
+      "comments": 220,
+      "created_at": "2026-07-30T12:38:51Z"
+    },
+    {
+      "title": "The AI Aesthetic",
+      "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+      "points": 169,
+      "comments": 89,
+      "created_at": "2026-07-30T23:22:16Z"
+    },
+    {
+      "title": "CodePen 2.0",
+      "url": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
+      "points": 141,
+      "comments": 43,
+      "created_at": "2026-07-30T17:52:51Z"
+    },
+    {
+      "title": "The lost civic life of movie rental stores",
+      "url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+      "points": 137,
+      "comments": 193,
+      "created_at": "2026-07-30T14:11:42Z"
+    },
+    {
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "points": 123,
+      "comments": 92,
+      "created_at": "2026-07-30T23:00:51Z"
+    },
+    {
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+      "points": 118,
+      "comments": 49,
+      "created_at": "2026-07-30T22:33:11Z"
+    },
+    {
+      "title": "Show HN: Kedge – Full-stack cloud with forkable VM snapshots and global SQLite",
+      "url": "https://kedge.dev/",
+      "points": 97,
+      "comments": 20,
+      "created_at": "2026-07-29T16:15:57Z"
+    },
+    {
+      "title": "The AI Aesthetic",
+      "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+      "points": 177,
+      "comments": 91,
+      "created_at": "2026-07-30T23:22:16Z"
+    },
+    {
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+      "points": 119,
+      "comments": 50,
+      "created_at": "2026-07-30T22:33:11Z"
+    },
+    {
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "points": 94,
+      "comments": 63,
+      "created_at": "2026-07-30T18:13:06Z"
+    },
+    {
+      "title": "Citadel Buys Situational Awareness's Stock Portfolio After Big Losses in AI",
+      "url": "https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b",
+      "points": 50,
+      "comments": 10,
+      "created_at": "2026-07-30T16:00:33Z"
+    },
+    {
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "points": 500,
+      "comments": 399,
+      "created_at": "2026-07-30T15:15:48Z"
+    },
+    {
+      "title": "The Economic Benefit of Refactoring",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "points": 210,
+      "comments": 87,
+      "created_at": "2026-07-30T15:10:27Z"
+    },
+    {
+      "title": "OpenJDK Interim Policy on Generative AI",
+      "url": "https://openjdk.org/legal/ai",
+      "points": 68,
+      "comments": 79,
+      "created_at": "2026-07-30T12:36:38Z"
+    },
+    {
+      "title": "Go LLM SDK for streaming, tool-calling AI backends (plus frontend React lib)",
+      "url": "https://github.com/grafana/ai-sdk",
+      "points": 57,
+      "comments": 16,
+      "created_at": "2026-07-30T11:55:39Z"
+    },
+    {
+      "title": "GCC steering committee announces AI policy",
+      "url": "https://lwn.net/Articles/1086041/",
+      "points": 254,
+      "comments": 298,
+      "created_at": "2026-07-30T11:45:44Z"
+    },
+    {
+      "title": "'My life's screwed': Korean investors stress out after AI bubble bursts",
+      "url": "https://www.ft.com/content/23f388eb-e8ab-4fb1-b1ca-8e04eb4561a1",
+      "points": 53,
+      "comments": 42,
+      "created_at": "2026-07-30T11:22:19Z"
+    },
+    {
+      "title": "Sam Altman is now talking to the White House about decelerating AI",
+      "url": "https://twitter.com/AISafetyMemes/status/2082569026929394008",
+      "points": 44,
+      "comments": 46,
+      "created_at": "2026-07-30T08:08:05Z"
+    },
+    {
+      "title": "I Have Thoughts on the iPhone Air",
+      "url": "https://christianselig.com/2026/07/iphone-air-review/",
+      "points": 49,
+      "comments": 67,
+      "created_at": "2026-07-30T07:54:13Z"
+    },
+    {
+      "title": "Show HN: A local merge queue for parallel Claude Code agents",
+      "url": "https://github.com/funador/claude-code-merge-queue",
+      "points": 41,
+      "comments": 22,
+      "created_at": "2026-07-30T00:20:16Z"
+    },
+    {
+      "title": "AI's top startups are barely publishing their research",
+      "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+      "points": 595,
+      "comments": 313,
+      "created_at": "2026-07-29T21:25:40Z"
+    },
+    {
+      "title": "Commodification of Intelligence: Good, Bad, and Ugly Circular AI Deals",
+      "url": "https://www.emergingtrajectories.com/lh/commodification-and-circularity/",
+      "points": 85,
+      "comments": 48,
+      "created_at": "2026-07-29T18:57:10Z"
+    },
+    {
+      "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+      "url": "https://usetokenless.com/",
+      "points": 69,
+      "comments": 59,
+      "created_at": "2026-07-29T15:55:27Z"
+    },
+    {
+      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "points": 886,
+      "comments": 322,
+      "created_at": "2026-07-29T15:05:43Z"
+    },
+    {
+      "title": "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?",
+      "url": "https://juliahub.com/blog/frontier-models-physical-ai-evaluation",
+      "points": 98,
+      "comments": 21,
+      "created_at": "2026-07-29T14:56:28Z"
+    },
+    {
+      "title": "Self-hosting Kimi K3: 20% more hardware cost, 20% better task resolution",
+      "url": "https://aistack.imec-int.com/blog/gpu-self-hosting",
+      "points": 151,
+      "comments": 47,
+      "created_at": "2026-07-29T14:38:35Z"
+    },
+    {
+      "title": "Teacher arrested for clapping in opposition at an AI data center meeting",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/teacher-arrested-for-clapping-in-support-of-opposition-at-an-ai-data-center-meeting-gigawatt-scale-project-gets-approved-anyway-despite-community-resistance",
+      "points": 59,
+      "comments": 16,
+      "created_at": "2026-07-29T14:28:22Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6896300,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 814501,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 696648,
+      "rank": 3
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 660682,
+      "rank": 4
+    },
+    {
+      "article": "Glen_Hansard",
+      "views": 657637,
+      "rank": 5
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 408836,
+      "rank": 6
+    },
+    {
+      "article": "Jared_Leto",
+      "views": 244472,
+      "rank": 7
+    },
+    {
+      "article": "Kavinsky",
+      "views": 237734,
+      "rank": 8
+    },
+    {
+      "article": "Anthony_Fauci",
+      "views": 166066,
+      "rank": 9
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 140912,
+      "rank": 10
+    },
+    {
+      "article": "2026_Commonwealth_Games",
+      "views": 140335,
+      "rank": 11
+    },
+    {
+      "article": "Markéta_Irglová",
+      "views": 135555,
+      "rank": 12
+    },
+    {
+      "article": "Odyssey",
+      "views": 134782,
+      "rank": 13
+    },
+    {
+      "article": "India_at_the_2026_Commonwealth_Games",
+      "views": 119384,
+      "rank": 14
+    },
+    {
+      "article": "Zendaya",
+      "views": 116250,
+      "rank": 15
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 113817,
+      "rank": 16
+    },
+    {
+      "article": "Lindsey_Graham",
+      "views": 113063,
+      "rank": 17
+    },
+    {
+      "article": "XHamster",
+      "views": 110145,
+      "rank": 18
+    },
+    {
+      "article": ".xyz",
+      "views": 100201,
+      "rank": 19
+    },
+    {
+      "article": "ChatGPT",
+      "views": 93019,
+      "rank": 20
+    },
+    {
+      "article": "Obsession_(2025_film)",
+      "views": 92906,
+      "rank": 21
+    },
+    {
+      "article": "Once_(film)",
+      "views": 78527,
+      "rank": 22
+    },
+    {
+      "article": "Christopher_Nolan",
+      "views": 77515,
+      "rank": 23
+    },
+    {
+      "article": "YouTube",
+      "views": 75646,
+      "rank": 24
+    },
+    {
+      "article": "Madison_Beer",
+      "views": 74684,
+      "rank": 25
+    },
+    {
+      "article": "Jana_Nayagan",
+      "views": 73975,
+      "rank": 26
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 70271,
+      "rank": 27
+    },
+    {
+      "article": "Rand_Paul",
+      "views": 68272,
+      "rank": 28
+    },
+    {
+      "article": "XXX_(film_series)",
+      "views": 64979,
+      "rank": 29
+    },
+    {
+      "article": ".xxx",
+      "views": 62821,
+      "rank": 30
+    },
+    {
+      "article": "Limonene",
+      "views": 62724,
+      "rank": 31
+    },
+    {
+      "article": "2022_Idaho_student_murders",
+      "views": 62619,
+      "rank": 32
+    },
+    {
+      "article": "Jumanji:_Open_World",
+      "views": 61412,
+      "rank": 33
+    },
+    {
+      "article": "James_Aren_Duckett",
+      "views": 61328,
+      "rank": 34
+    },
+    {
+      "article": "Gianni_Infantino",
+      "views": 60009,
+      "rank": 35
+    },
+    {
+      "article": "Tony_Romo",
+      "views": 59472,
+      "rank": 36
+    },
+    {
+      "article": "Anne_Hathaway",
+      "views": 58323,
+      "rank": 37
+    },
+    {
+      "article": "Bernie_Moreno",
+      "views": 56812,
+      "rank": 38
+    },
+    {
+      "article": "Masters_of_the_Universe_(2026_film)",
+      "views": 56365,
+      "rank": 39
+    },
+    {
+      "article": "Lost_Highway_(film)",
+      "views": 56361,
+      "rank": 40
+    },
+    {
+      "article": "Sadie_Sink",
+      "views": 56122,
+      "rank": 41
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 55998,
+      "rank": 42
+    },
+    {
+      "article": "Danny_Welbeck",
+      "views": 55733,
+      "rank": 43
+    },
+    {
+      "article": "List_of_Marvel_Cinematic_Universe_films",
+      "views": 55069,
+      "rank": 44
+    },
+    {
+      "article": "Spider-Man:_No_Way_Home",
+      "views": 53386,
+      "rank": 45
+    },
+    {
+      "article": "Trojan_War",
+      "views": 53099,
+      "rank": 46
+    },
+    {
+      "article": "Kaitlan_Collins",
+      "views": 52506,
+      "rank": 47
+    },
+    {
+      "article": "2026–27_UEFA_Champions_League",
+      "views": 51071,
+      "rank": 48
+    },
+    {
+      "article": "Laestrygonians",
+      "views": 50989,
+      "rank": 49
+    },
+    {
+      "article": "United_States",
+      "views": 50708,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic says its own AI models breached three companies during security tests"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple stockpiles inventory as it braces for ‘significant supply constraints’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Reddit reports a solid quarter but shows signs of AI’s impact"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Investors love AI, as long as you’re a cloud host"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple says gaming slowdown and App Store changes hurt services growth"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "CareCloud begins to notify hundreds of thousands after hackers stole medical records"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Florida plans to build air taxi pads using $200M intended for EV chargers"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "LinkedIn adds a button to report AI-generated ‘slop’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Synthetic-user startup Simile raises $200M at $2B valuation 5 months after $100M Series A"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Spotify launches ‘User Notes’ to let users add memories to songs"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Okta buys AI security startup Permiso — source says for about $200M"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Tim Cook hints at iCloud Plus tier for AI power users"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Xbox CEO lays out priorities in memo after major &#8216;reset&#8217;"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Apple&#8217;s iPhone and Mac sales keep growing despite RAM shortages"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The loss of Situational Awareness"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Samsung’s Galaxy Watch 9 is $40 off at Costco and comes with over $50 in freebies"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "LinkedIn actually adds a ‘seems like AI slop’ button"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Govee&#8217;s portable smart lamp is down to one of its best prices to date"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "NASA’s Curiosity rover found a ‘sea of polygons’ on Mars"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Google DeepMind’s new AI model can control a robot’s entire body"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "ABC demands FCC drop its ‘punitive’ early license renewal of its stations"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Quantum computers outperform classical ones, with results you can trust"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "New MCP specification addresses the main barrier to enterprise adoption"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Mythos attack on 3rd-round PQC algorithm candidate puts it out of commission"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Musk went to “war,” sought jail time for X ad boycotts—but case ends with a whimper"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Who wins and who loses after US bans foreign robots?"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Comcast store punished low sales by smashing pies in workers' faces, lawsuit claims"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Customize Ars your way with an Ars Pro subscription"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google's \"privacy-preserving\" age verification system is coming to the Play Store"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Elon Musk’s xAI is trying to sue its way out of a Grok reckoning"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Yet more qubit tech: New quantum dot options, diamond vacancies"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Actually, Starliner might fly into space this year"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Anthropic is finding bugs faster than Microsoft can fix them"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "New AMD Linux patch boosts low-end gaming performance on Steam Deck"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Gaming and IRL worlds collide in Jumanji: Open World trailer"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "What happens when you put AI to work deciphering lost languages?"
+    }
+  ]
 }
