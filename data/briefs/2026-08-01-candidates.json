@@ -1,0 +1,324 @@
+{
+ "date": "2026-08-01",
+ "candidates": [
+  {
+   "title": "Claude models breached three real organizations during cybersecurity evaluations",
+   "sources": [
+    "gnews:US",
+    "outlet:Bloomberg",
+    "outlet:AI Weekly"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "Anthropic"
+    },
+    {
+     "source": "outlet:Bloomberg",
+     "outlet": "Bloomberg"
+    },
+    {
+     "source": "outlet:AI Weekly",
+     "outlet": "AI Weekly"
+    }
+   ],
+   "score": 0.5532,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Nscale to acquire Anyscale for approximately $1.65B",
+   "sources": [
+    "gnews:US",
+    "outlet:Pulse2",
+    "outlet:AI Weekly"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "Nscale"
+    },
+    {
+     "source": "outlet:Pulse2",
+     "outlet": "Pulse2"
+    },
+    {
+     "source": "outlet:AI Weekly",
+     "outlet": "AI Weekly"
+    }
+   ],
+   "score": 0.5522,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Google nixes its Earth AI feature one day after launch amid misinformation concerns",
+   "sources": [
+    "gnews:US",
+    "outlet:Digital Digging"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "TechCrunch"
+    },
+    {
+     "source": "outlet:Digital Digging",
+     "outlet": "Digital Digging"
+    }
+   ],
+   "score": 0.5415,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "OpenAI cuts GPT-5.6 model pricing by up to 80%",
+   "sources": [
+    "gnews:US",
+    "outlet:CNBC",
+    "outlet:Unite.AI"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "BuildFastWithAI"
+    },
+    {
+     "source": "outlet:CNBC",
+     "outlet": "CNBC"
+    },
+    {
+     "source": "outlet:Unite.AI",
+     "outlet": "Unite.AI"
+    }
+   ],
+   "score": 0.54,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Meta raises 2026 AI capex floor to $130B as Q2 revenue tops $60B",
+   "sources": [
+    "gnews:US",
+    "outlet:AI Weekly"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "Meta"
+    },
+    {
+     "source": "outlet:AI Weekly",
+     "outlet": "AI Weekly"
+    }
+   ],
+   "score": 0.5272,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Thinking Machines releases 276B-parameter open-weight model Inkling-Small",
+   "sources": [
+    "gnews:US",
+    "outlet:AI Weekly"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "Thinking Machines Lab"
+    },
+    {
+     "source": "outlet:AI Weekly",
+     "outlet": "AI Weekly"
+    }
+   ],
+   "score": 0.5231,
+   "topic_fit": 0.84,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Microsoft stock surges 15.5% on strong AI and cloud earnings",
+   "sources": [
+    "gnews:US",
+    "outlet:The CODEW"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "BuildFastWithAI"
+    },
+    {
+     "source": "outlet:The CODEW",
+     "outlet": "The CODEW"
+    }
+   ],
+   "score": 0.5225,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Lam Research posts best day since 1999 on AI chip demand",
+   "sources": [
+    "outlet:AI Weekly"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:AI Weekly",
+     "outlet": "AI Weekly"
+    }
+   ],
+   "score": 0.4263,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "India's chip production set to rise to just 13% by 2030, Forrester forecasts",
+   "sources": [
+    "gnews:IN"
+   ],
+   "geos": [
+    "IN"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:IN",
+     "query": "websearch",
+     "outlet": "TechDay India"
+    }
+   ],
+   "score": 0.4027,
+   "topic_fit": 0.88,
+   "corroboration": 0.0
+  },
+  {
+   "title": "AWS grows 37% to $42.2B in Q2, its fastest growth in over four years",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "Quartz"
+    }
+   ],
+   "score": 0.398,
+   "topic_fit": 0.86,
+   "corroboration": 0.0
+  },
+  {
+   "title": "India is starting to pay for apps, not just download them",
+   "sources": [
+    "gnews:IN"
+   ],
+   "geos": [
+    "IN"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:IN",
+     "query": "websearch",
+     "outlet": "TechCrunch"
+    }
+   ],
+   "score": 0.3938,
+   "topic_fit": 0.86,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Siri AI could come with a paywall for power users",
+   "sources": [
+    "gnews:US"
+   ],
+   "geos": [
+    "US"
+   ],
+   "momentum_raw": 0.25,
+   "evidence": [
+    {
+     "source": "gnews:US",
+     "query": "websearch",
+     "outlet": "TechCrunch"
+    }
+   ],
+   "score": 0.3887,
+   "topic_fit": 0.84,
+   "corroboration": 0.0
+  }
+ ],
+ "pick": {
+  "title": "OpenAI cuts GPT-5.6 model pricing by up to 80%",
+  "sources": [
+   "gnews:US",
+   "outlet:CNBC",
+   "outlet:Unite.AI"
+  ],
+  "geos": [
+   "US"
+  ],
+  "momentum_raw": 0.25,
+  "evidence": [
+   {
+    "source": "gnews:US",
+    "query": "websearch",
+    "outlet": "BuildFastWithAI"
+   },
+   {
+    "source": "outlet:CNBC",
+    "outlet": "CNBC"
+   },
+   {
+    "source": "outlet:Unite.AI",
+    "outlet": "Unite.AI"
+   }
+  ],
+  "score": 0.54,
+  "topic_fit": 1.0,
+  "corroboration": 0.5
+ },
+ "use_evergreen": false,
+ "selection_note": "Editorial override: scorer's top pick (Claude cybersecurity-eval breaches) is a second consecutive AI-security-breach story after 2026-07-31 openai-agent-hugging-face-breach; switched to next strong candidate with higher search utility and hub balance (ai-models last served 07-15)."
+}

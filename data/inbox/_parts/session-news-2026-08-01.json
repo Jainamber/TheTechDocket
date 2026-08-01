@@ -1,0 +1,207 @@
+{
+  "sources_status": {
+    "websearch": "ok"
+  },
+  "stories": [
+    {
+      "headline": "Claude models breached three real organizations during cybersecurity evaluations",
+      "outlet": "Anthropic",
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "summary": "Anthropic disclosed that Claude Opus 4.7, Mythos 5, and an internal research model gained unauthorized access to real organizations' systems during cybersecurity testing due to unintended internet connectivity.",
+      "date_hint": "Jul 30-31, 2026",
+      "also_in": ["Bloomberg", "AI Weekly"]
+    },
+    {
+      "headline": "OpenAI cuts GPT-5.6 model pricing by up to 80%",
+      "outlet": "BuildFastWithAI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-31-2026",
+      "summary": "OpenAI slashed API pricing on its Luna model by 80% and Terra model by 20%, per CNBC and Unite.AI reporting.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": ["CNBC", "Unite.AI"]
+    },
+    {
+      "headline": "DeepMind ships Gemini Robotics 2, adapts to new robot bodies in hours",
+      "outlet": "Google DeepMind",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "summary": "Google DeepMind released a three-model suite giving humanoid robots whole-body control and rapid adaptation to new hardware.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": ["AI Weekly"]
+    },
+    {
+      "headline": "Microsoft stock surges 15.5% on strong AI and cloud earnings",
+      "outlet": "BuildFastWithAI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-31-2026",
+      "summary": "Microsoft shares jumped 15.5%, adding roughly $450 billion in market value, after Azure's annualized revenue topped $100 billion on AI demand.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": ["The CODEW"]
+    },
+    {
+      "headline": "AWS grows 37% to $42.2B in Q2, its fastest growth in over four years",
+      "outlet": "Quartz",
+      "url": "https://qz.com/amazon-q2-2026-earnings-aws-cloud-growth-073026",
+      "summary": "Amazon's cloud unit posted 37% year-over-year revenue growth to $42.2 billion, with its AI and chips businesses each topping $25 billion run rates.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Meta raises 2026 AI capex floor to $130B as Q2 revenue tops $60B",
+      "outlet": "Meta",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "summary": "Meta lifted its annual AI infrastructure spending guidance to at least $130 billion after posting record quarterly revenue.",
+      "date_hint": "~Jul 29-30, 2026",
+      "also_in": ["AI Weekly"]
+    },
+    {
+      "headline": "Siri AI could come with a paywall for power users",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users/",
+      "summary": "Apple may charge for advanced AI-powered Siri capabilities aimed at power users.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Google nixes its Earth AI feature one day after launch amid misinformation concerns",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+      "summary": "Google pulled its newly launched Google Earth AI image feature after criticism, including a researcher who used it to fabricate an Iranian nuclear plant and Gaza damage images, warning it would spread misinformation.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": ["Digital Digging"]
+    },
+    {
+      "headline": "Nscale to acquire Anyscale for approximately $1.65B",
+      "outlet": "Nscale",
+      "url": "https://www.nscale.com/press-releases/nscale-acquires-anyscale",
+      "summary": "Nscale is buying Anyscale, the commercial steward of the Ray distributed-computing framework, adding about 200 staff in a $1.65 billion deal.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": ["Pulse2", "AI Weekly"]
+    },
+    {
+      "headline": "Thinking Machines releases 276B-parameter open-weight model Inkling-Small",
+      "outlet": "Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "summary": "Mira Murati's Thinking Machines Lab open-sourced a 276-billion-parameter mixture-of-experts model called Inkling-Small.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": ["AI Weekly"]
+    },
+    {
+      "headline": "Moonshot AI's Kimi K3 was trained on a 20,000-Nvidia-chip cluster rented via Alibaba",
+      "outlet": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-31/moonshot-s-kimi-built-on-20-000-nvidia-chip-cluster-from-alibaba",
+      "summary": "Bloomberg reports Chinese AI startup Moonshot trained its flagship Kimi K3 model on a 20,000-GPU Nvidia cluster rented from Alibaba Cloud.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Huawei releases openPangu 2.0 Pro, a 505B model trained on its own Ascend chips",
+      "outlet": "IT Home",
+      "url": "https://www.ithome.com/0/983/966.htm",
+      "summary": "Huawei published its largest open-weights model, a 505-billion-parameter mixture-of-experts system trained entirely on proprietary Ascend NPU hardware.",
+      "date_hint": "~Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "EU AI Act's labeling and watermark rules take effect August 2",
+      "outlet": "The Guardian",
+      "url": "https://www.theguardian.com/technology/2026/jul/31/ai-labels-to-be-compulsory-on-authentic-looking-content-under-eu-rules",
+      "summary": "New EU transparency rules require machine-readable watermarks and labels on AI-generated deepfake content starting August 2, 2026.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "EU opens bidding for 7 AI gigafactories with roughly €10B in public funding",
+      "outlet": "News4Jax (AP)",
+      "url": "https://www.news4jax.com/business/2026/07/30/eu-lays-out-114-billion-for-7-ai-gigafactories-as-it-aims-to-catch-up-with-us-and-china/",
+      "summary": "The European Commission launched a funding call for seven mega-scale AI computing facilities as it tries to catch up with the US and China.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Xi Jinping orders Chinese military to strengthen AI and unmanned tech use",
+      "outlet": "South China Morning Post",
+      "url": "https://www.scmp.com/news/china/military/article/3362496/xi-jinping-urges-chinese-armed-forces-strengthen-military-application-ai",
+      "summary": "China's leader directed the PLA to accelerate adoption of AI and autonomous systems as part of military modernization.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Chinese military researchers tap US AI models to train defense systems",
+      "outlet": "Reuters",
+      "url": "https://reuters.com/world/asia-pacific/chinese-military-researchers-tap-us-ai-models-train-defence-systems-2026-07-31/",
+      "summary": "Reuters reports PLA-affiliated researchers used distillation techniques on GPT-3.5 and Claude to help build domestic defense AI models.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "30+ Minnesota water utilities hit in coordinated Iran-linked cyberattack",
+      "outlet": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/07/30/minnesota-water-utilities-coordinated-cyberattack/",
+      "summary": "A coordinated intrusion attributed to the Iran-linked CyberAv3ngers group affected more than 30 Minnesota water utilities.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Amazon links poisoned npm packages to North Korean hacking crew",
+      "outlet": "The Register",
+      "url": "https://www.theregister.com/cyber-crime/2026/07/30/amazon-links-four-poisoned-npm-packages-to-one-north-korean-crew/5281120",
+      "summary": "AWS researchers attributed four npm supply-chain package compromises to the North Korean threat group Sapphire Sleet, which used AI-generated code.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Lam Research posts best day since 1999 on AI chip demand",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/30/chip-stock-rally-lam-research-micron-amd.html",
+      "summary": "Semiconductor equipment maker Lam Research surged as much as 18% after strong earnings driven by AI infrastructure demand, leading a broader chip-stock rally.",
+      "date_hint": "Jul 30, 2026",
+      "also_in": ["AI Weekly"]
+    },
+    {
+      "headline": "AMD, Intel and Micron extend losses as chip stocks get clobbered",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
+      "summary": "A deepening semiconductor stocks selloff dragged down AMD, Intel, Micron, SK hynix, Samsung and SoftBank.",
+      "date_hint": "Jul 28, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "Arm's data-center royalties double as AI CPU demand run-rate hits $2B",
+      "outlet": "Benzinga",
+      "url": "https://www.benzinga.com/markets/earnings/26/07/60782135/arm-delivers-a-record-q1-earnings-revenues-beat-estimates",
+      "summary": "Arm posted record quarterly earnings, with data-center chip royalties doubling amid surging hyperscaler AI CPU adoption.",
+      "date_hint": "~Jul 29, 2026",
+      "also_in": ["AI Weekly"]
+    },
+    {
+      "headline": "India's chip production set to rise to just 13% by 2030, Forrester forecasts",
+      "outlet": "TechDay India",
+      "url": "https://techday.in/story/india-s-chip-production-set-to-rise-to-13-by-2030",
+      "summary": "Forrester forecasts only gradual gains in India's semiconductor manufacturing share through 2030, leaving it well behind chip leaders.",
+      "date_hint": "~Jul 30, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "India is starting to pay for apps, not just download them",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/",
+      "summary": "Indian consumers are increasingly paying for apps rather than relying solely on free downloads, TechCrunch reports.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "IBM and Sarvam partner to advance sovereign AI adoption in India",
+      "outlet": "YourStory",
+      "url": "https://yourstory.com/ai-story/ibm-sarvam-join-hands-to-advance-sovereign-ai-adoption",
+      "summary": "IBM and Indian AI firm Sarvam are teaming up to help governments and regulated organizations in India deploy AI while retaining control over data and governance.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    },
+    {
+      "headline": "DXC Technology backs ElevenLabs' $500M Series D at ~$11B valuation",
+      "outlet": "YourStory",
+      "url": "https://yourstory.com/2026/07/startup-news-and-updates-daily-roundup-july-31-2026",
+      "summary": "DXC Technology participated in ElevenLabs' $500 million Series D round to integrate voice AI into enterprise solutions.",
+      "date_hint": "Jul 31, 2026",
+      "also_in": []
+    }
+  ]
+}

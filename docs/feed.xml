@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%</title>
+    <link>https://thetechdocket.com/articles/gpt-5-6-luna-price-cut/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/gpt-5-6-luna-price-cut/</guid>
+    <pubDate>Sat, 01 Aug 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[OpenAI cut GPT-5.6 Luna API prices 80% to $0.20 per million input tokens and Terra 20% on July 30. New rates vs Gemini, Claude, DeepSeek — and the India cost math.]]></description>
+  </item>
+  <item>
     <title>AI Agent Security: The OpenAI-Hugging Face Breach</title>
     <link>https://thetechdocket.com/articles/openai-agent-hugging-face-breach/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/openai-agent-hugging-face-breach/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/</guid>
     <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[PrismML's Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What's verified, what's hype, and which phones in India can run it.]]></description>
-  </item>
-  <item>
-    <title>The Real Cost of Running AI: Tokens, GPUs, Power</title>
-    <link>https://thetechdocket.com/articles/real-cost-of-running-ai/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/real-cost-of-running-ai/</guid>
-    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.]]></description>
   </item>
 </channel>
 </rss>
