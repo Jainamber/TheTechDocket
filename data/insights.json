@@ -1,7 +1,53 @@
 {
-  "generated_at": "2026-07-31T09:17:20.963208+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-08-01T09:16:47.471372+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 16
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 13
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "context-windows-explained": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-voice-clone-scam-protection": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "qualcomm-snapdragon-price-hike": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 18,
+    "ai-tools": 13,
+    "ai-models": 3,
+    "hardware": 3
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
