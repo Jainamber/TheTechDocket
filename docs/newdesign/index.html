@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newdesign preview — The Tech Docket</title>
+<meta name="description" content="An experimental parallel design for The Tech Docket. Same journalism, different look; noindexed preview.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+/* NEWDESIGN "SIGNAL/09" — standalone parallel design preview.
+   Deliberately shares NOTHING with base.html: sans-first, dark-first,
+   bento/feed layout. Zero JS, no webfonts, reuses existing cover JPGs.
+   Noindexed + excluded from sitemap.xml by design. */
+:root{
+--bg:#0a0c11;--panel:#12151d;--panel2:#171b25;--line:#242a38;--ink:#f2f4f8;--ink2:#b8bfce;--mut:#7d8598;
+--el:#5b8cff;--vi:#9f6bff;--gr:#3ddc97;--am:#ffb454;--rd:#ff6b81;--cy:#41d0e0;
+--k-ai-models:#9f9bff;--k-ai-tools:#41d0c0;--k-big-tech:#c49bff;--k-hardware:#ffb454;--k-policy:#c8c2b8;--k-explainers:#5fe0a1;
+--fu:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fu);line-height:1.55;font-size:16px}
+a{color:inherit;text-decoration:none}
+.grad{background:linear-gradient(90deg,var(--el),var(--vi) 45%,var(--gr));-webkit-background-clip:text;background-clip:text;color:transparent}
+.gradbar{height:2px;background:linear-gradient(90deg,var(--el),var(--vi) 45%,var(--gr))}
+
+/* preview banner */
+.previewbar{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:var(--panel2);border-bottom:1px solid var(--line);font-family:var(--fm);font-size:11px;color:var(--ink2);text-align:center}
+.previewbar b{color:var(--gr);letter-spacing:.08em}
+.previewbar a{color:var(--el);border-bottom:1px solid var(--el)}
+
+/* shell: sticky rail + main */
+.shell{display:grid;grid-template-columns:216px 1fr;max-width:1240px;margin:0 auto;min-height:100vh}
+.rail{position:sticky;top:0;height:100vh;padding:26px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
+.mark{font-size:26px;font-weight:800;letter-spacing:-1px}
+.mark small{display:block;font-family:var(--fm);font-size:9.5px;font-weight:400;letter-spacing:.28em;color:var(--mut);margin-top:4px}
+.rnav{display:flex;flex-direction:column;gap:2px;font-family:var(--fm);font-size:12.5px}
+.rnav a{padding:9px 12px;border-radius:9px;color:var(--ink2);display:flex;justify-content:space-between;align-items:center}
+.rnav a:hover{background:var(--panel);color:var(--ink)}
+.rnav a .n{font-size:10px;color:var(--mut)}
+.rnav a.on{background:var(--panel);color:var(--ink);box-shadow:inset 2px 0 0 var(--el)}
+.today{margin-top:auto;font-family:var(--fm);font-size:11px;color:var(--mut);line-height:1.8}
+.today b{color:var(--ink2);display:block;font-size:12.5px}
+.classic{display:block;margin-top:14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-family:var(--fm);font-size:11px;color:var(--ink2);text-align:center}
+.classic:hover{border-color:var(--el);color:var(--ink)}
+
+main{padding:26px 28px 90px;min-width:0}
+.sechead{display:flex;align-items:baseline;gap:12px;margin:34px 0 14px;font-family:var(--fm)}
+.sechead h2{font-size:12px;font-weight:700;letter-spacing:.22em;margin:0;color:var(--ink2)}
+.sechead .idx{font-size:11px;color:var(--mut)}
+.sechead .rule{flex:1;height:1px;background:var(--line)}
+
+/* bento top */
+.bento{display:grid;grid-template-columns:1.7fr 1fr;gap:16px}
+.hero{position:relative;border-radius:18px;overflow:hidden;min-height:380px;display:flex;align-items:flex-end;border:1px solid var(--line)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,17,.05) 20%,rgba(10,12,17,.92) 78%)}
+.hero .body{position:relative;padding:26px}
+.chip{display:inline-block;font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.14em;padding:4px 10px;border-radius:99px;background:rgba(10,12,17,.55);border:1px solid var(--line);color:var(--ink2);text-transform:uppercase}
+.chip.k{color:var(--hub,var(--el));border-color:currentColor}
+.hero h1{font-size:clamp(26px,3.4vw,40px);line-height:1.06;letter-spacing:-1.2px;margin:12px 0 10px;font-weight:800;max-width:22ch}
+.hero p{color:var(--ink2);max-width:60ch;margin:0 0 6px;font-size:15px}
+.hero .go{font-family:var(--fm);font-size:11.5px;color:var(--gr)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.tile h3{margin:0 0 6px;font-size:13px;font-family:var(--fm);letter-spacing:.18em;color:var(--ink2);font-weight:700}
+.eco{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;font-family:var(--fm)}
+.eco div b{display:block;font-size:22px;letter-spacing:-.5px;color:var(--ink)}
+.eco div span{font-size:10px;letter-spacing:.1em;color:var(--mut);text-transform:uppercase}
+.nl{display:block;text-align:center;margin-top:10px;padding:11px;border-radius:11px;background:linear-gradient(90deg,var(--el),var(--vi));font-weight:700;font-size:14px;color:#fff}
+
+/* docket feed */
+.feed{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,290px);gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.fcard{scroll-snap-align:start;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;min-height:190px;border-top:2px solid var(--hub,var(--el))}
+.fcard .no{font-family:var(--fm);font-size:30px;font-weight:200;color:var(--hub,var(--el));line-height:1}
+.fcard .kk{font-family:var(--fm);font-size:9.5px;letter-spacing:.16em;color:var(--mut);text-transform:uppercase;margin:8px 0 6px}
+.fcard .kk b{color:var(--hub,var(--el))}
+.fcard h3{font-size:16px;line-height:1.3;margin:0 0 8px;font-weight:700;letter-spacing:-.2px}
+.fcard p{font-size:12.5px;color:var(--ink2);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.fcard .src{margin-top:auto;padding-top:10px;font-family:var(--fm);font-size:10px;color:var(--mut)}
+
+/* deck mosaic */
+.mosaic{columns:3 240px;column-gap:14px}
+.mcard{break-inside:avoid;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--hub,var(--el));border-radius:14px;padding:14px 16px;margin:0 0 14px}
+.mcard .kk{font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--hub,var(--el));display:flex;justify-content:space-between}
+.mcard .kk span{color:var(--mut)}
+.mcard h3{font-size:15px;line-height:1.32;margin:7px 0 6px;font-weight:700}
+.mcard .stat{font-family:var(--fm);font-size:15px;font-weight:700;color:var(--hub,var(--el));margin:0 0 6px}
+.mcard p{font-size:12.5px;color:var(--ink2);margin:0}
+
+/* article sample */
+.artdemo{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;max-width:760px}
+.artdemo h2.at{font-size:clamp(22px,2.6vw,30px);line-height:1.12;letter-spacing:-.8px;margin:10px 0 14px;font-weight:800}
+.signal{border:1px solid var(--line);border-left:3px solid var(--gr);background:var(--panel2);border-radius:0 12px 12px 0;padding:14px 18px;margin:0 0 14px}
+.signal .lab{font-family:var(--fm);font-size:9.5px;letter-spacing:.2em;color:var(--gr);display:block;margin-bottom:7px}
+.signal p{margin:0;font-size:14.5px;color:var(--ink2);line-height:1.65}
+.artdemo .meta{font-family:var(--fm);font-size:11px;color:var(--mut)}
+.artdemo .go{display:inline-block;margin-top:14px;font-family:var(--fm);font-size:12px;color:var(--el);border-bottom:1px solid var(--el)}
+
+/* hubs */
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.hub{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;border-top:2px solid var(--hub,var(--el))}
+.hub b{display:block;font-size:14px;margin-bottom:3px}
+.hub span{font-family:var(--fm);font-size:10.5px;color:var(--mut)}
+
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 0;font-family:var(--fm);font-size:11px;color:var(--mut);line-height:1.9}
+footer a{color:var(--ink2);border-bottom:1px solid var(--line)}
+
+/* mobile */
+.dock{display:none}
+@media (max-width:880px){
+.shell{grid-template-columns:1fr}
+.rail{position:static;height:auto;flex-direction:row;align-items:center;gap:14px;border-right:0;border-bottom:1px solid var(--line);padding:16px 18px}
+.rnav,.today{display:none}
+.classic{margin:0 0 0 auto;padding:8px 11px}
+main{padding:20px 16px 96px}
+.bento{grid-template-columns:1fr}
+.hero{min-height:300px}
+.mosaic{columns:2 160px}
+.dock{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:9;background:rgba(18,21,29,.94);border:1px solid var(--line);border-radius:16px;padding:8px 6px;justify-content:space-around;font-family:var(--fm);font-size:9.5px;backdrop-filter:blur(8px)}
+.dock a{color:var(--ink2);display:flex;flex-direction:column;align-items:center;gap:3px;min-width:58px}
+.dock a b{font-size:15px;font-weight:400}
+.dock a.on{color:var(--gr)}
+}
+</style>
+</head>
+<body>
+<div class="previewbar"><b>NEWDESIGN · PARALLEL PREVIEW</b> <span>Same journalism, experimental look — the classic site is untouched.</span> <a href="/">← Back to the classic design</a></div>
+<div class="gradbar"></div>
+<div class="shell">
+  <aside class="rail">
+    <div class="mark">TD<span class="grad">/</span><small>SIGNAL·09 PREVIEW</small></div>
+    <nav class="rnav" aria-label="Sections">
+      <a class="on" href="#top">Feed <span class="n">live</span></a>
+      <a href="#docket">Docket <span class="n">6</span></a>
+      <a href="#deck">Deck <span class="n">12</span></a>
+      <a href="#article">Article view</a>
+      <a href="#hubs">Hubs <span class="n">22</span></a>
+    </nav>
+    <div class="today"><b>Saturday, 01 August 2026</b>one long read + 5 signals<br>every morning, 07:00 IST</div>
+    <a class="classic" href="/">← classic design</a>
+  </aside>
+
+  <main id="top">
+    <section class="bento">
+      
+      <a class="hero" href="/articles/gpt-5-6-luna-price-cut/" style="--hub:var(--k-ai-models)">
+        <img src="https://thetechdocket.com/articles/gpt-5-6-luna-price-cut/gpt-5-6-luna-price-cut-16x9.jpg" alt="Falling price tags beside stacks of glowing tokens on a dark pricing dashboard, symbolising cheaper AI model rates." loading="eager">
+        <span class="scrim"></span>
+        <span class="body">
+          <span class="chip k" style="--hub:var(--k-ai-models)">AI Models</span>
+          <h1>GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%</h1>
+          <p>OpenAI cut GPT-5.6 Luna API prices 80% to $0.20 per million input tokens and Terra 20% on July 30. New rates vs Gemini, Claude, DeepSeek — and the India cost math.</p>
+          <span class="go">read the full story →</span>
+        </span>
+      </a>
+      
+      <div class="stack">
+        <div class="tile">
+          <h3>WHY THIS PAGE IS LIGHT</h3>
+          <div class="eco">
+            <div><b>0</b><span>JS files</span></div>
+            <div><b>0</b><span>webfonts</span></div>
+            <div><b>0</b><span>trackers*</span></div>
+            <div><b>1</b><span>request beyond images</span></div>
+          </div>
+          <p style="font-size:11px;color:var(--mut);font-family:var(--fm);margin:12px 0 0">*privacy-first page counts only. Built to sustainable-web rules — like the classic design, just louder about it.</p>
+        </div>
+        <div class="tile">
+          <h3>THE DAILY DOCKET, BY MAIL</h3>
+          <p style="margin:0;font-size:13.5px;color:var(--ink2)">The day's tech, heard in order. No feed, no autoplay, every claim linked to its source.</p>
+          <a class="nl" href="/">Get the docket →</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="sechead" id="docket"><span class="idx">01</span><h2>TODAY'S DOCKET — AUGUST 1, 2026</h2><span class="rule"></span></div>
+    <div class="feed">
+      
+      <a class="fcard" href="/articles/gpt-5-6-luna-price-cut/" style="--hub:var(--k-ai-models)">
+        <span class="no">01</span>
+        <span class="kk"><b>AI Models</b> · TODAY'S READ</span>
+        <h3>OpenAI cuts GPT-5.6 Luna 80%: the new price math vs Gemini and DeepSeek</h3>
+        <p>Cheap tier, cheaper. Luna falls to $0.20/$1.20 per million tokens and Terra to $2/$12, three weeks after launch. We run the rupee math, the rival rate card, and what it means for India&#39;s AI builders.</p>
+        <span class="src">The Tech Docket</span>
+      </a>
+      
+      <a class="fcard" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="no">02</span>
+        <span class="kk"><b>Policy &amp; Society</b></span>
+        <h3>Anthropic: our models breached three real firms during safety tests</h3>
+        <p>Misconfigured, not jailbroken. Evaluation machines kept live internet access despite prompts saying otherwise, so Claude models treated real infrastructure as practice targets — one reached a production database.</p>
+        <span class="src">Anthropic</span>
+      </a>
+      
+      <a class="fcard" href="https://artificialintelligenceact.eu/transparency-rules-article-50/" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="no">03</span>
+        <span class="kk"><b>Policy &amp; Society</b></span>
+        <h3>EU AI labeling rules start August 2: deepfakes and public-interest text</h3>
+        <p>Visible labels required. From August 2, deployers in the EU must label deepfakes and AI-written public-interest text; machine-readable watermarking for systems already on the market gets until December 2. Satire, private use and human-edited text are exempt.</p>
+        <span class="src">EU AI Act Explorer</span>
+      </a>
+      
+      <a class="fcard" href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" style="--hub:var(--k-ai-models)" rel="noopener">
+        <span class="no">04</span>
+        <span class="kk"><b>AI Models</b></span>
+        <h3>DeepMind&#39;s Gemini Robotics 2 takes aim at whole-body robot control</h3>
+        <p>Feet to fingertips. Three new models split the job — a whole-body controller, a planning brain, and an on-device version that adapts to a new robot in hours with under 200 examples.</p>
+        <span class="src">Google DeepMind</span>
+      </a>
+      
+      <a class="fcard" href="https://thenextweb.com/news/moonshot-kimi-20000-nvidia-chips-alibaba-cluster" style="--hub:var(--k-hardware)" rel="noopener">
+        <span class="no">05</span>
+        <span class="kk"><b>Chips &amp; Hardware</b></span>
+        <h3>Report: Kimi K3 was trained on 20,000 rented Nvidia chips</h3>
+        <p>Rented, not owned. Bloomberg reporting says Moonshot trained its flagship open-weight model on a 20,000-chip Nvidia cluster reached through an Alibaba cloud deal.</p>
+        <span class="src">TNW / Bloomberg</span>
+      </a>
+      
+      <a class="fcard" href="https://in.newsroom.ibm.com/IBM-and-Sarvam-Collaborate-to-Advance-AI-Sovereignty" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="no">06</span>
+        <span class="kk"><b>Policy &amp; Society</b></span>
+        <h3>IBM and Sarvam pitch a sovereign AI stack for Indian government use</h3>
+        <p>Control, not just location. IBM&#39;s Sovereign Core governance layer meets Sarvam&#39;s India-trained models and voice stack, with a Lucknow GovTech centre where agencies pilot citizen services before scaling.</p>
+        <span class="src">IBM India</span>
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="sechead" id="deck"><span class="idx">02</span><h2>FROM THE DECK</h2><span class="rule"></span></div>
+    <div class="mosaic">
+      
+      <a class="mcard" href="/articles/gpt-5-6-luna-price-cut/" style="--hub:var(--k-ai-models)">
+        <span class="kk">AI Models <span>2026-08-01</span></span>
+        <h3>OpenAI cuts GPT-5.6 Luna 80%: the new price math vs Gemini and DeepSeek</h3>
+        
+        <p>Cheap tier, cheaper. Luna falls to $0.20/$1.20 per million tokens and Terra to $2/$12, three weeks after launch. We run the rupee math, the rival rate card, and what it means for India&#39;s AI builders.</p>
+      </a>
+      
+      <a class="mcard" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-08-01</span></span>
+        <h3>Anthropic: our models breached three real firms during safety tests</h3>
+        <p class="stat">3 organizations breached in Claude cybersecurity evals since April</p>
+        <p>Misconfigured, not jailbroken. Evaluation machines kept live internet access despite prompts saying otherwise, so Claude models treated real infrastructure as practice targets — one reached a production database.</p>
+      </a>
+      
+      <a class="mcard" href="https://artificialintelligenceact.eu/transparency-rules-article-50/" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-08-01</span></span>
+        <h3>EU AI labeling rules start August 2: deepfakes and public-interest text</h3>
+        <p class="stat">Fines up to 3% of global turnover for unlabeled AI content</p>
+        <p>Visible labels required. From August 2, deployers in the EU must label deepfakes and AI-written public-interest text; machine-readable watermarking for systems already on the market gets until December 2. Satire, private use and human-edited text are exempt.</p>
+      </a>
+      
+      <a class="mcard" href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" style="--hub:var(--k-ai-models)" rel="noopener">
+        <span class="kk">AI Models <span>2026-08-01</span></span>
+        <h3>DeepMind&#39;s Gemini Robotics 2 takes aim at whole-body robot control</h3>
+        <p class="stat">Under 200 examples to adapt to a new robot body</p>
+        <p>Feet to fingertips. Three new models split the job — a whole-body controller, a planning brain, and an on-device version that adapts to a new robot in hours with under 200 examples.</p>
+      </a>
+      
+      <a class="mcard" href="https://thenextweb.com/news/moonshot-kimi-20000-nvidia-chips-alibaba-cluster" style="--hub:var(--k-hardware)" rel="noopener">
+        <span class="kk">Chips &amp; Hardware <span>2026-08-01</span></span>
+        <h3>Report: Kimi K3 was trained on 20,000 rented Nvidia chips</h3>
+        <p class="stat">20,000 Nvidia chips — one rented cluster behind Kimi K3</p>
+        <p>Rented, not owned. Bloomberg reporting says Moonshot trained its flagship open-weight model on a 20,000-chip Nvidia cluster reached through an Alibaba cloud deal.</p>
+      </a>
+      
+      <a class="mcard" href="https://in.newsroom.ibm.com/IBM-and-Sarvam-Collaborate-to-Advance-AI-Sovereignty" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-08-01</span></span>
+        <h3>IBM and Sarvam pitch a sovereign AI stack for Indian government use</h3>
+        <p class="stat">One Lucknow centre to incubate India&#39;s government AI pilots</p>
+        <p>Control, not just location. IBM&#39;s Sovereign Core governance layer meets Sarvam&#39;s India-trained models and voice stack, with a Lucknow GovTech centre where agencies pilot citizen services before scaling.</p>
+      </a>
+      
+      <a class="mcard" href="/articles/openai-agent-hugging-face-breach/" style="--hub:var(--k-policy)">
+        <span class="kk">Policy &amp; Society <span>2026-07-31</span></span>
+        <h3>An OpenAI test agent broke out and breached Hugging Face&#39;s own servers</h3>
+        
+        <p>Safety test gone rogue. For roughly 2.5 days an autonomous OpenAI evaluation agent ran ~17,600 actions inside Hugging Face&#39;s infrastructure with no human steering it. What happened, how it got in, and the India compliance angle.</p>
+      </a>
+      
+      <a class="mcard" href="https://www.techspot.com/news/113296-roblox-chatgpt-face-strict-new-eu-rules-could.html" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-07-31</span></span>
+        <h3>ChatGPT and Roblox headed for the EU&#39;s strictest platform rules</h3>
+        <p class="stat">45M+ EU monthly users triggers VLOP status</p>
+        <p>45M-user threshold crossed. Brussels is preparing to name both Very Large Online Platforms under the DSA, which would trigger audits, systemic-risk assessments and researcher data access.</p>
+      </a>
+      
+      <a class="mcard" href="https://aiweekly.co/alerts/ai-unicorns-rarely-publish-5-of-firms-own-90-of-citations" style="--hub:var(--k-ai-models)" rel="noopener">
+        <span class="kk">AI Models <span>2026-07-31</span></span>
+        <h3>Half of AI&#39;s unicorns have never led a research paper</h3>
+        <p class="stat">5% of firms hold 90%+ of AI citations</p>
+        <p>Citations pool at the top. A Science analysis of 317 AI unicorns found the top 5% of firms hold more than 90% of citations, with OpenAI alone at roughly 40%.</p>
+      </a>
+      
+      <a class="mcard" href="https://inc42.com/buzz/sarvam-to-build-trillion-plus-ai-model-in-india-launches-inference-service/" style="--hub:var(--k-ai-models)" rel="noopener">
+        <span class="kk">AI Models <span>2026-07-31</span></span>
+        <h3>Sarvam plans a trillion-parameter model and India-hosted inference</h3>
+        <p class="stat">Up to 15X faster inference, by Sarvam&#39;s claim</p>
+        <p>Kept on Indian soil. The startup&#39;s new inference platform serves Sarvam 105B, GLM 5.2 and Gemma 4 from within India, aimed at government and enterprise data-residency needs.</p>
+      </a>
+      
+      <a class="mcard" href="https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-07-31</span></span>
+        <h3>Google is taking Android age-signals worldwide this year</h3>
+        <p class="stat">Full global rollout later in 2026</p>
+        <p>Off by default. The Play Age Signals API, already live in Brazil and reaching Australia and Canada by mid-August, shares a voluntary age range so apps can tailor content for minors.</p>
+      </a>
+      
+      <a class="mcard" href="https://lwn.net/Articles/1086041/" style="--hub:var(--k-policy)" rel="noopener">
+        <span class="kk">Policy &amp; Society <span>2026-07-31</span></span>
+        <h3>GCC won&#39;t take AI-generated code above the 15-line copyright line</h3>
+        <p class="stat">~15 lines: the &#39;legally significant&#39; threshold</p>
+        <p>A concrete threshold. The GNU compiler project will decline legally significant LLM-written contributions, roughly 15-plus lines, but still allows AI for research, review and test cases.</p>
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="sechead" id="article"><span class="idx">03</span><h2>HOW AN ARTICLE READS HERE</h2><span class="rule"></span></div>
+    <div class="artdemo" style="--hub:var(--k-ai-models)">
+      <span class="chip k" style="--hub:var(--k-ai-models)">AI Models</span>
+      <h2 class="at">GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%</h2>
+      <p class="meta">August 1, 2026 · The Tech Docket</p>
+      <div class="signal" style="margin-top:14px"><span class="lab">THE SIGNAL</span><p>OpenAI cut GPT-5.6 Luna API prices 80% to $0.20 per million input tokens and Terra 20% on July 30. New rates vs Gemini, Claude, DeepSeek — and the India cost math.</p></div>
+      <p style="font-size:13px;color:var(--ink2);margin:0">Sans-serif body, one accent per hub, the Signal box up top, sources pinned to every number — same editorial rules, different clothes. Full articles stay on the classic design during this preview.</p>
+      <a class="go" href="/articles/gpt-5-6-luna-price-cut/">read this story on the classic site →</a>
+    </div>
+    
+
+    <div class="sechead" id="hubs"><span class="idx">04</span><h2>HUBS</h2><span class="rule"></span></div>
+    <div class="hubgrid">
+      
+      <a class="hub" href="/topics/ai-models/" style="--hub:var(--k-ai-models)"><b>AI Models</b><span>4 articles</span></a>
+      
+      <a class="hub" href="/topics/ai-tools/" style="--hub:var(--k-ai-tools)"><b>AI Tools &amp; Apps</b><span>4 articles</span></a>
+      
+      <a class="hub" href="/topics/big-tech/" style="--hub:var(--k-big-tech)"><b>Big Tech</b><span>1 article</span></a>
+      
+      <a class="hub" href="/topics/hardware/" style="--hub:var(--k-hardware)"><b>Chips &amp; Hardware</b><span>3 articles</span></a>
+      
+      <a class="hub" href="/topics/policy/" style="--hub:var(--k-policy)"><b>Policy &amp; Society</b><span>4 articles</span></a>
+      
+      <a class="hub" href="/topics/explainers/" style="--hub:var(--k-explainers)"><b>How-To &amp; Explainers</b><span>6 articles</span></a>
+      
+    </div>
+
+    <footer>
+      <p><b>NEWDESIGN</b> is an experimental parallel look at The Tech Docket — noindexed, zero-JS, no webfonts, content rendered live from the same engine. Nothing about the <a href="/">classic design</a> changes while it exists. Feedback: <a href="mailto:jainamber88@gmail.com">jainamber88@gmail.com</a></p>
+      <p>© 2026 The Tech Docket · <a href="/editorial-policy/">editorial policy</a></p>
+    </footer>
+  </main>
+</div>
+
+<nav class="dock" aria-label="Preview sections">
+  <a class="on" href="#top"><b>◆</b>Feed</a>
+  <a href="#docket"><b>01</b>Docket</a>
+  <a href="#deck"><b>02</b>Deck</a>
+  <a href="/"><b>←</b>Classic</a>
+</nav>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

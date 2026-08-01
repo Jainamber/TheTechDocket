@@ -639,10 +639,13 @@ def build_site() -> Path:
     # the dated dockets — no per-card URLs, no new content class, zero new
     # data collection (the docket pattern, one level up).
     deck_cfg = cfg.get("deck") or {}
+    all_cards: list[dict] = []          # also feeds /newdesign/ below
+    latest_docket_ctx = None            # also feeds /newdesign/ below
+    if dockets:
+        latest_docket_ctx = docket_context(cfg, dockets[0])
     if dockets and deck_cfg.get("enabled"):
         deck_tpl = env.get_template("deck.html")
         cap = int(deck_cfg.get("max_cards", 90))
-        all_cards = []
         for d in dockets:  # all_dockets() is newest-first already
             ctx_d = docket_context(cfg, d)
             for e in ctx_d["entries"]:
@@ -692,6 +695,29 @@ def build_site() -> Path:
         feature=summaries[0] if summaries else None,
         docket=docket_strip,
         articles=summaries[1:13] if len(summaries) > 1 else [])))
+
+    # Newdesign — PARALLEL design preview (/newdesign/, owner experiment
+    # 2026-08-01). Standalone template (shares nothing with base.html),
+    # noindexed via meta robots, deliberately EXCLUDED from sitemap.xml,
+    # zero-JS, no webfonts, reuses existing cover JPGs. Renders live from
+    # the same data as the classic design; never replaces it. Reached only
+    # via the footer "Newdesign" link.
+    nd_hub_counts = {h: sum(1 for s in summaries if s["hub"] == h)
+                     for h in cfg["content"]["hubs"]}
+    _write(out / "newdesign" / "index.html",
+           env.get_template("newdesign.html").render(**_common(
+               cfg,
+               page_title=f"Newdesign preview — {cfg['site']['name']}",
+               meta_description=("An experimental parallel design for "
+                                 f"{cfg['site']['name']}. Same journalism, "
+                                 "different look; noindexed preview."),
+               canonical=abs_url(cfg, "newdesign/"),
+               og_image=home_img, og_image_alt="Newdesign preview",
+               feature=summaries[0] if summaries else None,
+               nd_docket=latest_docket_ctx,
+               nd_cards=all_cards[:12],
+               nd_hub_counts=nd_hub_counts,
+               nd_today=now_ist().strftime("%A, %d %B %Y"))))
 
     # hubs
     for hslug, hname in cfg["content"]["hubs"].items():
