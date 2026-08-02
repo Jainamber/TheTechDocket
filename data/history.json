@@ -395,6 +395,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-01-gpt-5-6-luna-price-cut.json",
       "url": "https://thetechdocket.com/articles/gpt-5-6-luna-price-cut/"
+    },
+    {
+      "date": "2026-08-02",
+      "slug": "deepseek-v4-flash-0731",
+      "title": "DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price",
+      "keyword": "deepseek v4 flash",
+      "hub": "ai-models",
+      "published_at": "2026-08-02T07:46:20.683202+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-02T07:46:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-02-deepseek-v4-flash-0731.json",
+      "url": "https://thetechdocket.com/articles/deepseek-v4-flash-0731/"
     }
   ]
 }

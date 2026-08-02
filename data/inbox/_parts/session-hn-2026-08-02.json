@@ -1,0 +1,111 @@
+{
+  "collected_at": "2026-08-02",
+  "collector": "sonnet-subagent",
+  "items": [
+    {
+      "title": "Google fixed more Chrome bugs in June than over past two years, thanks to AI",
+      "points": 552,
+      "comments": 540,
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "note": "Google credits AI-assisted bug hunting for a huge jump in Chrome security fixes, driving debate on AI's role in vuln research."
+    },
+    {
+      "title": "Elevators",
+      "points": 335,
+      "comments": 1377,
+      "url": "https://john.fun/elevators",
+      "note": "Personal engineering essay pulls the single largest comment thread of the window, with wide-ranging tangents in replies."
+    },
+    {
+      "title": "DeepSeek-V4-Flash Update",
+      "points": 332,
+      "comments": 706,
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "DeepSeek's new Flash model update dominates AI chatter, fueling open-weight-vs-closed-model comparisons."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+      "points": 304,
+      "comments": 562,
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "note": "Independent benchmarking of DeepSeek's new release feeds the same day's price/performance debate against frontier labs."
+    },
+    {
+      "title": "The session you cannot take with you",
+      "points": 213,
+      "comments": 751,
+      "url": "https://earendil.com/posts/session-portability/",
+      "note": "Essay on AI agent/session portability draws heavy discussion on lock-in and who owns agent state."
+    },
+    {
+      "title": "Tailscale didn't stop the Hugging Face intrusion",
+      "points": 210,
+      "comments": 561,
+      "url": "https://tailscale.com/blog/hugging-face-intrusion",
+      "note": "Postmortem on a Hugging Face security intrusion sparks a security-community argument over mesh-VPN trust assumptions."
+    },
+    {
+      "title": "Is AI reasoning right for the wrong reasons?",
+      "points": 203,
+      "comments": 172,
+      "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+      "note": "Quanta Magazine piece questioning whether LLM chain-of-thought reflects genuine logic reignites the interpretability debate."
+    },
+    {
+      "title": "AI doesn't generate working products, that's still your job",
+      "points": 168,
+      "comments": 196,
+      "url": "https://weeraman.com/the-prototype-isnt-the-product/",
+      "note": "Pushback essay on AI-generated code reliability resonates with devs fatigued by 'vibe coding' hype."
+    },
+    {
+      "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+      "points": 160,
+      "comments": 141,
+      "url": "https://greyswansignals.com/?theme=dark",
+      "note": "Analysis of AI-infrastructure debt financing feeds the week's ongoing 'AI bubble' anxiety thread on HN."
+    },
+    {
+      "title": "Situational Awareness down 67% in July in AI stock rout",
+      "points": 158,
+      "comments": 149,
+      "url": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
+      "note": "WSJ report on an AI-stock pullback adds a market-data angle to the same bubble-fear conversation."
+    },
+    {
+      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
+      "points": 157,
+      "comments": 234,
+      "url": "https://github.com/openjdk/jdk/pull/31120",
+      "note": "A long-awaited Java language feature (Value Objects) lands in OpenJDK master, exciting JVM developers."
+    },
+    {
+      "title": "Golang proposal: container/: generic collection types",
+      "points": 139,
+      "comments": 163,
+      "url": "https://github.com/golang/go/issues/80590",
+      "note": "Go core team proposal for generic container types reignites the language's long-running generics debate."
+    },
+    {
+      "title": "The Maxwell Conjecture Is False (GPT 5.6 Sol)",
+      "points": 138,
+      "comments": 152,
+      "url": "https://arxiv.org/abs/2607.27197",
+      "note": "Claim that an AI model helped disprove a math conjecture draws both excitement and skepticism about AI-assisted proofs."
+    },
+    {
+      "title": "qm - Multiplayer agent harness for work",
+      "points": 123,
+      "comments": 589,
+      "url": "https://github.com/yc-software/qm",
+      "note": "YC-backed multiplayer harness for coding agents pulls a comment count nearly 5x its points, signaling a polarizing launch."
+    },
+    {
+      "title": "Run Kimi K3 using 29 GB of RAM at 0.50 tok/s",
+      "points": 115,
+      "comments": 269,
+      "url": "https://github.com/sqliteai/waste",
+      "note": "Tongue-in-cheek repo for running a huge open model on modest RAM (at a crawl) delights the local-inference crowd."
+    }
+  ]
+}

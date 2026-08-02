@@ -1,0 +1,253 @@
+{
+  "date": "2026-08-02",
+  "candidates": [
+    {
+      "title": "DeepSeek-V4-Flash Update",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9791480778354399,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 332,
+          "comments": 706,
+          "url": "https://api-docs.deepseek.com/updates/"
+        }
+      ],
+      "score": 0.6017,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google fixed more Chrome bugs in June than over past two years, thanks to AI",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 552,
+          "comments": 540,
+          "url": "https://blog.google/security/chrome-stronger-with-every-update/"
+        }
+      ],
+      "score": 0.5943,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9547666131155952,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 304,
+          "comments": 562,
+          "url": "https://artificialanalysis.ai/models/deepseek-v4-flash"
+        }
+      ],
+      "score": 0.5896,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Golang proposal: container/: generic collection types",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7732926785594127,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 139,
+          "comments": 163,
+          "url": "https://github.com/golang/go/issues/80590"
+        }
+      ],
+      "score": 0.572,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Run Kimi K3 using 29 GB of RAM at 0.50 tok/s",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7360693297423062,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 115,
+          "comments": 269,
+          "url": "https://github.com/sqliteai/waste"
+        }
+      ],
+      "score": 0.5189,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Situational Awareness down 67% in July in AI stock rout",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7996323747734837,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 158,
+          "comments": 149,
+          "url": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f"
+        }
+      ],
+      "score": 0.5157,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7983023623181409,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 157,
+          "comments": 234,
+          "url": "https://github.com/openjdk/jdk/pull/31120"
+        }
+      ],
+      "score": 0.5081,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The session you cannot take with you",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.865554591116397,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 213,
+          "comments": 751,
+          "url": "https://earendil.com/posts/session-portability/"
+        }
+      ],
+      "score": 0.5074,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The Maxwell Conjecture Is False (GPT 5.6 Sol)",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.771838266751365,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 138,
+          "comments": 152,
+          "url": "https://arxiv.org/abs/2607.27197"
+        }
+      ],
+      "score": 0.4983,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8022752920106165,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 160,
+          "comments": 141,
+          "url": "https://greyswansignals.com/?theme=dark"
+        }
+      ],
+      "score": 0.4938,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Is AI reasoning right for the wrong reasons?",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8544600558086329,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 203,
+          "comments": 172,
+          "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/"
+        }
+      ],
+      "score": 0.4869,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI doesn't generate working products, that's still your job",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8126289015378911,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 168,
+          "comments": 196,
+          "url": "https://weeraman.com/the-prototype-isnt-the-product/"
+        }
+      ],
+      "score": 0.4834,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "DeepSeek-V4-Flash Update",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 0.9791480778354399,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 332,
+        "comments": 706,
+        "url": "https://api-docs.deepseek.com/updates/"
+      }
+    ],
+    "score": 0.6017,
+    "topic_fit": 0.96,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}
