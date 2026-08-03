@@ -1,0 +1,177 @@
+{
+  "queries_run": [
+    "biggest AI news August 2026",
+    "tech news India August 2026",
+    "AI announcement August 2 2026",
+    "new AI model launch this week",
+    "tech industry news today",
+    "India technology news this week",
+    "Zepto IPO pause pre-IPO fundraise August 2026",
+    "OpenAI Fields Medal Jacob Tsimerman safety team",
+    "White House frontier AI framework deadline missed August 1",
+    "Grok Imagine video 1.5 xAI launch",
+    "DNA evidence AI tampering forensic crime lab",
+    "Sarvam AI India news August 2026",
+    "DeepMind Gemini Robotics 2 humanoid launch",
+    "Meta capex guidance $130 billion $145 billion AI data center 2026",
+    "Microsoft Azure $100 billion revenue Copilot 30 million paid seats",
+    "DeepSeek hacking campaign 460 targets Citrix",
+    "FCC bans Chinese humanoid robots Unitree",
+    "Anthropic Claude models unauthorized access cybersecurity test breach",
+    "California AI Transparency Act SB 942 takes effect August 2026",
+    "Balaji Srinivasan Network School Malaysia license revoked Kazakhstan",
+    "Smallest.ai funding $13 million voice AI India",
+    "India AI news August 2 2026",
+    "CoreWeave loan terms AI debt investors wary",
+    "OpenAI Presence enterprise AI agents launch",
+    "LG EXAONE 2.0 open weights model release",
+    "Chinese venture capital firms resume fundraising AI robotics 2026",
+    "Sam Altman ChatGPT parenting pitch backlash techcrunch",
+    "Hank Green YouTube pause AI usage not healthy techcrunch",
+    "Apple Feedback Assistant caps bug report submissions AI generated",
+    "WSJ AI DNA evidence tampering undetectable forensic",
+    "UPI transactions July 2026 record 23.66 billion entrackr",
+    "techmeme AI code tamper DNA evidence crime lab machines",
+    "Indian startup funding drops $662 million July 2026 entrackr",
+    "chain of custody AI forensic DNA scan data alter wsj.com 2026"
+  ],
+  "note": "Anthropic Claude cybersecurity breach, DeepMind Gemini Robotics 2, and Microsoft Azure-$100B stories were found but omitted here as exact duplicates already captured verbatim in session-news-2026-08-01.json.",
+  "stories": [
+    {
+      "headline": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "source": "Inc42",
+      "url": "https://inc42.com/buzz/zepto-defers-ipo-amid-valuation-concerns-to-raise-%E2%82%B91000-cr-pre-ipo-round/",
+      "date": "2026-08-01",
+      "gist": "Quick-commerce unicorn Zepto shelves its IPO for now and will raise about Rs 1,000 crore from existing investors in a pre-IPO round instead.",
+      "corroborated": true
+    },
+    {
+      "headline": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "source": "Officechai (orig. WSJ)",
+      "url": "https://officechai.com/ai/fields-medal-winner-jacob-tsimerman-joins-openai-says-ai-will-soon-do-everything-mathematicians-do-better-and-faster/",
+      "date": "2026-08-02",
+      "gist": "2026 Fields Medalist Jacob Tsimerman is leaving the University of Toronto to join OpenAI's AI safety research team.",
+      "corroborated": true
+    },
+    {
+      "headline": "White House AI Framework Deadline Lapses Without Public Deliverables",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/white-house-ai-framework-deadline-002011007.html",
+      "date": "2026-08-01",
+      "gist": "The federal government missed its self-imposed August 1 deadline to publish a frontier AI review framework, leaving labs without regulatory clarity.",
+      "corroborated": true
+    },
+    {
+      "headline": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
+      "date": "2026-07-31",
+      "gist": "A Chinese-speaking threat actor directed DeepSeek's AI agent against 460+ targets via Telegram, with confirmed compromises including Citrix systems.",
+      "corroborated": true
+    },
+    {
+      "headline": "Sam Altman is still making the case for parenting via ChatGPT",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+      "date": "2026-08-01",
+      "gist": "Altman renewed his pitch that ChatGPT can help with parenting, drawing heavy online backlash that outpaced supportive reactions.",
+      "corroborated": true
+    },
+    {
+      "headline": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+      "date": "2026-08-01",
+      "gist": "The science YouTuber admitted heavy reliance on ChatGPT for scriptwriting and paused several of his channels over it.",
+      "corroborated": true
+    },
+    {
+      "headline": "Apple tightens bug reporting as AI floods security teams",
+      "source": "Seeking Alpha (orig. Financial Times)",
+      "url": "https://seekingalpha.com/news/4623133-apple-tightens-bug-reporting-as-ai-floods-security-teams",
+      "date": "2026-08-02",
+      "gist": "Apple capped Feedback Assistant submissions and added a 30-day cool-off period after being swamped with low-quality AI-generated bug reports.",
+      "corroborated": true
+    },
+    {
+      "headline": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/",
+      "date": "2026-07-31",
+      "gist": "Bengaluru-based Smallest.ai raised $13M to build low-latency, human-sounding voice AI models for enterprise customer service.",
+      "corroborated": true
+    },
+    {
+      "headline": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+      "source": "Entrackr",
+      "url": "https://entrackr.com/news/upi-hits-highest-ever-monthly-volume-with-2366-bn-transactions-in-july-12217613",
+      "date": "2026-08-01",
+      "gist": "India's UPI processed a record 23.66 billion transactions worth Rs 29.88 lakh crore in July, its highest-ever monthly volume.",
+      "corroborated": true
+    },
+    {
+      "headline": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/01/zuckerberg-bet-145-billion-ai-infrastructure-2026/",
+      "date": "2026-08-01",
+      "gist": "Meta raised its 2026 AI capex guidance to as much as $145 billion as it races to build out data centers.",
+      "corroborated": true
+    },
+    {
+      "headline": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "source": "CNN Business",
+      "url": "https://www.cnn.com/2026/07/29/tech/us-china-robot-ban-intl-hnk",
+      "date": "2026-07-28",
+      "gist": "The FCC moved to ban new approvals of Chinese-made humanoid/quadruped robots and grid inverters over national-security concerns, hitting market leader Unitree hardest.",
+      "corroborated": true
+    },
+    {
+      "headline": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "source": "CryptoBriefing",
+      "url": "https://cryptobriefing.com/network-school-relocates-kazakhstan-malaysia-shutdown/",
+      "date": "2026-08-01",
+      "gist": "Malaysia revoked the operating license for Srinivasan's 'Network School' pop-up community, which pivoted within about a day to a new Kazakhstan partnership.",
+      "corroborated": true
+    },
+    {
+      "headline": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "source": "Investing.com (orig. Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/coreweave-said-to-sweeten-26-billion-loan-terms-amid-debt-concerns-4821421",
+      "date": "2026-07-29",
+      "gist": "AI cloud provider CoreWeave raised the yield on a $2.6B loan tied to its Anthropic-linked expansion as debt investors grow more cautious on AI infrastructure credit.",
+      "corroborated": true
+    },
+    {
+      "headline": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+      "source": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20260731/lg-unveils-750-bil-parameter-frontier-ai-model-k-exaone-20",
+      "date": "2026-07-31",
+      "gist": "LG AI Research open-sourced K-EXAONE 2.0, a 750B-parameter model it calls Korea's largest, supporting 10 languages under an Apache license.",
+      "corroborated": true
+    },
+    {
+      "headline": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "source": "European Commission",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+      "date": "2026-08-02",
+      "gist": "The EU began enforcing the next tier of AI Act obligations, including new transparency rules for general-purpose AI model providers.",
+      "corroborated": true
+    },
+    {
+      "headline": "Indian startup funding drops to $662 Mn in July after June spike",
+      "source": "Entrackr",
+      "url": "https://entrackr.com/report/indian-startup-funding-drops-to-662-mn-in-july-after-june-spike-12218904",
+      "date": "2026-08-01",
+      "gist": "Indian startup funding fell roughly 67% month-on-month to about $662 million in July, per Entrackr's monthly tracker.",
+      "corroborated": true
+    },
+    {
+      "headline": "Chinese VC Firms Seek $35 Billion as Fundraising Rebounds After 3-Year Drought",
+      "source": "Lapaas Voice (orig. Financial Times)",
+      "url": "https://lapaasvoice.com/chinese-vc-firms-seek-35-billion-as-fundraising-rebounds-after-3-year-drought",
+      "date": "2026-08-01",
+      "gist": "Chinese venture firms are reopening capital flows toward domestic AI and robotics startups after a three-year fundraising drought.",
+      "corroborated": true
+    }
+  ]
+}

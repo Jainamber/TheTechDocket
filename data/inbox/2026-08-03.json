@@ -1,0 +1,641 @@
+{
+  "date": "2026-08-03",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss": "failed: WebFetch provenance gate (unattended session, prompt unanswerable) — IN+US skipped",
+    "hacker_news": "failed: same WebFetch provenance gate on hn.algolia.com",
+    "note": "fetch-trends Action commits ~03:47 UTC; session runs ~01:00 UTC, so inbox self-built per DAILY_RUN.md Step 1"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [],
+      "news": {
+        "tech news India August 2026": [
+          {
+            "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+            "source": "Inc42",
+            "url": "https://inc42.com/buzz/zepto-defers-ipo-amid-valuation-concerns-to-raise-%E2%82%B91000-cr-pre-ipo-round/",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+            "source": "The Hacker News",
+            "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
+            "date": "2026-07-31"
+          },
+          {
+            "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/",
+            "date": "2026-07-31"
+          },
+          {
+            "title": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+            "source": "Entrackr",
+            "url": "https://entrackr.com/news/upi-hits-highest-ever-monthly-volume-with-2366-bn-transactions-in-july-12217613",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+            "source": "CNN Business",
+            "url": "https://www.cnn.com/2026/07/29/tech/us-china-robot-ban-intl-hnk",
+            "date": "2026-07-28"
+          },
+          {
+            "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+            "source": "European Commission",
+            "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+            "date": "2026-08-02"
+          },
+          {
+            "title": "Indian startup funding drops to $662 Mn in July after June spike",
+            "source": "Entrackr",
+            "url": "https://entrackr.com/report/indian-startup-funding-drops-to-662-mn-in-july-after-june-spike-12218904",
+            "date": "2026-08-01"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "biggest AI news August 2026": [
+          {
+            "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+            "source": "Officechai (orig. WSJ)",
+            "url": "https://officechai.com/ai/fields-medal-winner-jacob-tsimerman-joins-openai-says-ai-will-soon-do-everything-mathematicians-do-better-and-faster/",
+            "date": "2026-08-02"
+          },
+          {
+            "title": "White House AI Framework Deadline Lapses Without Public Deliverables",
+            "source": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/technology/ai/articles/white-house-ai-framework-deadline-002011007.html",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+            "source": "The Hacker News",
+            "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
+            "date": "2026-07-31"
+          },
+          {
+            "title": "Sam Altman is still making the case for parenting via ChatGPT",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "Apple tightens bug reporting as AI floods security teams",
+            "source": "Seeking Alpha (orig. Financial Times)",
+            "url": "https://seekingalpha.com/news/4623133-apple-tightens-bug-reporting-as-ai-floods-security-teams",
+            "date": "2026-08-02"
+          },
+          {
+            "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+            "source": "The Motley Fool",
+            "url": "https://www.fool.com/investing/2026/08/01/zuckerberg-bet-145-billion-ai-infrastructure-2026/",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+            "source": "CNN Business",
+            "url": "https://www.cnn.com/2026/07/29/tech/us-china-robot-ban-intl-hnk",
+            "date": "2026-07-28"
+          },
+          {
+            "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+            "source": "CryptoBriefing",
+            "url": "https://cryptobriefing.com/network-school-relocates-kazakhstan-malaysia-shutdown/",
+            "date": "2026-08-01"
+          },
+          {
+            "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+            "source": "Investing.com (orig. Bloomberg)",
+            "url": "https://www.investing.com/news/stock-market-news/coreweave-said-to-sweeten-26-billion-loan-terms-amid-debt-concerns-4821421",
+            "date": "2026-07-29"
+          },
+          {
+            "title": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+            "source": "The Korea Times",
+            "url": "https://www.koreatimes.co.kr/business/tech-science/20260731/lg-unveils-750-bil-parameter-frontier-ai-model-k-exaone-20",
+            "date": "2026-07-31"
+          },
+          {
+            "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+            "source": "European Commission",
+            "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+            "date": "2026-08-02"
+          },
+          {
+            "title": "Chinese VC Firms Seek $35 Billion as Fundraising Rebounds After 3-Year Drought",
+            "source": "Lapaas Voice (orig. Financial Times)",
+            "url": "https://lapaasvoice.com/chinese-vc-firms-seek-35-billion-as-fundraising-rebounds-after-3-year-drought",
+            "date": "2026-08-01"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [],
+  "wikipedia_top": [],
+  "outlet_headlines": [
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "CIOL",
+      "url": "https://www.ciol.com/news/zepto-confirms-ipo-pause-eyes-pre-ipo-fundraise-to-strengthen-balance-sheet-12222044"
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "IndMoney",
+      "url": "https://www.indmoney.com/blog/ipo/why-zepto-paused-its-ipo-valuation-gap"
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "TechStory",
+      "url": "https://techstory.in/zepto-delays-ipo-plans-rs-1000-crore-pre-ipo-fundraise/"
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "Business Standard",
+      "url": "https://www.business-standard.com/markets/news/zepto-seals-pre-ipo-fundraise-defers-listing-to-focus-on-execution-126080101115_1.html"
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "NewsX",
+      "url": "https://www.newsx.com/business/zepto-ipo-paused-what-prompted-quick-commerce-unicorn-to-delay-its-market-debut-254891/"
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "outlet": "The Week",
+      "url": "https://www.theweek.in/news/biz-tech/2026/07/30/zepto-ipo-delay-pre-ipo-funding.html"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "Officechai",
+      "url": "https://officechai.com/ai/fields-medal-winner-jacob-tsimerman-joins-openai-says-ai-will-soon-do-everything-mathematicians-do-better-and-faster/"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "Digg",
+      "url": "https://digg.com/tech/7u6u1uv5"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/bca88ca4-8438-4d70-b512-75cda1dd3bd1"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "Remio.ai",
+      "url": "https://www.remio.ai/post/openai-hires-fields-medalist-jacob-tsimerman-exposing-maths-ai-safety-divide"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "DEV Community",
+      "url": "https://dev.to/peremptory/the-fields-medalist-move-why-tsimerman-chose-safety-over-pure-math-gp"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "Yellow.com",
+      "url": "https://yellow.com/news/openai-hires-fields-medalist-outdo-mathematicians"
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "outlet": "KuCoin",
+      "url": "https://www.kucoin.com/news/flash/new-fields-medalist-joins-openai-to-work-on-ai-safety"
+    },
+    {
+      "title": "White House AI Framework Deadline Lapses Without Public Deliverables",
+      "outlet": "Tech Times",
+      "url": "https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm"
+    },
+    {
+      "title": "White House AI Framework Deadline Lapses Without Public Deliverables",
+      "outlet": "Gate.com",
+      "url": "https://www.gate.com/en-us/news/detail/trump-sets-august-1-deadline-for-ai-review-framework-requiring-model-17820939"
+    },
+    {
+      "title": "White House AI Framework Deadline Lapses Without Public Deliverables",
+      "outlet": "Eastern Herald",
+      "url": "https://easternherald.com/2026/07/30/sam-altman-senate-ai-pacing-white-house-deadline-openai/"
+    },
+    {
+      "title": "White House AI Framework Deadline Lapses Without Public Deliverables",
+      "outlet": "Vorp Labs",
+      "url": "https://vorplabs.com/ai-regulatory-updates/frontier-model-review-framework"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "Tech Times",
+      "url": "https://www.techtimes.com/articles/322582/20260801/deepseek-ran-autonomous-cyberattacks-that-claude-openai-safety-controls-blocked.htm"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "GBHackers",
+      "url": "https://gbhackers.com/hacker-uses-deepseek-agent/"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "Unit42 (Palo Alto Networks)",
+      "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "Forkast",
+      "url": "https://forkast.news/deepseek-became-the-attack-engine-because-it-had-the-fewest-guardrails/"
+    },
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "outlet": "The Arabian Post",
+      "url": "https://thearabianpost.com/deepseek-agent-automates-attacks-across-asian-networks/"
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "outlet": "Storyboard18",
+      "url": "https://www.storyboard18.com/amp/brand-makers/sam-altman-suggests-chatgpt-podcasts-for-children-faces-backlash-over-ai-parenting-106355.htm"
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "outlet": "Zamin.uz",
+      "url": "https://zamin.uz/en/technology/215649-sam-altman-advocates-using-chatgpt-in-parenting.html"
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "outlet": "Memesita",
+      "url": "https://www.memesita.com/sam-altman-faces-backlash-over-ai-parenting-proposal/"
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "outlet": "AI Weekly",
+      "url": "https://aiweekly.co/alerts/openais-altman-pitches-chatgpt-parenting-gets-ratioed-on-x"
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "outlet": "Tom's Guide",
+      "url": "https://www.tomsguide.com/ai/sam-altman-says-he-couldnt-imagine-parenting-without-chatgpt-the-internet-has-thoughts"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "AI Weekly",
+      "url": "https://aiweekly.co/alerts/hank-green-pauses-youtube-channels-over-unhealthy-chatgpt-use"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "Yahoo Entertainment",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/youtuber-hank-green-says-ai-194545634.html"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "Kotaku",
+      "url": "https://kotaku.com/famous-science-youtuber-admits-he-has-unhealthy-relationship-with-ai-after-facing-backlash-over-recent-video-2000720908"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "BLK Alerts",
+      "url": "https://blkalerts.com/2026/08/02/youtuber-hank-green-says-his-ai-usage-is-not-healthy/"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "Ground News",
+      "url": "https://ground.news/article/hank-green-admits-using-chatgpt-after-accidentally-reading-ai-prompt-feedback-left-in-his-script"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "AndroGuider",
+      "url": "https://www.androguider.com/2026/08/hank-greens-candid-confession-dark-side.html"
+    },
+    {
+      "title": "YouTuber Hank Green says his AI usage is 'not healthy'",
+      "outlet": "NewsCord",
+      "url": "https://newscord.org/article/hank-green-apologizes-after-admitting-he-relied-too-heavily-on-chatgpt-for-youtu--Story_20260101_YouTuberHankGreenfacc9fc11df"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4623133-apple-tightens-bug-reporting-as-ai-floods-security-teams"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "The News (Pakistan)",
+      "url": "https://www.thenews.com.pk/latest/1411035-apple-imposes-limits-on-ai-generated-security-reports-ft-says"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "AI Weekly",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "HokaNews",
+      "url": "https://www.hokanews.com/2026/08/apple-limits-security-bug-reports-after.html"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "Techmeme",
+      "url": "https://www.techmeme.com/260802/p1"
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "outlet": "Neura Market",
+      "url": "https://www.neura.market/news/apple-caps-bug-bounty-ai-report-flood-backfires"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "Inc42",
+      "url": "https://inc42.com/buzz/smallest-ai-bags-13-mn-to-build-next-gen-voice-ai-models/"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "CXO Digital Pulse",
+      "url": "https://www.cxodigitalpulse.com/smallest-ai-raises-13-million-to-develop-next-generation-voice-ai-models/"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "CMSWire",
+      "url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "Bitcoin World",
+      "url": "https://bitcoinworld.co.in/smallest-ai-raises-13m-voice-ai/"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "Viestories",
+      "url": "https://viestories.com/funding-alert/smallestai-bags-13-mn-to-scale-enterprise-voice-ai-platform-12217403"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/07/30/smallest-ai-raises-13m-accelerate-development-asynchronous-voice-ai-architecture/"
+    },
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "outlet": "TechBuzz",
+      "url": "https://www.techbuzz.ai/articles/smallest-ai-raises-13m-for-voice-ai-that-passes-turing-test"
+    },
+    {
+      "title": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+      "outlet": "NewsBytes",
+      "url": "https://www.newsbytesapp.com/news/business/upi-logs-over-record-breaking-23-6b-transactions-in-july/story"
+    },
+    {
+      "title": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+      "outlet": "Dynamite News",
+      "url": "https://www.dynamitenews.com/national/indian-upi-processed-record-2366-billion-transactions-worth-rs-2988-lakh-crore-in-july"
+    },
+    {
+      "title": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+      "outlet": "Business Standard",
+      "url": "https://www.business-standard.com/finance/news/upi-transactions-hit-record-23-66-billion-in-july-value-rs-29-88-trillion-126080100548_1.html"
+    },
+    {
+      "title": "UPI hits highest ever monthly volume with 23.66 Bn transactions in July",
+      "outlet": "Whalesbook",
+      "url": "https://www.whalesbook.com/news/English/technology/UPI-Hits-Record-2366-Billion-Transactions-in-July-2026/6a6da1cc0f4505b5a03c6a11"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "Global Banking And Finance",
+      "url": "https://www.globalbankingandfinance.com/meta-narrows-annual-capex-forecast-ai-buildout-grows/"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "InsiderFinance",
+      "url": "https://www.insiderfinance.io/news/meta-capex-outlook-tightens-as-ai-buildout-grows"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-just-bumped-2026-capex-232250811.html"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "Blockspace",
+      "url": "https://blockspace.media/insight/meta-lifts-2026-capex-ai-infrastructure-spending/"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "The Next Web",
+      "url": "https://thenextweb.com/news/meta-q2-2026-capex-ai-buildout"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/meta-estimates-2026-capex-to-be-between-115-135bn/"
+    },
+    {
+      "title": "Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in 2026",
+      "outlet": "Value Add VC",
+      "url": "https://valueaddvc.com/blog/meta-145b-ai-capex-2026-why-zuckerberg-raised-guidance-twice"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "Tech Times",
+      "url": "https://www.techtimes.com/articles/321890/20260728/fcc-bans-chinese-humanoid-robots-power-inverters-linked-confirmed-backdoors.htm"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "Forbes",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/07/28/united-states-bans-chinese-humanoid--quadruped-robots-citing-national-security/"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/humanoid-robots-imports-us-ban-china-national-security-concerns/"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "The Robot Report",
+      "url": "https://www.therobotreport.com/industry-reacts-fcc-ban-u-s-imports-new-humanoid-quadruped-robots/"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "NBC News",
+      "url": "https://www.nbcnews.com/tech/tech-news/us-bans-foreign-made-humanoid-robots-targeting-china-national-security-rcna589777"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "American Bazaar Online",
+      "url": "https://americanbazaaronline.com/2026/07/29/fcc-announces-ban-on-foreign-humanoid-robots-targeting-china-485439/"
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "outlet": "RoboZaps",
+      "url": "https://blog.robozaps.com/b/fcc-robot-ban-unitree-foreign-humanoids"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "KuCoin",
+      "url": "https://www.kucoin.com/news/flash/balaji-s-network-school-shifts-to-kazakhstan-after-malaysia-licence-revoked"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "Crypto.news",
+      "url": "https://crypto.news/balaji-pivots-to-kazakhstan-after-network-school-loses-malaysia-licence/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "TradingView (Cointelegraph)",
+      "url": "https://www.tradingview.com/news/cointelegraph:e4a93f177094b:0-balaji-s-network-school-turns-to-kazakhstan-amid-malaysia-setback/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "TechNode Global",
+      "url": "https://technode.global/2026/07/22/us-investor-balaji-srinivasans-network-school-in-forest-city-ordered-to-shut-down/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "NRI Pulse",
+      "url": "https://nripulse.com/balaji-srinivasan-takes-experimental-startup-community-to-kazakhstan-after-malaysia-revokes-license/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "Fortune",
+      "url": "https://fortune.com/2026/07/26/network-school-balaji-srinivasan-malaysia-johor-israel-kazakhstan/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "The Nerd Reich",
+      "url": "https://www.thenerdreich.com/malaysia-crushes-network-school-balaji-flees-to-kazakhstan/"
+    },
+    {
+      "title": "Balaji Srinivasan's Network School relocates to Kazakhstan after Malaysian authorities pull the plug",
+      "outlet": "RuntimeWire",
+      "url": "https://runtimewire.com/article/balaji-srinivasan-network-school-kazakhstan-malaysia-shutdown"
+    },
+    {
+      "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "outlet": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/coreweave-said-to-sweeten-26-billion-loan-terms-amid-debt-concerns-4821421"
+    },
+    {
+      "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "outlet": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-29/coreweave-boosts-yield-on-2-6-billion-loan-tied-to-anthropic"
+    },
+    {
+      "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "outlet": "Bloomberg Tax",
+      "url": "https://news.bloombergtax.com/financial-accounting/coreweave-slaps-9-plus-yield-on-2-6-billion-leveraged-loan-1"
+    },
+    {
+      "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "outlet": "PitchBook",
+      "url": "https://pitchbook.com/news/articles/coreweave-completes-2-6b-term-loan-after-raising-the-spread-and-yield"
+    },
+    {
+      "title": "CoreWeave said to sweeten $2.6 billion loan terms amid debt concerns",
+      "outlet": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-said-sweeten-2-6-180208831.html"
+    },
+    {
+      "title": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+      "outlet": "AIBase",
+      "url": "https://news.aibase.com/news/30041"
+    },
+    {
+      "title": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+      "outlet": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/08/01/lg-releases-koreas-largest-ai-model-k-exaone-20-as-open"
+    },
+    {
+      "title": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+      "outlet": "The Elec",
+      "url": "https://www.thelec.net/news/articleView.html?idxno=12739"
+    },
+    {
+      "title": "LG unveils 750 bil.-parameter frontier AI model K-EXAONE 2.0",
+      "outlet": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/lg-unveils-kexaone-20-koreas-largest-opensource-ai-model/12802076"
+    },
+    {
+      "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "outlet": "Reed Smith",
+      "url": "https://www.reedsmith.com/our-insights/blogs/technology-law-dispatch/102nfi5/eu-ai-act-next-level-applies-as-of-2-august-2026/"
+    },
+    {
+      "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "outlet": "Lumenova.ai",
+      "url": "https://www.lumenova.ai/blog/eu-ai-act-delays-july-2026/"
+    },
+    {
+      "title": "Indian startup funding drops to $662 Mn in July after June spike",
+      "outlet": "Inshorts",
+      "url": "https://inshorts.com/en/amp_news/indian-startup-funding-falls-67--from-june-to--6-315-crore-in-july-1785645963054"
+    },
+    {
+      "title": "Indian startup funding drops to $662 Mn in July after June spike",
+      "outlet": "Tice.news",
+      "url": "https://www.tice.news/tice-trending/india-startup-funding-more-selective-july-2026-12217717"
+    },
+    {
+      "title": "Indian startup funding drops to $662 Mn in July after June spike",
+      "outlet": "Ascendants.in",
+      "url": "https://ascendants.in/business-stories/indian-startup-funding-falls-662-million-july-2026/"
+    },
+    {
+      "title": "Chinese VC Firms Seek $35 Billion as Fundraising Rebounds After 3-Year Drought",
+      "outlet": "Lapaas Voice",
+      "url": "https://lapaasvoice.com/chinese-vc-firms-seek-35-billion-as-fundraising-rebounds-after-3-year-drought"
+    },
+    {
+      "title": "Chinese VC Firms Seek $35 Billion as Fundraising Rebounds After 3-Year Drought",
+      "outlet": "StartupBusiness.it",
+      "url": "https://www.startupbusiness.it/en/chinese-vc-fundraising-comes-back-to-life-after-prolonged-downturn/188670/"
+    }
+  ],
+  "cn_incubator": [
+    {
+      "title": "UBTech's U1 'companion robot' (life-sized humanoid built for emotional companionship/elder care) triggered a wave of online debate after its June 30, 2026 launch, with preorders topping 10,000 units within 3 days across three price tiers (up to $137K).",
+      "platform": "Global Times (reporting Chinese social-media reaction)",
+      "url": "https://www.globaltimes.cn/page/202607/1364956.shtml",
+      "provenance": "Global Times reports 10,000+ preorders by July 2 and split online reaction (praise for capability vs. concern about human-relationship displacement) just over a month before this sweep — fast mainstream uptake of the humanoid-companion category.",
+      "corroboration_url": "https://newatlas.com/robotics/u1-worlds-first-mass-produced-humanoid-robot/"
+    },
+    {
+      "title": "OpenClaw, an open-source AI agent, spawned a persistent Xiaohongshu/RedNote meme subculture ('raising a lobster' / 'cyber shrimp farmer') around running personal AI agents as pets, plus a paid 'door-to-door lobster installation' setup service.",
+      "platform": "xiaohongshu",
+      "url": "https://rednotememe.com/chinese-internet-slang-2026",
+      "provenance": "RedNote's July 2026 internet-slang roundup still lists the OpenClaw lobster-mascot meme ('养龙虾'/'赛博养虾人') as an entrenched reference months after its spring 2026 peak, suggesting the AI-agent-as-pet framing has staying power beyond the initial news cycle.",
+      "corroboration_url": "https://www.cnbc.com/2026/03/12/china-openclaw-ai-agent-adoption-tech-companies-government-support-lobster-shrimp.html"
+    },
+    {
+      "title": "ByteDance's Seedance 2.0 AI video generator drove an 'everyone can be a director' (人人都是导演) content catchphrase on Chinese social platforms after being folded into CapCut, ByteDance's mass-market consumer editing app.",
+      "platform": "xiaohongshu",
+      "url": "https://rednotememe.com/chinese-internet-slang-2026",
+      "provenance": "RedNote's slang tracker names Seedance 2.0 as the source of a new catchphrase around democratized cinematic video creation; the CapCut integration puts the tool in front of a mass consumer audience rather than just prosumers.",
+      "corroboration_url": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/"
+    },
+    {
+      "title": "AI smart glasses are crossing into mass-market adoption in China, with domestic brands (Xiaomi, Rokid, Huawei, XREAL) driving reported sales growth as high as 80%, and Rokid positioning its 'virtual screen' glasses as a direct Meta Ray-Ban Display rival.",
+      "platform": "Xinhua (English)",
+      "url": "https://english.news.cn/20260322/9bb78086e7814aefbc25145e4380e432/c.html",
+      "provenance": "Chinese state media plus a follow-on regional outlet (Macau News) both frame AI glasses as tipping from niche to mainstream in China through H1 2026, running ahead of comparable mass-adoption claims in Western markets.",
+      "corroboration_url": "https://www.cnbc.com/2026/04/13/ai-smart-glasses-china-rokid-virtual-screen-meta-ray-ban-display.html"
+    },
+    {
+      "title": "AI digital-human / faceless-avatar content is surging on Xiaohongshu — the 'AI数字人' (AI digital human) topic reportedly has 410M+ views, +200% weekly growth, and 2.1M notes, with creators using avatars for 24/7 livestream commerce.",
+      "platform": "xiaohongshu",
+      "url": "https://www.ainchina.com/blog/china-ai-avatar-revolution-2026/",
+      "provenance": "Single-intermediary platform-metric claim (views/growth/notes) for the 'AI数字人' topic tag; frames Chinese creators as ahead of the West in monetizing AI avatars for always-on commerce/livestreaming rather than corporate training use cases — treat the specific stats as unverified.",
+      "corroboration_url": "https://www.cnbc.com/2025/06/19/ai-humans-in-china-just-proved-they-are-better-influencers.html"
+    }
+  ]
+}

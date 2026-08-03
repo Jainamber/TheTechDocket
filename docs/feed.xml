@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>EU AI Act: What Actually Changed on August 2, 2026</title>
+    <link>https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/</guid>
+    <pubDate>Mon, 03 Aug 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[EU AI Act enforcement began August 2, 2026: chatbot and deepfake disclosure is law and GPAI fines are live, while high-risk rules wait until December 2027.]]></description>
+  </item>
+  <item>
     <title>DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price</title>
     <link>https://thetechdocket.com/articles/deepseek-v4-flash-0731/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/deepseek-v4-flash-0731/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/codex-context-window-cut/</guid>
     <pubDate>Sun, 19 Jul 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[OpenAI cut Codex's default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.]]></description>
-  </item>
-  <item>
-    <title>AI Chatbot Data Privacy: What Happens to Your Chats</title>
-    <link>https://thetechdocket.com/articles/ai-chatbot-data-privacy/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/ai-chatbot-data-privacy/</guid>
-    <pubDate>Wed, 15 Jul 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor's own policy pages.]]></description>
   </item>
 </channel>
 </rss>

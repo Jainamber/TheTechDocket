@@ -1,0 +1,528 @@
+{
+  "date": "2026-08-03",
+  "candidates": [
+    {
+      "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "outlet:Tech Times",
+        "outlet:BleepingComputer",
+        "outlet:GBHackers",
+        "outlet:Unit42 (Palo Alto Networks)",
+        "outlet:Forkast",
+        "outlet:The Arabian Post"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news India August 2026",
+          "outlet": "The Hacker News"
+        },
+        {
+          "source": "gnews:US",
+          "query": "biggest AI news August 2026",
+          "outlet": "The Hacker News"
+        },
+        {
+          "source": "outlet:Tech Times",
+          "outlet": "Tech Times"
+        },
+        {
+          "source": "outlet:BleepingComputer",
+          "outlet": "BleepingComputer"
+        },
+        {
+          "source": "outlet:GBHackers",
+          "outlet": "GBHackers"
+        },
+        {
+          "source": "outlet:Unit42 (Palo Alto Networks)",
+          "outlet": "Unit42 (Palo Alto Networks)"
+        },
+        {
+          "source": "outlet:Forkast",
+          "outlet": "Forkast"
+        },
+        {
+          "source": "outlet:The Arabian Post",
+          "outlet": "The Arabian Post"
+        }
+      ],
+      "score": 0.5833,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "China's humanoid robots have been taking over the global market. Now the US is banning them",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "outlet:Tech Times",
+        "outlet:Forbes",
+        "outlet:CBS News",
+        "outlet:The Robot Report",
+        "outlet:NBC News",
+        "outlet:American Bazaar Online",
+        "outlet:RoboZaps"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news India August 2026",
+          "outlet": "CNN Business"
+        },
+        {
+          "source": "gnews:US",
+          "query": "biggest AI news August 2026",
+          "outlet": "CNN Business"
+        },
+        {
+          "source": "outlet:Tech Times",
+          "outlet": "Tech Times"
+        },
+        {
+          "source": "outlet:Forbes",
+          "outlet": "Forbes"
+        },
+        {
+          "source": "outlet:CBS News",
+          "outlet": "CBS News"
+        },
+        {
+          "source": "outlet:The Robot Report",
+          "outlet": "The Robot Report"
+        },
+        {
+          "source": "outlet:NBC News",
+          "outlet": "NBC News"
+        },
+        {
+          "source": "outlet:American Bazaar Online",
+          "outlet": "American Bazaar Online"
+        },
+        {
+          "source": "outlet:RoboZaps",
+          "outlet": "RoboZaps"
+        }
+      ],
+      "score": 0.575,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "UBTech's U1 'companion robot' (life-sized humanoid built for emotional companionship/elder care) triggered a wave of online debate after its June 30, 2026 launch, with preorders topping 10,000 units within 3 days across three price tiers (up to $137K).",
+      "sources": [
+        "cn:global times (reporting chinese social-media reaction)",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:global times (reporting chinese social-media reaction)",
+          "platform": "global times (reporting chinese social-media reaction)",
+          "url": "https://www.globaltimes.cn/page/202607/1364956.shtml",
+          "provenance": "Global Times reports 10,000+ preorders by July 2 and split online reaction (praise for capability vs. concern about human-relationship displacement) just over a month before this sweep — fast mainstream uptake of the humanoid-companion category.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://newatlas.com/robotics/u1-worlds-first-mass-produced-humanoid-robot/",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5586,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Zepto Pauses IPO Amid Valuation Concerns, To Raise ₹1,000 Cr Pre-IPO Round",
+      "sources": [
+        "gnews:IN",
+        "outlet:CIOL",
+        "outlet:IndMoney",
+        "outlet:TechStory",
+        "outlet:Business Standard",
+        "outlet:NewsX",
+        "outlet:The Week"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news India August 2026",
+          "outlet": "Inc42"
+        },
+        {
+          "source": "outlet:CIOL",
+          "outlet": "CIOL"
+        },
+        {
+          "source": "outlet:IndMoney",
+          "outlet": "IndMoney"
+        },
+        {
+          "source": "outlet:TechStory",
+          "outlet": "TechStory"
+        },
+        {
+          "source": "outlet:Business Standard",
+          "outlet": "Business Standard"
+        },
+        {
+          "source": "outlet:NewsX",
+          "outlet": "NewsX"
+        },
+        {
+          "source": "outlet:The Week",
+          "outlet": "The Week"
+        }
+      ],
+      "score": 0.5564,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "AI smart glasses are crossing into mass-market adoption in China, with domestic brands (Xiaomi, Rokid, Huawei, XREAL) driving reported sales growth as high as 80%, and Rokid positioning its 'virtual screen' glasses as a direct Meta Ray-Ban Display rival.",
+      "sources": [
+        "cn:xinhua (english)",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:xinhua (english)",
+          "platform": "xinhua (english)",
+          "url": "https://english.news.cn/20260322/9bb78086e7814aefbc25145e4380e432/c.html",
+          "provenance": "Chinese state media plus a follow-on regional outlet (Macau News) both frame AI glasses as tipping from niche to mainstream in China through H1 2026, running ahead of comparable mass-adoption claims in Western markets.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://www.cnbc.com/2026/04/13/ai-smart-glasses-china-rokid-virtual-screen-meta-ray-ban-display.html",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5501,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "ByteDance's Seedance 2.0 AI video generator drove an 'everyone can be a director' (人人都是导演) content catchphrase on Chinese social platforms after being folded into CapCut, ByteDance's mass-market consumer editing app.",
+      "sources": [
+        "cn:xiaohongshu",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:xiaohongshu",
+          "platform": "xiaohongshu",
+          "url": "https://rednotememe.com/chinese-internet-slang-2026",
+          "provenance": "RedNote's slang tracker names Seedance 2.0 as the source of a new catchphrase around democratized cinematic video creation; the CapCut integration puts the tool in front of a mass consumer audience rather than just prosumers.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5481,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenClaw, an open-source AI agent, spawned a persistent Xiaohongshu/RedNote meme subculture ('raising a lobster' / 'cyber shrimp farmer') around running personal AI agents as pets, plus a paid 'door-to-door lobster installation' setup service.",
+      "sources": [
+        "cn:xiaohongshu",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:xiaohongshu",
+          "platform": "xiaohongshu",
+          "url": "https://rednotememe.com/chinese-internet-slang-2026",
+          "provenance": "RedNote's July 2026 internet-slang roundup still lists the OpenClaw lobster-mascot meme ('养龙虾'/'赛博养虾人') as an entrenched reference months after its spring 2026 peak, suggesting the AI-agent-as-pet framing has staying power beyond the initial news cycle.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://www.cnbc.com/2026/03/12/china-openclaw-ai-agent-adoption-tech-companies-government-support-lobster-shrimp.html",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5469,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "sources": [
+        "gnews:IN",
+        "outlet:Reed Smith",
+        "outlet:Lumenova.ai"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news India August 2026",
+          "outlet": "European Commission"
+        },
+        {
+          "source": "outlet:Reed Smith",
+          "outlet": "Reed Smith"
+        },
+        {
+          "source": "outlet:Lumenova.ai",
+          "outlet": "Lumenova.ai"
+        }
+      ],
+      "score": 0.5415,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Indian startup funding drops to $662 Mn in July after June spike",
+      "sources": [
+        "gnews:IN",
+        "outlet:Inshorts",
+        "outlet:Tice.news",
+        "outlet:Ascendants.in"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news India August 2026",
+          "outlet": "Entrackr"
+        },
+        {
+          "source": "outlet:Inshorts",
+          "outlet": "Inshorts"
+        },
+        {
+          "source": "outlet:Tice.news",
+          "outlet": "Tice.news"
+        },
+        {
+          "source": "outlet:Ascendants.in",
+          "outlet": "Ascendants.in"
+        }
+      ],
+      "score": 0.5415,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Sam Altman is still making the case for parenting via ChatGPT",
+      "sources": [
+        "gnews:US",
+        "outlet:Storyboard18",
+        "outlet:Zamin.uz",
+        "outlet:Memesita",
+        "outlet:AI Weekly",
+        "outlet:Tom's Guide"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest AI news August 2026",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "outlet:Storyboard18",
+          "outlet": "Storyboard18"
+        },
+        {
+          "source": "outlet:Zamin.uz",
+          "outlet": "Zamin.uz"
+        },
+        {
+          "source": "outlet:Memesita",
+          "outlet": "Memesita"
+        },
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        },
+        {
+          "source": "outlet:Tom's Guide",
+          "outlet": "Tom's Guide"
+        }
+      ],
+      "score": 0.5383,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Apple tightens bug reporting as AI floods security teams",
+      "sources": [
+        "gnews:US",
+        "outlet:Seeking Alpha",
+        "outlet:The News (Pakistan)",
+        "outlet:AI Weekly",
+        "outlet:HokaNews",
+        "outlet:Techmeme",
+        "outlet:Neura Market"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest AI news August 2026",
+          "outlet": "Seeking Alpha (orig. Financial Times)"
+        },
+        {
+          "source": "outlet:Seeking Alpha",
+          "outlet": "Seeking Alpha"
+        },
+        {
+          "source": "outlet:The News (Pakistan)",
+          "outlet": "The News (Pakistan)"
+        },
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        },
+        {
+          "source": "outlet:HokaNews",
+          "outlet": "HokaNews"
+        },
+        {
+          "source": "outlet:Techmeme",
+          "outlet": "Techmeme"
+        },
+        {
+          "source": "outlet:Neura Market",
+          "outlet": "Neura Market"
+        }
+      ],
+      "score": 0.532,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Fields Medal Winner Jacob Tsimerman Joins OpenAI, Says AI Will Soon Do Everything Mathematicians Do 'Better And Faster'",
+      "sources": [
+        "gnews:US",
+        "outlet:Officechai",
+        "outlet:Digg",
+        "outlet:BigGo Finance",
+        "outlet:Remio.ai",
+        "outlet:DEV Community",
+        "outlet:Yellow.com",
+        "outlet:KuCoin"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest AI news August 2026",
+          "outlet": "Officechai (orig. WSJ)"
+        },
+        {
+          "source": "outlet:Officechai",
+          "outlet": "Officechai"
+        },
+        {
+          "source": "outlet:Digg",
+          "outlet": "Digg"
+        },
+        {
+          "source": "outlet:BigGo Finance",
+          "outlet": "BigGo Finance"
+        },
+        {
+          "source": "outlet:Remio.ai",
+          "outlet": "Remio.ai"
+        },
+        {
+          "source": "outlet:DEV Community",
+          "outlet": "DEV Community"
+        },
+        {
+          "source": "outlet:Yellow.com",
+          "outlet": "Yellow.com"
+        },
+        {
+          "source": "outlet:KuCoin",
+          "outlet": "KuCoin"
+        }
+      ],
+      "score": 0.5299,
+      "topic_fit": 0.92,
+      "corroboration": 0.5
+    }
+  ],
+  "pick": {
+    "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+    "sources": [
+      "gnews:IN",
+      "outlet:Reed Smith",
+      "outlet:Lumenova.ai"
+    ],
+    "geos": [
+      "IN"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "tech news India August 2026",
+        "outlet": "European Commission"
+      },
+      {
+        "source": "outlet:Reed Smith",
+        "outlet": "Reed Smith"
+      },
+      {
+        "source": "outlet:Lumenova.ai",
+        "outlet": "Lumenova.ai"
+      }
+    ],
+    "score": 0.5415,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false,
+  "editorial_override": {
+    "original_pick": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
+    "reason": "DeepSeek-attack story overlaps 07-31 agent-security article and would be the 2nd DeepSeek piece in 2 days; AI Act enforcement began Aug 2 (yesterday) — freshest time-anchored signal, primary-source depth (Commission/EUR-Lex), strong India IT/SaaS exporter angle, first business day under the new regime."
+  }
+}
