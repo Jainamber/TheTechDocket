@@ -1,0 +1,272 @@
+{
+  "date": "2026-08-04",
+  "candidates": [
+    {
+      "title": "Show HN: Isopolis - Isometric pixel map of SF",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 224,
+          "comments": 50,
+          "url": "https://news.ycombinator.com/item?id=49149966"
+        }
+      ],
+      "score": 0.5619,
+      "topic_fit": 0.7,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Rust project goals: Immobile types and guaranteed destructors",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7750349886005943,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 78,
+          "comments": 17,
+          "url": "https://news.ycombinator.com/item?id=49152023"
+        }
+      ],
+      "score": 0.4849,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The AI Productivity Gap",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8113233347786729,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 49,
+          "comments": 44,
+          "url": "https://news.ycombinator.com/item?id=49152222"
+        }
+      ],
+      "score": 0.4603,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google Pixel 11 series leads five big smartphones launching in India this August",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "Business Today"
+        }
+      ],
+      "score": 0.4344,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI talent wars: Amodei says new Anthropic hires chase pay over mission",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "Axios"
+        }
+      ],
+      "score": 0.4333,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic says Claude models breached three real companies during security tests",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4326,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Microsoft's MAI-Realtime voice model spotted in hidden Foundry preview",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TestingCatalog"
+        }
+      ],
+      "score": 0.43,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "US bans new Chinese-made humanoid robots and grid inverters",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4227,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google DeepMind launches Gemini Robotics 2 with full humanoid body control",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "biggest ai news today",
+          "outlet": "Google DeepMind"
+        }
+      ],
+      "score": 0.4216,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Samsung Galaxy F70 Pro 5G launched in India at Rs 23,999",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "Digit"
+        }
+      ],
+      "score": 0.4188,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Airtel and Jio recharge price hike expected soon",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "Desidime"
+        }
+      ],
+      "score": 0.4172,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "UPI privacy updates, CKYC 2.0 and ITR filing changes effective from August 1",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "tech news india today",
+          "outlet": "Digit"
+        }
+      ],
+      "score": 0.4133,
+      "topic_fit": 0.94,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Alibaba shares rally after unveiling Qwen3.8-Max AI model to rival Anthropic",
+    "sources": [
+      "gnews:US",
+      "hn"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "biggest ai news today",
+        "outlet": "CNBC"
+      },
+      {
+        "source": "hn",
+        "points": 55,
+        "comments": 9,
+        "url": "https://news.ycombinator.com/item?id=49150470",
+        "note": "HN front page 'Qwen3.8-Max: A New Bar for Coding and Cowork' (55 pts/9 comments, fetched directly) - candidate dropped by scorer deny-bug ('odi' substring of 'Coding'); merged here as evidence"
+      }
+    ],
+    "score": 0.4099,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false,
+  "selection_note": "Editorial override per DAILY_RUN Step 2: scorer top pick 'Isopolis pixel map of SF' was a false keyword match ('pixel'); the day's dominant story Qwen3.8-Max was deny-filtered by a substring bug ('odi' in 'Coding'). Qwen candidate independently scored 0.41 (above min 0.35, fit 1.0). Fresh (Aug 3), multi-outlet (CNBC/SCMP/Forbes/InfoWorld + HN front page + official Alibaba X post), stock-market corroboration; links naturally to deepseek-v4-flash-0731 and gpt-5-6-luna-price-cut."
+}

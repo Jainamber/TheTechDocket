@@ -431,6 +431,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-03-eu-ai-act-august-2026-what-changed.json",
       "url": "https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/"
+    },
+    {
+      "date": "2026-08-04",
+      "slug": "qwen3-8-max-what-alibaba-launched",
+      "title": "Qwen3.8-Max: What Alibaba Launched and What It Didn't",
+      "keyword": "qwen3.8-max",
+      "hub": "ai-models",
+      "published_at": "2026-08-04T07:23:09.524500+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-04T08:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-04-qwen3-8-max-what-alibaba-launched.json",
+      "url": "https://thetechdocket.com/articles/qwen3-8-max-what-alibaba-launched/"
     }
   ]
 }

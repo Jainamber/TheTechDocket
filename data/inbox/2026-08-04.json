@@ -1,0 +1,196 @@
+{
+  "date": "2026-08-04",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss": "unavailable (WebFetch provenance-blocked in scheduled session)",
+    "hn_api": "unavailable (same)",
+    "note": "signals gathered via WebSearch sweeps by 3 parallel sub-agents"
+  },
+  "markets": {
+    "IN": {
+      "trends_rss": [],
+      "news": {
+        "tech news india today": [
+          {
+            "title": "Samsung Galaxy F70 Pro 5G launched in India at Rs 23,999",
+            "source": "Digit"
+          },
+          {
+            "title": "Vivo S2 5G India launch confirmed with 7050mAh battery",
+            "source": "91mobiles"
+          },
+          {
+            "title": "Redmi Note 17 India launch date officially confirmed",
+            "source": "LatestLY"
+          },
+          {
+            "title": "Google Pixel 11 series leads five big smartphones launching in India this August",
+            "source": "Business Today"
+          },
+          {
+            "title": "UPI privacy updates, CKYC 2.0 and ITR filing changes effective from August 1",
+            "source": "Digit"
+          },
+          {
+            "title": "UPI sets new record with 23.66 billion transactions in July 2026",
+            "source": "The Print Lines"
+          },
+          {
+            "title": "India's 12 chip sites show assembly work as Semicon 2.0 bets on materials and machines",
+            "source": "Tech Times"
+          },
+          {
+            "title": "Airtel and Jio recharge price hike expected soon",
+            "source": "Desidime"
+          },
+          {
+            "title": "India's frugal AI startups Sarvam and Krutrim build sovereign models",
+            "source": "Rest of World"
+          },
+          {
+            "title": "India notifies 2026 IT Rules to regulate AI content and deepfakes",
+            "source": "LawStreet"
+          },
+          {
+            "title": "Amazon and Flipkart Freedom Sale to start August 7",
+            "source": "Aaj Tak"
+          }
+        ]
+      },
+      "autocomplete": {}
+    },
+    "US": {
+      "trends_rss": [],
+      "news": {
+        "biggest ai news today": [
+          {
+            "title": "Alibaba shares rally after unveiling Qwen3.8-Max AI model to rival Anthropic",
+            "source": "CNBC"
+          },
+          {
+            "title": "OpenAI's Astra model solves ten decades-old math problems for $2,000",
+            "source": "Forbes"
+          },
+          {
+            "title": "Microsoft's MAI-Realtime voice model spotted in hidden Foundry preview",
+            "source": "TestingCatalog"
+          },
+          {
+            "title": "DeepSeek V4-Flash becomes the cheapest major AI model to run",
+            "source": "Yahoo Finance"
+          },
+          {
+            "title": "AI talent wars: Amodei says new Anthropic hires chase pay over mission",
+            "source": "Axios"
+          },
+          {
+            "title": "White House finalizes AI oversight framework but keeps details secret",
+            "source": "Axios"
+          },
+          {
+            "title": "Anthropic says Claude models breached three real companies during security tests",
+            "source": "TechCrunch"
+          },
+          {
+            "title": "Google DeepMind launches Gemini Robotics 2 with full humanoid body control",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "US bans new Chinese-made humanoid robots and grid inverters",
+            "source": "TechCrunch"
+          },
+          {
+            "title": "Visa to acquire fraud-detection firm BioCatch for $2.4 billion",
+            "source": "CNBC"
+          },
+          {
+            "title": "Meta lifts 2026 AI capex floor to $130 billion after Q2 beat",
+            "source": "Seeking Alpha"
+          },
+          {
+            "title": "Palantir revenue jumps 93% in blowout Q2 2026, raises guidance",
+            "source": "Business Wire"
+          },
+          {
+            "title": "Sequoia leads $1B round for nuclear startup Valar Atomics at $6B valuation",
+            "source": "TechCrunch"
+          },
+          {
+            "title": "Critical Ruflo MCP bridge flaw scores CVSS 10.0, exposes 233 tools",
+            "source": "The Hacker News"
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "points": 55,
+      "comments": 9,
+      "created_at": "2026-08-03T18:00:00Z",
+      "url": "https://news.ycombinator.com/item?id=49150470",
+      "note": "corrected from initial sweep (589/296 was wrong); values fetched directly from HN item page during research"
+    },
+    {
+      "title": "Don't be a meat proxy",
+      "points": 605,
+      "comments": 263,
+      "created_at": "2026-08-03T14:00:00Z",
+      "url": "https://news.ycombinator.com/item?id=49151933"
+    },
+    {
+      "title": "Show HN: Isopolis - Isometric pixel map of SF",
+      "points": 224,
+      "comments": 50,
+      "created_at": "2026-08-03T16:00:00Z",
+      "url": "https://news.ycombinator.com/item?id=49149966"
+    },
+    {
+      "title": "The AI Productivity Gap",
+      "points": 49,
+      "comments": 44,
+      "created_at": "2026-08-04T00:00:00Z",
+      "url": "https://news.ycombinator.com/item?id=49152222"
+    },
+    {
+      "title": "Rust project goals: Immobile types and guaranteed destructors",
+      "points": 78,
+      "comments": 17,
+      "created_at": "2026-08-03T20:00:00Z",
+      "url": "https://news.ycombinator.com/item?id=49152023"
+    },
+    {
+      "title": "Kimi K3 2.78T-parameter model running on a single CPU in pure C99",
+      "points": null,
+      "comments": null,
+      "created_at": "2026-08-03T12:00:00Z",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/"
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "title": "Alibaba unveils Qwen3.8-Max, shares rally as model challenges Anthropic and OpenAI",
+      "outlet": "CNBC"
+    },
+    {
+      "title": "OpenAI Astra produces Lean proofs for ten open math problems",
+      "outlet": "Quartz"
+    },
+    {
+      "title": "Anthropic Claude escaped test sandbox to attack three organizations",
+      "outlet": "The Register"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 release emphasizes speed and cost efficiency",
+      "outlet": "llm-stats"
+    },
+    {
+      "title": "India tech workers in crisis amid suicides, layoffs and AI",
+      "outlet": "Rest of World"
+    }
+  ],
+  "wikipedia_top": []
+}
