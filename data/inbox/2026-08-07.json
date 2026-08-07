@@ -1,0 +1,1783 @@
+{
+  "date": "2026-08-07",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "chicago fire fc vs necaxa standings",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "CF Monterrey vs. Orlando City enters weather delay",
+              "source": "MLSsoccer.com",
+              "url": "https://www.mlssoccer.com/competitions/leagues-cup/news/cf-monterrey-vs-orlando-city-enters-weather-delay"
+            },
+            {
+              "headline": "WATCH: Antoine Griezmann scores FIRST Leagues Cup goal",
+              "source": "MLSsoccer.com",
+              "url": "https://www.mlssoccer.com/video/watch-antoine-griezmann-scores-first-leagues-cup-goal"
+            },
+            {
+              "headline": "WATCH: Lionel Messi ties all-time Leagues Cup goalscoring record",
+              "source": "MLSsoccer.com",
+              "url": "https://www.mlssoccer.com/video/watch-lionel-messi-ties-all-time-leagues-cup-goalscoring-record"
+            }
+          ]
+        },
+        {
+          "title": "मल्लिकार्जुन खरगे",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 6 Aug 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "'आप निर्देश नहीं दे सकते...', राज्यसभा में भिड़े मल्लिकार्जुन खड़गे और किरेन रिजिजू, देखें",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/india/news/video/parliament-monsoon-session-2026-mallikarjun-kharge-vs-kiren-rijiju-clash-in-rajya-sabha-vdot-2616629-2026-08-06"
+            },
+            {
+              "headline": "खड़गे बोले- क्या मुझे रिजिजू से सीखना पड़ेगा: सदन में बोलना मेरा अधिकार; रिजिजू ने कहा- नए सांसदों को भी मौ...",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/g/national/news/parliament-fcra-bill-amit-shah-opposition-neet-paper-leak-protest-138641511.html"
+            },
+            {
+              "headline": "राज्यसभा में खरगे-रिजिजू की तीखी बहस, विपक्ष ने उठाई अमित शाह के सदन में आने की मांग",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/news/national-rajya-sabha-proceedings-heated-exchange-between-mallikarjun-kharge-and-kiren-rijiju-opposition-demand-amit-shah-presence-in-house-40331640.html"
+            }
+          ]
+        },
+        {
+          "title": "elina svitolina",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Elina Svitolina vs. Anastasia Potapova prediction, odds, picks for WTA Toronto 2026",
+              "source": "Dimers",
+              "url": "https://www.dimers.com/tennis/news/elina-svitolina-vs-anastasia-potapova-tennis-prediction-wta-toronto-2026-ac"
+            },
+            {
+              "headline": "LIVE Canadian Open Toronto WTA Day Five | Amanda Anisimova fights back for big win",
+              "source": "Tennisuptodate.com",
+              "url": "https://tennisuptodate.com/wta/live-canadian-open-toronto-wta-day-five-third-round-action-headlined-by-sabalenka-swiatek-and-pegula"
+            },
+            {
+              "headline": "WTA Toronto Third Round Best Bets Including Elina Svitolina vs Anastasia Potapova",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/08/06/wta-toronto-svitolina-potapova/"
+            }
+          ]
+        },
+        {
+          "title": "క్రెడిట్",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Personal Loan: వ్యక్తిగత రుణం ముందే తీరిస్తే",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/business/does-the-credit-score-shoot-up-immediately-after-repaying-the-loan/0104/126139834"
+            },
+            {
+              "headline": "CIBIL Score vs Credit Score: సిబిల్ స్కోర్ వర్సెస్ క్రెడిట్ స్కోర్.. అసలు తేడా ఏమిటి?",
+              "source": "TV9 Telugu",
+              "url": "https://tv9telugu.com/business/cibil-score-vs-credit-score-understanding-the-key-difference-in-india-1879640.html"
+            },
+            {
+              "headline": "Kisan Credit Card: బ్యాంక్ నుంచి రూ.5 లక్షలు.. రైతుల కోసం KCC కార్డు.. ఇలా వెంటనే తీసుకోండి!",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/photogallery/telangana/comprehensive-guide-to-kisan-credit-card-kcc-2026-eligibility-benefits-and-latest-updates-nk-3196919.html"
+            }
+          ]
+        },
+        {
+          "title": "frances tiafoe",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Sports News, Transfers, Scores | Watch Live Sport",
+              "source": "Sky Sports",
+              "url": "https://www.skysports.com/tennis/watch/8895405481356182112/national-bank-open-presented-by-rogers-2026"
+            },
+            {
+              "headline": "Tennis Predictions Today for Jodar vs. Musetti, Tiafoe vs. Rinderknech – 8/6/26",
+              "source": "PrizePicks",
+              "url": "https://www.prizepicks.com/playbook-article/tennis-predictions-today-jodar-vs-musetti-tiafoe-vs-rinderknech-thursday-august-6"
+            },
+            {
+              "headline": "Predictions, Best Bets & Odds for Tiafoe vs Rinderknech (ATP Montreal)",
+              "source": "Sports Betting Dime",
+              "url": "https://www.sportsbettingdime.com/news/tennis/predictions-best-bets-odds-for-tiafoe-vs-rinderknech-atp-montreal/"
+            }
+          ]
+        },
+        {
+          "title": "handloom day",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 6 Aug 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "PM Modi urges citizens to buy handloom products and share their videos for global recognition of skill",
+              "source": "News On AIR",
+              "url": "https://newsonair.gov.in/pm-modi-urges-citizens-to-buy-handloom-products-and-share-their-videos-for-global-recognition-of-skill/"
+            },
+            {
+              "headline": "National Handloom Day: Indian brands making handloom an everyday wardrobe staple",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/life-and-style/national-handloom-day-indian-fashion-labels-make-traditional-weaves-an-everyday-choice/article71304224.ece"
+            },
+            {
+              "headline": "'Prime Influencer': Abhijeet Dipke jabs at PM Modi's 'Get Ready With Me' video",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/india/prime-influencer-abhijeet-dipke-jabs-at-pm-modis-get-ready-with-me-video/cid/2173717"
+            }
+          ]
+        },
+        {
+          "title": "अजिंक्य रहाणे",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 6 Aug 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "'सीनियर खिलाड़ियों को सम्मान और भरोसा मिलना चाहिए, अजिंक्य रहाणे का बड़ा बयान, क्या गौतम गंभीर पर साधा न‍िशाना",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/sports/cricket/story/ajinkya-rahane-on-india-test-team-senior-players-gautam-gambhir-tspok-dskc-2615965-2026-08-06"
+            },
+            {
+              "headline": "हार्दिक पांड्या थामेंगे KKR का हाथ, रहाणे के बाद बनेंगे कप्तान?",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/sports/cricket/hardik-pandya-set-to-join-kolkata-knight-riders-and-kkr-captain-after-ajinkya-rahane-reports-claim-3171509"
+            },
+            {
+              "headline": "‘सीनियर्स का सम्मान करने की जरूरत’: रिटायरमेंट के बाद अजिंक्य रहाणे का बड़ा बयान; क्या टीम इंडिया में सब कुछ ठीक नहीं?",
+              "source": "Jansatta",
+              "url": "https://www.jansatta.com/khel/ajinkya-rahane-statement-seniors-should-be-respected-team-india-test-cricket-future-bcci-after-retirement/4649955/"
+            }
+          ]
+        },
+        {
+          "title": "gurgaon weather",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Civic body chief shifted after waterlogging in Gurugram; WFH advisory issued for today",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/cities/Delhi/civic-body-chief-shifted-after-waterlogging-in-gurugram-wfh-advisory-issued-for-today/article71314086.ece"
+            },
+            {
+              "headline": "Police issues 'work-from-home' advisory as rain inundates Gurugram",
+              "source": "ETHRWorld.com",
+              "url": "https://hr.economictimes.indiatimes.com/news/industry/police-issues-work-from-home-advisory-as-rain-inundates-gurugram/133009278?utm_source=latest_news&utm_medium=homepage"
+            },
+            {
+              "headline": "Gurgaon rain chaos: WFH advised as flooded roads trigger massive jams; MCG Commissioner transferred",
+              "source": "The Indian Express",
+              "url": "https://indianexpress.com/article/cities/delhi/gurgaon-rain-chaos-wfh-flood-roads-traffic-jams-10820542/"
+            }
+          ]
+        },
+        {
+          "title": "హర్షిత్ రాణా",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "BCCI - CoE: సెంటర్‌ ఆఫ్‌ ఎక్స్‌లెన్స్‌కు వెళ్లిన క్రికెటర్లు బరువు పెరుగుతున్నారా..?",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/sports/india-cricketer-sent-to-coe-after-injury-found-overweight/0401/126139694"
+            },
+            {
+              "headline": "Team India Selection: 97 కేజీల బరువు ఉన్నా భారత్ జట్టులోకి ఎంపిక... బీసీసీఐపై ఆగ్రహ జ్వాలలు..",
+              "source": "NTV Telugu",
+              "url": "https://ntvtelugu.com/news/bcci-fitness-standards-bronco-test-harshit-rana-controversy-1001572.html"
+            },
+            {
+              "headline": "గాయాల గండం.. భారత ఆటగాళ్లను వెంటాడుతున్న ఫిట్‌నెస్‌ సమస్యలు",
+              "source": "Namasthe Telangana",
+              "url": "https://www.ntnews.com/sports/injury-woes-continue-to-haunt-team-india-2474508"
+            }
+          ]
+        },
+        {
+          "title": "7 august",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 6 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "Horoscope Today: Daily astrological predictions for August 7, 2026",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/astrology/horoscope/horoscope-today-daily-astrological-predictions-for-august-7-2026/articleshow/133008935.cms"
+            },
+            {
+              "headline": "Aries, Taurus, Gemini Horoscope Today for August 7, 2026: Career Wins, Financial Luck and Exciting New Beg",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/astrology/horoscope/aries-taurus-gemini-horoscope-today-for-august-7-2026-career-wins-financial-luck-and-exciting-new-beginnings-await/articleshow/133010569.cms"
+            },
+            {
+              "headline": "Horoscope Today, August 6, 2026: Your daily career, business and money horoscope for all 12 zodiac signs",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/astrology/horoscope-today-august-6-2026-your-daily-career-business-and-money-horoscope-for-all-12-zodiac-signs-article-13995382.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Companies laying off staff this year include Meta, Amazon, and Visa — see the list - businessinsider.com",
+            "source": "businessinsider.com",
+            "pub_date": "Thu, 06 Aug 2026 22:35:50 GMT"
+          },
+          {
+            "title": "Tech Mass Layoffs Are Hiding a Much Scarier Problem, and AI Is Uncovering It - inc.com",
+            "source": "inc.com",
+            "pub_date": "Wed, 05 Aug 2026 10:18:14 GMT"
+          },
+          {
+            "title": "Salesforce cutting 59 jobs across Seattle and Bellevue offices - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Thu, 06 Aug 2026 22:01:29 GMT"
+          },
+          {
+            "title": "Global layoff wave continues: Why Amazon, Meta, Oracle and 40+ companies are cutting jobs - India Today",
+            "source": "India Today",
+            "pub_date": "Thu, 06 Aug 2026 03:07:09 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking all of the job losses across Microsoft, Meta, Oracle, Samsung and others - tech.yahoo.com",
+            "source": "tech.yahoo.com",
+            "pub_date": "Tue, 04 Aug 2026 11:59:15 GMT"
+          },
+          {
+            "title": "Another round of tech layoffs hit Seattle workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Thu, 06 Aug 2026 22:09:49 GMT"
+          },
+          {
+            "title": "Tech layoffs this week: Cloudflare, Coinbase, Upwork, and others point to AI as they slash jobs - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 06 Aug 2026 10:54:50 GMT"
+          },
+          {
+            "title": "“Monday handled the layoffs in the best possible way”: Entrée Capital’s Avi Eyal defends AI-driven restructuring - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Thu, 06 Aug 2026 08:49:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: 30,000 Jobs Wiped Off In 6 AM Email: Check Highest Tech Layoffs, Amazon, TCS, Intel In List - Goodreturns",
+            "source": "Goodreturns",
+            "pub_date": "Wed, 05 Aug 2026 12:31:33 GMT"
+          },
+          {
+            "title": "Challenger Report: Layoffs Fall, Hiring Picks Up; AI Leads For Fifth Straight Month - Challenger, Gray & Christmas, Inc.",
+            "source": "Challenger, Gray & Christmas, Inc.",
+            "pub_date": "Thu, 06 Aug 2026 09:41:11 GMT"
+          },
+          {
+            "title": "Job cuts plunge to a 2-year low despite AI fears, economic shocks - CBS News",
+            "source": "CBS News",
+            "pub_date": "Thu, 06 Aug 2026 15:20:00 GMT"
+          },
+          {
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 11:01:09 GMT"
+          },
+          {
+            "title": "Visa layoffs: Top executives, chief engineers among those affected as AI reshapes workforce - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Wed, 05 Aug 2026 07:02:21 GMT"
+          },
+          {
+            "title": "Illinois Institute of Technology lays off 160 faculty and staff members - Higher Ed Dive",
+            "source": "Higher Ed Dive",
+            "pub_date": "Tue, 04 Aug 2026 13:47:43 GMT"
+          },
+          {
+            "title": "Tech Layoff Plans Cool, But AI Keeps Reshaping Hiring - Finimize",
+            "source": "Finimize",
+            "pub_date": "Thu, 06 Aug 2026 19:19:46 GMT"
+          },
+          {
+            "title": "Campus Cuts Hit Even Wealthy Institutions - Inside Higher Ed",
+            "source": "Inside Higher Ed",
+            "pub_date": "Thu, 06 Aug 2026 07:01:26 GMT"
+          },
+          {
+            "title": "Salesforce to lay off workers at S.F. headquarters while shuffling C-suite - The Business Journals",
+            "source": "The Business Journals",
+            "pub_date": "Thu, 06 Aug 2026 20:19:00 GMT"
+          },
+          {
+            "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sat, 25 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Salesforce plans fourth round of San Francisco layoffs in under a year - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 07 Aug 2026 02:03:45 GMT"
+          },
+          {
+            "title": "Opinion | I Helped Run Lululemon. Companies Need to Stop Kidding Themselves About A.I. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 03 Aug 2026 19:00:05 GMT"
+          },
+          {
+            "title": "Amazon, Uber To Lay Off More Employees As AI Reshapes Tech Workforce - NDTV",
+            "source": "NDTV",
+            "pub_date": "Thu, 23 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Visa's AI layoffs hit India hard: Why even top performers may no longer be safe at work - Business Today",
+            "source": "Business Today",
+            "pub_date": "Thu, 06 Aug 2026 08:14:55 GMT"
+          },
+          {
+            "title": "Visa lays off 6 VPs and dozens of senior staff from Foster City campus - SFGATE",
+            "source": "SFGATE",
+            "pub_date": "Tue, 04 Aug 2026 22:40:15 GMT"
+          },
+          {
+            "title": "More tech layoffs hit dozens of Seattle-area workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Wed, 05 Aug 2026 20:59:23 GMT"
+          },
+          {
+            "title": "July layoffs hit lowest level in two years despite AI fears: report - New York Post",
+            "source": "New York Post",
+            "pub_date": "Thu, 06 Aug 2026 20:05:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Nothing says it plans to release six smartphones next year, ‘wider range’ of devices - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Thu, 06 Aug 2026 14:15:00 GMT"
+          },
+          {
+            "title": "Flipkart reveals the launch date of Boltt's first smartphone - GSMArena.com news - gsmarena.com",
+            "source": "gsmarena.com",
+            "pub_date": "Tue, 04 Aug 2026 06:00:02 GMT"
+          },
+          {
+            "title": "Fire-Boltt’s first smartphones confirmed to launch by end of August: key details revealed by founder & CEO - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 04 Aug 2026 08:23:34 GMT"
+          },
+          {
+            "title": "Boltt Smartphone India Launch Date Announced; Flipkart Microsite Goes Live - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Mon, 03 Aug 2026 13:58:34 GMT"
+          },
+          {
+            "title": "vivo S2 Launched in India: Price, Features & Availability - vivo Newsroom India",
+            "source": "vivo Newsroom India",
+            "pub_date": "Thu, 06 Aug 2026 07:06:14 GMT"
+          },
+          {
+            "title": "T-Mobile’s Samsung Z Fold 8 preorder deal is absurdly good — last call to get it for free - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 07 Aug 2026 02:27:35 GMT"
+          },
+          {
+            "title": "Boltt unveils ultra-slim Ace and Evo smartphones ahead of August 25 India launch - t2ONLINE",
+            "source": "t2ONLINE",
+            "pub_date": "Wed, 05 Aug 2026 06:34:00 GMT"
+          },
+          {
+            "title": "Vivo S2 launched in India: Price, features, camera and battery - CNBC TV18",
+            "source": "CNBC TV18",
+            "pub_date": "Thu, 06 Aug 2026 13:09:54 GMT"
+          },
+          {
+            "title": "Vivo S2 India Launch: Official Specs, Price, and Features Revealed - Nokiamob",
+            "source": "Nokiamob",
+            "pub_date": "Thu, 06 Aug 2026 09:49:40 GMT"
+          },
+          {
+            "title": "UltraProlink launches Snap-Z, a DSLR-style magnetic smartphone grip - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 05 Aug 2026 08:21:00 GMT"
+          },
+          {
+            "title": "boltt Evo 4G and Ace 5G smartphones to launch on August 25 - fonearena.com",
+            "source": "fonearena.com",
+            "pub_date": "Tue, 04 Aug 2026 07:20:53 GMT"
+          },
+          {
+            "title": "Fire-Boltt’s boltt Evo 4G and Boltt Ace 5G smartphones to launch in India on 25th August - MobiGyaan",
+            "source": "MobiGyaan",
+            "pub_date": "Wed, 05 Aug 2026 03:51:32 GMT"
+          },
+          {
+            "title": "I’ve reviewed smartphones for 10 years. Don't waste your money upgrading in 2026 - androidauthority.com",
+            "source": "androidauthority.com",
+            "pub_date": "Sun, 02 Aug 2026 10:30:00 GMT"
+          },
+          {
+            "title": "Fire-Boltt Smartphone Debut: First Boltt Phone Launch Date, Design and Expected Specs Revealed - Sangri Today",
+            "source": "Sangri Today",
+            "pub_date": "Tue, 04 Aug 2026 18:37:01 GMT"
+          },
+          {
+            "title": "Boltt reveals design of its upcoming Ace and Evo smartphones ahead of August 25th launch - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Wed, 05 Aug 2026 09:28:46 GMT"
+          },
+          {
+            "title": "Boltt Ace 5G, Boltt Evo Monikers Confirmed as Firm Reveals Design, Colourways Ahead of India Launch - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Wed, 05 Aug 2026 09:48:42 GMT"
+          },
+          {
+            "title": "Vivo S2 India launch date, specifications and expected pricing: all we know so far - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Mon, 03 Aug 2026 09:25:21 GMT"
+          },
+          {
+            "title": "Smartphone price hike roundup: list of phones that cost more now, revised prices, and why - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Mon, 03 Aug 2026 10:43:21 GMT"
+          },
+          {
+            "title": "Vivo V80 Lite’s Geekbench and TUV certification listing reveals key details: could feature MediaTek Dimensity 7300e processor - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Wed, 05 Aug 2026 06:09:24 GMT"
+          },
+          {
+            "title": "Redmi K100 Pro launch set for August 11 in China; glow-in-the-dark ‘Firefly Chasing Light’ edition officially revealed - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 04 Aug 2026 07:13:51 GMT"
+          },
+          {
+            "title": "Redmi K100 Series Debut Seems Imminent as Firm Starts Teasing the Launch of a New Smartphone - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Tue, 28 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Samsung to launch 3 Galaxy Z foldable smartphones in Korea on Friday - The Korea Times",
+            "source": "The Korea Times",
+            "pub_date": "Thu, 06 Aug 2026 01:09:03 GMT"
+          },
+          {
+            "title": "iQOO Z11 5G Mobile Launch on August 20: All Details And 4 Best Alternatives From Vivo, OnePlus, Redmi - News18",
+            "source": "News18",
+            "pub_date": "Wed, 05 Aug 2026 11:22:18 GMT"
+          },
+          {
+            "title": "Vivo S2 Launches in India Today at 12 PM with Powerful Features, Reviving S-Series After 7 Years - Techgenyz",
+            "source": "Techgenyz",
+            "pub_date": "Thu, 06 Aug 2026 06:30:00 GMT"
+          },
+          {
+            "title": "Redmi K100 Pro Max Battery and Charging Details Officially Confirmed, Flowing White Colour Variant Revealed Ahead of August 11 Launch - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Thu, 06 Aug 2026 11:14:04 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "air canada",
+          "airtable",
+          "airpods pro 3"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt desktop",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt codex",
+          "chatgpt work",
+          "chatgpt api",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phone line deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "betty gilpin",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 6 Aug 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "For Emmy Nominee Betty Gilpin, ‘Widow’s Bay’ Is ‘the Ultimate F**k You to Safe, Algorithm-Friendly, ChatGPT’ TV",
+              "source": "IndieWire",
+              "url": "https://www.indiewire.com/awards/consider-this/betty-gilpin-on-widows-bay-best-line-readings-interview-1235208776/"
+            },
+            {
+              "headline": "Betty Gilpin Calls ‘Widow’s Bay’ The “Ultimate F*ck You” To “Algorithm-Friendly” TV: “So Satisfying”",
+              "source": "Deadline",
+              "url": "https://deadline.com/2026/08/betty-gilpin-widows-bay-ultimate-fck-you-algorithm-friendly-tv-1237028234/"
+            },
+            {
+              "headline": "Betty Gilpin Drops Fiery Take On 'Widow's Bay' and the State of TV",
+              "source": "Pajiba",
+              "url": "https://www.pajiba.com/pajiba_love/betty-gilpin-drops-fiery-take-on-widows-bay-and-the-state-of-tv.php"
+            }
+          ]
+        },
+        {
+          "title": "super troopers",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 6 Aug 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "‘Super Troopers 3’ Review: Broken Lizard’s Cop Comedy Threequel Sticks to the Middle of the Road",
+              "source": "TheWrap",
+              "url": "https://www.thewrap.com/creative-content/movies/super-troopers-3-review-broken-lizard/"
+            },
+            {
+              "headline": "Super Troopers 3 review – misfiring cop comedy threequel",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/film/2026/aug/06/super-troopers-3-review-misfiring-cop-comedy-threequel"
+            },
+            {
+              "headline": "Super Troopers 3 | Audience Reviews",
+              "source": "Rotten Tomatoes",
+              "url": "https://www.rottentomatoes.com/m/super_troopers_3/reviews"
+            }
+          ]
+        },
+        {
+          "title": "boston red sox",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 6 Aug 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Red Sox 1B Tristan Casas undergoes left wrist surgery",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/49546614/red-sox-1b-tristan-casas-undergoes-left-wrist-surgery"
+            },
+            {
+              "headline": "Casas likely done for season after arthroscopic left wrist surgery",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/triston-casas-undergoes-left-wrist-surgery-season-likely-over"
+            },
+            {
+              "headline": "Red Sox announce injured first baseman has undergone wrist surgery",
+              "source": "Boston Herald",
+              "url": "https://www.bostonherald.com/2026/08/06/red-sox-announce-injured-first-baseman-has-undergone-wrist-surgery/"
+            }
+          ]
+        },
+        {
+          "title": "brian rodríguez",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 6 Aug 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Vasco presenta oferta al América por Brian Rodríguez: Fuentes",
+              "source": "ESPN Deportes",
+              "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17086812/vasco-da-gama-brian-rodriguez-america-oferta-negociaciones"
+            },
+            {
+              "headline": "Brian Rodríguez rompe el silencio tras caerse fichaje con el Cruzeiro",
+              "source": "Mediotiempo",
+              "url": "https://www.mediotiempo.com/futbol/liga-mx/brian-rodriguez-rompe-silencio-caerse-fichaje-cruzeiro"
+            },
+            {
+              "headline": "Le urge comisión americanista",
+              "source": "Récord",
+              "url": "https://www.record.com.mx/historia/le-urge-comision-americanista-2026080406375552933"
+            }
+          ]
+        },
+        {
+          "title": "chicago bears",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 6 Aug 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Bears training camp report: Thursday, Aug. 6",
+              "source": "Chicago Bears Official Website",
+              "url": "https://www.chicagobears.com/news/bears-training-camp-report-thursday-aug-6"
+            },
+            {
+              "headline": "Chicago Bears offense sputters, linebacker Devin Bush flashes his speed - The Athletic",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7492299/2026/08/04/bears-offense-sputters-devin-bush-speed/"
+            },
+            {
+              "headline": "Day 8 Bears camp notebook: Offense responds for Ben Johnson but injuries add up on physical day",
+              "source": "CHGO Sports",
+              "url": "https://allchgo.com/bears/bears-camp-day-8-offense-responds-ben-johnson-injuries/"
+            }
+          ]
+        },
+        {
+          "title": "sean payton",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 6 Aug 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "'He adds an extra element to our offense': WR Jaylen Waddle impressing teammates, enjoying matchup with Denver's defense in first Broncos training camp",
+              "source": "Denver Broncos",
+              "url": "https://www.denverbroncos.com/news/he-adds-an-extra-element-to-our-offense-wr-jaylen-waddle-impressing-teammates-enjoying-matchup-with-denver-s-defense-in-first-broncos-training-camp"
+            },
+            {
+              "headline": "Payton: Waddle has a strain, will return 4-5 days",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-08-06/payton-waddle-has-a-strain-will-return-4-5-days"
+            },
+            {
+              "headline": "Sean Payton shares encouraging update after Jaylen Waddle injury scare",
+              "source": "Broncos Wire",
+              "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/08/05/broncos-news-jaylen-waddle-injury-status-update/91173420007/"
+            }
+          ]
+        },
+        {
+          "title": "red sox",
+          "approx_traffic": "20000+",
+          "pub_date": "Thu, 6 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Red Sox's Sonny Gray matches career high with AL-best 14th win",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/49542167/red-sox-pitcher-sonny-gray-matches-career-high-al-best-14th-win"
+            },
+            {
+              "headline": "3 takeaways as Sox win 7th straight game, 9th straight series",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/jarren-duran-wilyer-abreu-lead-red-sox-to-7th-straight-win"
+            },
+            {
+              "headline": "A six-run opening inning was all the Red Sox needed to rout the White Sox and extend their win streak",
+              "source": "The Boston Globe",
+              "url": "https://www.bostonglobe.com/2026/08/04/sports/red-sox-white-sox-game-score/"
+            }
+          ]
+        },
+        {
+          "title": "elina svitolina",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 6 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Potapova sets up Svitolina clash in Toronto third round",
+              "source": "WTA Tennis",
+              "url": "https://www.wtatennis.com/videos/4554160/potapova-sets-up-svitolina-clash-in-toronto-third-round"
+            },
+            {
+              "headline": "Sports News, Transfers, Scores | Watch Live Sport",
+              "source": "Sky Sports",
+              "url": "https://www.skysports.com/tennis/watch/5899938830652427112/national-bank-open-presented-by-rogers-2026"
+            },
+            {
+              "headline": "LIVE Canadian Open Toronto WTA Day Five | Amanda Anisimova fights back for big win",
+              "source": "Tennisuptodate.com",
+              "url": "https://tennisuptodate.com/wta/live-canadian-open-toronto-wta-day-five-third-round-action-headlined-by-sabalenka-swiatek-and-pegula"
+            }
+          ]
+        },
+        {
+          "title": "aroldis chapman",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 6 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Chapman on winning AL reliever of the month",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/mariners/video/chapman-on-winning-al-reliever-of-the-month"
+            },
+            {
+              "headline": "Mason Miller Earns NL Reliever Of The Month Award",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/mason-miller-earns-nl-reliever-123004048.html"
+            },
+            {
+              "headline": "Red Sox’ Aroldis Chapman is American League Reliever of the Month for July",
+              "source": "Boston Herald",
+              "url": "https://www.bostonherald.com/2026/08/03/red-sox-aroldis-chapman-american-league-reliever-month-july-mlb-news-trade-deadline/"
+            }
+          ]
+        },
+        {
+          "title": "mn twins",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 6 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Cameron caps season-long Twins dominance with 8-inning gem",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/noah-cameron-throws-8-innings-in-royals-win-over-twins"
+            },
+            {
+              "headline": "Twins’ offensive struggles overshadow debut of new starter Dean Kremer",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7495836/2026/08/06/twins-offense-struggles-nemesis-noah-cameron-loss-to-royals/"
+            },
+            {
+              "headline": "Cameron outduels Kremer for a Royals win",
+              "source": "Royals Review",
+              "url": "https://www.royalsreview.com/kansas-city-royals-scores-standings/103482/cameron-outduels-kremer-for-a-royals-win"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Another round of tech layoffs hit Seattle workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Thu, 06 Aug 2026 22:09:49 GMT"
+          },
+          {
+            "title": "Tech Mass Layoffs Are Hiding a Much Scarier Problem, and AI Is Uncovering It - inc.com",
+            "source": "inc.com",
+            "pub_date": "Wed, 05 Aug 2026 10:18:14 GMT"
+          },
+          {
+            "title": "Opinion | I Helped Run Lululemon. Companies Need to Stop Kidding Themselves About A.I. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 03 Aug 2026 19:00:05 GMT"
+          },
+          {
+            "title": "Visa lays off 6 VPs and dozens of senior staff from Foster City campus - SFGATE",
+            "source": "SFGATE",
+            "pub_date": "Tue, 04 Aug 2026 22:40:15 GMT"
+          },
+          {
+            "title": "Challenger Report: Layoffs Fall, Hiring Picks Up; AI Leads For Fifth Straight Month - Challenger, Gray & Christmas, Inc.",
+            "source": "Challenger, Gray & Christmas, Inc.",
+            "pub_date": "Thu, 06 Aug 2026 09:41:11 GMT"
+          },
+          {
+            "title": "Illinois Institute of Technology lays off 160 faculty and staff members - Higher Ed Dive",
+            "source": "Higher Ed Dive",
+            "pub_date": "Tue, 04 Aug 2026 13:47:43 GMT"
+          },
+          {
+            "title": "Tech companies chop several hundred Bay Area jobs in fresh layoffs - mercurynews.com",
+            "source": "mercurynews.com",
+            "pub_date": "Tue, 04 Aug 2026 20:38:46 GMT"
+          },
+          {
+            "title": "Zillow layoffs span dozens of roles, with Seattle based tech managers hit hardest - KOMO",
+            "source": "KOMO",
+            "pub_date": "Wed, 05 Aug 2026 22:47:26 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking all of the job losses across Microsoft, Meta, Oracle, Samsung and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 04 Aug 2026 11:59:15 GMT"
+          },
+          {
+            "title": "Layoffs at Illinois Institute of Technology in Chicago raise concerns among students ahead of fall semester - ABC7 Chicago",
+            "source": "ABC7 Chicago",
+            "pub_date": "Mon, 03 Aug 2026 22:45:14 GMT"
+          },
+          {
+            "title": "Salesforce cutting 59 jobs across Seattle and Bellevue offices - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Thu, 06 Aug 2026 22:01:29 GMT"
+          },
+          {
+            "title": "Companies laying off staff this year include Meta, Amazon, and Visa — see the list - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Thu, 06 Aug 2026 22:35:50 GMT"
+          },
+          {
+            "title": "Job cuts plunge to a 2-year low despite AI fears, economic shocks - CBS News",
+            "source": "CBS News",
+            "pub_date": "Thu, 06 Aug 2026 15:20:00 GMT"
+          },
+          {
+            "title": "Salesforce plans fourth round of San Francisco layoffs in under a year - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 07 Aug 2026 02:03:45 GMT"
+          },
+          {
+            "title": "Tech layoffs this week: Cloudflare, Coinbase, Upwork, and others point to AI as they slash jobs - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 06 Aug 2026 10:54:50 GMT"
+          },
+          {
+            "title": "Campus Cuts Hit Even Wealthy Institutions - Inside Higher Ed",
+            "source": "Inside Higher Ed",
+            "pub_date": "Thu, 06 Aug 2026 07:01:26 GMT"
+          },
+          {
+            "title": "July layoffs hit lowest level in two years despite AI fears: report - New York Post",
+            "source": "New York Post",
+            "pub_date": "Thu, 06 Aug 2026 20:05:00 GMT"
+          },
+          {
+            "title": "“Monday handled the layoffs in the best possible way”: Entrée Capital’s Avi Eyal defends AI-driven restructuring - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Thu, 06 Aug 2026 08:49:00 GMT"
+          },
+          {
+            "title": "Salesforce to lay off workers at S.F. headquarters while shuffling C-suite - The Business Journals",
+            "source": "The Business Journals",
+            "pub_date": "Thu, 06 Aug 2026 20:19:00 GMT"
+          },
+          {
+            "title": "More tech layoffs hit dozens of Seattle-area workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Wed, 05 Aug 2026 20:59:23 GMT"
+          },
+          {
+            "title": "Google to cut 52 employees in Washington state - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 05 Aug 2026 17:54:15 GMT"
+          },
+          {
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 11:01:09 GMT"
+          },
+          {
+            "title": "Tech layoffs and rising inventory have made Seattle's housing market one of the weakest in the country — but it's still ultra-pricey - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Sat, 01 Aug 2026 11:48:01 GMT"
+          },
+          {
+            "title": "Tech Layoff Plans Cool, But AI Keeps Reshaping Hiring - finimize.com",
+            "source": "finimize.com",
+            "pub_date": "Thu, 06 Aug 2026 19:19:46 GMT"
+          },
+          {
+            "title": "Zillow cuts more than 500 jobs in its largest layoff of the year - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Tue, 04 Aug 2026 17:34:38 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Nothing says it plans to release six smartphones next year, ‘wider range’ of devices - 9to5google.com",
+            "source": "9to5google.com",
+            "pub_date": "Thu, 06 Aug 2026 14:15:00 GMT"
+          },
+          {
+            "title": "T-Mobile’s Samsung Z Fold 8 preorder deal is absurdly good — last call to get it for free - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 07 Aug 2026 02:27:35 GMT"
+          },
+          {
+            "title": "SpaceX Reveals Plans to Launch a Full Mobile Carrier Service to Rival AT&T, Verizon, and T-Mobile - Hypebeast",
+            "source": "Hypebeast",
+            "pub_date": "Thu, 06 Aug 2026 08:10:41 GMT"
+          },
+          {
+            "title": "I’ve reviewed smartphones for 10 years. Don't waste your money upgrading in 2026 - Android Authority",
+            "source": "Android Authority",
+            "pub_date": "Sun, 02 Aug 2026 10:30:00 GMT"
+          },
+          {
+            "title": "7 Brew® Enters New Era With Launch of First-Ever Mobile App - Business Wire",
+            "source": "Business Wire",
+            "pub_date": "Wed, 05 Aug 2026 14:00:00 GMT"
+          },
+          {
+            "title": "HONOR Robot Phone Imaging Technology Launch Event & Claudio Miranda ASC Launch Film - Newsshooter",
+            "source": "Newsshooter",
+            "pub_date": "Tue, 04 Aug 2026 03:15:05 GMT"
+          },
+          {
+            "title": "Buffalo to Launch Semi-Solid Mobile Battery That Passes Nail Penetration Test in September - finance.biggo.com",
+            "source": "finance.biggo.com",
+            "pub_date": "Thu, 06 Aug 2026 02:25:00 GMT"
+          },
+          {
+            "title": "Samsung to launch 3 Galaxy Z foldable smartphones in Korea on Friday - The Korea Times",
+            "source": "The Korea Times",
+            "pub_date": "Thu, 06 Aug 2026 01:09:03 GMT"
+          },
+          {
+            "title": "SpaceX says Starlink could capture AT&T, Verizon, and T-Mobile customers - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 05 Aug 2026 00:55:00 GMT"
+          },
+          {
+            "title": "Amazon Leo seeks FCC approval to launch 5,105 satellites that would connect with mobile devices - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Mon, 27 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Drive-thru beverage brand 7 Brew gears up to launch first ever mobile app on 12th August - Retail Technology Innovation Hub",
+            "source": "Retail Technology Innovation Hub",
+            "pub_date": "Thu, 06 Aug 2026 05:10:10 GMT"
+          },
+          {
+            "title": "Samsung to launch 3 Galaxy Z foldable smartphones in S. Korea on Fri. - Yonhap News Agency",
+            "source": "Yonhap News Agency",
+            "pub_date": "Thu, 06 Aug 2026 00:58:05 GMT"
+          },
+          {
+            "title": "7 Brew launches 1st mobile app with order-ahead, expanded rewards - fastcasual.com",
+            "source": "fastcasual.com",
+            "pub_date": "Wed, 05 Aug 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Samsung ups prices as it launches new foldable smartphones ahead of expected Apple debut - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 22 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Morocco Airports launch 100% mobile boarding passes - TravelMole",
+            "source": "TravelMole",
+            "pub_date": "Wed, 05 Aug 2026 04:40:29 GMT"
+          },
+          {
+            "title": "First Official hololive production Smartphone Game “hololive Dreams,” Jointly Developed by QualiArts and COVER, Officially Launches | NEWS - hololive.hololivepro.com",
+            "source": "hololive.hololivepro.com",
+            "pub_date": "Thu, 23 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Babilon-Mobile launches VoLTE services - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Tue, 04 Aug 2026 15:38:46 GMT"
+          },
+          {
+            "title": "Flipkart reveals the launch date of Boltt's first smartphone - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Tue, 04 Aug 2026 06:00:02 GMT"
+          },
+          {
+            "title": "The latest iPhone 18 news, leaks, and rumors: Release date, price increases, and color options - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 31 Jul 2026 09:00:00 GMT"
+          },
+          {
+            "title": "AT&T Becomes the First and Only Carrier to Launch a Kid’s Smartphone – Designed by Kids and Parents - AT&T Newsroom",
+            "source": "AT&T Newsroom",
+            "pub_date": "Fri, 06 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "SpaceX reveals how Starlink Mobile plans to take on AT&T, Verizon, and T-Mobile - Android Authority",
+            "source": "Android Authority",
+            "pub_date": "Wed, 05 Aug 2026 08:49:00 GMT"
+          },
+          {
+            "title": "'Dungeon Record', with 21.7 Million Cumulative Views, Launches Globally as a Mobile RPG - Inven Global",
+            "source": "Inven Global",
+            "pub_date": "Tue, 04 Aug 2026 02:35:48 GMT"
+          },
+          {
+            "title": "Samsung Galaxy Unpacked preview: Everything we expect today - Mashable",
+            "source": "Mashable",
+            "pub_date": "Wed, 22 Jul 2026 08:40:46 GMT"
+          },
+          {
+            "title": "Galaxy Z Flip 8 rumors: Release date, colors, specs, and more - Mashable",
+            "source": "Mashable",
+            "pub_date": "Wed, 22 Jul 2026 08:52:50 GMT"
+          },
+          {
+            "title": "Samsung Eyes Rollable Smartphone Release in 2028 - PCMag",
+            "source": "PCMag",
+            "pub_date": "Sun, 05 Jul 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "air canada",
+          "airtable",
+          "airpods pro 3"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt desktop",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt codex",
+          "chatgpt work",
+          "chatgpt api",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phone line deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai business analyst mckinsey",
+          "tech and ai index funds",
+          "tech and ai podcasts"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Mario Meets Pareto",
+      "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+      "points": 910,
+      "comments": 151,
+      "created_at": "2026-08-06T11:24:53Z"
+    },
+    {
+      "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+      "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+      "points": 454,
+      "comments": 289,
+      "created_at": "2026-08-06T18:44:49Z"
+    },
+    {
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "points": 426,
+      "comments": 331,
+      "created_at": "2026-08-06T20:23:11Z"
+    },
+    {
+      "title": "GitHub Actions and Pages are experiencing degraded availability",
+      "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
+      "points": 346,
+      "comments": 278,
+      "created_at": "2026-08-06T15:49:38Z"
+    },
+    {
+      "title": "Almost no skill required to cook a steak",
+      "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+      "points": 293,
+      "comments": 334,
+      "created_at": "2026-08-06T15:30:48Z"
+    },
+    {
+      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "points": 260,
+      "comments": 194,
+      "created_at": "2026-08-06T11:58:07Z"
+    },
+    {
+      "title": "Taste Is All That's Left",
+      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
+      "points": 232,
+      "comments": 189,
+      "created_at": "2026-08-06T17:01:33Z"
+    },
+    {
+      "title": "Quake – 30th Anniversary Update",
+      "url": "https://slayersclub.bethesda.net/en-US/news/quake-30th-anniversary-update",
+      "points": 229,
+      "comments": 113,
+      "created_at": "2026-08-06T20:21:19Z"
+    },
+    {
+      "title": "Pareto Front",
+      "url": "https://en.wikipedia.org/wiki/Pareto_front",
+      "points": 225,
+      "comments": 95,
+      "created_at": "2026-07-29T12:12:29Z"
+    },
+    {
+      "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
+      "url": "https://provenmetal.com",
+      "points": 187,
+      "comments": 133,
+      "created_at": "2026-08-06T15:59:15Z"
+    },
+    {
+      "title": "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "points": 168,
+      "comments": 122,
+      "created_at": "2026-08-06T17:02:04Z"
+    },
+    {
+      "title": "Herdr is joining Y Combinator. The runtime stays open",
+      "url": "https://herdr.dev/blog/herdr-is-joining-y-combinator/",
+      "points": 160,
+      "comments": 108,
+      "created_at": "2026-08-06T19:14:21Z"
+    },
+    {
+      "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
+      "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
+      "points": 158,
+      "comments": 33,
+      "created_at": "2026-08-05T15:33:23Z"
+    },
+    {
+      "title": "Learn how chips are made with this Rollercoaster Tycoon-inspired animation",
+      "url": "https://laurentiugabriel.github.io/ChipTycoon/",
+      "points": 114,
+      "comments": 20,
+      "created_at": "2026-07-31T07:37:13Z"
+    },
+    {
+      "title": "The simple elegance of the integrated timing belt loopback fastener",
+      "url": "https://danielmangum.com/posts/integrated-timing-belt-loopback-fastener/",
+      "points": 104,
+      "comments": 21,
+      "created_at": "2026-08-02T12:14:34Z"
+    },
+    {
+      "title": "I stopped trusting USB-C cable labels and started testing them",
+      "url": "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/",
+      "points": 102,
+      "comments": 61,
+      "created_at": "2026-08-03T07:12:57Z"
+    },
+    {
+      "title": "Welcoming the Nepalese Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
+      "points": 102,
+      "comments": 18,
+      "created_at": "2026-08-06T21:52:16Z"
+    },
+    {
+      "title": "My phone detects going on a run as “someone snatching my phone and running off”",
+      "url": "https://mastodon.gamedev.place/@rygorous/117047697255584965",
+      "points": 93,
+      "comments": 177,
+      "created_at": "2026-08-06T18:26:08Z"
+    },
+    {
+      "title": "Show HN: The Channels SDK – Bring Any Agent to Any Channel (Slack, MS Teams)",
+      "url": "https://github.com/CopilotKit/channels-sdk",
+      "points": 91,
+      "comments": 20,
+      "created_at": "2026-08-06T16:05:51Z"
+    },
+    {
+      "title": "Four simple rules behind Japan's most liveable cities",
+      "url": "https://www.bbc.com/travel/article/20260805-four-simple-rules-behind-japans-most-liveable-cities",
+      "points": 87,
+      "comments": 109,
+      "created_at": "2026-08-06T13:08:21Z"
+    },
+    {
+      "title": "New Orleans will use AI to answer 911 calls instead of a human",
+      "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/",
+      "points": 43,
+      "comments": 54,
+      "created_at": "2026-08-07T00:37:30Z"
+    },
+    {
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "points": 427,
+      "comments": 332,
+      "created_at": "2026-08-06T20:23:11Z"
+    },
+    {
+      "title": "xAI, SpaceX, and the Race for AI Buildout",
+      "url": "https://illegal.solutions/posts/xai_pollution",
+      "points": 135,
+      "comments": 113,
+      "created_at": "2026-08-06T19:38:45Z"
+    },
+    {
+      "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+      "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+      "points": 454,
+      "comments": 289,
+      "created_at": "2026-08-06T18:44:49Z"
+    },
+    {
+      "title": "Microsoft filings suggest \"around 70%\" of its AI revenue is on OpenAI",
+      "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-filings-suggest-around-70-percent-of-its-ai-revenue-is-concentrated-entirely-on-openai",
+      "points": 46,
+      "comments": 12,
+      "created_at": "2026-08-06T16:27:26Z"
+    },
+    {
+      "title": "Americans are rallying against data centers. Surprisingly few are getting built",
+      "url": "https://www.cnn.com/2026/08/06/business/ai-data-center-construction",
+      "points": 46,
+      "comments": 138,
+      "created_at": "2026-08-06T14:52:37Z"
+    },
+    {
+      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "points": 260,
+      "comments": 194,
+      "created_at": "2026-08-06T11:58:07Z"
+    },
+    {
+      "title": "Governments are making a dangerous bet on the AI boom",
+      "url": "https://www.economist.com/leaders/2026/08/05/governments-are-making-a-dangerous-bet-on-the-ai-boom",
+      "points": 55,
+      "comments": 34,
+      "created_at": "2026-08-06T03:40:51Z"
+    },
+    {
+      "title": "Prime Agent: A self-improving RLM agent",
+      "url": "https://www.primeintellect.ai/blog/prime-agent",
+      "points": 243,
+      "comments": 59,
+      "created_at": "2026-08-05T21:11:57Z"
+    },
+    {
+      "title": "When online commenters detect my art as AI",
+      "url": "https://www.davidrevoy.com/article1164/when-online-commenters-detect-my-art-as-ai",
+      "points": 102,
+      "comments": 56,
+      "created_at": "2026-08-05T20:58:52Z"
+    },
+    {
+      "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+      "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+      "points": 318,
+      "comments": 262,
+      "created_at": "2026-08-05T19:47:26Z"
+    },
+    {
+      "title": "Muse Code and Muse Spark 1.2",
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "points": 323,
+      "comments": 255,
+      "created_at": "2026-08-05T19:15:52Z"
+    },
+    {
+      "title": "Microsoft's AI Sales Mostly Come from OpenAI, Disclosures Show",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-05/microsoft-s-ai-sales-mostly-come-from-openai-disclosures-show",
+      "points": 70,
+      "comments": 16,
+      "created_at": "2026-08-05T18:19:10Z"
+    },
+    {
+      "title": "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence (2025)",
+      "url": "https://arxiv.org/abs/2510.01395",
+      "points": 162,
+      "comments": 98,
+      "created_at": "2026-08-05T18:17:03Z"
+    },
+    {
+      "title": "Launch HN: HyperProbe (YC S26) – Agents that do read-only debugging in prod",
+      "url": "https://www.hyperprobe.co",
+      "points": 68,
+      "comments": 52,
+      "created_at": "2026-08-05T16:47:15Z"
+    },
+    {
+      "title": "Demis Hassabis is moving from CEO to Chairman at Google DeepMind",
+      "url": "https://www.axios.com/2026/08/05/google-deepmind-demis-hassabis-ai",
+      "points": 370,
+      "comments": 1,
+      "created_at": "2026-08-05T16:05:37Z"
+    },
+    {
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+      "points": 827,
+      "comments": 887,
+      "created_at": "2026-08-05T16:05:31Z"
+    },
+    {
+      "title": "Jeff Dean leaving Alphabet",
+      "url": "https://www.nytimes.com/2026/08/05/technology/google-researchers-ai-startup.html",
+      "points": 297,
+      "comments": 9,
+      "created_at": "2026-08-05T16:04:33Z"
+    },
+    {
+      "title": "Read HN twice a day for the last decade. Here's my list of S-Tier HN links",
+      "url": null,
+      "points": 79,
+      "comments": 14,
+      "created_at": "2026-08-05T14:12:35Z"
+    },
+    {
+      "title": "Silicon Valley sees AI as the solution – for everyone else",
+      "url": "https://observer.co.uk/news/science-technology/article/silicon-valley-sees-ai-as-the-solution-for-everyone-else-its-the-problem",
+      "points": 48,
+      "comments": 52,
+      "created_at": "2026-08-05T13:58:28Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 8928924,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 867692,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 734529,
+      "rank": 3
+    },
+    {
+      "article": "Perez_Hilton",
+      "views": 723840,
+      "rank": 4
+    },
+    {
+      "article": "Abdul_El-Sayed",
+      "views": 634626,
+      "rank": 5
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 518668,
+      "rank": 6
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 286283,
+      "rank": 7
+    },
+    {
+      "article": "Pradeep_Rawat_(actor)",
+      "views": 247800,
+      "rank": 8
+    },
+    {
+      "article": "Glen_Hansard",
+      "views": 158134,
+      "rank": 9
+    },
+    {
+      "article": "Zendaya",
+      "views": 149170,
+      "rank": 10
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 141034,
+      "rank": 11
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 135642,
+      "rank": 12
+    },
+    {
+      "article": "Haley_Stevens",
+      "views": 131553,
+      "rank": 13
+    },
+    {
+      "article": "2026_United_States_Senate_election_in_Michigan",
+      "views": 124308,
+      "rank": 14
+    },
+    {
+      "article": ".xyz",
+      "views": 120453,
+      "rank": 15
+    },
+    {
+      "article": "Pan_Am_Flight_103",
+      "views": 105882,
+      "rank": 16
+    },
+    {
+      "article": "George_Lombard_Jr.",
+      "views": 99637,
+      "rank": 17
+    },
+    {
+      "article": "List_of_denim_jeans_brands",
+      "views": 97005,
+      "rank": 18
+    },
+    {
+      "article": "Limonene",
+      "views": 96988,
+      "rank": 19
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 90295,
+      "rank": 20
+    },
+    {
+      "article": "2026_in_film",
+      "views": 84833,
+      "rank": 21
+    },
+    {
+      "article": "Ted_Lasso",
+      "views": 82832,
+      "rank": 22
+    },
+    {
+      "article": "George_Lombard",
+      "views": 81234,
+      "rank": 23
+    },
+    {
+      "article": "Spider-Man:_No_Way_Home",
+      "views": 81019,
+      "rank": 24
+    },
+    {
+      "article": "Mike_Rogers_(Michigan_politician)",
+      "views": 80703,
+      "rank": 25
+    },
+    {
+      "article": "Trabzonspor",
+      "views": 76473,
+      "rank": 26
+    },
+    {
+      "article": "Jason_Arday",
+      "views": 75100,
+      "rank": 27
+    },
+    {
+      "article": "ChatGPT",
+      "views": 74720,
+      "rank": 28
+    },
+    {
+      "article": "Max_Miller_(politician)",
+      "views": 74497,
+      "rank": 29
+    },
+    {
+      "article": "List_of_Marvel_Cinematic_Universe_films",
+      "views": 72943,
+      "rank": 30
+    },
+    {
+      "article": "Lloyd_Robertson",
+      "views": 71413,
+      "rank": 31
+    },
+    {
+      "article": "Nirmal_Purja",
+      "views": 71332,
+      "rank": 32
+    },
+    {
+      "article": "Odyssey",
+      "views": 69768,
+      "rank": 33
+    },
+    {
+      "article": "Sadie_Sink",
+      "views": 63087,
+      "rank": 34
+    },
+    {
+      "article": "Obsession_(2025_film)",
+      "views": 62324,
+      "rank": 35
+    },
+    {
+      "article": ".xxx",
+      "views": 61342,
+      "rank": 36
+    },
+    {
+      "article": "2022_Idaho_student_murders",
+      "views": 60676,
+      "rank": 37
+    },
+    {
+      "article": "Lock_Upp_(season_2)",
+      "views": 59805,
+      "rank": 38
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 59277,
+      "rank": 39
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 56304,
+      "rank": 40
+    },
+    {
+      "article": "Mohamed_Salah",
+      "views": 54840,
+      "rank": 41
+    },
+    {
+      "article": "Jon_Bernthal",
+      "views": 54279,
+      "rank": 42
+    },
+    {
+      "article": "Shri_Thanedar",
+      "views": 53809,
+      "rank": 43
+    },
+    {
+      "article": "Cori_Bush",
+      "views": 53120,
+      "rank": 44
+    },
+    {
+      "article": "Eva_Olid",
+      "views": 51192,
+      "rank": 45
+    },
+    {
+      "article": "United_States",
+      "views": 50770,
+      "rank": 46
+    },
+    {
+      "article": "Spider-Man_in_film",
+      "views": 50145,
+      "rank": 47
+    },
+    {
+      "article": "Ariana_Grande",
+      "views": 49451,
+      "rank": 48
+    },
+    {
+      "article": "Avengers:_Doomsday",
+      "views": 49177,
+      "rank": 49
+    },
+    {
+      "article": "Lizzie_Borden",
+      "views": 49019,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Your table awaits: Exhibit at TechCrunch Disrupt 2026 to be seen by thousands"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Vogue just gave another nod of approval to the tech world"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Get up to $400 off your TechCrunch Disrupt 2026 pass until tomorrow"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google says hackers are calling financial firm employees to hack and extort victims"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "China-linked LightSpy spyware caught targeting victims in 13 countries, including the US"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Defense tech Hadrian raises $1.37B at $8B valuation"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ford needs another Taurus, and the $30K Fathom EV pickup isn’t it"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Bumble teases a swipe-free future as it doubles down on IRL meetups"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "ChatGPT brings unlimited text chats to free users"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Naïve raises $28.5M to automate the grunt work of setting up and running a company"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Hacker pleads guilty to stealing data from more than 165 Snowflake customers"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "TikTok lays off 250 employees, shutters its Nashville office"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google Wallet now lets parents set up secure balances for their kids"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Gen Z dating apps like Ditto ditch swiping in favor of AI matchmaking"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trevor Noah is hosting Google’s Pixel 11 launch event"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Jony Ive&#8217;s first OpenAI gadget is reportedly a hockey puck-sized smart speaker"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The AirPods Pro are $60 off, their best price since late June"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Zelda movie’s Ganondorf casting hints at more movies"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Suno shares plans to combat spammy AI music"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Brendan Carr officially unleashes broadcast consolidation"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "OpenAI is giving ChatGPT free users unlimited text chats"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "TikTok blames &#8216;moderator error&#8217; on slow response to Perez Hilton livestream"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Apple increases trade-in offers and adds new Android devices"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "SoftBank donated $50 million to Trump’s library months before federal data center deal"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Organ donation group accused of trying to take living man's organs faces shutdown"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Explosive drone found hovering near Ukrainian cargo aircraft at German airport"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "X wants to keep suing advertisers, asks 5th Circuit to overrule district judge"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Suno hopes to go legit with watermarks for AI-generated music"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Anthropic will design its own hardware to power Claude"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Large genome models used to design new viruses"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Blue Origin narrowing in on root cause of catastrophic rocket accident"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Parasitic zombie-ant fungus thrives in mosses, too"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump FCC kills TV ownership cap, claiming authority over limit set by Congress"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Moderna's mRNA flu shot earns FDA approval after rollercoaster review"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Cloudflare open-sources vibe-coding platform for people who aren't coders"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ford picks \"Fathom\" for its affordable truck name, starts at $28,350"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AI isn’t enough to protect social media communities from AI"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Thousands of servers can be backdoored by exploiting buggy motherboard controllers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Schwartz confirmed as CDC director after bungling confirmation hearing"
+    }
+  ]
+}
