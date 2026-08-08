@@ -1,9 +1,9 @@
 ---
 title: "The Real Cost of Running AI: Tokens, GPUs, Power"
 slug: "real-cost-of-running-ai"
-date: 2026-07-15
-updated: 2026-07-19
-update_note: "Relaunched at thetechdocket.com; added an in-body link to the Chips & Hardware hub."
+date: 2026-07-19
+updated: 2026-08-08
+update_note: "Publication date corrected from 2026-07-15 to 2026-07-19. This piece was drafted on 2026-07-15 during pre-launch testing, before thetechdocket.com existed — the domain was registered on 2026-07-19, which is the day it first became publicly readable. The original date implied a publication that had not happened, which our own editorial policy forbids. Also relaunched at thetechdocket.com with an in-body link to its topic hub."
 hub: hardware
 tags: [gpus, ai costs, tokens, data centers]
 description: "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run."

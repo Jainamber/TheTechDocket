@@ -174,7 +174,7 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
         "hub_name": hubs.get(hub, hub),
         "tags": a.get("tags", []),
         "description": a["description"],
-        "page_title": f"{a['title']} — {cfg['site']['name']}",
+        "page_title": f"{a['title']}",
         "meta_description": a["description"],
         "canonical": canonical, "og_type": "article",
         "og_title": a["title"],
@@ -301,6 +301,22 @@ def docket_context(cfg, d: dict) -> dict:
             "itemlist_jsonld": Markup(json.dumps(itemlist, ensure_ascii=False))}
 
 
+def _analytics_head(cfg) -> Markup:
+    """The two <head> measurement tags: the GA4 loader and our own
+    docs/assets/analytics.js (which configures GA4, boots PostHog and fires
+    scroll_75). Both external — the site permits exactly one inline script,
+    the pre-paint theme toggle, and this must not spend it."""
+    a = cfg.get("analytics") or {}
+    gid = (a.get("head_ga4_id") or "").strip()
+    src = (a.get("head_script") or "").strip()
+    if not gid or not src:
+        return Markup("")
+    return Markup(
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}">'
+        f'</script>\n'
+        f'<script src="{base_path(cfg)}{src}" defer></script>')
+
+
 def _analytics_snippet(cfg) -> Markup:
     a = cfg.get("analytics") or {}
     if a.get("provider") == "goatcounter" and a.get("goatcounter_code"):
@@ -351,9 +367,26 @@ def _common(cfg, nav_hubs=None, **kw) -> dict:
          "brand_a": brand_a, "brand_b": brand_b,
          "base_path": base_path(cfg), "year": now_ist().year,
          "analytics_snippet": _analytics_snippet(cfg),
+         "analytics_head": _analytics_head(cfg),
+         "newsletter": _newsletter_ctx(cfg),
          "org_jsonld": Markup(json.dumps(org, ensure_ascii=False))}
     d.update(kw)
     return d
+
+
+def _newsletter_ctx(cfg):
+    """None unless a provider AND a username are both configured, so the
+    subscribe form can never render pointing at nothing."""
+    n = cfg.get("newsletter") or {}
+    user = (n.get("username") or "").strip()
+    if n.get("provider") != "buttondown" or not user:
+        return None
+    return {
+        "action": f"https://buttondown.com/api/emails/embed-subscribe/{user}",
+        "heading": n.get("heading") or "Get the Docket by email",
+        "blurb": (n.get("blurb") or "").strip(),
+        "button": n.get("button") or "Subscribe",
+    }
 
 
 def _write(out: Path, content: str) -> None:
@@ -369,7 +402,7 @@ def _about_md(cfg) -> str:
 **{cfg['topic']['name']}** for readers in India and worldwide:
 {cfg['topic']['description']}
 
-We publish one carefully researched article every day. What we cover is chosen
+We publish a new Docket most days — one carefully researched article at a\ntime. What we cover is chosen
 from real, same-day search-demand and community-interest data — so we write
 about what people are actually trying to understand right now, and we add the
 context, comparisons and India-vs-global perspective that a search results
@@ -431,7 +464,7 @@ defined quality gates:
 ## Why
 
 We publish to help readers quickly understand what's moving in tech and AI and
-what it means for them — not to game search rankings. One article per day,
+what it means for them — not to game search rankings. A new Docket most days,
 each with original analysis, is a deliberate quality choice.
 
 ## What we don't do
@@ -446,8 +479,11 @@ each with original analysis, is a deliberate quality choice.
 def _author_md(cfg) -> str:
     a = cfg["author"]
     links = "\n".join(f"- <{u}>" for u in a.get("sameAs", []))
+    photo = (a.get("photo") or "").strip()
+    img = (f'![{a.get("photo_alt") or a["name"]}]({photo})\n\n'
+           if photo else "")
     return f"""
-{a['bio']}
+{img}{a['bio']}
 
 All articles on {cfg['site']['name']} are published under
 {a['name']}'s editorial standards — see the
@@ -501,9 +537,12 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
     return "\n".join(parts)
 
 
+FEED_MAX_ITEMS = 20  # RSS windows; the sitemap is the complete record.
+
+
 def _feed_xml(cfg, arts: list[dict]) -> str:
     items = []
-    for a in arts[:20]:
+    for a in arts[:FEED_MAX_ITEMS]:
         pub = format_datetime(_publish_dt(cfg, a))
         link = abs_url(cfg, f"articles/{a['slug']}/")
         items.append(f"""  <item>
@@ -687,9 +726,10 @@ def build_site() -> Path:
                 else abs_url(cfg, "assets/logo-512.png"))
     _write(out / "index.html", env.get_template("index.html").render(**_common(
         cfg,
-        page_title=f"{cfg['site']['name']} — {cfg['site']['tagline']}",
-        meta_description=(f"{cfg['site']['name']}: {cfg['topic']['description']} "
-                          "One deeply researched, data-picked article every day."),
+        page_title=(cfg["site"].get("home_title")
+                    or f"{cfg['site']['name']} — {cfg['site']['tagline']}"),
+        meta_description=(cfg["site"].get("home_description")
+                          or f"{cfg['site']['name']}: {cfg['topic']['description']}"),
         canonical=cfg["site"]["base_url"], og_image=home_img,
         og_image_alt=cfg["site"]["name"],
         feature=summaries[0] if summaries else None,
@@ -729,7 +769,9 @@ def build_site() -> Path:
                    meta_description=f"All {cfg['site']['name']} coverage of {hname}: daily, data-picked articles for India and the world.",
                    canonical=abs_url(cfg, f"topics/{hslug}/"),
                    og_image=home_img, og_image_alt=hname,
-                   heading=hname, intro=None, articles=hub_arts)))
+                   heading=hname,
+                   intro=(cfg["content"].get("hub_intros") or {}).get(hslug),
+                   articles=hub_arts)))
 
     # static pages
     pages = [

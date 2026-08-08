@@ -1,9 +1,9 @@
 ---
 title: "How to Spot AI-Generated Images and Videos in 2026"
 slug: "spot-ai-generated-images-videos"
-date: 2026-07-15
-updated: 2026-07-19
-update_note: "Relaunched at thetechdocket.com; added an in-body link to the How-To & Explainers hub."
+date: 2026-07-19
+updated: 2026-08-08
+update_note: "Publication date corrected from 2026-07-15 to 2026-07-19. This piece was drafted on 2026-07-15 during pre-launch testing, before thetechdocket.com existed — the domain was registered on 2026-07-19, which is the day it first became publicly readable. The original date implied a publication that had not happened, which our own editorial policy forbids. Also relaunched at thetechdocket.com with an in-body link to its topic hub."
 hub: explainers
 tags: [deepfakes, ai images, media literacy, c2pa]
 description: "A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India's 2026 deepfake rules."

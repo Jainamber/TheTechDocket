@@ -5,6 +5,13 @@
 site:
   name: "The Tech Docket"
   tagline: "Daily signal on tech & AI — what the world is searching, and why"
+  # <title> for the homepage ONLY. Kept separate from `tagline` (which is the
+  # visible H1 subtitle) because the tagline reads well on the page but ran to
+  # 82 chars in the title tag — past what Google renders. 2026-08-08.
+  home_title: "The Tech Docket — Daily signal on tech & AI"
+  # Homepage meta description. Bounds that apply elsewhere on the site are
+  # 110–165 chars (seo.meta_desc_*); this sits at 144.
+  home_description: "Daily, data-picked reporting on AI models, tools, big tech, chips and policy — what the world is searching for, and why it matters."
   # Custom apex domain (Cloudflare DNS -> GitHub Pages). Keep the trailing slash.
   base_url: "https://thetechdocket.com/"
   language: "en"
@@ -20,9 +27,18 @@ author:
   name: "Saurab Jain"
   slug: "saurab-jain"
   bio: >-
-    Saurab Jain is the founder and editor of The Tech Docket. He tracks global and
-    Indian technology and AI trends daily, using search-demand data to decide
-    what to cover and first-party analysis to explain why it matters.
+    Saurab Jain is the founder and editor of The Tech Docket, which he launched
+    in July 2026. He tracks global and Indian technology and AI trends daily,
+    using search-demand data to decide what to cover and first-party analysis to
+    explain why it matters. Every article on the site is produced under an
+    editorial process he set and publishes openly: sources cited inline, no
+    affiliate links, no sponsored placement, and corrections logged on the page
+    itself. He writes from India, and covers the Indian market as a first-class
+    subject rather than a footnote to the US technology cycle.
+  # Author photo, served from docs/assets/. Leave empty and no image renders —
+  # the page degrades cleanly. A real photograph only; never a generated one.
+  photo: ""
+  photo_alt: "Saurab Jain, founder and editor of The Tech Docket"
   # Set true only after you confirm the bio above is accurate — compliance gate 13.
   bio_verified: true
   sameAs: []                    # e.g. ["https://www.linkedin.com/in/...", "https://github.com/..."]
@@ -124,6 +140,34 @@ content:
     hardware:    "Chips"
     policy:      "Policy"
     explainers:  "How-To"
+  # One-paragraph intro per hub page. Previously these pages were a bare
+  # heading plus a list of cards, which is what made them read as thin.
+  hub_intros:
+    ai-models: >-
+      New and updated AI models, and what actually changed between one release
+      and the last. We report benchmarks with the caveats attached, and lead
+      with the question most readers arrive with: does this change anything
+      about the way you already work?
+    ai-tools: >-
+      The AI apps and tools people are actively searching for, weighed against
+      what they claim to do. Pricing, real usage limits, and the gap between a
+      launch demo and a week of daily use.
+    big-tech: >-
+      What Google, Microsoft, Apple, Meta, OpenAI, Amazon and Nvidia ship, buy
+      and quietly retire — and how those decisions reach the people who will
+      never watch a keynote.
+    hardware: >-
+      Chips, GPUs, memory and the physical machinery underneath the AI boom.
+      Supply, pricing and manufacturing reality, plus what a spec sheet does
+      and does not tell you about the device in your hand.
+    policy: >-
+      Rules, courts, regulators and the social consequences of technology, with
+      a standing eye on how decisions made in Brussels, Washington or Beijing
+      land on Indian users, workers and companies.
+    explainers: >-
+      Plain-language answers to the questions people search for most: how a
+      thing works, whether you actually need it, and what to do next. No
+      assumed background.
   min_words: 900
   max_words: 2200
   # Analysis sections at least one of which must appear (compliance gate 10)
@@ -197,6 +241,27 @@ analytics:
   provider: "goatcounter"        # goatcounter | ga4 | none
   goatcounter_code: "thetechdocket" # e.g. "thetechdocket" -> thetechdocket.goatcounter.com
   ga4_id: ""                     # e.g. "G-XXXXXXXXXX" when provider: ga4
+  # --- Head measurement layer (2026-08-08) ---
+  # Independent of `provider` above: GoatCounter stays as the end-of-body
+  # counter the feedback loop reads, and these two load from <head> for
+  # engagement depth, channels and session replay. Setting `head_ga4_id`
+  # non-empty emits BOTH head tags; the logic lives in docs/assets/analytics.js
+  # so the site keeps exactly one inline script (the theme toggle).
+  head_ga4_id: "G-7M4KPLZK1B"
+  head_script: "assets/analytics.js"
+
+# Newsletter capture. The single highest-value retention lever for a daily
+# publication. Leave `username` empty and no form renders anywhere — the
+# templates are guarded, so a half-configured provider can never ship a broken
+# or dead subscribe box.
+newsletter:
+  provider: "buttondown"
+  username: ""                   # your Buttondown username
+  heading: "Get the Docket by email"
+  blurb: >-
+    A short brief most weekday mornings: the day's article, plus what else
+    moved and why it matters. No spam, and one click to leave.
+  button: "Subscribe"
 
 # Learn & adapt: engine/feedback.py turns real performance data into scoring
 # boosts and brief guidance. Sources: GoatCounter API (GOATCOUNTER_TOKEN env)

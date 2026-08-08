@@ -1,0 +1,20 @@
+{# Newsletter capture band. Renders only when config `newsletter.username` is
+   set — see _newsletter_ctx() in engine/build.py — so the site can never ship
+   a subscribe box that posts into the void.
+
+   No JS: a plain POST to Buttondown's embed endpoint, which works with
+   scripting disabled. The label is real (not a placeholder standing in for
+   one), and it is bound to the input by id. #}
+{% if newsletter %}
+<aside class="nl" aria-labelledby="nl-h">
+  <h2 id="nl-h">{{ newsletter.heading }}</h2>
+  {% if newsletter.blurb %}<p>{{ newsletter.blurb }}</p>{% endif %}
+  <form action="{{ newsletter.action }}" method="post" target="_blank">
+    <label for="nl-email">Email address</label>
+    <input id="nl-email" type="email" name="email" autocomplete="email"
+           placeholder="you@example.com" required>
+    <button type="submit">{{ newsletter.button }}</button>
+  </form>
+  <p class="fine">No spam. Unsubscribe in one click, any time.</p>
+</aside>
+{% endif %}

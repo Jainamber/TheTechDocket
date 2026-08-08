@@ -13,10 +13,12 @@ function cur(){return document.documentElement.getAttribute("data-theme")==="dar
 function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
 b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
 try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
-<title>The Real Cost of Running AI: Tokens, GPUs, Power — The Tech Docket</title>
+<title>The Real Cost of Running AI: Tokens, GPUs, Power</title>
 <meta name="description" content="OpenAI, Google and Anthropic&#39;s live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.">
 <link rel="canonical" href="https://thetechdocket.com/articles/real-cost-of-running-ai/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -32,8 +34,8 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 <meta property="og:image:alt" content="A data center aisle of GPU servers with a rising electricity meter and dollar-per-token price tags overlaid on the racks">
 <meta property="og:locale" content="en_US">
 
-<meta property="article:published_time" content="2026-07-15T07:00:00+05:30">
-<meta property="article:modified_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:published_time" content="2026-07-19T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-08-08T07:00:00+05:30">
 <meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
 <meta property="article:section" content="Chips &amp; Hardware">
 <meta property="article:tag" content="gpus">
@@ -47,7 +49,7 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 <meta name="twitter:image" content="https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg">
 
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/real-cost-of-running-ai/"}, "headline": "The Real Cost of Running AI: Tokens, GPUs, Power", "description": "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.", "image": ["https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-4x3.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-1x1.jpg"], "datePublished": "2026-07-15T07:00:00+05:30", "dateModified": "2026-07-19T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/real-cost-of-running-ai/"}, "headline": "The Real Cost of Running AI: Tokens, GPUs, Power", "description": "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.", "image": ["https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-16x9.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-4x3.jpg", "https://thetechdocket.com/articles/real-cost-of-running-ai/real-cost-of-running-ai-1x1.jpg"], "datePublished": "2026-07-19T07:00:00+05:30", "dateModified": "2026-08-08T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "Chips & Hardware", "item": "https://thetechdocket.com/topics/hardware/"}, {"@type": "ListItem", "position": 3, "name": "The Real Cost of Running AI: Tokens, GPUs, Power"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a token in AI pricing, and why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "A token is the small chunk of text an AI model reads or writes, roughly three quarters of a word in English. Providers charge separately for the input tokens you send and the output tokens the model generates, and pricing differs enough between models that the same conversation can cost very different amounts depending on which model answers it."}}, {"@type": "Question", "name": "Why is AI output priced higher than input per token?", "acceptedAnswer": {"@type": "Answer", "text": "Generating new text token by token, a process called inference, takes more computation on the provider's chips than simply reading a prompt, since each new word depends on everything generated before it. That extra computation is why output pricing across major providers runs several times higher than input pricing on the same model."}}, {"@type": "Question", "name": "Is running AI models actually getting cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "For a fixed level of quality, yes: independent researchers have tracked steep drops in the price of matching older flagship performance, driven by competition between providers and more efficient chips and software. Overall spending is still climbing for many companies, though, because usage and model sizes are growing faster than per-unit prices are falling."}}, {"@type": "Question", "name": "How much electricity does one AI query actually use?", "acceptedAnswer": {"@type": "Answer", "text": "A single typical text prompt uses a small fraction of a watt hour of electricity, according to one major provider's own published accounting, roughly comparable to running a television for well under a minute. Multiplied across huge daily prompt volumes worldwide, though, that usage adds up to enough electricity to show up in national energy statistics, which is why data centers now draw scrutiny from grid planners."}}]}</script>
 
@@ -264,6 +266,17 @@ footer.site p a{text-decoration:underline}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
 html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
 </style>
 </head>
 <body class="">
@@ -292,8 +305,8 @@ html[data-theme=dark] .skip{color:#0d0f14}
   <div class="byline">
     <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
     <span>·</span>
-    <time datetime="2026-07-15T07:00:00+05:30">Published July 15, 2026</time>
-    <span>·</span><time datetime="2026-07-19T07:00:00+05:30">Updated July 19, 2026</time>
+    <time datetime="2026-07-19T07:00:00+05:30">Published July 19, 2026</time>
+    <span>·</span><time datetime="2026-08-08T07:00:00+05:30">Updated August 8, 2026</time>
     <span>·</span><span>7 min read</span>
   </div>
   <figure class="hero">
@@ -430,6 +443,9 @@ html[data-theme=dark] .skip{color:#0d0f14}
   <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
 
   
+
+
+  
   <section class="related">
     <h2 class="sect">Related on The Tech Docket</h2>
     <ul class="cardlist">
@@ -457,7 +473,6 @@ html[data-theme=dark] .skip{color:#0d0f14}
       <a href="/authors/saurab-jain/">Author</a>
       <a href="/sitemap/">All articles</a>
       <a href="https://thetechdocket.com/feed.xml">RSS</a>
-      <a href="/newdesign/">Newdesign</a>
       <a href="mailto:jainamber88@gmail.com">Contact</a>
     </nav>
     <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>

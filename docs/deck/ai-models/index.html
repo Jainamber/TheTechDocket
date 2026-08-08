@@ -17,6 +17,8 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 <meta name="description" content="The Deck — AI Models: the browse-and-save archive of Today&#39;s Docket — every card, newest first, each linked to its source and its day&#39;s docket.">
 <link rel="canonical" href="https://thetechdocket.com/deck/ai-models/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -251,6 +253,17 @@ footer.site p a{text-decoration:underline}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
 html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
 html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
 </style>
 </head>
 <body class="">
@@ -420,7 +433,6 @@ html[data-theme=dark] .skip{color:#0d0f14}
       <a href="/authors/saurab-jain/">Author</a>
       <a href="/sitemap/">All articles</a>
       <a href="https://thetechdocket.com/feed.xml">RSS</a>
-      <a href="/newdesign/">Newdesign</a>
       <a href="mailto:jainamber88@gmail.com">Contact</a>
     </nav>
     <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>

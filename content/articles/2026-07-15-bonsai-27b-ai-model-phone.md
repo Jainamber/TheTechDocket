@@ -1,9 +1,9 @@
 ---
 title: "Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained"
 slug: "bonsai-27b-ai-model-phone"
-date: 2026-07-15
-updated: 2026-07-19
-update_note: "Relaunched at thetechdocket.com; added an in-body link to the AI Models hub."
+date: 2026-07-19
+updated: 2026-08-08
+update_note: "Publication date corrected from 2026-07-15 to 2026-07-19. This piece was drafted on 2026-07-15 during pre-launch testing, before thetechdocket.com existed — the domain was registered on 2026-07-19, which is the day it first became publicly readable. The original date implied a publication that had not happened, which our own editorial policy forbids. Also relaunched at thetechdocket.com with an in-body link to its topic hub."
 hub: ai-models
 tags: [on-device AI, small models, quantization, PrismML, Qwen]
 description: "PrismML's Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What's verified, what's hype, and which phones in India can run it."

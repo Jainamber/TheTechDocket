@@ -1,9 +1,9 @@
 ---
 title: "AI Chatbot Data Privacy: What Happens to Your Chats"
 slug: "ai-chatbot-data-privacy"
-date: 2026-07-15
-updated: 2026-07-19
-update_note: "Relaunched at thetechdocket.com; added an in-body link to the AI Tools & Apps hub."
+date: 2026-07-19
+updated: 2026-08-08
+update_note: "Publication date corrected from 2026-07-15 to 2026-07-19. This piece was drafted on 2026-07-15 during pre-launch testing, before thetechdocket.com existed — the domain was registered on 2026-07-19, which is the day it first became publicly readable. The original date implied a publication that had not happened, which our own editorial policy forbids. Also relaunched at thetechdocket.com with an in-body link to its topic hub."
 hub: ai-tools
 tags: [chatbots, privacy, data]
 description: "ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor's own policy pages."

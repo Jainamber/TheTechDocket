@@ -81,6 +81,8 @@
 
   {% if has_docket %}<p class="docketline">More of today, in 60 seconds: <a href="{{ base_path }}docket/">Today's Docket →</a></p>{% endif %}
 
+  {% include "_newsletter.html" %}
+
   {% if related %}
   <section class="related">
     <h2 class="sect">Related on {{ site.name }}</h2>

@@ -314,7 +314,12 @@ class GateRunner:
 
         # ---------- SEO gates ----------
         t = soup.title.get_text() if soup.title else ""
-        base_title = t.rsplit(" — ", 1)[0]
+        # Strip the brand suffix if (and only if) it is present. Article titles
+        # dropped the " — The Tech Docket" suffix on 2026-08-08 to reclaim SERP
+        # width; a blind rsplit(" — ") would then amputate any headline that
+        # legitimately contains an em dash and fail S01 on a false positive.
+        _suffix = f" — {self.cfg['site']['name']}"
+        base_title = t[:-len(_suffix)] if t.endswith(_suffix) else t
         self.check("S01-title-length", HARD,
                    seo["title_min_chars"] <= len(base_title)
                    <= seo["title_max_chars"],
@@ -418,7 +423,19 @@ class GateRunner:
         feed = (self.out_dir / "feed.xml").read_text(encoding="utf-8") \
             if (self.out_dir / "feed.xml").exists() else ""
         url = f"articles/{self.slug}/"
-        self.check("S14-in-sitemap-feed", HARD, url in sm and url in feed)
+        # The sitemap is the complete record and must always contain the
+        # article. The RSS feed is a rolling window (FEED_MAX_ITEMS), so an
+        # article older than the window is correctly absent — requiring it
+        # there failed every article past the 20th, which is why this gate
+        # started failing silently once the archive outgrew the feed. Only
+        # articles still inside the window are held to the feed check.
+        from .build import FEED_MAX_ITEMS
+        recent = {a["slug"] for a in all_articles()[:FEED_MAX_ITEMS]}
+        in_window = self.slug in recent
+        self.check("S14-in-sitemap-feed", HARD,
+                   url in sm and (url in feed or not in_window),
+                   "must be in sitemap.xml; and in feed.xml while inside the "
+                   f"newest {FEED_MAX_ITEMS}")
 
         self.check("S15-desc-not-title", SOFT,
                    (desc.get("content", "") if desc else "") != a["title"],
