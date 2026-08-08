@@ -1,48 +1,7 @@
 {
-  "generated_at": "2026-08-07T08:43:45.749133+05:30",
-  "page_stats": {
-    "codex-context-window-cut": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 18
-    },
-    "spot-ai-generated-images-videos": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 5
-    },
-    "pwc-ai-hallucinations-big-four-pattern": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 2
-    },
-    "chinese-ai-models-surge-kimi-qwen": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 2
-    },
-    "gemini-3-6-flash-what-google-launched": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "openai-agent-hugging-face-breach": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "bonsai-27b-ai-model-phone": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    }
-  },
-  "hub_performance": {
-    "ai-tools": 20,
-    "explainers": 5,
-    "ai-models": 4,
-    "policy": 1
-  },
+  "generated_at": "2026-08-08T07:49:18.820219+05:30",
+  "page_stats": {},
+  "hub_performance": {},
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
