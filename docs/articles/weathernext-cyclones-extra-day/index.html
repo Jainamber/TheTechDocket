@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
+<title>WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</title>
+<meta name="description" content="DeepMind&#39;s WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.">
+<link rel="canonical" href="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time">
+<meta property="og:description" content="DeepMind&#39;s WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.">
+<meta property="og:url" content="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/">
+<meta property="og:image" content="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Satellite view of a spiralling tropical cyclone with branching AI-predicted track lines fanning out ahead of the storm.">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-08-09T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-08-09T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="AI Models">
+<meta property="article:tag" content="weathernext">
+<meta property="article:tag" content="deepmind">
+<meta property="article:tag" content="google">
+<meta property="article:tag" content="cyclones">
+<meta property="article:tag" content="weather-ai">
+<meta property="article:tag" content="open-weights">
+<meta property="article:tag" content="imd">
+<meta property="article:tag" content="india">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time">
+<meta name="twitter:description" content="DeepMind&#39;s WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/weathernext-cyclones-extra-day/"}, "headline": "WeatherNext: Google's Cyclone AI Adds a Day of Lead Time", "description": "DeepMind's WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.", "image": ["https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.jpg", "https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-4x3.jpg", "https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-1x1.jpg"], "datePublished": "2026-08-09T07:00:00+05:30", "dateModified": "2026-08-09T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Models", "item": "https://thetechdocket.com/topics/ai-models/"}, {"@type": "ListItem", "position": 3, "name": "WeatherNext: Google's Cyclone AI Adds a Day of Lead Time"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is WeatherNext Cyclones?", "acceptedAnswer": {"@type": "Answer", "text": "It is Google DeepMind's AI model for forecasting tropical cyclones — their track, intensity and wind structure — up to 15 days ahead, published in Nature on August 6, 2026. It ran alongside the US National Hurricane Center's tools during the 2025 hurricane season, and Google has now released the code and model weights for free."}}, {"@type": "Question", "name": "Can AI predict cyclones better than traditional models?", "acceptedAnswer": {"@type": "Answer", "text": "On the benchmarks published so far, yes — DeepMind's Nature-published evaluation found WeatherNext Cyclones gained a day or more of lead time over leading operational models, and Europe's ECMWF credits its own operational AI system with clearly better tropical cyclone tracks. But weather agencies still treat AI output as guidance feeding human forecasts, not a replacement — and DeepMind itself says it does not fully understand why the model works so well at coarse resolution."}}, {"@type": "Question", "name": "Is WeatherNext free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in research form. The code and model weights are on GitHub under an open release, a compact WeatherNext 2-mini runs in a free Colab notebook on a single TPU, and forecasts can be explored in Google's Weather Lab. Official storm warnings, though, still come only from your national weather agency — IMD in India, the NHC in the US."}}, {"@type": "Question", "name": "Does India use AI for cyclone forecasting?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet as a dedicated operational model. IMD's cyclone forecasts run on physics-based numerical models plus a decision-support system. AI is operational in India for monsoon-onset forecasts and short-range nowcasting as of May 2026, and Mission Mausam's roadmap calls for fusing AI/ML into forecasting through 2031 — which is what makes freely available cyclone weights interesting for Indian researchers."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
+.feature a.img{display:block}
+.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card a.img{display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
+@media (max-width:719px){
+nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
+nav.hubs::-webkit-scrollbar{display:none}
+nav.hubs a{flex:0 0 auto;white-space:nowrap}
+.nl-full{display:none}
+.nl-short{display:inline}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/" aria-current="page"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/ai-models/">AI Models</a> / <span>WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</span>
+  </nav>
+  <a class="kicker postkick k-ai-models" href="/topics/ai-models/">AI Models</a>
+  <h1>WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</h1>
+  <div class="standfirst">DeepMind&#39;s WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-08-09T07:00:00+05:30">Published August 9, 2026</time>
+    
+    <span>·</span><span>7 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.webp">
+      <img src="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.jpg" width="1200" height="675" alt="Satellite view of a spiralling tropical cyclone with branching AI-predicted track lines fanning out ahead of the storm." fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#what-deepmind-actually-announced">What DeepMind actually announced</a></li><li><a href="#how-the-claim-measures-against-todays-best-forecasts">How the claim measures against today’s best forecasts</a></li><li><a href="#the-india-angle">The India angle</a></li><li><a href="#what-to-watch">What to watch</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>Google DeepMind published a cyclone-forecasting AI in <a href="https://www.nature.com/articles/s41586-026-10953-2" rel="noopener" target="_blank">Nature on August 6</a>, reporting that WeatherNext Cyclones predicts a storm&rsquo;s track, intensity and wind structure with <strong>a day or more of extra lead time</strong> over leading operational models — its three-day forecasts matching what two-day forecasts used to deliver. The <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">model weights are now free to download</a>, the US National Hurricane Center already used it through the 2025 season, and for cyclone-prone countries like India the question shifts from &ldquo;does AI forecasting work?&rdquo; to &ldquo;who puts it to work first?&rdquo;</p>
+<h2 id="what-deepmind-actually-announced">What DeepMind actually announced</h2>
+<p>The announcement bundles three things: a peer-reviewed result, an operational track record, and an open-source release.</p>
+<p>The result is the paper, <a href="https://www.nature.com/articles/s41586-026-10953-2" rel="noopener" target="_blank">&ldquo;Operational Tropical Cyclone Forecasting with AI&rdquo;</a>, which evaluates WeatherNext Cyclones on tropical cyclones from 2023 to 2025 and finds its track, intensity and wind-radii predictions &ldquo;offer an average of a day or more of lead time advantage over leading operational models.&rdquo; DeepMind&rsquo;s <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">own announcement</a> puts the same finding more plainly: &ldquo;our three-day forecasts are as good as what prior models were able to provide for only the next two days,&rdquo; a jump the company frames as &ldquo;roughly a decade&rsquo;s worth of meteorological progress,&rdquo; measured against 20-year improvement trends in the benchmark systems — ECMWF&rsquo;s ensemble for track, and the US HWRF model for intensity.</p>
+<p>The operational record is the 2025 hurricane season. The model ran live with the US National Hurricane Center (NHC), and DeepMind says it <a href="https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/" rel="noopener" target="_blank">helped forecasters anticipate Hurricane Melissa&rsquo;s rapid intensification</a> before its Category 5 landfall in Jamaica — the company&rsquo;s May 2026 case study says the model signalled a Jamaica landfall five days out at 80% confidence. This year the system scaled from 50 simultaneous scenarios to a <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">1,000-member ensemble</a>, the better to catch low-probability, high-consequence turns like rapid intensification.</p>
+<p>The release is the part developers and weather agencies will feel. The <a href="https://github.com/google-deepmind/weathernext" rel="noopener" target="_blank">code and model weights are on GitHub</a>, a compact WeatherNext 2-mini runs on a single TPU in a free Colab notebook, and forecasts are browsable in DeepMind&rsquo;s Weather Lab. This follows the open-weights turn we have tracked across the industry — from <a href="/articles/qwen3-8-max-what-alibaba-launched/">Alibaba&rsquo;s Qwen3.8-Max</a> to the broader <a href="/articles/chinese-ai-models-surge-kimi-qwen/">surge of open Chinese models</a> — but weather may be the domain where free weights matter most, because the users who need them (national met agencies, disaster authorities, researchers) are exactly the ones who cannot pay frontier-lab prices.</p>
+<p>Two details from the paper&rsquo;s own framing deserve attention. First, the model was trained on <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">nearly 20 terabytes of atmospheric data plus the IBTrACS archive of roughly 5,000 historical storms</a>, and generates a full 15-day forecast in under a minute on a single TPU — physics-based models need supercomputer hours. Second, it works from input data at 28×28 km resolution, about 100 times coarser than the specialised models meteorologists believed intensity forecasting required. DeepMind&rsquo;s post says plainly that this &ldquo;has surprised scientists, and it remains an open research question to fully understand how our models produce such accurate predictions at this resolution.&rdquo; A breakthrough the builders cannot yet fully explain is still a caveat, whatever the benchmark says.</p>
+<h2 id="how-the-claim-measures-against-todays-best-forecasts">How the claim measures against today&rsquo;s best forecasts</h2>
+<p>DeepMind published a relative claim — an extra day of lead time — rather than a headline error figure, so the honest way to read it is against what official agencies already achieve. Their own verification reports are the yardstick: the <a href="https://www.nhc.noaa.gov/verification/pdfs/Verification_2024.pdf" rel="noopener" target="_blank">NHC&rsquo;s 2024 report</a> calls that Atlantic season its most accurate on record, and <a href="https://rsmcnewdelhi.imd.gov.in/uploads/Annual_Veri_2024.pdf" rel="noopener" target="_blank">IMD&rsquo;s RSMC New Delhi 2024 report</a> documents India&rsquo;s five-year averages.</p>
+<table>
+<thead>
+<tr>
+<th>Forecast lead time</th>
+<th>NHC official track error, 2024 Atlantic (record year)</th>
+<th>IMD track error, 2020–24 average (North Indian Ocean)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24 hours</td>
+<td>28.0 n mi (~52 km)</td>
+<td>72 km</td>
+</tr>
+<tr>
+<td>48 hours</td>
+<td>45.4 n mi (~84 km)</td>
+<td>111 km</td>
+</tr>
+<tr>
+<td>72 hours</td>
+<td>66.9 n mi (~124 km)</td>
+<td>154 km</td>
+</tr>
+<tr>
+<td>120 hours</td>
+<td>115.3 n mi (~214 km)</td>
+<td>issued since 2013; no comparable average published</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: <a href="https://www.nhc.noaa.gov/verification/pdfs/Verification_2024.pdf" rel="noopener" target="_blank">NHC Verification Report 2024</a>; <a href="https://rsmcnewdelhi.imd.gov.in/uploads/Annual_Veri_2024.pdf" rel="noopener" target="_blank">RSMC New Delhi Annual Verification 2024</a>. Nautical miles converted at 1.852 km. The two basins breed different storms in different data environments, so the columns are context, not a contest.</p>
+<p>Against curves like these, &ldquo;three-day forecasts as good as two-day forecasts used to be&rdquo; is an enormous claim — at NHC&rsquo;s 2024 skill, it would be like pulling the 124 km error at 72 hours down toward the 84 km error at 48 hours. What the claim is <strong>not</strong>, yet, is independently re-verified: coverage of the announcement — <a href="https://www.engadget.com/2232141/google-open-source-ai-model-can-help-with-earlier-hurricane-warnings/" rel="noopener" target="_blank">Engadget</a>, <a href="https://www.techtimes.com/articles/323617/20260808/weathernext-publishes-proof-cyclone-ai-gave-nhc-extra-day-warning-hurricane-melissa.htm" rel="noopener" target="_blank">Tech Times</a> and others — relays DeepMind&rsquo;s numbers rather than auditing them. Peer review in Nature and a season inside NHC&rsquo;s workflow are real validation, but the only outside meteorologist verdict on record dates to the model&rsquo;s experimental phase, when former NHC hurricane-specialist chief James Franklin <a href="https://www.cbsnews.com/miami/news/google-ai-hurricane-forecast-model-hurricane-erin-performance" rel="noopener" target="_blank">told CBS News Miami</a> during 2025&rsquo;s Hurricane Erin that &ldquo;the Google DeepMind model did it a little bit better than any of the other ones&rdquo; on track — while cautioning that no hurricane model is perfect.</p>
+<p>The agencies themselves are measured. The US National Weather Service&rsquo;s <a href="https://www.weather.gov/news/261102-AI-Hurricane-Forecasting" rel="noopener" target="_blank">June 2026 statement</a> on adopting AI hurricane models — DeepMind&rsquo;s included — reads: &ldquo;Now we are ready to begin incorporating the new AI models into our toolbox, although the learning will continue!&rdquo; Guidance in the toolbox, not the official forecast. DeepMind&rsquo;s own post carries the same disclaimer: for warnings, refer to your national weather service.</p>
+<h2 id="the-india-angle">The India angle</h2>
+<p>India&rsquo;s cyclone problem is the Bay of Bengal, and its progress is real but uneven. IMD&rsquo;s average track errors for 2020–24 stood at <a href="https://rsmcnewdelhi.imd.gov.in/uploads/Annual_Veri_2024.pdf" rel="noopener" target="_blank">72, 111 and 154 km at 24, 48 and 72 hours</a> — better than 81/126/171 km in 2015–19, and the Ministry of Earth Sciences told the Rajya Sabha in March 2026 that track accuracy improved <a href="https://www.moes.gov.in/static/uploads/2026/03/fa548bd3d31b468da2fa7b783c2ccfca.pdf" rel="noopener" target="_blank">20–25% over five years, with landfall and intensity accuracy up 35–45%</a>. But the line does not only go up: in 2025 the <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238029&amp;reg=3&amp;lang=1" rel="noopener" target="_blank">track errors ran worse than the five-year average — 80, 120 and 204 km — even as intensity errors were sharply better than average</a>, a reminder that a hard season can still bend the curve.</p>
+<p>What those kilometres buy is measured in evacuations. The <a href="https://magazines.odisha.gov.in/Orissareview/2016/Jan/engpdf/38-42.pdf" rel="noopener" target="_blank">1999 Odisha Super Cyclone killed roughly 10,000 people; Cyclone Phailin in 2013, of comparable strength, killed 23</a> — the Odisha government&rsquo;s own review credits planning and evacuation, both children of forecast lead time. The pattern held through recent seasons: <a href="https://www.deccanherald.com/amp/story/india%2Fodisha%2Fcyclone-dana-impacted-3595-lakh-people-in-odisha-no-human-casualty-so-far-minister-3250852" rel="noopener" target="_blank">Cyclone Dana in October 2024 saw around a million people moved and no direct deaths in Odisha</a>, while <a href="https://www.newsonair.gov.in/sri-lanka-death-toll-from-cyclone-ditwah-rises-to-607" rel="noopener" target="_blank">Cyclone Ditwah in late 2025 killed over 600 in Sri Lanka against three in Tamil Nadu</a>. Every extra day of credible warning is more districts emptied in time.</p>
+<p>Here is the catch: India does not yet run a dedicated AI model for cyclones. The March 2026 <a href="https://www.moes.gov.in/static/uploads/2026/03/fa548bd3d31b468da2fa7b783c2ccfca.pdf" rel="noopener" target="_blank">parliamentary answer</a> describes IMD&rsquo;s cyclone stack as numerical weather prediction, multi-model ensembles and a decision-support system. India&rsquo;s AI deployments are adjacent: <a href="https://www.business-standard.com/india-news/imd-launches-two-ai-enabled-monsoon-forecast-models-for-first-time-in-india-126051201302_1.html" rel="noopener" target="_blank">two AI-enabled monsoon tools went live in May 2026</a> — block-level onset forecasts and a 1-km nowcasting pilot — and the <a href="https://www.pmindia.gov.in/en/news_updates/cabinet-approves-mission-mausam-to-create-a-more-weather-ready-and-climate-smart-bharat-with-an-outlay-of-rs-2000-crore-over-two-years/" rel="noopener" target="_blank">₹2,000-crore Mission Mausam</a> explicitly plans to fuse AI/ML with physics models through 2031. The <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131392" rel="noopener" target="_blank">Bharat Forecast System launched in May 2025</a> sharpened the physics grid from 12 km to 6 km, but it is a numerical model, not an AI one.</p>
+<p>That gap is exactly what free weights address. A model that <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">runs on a single TPU — with a mini version in a free Colab</a> — is testable by IITM Pune or IMD&rsquo;s research wing this season, without procurement, licensing or a data-sharing agreement. There is precedent for Google weather tech operating at Indian scale, but note who signed it: <a href="https://indiaai.gov.in/case-study/using-ai-to-predict-floods-and-save-lives" rel="noopener" target="_blank">Flood Hub grew from a 2018 Patna pilot to cover about 200 million people in India</a> in partnership with the Central Water Commission — the water ministry&rsquo;s agency, not IMD. Neither IMD nor the Ministry of Earth Sciences had commented publicly on WeatherNext as of August 9; whether the Bay of Bengal&rsquo;s gatekeeper engages is the India question this release poses.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p><strong>The October–December test.</strong> <a href="https://mausam.imd.gov.in/responsive/cycloneinformation.php" rel="noopener" target="_blank">IMD&rsquo;s cyclone page showed no active system in Indian waters as of August 8</a>, and Bay of Bengal cyclogenesis peaks post-monsoon. If WeatherNext output starts appearing in Indian research commentary during the coming season, adoption has begun; silence will be informative too.</p>
+<p><strong>Whether anyone independently reproduces the numbers.</strong> The weights being public means ECMWF, academics — or IITM — can now re-run DeepMind&rsquo;s verification instead of taking Nature&rsquo;s word for it. Worth recalling that <a href="https://www.ecmwf.int/en/about/media-centre/aifs-blog/2026/farewell-external-ai-models" rel="noopener" target="_blank">ECMWF stopped hosting external AI models in May 2026</a> after an upgrade of its own system degraded their tuned performance — a sign of how fast this field&rsquo;s pecking order shifts. ECMWF&rsquo;s own <a href="https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational" rel="noopener" target="_blank">AIFS has been operational since February 2025</a> claiming up to 20% better tropical cyclone tracks, and <a href="https://epic.noaa.gov/noaa-deploys-new-ai-driven-global-weather-models/" rel="noopener" target="_blank">NOAA switched on its own AI global models in January 2026</a> — DeepMind is ahead on cyclone specifics, not alone.</p>
+<p><strong>The repo catching up to the announcement.</strong> When we checked, the <a href="https://github.com/google-deepmind/weathernext" rel="noopener" target="_blank">GitHub repository&rsquo;s</a> visible documentation still centred on the older GraphCast and GenCast checkpoints; the cyclone-model artefacts were not yet clearly labelled. Announcement-to-repo lag is common, but &ldquo;open&rdquo; only counts once the cyclone weights are verifiably downloadable.</p>
+<p><strong>How agencies phrase attribution.</strong> The NHC has begun working AI models into its forecast process this season, per its <a href="https://www.weather.gov/news/261102-AI-Hurricane-Forecasting" rel="noopener" target="_blank">June 2026 statement</a> — and every mention in official products normalises the technology for other agencies, IMD included. The <a href="/topics/ai-models/">rest of our AI models coverage</a> has mostly tracked labs racing each other on benchmarks, like <a href="/articles/deepseek-v4-flash-0731/">DeepSeek&rsquo;s quiet price-performance climb</a>; this is the rarer story where the benchmark is a coastline.</p>
+<p><em>For official storm forecasts and warnings, rely on your national meteorological agency — IMD (<a href="https://mausam.imd.gov.in/responsive/cycloneinformation.php" rel="noopener" target="_blank">mausam.imd.gov.in</a>) in India, the NHC in the US.</em></p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is WeatherNext Cyclones?</h3>
+  <p>It is Google DeepMind&#39;s AI model for forecasting tropical cyclones — their track, intensity and wind structure — up to 15 days ahead, published in Nature on August 6, 2026. It ran alongside the US National Hurricane Center&#39;s tools during the 2025 hurricane season, and Google has now released the code and model weights for free.</p>
+  
+  <h3>Can AI predict cyclones better than traditional models?</h3>
+  <p>On the benchmarks published so far, yes — DeepMind&#39;s Nature-published evaluation found WeatherNext Cyclones gained a day or more of lead time over leading operational models, and Europe&#39;s ECMWF credits its own operational AI system with clearly better tropical cyclone tracks. But weather agencies still treat AI output as guidance feeding human forecasts, not a replacement — and DeepMind itself says it does not fully understand why the model works so well at coarse resolution.</p>
+  
+  <h3>Is WeatherNext free to use?</h3>
+  <p>Yes, in research form. The code and model weights are on GitHub under an open release, a compact WeatherNext 2-mini runs in a free Colab notebook on a single TPU, and forecasts can be explored in Google&#39;s Weather Lab. Official storm warnings, though, still come only from your national weather agency — IMD in India, the NHC in the US.</p>
+  
+  <h3>Does India use AI for cyclone forecasting?</h3>
+  <p>Not yet as a dedicated operational model. IMD&#39;s cyclone forecasts run on physics-based numerical models plus a decision-support system. AI is operational in India for monsoon-onset forecasts and short-range nowcasting as of May 2026, and Mission Mausam&#39;s roadmap calls for fusing AI/ML into forecasting through 2031 — which is what makes freely available cyclone weights interesting for Indian researchers.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/weathernext-cyclones-extra-day/&text=WeatherNext%3A%20Google%27s%20Cyclone%20AI%20Adds%20a%20Day%20of%20Lead%20Time" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/weathernext-cyclones-extra-day/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=WeatherNext%3A%20Google%27s%20Cyclone%20AI%20Adds%20a%20Day%20of%20Lead%20Time%20https%3A//thetechdocket.com/articles/weathernext-cyclones-extra-day/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/weathernext-cyclones-extra-day/&title=WeatherNext%3A%20Google%27s%20Cyclone%20AI%20Adds%20a%20Day%20of%20Lead%20Time" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/weathernext-cyclones-extra-day/&t=WeatherNext%3A%20Google%27s%20Cyclone%20AI%20Adds%20a%20Day%20of%20Lead%20Time" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" rel="noopener" target="_blank">WeatherNext: AI model achieves breakthrough in forecasting cyclones — Google DeepMind (official announcement)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.nature.com/articles/s41586-026-10953-2" rel="noopener" target="_blank">Operational Tropical Cyclone Forecasting with AI — Nature (peer-reviewed paper)</a> <em>(primary source)</em></li>
+      <li><a href="https://github.com/google-deepmind/weathernext" rel="noopener" target="_blank">WeatherNext open-source repository — google-deepmind/weathernext on GitHub</a> <em>(primary source)</em></li>
+      <li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2-cyclones/" rel="noopener" target="_blank">Our WeatherNext 2 AI model demonstrated a massive leap forward in predicting cyclones — Google (companion post)</a> <em>(primary source)</em></li>
+      <li><a href="https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/" rel="noopener" target="_blank">How WeatherNext helped the National Hurricane Center better predict Hurricane Melissa&#39;s historic landfall in Jamaica — Google DeepMind</a> <em>(primary source)</em></li>
+      <li><a href="https://www.nhc.noaa.gov/verification/pdfs/Verification_2024.pdf" rel="noopener" target="_blank">National Hurricane Center Forecast Verification Report — 2024 season — NOAA/NHC (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.weather.gov/news/261102-AI-Hurricane-Forecasting" rel="noopener" target="_blank">NHC begins incorporating AI hurricane models into its toolbox — US National Weather Service (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://rsmcnewdelhi.imd.gov.in/uploads/Annual_Veri_2024.pdf" rel="noopener" target="_blank">RSMC New Delhi Annual Cyclone Verification Report 2024 — India Meteorological Department (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.moes.gov.in/static/uploads/2026/03/fa548bd3d31b468da2fa7b783c2ccfca.pdf" rel="noopener" target="_blank">Ministry of Earth Sciences written reply on cyclone forecast accuracy, Rajya Sabha, 19 March 2026 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238029&amp;reg=3&amp;lang=1" rel="noopener" target="_blank">IMD forecast performance 2025 — Press Information Bureau release, 11 March 2026 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.pmindia.gov.in/en/news_updates/cabinet-approves-mission-mausam-to-create-a-more-weather-ready-and-climate-smart-bharat-with-an-outlay-of-rs-2000-crore-over-two-years/" rel="noopener" target="_blank">Cabinet approves Mission Mausam with an outlay of Rs 2,000 crore — PMO India (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131392" rel="noopener" target="_blank">Bharat Forecast System launch — Press Information Bureau, 26 May 2025 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.business-standard.com/india-news/imd-launches-two-ai-enabled-monsoon-forecast-models-for-first-time-in-india-126051201302_1.html" rel="noopener" target="_blank">IMD launches two AI-enabled monsoon forecast models — Business Standard</a></li>
+      <li><a href="https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational" rel="noopener" target="_blank">ECMWF&#39;s AI forecasts become operational — ECMWF (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.ecmwf.int/en/about/media-centre/aifs-blog/2026/farewell-external-ai-models" rel="noopener" target="_blank">Farewell to external AI models — ECMWF AIFS blog, May 2026 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://epic.noaa.gov/noaa-deploys-new-ai-driven-global-weather-models/" rel="noopener" target="_blank">NOAA deploys new AI-driven global weather models — NOAA EPIC (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.cbsnews.com/miami/news/google-ai-hurricane-forecast-model-hurricane-erin-performance" rel="noopener" target="_blank">Google AI hurricane forecast model performance during Hurricane Erin — CBS News Miami</a></li>
+      <li><a href="https://arxiv.org/abs/2506.10772" rel="noopener" target="_blank">Skillful joint probabilistic weather forecasting from marginals — arXiv (FGN paper)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.engadget.com/2232141/google-open-source-ai-model-can-help-with-earlier-hurricane-warnings/" rel="noopener" target="_blank">Google&#39;s open-source AI model can help with earlier hurricane warnings — Engadget</a></li>
+      <li><a href="https://www.techtimes.com/articles/323617/20260808/weathernext-publishes-proof-cyclone-ai-gave-nhc-extra-day-warning-hurricane-melissa.htm" rel="noopener" target="_blank">WeatherNext publishes proof cyclone AI gave NHC extra day of warning on Hurricane Melissa — Tech Times</a></li>
+      <li><a href="https://magazines.odisha.gov.in/Orissareview/2016/Jan/engpdf/38-42.pdf" rel="noopener" target="_blank">Orissa Review, January 2016 — Government of Odisha on the 1999 Super Cyclone and Phailin (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.deccanherald.com/amp/story/india%2Fodisha%2Fcyclone-dana-impacted-3595-lakh-people-in-odisha-no-human-casualty-so-far-minister-3250852" rel="noopener" target="_blank">Cyclone Dana: 3.6 million affected in Odisha, no human casualty, says minister — Deccan Herald</a></li>
+      <li><a href="https://www.newsonair.gov.in/sri-lanka-death-toll-from-cyclone-ditwah-rises-to-607" rel="noopener" target="_blank">Sri Lanka death toll from Cyclone Ditwah rises to 607 — NewsOnAir (India public broadcaster)</a></li>
+      <li><a href="https://www.deccanherald.com/amp/story/india%2Ftamil-nadu%2Fthree-killed-in-rain-related-incidents-in-tamil-nadu-57000-hectares-of-farmland-affected-says-minister-3814834" rel="noopener" target="_blank">Three killed in rain-related incidents in Tamil Nadu during Cyclone Ditwah — Deccan Herald</a></li>
+      <li><a href="https://indiaai.gov.in/case-study/using-ai-to-predict-floods-and-save-lives" rel="noopener" target="_blank">Using AI to predict floods and save lives — IndiaAI (government portal case study)</a></li>
+      <li><a href="https://blog.google/technology/ai/google-ai-global-flood-forecasting/" rel="noopener" target="_blank">Google&#39;s global flood forecasting expansion — Google (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://mausam.imd.gov.in/responsive/cycloneinformation.php" rel="noopener" target="_blank">IMD live cyclone information page — India Meteorological Department (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://news.ycombinator.com/item?id=49220126" rel="noopener" target="_blank">WeatherNext Cyclones announcement discussion — Hacker News</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: weathernext-cyclones-extra-day">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/qwen3-8-max-what-alibaba-launched/">Qwen3.8-Max: What Alibaba Launched and What It Didn&#39;t</a>
+        <div class="m">AI Models · August 4, 2026</div></li>
+      
+      <li><a class="t" href="/articles/deepseek-v4-flash-0731/">DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price</a>
+        <div class="m">AI Models · August 2, 2026</div></li>
+      
+      <li><a class="t" href="/articles/gpt-5-6-luna-price-cut/">GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%</a>
+        <div class="m">AI Models · August 1, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
