@@ -1,0 +1,10 @@
+{
+  "sources_status": {
+    "hacker_news": "error: EGRESS_BLOCKED - Access to hn.algolia.com is blocked by the network egress proxy (retried once, same result)",
+    "techcrunch": "error: EGRESS_BLOCKED - Access to techcrunch.com is blocked by the network egress proxy (retried once, same result)",
+    "theverge": "error: Claude Code is unable to fetch from www.theverge.com (retried once, same result)",
+    "arstechnica": "error: Claude Code is unable to fetch from feeds.arstechnica.com (retried once, same result)"
+  },
+  "hacker_news": [],
+  "outlet_headlines": []
+}
