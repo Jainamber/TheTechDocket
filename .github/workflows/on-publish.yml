@@ -7,6 +7,12 @@ on:
   push:
     branches: [main]
     paths: ["docs/**"]
+  # Manual re-ping. Needed when several publishes land in one burst: GitHub
+  # collapses the near-simultaneous pushes into a single run, so articles
+  # added to history.json after that run started never get submitted. The job
+  # reads the last 10 URLs from history.json at run time and IndexNow tolerates
+  # re-submits, so a manual fire safely backfills them (2026-08-10).
+  workflow_dispatch: {}
 
 jobs:
   ping:
