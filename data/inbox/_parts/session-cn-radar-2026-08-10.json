@@ -1,0 +1,42 @@
+{
+  "sources_status": {
+    "cn_radar": "partial: bilibili.com/v/popular/rank/all and bilibili.com/ranking/weekly both returned EGRESS_BLOCKED via WebFetch (network proxy blocks bilibili.com outright, not just a JS shell). Direct WebFetch was also blocked for most China-tech intermediary domains (chinaskinny.com, techbuzzchina.substack.com, sixthtone.com, whatsonweibo.com, radii.co, pandaily.com, technode.com), so this sweep relied on WebSearch result snippets/syndication rather than direct page fetches for those outlets."
+  },
+  "cn_incubator": [
+    {
+      "title": "Honor's 'Robot Phone' -- a flagship with a motorized 4-degree-of-freedom titanium camera gimbal that physically extends and rotates 360 degrees -- went viral worldwide after a Spain player was filmed using the unreleased device during World Cup final celebrations, ahead of its Aug 12 China launch",
+      "platform": "TechNode",
+      "url": "https://technode.com/2026/07/20/honor-confirms-august-global-launch-of-its-first-robot-phone-at-waic-2026/",
+      "provenance": "TechNode reported July 20, 2026 that Honor confirmed a global August launch (China on-sale date Aug 12) for its Robot Phone at WAIC; days later, Spain defender Eric Garcia was filmed using the unreleased unit's motorized gimbal camera during World Cup final celebrations, and footage of it racked up millions of views within hours per multiple outlets (GSMArena, T3, PhoneArena, Notebookcheck all covered the moment independently).",
+      "corroboration_url": "https://www.gsmarena.com/honor_robot_phone_makes_an_unexpected_appearance_at_the_world_cup_final-news-73794.php"
+    },
+    {
+      "title": "BrainCo (Hangzhou) demoed a brain-to-robot BCI platform letting a person control a robotic arm by thought alone via EEG headset (sub-200ms latency, ~10-minute setup), pitched as a plug-and-play R&D tool that works with humanoids, robot arms and robot dogs",
+      "platform": "TechNode",
+      "url": "https://technode.com/2026/07/21/brainco-demos-thought-controlled-robots-at-waic-2026/",
+      "provenance": "TechNode's July 21, 2026 writeup of BrainCo's WAIC 2026 (Shanghai) demo was matched within days by PRNewswire, Morningstar, RoboticsTomorrow and Gasgoo coverage of the same cup-grabbing demo, and BrainCo was described as one of Hangzhou's 'six little dragons' of AI/robotics -- convergent, near-simultaneous coverage across many outlets is the evidence of rising attention, not a single-source claim.",
+      "corroboration_url": "https://www.techradar.com/ai-platforms-assistants/chinese-company-brainco-unveils-first-brain-to-robot-interface-for-controlling-robots-with-your-thoughts"
+    },
+    {
+      "title": "China's new AI-companion regulations forced Doubao, Qwen and Yuanbao to shut down persona/companion features on July 15, 2026, triggering a wave of Weibo posts where users publicly grieved and said goodbye to their AI 'boyfriends/girlfriends'",
+      "platform": "weibo",
+      "url": "https://hongkongfp.com/2026/07/16/like-my-lover-chinese-users-bid-farewell-to-ai-companions-as-new-regulations-kick-in/",
+      "provenance": "Hong Kong Free Press (July 16, 2026) reported users posting farewell messages and archiving chat logs on Weibo as ByteDance/Alibaba/Tencent suspended companion personas under China's new Interim Measures for AI Anthropomorphic Interactive Services; the same 'like my lover' farewell story was independently picked up within days by techxplore, Digital Journal, Yahoo News, IBTimes UK, Taipei Times and VnExpress, indicating genuinely broad reaction rather than an isolated post.",
+      "corroboration_url": "https://edition.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk"
+    },
+    {
+      "title": "Xiaohongshu (RED) is running a hard 'authenticity' crackdown -- banning fully AI-operated accounts and penalizing 1M+ cases of AI misconduct (800K+ AI-managed accounts, ~150K fake posts) since the policy took effect -- as user preference visibly shifts toward deliberately lo-fi, unfiltered 'raw and real' video over polished content",
+      "platform": "xiaohongshu",
+      "url": "https://technode.com/2026/03/11/xiaohongshu-targets-ai-managed-accounts-in-push-to-clean-up-content/",
+      "provenance": "TechNode (Mar 11, 2026) and BigGo Finance both report Xiaohongshu's governance crackdown with matching >1M-cases/800K-accounts figures; separately, multiple 2026 marketing-agency trend guides (PrizmDigital, HaloTechMedia) describe a platform-wide shift toward lo-fi, unfiltered video as the highest-converting format on the platform, consistent with the policy responding to a real user-driven authenticity trend rather than being a one-off announcement.",
+      "corroboration_url": "https://news.ycombinator.com/item?id=47278921"
+    },
+    {
+      "title": "Xiaohongshu's 'Abstract Culture' (抽象文化) -- absurdist, self-deprecating meme humor young users deploy to cope with work/social pressure -- is named among the platform's defining 2026 buzzwords, with a growing body of academic study treating it as a youth 'structure of feeling'",
+      "platform": "xiaohongshu",
+      "url": "https://chinaskinny.com/blog/xiaohongshu-rednote-2026-lifestyle-trends",
+      "provenance": "China Skinny's 'Xiaohongshu/RED's 2026 Top 10 Buzzwords' piece and Jing Daily's 2026 China consumer-trend coverage both name 'Abstract Expression' as a leading 2026 buzzword; a separate 2026 academic paper ('From live-streaming to memes: an exploratory study of the Chinese abstract culture as a structure of feeling among Chinese youth') and a 2026 buzzword study (drpress.org) independently document the same self-deprecating-humor phenomenon among Chinese youth, suggesting multi-source momentum rather than a single blog's framing. Direct fetch of the China Skinny page was blocked by the network proxy, so this is via WebSearch snippet synthesis, not a raw read.",
+      "corroboration_url": ""
+    }
+  ]
+}
