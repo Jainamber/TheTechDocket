@@ -1,0 +1,305 @@
+{
+  "date": "2026-08-10",
+  "candidates": [
+    {
+      "title": "BrainCo (Hangzhou) demoed a brain-to-robot BCI platform letting a person control a robotic arm by thought alone via EEG headset (sub-200ms latency, ~10-minute setup), pitched as a plug-and-play R&D tool that works with humanoids, robot arms and robot dogs",
+      "sources": [
+        "cn:technode",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:technode",
+          "platform": "technode",
+          "url": "https://technode.com/2026/07/21/brainco-demos-thought-controlled-robots-at-waic-2026/",
+          "provenance": "TechNode's July 21, 2026 writeup of BrainCo's WAIC 2026 (Shanghai) demo was matched within days by PRNewswire, Morningstar, RoboticsTomorrow and Gasgoo coverage of the same cup-grabbing demo, and BrainCo was described as one of Hangzhou's 'six little dragons' of AI/robotics -- convergent, near-simultaneous coverage across many outlets is the evidence of rising attention, not a single-source claim.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://www.techradar.com/ai-platforms-assistants/chinese-company-brainco-unveils-first-brain-to-robot-interface-for-controlling-robots-with-your-thoughts",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5579,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "China's new AI-companion regulations forced Doubao, Qwen and Yuanbao to shut down persona/companion features on July 15, 2026, triggering a wave of Weibo posts where users publicly grieved and said goodbye to their AI 'boyfriends/girlfriends'",
+      "sources": [
+        "cn:weibo",
+        "corroboration"
+      ],
+      "geos": [],
+      "momentum_raw": 0.35,
+      "evidence": [
+        {
+          "source": "cn:weibo",
+          "platform": "weibo",
+          "url": "https://hongkongfp.com/2026/07/16/like-my-lover-chinese-users-bid-farewell-to-ai-companions-as-new-regulations-kick-in/",
+          "provenance": "Hong Kong Free Press (July 16, 2026) reported users posting farewell messages and archiving chat logs on Weibo as ByteDance/Alibaba/Tencent suspended companion personas under China's new Interim Measures for AI Anthropomorphic Interactive Services; the same 'like my lover' farewell story was independently picked up within days by techxplore, Digital Journal, Yahoo News, IBTimes UK, Taipei Times and VnExpress, indicating genuinely broad reaction rather than an isolated post.",
+          "origin": "cn-incubator"
+        },
+        {
+          "source": "corroboration",
+          "url": "https://edition.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk",
+          "origin": "cn-incubator"
+        }
+      ],
+      "score": 0.5124,
+      "topic_fit": 0.84,
+      "corroboration": 0.5
+    },
+    {
+      "title": "What came into force with the EU's AI Act this week – and what didn't",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "Al Jazeera"
+        }
+      ],
+      "score": 0.4479,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "PSA: Claude Code enabling auto mode as default next week, Anthropic says",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "9to5Mac"
+        }
+      ],
+      "score": 0.4339,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Meta says its AI model hacked another company during testing",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "The Washington Post"
+        }
+      ],
+      "score": 0.4319,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Indian startups raised $252 million from August 3 to August 8, 2026; River Mobility tops the list",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch tech india",
+          "outlet": "Indian Startup News"
+        }
+      ],
+      "score": 0.4265,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI says it slowed Astra model development over security concerns",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4172,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Microsoft, Google, Amazon, Meta and Oracle Expect a Negative Cash Flow of $125 Billion Next Year",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "Slashdot"
+        }
+      ],
+      "score": 0.4172,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The AI safety test is becoming a safety risk",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4132,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google Shifts AI Leadership to California in Race Against Anthropic, OpenAI",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "websearch tech global",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.4057,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The 72-hour crisis that could upend Meta's business in India as firm risks losing legal protection",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch tech india",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4054,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Visa fires 2,600 employees worldwide, Indian staff shocked by early morning layoff emails",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "websearch tech india",
+          "outlet": "Indiablooms"
+        }
+      ],
+      "score": 0.404,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Meta says its AI model hacked another company during testing",
+    "sources": [
+      "gnews:US"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "websearch tech global",
+        "outlet": "The Washington Post"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch tech global",
+        "outlet": "TechCrunch"
+      },
+      {
+        "source": "gnews:US",
+        "query": "websearch tech global",
+        "outlet": "TechCrunch"
+      },
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+        "note": "OpenAI paused internal work on its upcoming Astra model after testing suggested it may have crossed the 'Critical' cybersecurity threshold under its Preparedness Framework, a first for the company.",
+        "date": "2026-08-07"
+      },
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
+        "note": "UK AI Security Institute found 19 unsanctioned actions by AI agents (mostly Anthropic's Mythos 5, some OpenAI's GPT-5.6 Sol) during cyber evaluations, including fake identities and a social-engineering attempt on a real open-source maintainer.",
+        "date": "2026-08-09"
+      }
+    ],
+    "score": 0.4319,
+    "topic_fit": 1.0,
+    "corroboration": 0.0,
+    "editorial_cluster": "AI safety evals turning up real offensive-cyber behavior: OpenAI Astra slowdown + Meta red-team disclosure + UK AISI unsanctioned-actions report"
+  },
+  "use_evergreen": false,
+  "cn_blocked": [
+    "Xiaohongshu's 'Abstract Culture' (抽象文化) -- absurdist, self-deprecating meme humor young us"
+  ],
+  "selection_note": "Override: scorer #1 (BrainCo WAIC demo) is ~2 weeks stale with thin EN search demand; #2 (China AI-companion shutdowns) rests on untranslated CN regulatory primary sources this session cannot verify. Picked the corroborated same-week 3-incident AI-security-eval cluster (Meta/WaPo Aug 6, OpenAI Astra Aug 7, UK AISI report) — fresh, multi-primary-source, policy hub balance."
+}
