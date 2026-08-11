@@ -1,0 +1,5 @@
+{
+  "hacker_news": [],
+  "status": "failed",
+  "error": "EGRESS_BLOCKED - Access to hn.algolia.com is blocked by the network egress proxy (attempted twice for each endpoint: search?tags=front_page and search_by_date?tags=story, same result both times). Consistent with prior sessions (2026-07-22, 2026-07-23, 2026-08-10) which hit the identical block on this domain."
+}

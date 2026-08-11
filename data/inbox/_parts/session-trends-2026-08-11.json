@@ -1,0 +1,13 @@
+{
+  "IN": {
+    "trends_rss": []
+  },
+  "US": {
+    "trends_rss": []
+  },
+  "status": {
+    "IN": "failed",
+    "US": "failed"
+  },
+  "error": "EGRESS_BLOCKED: trends.google.com is blocked by the network egress proxy for this container. Both https://trends.google.com/trending/rss?geo=<GEO> and the alternate https://trends.google.com/trends/trendingsearches/daily/rss?geo=<GEO> form were attempted for IN and US and all four requests failed identically with error_type EGRESS_BLOCKED. No trend data was retrieved; no figures were fabricated."
+}
