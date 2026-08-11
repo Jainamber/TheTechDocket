@@ -1,7 +1,74 @@
 {
-  "generated_at": "2026-08-10T08:01:10.164224+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-08-11T06:40:20.837639+05:30",
+  "page_stats": {
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 7
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "pwc-ai-hallucinations-big-four-pattern": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "qwen3-8-max-what-alibaba-launched": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gpt-5-6-luna-price-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gemini-3-6-flash-what-google-launched": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "openai-agent-hugging-face-breach": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "context-windows-explained": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "qualcomm-snapdragon-price-hike": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "ai-tools": 10,
+    "explainers": 7,
+    "ai-models": 4,
+    "policy": 1,
+    "hardware": 2
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
