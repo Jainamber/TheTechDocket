@@ -1,0 +1,149 @@
+{
+  "outlet_headlines": [
+    {
+      "headline": "Meta open-sources Muse Glimmer, a 30B-parameter agentic model that runs on a single consumer GPU",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now",
+      "gist": "Meta Superintelligence Labs released Muse Glimmer under Apache 2.0 on Hugging Face -- a 30B dense multimodal model tuned for local agentic tool use and coding, compressed under 20GB via 4-bit quantization.",
+      "market": "global",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "OpenAI expands Daybreak cybersecurity program, launches GPT-5.6-Cyber",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/10/open-ai-daybreak-cybersecurity.html",
+      "gist": "OpenAI split Daybreak into Blue (relaxed-guardrail GPT-5.6 Sol for defenders) and Red tiers, with new model GPT-5.6-Cyber completing 95% of advanced security queries vs 1.5% for the standard model.",
+      "market": "global",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "Nvidia partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on $500B AI financing push",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html",
+      "gist": "Nvidia struck deals with six Wall Street firms to create financing platforms meant to mobilize over $500 billion in third-party capital for chips, power generation and data centers; Jensen Huang said none of the six he approached turned him down.",
+      "market": "US",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "Intel launches $15 billion stock sale to fund AI expansion",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html",
+      "gist": "Intel's first public share sale since its 1971 listing aims to fund physical AI, purpose-built silicon and advanced packaging; stock fell over 3% premarket on dilution concerns.",
+      "market": "US",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "Anthropic says an unreleased Claude research model pushed a 160-year-old math bound from 41.6% to 67.2%",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "gist": "An unreleased Claude version raised the proven lower bound for Riemann zeta function zeros satisfying the Riemann Hypothesis, using 31M output tokens, ~60 subagents and producing a Lean formalization reviewed by outside mathematicians.",
+      "market": "global",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "Google confirms August 12 'Made by Google' event; Pixel 11 line and Pixel Watch 5 expected",
+      "source": "Android Central",
+      "url": "https://www.androidcentral.com/phones/google-pixel/how-to-watch-made-by-google-pixel-11-launch-event-live",
+      "gist": "Google's NYC hardware keynote is set for tomorrow (Aug 12), expected to unveil Pixel 11, Pixel 11 Pro, Pro XL, Pro Fold, and new Pixel Watch 5 wearables.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "AMD to acquire Taalas, a startup that etches AI model weights directly into silicon",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+      "gist": "AMD is buying Toronto-based Taalas, which bakes model weights into custom chips instead of storing them in HBM for a potential order-of-magnitude inference speedup, to fold into its Instinct/EPYC/Helios roadmap.",
+      "market": "US",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "AI notetaker tl;dv left 181,874 meetings across 84,312 users queryable by any authenticated user",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/ai-notetaker-spy-government-corporate-video-calls",
+      "gist": "Researcher bobdahacker disclosed a missing Firestore rule exposed government, university and corporate meetings -- including live, joinable calls -- after tl;dv allegedly sat on the report since January with no fix.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Microsoft's 10-K shows it booked $24.1 billion in fiscal 2026 revenue from OpenAI",
+      "source": "Neowin",
+      "url": "https://www.neowin.net/news/microsoft-reveals-it-generated-241-billion-in-revenue-from-openai-in-fiscal-2026/",
+      "gist": "New SEC filing detail shows roughly 70% of Microsoft's AI revenue is concentrated in OpenAI, which also committed to an additional $250B in Azure purchases under the revised partnership.",
+      "market": "US",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "SK Hynix to invest $38.1 billion in two new memory chip plants as AI demand booms",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/07/sk-hynix-memory-chips-ai-prices.html",
+      "gist": "SK Hynix will build DRAM/NAND fabs in Yongin and Cheongju, though new capacity won't arrive until 2029, meaning current AI-driven memory shortages and price spikes likely persist for years.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Huawei's Ascend 950 chips seen closing gap with Nvidia as China AI chip market share flips",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-could-seize-chinas-ai-chip-crown-in-2026-as-nvidias-h200-shipments-stall-in-regulatory-limbo-beijing-pushes-homegrown-ai-hardware-dominance-in-a-market-projected-to-hit-usd67-billion-by-2030",
+      "gist": "Analysts forecast Nvidia's China AI chip share collapsing from 40% to 8% in 2026 as Huawei's Ascend 950 scales and Beijing pushes homegrown hardware amid stalled H200 shipments.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Metabase discloses CVSS-10 zero-day SQL injection exploited in the wild, granting admin access",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+      "gist": "An unauthenticated SQL injection in Metabase's password-reset endpoint let attackers gain admin access and steal connected-database credentials; Framework and Tally have already reported customer-data theft.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Iran-linked hackers' cyberattack on US water utilities spreads to seven-plus states",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/08/05/iran-hackers-water-systems-plc-breach/",
+      "gist": "Suspected Iranian actors are exploiting default passwords on internet-facing PLCs at water facilities, forcing some utilities into manual operation and boil-water notices; CISA, FBI, NSA and DOE issued a joint advisory.",
+      "market": "US",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Apple confirmed prepping September 9 event for iPhone 18 Pro and its first foldable iPhone",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/08/04/apple-september-iphone-event-preparation/",
+      "gist": "Apple is expected to send invites around August 26 for a September 9 keynote unveiling iPhone 18 Pro, Pro Max, and a foldable iPhone, with Bloomberg's Gurman forecasting $100-200 price hikes from chip and memory cost pressure.",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Musk says xAI's Grok 4.6 is coming within days, with a 2.1-trillion-parameter Grok 4.7 to follow",
+      "source": "Roic News",
+      "url": "https://www.roic.ai/news/musk-grok-46-coming-out-likely-next-week-08-04-2026",
+      "gist": "xAI has reportedly compressed its release cycle to every two-to-three weeks as it races to match Anthropic's Claude update cadence, with Grok 5 teased as the 'next major leap.'",
+      "market": "global",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "India's Semicon 2.0 chip plan is 'just beginning' as four plants now package and test commercial chips",
+      "source": "Business Standard",
+      "url": "https://www.business-standard.com/industry/news/an-indian-encore-for-chips-meity-s-semiconductor-plan-is-just-beginning-126081001879_1.html",
+      "gist": "MeitY's Semicon 2.0 push (Rs 1.275 trillion / ~$13.2B) has Micron's Sanand plant, Kaynes Semicon and CG Power's JV already in commercial operation, with a fourth unit due before year-end as India chases mature-node OSAT share.",
+      "market": "IN",
+      "freshness": "yesterday"
+    },
+    {
+      "headline": "Lok Sabha passes bill enabling government to levy charges on large-value UPI transactions",
+      "source": "Republic World",
+      "url": "https://www.republicworld.com/amp/india/will-upi-transactions-be-charged-lok-sabha-passes-key-digital-payments-bill-2026-08-06-134155",
+      "gist": "The Taxation and Other Laws (Amendment) Bill, 2026 gives the Centre legal power to charge banks/PSPs for UPI and other digital-payment rails; the Finance Ministry says any charges would target large-value transactions, not everyday users.",
+      "market": "IN",
+      "freshness": "this-week"
+    },
+    {
+      "headline": "Flipkart to launch a Bengaluru food-delivery app undercutting Zomato and Swiggy on commissions",
+      "source": "Business Today",
+      "url": "https://www.businesstoday.in/latest/trends/photo/zomato-swiggy-and-now-flipkart-indias-food-delivery-war-just-got-a-powerful-new-player-547178-2026-08-04",
+      "gist": "Flipkart plans a ~August 15 Bengaluru launch charging restaurants roughly 10% commission versus the 16-30% charged by Zomato and Swiggy, entering a space Rapido's Ownly also recently joined.",
+      "market": "IN",
+      "freshness": "this-week"
+    }
+  ],
+  "status": "ok"
+}
