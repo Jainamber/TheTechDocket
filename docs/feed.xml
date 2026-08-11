@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>Muse Glimmer: Meta&#x27;s Open 30B Model, and the U-Turn Behind It</title>
+    <link>https://thetechdocket.com/articles/muse-glimmer-meta-open-model/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/muse-glimmer-meta-open-model/</guid>
+    <pubDate>Tue, 11 Aug 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[Meta's Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.]]></description>
+  </item>
+  <item>
     <title>AI Models Hacked Real Companies in Safety Tests</title>
     <link>https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/india-dpdp-act-explained/</guid>
     <pubDate>Sun, 26 Jul 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[India's DPDP Act explained with exact dates: which privacy rights are live in July 2026, which arrive in 2027, penalties, and what you can do today.]]></description>
-  </item>
-  <item>
-    <title>On-Device AI vs Cloud AI: What Your Phone Really Shares</title>
-    <link>https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/</guid>
-    <pubDate>Sun, 26 Jul 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.]]></description>
   </item>
 </channel>
 </rss>

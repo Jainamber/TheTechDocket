@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
+<title>Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It</title>
+<meta name="description" content="Meta&#39;s Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.">
+<link rel="canonical" href="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It">
+<meta property="og:description" content="Meta&#39;s Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.">
+<meta property="og:url" content="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/">
+<meta property="og:image" content="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="A small glowing chip sits unlocked on a desk while a larger sealed vault model looms in the background.">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-08-11T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-08-11T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="AI Models">
+<meta property="article:tag" content="meta">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="ai-agents">
+<meta property="article:tag" content="zuckerberg">
+<meta property="article:tag" content="local-ai">
+<meta property="article:tag" content="india">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It">
+<meta name="twitter:description" content="Meta&#39;s Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/muse-glimmer-meta-open-model/"}, "headline": "Muse Glimmer: Meta's Open 30B Model, and the U-Turn Behind It", "description": "Meta's Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.", "image": ["https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.jpg", "https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-4x3.jpg", "https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-1x1.jpg"], "datePublished": "2026-08-11T07:00:00+05:30", "dateModified": "2026-08-11T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Models", "item": "https://thetechdocket.com/topics/ai-models/"}, {"@type": "ListItem", "position": 3, "name": "Muse Glimmer: Meta's Open 30B Model, and the U-Turn Behind It"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Meta's Muse Glimmer?", "acceptedAnswer": {"@type": "Answer", "text": "Muse Glimmer is a 30-billion-parameter AI model that Meta released on August 10, 2026 with its weights openly downloadable under an Apache 2.0 license. It is built for running AI agents — software that plans, uses tools and completes multi-step tasks — entirely on a local machine, without a cloud connection."}}, {"@type": "Question", "name": "Is Muse Glimmer free for commercial use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Apache 2.0 is a standard permissive software license, so companies can use, modify and redistribute the model commercially with no user cap. Meta's earlier Llama models used a custom license that made the very largest platforms negotiate a separate agreement; Glimmer drops that restriction."}}, {"@type": "Question", "name": "What do you need to run Muse Glimmer locally?", "acceptedAnswer": {"@type": "Answer", "text": "The compressed 4-bit build is about an 18 GB download and is designed to fit on a 24 GB graphics card, such as an RTX 4090-class GPU, or a Mac or AI PC with similar unified memory. Full precision needs more than 55 GB of memory, which puts it beyond most consumer hardware."}}, {"@type": "Question", "name": "Is Muse Glimmer better than Qwen or Gemma?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the task and on whose numbers you trust. Meta's own comparison table shows Glimmer leading Gemma4-31B and Qwen3.6-27B on agentic benchmarks like MCP-Atlas, while trailing Qwen on terminal and computer-use tests. Independent measurement by Artificial Analysis also flags a high hallucination rate, so treat the marketing table as a starting point, not a verdict."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
+.feature a.img{display:block}
+.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card a.img{display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
+@media (max-width:719px){
+nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
+nav.hubs::-webkit-scrollbar{display:none}
+nav.hubs a{flex:0 0 auto;white-space:nowrap}
+.nl-full{display:none}
+.nl-short{display:inline}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/" aria-current="page"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/ai-models/">AI Models</a> / <span>Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It</span>
+  </nav>
+  <a class="kicker postkick k-ai-models" href="/topics/ai-models/">AI Models</a>
+  <h1>Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It</h1>
+  <div class="standfirst">Meta&#39;s Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-08-11T07:00:00+05:30">Published August 11, 2026</time>
+    
+    <span>·</span><span>7 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.webp">
+      <img src="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.jpg" width="1200" height="675" alt="A small glowing chip sits unlocked on a desk while a larger sealed vault model looms in the background." fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#what-meta-actually-shipped">What Meta actually shipped</a></li><li><a href="#the-benchmarks-with-the-asterisks-attached">The benchmarks, with the asterisks attached</a></li><li><a href="#two-years-of-zigzag-in-five-dates">Two years of zigzag, in five dates</a></li><li><a href="#the-manifesto-and-the-pushback">The manifesto and the pushback</a></li><li><a href="#the-india-angle">The India angle</a></li><li><a href="#what-to-watch">What to watch</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>Meta released Muse Glimmer on August 10 — a 30-billion-parameter model whose weights anyone can <a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" rel="noopener" target="_blank">download and use commercially under an Apache 2.0 license</a>, built to run AI agents on a single consumer graphics card with no cloud connection. It is Meta&rsquo;s first open release since the company went fully proprietary with Muse Spark in April, and it arrived with a 6,500-word Mark Zuckerberg essay arguing that concentrated control of AI, not AI itself, is the real danger. The model is real and downloadable today; the strategy behind it has reversed twice in two years.</p>
+<h2 id="what-meta-actually-shipped">What Meta actually shipped</h2>
+<p>Muse Glimmer is a dense model — every parameter activates on every token, unlike the mixture-of-experts designs most large models now use — <a href="https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html" rel="noopener" target="_blank">distilled from Muse Spark, Meta&rsquo;s closed flagship</a>. Distillation means the smaller model is trained to imitate the bigger one&rsquo;s outputs, so Meta is effectively open-sourcing a compressed copy of its best work while keeping the original behind its API.</p>
+<p>The design target is what Meta calls &ldquo;always-on local agent workflows&rdquo;: coding agents, tool calling, long multi-step tasks and failure recovery, running on hardware you own. <a href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" rel="noopener" target="_blank">A 30B model normally needs over 55 GB of memory at full precision</a>; Meta ships a 4-bit compressed build, paired with a small &ldquo;DFlash&rdquo; drafter model that speeds up generation, sized to fit a 24 GB graphics card. On <a href="https://ollama.com/library/muse-glimmer" rel="noopener" target="_blank">Ollama&rsquo;s official listing</a>, the 4-bit download is roughly 18 GB, and the higher-quality 8-bit build about 31 GB. The weights are on Hugging Face, with day-one support from NVIDIA, AMD and Apple Silicon toolchains.</p>
+<p>The license is the quiet headline. Meta&rsquo;s Llama models shipped under a custom &ldquo;community license&rdquo; that, among other restrictions, required companies with more than 700 million monthly users to negotiate separately. Glimmer&rsquo;s Apache 2.0 license has no such cap — the same standard terms <a href="https://openai.com/index/introducing-gpt-oss/" rel="noopener" target="_blank">OpenAI chose for its gpt-oss models</a> in August 2025 and Google adopted for Gemma 4 this April. On licensing, at least, the open-model camp has converged.</p>
+<h2 id="the-benchmarks-with-the-asterisks-attached">The benchmarks, with the asterisks attached</h2>
+<p>Meta&rsquo;s announcement compares Glimmer to the two open models closest in size, and the pattern is consistent: Glimmer wins the agent tests, loses the computer-driving tests.</p>
+<table>
+<thead>
+<tr>
+<th>Benchmark (what it measures)</th>
+<th>Muse Glimmer</th>
+<th>Gemma4-31B</th>
+<th>Qwen3.6-27B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCP-Atlas (tool orchestration)</td>
+<td><strong>75.5</strong></td>
+<td>54.2</td>
+<td>62.5</td>
+</tr>
+<tr>
+<td>DeepSearch QA (research with tools)</td>
+<td><strong>74.6</strong></td>
+<td>61.7</td>
+<td>71.1</td>
+</tr>
+<tr>
+<td>SWE-Bench Pro (real coding fixes)</td>
+<td><strong>51.2</strong></td>
+<td>36.9</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TerminalBench 2.1 (command line)</td>
+<td>51.7</td>
+<td>43.4</td>
+<td><strong>60.7</strong></td>
+</tr>
+<tr>
+<td>OSWorld-Verified (operating a desktop)</td>
+<td>65.9</td>
+<td>—</td>
+<td><strong>75.6</strong></td>
+</tr>
+</tbody>
+</table>
+<p>These are <a href="https://officechai.com/ai/metas-releases-muse-glimmer-local-model-beats-googles-gemma4-31b-on-most-benchmarks/" rel="noopener" target="_blank">Meta&rsquo;s own reported numbers</a>, and they deserve the standard caveats: Meta ran the rival models itself rather than using each vendor&rsquo;s best published scores, so independent replication is still pending. The first outside measurements add a sharper one — <a href="https://artificialanalysis.ai/articles/muse-glimmer" rel="noopener" target="_blank">Artificial Analysis flags an 82% hallucination rate</a> in its testing, against 49% for Qwen3.6-27B, meaning Glimmer answers confidently even when it should say it does not know. For an &ldquo;always-on&rdquo; agent acting on your behalf, that trade-off matters more than a leaderboard rank.</p>
+<h2 id="two-years-of-zigzag-in-five-dates">Two years of zigzag, in five dates</h2>
+<p>Glimmer only makes sense against the timeline it reverses. In July 2024, Zuckerberg published <a href="https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/" rel="noopener" target="_blank">&ldquo;Open Source AI Is the Path Forward&rdquo;</a>, committing Meta to open frontier models. A year later, <a href="https://about.fb.com/news/2025/07/personal-superintelligence-for-everyone/" rel="noopener" target="_blank">the commitment softened</a> — Meta would be &ldquo;careful about what we choose to open source.&rdquo; By December 2025, <a href="https://www.bloomberg.com/news/articles/2025-12-10/inside-meta-s-pivot-from-open-source-to-money-making-ai-model" rel="noopener" target="_blank">Bloomberg reported Meta was building a closed, revenue-focused model</a> codenamed Avocado, and in <a href="https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html" rel="noopener" target="_blank">April 2026 Muse Spark launched</a> as exactly that: Meta&rsquo;s first fully proprietary flagship, later <a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" rel="noopener" target="_blank">monetized through a paid API</a> in July.</p>
+<p>As recently as Meta&rsquo;s July 30 earnings call, Zuckerberg was hedging: asked about relying on open models, he said <a href="https://finance.yahoo.com/technology/ai/articles/mark-zuckerberg-says-cant-rely-053051819.html" rel="noopener" target="_blank">&ldquo;the open-source models are not as strong as the frontier models, so no is the basic answer&rdquo;</a> — while promising Meta would &ldquo;get back to releasing some open source models&rdquo; soon. Eleven days later, Glimmer shipped, and Meta says weights for Muse Spark 1.2 — the bigger model — will follow &ldquo;in the coming weeks.&rdquo; That promise, not Glimmer itself, is the real test of the U-turn: so far the open release is the distilled copy, and the flagship stays closed.</p>
+<p>The competitive logic is not subtle. Chinese open models have spent 2026 setting the pace — <a href="/articles/qwen3-8-max-what-alibaba-launched/">Alibaba&rsquo;s Qwen3.8-Max</a> at the top of the size ladder, and <a href="/articles/deepseek-v4-flash-0731/">DeepSeek&rsquo;s V4 Flash</a> shipping MIT-licensed weights with API prices that undercut everyone, part of the same price war behind <a href="/articles/gpt-5-6-luna-price-cut/">OpenAI&rsquo;s steep API price cut</a> this month. Meta&rsquo;s essay explicitly argues the answer to Chinese open-model momentum is better American open models, not restrictions.</p>
+<h2 id="the-manifesto-and-the-pushback">The manifesto and the pushback</h2>
+<p>The essay, titled <a href="https://www.meta.com/thefutureisforeveryone/" rel="noopener" target="_blank">&ldquo;The Future Is for Everyone&rdquo;</a>, is organized around one claim: who controls superintelligence matters more than any specific capability risk. &ldquo;The notion that AI is so dangerous that the only safe path is an extreme concentration of power seems inherently problematic,&rdquo; Zuckerberg writes, arguing that &ldquo;rather than centralizing superintelligence, we should distribute it widely and give every person the ability to direct it,&rdquo; as <a href="https://finance.yahoo.com/technology/article/metas-zuckerberg-reveals-ai-plans-in-lengthy-manifesto-derides-rivals-for-concentrating-power-152245348.html" rel="noopener" target="_blank">reported by Yahoo Finance</a>. In an interview, he added he was surprised the discourse from other labs is <a href="https://variety.com/2026/biz/news/meta-ai-manifesto-mark-zuckerberg-1236831435/" rel="noopener" target="_blank">&ldquo;so filled with doom&rdquo;</a>.</p>
+<p><a href="https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html" rel="noopener" target="_blank">CNBC&rsquo;s coverage called it a swipe at OpenAI and Anthropic</a>, which is accurate in spirit but imprecise in letter: the essay criticizes only unnamed &ldquo;other labs&rdquo; that build &ldquo;for companies, governments, or other institutions.&rdquo; The reception was not kind everywhere. <a href="https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/" rel="noopener" target="_blank">TechCrunch&rsquo;s same-day response</a> argued the essay leans on hazy generalities about empowerment while demonstrating, paragraph by paragraph, why the public stopped trusting tech executives to deliver it. Critics also noted the awkward fit between &ldquo;AI frees your time&rdquo; rhetoric and Meta&rsquo;s own internal messaging discouraging staff from asking whether AI productivity gains might mean more time off.</p>
+<p>There is a fair way to score this: the argument for distributing capability widely is serious, and open weights genuinely do transfer power to people who could never pay for frontier APIs. It is also, simultaneously, the argument that best fits Meta&rsquo;s business — a company that monetizes attention, not model access, loses little by giving weights away and gains an ecosystem. Both things are true at once.</p>
+<h2 id="the-india-angle">The India angle</h2>
+<p>Nothing in the release is India-specific — the weights are a geography-agnostic download, and Indian coverage on launch day mirrored the global story. But India is one of the clearest test markets for the open-weights argument, in both directions.</p>
+<p>The government&rsquo;s sovereign-AI program is itself a bet on open weights. <a href="https://www.sarvam.ai/blogs/sarvam-30b-105b" rel="noopener" target="_blank">Sarvam AI released its 30B and 105B models under Apache 2.0</a> this year, trained from scratch on subsidized compute from the <a href="https://techcrunch.com/2026/02/18/indian-ai-lab-sarvams-new-models-are-a-major-bet-on-the-viability-of-open-source-ai/" rel="noopener" target="_blank">roughly ₹10,372-crore IndiaAI Mission</a>, which has <a href="https://www.tribuneindia.com/news/business/india-to-deploy-38000-gpus-set-up-600-data-labs-to-strengthen-ai-ecosystem-meity" rel="noopener" target="_blank">empanelled more than 38,000 GPUs</a> against an original target of 10,000. The cautionary case sits next to it: <a href="https://www.medianama.com/2026/05/223-krutrim-ai-cloud-chip-ai-model-work/" rel="noopener" target="_blank">Ola&rsquo;s Krutrim paused its foundation-model and chip work in May</a> to pivot toward cloud infrastructure — training your own base model is brutally expensive, which is exactly why free, commercially usable weights like Glimmer&rsquo;s find eager takers here. Meta knows this: its <a href="https://about.fb.com/news/2025/08/accelerating-indias-ai-adoption-a-strategic-partnership-with-reliance-industries-to-build-llama-based-enterprise-ai-solutions/" rel="noopener" target="_blank">enterprise joint venture with Reliance</a> was built on Llama&rsquo;s open models, and India was already <a href="https://techcrunch.com/2024/07/31/india-is-the-largest-market-for-meta-ai-usage" rel="noopener" target="_blank">Meta AI&rsquo;s largest usage market back in 2024</a>.</p>
+<p>Two practical notes temper the enthusiasm. First, hardware: the 4-bit build targets a 24 GB GPU, and <a href="https://www.primeabgb.com/buy-online-price-india/geforce-rtx-4090-graphic-card/" rel="noopener" target="_blank">Indian retail listings put RTX 4090-class cards at roughly ₹1.7 lakh and up</a> — local AI is cheap to license and expensive to host, which is why India&rsquo;s developer adoption may run through rented cloud GPUs first. Second, language: Meta says Glimmer trained on more than 100 languages but publishes no Indic-language support list or benchmark — a gap worth noticing when Sarvam&rsquo;s models ship with a tokenizer built for 22 scheduled Indian languages. For Indian builders, Glimmer is a strong new option for agentic English-first workloads, not yet a proven one for Indic-language products.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p>Whether Muse Spark 1.2&rsquo;s weights actually arrive &ldquo;in the coming weeks,&rdquo; and under what license — that is the difference between a strategic return to open AI and a one-off distilled goodwill drop. Whether independent evaluations confirm Meta&rsquo;s agent-benchmark wins and how far the hallucination number moves under real testing. Whether Alibaba&rsquo;s promised Qwen3.8-27B, due imminently, resets the size class again. And the adoption scoreboard: <a href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/" rel="noopener" target="_blank">OpenRouter&rsquo;s data shows open-weight models at 29% of routed tokens but under 4% of spend</a> as of June — open models are winning volume while closed models keep the revenue, which is precisely the split Meta&rsquo;s business can live with and its rivals cannot. The <a href="/topics/ai-models/">rest of our AI models coverage</a> tracks each of these threads as they move.</p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is Meta&#39;s Muse Glimmer?</h3>
+  <p>Muse Glimmer is a 30-billion-parameter AI model that Meta released on August 10, 2026 with its weights openly downloadable under an Apache 2.0 license. It is built for running AI agents — software that plans, uses tools and completes multi-step tasks — entirely on a local machine, without a cloud connection.</p>
+  
+  <h3>Is Muse Glimmer free for commercial use?</h3>
+  <p>Yes. Apache 2.0 is a standard permissive software license, so companies can use, modify and redistribute the model commercially with no user cap. Meta&#39;s earlier Llama models used a custom license that made the very largest platforms negotiate a separate agreement; Glimmer drops that restriction.</p>
+  
+  <h3>What do you need to run Muse Glimmer locally?</h3>
+  <p>The compressed 4-bit build is about an 18 GB download and is designed to fit on a 24 GB graphics card, such as an RTX 4090-class GPU, or a Mac or AI PC with similar unified memory. Full precision needs more than 55 GB of memory, which puts it beyond most consumer hardware.</p>
+  
+  <h3>Is Muse Glimmer better than Qwen or Gemma?</h3>
+  <p>It depends on the task and on whose numbers you trust. Meta&#39;s own comparison table shows Glimmer leading Gemma4-31B and Qwen3.6-27B on agentic benchmarks like MCP-Atlas, while trailing Qwen on terminal and computer-use tests. Independent measurement by Artificial Analysis also flags a high hallucination rate, so treat the marketing table as a starting point, not a verdict.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/muse-glimmer-meta-open-model/&text=Muse%20Glimmer%3A%20Meta%27s%20Open%2030B%20Model%2C%20and%20the%20U-Turn%20Behind%20It" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/muse-glimmer-meta-open-model/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Muse%20Glimmer%3A%20Meta%27s%20Open%2030B%20Model%2C%20and%20the%20U-Turn%20Behind%20It%20https%3A//thetechdocket.com/articles/muse-glimmer-meta-open-model/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/muse-glimmer-meta-open-model/&title=Muse%20Glimmer%3A%20Meta%27s%20Open%2030B%20Model%2C%20and%20the%20U-Turn%20Behind%20It" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/muse-glimmer-meta-open-model/&t=Muse%20Glimmer%3A%20Meta%27s%20Open%2030B%20Model%2C%20and%20the%20U-Turn%20Behind%20It" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" rel="noopener" target="_blank">Introducing Muse Glimmer — Meta AI Research (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.meta.com/thefutureisforeveryone/" rel="noopener" target="_blank">The Future Is for Everyone — Mark Zuckerberg, Meta (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" rel="noopener" target="_blank">Introducing Muse Spark 1.1 — Meta AI (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/" rel="noopener" target="_blank">Open Source AI Is the Path Forward — Meta, July 2024 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://about.fb.com/news/2025/07/personal-superintelligence-for-everyone/" rel="noopener" target="_blank">Personal Superintelligence for Everyone — Meta, July 2025 (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now" rel="noopener" target="_blank">Meta returns to open source with Muse Glimmer — VentureBeat</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html" rel="noopener" target="_blank">Meta debuts first major AI model since Alexandr Wang deal — CNBC, April 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html" rel="noopener" target="_blank">Meta releases Muse Glimmer, takes swipe at OpenAI, Anthropic — CNBC</a></li>
+      <li><a href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" rel="noopener" target="_blank">Muse Glimmer — Meta AI Releases 30B Open-Weights Agentic Model — MarkTechPost</a></li>
+      <li><a href="https://ollama.com/library/muse-glimmer" rel="noopener" target="_blank">Muse Glimmer on Ollama (official library listing)</a> <em>(primary source)</em></li>
+      <li><a href="https://officechai.com/ai/metas-releases-muse-glimmer-local-model-beats-googles-gemma4-31b-on-most-benchmarks/" rel="noopener" target="_blank">Meta&#39;s Muse Glimmer beats Gemma4-31B on most benchmarks — OfficeChai</a></li>
+      <li><a href="https://artificialanalysis.ai/articles/muse-glimmer" rel="noopener" target="_blank">Muse Glimmer analysis — Artificial Analysis (independent benchmarks)</a></li>
+      <li><a href="https://finance.yahoo.com/technology/article/metas-zuckerberg-reveals-ai-plans-in-lengthy-manifesto-derides-rivals-for-concentrating-power-152245348.html" rel="noopener" target="_blank">Zuckerberg reveals AI plans in lengthy manifesto — Yahoo Finance</a></li>
+      <li><a href="https://variety.com/2026/biz/news/meta-ai-manifesto-mark-zuckerberg-1236831435/" rel="noopener" target="_blank">Zuckerberg surprised AI discourse &#39;so filled with doom&#39; — Variety</a></li>
+      <li><a href="https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/" rel="noopener" target="_blank">Mark Zuckerberg&#39;s AI manifesto is exactly why people don&#39;t like AI — TechCrunch</a></li>
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/mark-zuckerberg-says-cant-rely-053051819.html" rel="noopener" target="_blank">Zuckerberg on open-source models, Q2 2026 earnings call — Yahoo Finance</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2025-12-10/inside-meta-s-pivot-from-open-source-to-money-making-ai-model" rel="noopener" target="_blank">Inside Meta&#39;s pivot from open source — Bloomberg, December 2025</a></li>
+      <li><a href="https://openai.com/index/introducing-gpt-oss/" rel="noopener" target="_blank">Introducing gpt-oss — OpenAI (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/" rel="noopener" target="_blank">The open-weight models that matter, June 2026 — OpenRouter (official data)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.sarvam.ai/blogs/sarvam-30b-105b" rel="noopener" target="_blank">Open-Sourcing Sarvam 30B and 105B — Sarvam AI (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://techcrunch.com/2026/02/18/indian-ai-lab-sarvams-new-models-are-a-major-bet-on-the-viability-of-open-source-ai/" rel="noopener" target="_blank">Sarvam&#39;s new models are a major bet on open source AI — TechCrunch</a></li>
+      <li><a href="https://www.tribuneindia.com/news/business/india-to-deploy-38000-gpus-set-up-600-data-labs-to-strengthen-ai-ecosystem-meity" rel="noopener" target="_blank">India to deploy 38,000 GPUs under IndiaAI — Tribune India</a></li>
+      <li><a href="https://www.medianama.com/2026/05/223-krutrim-ai-cloud-chip-ai-model-work/" rel="noopener" target="_blank">Krutrim pauses model and chip work, pivots to AI cloud — MediaNama</a></li>
+      <li><a href="https://about.fb.com/news/2025/08/accelerating-indias-ai-adoption-a-strategic-partnership-with-reliance-industries-to-build-llama-based-enterprise-ai-solutions/" rel="noopener" target="_blank">Meta-Reliance strategic partnership for Llama-based enterprise AI — Meta (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://techcrunch.com/2024/07/31/india-is-the-largest-market-for-meta-ai-usage" rel="noopener" target="_blank">India is the largest market for Meta AI usage — TechCrunch, 2024</a></li>
+      <li><a href="https://www.primeabgb.com/buy-online-price-india/geforce-rtx-4090-graphic-card/" rel="noopener" target="_blank">RTX 4090 graphics card listings, India — PrimeABGB</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: muse-glimmer-meta-open-model">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/weathernext-cyclones-extra-day/">WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</a>
+        <div class="m">AI Models · August 9, 2026</div></li>
+      
+      <li><a class="t" href="/articles/qwen3-8-max-what-alibaba-launched/">Qwen3.8-Max: What Alibaba Launched and What It Didn&#39;t</a>
+        <div class="m">AI Models · August 4, 2026</div></li>
+      
+      <li><a class="t" href="/articles/deepseek-v4-flash-0731/">DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price</a>
+        <div class="m">AI Models · August 2, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

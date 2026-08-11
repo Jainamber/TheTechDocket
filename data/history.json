@@ -557,6 +557,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-10-ai-models-hacking-companies-safety-tests.json",
       "url": "https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/"
+    },
+    {
+      "date": "2026-08-11",
+      "slug": "muse-glimmer-meta-open-model",
+      "title": "Muse Glimmer: Meta's Open 30B Model, and the U-Turn Behind It",
+      "keyword": "muse glimmer",
+      "hub": "ai-models",
+      "published_at": "2026-08-11T07:01:18.654985+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-11T08:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-11-muse-glimmer-meta-open-model.json",
+      "url": "https://thetechdocket.com/articles/muse-glimmer-meta-open-model/"
     }
   ]
 }
