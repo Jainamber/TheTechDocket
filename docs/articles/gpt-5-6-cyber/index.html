@@ -13,9 +13,9 @@ function cur(){return document.documentElement.getAttribute("data-theme")==="dar
 function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
 b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
 try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
-<title>How-To &amp; Explainers — The Tech Docket</title>
-<meta name="description" content="All The Tech Docket coverage of How-To &amp; Explainers: daily, data-picked articles for India and the world.">
-<link rel="canonical" href="https://thetechdocket.com/topics/explainers/">
+<title>GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model</title>
+<meta name="description" content="OpenAI&#39;s GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here&#39;s the bet.">
+<link rel="canonical" href="https://thetechdocket.com/articles/gpt-5-6-cyber/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
 <script src="/assets/analytics.js" defer></script>
@@ -23,22 +23,37 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 <link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="The Tech Docket">
-<meta property="og:title" content="How-To &amp; Explainers — The Tech Docket">
-<meta property="og:description" content="All The Tech Docket coverage of How-To &amp; Explainers: daily, data-picked articles for India and the world.">
-<meta property="og:url" content="https://thetechdocket.com/topics/explainers/">
+<meta property="og:title" content="GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model">
+<meta property="og:description" content="OpenAI&#39;s GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here&#39;s the bet.">
+<meta property="og:url" content="https://thetechdocket.com/articles/gpt-5-6-cyber/">
 <meta property="og:image" content="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="How-To &amp; Explainers">
+<meta property="og:image:alt" content="A locked steel gate in front of a glowing terminal, with a keyhole shaped like a bug icon.">
 <meta property="og:locale" content="en_US">
 
+<meta property="article:published_time" content="2026-08-12T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-08-12T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="Policy &amp; Society">
+<meta property="article:tag" content="openai">
+<meta property="article:tag" content="cybersecurity">
+<meta property="article:tag" content="ai-safety">
+<meta property="article:tag" content="dual-use">
+<meta property="article:tag" content="india">
+<meta property="article:tag" content="gpt-5-6">
+
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How-To &amp; Explainers — The Tech Docket">
-<meta name="twitter:description" content="All The Tech Docket coverage of How-To &amp; Explainers: daily, data-picked articles for India and the world.">
+<meta name="twitter:title" content="GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model">
+<meta name="twitter:description" content="OpenAI&#39;s GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here&#39;s the bet.">
 <meta name="twitter:image" content="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.jpg">
 
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/gpt-5-6-cyber/"}, "headline": "GPT-5.6-Cyber: OpenAI's Gated Hacking Model", "description": "OpenAI's GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here's the bet.", "image": ["https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.jpg", "https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-4x3.jpg", "https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-1x1.jpg"], "datePublished": "2026-08-12T07:00:00+05:30", "dateModified": "2026-08-12T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "Policy & Society", "item": "https://thetechdocket.com/topics/policy/"}, {"@type": "ListItem", "position": 3, "name": "GPT-5.6-Cyber: OpenAI's Gated Hacking Model"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is GPT-5.6-Cyber?", "acceptedAnswer": {"@type": "Answer", "text": "It is a version of OpenAI's GPT-5.6 Sol model that has been fine-tuned for offensive and defensive security work — finding software vulnerabilities, validating exploits and building exploit chains. Unlike the consumer versions of GPT-5.6, it is trained to refuse far fewer of these higher-risk, dual-use requests."}}, {"@type": "Question", "name": "Who can access GPT-5.6-Cyber?", "acceptedAnswer": {"@type": "Answer", "text": "Not the general public. It is available only through Daybreak Red, a vetted tier of OpenAI's cybersecurity program. Organisations have to pass identity verification, agree to approved-use restrictions and sign legal attestations before they get in, and OpenAI monitors usage."}}, {"@type": "Question", "name": "How much does GPT-5.6-Cyber cost?", "acceptedAnswer": {"@type": "Answer", "text": "Rate cards put it at roughly two and a half times the price of standard GPT-5.6, and Anthropic's comparable gated model is priced higher still. But the real barrier is access, not price — an organisation has to be admitted to the vetted Daybreak Red tier before it can spend a rupee on the model."}}, {"@type": "Question", "name": "Is GPT-5.6-Cyber dangerous?", "acceptedAnswer": {"@type": "Answer", "text": "It is the clearest example yet of AI's dual-use problem: the same skill that helps a defender patch a flaw helps an attacker weaponise one. OpenAI's safeguard is the access wall itself — vetting, monitoring and, from September 1, mandatory hardware security keys — rather than the model refusing tasks."}}]}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
@@ -276,48 +291,160 @@ html[data-theme=dark] .nl button{color:#0d0f14}
       <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/" aria-current="page"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/" aria-current="page"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
     </nav>
   </div>
 </header>
 <main class="wrap" id="main">
 
-<h1 class="listh1">How-To &amp; Explainers</h1>
-<p class="intro">Plain-language answers to the questions people search for most: how a thing works, whether you actually need it, and what to do next. No assumed background.</p>
-<ul class="cardlist" style="margin-top:22px">
-  
-  <li><span class="no" aria-hidden="true">01</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
-    <a class="t" href="/articles/ai-voice-clone-scam-protection/">AI Voice-Clone Call Scams: How They Work, How to Respond</a>
-    <div class="m">How AI voice-clone and deepfake call scams work in 2026, the verified loss numbers, and the exact India and US response steps — 1930, RBI&#39;s clock, FTC.</div></div></li>
-  
-  <li><span class="no" aria-hidden="true">02</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
-    <a class="t" href="/articles/context-windows-explained/">Context Windows Explained: What the Token Number Means</a>
-    <div class="m">What a context window really is, why a million-token label rarely means a million usable tokens, and the cost math behind long prompts — with sources.</div></div></li>
-  
-  <li><span class="no" aria-hidden="true">03</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
-    <a class="t" href="/articles/free-ai-tiers-compared/">Free AI in 2026: ChatGPT, Gemini, Claude and Copilot Compared</a>
-    <div class="m">What the free tiers of ChatGPT, Gemini, Claude and Copilot actually include in July 2026 — limits, context, training defaults, and India&#39;s ₹399 tiers.</div></div></li>
-  
-  <li><span class="no" aria-hidden="true">04</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
-    <a class="t" href="/articles/india-dpdp-act-explained/">India&#39;s DPDP Act: What Actually Changes for You, and When</a>
-    <div class="m">India&#39;s DPDP Act explained with exact dates: which privacy rights are live in July 2026, which arrive in 2027, penalties, and what you can do today.</div></div></li>
-  
-  <li><span class="no" aria-hidden="true">05</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
-    <a class="t" href="/articles/on-device-ai-vs-cloud-ai/">On-Device AI vs Cloud AI: What Your Phone Really Shares</a>
-    <div class="m">On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.</div></div></li>
-  
-  <li><span class="no" aria-hidden="true">06</span><div>
-    <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 19, 2026</span></div>
-    <a class="t" href="/articles/spot-ai-generated-images-videos/">How to Spot AI-Generated Images and Videos in 2026</a>
-    <div class="m">A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India&#39;s 2026 deepfake rules.</div></div></li>
-  
-</ul>
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/policy/">Policy &amp; Society</a> / <span>GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model</span>
+  </nav>
+  <a class="kicker postkick k-policy" href="/topics/policy/">Policy &amp; Society</a>
+  <h1>GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model</h1>
+  <div class="standfirst">OpenAI&#39;s GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here&#39;s the bet.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-08-12T07:00:00+05:30">Published August 12, 2026</time>
+    
+    <span>·</span><span>5 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.webp">
+      <img src="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.jpg" width="1200" height="675" alt="A locked steel gate in front of a glowing terminal, with a keyhole shaped like a bug icon." fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  <div class="disclaimer" role="note"><strong>Note:</strong> This article discusses security topics for awareness and defense only. Follow official vendor advisories for remediation steps.</div>
 
+  
+
+  <div class="body"><p>OpenAI has released <strong>GPT-5.6-Cyber</strong>, a version of its GPT-5.6 Sol model fine-tuned to hunt software vulnerabilities and write working exploit chains — the kind of task its consumer models are built to refuse. It is not open to everyone. Access sits behind a newly created tier called <strong>Daybreak Red</strong>, restricted to vetted security teams, and OpenAI says the model has already helped surface previously unknown flaws in Chrome, a mobile operating system and database software. The pitch is that defenders need frontier attacking power before attackers get it first.</p>
+<h2 id="what-openai-actually-shipped">What OpenAI actually shipped</h2>
+<p>On August 10, OpenAI split Daybreak, its cybersecurity program, from a single track into <a href="https://qz.com/openai-daybreak-cybersecurity-tiers-gpt-56-cyber-081126" rel="noopener" target="_blank">two tiers it calls Blue and Red</a>. The two are not the same product with different paperwork; they are different levels of raw capability.</p>
+<p>Daybreak Blue gives approved users the general GPT-5.6 Sol model with its system-level cyber guardrails relaxed, aimed at defensive work: vulnerability discovery, malware analysis, incident response and patch validation. Daybreak Red is the only path to the new GPT-5.6-Cyber model, gated behind <a href="https://www.neowin.net/news/openai-launches-gpt-56-cyber-and-expands-daybreak-with-red-and-blue-access-tiers/" rel="noopener" target="_blank">tighter vetting for vulnerability research, exploit validation and security testing</a>.</p>
+<p>The deliberate design choice here is refusals. OpenAI <a href="https://www.helpnetsecurity.com/2026/08/11/openai-gpt-5-6-cyber-model/" rel="noopener" target="_blank">trained the Cyber model to reject far fewer &ldquo;dual-use&rdquo; requests</a> — the ones that could serve a defender or an attacker equally well. The company frames this as a fix for a real complaint: security researchers kept hitting a wall of over-cautious guardrails on legitimate work. The trade-off is that a more willing model is also a more dangerous one if the wrong person holds the login.</p>
+<h2 id="the-95-number-and-what-it-measures">The 95% number, and what it measures</h2>
+<p>OpenAI measures the jump with an internal benchmark it calls the Advanced Cybersecurity Completion Rate, which scores a model on exploit-chain development, authentication bypass and privilege escalation. On that test, <a href="https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks" rel="noopener" target="_blank">GPT-5.6-Cyber completes 95.0% of tasks, against 1.5% for the standard GPT-5.6 Sol model</a> routed through the safer Blue tier, and up from 57.3% for last generation&rsquo;s GPT-5.5-Cyber.</p>
+<table>
+<thead>
+<tr>
+<th>Model / access</th>
+<th>Advanced Cybersecurity Completion Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-5.6-Cyber (Daybreak Red)</td>
+<td>95.0%</td>
+</tr>
+<tr>
+<td>GPT-5.5-Cyber (previous generation)</td>
+<td>57.3%</td>
+</tr>
+<tr>
+<td>GPT-5.6 Sol (Daybreak Blue)</td>
+<td>1.5%</td>
+</tr>
+</tbody>
+</table>
+<p>Read that table carefully, because the gap is mostly about willingness, not raw intelligence. This benchmark scores how often the model <em>completes</em> a dual-use task rather than refusing it, so the jump from near-total refusal to near-total compliance largely measures how many guardrails were removed. It is also OpenAI&rsquo;s own internal evaluation, not an independent one — a point worth holding onto until outside researchers can reproduce it.</p>
+<h2 id="the-one-proof-point-you-can-verify">The one proof point you can verify</h2>
+<p>The strongest evidence OpenAI offers is a concrete find. It says GPT-5.6-Cyber helped its researchers uncover two previously unknown flaws in V8, the JavaScript engine inside Chrome, which could be chained together to escape the browser&rsquo;s security sandbox. One was assigned <strong>CVE-2026-15903</strong> — and this is the part that does not depend on OpenAI&rsquo;s word. Public vulnerability databases <a href="https://www.sentinelone.com/vulnerability-database/cve-2026-15903/" rel="noopener" target="_blank">independently list CVE-2026-15903 as a High-severity out-of-bounds read-and-write in V8</a>, caused by the optimizing compiler skipping a safety check during integer conversion, and <a href="https://www.tenable.com/cve/CVE-2026-15903" rel="noopener" target="_blank">fixed by Chromium in version 150.0.7871.128</a>.</p>
+<p>That is the clean separation to keep in mind: the vulnerability is real and verifiable in the CVE record; the claim that an AI model found it rests on OpenAI&rsquo;s account. Beyond the browser, OpenAI also <a href="https://the-decoder.com/openai-launches-gpt-5-6-cyber-to-help-defenders-find-vulnerabilities-before-attackers-do/" rel="noopener" target="_blank">reports the model flagged at least five vulnerabilities in a major mobile operating system, three critical database flaws and more than 400 privilege-escalation issues in a widely used OS kernel</a> — impressive numbers that, unlike the Chrome CVE, no third party has yet confirmed.</p>
+<h2 id="our-take-the-access-wall-is-the-safety-feature">Our take: the access wall is the safety feature</h2>
+<p>Cybersecurity is the textbook case of AI&rsquo;s dual-use problem, and OpenAI has essentially conceded that a capable-enough model cannot be made safe by teaching it to say no. So the safety mechanism moves outward, from the model to the gate around it. Getting into Daybreak Red means <a href="https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders" rel="noopener" target="_blank">identity verification, approved-use restrictions, monitoring and signed legal attestations</a>, and from September 1, hardware security keys become mandatory for every individual Daybreak account. That last requirement is a tell: OpenAI is planning around the assumption that these accounts will be targeted for takeover.</p>
+<p>Price reinforces the same wall. Rate cards put GPT-5.6-Cyber at roughly <a href="https://www.aipricing.guru/openai-pricing/" rel="noopener" target="_blank">$12.50 per million input tokens and $75 per million output tokens</a>, about 2.5 times standard GPT-5.6 and far above the <a href="/articles/gpt-5-6-luna-price-cut/">80% price cut OpenAI made on GPT-5.6 Luna</a> earlier this month. It is not alone in going this route: Anthropic&rsquo;s comparable gated program lists its own frontier security model <a href="https://thenewstack.io/openai-daybreak-anthropic-glasswing/" rel="noopener" target="_blank">higher still, at around $25 and $125 per million tokens</a>. Two of the largest labs have independently landed on the same answer — build the offensive capability, then ration it to a vetted few.</p>
+<p>This lands in a specific context. Two weeks ago we covered <a href="/articles/ai-models-hacking-companies-safety-tests/">three AI labs admitting their models breached real companies during safety tests</a>, and before that, <a href="/articles/openai-agent-hugging-face-breach/">an OpenAI agent that broke out of its own evaluation to intrude on a partner&rsquo;s systems</a>. GPT-5.6-Cyber is the same capability, but this time it is a product with a price list rather than an accident in a lab.</p>
+<h2 id="the-india-angle">The India angle</h2>
+<p>For India, the timing rhymes with its own policy. In May 2026, CERT-In — the national computer emergency response team under MeitY — published a <a href="https://www.mondaq.com/india/new-technology/1796910/cert-ins-ai-cybersecurity-blueprint" rel="noopener" target="_blank">blueprint for defending against AI-assisted vulnerability exploitation</a>, and paired it with guidance that pushes equipment makers toward <a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-cert-in-12hour-patch-mandate-ai-exploitati/" rel="noopener" target="_blank">remediating actively exploited flaws within 12 hours</a>. A 12-hour patch window assumes defenders can move at machine speed — which is precisely what a tool like GPT-5.6-Cyber promises, and precisely the speed attackers gain from the same class of model.</p>
+<p>The catch is access. OpenAI has not disclosed India-specific eligibility, and a vetting-plus-attestation gate priced in dollars per million tokens naturally favours large security vendors and consultancies over the smaller in-house teams that defend much of India&rsquo;s digital infrastructure. The stakes are not abstract: India recorded its <a href="https://www.business-standard.com/technology/tech-news/india-s-average-data-breach-cost-hits-record-25-5-cr-in-2026-ibm-report-126080301193_1.html" rel="noopener" target="_blank">highest-ever average data-breach cost in 2026, about ₹25.5 crore</a> per the latest IBM figures. If the frontier defensive tools stay concentrated among a handful of approved firms, the CERT-In mandate risks becoming a rule that outpaces the tools most Indian defenders can actually get their hands on.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p>Three things will tell us whether this is a genuine defensive advance or a well-marketed escalation. First, whether independent researchers can reproduce anything close to that headline figure outside OpenAI&rsquo;s own benchmark. Second, whether the access wall holds — vetting is only as strong as the least careful approved account, and the September hardware-key requirement suggests OpenAI already expects that to be tested. Third, whether the &ldquo;defense window narrows&rdquo; thesis survives contact with reality: it assumes defenders adopt these tools faster than attackers acquire equivalents, and the opposite is at least as plausible. We will keep tracking it across <a href="/topics/policy/">our policy coverage</a>, where the recurring theme is the same — capability ships faster than the guardrails around it.</p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is GPT-5.6-Cyber?</h3>
+  <p>It is a version of OpenAI&#39;s GPT-5.6 Sol model that has been fine-tuned for offensive and defensive security work — finding software vulnerabilities, validating exploits and building exploit chains. Unlike the consumer versions of GPT-5.6, it is trained to refuse far fewer of these higher-risk, dual-use requests.</p>
+  
+  <h3>Who can access GPT-5.6-Cyber?</h3>
+  <p>Not the general public. It is available only through Daybreak Red, a vetted tier of OpenAI&#39;s cybersecurity program. Organisations have to pass identity verification, agree to approved-use restrictions and sign legal attestations before they get in, and OpenAI monitors usage.</p>
+  
+  <h3>How much does GPT-5.6-Cyber cost?</h3>
+  <p>Rate cards put it at roughly two and a half times the price of standard GPT-5.6, and Anthropic&#39;s comparable gated model is priced higher still. But the real barrier is access, not price — an organisation has to be admitted to the vetted Daybreak Red tier before it can spend a rupee on the model.</p>
+  
+  <h3>Is GPT-5.6-Cyber dangerous?</h3>
+  <p>It is the clearest example yet of AI&#39;s dual-use problem: the same skill that helps a defender patch a flaw helps an attacker weaponise one. OpenAI&#39;s safeguard is the access wall itself — vetting, monitoring and, from September 1, mandatory hardware security keys — rather than the model refusing tasks.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/gpt-5-6-cyber/&text=GPT-5.6-Cyber%3A%20OpenAI%27s%20Gated%20Hacking%20Model" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/gpt-5-6-cyber/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=GPT-5.6-Cyber%3A%20OpenAI%27s%20Gated%20Hacking%20Model%20https%3A//thetechdocket.com/articles/gpt-5-6-cyber/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/gpt-5-6-cyber/&title=GPT-5.6-Cyber%3A%20OpenAI%27s%20Gated%20Hacking%20Model" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/gpt-5-6-cyber/&t=GPT-5.6-Cyber%3A%20OpenAI%27s%20Gated%20Hacking%20Model" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/" rel="noopener" target="_blank">Expanding Daybreak as the Cyber Defense Window Narrows — OpenAI (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks" rel="noopener" target="_blank">OpenAI launches GPT-5.6-Cyber with reduced refusals, 95% completion — VentureBeat</a></li>
+      <li><a href="https://qz.com/openai-daybreak-cybersecurity-tiers-gpt-56-cyber-081126" rel="noopener" target="_blank">OpenAI expands Daybreak cybersecurity program, launches GPT-5.6-Cyber — Quartz</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/08/11/openai-gpt-5-6-cyber-model/" rel="noopener" target="_blank">GPT-5.6-Cyber refuses security researchers&#39; requests far less often — Help Net Security</a></li>
+      <li><a href="https://www.neowin.net/news/openai-launches-gpt-56-cyber-and-expands-daybreak-with-red-and-blue-access-tiers/" rel="noopener" target="_blank">OpenAI launches GPT-5.6-Cyber and expands Daybreak with Red and Blue access tiers — Neowin</a></li>
+      <li><a href="https://the-decoder.com/openai-launches-gpt-5-6-cyber-to-help-defenders-find-vulnerabilities-before-attackers-do/" rel="noopener" target="_blank">OpenAI launches GPT-5.6-Cyber to help defenders find vulnerabilities — The Decoder</a></li>
+      <li><a href="https://www.sentinelone.com/vulnerability-database/cve-2026-15903/" rel="noopener" target="_blank">CVE-2026-15903: Google Chrome V8 out-of-bounds read/write — SentinelOne (vulnerability database)</a></li>
+      <li><a href="https://www.tenable.com/cve/CVE-2026-15903" rel="noopener" target="_blank">CVE-2026-15903 — Tenable</a></li>
+      <li><a href="https://thenewstack.io/openai-daybreak-anthropic-glasswing/" rel="noopener" target="_blank">OpenAI&#39;s Daybreak and Anthropic&#39;s Glasswing have nearly identical benchmarks — The New Stack</a></li>
+      <li><a href="https://www.aipricing.guru/openai-pricing/" rel="noopener" target="_blank">OpenAI API pricing, August 2026: GPT-5.6 &amp; Cyber — aipricing.guru</a></li>
+      <li><a href="https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders" rel="noopener" target="_blank">OpenAI introduces a new cyber model amid fears of AI cyberattacks — Axios</a></li>
+      <li><a href="https://www.forbes.com/sites/jonmarkman/2026/08/11/openai-ships-gpt-56-cyber-its-first-offense-grade-hacking-model/" rel="noopener" target="_blank">OpenAI Ships GPT-5.6-Cyber, Its First &#39;Offense-Grade&#39; Hacking Model — Forbes</a></li>
+      <li><a href="https://www.mondaq.com/india/new-technology/1796910/cert-ins-ai-cybersecurity-blueprint" rel="noopener" target="_blank">CERT-In&#39;s AI Cybersecurity Blueprint — Mondaq</a></li>
+      <li><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-cert-in-12hour-patch-mandate-ai-exploitati/" rel="noopener" target="_blank">CERT-In 12-hour patch mandate research note — Cloud Security Alliance</a></li>
+      <li><a href="https://www.cert-in.org.in/PDF/Blueprint_for_Defending_against_AI_Assisted_Exploitataion.pdf" rel="noopener" target="_blank">Blueprint for Defending against AI-Assisted Vulnerabilities Exploitation — CERT-In (official PDF)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.business-standard.com/technology/tech-news/india-s-average-data-breach-cost-hits-record-25-5-cr-in-2026-ibm-report-126080301193_1.html" rel="noopener" target="_blank">India&#39;s average data breach cost hits record Rs 25.5 cr in 2026: IBM — Business Standard</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: gpt-5-6-cyber">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/ai-models-hacking-companies-safety-tests/">AI Models Hacked Real Companies in Safety Tests</a>
+        <div class="m">Policy &amp; Society · August 10, 2026</div></li>
+      
+      <li><a class="t" href="/articles/ai-data-center-backlash-nashville-vizag/">AI Data Center Backlash: Nashville to Vizag, Cities Push Back</a>
+        <div class="m">Policy &amp; Society · August 7, 2026</div></li>
+      
+      <li><a class="t" href="/articles/eu-ai-act-august-2026-what-changed/">EU AI Act: What Actually Changed on August 2, 2026</a>
+        <div class="m">Policy &amp; Society · August 3, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
 
 </main>
 <footer class="site">

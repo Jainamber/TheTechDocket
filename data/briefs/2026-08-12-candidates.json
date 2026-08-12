@@ -1,0 +1,276 @@
+{
+  "date": "2026-08-12",
+  "candidates": [
+    {
+      "title": "OpenAI launches GPT-5.6-Cyber, an offense-grade cybersecurity model with reduced refusals",
+      "keyword": "gpt-5.6-cyber",
+      "sources": [
+        "outlet:The Hacker News",
+        "outlet:VentureBeat",
+        "outlet:Forbes"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:The Hacker News",
+          "outlet": "The Hacker News",
+          "title": "OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development"
+        },
+        {
+          "source": "outlet:VentureBeat",
+          "outlet": "VentureBeat",
+          "title": "OpenAI launches GPT-5.6-Cyber with reduced refusals, 95% completion on advanced cybersecurity tasks",
+          "url": "https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks"
+        },
+        {
+          "source": "outlet:Forbes",
+          "outlet": "Forbes",
+          "title": "OpenAI Ships GPT-5.6-Cyber, Its First “Offense-Grade” Hacking Model"
+        }
+      ],
+      "score": 0.377,
+      "topic_fit": 0.92,
+      "corroboration": 0.67,
+      "selection_note": "Editorial override of scorer pick: top-scored candidate was a pre-event 'how to watch Made by Google' story — the event is 6 PM ET today (03:30 IST Aug 13), so no launch facts exist yet; tomorrow's session is the right slot for the Pixel 11 piece. Chose GPT-5.6-Cyber: corroborated across 3+ independent outlets plus OpenAI's own announcement, fresh searchable model name, and it extends our existing AI-security cluster."
+    },
+    {
+      "title": "How to watch Made by Google 2026 — Pixel 11, Pixel Watch 5, Pixel Tag and more",
+      "sources": [
+        "outlet:Tom's Guide"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tom's Guide",
+          "outlet": "Tom's Guide"
+        }
+      ],
+      "score": 0.4133,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Deeptech startup Discovered Materials raises $9M in Seed round",
+      "sources": [
+        "outlet:YourStory"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:YourStory",
+          "outlet": "YourStory"
+        }
+      ],
+      "score": 0.3882,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Discovered Materials Closes $9M Seed Round to Accelerate the Adoption of New Materials for Semiconductor Chips",
+      "sources": [
+        "outlet:Morningstar"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Morningstar",
+          "outlet": "Morningstar"
+        }
+      ],
+      "score": 0.3826,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Top Tech News Today, August 10, 2026: Apple, Google, Intel, Meta, OpenAI, TSMC, Unitree & More",
+      "sources": [
+        "outlet:Tech Startups"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tech Startups",
+          "outlet": "Tech Startups"
+        }
+      ],
+      "score": 0.3826,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia, Wall Street asset managers partner on $500B AI push",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.3778,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia taps Wall Street for $500 billion funding commitment",
+      "sources": [
+        "outlet:Fortune"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Fortune",
+          "outlet": "Fortune"
+        }
+      ],
+      "score": 0.3766,
+      "topic_fit": 0.94,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic, Macquarie and GIC Form Venture for AI Data Centers",
+      "sources": [
+        "outlet:Bloomberg"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.3765,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic recruits Macquarie, GIC for data center venture",
+      "sources": [
+        "outlet:The Real Deal"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:The Real Deal",
+          "outlet": "The Real Deal"
+        }
+      ],
+      "score": 0.375,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Made by Google 2026 Launch Live: Pixel 11, Pixel 11 Pro Fold, Pixel Watch 5, Gemini, and all the news",
+      "sources": [
+        "outlet:Android Central"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Android Central",
+          "outlet": "Android Central"
+        }
+      ],
+      "score": 0.375,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "EU prepares to force Google to open Android to ChatGPT and Claude under Digital Markets Act",
+      "sources": [
+        "outlet:TNW"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:TNW",
+          "outlet": "TNW"
+        }
+      ],
+      "score": 0.3739,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "GIC and Macquarie form Theseus Infrastructure to serve Anthropic's data center needs",
+      "sources": [
+        "outlet:Data Center Dynamics"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Data Center Dynamics",
+          "outlet": "Data Center Dynamics"
+        }
+      ],
+      "score": 0.37,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "EU Orders Google to Open Android to ChatGPT and Claude by July 2027 — DMA AI Assistant Rules",
+      "sources": [
+        "outlet:AIToolsRecap"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:AIToolsRecap",
+          "outlet": "AIToolsRecap"
+        }
+      ],
+      "score": 0.3667,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "OpenAI launches GPT-5.6-Cyber, an offense-grade cybersecurity model with reduced refusals",
+    "keyword": "gpt-5.6-cyber",
+    "sources": [
+      "outlet:The Hacker News",
+      "outlet:VentureBeat",
+      "outlet:Forbes"
+    ],
+    "geos": [],
+    "momentum_raw": 0.2,
+    "evidence": [
+      {
+        "source": "outlet:The Hacker News",
+        "outlet": "The Hacker News",
+        "title": "OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development"
+      },
+      {
+        "source": "outlet:VentureBeat",
+        "outlet": "VentureBeat",
+        "title": "OpenAI launches GPT-5.6-Cyber with reduced refusals, 95% completion on advanced cybersecurity tasks",
+        "url": "https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks"
+      },
+      {
+        "source": "outlet:Forbes",
+        "outlet": "Forbes",
+        "title": "OpenAI Ships GPT-5.6-Cyber, Its First “Offense-Grade” Hacking Model"
+      }
+    ],
+    "score": 0.377,
+    "topic_fit": 0.92,
+    "corroboration": 0.67,
+    "selection_note": "Editorial override of scorer pick: top-scored candidate was a pre-event 'how to watch Made by Google' story — the event is 6 PM ET today (03:30 IST Aug 13), so no launch facts exist yet; tomorrow's session is the right slot for the Pixel 11 piece. Chose GPT-5.6-Cyber: corroborated across 3+ independent outlets plus OpenAI's own announcement, fresh searchable model name, and it extends our existing AI-security cluster."
+  },
+  "use_evergreen": false
+}
