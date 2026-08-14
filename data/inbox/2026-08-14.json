@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-14",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "trends_rss_in": "failed (egress blocked)",
+    "trends_rss_us": "failed (egress blocked)",
+    "hacker_news": "failed (egress blocked; HN mirror reported the Cerebras/GPT-5.6 Sol story as front-page #1 but points unavailable)",
+    "websearch": "ok"
+  },
+  "markets": {
+    "IN": {"trends_rss": [], "news": {}, "autocomplete": {}},
+    "US": {"trends_rss": [], "news": {}, "autocomplete": {}}
+  },
+  "hacker_news": [],
+  "outlet_headlines": [
+    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "Free Press Journal", "url": "https://www.freepressjournal.in/business/lt-wins-10000-15000-crore-mega-order-to-build-nvidias-10000-gpu-ai-factory-in-chennai", "note": "from websearch; Rs 10,000-15,000 crore order, Chennai campus of Vyoma.AI, announced 2026-08-13"},
+    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "The Hans India", "url": "https://www.thehansindia.com/business/lt-enters-ai-factory-race-with-rs-15000-crore-mega-order-1109190", "note": "from websearch"},
+    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "Yahoo Finance", "url": "https://finance.yahoo.com/news/l-t-partners-nvidia-gigawatt-112327818.html", "note": "from websearch; gigawatt-scale campus framing"},
+    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "TechChannel News", "url": "https://techchannel.news/lt-to-build-indias-largest-single-cluster-ai-infrastructure-for-together/", "note": "from websearch"},
+    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "Cerebras (official blog)", "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai", "note": "from websearch; HN front page #1 per mirror; announced 2026-08-13"},
+    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "GlobeNewswire", "url": "https://www.globenewswire.com/news-release/2026/08/13/3344804/0/en/cerebras-powers-ultrafast-mode-for-openai-s-gpt-5-6-sol.html", "note": "from websearch; official press release"},
+    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "9to5Mac", "url": "https://9to5mac.com/2026/08/13/openai-previews-ultrafast-gpt-5-6-sol-running-up-to-14-times-faster/", "note": "from websearch; up to 14x faster than Standard"},
+    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "Investing.com", "url": "https://www.investing.com/news/company-news/cerebras-powers-openais-gpt56-sol-ultrafast-mode-at-750-tokenssec-93CH-4858897", "note": "from websearch"},
+    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/technology/articles/exclusive-vantage-data-centers-explores-100830274.html", "note": "from websearch; Reuters exclusive 2026-08-13; would be largest data center IPO"},
+    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "BNN Bloomberg", "url": "https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/", "note": "from websearch"},
+    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "Quartz", "url": "https://qz.com/vantage-data-centers-ipo-sale-100-billion-valuation-081326", "note": "from websearch"},
+    {"title": "OpenAI asks judge to dismiss Apple trade secrets lawsuit calling it rotten to its core", "outlet": "Axios", "url": "https://www.axios.com/2026/08/06/openai-apple-motion-to-dismiss", "note": "from websearch; filed 2026-08-06, hearing Oct 1 — a week old"},
+    {"title": "OpenAI asks judge to dismiss Apple trade secrets lawsuit calling it rotten to its core", "outlet": "AppleInsider", "url": "https://appleinsider.com/articles/26/08/06/openai-fires-back-says-apple-is-suing-because-it-cant-compete", "note": "from websearch"},
+    {"title": "Switch files for US IPO to raise 10 billion dollars at 50 billion valuation", "outlet": "Caproasia", "url": "https://www.caproasia.com/2026/08/09/united-states-data-center-company-switch-files-for-united-states-ipo-to-raise-10-billion-at-50-billion-valuation-80-billion-include-debt-with-earliest-ipo-listing-in-2026-q4-founded-in-2000-by-r/", "note": "from websearch; filed 2026-08-09"},
+    {"title": "DeepSeek releases DeepSeek-V4-Pro-0813", "outlet": "llm-stats.com", "url": "https://llm-stats.com/llm-updates", "note": "from websearch; tracker-only sighting, needs verification"},
+    {"title": "Shiprocket IPO subscribed 3.16x on second day", "outlet": "Business Today", "url": "https://www.businesstoday.in/technology", "note": "from websearch; 2026-08-13"},
+    {"title": "Google consolidates AI leadership as Hassabis steps back to DeepMind chairman role", "outlet": "Tech Startups", "url": "https://techstartups.com/2026/08/13/top-tech-news-today-august-13-2026-anthropic-deepmind-google-lenovo-microsoft-spacexai-more/", "note": "from websearch; dedup risk: site covered DeepMind shake-up 2026-08-06"},
+    {"title": "I4C warns of WhatsApp account takeover fraud campaign targeting businesses", "outlet": "DD News", "url": "https://ddnews.gov.in/en/category/science-tech/", "note": "from websearch; advisory dated 2026-08-07"},
+    {"title": "iQOO Z11 India launch set for August 20", "outlet": "Smartprix", "url": "https://www.smartprix.com/bytes/upcoming-smartphone-launches-in-india-august-2026/", "note": "from websearch; upcoming, not yet launched"}
+  ],
+  "wikipedia_top": []
+}

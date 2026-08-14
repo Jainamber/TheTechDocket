@@ -1,0 +1,258 @@
+{
+ "date": "2026-08-14",
+ "candidates": [
+  {
+   "title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale",
+   "sources": [
+    "outlet:Reuters via Yahoo Finance",
+    "outlet:BNN Bloomberg",
+    "outlet:Quartz"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Reuters via Yahoo Finance",
+     "outlet": "Reuters via Yahoo Finance"
+    },
+    {
+     "source": "outlet:BNN Bloomberg",
+     "outlet": "BNN Bloomberg"
+    },
+    {
+     "source": "outlet:Quartz",
+     "outlet": "Quartz"
+    }
+   ],
+   "score": 0.3905,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "OpenAI asks judge to dismiss Apple trade secrets lawsuit calling it rotten to its core",
+   "sources": [
+    "outlet:Axios",
+    "outlet:AppleInsider"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Axios",
+     "outlet": "Axios"
+    },
+    {
+     "source": "outlet:AppleInsider",
+     "outlet": "AppleInsider"
+    }
+   ],
+   "score": 0.3905,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Switch files for US IPO to raise 10 billion dollars at 50 billion valuation",
+   "sources": [
+    "outlet:Caproasia"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Caproasia",
+     "outlet": "Caproasia"
+    }
+   ],
+   "score": 0.3905,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "I4C warns of WhatsApp account takeover fraud campaign targeting businesses",
+   "sources": [
+    "outlet:DD News"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:DD News",
+     "outlet": "DD News"
+    }
+   ],
+   "score": 0.3895,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI",
+   "sources": [
+    "outlet:Free Press Journal",
+    "outlet:The Hans India",
+    "outlet:Yahoo Finance",
+    "outlet:TechChannel News"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Free Press Journal",
+     "outlet": "Free Press Journal"
+    },
+    {
+     "source": "outlet:The Hans India",
+     "outlet": "The Hans India"
+    },
+    {
+     "source": "outlet:Yahoo Finance",
+     "outlet": "Yahoo Finance"
+    },
+    {
+     "source": "outlet:TechChannel News",
+     "outlet": "TechChannel News"
+    }
+   ],
+   "score": 0.3786,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "DeepSeek releases DeepSeek-V4-Pro-0813",
+   "sources": [
+    "outlet:llm-stats.com"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:llm-stats.com",
+     "outlet": "llm-stats.com"
+    }
+   ],
+   "score": 0.364,
+   "topic_fit": 0.96,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second",
+   "sources": [
+    "outlet:Cerebras (official blog)",
+    "outlet:GlobeNewswire",
+    "outlet:9to5Mac",
+    "outlet:Investing.com"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Cerebras (official blog)",
+     "outlet": "Cerebras (official blog)"
+    },
+    {
+     "source": "outlet:GlobeNewswire",
+     "outlet": "GlobeNewswire"
+    },
+    {
+     "source": "outlet:9to5Mac",
+     "outlet": "9to5Mac"
+    },
+    {
+     "source": "outlet:Investing.com",
+     "outlet": "Investing.com"
+    }
+   ],
+   "score": 0.36,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Google consolidates AI leadership as Hassabis steps back to DeepMind chairman role",
+   "sources": [
+    "outlet:Tech Startups"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Tech Startups",
+     "outlet": "Tech Startups"
+    }
+   ],
+   "score": 0.3556,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Shiprocket IPO subscribed 3.16x on second day",
+   "sources": [
+    "outlet:Business Today"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Business Today",
+     "outlet": "Business Today"
+    }
+   ],
+   "score": 0.3222,
+   "topic_fit": 0.66,
+   "corroboration": 0.0
+  },
+  {
+   "title": "iQOO Z11 India launch set for August 20",
+   "sources": [
+    "outlet:Smartprix"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Smartprix",
+     "outlet": "Smartprix"
+    }
+   ],
+   "score": 0.3098,
+   "topic_fit": 0.64,
+   "corroboration": 0.0
+  }
+ ],
+ "pick": {
+  "title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second",
+  "sources": [
+   "outlet:Cerebras (official blog)",
+   "outlet:GlobeNewswire",
+   "outlet:9to5Mac",
+   "outlet:Investing.com"
+  ],
+  "geos": [],
+  "momentum_raw": 0.2,
+  "evidence": [
+   {
+    "source": "outlet:Cerebras (official blog)",
+    "outlet": "Cerebras (official blog)"
+   },
+   {
+    "source": "outlet:GlobeNewswire",
+    "outlet": "GlobeNewswire"
+   },
+   {
+    "source": "outlet:9to5Mac",
+    "outlet": "9to5Mac"
+   },
+   {
+    "source": "outlet:Investing.com",
+    "outlet": "Investing.com"
+   }
+  ],
+  "score": 0.36,
+  "topic_fit": 1.0,
+  "corroboration": 0.0
+ },
+ "use_evergreen": false,
+ "editorial_override": {
+  "scorer_pick": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale",
+  "override_to": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second",
+  "reason": "Scorer pick is a single-source 'sources say' exploratory story (Reuters exclusive) with no primary source and speculative finance framing - cannot verify or add value. Cerebras/OpenAI Ultrafast is officially announced by both companies (primary sources), HN front-page momentum, new searchable term, and allows real synthesis + India/dev angle. Scores were near-tied (0.3905 vs 0.36) - fallback-day scorer has weak discrimination (corroboration counts source types, not outlets)."
+ }
+}
