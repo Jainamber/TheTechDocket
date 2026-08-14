@@ -1,37 +1,1783 @@
 {
   "date": "2026-08-14",
-  "generated_by": "daily-session-websearch",
+  "generated_by": "engine.fetchers",
   "sources_status": {
-    "trends_rss_in": "failed (egress blocked)",
-    "trends_rss_us": "failed (egress blocked)",
-    "hacker_news": "failed (egress blocked; HN mirror reported the Cerebras/GPT-5.6 Sol story as front-page #1 but points unavailable)",
-    "websearch": "ok"
+    "trends_rss_IN": "ok",
+    "news_IN_new AI model": "ok",
+    "news_IN_tech layoffs": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_new AI model": "ok",
+    "news_US_tech layoffs": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
   },
   "markets": {
-    "IN": {"trends_rss": [], "news": {}, "autocomplete": {}},
-    "US": {"trends_rss": [], "news": {}, "autocomplete": {}}
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "फ्लिपकार्ट",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "9000 रुपये सस्ता मिल रहा Samsung का 5G फोन, फ्लिपकार्ट सेल में घटी कीमत",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/gallery/technology-samsung-galaxy-a36-5g-price-cut-on-flipkart-freedom-sale-check-offers-2026-08-12-1236905"
+            },
+            {
+              "headline": "Pixel 11 लॉन्च होते ही सस्ता हुआ Apple का iPhone 17, खरीदने से पहले देख लें डील",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/technology/tech-news-flipkart-freedom-sale-2026-discount-offer-on-apple-iphone-17-price-drops-40339003.html"
+            },
+            {
+              "headline": "अमेज़न सेल में बड़ी कटौती पर मिलने लगा Galaxy S26 Ultra, अलग से एक्सचेंज और कैशबैक का भी फायदा",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/news/tech/accessories-samsung-galaxy-s26-ultra-amazon-deal-last-day-45000-rupees-discount-exchange-cashback-offers-10741783.html"
+            }
+          ]
+        },
+        {
+          "title": "gurnoor brar",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Gurnoor could be India’s X-Factor in Bumrah’s absence: Maharoof",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/sport/cricket/gurnoor-could-be-indias-x-factor-in-bumrahs-absence-maharoof/article71333918.ece"
+            },
+            {
+              "headline": "Ahead of Sri Lanka Tests, former all-rounder picks uncapped Gurnoor Brar as India's 'x-factor'",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/cricket/news/ahead-of-sri-lanka-tests-former-all-rounder-picks-uncapped-gurnoor-brar-as-indias-x-factor/articleshow/133167808.cms"
+            },
+            {
+              "headline": "THIS star player from Shubman Gill's Gujarat Titans can be 'X-factor' for India vs Sri Lanka in Test series,",
+              "source": "India.com",
+              "url": "https://www.india.com/sports/this-star-player-from-shubman-gill-gujarat-titans-gurnoor-brar-can-be-x-factor-for-india-vs-sri-lanka-in-test-series-feels-farveez-maharoof-8498876/"
+            }
+          ]
+        },
+        {
+          "title": "मनन कुमार मिश्रा",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "बार काउंसिल ने नालसार के 2026 बैच पर फ़ैसला बदला, पहले एनरोलमेंट पर लगाई थी रोक",
+              "source": "BBC",
+              "url": "https://www.bbc.com/hindi/articles/c74gd29q33yo"
+            },
+            {
+              "headline": "कौन हैं मनन कुमार मिश्रा? जिनके आदेश पर मचा बवाल, अभिजीत दीपके ने मांगा इस्तीफा",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/states/bihar/who-is-manan-kumar-mishra-abhijeet-dipke-demand-resignation-from-bci-president-post-3174798"
+            },
+            {
+              "headline": "बैकफुट पर बार काउंसिल, CJI का विरोध करने वाले लॉ ग्रेजुएट्स की प्रैक्टिस पर लगी रोक हटाई",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/india/news/story/bar-council-india-lifts-nalsar-2026-batch-advocate-enrollment-ban-cji-ntcpvp-rptc-2621502-2026-08-13"
+            }
+          ]
+        },
+        {
+          "title": "tiranga",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 13 Aug 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Eye on RSS, Karnataka cabinet clears bill to curb events at public spaces",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/bengaluru/eye-on-rss-karnataka-cabinet-clears-bill-to-curb-events-at-public-spaces/articleshow/133227084.cms"
+            },
+            {
+              "headline": "Karnataka Cabinet Approves Public Property Bill Amid RSS Registration Row",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/india-news/karnataka-cabinet-approves-public-property-bill-amid-rss-registration-row-11907674"
+            },
+            {
+              "headline": "'Bhagwa Dhwaj over tricolour': Priyank Kharge targets BJP over 'Har Ghar Tiranga', says campaign should begin at RSS headquarters",
+              "source": "Deccan Herald",
+              "url": "https://www.deccanherald.com/india/karnataka/bhagwa-dhwaj-over-tricolour-priyank-kharge-targets-bjp-over-har-ghar-tiranga-says-campaign-should-begin-at-rss-headquarters-4109444"
+            }
+          ]
+        },
+        {
+          "title": "amit shah",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "Government wants discussion, Opposition is running away: Rijiju",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/videos/shorts/government-wants-discussion-opposition-is-running-away-rijiju/article71340178.ece"
+            },
+            {
+              "headline": "Monsoon Session: Rahul Gandhi rejects govt’s offer for discussion on NEET protest",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/india/monsoon-session-rahul-gandhi-rejects-govts-offer-for-discussion-on-neet-protest/articleshow/133195446.cms"
+            },
+            {
+              "headline": "Amit Shah to answer, but sets riders; Opp rejects letter advice, last-lap time frame",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/india/amit-shah-to-answer-but-sets-riders-opp-rejects-letter-advice-last-lap-time-frame-prnt/cid/2174697"
+            }
+          ]
+        },
+        {
+          "title": "shiprocket",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 13 Aug 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "Shiprocket IPO: Is the valuation worth paying for?",
+              "source": "Value Research",
+              "url": "https://www.valueresearchonline.com/stories/229311/shiprocket-ipo-is-issue-worth-subscribing-to/"
+            },
+            {
+              "headline": "Temasek-backed Shiprocket's $170 mn IPO fully subscribed",
+              "source": "VCCircle",
+              "url": "https://www.vccircle.com/temasekbacked-shiprocket-s-170-mn-ipo-fully-subscribed"
+            },
+            {
+              "headline": "Shiprocket IPO Day 2: GMP signals 35% listing gains, Subscribed 97% so far: Should you subscribe?",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/shiprocket-ipo-day-2-gmp-signals-35-listing-gains-subscribed-97-so-far-should-you-subscribe/articleshow/133196566.cms"
+            }
+          ]
+        },
+        {
+          "title": "arsenal football",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "Arsenal invite offers for Martinelli and Nwaneri",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/football/articles/cwy42yqwk30o"
+            },
+            {
+              "headline": "Galatasaray make bid to sign Arsenal's Gabriel Martinelli - sources",
+              "source": "ESPN India",
+              "url": "https://www.espn.in/football/story/_/id/49597721/galatasaray-make-bid-sign-arsenal-gabriel-martinelli-sources"
+            },
+            {
+              "headline": "Football transfer rumours: Galatasaray to spend £38m on Arsenal’s Martinelli?",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/football/2026/aug/13/football-transfer-rumour-mill-galatasaray-38m-arsenal-gabriel-martinelli"
+            }
+          ]
+        },
+        {
+          "title": "gold silver price today",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "Gold-Silver Rate Fall: अचानक चांदी में बड़ी गिरावट, इतनी रह गई कीमत... सोना भी धड़ाम",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/business/utility/photo/silver-price-big-fall-gold-also-plunges-today-check-10-gram-24-karat-yellow-metal-rate-update-tutc-2621104-2026-08-13"
+            },
+            {
+              "headline": "5800 रुपया महंगा हुआ सोना, 13200 रुपये बढ़ी चांदी की कीमत महज 72 घंटे में रॉकेट सा चढ़ा भाव",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/business/gold-silver-price-today-on-august-13-2026-24-carat-22-carat-and-18-carat-gold-latest-rate-silver-price-latest-updates-3174420"
+            },
+            {
+              "headline": "सोना 1300 व चांदी 4000 रु. और महंगी",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/rajasthan/jaipur/news/gold-became-costlier-by-rs-1300-and-silver-by-rs-4000-dbp-138710995.html"
+            }
+          ]
+        },
+        {
+          "title": "weather agra",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 18:40:00 -0700",
+          "news": [
+            {
+              "headline": "आगरा में सुबह से छाए बादल, बारिश के आसार: उमस से नहीं है राहत, 19 अगस्त तक ऐसा ही रहेगा मौसम",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/uttar-pradesh/agra/news/agra-weather-update-rain-humidity-forecast-august-2026-138722313.html"
+            },
+            {
+              "headline": "Agra Weather: उमस और गर्मी ने छुड़ाए पसीने, माैसम विभाग ने जारी किया अलर्ट; जानें कब से मिलेगी राहत",
+              "source": "Amar Ujala",
+              "url": "https://www.amarujala.com/uttar-pradesh/agra/meteorological-department-has-issued-yellow-alert-for-rain-in-agra-2026-08-14"
+            },
+            {
+              "headline": "Agra Weather Update: लगी सुबह से बारिश की झड़ी, लुढ़क गया पारा; IMD का यलो अलर्ट है जारी",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/uttar-pradesh/agra-city-agra-weather-update-imd-yellow-alert-for-heavy-rain-6th-august-2026-40331303.html"
+            }
+          ]
+        },
+        {
+          "title": "pyaar prema kalyanam",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 13 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Out and Out Entertainer Pyaar Prema Kalyanam to Stream on Netflix from August 21",
+              "source": "Telugu Times",
+              "url": "https://www.telugutimes.net/en/cinemas/cinema-news/out-and-out-entertainer-pyaar-prema-kalyanam-to-stream-on-netflix-from-august-21-356956.html"
+            },
+            {
+              "headline": "'Pyaar Prema Kalyanam' Trailer: Elan and Yogi Babu starrer 'Pyaar Prema Kalyanam' Official Trailer",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/videos/entertainment/web-series/kannada/pyaar-prema-kalyanam-trailer-elan-and-yogi-babu-starrer-pyaar-prema-kalyanam-official-trailer/videoshow/133221967.cms"
+            },
+            {
+              "headline": "Pyaar Prema Kalyanam trailer: Elan-Saanve Megghana film breaks marital conventions",
+              "source": "Cinema Express",
+              "url": "https://www.cinemaexpress.com/tamil/news/2026/Aug/12/pyaar-prema-kalyanam-trailer-elan-saanve-megghana-film-breaks-marital-conventions"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "Google launches Gemini 3.7 Flash: What’s new in its latest AI model? - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Fri, 14 Aug 2026 02:01:23 GMT"
+          },
+          {
+            "title": "A New Trick Reveals AI Models’ Inner Thoughts - WIRED",
+            "source": "WIRED",
+            "pub_date": "Tue, 11 Aug 2026 11:00:00 GMT"
+          },
+          {
+            "title": "As AI-led attacks multiply, OpenAI launches a new cyber model - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 10 Aug 2026 23:56:15 GMT"
+          },
+          {
+            "title": "This New Open-Weight AI Model Is Built for Video and Robots - CNET",
+            "source": "CNET",
+            "pub_date": "Tue, 11 Aug 2026 13:00:00 GMT"
+          },
+          {
+            "title": "Meta releases new AI model as Zuckerberg lays out vision - Japan Today",
+            "source": "Japan Today",
+            "pub_date": "Mon, 10 Aug 2026 20:30:00 GMT"
+          },
+          {
+            "title": "New AI model reveals the volume of the world's glaciers - Phys.org",
+            "source": "Phys.org",
+            "pub_date": "Fri, 07 Aug 2026 22:40:01 GMT"
+          },
+          {
+            "title": "Meta to open source its most powerful AI model as it takes swipe at OpenAI, Anthropic - CNBC",
+            "source": "CNBC",
+            "pub_date": "Mon, 10 Aug 2026 12:23:11 GMT"
+          },
+          {
+            "title": "DeepSeek's new AI model is by far the cheapest of well-known models to run, research firm says - Reuters",
+            "source": "Reuters",
+            "pub_date": "Sun, 02 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Meta launches Muse Glimmer, an open-weight model that can run on a laptop - businessinsider.com",
+            "source": "businessinsider.com",
+            "pub_date": "Mon, 10 Aug 2026 10:36:00 GMT"
+          },
+          {
+            "title": "Meta Unveils an Open Version of Its Most Powerful A.I. Model - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 10 Aug 2026 10:00:15 GMT"
+          },
+          {
+            "title": "Meta launches new AI model as Zuckerberg champions open-weight push - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 10 Aug 2026 12:26:21 GMT"
+          },
+          {
+            "title": "Introducing Gemini 3.7 Flash - blog.google",
+            "source": "blog.google",
+            "pub_date": "Thu, 13 Aug 2026 17:05:38 GMT"
+          },
+          {
+            "title": "Writer introduces new AI model and upgraded harness to contain token costs - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 13 Aug 2026 21:13:24 GMT"
+          },
+          {
+            "title": "Google Debuts New Gemini Flash While Top AI Model Still Delayed - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Thu, 13 Aug 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Meta Unveils AI Model 'Muse Glimmer' That Can Run On Personal Computers - NDTV",
+            "source": "NDTV",
+            "pub_date": "Tue, 11 Aug 2026 01:22:37 GMT"
+          },
+          {
+            "title": "The AI model that just scored 65% on DeepSWE isn’t the one Google promised. - The New Stack",
+            "source": "The New Stack",
+            "pub_date": "Thu, 13 Aug 2026 20:03:30 GMT"
+          },
+          {
+            "title": "Google launches Gemini 3.7 Flash AI model for coding - qz.com",
+            "source": "qz.com",
+            "pub_date": "Thu, 13 Aug 2026 17:48:41 GMT"
+          },
+          {
+            "title": "Google launches AI model for business automation - New Orleans CityBusiness",
+            "source": "New Orleans CityBusiness",
+            "pub_date": "Thu, 13 Aug 2026 20:12:21 GMT"
+          },
+          {
+            "title": "Google Debuts New Gemini Flash While Top AI Model Still Delayed - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 13 Aug 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Anthropic to implement machine-readable marking across new AI models to ensure content transparency - ANI News",
+            "source": "ANI News",
+            "pub_date": "Wed, 12 Aug 2026 03:43:00 GMT"
+          },
+          {
+            "title": "Zuckerberg manifesto sketches out Meta's ambitions for world-changing AI technology - ABC News - Breaking News, Latest News and Videos",
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "pub_date": "Wed, 12 Aug 2026 14:33:38 GMT"
+          },
+          {
+            "title": "Meta Launches New AI Model Muse Glimmer As Zuckerberg Pushes For Fewer US AI Curbs - outlookbusiness.com",
+            "source": "outlookbusiness.com",
+            "pub_date": "Mon, 10 Aug 2026 12:01:57 GMT"
+          },
+          {
+            "title": "The War Between Open Source, Open Weight, And Closed AI Models - The Next Platform",
+            "source": "The Next Platform",
+            "pub_date": "Thu, 13 Aug 2026 16:41:57 GMT"
+          },
+          {
+            "title": "MongoDB intros latest features to fuel AI development - TechTarget",
+            "source": "TechTarget",
+            "pub_date": "Thu, 13 Aug 2026 21:19:06 GMT"
+          },
+          {
+            "title": "Meta and Nvidia plant 'very firm flag' in open-weight AI race led by Chinese Labs - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 12 Aug 2026 12:00:01 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs tracker 2026: All of the job losses across TikTok, Microsoft, Meta, Oracle, Samsung, Zillow and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Wed, 12 Aug 2026 00:24:08 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Company's '6 am layoff emails' may return in next few days, as Oracle plans… - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 13 Aug 2026 02:35:00 GMT"
+          },
+          {
+            "title": "'AI is an easy scapegoat': White House AI adviser questions whether tech layoffs are really AI-driven - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Mon, 10 Aug 2026 03:47:32 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Tech giant reportedly plans another round of cuts after 21000 job losses this year—All you need to know - livemint.com",
+            "source": "livemint.com",
+            "pub_date": "Wed, 12 Aug 2026 10:28:10 GMT"
+          },
+          {
+            "title": "Oracle plans fresh layoffs amid massive AI infrastructure spending: Report - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Wed, 12 Aug 2026 08:27:44 GMT"
+          },
+          {
+            "title": "Oracle layoffs: 21,000 jobs already cut as tech giant plans fresh workforce reductions amid AI spending - Storyboard18",
+            "source": "Storyboard18",
+            "pub_date": "Wed, 12 Aug 2026 08:25:33 GMT"
+          },
+          {
+            "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sat, 25 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Layoffs tied to AI hurt worker productivity – and the reason may surprise managers - The Conversation",
+            "source": "The Conversation",
+            "pub_date": "Wed, 12 Aug 2026 12:40:22 GMT"
+          },
+          {
+            "title": "While layoffs slow overall, job losses in tech soar - HR Dive",
+            "source": "HR Dive",
+            "pub_date": "Mon, 10 Aug 2026 15:23:10 GMT"
+          },
+          {
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 19:47:42 GMT"
+          },
+          {
+            "title": "66% of AI workers expect layoffs; engineers among least concerned: Survey - People Matters - HR News",
+            "source": "People Matters - HR News",
+            "pub_date": "Mon, 10 Aug 2026 04:07:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: IT Company Planning Another Round Of Job Cuts? What We Know - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Wed, 12 Aug 2026 01:33:47 GMT"
+          },
+          {
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "DJ-turned-Meta engineer laid off after 13 years at tech giant: ‘I was surprised to be affected' | Hindustan Times - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 10 Aug 2026 16:42:04 GMT"
+          },
+          {
+            "title": "Oracle Layoffs 2026: Tech Giant Plans Fresh Job Cuts in September Amid $55.7 Billion AI Spending - Goodreturns",
+            "source": "Goodreturns",
+            "pub_date": "Wed, 12 Aug 2026 07:42:19 GMT"
+          },
+          {
+            "title": "Tech layoffs in 2026 already nearing 2025 total - Palo Alto Online",
+            "source": "Palo Alto Online",
+            "pub_date": "Tue, 11 Aug 2026 22:09:54 GMT"
+          },
+          {
+            "title": "Oracle layoffs: After cutting 21,000 jobs, company plans another layoff wave - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Wed, 12 Aug 2026 04:19:47 GMT"
+          },
+          {
+            "title": "Layoffs at US tech companies crossed 140,000 in the first six months of 2026; of these Amazon, Oracle, Me - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 27 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle layoffs 2026: What Indian employees may get in severance as new job cuts loom - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Wed, 12 Aug 2026 09:16:54 GMT"
+          },
+          {
+            "title": "Oracle employees face new layoff threat months after March job cuts - The American Bazaar",
+            "source": "The American Bazaar",
+            "pub_date": "Wed, 12 Aug 2026 16:09:49 GMT"
+          },
+          {
+            "title": "Indian-origin woman without an H-1B visa was laid off twice in three months before being hired by a Silic - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 29 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle Plans Fresh Layoffs: Which Employees Are At 'High Risk', What Will Be The Severance Package And Reas - News18",
+            "source": "News18",
+            "pub_date": "Wed, 12 Aug 2026 14:16:43 GMT"
+          },
+          {
+            "title": "I went from wedding DJ to Meta engineer, then was laid off after 13 years. My last years there brought constant change. - businessinsider.com",
+            "source": "businessinsider.com",
+            "pub_date": "Sun, 09 Aug 2026 11:09:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs In 1st Half Of 2026 Outpace Entire 2025, India Second-Worst Hit - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 04 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI drives tech layoffs to near-record highs as companies cut jobs to invest in automation and infrastructure. - Pluang",
+            "source": "Pluang",
+            "pub_date": "Sat, 08 Aug 2026 15:58:16 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air force portal",
+          "ai detector",
+          "air conditioner",
+          "ai mode",
+          "airport golf course",
+          "airpods",
+          "ai checker",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt desktop",
+          "chatgpt zero",
+          "chatgpt image generator",
+          "chatgpt codex"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out",
+          "new phone who dis meme"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts",
+          "tech and ai business analyst mckinsey"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "vaccines",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 13 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Trump’s vaccine plan would require millions of individual shots last used decades ago",
+              "source": "AP News",
+              "url": "https://apnews.com/article/vaccines-trump-mmr-drugmakers-5a1d91e149feab99b18dd916412523ee"
+            },
+            {
+              "headline": "Donald Trump takes a fresh swipe at childhood vaccines",
+              "source": "The Economist",
+              "url": "https://www.economist.com/united-states/2026/08/13/donald-trump-takes-a-fresh-swipe-at-childhood-vaccines"
+            },
+            {
+              "headline": "What Trump’s Executive Order Means for Childhood Vaccinations",
+              "source": "Council on Foreign Relations",
+              "url": "https://www.cfr.org/articles/what-trumps-executive-order-means-for-childhood-vaccinations"
+            }
+          ]
+        },
+        {
+          "title": "flu shots",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 13 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Here’s what the first mRNA flu vaccine could mean for flu season",
+              "source": "Science News",
+              "url": "https://www.sciencenews.org/article/first-mrna-flu-vaccine-fall-season"
+            },
+            {
+              "headline": "FDA approves 1st mRNA flu shot, from Moderna",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/health/health-news/fda-approves-1st-mrna-flu-shot-moderna-rcna590599"
+            },
+            {
+              "headline": "Mercy Health doctors excited about new FDA-approved flu vaccine",
+              "source": "WKBN.com",
+              "url": "https://www.wkbn.com/news/local-news/youngstown-news/mercy-health-doctors-excited-about-new-fda-approved-flu-vaccine/"
+            }
+          ]
+        },
+        {
+          "title": "immunizations",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 13 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "It's a \"matter of time\" before Pittsburgh sees measles cases, doctor says",
+              "source": "CBS News",
+              "url": "https://www.cbsnews.com/pittsburgh/news/pennsylvania-measles-pittsburgh-allegheny-county/"
+            },
+            {
+              "headline": "6 measles cases reported amid statewide outbreak",
+              "source": "Lewistown Sentinel",
+              "url": "https://www.lewistownsentinel.com/news/local-news/2026/08/6-measles-cases-reported-amid-statewide-outbreak/"
+            },
+            {
+              "headline": "57 new measles cases reported in Pennsylvania in last week",
+              "source": "ABC27",
+              "url": "https://www.abc27.com/pennsylvania/57-new-measles-cases-reported-in-pennsylvania-in-last-week/"
+            }
+          ]
+        },
+        {
+          "title": "airplane window",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "I Paid for a Window Seat, but the Middle Seat Passenger Closed the Shade—Who Actually Gets to Control It?",
+              "source": "Travel + Leisure",
+              "url": "https://www.travelandleisure.com/who-controls-window-shade-on-flight-12057176"
+            },
+            {
+              "headline": "The real reason tray tables must be stowed for landing",
+              "source": "Escape Australia",
+              "url": "https://www.escape.com.au/travel-advice/air-travel-tips/the-real-reason-tray-tables-must-be-stowed-for-landing/news-story/70b691589fbb6eedbd8f20e769b34f3c"
+            },
+            {
+              "headline": "Never Close Your Window Shade During Takeoff or Landing—Here's Why",
+              "source": "Yahoo Lifestyle Canada",
+              "url": "https://ca.style.yahoo.com/never-close-window-shade-during-131700023.html"
+            }
+          ]
+        },
+        {
+          "title": "shane drohan",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:30:00 -0700",
+          "news": [
+            {
+              "headline": "Brewers' Shane Drohan: Struggles against Twins",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/fantasy/baseball/news/brewers-shane-drohan-struggles-against-twins/"
+            },
+            {
+              "headline": "Shane Drohan Will Go as Far as His Slider Does",
+              "source": "Brewer Fanatic",
+              "url": "https://brewerfanatic.com/news-rumors/milwaukee-brewers/shane-drohan-will-go-as-far-as-his-slider-does-r4894/"
+            },
+            {
+              "headline": "Shane Drohan: Must-Add Waiver Wire Pickup for Week 20 Fantasy Baseball? - MLB News",
+              "source": "RotoBaller",
+              "url": "https://www.rotoballer.com/player-news/shane-drohan-remains-an-appealing-waiver-wire-target-despite-recent-struggles/1907589"
+            }
+          ]
+        },
+        {
+          "title": "monfils",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Monfils, McNally & more: 5 things to watch Thursday in Cincy",
+              "source": "Cincinnati Open",
+              "url": "https://cincinnatiopen.com/news/monfils-mcnally-more-5-things-to-watch-thursday-in-cincy/"
+            },
+            {
+              "headline": "The top first-round WTA matches to watch during the Cincinnati Open",
+              "source": "Cincinnati Enquirer",
+              "url": "https://www.cincinnati.com/story/sports/tennis/2026/08/13/the-top-wta-matches-from-the-cincinnati-open-first-round/91263783007/"
+            },
+            {
+              "headline": "WTA Cincinnati Day 2 Predictions Including Sofia Kenin vs Eva Lys",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/08/13/wta-cincinnati-predictions-kenin-lys/"
+            }
+          ]
+        },
+        {
+          "title": "chase bisontis",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Cardinals rookie exits Raiders preseason game with injury",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/cardinals-rookie-exits-raiders-preseason-021722384.html"
+            },
+            {
+              "headline": "Cardinals' Chase Bisontis: Done for night",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/fantasy/football/news/cardinals-chase-bisontis-done-for-night/"
+            },
+            {
+              "headline": "Cardinals’ Chase Bisontis carted off with left knee injury vs. Raiders",
+              "source": "Arizona Sports",
+              "url": "https://arizonasports.com/nfl/arizona-cardinals/cardinals-chase-bisontis-carted-off-with-left-knee-injury-vs-raiders"
+            }
+          ]
+        },
+        {
+          "title": "hassan haskins",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Patriots place running back Terrell Jennings on injured reserve, sign JaMycal Hasty",
+              "source": "The Boston Globe",
+              "url": "https://www.bostonglobe.com/2026/08/13/sports/patriots-terrell-jennings-jamycal-hasty/"
+            },
+            {
+              "headline": "Patriots Sign RB Hassan Haskins; Waive-Injured RB Myles Montgomery",
+              "source": "New England Patriots",
+              "url": "https://www.patriots.com/news/patriots-sign-rb-hassan-haskins-waive-injured-rb-myles-montgomery"
+            },
+            {
+              "headline": "Seahawks sign CB Terrion Arnold",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-08-13/seahawks-sign-cb-terrion-arnold"
+            }
+          ]
+        },
+        {
+          "title": "botafogo",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Atuação catastrófica do Botafogo na Sul-Americana rende memes e revolta na web; veja reações",
+              "source": "O GLOBO",
+              "url": "https://oglobo.globo.com/esportes/futebol/botafogo/noticia/2026/08/13/atuacao-catastrofica-do-botafogo-na-sul-americana-rende-memes-e-revolta-na-web-veja-reacoes.ghtml"
+            },
+            {
+              "headline": "Cienciano x Botafogo: qual a altitude do Estádio Garcilaso de la Vega?",
+              "source": "www.sportingnews.com",
+              "url": "https://www.sportingnews.com/br/futebol/noticias/cienciano-botafogo-qual-altitude-estadio-garcilaso-de-la-vega/767a0716c58831622597cf6a"
+            },
+            {
+              "headline": "PVC critica decisão de arbitragem em Cienciano x Botafogo: 'Errou'",
+              "source": "LANCE!",
+              "url": "https://www.lance.com.br/fora-de-campo/pvc-critica-decisao-de-arbitragem-em-cienciano-x-botafogo-errou.html"
+            }
+          ]
+        },
+        {
+          "title": "christopher abbott",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 13 Aug 2026 19:10:00 -0700",
+          "news": [
+            {
+              "headline": "Aubrey Plaza Welcomes First Baby with Boyfriend Chris Abbott",
+              "source": "People.com",
+              "url": "https://people.com/aubrey-plaza-welcomes-first-baby-with-boyfriend-chris-abbott-11945972"
+            },
+            {
+              "headline": "Aubrey Plaza Welcomes First Child With Christopher Abbott",
+              "source": "TMZ",
+              "url": "https://www.tmz.com/2026/08/09/aubrey-plaza-first-baby-born/"
+            },
+            {
+              "headline": "Aubrey Plaza Is in Her Mom-Jeans Era",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/aubrey-plaza-her-mom-jeans-143831315.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "A New Trick Reveals AI Models’ Inner Thoughts - wired.com",
+            "source": "wired.com",
+            "pub_date": "Tue, 11 Aug 2026 11:00:00 GMT"
+          },
+          {
+            "title": "Google (GOOGL) Releases New AI Model for Coding - TipRanks",
+            "source": "TipRanks",
+            "pub_date": "Thu, 13 Aug 2026 19:25:18 GMT"
+          },
+          {
+            "title": "Writer introduces new AI model and upgraded harness to contain token costs - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 13 Aug 2026 21:13:24 GMT"
+          },
+          {
+            "title": "Nvidia building 1-trillion-parameter Nemotron 4 to rival open AI models, The Information reports - reuters.com",
+            "source": "reuters.com",
+            "pub_date": "Tue, 11 Aug 2026 16:49:19 GMT"
+          },
+          {
+            "title": "This New Open-Weight AI Model Is Built for Video and Robots - CNET",
+            "source": "CNET",
+            "pub_date": "Tue, 11 Aug 2026 13:00:00 GMT"
+          },
+          {
+            "title": "Zuckerberg manifesto sketches out Meta's ambitions for world-changing AI technology - ABC News - Breaking News, Latest News and Videos",
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "pub_date": "Wed, 12 Aug 2026 14:33:38 GMT"
+          },
+          {
+            "title": "You Can (Maybe) Run Meta's Latest AI Model Locally on Your Computer - Lifehacker",
+            "source": "Lifehacker",
+            "pub_date": "Mon, 10 Aug 2026 21:00:00 GMT"
+          },
+          {
+            "title": "Meta rolls out new AI model with open weight feature - NewsNation",
+            "source": "NewsNation",
+            "pub_date": "Tue, 11 Aug 2026 13:55:44 GMT"
+          },
+          {
+            "title": "Meta releases new AI model as Zuckerberg lays out vision - Japan Today",
+            "source": "Japan Today",
+            "pub_date": "Mon, 10 Aug 2026 20:30:00 GMT"
+          },
+          {
+            "title": "As AI-led attacks multiply, OpenAI launches a new cyber model - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 10 Aug 2026 23:56:15 GMT"
+          },
+          {
+            "title": "Meta launches new AI model as Zuckerberg champions open-weight push - reuters.com",
+            "source": "reuters.com",
+            "pub_date": "Mon, 10 Aug 2026 12:26:21 GMT"
+          },
+          {
+            "title": "Meta Unveils an Open Version of Its Most Powerful A.I. Model - nytimes.com",
+            "source": "nytimes.com",
+            "pub_date": "Mon, 10 Aug 2026 10:00:15 GMT"
+          },
+          {
+            "title": "CHAI creates work group to counter frontier AI model cybersecurity risks - Healthcare Dive",
+            "source": "Healthcare Dive",
+            "pub_date": "Thu, 13 Aug 2026 15:56:09 GMT"
+          },
+          {
+            "title": "Meta’s New Open-Weight Model Can Run AI Agents on Your Laptop - CNET",
+            "source": "CNET",
+            "pub_date": "Mon, 10 Aug 2026 14:10:37 GMT"
+          },
+          {
+            "title": "Google launches Gemini 3.7 Flash AI model for coding - qz.com",
+            "source": "qz.com",
+            "pub_date": "Thu, 13 Aug 2026 17:48:41 GMT"
+          },
+          {
+            "title": "Google Debuts New Gemini Flash While Top AI Model Still Delayed - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 13 Aug 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Google Debuts New Gemini Flash While Top AI Model Still Delayed - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Thu, 13 Aug 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Meta and Nvidia plant 'very firm flag' in open-weight AI race led by Chinese Labs - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 12 Aug 2026 12:00:01 GMT"
+          },
+          {
+            "title": "Google launches AI model for business automation - New Orleans CityBusiness",
+            "source": "New Orleans CityBusiness",
+            "pub_date": "Thu, 13 Aug 2026 20:12:21 GMT"
+          },
+          {
+            "title": "The AI model that just scored 65% on DeepSWE isn’t the one Google promised. - The New Stack",
+            "source": "The New Stack",
+            "pub_date": "Thu, 13 Aug 2026 20:03:30 GMT"
+          },
+          {
+            "title": "Introducing Gemini 3.7 Flash - blog.google",
+            "source": "blog.google",
+            "pub_date": "Thu, 13 Aug 2026 17:05:38 GMT"
+          },
+          {
+            "title": "OpenAI Pauses Some Work on New AI Model Over Cybersecurity Concerns - WSJ",
+            "source": "WSJ",
+            "pub_date": "Fri, 07 Aug 2026 21:17:00 GMT"
+          },
+          {
+            "title": "The War Between Open Source, Open Weight, And Closed AI Models - The Next Platform",
+            "source": "The Next Platform",
+            "pub_date": "Thu, 13 Aug 2026 16:41:57 GMT"
+          },
+          {
+            "title": "Google joins the AI model price war with the new Gemini 3.7 Flash - Neowin",
+            "source": "Neowin",
+            "pub_date": "Thu, 13 Aug 2026 18:56:46 GMT"
+          },
+          {
+            "title": "In a New Test, AI Mortgage Assistants Got Nearly 1 in 4 Answers Wrong - Realtor.com",
+            "source": "Realtor.com",
+            "pub_date": "Thu, 13 Aug 2026 22:21:27 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 19:47:42 GMT"
+          },
+          {
+            "title": "Oracle to slash more jobs to fund AI plans with ‘double digit’ percentage cuts on some teams: report - New York Post",
+            "source": "New York Post",
+            "pub_date": "Wed, 12 Aug 2026 16:36:00 GMT"
+          },
+          {
+            "title": "Tech's Mass Layoffs Are Creating a Once-in-a-Lifetime Opportunity for Small-Business Growth - inc.com",
+            "source": "inc.com",
+            "pub_date": "Tue, 11 Aug 2026 10:18:09 GMT"
+          },
+          {
+            "title": "Opinion | I Helped Run Lululemon. Companies Need to Stop Kidding Themselves About A.I. - nytimes.com",
+            "source": "nytimes.com",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs August update: Google, TikTok, Etsy, Zillow slash hundreds of roles as job losses pile up in 2026 - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 07 Aug 2026 12:52:16 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking all of the job losses across TikTok, Microsoft, Meta, Oracle, Samsung and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Thu, 06 Aug 2026 18:34:57 GMT"
+          },
+          {
+            "title": "AI is Hollowing Out Tech Sector Jobs: Oracle and Microsoft Help Push Layoff Rate to 20-Year High - 24/7 Wall St.",
+            "source": "24/7 Wall St.",
+            "pub_date": "Sat, 08 Aug 2026 15:38:36 GMT"
+          },
+          {
+            "title": "Employers who laid off workers citing AI are already starting to regret it - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 01 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Layoffs rock Salesforce in San Francisco’s as tech giant leans in to AI - New York Post",
+            "source": "New York Post",
+            "pub_date": "Fri, 07 Aug 2026 19:15:00 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All of the job losses across TikTok, Microsoft, Meta, Oracle, Samsung, Zillow and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Wed, 12 Aug 2026 00:24:08 GMT"
+          },
+          {
+            "title": "Tech layoffs in 2026 already nearing 2025 total - Palo Alto Online",
+            "source": "Palo Alto Online",
+            "pub_date": "Tue, 11 Aug 2026 22:09:54 GMT"
+          },
+          {
+            "title": "Seattle’s ‘shaky tech market’ hits home sales - chronline.com",
+            "source": "chronline.com",
+            "pub_date": "Thu, 13 Aug 2026 15:58:58 GMT"
+          },
+          {
+            "title": "New report details sluggish Seattle housing market - Seattle Red",
+            "source": "Seattle Red",
+            "pub_date": "Thu, 13 Aug 2026 12:30:06 GMT"
+          },
+          {
+            "title": "While layoffs slow overall, job losses in tech soar - HR Dive",
+            "source": "HR Dive",
+            "pub_date": "Mon, 10 Aug 2026 15:23:10 GMT"
+          },
+          {
+            "title": "Layoffs at Illinois Institute of Technology in Chicago raise concerns among students ahead of fall semester - ABC7 Chicago",
+            "source": "ABC7 Chicago",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "I went from wedding DJ to Meta engineer, then was laid off after 13 years. My last years there brought constant change. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sun, 09 Aug 2026 11:09:00 GMT"
+          },
+          {
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sat, 25 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle plans more layoffs weeks after spending most of its $2.1 billion restructuring budget, report claims — some teams face double-digit percentage reductions, 21,000 full-time positions already eliminated - Tom's Hardware",
+            "source": "Tom's Hardware",
+            "pub_date": "Wed, 12 Aug 2026 17:00:04 GMT"
+          },
+          {
+            "title": "Another round of tech layoffs hit Seattle workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Thu, 06 Aug 2026 22:09:49 GMT"
+          },
+          {
+            "title": "Major layoffs of 2026: Amazon, Meta, Oracle, Microsoft and more - The American Bazaar",
+            "source": "The American Bazaar",
+            "pub_date": "Sun, 09 Aug 2026 23:10:22 GMT"
+          },
+          {
+            "title": "Dramatic split: The new map of upheavals in Israeli tech - The Jerusalem Post",
+            "source": "The Jerusalem Post",
+            "pub_date": "Tue, 11 Aug 2026 07:55:00 GMT"
+          },
+          {
+            "title": "Big Tech has historically resisted corporate America's go-to layoff tool. That could be changing. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Mon, 27 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech’s Mass Layoffs Are Hiding a Much Scarier Problem, and AI Is Uncovering It - inc.com",
+            "source": "inc.com",
+            "pub_date": "Wed, 05 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "‘No discernible evidence’: Software engineering jobs hold firm in the face of AI layoffs - Capital Brief",
+            "source": "Capital Brief",
+            "pub_date": "Wed, 12 Aug 2026 19:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "air force portal",
+          "ai detector",
+          "air conditioner",
+          "ai mode",
+          "airport golf course",
+          "airpods",
+          "ai checker",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt image generator",
+          "chatgpt download",
+          "chatgpt desktop",
+          "chatgpt zero",
+          "chatgpt codex"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out",
+          "new phone who dis meme"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts",
+          "tech and ai business analyst mckinsey"
+        ]
+      }
+    }
   },
-  "hacker_news": [],
-  "outlet_headlines": [
-    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "Free Press Journal", "url": "https://www.freepressjournal.in/business/lt-wins-10000-15000-crore-mega-order-to-build-nvidias-10000-gpu-ai-factory-in-chennai", "note": "from websearch; Rs 10,000-15,000 crore order, Chennai campus of Vyoma.AI, announced 2026-08-13"},
-    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "The Hans India", "url": "https://www.thehansindia.com/business/lt-enters-ai-factory-race-with-rs-15000-crore-mega-order-1109190", "note": "from websearch"},
-    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "Yahoo Finance", "url": "https://finance.yahoo.com/news/l-t-partners-nvidia-gigawatt-112327818.html", "note": "from websearch; gigawatt-scale campus framing"},
-    {"title": "L&T to build India's largest single-cluster AI facility with 10,000 Nvidia B300 GPUs for Together AI", "outlet": "TechChannel News", "url": "https://techchannel.news/lt-to-build-indias-largest-single-cluster-ai-infrastructure-for-together/", "note": "from websearch"},
-    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "Cerebras (official blog)", "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai", "note": "from websearch; HN front page #1 per mirror; announced 2026-08-13"},
-    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "GlobeNewswire", "url": "https://www.globenewswire.com/news-release/2026/08/13/3344804/0/en/cerebras-powers-ultrafast-mode-for-openai-s-gpt-5-6-sol.html", "note": "from websearch; official press release"},
-    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "9to5Mac", "url": "https://9to5mac.com/2026/08/13/openai-previews-ultrafast-gpt-5-6-sol-running-up-to-14-times-faster/", "note": "from websearch; up to 14x faster than Standard"},
-    {"title": "Cerebras powers Ultrafast mode for OpenAI GPT-5.6 Sol at 750 tokens per second", "outlet": "Investing.com", "url": "https://www.investing.com/news/company-news/cerebras-powers-openais-gpt56-sol-ultrafast-mode-at-750-tokenssec-93CH-4858897", "note": "from websearch"},
-    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/technology/articles/exclusive-vantage-data-centers-explores-100830274.html", "note": "from websearch; Reuters exclusive 2026-08-13; would be largest data center IPO"},
-    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "BNN Bloomberg", "url": "https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/", "note": "from websearch"},
-    {"title": "Vantage Data Centers explores IPO at 100 billion dollar valuation or sale", "outlet": "Quartz", "url": "https://qz.com/vantage-data-centers-ipo-sale-100-billion-valuation-081326", "note": "from websearch"},
-    {"title": "OpenAI asks judge to dismiss Apple trade secrets lawsuit calling it rotten to its core", "outlet": "Axios", "url": "https://www.axios.com/2026/08/06/openai-apple-motion-to-dismiss", "note": "from websearch; filed 2026-08-06, hearing Oct 1 — a week old"},
-    {"title": "OpenAI asks judge to dismiss Apple trade secrets lawsuit calling it rotten to its core", "outlet": "AppleInsider", "url": "https://appleinsider.com/articles/26/08/06/openai-fires-back-says-apple-is-suing-because-it-cant-compete", "note": "from websearch"},
-    {"title": "Switch files for US IPO to raise 10 billion dollars at 50 billion valuation", "outlet": "Caproasia", "url": "https://www.caproasia.com/2026/08/09/united-states-data-center-company-switch-files-for-united-states-ipo-to-raise-10-billion-at-50-billion-valuation-80-billion-include-debt-with-earliest-ipo-listing-in-2026-q4-founded-in-2000-by-r/", "note": "from websearch; filed 2026-08-09"},
-    {"title": "DeepSeek releases DeepSeek-V4-Pro-0813", "outlet": "llm-stats.com", "url": "https://llm-stats.com/llm-updates", "note": "from websearch; tracker-only sighting, needs verification"},
-    {"title": "Shiprocket IPO subscribed 3.16x on second day", "outlet": "Business Today", "url": "https://www.businesstoday.in/technology", "note": "from websearch; 2026-08-13"},
-    {"title": "Google consolidates AI leadership as Hassabis steps back to DeepMind chairman role", "outlet": "Tech Startups", "url": "https://techstartups.com/2026/08/13/top-tech-news-today-august-13-2026-anthropic-deepmind-google-lenovo-microsoft-spacexai-more/", "note": "from websearch; dedup risk: site covered DeepMind shake-up 2026-08-06"},
-    {"title": "I4C warns of WhatsApp account takeover fraud campaign targeting businesses", "outlet": "DD News", "url": "https://ddnews.gov.in/en/category/science-tech/", "note": "from websearch; advisory dated 2026-08-07"},
-    {"title": "iQOO Z11 India launch set for August 20", "outlet": "Smartprix", "url": "https://www.smartprix.com/bytes/upcoming-smartphone-launches-in-india-august-2026/", "note": "from websearch; upcoming, not yet launched"}
+  "hacker_news": [
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "points": 637,
+      "comments": 364,
+      "created_at": "2026-08-13T17:23:22Z"
+    },
+    {
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "points": 567,
+      "comments": 248,
+      "created_at": "2026-08-13T12:58:02Z"
+    },
+    {
+      "title": "Spaghettifying DRAM",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "points": 506,
+      "comments": 142,
+      "created_at": "2026-08-13T14:17:13Z"
+    },
+    {
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "points": 443,
+      "comments": 188,
+      "created_at": "2026-08-13T18:10:02Z"
+    },
+    {
+      "title": "Choose Boring Technology (2015)",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "points": 264,
+      "comments": 139,
+      "created_at": "2026-08-13T17:48:13Z"
+    },
+    {
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "points": 257,
+      "comments": 103,
+      "created_at": "2026-08-13T17:05:12Z"
+    },
+    {
+      "title": "Nine PBS sues Iron Mountain over blocked access to archival data",
+      "url": "https://current.org/2026/08/nine-pbs-sues-iron-mountain-over-blocked-access-to-archival-data/",
+      "points": 252,
+      "comments": 145,
+      "created_at": "2026-08-13T13:14:12Z"
+    },
+    {
+      "title": "Ordinary abundance",
+      "url": "https://ordinaryabundance.com/",
+      "points": 226,
+      "comments": 123,
+      "created_at": "2026-08-13T13:39:41Z"
+    },
+    {
+      "title": "Understanding is the new bottleneck",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "points": 219,
+      "comments": 119,
+      "created_at": "2026-08-13T18:47:19Z"
+    },
+    {
+      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
+      "url": "https://donkeybas.com/",
+      "points": 195,
+      "comments": 85,
+      "created_at": "2026-08-13T17:45:50Z"
+    },
+    {
+      "title": "NP-overrated",
+      "url": "https://gruhn.me/blog/2026-08-13/",
+      "points": 160,
+      "comments": 101,
+      "created_at": "2026-08-13T20:14:17Z"
+    },
+    {
+      "title": "Kubernetes on Oxide: How customer needs shaped our integrations",
+      "url": "https://oxide.computer/blog/kubernetes-on-oxide",
+      "points": 160,
+      "comments": 71,
+      "created_at": "2026-08-13T14:26:41Z"
+    },
+    {
+      "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes",
+      "url": "https://github.com/systemd/systemd/issues/40262",
+      "points": 154,
+      "comments": 100,
+      "created_at": "2026-08-13T18:41:01Z"
+    },
+    {
+      "title": "Where did the old web go? We followed 657,607 links to find out",
+      "url": "https://0.mk/blog/link-rot",
+      "points": 134,
+      "comments": 122,
+      "created_at": "2026-08-13T17:49:18Z"
+    },
+    {
+      "title": "How Compaction Works in Pi",
+      "url": "https://earendil.com/posts/compaction-in-pi/",
+      "points": 111,
+      "comments": 42,
+      "created_at": "2026-08-13T17:57:50Z"
+    },
+    {
+      "title": "AI At Home Part 1: A Box Of Scraps",
+      "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+      "points": 94,
+      "comments": 47,
+      "created_at": "2026-08-13T16:22:05Z"
+    },
+    {
+      "title": "How AI text watermarking works",
+      "url": "https://declaude.org/watermarking/",
+      "points": 86,
+      "comments": 54,
+      "created_at": "2026-08-13T23:16:55Z"
+    },
+    {
+      "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent",
+      "url": "https://www.codewithbullet.com",
+      "points": 85,
+      "comments": 56,
+      "created_at": "2026-08-13T08:14:30Z"
+    },
+    {
+      "title": "Bluesky Protocol Services",
+      "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
+      "points": 77,
+      "comments": 18,
+      "created_at": "2026-08-14T00:14:28Z"
+    },
+    {
+      "title": "How Gödel's Proof Works (2020)",
+      "url": "https://www.quantamagazine.org/how-godels-proof-works-20200714/",
+      "points": 75,
+      "comments": 39,
+      "created_at": "2026-08-13T19:44:46Z"
+    },
+    {
+      "title": "How AI text watermarking works",
+      "url": "https://declaude.org/watermarking/",
+      "points": 86,
+      "comments": 59,
+      "created_at": "2026-08-13T23:16:55Z"
+    },
+    {
+      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+      "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+      "points": 71,
+      "comments": 46,
+      "created_at": "2026-08-13T19:25:38Z"
+    },
+    {
+      "title": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
+      "url": "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/",
+      "points": 45,
+      "comments": 13,
+      "created_at": "2026-08-13T19:04:52Z"
+    },
+    {
+      "title": "AI Is Threatening Natural Resources for Billions",
+      "url": "https://unric.org/en/ais-environmental-costs-threaten-water-land-and-climate/",
+      "points": 53,
+      "comments": 52,
+      "created_at": "2026-08-13T18:28:20Z"
+    },
+    {
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "points": 444,
+      "comments": 188,
+      "created_at": "2026-08-13T18:10:02Z"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "points": 638,
+      "comments": 366,
+      "created_at": "2026-08-13T17:23:22Z"
+    },
+    {
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "points": 258,
+      "comments": 103,
+      "created_at": "2026-08-13T17:05:12Z"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "points": 48,
+      "comments": 3,
+      "created_at": "2026-08-13T17:02:10Z"
+    },
+    {
+      "title": "AI At Home Part 1: A Box Of Scraps",
+      "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+      "points": 94,
+      "comments": 47,
+      "created_at": "2026-08-13T16:22:05Z"
+    },
+    {
+      "title": "Text AI watermarks will always be trivial to remove",
+      "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+      "points": 99,
+      "comments": 103,
+      "created_at": "2026-08-13T15:07:10Z"
+    },
+    {
+      "title": "We eliminated 1,400 CVEs in NanoClaw's container images",
+      "url": "https://www.echo.ai/blog/echo-xnanoclaw-under-the-hood",
+      "points": 68,
+      "comments": 44,
+      "created_at": "2026-08-13T14:18:34Z"
+    },
+    {
+      "title": "Heart aerospace completes first flight of largest electric aircraft",
+      "url": "https://www.heartaerospace.com/newsroom/heart-aerospace-completes-first-flight-of-world-s-largest-electric-aircraft",
+      "points": 120,
+      "comments": 123,
+      "created_at": "2026-08-13T14:11:51Z"
+    },
+    {
+      "title": "AI agents lie, cheat and steal. That is putting off users",
+      "url": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
+      "points": 155,
+      "comments": 197,
+      "created_at": "2026-08-13T13:28:45Z"
+    },
+    {
+      "title": "Choosing an AI model: one prompt, 11 models, different results",
+      "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+      "points": 179,
+      "comments": 73,
+      "created_at": "2026-08-13T13:05:29Z"
+    },
+    {
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "points": 567,
+      "comments": 248,
+      "created_at": "2026-08-13T12:58:02Z"
+    },
+    {
+      "title": "DeepSeek API Pricing Update",
+      "url": "https://twitter.com/deepseek_ai/status/2087864589895798968",
+      "points": 122,
+      "comments": 46,
+      "created_at": "2026-08-13T12:49:21Z"
+    },
+    {
+      "title": "Can I use my Outputs to train an AI model?",
+      "url": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
+      "points": 86,
+      "comments": 78,
+      "created_at": "2026-08-13T09:34:13Z"
+    },
+    {
+      "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent",
+      "url": "https://www.codewithbullet.com",
+      "points": 85,
+      "comments": 56,
+      "created_at": "2026-08-13T08:14:30Z"
+    },
+    {
+      "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+      "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+      "points": 336,
+      "comments": 400,
+      "created_at": "2026-08-12T16:54:25Z"
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "points": 1017,
+      "comments": 441,
+      "created_at": "2026-08-12T16:04:50Z"
+    }
   ],
-  "wikipedia_top": []
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6876284,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 812171,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 711092,
+      "rank": 3
+    },
+    {
+      "article": "Joshua_Kushner",
+      "views": 525043,
+      "rank": 4
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 257634,
+      "rank": 5
+    },
+    {
+      "article": "Lucy_Davis",
+      "views": 244610,
+      "rank": 6
+    },
+    {
+      "article": ".xxx",
+      "views": 221364,
+      "rank": 7
+    },
+    {
+      "article": "Solar_eclipse_of_August_12,_2026",
+      "views": 218979,
+      "rank": 8
+    },
+    {
+      "article": "Brian_Madjo",
+      "views": 193832,
+      "rank": 9
+    },
+    {
+      "article": "List_of_solar_eclipses_visible_from_the_British_Isles",
+      "views": 183543,
+      "rank": 10
+    },
+    {
+      "article": "David_Crowley_(Wisconsin_politician)",
+      "views": 175684,
+      "rank": 11
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 171665,
+      "rank": 12
+    },
+    {
+      "article": "Francesca_Hong",
+      "views": 159262,
+      "rank": 13
+    },
+    {
+      "article": "List_of_solar_eclipses_in_the_21st_century",
+      "views": 156555,
+      "rank": 14
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 135016,
+      "rank": 15
+    },
+    {
+      "article": "Karlie_Kloss",
+      "views": 129119,
+      "rank": 16
+    },
+    {
+      "article": "Bob_Iger",
+      "views": 126515,
+      "rank": 17
+    },
+    {
+      "article": "Solar_eclipse_of_August_2,_2027",
+      "views": 117864,
+      "rank": 18
+    },
+    {
+      "article": "Jared_Kushner",
+      "views": 116390,
+      "rank": 19
+    },
+    {
+      "article": "The_Last_House",
+      "views": 109031,
+      "rank": 20
+    },
+    {
+      "article": "Charles_Kushner",
+      "views": 105695,
+      "rank": 21
+    },
+    {
+      "article": "Solar_eclipse",
+      "views": 97852,
+      "rank": 22
+    },
+    {
+      "article": "Cristiano_Ronaldo",
+      "views": 97550,
+      "rank": 23
+    },
+    {
+      "article": "Verity_(novel)",
+      "views": 93133,
+      "rank": 24
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 92595,
+      "rank": 25
+    },
+    {
+      "article": "The_End_of_Oak_Street",
+      "views": 86832,
+      "rank": 26
+    },
+    {
+      "article": "Karoline_Leavitt",
+      "views": 84951,
+      "rank": 27
+    },
+    {
+      "article": "Jasper_Carrott",
+      "views": 82138,
+      "rank": 28
+    },
+    {
+      "article": "Russell_Westbrook",
+      "views": 75033,
+      "rank": 29
+    },
+    {
+      "article": "DC_(film)",
+      "views": 73741,
+      "rank": 30
+    },
+    {
+      "article": "Abdul_El-Sayed",
+      "views": 73031,
+      "rank": 31
+    },
+    {
+      "article": "2026_Wisconsin_gubernatorial_election",
+      "views": 72369,
+      "rank": 32
+    },
+    {
+      "article": "Solar_eclipse_of_August_11,_1999",
+      "views": 71705,
+      "rank": 33
+    },
+    {
+      "article": "Peggy_Flanagan",
+      "views": 71694,
+      "rank": 34
+    },
+    {
+      "article": "Zendaya",
+      "views": 71339,
+      "rank": 35
+    },
+    {
+      "article": "Zilla_Fatu",
+      "views": 71036,
+      "rank": 36
+    },
+    {
+      "article": "Michele_Tafoya",
+      "views": 70446,
+      "rank": 37
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 70316,
+      "rank": 38
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 68566,
+      "rank": 39
+    },
+    {
+      "article": "2026_Clacton_by-election",
+      "views": 64230,
+      "rank": 40
+    },
+    {
+      "article": "Severe_combined_immunodeficiency",
+      "views": 63913,
+      "rank": 41
+    },
+    {
+      "article": "Owain_Yeoman",
+      "views": 62828,
+      "rank": 42
+    },
+    {
+      "article": ".xyz",
+      "views": 61435,
+      "rank": 43
+    },
+    {
+      "article": "Anne_Hathaway",
+      "views": 61067,
+      "rank": 44
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 57679,
+      "rank": 45
+    },
+    {
+      "article": "Georgina_Rodríguez",
+      "views": 57037,
+      "rank": 46
+    },
+    {
+      "article": "José_Mourinho",
+      "views": 56259,
+      "rank": 47
+    },
+    {
+      "article": "J_Harlen_Bretz",
+      "views": 56204,
+      "rank": 48
+    },
+    {
+      "article": "List_of_sharks",
+      "views": 55668,
+      "rank": 49
+    },
+    {
+      "article": "List_of_Marvel_Cinematic_Universe_films",
+      "views": 55658,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Investors sue Selena Gomez alleging fraud tied to her mental health startup"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Flock says its new tool will help identify police abuse, but hasn’t explained how it works"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "If Apple sends you a push notification alerting you to a spyware attack, take it seriously"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Writer introduces new AI model and upgraded harness to contain token costs"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation."
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "IBM partners with OpenAI to bolster enterprise AI push"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic set AI agents loose on the same task. They started a turf war."
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI hires new CRO as executive shake-up continues"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ford on track to complete $2B factory overhaul for Fathom EV truck"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "X open sources its ranking algorithm, letting users see if they’ve been ‘shadowbanned’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Instagram introduces a redesigned wordmark"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Who really needs a cocktail robot?"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trump declares 100 percent tariffs on many drones and all aircraft parts"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Apple and Epic argue over how much Apple should get from purchases made outside the App Store"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "‘That is not acceptable’: Judge orders Google to make rival app store installs easier"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The fight over Flock and other ALPRs"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Netflix is closing two game studios"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "This school-friendly laptop from HP is $300 off"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "OpenAI is losing its second executive this week"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Trump admin will start letting private firms launch international cyberattacks"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "I finally found a robot lawnmower I’d trust with my yard"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US wait times for cancer surgeries are getting longer and longer"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Private security firms will soon be allowed to hack overseas cybercriminals"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Virgin Galactic wants your help naming its new Delta class spaceship"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ukrainian drones wipe out entire US tank brigade in live war game"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Flock “can’t tech its way out” of the stalker cop problem, experts say"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Pet owners say smart pet feeder outage led to furry ones going unfed"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The new Instagram logo is the perfect embodiment of AI slop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google announces Gemini 3.7 Flash just three weeks after previous release"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rivian's 2027 changes include its No. 1 most-requested feature"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Anthropic could be worth $2 trillion when it goes public"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "We've flown a radiation-blocking vest to the Moon and back, and it worked"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Claude's new Scarlet Letter watermark is invisible—for now"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Toddler's tragic death from brain-destroying amoeba offers lessons for doctors"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The web’s newest weapon against AI scrapers is a font"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Terabytes of credentials leaked in massive supply-chain attack"
+    }
+  ]
 }
