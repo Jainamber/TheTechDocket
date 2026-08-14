@@ -611,6 +611,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-13-pixel-11-india-price.json",
       "url": "https://thetechdocket.com/articles/pixel-11-india-price/"
+    },
+    {
+      "date": "2026-08-14",
+      "slug": "gpt-5-6-sol-ultrafast",
+      "title": "GPT-5.6 Sol Ultrafast: OpenAI's 14x Speed Mode on Cerebras",
+      "keyword": "gpt-5.6 sol ultrafast",
+      "hub": "ai-models",
+      "published_at": "2026-08-14T07:06:02.912949+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-14T07:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-14-gpt-5-6-sol-ultrafast.json",
+      "url": "https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/"
     }
   ]
 }

@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>GPT-5.6 Sol Ultrafast: OpenAI&#x27;s 14x Speed Mode on Cerebras</title>
+    <link>https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/</guid>
+    <pubDate>Fri, 14 Aug 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[OpenAI's new Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens a second on Cerebras wafer chips. What's verified, what's vendor claim, and who gets access.]]></description>
+  </item>
+  <item>
     <title>Pixel 11 India Prices: Full List, Hikes and the AI Catch</title>
     <link>https://thetechdocket.com/articles/pixel-11-india-price/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/pixel-11-india-price/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/ai-voice-clone-scam-protection/</guid>
     <pubDate>Sun, 26 Jul 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[How AI voice-clone and deepfake call scams work in 2026, the verified loss numbers, and the exact India and US response steps — 1930, RBI's clock, FTC.]]></description>
-  </item>
-  <item>
-    <title>Context Windows Explained: What the Token Number Means</title>
-    <link>https://thetechdocket.com/articles/context-windows-explained/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/context-windows-explained/</guid>
-    <pubDate>Sun, 26 Jul 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[What a context window really is, why a million-token label rarely means a million usable tokens, and the cost math behind long prompts — with sources.]]></description>
   </item>
 </channel>
 </rss>
