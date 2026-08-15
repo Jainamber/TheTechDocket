@@ -1,0 +1,274 @@
+# Scripted Gemini (Vertex) editorial pipeline — replaces the claude.ai
+# routine at cutover. Runs BEFORE the 06:30 IST claude.ai routine during
+# parallel-run so the two never race on the same day's slug.
+#
+# Mode gate (repo Actions variable `TTD_PIPELINE_MODE`, default `staging`):
+#   staging -> full run with --skip-stop-guard, opens a DRAFT PR on
+#              staging/daily-<date>, labeled `staging`, NEVER auto-merged.
+#   live    -> full run (STOP guard active), opens a normal PR on
+#              agent/daily-<date>, enables auto-merge (squash) which only
+#              fires once the gate-check job (a required status check)
+#              passes.
+#
+# See AI-PIPELINE.md for the staging -> live cutover procedure.
+name: daily-pipeline
+on:
+  schedule:
+    - cron: "47 23 * * *"   # 23:47 UTC = 05:17 IST next day
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: engine-main
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Kolkata
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    outputs:
+      mode: ${{ steps.mode.outputs.mode }}
+      date: ${{ steps.publish.outputs.date }}
+      slug: ${{ steps.publish.outputs.slug }}
+      branch: ${{ steps.publish.outputs.branch }}
+      pushed: ${{ steps.push.outputs.pushed }}
+    steps:
+      - name: Resolve pipeline mode
+        id: mode
+        run: |
+          MODE="${{ vars.TTD_PIPELINE_MODE }}"
+          if [ -z "$MODE" ]; then MODE="staging"; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "pipeline mode: $MODE"
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-ai.txt
+
+      - name: Write Vertex service-account key
+        id: vertex_key
+        env:
+          VERTEX_SA_KEY: ${{ secrets.VERTEX_SA_KEY }}
+        run: |
+          if [ -z "$VERTEX_SA_KEY" ]; then
+            echo "::error::VERTEX_SA_KEY secret is not set — cannot authenticate to Vertex AI. Add it in repo Settings > Secrets."
+            exit 2
+          fi
+          KEY_PATH="$RUNNER_TEMP/vertex-sa.json"
+          printf '%s' "$VERTEX_SA_KEY" > "$KEY_PATH"
+          echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch trend data
+        # Folds in fetch-trends.yml's behavior for this run so the writer
+        # always has a fresh inbox. fetch-trends.yml itself is left running
+        # unchanged — it still feeds the claude.ai routine during parallel-run.
+        run: python -m engine.run fetch
+
+      - name: Refresh performance insights (learn & adapt)
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: python -m engine.run feedback || true
+
+      - name: Run AI writer pipeline (staging)
+        if: steps.mode.outputs.mode != 'live'
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.vertex_key.outputs.path }}
+        # --no-record: staging PRs never merge to main, so keep them free of
+        # history.json noise — only a live PR's writer run records.
+        run: python -m engine.ai.writer_cli --all --skip-stop-guard --no-record
+
+      - name: Run AI writer pipeline (live)
+        if: steps.mode.outputs.mode == 'live'
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.vertex_key.outputs.path }}
+        run: |
+          set +e
+          python -m engine.ai.writer_cli --all
+          code=$?
+          set -e
+          if [ "$code" -eq 3 ]; then
+            echo "STOP guard: today already published — nothing to do"
+            exit 0
+          fi
+          exit "$code"
+
+      - name: Determine today's date + slug
+        id: publish
+        run: |
+          DAY=$(TZ=Asia/Kolkata date +%F)
+          echo "date=$DAY" >> "$GITHUB_OUTPUT"
+
+          # Prefer the definitive run-state file writer_cli writes on every
+          # exit path (FIX 2) over globbing content/articles/ — fall back to
+          # the glob only if the file itself is missing (e.g. an older
+          # writer_cli build, or the writer crashed before writing it).
+          STATE="data/run-state/${DAY}.json"
+          if [ -f "$STATE" ]; then
+            SLUG=$(python3 -c "
+          import json, pathlib
+          state = json.loads(pathlib.Path(\"data/run-state/${DAY}.json\").read_text(encoding=\"utf-8\"))
+          print(state.get(\"slug\") or \"\")
+          ")
+          else
+            FILE=$(ls content/articles/${DAY}-*.md 2>/dev/null | head -n1 || true)
+            if [ -n "$FILE" ]; then
+              SLUG=$(basename "$FILE" .md | sed "s/^${DAY}-//")
+            else
+              SLUG=""
+            fi
+          fi
+
+          if [ -z "$SLUG" ]; then
+            echo "::warning::no article produced for $DAY — nothing to publish"
+            exit 0
+          fi
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          if [ "${{ steps.mode.outputs.mode }}" = "live" ]; then
+            BRANCH="agent/daily-${DAY}"
+          else
+            BRANCH="staging/daily-${DAY}"
+          fi
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Commit + push
+        id: push
+        if: steps.publish.outputs.branch != ''
+        run: |
+          git config user.name "content-engine"
+          git config user.email "engine@users.noreply.github.com"
+          git checkout -b "${{ steps.publish.outputs.branch }}"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "AI pipeline: ${{ steps.publish.outputs.date }} (${{ steps.mode.outputs.mode }})"
+          git push -u origin "${{ steps.publish.outputs.branch }}"
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request (staging)
+        if: >-
+          steps.mode.outputs.mode != 'live' && steps.publish.outputs.branch != '' &&
+          steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create --draft \
+            --title "[staging] daily ${{ steps.publish.outputs.date }}" \
+            --body "Automated staging run of the Gemini pipeline (parallel-run alongside the claude.ai routine). Never auto-merged — for review only." \
+            --label staging \
+            --base main --head "${{ steps.publish.outputs.branch }}" || \
+          gh pr create --draft \
+            --title "[staging] daily ${{ steps.publish.outputs.date }}" \
+            --body "Automated staging run of the Gemini pipeline (parallel-run alongside the claude.ai routine). Never auto-merged — for review only." \
+            --base main --head "${{ steps.publish.outputs.branch }}"
+
+      - name: Open pull request (live)
+        if: >-
+          steps.mode.outputs.mode == 'live' && steps.publish.outputs.branch != '' &&
+          steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --title "daily ${{ steps.publish.outputs.date }}" \
+            --body "Automated Gemini pipeline run. Auto-merges once the gate-check required status check passes." \
+            --base main --head "${{ steps.publish.outputs.branch }}"
+          gh pr merge "${{ steps.publish.outputs.branch }}" --auto --squash
+
+  gate-check:
+    # Non-LLM verifier. Re-runs the deterministic compliance/SEO gates plus
+    # the citation-gate report and a duplicate-day guard against the PR ref.
+    # In live mode this job's status is the required check that gh pr merge
+    # --auto is waiting on (configure branch protection to require it).
+    needs: run
+    if: needs.run.outputs.branch != '' && needs.run.outputs.pushed == 'true'
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Kolkata
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.run.outputs.branch }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-ai.txt
+
+      - name: Re-run compliance/SEO gates
+        run: python -m engine.run gate --slug "${{ needs.run.outputs.slug }}"
+
+      - name: Validate citation-gate report
+        env:
+          TTD_DATE: ${{ needs.run.outputs.date }}
+          TTD_SLUG: ${{ needs.run.outputs.slug }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, pathlib, sys
+          date = os.environ["TTD_DATE"]
+          slug = os.environ["TTD_SLUG"]
+          path = pathlib.Path(f"data/gate-reports/{date}-{slug}-citations.json")
+          if not path.exists():
+              sys.exit(f"missing citation-gate report: {path}")
+          rep = json.loads(path.read_text(encoding="utf-8"))
+          if not rep.get("passed"):
+              sys.exit(f"citation gate did not pass: {rep}")
+          print(f"citation gate OK: {path}")
+          EOF
+
+      - name: Duplicate-day guard
+        # Only meaningful in live mode: staging runs pass --no-record, so a
+        # staging PR ref's history.json never has an entry for the date and
+        # the "exactly once" check below would always (correctly) fail —
+        # skip it there instead of misreporting a guard failure.
+        if: needs.run.outputs.mode == 'live'
+        env:
+          TTD_DATE: ${{ needs.run.outputs.date }}
+        run: |
+          git fetch origin main
+          python3 - <<'EOF'
+          import json, os, pathlib, subprocess, sys
+
+          date = os.environ["TTD_DATE"]
+
+          # 1) origin/main must NOT already have a published entry for this
+          #    date — guards two live PRs merging for the same IST day.
+          try:
+              main_hist_raw = subprocess.run(
+                  ["git", "show", "origin/main:data/history.json"],
+                  check=True, capture_output=True, text=True,
+              ).stdout
+          except subprocess.CalledProcessError as e:
+              sys.exit(f"could not read origin/main:data/history.json: {e.stderr}")
+          main_hist = json.loads(main_hist_raw)
+          main_dates = [p["date"] for p in main_hist.get("published", [])]
+          if main_dates.count(date) > 0:
+              sys.exit(f"duplicate-day guard: origin/main already has a "
+                        f"published entry for {date}")
+
+          # 2) the PR ref's OWN history.json (written by writer_cli's FIX-1
+          #    record step) must contain this date exactly once.
+          pr_hist = json.loads(
+              pathlib.Path("data/history.json").read_text(encoding="utf-8"))
+          pr_dates = [p["date"] for p in pr_hist.get("published", [])]
+          count = pr_dates.count(date)
+          if count != 1:
+              sys.exit(f"duplicate-day guard: PR ref's history.json has "
+                        f"{count} entries for {date}, expected exactly 1")
+
+          print(f"duplicate-day guard OK: {date} not on origin/main, "
+                f"exactly 1 entry on the PR ref")
+          EOF

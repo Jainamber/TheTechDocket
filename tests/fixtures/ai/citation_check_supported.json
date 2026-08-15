@@ -1,0 +1,9 @@
+{
+  "text": "{\"supported\": true, \"quote\": \"raised $10 million\", \"fetch_ok\": true, \"reason\": \"the fetched page states the figure verbatim\"}",
+  "usage": {"in": 800, "out": 40, "thinking": 0},
+  "grounded_queries": 0,
+  "url_fetches": 1,
+  "sources": [],
+  "finish_reason": "STOP",
+  "model": "gemini-2.5-flash-lite"
+}
