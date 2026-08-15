@@ -5,15 +5,32 @@ bounded re-ask if the model's front matter doesn't parse or is missing
 required fields.
 
 Contract (SPEC.md, Agent B):
-    run(date_ist, client, cfg, retry_feedback: str|None = None) -> path
+    run(date_ist, client, cfg, retry_feedback: str|None = None,
+        reuse_slug: str|None = None) -> path
 
-The model is told NOT to invent the `date`/`slug` front-matter values or
-flip any `review.*` flag to true — prompts/v1/write_article.md has it
-write literal placeholder tokens (`{{ARTICLE_DATE}}` / `{{ARTICLE_SLUG}}`,
-quoted) that this module substitutes only *after* validating the draft and
-computing the real slug from the model's own title — exactly the order a
-human writer would follow (draft first, permanent URL decided from the
-title, not invented up front).
+The model is told NOT to invent the `date`/`slug` front-matter values —
+prompts/v1/write_article.md has it write literal placeholder tokens
+(`{{ARTICLE_DATE}}` / `{{ARTICLE_SLUG}}`, quoted) that this module
+substitutes only *after* validating the draft and computing the real slug
+from the model's own title — exactly the order a human writer would
+follow (draft first, permanent URL decided from the title, not invented
+up front). `reuse_slug` overrides that title-derived slug: pass the prior
+attempt's slug on a retry (writer_cli.py's shared retry loop does this) so
+the corrected draft overwrites the SAME `content/articles/<date>-<slug>.md`
+in place instead of minting a second, orphaned slug from a retry draft's
+(possibly reworded) title.
+
+review.* flag ownership is split, matching who can actually vouch for
+each: the writer self-asserts `title_promise_check`, `no_fabrication`,
+and `policy_pass` as `true` in its own draft (it is the author — see
+prompts/v1/write_article.md's title/body rules for what each promise
+means); `facts_verified` and `sources_checked` must stay `false` in the
+draft — only the citation gate, which independently re-verifies every
+source, is allowed to flip those two (engine/ai/citation_gate.py). This
+split exists so a fresh draft doesn't hard-fail engine/gates.py's G08
+(needs title_promise_check) and G11 (needs the whole review block) before
+the citation gate ever gets a chance to run — see writer_cli.py's
+write -> citation_gate -> build -> gate ordering.
 
 Deviations from SPEC.md's literal text (kept minimal, called out per the
 task brief):
@@ -37,6 +54,23 @@ task brief):
     production behavior (root=None -> real ROOT) is identical; the only
     difference is tests can now fully isolate this module against a
     tmp_path tree instead of hitting the real data/history.json.
+  * `reuse_slug` (new): if not passed explicitly but `retry_feedback` is,
+    this module falls back to reading `data/run-state/<date_ist>.json`'s
+    `slug` field (writer_cli.py's FIX-2 run-state file) — so a bare
+    `ai_write.run(..., retry_feedback=...)` call still reuses the right
+    slug even if the caller didn't wire the explicit kwarg through.
+  * Grounding-redirect resolution (new, engine/ai/resolve_links.py):
+    right before writing the final draft to disk, every
+    `vertexaisearch.cloud.google.com/grounding-api-redirect/...` url in
+    the resolved article text (front-matter `sources[]` and inline body
+    links alike — the writer copies these in from the research sources
+    pool, which is grounded via `googleSearch`) is resolved to its real
+    final url and substituted in place, so citation_gate verifies (and
+    the site eventually publishes) a stable real url, not an opaque
+    token that expires in ~a month. Failures to resolve are fail-open —
+    the original redirect url is left in place and reported in a
+    `data/gate-reports/<date>-<slug>-link-warnings.json` side file that
+    writer_cli.py folds into run-state; they never raise or block the run.
 """
 from __future__ import annotations
 
@@ -47,6 +81,7 @@ from pathlib import Path
 import yaml
 
 from ..util import ROOT, slugify
+from .resolve_links import resolve_grounding_links
 
 _PROMPTS = Path(__file__).resolve().parent.parent.parent / "prompts" / "v1"
 PROMPT_PATH = _PROMPTS / "write_article.md"
@@ -65,8 +100,13 @@ SLUG_TOKEN = "{{ARTICLE_SLUG}}"
 REQUIRED_STR_FIELDS = ["title", "slug", "date", "hub", "description",
                        "hero_alt", "keyword", "original_value"]
 REQUIRED_LIST_FIELDS = ["tags", "sources", "faq"]
-REVIEW_BOOL_KEYS = ["facts_verified", "sources_checked", "title_promise_check",
-                    "no_fabrication", "policy_pass"]
+
+# review.* flag ownership is split (FIX A): the writer self-asserts the
+# three it can actually vouch for as the author; the citation gate is the
+# only thing allowed to flip the other two, so they must stay false here.
+REVIEW_SELF_ASSERT_KEYS = ["title_promise_check", "no_fabrication", "policy_pass"]
+REVIEW_GATE_KEYS = ["facts_verified", "sources_checked"]
+REVIEW_BOOL_KEYS = REVIEW_GATE_KEYS + REVIEW_SELF_ASSERT_KEYS  # full set, order matches SPEC.md
 
 
 class WriteValidationError(RuntimeError):
@@ -94,10 +134,14 @@ def _validate(meta: dict) -> list[str]:
     if not isinstance(rev, dict):
         errs.append("missing front-matter 'review' block")
     else:
-        for k in REVIEW_BOOL_KEYS:
+        for k in REVIEW_GATE_KEYS:
             if rev.get(k) is not False:
                 errs.append(f"review.{k} must be false in the draft "
                            "(the citation gate flips it after verifying)")
+        for k in REVIEW_SELF_ASSERT_KEYS:
+            if rev.get(k) is not True:
+                errs.append(f"review.{k} must be true in the draft "
+                           "(the writer self-certifies this — see the prompt)")
         if not str(rev.get("reviewed_at", "")).strip():
             errs.append("review.reviewed_at missing")
     return errs
@@ -140,6 +184,21 @@ def _existing_slugs(root: Path) -> set[str]:
     return slugs
 
 
+def _reuse_slug_from_run_state(root: Path, date_ist: str) -> str | None:
+    """Fallback source for `reuse_slug` when a caller passes
+    retry_feedback but not the slug explicitly — reads writer_cli's FIX-2
+    run-state file. Never raises; missing/unreadable -> None (caller falls
+    back to normal title-derived slug generation)."""
+    p = root / "data" / "run-state" / f"{date_ist}.json"
+    if not p.exists():
+        return None
+    try:
+        state = json.loads(p.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    return state.get("slug") or None
+
+
 def _dedupe_slug(base: str, existing: set[str]) -> str:
     base = base or "article"
     if base not in existing:
@@ -171,8 +230,10 @@ def _build_prompt(date_ist: str, brief_text: str, research_text: str,
 
 
 def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
-        root: Path | None = None) -> Path:
+        root: Path | None = None, reuse_slug: str | None = None) -> Path:
     root = root or ROOT
+    if retry_feedback and not reuse_slug:
+        reuse_slug = _reuse_slug_from_run_state(root, date_ist)
     briefs_dir = root / "data" / "briefs"
     brief_path = briefs_dir / f"{date_ist}.md"
     if not brief_path.exists():
@@ -219,10 +280,29 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
             continue
 
         # Valid draft — resolve the literal placeholder tokens now that we
-        # have the model's real title to derive a slug from.
-        slug_base = slugify(str(meta.get("title", "")))
-        slug = _dedupe_slug(slug_base, _existing_slugs(root))
+        # have the model's real title to derive a slug from. On a retry
+        # (reuse_slug set), REUSE the prior attempt's slug instead of
+        # deriving a fresh one from this draft's (possibly reworded)
+        # title — otherwise a retry can mint a second, orphaned slug for
+        # what is supposed to be the same article (FIX D).
+        if reuse_slug:
+            slug = reuse_slug
+        else:
+            slug_base = slugify(str(meta.get("title", "")))
+            slug = _dedupe_slug(slug_base, _existing_slugs(root))
         final_text = article_text.replace(DATE_TOKEN, date_ist).replace(SLUG_TOKEN, slug)
+
+        # Resolve any Vertex AI Search grounding-redirect urls (opaque,
+        # expire in ~a month) to their real final url before anything else
+        # ever sees this draft (FIX E) — fail-open: unresolved urls are
+        # left as-is and reported to a side file, never block the write.
+        final_text, link_warnings = resolve_grounding_links(final_text)
+        if link_warnings:
+            warn_dir = root / "data" / "gate-reports"
+            warn_dir.mkdir(parents=True, exist_ok=True)
+            (warn_dir / f"{date_ist}-{slug}-link-warnings.json").write_text(
+                json.dumps(link_warnings, indent=2, ensure_ascii=False),
+                encoding="utf-8")
 
         out_dir = root / "content" / "articles"
         out_dir.mkdir(parents=True, exist_ok=True)

@@ -223,9 +223,13 @@ def test_ai_write_happy_path_writes_complete_valid_article(tmp_path):
     assert isinstance(meta["sources"], list) and meta["sources"]
     assert isinstance(meta["faq"], list) and meta["faq"]
 
-    # review.* flags must be false in the draft (citation gate flips them)
-    for k in ai_write.REVIEW_BOOL_KEYS:
+    # review.* flag split (FIX A): the citation gate owns these two, so
+    # they must stay false in a fresh draft ...
+    for k in ai_write.REVIEW_GATE_KEYS:
         assert meta["review"][k] is False
+    # ... the writer self-asserts the other three as true (it's the author)
+    for k in ai_write.REVIEW_SELF_ASSERT_KEYS:
+        assert meta["review"][k] is True
     assert meta["review"]["reviewed_at"]
 
     body = raw.split("---\n", 2)[2] if raw.count("---\n") >= 2 else m.group(2)
@@ -233,6 +237,9 @@ def test_ai_write_happy_path_writes_complete_valid_article(tmp_path):
     word_count = len(__import__("re").findall(r"\w+", body))
     assert word_count >= 900, f"fixture article body must be 900+ words, got {word_count}"
     assert body.count("## ") >= 3
+    # FIX C: no H1 line in the body — the page template renders the
+    # front-matter title as the sole <h1>.
+    assert not any(line.startswith("# ") for line in body.splitlines())
 
 
 def test_ai_write_slug_deduped_against_existing_articles(tmp_path):
@@ -328,3 +335,142 @@ def test_ai_write_review_flags_true_in_draft_is_rejected(tmp_path):
 
     with pytest.raises(ai_write.WriteValidationError, match="facts_verified"):
         ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+
+def test_ai_write_self_assert_false_is_rejected(tmp_path):
+    # the flip side of the review-flag split (FIX A): title_promise_check /
+    # no_fabrication / policy_pass must be TRUE in the draft — a draft that
+    # ships any of them false (the old "always false" contract) is now
+    # invalid too, not just facts_verified/sources_checked=true.
+    _seed_write_inputs(tmp_path)
+    bad_fixtures = tmp_path / "false_self_assert_fixtures"
+    bad_fixtures.mkdir()
+    article = (
+        '---\ntitle: "A Perfectly Fine Length Title For Testing Purposes Only"\n'
+        'slug: "{{ARTICLE_SLUG}}"\ndate: "{{ARTICLE_DATE}}"\nhub: ai-tools\n'
+        'tags: [x]\ndescription: "' + ("d" * 120) + '"\nhero_alt: "alt"\n'
+        'keyword: "kw"\noriginal_value: "value"\nselection_note: ""\n'
+        'sources:\n  - {title: "S", url: "https://fixturecorp.example/s", primary: true}\n'
+        'faq:\n  - {q: "Q?", a: "A."}\n'
+        'review:\n  facts_verified: false\n  sources_checked: false\n'
+        '  title_promise_check: false\n  no_fabrication: true\n  policy_pass: true\n'
+        '  reviewed_at: "2026-08-15T00:00:00+05:30"\n---\n\nBody text.\n'
+    )
+    _write_json(bad_fixtures / "write.json", {
+        "text": "```markdown\n" + article + "\n```",
+        "usage": {"in": 10, "out": 10, "thinking": 0},
+        "grounded_queries": 0, "url_fetches": 0, "sources": [],
+        "finish_reason": "STOP", "model": "gemini-3.5-flash",
+    })
+    client = _client(tmp_path, fixture_dir=bad_fixtures)
+
+    with pytest.raises(ai_write.WriteValidationError, match="title_promise_check"):
+        ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+
+# ------------------------------------------------------- reuse_slug (FIX D)
+
+def test_ai_write_reuse_slug_overwrites_same_slug(tmp_path):
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), retry_feedback="fix the gate failure",
+                            reuse_slug="my-fixed-slug", root=tmp_path)
+
+    assert out_path.name == f"{DATE}-my-fixed-slug.md"
+    meta = yaml.safe_load(ai_write.FM_RE.match(
+        out_path.read_text(encoding="utf-8")).group(1))
+    assert meta["slug"] == "my-fixed-slug"
+
+
+def test_ai_write_reuse_slug_falls_back_to_run_state(tmp_path):
+    # a caller that passes retry_feedback but not reuse_slug explicitly
+    # still reuses the right slug, read from writer_cli's run-state file
+    _seed_write_inputs(tmp_path)
+    _write_json(tmp_path / "data" / "run-state" / f"{DATE}.json", {
+        "date": DATE, "slug": "state-slug", "status": "gate_fail",
+        "recorded": False, "ts_ist": "2026-08-15T00:00:00+05:30",
+    })
+    client = _client(tmp_path)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(),
+                            retry_feedback="fix the gate failure", root=tmp_path)
+
+    assert out_path.name == f"{DATE}-state-slug.md"
+
+
+def test_ai_write_no_reuse_slug_without_retry_feedback(tmp_path):
+    # a fresh (non-retry) call must NOT consult run-state — even if a
+    # stale one exists from a previous day/run, a brand-new draft always
+    # derives its own slug from its own title
+    _seed_write_inputs(tmp_path)
+    _write_json(tmp_path / "data" / "run-state" / f"{DATE}.json", {
+        "date": DATE, "slug": "stale-unrelated-slug", "status": "ok",
+        "recorded": True, "ts_ist": "2026-08-15T00:00:00+05:30",
+    })
+    client = _client(tmp_path)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    assert "stale-unrelated-slug" not in out_path.name
+
+
+# --------------------------------------------- grounding-link resolution (FIX E)
+
+def test_ai_write_resolves_grounding_redirect_links(tmp_path, monkeypatch):
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+
+    captured = {}
+
+    def fake_resolve(text):
+        captured["called_with"] = text
+        new_text = text.replace(
+            "https://fixturecorp.example/blog/aurora-launch",
+            "https://fixturecorp.example/RESOLVED/aurora-launch",
+        )
+        return new_text, []
+
+    monkeypatch.setattr(ai_write, "resolve_grounding_links", fake_resolve)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    assert "called_with" in captured  # the hook ran, post-slug pre-write-to-disk
+    text = out_path.read_text(encoding="utf-8")
+    assert "https://fixturecorp.example/RESOLVED/aurora-launch" in text
+    assert "https://fixturecorp.example/blog/aurora-launch" not in text
+
+
+def test_ai_write_writes_link_warnings_file_when_resolution_fails(tmp_path, monkeypatch):
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+
+    def fake_resolve(text):
+        return text, [{"url": "https://vertexaisearch.cloud.google.com/"
+                              "grounding-api-redirect/opaque123",
+                       "error": "TimeoutError: timed out"}]
+
+    monkeypatch.setattr(ai_write, "resolve_grounding_links", fake_resolve)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    slug = out_path.stem[len(DATE) + 1:]
+    warn_path = tmp_path / "data" / "gate-reports" / f"{DATE}-{slug}-link-warnings.json"
+    assert warn_path.exists()
+    warnings = json.loads(warn_path.read_text(encoding="utf-8"))
+    assert warnings[0]["error"] == "TimeoutError: timed out"
+    # fail-open: the article itself still gets written despite the warning
+    assert out_path.exists()
+
+
+def test_ai_write_no_link_warnings_file_when_nothing_to_resolve(tmp_path):
+    # real resolve_grounding_links, not monkeypatched — the fixture article
+    # has no vertexaisearch redirect urls, so no warnings file should appear
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    slug = out_path.stem[len(DATE) + 1:]
+    warn_path = tmp_path / "data" / "gate-reports" / f"{DATE}-{slug}-link-warnings.json"
+    assert not warn_path.exists()

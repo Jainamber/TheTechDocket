@@ -91,8 +91,8 @@ class FakeRunner:
         self.calls.append(("ai_research", date_ist))
         return {"notes": "fixture research"}
 
-    def ai_write(self, date_ist, client, cfg, retry_feedback=None):
-        self.calls.append(("ai_write", date_ist, retry_feedback))
+    def ai_write(self, date_ist, client, cfg, retry_feedback=None, reuse_slug=None):
+        self.calls.append(("ai_write", date_ist, retry_feedback, reuse_slug))
         if self._write_raises is not None and len(self.calls) == 1:
             raise self._write_raises
         return self._article_paths.pop(0)
@@ -194,15 +194,18 @@ def test_all_step_ordering_happy_path(tmp_path):
     assert rc == writer_cli.EXIT_OK
     names = [c[0] for c in fake.calls]
     # fetch is skipped (inbox already exists) -> select, ai_select, brief,
-    # ai_research, ai_write, build, gate, citation_gate, docket, social
+    # ai_research, ai_write, citation_gate, build, gate, docket, social.
+    # citation_gate runs BEFORE build/gate (FIX A) — it only needs the raw
+    # article on disk, and must flip review.facts_verified/sources_checked
+    # before gates.py's G08/G11 checks ever see them.
     # (record is not part of the Runner interface — it's called directly)
     assert names == [
         "engine_run", "ai_select", "engine_run", "ai_research", "ai_write",
-        "engine_run", "gate", "citation_gate", "ai_docket", "ai_social",
+        "citation_gate", "engine_run", "gate", "ai_docket", "ai_social",
     ]
     assert fake.calls[0] == ("engine_run", "select")
     assert fake.calls[2] == ("engine_run", "brief")
-    assert fake.calls[5] == ("engine_run", "build")
+    assert fake.calls[6] == ("engine_run", "build")
 
 
 def test_all_runs_fetch_when_inbox_missing(tmp_path):
@@ -224,17 +227,15 @@ def test_gate_retry_budget_exhausted_returns_gate_fail(tmp_path):
     (tmp_path / "data" / "inbox").mkdir(parents=True)
     (tmp_path / "data" / "inbox" / "2026-08-15.json").write_text("{}", encoding="utf-8")
 
-    art1 = tmp_path / "a1.md"
-    art2 = tmp_path / "a2.md"
-    _write_article(art1, "slug-one")
-    _write_article(art2, "slug-two")
+    art1 = _canonical_article(tmp_path, "2026-08-15", "slug-one")
+    art2 = _canonical_article(tmp_path, "2026-08-15", "slug-two")
     cfg = {"llm": {"max_retry_rewrites": 1},
            "site": {"base_url": "https://thetechdocket.com/"}}
-    # gate fails both times -> exactly 1 + max_retries ai_write calls,
-    # citation_gate never reached
+    # citations always pass, gate fails both times -> exactly 1 + max_retries
+    # ai_write calls; build/gate run every round since citations cleared it
     fake = FakeRunner([str(art1), str(art2)],
                        [(False, "gate report 1"), (False, "gate report 2")],
-                       [])
+                       [(True, None), (True, None)])
 
     rc = writer_cli.run_all("2026-08-15", tmp_path, cfg, client=None,
                             ledger=None, runner=fake)
@@ -244,10 +245,13 @@ def test_gate_retry_budget_exhausted_returns_gate_fail(tmp_path):
     gate_calls = [c for c in fake.calls if c[0] == "gate"]
     cit_calls = [c for c in fake.calls if c[0] == "citation_gate"]
     assert len(write_calls) == 2          # initial + 1 retry, budget exhausted
-    assert len(gate_calls) == 2
-    assert cit_calls == []                # gate never passed -> citations skipped
-    # second ai_write call carried the first gate's feedback
+    assert len(gate_calls) == 2           # citations passed both rounds -> gate ran both times
+    assert len(cit_calls) == 2
+    # second ai_write call carried the first gate's feedback, and reused
+    # the first attempt's slug (FIX D — never mint a second slug on retry)
     assert write_calls[1][2] == "gate report 1"
+    assert write_calls[1][3] == "slug-one"
+    assert write_calls[0][3] is None       # NOT passed on the first attempt
 
     # record must NOT have run — no history.json at all
     assert not (tmp_path / "data" / "history.json").exists()
@@ -293,14 +297,63 @@ def test_retry_budget_zero_means_no_second_attempt(tmp_path):
     _write_article(art, "slug-one")
     cfg = {"llm": {"max_retry_rewrites": 0},
            "site": {"base_url": "https://thetechdocket.com/"}}
-    fake = FakeRunner([str(art)], [(False, "nope")], [])
+    # citation fails on the only attempt -> build/gate short-circuited,
+    # zero budget means no retry
+    fake = FakeRunner([str(art)], [], [(False, "nope")])
 
     rc = writer_cli.run_all("2026-08-15", tmp_path, cfg, client=None,
                             ledger=None, runner=fake)
 
     assert rc == writer_cli.EXIT_GATE_FAIL
     assert len([c for c in fake.calls if c[0] == "ai_write"]) == 1
+    assert len([c for c in fake.calls if c[0] == "gate"]) == 0  # never reached
     assert not (tmp_path / "data" / "history.json").exists()
+
+
+# ---------------- retry reuse-slug + stale-docs cleanup (FIX D) ----------------
+
+def test_retry_reuses_slug_and_clears_stale_docs_dir(tmp_path):
+    (tmp_path / "data" / "inbox").mkdir(parents=True)
+    (tmp_path / "data" / "inbox" / "2026-08-15.json").write_text("{}", encoding="utf-8")
+    art = _canonical_article(tmp_path, "2026-08-15", "slug-one")
+
+    # a stale built page left behind by the failed first attempt
+    docs_dir = tmp_path / "docs" / "articles" / "slug-one"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "index.html").write_text("stale", encoding="utf-8")
+
+    cfg = {"llm": {"max_retry_rewrites": 1},
+           "site": {"base_url": "https://thetechdocket.com/"}}
+    # first round: gate fails; retry; second round: citations + gate pass
+    fake = FakeRunner([str(art), str(art)],
+                       [(False, "gate report 1"), (True, None)],
+                       [(True, None), (True, None)])
+
+    rc = writer_cli.run_all("2026-08-15", tmp_path, cfg, client=None,
+                            ledger=None, runner=fake)
+
+    assert rc == writer_cli.EXIT_OK
+    write_calls = [c for c in fake.calls if c[0] == "ai_write"]
+    assert len(write_calls) == 2
+    assert write_calls[0][3] is None        # first attempt: no reuse_slug
+    assert write_calls[1][3] == "slug-one"  # retry: MUST reuse the same slug
+    assert not docs_dir.exists()            # stale build output removed before the retry
+
+
+def test_no_retry_means_docs_dir_left_untouched(tmp_path):
+    (tmp_path / "data" / "inbox").mkdir(parents=True)
+    (tmp_path / "data" / "inbox" / "2026-08-15.json").write_text("{}", encoding="utf-8")
+    art = _canonical_article(tmp_path, "2026-08-15", "the-slug")
+    docs_dir = tmp_path / "docs" / "articles" / "the-slug"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "index.html").write_text("built", encoding="utf-8")
+
+    fake = FakeRunner([str(art)], [(True, None)], [(True, None)])
+    rc = writer_cli.run_all("2026-08-15", tmp_path, CFG, client=None,
+                            ledger=None, runner=fake)
+
+    assert rc == writer_cli.EXIT_OK
+    assert docs_dir.exists()  # no retry happened -> nothing was cleaned up
 
 
 # ---------------- best-effort docket/social ----------------
@@ -425,10 +478,12 @@ def test_record_not_written_when_citations_fail(tmp_path):
     art2 = _canonical_article(tmp_path, "2026-08-15", "slug-two")
     cfg = {"llm": {"max_retry_rewrites": 1},
            "site": {"base_url": "https://thetechdocket.com/"}}
-    # gate always passes but citations never do -> retry budget exhausted
+    # citations never pass -> retry budget exhausted; build/gate are
+    # short-circuited every round (never even reached) since a citation
+    # failure always skips straight to the ai_write retry
     fake = FakeRunner(
         [str(art1), str(art2)],
-        [(True, None), (True, None)],
+        [],
         [(False, {"reason": "unsupported"}), (False, {"reason": "still bad"})],
     )
 
@@ -436,12 +491,50 @@ def test_record_not_written_when_citations_fail(tmp_path):
                             ledger=None, runner=fake)
 
     assert rc == writer_cli.EXIT_GATE_FAIL
+    assert len([c for c in fake.calls if c[0] == "gate"]) == 0
     assert not (tmp_path / "data" / "history.json").exists()
 
     state = json.loads(
         (tmp_path / "data" / "run-state" / "2026-08-15.json").read_text())
     assert state["status"] == "gate_fail"
     assert state["recorded"] is False
+
+
+# ---------------- link-resolution warnings folded into run-state (FIX E) ----------------
+
+def test_run_state_includes_link_warnings_when_present(tmp_path):
+    (tmp_path / "data" / "inbox").mkdir(parents=True)
+    (tmp_path / "data" / "inbox" / "2026-08-15.json").write_text("{}", encoding="utf-8")
+    art = _canonical_article(tmp_path, "2026-08-15", "the-slug")
+    warn_dir = tmp_path / "data" / "gate-reports"
+    warn_dir.mkdir(parents=True, exist_ok=True)
+    warnings = [{"url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/abc",
+                 "error": "TimeoutError: timed out"}]
+    (warn_dir / "2026-08-15-the-slug-link-warnings.json").write_text(
+        json.dumps(warnings), encoding="utf-8")
+    fake = FakeRunner([str(art)], [(True, None)], [(True, None)])
+
+    rc = writer_cli.run_all("2026-08-15", tmp_path, CFG, client=None,
+                            ledger=None, runner=fake)
+
+    assert rc == writer_cli.EXIT_OK
+    state = json.loads(
+        (tmp_path / "data" / "run-state" / "2026-08-15.json").read_text())
+    assert state["link_warnings"] == warnings
+
+
+def test_run_state_link_warnings_empty_when_no_warnings_file(tmp_path):
+    hist = {"published": [{"date": "2026-08-15", "slug": "already-done"}]}
+    (tmp_path / "data").mkdir(parents=True)
+    (tmp_path / "data" / "history.json").write_text(json.dumps(hist), encoding="utf-8")
+    fake = FakeRunner([], [], [])
+
+    writer_cli.run_all("2026-08-15", tmp_path, CFG, client=None,
+                       ledger=None, runner=fake)
+
+    state = json.loads(
+        (tmp_path / "data" / "run-state" / "2026-08-15.json").read_text())
+    assert state["link_warnings"] == []
 
 
 # ---------------- run_step ----------------

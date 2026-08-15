@@ -16,20 +16,37 @@ stays importable while sibling modules are still under construction).
 => print STOP, exit 3 (bypass with --skip-stop-guard, staging/smoke only);
 (1) ensure data/inbox/<date>.json exists, else `engine.run fetch`;
 (2) `engine.run select`; (3) ai_select; (4) `engine.run brief`;
-(5) ai_research; (6) ai_write; (7) `engine.run build`; (8) `engine.run gate`
-— on HARD failure, capture the report and ai_write(retry_feedback=...),
-rebuild, re-gate; (9) citation_gate — draws from the SAME retry budget as
-(8) (config llm.max_retry_rewrites, total across both gate kinds, not per
-kind); (10) record — ONLY once BOTH (8) and (9) have passed, append the
-published entry to data/history.json (same shape as engine.publish.publish);
-skipped with `--no-record` (record defaults ON; staging PRs pass this so
-history.json stays clean until a real merge to main). (11) docket + social,
-best-effort — failures there are logged and never change the run's exit
-code or touch the article.
+(5) ai_research; (6) ai_write; (7) citation_gate — flips
+review.facts_verified/sources_checked + reviewed_at on PASS;
+(8) `engine.run build`; (9) `engine.run gate`. Steps 7-9 run in THIS order
+(citations before build/gate, not after) because engine/gates.py's G08 and
+G11 need review.facts_verified/sources_checked/title_promise_check/etc all
+true, and only the citation gate is allowed to flip the first two —
+running compliance gates before citations ever run would deadlock every
+fresh draft. Steps 6-9 share ONE retry budget (config
+llm.max_retry_rewrites, total across citation + compliance failures, not
+per-kind): on EITHER a citation or a compliance HARD failure, one
+ai_write(retry_feedback=..., reuse_slug=<same slug>) call, then
+citations -> build -> gate re-run from the top — a citation failure skips
+straight to retry without wasting a build+gate cycle on a draft that can't
+pass G11 yet anyway. `reuse_slug` (FIX D) makes the retried draft overwrite
+the SAME content/articles/<date>-<slug>.md instead of a retry draft's
+(possibly reworded) title minting a second, orphaned slug; the prior
+attempt's stale docs/articles/<slug>/ build output is also removed before
+the retry so a later build can't leave it behind. (10) record — ONLY once
+BOTH citations and gate have passed, append the published entry to
+data/history.json (same shape as engine.publish.publish); skipped with
+`--no-record` (record defaults ON; staging PRs pass this so history.json
+stays clean until a real merge to main). (11) docket + social, best-effort
+— failures there are logged and never change the run's exit code or touch
+the article.
 
 Every exit path (ok / gate_fail / stop / infra_error) also writes
-data/run-state/<date>.json — {date, slug, status, recorded, ts_ist} — so CI
-can read the definitive slug for the day instead of globbing for it.
+data/run-state/<date>.json — {date, slug, status, recorded, ts_ist,
+link_warnings} — so CI can read the definitive slug for the day instead of
+globbing for it. `link_warnings` (FIX E) surfaces any grounding-redirect
+urls ai_write.py could not resolve to a real url (fail-open — never blocks
+the run; see engine/ai/resolve_links.py).
 
 No git commands are ever run here (publish stays `engine.run publish` / the
 CI PR rail; `record` above only touches data/history.json, never git). One
@@ -45,6 +62,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 from datetime import datetime
@@ -98,9 +116,11 @@ class Runner:
         from .ai_research import run as _run
         return _run(date_ist, slug_hint, client, cfg)
 
-    def ai_write(self, date_ist: str, client, cfg, retry_feedback: str | None = None):
+    def ai_write(self, date_ist: str, client, cfg, retry_feedback: str | None = None,
+                 reuse_slug: str | None = None):
         from .ai_write import run as _run
-        return _run(date_ist, client, cfg, retry_feedback=retry_feedback)
+        return _run(date_ist, client, cfg, retry_feedback=retry_feedback,
+                    reuse_slug=reuse_slug, root=self.root)
 
     def gate(self, slug: str, date_ist: str) -> tuple[bool, str | None]:
         rc = self.engine_run("gate", "--slug", slug)
@@ -194,6 +214,23 @@ def _record_entry(date_ist: str, slug: str, root: Path, cfg: dict) -> dict:
 # Written on every --all exit path (and the slug-bearing single steps) so
 # CI can read the definitive slug instead of globbing content/articles/.
 
+def _read_link_warnings(root: Path, date_ist: str, slug: str | None) -> list:
+    """FIX E: fold ai_write.py's grounding-redirect resolution warnings (if
+    any) into run-state — a side file, same pattern as Runner.gate() reading
+    the compliance gate-report back from disk instead of over the Runner
+    boundary. Missing file (the common case: nothing to warn about, or no
+    slug yet) -> []."""
+    if not slug:
+        return []
+    path = root / "data" / "gate-reports" / f"{date_ist}-{slug}-link-warnings.json"
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+
+
 def _write_run_state(root: Path, date_ist: str, slug: str | None, status: str,
                       recorded: bool) -> None:
     path = root / "data" / "run-state" / f"{date_ist}.json"
@@ -204,6 +241,7 @@ def _write_run_state(root: Path, date_ist: str, slug: str | None, status: str,
         "status": status,
         "recorded": recorded,
         "ts_ist": _now_ist().isoformat(),
+        "link_warnings": _read_link_warnings(root, date_ist, slug),
     }
     path.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -274,24 +312,39 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
         article_path = r.ai_write(date_ist, client, cfg)
         slug = _slug_from_article(article_path)
 
-        # (7)-(9) build / gate / citations, sharing one retry budget
+        # (7)-(9) citations / build / gate, sharing one retry budget. Order
+        # matters (FIX A): citation_gate runs FIRST — it only needs the raw
+        # article on disk — so it can flip review.facts_verified /
+        # sources_checked to true before engine.run gate's G08/G11 checks
+        # ever see them. Running compliance gates first would hard-fail
+        # every fresh draft (they start with those flags false) before
+        # citation_gate gets a chance to flip them, deadlocking the pipeline.
         max_retries = int(cfg["llm"]["max_retry_rewrites"])
         retries_used = 0
         gate_ok = False
         cit_ok = False
         while True:
-            r.engine_run("build")
-            gate_ok, gate_feedback = r.gate(slug, date_ist)
-            cit_ok, cit_feedback = (False, None)
-            if gate_ok:
-                cit_ok, cit_feedback = r.citation_gate(date_ist, slug, client, cfg)
-            if gate_ok and cit_ok:
+            cit_ok, cit_feedback = r.citation_gate(date_ist, slug, client, cfg)
+            gate_ok, gate_feedback = (False, None)
+            if cit_ok:
+                r.engine_run("build")
+                gate_ok, gate_feedback = r.gate(slug, date_ist)
+            if cit_ok and gate_ok:
                 break
             if retries_used >= max_retries:
                 break
             retries_used += 1
-            feedback = gate_feedback if not gate_ok else cit_feedback
-            article_path = r.ai_write(date_ist, client, cfg, retry_feedback=feedback)
+            feedback = cit_feedback if not cit_ok else gate_feedback
+            # FIX D: clear the failed attempt's stale built page (if build
+            # ran this round) before retrying, so a later build can't leave
+            # an orphan docs/articles/<slug>/ page behind.
+            docs_dir = root / "docs" / "articles" / slug
+            if docs_dir.exists():
+                shutil.rmtree(docs_dir, ignore_errors=True)
+            # reuse_slug: the retry MUST overwrite this same article, never
+            # mint a second slug from a reworded retry title.
+            article_path = r.ai_write(date_ist, client, cfg, retry_feedback=feedback,
+                                      reuse_slug=slug)
             slug = _slug_from_article(article_path)
 
         # (10) record — ONLY after both gate and citation_gate passed.

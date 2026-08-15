@@ -47,27 +47,51 @@ sources:
 faq:
   - {q: "Real question people search?", a: "Two-to-three sentence answer."}
 review:
-  facts_verified: false      # ALWAYS false in your draft — the citation gate verifies and flips this
-  sources_checked: false     # ALWAYS false in your draft — the citation gate verifies and flips this
-  title_promise_check: false # ALWAYS false in your draft
-  no_fabrication: false      # ALWAYS false in your draft
-  policy_pass: false         # ALWAYS false in your draft
+  facts_verified: false      # ALWAYS false in your draft — only the citation gate verifies sources and flips this
+  sources_checked: false     # ALWAYS false in your draft — only the citation gate verifies sources and flips this
+  title_promise_check: true  # YOU assert this — true only if your title obeys every rule in "Title rules" below
+  no_fabrication: true       # YOU assert this — true only if you invented no fact, quote, statistic, or audience/demographic claim
+  policy_pass: true          # YOU assert this — true only if the whole draft follows every rule in this brief
   reviewed_at: "{{today_ist}}T00:00:00+05:30"   # a plausible ISO timestamp; the real one is set at publish
 ---
 ```
 Add `ymyl: finance | health | security` only if the topic genuinely
 triggers a YMYL (Your Money or Your Life) category — omit it otherwise.
 
-Do **not** set any `review.*` flag to `true` yourself — an automated
-citation-checking gate re-verifies every source against the article and
-only it is allowed to flip these to true. A draft that ships `true` here
-will be rejected.
+**review.\* flags — two different owners, both mechanically checked:**
+`facts_verified` and `sources_checked` must stay `false` — a separate,
+automated citation-checking gate re-verifies every source against the
+article after your draft is submitted, and only it is allowed to flip
+those two to `true`. `title_promise_check`, `no_fabrication`, and
+`policy_pass` are the opposite: YOU are the only one who can certify them
+(you are the author), so ship them as `true` — but only because they are
+genuinely true. A draft is rejected if `facts_verified`/`sources_checked`
+come back anything but `false`, or if `title_promise_check` /
+`no_fabrication` / `policy_pass` come back anything but `true`.
+
+### Title rules (gate G08 — checked mechanically; any violation is a hard
+### fail, independent of what you write in `review.title_promise_check`)
+- No run of 5+ consecutive uppercase letters (no ALL-CAPS words like
+  "SHOCKING" or "AMAZING").
+- At most one `!` in the title.
+- None of these clickbait patterns, in any casing: "you won't believe",
+  "will shock", "shocking truth", "blow your mind", "this one trick",
+  "one weird", "secret(s) that/they", "they don't want you", "number
+  <N> will", "gone wrong", "jaw-dropping".
+- The title must be a plain, accurate promise the body actually delivers
+  in full — this is exactly what `review.title_promise_check: true`
+  certifies. If the title overpromises anything the body doesn't deliver,
+  rewrite the title (or the body) until they match.
 
 ## Body requirements (all enforced by automated gates — do not skip any)
-1. **H1 title** matching the front-matter title, keyword front-loaded.
-2. Immediately after the H1, before any `##`: a **2-4 sentence direct
-   answer/summary paragraph (>= 40 words)** that fully answers the core
-   question a reader arrives with.
+1. **No `# ` (H1) line anywhere in the body.** The page template renders
+   the front-matter `title` as the page's one and only `<h1>` on its own
+   — if the body also starts with a `# Title` line, the rendered page
+   ends up with two `<h1>` elements and gate S03 (single-H1) hard-fails.
+   Body headings start at `##` (H2); never emit a `# ` line.
+2. The **first line of the body** (before any `##`): a **2-4 sentence
+   direct answer/summary paragraph (>= 40 words)** that fully answers the
+   core question a reader arrives with.
 3. **3 or more `##` (H2) sections**, no skipped heading levels (no `####`
    without a `###` first, etc.), short paragraphs throughout.
 4. At least **one original-analysis H2** titled exactly one of: "What it
@@ -77,8 +101,16 @@ will be rejected.
    double as the analysis H2 in #4 if titled "The India angle").
 6. A **comparison table** (Markdown table) wherever the material has
    comparable data (pricing tiers, specs, timelines, before/after).
-7. **Every statistic's paragraph carries an inline link to its source** —
-   no stat without a same-paragraph citation.
+7. **Stat-sourcing (gate G07 — checked mechanically, paragraph by
+   paragraph):** any paragraph containing a percentage (e.g. "45%"), a
+   currency amount (a `₹`/`$`/`€`/`£` symbol directly followed by a
+   digit), or a number scaled in crore/lakh/million/billion/trillion MUST
+   contain an inline markdown link to an **external** `http(s)://` source
+   (not a link to this site's own pages) **within that exact same
+   paragraph** — a citation in a different paragraph, even the very next
+   one, does not satisfy the gate. If a paragraph has such a number and no
+   natural external source to cite inline, rewrite the paragraph so the
+   number either gets its own citation or is dropped.
 8. **2 or more outbound citations to primary sources** total (official
    announcements, docs, papers, filings — not other blogs).
 9. **2-4 internal links** to related prior articles, in-body and natural
