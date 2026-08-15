@@ -54,7 +54,7 @@ def publish(slug: str, push: bool = True) -> dict:
             except RuntimeError as e:
                 print(f"note: pull skipped ({e})")
             _git("push", cfg["publishing"]["git_remote"], f"HEAD:{branch}")
-            print(f"pushed → {entry['url']}")
+            print(f"pushed -> {entry['url']}")
         else:
             print("committed locally (push skipped)")
     else:

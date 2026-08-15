@@ -24,6 +24,12 @@ from .util import ROOT, all_articles, load_config, load_history, today_str
 
 
 def main(argv=None):
+    # Windows consoles/pipes often default to a legacy code page (cp1252)
+    # that can't encode article-derived text in gate details; an encode
+    # crash after the gates ran would misreport the run via the exit code.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="replace")
     ap = argparse.ArgumentParser(prog="engine")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("fetch")
