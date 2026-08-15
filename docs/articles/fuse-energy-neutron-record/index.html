@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
+<title>Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power</title>
+<meta name="description" content="Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn&#39;t.">
+<link rel="canonical" href="https://thetechdocket.com/articles/fuse-energy-neutron-record/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power">
+<meta property="og:description" content="Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn&#39;t.">
+<meta property="og:url" content="https://thetechdocket.com/articles/fuse-energy-neutron-record/">
+<meta property="og:image" content="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="A ring of capacitors discharging into a glowing pinched plasma column that emits a burst of bright specks, beside an enormous gauge showing energy in towering over energy out.">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-08-15T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-08-15T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/saurab-jain/">
+<meta property="article:section" content="Chips &amp; Hardware">
+<meta property="article:tag" content="fusion">
+<meta property="article:tag" content="fuse-energy">
+<meta property="article:tag" content="dense-plasma-focus">
+<meta property="article:tag" content="llnl">
+<meta property="article:tag" content="neutron-source">
+<meta property="article:tag" content="frontier-tech">
+<meta property="article:tag" content="pulsed-power">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power">
+<meta name="twitter:description" content="Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn&#39;t.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/fuse-energy-neutron-record/"}, "headline": "Fuse Energy's Neutron Record: A Fusion First, Not Net Power", "description": "Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn't.", "image": ["https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.jpg", "https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-4x3.jpg", "https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-1x1.jpg"], "datePublished": "2026-08-15T07:00:00+05:30", "dateModified": "2026-08-15T07:00:00+05:30", "author": {"@type": "Person", "name": "Saurab Jain", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": []}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "Chips & Hardware", "item": "https://thetechdocket.com/topics/hardware/"}, {"@type": "ListItem", "position": 3, "name": "Fuse Energy's Neutron Record: A Fusion First, Not Net Power"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Did Fuse Energy achieve net energy or fusion ignition?", "acceptedAnswer": {"@type": "Answer", "text": "No, and the company does not claim it did. The record shot's neutron count corresponds to roughly one joule of fusion energy against a million joules of stored electrical energy driving the device — about six orders of magnitude short of scientific breakeven. The record is about neutron output per megajoule, a measure that matters for radiation testing, not for power generation."}}, {"@type": "Question", "name": "What is a dense plasma focus?", "acceptedAnswer": {"@type": "Answer", "text": "A 1960s-era device, invented independently in the US and USSR, in which a capacitor bank discharges across coaxial electrodes, accelerating a plasma sheath that collapses into a brief, dense pinch. With deuterium fill gas the pinch emits a burst of fusion neutrons. Scaling studies had ruled it out as a power source by the 1980s; ever since, it has served as a compact neutron and X-ray source."}}, {"@type": "Question", "name": "Who holds the record for actual fusion energy gain?", "acceptedAnswer": {"@type": "Answer", "text": "The National Ignition Facility at Lawrence Livermore. Its April 2025 shot produced 8.6 megajoules of fusion energy from 2.08 megajoules of laser light on target — a gain above 4. Even that is target-level gain, not plant-level: the facility's lasers draw vastly more electricity from the grid than they deliver to the fuel capsule."}}, {"@type": "Question", "name": "When will fusion actually deliver power to the grid?", "acceptedAnswer": {"@type": "Answer", "text": "The industry's own consensus, per the Fusion Industry Association's 2026 survey, is the 2030–2035 window, and companies estimate they need another seventy-seven billion dollars to build first plants. Independent researchers tend to push the timeline for a meaningful grid contribution toward 2040 and beyond. Every operating date currently in circulation is a projection, not a schedule."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
+.feature a.img{display:block}
+.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card a.img{display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
+figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
+@media (max-width:719px){
+nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
+nav.hubs::-webkit-scrollbar{display:none}
+nav.hubs a{flex:0 0 auto;white-space:nowrap}
+.nl-full{display:none}
+.nl-short{display:inline}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/" aria-current="page"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/hardware/">Chips &amp; Hardware</a> / <span>Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power</span>
+  </nav>
+  <a class="kicker postkick k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a>
+  <h1>Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power</h1>
+  <div class="standfirst">Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn&#39;t.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/saurab-jain/">Saurab Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-08-15T07:00:00+05:30">Published August 15, 2026</time>
+    
+    <span>·</span><span>7 min read</span>
+  </div>
+  <figure class="hero">
+    <picture>
+      <source type="image/webp" srcset="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.webp">
+      <img src="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.jpg" width="1200" height="675" alt="A ring of capacitors discharging into a glowing pinched plasma column that emits a burst of bright specks, beside an enormous gauge showing energy in towering over energy out." fetchpriority="high" loading="eager" decoding="sync">
+    </picture>
+  </figure>
+  
+
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#what-fuse-energy-announced">What Fuse Energy announced</a></li><li><a href="#what-a-dense-plasma-focus-actually-does">What a dense plasma focus actually does</a></li><li><a href="#the-math-the-headline-leaves-out">The math the headline leaves out</a></li><li><a href="#neutrons-that-pay-the-bills">Neutrons that pay the bills</a></li><li><a href="#what-to-watch">What to watch</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>Fuse Energy Technologies says its FAETON-X machine produced 1.27 trillion fusion neutrons in a single shot — which would be the highest neutron yield ever publicly documented by a private fusion company, a range previously reported only by US national laboratories. The claim, <a href="https://www.researchsquare.com/article/rs-10657590/v1" rel="noopener" target="_blank">published August 11 as a preprint</a> that has not yet been peer-reviewed, is a real milestone for a seven-year-old startup — but it is a record in neutron output, not energy: run the numbers and the shot released roughly one joule of fusion energy from a million joules of stored electricity.</p>
+<h2 id="what-fuse-energy-announced">What Fuse Energy announced</h2>
+<p>FAETON-X is a dense plasma focus (DPF) — a pulsed-power machine, not a reactor. According to <a href="https://www.researchsquare.com/article/rs-10657590/v1" rel="noopener" target="_blank">the company&rsquo;s preprint</a>, a 500-microfarad capacitor bank stores one megajoule at a 65-kilovolt charge, then dumps it through the device in a single pulse peaking above 4.5 million amperes. In its best shot at 10 torr of deuterium fill gas, the machine&rsquo;s diagnostics recorded (1.27±0.27)×10¹² neutrons. The same document notes the device is &ldquo;not yet fully conditioned&rdquo; and typically produces around 5×10¹¹ neutrons per shot — the headline number is the peak, not the norm.</p>
+<p>The company&rsquo;s sharpest boast is efficiency. Fuse says the shot beat the neutrons-per-megajoule of the world&rsquo;s largest government plasma-focus facilities — <a href="https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/" rel="noopener" target="_blank">about 40% more than</a> Lawrence Livermore National Laboratory&rsquo;s MJOLNIR, a megajoule-class DPF built for flash neutron radiography. That comparison is the company&rsquo;s own framing, but the underlying LLNL figures are public: MJOLNIR has reported <a href="https://www.osti.gov/biblio/1988207" rel="noopener" target="_blank">up to 1.2×10¹² neutrons per discharge</a> from 1.3 megajoules stored, which works out to FAETON-X claiming about 38% more neutrons per megajoule — the arithmetic checks, with the caveat that no independent party has benchmarked the two machines head-to-head, and MJOLNIR is an active program <a href="https://www.llnl.gov/article/50001/radiography-innovation-shows-new-promise-experimental-dense-plasma-focus-milestone" rel="noopener" target="_blank">rated for 2 megajoules</a> it hasn&rsquo;t yet used in full.</p>
+<p>Worth flagging plainly: the preprint is self-published research, its co-authors include Fuse&rsquo;s founder and CEO J.C. Btaiche, and as of this writing we found no independent replication or physicist critique of the result. The company has some track record here — the paper on its smaller predecessor device, FAETON-I, later cleared peer review at <a href="https://www.nature.com/articles/s41598-025-07939-x" rel="noopener" target="_blank">Scientific Reports</a>. Until this one does the same, treat every FAETON-X number as a company claim.</p>
+<h2 id="what-a-dense-plasma-focus-actually-does">What a dense plasma focus actually does</h2>
+<p>The DPF is one of fusion&rsquo;s oldest machines, invented independently in the early 1960s by J.W. Mather in the US and N.V. Filippov in the USSR, with roots <a href="https://handwiki.org/wiki/Physics:Dense_plasma_focus" rel="noopener" target="_blank">tracing to 1954</a>. A capacitor bank discharges across two coaxial electrodes, ionizing the fill gas into a current-carrying sheath; electromagnetic force accelerates that sheath down the barrel; and at the muzzle it collapses inward into a &ldquo;pinch&rdquo; — a fleeting, extremely hot and dense plasma column. With deuterium in the chamber, the pinch produces a nanosecond-scale burst of fusion neutrons.</p>
+<p>The field&rsquo;s founders hoped this would become a power plant. Scaling studies killed that hope decades ago: by the 1980s the DPF had <a href="https://handwiki.org/wiki/Physics:Dense_plasma_focus" rel="noopener" target="_blank">settled into a different role</a> — a compact, relatively cheap source of intense neutron and X-ray pulses. That is not a consolation prize. Pulsed neutron sources are how you test whether electronics, satellites and defense hardware survive radiation, and US national security agencies treat the capability as critical: the Nevada National Security Site fields its own Gemini DPF — <a href="https://www.osti.gov/servlets/purl/1741025" rel="noopener" target="_blank">roughly 8×10¹¹ neutrons per pulse</a> from a 2-megajoule machine — for some of the highest-priority missions in its nuclear-arsenal custodianship program.</p>
+<h2 id="the-math-the-headline-leaves-out">The math the headline leaves out</h2>
+<p>A trillion of anything sounds enormous, so it is worth doing the energy arithmetic the coverage skips. Deuterium-deuterium fusion has two equally likely outcomes, only one of which emits a neutron, and the two branches release <a href="https://www.mdpi.com/2673-4141/3/1/4" rel="noopener" target="_blank">4.03 and 3.27 MeV respectively</a> — call it 3.65 MeV per reaction on average. So 1.27 trillion detected neutrons implies roughly 2.5 trillion fusion reactions: about 1.5 joules of fusion energy, from a shot fed by 1,000,000 joules of stored charge. That is an energy gain on the order of one millionth — six orders of magnitude short of scientific breakeven, and the company, to its credit, claims nothing else.</p>
+<p>For calibration, here is where the record sits among the machines it invites comparison with:</p>
+<table>
+<thead>
+<tr>
+<th>Machine</th>
+<th>Operator</th>
+<th>Approach</th>
+<th>Driver energy</th>
+<th>Best published result</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAETON-X</td>
+<td>Fuse Energy (private)</td>
+<td>Dense plasma focus</td>
+<td>~1 MJ stored</td>
+<td><a href="https://www.researchsquare.com/article/rs-10657590/v1" rel="noopener" target="_blank">1.27×10¹² D-D neutrons, peak shot</a> (company preprint)</td>
+<td>Neutron yield</td>
+</tr>
+<tr>
+<td>MJOLNIR</td>
+<td>LLNL (US gov&rsquo;t)</td>
+<td>Dense plasma focus</td>
+<td>1.3 MJ used, 2 MJ rated</td>
+<td><a href="https://www.osti.gov/biblio/1988207" rel="noopener" target="_blank">1.2×10¹² neutrons per discharge</a></td>
+<td>Neutron yield</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>NNSS (US gov&rsquo;t)</td>
+<td>Dense plasma focus</td>
+<td>2 MJ</td>
+<td><a href="https://www.osti.gov/servlets/purl/1741025" rel="noopener" target="_blank">~8×10¹¹ D-D neutrons per pulse</a></td>
+<td>Neutron yield</td>
+</tr>
+<tr>
+<td>FuZE-3</td>
+<td>Zap Energy (private)</td>
+<td>Sheared-flow Z-pinch</td>
+<td>&gt;600 kA pinch current</td>
+<td><a href="https://www.zapenergy.com/news/zap-energy-exceeds-gigapascal-fusion-plasma-pressures-on-new-fusion-device-fuze-3" rel="noopener" target="_blank">&gt;2×10⁸ neutrons per pulse</a> (company release)</td>
+<td>Fusion R&amp;D</td>
+</tr>
+<tr>
+<td>NIF</td>
+<td>LLNL (US gov&rsquo;t)</td>
+<td>Laser inertial confinement</td>
+<td>2.08 MJ laser on target</td>
+<td><a href="https://lasers.llnl.gov/about/keys-to-success/nif-sets-power-energy-records" rel="noopener" target="_blank">8.6 MJ fusion yield, gain ~4.1</a> (Apr 2025)</td>
+<td>Energy gain</td>
+</tr>
+</tbody>
+</table>
+<p>The table&rsquo;s last row is the trap to avoid. The National Ignition Facility&rsquo;s numbers describe energy gain from laser fusion — <a href="https://lasers.llnl.gov/science/achieving-fusion-ignition" rel="noopener" target="_blank">ignition, first achieved in December 2022</a> at 3.15 MJ out from 2.05 MJ in — a fundamentally different physics goal than a plasma focus chasing neutron counts. And even NIF&rsquo;s gain is target-level, not plant-level: <a href="https://fire.pppl.gov/ICF_Scientific_Breakeven_LLNL2.pdf" rel="noopener" target="_blank">scientific breakeven</a> counts only the energy delivered to the fuel, while the lasers delivering it are around 1% efficient at the wall plug. Zap&rsquo;s FuZE-3, meanwhile, is the closest technical cousin to a DPF among funded startups — a pulsed Z-pinch — and its company-stated yields sit four orders of magnitude below the FAETON-X claim, though on a much smaller machine chasing sustained plasma conditions rather than single-shot output.</p>
+<h2 id="neutrons-that-pay-the-bills">Neutrons that pay the bills</h2>
+<p>Why celebrate a neutron record at all? Because neutrons, unlike fusion electricity, are sellable today — and Fuse&rsquo;s business is built on exactly that. The company, <a href="https://en.wikipedia.org/wiki/Fuse_Energy_Technologies_Corporation" rel="noopener" target="_blank">founded in 2019 by Btaiche</a> and headquartered in San Leandro, California, sells radiation-effects testing to defense and space customers as its bridge to an eventual power play. It holds <a href="https://www.exchangemonitor.com/fuse-ceo-sees-commercial-fusion-accelerating-nnsa-modernization-through-nevada-partnership/" rel="noopener" target="_blank">contracts with the US Air Force</a>, supported by the Defense Threat Reduction Agency and the Air Force Nuclear Weapons Center, and told POWER it expects <a href="https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/" rel="noopener" target="_blank">about $10 million in testing revenue over two years and projects over $300 million across the next decade</a> from its next machine — projections that are, again, the company&rsquo;s own. More neutrons per megajoule means a harsher, more realistic radiation environment per shot, which is the product.</p>
+<p>That &ldquo;sell the byproduct first&rdquo; model is unusual in a sector otherwise selling promises of future power — the beat our <a href="/topics/hardware/">Chips &amp; Hardware hub</a> tracks is full of machinery monetized long before its grand ambition. The contrast with the industry&rsquo;s front-runners is stark. Commonwealth Fusion Systems <a href="https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/" rel="noopener" target="_blank">raised another $1 billion in July</a> — the sector&rsquo;s largest-ever round, taking its total to $4 billion — while its revenue anchor is a <a href="https://www.datacenterdynamics.com/en/news/google-signs-200mw-fusion-ppa-with-commonwealth-fusion-systems/" rel="noopener" target="_blank">200 MW power purchase agreement Google signed</a> for a plant targeting the grid in the early 2030s. Google&rsquo;s appetite for frontier hedges is a pattern we&rsquo;ve covered before in <a href="/articles/google-spacex-stake-94-billion/">its $94 billion SpaceX position</a>, and it is no coincidence the buyers of future fusion power are the same companies straining grids with <a href="/articles/ai-data-center-backlash-nashville-vizag/">AI data-center buildouts</a>. Helion sold Microsoft 50 MW deliverable by 2028 — a date one plasma physicist told E&amp;E News he would be <a href="https://www.eenews.net/articles/startup-begins-work-on-major-us-fusion-power-plant-yes-fusion/" rel="noopener" target="_blank">&ldquo;happily surprised&rdquo;</a> to see met. General Fusion, near collapse in 2025, <a href="https://techcrunch.com/2026/07/13/investors-send-general-fusion-soaring-in-debut-as-first-publicly-traded-fusion-company/" rel="noopener" target="_blank">became the first publicly traded fusion company in July</a> via a SPAC. Against that backdrop, the <a href="https://www.fusionindustryassociation.org/fusion-industry-attracts-record-annual-funding-of-4-48bn-raising-total-to-14-24bn/" rel="noopener" target="_blank">Fusion Industry Association counts $14.24 billion</a> raised across 56 companies — a record $4.48 billion of it in the year to July 2026 — while ITER, the intergovernmental flagship, works to a <a href="https://www.ipp.mpg.de/5434926/ITER_baseline_2024" rel="noopener" target="_blank">rebaselined schedule</a> that dropped its 2025 first-plasma target and points to research operations from 2034.</p>
+<h2 id="what-to-watch">What to watch</h2>
+<p>Three things will tell you whether this record matters in six months. First, peer review: the FAETON-X paper following its FAETON-I predecessor into a journal would move the yield claim from &ldquo;company-reported&rdquo; to &ldquo;checked&rdquo; — and any independent benchmarking against MJOLNIR&rsquo;s next campaign would be better still, since LLNL&rsquo;s machine has <a href="https://www.llnl.gov/article/50001/radiography-innovation-shows-new-promise-experimental-dense-plasma-focus-milestone" rel="noopener" target="_blank">headroom to 2 megajoules</a> that could retake the per-megajoule crown quickly. Second, conditioning: whether Fuse&rsquo;s routine yields climb from 5×10¹¹ toward the peak — a testing business is priced on the shot you can sell every day, not the best shot ever fired. Third, revenue conversion: defense contracts turning into the projected <a href="https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/" rel="noopener" target="_blank">testing backlog</a> would validate neutrons-as-a-product the way specialized silicon <a href="/articles/gpt-5-6-sol-ultrafast/">found its market in AI inference</a> — niche hardware winning by doing one job better than general-purpose giants.</p>
+<p>The honest frame for readers: nothing announced this week brings fusion electricity closer on the calendar. The industry&rsquo;s own <a href="https://www.enlit.world/library/fusion-energy-expected-in-early-2030s-indicates-survey" rel="noopener" target="_blank">survey consensus is grid power between 2030 and 2035</a>, with $77 billion still to raise, and independent voices put a meaningful grid contribution a decade past that. What the FAETON-X shot does show is a private company matching national-laboratory hardware on a metric the national-security market pays for now — and in a field that has run on promissory notes for seventy years, a machine with paying customers is its own kind of breakthrough.</p></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>Did Fuse Energy achieve net energy or fusion ignition?</h3>
+  <p>No, and the company does not claim it did. The record shot&#39;s neutron count corresponds to roughly one joule of fusion energy against a million joules of stored electrical energy driving the device — about six orders of magnitude short of scientific breakeven. The record is about neutron output per megajoule, a measure that matters for radiation testing, not for power generation.</p>
+  
+  <h3>What is a dense plasma focus?</h3>
+  <p>A 1960s-era device, invented independently in the US and USSR, in which a capacitor bank discharges across coaxial electrodes, accelerating a plasma sheath that collapses into a brief, dense pinch. With deuterium fill gas the pinch emits a burst of fusion neutrons. Scaling studies had ruled it out as a power source by the 1980s; ever since, it has served as a compact neutron and X-ray source.</p>
+  
+  <h3>Who holds the record for actual fusion energy gain?</h3>
+  <p>The National Ignition Facility at Lawrence Livermore. Its April 2025 shot produced 8.6 megajoules of fusion energy from 2.08 megajoules of laser light on target — a gain above 4. Even that is target-level gain, not plant-level: the facility&#39;s lasers draw vastly more electricity from the grid than they deliver to the fuel capsule.</p>
+  
+  <h3>When will fusion actually deliver power to the grid?</h3>
+  <p>The industry&#39;s own consensus, per the Fusion Industry Association&#39;s 2026 survey, is the 2030–2035 window, and companies estimate they need another seventy-seven billion dollars to build first plants. Independent researchers tend to push the timeline for a meaningful grid contribution toward 2040 and beyond. Every operating date currently in circulation is a projection, not a schedule.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/fuse-energy-neutron-record/&text=Fuse%20Energy%27s%20Neutron%20Record%3A%20A%20Fusion%20First%2C%20Not%20Net%20Power" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/fuse-energy-neutron-record/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Fuse%20Energy%27s%20Neutron%20Record%3A%20A%20Fusion%20First%2C%20Not%20Net%20Power%20https%3A//thetechdocket.com/articles/fuse-energy-neutron-record/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/fuse-energy-neutron-record/&title=Fuse%20Energy%27s%20Neutron%20Record%3A%20A%20Fusion%20First%2C%20Not%20Net%20Power" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/fuse-energy-neutron-record/&t=Fuse%20Energy%27s%20Neutron%20Record%3A%20A%20Fusion%20First%2C%20Not%20Net%20Power" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://www.researchsquare.com/article/rs-10657590/v1" rel="noopener" target="_blank">Exceeding 10^12 D-D flash neutrons in the 4.5-MA 1-MJ dense plasma focus FAETON-X — Research Square preprint (primary announcement vehicle; not peer-reviewed)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/" rel="noopener" target="_blank">Fuse Touts &#39;Highest&#39; Neutron Yield by Any Fusion Company — POWER Magazine</a></li>
+      <li><a href="https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14" rel="noopener" target="_blank">This Week&#39;s Fusion News: August 14, 2026 — The Fusion Report</a></li>
+      <li><a href="https://www.llnl.gov/article/50001/radiography-innovation-shows-new-promise-experimental-dense-plasma-focus-milestone" rel="noopener" target="_blank">Radiography innovation shows new promise: experimental dense plasma focus milestone — LLNL (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://www.osti.gov/biblio/1988207" rel="noopener" target="_blank">Comprehensive Review of DPF-based Flash Neutron Radiography Viability — OSTI/LLNL</a> <em>(primary source)</em></li>
+      <li><a href="https://www.osti.gov/servlets/purl/1741025" rel="noopener" target="_blank">Dense Plasma Focus at the Nevada National Security Site (Gemini device) — OSTI</a> <em>(primary source)</em></li>
+      <li><a href="https://lasers.llnl.gov/science/achieving-fusion-ignition" rel="noopener" target="_blank">Achieving Fusion Ignition — Lawrence Livermore National Laboratory (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://lasers.llnl.gov/about/keys-to-success/nif-sets-power-energy-records" rel="noopener" target="_blank">NIF Sets Power and Energy Records — LLNL (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://fire.pppl.gov/ICF_Scientific_Breakeven_LLNL2.pdf" rel="noopener" target="_blank">Scientific Breakeven for Fusion Energy — LLNL/PPPL technical note</a> <em>(primary source)</em></li>
+      <li><a href="https://www.mdpi.com/2673-4141/3/1/4" rel="noopener" target="_blank">Classical Thermodynamic Analysis of Deuterium-Based Fusion Reactions — MDPI (D-D branch energies)</a> <em>(primary source)</em></li>
+      <li><a href="https://handwiki.org/wiki/Physics:Dense_plasma_focus" rel="noopener" target="_blank">Dense plasma focus — device history and operation (Mather/Filippov)</a></li>
+      <li><a href="https://www.fusionindustryassociation.org/fusion-industry-attracts-record-annual-funding-of-4-48bn-raising-total-to-14-24bn/" rel="noopener" target="_blank">Fusion Industry Attracts Record Annual Funding of $4.48bn, Raising Total to $14.24bn — Fusion Industry Association (official)</a> <em>(primary source)</em></li>
+      <li><a href="https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/" rel="noopener" target="_blank">Fusion power darling Commonwealth Fusion Systems raises another $1B — TechCrunch</a></li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/google-signs-200mw-fusion-ppa-with-commonwealth-fusion-systems/" rel="noopener" target="_blank">Google signs 200MW fusion PPA with Commonwealth Fusion Systems — Data Center Dynamics</a></li>
+      <li><a href="https://www.zapenergy.com/news/zap-energy-exceeds-gigapascal-fusion-plasma-pressures-on-new-fusion-device-fuze-3" rel="noopener" target="_blank">Zap Energy exceeds gigapascal fusion plasma pressures on new fusion device FuZE-3 — Zap Energy (official release)</a> <em>(primary source)</em></li>
+      <li><a href="https://techcrunch.com/2026/07/13/investors-send-general-fusion-soaring-in-debut-as-first-publicly-traded-fusion-company/" rel="noopener" target="_blank">General Fusion becomes the first publicly traded fusion company after SPAC debut — TechCrunch</a></li>
+      <li><a href="https://www.exchangemonitor.com/fuse-ceo-sees-commercial-fusion-accelerating-nnsa-modernization-through-nevada-partnership/" rel="noopener" target="_blank">Fuse CEO sees commercial fusion accelerating NNSA modernization through Nevada partnership — ExchangeMonitor</a></li>
+      <li><a href="https://www.eenews.net/articles/startup-begins-work-on-major-us-fusion-power-plant-yes-fusion/" rel="noopener" target="_blank">Startup begins work on major US fusion power plant — E&amp;E News/POLITICO</a></li>
+      <li><a href="https://www.ipp.mpg.de/5434926/ITER_baseline_2024" rel="noopener" target="_blank">New ITER schedule — Max Planck Institute for Plasma Physics</a> <em>(primary source)</em></li>
+      <li><a href="https://www.enlit.world/library/fusion-energy-expected-in-early-2030s-indicates-survey" rel="noopener" target="_blank">Fusion energy expected in early 2030s, indicates survey — Enlit World (FIA survey data)</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Fuse_Energy_Technologies_Corporation" rel="noopener" target="_blank">Fuse Energy Technologies Corporation — company overview</a></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Saurab Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: fuse-energy-neutron-record">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/pixel-11-india-price/">Pixel 11 India Prices: Full List, Hikes and the AI Catch</a>
+        <div class="m">Chips &amp; Hardware · August 13, 2026</div></li>
+      
+      <li><a class="t" href="/articles/openai-jony-ive-device/">OpenAI Jony Ive Device: $300-400 Speaker Reported for 2027</a>
+        <div class="m">Chips &amp; Hardware · August 8, 2026</div></li>
+      
+      <li><a class="t" href="/articles/qualcomm-snapdragon-price-hike/">Qualcomm Snapdragon Price Hike: What It Means for Phone Prices</a>
+        <div class="m">Chips &amp; Hardware · July 26, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/saurab-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -629,6 +629,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-14-gpt-5-6-sol-ultrafast.json",
       "url": "https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/"
+    },
+    {
+      "date": "2026-08-15",
+      "slug": "fuse-energy-neutron-record",
+      "title": "Fuse Energy's Neutron Record: A Fusion First, Not Net Power",
+      "keyword": "fuse energy neutron record",
+      "hub": "hardware",
+      "published_at": "2026-08-15T07:06:42.988682+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-15T07:06:10+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-15-fuse-energy-neutron-record.json",
+      "url": "https://thetechdocket.com/articles/fuse-energy-neutron-record/"
     }
   ]
 }
