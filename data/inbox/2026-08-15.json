@@ -1,677 +1,1783 @@
 {
   "date": "2026-08-15",
-  "generated_by": "daily-session-websearch",
+  "generated_by": "engine.fetchers",
   "sources_status": {
-    "websearch": "ok",
-    "webfetch": "egress-blocked (all domains)",
-    "fetch_trends_action": "not committed at session start",
-    "trends_rss": "unavailable-no-egress",
-    "wiki_en": "unavailable-no-egress"
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
   },
   "markets": {
     "IN": {
       "label": "India",
-      "trends_rss": [],
+      "trends_rss": [
+        {
+          "title": "community shield",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "2026 FA Community Shield: Where to watch Arsenal-Manchester City",
+              "source": "ESPN India",
+              "url": "https://www.espn.in/football/story/_/id/49611328/2026-fa-community-shield-where-watch-arsenal-manchester-city"
+            },
+            {
+              "headline": "Mikel Arteta press conference: Arsenal vs Man City",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/football/articles/ce8lk421501o?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D"
+            },
+            {
+              "headline": "Every word from Arteta's pre-Community Shield presser",
+              "source": "Arsenal.com",
+              "url": "https://www.arsenal.com/news/every-word-from-artetas-pre-community-shield-presser-aNRVh6w28qOL"
+            }
+          ]
+        },
+        {
+          "title": "indian",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Freedom, identity and choice: What Independence Day means to Kerala’s Gen Z",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/kerala/freedom-identity-and-choice-what-independence-day-means-to-keralas-gen-z/article71344637.ece"
+            },
+            {
+              "headline": "India at 80: Surprising facts you didn’t know about Independence day",
+              "source": "The Indian Express",
+              "url": "https://indianexpress.com/photos/lifestyle-gallery/india-at-80-surprising-facts-you-didnt-know-about-independence-day-10833105/"
+            },
+            {
+              "headline": "80 years free, India’s biggest independence challenge is its bureaucracy with colonial mindset | India News",
+              "source": "Hindustan Times",
+              "url": "https://www.hindustantimes.com/india-news/80-years-free-india-s-biggest-independence-challenge-is-its-bureaucracy-with-colonial-mindset-101786684065968.html"
+            }
+          ]
+        },
+        {
+          "title": "today day",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Daily weather tracker: Monsoon depression triggers heavy rain alert across Eastern and Northern India; clouds will also pour heavily over the mountains",
+              "source": "Down To Earth",
+              "url": "https://www.downtoearth.org.in/climate-change/daily-weather-tracker-monsoon-depression-triggers-heavy-rain-alert-across-eastern-and-northern-india-clouds-will-also-pour-heavily-over-the-mountains"
+            },
+            {
+              "headline": "Heavy Rain, Thunderstorms In Delhi-NCR, More Showers Likely On Independence Day Weekend",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/india-news/delhi-rain-noida-rain-ghaziabad-weather-heavy-rain-thunderstorm-in-delhi-ncr-more-showers-likely-on-independence-day-weekend-11908991"
+            },
+            {
+              "headline": "Rain lashes Delhi; waterlogging reported in several areas as city remains under ‘orange alert’",
+              "source": "ThePrint",
+              "url": "https://theprint.in/india/rain-lashes-delhi-waterlogging-reported-in-several-areas-as-city-remains-under-orange-alert/3014939/"
+            }
+          ]
+        },
+        {
+          "title": "राष्ट्रगीत",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "राष्ट्रगान से ठीक पहले होगा 3:10 मिनट राष्ट्रगीत का गायन",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/rajasthan/sirohi/news/the-national-anthem-will-be-sung-for-310-minutes-immediately-before-the-national-anthem-dbp-138730096.html"
+            },
+            {
+              "headline": "सरकारी स्कूलों में \"प्रतिनिधि' को ध्वजारोहण पर लगी रोक",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/bihar/sitamarhi/news/ban-on-quotrepresentativesquot-hoisting-the-flag-in-government-schools-dbp-138731436.html"
+            },
+            {
+              "headline": "स्कूलों में प्रबंध समिति अध्यक्ष करेंगे झंडोत्तोलन",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/national/story-madhubani-education-department-issues-guidelines-for-independence-day-flag-hoisting-201786728537513.html"
+            }
+          ]
+        },
+        {
+          "title": "hariyali teej kab ki hai",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Aaj ka Upay 15 August 2026: सुखी वैवाहिक जीवन के लिए हरियाली तीज पर क्या उपाय करें? जानें",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/religion/rashiphal/video/daily-astrology-aaj-ka-upay-15-august-2026-vastu-astro-tips-for-success-good-luck-remedy-kya-hai-vdop-2622123-2026-08-15"
+            },
+            {
+              "headline": "बालकपुरी पार्क, गौकर्ण डेरे में होंगे कार्यक्रम, कुश्ती-रागिनी और पतंगबाजी की रहेगी धूम",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/haryana/rohtak/news/programs-will-be-held-at-balakpuri-park-gaukarna-dera-wrestling-ragini-and-kite-flying-will-be-in-full-swing-dbp-138731549.html"
+            },
+            {
+              "headline": "Hariyali Teej Puja Vidhi 2026: पहली बार व्रत करने वाली महिलाएं इस तरह करें हरियाली तीज की पूजा, क्यों है झू...",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/news/dharm/hariyali-teej-puja-vidhi-2026-for-newly-wed-women-know-puja-muhurat-and-jhula-parampara-on-hariyali-teej-10748143.html"
+            }
+          ]
+        },
+        {
+          "title": "हरसिमरत कौर बादल",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "शिअद नेताओं ने सुखबीर सिंह बादल पर हमले की निंदा की, सीबीआई जांच की मांग",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/local/punjab/ludhiana/news/sad-leaders-condemn-attack-on-sukhbir-singh-badal-demand-cbi-probe-dbp-138730404.html"
+            },
+            {
+              "headline": "नांदेड़ में सुखबीर बादल पर हमला... आरोपी पर धारा 307 के तहत केस दर्ज, 24 अगस्त तक रिमांड पर भेजा गया",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/india/punjab/story/sukhbir-badal-attack-case-accused-jaspal-singh-police-custody-till-august-24-nanded-ntc-agkp-rpti-2622259-2026-08-15"
+            },
+            {
+              "headline": "कौन हैं इंस्पेक्टर संतोष वैजनाथ केंद्र? जिन्होंने बचाई सुखबीर बादल की जान, हरसिमरत कौर ने कहा- 'थैंक्यू'",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/state/maharashtra/pune/who-is-maharashtra-police-inspector-santosh-vaijnath-kendre-saved-akali-dal-chief-sukhbir-badal-life/articleshow/133235829.cms"
+            }
+          ]
+        },
+        {
+          "title": "नाग पंचमी कब है",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "सावन सोमवार पर नाग पंचमी का खास संयोग! 17 अगस्त के दुर्लभ योग में करें शिव पूजा",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/short-videos/video/nag-panchami-2026-sawan-somvar-rare-combination-remedies-for-wealth-debt-relief-and-kaal-sarp-dosh-mmta-2622175-2026-08-15"
+            },
+            {
+              "headline": "17 को सवारी और नागचंद्रेश्वर दर्शन का डबल लोड, ट्रैफिक संभालने कम पड़े बैरिकेड, 11 जिलों से मंगवाए",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/g/local/mp/ujjain/news/on-the-17th-the-double-load-of-savari-and-nagchandreshwar-darshan-the-barricades-were-insufficient-to-handle-the-traffic-they-were-ordered-from-11-districts-dbp-138731694.html"
+            },
+            {
+              "headline": "Nag Panchami 2026: नाग पंचमी पर क्यों की जाती है नाग देवता की पूजा? दूध और खीर चढ़ाने की क्या है मान्यता",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/astro/astro-tips-nag-panchami-2026-nag-panchami-par-doodh-aur-kheer-kyun-chadhate-hain-jaane-khaas-dharmik-manyata-local18-10750446.html"
+            }
+          ]
+        },
+        {
+          "title": "vijay mallya",
+          "approx_traffic": "100+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Bombay High Court tells banks, Vijay Mallya to end dispute",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/cities/mumbai/bombay-high-court-tells-banks-vijay-mallya-to-end-dispute/article71339318.ece"
+            },
+            {
+              "headline": "Have Vijay Mallya's debts been cleared using his assets? Bombay High Court asks ED, banks",
+              "source": "Bar and Bench",
+              "url": "https://www.barandbench.com/news/have-vijay-mallyas-debts-been-cleared-using-his-assets-bombay-high-court-asks-ed-banks"
+            },
+            {
+              "headline": "Vijay Mallya seeks closure of pending matters, Bombay HC wants ED's reply first",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/india/law-news/story/vijay-mallya-bombay-high-court-ed-hearing-closure-plea-return-india-2970753-2026-08-13"
+            }
+          ]
+        },
+        {
+          "title": "independence day 2026 photo",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "Independence Day 2026: 25 Best AI Photo Editing Prompts For August 15 On ChatGPT, Gemini, Nano Banana, Canva & More",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/offbeat/independence-day-2026-25-best-ai-photo-editing-prompts-for-august-15-on-chatgpt-gemini-nano-banana-canva-more-11908888"
+            },
+            {
+              "headline": "Independence Day 2026: 10 best ChatGPT AI prompts to celebrate freedom, equality and unity",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/technology/social/independence-day-2026-10-best-chatgpt-ai-prompts-to-celebrate-freedom-equality-and-unity/articleshow/133240640.cms"
+            },
+            {
+              "headline": "ChatGPT Independence Day AI Photo Editing Prompts for 15 August 2026",
+              "source": "Jagran Josh",
+              "url": "https://www.jagranjosh.com/general-knowledge/chatgpt-independence-day-ai-photo-editing-prompts-for-15-august-2026-1820011340-1"
+            }
+          ]
+        },
+        {
+          "title": "india vs afghanistan",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "IRE vs AFG, 4th ODI, Afghanistan tour of Ireland, 2026 - Commentary",
+              "source": "Cricbuzz",
+              "url": "https://m.cricbuzz.com/live-cricket-scores/151020/afg-vs-ire-4th-odi-afghanistan-tour-of-ireland-2026"
+            },
+            {
+              "headline": "IRE vs AFG 2026, IRE vs AFG 5th ODI Match Preview - Ireland search for consolation win in final ODI",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan-5th-odi-1528554/match-preview"
+            },
+            {
+              "headline": "Expectations rising as Afghanistan clinch Ireland ODI series",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/news/expectations-rising-as-afghanistan-clinch-ireland-odi-series"
+            }
+          ]
+        }
+      ],
       "news": {
-        "india tech sweep": [
+        "tech layoffs": [
           {
-            "title": "India's Union Cabinet formally approved the Semicon 2.0 program, unlocking roughly $13 billion for chip design, fabrication, packaging and R&D support.",
-            "source": "PIB / India Semiconductor Mission",
-            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2224839&reg=3&lang=1",
-            "date": "2026-07-15"
+            "title": "Tech Layoffs In 2026 Already Beat All Of 2025 As Firms Chase AI Efficiency - outlookbusiness.com",
+            "source": "outlookbusiness.com",
+            "pub_date": "Fri, 14 Aug 2026 13:22:48 GMT"
           },
           {
-            "title": "Three chip-related facilities under India's first Semicon program have begun commercial production, part of twelve approved projects nationwide.",
-            "source": "India Semiconductor Mission",
-            "url": "https://ism.gov.in/",
-            "date": "2026-08-13"
+            "title": "Tech layoffs 2026: Tracking all of the job losses across TikTok, Microsoft, Meta, Oracle, Samsung, Zillow and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 14 Aug 2026 12:11:51 GMT"
           },
           {
-            "title": "Microsoft opened a new Hyderabad cloud region this week, part of a $20.5 billion India buildout that makes it the country's biggest cloud infrastructure provider.",
-            "source": "Nikkei Asia",
-            "url": "https://asia.nikkei.com/business/technology/microsoft-to-invest-over-17bn-in-india-following-google-and-amazon",
-            "date": "2026-08-13"
+            "title": "Tech layoffs 2026: AI drives mass job cuts; tech majors like Meta, Microsoft take lead - livemint.com",
+            "source": "livemint.com",
+            "pub_date": "Fri, 14 Aug 2026 10:48:34 GMT"
           },
           {
-            "title": "Google is putting $15 billion into an AI data center hub in Andhra Pradesh, calling it its largest AI buildout anywhere outside the US.",
-            "source": "Yahoo Finance",
-            "url": "https://finance.yahoo.com/news/google-invest-15-billion-ai-070904414.html",
-            "date": null
+            "title": "Oracle layoffs: As Oracle leadership prepares to send ‘6am layoff email’ on September 1, company asks man - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 14 Aug 2026 09:21:00 GMT"
           },
           {
-            "title": "AWS has layered an additional $8.3 billion India pledge on top of its earlier Hyderabad cloud region commitment.",
-            "source": "Nikkei Asia (context)",
-            "url": "https://asia.nikkei.com/business/technology/microsoft-to-invest-over-17bn-in-india-following-google-and-amazon",
-            "date": null
+            "title": "Experienced tech professionals see stronger demand despite layoffs: Toptal report - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Fri, 14 Aug 2026 09:23:14 GMT"
           },
           {
-            "title": "Adani Group says it will invest $100 billion into AI data centers through a strategic partnership with Google and Microsoft.",
-            "source": "Yahoo Finance",
-            "url": "https://finance.yahoo.com/news/indias-adani-group-invest-100-130024543.html",
-            "date": null
+            "title": "Tech Layoffs Driving Declines in Pending Home Sales Nationwide - themortgagepoint.com",
+            "source": "themortgagepoint.com",
+            "pub_date": "Fri, 14 Aug 2026 22:52:05 GMT"
           },
           {
-            "title": "Farmers and Dalit communities near Visakhapatnam are protesting land acquisition for a Google-backed AI data center, citing displacement and opaque land deals.",
-            "source": "Rest of World",
-            "url": "https://restofworld.org/2026/india-data-center-tax-holiday-farmer-protests-ai/",
-            "date": null
+            "title": "Tech Layoffs So Far This Year Have Officially Blown Past the Total for 2025 - futurism.com",
+            "source": "futurism.com",
+            "pub_date": "Fri, 14 Aug 2026 14:21:53 GMT"
           },
           {
-            "title": "Larsen & Toubro's AI infrastructure unit landed an order worth up to Rs 15,000 crore to build an Nvidia-powered AI data center for Together AI.",
-            "source": "StartupTalky",
-            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
-            "date": "2026-08-14"
+            "title": "'AI is an easy scapegoat': White House AI adviser questions whether tech layoffs are really AI-driven - firstpost.com",
+            "source": "firstpost.com",
+            "pub_date": "Mon, 10 Aug 2026 03:47:32 GMT"
           },
           {
-            "title": "Goldman Sachs' chief India economist said the country's workforce faces comparatively limited job losses from AI compared with other economies.",
-            "source": "Bloomberg",
-            "url": "https://www.bloomberg.com/news/articles/2026-08-14/india-less-exposed-to-ai-job-risks-than-others-goldman-says",
-            "date": "2026-08-14"
+            "title": "Oracle layoffs: 21,000 jobs already cut as tech giant plans fresh workforce reductions amid AI spending - storyboard18.com",
+            "source": "storyboard18.com",
+            "pub_date": "Wed, 12 Aug 2026 08:25:33 GMT"
           },
           {
-            "title": "Combined market value of India's top IT services firms including TCS, Infosys and Wipro has dropped more than 46% from 2024 peaks on fears that AI will erode outsourcing demand.",
-            "source": "Business Today",
-            "url": "https://www.businesstoday.in/markets/stocks/story/indian-it-stocks-fall-tcs-infosys-wipro-hcl-tech-reliance-market-cap-ai-impact-540988-2026-07-04",
-            "date": "2026-07-04"
+            "title": "Layoffs tied to AI hurt worker productivity – and the reason may surprise managers - The Conversation",
+            "source": "The Conversation",
+            "pub_date": "Wed, 12 Aug 2026 12:40:22 GMT"
           },
           {
-            "title": "TCS, Infosys, Wipro, IBM and L&T Technology Services are competing to build India's new Customs Integrated System under a government digitization plan.",
-            "source": "Press Insider",
-            "url": "https://pressinsider.com/news/wipro-infosys-tcs-in-race-to-build-new-customs-system-report/",
-            "date": null
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 19:47:42 GMT"
           },
           {
-            "title": "UPI is being integrated into PayPal's new global payments platform, PayPal World, letting Indian users pay international merchants directly through UPI.",
-            "source": "Gizmochina",
-            "url": "https://www.gizmochina.com/2025/07/25/paypal-upi-cross-border-payments/",
-            "date": null
+            "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sat, 25 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "Credit card spending in India topped Rs 23.62 lakh crore in FY26, with UPI-linked 'Credit on UPI' products fueling adoption beyond metro cities.",
-            "source": "The Week",
-            "url": "https://www.theweek.in/theweek/business/2026/07/18/how-upi-fintech-are-driving-indias-credit-card-surge.html",
-            "date": "2026-07-18"
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "ISRO completed a second integrated air-drop test for Gaganyaan, validating the crew module's 10-parachute landing system.",
-            "source": "Pradeep's Space Newsletter",
-            "url": "https://pradx.substack.com/p/pradeeps-space-newsletter-58",
-            "date": null
+            "title": "Oracle layoffs: Company's '6 am layoff emails' may return in next few days, as Oracle plans… - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 14 Aug 2026 02:55:00 GMT"
           },
           {
-            "title": "Kaspersky says it blocked 75 million cyberattacks across the Asia-Pacific region in the first half of 2026, with India among the most frequently targeted countries by advanced persistent threat groups.",
-            "source": "StartupTalky",
-            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
-            "date": "2026-08-14"
+            "title": "Oracle layoffs: Tech giant reportedly plans another round of cuts after 21000 job losses this year—All you need to know - livemint.com",
+            "source": "livemint.com",
+            "pub_date": "Wed, 12 Aug 2026 10:28:10 GMT"
           },
           {
-            "title": "In his 80th Independence Day address, PM Modi highlighted indigenous technology as a national priority, citing 6G trials, the Semiconductor Mission, AI, and a first made-in-India chip.",
-            "source": "PM India / PIB",
-            "url": "https://www.pmindia.gov.in/en/news_updates/major-announcements-by-pm-during-his-i-day-address/",
-            "date": "2026-08-15"
+            "title": "Oracle plans fresh layoffs amid massive AI infrastructure spending: Report - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Wed, 12 Aug 2026 08:27:44 GMT"
           },
           {
-            "title": "PM Modi used his Independence Day speech to challenge Indian scientists and youth to develop indigenous jet engine technology.",
-            "source": "PIB",
-            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2156703&reg=48&lang=2",
-            "date": "2026-08-15"
+            "title": "Oracle layoffs: After cutting 21,000 jobs, company plans another layoff wave - firstpost.com",
+            "source": "firstpost.com",
+            "pub_date": "Wed, 12 Aug 2026 04:19:47 GMT"
           },
           {
-            "title": "Digital India's Bhashini AI translation system rendered PM Modi's Independence Day speech live into more than 22 Indian languages.",
-            "source": "PIB",
-            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297232&reg=48&lang=2",
-            "date": "2026-08-15"
+            "title": "Layoffs at US tech companies crossed 140,000 in the first six months of 2026; of these Amazon, Oracle, Me - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 27 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "OYO's parent company PRISM filed updated draft IPO papers with India's markets regulator, targeting up to Rs 6,650 crore.",
-            "source": "Inc42",
-            "url": "https://inc42.com/buzz/",
-            "date": null
+            "title": "Oracle layoffs 2026: What Indian employees may get in severance as new job cuts loom - firstpost.com",
+            "source": "firstpost.com",
+            "pub_date": "Wed, 12 Aug 2026 09:16:54 GMT"
           },
           {
-            "title": "Manufacturing startup Zetwerk filed papers for a Rs 2,600 crore IPO the same day industrial firm LEAP India debuted at a premium on the exchanges.",
-            "source": "StartupTalky",
-            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
-            "date": "2026-08-14"
+            "title": "Oracle employees face new layoff threat months after March job cuts - The American Bazaar",
+            "source": "The American Bazaar",
+            "pub_date": "Wed, 12 Aug 2026 16:09:49 GMT"
+          },
+          {
+            "title": "While layoffs slow overall, job losses in tech soar - HR Dive",
+            "source": "HR Dive",
+            "pub_date": "Mon, 10 Aug 2026 15:23:10 GMT"
+          },
+          {
+            "title": "Oracle Layoffs 2026: Tech Giant Plans Fresh Job Cuts in September Amid $55.7 Billion AI Spending - Goodreturns",
+            "source": "Goodreturns",
+            "pub_date": "Wed, 12 Aug 2026 07:42:19 GMT"
+          },
+          {
+            "title": "Tech layoffs in 2026 already nearing 2025 total - Palo Alto Online",
+            "source": "Palo Alto Online",
+            "pub_date": "Tue, 11 Aug 2026 22:09:54 GMT"
+          },
+          {
+            "title": "Tech Layoffs In 1st Half Of 2026 Outpace Entire 2025, India Second-Worst Hit - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 04 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Indian-origin woman without an H-1B visa was laid off twice in three months before being hired by a Silic - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 29 Jul 2026 07:00:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Moto G Max smartphone with 7000 mAh battery, Qualcomm Snapdragon chipset launched in India: Price, specs - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 14 Aug 2026 10:10:00 GMT"
+          },
+          {
+            "title": "vivo S2 Goes on Sale with Exciting Launch Offers. - vivo Newsroom India",
+            "source": "vivo Newsroom India",
+            "pub_date": "Wed, 12 Aug 2026 05:20:17 GMT"
+          },
+          {
+            "title": "Poco M8x 5G India Launch Teased, Microsite Reveals Design and Availability Details - Gadgets 360",
+            "source": "Gadgets 360",
+            "pub_date": "Fri, 14 Aug 2026 07:54:16 GMT"
+          },
+          {
+            "title": "TECNO POVA 8 PRO teased with Alive Matrix Display ahead 18th August India launch - MobiGyaan",
+            "source": "MobiGyaan",
+            "pub_date": "Fri, 14 Aug 2026 06:05:10 GMT"
+          },
+          {
+            "title": "iQOO Neo 11 Ultra to launch on August 18th with Dimensity 9500M SoC, 2K display - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Fri, 14 Aug 2026 07:14:03 GMT"
+          },
+          {
+            "title": "Ahead of iPhone 18 launch, Apple devices run short in India as supply tightens - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Thu, 13 Aug 2026 18:00:37 GMT"
+          },
+          {
+            "title": "Flipkart reveals the launch date of Boltt's first smartphone - GSMArena.com news - gsmarena.com",
+            "source": "gsmarena.com",
+            "pub_date": "Tue, 04 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Google Pixel 11 Pro Fold Launched in India for Rs. 1,86,999: Ultimate Breakdown - PaidFreeDroid",
+            "source": "PaidFreeDroid",
+            "pub_date": "Thu, 13 Aug 2026 20:49:50 GMT"
+          },
+          {
+            "title": "POCO X8 Series India Launch Confirmed: Big Features Revealed Ahead of Much-Awaited Debut - chshyd.in",
+            "source": "chshyd.in",
+            "pub_date": "Fri, 14 Aug 2026 07:00:05 GMT"
+          },
+          {
+            "title": "NTT Docomo to Launch Voice Calls and High-Speed Internet via Direct Satellite Connectivity by FY2028 - finance.biggo.com",
+            "source": "finance.biggo.com",
+            "pub_date": "Sat, 15 Aug 2026 00:05:00 GMT"
+          },
+          {
+            "title": "Leak reveals affordable, waterproof Vivo smartphone with 7,200 mAh battery - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Fri, 14 Aug 2026 16:19:00 GMT"
+          },
+          {
+            "title": "Pova 8 Pro India launch set for August 18: Transparent design and Alive Matrix Display teased - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Thu, 13 Aug 2026 09:14:55 GMT"
+          },
+          {
+            "title": "Samsung Galaxy A27 5G Launches in India at INR 28999 with Cashback and Zero Down-payment EMI Schemes - samsung.com",
+            "source": "samsung.com",
+            "pub_date": "Tue, 30 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Fire-Boltt’s first smartphones confirmed to launch by end of August: key details revealed by founder & CEO - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 04 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Boltt Smartphone India Launch Date Announced; Flipkart Microsite Goes Live - Gadgets 360",
+            "source": "Gadgets 360",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "iQOO Neo11 Ultra and Z11s to launch next week, design revealed - GSMArena.com news - gsmarena.com",
+            "source": "gsmarena.com",
+            "pub_date": "Mon, 10 Aug 2026 07:00:02 GMT"
+          },
+          {
+            "title": "Compact Fairphone 6+ launches on Tuesday with removable battery and new ARM chip - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Fri, 14 Aug 2026 20:52:00 GMT"
+          },
+          {
+            "title": "Honor launches Robot Phone in China with 200MP titanium gimbal camera - GSMArena.com news - gsmarena.com",
+            "source": "gsmarena.com",
+            "pub_date": "Wed, 12 Aug 2026 11:30:02 GMT"
+          },
+          {
+            "title": "Xiaomi releases new affordable 5G smartphone internationally following global launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 11 Aug 2026 19:31:00 GMT"
+          },
+          {
+            "title": "Tecno launches new midrange smartphone with graphic chip and matrix display - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 13 Aug 2026 17:48:00 GMT"
+          },
+          {
+            "title": "Realme 16X smartphone launches in India: 6.8-inch screen with 50MP camera and 7000mAh battery, starting pri... - Bhaskar English",
+            "source": "Bhaskar English",
+            "pub_date": "Wed, 12 Aug 2026 10:57:38 GMT"
+          },
+          {
+            "title": "iQOO Buds India Launch Confirmed for August 20, No Price Yet - Techgenyz",
+            "source": "Techgenyz",
+            "pub_date": "Fri, 14 Aug 2026 13:30:57 GMT"
+          },
+          {
+            "title": "Made by Google 2026: How to watch Pixel 11 series launch and what to expect - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Wed, 12 Aug 2026 05:26:15 GMT"
+          },
+          {
+            "title": "Nothing says it plans to release six smartphones next year, ‘wider range’ of devices - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Thu, 06 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huawei will likely launch these smartphones in September - Huawei Central",
+            "source": "Huawei Central",
+            "pub_date": "Fri, 14 Aug 2026 08:47:30 GMT"
           }
         ]
       },
       "autocomplete": {
-        "observed-questions": [
-          "Does PayPal accept UPI?",
-          "What is UPI and how does it work?",
-          "How is UPI expanding to other countries?",
-          "Is AI a bigger job risk in India than in the West?",
-          "Why are farmers protesting the Google data center in Andhra Pradesh?",
-          "What is Semicon India 2.0 and what does it include?",
-          "Is AI disrupting India's IT services industry?",
-          "When will India launch its own made-in-India semiconductor chip?"
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods",
+          "ai mode",
+          "ai checker",
+          "air france",
+          "airpods pro 3",
+          "aidvantage",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt plans",
+          "chatgpt desktop",
+          "chatgpt image generator",
+          "chatgptt"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phones coming out"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai stocks to invest in",
+          "tech and ai etf",
+          "tech and ai business analyst mckinsey",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
         ]
       }
     },
     "US": {
       "label": "Global (US proxy)",
-      "trends_rss": [],
+      "trends_rss": [
+        {
+          "title": "kelsey mitchell",
+          "approx_traffic": "2000+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "‘What Good Does It Do?’ — Skip Bayless Raises Red Flag Over Fever’s Aliyah Boston ‘Picking a Side’ in Caitlin Clark-Kelsey Mitchell MVP Debate",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/good-does-skip-bayless-raises-111649278.html"
+            },
+            {
+              "headline": "Fever teammate calls Kelsey Mitchell MVP. The scary part? She has another gear to tap into",
+              "source": "IndyStar",
+              "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/08/13/indiana-fever-kelsey-mitchell-mvp-stats-aliyah-boston/91294076007/"
+            },
+            {
+              "headline": "‘I’m speechless’ – WNBA fans baffled by ‘joke’ MVP list that doesn’t include Caitlin Clark",
+              "source": "HITC",
+              "url": "https://www.hitc.com/im-speechless-wnba-fans-baffled-by-joke-mvp-list-that-doesnt-include-caitlin-clark/"
+            }
+          ]
+        },
+        {
+          "title": "salomé jackson",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "‘Love & Hip Hop’ star Betty Idol accused of $200K Volusia County real estate scam",
+              "source": "FOX 35 Orlando",
+              "url": "https://www.fox35orlando.com/news/love-hip-hop-star-betty-idol-arrested-accused-200k-real-estate-scam"
+            },
+            {
+              "headline": "Love, Hip Hop, & Mugshots: Reality star busted in $198K Florida real estate scam",
+              "source": "WPEC",
+              "url": "https://cbs12.com/news/local/love-hip-hop-mugshots-reality-star-busted-in-198k-florida-real-estate-scam-real-estate-scam-salomes-jackson-betty-idol-love-hip-hop-atlanta-florida-arrest-orange-city-real-estate-fraud-198000-scam-real-estate-scheme-financial-crimes-money"
+            },
+            {
+              "headline": "Former Love & Hip Hop star linked to $198K real estate fraud scheme: Florida deputies",
+              "source": "WKRG",
+              "url": "https://www.wkrg.com/news/former-love-hip-hop-star-linked-to-198k-real-estate-fraud-scheme-florida-deputies/"
+            }
+          ]
+        },
+        {
+          "title": "makayla timpson",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Why a 2nd-year forward started for the Indiana Fever over a high-paid veteran",
+              "source": "IndyStar",
+              "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/08/10/indiana-fever-starting-lineup-makayla-timpson-monique-billings-contract-coach-stephanie-white/91230184007/"
+            },
+            {
+              "headline": "Let's GO! Makayla Timpson, Mo Billings, Myisha Hines-Allen FIRE UP The Fever Fans! TITLE Or BUST! J J Mccarthy (7KqRqwFy3P)",
+              "source": "Mshale",
+              "url": "https://mshale.com/ddba05b1/38411fc4IRueH14SWk4"
+            },
+            {
+              "headline": "How Makayla Timpson Gives Fever 'Different Look' in Starting Lineup",
+              "source": "Sports Illustrated",
+              "url": "https://www.si.com/wnba/fever/how-makayla-timpson-gives-fever-different-look-in-starting-lineup-01kzjjdy2jc4"
+            }
+          ]
+        },
+        {
+          "title": "spain earthquake",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Map: 5.2-Magnitude Earthquake Strikes Southern Spain",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/interactive/2026/08/14/world/europe/spain-quake-tracker.html"
+            },
+            {
+              "headline": "A magnitude 3.7 earthquake shakes Granada and is felt as far as the Tropical Coast.",
+              "source": "Demócrata",
+              "url": "https://www.democrata.es/en/current-events/earthquake-in-granada-today-magnitude-37-in-zubia/"
+            },
+            {
+              "headline": "Earthquake of magnitude 4.8, with its epicentre in Granada, felt around Malaga province",
+              "source": "Sur in English",
+              "url": "https://www.surinenglish.com/malaga/earthquake-measuring-richter-20260815014340-nt.html"
+            }
+          ]
+        },
+        {
+          "title": "karen khachanov",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Aleksandar Kovacevic v Karen Khachanov Popular Odds",
+              "source": "FanDuel Sportsbook",
+              "url": "https://sportsbook.fanduel.com/tennis/atp-cincinnati-oh-2026/aleksandar-kovacevic-v-karen-khachanov-35930494?tab=popular"
+            },
+            {
+              "headline": "ATP Cincinnati Day 2 Predictions Including Karen Khachanov vs Aleksandar Kovacevic",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/08/13/atp-cincinnati-predictions-khachanov-kovacevic/"
+            },
+            {
+              "headline": "Aleksandar Kovacevic vs Karen Khachanov Prediction & Picks - ATP Cincinnati Open",
+              "source": "SportyTrader",
+              "url": "https://www.sportytrader.com/us/picks/aleksandar-kovacevic-karen-khachanov-365651/"
+            }
+          ]
+        },
+        {
+          "title": "bradley hanner",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 14 Aug 2026 18:30:00 -0700",
+          "news": [
+            {
+              "headline": "Yankees call up Bradley Hanner in hopes he can be next bullpen find",
+              "source": "New York Post",
+              "url": "https://nypost.com/2026/08/13/sports/yankees-call-up-bradley-hanner-in-hopes-he-can-be-next-bullpen-find/"
+            },
+            {
+              "headline": "Yankees Recall Bradley Hanner For MLB Debut",
+              "source": "MLB Trade Rumors",
+              "url": "https://www.mlbtraderumors.com/2026/08/yankees-recall-bradley-hanner-for-mlb-debut.html"
+            },
+            {
+              "headline": "Yankees add to bullpen after deadline",
+              "source": "NJ.com",
+              "url": "https://www.nj.com/yankees/2026/08/yankees-add-to-bullpen-after-deadline.html"
+            }
+          ]
+        },
+        {
+          "title": "rockies vs giants",
+          "approx_traffic": "2000+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "Giants-Rockies Series Preview: Race to the bottom!",
+              "source": "McCovey Chronicles",
+              "url": "https://www.mccoveychronicles.com/san-francisco-giants-game-information/110388/giants-rockies-series-preview-race-to-the-bottom"
+            },
+            {
+              "headline": "Colorado Rockies @ San Francisco Giants Odds",
+              "source": "FanDuel Sportsbook",
+              "url": "https://sportsbook.fanduel.com/baseball/mlb/colorado-rockies-@-san-francisco-giants-35934830"
+            },
+            {
+              "headline": "Rockies Announce Probable Starters vs. Giants to Close Out Lengthy Road Trip",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/rockies-announce-probable-starters-vs-190003322.html"
+            }
+          ]
+        },
+        {
+          "title": "the end of oak street",
+          "approx_traffic": "10000+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "‘The End of Oak Street’ Review: Cul-de-Sac Dino Attack",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/08/13/movies/the-end-of-oak-street-review.html"
+            },
+            {
+              "headline": "Box Office: 'The End of Oak Street' Starts With $2M In U.S. Previews",
+              "source": "Deadline",
+              "url": "https://deadline.com/2026/08/box-office-spider-man-the-end-of-oak-street-1237033458/"
+            },
+            {
+              "headline": "The End of Oak Street Audience Reviews: A Fresh Take on Dinosaurs, Though Not Everyone Is Convinced",
+              "source": "Rotten Tomatoes",
+              "url": "https://editorial.rottentomatoes.com/article/the-end-of-oak-street-audience-reviews/"
+            }
+          ]
+        },
+        {
+          "title": "tyasha harris",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "Fever Sky Basketball",
+              "source": "Herald and News",
+              "url": "https://www.heraldandnews.com/ap_news/sports/fever-sky-basketball/image_c71f4885-aeb7-596e-b7a6-0c9cd0a0bf7d.html"
+            },
+            {
+              "headline": "Fever Sky Basketball",
+              "source": "Herald and News",
+              "url": "https://www.heraldandnews.com/ap_news/sports/fever-sky-basketball/image_efad1654-30e7-53c7-85e9-46dd3e658658.html"
+            },
+            {
+              "headline": "Fever Sky Basketball",
+              "source": "Herald and News",
+              "url": "https://www.heraldandnews.com/ap_news/sports/fever-sky-basketball/image_530fffd4-31e0-524a-9307-7f224490b171.html"
+            }
+          ]
+        },
+        {
+          "title": "alejandro kirk",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 14 Aug 2026 18:20:00 -0700",
+          "news": [
+            {
+              "headline": "Alejandro Kirk's RBI double",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/videos/alejandro-kirks-rbi-double-005711438.html"
+            },
+            {
+              "headline": "Toronto Blue Jays Announce Brandon Valenzuela News After Red Sox Blowout",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/toronto-blue-jays-announce-brandon-225810838.html"
+            },
+            {
+              "headline": "Yainer Diaz News: Out of lineup Saturday",
+              "source": "RotoWire",
+              "url": "https://www.rotowire.com/baseball/headlines/yainer-diaz-news-out-of-lineup-saturday-1019118"
+            }
+          ]
+        }
+      ],
       "news": {
-        "us tech sweep": [
+        "tech layoffs": [
           {
-            "title": "xAI and Google released competing frontier models within days of each other — Grok 4.6 and Gemini 3.7 Flash — both emphasizing lower prices and stronger coding and agent performance.",
-            "source": "AI Magazine",
-            "url": "https://aimagazine.com/news/xai-google-how-do-grok-4-6-and-gemini-3-7-flash-perform",
-            "date": "2026-08-12"
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 19:47:42 GMT"
           },
           {
-            "title": "Google says its Gemini app has surpassed 1 billion monthly active users, with CEO Sundar Pichai calling it the company's fastest-growing product yet.",
-            "source": "TechStartups",
-            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
-            "date": "2026-08-14"
+            "title": "Tech layoffs 2026: Tracking all of the job losses across TikTok, Microsoft, Meta, Oracle, Samsung, Zillow and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 14 Aug 2026 12:11:51 GMT"
           },
           {
-            "title": "Apple reportedly built a China-specific version of its AI model with technical help from Alibaba, ahead of a broader on-device AI push.",
-            "source": "TechStartups",
-            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
-            "date": "2026-08-14"
+            "title": "Tech Layoffs So Far This Year Have Officially Blown Past the Total for 2025 - Futurism",
+            "source": "Futurism",
+            "pub_date": "Fri, 14 Aug 2026 14:21:53 GMT"
           },
           {
-            "title": "OpenAI and Anthropic are lowering API prices while DeepSeek raises its own, turning inference speed and cost into the next front of the AI price war.",
-            "source": "TechStartups",
-            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
-            "date": "2026-08-14"
-          },
-          {
-            "title": "Uber and Pony.ai are preparing to expand self-driving, ride-hailing vehicle fleets to more than 2,000 cars across European cities.",
-            "source": "TechStartups",
-            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
-            "date": "2026-08-14"
-          },
-          {
-            "title": "OpenAI shipped a preview build of a ChatGPT desktop app for Linux, extending ChatGPT and Codex support to Ubuntu, Debian, and Fedora distributions.",
-            "source": "OpenAI",
-            "url": "https://openai.com/news/product-releases/",
-            "date": "2026-08-11"
-          },
-          {
-            "title": "OpenAI plans to make its newer GPT-5.6 model the default for free-tier ChatGPT users this week, alongside unlimited text chats and a new deeper-reasoning mode.",
-            "source": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today",
-            "date": null
-          },
-          {
-            "title": "OpenAI expanded its Daybreak security program into two account tiers and will require hardware security keys for enrolled accounts starting September 1.",
-            "source": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today",
-            "date": null
-          },
-          {
-            "title": "OpenAI hired a new chief revenue officer, Dali Rajic, succeeding Denise Dresser in the role.",
-            "source": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today",
-            "date": null
-          },
-          {
-            "title": "Nvidia lined up more than $500 billion in financing commitments from six major Wall Street firms, including BlackRock, Blackstone, Goldman Sachs, and KKR, to help fund AI data-center build-outs.",
-            "source": "Bloomberg",
-            "url": "https://www.bloomberg.com/news/articles/2026-08-14/nvidia-s-500-billion-plan-envelops-wall-street-in-its-ai-frenzy",
-            "date": "2026-08-14"
-          },
-          {
-            "title": "Nvidia announced a long-term partnership with Ilya Sutskever's Safe Superintelligence Inc. to accelerate the startup's compute-heavy growth plans.",
-            "source": "Nvidia Newsroom",
-            "url": "https://nvidianews.nvidia.com/news/latest",
-            "date": null
-          },
-          {
-            "title": "SK hynix approved roughly $38 billion in new spending to expand two of its South Korean plants for HBM, DRAM, and NAND chip production.",
-            "source": "SemiEngineering",
-            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
-            "date": null
-          },
-          {
-            "title": "SpaceX and Tesla detailed a jointly planned Texas chip-manufacturing complex, citing a $16.8 billion first phase and thousands of new jobs to produce AI chips for their own hardware.",
-            "source": "SemiEngineering",
-            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
-            "date": null
-          },
-          {
-            "title": "Taiwan's government opened investigations into 17 Chinese companies suspected of poaching local semiconductor talent.",
-            "source": "SemiEngineering",
-            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
-            "date": null
-          },
-          {
-            "title": "Cloudflare is cutting roughly 1,100 jobs and PayPal is reportedly preparing similarly large cuts, as both companies restructure around agentic AI.",
+            "title": "The surprising reason AI layoffs hurt worker productivity - Fast Company",
             "source": "Fast Company",
-            "url": "https://www.fastcompany.com/91538995/tech-layoffs-due-to-ai-this-week-cloudflare-paypal-coinbase-upwork",
-            "date": null
+            "pub_date": "Fri, 14 Aug 2026 09:21:08 GMT"
           },
           {
-            "title": "Apple is expected to send invitations around August 26 for a September keynote unveiling the iPhone 18 lineup, including its first foldable iPhone.",
-            "source": "Forbes",
-            "url": "https://www.forbes.com/sites/davidphelan/2026/08/14/iphone-18-pro-event-tipped-as-apple-shifts-key-release-schedule-date/?streamIndex=0",
-            "date": "2026-08-14"
+            "title": "Oracle to slash more jobs to fund AI plans with ‘double digit’ percentage cuts on some teams: report - New York Post",
+            "source": "New York Post",
+            "pub_date": "Wed, 12 Aug 2026 16:36:00 GMT"
           },
           {
-            "title": "Microsoft is rolling out its in-house MAI models inside Excel and Outlook, gradually reducing its reliance on OpenAI and Anthropic for some Copilot features.",
-            "source": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today/microsoft-ai-news",
-            "date": null
+            "title": "Opinion | I Helped Run Lululemon. Companies Need to Stop Kidding Themselves About A.I. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
           },
           {
-            "title": "Microsoft made multi-agent systems in Copilot Studio generally available, along with updates to its prompt-building and governance tools.",
-            "source": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today/microsoft-ai-news",
-            "date": null
+            "title": "Employers who laid off workers citing AI are already starting to regret it - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 01 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs August update: Google, TikTok, Etsy, Zillow slash hundreds of roles as job losses pile up in 2026 - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 07 Aug 2026 12:52:16 GMT"
+          },
+          {
+            "title": "Layoffs rock Salesforce in San Francisco’s as tech giant leans in to AI - New York Post",
+            "source": "New York Post",
+            "pub_date": "Fri, 07 Aug 2026 19:15:00 GMT"
+          },
+          {
+            "title": "Burnout, frustration and heartbreak: Amazon layoffs take their toll in saturated job market - CNBC",
+            "source": "CNBC",
+            "pub_date": "Sat, 11 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Driving Declines in Pending Home Sales Nationwide - themortgagepoint.com",
+            "source": "themortgagepoint.com",
+            "pub_date": "Fri, 14 Aug 2026 22:52:05 GMT"
+          },
+          {
+            "title": "Tech layoffs in 2026 already nearing 2025 total - Palo Alto Online",
+            "source": "Palo Alto Online",
+            "pub_date": "Tue, 11 Aug 2026 22:09:54 GMT"
+          },
+          {
+            "title": "Seattle’s ‘shaky tech market’ hits home sales - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Wed, 12 Aug 2026 21:16:13 GMT"
+          },
+          {
+            "title": "While layoffs slow overall, job losses in tech soar - HR Dive",
+            "source": "HR Dive",
+            "pub_date": "Mon, 10 Aug 2026 15:23:10 GMT"
+          },
+          {
+            "title": "Layoffs at Illinois Institute of Technology in Chicago raise concerns among students ahead of fall semester - ABC7 Chicago",
+            "source": "ABC7 Chicago",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "This year’s tech layoffs have already surpassed all of 2025. California is at the epicenter - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 31 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "I went from wedding DJ to Meta engineer, then was laid off after 13 years. My last years there brought constant change. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sun, 09 Aug 2026 11:09:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs In 2026 Already Beat All Of 2025 As Firms Chase AI Efficiency - outlookbusiness.com",
+            "source": "outlookbusiness.com",
+            "pub_date": "Fri, 14 Aug 2026 13:22:48 GMT"
+          },
+          {
+            "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others - techcrunch.com",
+            "source": "techcrunch.com",
+            "pub_date": "Sat, 25 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Experienced tech professionals see stronger demand despite layoffs: Toptal report - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Fri, 14 Aug 2026 09:23:14 GMT"
+          },
+          {
+            "title": "New report details sluggish Seattle housing market - Seattle Red",
+            "source": "Seattle Red",
+            "pub_date": "Thu, 13 Aug 2026 12:30:06 GMT"
+          },
+          {
+            "title": "Oracle plans more layoffs weeks after spending most of its $2.1 billion restructuring budget, report claims — some teams face double-digit percentage reductions, 21,000 full-time positions already eliminated - Tom's Hardware",
+            "source": "Tom's Hardware",
+            "pub_date": "Wed, 12 Aug 2026 17:00:04 GMT"
+          },
+          {
+            "title": "Oracle layoffs: As Oracle leadership prepares to send ‘6am layoff email’ on September 1, company asks man - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 14 Aug 2026 09:21:00 GMT"
+          },
+          {
+            "title": "Another round of tech layoffs hit Seattle workers - The Seattle Times",
+            "source": "The Seattle Times",
+            "pub_date": "Thu, 06 Aug 2026 22:09:49 GMT"
+          },
+          {
+            "title": "Tech workers built the AI boom. Now their therapists are helping them cope with the fallout. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Thu, 13 Aug 2026 08:11:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Digital drivers license? NCDMV to launch new mobile ID program - WRAL",
+            "source": "WRAL",
+            "pub_date": "Fri, 14 Aug 2026 23:00:41 GMT"
+          },
+          {
+            "title": "First 2nm smartphone, 30x zoom, $899: what the Google Pixel 11 launch actually delivers - Martin Cid Magazine",
+            "source": "Martin Cid Magazine",
+            "pub_date": "Wed, 12 Aug 2026 06:47:24 GMT"
+          },
+          {
+            "title": "HONOR & ARRI’s Robot Phone Officially Launched - newsshooter.com",
+            "source": "newsshooter.com",
+            "pub_date": "Wed, 12 Aug 2026 12:44:42 GMT"
+          },
+          {
+            "title": "Nothing says it plans to release six smartphones next year, ‘wider range’ of devices - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Thu, 06 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Compact Fairphone 6+ launches on Tuesday with removable battery and new ARM chip - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Fri, 14 Aug 2026 20:52:00 GMT"
+          },
+          {
+            "title": "NTT Docomo to Launch Voice Calls and High-Speed Internet via Direct Satellite Connectivity by FY2028 - finance.biggo.com",
+            "source": "finance.biggo.com",
+            "pub_date": "Sat, 15 Aug 2026 00:05:00 GMT"
+          },
+          {
+            "title": "Springdale-based 7 Brew launching mobile ordering app - KARK",
+            "source": "KARK",
+            "pub_date": "Mon, 10 Aug 2026 21:37:33 GMT"
+          },
+          {
+            "title": "Honor's Robot Phone launch signals a bigger bet: turning smartphones into AI hardware - digitimes",
+            "source": "digitimes",
+            "pub_date": "Thu, 13 Aug 2026 07:00:05 GMT"
+          },
+          {
+            "title": "iQOO Z11 Launching Soon Under $420 With 7,050 mAh Battery - Ubergizmo",
+            "source": "Ubergizmo",
+            "pub_date": "Thu, 13 Aug 2026 15:00:25 GMT"
+          },
+          {
+            "title": "Honor launches Robot Phone in China with 200MP titanium gimbal camera - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Wed, 12 Aug 2026 11:30:02 GMT"
+          },
+          {
+            "title": "T-Mobile’s Pixel 11 Launch Deals Are Here - TmoNews",
+            "source": "TmoNews",
+            "pub_date": "Thu, 13 Aug 2026 06:43:53 GMT"
+          },
+          {
+            "title": "A supplier has confirmed that Apple will delay the launch of the standard iPhone 18 until 2027 - Mezha",
+            "source": "Mezha",
+            "pub_date": "Thu, 13 Aug 2026 10:10:00 GMT"
+          },
+          {
+            "title": "Moto G Max smartphone with 7000 mAh battery, Qualcomm Snapdragon chipset launched in India: Price, specs - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 14 Aug 2026 10:10:00 GMT"
+          },
+          {
+            "title": "Amazon Leo seeks FCC approval to launch 5,105 satellites that would connect with mobile devices - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Mon, 27 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Gimmick or game changer? Chinese smart device maker Honor launches ‘robot phone’ - CNA",
+            "source": "CNA",
+            "pub_date": "Thu, 13 Aug 2026 09:19:00 GMT"
+          },
+          {
+            "title": "Honor Launches Robot Phone in China With a 200MP Moving Camera - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Wed, 12 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Leak reveals affordable, waterproof Vivo smartphone with 7,200 mAh battery - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Fri, 14 Aug 2026 16:19:00 GMT"
+          },
+          {
+            "title": "Xiaomi releases new affordable 5G smartphone internationally following global launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 11 Aug 2026 19:31:00 GMT"
+          },
+          {
+            "title": "Tecno launches new midrange smartphone with graphic chip and matrix display - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 13 Aug 2026 17:48:00 GMT"
+          },
+          {
+            "title": "Xiaomi confirms Redmi K100 is coming alongside a new K-series flagship gaming phone - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Wed, 12 Aug 2026 10:38:00 GMT"
+          },
+          {
+            "title": "Huawei will likely launch these smartphones in September - huaweicentral.com",
+            "source": "huaweicentral.com",
+            "pub_date": "Fri, 14 Aug 2026 08:47:30 GMT"
+          },
+          {
+            "title": "The latest iPhone 18 news, leaks, and rumors: Release date, price increases, and color options - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 31 Jul 2026 09:01:48 GMT"
+          },
+          {
+            "title": "Giffgaff Launch Cheap Special 100GB Mobile SIM for UK Students - ISPreview UK",
+            "source": "ISPreview UK",
+            "pub_date": "Fri, 14 Aug 2026 23:01:00 GMT"
+          },
+          {
+            "title": "AT&T Becomes the First and Only Carrier to Launch a Kid’s Smartphone – Designed by Kids and Parents - AT&T Newsroom",
+            "source": "AT&T Newsroom",
+            "pub_date": "Fri, 06 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "First Official hololive production Smartphone Game “hololive Dreams,” Jointly Developed by QualiArts and COVER, Officially Launches - ホロライブ公式サイト",
+            "source": "ホロライブ公式サイト",
+            "pub_date": "Thu, 23 Jul 2026 07:00:00 GMT"
           }
         ]
       },
-      "autocomplete": {}
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods",
+          "ai mode",
+          "ai checker",
+          "air france",
+          "airpods pro 3",
+          "aidvantage",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt desktop",
+          "chatgpt image generator",
+          "chatgpt zero",
+          "chatgpt codex"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone number",
+          "new phone plans",
+          "new phone plan deals",
+          "new phone who dis meme",
+          "new phones coming out"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai",
+          "tech and ai news",
+          "tech and ai companies",
+          "tech and ai stocks to invest in",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts",
+          "tech and ai business analyst mckinsey"
+        ]
+      }
     }
   },
   "hacker_news": [
     {
+      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+      "url": "https://z.ai/blog/glm-5.3",
+      "points": 1030,
+      "comments": 515,
+      "created_at": "2026-08-14T05:19:59Z"
+    },
+    {
+      "title": "Qwen 3.8 27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "points": 907,
+      "comments": 592,
+      "created_at": "2026-08-14T15:00:00Z"
+    },
+    {
+      "title": "Why does Opus 5 feel worse to work with?",
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "points": 786,
+      "comments": 724,
+      "created_at": "2026-08-14T10:12:48Z"
+    },
+    {
+      "title": "Firefox is now the last major browser that still supports uBlock Origin",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "points": 407,
+      "comments": 162,
+      "created_at": "2026-08-14T19:03:20Z"
+    },
+    {
+      "title": "Seven books I keep close because I love them",
+      "url": "https://blog.plover.com/2026/08/02/",
+      "points": 297,
+      "comments": 131,
+      "created_at": "2026-08-14T15:03:26Z"
+    },
+    {
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "points": 280,
+      "comments": 169,
+      "created_at": "2026-08-14T15:43:10Z"
+    },
+    {
+      "title": "RustDesk now supports true unattended remote access on Wayland",
+      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+      "points": 219,
+      "comments": 95,
+      "created_at": "2026-08-14T16:12:52Z"
+    },
+    {
+      "title": "Don't classify, hallucinate",
+      "url": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+      "points": 217,
+      "comments": 86,
+      "created_at": "2026-08-10T20:50:36Z"
+    },
+    {
+      "title": "AI by Hand",
+      "url": "https://www.byhand.ai/",
+      "points": 204,
+      "comments": 17,
+      "created_at": "2026-08-14T15:58:59Z"
+    },
+    {
+      "title": "Going Dark, and the era of law enforcement hacking",
+      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+      "points": 202,
+      "comments": 120,
+      "created_at": "2026-08-14T20:52:44Z"
+    },
+    {
+      "title": "Introducing Toast 1",
+      "url": "https://www.mixedbread.com/blog/toast-1",
+      "points": 178,
+      "comments": 58,
+      "created_at": "2026-08-14T15:07:57Z"
+    },
+    {
+      "title": "I turned my RSS feeds into an e-ink newspaper to stop reading on my phone",
+      "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+      "points": 145,
+      "comments": 60,
+      "created_at": "2026-08-14T14:21:18Z"
+    },
+    {
+      "title": "Maximizing the value of your Claude Code sessions",
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "points": 130,
+      "comments": 90,
+      "created_at": "2026-08-14T16:15:21Z"
+    },
+    {
+      "title": "RISC-V: They should have known better",
+      "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
+      "points": 122,
+      "comments": 89,
+      "created_at": "2026-08-14T22:38:34Z"
+    },
+    {
+      "title": "Ultraviolet Bird Photography",
+      "url": "https://uvbirds.com/",
+      "points": 107,
+      "comments": 22,
+      "created_at": "2026-08-07T14:51:09Z"
+    },
+    {
+      "title": "Jane Street suffers $15B hit after meltdown at Situational Awareness",
+      "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+      "points": 88,
+      "comments": 46,
+      "created_at": "2026-08-14T23:40:37Z"
+    },
+    {
+      "title": "Stop sending me huge PRs; a rant",
+      "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+      "points": 70,
+      "comments": 45,
+      "created_at": "2026-08-14T22:48:15Z"
+    },
+    {
+      "title": "Turbo Pascal on CP/M, MSX-DOS and MS-DOS",
+      "url": "http://pascal.hansotten.com/delphi/turbo-pascal-on-cpm-msx-dos-and-ms-dos/",
+      "points": 70,
+      "comments": 24,
+      "created_at": "2026-08-12T09:34:38Z"
+    },
+    {
+      "title": "Show HN: Ember – Redshift safe color palettes",
+      "url": "https://github.com/carpdiem/ember",
+      "points": 57,
+      "comments": 14,
+      "created_at": "2026-08-09T16:26:37Z"
+    },
+    {
+      "title": "Super Mario Derivations",
+      "url": "https://fzakaria.com/2026/08/05/super-mario-derivations",
+      "points": 49,
+      "comments": 8,
+      "created_at": "2026-08-07T20:16:10Z"
+    },
+    {
+      "title": "AI by Hand",
+      "url": "https://www.byhand.ai/",
+      "points": 204,
+      "comments": 17,
+      "created_at": "2026-08-14T15:58:59Z"
+    },
+    {
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "points": 280,
+      "comments": 169,
+      "created_at": "2026-08-14T15:43:10Z"
+    },
+    {
+      "title": "When Genius Fails: The Intellectual Arrogance of the AI Labs",
+      "url": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+      "points": 170,
+      "comments": 186,
+      "created_at": "2026-08-14T14:34:49Z"
+    },
+    {
+      "title": "AI Model Atlas – visualizing populations of ML models as interconnected 3D graph",
+      "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+      "points": 52,
+      "comments": 8,
+      "created_at": "2026-08-14T14:22:39Z"
+    },
+    {
+      "title": "HashAgent – Share an AI agent as a URL, runs locally via WebGPU",
+      "url": "https://hashagent.pages.dev/",
+      "points": 46,
+      "comments": 5,
+      "created_at": "2026-08-14T12:57:02Z"
+    },
+    {
+      "title": "Dear people who work at the airport",
+      "url": "https://life-after-ssri.bearblog.dev/dear-people-who-work-at-the-airport/",
+      "points": 190,
+      "comments": 244,
+      "created_at": "2026-08-14T12:23:22Z"
+    },
+    {
+      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+      "url": "https://z.ai/blog/glm-5.3",
+      "points": 1030,
+      "comments": 515,
+      "created_at": "2026-08-14T05:19:59Z"
+    },
+    {
+      "title": "Even Claude Is in the Dark About Dario Amodei's Wife",
+      "url": "https://www.wsj.com/tech/ai/claude-dario-amodei-wife-anthropic-e1eeda7d",
+      "points": 44,
+      "comments": 7,
+      "created_at": "2026-08-14T03:06:04Z"
+    },
+    {
+      "title": "How AI text watermarking works",
+      "url": "https://declaude.org/watermarking/",
+      "points": 129,
+      "comments": 97,
+      "created_at": "2026-08-13T23:16:55Z"
+    },
+    {
+      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+      "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+      "points": 123,
+      "comments": 103,
+      "created_at": "2026-08-13T19:25:38Z"
+    },
+    {
+      "title": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
+      "url": "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/",
+      "points": 55,
+      "comments": 15,
+      "created_at": "2026-08-13T19:04:52Z"
+    },
+    {
+      "title": "AI Is Threatening Natural Resources for Billions",
+      "url": "https://unric.org/en/ais-environmental-costs-threaten-water-land-and-climate/",
+      "points": 58,
+      "comments": 58,
+      "created_at": "2026-08-13T18:28:20Z"
+    },
+    {
       "title": "Accelerating GPT-5.6 Sol Ultrafast",
       "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49289844"
-    },
-    {
-      "title": "Choose Boring Technology (2015)",
-      "url": "https://mcfunley.com/choose-boring-technology",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49289512"
-    },
-    {
-      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
-      "url": "https://donkeybas.com/",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49289465"
-    },
-    {
-      "title": "Mistral OCR 4.1",
-      "url": "https://news.ycombinator.com/item?id=49288889",
-      "points": 268,
-      "comments": 106,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49288889"
+      "points": 698,
+      "comments": 272,
+      "created_at": "2026-08-13T18:10:02Z"
     },
     {
       "title": "Gemini 3.7 Flash",
-      "url": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
-      "points": 885,
-      "comments": 451,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49289112"
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "points": 948,
+      "comments": 482,
+      "created_at": "2026-08-13T17:23:22Z"
     },
     {
-      "title": "AI agents lie, cheat and steal. That is putting off users",
-      "url": "https://news.ycombinator.com/item?id=49285604",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49285604"
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "points": 402,
+      "comments": 160,
+      "created_at": "2026-08-13T17:05:12Z"
     },
     {
-      "title": "I requested a copy of my data from McDonald's loyalty program",
-      "url": "https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49286662"
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "points": 48,
+      "comments": 3,
+      "created_at": "2026-08-13T17:02:10Z"
+    },
+    {
+      "title": "AI At Home Part 1: A Box Of Scraps",
+      "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+      "points": 125,
+      "comments": 59,
+      "created_at": "2026-08-13T16:22:05Z"
     },
     {
       "title": "Text AI watermarks will always be trivial to remove",
       "url": "https://www.seangoedecke.com/text-ai-watermarks/",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49287153"
+      "points": 141,
+      "comments": 183,
+      "created_at": "2026-08-13T15:07:10Z"
     },
     {
-      "title": "How AI text watermarking works",
-      "url": "https://news.ycombinator.com/item?id=49292932",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49292932"
+      "title": "We eliminated 1,400 CVEs in NanoClaw's container images",
+      "url": "https://www.echo.ai/blog/echo-xnanoclaw-under-the-hood",
+      "points": 69,
+      "comments": 48,
+      "created_at": "2026-08-13T14:18:34Z"
     },
     {
-      "title": "How Claude's text watermarking works",
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49303350"
+      "title": "Heart aerospace completes first flight of largest electric aircraft",
+      "url": "https://www.heartaerospace.com/newsroom/heart-aerospace-completes-first-flight-of-world-s-largest-electric-aircraft",
+      "points": 142,
+      "comments": 161,
+      "created_at": "2026-08-13T14:11:51Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6642698,
+      "rank": 1
     },
     {
-      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
-      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "points": 1141,
-      "comments": 217,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49272832"
+      "article": "Special:Search",
+      "views": 824311,
+      "rank": 2
     },
     {
-      "title": "DeepSeek up to 1000% price hike is live",
-      "url": "https://qz.com/deepseek-api-price-increase-v4-peak-off-peak-081326",
-      "points": null,
-      "comments": null,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49287881"
+      "article": "Wikipedia:Featured_pictures",
+      "views": 712380,
+      "rank": 3
     },
     {
-      "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
-      "url": "https://github.com/ad-si/Woxi",
-      "points": 204,
-      "comments": 90,
-      "created_at": null,
-      "evidence_url": "https://news.ycombinator.com/item?id=49270040"
+      "article": "Prichard_Colón",
+      "views": 260731,
+      "rank": 4
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 230600,
+      "rank": 5
+    },
+    {
+      "article": "Joshua_Kushner",
+      "views": 199098,
+      "rank": 6
+    },
+    {
+      "article": "2026_Clacton_by-election",
+      "views": 185613,
+      "rank": 7
+    },
+    {
+      "article": "Karoline_Leavitt",
+      "views": 175178,
+      "rank": 8
+    },
+    {
+      "article": "Brian_Madjo",
+      "views": 167811,
+      "rank": 9
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 155182,
+      "rank": 10
+    },
+    {
+      "article": ".xxx",
+      "views": 141211,
+      "rank": 11
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 133854,
+      "rank": 12
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 122453,
+      "rank": 13
+    },
+    {
+      "article": "Russell_Westbrook",
+      "views": 109360,
+      "rank": 14
+    },
+    {
+      "article": "The_End_of_Oak_Street",
+      "views": 108215,
+      "rank": 15
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 96184,
+      "rank": 16
+    },
+    {
+      "article": "Count_Binface",
+      "views": 94140,
+      "rank": 17
+    },
+    {
+      "article": "The_Last_House",
+      "views": 91476,
+      "rank": 18
+    },
+    {
+      "article": "Natalie_Harp",
+      "views": 81294,
+      "rank": 19
+    },
+    {
+      "article": "Google",
+      "views": 78735,
+      "rank": 20
+    },
+    {
+      "article": "Solar_eclipse_of_August_2,_2027",
+      "views": 77607,
+      "rank": 21
+    },
+    {
+      "article": "ChatGPT",
+      "views": 74751,
+      "rank": 22
+    },
+    {
+      "article": ".xyz",
+      "views": 73171,
+      "rank": 23
+    },
+    {
+      "article": "Reacher_(TV_series)",
+      "views": 70443,
+      "rank": 24
+    },
+    {
+      "article": "Amy_Hunt",
+      "views": 67539,
+      "rank": 25
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 65982,
+      "rank": 26
+    },
+    {
+      "article": "Zendaya",
+      "views": 65795,
+      "rank": 27
+    },
+    {
+      "article": "Karlie_Kloss",
+      "views": 65308,
+      "rank": 28
+    },
+    {
+      "article": "Tom_Holland",
+      "views": 63017,
+      "rank": 29
+    },
+    {
+      "article": "Mark_English_(athlete)",
+      "views": 62799,
+      "rank": 30
+    },
+    {
+      "article": "DC_(film)",
+      "views": 62472,
+      "rank": 31
+    },
+    {
+      "article": "Matthew_Rhys",
+      "views": 61423,
+      "rank": 32
+    },
+    {
+      "article": "Keri_Russell",
+      "views": 59146,
+      "rank": 33
+    },
+    {
+      "article": "Lucy_Davis",
+      "views": 57932,
+      "rank": 34
+    },
+    {
+      "article": "List_of_solar_eclipses_in_the_21st_century",
+      "views": 56684,
+      "rank": 35
+    },
+    {
+      "article": "Abdul_El-Sayed",
+      "views": 56188,
+      "rank": 36
+    },
+    {
+      "article": "YouTube",
+      "views": 55979,
+      "rank": 37
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 55072,
+      "rank": 38
+    },
+    {
+      "article": "Bob_Iger",
+      "views": 53271,
+      "rank": 39
+    },
+    {
+      "article": "José_Mourinho",
+      "views": 53064,
+      "rank": 40
+    },
+    {
+      "article": "List_of_Marvel_Cinematic_Universe_films",
+      "views": 52897,
+      "rank": 41
+    },
+    {
+      "article": "2026_European_Athletics_Championships",
+      "views": 52872,
+      "rank": 42
+    },
+    {
+      "article": "United_States",
+      "views": 52677,
+      "rank": 43
+    },
+    {
+      "article": "Jared_Kushner",
+      "views": 48017,
+      "rank": 44
+    },
+    {
+      "article": "Ted_Lasso",
+      "views": 47893,
+      "rank": 45
+    },
+    {
+      "article": "Charles_Kushner",
+      "views": 47330,
+      "rank": 46
+    },
+    {
+      "article": "Solar_eclipse_of_August_12,_2026",
+      "views": 47134,
+      "rank": 47
+    },
+    {
+      "article": "Obsession_(2025_film)",
+      "views": 46812,
+      "rank": 48
+    },
+    {
+      "article": "Alexandria_Ocasio-Cortez",
+      "views": 46531,
+      "rank": 49
+    },
+    {
+      "article": "Christy_Knowings",
+      "views": 46440,
+      "rank": 50
     }
   ],
   "outlet_headlines": [
     {
-      "outlet": "PIB / India Semiconductor Mission",
-      "title": "India's Union Cabinet formally approved the Semicon 2.0 program, unlocking roughly $13 billion for chip design, fabrication, packaging and R&D support."
+      "outlet": "TechCrunch",
+      "title": "Talks to sell PayPal to Stripe and Advent are heating up"
     },
     {
-      "outlet": "India Semiconductor Mission",
-      "title": "Three chip-related facilities under India's first Semicon program have begun commercial production, part of twelve approved projects nationwide."
+      "outlet": "TechCrunch",
+      "title": "Self-driving trucks are officially testing on California highways"
     },
     {
-      "outlet": "Nikkei Asia",
-      "title": "Microsoft opened a new Hyderabad cloud region this week, part of a $20.5 billion India buildout that makes it the country's biggest cloud infrastructure provider."
+      "outlet": "TechCrunch",
+      "title": "Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria"
     },
     {
-      "outlet": "Yahoo Finance",
-      "title": "Google is putting $15 billion into an AI data center hub in Andhra Pradesh, calling it its largest AI buildout anywhere outside the US."
+      "outlet": "TechCrunch",
+      "title": "What we know about the alleged Iranian hacks on US water utilities"
     },
     {
-      "outlet": "Nikkei Asia (context)",
-      "title": "AWS has layered an additional $8.3 billion India pledge on top of its earlier Hyderabad cloud region commitment."
+      "outlet": "TechCrunch",
+      "title": "Read-it-later app Pocket shut down — here are the best alternatives"
     },
     {
-      "outlet": "Yahoo Finance",
-      "title": "Adani Group says it will invest $100 billion into AI data centers through a strategic partnership with Google and Microsoft."
+      "outlet": "TechCrunch",
+      "title": "Unforgetful is a new reminders app for people who can’t stop hitting snooze"
     },
     {
-      "outlet": "Rest of World",
-      "title": "Farmers and Dalit communities near Visakhapatnam are protesting land acquisition for a Google-backed AI data center, citing displacement and opaque land deals."
+      "outlet": "TechCrunch",
+      "title": "Google will now allow users to remove visible watermark from its AI generations"
     },
     {
-      "outlet": "StartupTalky",
-      "title": "Larsen & Toubro's AI infrastructure unit landed an order worth up to Rs 15,000 crore to build an Nvidia-powered AI data center for Together AI."
+      "outlet": "TechCrunch",
+      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?"
     },
     {
-      "outlet": "Bloomberg",
-      "title": "Goldman Sachs' chief India economist said the country's workforce faces comparatively limited job losses from AI compared with other economies."
+      "outlet": "TechCrunch",
+      "title": "Apple proposes to take a 15% cut of purchases made outside the App Store"
     },
     {
-      "outlet": "Business Today",
-      "title": "Combined market value of India's top IT services firms including TCS, Infosys and Wipro has dropped more than 46% from 2024 peaks on fears that AI will erode outsourcing demand."
+      "outlet": "TechCrunch",
+      "title": "Kog is going deeper to squeeze more inference out of GPUs"
     },
     {
-      "outlet": "Press Insider",
-      "title": "TCS, Infosys, Wipro, IBM and L&T Technology Services are competing to build India's new Customs Integrated System under a government digitization plan."
+      "outlet": "TechCrunch",
+      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct"
     },
     {
-      "outlet": "Gizmochina",
-      "title": "UPI is being integrated into PayPal's new global payments platform, PayPal World, letting Indian users pay international merchants directly through UPI."
+      "outlet": "TechCrunch",
+      "title": "US courts will start publishing how often the government uses spyware"
     },
     {
-      "outlet": "The Week",
-      "title": "Credit card spending in India topped Rs 23.62 lakh crore in FY26, with UPI-linked 'Credit on UPI' products fueling adoption beyond metro cities."
+      "outlet": "TechCrunch",
+      "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe"
     },
     {
-      "outlet": "Pradeep's Space Newsletter",
-      "title": "ISRO completed a second integrated air-drop test for Gaganyaan, validating the crew module's 10-parachute landing system."
+      "outlet": "TechCrunch",
+      "title": "Investors sue Selena Gomez alleging fraud tied to her mental health startup"
     },
     {
-      "outlet": "StartupTalky",
-      "title": "Kaspersky says it blocked 75 million cyberattacks across the Asia-Pacific region in the first half of 2026, with India among the most frequently targeted countries by advanced persistent threat groups."
+      "outlet": "TechCrunch",
+      "title": "Flock says its new tool will help identify police abuse, but hasn’t explained how it works"
     },
     {
-      "outlet": "PM India / PIB",
-      "title": "In his 80th Independence Day address, PM Modi highlighted indigenous technology as a national priority, citing 6G trials, the Semiconductor Mission, AI, and a first made-in-India chip."
+      "outlet": "The Verge",
+      "title": "Samsung has new Galaxy headphones in the works"
     },
     {
-      "outlet": "PIB",
-      "title": "PM Modi used his Independence Day speech to challenge Indian scientists and youth to develop indigenous jet engine technology."
+      "outlet": "The Verge",
+      "title": "A RAMageddon guide to back-to-school laptop shopping"
     },
     {
-      "outlet": "PIB",
-      "title": "Digital India's Bhashini AI translation system rendered PM Modi's Independence Day speech live into more than 22 Indian languages."
+      "outlet": "The Verge",
+      "title": "Lamborghini’s flagship Revuelto levels up with SV trim"
     },
     {
-      "outlet": "Inc42",
-      "title": "OYO's parent company PRISM filed updated draft IPO papers with India's markets regulator, targeting up to Rs 6,650 crore."
+      "outlet": "The Verge",
+      "title": "The X-Files creator Chris Carter wanted to make a more horrific movie"
     },
     {
-      "outlet": "StartupTalky",
-      "title": "Manufacturing startup Zetwerk filed papers for a Rs 2,600 crore IPO the same day industrial firm LEAP India debuted at a premium on the exchanges."
+      "outlet": "The Verge",
+      "title": "Google&#8217;s best new camera feature is only for the Pixel 11 series"
     },
     {
-      "outlet": "AI Magazine",
-      "title": "xAI and Google released competing frontier models within days of each other — Grok 4.6 and Gemini 3.7 Flash — both emphasizing lower prices and stronger coding and agent performance."
+      "outlet": "The Verge",
+      "title": "Mark Zuckerberg has an Instagzam"
     },
     {
-      "outlet": "TechStartups",
-      "title": "Google says its Gemini app has surpassed 1 billion monthly active users, with CEO Sundar Pichai calling it the company's fastest-growing product yet."
+      "outlet": "The Verge",
+      "title": "You can now turn off Google Gemini&#8217;s visible watermarks"
     },
     {
-      "outlet": "TechStartups",
-      "title": "Apple reportedly built a China-specific version of its AI model with technical help from Alibaba, ahead of a broader on-device AI push."
+      "outlet": "The Verge",
+      "title": "2025 GOTY Clair Obscur: Expedition 33 is down to $33"
     },
     {
-      "outlet": "TechStartups",
-      "title": "OpenAI and Anthropic are lowering API prices while DeepSeek raises its own, turning inference speed and cost into the next front of the AI price war."
+      "outlet": "The Verge",
+      "title": "CMF&#8217;s clip earbuds hit the balance between cheap and good"
     },
     {
-      "outlet": "TechStartups",
-      "title": "Uber and Pony.ai are preparing to expand self-driving, ride-hailing vehicle fleets to more than 2,000 cars across European cities."
+      "outlet": "The Verge",
+      "title": "The MSI Claw EX is the most important PC handheld since Steam Deck — I still wouldn’t buy one"
     },
     {
-      "outlet": "OpenAI",
-      "title": "OpenAI shipped a preview build of a ChatGPT desktop app for Linux, extending ChatGPT and Codex support to Ubuntu, Debian, and Fedora distributions."
+      "outlet": "Ars Technica",
+      "title": "Vulnerability giving attackers full control of Macs is under active exploitation"
     },
     {
-      "outlet": "AI Weekly",
-      "title": "OpenAI plans to make its newer GPT-5.6 model the default for free-tier ChatGPT users this week, alongside unlimited text chats and a new deeper-reasoning mode."
+      "outlet": "Ars Technica",
+      "title": "First test flight of largest all-electric aircraft used just $5 of electricity"
     },
     {
-      "outlet": "AI Weekly",
-      "title": "OpenAI expanded its Daybreak security program into two account tiers and will require hardware security keys for enrolled accounts starting September 1."
+      "outlet": "Ars Technica",
+      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case"
     },
     {
-      "outlet": "AI Weekly",
-      "title": "OpenAI hired a new chief revenue officer, Dali Rajic, succeeding Denise Dresser in the role."
+      "outlet": "Ars Technica",
+      "title": "State judge orders Kalshi to stop offering sports bets and other wagers"
     },
     {
-      "outlet": "Bloomberg",
-      "title": "Nvidia lined up more than $500 billion in financing commitments from six major Wall Street firms, including BlackRock, Blackstone, Goldman Sachs, and KKR, to help fund AI data-center build-outs."
+      "outlet": "Ars Technica",
+      "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider"
     },
     {
-      "outlet": "Nvidia Newsroom",
-      "title": "Nvidia announced a long-term partnership with Ilya Sutskever's Safe Superintelligence Inc. to accelerate the startup's compute-heavy growth plans."
+      "outlet": "Ars Technica",
+      "title": "Policy experts: Europe stuck between \"rock and a hard place\" on launch"
     },
     {
-      "outlet": "SemiEngineering",
-      "title": "SK hynix approved roughly $38 billion in new spending to expand two of its South Korean plants for HBM, DRAM, and NAND chip production."
+      "outlet": "Ars Technica",
+      "title": "Ars Live recap: How can we stop publishers from killing their own games?"
     },
     {
-      "outlet": "SemiEngineering",
-      "title": "SpaceX and Tesla detailed a jointly planned Texas chip-manufacturing complex, citing a $16.8 billion first phase and thousands of new jobs to produce AI chips for their own hardware."
+      "outlet": "Ars Technica",
+      "title": "Judge gives Google one week to fix \"anticompetitive\" app store download in Google Play"
     },
     {
-      "outlet": "SemiEngineering",
-      "title": "Taiwan's government opened investigations into 17 Chinese companies suspected of poaching local semiconductor talent."
+      "outlet": "Ars Technica",
+      "title": "R-rated director's cut of X-Files film restores Chris Carter's original horror vision"
     },
     {
-      "outlet": "Fast Company",
-      "title": "Cloudflare is cutting roughly 1,100 jobs and PayPal is reportedly preparing similarly large cuts, as both companies restructure around agentic AI."
+      "outlet": "Ars Technica",
+      "title": "Taylor Farms' connections to Trump admin spurs probe into Cyclospora response"
     },
     {
-      "outlet": "Forbes",
-      "title": "Apple is expected to send invitations around August 26 for a September keynote unveiling the iPhone 18 lineup, including its first foldable iPhone."
+      "outlet": "Ars Technica",
+      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground"
     },
     {
-      "outlet": "AI Weekly",
-      "title": "Microsoft is rolling out its in-house MAI models inside Excel and Outlook, gradually reducing its reliance on OpenAI and Anthropic for some Copilot features."
+      "outlet": "Ars Technica",
+      "title": "Rocket Report: Rocket Lab shows off its flexibility; Blue Origin's two-pad plan"
     },
     {
-      "outlet": "AI Weekly",
-      "title": "Microsoft made multi-agent systems in Copilot Studio generally available, along with updates to its prompt-building and governance tools."
-    }
-  ],
-  "wikipedia_top": [],
-  "frontier": [
-    {
-      "title": "Private Fusion Startup Fuse Energy Sets Record Neutron Yield With Dense Plasma Focus Device",
-      "area": "fusion",
-      "summary": "Fuse Energy Technologies' megajoule-class dense plasma focus device FAETON-X produced a peak yield of 1.27 trillion (1.27x10^12) neutrons in a single deuterium-deuterium shot, which the company says is the first publicly documented neutron yield at that level by any private fusion company. The device reportedly delivered about 40% more neutrons per megajoule than Lawrence Livermore National Laboratory's MJOLNIR facility, operating at 65 kV with roughly 1 MJ of stored energy and a record current efficiency of 4.5 MA/MJ.",
-      "event_date": "2026-08-11",
-      "primary_source": {
-        "name": "Research Square preprint: \"Exceeding 10^12 D-D flash neutrons in the 4.5-MA 1-MJ dense plasma focus FAETON-X\"",
-        "url": "https://www.researchsquare.com/article/rs-10657590/v1"
-      },
-      "sources": [
-        {
-          "outlet": "Power Magazine",
-          "url": "https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/"
-        },
-        {
-          "outlet": "The Fusion Report (Substack, weekly fusion-industry roundup)",
-          "url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14"
-        }
-      ],
-      "corroboration_url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14",
-      "momentum": "Featured as a top item in a weekly fusion-industry newsletter roundup dated Aug 14, 2026; two independent outlets (a trade magazine and an independent industry newsletter), not wire syndication of a single release.",
-      "country_party": "US (private company — Fuse Energy Technologies)",
-      "why_strong": "A private company publicly claiming to match or beat national-lab-class neutron yields is a genuine technical milestone that supports real synthesis — explaining dense-plasma-focus physics, how it differs from tokamak/laser fusion, and what neutron-yield thresholds actually mean for near-term revenue (radiation-effects testing) versus the longer path to net energy."
+      "outlet": "Ars Technica",
+      "title": "Samsung Galaxy Z Fold 8 Ultra review: The ultra foldable with an ultra price"
     },
     {
-      "title": "Pasqal Traps Individual Qubits Using On-Chip Photonic Circuit for the First Time",
-      "area": "quantum",
-      "summary": "Quantum computing company Pasqal, working with its photonics subsidiary Aeponyx, generated four optical micro-traps through a single silicon-nitride photonic integrated circuit and used them to trap and hold four individual rubidium atoms inside a quantum processing unit. The company says atom lifetimes (~27.5 seconds) matched its existing bulk-optics systems, and that the approach — a claimed world-first for neutral-atom quantum computing — could shrink future processors' optical hardware footprint by up to 50x on the way to a long-term target of over 10,000 atoms and 100 logical qubits.",
-      "event_date": "2026-08-10",
-      "primary_source": {
-        "name": "Pasqal press release (GlobeNewswire)",
-        "url": "https://www.globenewswire.com/news-release/2026/08/10/3341792/0/en/Pasqal-Brings-Qubit-Control-On-Chip-Advancing-the-Path-to-Fault-Tolerant-Quantum-Computing-at-Scale.html"
-      },
-      "sources": [
-        {
-          "outlet": "Quantum Computing Report",
-          "url": "https://quantumcomputingreport.com/pasqal-achieves-first-on-chip-neutral-atom-qubit-trapping-via-photonic-integrated-circuits/"
-        },
-        {
-          "outlet": "The Quantum Insider",
-          "url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/"
-        }
-      ],
-      "corroboration_url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/",
-      "momentum": "Same-day pickup across multiple quantum-industry trade outlets (Quantum Computing Report, The Quantum Insider, HPCwire, Pulse2) plus general wire pickup (Manila Times, Asianet Newsable, AiThority). Note: several of those outlets are wire/press-release syndication of the same GlobeNewswire release rather than independent reporting — Quantum Computing Report and The Quantum Insider read as independent editorial coverage.",
-      "country_party": "France (private company — Pasqal, with subsidiary Aeponyx)",
-      "why_strong": "Addresses a specific, well-understood scaling bottleneck (bulky free-space optics) on the road to fault-tolerant neutral-atom quantum computers, giving a Saturday piece real technical meat: why optical footprint has been a wall, how photonic integration works, and what it would take to go from 4 trapped atoms to 10,000."
+      "outlet": "Ars Technica",
+      "title": "Organic-looking brake assemblies debut on new Czinger 21C Spyder"
     },
     {
-      "title": "NASA's Aspera Ultraviolet Telescope Set for Rocket Lab Electron Launch From New Zealand",
-      "area": "spaceflight",
-      "summary": "NASA's Aspera mission, a shoebox-sized astrophysics smallsat selected under the agency's Astrophysics Pioneers Program, was scheduled to launch aboard a Rocket Lab Electron rocket from Launch Complex 1A in Mahia, New Zealand, into sun-synchronous orbit on August 15, 2026. Aspera carries a UV telescope meant to map diffuse extreme-ultraviolet emission from hot gas in the circumgalactic and intergalactic medium around nearby galaxies — described as the first NASA astrophysics mission to gather this kind of UV signature. NASA awarded the dedicated ride to Rocket Lab under its VADR contract; the mission is University of Arizona-led.",
-      "event_date": "2026-08-15",
-      "primary_source": {
-        "name": "Rocket Lab mission page",
-        "url": "https://rocketlabcorp.com/missions/launches/aspera/"
-      },
-      "sources": [
-        {
-          "outlet": "Space.com",
-          "url": "https://www.space.com/space-exploration/missions/nasa-picks-rocket-lab-to-launch-shoebox-sized-aspera-space-telescope-in-2026"
-        },
-        {
-          "outlet": "University of Arizona News",
-          "url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission"
-        }
-      ],
-      "corroboration_url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission",
-      "momentum": null,
-      "country_party": "US/NASA (University of Arizona-led; launched via Rocket Lab from New Zealand)",
-      "why_strong": "A genuine NASA astrophysics first — mapping the circumgalactic medium in extreme-UV — gives a same-day news hook plus real science to unpack: why the gas between galaxies matters for understanding galaxy formation, and why NASA is increasingly using small dedicated-rideshare missions (Pioneers Program) rather than flagship telescopes. CAVEAT: search snippets confirm only the scheduled launch date, not a confirmed successful liftoff — verify launch outcome before publishing."
-    },
-    {
-      "title": "Blue Origin Begins Building Second Launch Pad at Cape Canaveral Complex 36",
-      "area": "spaceflight",
-      "summary": "Blue Origin announced on August 12, 2026 that it will build a second orbital pad, LC-36B, at Cape Canaveral Space Force Station's Launch Complex 36, sized for the larger New Glenn 9x4 vehicle (nearly 400 feet tall, ~29,000 cubic-foot fairing), while the original pad — now renamed LC-36A — is rebuilt for the 7x2 configuration following May's New Glenn explosion. CEO Dave Limp said rebuilding LC-36A and flying again before year-end remains the priority; the company separately identified a BE-4 engine main oxygen valve as the explosion's root cause, with retrofitted valve hardware expected by end of August.",
-      "event_date": "2026-08-12",
-      "primary_source": {
-        "name": "Blue Origin official announcement",
-        "url": "https://www.blueorigin.com/news/returning-launch-complex-36-to-two-pads"
-      },
-      "sources": [
-        {
-          "outlet": "SpaceNews",
-          "url": "https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/"
-        },
-        {
-          "outlet": "Aviation Week",
-          "url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape"
-        }
-      ],
-      "corroboration_url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape",
-      "momentum": "Broad same-week coverage across independent aerospace trade press (SpaceNews, Aviation Week, AIAA, NASASpaceFlight.com) plus regional Florida TV outlets (Fox35, Fox51, mynews13) — genuinely independent domains, not one syndicated wire story.",
-      "country_party": "US (private company — Blue Origin)",
-      "why_strong": "Ties three threads into one synthesis-worthy story: the May New Glenn pad explosion, the newly identified BE-4 valve root cause, and this dual-pad expansion bet — enough material to assess whether Blue Origin can credibly reach high-cadence launch by year-end."
-    },
-    {
-      "title": "Human-Aware Humanoid Robot Design Cuts Back Strain in Shared Lifting Tasks",
-      "area": "robotics",
-      "summary": "Researchers from the Italian Institute of Technology, GenerativeBionics, and the University of Manchester published a co-design framework that jointly optimizes a humanoid robot's body and control system around human biomechanics, tested on the ergoCub robot (1.5m tall, 55.7kg, roughly 10kg payload). In trials, people working alongside ergoCub on shared lifting tasks showed significantly lower estimated stress on the lower back than performing the task alone, and the robot also walked faster and more efficiently than earlier versions. The work was published in Nature Machine Intelligence.",
-      "event_date": "2026-07-13",
-      "primary_source": {
-        "name": "Nature Machine Intelligence paper: \"Towards shared embodied intelligence in humanoid robots through optimization, development and testing of the human-aware ergoCub robot\"",
-        "url": "https://www.nature.com/articles/s42256-026-01272-2"
-      },
-      "sources": [
-        {
-          "outlet": "TechXplore",
-          "url": "https://techxplore.com/news/2026-08-human-aware-robots-partners-strain.html"
-        },
-        {
-          "outlet": "Interesting Engineering",
-          "url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork"
-        }
-      ],
-      "corroboration_url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork",
-      "momentum": "Picked up by multiple outlets (TechXplore, Interesting Engineering, Electronics For U, Lifeboat News) in a coverage wave clustered in August 2026, even though the underlying peer-reviewed paper published July 13, 2026 — flagging this gap explicitly since freshness here is the press-pickup wave, not the underlying event. TechXplore leans on publisher-network/press-release text; Interesting Engineering reads as independently written.",
-      "country_party": "Italy/UK (Italian Institute of Technology, University of Manchester, GenerativeBionics — academic/private consortium, no national space or defense agency involved)",
-      "why_strong": "A peer-reviewed (not product-PR) robotics result with a clear human-centered angle — designing the robot's body around human physiology instead of treating people as an afterthought — giving room to explain the co-design methodology and contrast it with the routine humanoid-manufacturing-milestone stories that dominate robotics coverage. WEAKEST ON FRESHNESS of this set: paper is ~1 month old even though press pickup is recent."
-    },
-    {
-      "title": "New Carbon Support Cuts Platinum Use in Durable Hydrogen Fuel Cell Catalysts",
-      "area": "materials",
-      "summary": "Researchers at Washington University in St. Louis, with collaborators from Brookhaven National Laboratory, Lawrence Berkeley National Laboratory, Northeastern University, and the University of Pittsburgh, developed a nanostructured carbon support with radially arranged channels and controlled pore size that holds highly ordered platinum-cobalt intermetallic nanoparticles for low-temperature fuel cells. The catalyst retained 85% of its performance after 150,000 harsh voltage cycles (roughly equivalent to 25,000 operating hours), addressing the usual activity-versus-stability trade-off while cutting platinum use. The work was published August 6, 2026 in Nature Nanotechnology.",
-      "event_date": "2026-08-06",
-      "primary_source": {
-        "name": "Washington University in St. Louis release (via EurekAlert)",
-        "url": "https://www.eurekalert.org/news-releases/1138979"
-      },
-      "sources": [
-        {
-          "outlet": "Phys.org",
-          "url": "https://phys.org/news/2026-08-carbon-nanostructure-fuel-cell-catalyst.html"
-        },
-        {
-          "outlet": "QuantumZeitgeist",
-          "url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/"
-        }
-      ],
-      "corroboration_url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/",
-      "momentum": "Covered same week by Phys.org, ScienceDaily, EurekAlert, and QuantumZeitgeist. NOTE: Phys.org and ScienceDaily both closely republish the same university/EurekAlert release text, so corroboration strength leans weak/syndicated; QuantumZeitgeist's writeup (with an independent technical detail — 2.12 A/cm^2 performance figure) is the more independent second source.",
-      "country_party": "US (Washington University in St. Louis, with DOE national labs Brookhaven and Lawrence Berkeley)",
-      "why_strong": "A concrete durability number (85% retention after 150,000 cycles) tied to a real bottleneck — platinum cost and catalyst degradation — that has blocked cheaper fuel cells; gives a Saturday piece a genuine explainer angle on why fuel cells for data centers and heavy transport keep stalling on materials, not just policy."
+      "outlet": "Ars Technica",
+      "title": "US wait times for cancer surgeries are getting longer and longer"
     }
   ]
 }
