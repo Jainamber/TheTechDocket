@@ -274,6 +274,28 @@ class GeminiClient:
         # budget (ai_research.py is designed to spend the whole cap).
         uses_grounding = any("googleSearch" in t for t in (tools or []))
         uses_url_fetch = any("urlContext" in t for t in (tools or []))
+
+        # FIX F (hard fact from a live smoke run): Vertex rejects
+        # controlled generation (responseSchema, i.e. our json_schema)
+        # combined with the urlContext or googleSearch tool — HTTP 400
+        # "Unable to submit request because controlled generation is not
+        # supported with URL Context tool". This is a request-shape
+        # contract violation, not a runtime/network failure, so it's
+        # checked unconditionally (fixture mode included, before the
+        # ledger precheck) so this class of 400 can never ship again —
+        # callers that need both a schema AND grounding/url-fetching must
+        # demand raw JSON in the prompt and parse it leniently instead
+        # (see engine/ai/citation_gate.py).
+        if json_schema is not None and (uses_grounding or uses_url_fetch):
+            raise ValueError(
+                "GeminiClient.generate(): json_schema (controlled "
+                "generation / responseSchema) cannot be combined with the "
+                "urlContext or googleSearch tool — Vertex rejects this "
+                "combination with HTTP 400 ('controlled generation is not "
+                "supported with URL Context tool'). Drop json_schema and "
+                "demand raw JSON in the prompt instead, or drop the tool."
+            )
+
         self.ledger.precheck(step, uses_grounding=uses_grounding, uses_url_fetch=uses_url_fetch)
 
         if self.fixture_mode:

@@ -105,8 +105,11 @@ not a suggestion:
   `max_url_fetches_per_run` (default `25`) — per-run counters enforced by
   the ledger, independent of the daily dollar cap, so a single pathological
   run can't burn the whole day's grounding allowance.
-- `max_retry_rewrites` (default `1`) — the single shared retry budget for
-  steps 5 and 6 above (gate failures + citation failures combined).
+- `max_retry_rewrites` (default `2`, raised from `1`) — the single shared
+  retry budget for steps 5 and 6 above (gate failures + citation failures
+  combined). A multi-defect draft (e.g. a citation-fidelity rejection AND
+  a compliance gate failure) needs two corrective rounds to converge on
+  one pass; each retry costs roughly $0.17.
 
 A `BudgetExceeded` or `ModelUnavailable` (or any other unexpected
 exception) anywhere in the pipeline is caught by `writer_cli` and reported

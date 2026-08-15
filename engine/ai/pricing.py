@@ -13,6 +13,23 @@ from __future__ import annotations
 # (Vertex generateContent), so callers pass tout = candidatesTokenCount +
 # thoughtsTokenCount into estimate().
 PRICES = {
+    # Served on the owner's project (live-probed 2026-08-15 via GeminiBridge
+    # oneshot). Promo pricing per Google's own launch announcement (grounded
+    # in the 08-15 research run: $0.75/$3.75 through 2026-12-31, DOUBLING to
+    # $1.50/$7.50 on 2027-01-01 — update this entry then, or earlier if the
+    # official pricing page disagrees).
+    "gemini-3.7-flash": {
+        "in": 0.75,
+        "out": 3.75,
+        "as_of": "2026-08-15 (promo until 2026-12-31; then 1.50/7.50)",
+        "source": "blog.google Gemini 3.7 Flash announcement via grounded research 2026-08-15",
+    },
+    "gemini-3.6-flash": {
+        "in": 1.50,
+        "out": 7.50,
+        "as_of": "2026-08-15 — re-verify",
+        "source": "third-party trackers via web recon 2026-08-15",
+    },
     # Verified live probe of the owner's GCP project, location `global`,
     # 2026-08-15 (see SPEC.md "Verified facts").
     "gemini-3.5-flash": {

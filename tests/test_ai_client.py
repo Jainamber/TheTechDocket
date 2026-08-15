@@ -214,6 +214,50 @@ def test_generate_missing_fixture_raises_and_does_not_write_ledger(tmp_path):
     assert rows == []  # missing-fixture error happens before ledger.record()
 
 
+def test_generate_rejects_json_schema_with_url_context_tool(tmp_path):
+    # FIX F: Vertex 400s on responseSchema + urlContext together — the
+    # client must refuse before ever making the call (fixture mode
+    # included), never letting this combination ship again.
+    led = _ledger(tmp_path)
+    client = _client(tmp_path, led)
+    with pytest.raises(ValueError, match="urlContext"):
+        client.generate("citation_check_0", "gemini-2.5-flash-lite", "hi",
+                        tools=[{"urlContext": {}}],
+                        json_schema={"type": "object"})
+    # rejected before any ledger row is written
+    rows = list(csv.DictReader(open(led.path, encoding="utf-8")))
+    assert rows == []
+
+
+def test_generate_rejects_json_schema_with_google_search_tool(tmp_path):
+    led = _ledger(tmp_path)
+    client = _client(tmp_path, led)
+    with pytest.raises(ValueError, match="googleSearch"):
+        client.generate("research", "gemini-3.5-flash", "hi",
+                        tools=[{"googleSearch": {}}],
+                        json_schema={"type": "object"})
+
+
+def test_generate_allows_json_schema_without_tools(tmp_path):
+    # the schema-forced style must keep working for calls with no tools —
+    # this is the FIX F guard's negative case (no false positive)
+    led = _ledger(tmp_path)
+    client = _client(tmp_path, led)
+    result = client.generate("happy_step", "gemini-3.5-flash", "irrelevant in fixture mode",
+                             json_schema={"type": "object"})
+    assert result.text  # fixture read succeeded — the call was not blocked
+
+
+def test_generate_allows_url_context_tool_without_json_schema(tmp_path):
+    # tools alone (no schema) must keep working — this is exactly what
+    # citation_gate.py now does after FIX F
+    led = _ledger(tmp_path)
+    client = _client(tmp_path, led)
+    result = client.generate("happy_step", "gemini-3.5-flash", "irrelevant in fixture mode",
+                             tools=[{"urlContext": {}}])
+    assert result.text
+
+
 def test_precheck_blocks_generate_before_reading_fixture(tmp_path):
     led = _ledger(tmp_path, daily_budget_usd=0.01)
     led.record(step="prior", model="gemini-3.5-flash",

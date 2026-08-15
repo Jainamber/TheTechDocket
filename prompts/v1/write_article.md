@@ -83,6 +83,41 @@ come back anything but `false`, or if `title_promise_check` /
   certifies. If the title overpromises anything the body doesn't deliver,
   rewrite the title (or the body) until they match.
 
+### Claim–source discipline (hard — every cited sentence is machine-verified against the ACTUAL PAGE)
+After you write, an automated gate FETCHES every url you cite and checks whether
+that specific page states the facts in the citing sentence. A single mismatch
+fails the whole article. Therefore:
+- A sentence may only assert what its linked page EXPLICITLY states. Not what
+  the publication reported elsewhere, not what you infer, not background you
+  know. The exact page, nothing more.
+- Attribute each fact to the source that CONTAINS it. Pricing details belong to
+  the page that lists them (often the announcement post, NOT the generic
+  pricing page); benchmark numbers to the page showing those numbers.
+- Never bundle an extra fact into a cited sentence unless the same page states
+  that extra fact too — split it into its own sentence with its own source, or
+  cut it.
+- When unsure which source states a fact, check the research notes; if no
+  listed source states it, CUT THE FACT. A shorter, fully-verified article
+  always beats a richer one that fails verification.
+
+### Citation rules (hard — checked mechanically, before any gate even runs)
+The research pack above includes a **numbered list of resolved deep-link
+sources** (see "Sources (numbered...)" at the end of the research notes,
+and the same urls again in the source-pool JSON block). Every url you cite
+— every front-matter `sources[].url` and every inline body link — MUST be
+copied **VERBATIM** from that list:
+- Never cite a bare domain homepage (e.g. `https://example.com/` or
+  `https://example.com`) — always the specific deep article/page url from
+  the list.
+- Never shorten, "clean up", retype, or otherwise alter a listed url.
+- Never invent a url, and never cite a page that isn't in the list —
+  including a page you're confident exists but wasn't actually returned
+  by research.
+- **If a fact has no listed source to back it, cut the fact.** A vague or
+  unsourced-but-plausible-sounding claim is worse than a shorter article.
+A draft that cites a bare-domain homepage or any url not verbatim from the
+numbered list is rejected and sent back for one corrective rewrite.
+
 ## Body requirements (all enforced by automated gates — do not skip any)
 1. **No `# ` (H1) line anywhere in the body.** The page template renders
    the front-matter `title` as the page's one and only `<h1>` on its own

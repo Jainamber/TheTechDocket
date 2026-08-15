@@ -1,8 +1,8 @@
 """Article writer: DAILY_RUN.md Step 5, run by `llm.model_writer` (with
 `llm.model_writer_fallbacks`). One generate_with_fallback() call off the
-brief + research pack + source pool + recent history, with a single
-bounded re-ask if the model's front matter doesn't parse or is missing
-required fields.
+brief + research pack + source pool + recent history, with up to 2 bounded
+re-asks (FIX J, raised from 1) if the model's front matter doesn't parse
+or is missing required fields.
 
 Contract (SPEC.md, Agent B):
     run(date_ist, client, cfg, retry_feedback: str|None = None,
@@ -39,12 +39,19 @@ task brief):
   * `cfg` is the FULL config.yaml dict; `cfg["llm"]` is read internally —
     matches how engine/ai/writer_cli.py (Agent D) actually calls this
     module.
-  * The one bounded re-ask is hardcoded to exactly one retry (two total
-    generate_with_fallback() calls) for front-matter *structural*
-    validity, independent of `llm.max_retry_rewrites` (that config caps
-    writer_cli.py's outer gate-failure retry loop, a different, higher-
-    level retry around this whole function — see writer_cli.py's
-    docstring).
+  * The bounded re-ask is hardcoded to exactly `_PARSE_REASK_ATTEMPTS - 1`
+    = 2 retries (3 total generate_with_fallback() calls, FIX J) for
+    front-matter *structural* validity, independent of
+    `llm.max_retry_rewrites` (that config caps writer_cli.py's outer
+    gate-failure retry loop, a different, higher-level retry around this
+    whole function — see writer_cli.py's docstring). FIX J also made
+    extraction itself lenient (fence-unwrap trying every fence, then a
+    bare '---'-anywhere-in-the-output search, then a trailing-fence
+    strip) — live smoke runs showed the model occasionally wraps the
+    document in a code fence or prefaces it with commentary with no
+    token-truncation involved, so paying for a whole re-ask over pure
+    formatting was wasteful; the re-ask budget still exists for the
+    genuine structural failures lenient extraction can't route around.
   * Recent-history / existing-slug lookups are implemented locally
     against `root` (`_load_history`/`_existing_article_slugs` below)
     instead of calling `engine.util.load_history()`/`all_articles()` —
@@ -77,11 +84,12 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
 from ..util import ROOT, slugify
-from .resolve_links import resolve_grounding_links
+from .resolve_links import GROUNDING_REDIRECT_RE, resolve_grounding_links
 
 _PROMPTS = Path(__file__).resolve().parent.parent.parent / "prompts" / "v1"
 PROMPT_PATH = _PROMPTS / "write_article.md"
@@ -90,6 +98,28 @@ STYLE_PATH = _PROMPTS / "_style.md"
 FENCE_RE = re.compile(r"```[a-zA-Z]*\n(.*?)```", re.DOTALL)
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n(.*)$", re.DOTALL)
 ARTICLE_FNAME_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-(.+)$")
+# FIX J: scans EVERY fenced block (not just the first) so a stray
+# illustrative fence earlier in a chatty reply doesn't win over the real
+# document in a later fence.
+_FENCE_ALL_RE = re.compile(r"```[a-zA-Z]*\n(.*?)```", re.DOTALL)
+# The first '---'-starting line anywhere in the raw output, capturing from
+# there to the end of the string — lets a bare (unfenced) document survive
+# leading commentary ("Here's the article:\n\n---\ntitle: ...").
+_BARE_FM_START_RE = re.compile(r"(?:^|\n)(---[ \t]*\n.*)", re.DOTALL)
+# Inline citation = a markdown link whose target is an http(s) url — same
+# pattern citation_gate.py uses for the same purpose.
+_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+# A draft only has to prove deep-link fidelity when the research pack
+# actually offered enough real sources to cite — with fewer than this,
+# rejecting every draft for citing "the best it had" would be punitive,
+# not a quality bar.
+_MIN_SOURCES_FOR_FIDELITY_CHECK = 3
+
+# FIX J: 1 initial attempt + 2 bounded re-asks for front-matter *structural*
+# validity (parse/YAML/citation-fidelity failures) — bumped from 1 retry.
+# A parse flake (stray fence, chatty preamble) is cheap to re-ask for
+# against a whole ~$1 run; two corrective rounds converges reliably.
+_PARSE_REASK_ATTEMPTS = 3
 
 # Literal tokens the model must echo back verbatim (quoted) in its draft's
 # front matter; this module fills them in only after the draft validates
@@ -111,12 +141,58 @@ REVIEW_BOOL_KEYS = REVIEW_GATE_KEYS + REVIEW_SELF_ASSERT_KEYS  # full set, order
 
 class WriteValidationError(RuntimeError):
     """The model failed to produce structurally valid front matter even
-    after the one bounded re-ask."""
+    after the bounded re-asks (_PARSE_REASK_ATTEMPTS)."""
+
+
+def _strip_trailing_fence(text: str) -> str:
+    """Strip a stray trailing ``` a model sometimes leaves dangling —
+    e.g. when strategy 2 below grabs "everything from the opening ---
+    onward" and that opening --- happened to be inside a fence, its
+    closing fence comes along for the ride. (FIX J, step 3)."""
+    stripped = text.rstrip()
+    if stripped.endswith("```"):
+        stripped = stripped[:-3].rstrip()
+    return stripped
 
 
 def _extract_article(text: str) -> str:
-    m = FENCE_RE.search(text)
-    return (m.group(1) if m else text).strip()
+    """Lenient article extraction (FIX J). Live smoke runs showed the
+    model occasionally wraps the document in a code fence, prefaces it
+    with commentary, or both — with token counts showing no truncation,
+    this is a formatting flake, not a content failure, and shouldn't burn
+    a whole re-ask/rewrite cycle. Tries, in order:
+
+      1. Any fenced code block (``` / ```markdown / ```yaml / ```md —
+         FENCE_RE's `[a-zA-Z]*` language tag already covers all of
+         these) whose content is a genuine '---front matter---\\nbody'
+         document once unwrapped. Multiple fences are checked in order;
+         the first one that's actually the document wins, not just the
+         first fence at all (which might be an illustrative snippet in
+         some preamble).
+      2. Failing that, the first '---'-starting line anywhere in the RAW
+         output (inside or outside a fence — commentary before it is
+         simply discarded), taken through to the end of the output.
+      3. Either candidate has a stray trailing ``` stripped.
+
+    Only if NEITHER strategy yields a document starting with '---' does
+    this fall back to the old best-effort behavior (first fence unwrapped,
+    else the raw text) — which the caller's FM_RE.match() check will then
+    correctly reject, triggering the existing corrective re-ask path."""
+    text = text or ""
+
+    for fence_match in _FENCE_ALL_RE.finditer(text):
+        candidate = _strip_trailing_fence(fence_match.group(1).strip())
+        if FM_RE.match(candidate):
+            return candidate
+
+    bare_match = _BARE_FM_START_RE.search(text)
+    if bare_match:
+        candidate = _strip_trailing_fence(bare_match.group(1).strip())
+        if FM_RE.match(candidate):
+            return candidate
+
+    first_fence = FENCE_RE.search(text)
+    return _strip_trailing_fence((first_fence.group(1) if first_fence else text).strip())
 
 
 def _validate(meta: dict) -> list[str]:
@@ -144,6 +220,48 @@ def _validate(meta: dict) -> list[str]:
                            "(the writer self-certifies this — see the prompt)")
         if not str(rev.get("reviewed_at", "")).strip():
             errs.append("review.reviewed_at missing")
+    return errs
+
+
+def _bad_citation_url_reason(url: str) -> str | None:
+    """None if `url` is an acceptable citation; otherwise a short reason
+    it isn't (FIX H: deep-link fidelity)."""
+    if GROUNDING_REDIRECT_RE.search(url):
+        return "a vertexaisearch grounding-redirect url, not a resolved deep link"
+    if urlparse(url).path in ("", "/"):
+        return "a bare domain root, not a specific article/page"
+    return None
+
+
+def _citation_fidelity_errors(meta: dict, body: str, sources_available: int) -> list[str]:
+    """FIX H: reject a draft that cites a bare domain homepage or an
+    unresolved vertexaisearch redirect instead of copying a real url
+    verbatim from the research source pool — but only once that pool
+    actually offered enough real sources to hold the draft to that bar
+    (see _MIN_SOURCES_FOR_FIDELITY_CHECK)."""
+    if sources_available < _MIN_SOURCES_FOR_FIDELITY_CHECK:
+        return []
+    errs: list[str] = []
+    seen: set[str] = set()
+    for src in (meta.get("sources") or []):
+        url = src.get("url") if isinstance(src, dict) else None
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        reason = _bad_citation_url_reason(url)
+        if reason:
+            errs.append(f"front-matter sources[] url '{url}' is {reason} — "
+                       "copy a url VERBATIM from the numbered research "
+                       "sources list instead")
+    for _anchor, url in _LINK_RE.findall(body):
+        if url in seen:
+            continue
+        seen.add(url)
+        reason = _bad_citation_url_reason(url)
+        if reason:
+            errs.append(f"inline body link to '{url}' is {reason} — "
+                       "copy a url VERBATIM from the numbered research "
+                       "sources list instead")
     return errs
 
 
@@ -253,7 +371,7 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
     models = [llm_cfg["model_writer"], *llm_cfg.get("model_writer_fallbacks", [])]
 
     validation_errors: list | None = None
-    for attempt in range(2):  # exactly one bounded re-ask
+    for attempt in range(_PARSE_REASK_ATTEMPTS):
         user_msg = _build_prompt(
             date_ist, brief_text, research_text, sources, recent_lines, style,
             retry_feedback if attempt == 0 else None, validation_errors)
@@ -267,7 +385,18 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
         article_text = _extract_article(res.text or "")
         m = FM_RE.match(article_text)
         if not m:
-            validation_errors = ["output was not a valid '---front matter---\\nbody' document"]
+            # FIX J: explicit, directive corrective feedback — lenient
+            # extraction (fence-unwrap, bare-'---'-search) already tried
+            # and failed, so this is a real formatting miss, not a flake
+            # extraction couldn't route around.
+            validation_errors = [
+                "output was not a valid '---front matter---\\nbody' document "
+                "even after lenient extraction (fence-unwrap / bare '---' "
+                "search both failed) — your ENTIRE reply must START with "
+                "'---' as its very first three characters: no code fence, "
+                "no ```markdown wrapper, no preamble or commentary before "
+                "or after it, nothing but the front matter + body"
+            ]
             continue
         try:
             meta = yaml.safe_load(m.group(1)) or {}
@@ -275,6 +404,8 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
             validation_errors = [f"front matter is not valid YAML: {e}"]
             continue
         errs = _validate(meta)
+        if not errs:
+            errs = _citation_fidelity_errors(meta, m.group(2), len(sources))
         if errs:
             validation_errors = errs
             continue
@@ -311,5 +442,6 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
         return out_path
 
     raise WriteValidationError(
-        "ai_write: model failed to produce valid front matter after 1 retry: "
+        f"ai_write: model failed to produce valid front matter after "
+        f"{_PARSE_REASK_ATTEMPTS - 1} retries: "
         + "; ".join(validation_errors or ["unknown validation failure"]))

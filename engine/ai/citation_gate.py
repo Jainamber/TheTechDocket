@@ -7,8 +7,34 @@ Contract (SPEC.md, Agent C):
 For each front-matter `sources[]` url, one `urlContext` fetch+check model
 call (model_fast, prompts/v1/citation_check.md) returns a JSON verdict
 `{supported: bool, quote: str, fetch_ok: bool, reason: str}` for the
-claim(s) the article body ties to that url (an inline markdown link
-`[claim text](url)` whose target matches the source url).
+claim the article body ties to that url — the full SENTENCE containing an
+inline markdown link `[anchor text](url)` whose target matches the source
+url (FIX G — NOT the link's anchor text, which is a label, not a claim;
+"Google Official Blog" is not something a page can "support"). A source
+never linked inline falls back to the article's own description + that
+url's title in the research source pool (`data/briefs/<date>-sources.json`,
+if present); if neither exists, the source is never sent a fabricated
+claim — it's marked `needs_corroboration` instead (Rule 3 below).
+
+FIX F (hard fact from a live smoke run): Vertex rejects controlled
+generation (`responseSchema`) combined with the `urlContext` tool — HTTP
+400 "controlled generation is not supported with URL Context tool". The
+check call below therefore passes NO `json_schema`; the prompt demands raw
+JSON instead, and `_parse_verdict`/`_extract_json_object` parse that
+leniently (first balanced `{...}` block, string-quote aware) rather than
+trusting a schema-enforced shape. `GeminiClient.generate()` itself now also
+raises `ValueError` if json_schema + a urlContext/googleSearch tool are
+ever passed together, so this class of 400 can't ship again from any
+call site.
+
+FIX I: an individual source's check that ends in an ERROR outcome (a call
+exception, an HTTP error, or an unparseable model reply) is retried ONCE
+— a fresh `generate()` call, the exact same prompt — before its
+fail-closed verdict is recorded (`_check_one_source_with_retry`, tagged
+with ledger note `retry` on the second attempt). This is flake tolerance,
+not a second chance at the editorial call: a clean `supported: false`
+verdict (the model actually fetched the page and it didn't support the
+claim) is never retried — see `_is_error_verdict`.
 
 Fail-closed rules (SPEC must-fix #3) — this module never "trusts" silence:
   * fetch_ok == False (paywall / robots / fetch error) marks that source
@@ -20,14 +46,20 @@ Fail-closed rules (SPEC must-fix #3) — this module never "trusts" silence:
     Jaccard over engine.util.shingles/jaccard — the same near-duplicate
     technique the rest of the engine uses, e.g. scoring.py). No such claim
     -> HARD FAIL.
+  * A source with NO extractable claim at all (`needs_corroboration`, FIX
+    G) requires at least one OTHER source anywhere in the article to be
+    independently fetch_ok+supported — there's no claim text to test
+    similarity against, so this is a weaker bar than the rule above, but
+    zero independently-verified sources backing the whole article is still
+    a fail-closed problem (Rule 3).
   * Any fetch_ok=True source whose verdict is supported=False -> HARD FAIL,
     unconditionally. A live, checkable source that fails its own claim is
     never rescued by corroboration.
   * Any error while requesting/parsing a source's verdict (bad JSON,
-    exception, malformed schema) is treated as the WORST case for that
-    source (fetch_ok=False, supported=False) — never treated as a silent
-    pass. This is the highest-stakes module in the pipeline; ambiguity
-    always resolves to "verify more," never "ship it."
+    exception, unparseable model reply) is treated as the WORST case for
+    that source (fetch_ok=False, supported=False) — never treated as a
+    silent pass. This is the highest-stakes module in the pipeline;
+    ambiguity always resolves to "verify more," never "ship it."
 
 Report is always written to
 `data/gate-reports/<date>-<slug>-citations.json`. On PASS only, the
@@ -65,6 +97,11 @@ import yaml
 
 from ..util import ROOT, jaccard, now_ist, shingles, today_str, tokenize
 
+# Documents the verdict shape the prompt is told to reply with (and what
+# _parse_verdict validates by hand). NOT passed as generate()'s json_schema
+# any more (FIX F) — Vertex 400s on responseSchema + urlContext together,
+# so the model is instead told in the prompt to reply with raw JSON only,
+# and _parse_verdict extracts+parses that leniently.
 CITATION_SCHEMA = {
     "type": "object",
     "properties": {
@@ -83,11 +120,21 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n(.*)$", re.DOTALL)
 
-# Claim texts are short phrases, not documents — n=5 (engine.util's usual
-# default, tuned for full-article near-dup detection) rarely overlaps on a
-# 5-12 word claim. n=3 + a lower bar suits short-phrase corroboration.
+# Claim texts are now full sentences (FIX G), not short link-anchor phrases
+# — n=5 (engine.util's usual default, tuned for full-article near-dup
+# detection) rarely overlaps between two independently-worded sentences
+# about the same fact. n=3 + a lower bar suits sentence-level corroboration.
 _SHINGLE_N = 3
 CORROBORATION_JACCARD_THRESHOLD = 0.25
+
+# Naive sentence-boundary split: a run of whitespace preceded by ./!/? and
+# followed by something that plausibly starts a new sentence (capital
+# letter, digit, quote, or a markdown link). Good enough for prose written
+# to a style guide (this pipeline's own writer prompt) — not a general NLP
+# tokenizer, and doesn't need to be: any ambiguity falls back to the whole
+# paragraph (see _sentence_containing), never a wrong/truncated claim.
+_SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?])\s+(?=[A-Z0-9"\[])')
+_MAX_CLAIMS_PER_SOURCE = 3  # bounds prompt size when one url is cited repeatedly
 
 
 class CitationGateError(RuntimeError):
@@ -119,16 +166,101 @@ def _article_path(root: Path, date_ist: str, slug: str) -> Path:
     return root / "content" / "articles" / f"{date_ist}-{slug}.md"
 
 
-# ---------------- claim extraction ----------------
+# ---------------- claim extraction (FIX G) ----------------
+# The claim to verify a source against must be the actual factual SENTENCE
+# the article ties to it — not the markdown link's anchor text (e.g. "Google
+# Official Blog" is a link label, not a claim; verifying a source against
+# its own link text is a no-op that can never fail).
+
+def _paragraphs(body: str) -> list[str]:
+    return [p for p in re.split(r"\n\s*\n", body) if p.strip()]
+
+
+def _split_sentences(paragraph: str) -> list[str]:
+    return [p.strip() for p in _SENTENCE_SPLIT_RE.split(paragraph.strip()) if p.strip()]
+
+
+def _sentence_containing(paragraph: str, match_start: int, match_end: int) -> str:
+    """The sentence inside `paragraph` that contains the [match_start,
+    match_end) character span — falls back to the WHOLE paragraph whenever
+    sentence-boundary detection can't cleanly map the span to exactly one
+    sentence (ambiguous), per FIX G's explicit fallback rule.
+
+    Requires the FULL span (start AND end) to fit inside one sentence
+    chunk, not just the start — a naive split can false-trigger on an
+    abbreviation *inside* the link's own anchor text (e.g. "[Bloomberg
+    L.P. News](url)" — the "P. N" looks like a sentence boundary to the
+    naive regex). Checking only match_start there would return a
+    TRUNCATED sentence with a dangling, unclosed "[" and no matching
+    "](url)" — worse than just using the whole paragraph. Checking both
+    ends makes that case fall through to the paragraph fallback instead."""
+    sentences = _split_sentences(paragraph)
+    if len(sentences) <= 1:
+        return paragraph.strip()
+    pos = 0
+    for sent in sentences:
+        idx = paragraph.find(sent, pos)
+        if idx == -1:
+            return paragraph.strip()  # reconstruction failed -> ambiguous
+        sent_start, sent_end = idx, idx + len(sent)
+        if sent_start <= match_start and match_end <= sent_end:
+            return sent
+        pos = sent_end
+    return paragraph.strip()  # span didn't land cleanly inside any one sentence
+
+
+def _strip_markdown_links(text: str) -> str:
+    """[anchor](url) -> anchor, everywhere — a claim must read as plain
+    prose, not raw markdown, when handed to the citation-check model."""
+    return _LINK_RE.sub(r"\1", text)
+
 
 def _extract_claims(body: str, source_urls: set) -> dict:
-    """url -> [claim text, ...], restricted to inline links that target a
-    known front-matter source url."""
+    """url -> [claim sentence, ...] (up to _MAX_CLAIMS_PER_SOURCE, in
+    first-occurrence order, de-duplicated): the full sentence containing
+    each inline markdown link to that url (whole paragraph if sentence
+    splitting is ambiguous), with markdown link syntax stripped so it reads
+    as plain prose."""
     claims: dict = {u: [] for u in source_urls}
-    for text, url in _LINK_RE.findall(body):
-        if url in claims:
-            claims[url].append(text.strip())
+    for paragraph in _paragraphs(body):
+        for m in _LINK_RE.finditer(paragraph):
+            url = m.group(2)
+            if url not in claims or len(claims[url]) >= _MAX_CLAIMS_PER_SOURCE:
+                continue
+            sentence = _sentence_containing(paragraph, m.start(), m.end())
+            claim_text = _strip_markdown_links(sentence).strip()
+            if claim_text and claim_text not in claims[url]:
+                claims[url].append(claim_text)
     return claims
+
+
+def _load_sources_pool(root: Path, date_ist: str) -> dict:
+    """url -> entry from data/briefs/<date>-sources.json (the research
+    source pool ai_research.py wrote), if present. Used ONLY as a
+    last-resort claim source for front-matter sources[] never cited
+    inline in the body — never invented, always read off disk."""
+    p = root / "data" / "briefs" / f"{date_ist}-sources.json"
+    if not p.exists():
+        return {}
+    try:
+        entries = json.loads(p.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {e.get("url"): e for e in entries if isinstance(e, dict) and e.get("url")}
+
+
+def _fallback_claim(description: str, pool_entry: dict | None) -> str | None:
+    """A source never cited inline in the body has no sentence to verify.
+    Last resort: the article's own front-matter description + that url's
+    title from the research source pool (data/briefs/<date>-sources.json)
+    — real text that already exists on disk, never fabricated. Returns
+    None (caller marks the source `needs_corroboration` instead of ever
+    inventing a claim) when there's nothing usable to build from."""
+    description = (description or "").strip()
+    title = ((pool_entry or {}).get("title") or "").strip()
+    if not description or not title:
+        return None
+    return f'{description} (source referenced for: "{title}")'
 
 
 def _similar(a: str, b: str) -> bool:
@@ -166,9 +298,54 @@ def _render_check_prompt(root: Path, url: str, claim: str, title: str) -> str:
     return rendered
 
 
+def _extract_json_object(text: str) -> str | None:
+    """Find and return the first balanced {...} block in `text`, respecting
+    string quoting (so a brace inside a "quote"/"reason" string value never
+    throws off the count). Returns None if no balanced object is found.
+
+    FIX F: controlled generation (responseSchema) can't be used alongside
+    the urlContext tool, so citation_gate's verdict is no longer schema-
+    enforced — the model is told to reply with raw JSON only, but may still
+    wrap it in a code fence or add stray text despite that instruction.
+    This is the lenient-parsing half of that fix."""
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escape = False
+    for i in range(start, len(text)):
+        ch = text[i]
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start:i + 1]
+    return None
+
+
 def _parse_verdict(text: str) -> dict:
+    obj_text = _extract_json_object(text or "")
+    if obj_text is None:
+        return {
+            "supported": False,
+            "quote": "",
+            "fetch_ok": False,
+            "reason": "unparseable verdict: no JSON object found in model output",
+        }
     try:
-        data = json.loads(text)
+        data = json.loads(obj_text)
         return {
             "supported": bool(data["supported"]),
             "quote": str(data.get("quote", ""))[:500],
@@ -180,8 +357,58 @@ def _parse_verdict(text: str) -> dict:
             "supported": False,
             "quote": "",
             "fetch_ok": False,
-            "reason": f"gate parse error: {type(e).__name__}: {e}",
+            "reason": f"unparseable verdict: {type(e).__name__}: {e}",
         }
+
+
+# ---------------- one-source check + error retry (FIX I) ----------------
+
+def _is_error_verdict(verdict: dict) -> bool:
+    """True for an ERROR outcome (call exception, HTTP error, or an
+    unparseable model reply) — these are flake, not an editorial verdict,
+    and get retried once. A clean `supported: false` from a model that
+    fetched and read the page is a real verdict and is NEVER retried."""
+    reason = verdict.get("reason", "")
+    return reason.startswith("gate call error:") or reason.startswith("unparseable verdict")
+
+
+def _check_one_source(root: Path, model: str, client, step: str, url: str,
+                      claim: str, title: str, note: str = "") -> dict:
+    """One citation-check attempt against one source. Never raises — any
+    exception (network, HTTP, ledger budget, etc.) becomes a fail-closed
+    'gate call error' verdict, same as an unparseable model reply."""
+    try:
+        result = client.generate(
+            step=step, model=model,
+            contents=_render_check_prompt(root, url, claim, title),
+            # FIX F: NO json_schema here — Vertex rejects controlled
+            # generation combined with the urlContext tool. The prompt
+            # demands raw JSON instead; _parse_verdict extracts+parses it
+            # leniently (fail-closed on failure).
+            tools=[{"urlContext": {}}],
+            temperature=0.0,
+            note=note,
+        )
+        return _parse_verdict(result.text)
+    except Exception as e:  # noqa: BLE001 — fail-closed on any call error
+        return {"supported": False, "quote": "", "fetch_ok": False,
+                "reason": f"gate call error: {type(e).__name__}: {e}"}
+
+
+def _check_one_source_with_retry(root: Path, model: str, client, step: str, url: str,
+                                 claim: str, title: str) -> dict:
+    """FIX I: an ERROR outcome (exception / HTTP error / unparseable
+    verdict) is retried ONCE with a fresh generate() call using the exact
+    same prompt, before the fail-closed verdict is recorded — a genuinely
+    flaky call (rate limit blip, transient 5xx, a model that garbled its
+    JSON once) shouldn't sink an otherwise-good source. The retry attempt
+    is tagged with ledger note 'retry'; whatever it returns (success or a
+    second error) is final — there is no second retry."""
+    verdict = _check_one_source(root, model, client, step, url, claim, title)
+    if _is_error_verdict(verdict):
+        verdict = _check_one_source(root, model, client, step, url, claim, title,
+                                    note="retry")
+    return verdict
 
 
 # ---------------- main entry point ----------------
@@ -204,31 +431,44 @@ def run(date_ist: str, slug: str, client, cfg: dict,
 
     source_urls = {s.get("url") for s in sources if s.get("url")}
     claims_by_url = _extract_claims(body, source_urls)
+    sources_pool = _load_sources_pool(root, date_ist)
+    description = str(meta.get("description", ""))
 
     checked = []  # per-source result rows
     for i, src in enumerate(sources):
         url = src.get("url")
         if not url:
             continue
-        claim_list = claims_by_url.get(url) or []
-        primary_claim = claim_list[0] if claim_list else ""
+        claim_list = list(claims_by_url.get(url) or [])
+        needs_corroboration = False
+        if claim_list:
+            primary_claim = " ".join(claim_list)
+        else:
+            fallback = _fallback_claim(description, sources_pool.get(url))
+            if fallback:
+                primary_claim = fallback
+                claim_list = [fallback]
+            else:
+                # FIX G: never invent a claim to send to the model — mark
+                # it and let Rule 3 (below) require independent
+                # corroboration from elsewhere in the article instead.
+                needs_corroboration = True
+                primary_claim = ""
+
         step = f"citation_check_{i}"
-        try:
-            result = client.generate(
-                step=step, model=model,
-                contents=_render_check_prompt(root, url, primary_claim,
-                                              src.get("title", "")),
-                tools=[{"urlContext": {}}], json_schema=CITATION_SCHEMA,
-                temperature=0.0,
-            )
-            verdict = _parse_verdict(result.text)
-        except Exception as e:  # noqa: BLE001 — fail-closed on any call error
+        if needs_corroboration:
             verdict = {"supported": False, "quote": "", "fetch_ok": False,
-                       "reason": f"gate call error: {type(e).__name__}: {e}"}
+                       "reason": "needs_corroboration: no claim could be "
+                                "constructed (not cited inline in the body, "
+                                "no matching source-pool entry)"}
+        else:
+            verdict = _check_one_source_with_retry(
+                root, model, client, step, url, primary_claim, src.get("title", ""))
         checked.append({
             "url": url, "title": src.get("title", ""),
             "primary": bool(src.get("primary", False)),
-            "claims": claim_list, **verdict,
+            "claims": claim_list, "needs_corroboration": needs_corroboration,
+            **verdict,
         })
 
     by_url = {row["url"]: row for row in checked}
@@ -247,8 +487,8 @@ def run(date_ist: str, slug: str, client, cfg: dict,
     corroborators = [row for row in checked
                      if row["fetch_ok"] and row["supported"]]
     for row in checked:
-        if row["fetch_ok"]:
-            continue  # only unfetchable sources' claims need this check
+        if row["fetch_ok"] or row["needs_corroboration"]:
+            continue  # unfetchable-but-claimed sources only; Rule 3 covers needs_corroboration
         for claim in row["claims"]:
             corroborated = any(
                 other["url"] != row["url"] and (
@@ -264,6 +504,22 @@ def run(date_ist: str, slug: str, client, cfg: dict,
                     "detail": "no fetchable+supported source corroborates "
                               "this claim, and its only source is unfetchable",
                 })
+
+    # Rule 3 (FIX G): a source with NO extractable claim at all (not cited
+    # inline, no source-pool match — needs_corroboration=True, never sent
+    # to the model) needs at least one OTHER independently fetch_ok+
+    # supported source to exist ANYWHERE in the article; there's no claim
+    # text to test similarity against, so this is a weaker bar than Rule 2
+    # — but zero verified sources backing the whole piece is still a
+    # real fail-closed problem, never silently passed.
+    for row in checked:
+        if row["needs_corroboration"] and not corroborators:
+            failures.append({
+                "type": "needs_corroboration_unmet", "url": row["url"], "claim": "",
+                "detail": "no extractable claim for this source (not cited "
+                          "inline, no source-pool match) and no other source "
+                          "in the article is independently verified",
+            })
 
     passed = not failures
     report = {

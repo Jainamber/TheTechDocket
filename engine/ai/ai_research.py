@@ -28,6 +28,25 @@ task brief):
     dataclass is purely the in-process return value / test seam.
   * `slug_hint` may be None (writer_cli.py calls this step before a slug
     exists) — the prompt renders an explicit "no slug yet" note instead.
+
+Deep-link fidelity (FIX H, added after a live smoke run showed the writer
+either passing vertexaisearch grounding-redirect urls straight through, or
+inventing clean-looking bare-domain citations when it couldn't tell what
+the redirect actually pointed to): every grounding source URI is resolved
+to its real final url IMMEDIATELY after the research call that returned
+it, via `engine.ai.resolve_links.resolve_single` (same resolver/fixture
+contract as the writer's own link-resolution pass, FIX E). Only urls that
+resolve to an actual deep path make it into `pack.sources` /
+`data/briefs/<date>-sources.json` — dedupe is by the RESOLVED url (a redirect resolving to a url another
+query already found is a duplicate); a resolved url with an empty or bare
+`/` path is dropped from the citable pool entirely (a homepage is not a
+citation). Anything that fails to resolve, or resolves to a bare domain
+root, is kept in `pack.unresolved` /
+`data/briefs/<date>-sources-unresolved.json` for debugging — never
+silently discarded, never silently promoted into the citable pool either.
+`data/briefs/<date>-research.md` also gets an appended numbered list of
+the resolved deep urls, so the writer prompt has a copy-pasteable
+citation list in both the notes text and the `{{sources_json}}` block.
 """
 from __future__ import annotations
 
@@ -37,6 +56,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from ..util import ROOT
+from .resolve_links import http_resolve, resolve_single
 
 _PROMPTS = Path(__file__).resolve().parent.parent.parent / "prompts" / "v1"
 PROMPT_PATH = _PROMPTS / "research_queries.md"
@@ -71,8 +91,10 @@ class ResearchPack:
     slug_hint: str | None
     queries_run: list = field(default_factory=list)
     sources: list = field(default_factory=list)
+    unresolved: list = field(default_factory=list)  # FIX H debugging bucket
     notes_path: Path | None = None
     sources_path: Path | None = None
+    unresolved_path: Path | None = None
     grounded_queries_used: int = 0
     url_fetches_used: int = 0
     note: str = ""
@@ -106,7 +128,13 @@ def _render_prompt(date_ist: str, slug_hint: str | None, brief_text: str,
 
 
 def run(date_ist: str, slug_hint: str | None, client, cfg: dict,
-        root: Path | None = None) -> ResearchPack:
+        root: Path | None = None, resolver=http_resolve,
+        fixture: bool | None = None) -> ResearchPack:
+    # `resolver`/`fixture`: forwarded to resolve_links.resolve_single for
+    # every grounding source URI (FIX H). Defaults match production
+    # (real HTTP resolver, TTD_AI_FIXTURE=1 auto-skips to a no-op); tests
+    # inject a fake resolver + fixture=False to exercise real resolution
+    # logic without the network or the env var.
     root = root or ROOT
     briefs_dir = root / "data" / "briefs"
     brief_path = briefs_dir / f"{date_ist}.md"
@@ -120,7 +148,8 @@ def run(date_ist: str, slug_hint: str | None, client, cfg: dict,
 
     pack = ResearchPack(date=date_ist, slug_hint=slug_hint)
     notes_sections: list[str] = []
-    seen_urls: set[str] = set()
+    seen_raw_urls: set[str] = set()
+    seen_resolved_urls: set[str] = set()
 
     for angle_key, angle_instruction in QUERY_ANGLES[:max_calls]:
         user_msg = _render_prompt(date_ist, slug_hint, brief_text, angle_instruction)
@@ -143,29 +172,68 @@ def run(date_ist: str, slug_hint: str | None, client, cfg: dict,
         pack.url_fetches_used += int(getattr(res, "url_fetches", 0) or 0)
         notes_sections.append(f"## {angle_key}\n\n{(res.text or '').strip()}\n")
 
+        # FIX H: resolve every grounding source URI to its real deep url
+        # IMMEDIATELY, right after this call returns — never let an
+        # opaque redirect or a bare-domain-only url survive into the
+        # citable source pool the writer draws from.
         for s in (getattr(res, "sources", None) or []):
-            url = str(s.get("url") or "").strip()
-            if not url or url in seen_urls:
+            raw_url = str(s.get("url") or "").strip()
+            if not raw_url or raw_url in seen_raw_urls:
                 continue
-            seen_urls.add(url)
-            title = s.get("title") or url
+            seen_raw_urls.add(raw_url)
+            title = s.get("title") or raw_url
+
+            resolved = resolve_single(raw_url, resolver=resolver, fixture=fixture)
+            if resolved is None:
+                pack.unresolved.append({
+                    "url": raw_url, "title": title,
+                    "reason": "resolution failed (network/HTTP error)",
+                })
+                continue
+            if urlparse(resolved).path in ("", "/"):
+                pack.unresolved.append({
+                    "url": raw_url, "title": title, "resolved": resolved,
+                    "reason": "resolved to a bare domain root — not a citation",
+                })
+                continue
+            if resolved in seen_resolved_urls:
+                continue  # dedupe by RESOLVED url — a redirect that lands on
+                          # a url another query already found is a duplicate
+            seen_resolved_urls.add(resolved)
             pack.sources.append({
-                "url": url, "title": title,
+                "url": resolved, "title": title,
                 "supports": True,  # grounding returned it for this query — the
                                     # citation gate (Agent C) makes the real,
                                     # per-claim supported/unsupported call later
-                "primary_guess": _primary_guess(url, title),
+                "primary_guess": _primary_guess(resolved, title),
             })
 
     briefs_dir.mkdir(parents=True, exist_ok=True)
     notes_path = briefs_dir / f"{date_ist}-research.md"
     sources_path = briefs_dir / f"{date_ist}-sources.json"
+    unresolved_path = briefs_dir / f"{date_ist}-sources-unresolved.json"
     header = f"# Research notes — {date_ist} ({slug_hint or 'no slug yet'})\n\n"
     if not notes_sections:
         header += "(no research angles completed — see `note` for why)\n"
-    notes_path.write_text(header + "\n".join(notes_sections), encoding="utf-8")
+    # FIX H: a numbered list of the RESOLVED deep urls, appended to the
+    # notes the writer prompt embeds via {{research_notes}} — write_article.md's
+    # citation rule points the model at this list by name ("the numbered
+    # research sources list"), so every citation the model writes can be a
+    # verbatim copy instead of a re-typed/shortened/invented url.
+    sources_section = "## Sources (numbered — cite ONLY these urls, verbatim)\n\n"
+    if pack.sources:
+        sources_section += "\n".join(
+            f'{i}. [{s["title"]}]({s["url"]})' for i, s in enumerate(pack.sources, 1))
+        sources_section += "\n"
+    else:
+        sources_section += "(no resolved deep-link sources found this run)\n"
+    notes_path.write_text(
+        header + "\n".join(notes_sections) + "\n" + sources_section, encoding="utf-8")
     sources_path.write_text(json.dumps(pack.sources, indent=2, ensure_ascii=False),
                             encoding="utf-8")
+    unresolved_path.write_text(json.dumps(pack.unresolved, indent=2, ensure_ascii=False),
+                               encoding="utf-8")
     pack.notes_path = notes_path
     pack.sources_path = sources_path
+    pack.unresolved_path = unresolved_path
     return pack

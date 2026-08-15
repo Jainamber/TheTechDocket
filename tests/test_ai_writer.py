@@ -183,6 +183,93 @@ def test_ai_research_missing_brief_raises(tmp_path):
         ai_research.run(DATE, None, client, _llm_cfg(), root=tmp_path)
 
 
+# ---------------------------------------- ai_research deep-link fidelity (FIX H)
+# The research.json fixture returns the same two sources on every call
+# (fixture replay is stateless):
+#   https://fixturecorp.example/blog/aurora-launch
+#   https://fixturenews.example/2026/08/15/aurora-review
+# These tests inject a fake resolver + fixture=False to exercise the real
+# resolution/dedupe/filtering logic without any network or env-var reliance.
+
+def _research_brief(tmp_path: Path) -> None:
+    brief_path = tmp_path / "data" / "briefs" / f"{DATE}.md"
+    brief_path.parent.mkdir(parents=True, exist_ok=True)
+    brief_path.write_text("# Article Brief\n\nSome brief text.\n", encoding="utf-8")
+
+
+def test_ai_research_resolves_and_dedupes_by_resolved_url(tmp_path):
+    _research_brief(tmp_path)
+    client = _client(tmp_path, max_grounded_queries_per_run=3)
+
+    def fake_resolver(url):
+        return "https://fixturecorp.example/blog/aurora-launch-2026-deep-dive"
+
+    pack = ai_research.run(DATE, "some-slug-hint", client,
+                           _llm_cfg(max_grounded_queries_per_run=3), root=tmp_path,
+                           resolver=fake_resolver, fixture=False)
+
+    # both raw fixture urls resolve to the SAME destination -> one entry
+    assert len(pack.sources) == 1
+    assert pack.sources[0]["url"] == "https://fixturecorp.example/blog/aurora-launch-2026-deep-dive"
+    assert pack.unresolved == []
+    assert json.loads(pack.sources_path.read_text(encoding="utf-8")) == pack.sources
+    assert json.loads(pack.unresolved_path.read_text(encoding="utf-8")) == []
+    # numbered sources list appended to the notes file
+    notes = pack.notes_path.read_text(encoding="utf-8")
+    assert "Sources (numbered" in notes
+    assert "1. [" in notes
+    assert "aurora-launch-2026-deep-dive" in notes
+
+
+def test_ai_research_drops_bare_domain_resolutions_to_unresolved(tmp_path):
+    _research_brief(tmp_path)
+    client = _client(tmp_path, max_grounded_queries_per_run=3)
+
+    def fake_resolver(url):
+        return "https://example.com/"  # a homepage, not a citation
+
+    pack = ai_research.run(DATE, "some-slug-hint", client,
+                           _llm_cfg(max_grounded_queries_per_run=3), root=tmp_path,
+                           resolver=fake_resolver, fixture=False)
+
+    assert pack.sources == []
+    assert len(pack.unresolved) == 2  # both distinct raw fixture urls
+    assert all(u["reason"] == "resolved to a bare domain root — not a citation"
+              for u in pack.unresolved)
+    assert all(u["resolved"] == "https://example.com/" for u in pack.unresolved)
+
+
+def test_ai_research_resolution_failure_goes_to_unresolved(tmp_path):
+    _research_brief(tmp_path)
+    client = _client(tmp_path, max_grounded_queries_per_run=3)
+
+    def failing_resolver(url):
+        raise TimeoutError("connection timed out")
+
+    pack = ai_research.run(DATE, "some-slug-hint", client,
+                           _llm_cfg(max_grounded_queries_per_run=3), root=tmp_path,
+                           resolver=failing_resolver, fixture=False)
+
+    assert pack.sources == []
+    assert len(pack.unresolved) == 2
+    assert all("resolution failed" in u["reason"] for u in pack.unresolved)
+    assert "resolved" not in pack.unresolved[0]  # never fabricated a resolved url
+
+
+def test_ai_research_fixture_mode_is_a_resolution_noop(tmp_path):
+    # default (no resolver/fixture override) — TTD_AI_FIXTURE=1 is set for
+    # the whole test run, so resolution is a no-op and behaves exactly as
+    # it did before FIX H: the fixture's own already-deep urls pass through.
+    _research_brief(tmp_path)
+    client = _client(tmp_path, max_grounded_queries_per_run=3)
+
+    pack = ai_research.run(DATE, "some-slug-hint", client,
+                           _llm_cfg(max_grounded_queries_per_run=3), root=tmp_path)
+
+    assert len(pack.sources) == 2
+    assert pack.unresolved == []
+
+
 # ------------------------------------------------------------------ ai_write
 
 def _seed_write_inputs(tmp_path: Path) -> None:
@@ -280,11 +367,12 @@ def test_ai_write_retry_feedback_is_included_in_prompt(tmp_path, monkeypatch):
     assert "S07-word-count: too short" in prompt_text
 
 
-def test_ai_write_raises_after_one_bounded_reask_on_bad_front_matter(tmp_path):
+def test_ai_write_raises_after_bounded_reasks_on_bad_front_matter(tmp_path, monkeypatch):
     _seed_write_inputs(tmp_path)
     # A dedicated fixture dir whose write.json is structurally invalid
     # (missing the review block) on every call — fixture replay is
-    # stateless, so this proves the "exactly one retry, then raise" path.
+    # stateless, so this proves the "exactly _PARSE_REASK_ATTEMPTS
+    # attempts, then raise" path (FIX J: 1 initial + 2 retries).
     bad_fixtures = tmp_path / "bad_fixtures"
     bad_fixtures.mkdir()
     _write_json(bad_fixtures / "write.json", {
@@ -295,10 +383,19 @@ def test_ai_write_raises_after_one_bounded_reask_on_bad_front_matter(tmp_path):
         "finish_reason": "STOP", "model": "gemini-3.5-flash",
     })
     client = _client(tmp_path, fixture_dir=bad_fixtures)
+    real_generate_with_fallback = client.generate_with_fallback
+    calls = []
 
-    with pytest.raises(ai_write.WriteValidationError):
+    def spy(step, models, **kw):
+        calls.append(1)
+        return real_generate_with_fallback(step, models, **kw)
+
+    monkeypatch.setattr(client, "generate_with_fallback", spy)
+
+    with pytest.raises(ai_write.WriteValidationError, match="after 2 retries"):
         ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
 
+    assert len(calls) == ai_write._PARSE_REASK_ATTEMPTS == 3
     # nothing should have been written to content/articles/
     assert not (tmp_path / "content" / "articles").exists() or \
         not list((tmp_path / "content" / "articles").glob("*.md"))
@@ -474,3 +571,246 @@ def test_ai_write_no_link_warnings_file_when_nothing_to_resolve(tmp_path):
     slug = out_path.stem[len(DATE) + 1:]
     warn_path = tmp_path / "data" / "gate-reports" / f"{DATE}-{slug}-link-warnings.json"
     assert not warn_path.exists()
+
+
+# --------------------------------------- deep-link citation fidelity (FIX H)
+
+def _seed_write_inputs_with_many_sources(tmp_path: Path) -> None:
+    """Same as _seed_write_inputs, but with a 3-entry sources.json — the
+    minimum the citation-fidelity check requires before it starts
+    rejecting bare-domain / vertexaisearch-redirect citations."""
+    _seed_write_inputs(tmp_path)
+    _write_json(tmp_path / "data" / "briefs" / f"{DATE}-sources.json", [
+        {"url": "https://fixturecorp.example/blog/aurora-launch", "title": "A",
+         "supports": True, "primary_guess": True},
+        {"url": "https://fixturecorp.example/docs/aurora-methodology", "title": "B",
+         "supports": True, "primary_guess": True},
+        {"url": "https://fixturecorp.example/data/aurora-leaderboard", "title": "C",
+         "supports": True, "primary_guess": False},
+    ])
+
+
+def _bad_citation_article(sources_yaml: str, body: str) -> str:
+    return (
+        '---\ntitle: "A Perfectly Fine Length Title For Testing Purposes Only"\n'
+        'slug: "{{ARTICLE_SLUG}}"\ndate: "{{ARTICLE_DATE}}"\nhub: ai-tools\n'
+        'tags: [x]\ndescription: "' + ("d" * 120) + '"\nhero_alt: "alt"\n'
+        'keyword: "kw"\noriginal_value: "value"\nselection_note: ""\n'
+        f'sources:\n{sources_yaml}\n'
+        'faq:\n  - {q: "Q?", a: "A."}\n'
+        'review:\n  facts_verified: false\n  sources_checked: false\n'
+        '  title_promise_check: true\n  no_fabrication: true\n  policy_pass: true\n'
+        '  reviewed_at: "2026-08-15T00:00:00+05:30"\n---\n\n'
+        f'{body}\n'
+    )
+
+
+def test_ai_write_rejects_bare_domain_citation_and_reasks(tmp_path, monkeypatch):
+    _seed_write_inputs_with_many_sources(tmp_path)
+    bad_fixtures = tmp_path / "bare_domain_fixtures"
+    bad_fixtures.mkdir()
+    article = _bad_citation_article(
+        '  - {title: "Homepage", url: "https://example.com/", primary: true}',
+        "Body text.")
+    _write_json(bad_fixtures / "write.json", {
+        "text": "```markdown\n" + article + "\n```",
+        "usage": {"in": 10, "out": 10, "thinking": 0},
+        "grounded_queries": 0, "url_fetches": 0, "sources": [],
+        "finish_reason": "STOP", "model": "gemini-3.5-flash",
+    })
+    client = _client(tmp_path, fixture_dir=bad_fixtures)
+
+    captured: list[str] = []
+    real_generate_with_fallback = client.generate_with_fallback
+
+    def spy(step, models, **kw):
+        captured.append(kw["contents"][0]["parts"][0]["text"])
+        return real_generate_with_fallback(step, models, **kw)
+
+    monkeypatch.setattr(client, "generate_with_fallback", spy)
+
+    with pytest.raises(ai_write.WriteValidationError, match="bare domain root"):
+        ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    # FIX J: 1 initial attempt + 2 bounded re-asks (all 3 fired since the
+    # fixture always returns the same bad draft), each carrying the
+    # corrective message
+    assert len(captured) == 3
+    assert "bare domain root" in captured[1]
+    assert "https://example.com/" in captured[1]
+    assert "bare domain root" in captured[2]
+
+
+def test_ai_write_rejects_vertexaisearch_redirect_in_body_link(tmp_path):
+    _seed_write_inputs_with_many_sources(tmp_path)
+    bad_fixtures = tmp_path / "redirect_fixtures"
+    bad_fixtures.mkdir()
+    redirect_url = "https://vertexaisearch.cloud.google.com/grounding-api-redirect/abc123"
+    article = _bad_citation_article(
+        '  - {title: "S", url: "https://fixturecorp.example/s", primary: true}',
+        f"Body text with a [citation]({redirect_url}) inline.")
+    _write_json(bad_fixtures / "write.json", {
+        "text": "```markdown\n" + article + "\n```",
+        "usage": {"in": 10, "out": 10, "thinking": 0},
+        "grounded_queries": 0, "url_fetches": 0, "sources": [],
+        "finish_reason": "STOP", "model": "gemini-3.5-flash",
+    })
+    client = _client(tmp_path, fixture_dir=bad_fixtures)
+
+    with pytest.raises(ai_write.WriteValidationError, match="vertexaisearch"):
+        ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+
+def test_ai_write_fidelity_check_skipped_when_source_pool_too_small(tmp_path):
+    # only 1 source available (below _MIN_SOURCES_FOR_FIDELITY_CHECK) ->
+    # citing a bare domain is not punished — there wasn't enough research
+    # to hold the draft to that bar
+    _seed_write_inputs(tmp_path)  # default seed: single-source pool
+    bad_fixtures = tmp_path / "small_pool_fixtures"
+    bad_fixtures.mkdir()
+    article = _bad_citation_article(
+        '  - {title: "Homepage", url: "https://example.com/", primary: true}',
+        "Body text.")
+    _write_json(bad_fixtures / "write.json", {
+        "text": "```markdown\n" + article + "\n```",
+        "usage": {"in": 10, "out": 10, "thinking": 0},
+        "grounded_queries": 0, "url_fetches": 0, "sources": [],
+        "finish_reason": "STOP", "model": "gemini-3.5-flash",
+    })
+    client = _client(tmp_path, fixture_dir=bad_fixtures)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)  # must NOT raise
+
+    assert out_path.exists()
+
+
+def test_ai_write_happy_path_verbatim_deep_urls_pass_fidelity_check(tmp_path):
+    # the canonical write.json fixture's front-matter sources[] are already
+    # real deep-path urls — with a 3+ entry source pool, the fidelity check
+    # must not reject a normal, well-behaved draft
+    _seed_write_inputs_with_many_sources(tmp_path)
+    client = _client(tmp_path)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    assert out_path.exists()
+
+
+# ------------------------------------------- lenient article extraction (FIX J)
+# Live smoke runs showed the model occasionally wraps the document in a
+# code fence, prefaces it with commentary, or both — with no token
+# truncation involved. These test _extract_article() directly (fast,
+# precise) plus one full ai_write.run() integration test proving the
+# whole pipeline swallows the flake in a single attempt (no re-ask spent).
+
+_VALID_DOC = '---\ntitle: "T"\nslug: "s"\ndate: "d"\n---\n\nBody paragraph.'
+
+
+def test_extract_article_fenced_wrapped_doc_parses():
+    text = "```markdown\n" + _VALID_DOC + "\n```"
+    extracted = ai_write._extract_article(text)
+    assert extracted == _VALID_DOC
+    assert ai_write.FM_RE.match(extracted)
+
+
+def test_extract_article_commentary_prefixed_bare_doc_parses():
+    text = "Sure, here's the article:\n\n" + _VALID_DOC
+    extracted = ai_write._extract_article(text)
+    assert extracted == _VALID_DOC
+    assert ai_write.FM_RE.match(extracted)
+
+
+def test_extract_article_commentary_prefixed_fenced_doc_parses():
+    text = ("Here you go:\n\n```markdown\n" + _VALID_DOC
+           + "\n```\n\nHope that helps!")
+    extracted = ai_write._extract_article(text)
+    assert extracted == _VALID_DOC
+    assert ai_write.FM_RE.match(extracted)
+
+
+def test_extract_article_strips_trailing_fence_from_bare_match():
+    # a stray closing ``` tacked on after a bare (unfenced-open) document
+    # — the bare '---'-search grabs "to end of output", which sweeps the
+    # dangling fence marker in; step 3 must strip it back off.
+    text = "Some intro.\n\n" + _VALID_DOC + "\n```"
+    extracted = ai_write._extract_article(text)
+    assert extracted == _VALID_DOC
+    assert not extracted.endswith("```")
+    assert ai_write.FM_RE.match(extracted)
+
+
+def test_extract_article_checks_every_fence_not_just_the_first():
+    # an illustrative snippet fence comes FIRST; the real document is in a
+    # LATER fence — strategy 1 must check every fence, not stop at #1
+    text = ("Here's a small yaml example:\n```yaml\nkey: value\n```\n\n"
+           "And here's the actual article:\n```markdown\n" + _VALID_DOC + "\n```")
+    extracted = ai_write._extract_article(text)
+    assert extracted == _VALID_DOC
+    assert "key: value" not in extracted
+
+
+def test_extract_article_garbage_falls_through_unmatched():
+    text = "I'm sorry, I can't help with that right now."
+    extracted = ai_write._extract_article(text)
+    # still not a valid document — the caller's FM_RE.match() check (and
+    # the re-ask path) is responsible for rejecting this, not extraction
+    assert not ai_write.FM_RE.match(extracted)
+
+
+def test_ai_write_happy_path_with_fence_and_commentary_wrapped_reply(tmp_path, monkeypatch):
+    # reuse the canonical fixture's own valid document, but wrap it the
+    # way a flaky model reply looks in practice — commentary before AND
+    # after a fenced block — and confirm the full run() succeeds in ONE
+    # attempt (no re-ask spent) rather than raising or burning a retry.
+    _seed_write_inputs(tmp_path)
+    canonical = json.loads((REAL_FIXTURE_DIR / "write.json").read_text(encoding="utf-8"))
+    doc = ai_write._extract_article(canonical["text"])
+    wrapped_fixtures = tmp_path / "wrapped_fixtures"
+    wrapped_fixtures.mkdir()
+    payload = dict(canonical)
+    payload["text"] = ("Sure, here's today's article:\n\n```markdown\n" + doc
+                       + "\n```\n\nLet me know if you'd like any edits!")
+    _write_json(wrapped_fixtures / "write.json", payload)
+    client = _client(tmp_path, fixture_dir=wrapped_fixtures)
+    real_generate_with_fallback = client.generate_with_fallback
+    calls: list[int] = []
+
+    def spy(step, models, **kw):
+        calls.append(1)
+        return real_generate_with_fallback(step, models, **kw)
+
+    monkeypatch.setattr(client, "generate_with_fallback", spy)
+
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    assert out_path.exists()
+    assert len(calls) == 1  # succeeded on the first attempt — no re-ask needed
+
+
+def test_ai_write_garbage_output_reasks_then_raises_after_two_retries(tmp_path, monkeypatch):
+    _seed_write_inputs(tmp_path)
+    bad_fixtures = tmp_path / "garbage_fixtures"
+    bad_fixtures.mkdir()
+    _write_json(bad_fixtures / "write.json", {
+        "text": "I'm sorry, I can't help with that right now.",
+        "usage": {"in": 10, "out": 10, "thinking": 0},
+        "grounded_queries": 0, "url_fetches": 0, "sources": [],
+        "finish_reason": "STOP", "model": "gemini-3.5-flash",
+    })
+    client = _client(tmp_path, fixture_dir=bad_fixtures)
+    real_generate_with_fallback = client.generate_with_fallback
+    captured: list[str] = []
+
+    def spy(step, models, **kw):
+        captured.append(kw["contents"][0]["parts"][0]["text"])
+        return real_generate_with_fallback(step, models, **kw)
+
+    monkeypatch.setattr(client, "generate_with_fallback", spy)
+
+    with pytest.raises(ai_write.WriteValidationError, match="after 2 retries"):
+        ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+
+    assert len(captured) == 3  # 1 initial + 2 bounded re-asks, then raise
+    # both re-asks carried the explicit, directive corrective message
+    assert "START with" in captured[1]
+    assert "START with" in captured[2]

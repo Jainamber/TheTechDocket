@@ -47,6 +47,36 @@ def http_resolve(url: str, timeout: float = 15.0) -> str:
     return resp.url
 
 
+def resolve_single(url: str, *, resolver=http_resolve,
+                   fixture: bool | None = None) -> str | None:
+    """Resolve ONE url directly — used by ai_research.py (FIX H) to
+    resolve every grounding source URI it collects as soon as each
+    research call returns, not just ones that happen to match the
+    vertexaisearch redirect pattern (a grounding chunk's URI should always
+    be resolved to its real destination regardless of shape, since the
+    whole point is deep-link fidelity: the writer must never see, and so
+    can never cite, an opaque redirect or a URL shortened down to a bare
+    domain root).
+
+    `fixture=None` (default) auto-detects TTD_AI_FIXTURE=1 — a no-op that
+    returns `url` unchanged, zero network, matching every other module
+    here. Pass `fixture=False` with an injected `resolver=` to test
+    resolution logic without the real network or the env var.
+
+    Returns the resolved url, or None (never raises) if a live resolution
+    attempt fails — the caller decides the fail-open policy (ai_research.py
+    buckets these into an 'unresolved' list rather than silently dropping
+    or silently keeping the unresolved redirect as if it were safe to cite)."""
+    if fixture is None:
+        fixture = os.environ.get("TTD_AI_FIXTURE") == "1"
+    if fixture:
+        return url
+    try:
+        return resolver(url)
+    except Exception:  # noqa: BLE001 — fail-open, caller decides what to do
+        return None
+
+
 def resolve_grounding_links(text: str, *, resolver=http_resolve,
                             fixture: bool | None = None) -> tuple[str, list[dict]]:
     """Find, resolve, and substitute every grounding-redirect url in
