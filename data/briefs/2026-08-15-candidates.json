@@ -1,0 +1,329 @@
+{
+  "date": "2026-08-15",
+  "candidates": [
+    {
+      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1141,
+          "comments": 217,
+          "url": "https://tailscale.com/blog/sqlite-wal-reset-bug"
+        }
+      ],
+      "score": 0.5901,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Three chip-related facilities under India's first Semicon program have begun commercial production, part of twelve approved projects nationwide.",
+      "sources": [
+        "gnews:IN",
+        "outlet:India Semiconductor Mission"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "India Semiconductor Mission"
+        },
+        {
+          "source": "outlet:India Semiconductor Mission",
+          "outlet": "India Semiconductor Mission"
+        }
+      ],
+      "score": 0.5496,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "AWS has layered an additional $8.3 billion India pledge on top of its earlier Hyderabad cloud region commitment.",
+      "sources": [
+        "gnews:IN",
+        "outlet:Nikkei Asia (context)"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "Nikkei Asia (context)"
+        },
+        {
+          "source": "outlet:Nikkei Asia (context)",
+          "outlet": "Nikkei Asia (context)"
+        }
+      ],
+      "score": 0.5489,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenAI shipped a preview build of a ChatGPT desktop app for Linux, extending ChatGPT and Codex support to Ubuntu, Debian, and Fedora distributions.",
+      "sources": [
+        "gnews:US",
+        "outlet:OpenAI"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "us tech sweep",
+          "outlet": "OpenAI"
+        },
+        {
+          "source": "outlet:OpenAI",
+          "outlet": "OpenAI"
+        }
+      ],
+      "score": 0.5489,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "OpenAI expanded its Daybreak security program into two account tiers and will require hardware security keys for enrolled accounts starting September 1.",
+      "sources": [
+        "gnews:US",
+        "outlet:AI Weekly"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "us tech sweep",
+          "outlet": "AI Weekly"
+        },
+        {
+          "source": "outlet:AI Weekly",
+          "outlet": "AI Weekly"
+        }
+      ],
+      "score": 0.5489,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Combined market value of India's top IT services firms including TCS, Infosys and Wipro has dropped more than 46% from 2024 peaks on fears that AI will erode outsourcing demand.",
+      "sources": [
+        "gnews:IN",
+        "outlet:Business Today"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "Business Today"
+        },
+        {
+          "source": "outlet:Business Today",
+          "outlet": "Business Today"
+        }
+      ],
+      "score": 0.5481,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Mistral OCR 4.1",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.921584093334136,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 268,
+          "comments": 106,
+          "url": "https://news.ycombinator.com/item?id=49288889"
+        }
+      ],
+      "score": 0.5443,
+      "topic_fit": 0.74,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Microsoft opened a new Hyderabad cloud region this week, part of a $20.5 billion India buildout that makes it the country's biggest cloud infrastructure provider.",
+      "sources": [
+        "gnews:IN",
+        "outlet:Nikkei Asia"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "Nikkei Asia"
+        },
+        {
+          "source": "outlet:Nikkei Asia",
+          "outlet": "Nikkei Asia"
+        }
+      ],
+      "score": 0.5441,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Google is putting $15 billion into an AI data center hub in Andhra Pradesh, calling it its largest AI buildout anywhere outside the US.",
+      "sources": [
+        "gnews:IN",
+        "outlet:Yahoo Finance"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "Yahoo Finance"
+        },
+        {
+          "source": "outlet:Yahoo Finance",
+          "outlet": "Yahoo Finance"
+        }
+      ],
+      "score": 0.5415,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Uber and Pony.ai are preparing to expand self-driving, ride-hailing vehicle fleets to more than 2,000 cars across European cities.",
+      "sources": [
+        "gnews:US",
+        "outlet:TechStartups"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "us tech sweep",
+          "outlet": "TechStartups"
+        },
+        {
+          "source": "outlet:TechStartups",
+          "outlet": "TechStartups"
+        }
+      ],
+      "score": 0.5405,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Apple reportedly built a China-specific version of its AI model with technical help from Alibaba, ahead of a broader on-device AI push.",
+      "sources": [
+        "gnews:US",
+        "outlet:TechStartups"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "us tech sweep",
+          "outlet": "TechStartups"
+        },
+        {
+          "source": "outlet:TechStartups",
+          "outlet": "TechStartups"
+        }
+      ],
+      "score": 0.5395,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Farmers and Dalit communities near Visakhapatnam are protesting land acquisition for a Google-backed AI data center, citing displacement and opaque land deals.",
+      "sources": [
+        "gnews:IN",
+        "outlet:Rest of World"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech sweep",
+          "outlet": "Rest of World"
+        },
+        {
+          "source": "outlet:Rest of World",
+          "outlet": "Rest of World"
+        }
+      ],
+      "score": 0.5383,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    }
+  ],
+  "pick": {
+    "title": "Private Fusion Startup Fuse Energy Sets Record Neutron Yield With Dense Plasma Focus Device",
+    "score": "n/a — Frontier Saturday editorial slot (owner directive 2026-08-12); scorer has no frontier lane yet",
+    "topic_fit": "frontier: fusion",
+    "corroboration": 2,
+    "geos": [],
+    "sources": [
+      "frontier:websearch"
+    ],
+    "evidence": [
+      {
+        "summary": "Fuse Energy Technologies' megajoule-class dense plasma focus device FAETON-X produced a peak yield of 1.27 trillion (1.27x10^12) neutrons in a single deuterium-deuterium shot, which the company says is the first publicly documented neutron yield at that level by any private fusion company. The device reportedly delivered about 40% more neutrons per megajoule than Lawrence Livermore National Laboratory's MJOLNIR facility, operating at 65 kV with roughly 1 MJ of stored energy and a record current efficiency of 4.5 MA/MJ.",
+        "event_date": "2026-08-11"
+      },
+      {
+        "primary_source": {
+          "name": "Research Square preprint: \"Exceeding 10^12 D-D flash neutrons in the 4.5-MA 1-MJ dense plasma focus FAETON-X\"",
+          "url": "https://www.researchsquare.com/article/rs-10657590/v1"
+        }
+      },
+      {
+        "outlet": "Power Magazine",
+        "url": "https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/"
+      },
+      {
+        "outlet": "The Fusion Report (Substack, weekly fusion-industry roundup)",
+        "url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14"
+      }
+    ],
+    "frontier": true,
+    "country_party": "US (private company — Fuse Energy Technologies)",
+    "why_strong": "A private company publicly claiming to match or beat national-lab-class neutron yields is a genuine technical milestone that supports real synthesis — explaining dense-plasma-focus physics, how it differs from tokamak/laser fusion, and what neutron-yield thresholds actually mean for near-term revenue (radiation-effects testing) versus the longer path to net energy."
+  },
+  "use_evergreen": false,
+  "scorer_top": "Tracking down the 16-year-old WAL-reset SQLite bug",
+  "selection_note": "Frontier Saturday slot (owner directive 2026-08-12): editorial override of scorer top pick"
+}

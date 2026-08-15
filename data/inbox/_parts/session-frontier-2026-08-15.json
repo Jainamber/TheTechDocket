@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-08-15T02:00:00Z",
+  "method": "websearch-only",
+  "frontier": [
+    {
+      "title": "Private Fusion Startup Fuse Energy Sets Record Neutron Yield With Dense Plasma Focus Device",
+      "area": "fusion",
+      "summary": "Fuse Energy Technologies' megajoule-class dense plasma focus device FAETON-X produced a peak yield of 1.27 trillion (1.27x10^12) neutrons in a single deuterium-deuterium shot, which the company says is the first publicly documented neutron yield at that level by any private fusion company. The device reportedly delivered about 40% more neutrons per megajoule than Lawrence Livermore National Laboratory's MJOLNIR facility, operating at 65 kV with roughly 1 MJ of stored energy and a record current efficiency of 4.5 MA/MJ.",
+      "event_date": "2026-08-11",
+      "primary_source": {
+        "name": "Research Square preprint: \"Exceeding 10^12 D-D flash neutrons in the 4.5-MA 1-MJ dense plasma focus FAETON-X\"",
+        "url": "https://www.researchsquare.com/article/rs-10657590/v1"
+      },
+      "sources": [
+        {"outlet": "Power Magazine", "url": "https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/"},
+        {"outlet": "The Fusion Report (Substack, weekly fusion-industry roundup)", "url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14"}
+      ],
+      "corroboration_url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14",
+      "momentum": "Featured as a top item in a weekly fusion-industry newsletter roundup dated Aug 14, 2026; two independent outlets (a trade magazine and an independent industry newsletter), not wire syndication of a single release.",
+      "country_party": "US (private company — Fuse Energy Technologies)",
+      "why_strong": "A private company publicly claiming to match or beat national-lab-class neutron yields is a genuine technical milestone that supports real synthesis — explaining dense-plasma-focus physics, how it differs from tokamak/laser fusion, and what neutron-yield thresholds actually mean for near-term revenue (radiation-effects testing) versus the longer path to net energy."
+    },
+    {
+      "title": "Pasqal Traps Individual Qubits Using On-Chip Photonic Circuit for the First Time",
+      "area": "quantum",
+      "summary": "Quantum computing company Pasqal, working with its photonics subsidiary Aeponyx, generated four optical micro-traps through a single silicon-nitride photonic integrated circuit and used them to trap and hold four individual rubidium atoms inside a quantum processing unit. The company says atom lifetimes (~27.5 seconds) matched its existing bulk-optics systems, and that the approach — a claimed world-first for neutral-atom quantum computing — could shrink future processors' optical hardware footprint by up to 50x on the way to a long-term target of over 10,000 atoms and 100 logical qubits.",
+      "event_date": "2026-08-10",
+      "primary_source": {
+        "name": "Pasqal press release (GlobeNewswire)",
+        "url": "https://www.globenewswire.com/news-release/2026/08/10/3341792/0/en/Pasqal-Brings-Qubit-Control-On-Chip-Advancing-the-Path-to-Fault-Tolerant-Quantum-Computing-at-Scale.html"
+      },
+      "sources": [
+        {"outlet": "Quantum Computing Report", "url": "https://quantumcomputingreport.com/pasqal-achieves-first-on-chip-neutral-atom-qubit-trapping-via-photonic-integrated-circuits/"},
+        {"outlet": "The Quantum Insider", "url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/"}
+      ],
+      "corroboration_url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/",
+      "momentum": "Same-day pickup across multiple quantum-industry trade outlets (Quantum Computing Report, The Quantum Insider, HPCwire, Pulse2) plus general wire pickup (Manila Times, Asianet Newsable, AiThority). Note: several of those outlets are wire/press-release syndication of the same GlobeNewswire release rather than independent reporting — Quantum Computing Report and The Quantum Insider read as independent editorial coverage.",
+      "country_party": "France (private company — Pasqal, with subsidiary Aeponyx)",
+      "why_strong": "Addresses a specific, well-understood scaling bottleneck (bulky free-space optics) on the road to fault-tolerant neutral-atom quantum computers, giving a Saturday piece real technical meat: why optical footprint has been a wall, how photonic integration works, and what it would take to go from 4 trapped atoms to 10,000."
+    },
+    {
+      "title": "NASA's Aspera Ultraviolet Telescope Set for Rocket Lab Electron Launch From New Zealand",
+      "area": "spaceflight",
+      "summary": "NASA's Aspera mission, a shoebox-sized astrophysics smallsat selected under the agency's Astrophysics Pioneers Program, was scheduled to launch aboard a Rocket Lab Electron rocket from Launch Complex 1A in Mahia, New Zealand, into sun-synchronous orbit on August 15, 2026. Aspera carries a UV telescope meant to map diffuse extreme-ultraviolet emission from hot gas in the circumgalactic and intergalactic medium around nearby galaxies — described as the first NASA astrophysics mission to gather this kind of UV signature. NASA awarded the dedicated ride to Rocket Lab under its VADR contract; the mission is University of Arizona-led.",
+      "event_date": "2026-08-15",
+      "primary_source": {
+        "name": "Rocket Lab mission page",
+        "url": "https://rocketlabcorp.com/missions/launches/aspera/"
+      },
+      "sources": [
+        {"outlet": "Space.com", "url": "https://www.space.com/space-exploration/missions/nasa-picks-rocket-lab-to-launch-shoebox-sized-aspera-space-telescope-in-2026"},
+        {"outlet": "University of Arizona News", "url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission"}
+      ],
+      "corroboration_url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission",
+      "momentum": null,
+      "country_party": "US/NASA (University of Arizona-led; launched via Rocket Lab from New Zealand)",
+      "why_strong": "A genuine NASA astrophysics first — mapping the circumgalactic medium in extreme-UV — gives a same-day news hook plus real science to unpack: why the gas between galaxies matters for understanding galaxy formation, and why NASA is increasingly using small dedicated-rideshare missions (Pioneers Program) rather than flagship telescopes. CAVEAT: search snippets confirm only the scheduled launch date, not a confirmed successful liftoff — verify launch outcome before publishing."
+    },
+    {
+      "title": "Blue Origin Begins Building Second Launch Pad at Cape Canaveral Complex 36",
+      "area": "spaceflight",
+      "summary": "Blue Origin announced on August 12, 2026 that it will build a second orbital pad, LC-36B, at Cape Canaveral Space Force Station's Launch Complex 36, sized for the larger New Glenn 9x4 vehicle (nearly 400 feet tall, ~29,000 cubic-foot fairing), while the original pad — now renamed LC-36A — is rebuilt for the 7x2 configuration following May's New Glenn explosion. CEO Dave Limp said rebuilding LC-36A and flying again before year-end remains the priority; the company separately identified a BE-4 engine main oxygen valve as the explosion's root cause, with retrofitted valve hardware expected by end of August.",
+      "event_date": "2026-08-12",
+      "primary_source": {
+        "name": "Blue Origin official announcement",
+        "url": "https://www.blueorigin.com/news/returning-launch-complex-36-to-two-pads"
+      },
+      "sources": [
+        {"outlet": "SpaceNews", "url": "https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/"},
+        {"outlet": "Aviation Week", "url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape"}
+      ],
+      "corroboration_url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape",
+      "momentum": "Broad same-week coverage across independent aerospace trade press (SpaceNews, Aviation Week, AIAA, NASASpaceFlight.com) plus regional Florida TV outlets (Fox35, Fox51, mynews13) — genuinely independent domains, not one syndicated wire story.",
+      "country_party": "US (private company — Blue Origin)",
+      "why_strong": "Ties three threads into one synthesis-worthy story: the May New Glenn pad explosion, the newly identified BE-4 valve root cause, and this dual-pad expansion bet — enough material to assess whether Blue Origin can credibly reach high-cadence launch by year-end."
+    },
+    {
+      "title": "Human-Aware Humanoid Robot Design Cuts Back Strain in Shared Lifting Tasks",
+      "area": "robotics",
+      "summary": "Researchers from the Italian Institute of Technology, GenerativeBionics, and the University of Manchester published a co-design framework that jointly optimizes a humanoid robot's body and control system around human biomechanics, tested on the ergoCub robot (1.5m tall, 55.7kg, roughly 10kg payload). In trials, people working alongside ergoCub on shared lifting tasks showed significantly lower estimated stress on the lower back than performing the task alone, and the robot also walked faster and more efficiently than earlier versions. The work was published in Nature Machine Intelligence.",
+      "event_date": "2026-07-13",
+      "primary_source": {
+        "name": "Nature Machine Intelligence paper: \"Towards shared embodied intelligence in humanoid robots through optimization, development and testing of the human-aware ergoCub robot\"",
+        "url": "https://www.nature.com/articles/s42256-026-01272-2"
+      },
+      "sources": [
+        {"outlet": "TechXplore", "url": "https://techxplore.com/news/2026-08-human-aware-robots-partners-strain.html"},
+        {"outlet": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork"}
+      ],
+      "corroboration_url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork",
+      "momentum": "Picked up by multiple outlets (TechXplore, Interesting Engineering, Electronics For U, Lifeboat News) in a coverage wave clustered in August 2026, even though the underlying peer-reviewed paper published July 13, 2026 — flagging this gap explicitly since freshness here is the press-pickup wave, not the underlying event. TechXplore leans on publisher-network/press-release text; Interesting Engineering reads as independently written.",
+      "country_party": "Italy/UK (Italian Institute of Technology, University of Manchester, GenerativeBionics — academic/private consortium, no national space or defense agency involved)",
+      "why_strong": "A peer-reviewed (not product-PR) robotics result with a clear human-centered angle — designing the robot's body around human physiology instead of treating people as an afterthought — giving room to explain the co-design methodology and contrast it with the routine humanoid-manufacturing-milestone stories that dominate robotics coverage. WEAKEST ON FRESHNESS of this set: paper is ~1 month old even though press pickup is recent."
+    },
+    {
+      "title": "New Carbon Support Cuts Platinum Use in Durable Hydrogen Fuel Cell Catalysts",
+      "area": "materials",
+      "summary": "Researchers at Washington University in St. Louis, with collaborators from Brookhaven National Laboratory, Lawrence Berkeley National Laboratory, Northeastern University, and the University of Pittsburgh, developed a nanostructured carbon support with radially arranged channels and controlled pore size that holds highly ordered platinum-cobalt intermetallic nanoparticles for low-temperature fuel cells. The catalyst retained 85% of its performance after 150,000 harsh voltage cycles (roughly equivalent to 25,000 operating hours), addressing the usual activity-versus-stability trade-off while cutting platinum use. The work was published August 6, 2026 in Nature Nanotechnology.",
+      "event_date": "2026-08-06",
+      "primary_source": {
+        "name": "Washington University in St. Louis release (via EurekAlert)",
+        "url": "https://www.eurekalert.org/news-releases/1138979"
+      },
+      "sources": [
+        {"outlet": "Phys.org", "url": "https://phys.org/news/2026-08-carbon-nanostructure-fuel-cell-catalyst.html"},
+        {"outlet": "QuantumZeitgeist", "url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/"}
+      ],
+      "corroboration_url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/",
+      "momentum": "Covered same week by Phys.org, ScienceDaily, EurekAlert, and QuantumZeitgeist. NOTE: Phys.org and ScienceDaily both closely republish the same university/EurekAlert release text, so corroboration strength leans weak/syndicated; QuantumZeitgeist's writeup (with an independent technical detail — 2.12 A/cm^2 performance figure) is the more independent second source.",
+      "country_party": "US (Washington University in St. Louis, with DOE national labs Brookhaven and Lawrence Berkeley)",
+      "why_strong": "A concrete durability number (85% retention after 150,000 cycles) tied to a real bottleneck — platinum cost and catalyst degradation — that has blocked cheaper fuel cells; gives a Saturday piece a genuine explainer angle on why fuel cells for data centers and heavy transport keep stalling on materials, not just policy."
+    }
+  ]
+}

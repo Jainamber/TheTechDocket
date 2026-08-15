@@ -1,0 +1,677 @@
+{
+  "date": "2026-08-15",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "webfetch": "egress-blocked (all domains)",
+    "fetch_trends_action": "not committed at session start",
+    "trends_rss": "unavailable-no-egress",
+    "wiki_en": "unavailable-no-egress"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [],
+      "news": {
+        "india tech sweep": [
+          {
+            "title": "India's Union Cabinet formally approved the Semicon 2.0 program, unlocking roughly $13 billion for chip design, fabrication, packaging and R&D support.",
+            "source": "PIB / India Semiconductor Mission",
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2224839&reg=3&lang=1",
+            "date": "2026-07-15"
+          },
+          {
+            "title": "Three chip-related facilities under India's first Semicon program have begun commercial production, part of twelve approved projects nationwide.",
+            "source": "India Semiconductor Mission",
+            "url": "https://ism.gov.in/",
+            "date": "2026-08-13"
+          },
+          {
+            "title": "Microsoft opened a new Hyderabad cloud region this week, part of a $20.5 billion India buildout that makes it the country's biggest cloud infrastructure provider.",
+            "source": "Nikkei Asia",
+            "url": "https://asia.nikkei.com/business/technology/microsoft-to-invest-over-17bn-in-india-following-google-and-amazon",
+            "date": "2026-08-13"
+          },
+          {
+            "title": "Google is putting $15 billion into an AI data center hub in Andhra Pradesh, calling it its largest AI buildout anywhere outside the US.",
+            "source": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/google-invest-15-billion-ai-070904414.html",
+            "date": null
+          },
+          {
+            "title": "AWS has layered an additional $8.3 billion India pledge on top of its earlier Hyderabad cloud region commitment.",
+            "source": "Nikkei Asia (context)",
+            "url": "https://asia.nikkei.com/business/technology/microsoft-to-invest-over-17bn-in-india-following-google-and-amazon",
+            "date": null
+          },
+          {
+            "title": "Adani Group says it will invest $100 billion into AI data centers through a strategic partnership with Google and Microsoft.",
+            "source": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/indias-adani-group-invest-100-130024543.html",
+            "date": null
+          },
+          {
+            "title": "Farmers and Dalit communities near Visakhapatnam are protesting land acquisition for a Google-backed AI data center, citing displacement and opaque land deals.",
+            "source": "Rest of World",
+            "url": "https://restofworld.org/2026/india-data-center-tax-holiday-farmer-protests-ai/",
+            "date": null
+          },
+          {
+            "title": "Larsen & Toubro's AI infrastructure unit landed an order worth up to Rs 15,000 crore to build an Nvidia-powered AI data center for Together AI.",
+            "source": "StartupTalky",
+            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Goldman Sachs' chief India economist said the country's workforce faces comparatively limited job losses from AI compared with other economies.",
+            "source": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-08-14/india-less-exposed-to-ai-job-risks-than-others-goldman-says",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Combined market value of India's top IT services firms including TCS, Infosys and Wipro has dropped more than 46% from 2024 peaks on fears that AI will erode outsourcing demand.",
+            "source": "Business Today",
+            "url": "https://www.businesstoday.in/markets/stocks/story/indian-it-stocks-fall-tcs-infosys-wipro-hcl-tech-reliance-market-cap-ai-impact-540988-2026-07-04",
+            "date": "2026-07-04"
+          },
+          {
+            "title": "TCS, Infosys, Wipro, IBM and L&T Technology Services are competing to build India's new Customs Integrated System under a government digitization plan.",
+            "source": "Press Insider",
+            "url": "https://pressinsider.com/news/wipro-infosys-tcs-in-race-to-build-new-customs-system-report/",
+            "date": null
+          },
+          {
+            "title": "UPI is being integrated into PayPal's new global payments platform, PayPal World, letting Indian users pay international merchants directly through UPI.",
+            "source": "Gizmochina",
+            "url": "https://www.gizmochina.com/2025/07/25/paypal-upi-cross-border-payments/",
+            "date": null
+          },
+          {
+            "title": "Credit card spending in India topped Rs 23.62 lakh crore in FY26, with UPI-linked 'Credit on UPI' products fueling adoption beyond metro cities.",
+            "source": "The Week",
+            "url": "https://www.theweek.in/theweek/business/2026/07/18/how-upi-fintech-are-driving-indias-credit-card-surge.html",
+            "date": "2026-07-18"
+          },
+          {
+            "title": "ISRO completed a second integrated air-drop test for Gaganyaan, validating the crew module's 10-parachute landing system.",
+            "source": "Pradeep's Space Newsletter",
+            "url": "https://pradx.substack.com/p/pradeeps-space-newsletter-58",
+            "date": null
+          },
+          {
+            "title": "Kaspersky says it blocked 75 million cyberattacks across the Asia-Pacific region in the first half of 2026, with India among the most frequently targeted countries by advanced persistent threat groups.",
+            "source": "StartupTalky",
+            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "In his 80th Independence Day address, PM Modi highlighted indigenous technology as a national priority, citing 6G trials, the Semiconductor Mission, AI, and a first made-in-India chip.",
+            "source": "PM India / PIB",
+            "url": "https://www.pmindia.gov.in/en/news_updates/major-announcements-by-pm-during-his-i-day-address/",
+            "date": "2026-08-15"
+          },
+          {
+            "title": "PM Modi used his Independence Day speech to challenge Indian scientists and youth to develop indigenous jet engine technology.",
+            "source": "PIB",
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2156703&reg=48&lang=2",
+            "date": "2026-08-15"
+          },
+          {
+            "title": "Digital India's Bhashini AI translation system rendered PM Modi's Independence Day speech live into more than 22 Indian languages.",
+            "source": "PIB",
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297232&reg=48&lang=2",
+            "date": "2026-08-15"
+          },
+          {
+            "title": "OYO's parent company PRISM filed updated draft IPO papers with India's markets regulator, targeting up to Rs 6,650 crore.",
+            "source": "Inc42",
+            "url": "https://inc42.com/buzz/",
+            "date": null
+          },
+          {
+            "title": "Manufacturing startup Zetwerk filed papers for a Rs 2,600 crore IPO the same day industrial firm LEAP India debuted at a premium on the exchanges.",
+            "source": "StartupTalky",
+            "url": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-august-2026/",
+            "date": "2026-08-14"
+          }
+        ]
+      },
+      "autocomplete": {
+        "observed-questions": [
+          "Does PayPal accept UPI?",
+          "What is UPI and how does it work?",
+          "How is UPI expanding to other countries?",
+          "Is AI a bigger job risk in India than in the West?",
+          "Why are farmers protesting the Google data center in Andhra Pradesh?",
+          "What is Semicon India 2.0 and what does it include?",
+          "Is AI disrupting India's IT services industry?",
+          "When will India launch its own made-in-India semiconductor chip?"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [],
+      "news": {
+        "us tech sweep": [
+          {
+            "title": "xAI and Google released competing frontier models within days of each other — Grok 4.6 and Gemini 3.7 Flash — both emphasizing lower prices and stronger coding and agent performance.",
+            "source": "AI Magazine",
+            "url": "https://aimagazine.com/news/xai-google-how-do-grok-4-6-and-gemini-3-7-flash-perform",
+            "date": "2026-08-12"
+          },
+          {
+            "title": "Google says its Gemini app has surpassed 1 billion monthly active users, with CEO Sundar Pichai calling it the company's fastest-growing product yet.",
+            "source": "TechStartups",
+            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Apple reportedly built a China-specific version of its AI model with technical help from Alibaba, ahead of a broader on-device AI push.",
+            "source": "TechStartups",
+            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "OpenAI and Anthropic are lowering API prices while DeepSeek raises its own, turning inference speed and cost into the next front of the AI price war.",
+            "source": "TechStartups",
+            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Uber and Pony.ai are preparing to expand self-driving, ride-hailing vehicle fleets to more than 2,000 cars across European cities.",
+            "source": "TechStartups",
+            "url": "https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "OpenAI shipped a preview build of a ChatGPT desktop app for Linux, extending ChatGPT and Codex support to Ubuntu, Debian, and Fedora distributions.",
+            "source": "OpenAI",
+            "url": "https://openai.com/news/product-releases/",
+            "date": "2026-08-11"
+          },
+          {
+            "title": "OpenAI plans to make its newer GPT-5.6 model the default for free-tier ChatGPT users this week, alongside unlimited text chats and a new deeper-reasoning mode.",
+            "source": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today",
+            "date": null
+          },
+          {
+            "title": "OpenAI expanded its Daybreak security program into two account tiers and will require hardware security keys for enrolled accounts starting September 1.",
+            "source": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today",
+            "date": null
+          },
+          {
+            "title": "OpenAI hired a new chief revenue officer, Dali Rajic, succeeding Denise Dresser in the role.",
+            "source": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today",
+            "date": null
+          },
+          {
+            "title": "Nvidia lined up more than $500 billion in financing commitments from six major Wall Street firms, including BlackRock, Blackstone, Goldman Sachs, and KKR, to help fund AI data-center build-outs.",
+            "source": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-08-14/nvidia-s-500-billion-plan-envelops-wall-street-in-its-ai-frenzy",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Nvidia announced a long-term partnership with Ilya Sutskever's Safe Superintelligence Inc. to accelerate the startup's compute-heavy growth plans.",
+            "source": "Nvidia Newsroom",
+            "url": "https://nvidianews.nvidia.com/news/latest",
+            "date": null
+          },
+          {
+            "title": "SK hynix approved roughly $38 billion in new spending to expand two of its South Korean plants for HBM, DRAM, and NAND chip production.",
+            "source": "SemiEngineering",
+            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
+            "date": null
+          },
+          {
+            "title": "SpaceX and Tesla detailed a jointly planned Texas chip-manufacturing complex, citing a $16.8 billion first phase and thousands of new jobs to produce AI chips for their own hardware.",
+            "source": "SemiEngineering",
+            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
+            "date": null
+          },
+          {
+            "title": "Taiwan's government opened investigations into 17 Chinese companies suspected of poaching local semiconductor talent.",
+            "source": "SemiEngineering",
+            "url": "https://semiengineering.com/chip-industry-week-in-review-150/",
+            "date": null
+          },
+          {
+            "title": "Cloudflare is cutting roughly 1,100 jobs and PayPal is reportedly preparing similarly large cuts, as both companies restructure around agentic AI.",
+            "source": "Fast Company",
+            "url": "https://www.fastcompany.com/91538995/tech-layoffs-due-to-ai-this-week-cloudflare-paypal-coinbase-upwork",
+            "date": null
+          },
+          {
+            "title": "Apple is expected to send invitations around August 26 for a September keynote unveiling the iPhone 18 lineup, including its first foldable iPhone.",
+            "source": "Forbes",
+            "url": "https://www.forbes.com/sites/davidphelan/2026/08/14/iphone-18-pro-event-tipped-as-apple-shifts-key-release-schedule-date/?streamIndex=0",
+            "date": "2026-08-14"
+          },
+          {
+            "title": "Microsoft is rolling out its in-house MAI models inside Excel and Outlook, gradually reducing its reliance on OpenAI and Anthropic for some Copilot features.",
+            "source": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today/microsoft-ai-news",
+            "date": null
+          },
+          {
+            "title": "Microsoft made multi-agent systems in Copilot Studio generally available, along with updates to its prompt-building and governance tools.",
+            "source": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today/microsoft-ai-news",
+            "date": null
+          }
+        ]
+      },
+      "autocomplete": {}
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49289844"
+    },
+    {
+      "title": "Choose Boring Technology (2015)",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49289512"
+    },
+    {
+      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
+      "url": "https://donkeybas.com/",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49289465"
+    },
+    {
+      "title": "Mistral OCR 4.1",
+      "url": "https://news.ycombinator.com/item?id=49288889",
+      "points": 268,
+      "comments": 106,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49288889"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
+      "points": 885,
+      "comments": 451,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49289112"
+    },
+    {
+      "title": "AI agents lie, cheat and steal. That is putting off users",
+      "url": "https://news.ycombinator.com/item?id=49285604",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49285604"
+    },
+    {
+      "title": "I requested a copy of my data from McDonald's loyalty program",
+      "url": "https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49286662"
+    },
+    {
+      "title": "Text AI watermarks will always be trivial to remove",
+      "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49287153"
+    },
+    {
+      "title": "How AI text watermarking works",
+      "url": "https://news.ycombinator.com/item?id=49292932",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49292932"
+    },
+    {
+      "title": "How Claude's text watermarking works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49303350"
+    },
+    {
+      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "points": 1141,
+      "comments": 217,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49272832"
+    },
+    {
+      "title": "DeepSeek up to 1000% price hike is live",
+      "url": "https://qz.com/deepseek-api-price-increase-v4-peak-off-peak-081326",
+      "points": null,
+      "comments": null,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49287881"
+    },
+    {
+      "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
+      "url": "https://github.com/ad-si/Woxi",
+      "points": 204,
+      "comments": 90,
+      "created_at": null,
+      "evidence_url": "https://news.ycombinator.com/item?id=49270040"
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "PIB / India Semiconductor Mission",
+      "title": "India's Union Cabinet formally approved the Semicon 2.0 program, unlocking roughly $13 billion for chip design, fabrication, packaging and R&D support."
+    },
+    {
+      "outlet": "India Semiconductor Mission",
+      "title": "Three chip-related facilities under India's first Semicon program have begun commercial production, part of twelve approved projects nationwide."
+    },
+    {
+      "outlet": "Nikkei Asia",
+      "title": "Microsoft opened a new Hyderabad cloud region this week, part of a $20.5 billion India buildout that makes it the country's biggest cloud infrastructure provider."
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "title": "Google is putting $15 billion into an AI data center hub in Andhra Pradesh, calling it its largest AI buildout anywhere outside the US."
+    },
+    {
+      "outlet": "Nikkei Asia (context)",
+      "title": "AWS has layered an additional $8.3 billion India pledge on top of its earlier Hyderabad cloud region commitment."
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "title": "Adani Group says it will invest $100 billion into AI data centers through a strategic partnership with Google and Microsoft."
+    },
+    {
+      "outlet": "Rest of World",
+      "title": "Farmers and Dalit communities near Visakhapatnam are protesting land acquisition for a Google-backed AI data center, citing displacement and opaque land deals."
+    },
+    {
+      "outlet": "StartupTalky",
+      "title": "Larsen & Toubro's AI infrastructure unit landed an order worth up to Rs 15,000 crore to build an Nvidia-powered AI data center for Together AI."
+    },
+    {
+      "outlet": "Bloomberg",
+      "title": "Goldman Sachs' chief India economist said the country's workforce faces comparatively limited job losses from AI compared with other economies."
+    },
+    {
+      "outlet": "Business Today",
+      "title": "Combined market value of India's top IT services firms including TCS, Infosys and Wipro has dropped more than 46% from 2024 peaks on fears that AI will erode outsourcing demand."
+    },
+    {
+      "outlet": "Press Insider",
+      "title": "TCS, Infosys, Wipro, IBM and L&T Technology Services are competing to build India's new Customs Integrated System under a government digitization plan."
+    },
+    {
+      "outlet": "Gizmochina",
+      "title": "UPI is being integrated into PayPal's new global payments platform, PayPal World, letting Indian users pay international merchants directly through UPI."
+    },
+    {
+      "outlet": "The Week",
+      "title": "Credit card spending in India topped Rs 23.62 lakh crore in FY26, with UPI-linked 'Credit on UPI' products fueling adoption beyond metro cities."
+    },
+    {
+      "outlet": "Pradeep's Space Newsletter",
+      "title": "ISRO completed a second integrated air-drop test for Gaganyaan, validating the crew module's 10-parachute landing system."
+    },
+    {
+      "outlet": "StartupTalky",
+      "title": "Kaspersky says it blocked 75 million cyberattacks across the Asia-Pacific region in the first half of 2026, with India among the most frequently targeted countries by advanced persistent threat groups."
+    },
+    {
+      "outlet": "PM India / PIB",
+      "title": "In his 80th Independence Day address, PM Modi highlighted indigenous technology as a national priority, citing 6G trials, the Semiconductor Mission, AI, and a first made-in-India chip."
+    },
+    {
+      "outlet": "PIB",
+      "title": "PM Modi used his Independence Day speech to challenge Indian scientists and youth to develop indigenous jet engine technology."
+    },
+    {
+      "outlet": "PIB",
+      "title": "Digital India's Bhashini AI translation system rendered PM Modi's Independence Day speech live into more than 22 Indian languages."
+    },
+    {
+      "outlet": "Inc42",
+      "title": "OYO's parent company PRISM filed updated draft IPO papers with India's markets regulator, targeting up to Rs 6,650 crore."
+    },
+    {
+      "outlet": "StartupTalky",
+      "title": "Manufacturing startup Zetwerk filed papers for a Rs 2,600 crore IPO the same day industrial firm LEAP India debuted at a premium on the exchanges."
+    },
+    {
+      "outlet": "AI Magazine",
+      "title": "xAI and Google released competing frontier models within days of each other — Grok 4.6 and Gemini 3.7 Flash — both emphasizing lower prices and stronger coding and agent performance."
+    },
+    {
+      "outlet": "TechStartups",
+      "title": "Google says its Gemini app has surpassed 1 billion monthly active users, with CEO Sundar Pichai calling it the company's fastest-growing product yet."
+    },
+    {
+      "outlet": "TechStartups",
+      "title": "Apple reportedly built a China-specific version of its AI model with technical help from Alibaba, ahead of a broader on-device AI push."
+    },
+    {
+      "outlet": "TechStartups",
+      "title": "OpenAI and Anthropic are lowering API prices while DeepSeek raises its own, turning inference speed and cost into the next front of the AI price war."
+    },
+    {
+      "outlet": "TechStartups",
+      "title": "Uber and Pony.ai are preparing to expand self-driving, ride-hailing vehicle fleets to more than 2,000 cars across European cities."
+    },
+    {
+      "outlet": "OpenAI",
+      "title": "OpenAI shipped a preview build of a ChatGPT desktop app for Linux, extending ChatGPT and Codex support to Ubuntu, Debian, and Fedora distributions."
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "OpenAI plans to make its newer GPT-5.6 model the default for free-tier ChatGPT users this week, alongside unlimited text chats and a new deeper-reasoning mode."
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "OpenAI expanded its Daybreak security program into two account tiers and will require hardware security keys for enrolled accounts starting September 1."
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "OpenAI hired a new chief revenue officer, Dali Rajic, succeeding Denise Dresser in the role."
+    },
+    {
+      "outlet": "Bloomberg",
+      "title": "Nvidia lined up more than $500 billion in financing commitments from six major Wall Street firms, including BlackRock, Blackstone, Goldman Sachs, and KKR, to help fund AI data-center build-outs."
+    },
+    {
+      "outlet": "Nvidia Newsroom",
+      "title": "Nvidia announced a long-term partnership with Ilya Sutskever's Safe Superintelligence Inc. to accelerate the startup's compute-heavy growth plans."
+    },
+    {
+      "outlet": "SemiEngineering",
+      "title": "SK hynix approved roughly $38 billion in new spending to expand two of its South Korean plants for HBM, DRAM, and NAND chip production."
+    },
+    {
+      "outlet": "SemiEngineering",
+      "title": "SpaceX and Tesla detailed a jointly planned Texas chip-manufacturing complex, citing a $16.8 billion first phase and thousands of new jobs to produce AI chips for their own hardware."
+    },
+    {
+      "outlet": "SemiEngineering",
+      "title": "Taiwan's government opened investigations into 17 Chinese companies suspected of poaching local semiconductor talent."
+    },
+    {
+      "outlet": "Fast Company",
+      "title": "Cloudflare is cutting roughly 1,100 jobs and PayPal is reportedly preparing similarly large cuts, as both companies restructure around agentic AI."
+    },
+    {
+      "outlet": "Forbes",
+      "title": "Apple is expected to send invitations around August 26 for a September keynote unveiling the iPhone 18 lineup, including its first foldable iPhone."
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Microsoft is rolling out its in-house MAI models inside Excel and Outlook, gradually reducing its reliance on OpenAI and Anthropic for some Copilot features."
+    },
+    {
+      "outlet": "AI Weekly",
+      "title": "Microsoft made multi-agent systems in Copilot Studio generally available, along with updates to its prompt-building and governance tools."
+    }
+  ],
+  "wikipedia_top": [],
+  "frontier": [
+    {
+      "title": "Private Fusion Startup Fuse Energy Sets Record Neutron Yield With Dense Plasma Focus Device",
+      "area": "fusion",
+      "summary": "Fuse Energy Technologies' megajoule-class dense plasma focus device FAETON-X produced a peak yield of 1.27 trillion (1.27x10^12) neutrons in a single deuterium-deuterium shot, which the company says is the first publicly documented neutron yield at that level by any private fusion company. The device reportedly delivered about 40% more neutrons per megajoule than Lawrence Livermore National Laboratory's MJOLNIR facility, operating at 65 kV with roughly 1 MJ of stored energy and a record current efficiency of 4.5 MA/MJ.",
+      "event_date": "2026-08-11",
+      "primary_source": {
+        "name": "Research Square preprint: \"Exceeding 10^12 D-D flash neutrons in the 4.5-MA 1-MJ dense plasma focus FAETON-X\"",
+        "url": "https://www.researchsquare.com/article/rs-10657590/v1"
+      },
+      "sources": [
+        {
+          "outlet": "Power Magazine",
+          "url": "https://www.powermag.com/fuse-touts-highest-neutron-yield-by-any-fusion-company/"
+        },
+        {
+          "outlet": "The Fusion Report (Substack, weekly fusion-industry roundup)",
+          "url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14"
+        }
+      ],
+      "corroboration_url": "https://thefusionreport.substack.com/p/this-weeks-fusion-news-august-14",
+      "momentum": "Featured as a top item in a weekly fusion-industry newsletter roundup dated Aug 14, 2026; two independent outlets (a trade magazine and an independent industry newsletter), not wire syndication of a single release.",
+      "country_party": "US (private company — Fuse Energy Technologies)",
+      "why_strong": "A private company publicly claiming to match or beat national-lab-class neutron yields is a genuine technical milestone that supports real synthesis — explaining dense-plasma-focus physics, how it differs from tokamak/laser fusion, and what neutron-yield thresholds actually mean for near-term revenue (radiation-effects testing) versus the longer path to net energy."
+    },
+    {
+      "title": "Pasqal Traps Individual Qubits Using On-Chip Photonic Circuit for the First Time",
+      "area": "quantum",
+      "summary": "Quantum computing company Pasqal, working with its photonics subsidiary Aeponyx, generated four optical micro-traps through a single silicon-nitride photonic integrated circuit and used them to trap and hold four individual rubidium atoms inside a quantum processing unit. The company says atom lifetimes (~27.5 seconds) matched its existing bulk-optics systems, and that the approach — a claimed world-first for neutral-atom quantum computing — could shrink future processors' optical hardware footprint by up to 50x on the way to a long-term target of over 10,000 atoms and 100 logical qubits.",
+      "event_date": "2026-08-10",
+      "primary_source": {
+        "name": "Pasqal press release (GlobeNewswire)",
+        "url": "https://www.globenewswire.com/news-release/2026/08/10/3341792/0/en/Pasqal-Brings-Qubit-Control-On-Chip-Advancing-the-Path-to-Fault-Tolerant-Quantum-Computing-at-Scale.html"
+      },
+      "sources": [
+        {
+          "outlet": "Quantum Computing Report",
+          "url": "https://quantumcomputingreport.com/pasqal-achieves-first-on-chip-neutral-atom-qubit-trapping-via-photonic-integrated-circuits/"
+        },
+        {
+          "outlet": "The Quantum Insider",
+          "url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/"
+        }
+      ],
+      "corroboration_url": "https://thequantuminsider.com/2026/08/10/pasqal-photonic-chip-control-neutral-atom-quantum-computers/",
+      "momentum": "Same-day pickup across multiple quantum-industry trade outlets (Quantum Computing Report, The Quantum Insider, HPCwire, Pulse2) plus general wire pickup (Manila Times, Asianet Newsable, AiThority). Note: several of those outlets are wire/press-release syndication of the same GlobeNewswire release rather than independent reporting — Quantum Computing Report and The Quantum Insider read as independent editorial coverage.",
+      "country_party": "France (private company — Pasqal, with subsidiary Aeponyx)",
+      "why_strong": "Addresses a specific, well-understood scaling bottleneck (bulky free-space optics) on the road to fault-tolerant neutral-atom quantum computers, giving a Saturday piece real technical meat: why optical footprint has been a wall, how photonic integration works, and what it would take to go from 4 trapped atoms to 10,000."
+    },
+    {
+      "title": "NASA's Aspera Ultraviolet Telescope Set for Rocket Lab Electron Launch From New Zealand",
+      "area": "spaceflight",
+      "summary": "NASA's Aspera mission, a shoebox-sized astrophysics smallsat selected under the agency's Astrophysics Pioneers Program, was scheduled to launch aboard a Rocket Lab Electron rocket from Launch Complex 1A in Mahia, New Zealand, into sun-synchronous orbit on August 15, 2026. Aspera carries a UV telescope meant to map diffuse extreme-ultraviolet emission from hot gas in the circumgalactic and intergalactic medium around nearby galaxies — described as the first NASA astrophysics mission to gather this kind of UV signature. NASA awarded the dedicated ride to Rocket Lab under its VADR contract; the mission is University of Arizona-led.",
+      "event_date": "2026-08-15",
+      "primary_source": {
+        "name": "Rocket Lab mission page",
+        "url": "https://rocketlabcorp.com/missions/launches/aspera/"
+      },
+      "sources": [
+        {
+          "outlet": "Space.com",
+          "url": "https://www.space.com/space-exploration/missions/nasa-picks-rocket-lab-to-launch-shoebox-sized-aspera-space-telescope-in-2026"
+        },
+        {
+          "outlet": "University of Arizona News",
+          "url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission"
+        }
+      ],
+      "corroboration_url": "https://news.arizona.edu/news/nasa-selects-rocket-u-led-aspera-mission",
+      "momentum": null,
+      "country_party": "US/NASA (University of Arizona-led; launched via Rocket Lab from New Zealand)",
+      "why_strong": "A genuine NASA astrophysics first — mapping the circumgalactic medium in extreme-UV — gives a same-day news hook plus real science to unpack: why the gas between galaxies matters for understanding galaxy formation, and why NASA is increasingly using small dedicated-rideshare missions (Pioneers Program) rather than flagship telescopes. CAVEAT: search snippets confirm only the scheduled launch date, not a confirmed successful liftoff — verify launch outcome before publishing."
+    },
+    {
+      "title": "Blue Origin Begins Building Second Launch Pad at Cape Canaveral Complex 36",
+      "area": "spaceflight",
+      "summary": "Blue Origin announced on August 12, 2026 that it will build a second orbital pad, LC-36B, at Cape Canaveral Space Force Station's Launch Complex 36, sized for the larger New Glenn 9x4 vehicle (nearly 400 feet tall, ~29,000 cubic-foot fairing), while the original pad — now renamed LC-36A — is rebuilt for the 7x2 configuration following May's New Glenn explosion. CEO Dave Limp said rebuilding LC-36A and flying again before year-end remains the priority; the company separately identified a BE-4 engine main oxygen valve as the explosion's root cause, with retrofitted valve hardware expected by end of August.",
+      "event_date": "2026-08-12",
+      "primary_source": {
+        "name": "Blue Origin official announcement",
+        "url": "https://www.blueorigin.com/news/returning-launch-complex-36-to-two-pads"
+      },
+      "sources": [
+        {
+          "outlet": "SpaceNews",
+          "url": "https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/"
+        },
+        {
+          "outlet": "Aviation Week",
+          "url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape"
+        }
+      ],
+      "corroboration_url": "https://aviationweek.com/space/commercial-space/blue-origin-details-dual-pad-approach-new-glenn-cape",
+      "momentum": "Broad same-week coverage across independent aerospace trade press (SpaceNews, Aviation Week, AIAA, NASASpaceFlight.com) plus regional Florida TV outlets (Fox35, Fox51, mynews13) — genuinely independent domains, not one syndicated wire story.",
+      "country_party": "US (private company — Blue Origin)",
+      "why_strong": "Ties three threads into one synthesis-worthy story: the May New Glenn pad explosion, the newly identified BE-4 valve root cause, and this dual-pad expansion bet — enough material to assess whether Blue Origin can credibly reach high-cadence launch by year-end."
+    },
+    {
+      "title": "Human-Aware Humanoid Robot Design Cuts Back Strain in Shared Lifting Tasks",
+      "area": "robotics",
+      "summary": "Researchers from the Italian Institute of Technology, GenerativeBionics, and the University of Manchester published a co-design framework that jointly optimizes a humanoid robot's body and control system around human biomechanics, tested on the ergoCub robot (1.5m tall, 55.7kg, roughly 10kg payload). In trials, people working alongside ergoCub on shared lifting tasks showed significantly lower estimated stress on the lower back than performing the task alone, and the robot also walked faster and more efficiently than earlier versions. The work was published in Nature Machine Intelligence.",
+      "event_date": "2026-07-13",
+      "primary_source": {
+        "name": "Nature Machine Intelligence paper: \"Towards shared embodied intelligence in humanoid robots through optimization, development and testing of the human-aware ergoCub robot\"",
+        "url": "https://www.nature.com/articles/s42256-026-01272-2"
+      },
+      "sources": [
+        {
+          "outlet": "TechXplore",
+          "url": "https://techxplore.com/news/2026-08-human-aware-robots-partners-strain.html"
+        },
+        {
+          "outlet": "Interesting Engineering",
+          "url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork"
+        }
+      ],
+      "corroboration_url": "https://interestingengineering.com/ai-robotics/ergocub-humanoid-human-robot-teamwork",
+      "momentum": "Picked up by multiple outlets (TechXplore, Interesting Engineering, Electronics For U, Lifeboat News) in a coverage wave clustered in August 2026, even though the underlying peer-reviewed paper published July 13, 2026 — flagging this gap explicitly since freshness here is the press-pickup wave, not the underlying event. TechXplore leans on publisher-network/press-release text; Interesting Engineering reads as independently written.",
+      "country_party": "Italy/UK (Italian Institute of Technology, University of Manchester, GenerativeBionics — academic/private consortium, no national space or defense agency involved)",
+      "why_strong": "A peer-reviewed (not product-PR) robotics result with a clear human-centered angle — designing the robot's body around human physiology instead of treating people as an afterthought — giving room to explain the co-design methodology and contrast it with the routine humanoid-manufacturing-milestone stories that dominate robotics coverage. WEAKEST ON FRESHNESS of this set: paper is ~1 month old even though press pickup is recent."
+    },
+    {
+      "title": "New Carbon Support Cuts Platinum Use in Durable Hydrogen Fuel Cell Catalysts",
+      "area": "materials",
+      "summary": "Researchers at Washington University in St. Louis, with collaborators from Brookhaven National Laboratory, Lawrence Berkeley National Laboratory, Northeastern University, and the University of Pittsburgh, developed a nanostructured carbon support with radially arranged channels and controlled pore size that holds highly ordered platinum-cobalt intermetallic nanoparticles for low-temperature fuel cells. The catalyst retained 85% of its performance after 150,000 harsh voltage cycles (roughly equivalent to 25,000 operating hours), addressing the usual activity-versus-stability trade-off while cutting platinum use. The work was published August 6, 2026 in Nature Nanotechnology.",
+      "event_date": "2026-08-06",
+      "primary_source": {
+        "name": "Washington University in St. Louis release (via EurekAlert)",
+        "url": "https://www.eurekalert.org/news-releases/1138979"
+      },
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "url": "https://phys.org/news/2026-08-carbon-nanostructure-fuel-cell-catalyst.html"
+        },
+        {
+          "outlet": "QuantumZeitgeist",
+          "url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/"
+        }
+      ],
+      "corroboration_url": "https://quantumzeitgeist.com/fuel-cells-hit-2-carbon/",
+      "momentum": "Covered same week by Phys.org, ScienceDaily, EurekAlert, and QuantumZeitgeist. NOTE: Phys.org and ScienceDaily both closely republish the same university/EurekAlert release text, so corroboration strength leans weak/syndicated; QuantumZeitgeist's writeup (with an independent technical detail — 2.12 A/cm^2 performance figure) is the more independent second source.",
+      "country_party": "US (Washington University in St. Louis, with DOE national labs Brookhaven and Lawrence Berkeley)",
+      "why_strong": "A concrete durability number (85% retention after 150,000 cycles) tied to a real bottleneck — platinum cost and catalyst degradation — that has blocked cheaper fuel cells; gives a Saturday piece a genuine explainer angle on why fuel cells for data centers and heavy transport keep stalling on materials, not just policy."
+    }
+  ]
+}
