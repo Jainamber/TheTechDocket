@@ -1,0 +1,336 @@
+{
+  "date": "2026-08-16",
+  "candidates": [
+    {
+      "title": "Someone is running mass vulnerability scans spoofing AI bots like ClaudeBot",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7888256490977231,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 150,
+          "comments": null,
+          "url": "https://news.ycombinator.com/item?id=49272569"
+        }
+      ],
+      "score": 0.5451,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Indian startups raised 140 mn dollars this week led by Yulu",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Inc42"
+        }
+      ],
+      "score": 0.4349,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic opens Bengaluru office as India becomes its second largest Claude market",
+      "sources": [
+        "gnews:IN",
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Anthropic (official blog)"
+        },
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "PeopleMatters"
+        }
+      ],
+      "score": 0.4339,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "tl;dv AI notetaker exposed 181874 meeting recordings",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "Dark Reading"
+        },
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "bobdahacker (researcher)"
+        }
+      ],
+      "score": 0.4302,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "India producing chips at three semiconductor plants, more fabs in 7-8 years",
+      "sources": [
+        "gnews:IN",
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Business Today"
+        },
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Daily Pioneer"
+        }
+      ],
+      "score": 0.4265,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic revenue surges to over 11.5 billion dollars in second quarter",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "Bloomberg"
+        },
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4257,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Meta takes Messenger DMA gatekeeper fight to EU top court",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "MLex"
+        },
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "PPC Land"
+        }
+      ],
+      "score": 0.4255,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Framework loses customer data in Metabase zero-day attack",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "The Register"
+        },
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "BleepingComputer"
+        }
+      ],
+      "score": 0.4241,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "DeepSeek API price hike up to 1100 percent takes effect August 16",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "South China Morning Post"
+        },
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "Quartz"
+        }
+      ],
+      "score": 0.4227,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Judge orders Google to make rival Android app stores easier to find",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "9to5Google"
+        },
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "TechTimes"
+        }
+      ],
+      "score": 0.4216,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Apple builds custom AI model for China with Alibaba",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "Bloomberg via Yahoo Finance"
+        },
+        {
+          "source": "gnews:US",
+          "query": "ai news",
+          "outlet": "TechRepublic"
+        }
+      ],
+      "score": 0.4188,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Uber and Pony.ai plan to bring 2000 robotaxis to Europe",
+      "sources": [
+        "gnews:US",
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "TechCrunch"
+        },
+        {
+          "source": "gnews:US",
+          "query": "big tech news",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4188,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "DeepSeek API price hike up to 1100 percent takes effect August 16",
+    "sources": [
+      "gnews:US",
+      "gnews:US"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "ai news",
+        "outlet": "South China Morning Post"
+      },
+      {
+        "source": "gnews:US",
+        "query": "ai news",
+        "outlet": "Quartz"
+      }
+    ],
+    "score": 0.4227,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false,
+  "editorial_override": {
+    "overridden_from": "Someone is running mass vulnerability scans spoofing AI bots like ClaudeBot",
+    "reason": "Scorer pick is a single-thread HN security mystery, 3-4 days old, thin primary sourcing for a full article (docket quick instead). DeepSeek price hike takes effect TODAY 16:00 UTC (21:30 IST) - highest-timeliness, high-utility pricing story with official primary source and two internal-link precedents (deepseek-v4-flash 08-02, gpt-5-6-price-cut 08-01).",
+    "by": "daily editorial session 2026-08-16"
+  }
+}
