@@ -1,122 +1,159 @@
 {
- "date": "2026-08-17",
- "generated_by": "daily-session-websearch",
- "sources_status": {
-  "websearch": "ok",
-  "trends_rss_in": "failed",
-  "trends_rss_us": "failed",
-  "hn": "failed"
- },
- "markets": {
-  "IN": {
-   "trends_rss": [],
-   "news": {},
-   "autocomplete": {}
+  "date": "2026-08-17",
+  "generated_by": "daily-session-websearch",
+  "sources_status": {
+    "websearch": "ok",
+    "trends_rss_in": "failed",
+    "trends_rss_us": "failed",
+    "hn": "failed"
   },
-  "US": {
-   "trends_rss": [],
-   "news": {},
-   "autocomplete": {}
-  }
- },
- "hacker_news": [],
- "outlet_headlines": [
-  {
-   "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
-   "outlet": "CNBC",
-   "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-   "found_via": "websearch"
+  "markets": {
+    "IN": {
+      "trends_rss": [],
+      "news": {},
+      "autocomplete": {}
+    },
+    "US": {
+      "trends_rss": [],
+      "news": {},
+      "autocomplete": {}
+    }
   },
-  {
-   "title": "Mark Zuckerberg posts 6,500-word essay 'The Future is for Everyone', making the case for giving every person personal superintelligence",
-   "outlet": "404 Media",
-   "url": "https://www.404media.co/mark-zuckerberg-posts-deranged-6-500-word-essay-about-giving-everyone-ai-superintelligence/",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Meta releases Muse Glimmer, an Apache 2.0 open-weight 30B-parameter agentic AI model that runs on a single consumer GPU",
-   "outlet": "TechCrunch",
-   "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Google's $15 billion Visakhapatnam data centre project (with Adani) faces court challenges over water and wildlife concerns; next hearing Aug 24",
-   "outlet": "Storyboard18",
-   "url": "https://www.storyboard18.com/digital/googles-15-billion-india-data-centre-project-faces-scrutiny-over-water-and-wildlife-concerns-ws-kl-106895.htm",
-   "found_via": "websearch"
-  },
-  {
-   "title": "OpenAI introduces $125/month Premium seats for ChatGPT Business, giving power users 5x usage and removing the five-hour cap",
-   "outlet": "The Decoder",
-   "url": "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens/",
-   "found_via": "websearch"
-  },
-  {
-   "title": "China-linked hackers ran a four-day, near-fully-autonomous AI-agent cyberattack on Taiwanese government systems, first disclosed case of its kind",
-   "outlet": "CNN Business",
-   "url": "https://www.cnn.com/2026/08/13/tech/china-taiwan-ai-agent-cyberattack-intl-hnk",
-   "found_via": "websearch"
-  },
-  {
-   "title": "iQOO Z11 India launch officially confirmed for August 20, with AI productivity tools and dual rear cameras",
-   "outlet": "FoneArena",
-   "url": "https://www.fonearena.com/blog/488843/iqoo-z11-india-launch-date.html",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Nvidia stock sheds $130B in market value after entering $500 billion AI infrastructure financing deal with Blackstone, KKR, Goldman Sachs, others",
-   "outlet": "Forbes",
-   "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/08/10/nvidia-stock-loses-130-billion-in-market-value-as-firm-reportedly-enters-500-billion-ai-financing-deal/",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Google launches Gemini 3.7 Flash with a 50% introductory price cut and coding benchmark jump to 65.3% on DeepSWE",
-   "outlet": "VentureBeat",
-   "url": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Reddit shares jump 11% on S&P 500 inclusion announcement; will join the index Aug 18, replacing AvalonBay Communities",
-   "outlet": "CNBC",
-   "url": "https://www.cnbc.com/2026/08/13/reddit-shares-jump-11percent-on-inclusion-in-sp-500.html",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Workday shares post best day in 10 years, surging up to 25%, on report Silver Lake is in talks for a buyout of up to $43 billion",
-   "outlet": "CNBC",
-   "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
-   "outlet": "CNBC",
-   "url": "https://www.cnbc.com/2026/08/13/apples-tim-cook-and-howard-lutnick-open-houston-manufacturing-plant.html",
-   "found_via": "websearch"
-  },
-  {
-   "title": "Cisco shares slide 8% despite a Q4 earnings beat and stronger-than-expected FY2027 revenue and EPS guidance",
-   "outlet": "CNBC",
-   "url": "https://www.cnbc.com/2026/08/13/cisco-shares-slide-9percent-despite-earnings-beat-and-strong-guidance.html",
-   "found_via": "websearch"
-  },
-  {
-   "title": "OpenAI's Astra model produces formally-verified proofs for 10 open math/CS problems, including the first explicit non-sofic group, for ~$2,000 in compute",
-   "outlet": "Forbes",
-   "url": "https://www.forbes.com/sites/jonmarkman/2026/08/03/openais-astra-solved-10-decades-old-math-problems-for-just-2000/",
-   "found_via": "websearch"
-  },
-  {
-   "title": "ChatGPT is nearing 1 billion weekly active users, about seven months after OpenAI's internal target for the milestone",
-   "outlet": "The Information",
-   "url": "https://www.theinformation.com/articles/openais-chatgpt-nears-1-billion-weekly-active-users-seven-months-target",
-   "found_via": "websearch"
-  },
-  {
-   "title": "DARPA and the US Air Force fly an AI-controlled F-16 (VENOM program) autonomously, a test pilot able to switch between human and AI control mid-flight",
-   "outlet": "DARPA",
-   "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-   "found_via": "websearch"
-  }
- ],
- "wikipedia_top": []
+  "hacker_news": [],
+  "outlet_headlines": [
+    {
+      "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Mark Zuckerberg posts 6,500-word essay 'The Future is for Everyone', making the case for giving every person personal superintelligence",
+      "outlet": "404 Media",
+      "url": "https://www.404media.co/mark-zuckerberg-posts-deranged-6-500-word-essay-about-giving-everyone-ai-superintelligence/",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Meta releases Muse Glimmer, an Apache 2.0 open-weight 30B-parameter agentic AI model that runs on a single consumer GPU",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Google's $15 billion Visakhapatnam data centre project (with Adani) faces court challenges over water and wildlife concerns; next hearing Aug 24",
+      "outlet": "Storyboard18",
+      "url": "https://www.storyboard18.com/digital/googles-15-billion-india-data-centre-project-faces-scrutiny-over-water-and-wildlife-concerns-ws-kl-106895.htm",
+      "found_via": "websearch"
+    },
+    {
+      "title": "OpenAI introduces $125/month Premium seats for ChatGPT Business, giving power users 5x usage and removing the five-hour cap",
+      "outlet": "The Decoder",
+      "url": "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens/",
+      "found_via": "websearch"
+    },
+    {
+      "title": "China-linked hackers ran a four-day, near-fully-autonomous AI-agent cyberattack on Taiwanese government systems, first disclosed case of its kind",
+      "outlet": "CNN Business",
+      "url": "https://www.cnn.com/2026/08/13/tech/china-taiwan-ai-agent-cyberattack-intl-hnk",
+      "found_via": "websearch"
+    },
+    {
+      "title": "iQOO Z11 India launch officially confirmed for August 20, with AI productivity tools and dual rear cameras",
+      "outlet": "FoneArena",
+      "url": "https://www.fonearena.com/blog/488843/iqoo-z11-india-launch-date.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Nvidia stock sheds $130B in market value after entering $500 billion AI infrastructure financing deal with Blackstone, KKR, Goldman Sachs, others",
+      "outlet": "Forbes",
+      "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/08/10/nvidia-stock-loses-130-billion-in-market-value-as-firm-reportedly-enters-500-billion-ai-financing-deal/",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Google launches Gemini 3.7 Flash with a 50% introductory price cut and coding benchmark jump to 65.3% on DeepSWE",
+      "outlet": "VentureBeat",
+      "url": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Reddit shares jump 11% on S&P 500 inclusion announcement; will join the index Aug 18, replacing AvalonBay Communities",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/13/reddit-shares-jump-11percent-on-inclusion-in-sp-500.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Workday shares post best day in 10 years, surging up to 25%, on report Silver Lake is in talks for a buyout of up to $43 billion",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/13/apples-tim-cook-and-howard-lutnick-open-houston-manufacturing-plant.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "Cisco shares slide 8% despite a Q4 earnings beat and stronger-than-expected FY2027 revenue and EPS guidance",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/13/cisco-shares-slide-9percent-despite-earnings-beat-and-strong-guidance.html",
+      "found_via": "websearch"
+    },
+    {
+      "title": "OpenAI's Astra model produces formally-verified proofs for 10 open math/CS problems, including the first explicit non-sofic group, for ~$2,000 in compute",
+      "outlet": "Forbes",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/03/openais-astra-solved-10-decades-old-math-problems-for-just-2000/",
+      "found_via": "websearch"
+    },
+    {
+      "title": "ChatGPT is nearing 1 billion weekly active users, about seven months after OpenAI's internal target for the milestone",
+      "outlet": "The Information",
+      "url": "https://www.theinformation.com/articles/openais-chatgpt-nears-1-billion-weekly-active-users-seven-months-target",
+      "found_via": "websearch"
+    },
+    {
+      "title": "DARPA and the US Air Force fly an AI-controlled F-16 (VENOM program) autonomously, a test pilot able to switch between human and AI control mid-flight",
+      "outlet": "DARPA",
+      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "found_via": "websearch"
+    }
+  ],
+  "wikipedia_top": [],
+  "cn_incubator": [
+    {
+      "title": "Xiaohongshu has become the go-to hub for China's AI research community: AMA threads from Kai-Fu Lee (01.AI), Tsinghua's Zhiyuan Liu, Megvii's Qi Yin, and Qwen/Hunyuan/Kimi researchers have drawn 120M+ cumulative views since September",
+      "platform": "xiaohongshu",
+      "url": "https://recodechinaai.substack.com/p/how-xiaohongshu-becomes-the-hub-for",
+      "provenance": "RecodeChinaAI (English newsletter covering Chinese AI) frames this as a notable behavioral shift -- top AI researchers doing public AMAs on a lifestyle app -- with Kimi and Zhipu's GLM both shipping agents built specifically to generate Xiaohongshu content.",
+      "corroboration_url": ""
+    },
+    {
+      "title": "'Quiet livestreaming' -- calm, soft-sell live commerce is displacing hard-sell Douyin/Taobao-style hosting on Xiaohongshu (e.g. celebrity host Annie Yi drawing 2.2M viewers / ~$4.1M sales with a low-key format)",
+      "platform": "xiaohongshu",
+      "url": "https://jingdaily.com/posts/quiet-selling-livestreaming-xiaohongshu-annie-yi",
+      "provenance": "Jing Daily reports the soft-sell format outperforming loud hard-sell norms as younger consumers tire of high-pressure livestream sales; independently listed as one of Xiaohongshu/RED's 2026 'Top 10 Buzzwords' by China Skinny.",
+      "corroboration_url": "https://chinaskinny.com/blog/xiaohongshu-rednote-2026-lifestyle-trends"
+    },
+    {
+      "title": "Bilibili is rolling out HAI ('Codename H'), a script-to-video AI tool that turns a ~1,000-word script into a ~6-minute video, positioned as a native competitor to CapCut AI for creators",
+      "platform": "bilibili",
+      "url": "https://kr-asia.com/bilibili-rolls-out-ai-tools-to-push-next-phase-of-platform-monetization",
+      "provenance": "KrAsia frames this as Bilibili's next-phase monetization and creator-retention push, in a summer 2026 rollout; the same feature set is independently described by AI-tooling blog BibiGPT.",
+      "corroboration_url": "https://bibigpt.co/en/features/bilibili-hai-ai-video-podcast-explained"
+    },
+    {
+      "title": "China's new AI-companion rules (effective July 15) forced ByteDance's Doubao, Alibaba's Qwen and Tencent's Yuanbao to kill anthropomorphic/companion chatbot features overnight, triggering mass 'digital breakups' -- a live lifestyle-tech backlash story, adjacent to Xiaohongshu/Weibo discourse though not confirmed as trending on those apps specifically",
+      "platform": "doubao (bytedance) -- adjacent CN app, not xiaohongshu/bilibili/weibo",
+      "url": "https://restofworld.org/2026/china-ai-boyfriend-ban-bytedance-doubao/",
+      "provenance": "Rest of World reports Beijing's Apr 10 'Interim Measures for AI Anthropomorphic Interactive Services' cut companion features off overnight across Doubao (345M MAU), Qwen and Yuanbao on July 15; corroborated independently by CNN Business, TechRadar, and Yahoo Finance/qz.com coverage of the same rules.",
+      "corroboration_url": "https://www.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk"
+    },
+    {
+      "title": "Xiaohongshu's 2026 content-culture shift: 'seeding' posts are moving away from chasing viral moments toward playful absurdity, memes and self-deprecating humor as everyday stress-coping content",
+      "platform": "xiaohongshu",
+      "url": "https://chinaskinny.com/blog/xiaohongshu-rednote-2026-lifestyle-trends",
+      "provenance": "China Skinny's 2026 'Top 10 Buzzwords' roundup for Xiaohongshu/RED flags absurdist humor and meme remixing as a rising content mode, distinct from prior viral-moment-chasing seeding tactics.",
+      "corroboration_url": ""
+    }
+  ]
 }
