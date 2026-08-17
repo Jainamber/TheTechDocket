@@ -1,267 +1,258 @@
 {
-  "date": "2026-08-17",
-  "candidates": [
+ "date": "2026-08-17",
+ "candidates": [
+  {
+   "title": "China's new AI-companion rules (effective July 15) forced ByteDance's Doubao, Alibaba's Qwen and Tencent's Yuanbao to kill anthropomorphic/companion chatbot features overnight, triggering mass 'digital breakups' -- a live lifestyle-tech backlash story, adjacent to Xiaohongshu/Weibo discourse though not confirmed as trending on those apps specifically",
+   "sources": [
+    "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
+    "corroboration"
+   ],
+   "geos": [],
+   "momentum_raw": 0.35,
+   "evidence": [
     {
-      "title": "China's new AI-companion rules (effective July 15) forced ByteDance's Doubao, Alibaba's Qwen and Tencent's Yuanbao to kill anthropomorphic/companion chatbot features overnight, triggering mass 'digital breakups' -- a live lifestyle-tech backlash story, adjacent to Xiaohongshu/Weibo discourse though not confirmed as trending on those apps specifically",
-      "sources": [
-        "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-        "corroboration"
-      ],
-      "geos": [],
-      "momentum_raw": 0.35,
-      "evidence": [
-        {
-          "source": "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-          "platform": "doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-          "url": "https://restofworld.org/2026/china-ai-boyfriend-ban-bytedance-doubao/",
-          "provenance": "Rest of World reports Beijing's Apr 10 'Interim Measures for AI Anthropomorphic Interactive Services' cut companion features off overnight across Doubao (345M MAU), Qwen and Yuanbao on July 15; corroborated independently by CNN Business, TechRadar, and Yahoo Finance/qz.com coverage of the same rules.",
-          "origin": "cn-incubator"
-        },
-        {
-          "source": "corroboration",
-          "url": "https://www.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk",
-          "origin": "cn-incubator"
-        }
-      ],
-      "score": 0.5536,
-      "topic_fit": 1.0,
-      "corroboration": 0.5
+     "source": "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
+     "platform": "doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
+     "url": "https://restofworld.org/2026/china-ai-boyfriend-ban-bytedance-doubao/",
+     "provenance": "Rest of World reports Beijing's Apr 10 'Interim Measures for AI Anthropomorphic Interactive Services' cut companion features off overnight across Doubao (345M MAU), Qwen and Yuanbao on July 15; corroborated independently by CNN Business, TechRadar, and Yahoo Finance/qz.com coverage of the same rules.",
+     "origin": "cn-incubator"
     },
     {
-      "title": "Bilibili is rolling out HAI ('Codename H'), a script-to-video AI tool that turns a ~1,000-word script into a ~6-minute video, positioned as a native competitor to CapCut AI for creators",
-      "sources": [
-        "cn:bilibili",
-        "corroboration"
-      ],
-      "geos": [],
-      "momentum_raw": 0.35,
-      "evidence": [
-        {
-          "source": "cn:bilibili",
-          "platform": "bilibili",
-          "url": "https://kr-asia.com/bilibili-rolls-out-ai-tools-to-push-next-phase-of-platform-monetization",
-          "provenance": "KrAsia frames this as Bilibili's next-phase monetization and creator-retention push, in a summer 2026 rollout; the same feature set is independently described by AI-tooling blog BibiGPT.",
-          "origin": "cn-incubator"
-        },
-        {
-          "source": "corroboration",
-          "url": "https://bibigpt.co/en/features/bilibili-hai-ai-video-podcast-explained",
-          "origin": "cn-incubator"
-        }
-      ],
-      "score": 0.5265,
-      "topic_fit": 0.86,
-      "corroboration": 0.5
-    },
-    {
-      "title": "'Quiet livestreaming' -- calm, soft-sell live commerce is displacing hard-sell Douyin/Taobao-style hosting on Xiaohongshu (e.g. celebrity host Annie Yi drawing 2.2M viewers / ~$4.1M sales with a low-key format)",
-      "sources": [
-        "cn:xiaohongshu",
-        "corroboration"
-      ],
-      "geos": [],
-      "momentum_raw": 0.35,
-      "evidence": [
-        {
-          "source": "cn:xiaohongshu",
-          "platform": "xiaohongshu",
-          "url": "https://jingdaily.com/posts/quiet-selling-livestreaming-xiaohongshu-annie-yi",
-          "provenance": "Jing Daily reports the soft-sell format outperforming loud hard-sell norms as younger consumers tire of high-pressure livestream sales; independently listed as one of Xiaohongshu/RED's 2026 'Top 10 Buzzwords' by China Skinny.",
-          "origin": "cn-incubator"
-        },
-        {
-          "source": "corroboration",
-          "url": "https://chinaskinny.com/blog/xiaohongshu-rednote-2026-lifestyle-trends",
-          "origin": "cn-incubator"
-        }
-      ],
-      "score": 0.5252,
-      "topic_fit": 0.84,
-      "corroboration": 0.5
-    },
-    {
-      "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
-      "sources": [
-        "outlet:CNBC"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:CNBC",
-          "outlet": "CNBC"
-        }
-      ],
-      "score": 0.4282,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Nvidia stock sheds $130B in market value after entering $500 billion AI infrastructure financing deal with Blackstone, KKR, Goldman Sachs, others",
-      "sources": [
-        "outlet:Forbes"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:Forbes",
-          "outlet": "Forbes"
-        }
-      ],
-      "score": 0.3857,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
-      "sources": [
-        "outlet:CNBC"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:CNBC",
-          "outlet": "CNBC"
-        }
-      ],
-      "score": 0.3823,
-      "topic_fit": 0.98,
-      "corroboration": 0.0
-    },
-    {
-      "title": "DARPA and the US Air Force fly an AI-controlled F-16 (VENOM program) autonomously, a test pilot able to switch between human and AI control mid-flight",
-      "sources": [
-        "outlet:DARPA"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:DARPA",
-          "outlet": "DARPA"
-        }
-      ],
-      "score": 0.3813,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "OpenAI introduces $125/month Premium seats for ChatGPT Business, giving power users 5x usage and removing the five-hour cap",
-      "sources": [
-        "outlet:The Decoder"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:The Decoder",
-          "outlet": "The Decoder"
-        }
-      ],
-      "score": 0.3769,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "China-linked hackers ran a four-day, near-fully-autonomous AI-agent cyberattack on Taiwanese government systems, first disclosed case of its kind",
-      "sources": [
-        "outlet:CNN Business"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:CNN Business",
-          "outlet": "CNN Business"
-        }
-      ],
-      "score": 0.3733,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "ChatGPT is nearing 1 billion weekly active users, about seven months after OpenAI's internal target for the milestone",
-      "sources": [
-        "outlet:The Information"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:The Information",
-          "outlet": "The Information"
-        }
-      ],
-      "score": 0.3692,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Mark Zuckerberg posts 6,500-word essay 'The Future is for Everyone', making the case for giving every person personal superintelligence",
-      "sources": [
-        "outlet:404 Media"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:404 Media",
-          "outlet": "404 Media"
-        }
-      ],
-      "score": 0.3654,
-      "topic_fit": 0.9,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Google's $15 billion Visakhapatnam data centre project (with Adani) faces court challenges over water and wildlife concerns; next hearing Aug 24",
-      "sources": [
-        "outlet:Storyboard18"
-      ],
-      "geos": [],
-      "momentum_raw": 0.2,
-      "evidence": [
-        {
-          "source": "outlet:Storyboard18",
-          "outlet": "Storyboard18"
-        }
-      ],
-      "score": 0.3648,
-      "topic_fit": 0.92,
-      "corroboration": 0.0
+     "source": "corroboration",
+     "url": "https://www.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk",
+     "origin": "cn-incubator"
     }
-  ],
-  "pick": {
-    "title": "China's new AI-companion rules (effective July 15) forced ByteDance's Doubao, Alibaba's Qwen and Tencent's Yuanbao to kill anthropomorphic/companion chatbot features overnight, triggering mass 'digital breakups' -- a live lifestyle-tech backlash story, adjacent to Xiaohongshu/Weibo discourse though not confirmed as trending on those apps specifically",
-    "sources": [
-      "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-      "corroboration"
-    ],
-    "geos": [],
-    "momentum_raw": 0.35,
-    "evidence": [
-      {
-        "source": "cn:doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-        "platform": "doubao (bytedance) -- adjacent cn app, not xiaohongshu/bilibili/weibo",
-        "url": "https://restofworld.org/2026/china-ai-boyfriend-ban-bytedance-doubao/",
-        "provenance": "Rest of World reports Beijing's Apr 10 'Interim Measures for AI Anthropomorphic Interactive Services' cut companion features off overnight across Doubao (345M MAU), Qwen and Yuanbao on July 15; corroborated independently by CNN Business, TechRadar, and Yahoo Finance/qz.com coverage of the same rules.",
-        "origin": "cn-incubator"
-      },
-      {
-        "source": "corroboration",
-        "url": "https://www.cnn.com/2026/07/23/business/china-ai-companion-ban-intl-hnk",
-        "origin": "cn-incubator"
-      }
-    ],
-    "score": 0.5536,
-    "topic_fit": 1.0,
-    "corroboration": 0.5
+   ],
+   "score": 0.5536,
+   "topic_fit": 1.0,
+   "corroboration": 0.5
   },
-  "use_evergreen": false,
-  "cn_blocked": [
-    "Xiaohongshu has become the go-to hub for China's AI research community: AMA threads from K",
-    "Xiaohongshu's 2026 content-culture shift: 'seeding' posts are moving away from chasing vir"
-  ]
+  {
+   "title": "Bilibili is rolling out HAI ('Codename H'), a script-to-video AI tool that turns a ~1,000-word script into a ~6-minute video, positioned as a native competitor to CapCut AI for creators",
+   "sources": [
+    "cn:bilibili",
+    "corroboration"
+   ],
+   "geos": [],
+   "momentum_raw": 0.35,
+   "evidence": [
+    {
+     "source": "cn:bilibili",
+     "platform": "bilibili",
+     "url": "https://kr-asia.com/bilibili-rolls-out-ai-tools-to-push-next-phase-of-platform-monetization",
+     "provenance": "KrAsia frames this as Bilibili's next-phase monetization and creator-retention push, in a summer 2026 rollout; the same feature set is independently described by AI-tooling blog BibiGPT.",
+     "origin": "cn-incubator"
+    },
+    {
+     "source": "corroboration",
+     "url": "https://bibigpt.co/en/features/bilibili-hai-ai-video-podcast-explained",
+     "origin": "cn-incubator"
+    }
+   ],
+   "score": 0.5265,
+   "topic_fit": 0.86,
+   "corroboration": 0.5
+  },
+  {
+   "title": "'Quiet livestreaming' -- calm, soft-sell live commerce is displacing hard-sell Douyin/Taobao-style hosting on Xiaohongshu (e.g. celebrity host Annie Yi drawing 2.2M viewers / ~$4.1M sales with a low-key format)",
+   "sources": [
+    "cn:xiaohongshu",
+    "corroboration"
+   ],
+   "geos": [],
+   "momentum_raw": 0.35,
+   "evidence": [
+    {
+     "source": "cn:xiaohongshu",
+     "platform": "xiaohongshu",
+     "url": "https://jingdaily.com/posts/quiet-selling-livestreaming-xiaohongshu-annie-yi",
+     "provenance": "Jing Daily reports the soft-sell format outperforming loud hard-sell norms as younger consumers tire of high-pressure livestream sales; independently listed as one of Xiaohongshu/RED's 2026 'Top 10 Buzzwords' by China Skinny.",
+     "origin": "cn-incubator"
+    },
+    {
+     "source": "corroboration",
+     "url": "https://chinaskinny.com/blog/xiaohongshu-rednote-2026-lifestyle-trends",
+     "origin": "cn-incubator"
+    }
+   ],
+   "score": 0.5252,
+   "topic_fit": 0.84,
+   "corroboration": 0.5
+  },
+  {
+   "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
+   "sources": [
+    "outlet:CNBC"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:CNBC",
+     "outlet": "CNBC"
+    }
+   ],
+   "score": 0.4282,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Nvidia stock sheds $130B in market value after entering $500 billion AI infrastructure financing deal with Blackstone, KKR, Goldman Sachs, others",
+   "sources": [
+    "outlet:Forbes"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Forbes",
+     "outlet": "Forbes"
+    }
+   ],
+   "score": 0.3857,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
+   "sources": [
+    "outlet:CNBC"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:CNBC",
+     "outlet": "CNBC"
+    }
+   ],
+   "score": 0.3823,
+   "topic_fit": 0.98,
+   "corroboration": 0.0
+  },
+  {
+   "title": "DARPA and the US Air Force fly an AI-controlled F-16 (VENOM program) autonomously, a test pilot able to switch between human and AI control mid-flight",
+   "sources": [
+    "outlet:DARPA"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:DARPA",
+     "outlet": "DARPA"
+    }
+   ],
+   "score": 0.3813,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "OpenAI introduces $125/month Premium seats for ChatGPT Business, giving power users 5x usage and removing the five-hour cap",
+   "sources": [
+    "outlet:The Decoder"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:The Decoder",
+     "outlet": "The Decoder"
+    }
+   ],
+   "score": 0.3769,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "China-linked hackers ran a four-day, near-fully-autonomous AI-agent cyberattack on Taiwanese government systems, first disclosed case of its kind",
+   "sources": [
+    "outlet:CNN Business"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:CNN Business",
+     "outlet": "CNN Business"
+    }
+   ],
+   "score": 0.3733,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "ChatGPT is nearing 1 billion weekly active users, about seven months after OpenAI's internal target for the milestone",
+   "sources": [
+    "outlet:The Information"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:The Information",
+     "outlet": "The Information"
+    }
+   ],
+   "score": 0.3692,
+   "topic_fit": 1.0,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Mark Zuckerberg posts 6,500-word essay 'The Future is for Everyone', making the case for giving every person personal superintelligence",
+   "sources": [
+    "outlet:404 Media"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:404 Media",
+     "outlet": "404 Media"
+    }
+   ],
+   "score": 0.3654,
+   "topic_fit": 0.9,
+   "corroboration": 0.0
+  },
+  {
+   "title": "Google's $15 billion Visakhapatnam data centre project (with Adani) faces court challenges over water and wildlife concerns; next hearing Aug 24",
+   "sources": [
+    "outlet:Storyboard18"
+   ],
+   "geos": [],
+   "momentum_raw": 0.2,
+   "evidence": [
+    {
+     "source": "outlet:Storyboard18",
+     "outlet": "Storyboard18"
+    }
+   ],
+   "score": 0.3648,
+   "topic_fit": 0.92,
+   "corroboration": 0.0
+  }
+ ],
+ "pick": {
+  "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
+  "sources": [
+   "outlet:CNBC"
+  ],
+  "geos": [],
+  "momentum_raw": 0.2,
+  "evidence": [
+   {
+    "source": "outlet:CNBC",
+    "outlet": "CNBC"
+   }
+  ],
+  "score": 0.3823,
+  "topic_fit": 0.98,
+  "corroboration": 0.0
+ },
+ "use_evergreen": false,
+ "cn_blocked": [
+  "Xiaohongshu has become the go-to hub for China's AI research community: AMA threads from K",
+  "Xiaohongshu's 2026 content-culture shift: 'seeding' posts are moving away from chasing vir"
+ ]
 }
