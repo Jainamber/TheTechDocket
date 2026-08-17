@@ -1,0 +1,227 @@
+{
+  "date": "2026-08-17",
+  "candidates": [
+    {
+      "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4282,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia stock sheds $130B in market value after entering $500 billion AI infrastructure financing deal with Blackstone, KKR, Goldman Sachs, others",
+      "sources": [
+        "outlet:Forbes"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Forbes",
+          "outlet": "Forbes"
+        }
+      ],
+      "score": 0.3857,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic revenue jumps to over $11.5 billion in Q2, up 14-fold year over year, first quarter of positive adjusted operating income",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.3823,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "DARPA and the US Air Force fly an AI-controlled F-16 (VENOM program) autonomously, a test pilot able to switch between human and AI control mid-flight",
+      "sources": [
+        "outlet:DARPA"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:DARPA",
+          "outlet": "DARPA"
+        }
+      ],
+      "score": 0.3813,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI introduces $125/month Premium seats for ChatGPT Business, giving power users 5x usage and removing the five-hour cap",
+      "sources": [
+        "outlet:The Decoder"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:The Decoder",
+          "outlet": "The Decoder"
+        }
+      ],
+      "score": 0.3769,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "China-linked hackers ran a four-day, near-fully-autonomous AI-agent cyberattack on Taiwanese government systems, first disclosed case of its kind",
+      "sources": [
+        "outlet:CNN Business"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNN Business",
+          "outlet": "CNN Business"
+        }
+      ],
+      "score": 0.3733,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "ChatGPT is nearing 1 billion weekly active users, about seven months after OpenAI's internal target for the milestone",
+      "sources": [
+        "outlet:The Information"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:The Information",
+          "outlet": "The Information"
+        }
+      ],
+      "score": 0.3692,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Mark Zuckerberg posts 6,500-word essay 'The Future is for Everyone', making the case for giving every person personal superintelligence",
+      "sources": [
+        "outlet:404 Media"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:404 Media",
+          "outlet": "404 Media"
+        }
+      ],
+      "score": 0.3654,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google's $15 billion Visakhapatnam data centre project (with Adani) faces court challenges over water and wildlife concerns; next hearing Aug 24",
+      "sources": [
+        "outlet:Storyboard18"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Storyboard18",
+          "outlet": "Storyboard18"
+        }
+      ],
+      "score": 0.3648,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI's Astra model produces formally-verified proofs for 10 open math/CS problems, including the first explicit non-sofic group, for ~$2,000 in compute",
+      "sources": [
+        "outlet:Forbes"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Forbes",
+          "outlet": "Forbes"
+        }
+      ],
+      "score": 0.3614,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Workday shares post best day in 10 years, surging up to 25%, on report Silver Lake is in talks for a buyout of up to $43 billion",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.3603,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Meta releases Muse Glimmer, an Apache 2.0 open-weight 30B-parameter agentic AI model that runs on a single consumer GPU",
+      "sources": [
+        "outlet:TechCrunch"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.3586,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Apple's Tim Cook and Commerce Secretary Howard Lutnick open Apple's Advanced Manufacturing Center in Houston, which will build Mac Minis and AI servers",
+    "sources": [
+      "outlet:CNBC"
+    ],
+    "geos": [],
+    "momentum_raw": 0.2,
+    "evidence": [
+      {
+        "source": "outlet:CNBC",
+        "outlet": "CNBC"
+      }
+    ],
+    "score": 0.4282,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}
