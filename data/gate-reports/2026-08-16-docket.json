@@ -1,6 +1,6 @@
 {
   "slug": "docket-2026-08-16",
-  "checked_at": "2026-08-16T07:03:20.723343+05:30",
+  "checked_at": "2026-08-17T07:43:36.538938+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -105,7 +105,7 @@
       "gate": "D18-deck-integrity",
       "level": "hard",
       "ok": true,
-      "detail": ""
+      "detail": "n/a (deck disabled or not the latest docket)"
     },
     {
       "gate": "D19-social-slides",

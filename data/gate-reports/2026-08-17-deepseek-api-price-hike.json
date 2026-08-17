@@ -1,6 +1,6 @@
 {
-  "slug": "anthropic-q2-revenue-report",
-  "checked_at": "2026-08-17T07:42:39.105286+05:30",
+  "slug": "deepseek-api-price-hike",
+  "checked_at": "2026-08-17T07:42:42.008829+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -33,7 +33,7 @@
       "gate": "G04-date-valid",
       "level": "hard",
       "ok": true,
-      "detail": "date 2026-08-17 must not be future & must match JSON-LD"
+      "detail": "date 2026-08-16 must not be future & must match JSON-LD"
     },
     {
       "gate": "G05-real-update",
@@ -45,7 +45,7 @@
       "gate": "G06-citations",
       "level": "hard",
       "ok": true,
-      "detail": "12 external citation domains, 22 listed sources (need ≥2)"
+      "detail": "15 external citation domains, 20 listed sources (need ≥2)"
     },
     {
       "gate": "G07-stats-sourced",
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.01 vs 'claude-for-small-business-explained' (limit .30)"
+      "detail": "max 5-gram overlap 0.01 vs 'gpt-5-6-luna-price-cut' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",
@@ -123,19 +123,19 @@
       "gate": "G20-indexable",
       "level": "hard",
       "ok": true,
-      "detail": "canonical must be https://thetechdocket.com/articles/anthropic-q2-revenue-report/"
+      "detail": "canonical must be https://thetechdocket.com/articles/deepseek-api-price-hike/"
     },
     {
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 59KB (<=90), hero 32KB (<=320)"
+      "detail": "html 57KB (<=90), hero 29KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
       "level": "hard",
       "ok": true,
-      "detail": "YMYL terms {'finance': ['invest', 'stock']} → front-matter ymyl: finance, a primary:true source and rendered disclaimer are required"
+      "detail": "no YMYL trigger"
     },
     {
       "gate": "G23-no-affiliate",
@@ -165,13 +165,13 @@
       "gate": "S01-title-length",
       "level": "hard",
       "ok": true,
-      "detail": "title 59 chars (need 35–65)"
+      "detail": "title 57 chars (need 35–65)"
     },
     {
       "gate": "S02-meta-desc",
       "level": "hard",
       "ok": true,
-      "detail": "meta description 159 chars"
+      "detail": "meta description 163 chars"
     },
     {
       "gate": "S03-single-h1",
@@ -183,13 +183,13 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 82 words (need ≥40 before any H2)"
+      "detail": "first paragraph 88 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
       "level": "hard",
       "ok": true,
-      "detail": "7 body H2 sections excl. template chrome (need ≥3)"
+      "detail": "6 body H2 sections excl. template chrome (need ≥3)"
     },
     {
       "gate": "S06-heading-hierarchy",
@@ -201,7 +201,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "2198 words (need 900–2200)"
+      "detail": "2020 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",
@@ -219,7 +219,7 @@
       "gate": "S09-internal-links",
       "level": "hard",
       "ok": true,
-      "detail": "16 internal article links (need ≥2)"
+      "detail": "12 internal article links (need ≥2)"
     },
     {
       "gate": "S10-hub-link",
