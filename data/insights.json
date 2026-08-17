@@ -1,7 +1,84 @@
 {
-  "generated_at": "2026-08-16T07:25:33.628357+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-08-17T07:23:04.753929+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 6
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "fuse-energy-neutron-record": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "us-border-phone-search-grapheneos-case": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ani-vs-openai-fair-dealing-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "pixel-11-india-price": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "weathernext-cyclones-extra-day": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gpt-5-6-cyber": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gemini-3-6-flash-what-google-launched": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "openai-agent-hugging-face-breach": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-voice-clone-scam-protection": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 7,
+    "ai-models": 5,
+    "hardware": 3,
+    "policy": 4,
+    "ai-tools": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
