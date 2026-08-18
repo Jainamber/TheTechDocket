@@ -1,0 +1,227 @@
+{
+  "date": "2026-08-18",
+  "candidates": [
+    {
+      "title": "Nvidia stock is near its record high: what's going on with the AI darling today?",
+      "sources": [
+        "outlet:Invezz"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Invezz",
+          "outlet": "Invezz"
+        }
+      ],
+      "score": 0.4207,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia Will Back First Phase of OpenAI Ohio Project With as Much as $105 Billion",
+      "sources": [
+        "outlet:Bloomberg"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.3905,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic Weighs Its Largest-Ever Acquisition, a $6 Billion Deal for Decart",
+      "sources": [
+        "outlet:Benzinga"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Benzinga",
+          "outlet": "Benzinga"
+        }
+      ],
+      "score": 0.39,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Chinese robot maker Unitree to debut on Shanghai market Wednesday",
+      "sources": [
+        "outlet:Xinhua"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Xinhua",
+          "outlet": "Xinhua"
+        }
+      ],
+      "score": 0.3895,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Daily Indian Funding Roundup & Key News - 17 August 2026: DeHaat Honest Farms Raises INR 35 Crore, PhysicsWallah Jumps 9.5%, and More",
+      "sources": [
+        "outlet:StartupTalky"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:StartupTalky",
+          "outlet": "StartupTalky"
+        }
+      ],
+      "score": 0.3867,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Tech Brief (Aug. 14): DeepSeek Launches V4-Pro and Raises API Prices by as Much as 1,100%",
+      "sources": [
+        "outlet:Caixin Global"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Caixin Global",
+          "outlet": "Caixin Global"
+        }
+      ],
+      "score": 0.3846,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Stripe Finalizes Deal to Acquire AI Startup OpenRouter for Over $7 Billion",
+      "sources": [
+        "outlet:Bloomberg"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.38,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "IBM Partners with OpenAI to Accelerate Secure AI Deployment for Enterprises Across Core Operations",
+      "sources": [
+        "outlet:IBM Newsroom"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:IBM Newsroom",
+          "outlet": "IBM Newsroom"
+        }
+      ],
+      "score": 0.38,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Stripe acquires OpenRouter for over $7 billion, more than 5X its valuation three months ago",
+      "sources": [
+        "outlet:Tech Startups"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tech Startups",
+          "outlet": "Tech Startups"
+        }
+      ],
+      "score": 0.3796,
+      "topic_fit": 0.94,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia backing $105 billion in financing for OpenAI data center in Ohio",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.3789,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic in Talks to Buy AI Startup Decart for $6 Billion",
+      "sources": [
+        "outlet:Bloomberg"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Bloomberg",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "score": 0.3778,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Semiconductor & Chip Industry Weekly Report - News & Updates - August 17, 2026",
+      "sources": [
+        "outlet:OriginBrief"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:OriginBrief",
+          "outlet": "OriginBrief"
+        }
+      ],
+      "score": 0.3778,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Nvidia stock is near its record high: what's going on with the AI darling today?",
+    "sources": [
+      "outlet:Invezz"
+    ],
+    "geos": [],
+    "momentum_raw": 0.2,
+    "evidence": [
+      {
+        "source": "outlet:Invezz",
+        "outlet": "Invezz"
+      }
+    ],
+    "score": 0.4207,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}
