@@ -683,6 +683,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-17-anthropic-q2-revenue-report.json",
       "url": "https://thetechdocket.com/articles/anthropic-q2-revenue-report/"
+    },
+    {
+      "date": "2026-08-18",
+      "slug": "nvidia-openai-105b-ohio-deal",
+      "title": "Nvidia's $105B OpenAI Deal: The Ohio Guarantee, Explained",
+      "keyword": "nvidia openai deal",
+      "hub": "big-tech",
+      "published_at": "2026-08-18T07:01:54.265058+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-18T07:01:04+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-18-nvidia-openai-105b-ohio-deal.json",
+      "url": "https://thetechdocket.com/articles/nvidia-openai-105b-ohio-deal/"
     }
   ]
 }
