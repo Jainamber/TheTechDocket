@@ -1,0 +1,12 @@
+{
+  "sources_status": {
+    "trends_rss_IN": "failed: EGRESS_BLOCKED - trends.google.com is blocked by the network egress proxy for this container (WebFetch error_type=EGRESS_BLOCKED, domain=trends.google.com)",
+    "trends_rss_US": "failed: EGRESS_BLOCKED - trends.google.com is blocked by the network egress proxy for this container (WebFetch error_type=EGRESS_BLOCKED, domain=trends.google.com)"
+  },
+  "IN": {
+    "trends_rss": []
+  },
+  "US": {
+    "trends_rss": []
+  }
+}
