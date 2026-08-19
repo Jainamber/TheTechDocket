@@ -8,6 +8,7 @@ hub: hardware
 tags: [gpus, ai costs, tokens, data centers]
 description: "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run."
 hero_alt: "A data center aisle of GPU servers with a rising electricity meter and dollar-per-token price tags overlaid on the racks"
+hero_icon: plug
 keyword: "cost of running ai"
 original_value: "This piece lines up live per-token prices from OpenAI, Google and Anthropic against real GPU purchase and rental costs, IEA electricity data, and India's subsidized compute program in one comparable, fully sourced framework."
 sources:

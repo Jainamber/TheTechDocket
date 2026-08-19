@@ -6,6 +6,7 @@ hub: hardware
 tags: [fusion, fuse-energy, dense-plasma-focus, llnl, neutron-source, frontier-tech, pulsed-power]
 description: "Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn't."
 hero_alt: "A ring of capacitors discharging into a glowing pinched plasma column that emits a burst of bright specks, beside an enormous gauge showing energy in towering over energy out."
+hero_icon: atom-2
 keyword: "fuse energy neutron record"
 original_value: "Runs the claimed neutron count through energy arithmetic no other coverage shows (~1.5 joules out per million in), benchmarks FAETON-X against MJOLNIR, Gemini and Zap's Z-pinch from primary literature, and labels company claims as such throughout."
 selection_note: "Frontier Saturday slot (owner directive 2026-08-12): weekly pioneering-tech pick outside the AI news cycle. Scorer's top pick was the SQLite WAL-bug retrospective (0.59, HN momentum) — strong but off-slot. The frontier lane's only candidate that was fresh, corroborated by two independent outlets AND carried a primary source document was this one; the repo's frontier scoring lane has not landed yet, so selection is editorial per the directive."

@@ -6,6 +6,7 @@ hub: explainers
 tags: [on-device ai, apple intelligence, gemini nano, privacy, npu]
 description: "On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run."
 hero_alt: "Diagram of a smartphone splitting AI requests between an on-device chip and an attested private cloud data center"
+hero_icon: cloud
 keyword: "on device ai vs cloud ai"
 original_value: "Most comparisons treat this as a two-way choice. This piece covers the third tier that emerged in 2025–26 — attested private cloud (Apple PCC, now partly on Google Cloud, and Google's NCC-audited Private AI Compute) — plus the 12GB-RAM hardware gate and a real measured battery cost, instead of asserted ones."
 selection_note: "Owner-directed explainers batch (2026-07-26); evergreen-backlog topic, demand and gap validated in 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."

@@ -6,6 +6,7 @@ hub: explainers
 tags: [context window, tokens, llm, benchmarks, rag]
 description: "What a context window really is, why a million-token label rarely means a million usable tokens, and the cost math behind long prompts — with sources."
 hero_alt: "Illustration of a long scroll of text being fed into a language model with only portions highlighted as reliably attended"
+hero_icon: file-text
 keyword: "context window explained"
 original_value: "SEO explainers report the advertised ceiling as the story. This piece cites the effective-context evidence by name — RULER, NoLiMa, Chroma's Context Rot, Fiction.liveBench — runs live cost math (8k vs 200k input is ~18x on current GPT-5.5 prices), and covers why vendors resize windows at all."
 selection_note: "Owner-directed explainers batch (2026-07-26); demand+gap validated in 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."

@@ -6,6 +6,7 @@ hub: policy
 tags: [eu-ai-act, ai-regulation, transparency, deepfakes, india-it]
 description: "EU AI Act enforcement began August 2, 2026: chatbot and deepfake disclosure is law and GPAI fines are live, while high-risk rules wait until December 2027."
 hero_alt: "European Union flag rendered as a circuit board beside a chatbot window carrying an AI disclosure label, marking the AI Act's enforcement start."
+hero_icon: scale
 keyword: "eu ai act august 2026"
 original_value: "Puts the live-vs-delayed AI Act obligations in one post-Digital-Omnibus table, adds worked fine arithmetic from sourced revenues, and the India-exporter breakdown — Europe revenue exposure for TCS, Infosys, Wipro and HCLTech — that no coverage of the August 2 milestone has."
 selection_note: "Overrode the scorer's top pick (a DeepSeek-agent attack story): it overlapped our Jul 31 agent-security article and would have been the second DeepSeek piece in two days. AI Act enforcement began Aug 2 (the day before publish), is primary-source rich, and the India-exporter angle is uncovered."

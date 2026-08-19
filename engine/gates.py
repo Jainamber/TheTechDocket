@@ -203,11 +203,17 @@ class GateRunner:
                 crops_ok = False
                 detail.append(f"{f.name} is {iw}x{ih} not {w}x{h}")
         self.check("G14-hero-crops", HARD, crops_ok, "; ".join(detail))
+        # v4 (2026-08-19): the 16:9 hero banner was replaced by an inline
+        # icon tile in the article header (DESIGN-ICONS-V4). The gate now
+        # asserts the hero visual exists; a legacy <figure class="hero">
+        # banner, if present, must still be a proper LCP image.
         hero = self.body.select_one("figure.hero img") if self.body else None
-        self.check("G16-hero-img-tag", HARD,
-                   hero is not None and hero.get("fetchpriority") == "high"
-                   and hero.get("width") and hero.get("height")
-                   and (hero.get("alt") or "").strip() != "")
+        tile = self.body.select_one(".hero-ico .itile svg") if self.body else None
+        legacy_ok = hero is None or (hero.get("fetchpriority") == "high"
+                                     and hero.get("width") and hero.get("height")
+                                     and (hero.get("alt") or "").strip() != "")
+        self.check("G16-hero-img-tag", HARD, tile is not None and legacy_ok,
+                   "no .hero-ico .itile svg in article header" if tile is None else "")
         robots = soup.find("meta", attrs={"name": "robots"})
         self.check("G15-max-image-preview", HARD,
                    robots is not None

@@ -6,6 +6,7 @@ hub: ai-models
 tags: [weathernext, deepmind, google, cyclones, weather-ai, open-weights, imd, india]
 description: "DeepMind's WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes."
 hero_alt: "Satellite view of a spiralling tropical cyclone with branching AI-predicted track lines fanning out ahead of the storm."
+hero_icon: tornado
 keyword: "weathernext"
 original_value: "Puts DeepMind's claimed one-day lead-time gain side by side with NHC's and IMD's own published track-error tables, and lays out what free model weights could mean for India's cyclone belt — a combination no single source covers."
 selection_note: "Editorial override of the scorer's top pick, which was a 2018 x86-backdoor research repo resurfacing on Hacker News — old work, not news. The WeatherNext post (Aug 6, #1 AI story on HN this weekend, Nature-published, primary source available) never reached the scorer because the deny-list terms 'weather' and 'cyclone' — meant to filter weather-event trends — also block coverage of an AI model about weather. Flagged to the owner: consider allow-list precedence for 'deepmind'/'ai model' phrases."

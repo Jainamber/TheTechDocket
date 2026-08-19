@@ -6,6 +6,7 @@ hub: big-tech
 tags: [google, alphabet, spacex, ipo, big tech]
 description: "Alphabet's Q2 10-Q values its SpaceX stake at $94.1 billion but never states a percentage. The lock-ups, the conflicting numbers and the India angle, explained."
 hero_alt: "Stylized rocket ascending over a stock chart, with a pie-slice marked in Google's colors docked to its side."
+hero_icon: rocket
 keyword: "google spacex stake"
 original_value: "Reconciles the 10-Q's $94.1B figure with April's $122B headline and the 4.9-6% estimate spread, then connects the stake to Google's $920M-a-month xAI compute deal and its 7.73% Jio Platforms holding — a synthesis no single report has."
 selection_note: "Overrode scorer pick 'apple music' (IN trend, ~100 searches, no attached story). Chose the corroborated Alphabet-SpaceX disclosure (Bloomberg, Fortune, Motley Fool, HN front page) — first article for the empty Big Tech hub per STRATEGY-90D Week 2."

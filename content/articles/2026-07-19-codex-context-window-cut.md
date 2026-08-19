@@ -6,6 +6,7 @@ hub: ai-tools
 tags: [openai, codex, coding-agents, context-window]
 description: "OpenAI cut Codex's default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare."
 hero_alt: "Illustration of a code editor with a context gauge being dialed down from 372K to 272K tokens"
+hero_icon: scissors
 keyword: "codex context window"
 original_value: "Reconciles Codex's new 272K default with GPT-5.6 Sol's advertised 1.05M window using the PR diff and OpenAI's own pricing docs, and adds the Gemini pricing parallel plus an India cost angle no current coverage has."
 sources:

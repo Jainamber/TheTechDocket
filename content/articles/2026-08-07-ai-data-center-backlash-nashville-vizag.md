@@ -6,6 +6,7 @@ hub: policy
 tags: [data-centers, ai-infrastructure, eminent-domain, google, microsoft, nashville, visakhapatnam, india]
 description: "Nashville voted 27-5 to take a $700M data center site by eminent domain, and India's courts test Google's $15B Vizag hub. Inside the local pushback on AI's buildout."
 hero_alt: "A data center building casting a long shadow across a zoo enclosure on one side and a water reservoir on the other, with courthouse columns rising behind both."
+hero_icon: server-2
 keyword: "ai data center backlash"
 original_value: "Connects the same week's Nashville eminent-domain vote, the Andhra Pradesh High Court challenge to Google's Vizag hub, and Microsoft's Hyderabad launch into one map of how local resistance now shapes AI's physical buildout — a link no single outlet has made."
 selection_note: "Scorer's top pick (Qwen3.8 Max agentic-index ranking) overridden: we covered Qwen3.8-Max in full on 2026-08-04 and the new benchmark rank is an incremental follow-up. Switched to the #2 candidate (Nashville eminent-domain vote), broadened to the data-center backlash synthesis with the same-week Vizag PIL hearing order and Microsoft Hyderabad launch."

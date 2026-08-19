@@ -42,7 +42,7 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
-:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:var(--accent-ink)}
@@ -79,24 +79,25 @@ a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
 .home-h1{margin:6px 0 34px;max-width:58ch}
 .hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
 .hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
-.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
-.feature a.img{display:block}
-.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.itile{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:14px;background:var(--tile-bg,var(--soft));color:var(--tile-ink,var(--accent));box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 16%,transparent);text-decoration:none}
+.itile svg{width:46%;height:46%;display:block}
+.i-ai-models{--tile-bg:var(--t-ai-models);--tile-ink:var(--k-ai-models)}.i-ai-tools{--tile-bg:var(--t-ai-tools);--tile-ink:var(--k-ai-tools)}.i-big-tech{--tile-bg:var(--t-big-tech);--tile-ink:var(--k-big-tech)}.i-hardware{--tile-bg:var(--t-hardware);--tile-ink:var(--k-hardware)}.i-policy{--tile-bg:var(--t-policy);--tile-ink:var(--k-policy)}.i-explainers{--tile-bg:var(--t-explainers);--tile-ink:var(--k-explainers)}
+.feature{display:grid;grid-template-columns:1fr;gap:18px 34px;margin:0 0 16px;align-items:center;padding:22px 22px 24px;border-radius:18px;background:color-mix(in srgb,var(--tile-bg,var(--soft)) 55%,var(--bg))}
+.feature .itile{width:72px;height:72px;border-radius:18px}
 .feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
 .feature a.t:hover{color:var(--accent-ink)}
 .feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
-@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+@media (min-width:860px){.feature{grid-template-columns:1fr auto;padding:30px 36px 32px}.feature .f-text{order:-1}.feature .itile{width:132px;height:132px;border-radius:30px}.feature .itile svg{width:50%;height:50%}}
 h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
 h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
 .grid{display:grid;grid-template-columns:1fr}
-.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
-.card a.img{display:block}
-.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.card{display:grid;grid-template-columns:26px 64px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card .itile{width:64px;height:64px;border-radius:15px}
 .kline{display:block;margin:0 0 7px}
 .card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
 .card a.t:hover{color:var(--accent-ink)}
 .card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+@media (max-width:560px){.card{grid-template-columns:44px 1fr;gap:6px 14px;padding:17px 0}.card .no{display:none}.card .itile{width:44px;height:44px;border-radius:11px}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
 .alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
 .alllink:hover{text-decoration:underline}
 article.post{max-width:660px;margin:0 auto}
@@ -107,8 +108,8 @@ article.post{max-width:660px;margin:0 auto}
 h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
 .byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
 .byline a{font-weight:600;color:var(--ink2)}
-figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
-figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.hero-ico{margin:0 0 14px}
+.hero-ico .itile{width:60px;height:60px;border-radius:16px}
 .post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
 .post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
 .post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
@@ -134,7 +135,8 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .share a:hover{border-color:var(--accent);color:var(--accent-ink)}
 .related{margin-top:8px}
 .cardlist{list-style:none;padding:0;margin:0;display:block}
-.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.cardlist .itile{width:44px;height:44px;border-radius:11px}
 .related .cardlist li{display:block}
 .cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
 .cardlist a.t:hover{color:var(--accent-ink)}
@@ -251,7 +253,7 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
-html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a;--t-ai-models:#1c1f36;--t-ai-tools:#0f2624;--t-big-tech:#241b38;--t-hardware:#2d2113;--t-policy:#24221f;--t-explainers:#0f2820}
 html[data-theme=dark] .skip{color:#0d0f14}
 .nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
 .nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
@@ -284,13 +286,8 @@ html[data-theme=dark] .nl button{color:#0d0f14}
 
 <h1 class="home-h1"><span class="hh-name">The Tech Docket</span><span class="hh-tag">Daily signal on tech &amp; AI — what the world is searching, and why</span></h1>
 
-<div class="feature">
-  <a class="img" href="/articles/chatgpt-for-teens/">
-    <picture>
-      <source type="image/webp" srcset="https://thetechdocket.com/articles/chatgpt-for-teens/chatgpt-for-teens-16x9.webp">
-      <img src="https://thetechdocket.com/articles/chatgpt-for-teens/chatgpt-for-teens-16x9.jpg" width="1200" height="675" alt="Abstract cover art with a shield and chat-bubble motif over a deep gradient, for OpenAI&#39;s ChatGPT for Teens launch." fetchpriority="high" loading="eager">
-    </picture>
-  </a>
+<div class="feature i-ai-tools">
+  <a class="itile i-ai-tools" href="/articles/chatgpt-for-teens/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 21v-2a4 4 0 0 1 4 -4h2"/><path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/></svg></a>
   <div class="f-text">
     <span class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· August 19, 2026</span></span>
     <a class="t" href="/articles/chatgpt-for-teens/">ChatGPT for Teens: What It Blocks, and How It Knows Your Age</a>
@@ -333,12 +330,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">01</span>
-    <a class="img" href="/articles/nvidia-openai-105b-ohio-deal/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/nvidia-openai-105b-ohio-deal/nvidia-openai-105b-ohio-deal-16x9.webp">
-        <img src="https://thetechdocket.com/articles/nvidia-openai-105b-ohio-deal/nvidia-openai-105b-ohio-deal-16x9.jpg" width="1200" height="675" alt="Abstract cover art with a drawn processor-chip motif over a deep gradient, for Nvidia&#39;s $105 billion OpenAI data-center guarantee." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-big-tech" href="/articles/nvidia-openai-105b-ohio-deal/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M5 21v-12l5 4v-4l5 4h4"/><path d="M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582"/><path d="M9 17h1"/><path d="M14 17h1"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 18, 2026</span></div>
       <a class="t" href="/articles/nvidia-openai-105b-ohio-deal/">Nvidia&#39;s $105B OpenAI Deal: The Ohio Guarantee, Explained</a>
@@ -348,12 +340,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">02</span>
-    <a class="img" href="/articles/anthropic-q2-revenue-report/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/anthropic-q2-revenue-report/anthropic-q2-revenue-report-16x9.webp">
-        <img src="https://thetechdocket.com/articles/anthropic-q2-revenue-report/anthropic-q2-revenue-report-16x9.jpg" width="1200" height="675" alt="Steep bar chart of Anthropic&#39;s quarterly revenue climbing from under one billion dollars to over eleven billion, beside an IPO ticket stub." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-big-tech" href="/articles/anthropic-q2-revenue-report/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19l16 0"/><path d="M4 15l4 -6l4 2l4 -5l4 4"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 17, 2026</span></div>
       <a class="t" href="/articles/anthropic-q2-revenue-report/">Anthropic Revenue: $11.5B Q2 Report, 14x Growth, IPO Stakes</a>
@@ -363,12 +350,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">03</span>
-    <a class="img" href="/articles/deepseek-api-price-hike/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/deepseek-api-price-hike/deepseek-api-price-hike-16x9.webp">
-        <img src="https://thetechdocket.com/articles/deepseek-api-price-hike/deepseek-api-price-hike-16x9.jpg" width="1200" height="675" alt="Old flat DeepSeek token-price bars rising into taller paired peak and off-peak bars beside a clock marking two daily peak windows." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-ai-models" href="/articles/deepseek-api-price-hike/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"/><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"/><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"/><path d="M3 6v10c0 .888 .772 1.45 2 2"/><path d="M3 11c0 .888 .772 1.45 2 2"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 16, 2026</span></div>
       <a class="t" href="/articles/deepseek-api-price-hike/">DeepSeek API Price Hike: New Rates, Peak Hours, Real Math</a>
@@ -378,12 +360,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">04</span>
-    <a class="img" href="/articles/fuse-energy-neutron-record/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.webp">
-        <img src="https://thetechdocket.com/articles/fuse-energy-neutron-record/fuse-energy-neutron-record-16x9.jpg" width="1200" height="675" alt="A ring of capacitors discharging into a glowing pinched plasma column that emits a burst of bright specks, beside an enormous gauge showing energy in towering over energy out." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-hardware" href="/articles/fuse-energy-neutron-record/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M12 21l0 .01"/><path d="M3 9l0 .01"/><path d="M21 9l0 .01"/><path d="M8 20.1a9 9 0 0 1 -5 -7.1"/><path d="M16 20.1a9 9 0 0 0 5 -7.1"/><path d="M6.2 5a9 9 0 0 1 11.4 0"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 15, 2026</span></div>
       <a class="t" href="/articles/fuse-energy-neutron-record/">Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power</a>
@@ -393,12 +370,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">05</span>
-    <a class="img" href="/articles/gpt-5-6-sol-ultrafast/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/gpt-5-6-sol-ultrafast-16x9.webp">
-        <img src="https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/gpt-5-6-sol-ultrafast-16x9.jpg" width="1200" height="675" alt="A wafer-sized chip glowing like a racetrack, with a stream of light tokens pulling far ahead of a row of ordinary server racks." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-ai-models" href="/articles/gpt-5-6-sol-ultrafast/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M13.41 10.59l2.59 -2.59"/><path d="M7 12a5 5 0 0 1 5 -5"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 14, 2026</span></div>
       <a class="t" href="/articles/gpt-5-6-sol-ultrafast/">GPT-5.6 Sol Ultrafast: OpenAI&#39;s 14x Speed Mode on Cerebras</a>
@@ -408,12 +380,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">06</span>
-    <a class="img" href="/articles/pixel-11-india-price/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/pixel-11-india-price/pixel-11-india-price-16x9.webp">
-        <img src="https://thetechdocket.com/articles/pixel-11-india-price/pixel-11-india-price-16x9.jpg" width="1200" height="675" alt="Four Pixel 11 phones in a row beside a large rupee price tag, with a small subscription meter ticking behind them." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-hardware" href="/articles/pixel-11-india-price/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"/><path d="M7 9l11 0"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 13, 2026</span></div>
       <a class="t" href="/articles/pixel-11-india-price/">Pixel 11 India Prices: Full List, Hikes and the AI Catch</a>
@@ -423,12 +390,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">07</span>
-    <a class="img" href="/articles/gpt-5-6-cyber/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.webp">
-        <img src="https://thetechdocket.com/articles/gpt-5-6-cyber/gpt-5-6-cyber-16x9.jpg" width="1200" height="675" alt="A locked steel gate in front of a glowing terminal, with a keyhole shaped like a bug icon." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-policy" href="/articles/gpt-5-6-cyber/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0"/><path d="M15 9h.01"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 12, 2026</span></div>
       <a class="t" href="/articles/gpt-5-6-cyber/">GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model</a>
@@ -438,12 +400,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">08</span>
-    <a class="img" href="/articles/muse-glimmer-meta-open-model/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.webp">
-        <img src="https://thetechdocket.com/articles/muse-glimmer-meta-open-model/muse-glimmer-meta-open-model-16x9.jpg" width="1200" height="675" alt="A small glowing chip sits unlocked on a desk while a larger sealed vault model looms in the background." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-ai-models" href="/articles/muse-glimmer-meta-open-model/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6"/><path d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M8 11v-5a4 4 0 0 1 8 0"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 11, 2026</span></div>
       <a class="t" href="/articles/muse-glimmer-meta-open-model/">Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It</a>
@@ -453,12 +410,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">09</span>
-    <a class="img" href="/articles/ai-models-hacking-companies-safety-tests/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/ai-models-hacking-companies-safety-tests-16x9.webp">
-        <img src="https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/ai-models-hacking-companies-safety-tests-16x9.jpg" width="1200" height="675" alt="A sealed glass testing chamber with a robotic arm threading a wire through a crack toward a city of servers outside." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-policy" href="/articles/ai-models-hacking-companies-safety-tests/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 9v-1a3 3 0 0 1 6 0v1"/><path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3"/><path d="M3 13l4 0"/><path d="M17 13l4 0"/><path d="M12 20l0 -6"/><path d="M4 19l3.35 -2"/><path d="M20 19l-3.35 -2"/><path d="M4 7l3.75 2.4"/><path d="M20 7l-3.75 2.4"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 10, 2026</span></div>
       <a class="t" href="/articles/ai-models-hacking-companies-safety-tests/">AI Models Hacked Real Companies in Safety Tests</a>
@@ -468,12 +420,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">10</span>
-    <a class="img" href="/articles/weathernext-cyclones-extra-day/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.webp">
-        <img src="https://thetechdocket.com/articles/weathernext-cyclones-extra-day/weathernext-cyclones-extra-day-16x9.jpg" width="1200" height="675" alt="Satellite view of a spiralling tropical cyclone with branching AI-predicted track lines fanning out ahead of the storm." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-ai-models" href="/articles/weathernext-cyclones-extra-day/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 4l-18 0"/><path d="M13 16l-6 0"/><path d="M11 20l4 0"/><path d="M6 8l14 0"/><path d="M4 12l12 0"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 9, 2026</span></div>
       <a class="t" href="/articles/weathernext-cyclones-extra-day/">WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</a>
@@ -483,12 +430,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">11</span>
-    <a class="img" href="/articles/openai-jony-ive-device/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/openai-jony-ive-device/openai-jony-ive-device-16x9.webp">
-        <img src="https://thetechdocket.com/articles/openai-jony-ive-device/openai-jony-ive-device-16x9.jpg" width="1200" height="675" alt="A small doughnut-shaped metal smart speaker glowing softly on a desk, with a large question mark of light hovering above it." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-hardware" href="/articles/openai-jony-ive-device/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -14"/><path d="M9 14a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M12 7l0 .01"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 8, 2026</span></div>
       <a class="t" href="/articles/openai-jony-ive-device/">OpenAI Jony Ive Device: $300-400 Speaker Reported for 2027</a>
@@ -498,12 +440,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
   
   <div class="card">
     <span class="no" aria-hidden="true">12</span>
-    <a class="img" href="/articles/ai-data-center-backlash-nashville-vizag/">
-      <picture>
-        <source type="image/webp" srcset="https://thetechdocket.com/articles/ai-data-center-backlash-nashville-vizag/ai-data-center-backlash-nashville-vizag-16x9.webp">
-        <img src="https://thetechdocket.com/articles/ai-data-center-backlash-nashville-vizag/ai-data-center-backlash-nashville-vizag-16x9.jpg" width="1200" height="675" alt="A data center building casting a long shadow across a zoo enclosure on one side and a water reservoir on the other, with courthouse columns rising behind both." loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-policy" href="/articles/ai-data-center-backlash-nashville-vizag/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-2"/><path d="M3 15a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -2"/><path d="M7 8l0 .01"/><path d="M7 16l0 .01"/><path d="M11 8h6"/><path d="M11 16h6"/></svg></a>
     <div>
       <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 7, 2026</span></div>
       <a class="t" href="/articles/ai-data-center-backlash-nashville-vizag/">AI Data Center Backlash: Nashville to Vizag, Cities Push Back</a>

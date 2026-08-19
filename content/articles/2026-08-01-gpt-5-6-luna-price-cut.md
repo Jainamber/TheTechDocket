@@ -6,6 +6,7 @@ hub: ai-models
 tags: [openai, gpt-5-6, api-pricing, ai-price-war, india]
 description: "OpenAI cut GPT-5.6 Luna API prices 80% to $0.20 per million input tokens and Terra 20% on July 30. New rates vs Gemini, Claude, DeepSeek — and the India cost math."
 hero_alt: "Falling price tags beside stacks of glowing tokens on a dark pricing dashboard, symbolising cheaper AI model rates."
+hero_icon: tag
 keyword: "gpt-5.6 price cut"
 original_value: "Combines OpenAI's official old-vs-new rate card with rivals' own pricing pages into one rupee-denominated comparison, and reads the cut against OpenAI's India-first pricing playbook and the IBM–Sarvam sovereign-AI push — a synthesis no single source has."
 selection_note: "Editorial override of the scorer's top pick (Anthropic cybersecurity-evals disclosure, 0.55): that would have been a second consecutive AI-security-breach story after yesterday's OpenAI–Hugging Face piece. Switched to the next strong candidate (0.54) for hub balance (ai-models last served July 15) and higher search utility."

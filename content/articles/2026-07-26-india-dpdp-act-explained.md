@@ -6,6 +6,7 @@ hub: explainers
 tags: [dpdp act, data protection, privacy, india, consent]
 description: "India's DPDP Act explained with exact dates: which privacy rights are live in July 2026, which arrive in 2027, penalties, and what you can do today."
 hero_alt: "Timeline graphic showing India's DPDP Act phases from 2023 assent through the November 2025 rules to May 2027 enforcement"
+hero_icon: shield-lock
 keyword: "dpdp act explained"
 original_value: "Most DPDP coverage implies the law is already fully in force. This piece pins every user-facing right to its actual start date, corrects two recurring errors (the ₹500-crore penalty myth and the 22-languages claim), and connects the AI-training gray zone to the live Supreme Court case."
 selection_note: "Owner-directed explainers batch (2026-07-26); evergreen-backlog topic, demand and gap validated in 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."

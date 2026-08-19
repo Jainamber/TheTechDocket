@@ -6,6 +6,7 @@ hub: ai-models
 tags: [meta, open-source, ai-agents, zuckerberg, local-ai, india]
 description: "Meta's Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back."
 hero_alt: "A small glowing chip sits unlocked on a desk while a larger sealed vault model looms in the background."
+hero_icon: lock-open
 keyword: "muse glimmer"
 original_value: "Places the Glimmer release inside Meta's dated open-closed-open zigzag, separates Meta's self-reported benchmark wins from independent measurements, and tests the open-weights pitch against India's own sovereign-model bets — Sarvam's Apache 2.0 releases and Krutrim's retreat."
 sources:

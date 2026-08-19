@@ -16,6 +16,9 @@ from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
+from . import icons
+from .svgpath import render_icon
+
 FONT_DIRS = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
@@ -113,205 +116,14 @@ def pick_motif(text: str, hub: str) -> str:
             "docket": "ticker"}.get(hub, "neural")
 
 
-def _draw_motif(img: Image.Image, motif: str, hub: str, seed: int,
-                ss: int) -> Image.Image:
-    """Draw one editorial line-art motif on a transparent layer and
-    composite. Flat poster style: 2-3 stroke weights, accent + white
-    tints, one filled focal element. All geometry scales with height."""
-    W, H = img.size
-    top, bottom, accent = PALETTES.get(hub, DEFAULT_PALETTE)
-    lite = _mix(accent, (255, 255, 255), 0.55)
-    soft = _mix(accent, (255, 255, 255), 0.25)
-    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(lay)
-    u = H / 100.0                          # 1 unit = 1% of height
-    thin = max(2, int(ss * 1.4))
-    mid = max(3, int(ss * 2.4))
-    fat = max(4, int(ss * 3.6))
-    r = [((seed >> (i * 2)) & 255) / 255 for i in range(16)]
-    cx, cy = W * (0.66 + 0.06 * r[0]), H * (0.46 + 0.06 * r[1])
-
-    def ell(x, y, rad, **kw):
-        d.ellipse([x - rad, y - rad, x + rad, y + rad], **kw)
-
-    if motif == "chip":
-        s = 26 * u
-        d.rounded_rectangle([cx - s, cy - s, cx + s, cy + s],
-                            radius=int(4 * u), outline=(*lite, 235), width=fat)
-        d.rounded_rectangle([cx - s * .45, cy - s * .45, cx + s * .45, cy + s * .45],
-                            radius=int(2 * u), fill=(*accent, 90),
-                            outline=(*soft, 200), width=mid)
-        for i in range(4):
-            off = -s * .72 + i * (s * .48)
-            for a, b in ((cx + off, cy - s), (cx + off, cy + s)):
-                d.line([a, b, a, b + (-9 * u if b < cy else 9 * u)],
-                       fill=(*lite, 210), width=mid)
-            for a in (cx - s, cx + s):
-                d.line([a, cy + off, a + (-9 * u if a < cx else 9 * u), cy + off],
-                       fill=(*lite, 210), width=mid)
-        d.line([cx - s * 2.2, cy + s * 1.55, cx - s * .45, cy + s * 1.55,
-                cx - s * .45, cy + s * .45], fill=(*soft, 150), width=thin)
-    elif motif == "neural":
-        pts = []
-        for i in range(7):
-            a = r[i] * 6.28318
-            rad = (16 + 18 * r[i + 4]) * u
-            pts.append((cx + rad * math.cos(a),
-                        cy + rad * math.sin(a) * 0.8))
-        for i in range(len(pts)):
-            for j in range(i + 1, len(pts)):
-                if (i + j) % 2:
-                    d.line([pts[i], pts[j]], fill=(*soft, 90), width=thin)
-        for i, p in enumerate(pts):
-            ell(p[0], p[1], (2.2 + 1.6 * r[i + 6]) * u, fill=(*lite, 235))
-        ell(cx, cy, 4.5 * u, fill=(*accent, 255))
-        ell(cx, cy, 8 * u, outline=(*lite, 160), width=thin)
-    elif motif == "chat":
-        bw, bh = 40 * u, 24 * u
-        d.rounded_rectangle([cx - bw, cy - bh - 6 * u, cx + bw * .15, cy - 6 * u + bh * .1],
-                            radius=int(7 * u), outline=(*lite, 235), width=fat)
-        d.polygon([(cx - bw * .55, cy - 6 * u + bh * .08),
-                   (cx - bw * .35, cy - 6 * u + bh * .08),
-                   (cx - bw * .55, cy + bh * .38)], fill=(*lite, 235))
-        d.rounded_rectangle([cx - bw * .05, cy + 2 * u, cx + bw, cy + 2 * u + bh],
-                            radius=int(7 * u), fill=(*accent, 80),
-                            outline=(*soft, 210), width=mid)
-        for i in range(3):
-            ell(cx - bw * .55 + i * 9 * u, cy - 6 * u - bh * .42, 1.8 * u,
-                fill=(*lite, 230))
-    elif motif == "scales":
-        d.line([cx, cy - 26 * u, cx, cy + 22 * u], fill=(*lite, 235), width=fat)
-        d.line([cx - 26 * u, cy - 18 * u, cx + 26 * u, cy - 18 * u],
-               fill=(*lite, 235), width=fat)
-        ell(cx, cy - 26 * u, 3 * u, fill=(*accent, 255))
-        for sx in (-26 * u, 26 * u):
-            d.line([cx + sx, cy - 18 * u, cx + sx - 8 * u, cy + 1 * u],
-                   fill=(*soft, 200), width=thin)
-            d.line([cx + sx, cy - 18 * u, cx + sx + 8 * u, cy + 1 * u],
-                   fill=(*soft, 200), width=thin)
-            d.arc([cx + sx - 10 * u, cy - 6 * u, cx + sx + 10 * u, cy + 10 * u],
-                  20, 160, fill=(*lite, 235), width=mid)
-        d.line([cx - 14 * u, cy + 22 * u, cx + 14 * u, cy + 22 * u],
-               fill=(*lite, 235), width=fat)
-    elif motif == "shield":
-        p = [(cx, cy - 26 * u), (cx + 20 * u, cy - 18 * u),
-             (cx + 20 * u, cy + 2 * u), (cx, cy + 26 * u),
-             (cx - 20 * u, cy + 2 * u), (cx - 20 * u, cy - 18 * u)]
-        d.polygon(p, outline=(*lite, 240), width=fat)
-        d.polygon([(x * .999, y) for x, y in p], fill=(*accent, 55))
-        ell(cx, cy - 4 * u, 5 * u, outline=(*lite, 235), width=mid)
-        d.line([cx, cy + 1 * u, cx, cy + 9 * u], fill=(*lite, 235), width=mid)
-    elif motif == "waveform":
-        n = 15
-        for i in range(n):
-            x = cx - 34 * u + i * (68 * u / (n - 1))
-            amp = (4 + 20 * abs(math.sin(i * 1.7 + seed % 7))) * u
-            col = (*accent, 255) if 5 <= i <= 9 else (*lite, 200)
-            d.line([x, cy - amp, x, cy + amp], fill=col, width=fat)
-        d.rounded_rectangle([cx - 46 * u, cy - 30 * u, cx - 38 * u, cy + 30 * u],
-                            radius=int(3.5 * u), outline=(*soft, 180), width=mid)
-    elif motif == "price":
-        pts = [(cx - 34 * u, cy - 20 * u), (cx - 16 * u, cy - 4 * u),
-               (cx - 4 * u, cy - 14 * u), (cx + 22 * u, cy + 14 * u)]
-        d.line(pts, fill=(*lite, 240), width=fat, joint="curve")
-        # solid triangular arrowhead at the tip (barbs swept BACK from the
-        # travel direction — the open-fork look was a v3.0 draw bug)
-        tip = pts[-1]
-        ang = math.atan2(tip[1] - pts[-2][1], tip[0] - pts[-2][0])
-        ah = 8 * u
-        barbs = [(tip[0] - ah * math.cos(ang - 0.42),
-                  tip[1] - ah * math.sin(ang - 0.42)),
-                 (tip[0] - ah * math.cos(ang + 0.42),
-                  tip[1] - ah * math.sin(ang + 0.42))]
-        d.polygon([tip, barbs[0], barbs[1]], fill=(*lite, 240))
-        for i, p in enumerate(pts[:-1]):
-            ell(p[0], p[1], 2.6 * u, fill=(*accent, 255))
-        ell(cx - 30 * u, cy + 18 * u, 8 * u, outline=(*soft, 190), width=mid)
-        ell(cx - 18 * u, cy + 22 * u, 6 * u, outline=(*soft, 140), width=thin)
-    elif motif == "phone":
-        d.rounded_rectangle([cx - 15 * u, cy - 27 * u, cx + 15 * u, cy + 27 * u],
-                            radius=int(5 * u), outline=(*lite, 240), width=fat)
-        d.line([cx - 5 * u, cy - 22 * u, cx + 5 * u, cy - 22 * u],
-               fill=(*lite, 200), width=mid)
-        s = 8 * u
-        d.rounded_rectangle([cx - s, cy - s, cx + s, cy + s], radius=int(2 * u),
-                            fill=(*accent, 90), outline=(*soft, 220), width=mid)
-        for off in (-s * .5, 0, s * .5):
-            d.line([cx + off, cy + s, cx + off, cy + s + 4 * u],
-                   fill=(*soft, 200), width=thin)
-    elif motif == "cloud":
-        for dx, dy, rad in ((-12, 2, 12), (0, -6, 15), (13, 2, 11)):
-            ell(cx + dx * u, cy - 8 * u + dy * u, rad * u,
-                outline=(*lite, 230), width=fat)
-        d.line([cx - 24 * u, cy + 6 * u, cx + 24 * u, cy + 6 * u],
-               fill=(*lite, 230), width=fat)
-        for i, dx in enumerate((-14, 0, 14)):
-            y0, y1 = cy + 12 * u, cy + 24 * u
-            d.line([cx + dx * u, y0, cx + dx * u, y1],
-                   fill=(*accent, 235) if i == 1 else (*soft, 180), width=mid)
-            for da in (-1, 1):
-                d.line([cx + dx * u, y1, cx + dx * u + da * 3.5 * u, y1 - 4 * u],
-                       fill=(*accent, 235) if i == 1 else (*soft, 180), width=mid)
-    elif motif == "pages":
-        for i, (dx, dy) in enumerate(((9, -8), (4.5, -4), (0, 0))):
-            box = [cx - 20 * u + dx * u, cy - 24 * u + dy * u,
-                   cx + 14 * u + dx * u, cy + 24 * u + dy * u]
-            d.rounded_rectangle(box, radius=int(2.5 * u),
-                                fill=(int(top[0] * .7), int(top[1] * .7),
-                                      int(top[2] * .7), 235) if i == 2 else None,
-                                outline=(*lite, 235 if i == 2 else 120),
-                                width=mid if i == 2 else thin)
-        for j in range(5):
-            wl = (24 - (6 if j == 4 else 0)) * u
-            d.line([cx - 15 * u, cy - 15 * u + j * 8 * u,
-                    cx - 15 * u + wl, cy - 15 * u + j * 8 * u],
-                   fill=(*soft, 210) if j else (*accent, 255),
-                   width=fat if not j else mid)
-        d.line([cx + 20 * u, cy - 10 * u, cx + 27 * u, cy - 10 * u,
-                cx + 27 * u, cy + 10 * u, cx + 20 * u, cy + 10 * u],
-               fill=(*accent, 235), width=mid)
-    elif motif == "magnify":
-        ell(cx - 4 * u, cy - 6 * u, 17 * u, outline=(*lite, 240), width=fat)
-        d.line([cx + 8 * u, cy + 6 * u, cx + 22 * u, cy + 20 * u],
-               fill=(*lite, 240), width=fat + 2)
-        for i in range(3):
-            ell(cx - 10 * u + i * 6 * u, cy - 8 * u + (i % 2) * 5 * u, 1.7 * u,
-                fill=(*accent, 255))
-        d.arc([cx - 15 * u, cy - 17 * u, cx + 7 * u, cy + 5 * u], 200, 300,
-              fill=(*soft, 200), width=thin)
-    elif motif == "globe":
-        R = 24 * u
-        ell(cx, cy, R, outline=(*lite, 240), width=fat)
-        d.ellipse([cx - R * .45, cy - R, cx + R * .45, cy + R],
-                  outline=(*soft, 190), width=thin)
-        d.line([cx - R, cy, cx + R, cy], fill=(*soft, 190), width=thin)
-        for k in (-.5, .5):
-            d.arc([cx - R, cy - R + k * R * (1 if k > 0 else -1) * 0,
-                   cx + R, cy + R], 200 if k < 0 else 20,
-                  340 if k < 0 else 160, fill=(*soft, 150), width=thin)
-        ell(cx + R * .5, cy - R * .4, 3 * u, fill=(*accent, 255))
-        ell(cx - R * .55, cy + R * .3, 2.2 * u, fill=(*lite, 235))
-    else:  # "ticker" — docket default: reading-order signal blocks
-        for i in range(5):
-            bw = (10 + 9 * r[i + 3]) * u
-            x0 = cx - 36 * u + i * 16 * u
-            d.rounded_rectangle([x0, cy - 4 * u - bw / 2, x0 + 11 * u,
-                                 cy - 4 * u + bw / 2], radius=int(1.8 * u),
-                                fill=(*accent, 235) if i == 0 else None,
-                                outline=(*lite, 220), width=mid)
-        d.line([cx - 38 * u, cy + 20 * u, cx + 40 * u, cy + 20 * u],
-               fill=(*soft, 170), width=thin)
-
-    return Image.alpha_composite(img.convert("RGBA"), lay).convert("RGB")
-
-
 def _cover(w: int, h: int, hub: str, key: str,
-           motif: str | None = None) -> Image.Image:
-    """A premium per-hub cover: deep gradient + one controlled corner glow
-    + a drawn, topic-related MOTIF (cover art v3) + faint 'signal' arcs +
-    grain + a small wordmark. Deterministic per (hub, key). Still no
-    headline text — the motif carries the meaning, the page carries the
-    words.
+           motif: str | None = None, icon: str | None = None) -> Image.Image:
+    """Cover art v4 (2026-08-19): deep per-hub gradient + one controlled
+    corner glow + a large rounded ICON TILE carrying the same Tabler icon
+    the page shows in its tile component (engine/icons.py), so social cards
+    and on-page tiles speak one visual language. Deterministic per
+    (hub, key). No headline text — the page carries the words.
+    `icon` wins; else `motif` (v3 keyword class) maps to an icon; else hub default.
     """
     ss = 2
     W, H = w * ss, h * ss
@@ -337,21 +149,22 @@ def _cover(w: int, h: int, hub: str, key: str,
         (W, H), (int(W * (0.2 if right else 0.8)), int(H * 0.12)),
         int(W * 0.26), _dark(_mix(accent, (255, 255, 255), 0.3), 0.30)))
 
-    # faint 'signal' arcs from the glow corner — background texture only in
-    # v3 (the motif is the focal element now, arcs must not compete)
-    arc = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ad = ImageDraw.Draw(arc)
-    line_col = _mix(accent, (255, 255, 255), 0.25)
-    for i in range(5):
-        rad = int(W * (0.16 + 0.13 * i))
-        ad.ellipse([gx - rad, gy - rad, gx + rad, gy + rad],
-                   outline=(*line_col, max(8, 34 - i * 6)),
-                   width=max(2, int(ss * 1.2)))
-    arc = arc.filter(ImageFilter.GaussianBlur(int(ss * 0.6)))
-    img = Image.alpha_composite(img.convert("RGBA"), arc).convert("RGB")
-
-    # topic motif (v3) — drawn before vignette/grain so it sits in the light
-    img = _draw_motif(img, motif or pick_motif(key, hub), hub, seed, ss)
+    # icon tile (v4): a frosted, hub-tinted rounded square, centred, with
+    # the story's icon drawn bold in near-white. Drawn before vignette/grain
+    # so it sits in the same light as the background.
+    name = icons.resolve_icon(icon, motif or pick_motif(key, hub), hub)
+    tile = int(min(W, H) * (0.50 if W > H * 1.2 else 0.40))
+    tx, ty = (W - tile) // 2, (H - tile) // 2 - int(H * 0.02)
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    ld.rounded_rectangle([tx, ty, tx + tile, ty + tile], radius=int(tile * 0.24),
+                         fill=(*_mix(accent, top, 0.35), 110),
+                         outline=(255, 255, 255, 46), width=max(2, int(ss * 1.2)))
+    ico_size = int(tile * 0.54)
+    ico = render_icon(icons.ICONS[name], ico_size,
+                      _mix(accent, (255, 255, 255), 0.78), stroke=1.75, ss=3)
+    layer.alpha_composite(ico, (tx + (tile - ico_size) // 2, ty + (tile - ico_size) // 2))
+    img = Image.alpha_composite(img.convert("RGBA"), layer).convert("RGB")
 
     # framed vignette falloff
     vmask = _vignette((W, H))
@@ -374,12 +187,12 @@ def _cover(w: int, h: int, hub: str, key: str,
 
 
 def generate_hero(title: str, slug: str, hub: str, site_name: str,
-                  outdir: Path) -> list[dict]:
+                  outdir: Path, icon: str | None = None) -> list[dict]:
     outdir.mkdir(parents=True, exist_ok=True)
     outputs = []
     motif = pick_motif(f"{title} {slug.replace('-', ' ')}", hub)
     for w, h, label in [(1200, 675, "16x9"), (1200, 900, "4x3"), (1200, 1200, "1x1")]:
-        img = _cover(w, h, hub, slug, motif=motif)
+        img = _cover(w, h, hub, slug, motif=motif, icon=icon)
         base = outdir / f"{slug}-{label}"
         img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
         img.save(f"{base}.webp", quality=84, method=6)
@@ -392,7 +205,7 @@ def generate_docket_card(date_str: str, date_human: str, site_name: str,
                          outdir: Path) -> dict:
     """OG card for a Today's Docket page (1200x675 + webp), textless cover."""
     outdir.mkdir(parents=True, exist_ok=True)
-    img = _cover(1200, 675, "docket", date_str, motif="ticker")
+    img = _cover(1200, 675, "docket", date_str, motif="ticker", icon="news")
     base = outdir / f"docket-{date_str}-16x9"
     img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
     img.save(f"{base}.webp", quality=84, method=6)

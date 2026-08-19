@@ -8,6 +8,7 @@ hub: explainers
 tags: [deepfakes, ai images, media literacy, c2pa]
 description: "A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India's 2026 deepfake rules."
 hero_alt: "Split-screen comparison of a real photograph and an AI-generated image with a Content Credentials verification icon overlaid"
+hero_icon: photo-search
 keyword: "how to spot ai generated images"
 original_value: "This piece checks C2PA camera adoption, SynthID's real detector status, platform labeling rules, detection-tool accuracy, and India's 2026 deepfake law against each other in one place, rather than treating each as a standalone story."
 sources:

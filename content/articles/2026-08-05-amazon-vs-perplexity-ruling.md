@@ -6,6 +6,7 @@ hub: big-tech
 tags: [amazon, perplexity, agentic-commerce, ai-agents, cfaa, india]
 description: "The Ninth Circuit lifted Amazon's block on Perplexity's Comet agent on August 4. What 'a tool, not a person' changes, who still blocks agents, and the India angle."
 hero_alt: "A robotic shopping cart rolling past a lifted courtroom barrier gate, with warehouse shelves and a scales-of-justice motif behind it."
+hero_icon: gavel
 keyword: "amazon vs perplexity ruling"
 original_value: "Connects the Ninth Circuit's 'tool, not a person' reasoning to the agentic-commerce protocol race and India's NPCI agent-payment pilots — including Perplexity's absence from them — a synthesis no single source has published."
 selection_note: "Editorial override of the scorer's top pick ('LLMs reward expertise', an HN-viral personal essay with no news event or search demand). The Perplexity-Amazon appeals ruling scored 0.54 with two independent source classes, is fresh (Aug 4-5 IST), carries a strong India angle, and fills the big-tech hub gap (last five posts: ai-models x3, policy x2)."

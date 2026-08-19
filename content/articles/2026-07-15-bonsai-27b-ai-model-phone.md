@@ -8,6 +8,7 @@ hub: ai-models
 tags: [on-device AI, small models, quantization, PrismML, Qwen]
 description: "PrismML's Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What's verified, what's hype, and which phones in India can run it."
 hero_alt: "Stylized graphic card reading Bonsai 27B, a 27-billion-parameter AI model compressed to run on a smartphone"
+hero_icon: device-mobile
 keyword: "bonsai 27b"
 original_value: "Synthesizes verified specs, conflicting benchmark numbers and community pushback into one assessment, and adds the India angle no outlet covered: which phones sold in India can actually run it."
 sources:

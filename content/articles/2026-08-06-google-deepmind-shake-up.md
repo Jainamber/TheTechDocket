@@ -6,6 +6,7 @@ hub: big-tech
 tags: [google, deepmind, jeff-dean, demis-hassabis, discovery-loop, gemini, india]
 description: "Hassabis moves to DeepMind Chair, Kavukcuoglu takes charge, and Jeff Dean exits with three peers to found Discovery Loop. What Aug 5 changes for Google and India."
 hero_alt: "A chessboard styled as an org chart: a king piece stepping aside to an advisory square while four pieces walk off the board toward a small startup flag."
+hero_icon: hierarchy-2
 keyword: "google deepmind shake-up"
 original_value: "Assembles the full 2026 DeepMind exit timeline, sets the Hassabis move against the Gates-2000 and Page-Brin-2019 founder playbook, and asks what the reshuffle means for Google's $15B Vizag hub, the Jio Gemini bundle and DeepMind Bengaluru — connections no single outlet has made."
 selection_note: ""

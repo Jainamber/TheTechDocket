@@ -6,6 +6,7 @@ hub: ai-tools
 tags: [ai-hallucinations, pwc, gptzero, big-four, consulting]
 description: "GPTZero found fabricated sources and a ChatGPT tracking link in four PwC reports. All Big Four firms have now been caught publishing AI errors. The India angle."
 hero_alt: "A glossy consulting report on a boardroom desk, its footnotes dissolving into fragments under a magnifying glass."
+hero_icon: file-alert
 keyword: "PwC AI hallucinations"
 original_value: "The first side-by-side scorecard of all five Big Four AI-fabrication cases — documents, detection findings, consequences compared — plus the India exposure and the regulatory gap no single outlet has assembled."
 selection_note: "Overrode scorer's #1 'AI creators ask for slowdown' (0.416): single-source in today's inbox, saturated by CNN/Business Today since Jul 28, and it would have been the third policy piece in five days. The near-tied alternate (0.4153, broke Jul 29) has a public primary source (GPTZero), a verifiable five-incident pattern no outlet has tabulated, winnable long-tail queries, and rotates the ai-tools hub."

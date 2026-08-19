@@ -6,6 +6,7 @@ hub: ai-tools
 tags: [openai, chatgpt, teen-safety, parental-controls, age-verification, dpdp-act]
 description: "OpenAI's ChatGPT for Teens is rolling out to ages 13–17 with blocked content, Study Mode and parental controls. How age prediction decides, and the India catch."
 hero_alt: "Abstract cover art with a shield and chat-bubble motif over a deep gradient, for OpenAI's ChatGPT for Teens launch."
+hero_icon: user-shield
 keyword: "chatgpt for teens"
 original_value: "Sets the launch against the full year of lawsuits and laws that produced it, compares under-18 policy across five chatbots in one table, and tests the 13–17 tier against India's under-18 DPDP consent rule — no single outlet does all three."
 selection_note: "Scorer's pick accepted. Google Trends RSS and Hacker News API were unreachable from this session (WebFetch egress blocked), so the inbox was built from WebSearch signals; the launch led coverage across CNBC, Axios, Fortune, CNN, TechCrunch and the AP wire on Aug 18–19."

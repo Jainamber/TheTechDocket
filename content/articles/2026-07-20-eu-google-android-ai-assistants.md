@@ -6,6 +6,7 @@ hub: policy
 tags: [google, android, dma, eu, ai-assistants, gemini]
 description: "The EU's two binding DMA orders make Google open 11 Android features to rival AI assistants by 2027 and share search data. What changes, and what it means for India."
 hero_alt: "Conceptual illustration of an Android phone with several open doors, each leading to a different AI assistant, under an EU flag"
+hero_icon: scale
 keyword: "eu google android ai assistants"
 original_value: "Connects the EC's full technical specification — all 11 Android features and the staged 2026–2028 deadlines — with Google's response, the Apple precedent, and India's regulatory position (CCI appeal, paused Digital Competition Bill, EU-only rollout pattern) in one piece; no single source covers all three."
 selection_note: "Scorer's top pick (Galaxy Z Fold 8 leaks) was a pre-event rumour roundup with no primary sources and high speculation risk; switched to the #3 candidate: a primary-sourced EU decision with lasting reader impact, a genuine India angle, and it fills the empty policy hub flagged in STRATEGY-90D Phase 1."

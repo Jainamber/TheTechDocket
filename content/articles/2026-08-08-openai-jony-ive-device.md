@@ -6,6 +6,7 @@ hub: hardware
 tags: [openai, jony-ive, smart-speaker, ai-hardware, chatgpt, apple]
 description: "Bloomberg reports OpenAI's first device is a $300-400 screen-free, doughnut-shaped speaker for 2027. What's confirmed, what's rumor, and the India price math."
 hero_alt: "A small doughnut-shaped metal smart speaker glowing softly on a desk, with a large question mark of light hovering above it."
+hero_icon: device-speaker
 keyword: "openai jony ive device"
 original_value: "Sorts 15 months of leaks into a confirmed-vs-reported ledger, connects the Apple trade-secrets fight to the same-day court filing, and runs the India price math no outlet has done."
 selection_note: "Scorer's top pick was a 'max-severity Exchange flaw exploited' headline from an Aug-7 digest; we could not trace it to a verifiable fresh primary story (the underlying CVE-2026-42897 saga's latest confirmed beat was July 30). Switched to the day's most corroborated verifiable story: Bloomberg's Aug 6 OpenAI device report, covered by 10+ independent outlets within 24 hours."

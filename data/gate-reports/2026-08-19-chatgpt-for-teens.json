@@ -1,6 +1,6 @@
 {
   "slug": "chatgpt-for-teens",
-  "checked_at": "2026-08-19T06:58:00.819716+05:30",
+  "checked_at": "2026-08-19T14:50:14.836053+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 63KB (<=90), hero 31KB (<=320)"
+      "detail": "html 64KB (<=90), hero 30KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
