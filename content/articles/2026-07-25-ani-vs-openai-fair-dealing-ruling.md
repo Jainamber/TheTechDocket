@@ -6,6 +6,7 @@ hub: policy
 tags: [openai, ani, copyright, fair-dealing, ai-training, delhi-high-court]
 description: "Delhi High Court denied ANI's injunction against OpenAI, calling ChatGPT training prima facie fair dealing. What the July 24 ruling says and who it affects."
 hero_alt: "Illustration of the Delhi High Court building with a gavel resting beside a stack of newspapers that dissolve into streams of digital tokens flowing toward a neural network"
+hero_icon: gavel
 keyword: "ani vs openai"
 original_value: "Puts the ruling's actual holdings side by side with the US, UK, EU and Japan training-law map and the Indian government's own licensing proposal — a collision no single report of the judgment connects."
 selection_note: "Scorer's top pick was the Claude Opus 5 launch (0.57), but that head-term story was already saturated by major outlets and would have been the third ai-models piece in four days and the second consecutive Anthropic story. Switched to alternate #1 (0.56): a fresh, India-first policy ruling with global significance, clear long-tail search demand, and it strengthens the under-served policy hub."

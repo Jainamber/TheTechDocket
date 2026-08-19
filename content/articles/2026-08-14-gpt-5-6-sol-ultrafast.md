@@ -6,6 +6,7 @@ hub: ai-models
 tags: [openai, cerebras, gpt-5-6, inference, nvidia, ai-hardware, india]
 description: "OpenAI's new Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens a second on Cerebras wafer chips. What's verified, what's vendor claim, and who gets access."
 hero_alt: "A wafer-sized chip glowing like a racetrack, with a stream of light tokens pulling far ahead of a row of ordinary server racks."
+hero_icon: gauge
 keyword: "gpt-5.6 sol ultrafast"
 original_value: "Places the Ultrafast launch against the Codex-Spark precedent it is usually confused with, Nvidia's Groq-derived counter-chip shipping the same quarter, and the same-day Indian compute orders — separating vendor benchmark claims from independently measured numbers throughout."
 selection_note: "Scorer's top pick was the Vantage Data Centers $100B IPO exploration — a single-source 'sources say' exclusive we could neither independently verify nor add value to. Chose the Cerebras/OpenAI Ultrafast launch: announced by both companies with primary pages, Hacker News front-page momentum, a fresh searchable term, and genuine synthesis room. Scores were near-tied (0.39 vs 0.36) on a websearch-fallback day. Also of note: the L&T/Together AI candidate was initially dropped by a scorer keyword collision (deny term 'actor' substring-matching 'factory'); reworded and rescored, it ranked below the pick and is covered in the India angle and docket instead."

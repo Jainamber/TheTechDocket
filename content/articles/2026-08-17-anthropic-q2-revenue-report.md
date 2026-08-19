@@ -6,6 +6,7 @@ hub: big-tech
 tags: [anthropic, claude, ai-revenue, ipo, openai, ai-economics, frontier-labs]
 description: "Documents viewed by Bloomberg put Anthropic's Q2 2026 revenue above $11.5 billion, up 14-fold, with a first positive adjusted quarter — and a $2T IPO question."
 hero_alt: "Steep bar chart of Anthropic's quarterly revenue climbing from under one billion dollars to over eleven billion, beside an IPO ticket stub."
+hero_icon: chart-line
 keyword: "anthropic revenue"
 original_value: "Assembles the full on-record revenue trajectory in one table, separates adjusted operating income from actual profit, sets the leaked figures against rivals' run-rates and the $2T IPO math, and pairs the bull case with the named, sourced risks — no single current source does all four."
 selection_note: "Editorial override (2026-08-17): scorer's top pick was a CN-radar signal on China's AI-companion rules — corroborated but stale (rules effective July 15, main coverage July 23), so it stays a docket-lane lead. Apple's Houston plant opening (Aug 13) was four days old with nothing to add. The Anthropic Q2 report (Bloomberg Aug 14, CNBC/Fortune Aug 15) is the freshest corroborated story, has no dedup conflict, and extends our AI-economics thread from the DeepSeek and GPT-5.6 pricing coverage."

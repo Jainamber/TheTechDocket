@@ -156,6 +156,7 @@ hub: ai-models        # one of config.yaml content.hubs
 tags: [tag1, tag2]
 description: "110–165 char meta description with concrete specifics."
 hero_alt: "Descriptive alt text for the generated hero image."
+hero_icon: "cpu"   # REQUIRED — one Tabler icon name that best represents the story's central object; choose from engine/icons.py ICON_NAMES (e.g. cpu, device-mobile, scale, gavel, coins, currency-rupee, shield-lock, sparkles, bug, rocket, tornado, chart-line, server-2, file-text, message-chatbot, world). It renders as the article's icon tile on every surface.
 keyword: "the primary search keyword"
 original_value: "One sentence: what this article adds that no single source has."
 selection_note: ""                    # only if you overrode the scorer's pick

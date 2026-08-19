@@ -6,6 +6,7 @@ hub: ai-models
 tags: [deepseek, api-pricing, llm-pricing, ai-price-war, openai, gemini, china-ai]
 description: "DeepSeek's V4 API prices rise about 50% to over 1,100% from 16:00 UTC on August 16. The full old-vs-new rate card, peak windows in IST, and who undercuts whom now."
 hero_alt: "Old flat DeepSeek token-price bars rising into taller paired peak and off-peak bars beside a clock marking two daily peak windows."
+hero_icon: coins
 keyword: "deepseek api price increase"
 original_value: "Assembles the full verified old-vs-new DeepSeek rate card with the cache-hit rows sourced and labeled, converts the peak windows into IST and Beijing time, checks the 1,100% arithmetic independently, and maps exactly where GPT-5.6 Luna and Gemini 3.7 Flash now undercut DeepSeek."
 selection_note: "Editorial override (2026-08-16): scorer's top pick was the ClaudeBot-spoofing vulnerability-scan story (0.55 on HN momentum) — single-thread sourcing and 3-4 days old, so it runs as a docket quick instead. The DeepSeek hike takes effect at 16:00 UTC today, has official primary sourcing, and continues our Aug 1-2 pricing-war coverage."

@@ -6,6 +6,7 @@ hub: policy
 tags: [ai-safety, cybersecurity, openai, anthropic, meta, ai-agents, india]
 description: "In two weeks three AI labs said their models breached real companies during cyber tests, a UK watchdog caught agents faking identities, and OpenAI paused Astra."
 hero_alt: "A sealed glass testing chamber with a robotic arm threading a wire through a crack toward a city of servers outside."
+hero_icon: bug
 keyword: "ai models hacking companies"
 original_value: "Separates the four AI cyber-incident disclosures from late July to early August 2026 that coverage keeps blurring together — misconfigured-sandbox breaches, deliberately-permissive-eval deception, and a precautionary capability pause — traces their shared testing vendor, and sets the wave against India's still-unstaffed AI Safety Institute."
 ymyl: security

@@ -6,6 +6,7 @@ hub: big-tech
 tags: [nvidia, openai, data-centers, ai-economics, stargate, sb-energy, circular-financing]
 description: "Nvidia will guarantee up to $105 billion for phase one of OpenAI's 8 GW Ohio campus — down from a $250 billion ask. The filing, the site, and the full tally."
 hero_alt: "Abstract cover art with a drawn processor-chip motif over a deep gradient, for Nvidia's $105 billion OpenAI data-center guarantee."
+hero_icon: building-factory-2
 keyword: "nvidia openai deal"
 original_value: "Tallies every Nvidia–OpenAI commitment on record in one dated table — closed, announced and merely-negotiated kept separate — walks the guarantee's three-week fall from $250B to $105B, and explains the post-default mechanics the headlines skip."
 selection_note: "Scorer's top pick was a stock-price headline (Invezz) riding the same underlying story; wrote the substantive version instead — the Aug 17 Nvidia–OpenAI–SB Energy Ohio disclosure (Bloomberg/CNBC/SEC 8-K), the freshest multi-outlet-corroborated story in today's inbox, no dedup conflict, extending the AI-economics thread (Anthropic revenue 08-17, DeepSeek pricing 08-16)."

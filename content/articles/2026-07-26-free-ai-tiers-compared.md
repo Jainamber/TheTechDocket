@@ -6,6 +6,7 @@ hub: explainers
 tags: [chatgpt, gemini, claude, copilot, free tier, pricing]
 description: "What the free tiers of ChatGPT, Gemini, Claude and Copilot actually include in July 2026 — limits, context, training defaults, and India's ₹399 tiers."
 hero_alt: "Four-column comparison chart of ChatGPT, Gemini, Claude and Copilot free tiers with locks on paywalled features"
+hero_icon: list-details
 keyword: "free ai chatbot comparison"
 original_value: "Every claim here comes from an official vendor page accessed on 26 July 2026, with vendors' deliberately vague wording quoted rather than converted into invented numbers — plus the two things roundups skip: data-training defaults (opt-out vs opt-in) and India's ₹399 tiers."
 selection_note: "Owner-directed explainers batch (2026-07-26); highest demand+gap score in topic validation, see 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."

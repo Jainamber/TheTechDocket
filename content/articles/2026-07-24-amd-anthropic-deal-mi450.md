@@ -6,6 +6,7 @@ hub: hardware
 tags: [amd, anthropic, mi450, helios, ai-chips]
 description: "AMD is putting up to $5 billion into Anthropic, which will deploy up to 2 GW of Instinct MI450 chips. The terms, the Helios hardware, and the India angle."
 hero_alt: "Illustration of a row of AMD-red server racks feeding power lines toward an Anthropic-styled data hall, with one line branching off toward a map of India"
+hero_icon: cpu
 keyword: "amd anthropic deal"
 original_value: "Puts the AMD–Anthropic deal in a single sourced ledger of all of Anthropic's compute pillars and the 2025–26 chip-for-equity deals, and maps the India consequences — the AMD–TCS Helios partnership and IndiaAI's all-Nvidia GPU pool — that no single outlet connects."
 selection_note: "Scorer's top pick was 'Claude voice mode update' (0.434) in a single-modality inbox where the top eight candidates sat within 0.02 of each other — effectively ranking noise, since the trends-RSS and Hacker News fetchers were unavailable and every candidate carried identical momentum. Overrode to the AMD–Anthropic deal cluster (0.410), which merges two inbox candidates (the investment and the Advancing AI 2026 launches) and was the week's dominant hardware story with fresh long-tail keywords."

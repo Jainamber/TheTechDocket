@@ -7,6 +7,7 @@ ymyl: security
 tags: [voice cloning, deepfakes, digital arrest, cybercrime, 1930 helpline]
 description: "How AI voice-clone and deepfake call scams work in 2026, the verified loss numbers, and the exact India and US response steps — 1930, RBI's clock, FTC."
 hero_alt: "Smartphone showing an incoming call from an unknown number with a sound wave splitting into a real and a cloned voice"
+hero_icon: phone-call
 keyword: "ai voice cloning scam"
 original_value: "This guide separates verified figures (MHA's ₹22,845.73 crore for 2024, IC3's first AI-fraud category at $893M) from the recycled unverified ones, grades each protection tip by evidence, and documents the exact 1930/Chakshu/RBI-liability mechanics most articles reduce to 'report it'."
 selection_note: "Owner-directed explainers batch (2026-07-26); demand+gap validated in 02-research/research-explainer-factbases-2026-07-26.md. Rewritten same day in plain language on owner feedback."

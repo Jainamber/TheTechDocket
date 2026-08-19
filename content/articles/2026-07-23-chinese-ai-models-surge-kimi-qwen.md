@@ -6,6 +6,7 @@ hub: ai-models
 tags: [chinese-ai, kimi-k3, qwen, open-weights, us-china]
 description: "Kimi K3 and Qwen 3.8 Max made Chinese AI models the story of the week. The adoption data, the US sanctions threat, and where India fits in."
 hero_alt: "Illustration of two model chips labelled Kimi K3 and Qwen 3.8 arcing across a Pacific map from China toward the US and India, under a raised customs barrier"
+hero_icon: trending-up
 keyword: "chinese ai models"
 original_value: "Ties the week's Kimi K3 and Qwen 3.8 launches to verified platform adoption data, separates enacted policy from threats on both the US and China side, and assembles a sourced India adoption-and-policy map no single outlet has."
 selection_note: "Scorer's top pick was a single-source Show HN tool (score 0.61, zero corroboration). Overrode to the Chinese open-weight surge cluster, which the title-based scorer split across 10+ candidates: three Hacker News front-page threads, WSJ/SCMP coverage of Qwen 3.8 Max, TechCrunch on the Treasury sanctions threat, Reuters on September US-China AI talks, and China's export-control deliberations — the day's dominant, multi-source story."

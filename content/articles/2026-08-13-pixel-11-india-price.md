@@ -6,6 +6,7 @@ hub: hardware
 tags: [google, pixel-11, smartphones, india, tensor-g6, gemini]
 description: "Official India prices for every Pixel 11 model, the ₹10,000 hikes over Pixel 10, sale dates and offers — and the Google AI Pro freebie Google just halved."
 hero_alt: "Four Pixel 11 phones in a row beside a large rupee price tag, with a small subscription meter ticking behind them."
+hero_icon: currency-rupee
 keyword: "pixel 11 price in india"
 original_value: "Puts the official ₹ launch prices next to the halved Google AI Pro bundle and works out what AI actually costs over two years across Pixel, Samsung and Apple — including India's Jio exception — a cross-ecosystem cost picture no single launch story assembles."
 selection_note: ""

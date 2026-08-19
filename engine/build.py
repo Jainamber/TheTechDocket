@@ -21,7 +21,7 @@ import markdown as md
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
-from . import images
+from . import icons, images
 from .docket import all_dockets
 from .util import IST, ROOT, all_articles, load_config, now_ist
 
@@ -188,6 +188,8 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
         "hero_jpg": abs_url(cfg, f"{img_base}-16x9.jpg"),
         "hero_webp": abs_url(cfg, f"{img_base}-16x9.webp"),
         "hero_alt": a.get("hero_alt", a["title"]),
+        "icon": _icon_name(a),
+        "icon_svg": icons.svg_icon(_icon_name(a)),
         "sources": a.get("sources", []),
         "faq": a.get("faq"),
         "ymyl_disclaimer": ymyl_map.get(a.get("ymyl")) if a.get("ymyl") else None,
@@ -211,7 +213,17 @@ def article_summary(cfg, a: dict) -> dict:
             "date_human": _human(published),
             "hero_jpg": abs_url(cfg, f"articles/{slug}/{slug}-16x9.jpg"),
             "hero_webp": abs_url(cfg, f"articles/{slug}/{slug}-16x9.webp"),
-            "hero_alt": a.get("hero_alt", a["title"])}
+            "hero_alt": a.get("hero_alt", a["title"]),
+            "icon": _icon_name(a),
+            "icon_svg": icons.svg_icon(_icon_name(a))}
+
+
+def _icon_name(a: dict) -> str:
+    """Editorial `hero_icon` from front matter, else the v3 motif keyword
+    fallback (so older/unlabelled articles still get a meaningful icon)."""
+    motif = images.pick_motif(f"{a.get('title', '')} {a.get('slug', '').replace('-', ' ')}",
+                              a.get("hub", ""))
+    return icons.resolve_icon(a.get("hero_icon"), motif, a.get("hub"))
 
 
 def _date_dt(cfg, date_str: str) -> datetime:
@@ -625,7 +637,8 @@ def build_site() -> Path:
         hero16 = art_dir / f"{slug}-16x9.jpg"
         if not hero16.exists():
             images.generate_hero(a["title"], slug, a.get("hub", "ai-models"),
-                                 cfg["site"]["name"], art_dir)
+                                 cfg["site"]["name"], art_dir,
+                                 icon=_icon_name(a))
         ctx = _common(cfg, current_hub=a.get("hub"),
                       **article_context(cfg, a, arts))
         _write(art_dir / "index.html", tpl.render(**ctx))

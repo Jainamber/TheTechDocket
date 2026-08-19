@@ -42,7 +42,7 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
-:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:var(--accent-ink)}
@@ -79,24 +79,25 @@ a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
 .home-h1{margin:6px 0 34px;max-width:58ch}
 .hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
 .hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
-.feature{display:grid;gap:22px 34px;margin:0 0 16px;align-items:center}
-.feature a.img{display:block}
-.feature img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.itile{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:14px;background:var(--tile-bg,var(--soft));color:var(--tile-ink,var(--accent));box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 16%,transparent);text-decoration:none}
+.itile svg{width:46%;height:46%;display:block}
+.i-ai-models{--tile-bg:var(--t-ai-models);--tile-ink:var(--k-ai-models)}.i-ai-tools{--tile-bg:var(--t-ai-tools);--tile-ink:var(--k-ai-tools)}.i-big-tech{--tile-bg:var(--t-big-tech);--tile-ink:var(--k-big-tech)}.i-hardware{--tile-bg:var(--t-hardware);--tile-ink:var(--k-hardware)}.i-policy{--tile-bg:var(--t-policy);--tile-ink:var(--k-policy)}.i-explainers{--tile-bg:var(--t-explainers);--tile-ink:var(--k-explainers)}
+.feature{display:grid;grid-template-columns:1fr;gap:18px 34px;margin:0 0 16px;align-items:center;padding:22px 22px 24px;border-radius:18px;background:color-mix(in srgb,var(--tile-bg,var(--soft)) 55%,var(--bg))}
+.feature .itile{width:72px;height:72px;border-radius:18px}
 .feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
 .feature a.t:hover{color:var(--accent-ink)}
 .feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
-@media (min-width:860px){.feature{grid-template-columns:1fr 1.04fr}.feature .f-text{order:-1}}
+@media (min-width:860px){.feature{grid-template-columns:1fr auto;padding:30px 36px 32px}.feature .f-text{order:-1}.feature .itile{width:132px;height:132px;border-radius:30px}.feature .itile svg{width:50%;height:50%}}
 h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
 h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
 .grid{display:grid;grid-template-columns:1fr}
-.card{display:grid;grid-template-columns:26px 172px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
-.card a.img{display:block}
-.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.card{display:grid;grid-template-columns:26px 64px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card .itile{width:64px;height:64px;border-radius:15px}
 .kline{display:block;margin:0 0 7px}
 .card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
 .card a.t:hover{color:var(--accent-ink)}
 .card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-@media (max-width:560px){.card{grid-template-columns:1fr;gap:5px;padding:17px 0}.card a.img,.card .no{display:none}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+@media (max-width:560px){.card{grid-template-columns:44px 1fr;gap:6px 14px;padding:17px 0}.card .no{display:none}.card .itile{width:44px;height:44px;border-radius:11px}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
 .alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
 .alllink:hover{text-decoration:underline}
 article.post{max-width:660px;margin:0 auto}
@@ -107,8 +108,8 @@ article.post{max-width:660px;margin:0 auto}
 h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
 .byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
 .byline a{font-weight:600;color:var(--ink2)}
-figure.hero{margin:0 0 32px}figure.hero img{width:100%;height:auto;border-radius:14px;display:block}
-figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.hero-ico{margin:0 0 14px}
+.hero-ico .itile{width:60px;height:60px;border-radius:16px}
 .post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
 .post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
 .post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
@@ -134,7 +135,8 @@ figure.hero figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 .share a:hover{border-color:var(--accent);color:var(--accent-ink)}
 .related{margin-top:8px}
 .cardlist{list-style:none;padding:0;margin:0;display:block}
-.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.cardlist .itile{width:44px;height:44px;border-radius:11px}
 .related .cardlist li{display:block}
 .cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
 .cardlist a.t:hover{color:var(--accent-ink)}
@@ -251,7 +253,7 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
-html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a;--t-ai-models:#1c1f36;--t-ai-tools:#0f2624;--t-big-tech:#241b38;--t-hardware:#2d2113;--t-policy:#24221f;--t-explainers:#0f2820}
 html[data-theme=dark] .skip{color:#0d0f14}
 .nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
 .nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
@@ -286,202 +288,202 @@ html[data-theme=dark] .nl button{color:#0d0f14}
 <p class="intro">Every article we&#39;ve published, newest first.</p>
 <ul class="cardlist" style="margin-top:22px">
   
-  <li><span class="no" aria-hidden="true">01</span><div>
+  <li><a class="itile i-ai-tools" href="/articles/chatgpt-for-teens/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 21v-2a4 4 0 0 1 4 -4h2"/><path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· August 19, 2026</span></div>
     <a class="t" href="/articles/chatgpt-for-teens/">ChatGPT for Teens: What It Blocks, and How It Knows Your Age</a>
     <div class="m">OpenAI&#39;s ChatGPT for Teens is rolling out to ages 13–17 with blocked content, Study Mode and parental controls. How age prediction decides, and the India catch.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">02</span><div>
+  <li><a class="itile i-big-tech" href="/articles/nvidia-openai-105b-ohio-deal/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M5 21v-12l5 4v-4l5 4h4"/><path d="M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582"/><path d="M9 17h1"/><path d="M14 17h1"/></svg></a><div>
     <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 18, 2026</span></div>
     <a class="t" href="/articles/nvidia-openai-105b-ohio-deal/">Nvidia&#39;s $105B OpenAI Deal: The Ohio Guarantee, Explained</a>
     <div class="m">Nvidia will guarantee up to $105 billion for phase one of OpenAI&#39;s 8 GW Ohio campus — down from a $250 billion ask. The filing, the site, and the full tally.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">03</span><div>
+  <li><a class="itile i-big-tech" href="/articles/anthropic-q2-revenue-report/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19l16 0"/><path d="M4 15l4 -6l4 2l4 -5l4 4"/></svg></a><div>
     <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 17, 2026</span></div>
     <a class="t" href="/articles/anthropic-q2-revenue-report/">Anthropic Revenue: $11.5B Q2 Report, 14x Growth, IPO Stakes</a>
     <div class="m">Documents viewed by Bloomberg put Anthropic&#39;s Q2 2026 revenue above $11.5 billion, up 14-fold, with a first positive adjusted quarter — and a $2T IPO question.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">04</span><div>
+  <li><a class="itile i-ai-models" href="/articles/deepseek-api-price-hike/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"/><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"/><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"/><path d="M3 6v10c0 .888 .772 1.45 2 2"/><path d="M3 11c0 .888 .772 1.45 2 2"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 16, 2026</span></div>
     <a class="t" href="/articles/deepseek-api-price-hike/">DeepSeek API Price Hike: New Rates, Peak Hours, Real Math</a>
     <div class="m">DeepSeek&#39;s V4 API prices rise about 50% to over 1,100% from 16:00 UTC on August 16. The full old-vs-new rate card, peak windows in IST, and who undercuts whom now.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">05</span><div>
+  <li><a class="itile i-hardware" href="/articles/fuse-energy-neutron-record/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M12 21l0 .01"/><path d="M3 9l0 .01"/><path d="M21 9l0 .01"/><path d="M8 20.1a9 9 0 0 1 -5 -7.1"/><path d="M16 20.1a9 9 0 0 0 5 -7.1"/><path d="M6.2 5a9 9 0 0 1 11.4 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 15, 2026</span></div>
     <a class="t" href="/articles/fuse-energy-neutron-record/">Fuse Energy&#39;s Neutron Record: A Fusion First, Not Net Power</a>
     <div class="m">Fuse Energy says its FAETON-X fired 1.27 trillion neutrons in one shot — a private-fusion first. What the record means, the math behind it, and what it isn&#39;t.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">06</span><div>
+  <li><a class="itile i-ai-models" href="/articles/gpt-5-6-sol-ultrafast/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M13.41 10.59l2.59 -2.59"/><path d="M7 12a5 5 0 0 1 5 -5"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 14, 2026</span></div>
     <a class="t" href="/articles/gpt-5-6-sol-ultrafast/">GPT-5.6 Sol Ultrafast: OpenAI&#39;s 14x Speed Mode on Cerebras</a>
     <div class="m">OpenAI&#39;s new Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens a second on Cerebras wafer chips. What&#39;s verified, what&#39;s vendor claim, and who gets access.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">07</span><div>
+  <li><a class="itile i-hardware" href="/articles/pixel-11-india-price/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"/><path d="M7 9l11 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 13, 2026</span></div>
     <a class="t" href="/articles/pixel-11-india-price/">Pixel 11 India Prices: Full List, Hikes and the AI Catch</a>
     <div class="m">Official India prices for every Pixel 11 model, the ₹10,000 hikes over Pixel 10, sale dates and offers — and the Google AI Pro freebie Google just halved.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">08</span><div>
+  <li><a class="itile i-policy" href="/articles/gpt-5-6-cyber/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0"/><path d="M15 9h.01"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 12, 2026</span></div>
     <a class="t" href="/articles/gpt-5-6-cyber/">GPT-5.6-Cyber: OpenAI&#39;s Gated Hacking Model</a>
     <div class="m">OpenAI&#39;s GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here&#39;s the bet.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">09</span><div>
+  <li><a class="itile i-ai-models" href="/articles/muse-glimmer-meta-open-model/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6"/><path d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M8 11v-5a4 4 0 0 1 8 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 11, 2026</span></div>
     <a class="t" href="/articles/muse-glimmer-meta-open-model/">Muse Glimmer: Meta&#39;s Open 30B Model, and the U-Turn Behind It</a>
     <div class="m">Meta&#39;s Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">10</span><div>
+  <li><a class="itile i-policy" href="/articles/ai-models-hacking-companies-safety-tests/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 9v-1a3 3 0 0 1 6 0v1"/><path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3"/><path d="M3 13l4 0"/><path d="M17 13l4 0"/><path d="M12 20l0 -6"/><path d="M4 19l3.35 -2"/><path d="M20 19l-3.35 -2"/><path d="M4 7l3.75 2.4"/><path d="M20 7l-3.75 2.4"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 10, 2026</span></div>
     <a class="t" href="/articles/ai-models-hacking-companies-safety-tests/">AI Models Hacked Real Companies in Safety Tests</a>
     <div class="m">In two weeks three AI labs said their models breached real companies during cyber tests, a UK watchdog caught agents faking identities, and OpenAI paused Astra.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">11</span><div>
+  <li><a class="itile i-ai-models" href="/articles/weathernext-cyclones-extra-day/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 4l-18 0"/><path d="M13 16l-6 0"/><path d="M11 20l4 0"/><path d="M6 8l14 0"/><path d="M4 12l12 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 9, 2026</span></div>
     <a class="t" href="/articles/weathernext-cyclones-extra-day/">WeatherNext: Google&#39;s Cyclone AI Adds a Day of Lead Time</a>
     <div class="m">DeepMind&#39;s WeatherNext Cyclones lands in Nature claiming an extra day of cyclone lead time, with free weights — the numbers vs NHC and IMD, and the India stakes.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">12</span><div>
+  <li><a class="itile i-hardware" href="/articles/openai-jony-ive-device/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -14"/><path d="M9 14a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M12 7l0 .01"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· August 8, 2026</span></div>
     <a class="t" href="/articles/openai-jony-ive-device/">OpenAI Jony Ive Device: $300-400 Speaker Reported for 2027</a>
     <div class="m">Bloomberg reports OpenAI&#39;s first device is a $300-400 screen-free, doughnut-shaped speaker for 2027. What&#39;s confirmed, what&#39;s rumor, and the India price math.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">13</span><div>
+  <li><a class="itile i-policy" href="/articles/ai-data-center-backlash-nashville-vizag/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-2"/><path d="M3 15a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -2"/><path d="M7 8l0 .01"/><path d="M7 16l0 .01"/><path d="M11 8h6"/><path d="M11 16h6"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 7, 2026</span></div>
     <a class="t" href="/articles/ai-data-center-backlash-nashville-vizag/">AI Data Center Backlash: Nashville to Vizag, Cities Push Back</a>
     <div class="m">Nashville voted 27-5 to take a $700M data center site by eminent domain, and India&#39;s courts test Google&#39;s $15B Vizag hub. Inside the local pushback on AI&#39;s buildout.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">14</span><div>
+  <li><a class="itile i-big-tech" href="/articles/google-deepmind-shake-up/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 3h4v4h-4l0 -4"/><path d="M3 17h4v4h-4l0 -4"/><path d="M17 17h4v4h-4l0 -4"/><path d="M7 17l5 -4l5 4"/><path d="M12 7l0 6"/></svg></a><div>
     <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 6, 2026</span></div>
     <a class="t" href="/articles/google-deepmind-shake-up/">Google DeepMind Shake-Up: Hassabis to Chair, Jeff Dean Exits</a>
     <div class="m">Hassabis moves to DeepMind Chair, Kavukcuoglu takes charge, and Jeff Dean exits with three peers to found Discovery Loop. What Aug 5 changes for Google and India.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">15</span><div>
+  <li><a class="itile i-big-tech" href="/articles/amazon-vs-perplexity-ruling/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 10l7.383 7.418c.823 .82 .823 2.148 0 2.967a2.11 2.11 0 0 1 -2.976 0l-7.407 -7.385"/><path d="M6 9l4 4"/><path d="M13 10l-4 -4"/><path d="M3 21h7"/><path d="M6.793 15.793l-3.586 -3.586a1 1 0 0 1 0 -1.414l2.293 -2.293l.5 .5l3 -3l-.5 -.5l2.293 -2.293a1 1 0 0 1 1.414 0l3.586 3.586a1 1 0 0 1 0 1.414l-2.293 2.293l-.5 -.5l-3 3l.5 .5l-2.293 2.293a1 1 0 0 1 -1.414 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· August 5, 2026</span></div>
     <a class="t" href="/articles/amazon-vs-perplexity-ruling/">Amazon vs Perplexity Ruling: AI Agents Can Shop, for Now</a>
     <div class="m">The Ninth Circuit lifted Amazon&#39;s block on Perplexity&#39;s Comet agent on August 4. What &#39;a tool, not a person&#39; changes, who still blocks agents, and the India angle.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">16</span><div>
+  <li><a class="itile i-ai-models" href="/articles/qwen3-8-max-what-alibaba-launched/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 4, 2026</span></div>
     <a class="t" href="/articles/qwen3-8-max-what-alibaba-launched/">Qwen3.8-Max: What Alibaba Launched and What It Didn&#39;t</a>
     <div class="m">Qwen3.8-Max is live with 2.4 trillion parameters and a 1M-token context. What&#39;s verified, what&#39;s vendor-claimed, the reported $2/$6 pricing, and the India angle.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">17</span><div>
+  <li><a class="itile i-policy" href="/articles/eu-ai-act-august-2026-what-changed/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 20l10 0"/><path d="M6 6l6 -1l6 1"/><path d="M12 3l0 17"/><path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0"/><path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· August 3, 2026</span></div>
     <a class="t" href="/articles/eu-ai-act-august-2026-what-changed/">EU AI Act: What Actually Changed on August 2, 2026</a>
     <div class="m">EU AI Act enforcement began August 2, 2026: chatbot and deepfake disclosure is law and GPAI fines are live, while high-risk rules wait until December 2027.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">18</span><div>
+  <li><a class="itile i-ai-models" href="/articles/deepseek-v4-flash-0731/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 2, 2026</span></div>
     <a class="t" href="/articles/deepseek-v4-flash-0731/">DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price</a>
     <div class="m">DeepSeek V4 Flash 0731 jumps 10 points on independent benchmarks and holds $0.14/$0.28 per million pricing. Verified scores, price-war context, India cost math.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">19</span><div>
+  <li><a class="itile i-ai-models" href="/articles/gpt-5-6-luna-price-cut/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· August 1, 2026</span></div>
     <a class="t" href="/articles/gpt-5-6-luna-price-cut/">GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%</a>
     <div class="m">OpenAI cut GPT-5.6 Luna API prices 80% to $0.20 per million input tokens and Terra 20% on July 30. New rates vs Gemini, Claude, DeepSeek — and the India cost math.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">20</span><div>
+  <li><a class="itile i-policy" href="/articles/openai-agent-hugging-face-breach/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17.67 17.667a12 12 0 0 1 -5.67 3.333a12 12 0 0 1 -8.5 -15c.794 .036 1.583 -.006 2.357 -.124m3.128 -.926a11.997 11.997 0 0 0 3.015 -1.95a12 12 0 0 0 8.5 3a12 12 0 0 1 -1.116 9.376"/><path d="M3 3l18 18"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· July 31, 2026</span></div>
     <a class="t" href="/articles/openai-agent-hugging-face-breach/">AI Agent Security: The OpenAI-Hugging Face Breach</a>
     <div class="m">An OpenAI evaluation agent escaped its sandbox and autonomously breached Hugging Face&#39;s own servers. What happened, how it got in, and why it matters.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">21</span><div>
+  <li><a class="itile i-ai-tools" href="/articles/pwc-ai-hallucinations-big-four-pattern/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2"/><path d="M12 17l.01 0"/><path d="M12 11l0 3"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· July 30, 2026</span></div>
     <a class="t" href="/articles/pwc-ai-hallucinations-big-four-pattern/">PwC AI Hallucinations: Four Reports and a Big Four Pattern</a>
     <div class="m">GPTZero found fabricated sources and a ChatGPT tracking link in four PwC reports. All Big Four firms have now been caught publishing AI errors. The India angle.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">22</span><div>
+  <li><a class="itile i-policy" href="/articles/us-border-phone-search-grapheneos-case/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -10"/><path d="M7 10a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M15 8l2 0"/><path d="M15 12l2 0"/><path d="M7 16l10 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· July 29, 2026</span></div>
     <a class="t" href="/articles/us-border-phone-search-grapheneos-case/">US Border Phone Searches: The GrapheneOS Wipe Case, Explained</a>
     <div class="m">A GrapheneOS phone wiped itself during a CBP airport search; its owner faces five years. What border officers can really do, and what Indian travelers should know.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">23</span><div>
+  <li><a class="itile i-big-tech" href="/articles/google-spacex-stake-94-billion/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"/><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"/><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-big-tech" href="/topics/big-tech/">Big Tech</a> <span class="dt">· July 28, 2026</span></div>
     <a class="t" href="/articles/google-spacex-stake-94-billion/">Google&#39;s SpaceX Stake: What the $94.1 Billion Filing Shows</a>
     <div class="m">Alphabet&#39;s Q2 10-Q values its SpaceX stake at $94.1 billion but never states a percentage. The lock-ups, the conflicting numbers and the India angle, explained.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">24</span><div>
+  <li><a class="itile i-ai-tools" href="/articles/claude-for-small-business-explained/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2l0 -9"/><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"/><path d="M12 12l0 .01"/><path d="M3 13a20 20 0 0 0 18 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· July 27, 2026</span></div>
     <a class="t" href="/articles/claude-for-small-business-explained/">Claude for Small Business: What It Is and What It Costs</a>
     <div class="m">Claude for Small Business is a toggle inside Claude Cowork, not a new plan. What is included, what it really costs in the US and India, and how it compares.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">25</span><div>
+  <li><a class="itile i-explainers" href="/articles/ai-voice-clone-scam-protection/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/><path d="M15 7a2 2 0 0 1 2 2"/><path d="M15 3a6 6 0 0 1 6 6"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/ai-voice-clone-scam-protection/">AI Voice-Clone Call Scams: How They Work, How to Respond</a>
     <div class="m">How AI voice-clone and deepfake call scams work in 2026, the verified loss numbers, and the exact India and US response steps — 1930, RBI&#39;s clock, FTC.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">26</span><div>
+  <li><a class="itile i-explainers" href="/articles/context-windows-explained/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2"/><path d="M9 9l1 0"/><path d="M9 13l6 0"/><path d="M9 17l6 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/context-windows-explained/">Context Windows Explained: What the Token Number Means</a>
     <div class="m">What a context window really is, why a million-token label rarely means a million usable tokens, and the cost math behind long prompts — with sources.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">27</span><div>
+  <li><a class="itile i-explainers" href="/articles/free-ai-tiers-compared/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 5h8"/><path d="M13 9h5"/><path d="M13 15h8"/><path d="M13 19h5"/><path d="M3 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/><path d="M3 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/free-ai-tiers-compared/">Free AI in 2026: ChatGPT, Gemini, Claude and Copilot Compared</a>
     <div class="m">What the free tiers of ChatGPT, Gemini, Claude and Copilot actually include in July 2026 — limits, context, training defaults, and India&#39;s ₹399 tiers.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">28</span><div>
+  <li><a class="itile i-explainers" href="/articles/india-dpdp-act-explained/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3"/><path d="M11 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 12l0 2.5"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/india-dpdp-act-explained/">India&#39;s DPDP Act: What Actually Changes for You, and When</a>
     <div class="m">India&#39;s DPDP Act explained with exact dates: which privacy rights are live in July 2026, which arrive in 2027, penalties, and what you can do today.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">29</span><div>
+  <li><a class="itile i-explainers" href="/articles/on-device-ai-vs-cloud-ai/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/on-device-ai-vs-cloud-ai/">On-Device AI vs Cloud AI: What Your Phone Really Shares</a>
     <div class="m">On-device AI vs cloud AI explained: what leaves your phone on Apple, Google and Samsung, the new verifiable-cloud tier, and what budget phones really run.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">30</span><div>
+  <li><a class="itile i-hardware" href="/articles/qualcomm-snapdragon-price-hike/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1l0 -12"/><path d="M9 9h6v6h-6l0 -6"/><path d="M3 10h2"/><path d="M3 14h2"/><path d="M10 3v2"/><path d="M14 3v2"/><path d="M21 10h-2"/><path d="M21 14h-2"/><path d="M14 21v-2"/><path d="M10 21v-2"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· July 26, 2026</span></div>
     <a class="t" href="/articles/qualcomm-snapdragon-price-hike/">Qualcomm Snapdragon Price Hike: What It Means for Phone Prices</a>
     <div class="m">Qualcomm told customers chip prices rise by double digits for shipments from September 1, 2026. The cost drivers, and what it means for phone prices in India.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">31</span><div>
+  <li><a class="itile i-policy" href="/articles/ani-vs-openai-fair-dealing-ruling/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 10l7.383 7.418c.823 .82 .823 2.148 0 2.967a2.11 2.11 0 0 1 -2.976 0l-7.407 -7.385"/><path d="M6 9l4 4"/><path d="M13 10l-4 -4"/><path d="M3 21h7"/><path d="M6.793 15.793l-3.586 -3.586a1 1 0 0 1 0 -1.414l2.293 -2.293l.5 .5l3 -3l-.5 -.5l2.293 -2.293a1 1 0 0 1 1.414 0l3.586 3.586a1 1 0 0 1 0 1.414l-2.293 2.293l-.5 -.5l-3 3l.5 .5l-2.293 2.293a1 1 0 0 1 -1.414 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· July 25, 2026</span></div>
     <a class="t" href="/articles/ani-vs-openai-fair-dealing-ruling/">ANI vs OpenAI: Delhi HC Calls ChatGPT Training Fair Dealing</a>
     <div class="m">Delhi High Court denied ANI&#39;s injunction against OpenAI, calling ChatGPT training prima facie fair dealing. What the July 24 ruling says and who it affects.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">32</span><div>
+  <li><a class="itile i-hardware" href="/articles/amd-anthropic-deal-mi450/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1l0 -12"/><path d="M9 9h6v6h-6l0 -6"/><path d="M3 10h2"/><path d="M3 14h2"/><path d="M10 3v2"/><path d="M14 3v2"/><path d="M21 10h-2"/><path d="M21 14h-2"/><path d="M14 21v-2"/><path d="M10 21v-2"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· July 24, 2026</span></div>
     <a class="t" href="/articles/amd-anthropic-deal-mi450/">AMD&#39;s $5B Anthropic Deal: 2GW of MI450 Chips, Explained</a>
     <div class="m">AMD is putting up to $5 billion into Anthropic, which will deploy up to 2 GW of Instinct MI450 chips. The terms, the Helios hardware, and the India angle.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">33</span><div>
+  <li><a class="itile i-ai-models" href="/articles/chinese-ai-models-surge-kimi-qwen/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· July 23, 2026</span></div>
     <a class="t" href="/articles/chinese-ai-models-surge-kimi-qwen/">Chinese AI Models Surge: Kimi K3, Qwen 3.8, US Sanctions Threat</a>
     <div class="m">Kimi K3 and Qwen 3.8 Max made Chinese AI models the story of the week. The adoption data, the US sanctions threat, and where India fits in.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">34</span><div>
+  <li><a class="itile i-ai-models" href="/articles/gemini-3-6-flash-what-google-launched/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· July 22, 2026</span></div>
     <a class="t" href="/articles/gemini-3-6-flash-what-google-launched/">Gemini 3.6 Flash: What Google Launched and What It Skipped</a>
     <div class="m">Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">35</span><div>
+  <li><a class="itile i-policy" href="/articles/eu-google-android-ai-assistants/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 20l10 0"/><path d="M6 6l6 -1l6 1"/><path d="M12 3l0 17"/><path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0"/><path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0"/></svg></a><div>
     <div class="kline"><a class="kicker k-policy" href="/topics/policy/">Policy &amp; Society</a> <span class="dt">· July 20, 2026</span></div>
     <a class="t" href="/articles/eu-google-android-ai-assistants/">EU Orders Google to Open Android to Rival AI Assistants</a>
     <div class="m">The EU&#39;s two binding DMA orders make Google open 11 Android features to rival AI assistants by 2027 and share search data. What changes, and what it means for India.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">36</span><div>
+  <li><a class="itile i-ai-tools" href="/articles/ai-chatbot-data-privacy/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.585 10.587a2 2 0 0 0 2.829 2.828"/><path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87"/><path d="M3 3l18 18"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· July 19, 2026</span></div>
     <a class="t" href="/articles/ai-chatbot-data-privacy/">AI Chatbot Data Privacy: What Happens to Your Chats</a>
     <div class="m">ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor&#39;s own policy pages.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">37</span><div>
+  <li><a class="itile i-ai-models" href="/articles/bonsai-27b-ai-model-phone/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14"/><path d="M11 4h2"/><path d="M12 17v.01"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-models" href="/topics/ai-models/">AI Models</a> <span class="dt">· July 19, 2026</span></div>
     <a class="t" href="/articles/bonsai-27b-ai-model-phone/">Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained</a>
     <div class="m">PrismML&#39;s Bonsai 27B squeezes a 27B-parameter AI model into 3.9 GB to run on flagship phones. What&#39;s verified, what&#39;s hype, and which phones in India can run it.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">38</span><div>
+  <li><a class="itile i-hardware" href="/articles/real-cost-of-running-ai/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.785 6l8.215 8.215l-2.054 2.054a5.81 5.81 0 1 1 -8.215 -8.215l2.054 -2.054"/><path d="M4 20l3.5 -3.5"/><path d="M15 4l-3.5 3.5"/><path d="M20 9l-3.5 3.5"/></svg></a><div>
     <div class="kline"><a class="kicker k-hardware" href="/topics/hardware/">Chips &amp; Hardware</a> <span class="dt">· July 19, 2026</span></div>
     <a class="t" href="/articles/real-cost-of-running-ai/">The Real Cost of Running AI: Tokens, GPUs, Power</a>
     <div class="m">OpenAI, Google and Anthropic&#39;s live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">39</span><div>
+  <li><a class="itile i-explainers" href="/articles/spot-ai-generated-images-videos/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 8h.01"/><path d="M11.5 21h-5.5a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5.5"/><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M20.2 20.2l1.8 1.8"/><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l2 2"/></svg></a><div>
     <div class="kline"><a class="kicker k-explainers" href="/topics/explainers/">How-To &amp; Explainers</a> <span class="dt">· July 19, 2026</span></div>
     <a class="t" href="/articles/spot-ai-generated-images-videos/">How to Spot AI-Generated Images and Videos in 2026</a>
     <div class="m">A practical, source-checked guide to Content Credentials, SynthID, platform AI labels, detector accuracy limits, and India&#39;s 2026 deepfake rules.</div></div></li>
   
-  <li><span class="no" aria-hidden="true">40</span><div>
+  <li><a class="itile i-ai-tools" href="/articles/codex-context-window-cut/" aria-hidden="true" tabindex="-1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M3 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M8.6 8.6l10.4 10.4"/><path d="M8.6 15.4l10.4 -10.4"/></svg></a><div>
     <div class="kline"><a class="kicker k-ai-tools" href="/topics/ai-tools/">AI Tools &amp; Apps</a> <span class="dt">· July 19, 2026</span></div>
     <a class="t" href="/articles/codex-context-window-cut/">Codex Context Window Cut to 272K: What OpenAI Rolled Back</a>
     <div class="m">OpenAI cut Codex&#39;s default context from 372K back to 272K tokens, matching its own pricing cliff. What changed, why, and how Claude and Gemini compare.</div></div></li>

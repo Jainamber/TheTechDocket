@@ -3,13 +3,8 @@
 {% block content %}
 <h1 class="home-h1"><span class="hh-name">{{ site.name }}</span><span class="hh-tag">{{ site.tagline }}</span></h1>
 {% if feature %}
-<div class="feature">
-  <a class="img" href="{{ base_path }}articles/{{ feature.slug }}/">
-    <picture>
-      <source type="image/webp" srcset="{{ feature.hero_webp }}">
-      <img src="{{ feature.hero_jpg }}" width="1200" height="675" alt="{{ feature.hero_alt }}" fetchpriority="high" loading="eager">
-    </picture>
-  </a>
+<div class="feature i-{{ feature.hub }}">
+  <a class="itile i-{{ feature.hub }}" href="{{ base_path }}articles/{{ feature.slug }}/" aria-hidden="true" tabindex="-1">{{ feature.icon_svg }}</a>
   <div class="f-text">
     <span class="kline"><a class="kicker k-{{ feature.hub }}" href="{{ base_path }}topics/{{ feature.hub }}/">{{ feature.hub_name }}</a> <span class="dt">· {{ feature.date_human }}</span></span>
     <a class="t" href="{{ base_path }}articles/{{ feature.slug }}/">{{ feature.title }}</a>
@@ -39,12 +34,7 @@
   {% for a in articles %}
   <div class="card">
     <span class="no" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>
-    <a class="img" href="{{ base_path }}articles/{{ a.slug }}/">
-      <picture>
-        <source type="image/webp" srcset="{{ a.hero_webp }}">
-        <img src="{{ a.hero_jpg }}" width="1200" height="675" alt="{{ a.hero_alt }}" loading="lazy" decoding="async">
-      </picture>
-    </a>
+    <a class="itile i-{{ a.hub }}" href="{{ base_path }}articles/{{ a.slug }}/" aria-hidden="true" tabindex="-1">{{ a.icon_svg }}</a>
     <div>
       <div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
       <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>

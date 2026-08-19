@@ -8,6 +8,7 @@ hub: ai-tools
 tags: [chatbots, privacy, data]
 description: "ChatGPT, Gemini, Claude and Meta AI set different defaults for training on free chats, retention and opt-outs — compared using each vendor's own policy pages."
 hero_alt: "Flat illustration of a smartphone chat bubble connected to a cloud server behind a padlock, representing what happens to AI chatbot conversation data"
+hero_icon: eye-off
 keyword: "ai chatbot data privacy"
 original_value: "Lines up ChatGPT, Gemini, Claude and Meta AI's free-tier training defaults, retention windows and opt-out steps in one comparison, checked directly against each vendor's current policy pages and read against India's DPDP Act."
 sources:

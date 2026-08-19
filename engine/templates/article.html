@@ -18,6 +18,7 @@
   <nav class="crumbs" aria-label="Breadcrumb">
     <a href="{{ base_path }}">Home</a> / <a href="{{ base_path }}topics/{{ hub }}/">{{ hub_name }}</a> / <span>{{ title }}</span>
   </nav>
+  <div class="hero-ico"><span class="itile i-{{ hub }}">{{ icon_svg }}</span></div>
   <a class="kicker postkick k-{{ hub }}" href="{{ base_path }}topics/{{ hub }}/">{{ hub_name }}</a>
   <h1>{{ title }}</h1>
   <div class="standfirst">{{ description }}</div>
@@ -28,12 +29,6 @@
     {% if updated_human %}<span>·</span><time datetime="{{ modified_iso }}">Updated {{ updated_human }}</time>{% endif %}
     {% if read_min %}<span>·</span><span>{{ read_min }} min read</span>{% endif %}
   </div>
-  <figure class="hero">
-    <picture>
-      <source type="image/webp" srcset="{{ hero_webp }}">
-      <img src="{{ hero_jpg }}" width="1200" height="675" alt="{{ hero_alt }}" fetchpriority="high" loading="eager" decoding="sync">
-    </picture>
-  </figure>
   {% if ymyl_disclaimer %}<div class="disclaimer" role="note"><strong>Note:</strong> {{ ymyl_disclaimer }}</div>{% endif %}
 
   {% if toc %}

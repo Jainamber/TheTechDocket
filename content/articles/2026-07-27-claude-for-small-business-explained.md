@@ -6,6 +6,7 @@ hub: ai-tools
 tags: [anthropic, claude, small-business, ai-pricing, cowork]
 description: "Claude for Small Business is a toggle inside Claude Cowork, not a new plan. What is included, what it really costs in the US and India, and how it compares."
 hero_alt: "Illustration of a small shop counter with a laptop showing a checklist of automated business workflows, invoices and a ledger beside it"
+hero_icon: briefcase
 keyword: "claude for small business"
 original_value: "Separates what Anthropic has confirmed about Claude for Small Business from what is only inferred (no price or tier is named anywhere), adds a July 2026 cross-vendor SMB pricing table, and maps the India availability and rupee-pricing picture that launch-day coverage never addressed."
 selection_note: "Scorer's #1 (BitLocker 'YellowKey' zero-day) rejected as stale — it is a May 2026 CVE with mitigations shipped 2026-05-20, resurfacing on HN. Second candidate (Kimi K3) already covered on 2026-07-23. Chose the day's top HN signal, Claude for Small Business, and framed it honestly as an explainer since the launch itself dates to 2026-05-13; the fresh hooks are today's front-page HN discussion and India's mid-July rupee pricing rollout."

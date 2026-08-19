@@ -6,6 +6,7 @@ hub: ai-models
 tags: [qwen, alibaba, benchmarks, ai-price-war, open-weights, india]
 description: "Qwen3.8-Max is live with 2.4 trillion parameters and a 1M-token context. What's verified, what's vendor-claimed, the reported $2/$6 pricing, and the India angle."
 hero_alt: "A towering Qwen3.8-Max processor above a benchmark leaderboard, with a Hong Kong share ticker climbing in the background."
+hero_icon: sparkles
 keyword: "qwen3.8-max"
 original_value: "Separates verified facts from vendor claims across the Qwen3.8-Max launch — benchmark methodology caveats, the still-missing official price listing, independent Arena placements and India access math that no single source combines."
 selection_note: "Editorial override of the scorer's top pick (a false keyword match on 'pixel'); the Qwen3.8-Max story was independently the day's dominant AI trend across HN, CNBC, SCMP and Forbes, and scored 0.41 on its news-candidate form. A scorer deny-list substring bug ('odi' matching inside 'Coding') suppressed the HN candidate — flagged to the owner."

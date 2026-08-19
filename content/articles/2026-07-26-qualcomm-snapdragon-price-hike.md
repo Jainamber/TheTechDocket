@@ -6,6 +6,7 @@ hub: hardware
 tags: [qualcomm, snapdragon, chip-prices, smartphones, memory-shortage, india]
 description: "Qualcomm told customers chip prices rise by double digits for shipments from September 1, 2026. The cost drivers, and what it means for phone prices in India."
 hero_alt: "Illustration of a Snapdragon mobile chip on a dark circuit board with a rising price curve and rupee and dollar symbols floating above it"
+hero_icon: cpu
 keyword: "qualcomm snapdragon price hike"
 original_value: "Connects the Bloomberg letter to the full 2026 cost stack — DRAM contracts, TSMC wafers, ASE packaging — and quantifies India's festive-season exposure, which no single report ties together."
 selection_note: ""

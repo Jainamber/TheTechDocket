@@ -6,6 +6,7 @@ hub: ai-models
 tags: [google, gemini, ai-models, llm-pricing]
 description: "Google shipped three Flash-tier Gemini models on July 21 — faster and cheaper, but flat on aggregate intelligence. Where 3.5 Pro is, and what Gemini 4 means."
 hero_alt: "Illustration of three lightning-bolt model chips labelled Flash, Flash-Lite and Cyber on a Google-blue circuit board, with a large empty socket labelled Pro"
+hero_icon: sparkles
 keyword: "gemini 3.6 flash"
 original_value: "Reconciles Google's cost-efficiency pitch with Artificial Analysis's no-intelligence-gain data and early coding complaints, and assembles the rupee-denominated India access map that launch-day coverage didn't."
 selection_note: "Scorer's #1 was a two-day-old chip-IPO story with a single named outlet; overrode to the fresher, multi-outlet-corroborated Gemini launch with same-day search momentum and verifiable official sources."

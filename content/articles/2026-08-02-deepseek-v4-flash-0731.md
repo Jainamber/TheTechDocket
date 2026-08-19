@@ -6,6 +6,7 @@ hub: ai-models
 tags: [deepseek, open-weights, ai-price-war, benchmarks, india]
 description: "DeepSeek V4 Flash 0731 jumps 10 points on independent benchmarks and holds $0.14/$0.28 per million pricing. Verified scores, price-war context, India cost math."
 hero_alt: "A lightning-bolt-marked AI processor beside falling price tags on a dark benchmark dashboard, symbolising DeepSeek's cheap upgraded model."
+hero_icon: bolt
 keyword: "deepseek v4 flash"
 original_value: "Puts DeepSeek's self-reported 0731 benchmark table next to Artificial Analysis's independent scores, the week's price-war timeline and rupee-denominated cost math — a synthesis no single source has."
 selection_note: ""

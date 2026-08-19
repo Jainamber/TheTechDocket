@@ -6,6 +6,7 @@ hub: policy
 tags: [privacy, cbp, grapheneos, border-search, android]
 description: "A GrapheneOS phone wiped itself during a CBP airport search; its owner faces five years. What border officers can really do, and what Indian travelers should know."
 hero_alt: "A smartphone on an airport inspection desk, its screen going blank while a queue of travelers waits behind a barrier."
+hero_icon: id
 keyword: "us border phone search"
 original_value: "Connects the first known US duress-wipe prosecution to CBP's own directive and search statistics, a same-month appeals ruling, key-disclosure laws in three other countries, and the specific exposure of Indian H-1B, student and tourist travelers — a synthesis no single report has."
 selection_note: "Overrode scorer's #1 'Scriptc by Vercel' (0.593, developer-tooling niche) for the statistical tie at 0.592: a first-of-its-kind border phone-wipe prosecution with mainstream corroboration (TechCrunch, Newsweek, TechSpot), the day's highest community momentum (HN 920 points/713 comments), broader reader utility, a strong India angle, and it feeds the policy hub."
