@@ -701,6 +701,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-18-nvidia-openai-105b-ohio-deal.json",
       "url": "https://thetechdocket.com/articles/nvidia-openai-105b-ohio-deal/"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "chatgpt-for-teens",
+      "title": "ChatGPT for Teens: What It Blocks, and How It Knows Your Age",
+      "keyword": "chatgpt for teens",
+      "hub": "ai-tools",
+      "published_at": "2026-08-19T06:58:01.066293+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-19T06:53:47+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-19-chatgpt-for-teens.json",
+      "url": "https://thetechdocket.com/articles/chatgpt-for-teens/"
     }
   ]
 }
