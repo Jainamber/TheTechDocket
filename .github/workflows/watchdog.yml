@@ -1,0 +1,108 @@
+# Skipped-day watchdog for the AI pipeline. Runs after daily-pipeline.yml's
+# 05:17 IST slot (plus retry headroom) and flags a missed publish so nobody
+# discovers a silent gap days later. Read-only against the pipeline itself —
+# it never triggers a run, only reports.
+name: watchdog
+on:
+  schedule:
+    - cron: "31 5 * * *"   # 05:31 UTC = 11:01 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  TZ: Asia/Kolkata
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install PyYAML
+
+      - name: Check today's publish + budget status
+        id: check
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import csv, json, pathlib
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          IST = ZoneInfo("Asia/Kolkata")
+          today = datetime.now(IST).date().isoformat()
+
+          hist = json.loads(pathlib.Path("data/history.json").read_text(encoding="utf-8"))
+          published = {p["date"] for p in hist.get("published", [])}
+          skip_file = pathlib.Path(f"data/skips/{today}.md")
+          missed = today not in published and not skip_file.exists()
+
+          import yaml
+          cfg = yaml.safe_load(open("config.yaml", encoding="utf-8"))
+          budget = float(((cfg.get("llm") or {}).get("daily_budget_usd")) or 0)
+
+          day_total = 0.0
+          ledger_path = pathlib.Path("data/costs/ledger.csv")
+          if ledger_path.exists():
+              with ledger_path.open(encoding="utf-8", newline="") as f:
+                  for row in csv.DictReader(f):
+                      if row.get("date_ist") != today:
+                          continue
+                      try:
+                          cost = float(row.get("cost_usd", "0"))
+                      except ValueError:
+                          cost = 0.0
+                      # UNKNOWN cost rows are written as -1 by the ledger —
+                      # count them at the same pessimistic placeholder the
+                      # ledger itself uses for day_total, per AI-PIPELINE.md.
+                      day_total += 0.05 if cost < 0 else cost
+
+          over_80 = budget > 0 and day_total >= 0.8 * budget
+
+          print(f"date={today}")
+          print(f"missed={'true' if missed else 'false'}")
+          print(f"day_total={day_total:.4f}")
+          print(f"budget={budget:.4f}")
+          print(f"over_80={'true' if over_80 else 'false'}")
+          EOF
+
+      - name: Resolve pipeline mode
+        id: mode
+        run: |
+          MODE="${{ vars.TTD_PIPELINE_MODE }}"
+          if [ -z "$MODE" ]; then MODE="staging"; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+
+      - name: Open/update missed-publish issue
+        if: steps.check.outputs.missed == 'true' && steps.mode.outputs.mode == 'live'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "Missed publish ${{ steps.check.outputs.date }}"
+        run: |
+          BODY="@jainamber — no article was published for ${{ steps.check.outputs.date }} IST and no data/skips/${{ steps.check.outputs.date }}.md was found. Check the daily-pipeline run for that date."
+          EXISTING=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
+
+      - name: Warn on budget usage over 80%
+        if: steps.check.outputs.over_80 == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "Missed publish ${{ steps.check.outputs.date }}"
+        run: |
+          MSG="Budget warning: ${{ steps.check.outputs.date }} IST ledger day_total is \$${{ steps.check.outputs.day_total }} — over 80% of the \$${{ steps.check.outputs.budget }} daily cap."
+          echo "::warning::$MSG"
+          echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
+          EXISTING=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$MSG"
+          fi

@@ -1,0 +1,15 @@
+# Extra dependencies for the Gemini (Vertex AI) writing pipeline
+# (engine/ai/*). Install alongside requirements.txt:
+#   pip install -r requirements.txt -r requirements-ai.txt
+#
+# google-auth is ONLY needed for the CI service-account auth path
+# (GOOGLE_APPLICATION_CREDENTIALS -> google.oauth2.service_account +
+# google.auth.transport.requests, lazily imported by gemini_client.py).
+# Local/manual runs authenticate via `gcloud auth application-default
+# login` and never import this package — the ADC access-token subprocess
+# path has no extra dependency beyond the gcloud CLI itself.
+google-auth>=2.30
+
+# Windows has no system IANA tz database (Linux CI does) — zoneinfo needs
+# this package there for Asia/Kolkata lookups to resolve (local ADC runs).
+tzdata; sys_platform == "win32"

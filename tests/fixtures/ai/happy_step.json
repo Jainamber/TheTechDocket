@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.5-flash",
+  "text": "Fixture reply text for the happy-path test.",
+  "usage": {"in": 120, "out": 340, "thinking": 50},
+  "grounded_queries": 2,
+  "url_fetches": 1,
+  "sources": [
+    {"url": "https://example.com/source-a", "title": "Example Source A"}
+  ],
+  "finish_reason": "STOP"
+}

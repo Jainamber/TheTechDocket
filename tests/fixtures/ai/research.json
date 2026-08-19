@@ -1,0 +1,12 @@
+{
+  "text": "Fixture research note: the primary announcement confirms the headline number; a secondary outlet corroborates the price; no India-specific detail was found for this angle.",
+  "usage": {"in": 1400, "out": 320, "thinking": 200},
+  "grounded_queries": 2,
+  "url_fetches": 0,
+  "sources": [
+    {"url": "https://fixturecorp.example/blog/aurora-launch", "title": "Introducing Aurora -- FixtureCorp (official)"},
+    {"url": "https://fixturenews.example/2026/08/15/aurora-review", "title": "FixtureCorp's Aurora claims independent verification -- FixtureNews"}
+  ],
+  "finish_reason": "STOP",
+  "model": "gemini-3.5-flash"
+}

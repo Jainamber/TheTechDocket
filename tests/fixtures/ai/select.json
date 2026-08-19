@@ -1,0 +1,9 @@
+{
+  "text": "{\"pick_rank\": 1, \"reason\": \"Fixture: candidate 1 has a real primary source and synthesis room; candidate 0 is a single-source rumor.\", \"override\": true}",
+  "usage": {"in": 900, "out": 60, "thinking": 0},
+  "grounded_queries": 0,
+  "url_fetches": 0,
+  "sources": [],
+  "finish_reason": "STOP",
+  "model": "gemini-2.5-flash-lite"
+}
