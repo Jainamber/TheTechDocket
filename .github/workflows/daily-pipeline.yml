@@ -27,6 +27,7 @@ concurrency:
 
 env:
   TZ: Asia/Kolkata
+  TTD_GCP_PROJECT: ${{ vars.TTD_GCP_PROJECT }}
 
 jobs:
   run:
