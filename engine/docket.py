@@ -511,7 +511,7 @@ class DocketGateRunner:
                 line += f" — {r['detail']}"
             print(line)
         print(f"\n{'ALL DOCKET GATES PASSED' if rep['passed'] else 'DOCKET GATE FAILURES: ' + str(len(hard_fail))}"
-              f" ({len(soft_fail)} soft warnings) → {path}")
+              f" ({len(soft_fail)} soft warnings) -> {path}")
         return rep
 
 
@@ -551,6 +551,6 @@ def docket_publish(date_str: str | None = None, push: bool = True) -> None:
         except RuntimeError as e:
             print(f"note: pull skipped ({e})")
         _git("push", cfg["publishing"]["git_remote"], f"HEAD:{branch}")
-        print(f"pushed → {cfg['site']['base_url'].rstrip('/')}/docket/{day}/")
+        print(f"pushed -> {cfg['site']['base_url'].rstrip('/')}/docket/{day}/")
     else:
         print("committed locally (push skipped)")

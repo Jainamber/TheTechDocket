@@ -125,7 +125,7 @@ class GateRunner:
                    len(cite_hosts) >= seo["outbound_citations_min"]
                    and n_sources >= seo["outbound_citations_min"],
                    f"{len(cite_hosts)} external citation domains, "
-                   f"{n_sources} listed sources (need ≥{seo['outbound_citations_min']})")
+                   f"{n_sources} listed sources (need >={seo['outbound_citations_min']})")
 
         # G7 stats sourced
         unsourced = []
@@ -270,7 +270,7 @@ class GateRunner:
             self.check("G22-ymyl", HARD,
                        a.get("ymyl") in hits.keys() and has_primary
                        and disclaimer_el is not None,
-                       f"YMYL terms {hits} → front-matter ymyl: "
+                       f"YMYL terms {hits} -> front-matter ymyl: "
                        f"{list(hits)[0]}, a primary:true source and rendered "
                        "disclaimer are required")
         else:
@@ -354,7 +354,7 @@ class GateRunner:
                     break
         wc_first = len((first_p.get_text() if first_p else "").split())
         self.check("S04-answer-first", HARD, wc_first >= 40,
-                   f"first paragraph {wc_first} words (need ≥40 before any H2)")
+                   f"first paragraph {wc_first} words (need >=40 before any H2)")
 
         # count only the article's OWN H2s — the template injects Sources,
         # FAQ and Related headings unconditionally, which previously made
@@ -364,7 +364,7 @@ class GateRunner:
                and not h.find_parent("section", class_="sources")
                and not h.find_parent("section", class_="related")]
         self.check("S05-h2-count", HARD, len(h2s) >= 3,
-                   f"{len(h2s)} body H2 sections excl. template chrome (need ≥3)")
+                   f"{len(h2s)} body H2 sections excl. template chrome (need >=3)")
         levels = [int(h.name[1]) for h in
                   (self.body.find_all(["h1", "h2", "h3", "h4"]) if self.body else [])]
         skips = any(levels[i + 1] - levels[i] > 1 for i in range(len(levels) - 1))
@@ -394,7 +394,7 @@ class GateRunner:
                     if "/articles/" in x["href"] and self.slug not in x["href"]]
         min_int = seo["internal_links_min"] if n_arts >= 3 else 0
         self.check("S09-internal-links", HARD, len(internal) >= min_int,
-                   f"{len(internal)} internal article links (need ≥{min_int})")
+                   f"{len(internal)} internal article links (need >={min_int})")
         # in-body only: breadcrumb, hub-chip and nav guarantee a page-wide hub
         # link on every page, which made this gate unfailable (finding F3c,
         # 07-16). The writing contract now requires one natural in-body hub
@@ -468,7 +468,7 @@ class GateRunner:
                 line += f" — {r['detail']}"
             print(line)
         print(f"\n{'ALL HARD GATES PASSED' if rep['passed'] else 'HARD GATE FAILURES: ' + str(len(hard_fail))}"
-              f" ({len(soft_fail)} soft warnings) → {path}")
+              f" ({len(soft_fail)} soft warnings) -> {path}")
         return rep
 
 
