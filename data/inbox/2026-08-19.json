@@ -1,0 +1,176 @@
+{
+ "date": "2026-08-19",
+ "generated_by": "daily-session-websearch",
+ "sources_status": {
+  "trends_rss_IN": "failed",
+  "trends_rss_US": "failed",
+  "hacker_news": "failed",
+  "websearch": "ok"
+ },
+ "markets": {
+  "IN": {
+   "trends_rss": [],
+   "news": {},
+   "autocomplete": {}
+  },
+  "US": {
+   "trends_rss": [],
+   "news": {},
+   "autocomplete": {}
+  }
+ },
+ "hacker_news": [],
+ "outlet_headlines": [
+  {
+   "url": "https://www.cnbc.com/2026/08/18/openai-chatgpt-for-teens-safety.html",
+   "found_via": "websearch:OpenAI ChatGPT for teens launch age prediction",
+   "title": "OpenAI rolls out ChatGPT for Teens experience with 'stronger built-in safety protections'",
+   "outlet": "CNBC"
+  },
+  {
+   "url": "https://www.axios.com/2026/08/18/openai-chatgpt-for-teens",
+   "found_via": "websearch:OpenAI ChatGPT for teens launch age prediction",
+   "title": "OpenAI debuts ChatGPT for Teens",
+   "outlet": "Axios"
+  },
+  {
+   "url": "https://fortune.com/2026/08/18/openai-chatgpt-teens-age-assurance-safety/",
+   "found_via": "websearch:OpenAI ChatGPT for teens launch age prediction",
+   "title": "Meet OpenAI's ChatGPT for Teens, which doesn't talk about sex or suicide and gives you homework help instead",
+   "outlet": "Fortune"
+  },
+  {
+   "url": "https://thenextweb.com/news/chatgpt-for-teens-openai-age-prediction-study-mode",
+   "found_via": "websearch:OpenAI ChatGPT for teens launch age prediction",
+   "title": "OpenAI launches ChatGPT for Teens and will auto-enrol under-18s",
+   "outlet": "TheNextWeb"
+  },
+  {
+   "url": "https://openai.com/index/our-approach-to-age-prediction/",
+   "found_via": "websearch:OpenAI ChatGPT for teens launch age prediction",
+   "title": "Our approach to age prediction",
+   "outlet": "OpenAI (official)"
+  },
+  {
+   "url": "https://venturebeat.com/infrastructure/cursor-launches-origin-code-hosting-platform-as-github-outage-exposes-opening-in-ai-coding-race",
+   "found_via": "websearch:Cursor Origin code hosting launch beta",
+   "title": "Cursor launches Origin code hosting platform as GitHub outage exposes opening in AI coding race",
+   "outlet": "VentureBeat"
+  },
+  {
+   "url": "https://techstartups.com/2026/08/17/cursor-launches-origin-a-github-rival-built-for-ai-coding-agents/",
+   "found_via": "websearch:Cursor Origin code hosting launch beta",
+   "title": "Cursor launches Origin, a code hosting platform built for AI coding agents with GitHub sync",
+   "outlet": "Tech Startups"
+  },
+  {
+   "url": "https://www.techtimes.com/articles/324838/20260818/cursor-origin-ships-no-data-terms-spacex-now-holds-paid-developers-code.htm",
+   "found_via": "websearch:Cursor Origin code hosting launch beta",
+   "title": "Cursor Origin Ships With No Data Terms: SpaceX Now Holds Paid Developers' Code",
+   "outlet": "Tech Times"
+  },
+  {
+   "url": "https://www.testingcatalog.com/cursor-begins-origin-code-hosting-rollout-for-paid-plans/",
+   "found_via": "websearch:Cursor Origin code hosting launch beta",
+   "title": "Cursor begins Origin code hosting rollout for paid plans",
+   "outlet": "TestingCatalog"
+  },
+  {
+   "url": "https://www.axios.com/2026/08/17/google-spirit-airlines-bankruptcy",
+   "found_via": "websearch:Google Spirit Airlines data bankruptcy auction AI training",
+   "title": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents",
+   "outlet": "Axios"
+  },
+  {
+   "url": "https://9to5google.com/2026/08/17/google-just-bought-a-bunch-of-spirit-airlines-data-for-ai-training/",
+   "found_via": "websearch:Google Spirit Airlines data bankruptcy auction AI training",
+   "title": "Google just bought a bunch of Spirit Airlines data for AI training",
+   "outlet": "9to5Google"
+  },
+  {
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-buys-spirit-airlines-data-for-ai-training-for-just-usd10-million-purchase-includes-hundreds-of-millions-of-emails-microsoft-teams-chats-billions-of-flight-pricing-records-and-anonymized-passenger-records",
+   "found_via": "websearch:Google Spirit Airlines data bankruptcy auction AI training",
+   "title": "Google buys Spirit Airlines data for AI training for just $10 million — purchase includes hundreds of millions of emails, Microsoft Teams chats, billions of flight pricing records, and anonymized passenger records",
+   "outlet": "Tom's Hardware"
+  },
+  {
+   "url": "https://gizmodo.com/spirit-airlines-is-dead-but-its-data-will-haunt-googles-servers-for-generations-to-come-2000799546",
+   "found_via": "websearch:Google Spirit Airlines data bankruptcy auction AI training",
+   "title": "Spirit Airlines Is Dead, but Its Data Will Haunt Google's Servers for Generations to Come",
+   "outlet": "Gizmodo"
+  },
+  {
+   "url": "https://www.aljazeera.com/economy/2026/8/5/ai-models-attempted-unsanctioned-cyberattacks-in-tests-watchdog-says",
+   "found_via": "websearch:UK AI Security Institute Anthropic Mythos OpenAI unsanctioned actions cybersecurity evaluation",
+   "title": "AI models attempted 'unsanctioned' cyberattacks in tests, watchdog says",
+   "outlet": "Al Jazeera"
+  },
+  {
+   "url": "https://www.axios.com/2026/08/04/anthropic-openai-uk-ai-security-institute",
+   "found_via": "websearch:UK AI Security Institute Anthropic Mythos OpenAI unsanctioned actions cybersecurity evaluation",
+   "title": "Anthropic, OpenAI models tried hacking during UK government testing",
+   "outlet": "Axios"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/08/05/anthropic-mythos-openai-security-breaches.html",
+   "found_via": "websearch:UK AI Security Institute Anthropic Mythos OpenAI unsanctioned actions cybersecurity evaluation",
+   "title": "Anthropic's Mythos created fake identities to fool humans in new cyber incident",
+   "outlet": "CNBC"
+  },
+  {
+   "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+   "found_via": "websearch:UK AI Security Institute Anthropic Mythos OpenAI unsanctioned actions cybersecurity evaluation",
+   "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
+   "outlet": "AI Security Institute (UK Gov, official)"
+  },
+  {
+   "url": "https://www.constellationr.com/insights/news/uks-aisi-finds-19-instances-where-anthropics-mythos-openais-gpt-56-sol-tried-attacks",
+   "found_via": "websearch:UK AI Security Institute Anthropic Mythos OpenAI unsanctioned actions cybersecurity evaluation",
+   "title": "UK's AISI finds 19 instances where Anthropic's Mythos, OpenAI's GPT-5.6 Sol tried attacks",
+   "outlet": "Constellation Research"
+  },
+  {
+   "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-chip-startup-etched-eyes-20-billion-valuation/",
+   "found_via": "websearch:Etched chip startup valuation billion 2026",
+   "title": "AI Chip Startup Etched Eyes $20 Billion Valuation",
+   "outlet": "PYMNTS"
+  },
+  {
+   "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+   "found_via": "websearch:Etched chip startup valuation billion 2026",
+   "title": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
+   "outlet": "TechCrunch"
+  },
+  {
+   "url": "https://www.outlookbusiness.com/corporate/cadences-india-bet-deepens-as-chip-design-ecosystem-gains-momentum",
+   "found_via": "websearch:Cadence India semiconductor startup ecosystem chip design AI",
+   "title": "Cadence's India Bet Deepens as Chip Design Ecosystem Gains Momentum",
+   "outlet": "Outlook Business"
+  },
+  {
+   "url": "https://themachinemaker.com/news/iit-delhi-and-cadence-establish-ai-enabled-innovation-lab-to-strengthen-indias-semiconductor-ecosystem/",
+   "found_via": "websearch:Cadence India semiconductor startup ecosystem chip design AI",
+   "title": "IIT Delhi And Cadence Establish AI-Enabled Innovation Lab To Strengthen India's Semiconductor Ecosystem",
+   "outlet": "Machine Maker"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/India_AI_Impact_Summit_2026",
+   "found_via": "websearch:tech news India today August 19 2026",
+   "title": "India AI Impact Summit 2026",
+   "outlet": "Wikipedia"
+  },
+  {
+   "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/",
+   "found_via": "websearch:trending technology news August 19 2026",
+   "title": "Top Tech News Today, August 18, 2026: Apple, Baidu, ByteDance, Google, Meta, OpenAI, Xiaomi & More",
+   "outlet": "Tech Startups"
+  },
+  {
+   "url": "https://aiweekly.co/ai-news-today",
+   "found_via": "websearch:biggest AI news today",
+   "title": "AI News Today, August 18 — Top AI Stories & Live Updates",
+   "outlet": "AI Weekly"
+  }
+ ],
+ "wikipedia_top": []
+}

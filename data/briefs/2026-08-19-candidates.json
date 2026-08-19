@@ -1,0 +1,227 @@
+{
+  "date": "2026-08-19",
+  "candidates": [
+    {
+      "title": "Meet OpenAI's ChatGPT for Teens, which doesn't talk about sex or suicide and gives you homework help instead",
+      "sources": [
+        "outlet:Fortune"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Fortune",
+          "outlet": "Fortune"
+        }
+      ],
+      "score": 0.4333,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Cursor Origin Ships With No Data Terms: SpaceX Now Holds Paid Developers' Code",
+      "sources": [
+        "outlet:Tech Times"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tech Times",
+          "outlet": "Tech Times"
+        }
+      ],
+      "score": 0.3909,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI Chip Startup Etched Eyes $20 Billion Valuation",
+      "sources": [
+        "outlet:PYMNTS"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:PYMNTS",
+          "outlet": "PYMNTS"
+        }
+      ],
+      "score": 0.3867,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Our approach to age prediction",
+      "sources": [
+        "outlet:OpenAI (official)"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:OpenAI (official)",
+          "outlet": "OpenAI (official)"
+        }
+      ],
+      "score": 0.3857,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google buys Spirit Airlines data for AI training for just $10 million — purchase includes hundreds of millions of emails, Microsoft Teams chats, billions of flight pricing records, and anonymized passenger records",
+      "sources": [
+        "outlet:Tom's Hardware"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tom's Hardware",
+          "outlet": "Tom's Hardware"
+        }
+      ],
+      "score": 0.3829,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Top Tech News Today, August 18, 2026: Apple, Baidu, ByteDance, Google, Meta, OpenAI, Xiaomi & More",
+      "sources": [
+        "outlet:Tech Startups"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Tech Startups",
+          "outlet": "Tech Startups"
+        }
+      ],
+      "score": 0.3826,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
+      "sources": [
+        "outlet:TechCrunch"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:TechCrunch",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.381,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI rolls out ChatGPT for Teens experience with 'stronger built-in safety protections'",
+      "sources": [
+        "outlet:CNBC"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:CNBC",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.38,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI launches ChatGPT for Teens and will auto-enrol under-18s",
+      "sources": [
+        "outlet:TheNextWeb"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:TheNextWeb",
+          "outlet": "TheNextWeb"
+        }
+      ],
+      "score": 0.3789,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "IIT Delhi And Cadence Establish AI-Enabled Innovation Lab To Strengthen India's Semiconductor Ecosystem",
+      "sources": [
+        "outlet:Machine Maker"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Machine Maker",
+          "outlet": "Machine Maker"
+        }
+      ],
+      "score": 0.376,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic, OpenAI models tried hacking during UK government testing",
+      "sources": [
+        "outlet:Axios"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Axios",
+          "outlet": "Axios"
+        }
+      ],
+      "score": 0.375,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents",
+      "sources": [
+        "outlet:Axios"
+      ],
+      "geos": [],
+      "momentum_raw": 0.2,
+      "evidence": [
+        {
+          "source": "outlet:Axios",
+          "outlet": "Axios"
+        }
+      ],
+      "score": 0.3739,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Meet OpenAI's ChatGPT for Teens, which doesn't talk about sex or suicide and gives you homework help instead",
+    "sources": [
+      "outlet:Fortune"
+    ],
+    "geos": [],
+    "momentum_raw": 0.2,
+    "evidence": [
+      {
+        "source": "outlet:Fortune",
+        "outlet": "Fortune"
+      }
+    ],
+    "score": 0.4333,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}
