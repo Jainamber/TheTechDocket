@@ -1,7 +1,115 @@
 {
-  "generated_at": "2026-08-19T07:21:12.343234+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-08-20T07:19:05.755219+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 4
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "nvidia-openai-105b-ohio-deal": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "ai-data-center-backlash-nashville-vizag": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "muse-glimmer-meta-open-model": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-api-price-hike": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "fuse-energy-neutron-record": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "us-border-phone-search-grapheneos-case": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ani-vs-openai-fair-dealing-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "pixel-11-india-price": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "weathernext-cyclones-extra-day": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gpt-5-6-cyber": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "gemini-3-6-flash-what-google-launched": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "pwc-ai-hallucinations-big-four-pattern": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "context-windows-explained": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-voice-clone-scam-protection": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-chatbot-data-privacy": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 6,
+    "ai-models": 8,
+    "big-tech": 2,
+    "policy": 5,
+    "hardware": 3,
+    "ai-tools": 3
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
