@@ -1,0 +1,278 @@
+{
+  "date": "2026-08-20",
+  "candidates": [
+    {
+      "title": "Ask HN: Alternatives to GitHub",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 586,
+          "comments": 368,
+          "url": "https://news.ycombinator.com/item?id=49331033"
+        }
+      ],
+      "score": 0.5631,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI Is Slowing Down Its AI Training",
+      "sources": [
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "global tech news",
+          "outlet": "TIME"
+        },
+        {
+          "source": "hn",
+          "points": 0,
+          "comments": null,
+          "url": "https://time.com/article/2026/08/18/openai-slowing-training/"
+        }
+      ],
+      "score": 0.5262,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "Using the railway network as a flatbed scanner",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6486941654770895,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 71,
+          "comments": 435,
+          "url": "https://philo.gay/linecam/"
+        }
+      ],
+      "score": 0.4472,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Swiggy shareholders approve 49.5% foreign ownership cap, clearing path to IOCC status",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Entrackr"
+        }
+      ],
+      "score": 0.4344,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Jio Prime membership offers tariff price protection as it eyes Airtel subscribers",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Business Today"
+        }
+      ],
+      "score": 0.4344,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nikhil Kamath, Sreeram Reddy Vanga invest Rs 250 crore in CtrlS Datacenters",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Business Standard"
+        }
+      ],
+      "score": 0.4339,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Apple plugs image-processing hole ripe for spyware abuse",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "global tech news",
+          "outlet": "The Register"
+        }
+      ],
+      "score": 0.4326,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "NeoGeo raises $20 Mn Series A led by Neev II Fund and Aavishkaar Capital",
+      "sources": [
+        "gnews:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "india tech news",
+          "outlet": "Entrackr"
+        }
+      ],
+      "score": 0.4238,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.5657342254953959,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 43,
+          "comments": 80,
+          "url": "https://news.ycombinator.com/item?id=49348136"
+        }
+      ],
+      "score": 0.4233,
+      "topic_fit": 0.66,
+      "corroboration": 0.0
+    },
+    {
+      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "global tech news",
+          "outlet": "TechCrunch"
+        }
+      ],
+      "score": 0.4216,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "First Nvidia H200 shipments reach China as ByteDance and Tencent take deliveries",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "global tech news",
+          "outlet": "Tom's Hardware"
+        }
+      ],
+      "score": 0.4183,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "China's backflipping robot maker Unitree pops in Shanghai debut",
+      "sources": [
+        "gnews:US"
+      ],
+      "geos": [
+        "US"
+      ],
+      "momentum_raw": 0.25,
+      "evidence": [
+        {
+          "source": "gnews:US",
+          "query": "global tech news",
+          "outlet": "CNBC"
+        }
+      ],
+      "score": 0.4132,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "OpenAI Is Slowing Down Its AI Training",
+    "sources": [
+      "gnews:US",
+      "hn"
+    ],
+    "geos": [
+      "US"
+    ],
+    "momentum_raw": 0.25,
+    "evidence": [
+      {
+        "source": "gnews:US",
+        "query": "global tech news",
+        "outlet": "TIME"
+      },
+      {
+        "source": "hn",
+        "points": 0,
+        "comments": null,
+        "url": "https://time.com/article/2026/08/18/openai-slowing-training/"
+      }
+    ],
+    "score": 0.5262,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false,
+  "selection_override": "Editorial override (DAILY_RUN Step 2): scorer #1 'Ask HN: Alternatives to GitHub' is a community thread, not a story (and its Cursor Origin hook ran in the 08-19 docket). Picked #2: only corroborated candidate (TIME + HN), topic-fit 1.0, and tensions directly with our 08-18 Nvidia-OpenAI $105B piece — original-analysis seam no single outlet has."
+}
