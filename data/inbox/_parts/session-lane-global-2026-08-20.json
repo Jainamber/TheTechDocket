@@ -1,0 +1,125 @@
+{
+  "lane": "global",
+  "date": "2026-08-20",
+  "items": [
+    {
+      "title": "China's backflipping robot maker Unitree pops in Shanghai debut",
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/19/china-backflipping-robot-maker-unitree-jumps-shanghai-ipo.html",
+      "published": "2026-08-19",
+      "note": "Unitree shares surged as much as 629% intraday on its STAR Market debut, becoming the first listed humanoid-robot maker in mainland China at close to a $66B valuation."
+    },
+    {
+      "title": "Meta trial that could reshape Facebook and Instagram gets underway",
+      "outlet": "NBC News",
+      "url": "https://www.nbcnews.com/business/corporations/meta-trial-facebook-instagram-begins-rcna593146",
+      "published": "2026-08-18",
+      "note": "A bipartisan 29-state coalition opened a six-week federal trial in Oakland alleging Meta designed Instagram/Facebook to addict young users; Meta pegs potential penalties near $1.4T."
+    },
+    {
+      "title": "Etched's valuation doubles to $21B in a month",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
+      "published": "2026-08-18",
+      "note": "AI inference-chip startup raised $700M led by Jane Street (with Kleiner Perkins, Sequoia, a16z, Tiger Global and others), taking total funding to $1.9B."
+    },
+    {
+      "title": "Apple plugs image-processing hole ripe for spyware abuse",
+      "outlet": "The Register",
+      "url": "https://www.theregister.com/security/2026/08/18/apple-plugs-image-processing-hole-ripe-for-spyware-abuse/5289031",
+      "published": "2026-08-18",
+      "note": "Apple patched CVE-2026-65346, a critical ImageIO integer-overflow bug (found by Meta's Red Team) that could enable zero-click code execution via a malicious image, across iOS/iPadOS/macOS."
+    },
+    {
+      "title": "OpenAI Is Slowing Down Its AI Training",
+      "outlet": "TIME",
+      "url": "https://time.com/article/2026/08/18/openai-slowing-training/",
+      "published": "2026-08-18",
+      "note": "Sam Altman told TIME 'it's a good time to slow down,' saying OpenAI is pausing frontier-model training after research showed signs of misalignment as capabilities advanced faster than expected."
+    },
+    {
+      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+      "published": "2026-08-19",
+      "note": "OpenAI is previewing 'Private Safety Processing' with early customers, a tool that flags cross-session misuse patterns (e.g. split-up cyberattack planning) while preserving zero data retention; broad launch planned for September."
+    },
+    {
+      "title": "China's LandSpace lands reusable rocket booster, closing the gap with SpaceX",
+      "outlet": "SpaceNews",
+      "url": "https://spacenews.com/chinas-landspace-recovers-booster-with-second-orbital-launch-of-zhuque-3-rocket/",
+      "published": null,
+      "note": "LandSpace recovered the first stage of its Zhuque-3 rocket, becoming the third private company after SpaceX and Blue Origin to land an orbital-class booster."
+    },
+    {
+      "title": "Samsung raises advanced foundry prices by up to 15% as AI demand fills its 4nm lines",
+      "outlet": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/samsung-raises-advanced-foundry-prices-by-up-to-15-percent-as-ai-demand-fills-its-4nm-lines",
+      "published": "2026-08-19",
+      "note": "Samsung hiked SF4/SF5/8nm order prices 5-15% in July as TSMC's leading-edge capacity fills up on AI-chip demand; Chinese customers reportedly accepted the steepest increases."
+    },
+    {
+      "title": "First Nvidia H200 shipments reach China as ByteDance and Tencent take deliveries",
+      "outlet": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/gpus/first-nvidia-h200-shipments-reach-bytedance-and-tencent-as-beijing-loosens-its-import-block",
+      "published": null,
+      "note": "ByteDance and Tencent reportedly each received about 10,000 Nvidia H200 chips as Beijing eases its import block, though most licensed units must stay in Hong Kong for now."
+    },
+    {
+      "title": "CISA gives feds 3 days to fix actively exploited Ray RCE bug",
+      "outlet": "The Register",
+      "url": "https://www.theregister.com/security/2026/08/18/cisa-gives-feds-3-days-to-fix-actively-exploited-ray-rce-bug/5289007",
+      "published": "2026-08-18",
+      "note": "CISA added a code-injection flaw in Ray, the open-source distributed-computing framework used by Amazon, Apple and OpenAI for ML workloads, to its Known Exploited Vulnerabilities catalog."
+    },
+    {
+      "title": "Z.ai launches GLM-5.3 with claimed 50% gain on coding benchmark",
+      "outlet": "TechNode",
+      "url": "https://technode.com/2026/08/17/z-ai-launches-glm-5-3-with-claimed-50-gain-on-coding-benchmark/",
+      "published": "2026-08-17",
+      "note": "Zhipu's international brand shipped GLM-5.3, targeting coding agents, tool use and defensive cybersecurity work; open-weights release promised two weeks later."
+    },
+    {
+      "title": "Pony.ai's overseas robotaxi pipeline tops 4,000 vehicles",
+      "outlet": "Quartz",
+      "url": "https://qz.com/pony-ai-overseas-robotaxi-pipeline-4000-vehicles-081826",
+      "published": "2026-08-18",
+      "note": "Pipeline includes a 2,000+ vehicle Uber deployment deal in Europe plus services in Luxembourg, Singapore and Croatia; Q2 robotaxi revenue surged 691% year over year."
+    },
+    {
+      "title": "Stock Market Today (Aug. 19, 2026): S&P 500 rises despite tech weakness as health care, cyclicals jump",
+      "outlet": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026",
+      "published": "2026-08-19",
+      "note": "Chip and tech stocks lagged the broader market amid rising bond yields, days ahead of Nvidia's August 26 earnings report."
+    },
+    {
+      "title": "ByteDance and Hollywood reach agreement over AI video IP rights",
+      "outlet": "PetaPixel",
+      "url": "https://petapixel.com/2026/08/18/bytedance-and-hollywood-reach-agreement-over-ai-video-ip-rights/",
+      "published": "2026-08-18",
+      "note": "The Motion Picture Association's first-ever AI-company deal adds copyright guardrails to ByteDance's Seedance video and Seedream image-generation models, months after an MPA cease-and-desist letter."
+    },
+    {
+      "title": "Baidu Q2 2026 earnings miss as ad revenue falls 19%",
+      "outlet": "Quartz",
+      "url": "https://qz.com/baidu-revenue-miss-advertising-decline-ai-cloud-growth-081826",
+      "published": "2026-08-18",
+      "note": "Net profit plunged 68% year over year to roughly $341.6M even as AI cloud infrastructure revenue grew 50%; fifth straight quarter of revenue decline."
+    },
+    {
+      "title": "Xiaomi's profit drops again as the memory crunch squeezes its phones",
+      "outlet": "The Next Web",
+      "url": "https://thenextweb.com/news/xiaomi-q2-2026-earnings-memory-crunch",
+      "published": null,
+      "note": "Adjusted net profit fell roughly 43% as soaring memory-chip costs from the global AI-driven shortage hit smartphone margins; third straight quarterly profit decline."
+    },
+    {
+      "title": "Perplexity's free AI offer left it with millions more users in India",
+      "outlet": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+      "published": "2026-08-18",
+      "note": "Giving free premium access to Airtel's 360M customers pushed Perplexity's India in-app revenue well above its 2026 average, per the company's growth data."
+    }
+  ]
+}
