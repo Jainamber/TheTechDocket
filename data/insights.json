@@ -1,7 +1,75 @@
 {
-  "generated_at": "2026-09-02T09:56:46.360372+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-09-03T09:48:41.307065+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "amazon-vs-perplexity-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "gpt-5-6-sol-ultrafast": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "chatgpt-for-teens": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-models-hacking-companies-safety-tests": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "openai-slows-ai-training": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "google-deepmind-shake-up": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "fuse-energy-neutron-record": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 3,
+    "big-tech": 3,
+    "ai-models": 5,
+    "hardware": 3,
+    "ai-tools": 2,
+    "policy": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
