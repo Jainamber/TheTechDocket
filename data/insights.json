@@ -1,7 +1,43 @@
 {
-  "generated_at": "2026-09-04T09:55:38.559579+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-09-05T09:51:26.383456+05:30",
+  "page_stats": {
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 4
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 4
+    },
+    "amazon-vs-perplexity-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "gpt-5-6-sol-ultrafast": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "ai-models": 6,
+    "explainers": 4,
+    "big-tech": 2,
+    "hardware": 2
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
