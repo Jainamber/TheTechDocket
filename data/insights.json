@@ -1,7 +1,42 @@
 {
-  "generated_at": "2026-09-10T10:06:35.455192+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-09-11T10:04:10.067608+05:30",
+  "page_stats": {
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "eu-ai-act-august-2026-what-changed": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 8,
+    "ai-models": 5,
+    "policy": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
