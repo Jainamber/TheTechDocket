@@ -1,0 +1,1492 @@
+{
+  "date": "2026-09-15",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_new AI model": "ok",
+    "news_IN_tech layoffs": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_new AI model": "ok",
+    "news_US_tech layoffs": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "failed: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "icici bank share",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:30:00 -0700",
+          "news": [
+            {
+              "headline": "ICICI Bank Q2 Outlook: What Investors Should Watch Out for Before the Results",
+              "source": "Trade Brains",
+              "url": "https://tradebrains.in/indian-markets/icici-bank-q2-outlook-what-investors-should-watch-out-for-before-the-results-12519353"
+            }
+          ]
+        },
+        {
+          "title": "bse sensex today",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Stock Market Shut for Ganesh Chaturthi; Fed Decision Keeps Gold Volatile",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/business-news/stock-market-shut-for-ganesh-chaturthi-fed-decision-keeps-gold-volatile-12042984"
+            },
+            {
+              "headline": "Equity, Forex Markets Closed for Ganesh Chaturthi",
+              "source": "Rediff MoneyWiz",
+              "url": "https://money.rediff.com/news/market/equity-forex-markets-closed-for-ganesh-chaturthi/54289120260914"
+            },
+            {
+              "headline": "Stock market holiday: Are NSE, BSE closed for trading on Ganesh Chaturthi?",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-holiday-are-nse-bse-closed-for-trading-on-ganesh-chaturthi/articleshow/134207678.cms"
+            }
+          ]
+        },
+        {
+          "title": "bse sensex",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Sensex climbs 233 points to 75,022 in early trade; Nifty up 63 points to 23,462",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/business/sensex-climbs-233-points-to-75022-in-early-trade-nifty-up-63-points-to-23462/cid/2179980"
+            },
+            {
+              "headline": "Markets Climb: IT Stocks & HDFC Bank Drive Early Gains",
+              "source": "Rediff MoneyWiz",
+              "url": "https://money.rediff.com/news/market/markets-climb-it-stocks-hdfc-bank-drive-early-gains/54341020260915"
+            },
+            {
+              "headline": "Indian Stock Market: Indian equities open higher defying weak global cues",
+              "source": "AP7AM",
+              "url": "https://www.ap7am.com/en/135660/indian-equities-open-higher-defying-weak-global-cues"
+            }
+          ]
+        },
+        {
+          "title": "hindustan copper share price",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Dividends and stock splits: Hindustan Copper, Cochin Shipyard among 200+ stocks with record dates this wee",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/dividends-and-stock-splits-hindustan-copper-cochin-shipyard-among-200-stocks-with-record-dates-this-week-check-full-list/articleshow/134185981.cms"
+            },
+            {
+              "headline": "Upcoming dividends, rights issue: Hindustan Copper, Blue Dart, Dilip Buildcon, others in focus; check full list",
+              "source": "Upstox",
+              "url": "https://upstox.com/news/market-news/stocks/upcoming-dividends-rights-issue-this-week-hindustan-copper-blue-dart-dilip-buildcon-others-in-focus-check-full-list/article-200231/"
+            },
+            {
+              "headline": "Dividend record date alert: Last chance to buy today for cash reward; Hindustan Copper, Bajaj Steel, VST Tillers, others",
+              "source": "Livemint",
+              "url": "https://www.livemint.com/market/stock-market-news/dividend-record-date-alert-last-chance-to-buy-today-for-dividend-hindustan-copper-bajaj-steel-vst-tillers-among-oth-11789440884559.html"
+            }
+          ]
+        },
+        {
+          "title": "tata steel share",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Tata Steel Share Price Live Updates: Tata Steel Breaks Above 20-Day SMA",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/stock-liveblog/tata-steel-share-price-today-live-updates-15-sep-2026/liveblog/134250586.cms"
+            },
+            {
+              "headline": "Tata Steel share price falls 3%, among top Nifty 50 laggards; what experts say",
+              "source": "TradingView",
+              "url": "https://www.tradingview.com/news/moodys:437617fdb5482:0-tata-steel-share-price-falls-3-among-top-nifty-50-laggards-what-experts-say/"
+            },
+            {
+              "headline": "Tata Steel slips Thursday, underperforms market",
+              "source": "MarketWatch",
+              "url": "https://www.marketwatch.com/story/tata-steel-slips-thursday-underperforms-market-6b4ff45d-7cd6274b2727"
+            }
+          ]
+        },
+        {
+          "title": "kalyan jewellers share price",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Kalyan Jewellers stock rises as UBS initiates coverage with Buy, sees 50% upside",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/kalyan-jewellers-stock-rises-as-ubs-initiates-coverage-with-buy-sees-50-upside-14029897.html"
+            },
+            {
+              "headline": "Paytm, Kalyan Jewellers, BSE, Tenneco, Titagarh, Cochin Shipyard, Sharda Motor shares: Targets",
+              "source": "Business Today",
+              "url": "https://www.businesstoday.in/markets/stocks/story/paytm-kalyan-jewellers-bse-tenneco-titagarh-cochin-shipyard-sharda-motor-shares-targets-555480-2026-09-15"
+            },
+            {
+              "headline": "Stocks To Buy: UBS bets on this jewellery stock for up to 50% upside",
+              "source": "CNBC TV18",
+              "url": "https://www.cnbctv18.com/market/kalyan-jewellers-share-price-ubs-initiates-buy-target-upside-key-triggers-risk-factors-19990537.htm"
+            }
+          ]
+        },
+        {
+          "title": "lenskart share price",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Lenskart Share Price: Stock gains 70% since listing — should you buy? Here's what Motilal Oswal says",
+              "source": "Zee Business",
+              "url": "https://www.zeebiz.com/markets/stocks/news-lenskart-share-price-stock-gains-70-since-listing-should-you-buy-heres-what-motilal-oswal-says-402169"
+            },
+            {
+              "headline": "Lenskart Solutions among 4 stocks to hit 52-week highs & rallied up to 22% in a month",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/lenskart-solutions-among-4-stocks-to-hit-52-week-highs-amp-rallied-up-to-22-in-a-month/fresh-highs/slideshow/133924337.cms"
+            },
+            {
+              "headline": "Buy Lenskart; target of Rs 800: Motilal Oswal",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/stocks/buy-lenskart-target-of-rs-800-motilal-oswal-14026960.html"
+            }
+          ]
+        },
+        {
+          "title": "ஓய்வூதியம்",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "ஓய்வூதியத் தொகை தாமதம்: தமிழக அரசு விளக்கம்",
+              "source": "DinaMani",
+              "url": "https://www.dinamani.com/tamilnadu/2026/Sep/13/delay-in-pension-payments-tamil-nadu-governments-explanation"
+            },
+            {
+              "headline": "தமிழகத்தில் 5 லட்சம் முதியோருக்கு உதவித்தொகை வராததால் அதிர்ச்சி: பயனாளிகளை குறைக்க முடிவா என சந்தேகம்",
+              "source": "Dinakaran",
+              "url": "https://www.dinakaran.com/news/tamilnadu_elderly_assistance_beneficiary_doubt/amp"
+            },
+            {
+              "headline": "OLD AGE PENSION : அடி தூள்.! காத்திருந்த ஓய்வூதியதார்களுக்கு குட் நியூஸ்.! வங்கி கணக்கில்",
+              "source": "ABP Nadu",
+              "url": "https://tamil.abplive.com/news/tamil-nadu/pension-amounts-for-social-security-scheme-beneficiaries-were-credited-to-their-bank-accounts-274551"
+            }
+          ]
+        },
+        {
+          "title": "maruti share price",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "These large-caps have ‘strong buy’ & ‘buy’ recos and an upside potential of over 22%, according to analyst",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/these-large-caps-have-strong-buy-buy-recos-and-an-upside-potential-of-over-22-according-to-analysts/articleshow/134245098.cms"
+            },
+            {
+              "headline": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133748711.cms"
+            },
+            {
+              "headline": "5 Mid-Cap Stocks With Potential Upside Amid Market Volatility",
+              "source": "Whalesbook",
+              "url": "https://www.whalesbook.com/news/English/stock-investment-ideas/5-Mid-Cap-Stocks-With-Potential-Upside-Amid-Market-Volatility/6aa7ad1675fe79b492e641d0"
+            }
+          ]
+        },
+        {
+          "title": "tech mahindra share price",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Tech Mahindra Share Price Live Updates: Tech Mahindra Shares Rise Significantly",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/stock-liveblog/tech-mahindra-share-price-live-15-sep-2026/liveblog/134250776.cms"
+            },
+            {
+              "headline": "Tech Mahindra rallies Tuesday, outperforms competitors",
+              "source": "MarketWatch",
+              "url": "https://www.marketwatch.com/story/tech-mahindra-rallies-tuesday-outperforms-competitors-795fafcd-7a57b0120c5b"
+            },
+            {
+              "headline": "Tech Mahindra Share Price Today: Intraday Gain and Valuation",
+              "source": "Univest",
+              "url": "https://univest.in/blogs/why-tech-mahindra-ltd-share-price-rise-today-2026"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "NASA, IBM launch new AI model for studying the moon - Space",
+            "source": "Space",
+            "pub_date": "Sat, 12 Sep 2026 10:00:00 GMT"
+          },
+          {
+            "title": "GPT-6 Astra: A new generation of intelligence - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Thu, 03 Sep 2026 18:42:16 GMT"
+          },
+          {
+            "title": "Apple researchers unveil SimpleDesign, a new AI model for protein design - 9to5Mac",
+            "source": "9to5Mac",
+            "pub_date": "Sat, 12 Sep 2026 01:56:00 GMT"
+          },
+          {
+            "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model - blog.google",
+            "source": "blog.google",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Suno Launches New AI Model Trained on Licensed WMG, BMG Tracks - The Hollywood Reporter",
+            "source": "The Hollywood Reporter",
+            "pub_date": "Wed, 09 Sep 2026 09:00:44 GMT"
+          },
+          {
+            "title": "Exclusive | New Google AI Model Said to Narrow Gap on Coding Ability - WSJ",
+            "source": "WSJ",
+            "pub_date": "Tue, 01 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace - CNBC",
+            "source": "CNBC",
+            "pub_date": "Sun, 06 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI hails ‘new era of artificial general intelligence’ with Astra model release - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Meta is paying to peek at how you use their latest AI model - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI’s next big AI model has ‘entered the AGI era’ - The Verge",
+            "source": "The Verge",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026 - anthropic.com",
+            "source": "anthropic.com",
+            "pub_date": "Thu, 10 Sep 2026 17:10:27 GMT"
+          },
+          {
+            "title": "We Must Pace the Frontier - darioamodei.com",
+            "source": "darioamodei.com",
+            "pub_date": "Sat, 12 Sep 2026 14:15:02 GMT"
+          },
+          {
+            "title": "New AI model screens high-risk heart patients for elevated Lp(a) - Cardiovascular Business",
+            "source": "Cardiovascular Business",
+            "pub_date": "Mon, 14 Sep 2026 16:37:57 GMT"
+          },
+          {
+            "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 14 Sep 2026 16:27:53 GMT"
+          },
+          {
+            "title": "New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate - SecurityWeek",
+            "source": "SecurityWeek",
+            "pub_date": "Mon, 14 Sep 2026 13:31:15 GMT"
+          },
+          {
+            "title": "Microsoft sets new limits for future AI models as frontier AI faces growing scrutiny - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Mon, 14 Sep 2026 16:54:54 GMT"
+          },
+          {
+            "title": "New method enables AI for safety-critical situations - MIT News",
+            "source": "MIT News",
+            "pub_date": "Mon, 14 Sep 2026 04:00:00 GMT"
+          },
+          {
+            "title": "Microsoft Sets Limits On Future AI Models, Issues New Code Of Conduct - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Mon, 14 Sep 2026 13:20:05 GMT"
+          },
+          {
+            "title": "'People matter more than AI': Microsoft joins tech firms urging caution on advanced AI - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Mon, 14 Sep 2026 13:57:21 GMT"
+          },
+          {
+            "title": "AI models enable cross-species mapping of cell biology - Phys.org",
+            "source": "Phys.org",
+            "pub_date": "Mon, 14 Sep 2026 21:30:02 GMT"
+          },
+          {
+            "title": "Microsoft is publishing its first code of conduct for its own AI models - qz.com",
+            "source": "qz.com",
+            "pub_date": "Mon, 14 Sep 2026 13:32:10 GMT"
+          },
+          {
+            "title": "New AI model forecasts glucose changes in type 1 diabetes patients - News-Medical",
+            "source": "News-Medical",
+            "pub_date": "Wed, 09 Sep 2026 12:58:00 GMT"
+          },
+          {
+            "title": "Where is Gemini 3.5 Pro? The case of the missing AI model. - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 11 Sep 2026 09:00:00 GMT"
+          },
+          {
+            "title": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 14 Sep 2026 15:41:00 GMT"
+          },
+          {
+            "title": "Siri AI, a profoundly more capable and personal assistant, is here - Apple",
+            "source": "Apple",
+            "pub_date": "Mon, 14 Sep 2026 17:13:11 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "Oracle begins a new round of layoffs. Read the email. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Mon, 14 Sep 2026 13:09:00 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees - Livemint",
+            "source": "Livemint",
+            "pub_date": "Sat, 12 Sep 2026 09:24:50 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Why is the company cutting more jobs while spending big on AI? - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Tue, 15 Sep 2026 04:07:39 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Employees receive ‘6am job cuts’ email from “Oracle leadership” again, saying: We are sha - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 14 Sep 2026 15:15:00 GMT"
+          },
+          {
+            "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026 - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 11 Sep 2026 04:17:41 GMT"
+          },
+          {
+            "title": "'Today is your last working day': Oracle begins new round of layoffs; here's what the shocking 6 am email says - Business Today",
+            "source": "Business Today",
+            "pub_date": "Tue, 15 Sep 2026 03:24:32 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Uber, Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 11 Sep 2026 15:23:59 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: Employees Get 6am Role Elimination Email, Company Cites ‘Organisational Change’ - News18",
+            "source": "News18",
+            "pub_date": "Tue, 15 Sep 2026 01:45:58 GMT"
+          },
+          {
+            "title": "Fresh Layoffs At Oracle: Tech Giant Cuts More Jobs Amid Massive AI Investment; 21,000 Employees Already Gone - goodreturns.in",
+            "source": "goodreturns.in",
+            "pub_date": "Mon, 14 Sep 2026 16:50:42 GMT"
+          },
+          {
+            "title": "Oracle begins another round of layoffs as $2.8 billion restructuring plan expands - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 14 Sep 2026 17:21:00 GMT"
+          },
+          {
+            "title": "Oracle Begins Fresh Layoff Round as Restructuring Bill Rises to $2.8 Billion, After 21,000 Jobs Disappeared in FY2026 - ascendants.in",
+            "source": "ascendants.in",
+            "pub_date": "Mon, 14 Sep 2026 14:35:25 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Thousands of jobs lost as Apple, Uber, Oracle, PayPal and more do AI restructuring - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 07 Sep 2026 07:01:33 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Leaked email reveals fresh incoming job cuts at the company, employees told their roles... - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Mon, 14 Sep 2026 15:48:10 GMT"
+          },
+          {
+            "title": "Oracle announces new round of layoffs in early-morning email: ‘Today is your last working day’ - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Mon, 14 Sep 2026 19:51:03 GMT"
+          },
+          {
+            "title": "Uber’s CEO says cutting 3,300 corporate jobs could help lower the price of your next ride - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 14 Sep 2026 18:41:00 GMT"
+          },
+          {
+            "title": "Oracle announces new layoffs to offset AI spending - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 14 Sep 2026 20:04:47 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: New Job Cuts Hit as AI Spending Drives a Wider Big Tech Restructuring - finchannel",
+            "source": "finchannel",
+            "pub_date": "Mon, 14 Sep 2026 21:26:29 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Fresh job cuts reportedly underway as employees receive role elimination notices - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Mon, 14 Sep 2026 17:46:18 GMT"
+          },
+          {
+            "title": "Oracle India Layoffs: IDC Hit By '6AM Email' On September 15, Employees Claim Severance Has Shrunk On Reddi - News18",
+            "source": "News18",
+            "pub_date": "Tue, 15 Sep 2026 04:40:12 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: Read The ‘Today Is Your Last Working Day’ Email That Employees Are 'Silently' Getting In Se - News18",
+            "source": "News18",
+            "pub_date": "Mon, 14 Sep 2026 15:32:08 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: 1.28 Lakh Jobs Cut Worldwide as MNCs and Domestic IT Firms Trim Over 35,000 Roles in India - GujaratSamachar English",
+            "source": "GujaratSamachar English",
+            "pub_date": "Fri, 11 Sep 2026 09:34:26 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: 30,000 Jobs Wiped Off In 6 AM Email: Check Highest Tech Layoffs, Amazon, TCS, Intel In List - goodreturns.in",
+            "source": "goodreturns.in",
+            "pub_date": "Thu, 10 Sep 2026 08:17:41 GMT"
+          },
+          {
+            "title": "Austin-based Oracle begins another round of layoffs - KVUE",
+            "source": "KVUE",
+            "pub_date": "Tue, 15 Sep 2026 02:59:00 GMT"
+          },
+          {
+            "title": "Tech giant Oracle rocked by another wave of layoffs after employees receive devastating 6 am email - New York Post",
+            "source": "New York Post",
+            "pub_date": "Mon, 14 Sep 2026 17:43:00 GMT"
+          },
+          {
+            "title": "The curious case of Oracle’s layoffs: Why the tech giant is spending $2.8 billion on job cuts - theweek.in",
+            "source": "theweek.in",
+            "pub_date": "Sat, 12 Sep 2026 07:50:25 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airlines",
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aidvantage",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt 6",
+          "chatgpt download",
+          "chatgpt student offer"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "drake fomo",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Drake Reveals ‘Fear of Missing Out’ Is a ‘Not So Short Film’",
+              "source": "Rolling Stone",
+              "url": "https://www.rollingstone.com/music/music-news/drake-fear-of-missing-out-not-so-short-film-1235625825/"
+            },
+            {
+              "headline": "Drake Finally Reveals What His Mysterious ‘Fear of Missing Out’ Project Is",
+              "source": "Yahoo News UK",
+              "url": "https://uk.news.yahoo.com/drake-finally-reveals-mysterious-fear-160024984.html"
+            },
+            {
+              "headline": "Drake Reveals “FOMO” As Self-Funded Film About One Wild Summer",
+              "source": "HotNewHipHop",
+              "url": "https://www.hotnewhiphop.com/1009704-drake-fomo-short-film-summer"
+            }
+          ]
+        },
+        {
+          "title": "register to vote",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "How Ohio college students can register to vote on campus or back home",
+              "source": "Signal Ohio",
+              "url": "https://signalohio.org/how-ohio-college-students-voter-registration-campus-home-address/"
+            },
+            {
+              "headline": "Voter registration deadline is Oct. 5 for General Election",
+              "source": "Coconino.az.gov",
+              "url": "https://www.coconino.az.gov/m/newsflash/Home/Detail/3450"
+            },
+            {
+              "headline": "Wake up voters! It's time to pay attention",
+              "source": "Santa Fe New Mexican",
+              "url": "https://www.santafenewmexican.com/opinion/editorials/wake-up-voters-its-time-to-pay-attention/article_61c3fe8d-22be-4230-b61a-3400cc99c51c.html"
+            }
+          ]
+        },
+        {
+          "title": "when is mexican independence day",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "El Grito's Grant Park Return, Car Caravans Downtown See Muted Crowds As ICE Fears Remain",
+              "source": "Block Club Chicago",
+              "url": "https://blockclubchicago.org/2026/09/13/el-gritos-grant-park-return-sees-muted-crowds-saturday-as-ice-fears-remain/"
+            },
+            {
+              "headline": "Chicago Mexican Independence Day events: Little Village 26th Street Mexican Independence Day Parade has pride, healing and hope",
+              "source": "ABC7 Chicago",
+              "url": "https://abc7chicago.com/post/chicago-mexican-independence-day-events-little-village-26th-street-parade-has-pride-healing-hope/19827371/"
+            },
+            {
+              "headline": "Mexican Independence Day Parade brings out a vibrant Little Village",
+              "source": "Chicago Tribune",
+              "url": "https://www.chicagotribune.com/2026/09/13/mexican-independence-day-parade-little-village/"
+            }
+          ]
+        },
+        {
+          "title": "jimmy fallon",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Jimmy Fallon Mocks Trump for Suggesting He's the Solution to AI Concerns: 'I Don't Think He Can Beat Wordle'",
+              "source": "TheWrap",
+              "url": "https://www.thewrap.com/creative-content/tv-shows/jimmy-fallon-reacts-trump-dismissing-ai-concerns/"
+            },
+            {
+              "headline": "The Tonight Show Starring Jimmy Fallon: Tom Cruise, Lili Reinhart, Suki Waterhouse",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66016309/?ref_=nmnw_art_perm"
+            },
+            {
+              "headline": "Angine de Poitrine on The Tonight Show Starring Jimmy Fallon",
+              "source": "NBC TV Network",
+              "url": "https://www.nbc.com/the-tonight-show/guests/angine-de-poitrine/7f3fc91738bf1aa3ac37cdccb47083002ce8a0aa"
+            }
+          ]
+        },
+        {
+          "title": "maddox chivan jolie",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Angelina Jolie and Brad Pitt’s Son Maddox Becomes Their Second Child to Legally Drop Pitt from Last Name",
+              "source": "People.com",
+              "url": "https://people.com/angelina-jolie-brad-pitt-son-maddox-legally-drops-pitt-from-last-name-12121527"
+            },
+            {
+              "headline": "Angelina Jolie and Brad Pitt’s son Maddox legally drops ‘Pitt’ from his last name",
+              "source": "Page Six",
+              "url": "https://pagesix.com/2026/09/14/celebrity-news/angelina-jolie-and-brad-pitts-son-maddox-legally-drops-pitt-from-his-last-name/"
+            },
+            {
+              "headline": "Angelina Jolie and Brad Pitt's Son Maddox Officially Drops Dad's Last Name",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/angelina-jolie-brad-pitts-son-192434692.html"
+            }
+          ]
+        },
+        {
+          "title": "rihanna",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Rihanna’s Daughter Rocki Looks Like Her Famous Mom in Matching Pink for Her 1st Birthday",
+              "source": "People.com",
+              "url": "https://people.com/rihanna-daughter-rocki-match-in-pink-for-toddler-1st-birthday-12121791"
+            },
+            {
+              "headline": "#TSRBirfdayz: Aww! Time flies 🥹! Can y’all believe #Rihanna’s mini me #Rocki is already one 💗??!!! (Swipe) (📸/🎥: mdollas11) ✍🏾: #TSRStaffST",
+              "source": "Instagram",
+              "url": "https://www.instagram.com/p/DdQRLh1DpcL/"
+            },
+            {
+              "headline": "Rihanna and A$AP Rocky Celebrate Daughter Rocki’s First Birthday",
+              "source": "DancehallMag",
+              "url": "https://www.dancehallmag.com/2026/09/14/style/rihanna-and-aap-rocky-celebrate-daughter-rockis-first-birthday.html"
+            }
+          ]
+        },
+        {
+          "title": "isabel gonzalez amber alert",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 14 Sep 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "AMBER Alert issued for missing Weatherford teen",
+              "source": "FOX 4 News Dallas-Fort Worth",
+              "url": "https://www.fox4news.com/news/amber-alert-issued-missing-weatherford-teen"
+            },
+            {
+              "headline": "Amber Alert issued for 14-year-old missing from Weatherford",
+              "source": "CBS News",
+              "url": "https://www.cbsnews.com/texas/news/amber-alert-issued-for-14-year-old-missing-from-weatherford/"
+            },
+            {
+              "headline": "Amber Alert issued for missing 14-year-old, Weatherford Police say",
+              "source": "WFAA",
+              "url": "https://www.wfaa.com/article/news/local/texas/amber-alert-missing-14-year-old-weatherford/287-175cceaf-f619-4af4-a021-274f5f0f891f"
+            }
+          ]
+        },
+        {
+          "title": "mexico independence day",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 14 Sep 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "80th annual East L.A. Mexican Independence Day Parade and Festival held Sunday",
+              "source": "KTLA",
+              "url": "https://ktla.com/news/local-news/80th-annual-east-l-a-mexican-independence-day-parade-and-festival-held-sunday/"
+            },
+            {
+              "headline": "Los Angeles is shutting down more than 1.5 miles of streets this weekend ahead of the Mexican Independence Day Parade",
+              "source": "Secret Los Angeles",
+              "url": "https://secretlosangeles.com/mexican-independence-day-parade-street-closures/"
+            },
+            {
+              "headline": "Hispanic Heritage Month in Southern California: Enjoy parades, films, and fests",
+              "source": "NBC Los Angeles",
+              "url": "https://www.nbclosangeles.com/the-scene/hispanic-heritage-month-in-southern-california-enjoy-parades-films-and-fests/3940746/"
+            }
+          ]
+        },
+        {
+          "title": "widows bay season 2",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 14 Sep 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Widow's Bay Season 2 Filming Window Revealed By Fan-Favorite Star",
+              "source": "ScreenRant",
+              "url": "https://screenrant.com/widows-bay-season-2-filming-march-2027-kate-o-flynn-response/"
+            },
+            {
+              "headline": "Widow's Bay Season 2 Filming Window Revealed By Fan-Favorite Star",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66013267/?ref_=ttnw_art_perm"
+            },
+            {
+              "headline": "‘Widow’s Bay’ Season 2 Is Officially Happening—Here’s When It Could Premiere",
+              "source": "Cosmopolitan",
+              "url": "https://www.cosmopolitan.com/entertainment/tv/a73726611/widows-bay-season-2-news-cast-premiere-date/"
+            }
+          ]
+        },
+        {
+          "title": "cal raleigh",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 14 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Field View: Cal Raleigh's three-run homer",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/mariners/video/field-view-cal-raleigh-s-three-run-homer"
+            },
+            {
+              "headline": "Cal Raleigh's three-run homer (22)",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/videos/cal-raleighs-three-run-homer-025127782.html"
+            },
+            {
+              "headline": "The distance behind Cal Raleigh's home run",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/mariners/video/the-distance-behind-cal-raleigh-s-home-run-x4672"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "NASA, IBM launch new AI model for studying the moon - Space",
+            "source": "Space",
+            "pub_date": "Sat, 12 Sep 2026 10:00:00 GMT"
+          },
+          {
+            "title": "Apple researchers unveil SimpleDesign, a new AI model for protein design - 9to5Mac",
+            "source": "9to5Mac",
+            "pub_date": "Sat, 12 Sep 2026 01:56:00 GMT"
+          },
+          {
+            "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model - blog.google",
+            "source": "blog.google",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Suno Launches New AI Model Trained on Licensed WMG, BMG Tracks - The Hollywood Reporter",
+            "source": "The Hollywood Reporter",
+            "pub_date": "Wed, 09 Sep 2026 09:00:44 GMT"
+          },
+          {
+            "title": "OpenAI does a victory lap for its new AI model: 'Welcome to the AGI era' - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Anthropic withheld latest AI model from UK testing agency - ft.com",
+            "source": "ft.com",
+            "pub_date": "Wed, 09 Sep 2026 04:00:52 GMT"
+          },
+          {
+            "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace - CNBC",
+            "source": "CNBC",
+            "pub_date": "Sun, 06 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Exclusive | New Google AI Model Said to Narrow Gap on Coding Ability - wsj.com",
+            "source": "wsj.com",
+            "pub_date": "Tue, 01 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Meta is paying to peek at how you use their latest AI model - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI hails ‘new era of artificial general intelligence’ with Astra model release - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "We Must Pace the Frontier - darioamodei.com",
+            "source": "darioamodei.com",
+            "pub_date": "Sat, 12 Sep 2026 14:15:02 GMT"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026 - Anthropic",
+            "source": "Anthropic",
+            "pub_date": "Thu, 10 Sep 2026 17:10:27 GMT"
+          },
+          {
+            "title": "New AI model screens high-risk heart patients for elevated Lp(a) - Cardiovascular Business",
+            "source": "Cardiovascular Business",
+            "pub_date": "Mon, 14 Sep 2026 16:37:57 GMT"
+          },
+          {
+            "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 14 Sep 2026 16:27:53 GMT"
+          },
+          {
+            "title": "New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate - SecurityWeek",
+            "source": "SecurityWeek",
+            "pub_date": "Mon, 14 Sep 2026 13:31:15 GMT"
+          },
+          {
+            "title": "Top A.I. Leaders Call for Slowing Down A.I. Development - nytimes.com",
+            "source": "nytimes.com",
+            "pub_date": "Tue, 15 Sep 2026 04:33:21 GMT"
+          },
+          {
+            "title": "AI models enable cross-species mapping of cell biology - Phys.org",
+            "source": "Phys.org",
+            "pub_date": "Mon, 14 Sep 2026 21:30:02 GMT"
+          },
+          {
+            "title": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 14 Sep 2026 15:41:00 GMT"
+          },
+          {
+            "title": "Siri AI, a profoundly more capable and personal assistant, is here - Apple",
+            "source": "Apple",
+            "pub_date": "Mon, 14 Sep 2026 17:13:11 GMT"
+          },
+          {
+            "title": "Microsoft Joins AI Firms Calling for Caution With Cutting-Edge Models - claimsjournal.com",
+            "source": "claimsjournal.com",
+            "pub_date": "Mon, 14 Sep 2026 14:59:30 GMT"
+          },
+          {
+            "title": "New method enables AI for safety-critical situations - MIT News",
+            "source": "MIT News",
+            "pub_date": "Mon, 14 Sep 2026 04:00:00 GMT"
+          },
+          {
+            "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse - Reuters",
+            "source": "Reuters",
+            "pub_date": "Sat, 12 Sep 2026 14:23:00 GMT"
+          },
+          {
+            "title": "Microsoft's AI code of conduct rejects model welfare - The Next Web",
+            "source": "The Next Web",
+            "pub_date": "Mon, 14 Sep 2026 21:30:03 GMT"
+          },
+          {
+            "title": "Microsoft is publishing its first code of conduct for its own AI models - qz.com",
+            "source": "qz.com",
+            "pub_date": "Mon, 14 Sep 2026 13:32:10 GMT"
+          },
+          {
+            "title": "New AI model for DNA learns from evolution to unlock secrets of the human genome - University of California, Berkeley",
+            "source": "University of California, Berkeley",
+            "pub_date": "Wed, 09 Sep 2026 16:37:30 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "Oracle begins a new round of layoffs. Read the email. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Mon, 14 Sep 2026 13:09:00 GMT"
+          },
+          {
+            "title": "Austin-based Oracle begins another round of layoffs - KVUE",
+            "source": "KVUE",
+            "pub_date": "Tue, 15 Sep 2026 02:59:00 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Uber, Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 11 Sep 2026 15:23:59 GMT"
+          },
+          {
+            "title": "Tech giant Oracle rocked by another wave of layoffs after employees receive devastating 6 am email - New York Post",
+            "source": "New York Post",
+            "pub_date": "Mon, 14 Sep 2026 17:43:00 GMT"
+          },
+          {
+            "title": "Oracle begins new round of AI-driven layoffs: report - KRON4",
+            "source": "KRON4",
+            "pub_date": "Mon, 14 Sep 2026 17:33:23 GMT"
+          },
+          {
+            "title": "Oracle Layoffs Put AI’s Role in Tech Job Cuts Under Scrutiny - telecomreseller.com",
+            "source": "telecomreseller.com",
+            "pub_date": "Mon, 14 Sep 2026 20:59:18 GMT"
+          },
+          {
+            "title": "Oracle announces new layoffs to offset AI spending - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 14 Sep 2026 20:04:47 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: New Job Cuts Hit as AI Spending Drives a Wider Big Tech Restructuring - finchannel",
+            "source": "finchannel",
+            "pub_date": "Mon, 14 Sep 2026 21:26:29 GMT"
+          },
+          {
+            "title": "Uber’s CEO says cutting 3,300 corporate jobs could help lower the price of your next ride - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 14 Sep 2026 18:41:00 GMT"
+          },
+          {
+            "title": "Oracle begins another round of layoffs as $2.8 billion restructuring plan expands - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 14 Sep 2026 17:21:00 GMT"
+          },
+          {
+            "title": "Oracle announces new round of layoffs in early-morning email: ‘Today is your last working day’ - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Mon, 14 Sep 2026 19:51:03 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Employees receive ‘6am job cuts’ email from “Oracle leadership” again, saying: We are sha - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 14 Sep 2026 15:15:00 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Why is the company cutting more jobs while spending big on AI? - firstpost.com",
+            "source": "firstpost.com",
+            "pub_date": "Tue, 15 Sep 2026 04:07:39 GMT"
+          },
+          {
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Bay Area tech layoffs already top last year as more job cuts surface - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Fri, 04 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Continue. Why Laid-Off Workers Should Consider Entrepreneurship - Forbes",
+            "source": "Forbes",
+            "pub_date": "Wed, 26 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle’s AI transformation gets more expensive as layoffs continue - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 14 Sep 2026 06:59:00 GMT"
+          },
+          {
+            "title": "Tech layoffs August 2026 update: Apple, TikTok, LinkedIn, Netflix join the list of companies slashing jobs - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 24 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "A laid-off Grubhub worker created a tracker to help others find jobs. 18 months later, recruiters are learning from it. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sun, 13 Sep 2026 09:07:00 GMT"
+          },
+          {
+            "title": "AI wealth fuels San Francisco’s housing boom while tech layoffs weigh down Seattle - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 02 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "I was laid off from Amazon. After struggling to relax as a working mom, I went all in on my wellness side hustle. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Thu, 10 Sep 2026 09:11:00 GMT"
+          },
+          {
+            "title": "Opinion | I Helped Run Lululemon. Companies Need to Stop Kidding Themselves About A.I. - nytimes.com",
+            "source": "nytimes.com",
+            "pub_date": "Mon, 03 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs climb as Uber sacks thousands of employees - SFGATE",
+            "source": "SFGATE",
+            "pub_date": "Wed, 02 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Fresh job cuts reportedly underway as employees receive role elimination notices - firstpost.com",
+            "source": "firstpost.com",
+            "pub_date": "Mon, 14 Sep 2026 17:46:18 GMT"
+          },
+          {
+            "title": "I spent years working at Amazon, Twitter, and LinkedIn. Now I'm navigating the first layoff of my career. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Tue, 08 Sep 2026 09:16:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airlines",
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aidvantage",
+          "ai image generator"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt 6",
+          "chatgpt download",
+          "chatgpt student offer"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    }
+  },
+  "hacker_news": null,
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 7094499,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 835157,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 606930,
+      "rank": 3
+    },
+    {
+      "article": "Sitee",
+      "views": 571625,
+      "rank": 4
+    },
+    {
+      "article": "Alexander_Zverev",
+      "views": 430774,
+      "rank": 5
+    },
+    {
+      "article": "Elena_Rybakina",
+      "views": 365765,
+      "rank": 6
+    },
+    {
+      "article": "Ben_Shelton",
+      "views": 345880,
+      "rank": 7
+    },
+    {
+      "article": "Ryan_Garcia",
+      "views": 243866,
+      "rank": 8
+    },
+    {
+      "article": "Arch_Manning",
+      "views": 236539,
+      "rank": 9
+    },
+    {
+      "article": "September_11_attacks",
+      "views": 227231,
+      "rank": 10
+    },
+    {
+      "article": "2026_Swedish_general_election",
+      "views": 196385,
+      "rank": 11
+    },
+    {
+      "article": "Aryna_Sabalenka",
+      "views": 186791,
+      "rank": 12
+    },
+    {
+      "article": "John_Tuggle",
+      "views": 175760,
+      "rank": 13
+    },
+    {
+      "article": "Conor_Benn",
+      "views": 160705,
+      "rank": 14
+    },
+    {
+      "article": "Vishwanath_&_Sons",
+      "views": 135721,
+      "rank": 15
+    },
+    {
+      "article": "Hanuman_Ansh",
+      "views": 129931,
+      "rank": 16
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 128190,
+      "rank": 17
+    },
+    {
+      "article": "Bryan_Shelton",
+      "views": 123971,
+      "rank": 18
+    },
+    {
+      "article": "Killing_of_the_Clancy_children",
+      "views": 122245,
+      "rank": 19
+    },
+    {
+      "article": "List_of_Garfield_characters",
+      "views": 117176,
+      "rank": 20
+    },
+    {
+      "article": "Trinity_Rodman",
+      "views": 107585,
+      "rank": 21
+    },
+    {
+      "article": "XXX_(2002_film)",
+      "views": 106327,
+      "rank": 22
+    },
+    {
+      "article": "Cooper_Manning",
+      "views": 104413,
+      "rank": 23
+    },
+    {
+      "article": "United_Airlines_Flight_93",
+      "views": 99496,
+      "rank": 24
+    },
+    {
+      "article": "Alan_Ritchson",
+      "views": 94957,
+      "rank": 25
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 94879,
+      "rank": 26
+    },
+    {
+      "article": "Michael_Polansky",
+      "views": 91360,
+      "rank": 27
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 86136,
+      "rank": 28
+    },
+    {
+      "article": "The_Gentlemen_(2024_TV_series)",
+      "views": 84585,
+      "rank": 29
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 81164,
+      "rank": 30
+    },
+    {
+      "article": "Celine_Dion",
+      "views": 80987,
+      "rank": 31
+    },
+    {
+      "article": "Lady_Gaga",
+      "views": 78807,
+      "rank": 32
+    },
+    {
+      "article": "Practical_Magic_2",
+      "views": 78090,
+      "rank": 33
+    },
+    {
+      "article": "Dario_Amodei",
+      "views": 76060,
+      "rank": 34
+    },
+    {
+      "article": "Bethlehem_Kudumba_Unit",
+      "views": 75829,
+      "rank": 35
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 75506,
+      "rank": 36
+    },
+    {
+      "article": "G._D._Naidu",
+      "views": 73332,
+      "rank": 37
+    },
+    {
+      "article": "Mirzapur_(film)",
+      "views": 72057,
+      "rank": 38
+    },
+    {
+      "article": "Mohamed_Atta",
+      "views": 71425,
+      "rank": 39
+    },
+    {
+      "article": "Theo_James",
+      "views": 70617,
+      "rank": 40
+    },
+    {
+      "article": "Osama_bin_Laden",
+      "views": 70519,
+      "rank": 41
+    },
+    {
+      "article": "George_Chuvalo",
+      "views": 69612,
+      "rank": 42
+    },
+    {
+      "article": "Mandaadi",
+      "views": 69069,
+      "rank": 43
+    },
+    {
+      "article": "Neem_Karoli_Baba",
+      "views": 68956,
+      "rank": 44
+    },
+    {
+      "article": "Hijackers_in_the_September_11_attacks",
+      "views": 68323,
+      "rank": 45
+    },
+    {
+      "article": "Practical_Magic",
+      "views": 68077,
+      "rank": 46
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 67593,
+      "rank": 47
+    },
+    {
+      "article": "BRICS",
+      "views": 66853,
+      "rank": 48
+    },
+    {
+      "article": "The_Falling_Man",
+      "views": 65635,
+      "rank": 49
+    },
+    {
+      "article": "World_Trade_Center_(1973–2001)",
+      "views": 63783,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Jensen Huang took a call from Trump, and showed off something else, too"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Amazon Prime Video takes on TikTok with short-form news clips"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "ClickFix attacks are tricking Mac and Windows users into hacking themselves"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Volkswagen’s crazy-efficient EV borrows an idea from Slate"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "With iOS 27, I’m actually using Siri again"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "macOS 27: new Siri takes on AI productivity apps"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Waymo opens robotaxi service in Las Vegas"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Sources say Automattic’s board is out after failed attempt to oust CEO Matt Mullenweg"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Valve is still figuring out ‘how and when’ to do Steam Deck 2"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Apple Home’s new security camera features cost as much as $60 a month"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "What execs and politicians are saying about slowing down AI development"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trump throws out power plant climate pollution rules"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Valve&#8217;s virtual reality plans hit actual reality"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The best deals from Nintendo’s ‘customer appreciation’ sale"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "TIFF 2026: The latest movie reviews from Toronto"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "macOS 27 is available now"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "For the first time, the US military confirms it has deployed weapons in orbit"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr. headlines sold-out anti-vaccine conference alongside Andrew Wakefield"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rocket Lab is seeing red about NASA's decision on a Mars spacecraft"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AI leaders want to hit the brakes after years of reckless speed"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Online hate researcher keeps hammering X despite deportation threat"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A new solar cell could generate electricity underwater"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Prehistoric builders transported Devil's Arrows 11 miles"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Steam Frame: The Ars Technica review"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "\"Offensively cheap\": Solar power is looking up"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "New corners, new lights for 2028 Volvo XC40"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "F1 in Madrid: Like Monaco but twice as long and none of the glamour"
+    }
+  ]
+}
