@@ -1,0 +1,1778 @@
+{
+  "date": "2026-09-16",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "sterlite technologies share price",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 15 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "CLSA hikes Sterlite Tech share price target by 47%; maintains Outperform call on stock that’s up 775% YTD",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/clsa-hikes-sterlite-tech-share-price-target-by-47-maintains-outperform-call-on-stock-thats-up-775-ytd/articleshow/134251562.cms"
+            },
+            {
+              "headline": "Multibagger Telecom Stock Up 656% in 1 Year: Why It Rallied",
+              "source": "Univest",
+              "url": "https://univest.in/blogs/multibagger-telecom-stock-rises-656-percent-in-1-year"
+            },
+            {
+              "headline": "Two upper circuits for Sterlite Technologies shares as firm discloses FY29 targets",
+              "source": "Business Today",
+              "url": "https://www.businesstoday.in/markets/stocks/story/two-upper-circuits-for-sterlite-technologies-shares-as-firm-discloses-fy29-targets-553718-2026-09-07"
+            }
+          ]
+        },
+        {
+          "title": "raymond share price",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 15 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Why is Raymond share price rising today? Stock hits fresh 52-week high, zooms 200% in 6 months",
+              "source": "TradingView",
+              "url": "https://www.tradingview.com/news/moodys:bd47269db2200:0-why-is-raymond-share-price-rising-today-stock-hits-fresh-52-week-high-zooms-200-in-6-months/"
+            },
+            {
+              "headline": "Raymond Realty To Raise Rs 409 Crore Via Preferential Warrant Issue",
+              "source": "NDTV Profit",
+              "url": "https://www.ndtvprofit.com/markets/raymond-realty-to-raise-rs-409-crore-via-preferential-warrant-issue-12041463"
+            },
+            {
+              "headline": "Over 150% rally YTD! This multibagger stock spurts 12% to hit record high",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/markets/news/over-150-rally-ytd-this-multibagger-stock-spurts-12-to-hit-record-high-126091500356_1.html"
+            }
+          ]
+        },
+        {
+          "title": "nifty 50",
+          "approx_traffic": "10000+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Indian shares open higher after selloff; higher oil, Fed caution cap gains",
+              "source": "Reuters",
+              "url": "https://www.reuters.com/world/india/indian-shares-seen-opening-higher-after-selloff-higher-oil-fed-caution-cap-gains-2026-09-16/"
+            },
+            {
+              "headline": "Pre-market action: Here's the trade setup for today's session",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/pre-market-action-heres-the-trade-setup-for-todays-session/articleshow/134269676.cms"
+            },
+            {
+              "headline": "NIFTY50, SENSEX today: Wall Street cues, FII activity, key things to know before markets open on September 16",
+              "source": "Upstox",
+              "url": "https://upstox.com/news/market-news/stocks/nifty-50-sensex-today-wall-street-cues-fii-activity-key-things-to-know-before-markets-open-on-september-16/article-200312/"
+            }
+          ]
+        },
+        {
+          "title": "sensex",
+          "approx_traffic": "10000+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Sensex falls 500 pts from day's high, Nifty below 23,150: Key reasons behind sharp market decline",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/sensex-falls-500-pts-from-day-s-high-nifty-below-23-150-key-reasons-behind-sharp-market-decline-14030822.html"
+            },
+            {
+              "headline": "Sensex tanks 778 points, Nifty closes at five-month low amid oil surge, rate hike fears",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/business/sensex-tanks-777-points-to-settle-at-74003-nifty-drops-279-points-to-23118/cid/2180037"
+            },
+            {
+              "headline": "Markets Fall Amid Crude Surge, NPCI Holds UPI Fee Meet, RBI Files Caveat On Tata Sons Listing - India Today",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/india/video/markets-fall-amid-crude-surge-npci-holds-upi-fee-meet-rbi-files-caveat-on-tata-sons-listing-ytvd-2995088-2026-09-15"
+            }
+          ]
+        },
+        {
+          "title": "yes bank share price",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Yes Bank पर आई राहत वाली खबर, GST मामले में करोड़ों रुपये कम हुआ जुर्माना; क्या है पूरा मामला",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/business/share-market-yes-bank-gets-relief-gst-penalty-reduced-by-rs-68-lakh-40366162.html"
+            },
+            {
+              "headline": "आज यस बैंक के शेयरों में बढ़त, यूपीआई पर एमडीआर के फायदे का हुआ असर?",
+              "source": "Livemint",
+              "url": "https://www.livemint.com/hindi/market/yes-bank-stocks-up-today-as-npci-announced-mdr-on-upi-payment-241789532240343.html"
+            },
+            {
+              "headline": "Yes Bank Stock Price: बाजार बंद होने के बाद यस बैंक ने एक्सचेंज पर दी जीएसटी पेनल्टी में नए फैसले की जानकारी",
+              "source": "CNBC TV18",
+              "url": "https://hindi.cnbctv18.com/share-market/yes-bank-share-news-gst-penalty-reduced-impact-on-investors-193920.htm"
+            }
+          ]
+        },
+        {
+          "title": "kanohar electricals share price",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Kanohar Electricals IPO GMP signals 38% listing gains on Wednesday; analysts outline trading strategy",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/ipo/kanohar-electricals-ipo-gmp-signals-38-listing-gains-on-wednesday-analysts-outline-trading-strategy-14030370.html"
+            },
+            {
+              "headline": "Kanohar Electricals shares to list today; GMP signals 30% potential listing gains",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/kanohar-electricals-shares-to-list-today-gmp-signals-30-potential-listing-gains/articleshow/134276743.cms"
+            },
+            {
+              "headline": "Glass Wall, Kanohar eye 25-35% listing pop; Prasol Chem may see weak debut",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/markets/ipo/glass-wall-kanohar-eye-25-35-listing-pop-prasol-chem-may-see-weak-debut-126091500515_1.html"
+            }
+          ]
+        },
+        {
+          "title": "manika plastech ipo",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Manika Plastech IPO Day 3: GMP at 7%, subscription reaches 8.3 times. Key details",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/ipos/fpos/manika-plastech-ipo-day-3-gmp-at-7-subscription-reaches-8-3-times-key-details/articleshow/134277423.cms"
+            },
+            {
+              "headline": "Manika Plastech IPO Recommendation: Apply or Avoid?",
+              "source": "IPO Watch",
+              "url": "https://ipowatch.in/manika-plastech-ipo-recommendation/"
+            },
+            {
+              "headline": "Manika Plastech IPO GMP Hints at 25% Listing Gain as Subscription Hits 1.49x",
+              "source": "Motilal Oswal",
+              "url": "https://www.motilaloswal.com/news/ipo/14662"
+            }
+          ]
+        },
+        {
+          "title": "solar industries share price",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "CAM, DLA Piper, Webber Wentzel advise on Solar Group’s proposed INR 12,951 crore acquisition of Omnia",
+              "source": "ETLegalWorld.com",
+              "url": "https://legal.economictimes.indiatimes.com/news/industry/cam-dla-piper-webber-wentzel-act-on-solar-groups-acquisition-of-omnia-group/134241609"
+            },
+            {
+              "headline": "Solar's $1.3 bn bet is a turn for India's defence-industrial complex",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/news/defence/tata-omnia-holdings-solars-1-3-bn-bet-is-a-turn-for-indias-defence-industrial-complex/articleshow/134256504.cms"
+            },
+            {
+              "headline": "Solar Industries to buy Johannesburg-listed chemicals company for $1.36 bn",
+              "source": "VCCircle",
+              "url": "https://www.vccircle.com/solarindustries-to-buy-johannesburg-listed-chemicals-company-for-1-36-bn"
+            }
+          ]
+        },
+        {
+          "title": "modi",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "BJP to take up month-long Seva Sankalp Abhiyan from Sept. 17 to mark Modi’s 25 years of administration",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/karnataka/bjp-to-take-up-month-long-seva-sankalp-abhiyan-from-sept-17-to-mark-modis-25-years-of-administration/article71469242.ece"
+            },
+            {
+              "headline": "As PM Modi Nears 25 Years In Office, A Look At His Most Ambitious Schemes",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/india-news/as-pm-modi-nears-25-years-in-office-a-look-at-his-schemes-swachh-bharat-abhiyan-digital-india-ayushman-bharat-pradhan-mantri-jan-dhan-yojana-12048295"
+            },
+            {
+              "headline": "Bike rally to be flagged off from Modi’s birthplace in Gujarat to Varanasi on Sept 17, Shah to attend",
+              "source": "ThePrint",
+              "url": "https://theprint.in/india/bike-rally-to-be-flagged-off-from-modis-birthplace-in-gujarat-to-varanasi-on-sept-17-shah-to-attend/3043613/"
+            }
+          ]
+        },
+        {
+          "title": "bse",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "NSE vs BSE vs MCX: Who created the most wealth & who has more to give?",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/nse-vs-bse-vs-mcx-who-created-the-most-wealth-who-has-more-to-give/articleshow/134277926.cms"
+            },
+            {
+              "headline": "The valuation puzzle: What makes BSE pricier than IPO-ready NSE?",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/markets/ipo/the-valuation-puzzle-what-makes-bse-pricier-than-ipo-ready-nse-126091600144_1.html"
+            },
+            {
+              "headline": "NSE vs BSE: Which stock is better for investors?",
+              "source": "TradingView",
+              "url": "https://www.tradingview.com/news/moodys:536c80babb553:0-nse-vs-bse-which-stock-is-better-for-investors/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Oracle layoffs free up experienced tech talent. Will India's GCCs hire them? - India Today",
+            "source": "India Today",
+            "pub_date": "Wed, 16 Sep 2026 02:00:00 GMT"
+          },
+          {
+            "title": "Oracle layoffs underscore shift from hiring at scale to AI-led productivity - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Tue, 15 Sep 2026 15:20:20 GMT"
+          },
+          {
+            "title": "'Today is your last working day': Oracle begins new round of layoffs; here's what the shocking 6 am email says - Business Today",
+            "source": "Business Today",
+            "pub_date": "Tue, 15 Sep 2026 02:03:36 GMT"
+          },
+          {
+            "title": "Oracle layoffs: ‘Some difficult news’ - Read US tech giant’s complete email to affected employees - Livemint",
+            "source": "Livemint",
+            "pub_date": "Tue, 15 Sep 2026 10:53:28 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: Employees Get 6am Role Elimination Email, Company Cites ‘Organisational Change’ - News18",
+            "source": "News18",
+            "pub_date": "Tue, 15 Sep 2026 01:45:58 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: How Oracle, Samsung, Uber and Others Are Cutting Jobs - News Mobile",
+            "source": "News Mobile",
+            "pub_date": "Tue, 15 Sep 2026 06:17:36 GMT"
+          },
+          {
+            "title": "Oracle layoffs reportedly begin as company plans up to USD 95 billion AI infrastructure spending - India TV News",
+            "source": "India TV News",
+            "pub_date": "Tue, 15 Sep 2026 06:52:10 GMT"
+          },
+          {
+            "title": "Fresh Layoffs At Oracle: Tech Giant Cuts More Jobs Amid Massive AI Investment; 21,000 Employees Already Gone - goodreturns.in",
+            "source": "goodreturns.in",
+            "pub_date": "Mon, 14 Sep 2026 16:50:42 GMT"
+          },
+          {
+            "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026 - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 11 Sep 2026 04:17:41 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees - Livemint",
+            "source": "Livemint",
+            "pub_date": "Sat, 12 Sep 2026 09:24:50 GMT"
+          },
+          {
+            "title": "Oracle begins fresh round of layoffs; over 1,000 Indian employees set to lose jobs - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Tue, 15 Sep 2026 14:56:53 GMT"
+          },
+          {
+            "title": "Oracle employee criticises all-hands meeting held after layoffs: CFO says he dislikes ‘doing more with... - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 16 Sep 2026 03:24:41 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: 'He worked through Holi and Diwali... then locked out' - rediff.com",
+            "source": "rediff.com",
+            "pub_date": "Tue, 15 Sep 2026 16:29:05 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking the job losses across Oracle, Uber, Apple, TikTok, Meta, Microsoft and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 15 Sep 2026 12:20:33 GMT"
+          },
+          {
+            "title": "Oracle layoffs: India sees fresh round of cuts, product engineering hit hardest - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Wed, 16 Sep 2026 04:19:17 GMT"
+          },
+          {
+            "title": "Oracle Layoffs In India: 1,500 Employees Could Be Targeted In Fresh Job Cuts After September 15 Round - News18",
+            "source": "News18",
+            "pub_date": "Wed, 16 Sep 2026 03:31:35 GMT"
+          },
+          {
+            "title": "8,000 Applications, No Job: Ex-Google, Meta, Microsoft Workers Reveal The Harsh Reality After Layoffs - NDTV",
+            "source": "NDTV",
+            "pub_date": "Wed, 02 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle begins a new round of layoffs. Read the email. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Mon, 14 Sep 2026 13:09:00 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Employees receive ‘6am job cuts’ email from “Oracle leadership” again, saying: We are sha - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 14 Sep 2026 15:15:00 GMT"
+          },
+          {
+            "title": "Oracle begins new round of layoffs: Report - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Tue, 15 Sep 2026 15:14:21 GMT"
+          },
+          {
+            "title": "'Today is your last working day': Oracle fires 6-am termination email to staff on fresh round of job cuts this year - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Tue, 15 Sep 2026 08:58:37 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: Team Mates Get '6 AM Emails' Then Remaining Employees Attend Townhall Same Night- 'Great Ti - News18",
+            "source": "News18",
+            "pub_date": "Tue, 15 Sep 2026 17:55:58 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Why is the company cutting more jobs while spending big on AI? - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Tue, 15 Sep 2026 04:07:39 GMT"
+          },
+          {
+            "title": "'Today Is Your Last Day': The 6 AM Email That Laid Off Oracle Workers - NDTV",
+            "source": "NDTV",
+            "pub_date": "Tue, 15 Sep 2026 05:10:06 GMT"
+          },
+          {
+            "title": "Oracle layoffs: Slack access vanished at 4am, employees reveal how job cuts unfolded on Reddit - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Tue, 15 Sep 2026 11:39:25 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "MediaTek Dimensity 9600 Pro Sets New Standard for Flagship Smartphone Chips - MediaTek",
+            "source": "MediaTek",
+            "pub_date": "Tue, 15 Sep 2026 09:22:43 GMT"
+          },
+          {
+            "title": "Samsung Launches Galaxy S26 FE in India, Bringing Flagship Camera, Galaxy AI and Powerful Performance - Samsung Global Newsroom",
+            "source": "Samsung Global Newsroom",
+            "pub_date": "Mon, 14 Sep 2026 11:16:51 GMT"
+          },
+          {
+            "title": "MediaTek launches new mobile chip using TSMC's most advanced technology - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 15 Sep 2026 08:14:10 GMT"
+          },
+          {
+            "title": "iQOO 16 officially confirmed to launch at the end of September: check launch date and official design here - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 15 Sep 2026 05:43:52 GMT"
+          },
+          {
+            "title": "OnePlus N6 Lite India launch set for 22nd September, to come with 7000mAh battery and military-grade durability - MobiGyaan",
+            "source": "MobiGyaan",
+            "pub_date": "Tue, 15 Sep 2026 12:22:49 GMT"
+          },
+          {
+            "title": "Doubao Smartphone Official Launch Tomorrow: Can AI Now Help You Operate Apps Efficiently? - 36 Kr",
+            "source": "36 Kr",
+            "pub_date": "Tue, 15 Sep 2026 14:54:29 GMT"
+          },
+          {
+            "title": "iQOO 16 flagship smartphone to be introduced on September 29th - FoneArena.com",
+            "source": "FoneArena.com",
+            "pub_date": "Tue, 15 Sep 2026 02:51:13 GMT"
+          },
+          {
+            "title": "Doubao consumer launch puts system-level AI agents in focus in China’s smartphone race - Global Times",
+            "source": "Global Times",
+            "pub_date": "Mon, 14 Sep 2026 15:39:00 GMT"
+          },
+          {
+            "title": "Amazon is launching a phone again - Mashable",
+            "source": "Mashable",
+            "pub_date": "Mon, 14 Sep 2026 17:30:00 GMT"
+          },
+          {
+            "title": "OnePlus N6 Lite To Launch in India on September 22: 7,000mAh Battery, 120Hz Display Confirmed - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Tue, 15 Sep 2026 15:07:56 GMT"
+          },
+          {
+            "title": "Philips 5G Smartphone India Launch Date Confirmed: Here’s What We Know - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Mon, 31 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OnePlus N6 Lite India Launch Set for September 22: Amazon Listing Confirms 7,000mAh Battery and 120Hz Display - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Tue, 15 Sep 2026 09:14:21 GMT"
+          },
+          {
+            "title": "iPhone Duo Foldable Launch Signals The Future Of Smartphones, Says New Report - Forbes",
+            "source": "Forbes",
+            "pub_date": "Sun, 13 Sep 2026 21:33:22 GMT"
+          },
+          {
+            "title": "Mivi One 5G's launch date and design revealed - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "New Phone Launches In 2026: All Phones Coming From August To December - brut.media",
+            "source": "brut.media",
+            "pub_date": "Mon, 24 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Philips smartphone confirmed to launch in India on September 2: here’s what to expect - 91mobiles.com",
+            "source": "91mobiles.com",
+            "pub_date": "Tue, 01 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oppo Teases New Smartphone Launch in India; Could Be F35 Pro With 10,000mAh Battery - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Mon, 07 Sep 2026 10:23:26 GMT"
+          },
+          {
+            "title": "Xiaomi 18 Pro Series Launch Teased: New Secondary Rear Display and Triple Leica Cameras Confirmed - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Tue, 15 Sep 2026 06:54:52 GMT"
+          },
+          {
+            "title": "iQOO 16 Launch Date Set for September 29: 165Hz 2K AMOLED Display, Triple Cameras, Snapdragon Chip Confirmed - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Tue, 15 Sep 2026 05:30:06 GMT"
+          },
+          {
+            "title": "Smartphones Launching in September 2026: iPhone 18 Pro Lineup, iPhone Ultra, Poco F9 Series and More - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Sun, 30 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Xiaomi and Huawei Launch Foldable Smartphones Ahead of Apple’s Latest Product Launch - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 11 Sep 2026 22:24:34 GMT"
+          },
+          {
+            "title": "Smartphones Launched in India (August 2026): Google Pixel 11 Series, Realme P4s 5G, Vivo S2, and More - gadgets360.com",
+            "source": "gadgets360.com",
+            "pub_date": "Sun, 30 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Mivi To Soon Launch Its First Smartphone In India, First Teaser Poster Released - ETV Bharat",
+            "source": "ETV Bharat",
+            "pub_date": "Tue, 25 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "CallSign Mobile launches on MobileX's tech platform - Light Reading",
+            "source": "Light Reading",
+            "pub_date": "Mon, 14 Sep 2026 16:56:22 GMT"
+          },
+          {
+            "title": "Chinese tech giants Huawei and Xiaomi launch new foldable smartphones ahead of Apple event - NBC News",
+            "source": "NBC News",
+            "pub_date": "Mon, 07 Sep 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airpods pro 3",
+          "airfrance",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt download",
+          "chatgpt 6",
+          "chatgpt student offer"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone who dis game",
+          "new phone 18",
+          "new phone iphone",
+          "new phones coming out",
+          "new phone plan deals"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "angels",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Johnson's incredible turnaround continues with another dominant start",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/ryan-johnson-strikes-out-7-in-angels-win-over-mariners"
+            },
+            {
+              "headline": "Ryan Johnson's seven strikeouts",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/video/ryan-johnson-s-seven-strikeouts"
+            },
+            {
+              "headline": "Ryan Johnson pitches Angels to victory over Mariners",
+              "source": "Orange County Register",
+              "url": "https://www.ocregister.com/2026/09/15/ryan-johnson-pitches-angels-to-victory-over-mariners/"
+            }
+          ]
+        },
+        {
+          "title": "stephen colbert",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "‘The Late Show With Stephen Colbert’ Goes Out With an Emmy Win",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/09/14/arts/television/the-late-show-stephen-colbert-emmy-.html"
+            },
+            {
+              "headline": "Stephen Colbert celebrates 'Late Show' Emmys win after Trump attacks",
+              "source": "USA Today",
+              "url": "https://www.usatoday.com/story/entertainment/tv-streaming/awards/emmys/2026/09/14/stephen-colbert-wins-late-show-emmys-2026/91678443007/"
+            },
+            {
+              "headline": "Stephen Colbert Arrives at the 2026 Emmys with a Goatee",
+              "source": "People.com",
+              "url": "https://people.com/emmys-2026-stephen-colbert-arrives-with-a-goatee-12121728"
+            }
+          ]
+        },
+        {
+          "title": "intocable",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 15 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "México celebra su Independencia: mira aquí en vivo la ceremonia desde el Zócalo de Ciudad de México",
+              "source": "Univision",
+              "url": "https://www.univision.com/noticias/america-latina/grito-de-independencia-de-mexico-en-vivo-mira-aqui-la-celebracion-encabezada-por-claudia-sheinbaum"
+            },
+            {
+              "headline": "En vivo | Claudia Sheinbaum da su segundo Grito de Independencia",
+              "source": "EL PAÍS",
+              "url": "https://elpais.com/mexico/2026-09-16/en-vivo-claudia-sheinbaum-da-su-segundo-grito-de-independencia.html"
+            },
+            {
+              "headline": "De \"El Rey\" a \"Inocente pobre amigo\": el Zócalo canta",
+              "source": "Yahoo en Español Vida y Estilo",
+              "url": "https://es-us.vida-estilo.yahoo.com/rey-inocente-pobre-amigo-z%C3%B3calo-221609509.html"
+            }
+          ]
+        },
+        {
+          "title": "helen mirren",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Tom Hardy MobLand Rumors Addressed by Pierce Brosnan and Helen Mirren",
+              "source": "The Hollywood Reporter",
+              "url": "https://www.hollywoodreporter.com/tv/tv-features/pierce-brosnan-helen-mirren-tom-hardy-mobland-reports-1236702218/"
+            },
+            {
+              "headline": "Pierce Brosnan and Helen Mirren 'blindsided' by Tom Hardy allegations",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/tv/articles/pierce-brosnan-helen-mirren-blindsided-002123385.html"
+            },
+            {
+              "headline": "MobLand Season 2: Release Date, Cast, Plot, Episodes and Everything We Know",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66015227/?ref_=nmnw_art_perm"
+            }
+          ]
+        },
+        {
+          "title": "winnie harlow",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 15 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Winnie Harlow’s Former L.A. Home Is Back on the Market for $4.5 Million",
+              "source": "Robb Report",
+              "url": "https://robbreport.com/shelter/celebrity-homes/zerina-akers-winnie-harlow-house-los-angeles-tarzana-1238638274/"
+            },
+            {
+              "headline": "Former L.A. Home of Supermodel Winnie Harlow Lists for $4.5 Million",
+              "source": "Mansion Global",
+              "url": "https://www.mansionglobal.com/articles/former-l-a-home-of-supermodel-winnie-harlow-lists-for-4-5-million-12b59b6c"
+            }
+          ]
+        },
+        {
+          "title": "astros standings",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 15 Sep 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "Carlos Correa (ankle) won't rejoin Astros this season",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/49952241/carlos-correa-ankle-rejoin-astros-season"
+            },
+            {
+              "headline": "Astros news: Houston gets multiple injury updates after Carlos Correa news",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/astros-news-houston-gets-multiple-031852638.html"
+            },
+            {
+              "headline": "Carlos Correa Will Not Return To Astros This Season",
+              "source": "MLB Trade Rumors",
+              "url": "https://www.mlbtraderumors.com/2026/09/carlos-correa-will-not-return-to-astros-this-season.html"
+            }
+          ]
+        },
+        {
+          "title": "arizona diamondbacks",
+          "approx_traffic": "5000+",
+          "pub_date": "Tue, 15 Sep 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Diamondbacks Reveal Lineup for Critical Game 2 vs Marlins",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/diamondbacks-reveal-lineup-critical-game-230004391.html"
+            },
+            {
+              "headline": "Diamondbacks 8-7 Marlins (15 Sep, 2026) Final Score",
+              "source": "ESPN Philippines",
+              "url": "https://www.espn.ph/mlb/game/_/gameId/401816941"
+            },
+            {
+              "headline": "MLB: Miami Marlins at Arizona Diamondbacks",
+              "source": "Reuters Connect",
+              "url": "https://www.reutersconnect.com/item/mlb-miami-marlins-at-arizona-diamondbacks/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMjk4MjM2NDE"
+            }
+          ]
+        },
+        {
+          "title": "dermot mulroney",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Brothers Emilio Estevez and Charlie Sheen take rare photo together with Young Guns costars",
+              "source": "Entertainment Weekly",
+              "url": "https://ew.com/brothers-emilio-estevez-and-charlie-sheen-pose-together-in-rare-photo-12122958"
+            },
+            {
+              "headline": "Young Guns Cast Reunites in Dallas: See Rare Photos from the Epic Fan Event",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/movies/articles/young-guns-cast-reunites-dallas-144811094.html"
+            },
+            {
+              "headline": "Dermot Mulroney, Charlie Sheen, Emilio Estevez, Kiefer Sutherland Pose in ‘Young Guns’ Reunion",
+              "source": "People.com",
+              "url": "https://people.com/dermot-mulroney-charlie-sheen-emilio-estevez-kiefer-sutherland-pose-in-young-guns-reunion-12122941"
+            }
+          ]
+        },
+        {
+          "title": "cole carrigg",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 15 Sep 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Key takeaways: Rockies 9, Padres 3",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/padres-winning-streak-snapped-in-loss-to-rockies"
+            },
+            {
+              "headline": "Cole Carrigg homers twice as Rockies beat Padres to snap 8-game skid",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/mlb/news/cole-carrigg-homers-twice-as-rockies-beat-padres-to-snap-8-game-skid/"
+            },
+            {
+              "headline": "Cole Carrigg and the Rally Squirrel lead the Rockies to a 9-3 win over the Padres",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/cole-carrigg-rally-squirrel-lead-034611090.html"
+            }
+          ]
+        },
+        {
+          "title": "peter thiel",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 15 Sep 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "Tech billionaire Peter Thiel bringing Antichrist lectures to Nashville",
+              "source": "The Tennessean",
+              "url": "https://www.tennessean.com/story/news/local/davidson/2026/09/14/peter-thiel-nashville-secret-antichrist-lectures/91764838007/"
+            },
+            {
+              "headline": "Peter Thiel takes his creepy Antichrist lectures to the Bible Belt",
+              "source": "MS NOW",
+              "url": "https://www.ms.now/white-house/peter-thiel-antichrist-crypto-ai-obama-trump-flock-musk"
+            },
+            {
+              "headline": "Peter Thiel Brings 'Closed-Door' Antichrist Lecture Series to Nashville After Vatican-Area Talks",
+              "source": "International Business Times UK",
+              "url": "https://www.ibtimes.co.uk/peter-thiel-brings-closed-door-antichrist-lecture-series-nashville-after-vatican-area-talks-1819857"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs 2026: Tracking the job losses across Oracle, Uber, Apple, TikTok, Meta, Microsoft and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 15 Sep 2026 12:20:33 GMT"
+          },
+          {
+            "title": "Oracle begins a new round of layoffs. Read the email. - businessinsider.com",
+            "source": "businessinsider.com",
+            "pub_date": "Mon, 14 Sep 2026 13:09:00 GMT"
+          },
+          {
+            "title": "Uber layoffs to impact dozens of Bay Area workers - KRON4",
+            "source": "KRON4",
+            "pub_date": "Tue, 15 Sep 2026 17:38:01 GMT"
+          },
+          {
+            "title": "Market Today: Fed Rate Hike, Tech Layoffs, and Amazon Prime Day Updates - GuruFocus",
+            "source": "GuruFocus",
+            "pub_date": "Tue, 15 Sep 2026 22:25:48 GMT"
+          },
+          {
+            "title": "AI wealth fuels San Francisco’s housing boom while tech layoffs weigh down Seattle - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 02 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech giant Oracle rocked by another wave of layoffs after employees receive devastating 6 am email - New York Post",
+            "source": "New York Post",
+            "pub_date": "Mon, 14 Sep 2026 17:43:00 GMT"
+          },
+          {
+            "title": "‘Unable to log in’: After 12 years at Oracle, senior developer laid off - The American Bazaar",
+            "source": "The American Bazaar",
+            "pub_date": "Tue, 15 Sep 2026 15:07:16 GMT"
+          },
+          {
+            "title": "Technology employment is growing despite tech sector layoffs - hrdive.com",
+            "source": "hrdive.com",
+            "pub_date": "Wed, 09 Sep 2026 14:55:26 GMT"
+          },
+          {
+            "title": "Uber layoffs hit Sunnyvale engineering hub - The Business Journals",
+            "source": "The Business Journals",
+            "pub_date": "Tue, 15 Sep 2026 18:35:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs Put AI’s Role in Tech Job Cuts Under Scrutiny - Telecom Reseller / Technology Reseller News",
+            "source": "Telecom Reseller / Technology Reseller News",
+            "pub_date": "Mon, 14 Sep 2026 20:59:18 GMT"
+          },
+          {
+            "title": "Why the Postpandemic Tech Bust Sent Billionaires to Trump - WIRED",
+            "source": "WIRED",
+            "pub_date": "Tue, 15 Sep 2026 11:00:00 GMT"
+          },
+          {
+            "title": "Oracle Workers Should Be Scared (Layoffs 2026) Liga Mx (3K29SEyHYK) - Unisba Media",
+            "source": "Unisba Media",
+            "pub_date": "Wed, 16 Sep 2026 04:01:12 GMT"
+          },
+          {
+            "title": "Oracle announces new round of layoffs in early-morning email: ‘Today is your last working day’ - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Mon, 14 Sep 2026 19:51:03 GMT"
+          },
+          {
+            "title": "Uber’s CEO says cutting 3,300 corporate jobs could help lower the price of your next ride - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 14 Sep 2026 18:41:00 GMT"
+          },
+          {
+            "title": "Tech layoffs August 2026 update: Apple, TikTok, LinkedIn, Netflix join the list of companies slashing jobs - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 24 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle begins new round of AI-driven layoffs: report - KRON4",
+            "source": "KRON4",
+            "pub_date": "Mon, 14 Sep 2026 17:33:23 GMT"
+          },
+          {
+            "title": "Tech layoffs hit Seattle housing market as pending sales post sharpest drop in the nation - GeekWire",
+            "source": "GeekWire",
+            "pub_date": "Wed, 12 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "This week in 5 numbers: Tech employment grew in August, despite layoffs - hrdive.com",
+            "source": "hrdive.com",
+            "pub_date": "Thu, 10 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle announces new layoffs to offset AI spending - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 14 Sep 2026 20:04:47 GMT"
+          },
+          {
+            "title": "Oracle begins another round of layoffs as $2.8 billion restructuring plan expands - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 14 Sep 2026 17:21:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs: New Job Cuts Hit as AI Spending Drives a Wider Big Tech Restructuring - finchannel",
+            "source": "finchannel",
+            "pub_date": "Mon, 14 Sep 2026 21:26:29 GMT"
+          },
+          {
+            "title": "Oracle begins fresh round of layoffs; over 1,000 Indian employees set to lose jobs - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Tue, 15 Sep 2026 14:56:53 GMT"
+          },
+          {
+            "title": "A laid-off Grubhub worker created a tracker to help others find jobs. 18 months later, recruiters are learning from it. - businessinsider.com",
+            "source": "businessinsider.com",
+            "pub_date": "Sun, 13 Sep 2026 09:07:00 GMT"
+          },
+          {
+            "title": "Oracle’s AI transformation gets more expensive as layoffs continue - calcalistech.com",
+            "source": "calcalistech.com",
+            "pub_date": "Mon, 14 Sep 2026 06:59:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Continue. Why Laid-Off Workers Should Consider Entrepreneurship - forbes.com",
+            "source": "forbes.com",
+            "pub_date": "Wed, 26 Aug 2026 07:00:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "MediaTek launches new mobile chip using TSMC's most advanced technology - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 15 Sep 2026 08:14:10 GMT"
+          },
+          {
+            "title": "MediaTek Dimensity 9600 Pro Sets New Standard for Flagship Smartphone Chips - MediaTek",
+            "source": "MediaTek",
+            "pub_date": "Tue, 15 Sep 2026 09:22:43 GMT"
+          },
+          {
+            "title": "Amazon is launching a phone again - Mashable",
+            "source": "Mashable",
+            "pub_date": "Mon, 14 Sep 2026 17:30:00 GMT"
+          },
+          {
+            "title": "Doubao Smartphone Official Launch Tomorrow: Can AI Now Help You Operate Apps Efficiently? - 36 Kr",
+            "source": "36 Kr",
+            "pub_date": "Tue, 15 Sep 2026 14:54:29 GMT"
+          },
+          {
+            "title": "Chinese tech giants Huawei and Xiaomi launch new foldable smartphones ahead of Apple event - NBC News",
+            "source": "NBC News",
+            "pub_date": "Mon, 07 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Xiaomi and Huawei Launch Foldable Smartphones Ahead of Apple’s Latest Product Launch - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 11 Sep 2026 22:24:34 GMT"
+          },
+          {
+            "title": "iPhone Duo Foldable Launch Signals The Future Of Smartphones, Says New Report - forbes.com",
+            "source": "forbes.com",
+            "pub_date": "Sun, 13 Sep 2026 21:33:22 GMT"
+          },
+          {
+            "title": "Apple unveils iPhone Duo - Apple",
+            "source": "Apple",
+            "pub_date": "Wed, 09 Sep 2026 18:18:57 GMT"
+          },
+          {
+            "title": "SpaceX reveals launch window for mobile service to take down the Big Three - PhoneArena",
+            "source": "PhoneArena",
+            "pub_date": "Mon, 14 Sep 2026 16:39:47 GMT"
+          },
+          {
+            "title": "CallSign Mobile launches on MobileX's tech platform - Light Reading",
+            "source": "Light Reading",
+            "pub_date": "Mon, 14 Sep 2026 16:56:22 GMT"
+          },
+          {
+            "title": "Fujifilm Launches Smartphone Printer “instax Link WIDE 2 - Fujifilm [Global]",
+            "source": "Fujifilm [Global]",
+            "pub_date": "Tue, 15 Sep 2026 02:00:43 GMT"
+          },
+          {
+            "title": "5 Budget Android Phones You Should Consider Instead Of The Google Pixel 11 - bgr.com",
+            "source": "bgr.com",
+            "pub_date": "Mon, 14 Sep 2026 02:17:00 GMT"
+          },
+          {
+            "title": "World's best-selling smartphone gets price cuts after iPhone 18 Pro launch - VnExpress International",
+            "source": "VnExpress International",
+            "pub_date": "Tue, 15 Sep 2026 08:06:38 GMT"
+          },
+          {
+            "title": "Doubao consumer launch puts system-level AI agents in focus in China’s smartphone race - Global Times",
+            "source": "Global Times",
+            "pub_date": "Mon, 14 Sep 2026 15:39:00 GMT"
+          },
+          {
+            "title": "The age of the exciting smartphone launch is over, but is a new sort of device on its way? - The Irish Times",
+            "source": "The Irish Times",
+            "pub_date": "Tue, 15 Sep 2026 04:15:24 GMT"
+          },
+          {
+            "title": "OpenAI buys AI camera startup ahead of mystery gadget launch - The Independent",
+            "source": "The Independent",
+            "pub_date": "Tue, 15 Sep 2026 10:33:00 GMT"
+          },
+          {
+            "title": "T-Mobile’s launch offer wipes out the cost of the iPhone 18 Pro over 36 months - Mashable",
+            "source": "Mashable",
+            "pub_date": "Mon, 14 Sep 2026 10:30:02 GMT"
+          },
+          {
+            "title": "Apple Enters Foldable Smartphone Market With IPhone Duo Launch - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Wed, 09 Sep 2026 20:24:38 GMT"
+          },
+          {
+            "title": "Big shocker: OnePlus 16 may not launch in any international market - PhoneArena",
+            "source": "PhoneArena",
+            "pub_date": "Mon, 14 Sep 2026 09:02:20 GMT"
+          },
+          {
+            "title": "Trump Mobile T1 phone reappears, still no release date - Mashable",
+            "source": "Mashable",
+            "pub_date": "Mon, 14 Sep 2026 17:30:00 GMT"
+          },
+          {
+            "title": "Sony just announced it’s launching a new smartphone next week - PhoneArena",
+            "source": "PhoneArena",
+            "pub_date": "Thu, 20 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event - Arizona Digital Free Press",
+            "source": "Arizona Digital Free Press",
+            "pub_date": "Tue, 08 Sep 2026 16:00:00 GMT"
+          },
+          {
+            "title": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone - Fortune",
+            "source": "Fortune",
+            "pub_date": "Wed, 09 Sep 2026 07:05:00 GMT"
+          },
+          {
+            "title": "Samsung Launches Galaxy S26 FE in India, Bringing Flagship Camera, Galaxy AI and Powerful Performance - Samsung Global Newsroom",
+            "source": "Samsung Global Newsroom",
+            "pub_date": "Mon, 14 Sep 2026 11:16:51 GMT"
+          },
+          {
+            "title": "The latest iPhone 18 news, leaks, and rumors: Release date, price increases, new colors - Mashable",
+            "source": "Mashable",
+            "pub_date": "Thu, 03 Sep 2026 18:00:24 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "airpods pro 3",
+          "airfrance",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt astra",
+          "chatgpt login",
+          "chatgpt download",
+          "chatgpt app",
+          "chatgpt student offer",
+          "chatgpt desktop",
+          "chatgpt 6",
+          "chatgpt images",
+          "chatgpt work"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+      "url": "https://github.com/arnegiacomo/fugleramme",
+      "points": 1424,
+      "comments": 187,
+      "created_at": "2026-09-15T12:31:10Z"
+    },
+    {
+      "title": "Introducing System One Models and Jev",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "points": 970,
+      "comments": 303,
+      "created_at": "2026-09-15T19:25:03Z"
+    },
+    {
+      "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+      "url": "https://www.effort.news/irregular",
+      "points": 538,
+      "comments": 186,
+      "created_at": "2026-09-14T21:15:01Z"
+    },
+    {
+      "title": "Suspected sabotage causes major Netherlands rail disruption",
+      "url": "https://www.bbc.com/news/articles/c8ly49w9g1edo",
+      "points": 454,
+      "comments": 403,
+      "created_at": "2026-09-15T10:22:46Z"
+    },
+    {
+      "title": "An update on Wayback Machine access",
+      "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+      "points": 447,
+      "comments": 234,
+      "created_at": "2026-09-15T17:52:18Z"
+    },
+    {
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "points": 352,
+      "comments": 224,
+      "created_at": "2026-09-15T17:38:18Z"
+    },
+    {
+      "title": "Let's make quality the norm again",
+      "url": "https://www.forbrukerradet.no/short-life/",
+      "points": 346,
+      "comments": 353,
+      "created_at": "2026-09-15T10:00:16Z"
+    },
+    {
+      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+      "url": "https://withcapsule.app/",
+      "points": 301,
+      "comments": 121,
+      "created_at": "2026-09-15T13:31:40Z"
+    },
+    {
+      "title": "Most people prefer traditional architecture",
+      "url": "https://www.worksinprogress.news/p/do-people-prefer-traditional-architecture",
+      "points": 286,
+      "comments": 249,
+      "created_at": "2026-09-14T14:30:17Z"
+    },
+    {
+      "title": "We got admin access to Baseten's production GitHub",
+      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+      "points": 250,
+      "comments": 136,
+      "created_at": "2026-09-15T18:11:24Z"
+    },
+    {
+      "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
+      "url": "https://codyho.dev/blog/gpu-driver/",
+      "points": 208,
+      "comments": 130,
+      "created_at": "2026-09-15T19:30:03Z"
+    },
+    {
+      "title": "Show HN: Hacking a $20 4G wireless hotspot into a texting device",
+      "url": "https://bkovac.github.io/modem-thing/",
+      "points": 183,
+      "comments": 32,
+      "created_at": "2026-09-15T13:20:24Z"
+    },
+    {
+      "title": "German Rheinmetall open-sources its Battlesuite connected weapon system protcol",
+      "url": "https://rheinmetall.github.io/onboardapi-documentation/9.10.0/index.html",
+      "points": 160,
+      "comments": 46,
+      "created_at": "2026-09-15T21:07:47Z"
+    },
+    {
+      "title": "Chopping up books when they're physically too big",
+      "url": "https://attainablefelicity.mattkirkland.com/20260915/cut-up-your-books.html",
+      "points": 143,
+      "comments": 139,
+      "created_at": "2026-09-15T18:45:31Z"
+    },
+    {
+      "title": "The CSS Zen Garden dream, finally shipped",
+      "url": "https://josprague.com/blog/the-css-zen-garden-dream-finally-shipped/",
+      "points": 131,
+      "comments": 72,
+      "created_at": "2026-09-15T14:40:08Z"
+    },
+    {
+      "title": "The Inference Hardware Revolution of 2026",
+      "url": "https://spectrum.ieee.org/inference-hardware-revolution",
+      "points": 126,
+      "comments": 13,
+      "created_at": "2026-09-15T14:24:08Z"
+    },
+    {
+      "title": "WangNet – 1.8 MB, zero-dependency Numberwang adjudication in 11 languages",
+      "url": "https://github.com/GraafHenk/numberwang",
+      "points": 124,
+      "comments": 47,
+      "created_at": "2026-09-15T19:27:35Z"
+    },
+    {
+      "title": "Jean-Pierre Serre turns 100",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Serre/",
+      "points": 112,
+      "comments": 19,
+      "created_at": "2026-09-15T20:57:18Z"
+    },
+    {
+      "title": "Apple Reference Image: A New Approach for Verified Photography",
+      "url": "https://security.apple.com/blog/apple-reference-image/",
+      "points": 70,
+      "comments": 40,
+      "created_at": "2026-09-16T02:07:31Z"
+    },
+    {
+      "title": "Recreating Voodoo Graphics and a Late-1990s Gaming PC on an FPGA",
+      "url": "https://nand2mario.github.io/posts/2026/zsst-voodoo/",
+      "points": 69,
+      "comments": 12,
+      "created_at": "2026-09-15T22:50:55Z"
+    },
+    {
+      "title": "Introducing System One Models and Jev",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "points": 975,
+      "comments": 305,
+      "created_at": "2026-09-15T19:25:03Z"
+    },
+    {
+      "title": "We got admin access to Baseten's production GitHub",
+      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+      "points": 250,
+      "comments": 137,
+      "created_at": "2026-09-15T18:11:24Z"
+    },
+    {
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "points": 353,
+      "comments": 227,
+      "created_at": "2026-09-15T17:38:18Z"
+    },
+    {
+      "title": "Why I'm still bearish on LLMs after Navier-Stokes",
+      "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+      "points": 164,
+      "comments": 167,
+      "created_at": "2026-09-15T17:37:12Z"
+    },
+    {
+      "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
+      "url": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/",
+      "points": 215,
+      "comments": 156,
+      "created_at": "2026-09-15T16:38:45Z"
+    },
+    {
+      "title": "Cartesian – AI 3D Modeling for Design",
+      "url": "https://www.formas.ai/cartesian",
+      "points": 103,
+      "comments": 78,
+      "created_at": "2026-09-15T15:26:45Z"
+    },
+    {
+      "title": "AI is breaking our proxies for expertise",
+      "url": "https://www.seangoedecke.com/ai-is-breaking-our-proxies-for-expertise/",
+      "points": 85,
+      "comments": 74,
+      "created_at": "2026-09-15T13:41:55Z"
+    },
+    {
+      "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
+      "url": "https://www.bbc.com/news/articles/cqgk5e2j0gg8o",
+      "points": 52,
+      "comments": 111,
+      "created_at": "2026-09-15T13:41:28Z"
+    },
+    {
+      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+      "url": "https://withcapsule.app/",
+      "points": 303,
+      "comments": 121,
+      "created_at": "2026-09-15T13:31:40Z"
+    },
+    {
+      "title": "Show HN: Sunk Cost – How long until a local LLM rig pays for itself?",
+      "url": "https://sunkcost.ai/",
+      "points": 46,
+      "comments": 96,
+      "created_at": "2026-09-15T01:37:43Z"
+    },
+    {
+      "title": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325",
+      "points": 223,
+      "comments": 134,
+      "created_at": "2026-09-15T00:40:14Z"
+    },
+    {
+      "title": "Tell HN: iOS 27 does not allow Apple Intelligence to be disabled",
+      "url": null,
+      "points": 72,
+      "comments": 25,
+      "created_at": "2026-09-14T21:21:58Z"
+    },
+    {
+      "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+      "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "points": 160,
+      "comments": 151,
+      "created_at": "2026-09-14T19:56:20Z"
+    },
+    {
+      "title": "Backprop Alternative: Augmented Lagrangian Predictive Coding",
+      "url": "https://pub.sakana.ai/pc-alm/",
+      "points": 119,
+      "comments": 45,
+      "created_at": "2026-09-14T18:03:12Z"
+    },
+    {
+      "title": "For AI leaders Doom is a form of hype",
+      "url": "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype/",
+      "points": 131,
+      "comments": 181,
+      "created_at": "2026-09-14T16:15:05Z"
+    },
+    {
+      "title": "Show HN: Nari Qwen3-TTS and Qwen3-ASR – High accuracy, low latency and cost",
+      "url": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+      "points": 89,
+      "comments": 31,
+      "created_at": "2026-09-14T16:07:58Z"
+    },
+    {
+      "title": "China's Regulators Take Aim at \"AI Boyfriends\"",
+      "url": "https://spectrum.ieee.org/china-ai-chatbot-regulation",
+      "points": 58,
+      "comments": 52,
+      "created_at": "2026-09-14T15:30:56Z"
+    },
+    {
+      "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+      "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+      "points": 150,
+      "comments": 29,
+      "created_at": "2026-09-14T14:29:23Z"
+    },
+    {
+      "title": "Adversarial Fashion Makes a Statement on AI Panopticon",
+      "url": "https://spectrum.ieee.org/adversarial-fashion",
+      "points": 111,
+      "comments": 48,
+      "created_at": "2026-09-14T14:04:53Z"
+    },
+    {
+      "title": "The AI job market in 2026",
+      "url": "https://www.ilinmaks.com/blog/en/ai-jobs-market-2026",
+      "points": 67,
+      "comments": 71,
+      "created_at": "2026-09-14T13:49:57Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6887989,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 891815,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 606410,
+      "rank": 3
+    },
+    {
+      "article": "John_Tuggle",
+      "views": 334076,
+      "rank": 4
+    },
+    {
+      "article": "Alexander_Zverev",
+      "views": 326126,
+      "rank": 5
+    },
+    {
+      "article": "2026_Swedish_general_election",
+      "views": 230507,
+      "rank": 6
+    },
+    {
+      "article": "Lanterns_(TV_series)",
+      "views": 215885,
+      "rank": 7
+    },
+    {
+      "article": "September_11_attacks",
+      "views": 165788,
+      "rank": 8
+    },
+    {
+      "article": "Bob_Mackie",
+      "views": 160695,
+      "rank": 9
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 138518,
+      "rank": 10
+    },
+    {
+      "article": "Cam_Skattebo",
+      "views": 133988,
+      "rank": 11
+    },
+    {
+      "article": "Jaxson_Dart",
+      "views": 130366,
+      "rank": 12
+    },
+    {
+      "article": "Sydney_Sweeney",
+      "views": 124156,
+      "rank": 13
+    },
+    {
+      "article": "Hayden_Panettiere",
+      "views": 117261,
+      "rank": 14
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 112930,
+      "rank": 15
+    },
+    {
+      "article": "Ben_Shelton",
+      "views": 112377,
+      "rank": 16
+    },
+    {
+      "article": "Killing_of_the_Clancy_children",
+      "views": 112212,
+      "rank": 17
+    },
+    {
+      "article": "Hanuman_Ansh",
+      "views": 111024,
+      "rank": 18
+    },
+    {
+      "article": "Odell_Beckham_Jr.",
+      "views": 107352,
+      "rank": 19
+    },
+    {
+      "article": "Madison_Beer",
+      "views": 91976,
+      "rank": 20
+    },
+    {
+      "article": "Trinity_Rodman",
+      "views": 90948,
+      "rank": 21
+    },
+    {
+      "article": "XXX_(2002_film)",
+      "views": 85690,
+      "rank": 22
+    },
+    {
+      "article": "Vishwanath_&_Sons",
+      "views": 83522,
+      "rank": 23
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 77193,
+      "rank": 24
+    },
+    {
+      "article": "Triplemanía_34",
+      "views": 76423,
+      "rank": 25
+    },
+    {
+      "article": "Elena_Rybakina",
+      "views": 76155,
+      "rank": 26
+    },
+    {
+      "article": "Robert_Kraft",
+      "views": 75754,
+      "rank": 27
+    },
+    {
+      "article": "Macklemore",
+      "views": 72247,
+      "rank": 28
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 71848,
+      "rank": 29
+    },
+    {
+      "article": "The_Gentlemen_(2024_TV_series)",
+      "views": 69379,
+      "rank": 30
+    },
+    {
+      "article": "Dario_Amodei",
+      "views": 69219,
+      "rank": 31
+    },
+    {
+      "article": "ChatGPT",
+      "views": 68593,
+      "rank": 32
+    },
+    {
+      "article": "Ganesh_Chaturthi",
+      "views": 68489,
+      "rank": 33
+    },
+    {
+      "article": "United_Airlines_Flight_93",
+      "views": 65666,
+      "rank": 34
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 64510,
+      "rank": 35
+    },
+    {
+      "article": "Mandaadi",
+      "views": 64492,
+      "rank": 36
+    },
+    {
+      "article": "John_Harbaugh",
+      "views": 64458,
+      "rank": 37
+    },
+    {
+      "article": "Bethlehem_Kudumba_Unit",
+      "views": 64354,
+      "rank": 38
+    },
+    {
+      "article": "Limonene",
+      "views": 63238,
+      "rank": 39
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 62941,
+      "rank": 40
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 62456,
+      "rank": 41
+    },
+    {
+      "article": "Practical_Magic_2",
+      "views": 59670,
+      "rank": 42
+    },
+    {
+      "article": "Mirzapur_(film)",
+      "views": 59242,
+      "rank": 43
+    },
+    {
+      "article": "Ray_Aghayan",
+      "views": 56340,
+      "rank": 44
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 56172,
+      "rank": 45
+    },
+    {
+      "article": "Theo_James",
+      "views": 56049,
+      "rank": 46
+    },
+    {
+      "article": "Cindy_Starfall",
+      "views": 55842,
+      "rank": 47
+    },
+    {
+      "article": "Mariska_Hargitay",
+      "views": 55025,
+      "rank": 48
+    },
+    {
+      "article": "Ryan_Garcia",
+      "views": 54315,
+      "rank": 49
+    },
+    {
+      "article": "Mohamed_Atta",
+      "views": 53636,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The AI data center boom is colliding with cities scarred by big industry"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "SpaceX will try to put Starship in orbit for the first time on September 22"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI agents now have a place to snitch"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "US military says it has launched weapons into space"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Meta expands subscription push with new AI-focused plans"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Health benefits platform Thatch reaches $1B valuation as healthcare costs surge"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Leaks, data breaches, and ransom notes: The worst hacks of 2026 so far"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Nitter and XCancel are dead (again) after X’s latest legal actions"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Wonder scores a $425 million partnership with DoorDash as it builds its food empire"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Boox Palma 3 gets stylus support and a sleek redesign"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The EOS R8 Mark II is Canon’s lightest full-frame camera with stabilization"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "AI and data centers are incredibly unpopular in every poll"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Microsoft announces Windows and Surface event for October 7th"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "What if social media isn’t hurting kids?"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Kia’s electric van lineup is getting more interesting with reveal of PV7"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "One of the best 3D printers for beginners is almost $100 off"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "How The Oregon Trail became a generational icon"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Vintage Violence is an absurdist crime thriller for phone addicts"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Now Light’s minimalist phone can easily call an Uber"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The Roman telescope has enough gas for 22 years, double NASA's expectations"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "“Filmmaker” suing PassThePopcorn may be banned user out for revenge"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "18-year-old dies of measles in PA from severe neurological complication"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX declares Starship ready for orbit, sets launch date next week"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Boston dumps Flock, says it shared data nationwide in violation of contract"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Demand for EV chargers is outstripping supply, says ChargePoint report"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump EPA moves to wipe out climate rules for power plants"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "GM gives its most important trucks a new UI—and includes CarPlay"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "This Atlantic hurricane season is about to do something that hasn't happened in 175 years"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Volvo increases the batteries for 2028 XC60 and XC90 plug-in refresh"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "For the first time, the US military confirms it has deployed weapons in orbit"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr. headlines sold-out anti-vaccine conference alongside Andrew Wakefield"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rocket Lab is seeing red about NASA's decision on a Mars spacecraft"
+    }
+  ]
+}
