@@ -1,0 +1,1783 @@
+{
+  "date": "2026-09-18",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_AI regulatio": "ok",
+    "news_IN_semiconducto": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI regulatio": "ok",
+    "news_US_semiconducto": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "pakistan cricket",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 17 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Lahore High Court dismisses Rizwan's petition",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/story/pakistan-news-lahore-high-court-dismisses-mohammad-rizwan-s-petition-1554646"
+            },
+            {
+              "headline": "Lahore HC dismisses Rizwan's petition against Pakistan cybercrime agency's probe",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/sports/rizwan-cybercrime-case-lahore-hc-dismisses-petition-against-pakistan-agency-probe-prnt/cid/2180422"
+            },
+            {
+              "headline": "Pakistan cricket crisis deepens as Mohammad Rizwan moves Lahore High Court against cyber crime agency sum",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/cricket/news/pakistan-cricket-crisis-deepens-as-mohammad-rizwan-moves-lahore-high-court-against-cyber-crime-agency-summons/articleshow/134303567.cms"
+            }
+          ]
+        },
+        {
+          "title": "sonal dinusha",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "ICC Men's Player of the Month revelead for August 2026",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/news/icc-men-s-player-of-the-month-revelead-for-august-2026"
+            },
+            {
+              "headline": "Sonal Dinusha's stellar India series rewarded with ICC Player of the Month award",
+              "source": "Rediff",
+              "url": "https://www.rediff.com/cricket/report/sonal-dinushas-stellar-india-series-rewarded-with-icc-player-of-the-month-award/20260917.htm"
+            },
+            {
+              "headline": "Sonal Dinusha earns ICC Player of the Month honour after stellar run against India",
+              "source": "Telangana Today",
+              "url": "https://telanganatoday.com/sonal-dinusha-earns-icc-player-of-the-month-honour-after-stellar-run-against-india"
+            }
+          ]
+        },
+        {
+          "title": "buffalo bills",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Josh Allen’s historic night wasn’t the only reason the Bills overwhelmed the Lions in their 41-31 Week 2",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/nfl/news/josh-allens-historic-night-wasnt-the-only-reason-the-bills-overwhelmed-the-lions-in-their-41-31-week-2-win/articleshow/134325183.cms"
+            },
+            {
+              "headline": "Buffalo Bills Vs Detroit Lions Thursday Night Football: How To Watch, Stream And When It Kicks Off",
+              "source": "NDTV Sports",
+              "url": "https://sports.ndtv.com/us/nfl/buffalo-bills-vs-detroit-lions-thursday-night-football-how-to-watch-stream-and-when-it-kicks-off-12061926"
+            },
+            {
+              "headline": "Week 2 NFL prediction markets, apps, promos: How, where to trade on Bills vs. Lions, Thursday Night Football",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/prediction/news/week-2-nfl-prediction-markets-apps-promos-how-where-to-trade-bills-lions-thursday-night-football/"
+            }
+          ]
+        },
+        {
+          "title": "supreme court",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Presumption Of Guilt Under POCSO Act Not Absolute: Supreme Court Acquits Man",
+              "source": "Live Law",
+              "url": "https://www.livelaw.in/supreme-court/presumption-of-guilt-under-pocso-act-not-absolute-supreme-court-acquits-man-550578"
+            },
+            {
+              "headline": "POCSO presumption of guilt not absolute, prosecution version no gospel truth: Supreme Court",
+              "source": "Deccan Herald",
+              "url": "https://www.deccanherald.com/india/pocso-presumption-of-guilt-not-absolute-prosecution-version-no-gospel-truth-supreme-court-4150034"
+            },
+            {
+              "headline": "Supreme Court Acquits Man in POCSO Case, Finds Medical and Forensic Evidence Contradicted Prosecution Story",
+              "source": "Court Book",
+              "url": "https://courtbook.in/posts/supreme-court-acquits-man-jailed-in-pocso-case-says-medical-evidence-didnt-match-mothers-story"
+            }
+          ]
+        },
+        {
+          "title": "पश्चिम बंगाल विधानसभा",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "अल्पसंख्यक वोटरों पर शुभेंदु अधिकारी ने दिया बयान, आगबबूला हुई तृणमूल, कहा- धमकी दे रहे",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/west-bengal/suvendu-adhikari-pass-or-fail-remark-on-minority-voters-sparks-tmc-bjp-row-ahead-of-bengal-bypolls-2026-09-16-1243528"
+            },
+            {
+              "headline": "मुसलमानों को साबित करना है कि वो भाजपा के दोस्त हैं, बंगाल CM शुभेंदु अधिकारी ने दिया 'टेस्ट'",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/national/what-suvendu-adhikari-said-when-campaigning-for-nandigram-byelection-hasirani-rath-201789536029002.html"
+            },
+            {
+              "headline": "'बंगाल का उपचुनाव अल्पसंख्यकों के लिए परीक्षा', शुभेंदु अधिकारी ने नंदीग्राम में मांगा समर्थन",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/west-bengal/kolkata-shubhendu-adhikari-urges-minority-vote-in-nandigram-by-election-40375090.html"
+            }
+          ]
+        },
+        {
+          "title": "nse gmp",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 17 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "NSE Goes Public. 4 Things That Matter",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/toi-plus/business-economy/nse-goes-public-4-things-that-matter/articleshow/134314517.cms"
+            },
+            {
+              "headline": "Is NSE’s IPO really fairly valued?",
+              "source": "Finshots",
+              "url": "https://finshots.in/archive/is-nses-ipo-really-fairly-valued-1/"
+            },
+            {
+              "headline": "NSE's $2.3-bn IPO opens for subscription",
+              "source": "VCCircle",
+              "url": "https://www.vccircle.com/nses-2-3-bn-ipo-opens-for-subscription"
+            }
+          ]
+        },
+        {
+          "title": "karamtara engineering share price",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "Karamtara Engineering IPO Lists at 26% Premium: Hold or Sell?",
+              "source": "INDmoney",
+              "url": "https://www.indmoney.com/blog/stocks/karamtara-engineering-ipo-listing-analysis-buy-hold-sell"
+            },
+            {
+              "headline": "Karamtara Engineering Shares Soar 39% on Market Debut",
+              "source": "Rediff MoneyWiz",
+              "url": "https://money.rediff.com/news/market/karamtara-engineering-shares-soar-39-on-market-debut/54508420260917"
+            },
+            {
+              "headline": "Karamtara Engineering lists with 26% premium on the BSE",
+              "source": "Investment Guru India",
+              "url": "https://investmentguruindia.com/newsdetail/karamtara-engineering-lists-with-26-premium-on-the-bse305233"
+            }
+          ]
+        },
+        {
+          "title": "tata chemicals share price",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "नोएल टाटा ने किया विरोध, लेकिन सभी बोर्ड सदस्य ने फिर एन चंद्रशेखरन को चुना, 5 साल तक बने रहेंगे टाटा संस के चेयरमैन",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/business/news/story/n-chandrasekaran-reappointed-for-5-yrs-as-tata-sons-chairman-tutd-dskc-2644940-2026-09-17"
+            },
+            {
+              "headline": "'ये वोट गैरकानूनी', 4-1 से हुई हार पर भड़के नोएल टाटा; कहा- 20 फरवरी को ही रिटायर होंगे एन चंद्रा",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/business/biz-noel-tata-says-n-chandra-re-appointment-vote-illegal-challenging-the-validity-of-a-decision-40376352.html"
+            },
+            {
+              "headline": "Tata Group News: टाटा ग्रुप में घमासान, चंद्रशेखरन को 5 साल के लिए मिली कमान, नोएल टाटा ने फैसले को बताया गैरकानूनी",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/business/business-news/battle-to-control-tata-group-between-tata-sons-and-tata-trusts/articleshow/134324377.cms"
+            }
+          ]
+        },
+        {
+          "title": "hero motors ipo gmp",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 17 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Hero Motors IPO review: strong EV growth, steep valuation",
+              "source": "Value Research",
+              "url": "https://www.valueresearchonline.com/stories/229635/hero-motors-ipo-review/"
+            },
+            {
+              "headline": "IPO GMP Today Live Updates | Hero Motors IPO Day 2: GMP at 16%; Check subscription status and key details",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/live-blog/ipo-gmp-today-live-updates-hero-motors-jindal-supreme-ss-retail-ipo-gmp-price-band-subscription-status-listing-date/liveblog/134300667.cms"
+            },
+            {
+              "headline": "Hero Motors IPO fully subscribed on Day 1",
+              "source": "ET Auto",
+              "url": "https://auto.economictimes.indiatimes.com/news/two-wheelers/hero-motors-ipo-fully-subscribed-on-day-1/134309147"
+            }
+          ]
+        },
+        {
+          "title": "ममता बनर्जी",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 17 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "टीएमसी और उसका चुनाव चिह्न फ़िलहाल हुआ फ़्रीज़, ममता भी नहीं कर पाएंगी इस्तेमाल, जानिए पूरा फ़ैसला",
+              "source": "BBC",
+              "url": "https://www.bbc.com/hindi/articles/cm4gj552g00xo"
+            },
+            {
+              "headline": "TMC का नाम-सिंबल फ्रीज, ममता और ऋतब्रत गुट को झटका... EC ने मांगे तीन-तीन ऑप्शन",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/west-bengal/story/election-commission-bars-both-tmc-factions-party-name-symbol-west-bengal-bypolls-ntc-rlch-rpti-2645296-2026-09-17"
+            },
+            {
+              "headline": "TMC का चुनाव चिह्न और नाम इस्तेमाल करने पर रोक: चुनाव आयोग बोला- तृणमूल के दोनों गुट नए सिंबल चुनें, बंगाल ...",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/g/national/news/west-bengal-bypoll-tmc-election-symbol-dispute-ec-meeting-delhi-139057571.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI regulation": [
+          {
+            "title": "‘Godfather of AI’ says tech regulation is nearing Covid-style pivot moment - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 16 Sep 2026 19:35:00 GMT"
+          },
+          {
+            "title": "As Nvidia, Salesforce, Meta CEOs oppose AI regulation by asking companies to make their AI models respons - timesofindia.indiatimes.com",
+            "source": "timesofindia.indiatimes.com",
+            "pub_date": "Thu, 17 Sep 2026 06:24:00 GMT"
+          },
+          {
+            "title": "Can AI regulation keep America ahead of China? - aljazeera.com",
+            "source": "aljazeera.com",
+            "pub_date": "Thu, 17 Sep 2026 05:12:49 GMT"
+          },
+          {
+            "title": "OpenAI's Sam Altman says world 'right to be afraid' but 'should trust' AI firms - BBC",
+            "source": "BBC",
+            "pub_date": "Wed, 16 Sep 2026 10:02:05 GMT"
+          },
+          {
+            "title": "Candidate for UN chief calls for AI regulation akin to nuclear weapons - Digital Journal",
+            "source": "Digital Journal",
+            "pub_date": "Wed, 16 Sep 2026 18:30:10 GMT"
+          },
+          {
+            "title": "A brief history of AI executives calling for regulation - The Verge",
+            "source": "The Verge",
+            "pub_date": "Wed, 16 Sep 2026 12:00:00 GMT"
+          },
+          {
+            "title": "United Nations Chief Calls for Coordinating Global AI Regulation - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Wed, 16 Sep 2026 15:10:28 GMT"
+          },
+          {
+            "title": "AI brings benefits but also risks; regulation has a role: IT Minister Vaishnaw - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Thu, 17 Sep 2026 18:24:44 GMT"
+          },
+          {
+            "title": "AI regulation: Safety rules or stopping competition? | Anthropic CEO Dario Amodei - India Today - India Today",
+            "source": "India Today",
+            "pub_date": "Wed, 16 Sep 2026 16:24:09 GMT"
+          },
+          {
+            "title": "The AI policy window is open. We need to act. - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Wed, 09 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Who should set the rules for AI? The UN is pushing for a safer digital future - news.un.org",
+            "source": "news.un.org",
+            "pub_date": "Wed, 16 Sep 2026 21:18:23 GMT"
+          },
+          {
+            "title": "The UK’s King Charles warns AI leaders of ‘existential dangers’ - aljazeera.com",
+            "source": "aljazeera.com",
+            "pub_date": "Thu, 17 Sep 2026 17:47:25 GMT"
+          },
+          {
+            "title": "CUBE AND IBM ANNOUNCE NEW COLLABORATION TO HELP ENTERPRISES NAVIGATE AI REGULATION AND SIMPLIFY COMPLIANCE AND RISK PROCESSES - PR Newswire",
+            "source": "PR Newswire",
+            "pub_date": "Thu, 17 Sep 2026 12:00:00 GMT"
+          },
+          {
+            "title": "Palantir CEO Alex Karp says AI labs may seek government protection from copyright lawsuits - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Fri, 18 Sep 2026 04:08:18 GMT"
+          },
+          {
+            "title": "As AI CEOs clash over regulation, a new culture war is brewing - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 17 Sep 2026 19:20:00 GMT"
+          },
+          {
+            "title": "Leading AI labs may need to be nationalized because risks are so high, Palantir's Karp tells CNBC - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 17 Sep 2026 15:29:12 GMT"
+          },
+          {
+            "title": "Trump Sees Race Against China as Key Issue on AI Regulation - wsj.com",
+            "source": "wsj.com",
+            "pub_date": "Sun, 13 Sep 2026 22:28:01 GMT"
+          },
+          {
+            "title": "AI Regulation in APAC: Diverging Approaches Across the Region - Latham & Watkins LLP",
+            "source": "Latham & Watkins LLP",
+            "pub_date": "Tue, 15 Sep 2026 19:12:36 GMT"
+          },
+          {
+            "title": "Going faster will only slow AI down - Financial Times",
+            "source": "Financial Times",
+            "pub_date": "Thu, 17 Sep 2026 16:27:29 GMT"
+          },
+          {
+            "title": "AI brings benefits but also risks; regulation has a role: IT Minister Vaishnaw - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Thu, 17 Sep 2026 17:37:27 GMT"
+          },
+          {
+            "title": "Congress is under pressure to act on AI — here's what that could look like - NPR",
+            "source": "NPR",
+            "pub_date": "Wed, 16 Sep 2026 17:32:44 GMT"
+          },
+          {
+            "title": "EFF to Lawmakers: Ground AI Cybersecurity Rules in Best Practices - Electronic Frontier Foundation",
+            "source": "Electronic Frontier Foundation",
+            "pub_date": "Fri, 18 Sep 2026 01:16:10 GMT"
+          },
+          {
+            "title": "Thales Urges International Regulation for AI Development in Finance - Global Banking & Finance Review",
+            "source": "Global Banking & Finance Review",
+            "pub_date": "Thu, 17 Sep 2026 15:06:50 GMT"
+          },
+          {
+            "title": "Congress Crawls Toward Higher-Ed AI Regulation - The Chronicle of Higher Education",
+            "source": "The Chronicle of Higher Education",
+            "pub_date": "Thu, 17 Sep 2026 21:44:07 GMT"
+          },
+          {
+            "title": "AI Regulation Debate Intensifies Over U.S.-China Race - StratNews Global",
+            "source": "StratNews Global",
+            "pub_date": "Thu, 17 Sep 2026 10:22:13 GMT"
+          }
+        ],
+        "semiconductor India": [
+          {
+            "title": "'India has entered 2nd phase of semiconductor journey': PM Modi at Semicon event - timesofindia.indiatimes.com",
+            "source": "timesofindia.indiatimes.com",
+            "pub_date": "Thu, 17 Sep 2026 06:39:00 GMT"
+          },
+          {
+            "title": "Applied Materials to invest $5 billion in India as Modi's flagship chip event kicks off - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 17 Sep 2026 12:50:12 GMT"
+          },
+          {
+            "title": "PM Modi lays foundation stone of a semiconductor manufacturing unit in Uttar Pradesh - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Thu, 17 Sep 2026 22:50:22 GMT"
+          },
+          {
+            "title": "CG Power Boosts India Semiconductor Push As Advanced Packaging Emerges As Growth Engine - Sahi",
+            "source": "Sahi",
+            "pub_date": "Fri, 18 Sep 2026 03:48:35 GMT"
+          },
+          {
+            "title": "Centre bars selling chip plants till declaration of full commercial production under Semicon 2.0 scheme - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 18 Sep 2026 01:05:05 GMT"
+          },
+          {
+            "title": "Modi pitches India as manufacturing hub - theshillongtimes.com",
+            "source": "theshillongtimes.com",
+            "pub_date": "Fri, 18 Sep 2026 00:31:46 GMT"
+          },
+          {
+            "title": "India’s semiconductor plants now competing globally on cost, quality: Ashwini Vaishnaw - Fortune India",
+            "source": "Fortune India",
+            "pub_date": "Thu, 17 Sep 2026 17:58:41 GMT"
+          },
+          {
+            "title": "Applied Materials to Invest $5 Bn in India to Expand Semiconductor R&D, Supply Chain - analyticsindiamag.com",
+            "source": "analyticsindiamag.com",
+            "pub_date": "Thu, 17 Sep 2026 17:01:32 GMT"
+          },
+          {
+            "title": "Semicon 2.0: Vaishnaw Outlines India’s Semiconductor Growth Plan - Sarkaritel.com",
+            "source": "Sarkaritel.com",
+            "pub_date": "Thu, 17 Sep 2026 12:16:50 GMT"
+          },
+          {
+            "title": "PM chairs Semiconductor Roundtable with leading CEOs - PM India",
+            "source": "PM India",
+            "pub_date": "Wed, 16 Sep 2026 14:23:56 GMT"
+          },
+          {
+            "title": "‘India needs targeted support for semiconductor equipment R&D’ - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Thu, 17 Sep 2026 16:29:10 GMT"
+          },
+          {
+            "title": "Companies propose Rs1 lakh crore semiconductor investments under Semicon 2.0: Vaishnaw - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Thu, 17 Sep 2026 18:53:13 GMT"
+          },
+          {
+            "title": "India’s semiconductor push enters a new phase with Semicon 2.0 - DD India",
+            "source": "DD India",
+            "pub_date": "Thu, 17 Sep 2026 07:36:55 GMT"
+          },
+          {
+            "title": "SEMICON India 2026: Applied Materials’ $5-billion Plan Leads Chip Supply-Chain Push - Open Magazine",
+            "source": "Open Magazine",
+            "pub_date": "Thu, 17 Sep 2026 11:44:25 GMT"
+          },
+          {
+            "title": "From silicon to systems India’s semiconductor journey enters a new era - DD News",
+            "source": "DD News",
+            "pub_date": "Thu, 17 Sep 2026 09:29:20 GMT"
+          },
+          {
+            "title": "Nexperia and Tata deepen India chip manufacturing ties - TNGlobal",
+            "source": "TNGlobal",
+            "pub_date": "Fri, 18 Sep 2026 02:58:58 GMT"
+          },
+          {
+            "title": "India reliable & prepared destination to meet new global manufacturing challenges, says PM Modi - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Thu, 17 Sep 2026 15:31:00 GMT"
+          },
+          {
+            "title": "PM Modi highlights India’s growing semiconductor ecosystem at SEMICON India 2026 - DD India",
+            "source": "DD India",
+            "pub_date": "Thu, 17 Sep 2026 10:44:00 GMT"
+          },
+          {
+            "title": "What does SEMICON’s global appeal mean for India’s semiconductor ecosystem? - Global Times",
+            "source": "Global Times",
+            "pub_date": "Thu, 17 Sep 2026 14:58:00 GMT"
+          },
+          {
+            "title": "India semiconductor sector boosted by new plants and investment - gasworld",
+            "source": "gasworld",
+            "pub_date": "Thu, 17 Sep 2026 08:19:24 GMT"
+          },
+          {
+            "title": "Nexperia and Tata Electronics announce strategic partnership across semiconductor manufacturing, technology, and innovation - Tata Electronics",
+            "source": "Tata Electronics",
+            "pub_date": "Thu, 17 Sep 2026 15:25:39 GMT"
+          },
+          {
+            "title": "India aims to be globally reliable semiconductor manufacturing hub: PM Narendra Modi - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Thu, 17 Sep 2026 11:26:02 GMT"
+          },
+          {
+            "title": "Tata Electronics and Besi Enter Strategic Partnership to Strengthen Advanced Packaging Capabilities - Tata Electronics",
+            "source": "Tata Electronics",
+            "pub_date": "Thu, 17 Sep 2026 13:35:38 GMT"
+          },
+          {
+            "title": "SEMICON India sees flurry of MoUs as chip supply chain expands - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Thu, 17 Sep 2026 15:42:16 GMT"
+          },
+          {
+            "title": "ASML begins local supply-chain push; semiconductor growth ‘unfolding’: Vaishnaw - DD India",
+            "source": "DD India",
+            "pub_date": "Thu, 17 Sep 2026 10:02:28 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt zero",
+          "chatgpt desktop"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai news",
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "tom cruise",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 17 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Tom Cruise checks out Negro Leagues Baseball Museum after Chiefs-Broncos game",
+              "source": "KMBC",
+              "url": "https://www.kmbc.com/article/tom-cruise-negro-leagues-baseball-museum-kansas-city/73766059"
+            },
+            {
+              "headline": "Tom Cruise visits Negro Leagues Baseball Museum just 1 day after appearance at Chiefs home opener",
+              "source": "KSHB 41 Kansas City",
+              "url": "https://www.kshb.com/news/local-news/tom-cruise-visits-negro-leagues-baseball-museum-just-1-day-after-appearance-at-chiefs-home-opener"
+            },
+            {
+              "headline": "Tom Cruise visits Negro Leagues Baseball Museum during Kansas City trip",
+              "source": "KCTV",
+              "url": "https://www.kctv5.com/2026/09/17/tom-cruise-visits-negro-leagues-baseball-museum-during-kansas-city-trip/"
+            }
+          ]
+        },
+        {
+          "title": "jpnw vs indw",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Asian Games 2026 India schedule today, September 18: Women’s cricket team, soft tennis campaigns start",
+              "source": "Olympics",
+              "url": "https://www.olympics.com/en/news/asian-games-2026-india-schedule-today-september-18"
+            },
+            {
+              "headline": "Favourites India begin Asiad title defence against Japan",
+              "source": "The Shillong Times",
+              "url": "https://theshillongtimes.com/2026/09/18/favourites-india-begin-asiad-title-defence-against-japan/"
+            },
+            {
+              "headline": "Harmanpreet Kaur will rediscover batting form at Asian Games: Anjum Chopra",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/harmanpreet-kaur-will-rediscover-batting-form-at-asian-games-anjum-chopra/articleshow/134301000.cms"
+            }
+          ]
+        },
+        {
+          "title": "hand soap",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 17 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Check your bathroom: This hand soap was just recalled in 15 states",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/select/shopping/intercon-hand-soap-recall-2026-rcna598380"
+            },
+            {
+              "headline": "Hand soap recall issued for products distributed in 16 states, including Illinois",
+              "source": "NBC 5 Chicago",
+              "url": "https://www.nbcchicago.com/news/local/hand-soap-recall-issued-for-products-sold-in-15-states-including-illinois/3989902/"
+            },
+            {
+              "headline": "Check these recalled hand soaps in California homes, schools",
+              "source": "The Desert Sun",
+              "url": "https://www.desertsun.com/story/news/nation/california/2026/09/16/intercon-hand-soap-recall-bacteria-infection-risk-explained/91792907007/"
+            }
+          ]
+        },
+        {
+          "title": "fightland",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "When Does ‘Fightland’ Episode 8 Air on Starz?",
+              "source": "Decider",
+              "url": "https://decider.com/2026/09/17/fightland-new-episode-8-starz-release-date-how-many-episodes-fightland/"
+            },
+            {
+              "headline": "The Crime Series Dominating Jason Statham's Action Thriller Raises the Stakes in Tense Clip",
+              "source": "Comic Book Resources",
+              "url": "https://www.cbr.com/fightland-crime-season-1-episode-6-clip/"
+            },
+            {
+              "headline": "Daniel Fajemisin-Duncan and Marlon Smith Talk Fightland, Boxing and Building a Black British Crime Drama at Scale",
+              "source": "The British Blacklist",
+              "url": "https://thebritishblacklist.co.uk/daniel-fajemisin-duncan-and-marlon-smith-talk-fightland-boxing-and-building-a-black-british-crime-drama-at-scale/"
+            }
+          ]
+        },
+        {
+          "title": "river",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 17 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "River that is home to 500 crocodiles chosen to host 2032 Olympic rowing and canoe events",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/olympics/articles/cqvgy1m9z4k8o"
+            },
+            {
+              "headline": "Crocodile-inhabited river approved as Brisbane 2032 Olympic rowing venue",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/sport/2026/sep/17/fitzroy-rockhampton-australia-crocodile-inhabited-river-approved-to-host-rowing-brisbane-2032-olympics"
+            },
+            {
+              "headline": "Crocodile-Infested River Chosen for Olympic Rowing in Brisbane",
+              "source": "The Daily Beast",
+              "url": "https://www.thedailybeast.com/crocodile-infested-river-chosen-for-olympic-rowing-in-brisbane/"
+            }
+          ]
+        },
+        {
+          "title": "joshua van",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "UFC 331 preview and picks: Pantoja sees opportunity in disaster",
+              "source": "ESPN",
+              "url": "https://www.espn.com/espn/story/_/id/49957909/ufc-331-preview-predictions-joshua-van-alexandre-pantoja"
+            },
+            {
+              "headline": "Alexandre Pantoja | Enjoying The Moment Differently This Time",
+              "source": "UFC.com",
+              "url": "https://www.ufc.com/news/alexandre-pantoja-enjoying-moment-differently-time-crypto-dot-com-ufc-331"
+            },
+            {
+              "headline": "UFC 331 preview: Van vs. Pantoja 2 picks & predictions",
+              "source": "Sherdog",
+              "url": "https://www.sherdog.com/news/articles/1/UFC-331-preview-Van-vs-Pantoja-2-picks-predictions-202821"
+            }
+          ]
+        },
+        {
+          "title": "big brother double eviction",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 17 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "‘Big Brother’ Season 28, Week 10 Results: Double Eviction Night Reveals Final 5",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66021523/?ref_=nmnw_art_perm"
+            },
+            {
+              "headline": "Who went home on 'Big Brother' tonight? Double eviction results",
+              "source": "Bergen Record",
+              "url": "https://www.northjersey.com/story/news/2026/09/17/who-went-home-on-big-brother-tonight-double-eviction-results/91808582007/"
+            },
+            {
+              "headline": "‘Big Brother 28’ spoilers: Who wins Week 11 HOH after ‘f–king stupid’ double eviction? (updating)",
+              "source": "Gold Derby",
+              "url": "https://www.goldderby.com/reality-tv/2026/big-brother-28-spoilers-who-wins-week-11-hoh-after-double/"
+            }
+          ]
+        },
+        {
+          "title": "angels",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 17 Sep 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Game 153: Twins at Angels",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/game-153-twins-angels-003818400.html"
+            },
+            {
+              "headline": "Twins vs Angels Prediction, Picks & Odds for Tonight's MLB Game",
+              "source": "Covers.com",
+              "url": "https://www.covers.com/mlb/twins-vs-angels-prediction-picks-odds-thursday-9-17-2026"
+            },
+            {
+              "headline": "How to watch Twins vs. Angels: TV channel and streaming options for September 17",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7604874/2026/09/17/how-to-watch-twins-vs-angels-tv-channel-and-streaming-options-for-september-17/"
+            }
+          ]
+        },
+        {
+          "title": "arman tsarukyan",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Mauricio Ruffy: UFC 331 prep for Arman Tsarukyan 'made me a different person'",
+              "source": "MMA Junkie",
+              "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/17/ufc-331-mauricio-ruffy-training-different-person-for-arman-tsarukyan/91802664007/"
+            },
+            {
+              "headline": "Tsarukyan Vs. Ruffy Odds, Full Fight Preview & Prediction",
+              "source": "MMA Mania",
+              "url": "https://www.mmamania.com/ufc-odds/472552/arman-tsarukyan-vs-mauricio-ruffy-odds-full-fight-preview-and-prediction-ufc-331"
+            },
+            {
+              "headline": "Arman Tsarukyan unimpressed by Mauricio Ruffy’s star-studded training camp: ‘I’m better everywhere’",
+              "source": "MMA Fighting",
+              "url": "https://www.mmafighting.com/ufc/510607/arman-tsarukyan-unimpressed-by-mauricio-ruffys-star-studded-training-camp-im-better-everywhere"
+            }
+          ]
+        },
+        {
+          "title": "chris pratt",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 17 Sep 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Chris Pratt Is Done Running In ‘The Terminal List’ Season 2 Trailer",
+              "source": "Deadline",
+              "url": "https://deadline.com/2026/09/the-terminal-list-season-2-trailer-1237106251/"
+            },
+            {
+              "headline": "Chris Pratt's \"Bourne Meets Reacher\" Amazon Action Thriller Hit Returns in First Trailer",
+              "source": "MovieWeb",
+              "url": "https://movieweb.com/terminal-list-season-2-trailer-prime-video/"
+            },
+            {
+              "headline": "Chris Pratt’s Biggest Career Challenge Yet Lies With His Prime Video Show",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/tv/articles/chris-pratt-biggest-career-challenge-173204746.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI regulation": [
+          {
+            "title": "‘Godfather of AI’ says tech regulation is nearing Covid-style pivot moment - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 16 Sep 2026 19:35:00 GMT"
+          },
+          {
+            "title": "Shapiro calls for government AI regulation — it’s not what some in the industry want to hear - TribLIVE.com",
+            "source": "TribLIVE.com",
+            "pub_date": "Thu, 17 Sep 2026 23:50:28 GMT"
+          },
+          {
+            "title": "We Must Pace the Frontier - darioamodei.com",
+            "source": "darioamodei.com",
+            "pub_date": "Sat, 12 Sep 2026 14:15:02 GMT"
+          },
+          {
+            "title": "Congress is under pressure to act on AI — here's what that could look like - NPR",
+            "source": "NPR",
+            "pub_date": "Wed, 16 Sep 2026 17:32:44 GMT"
+          },
+          {
+            "title": "Congress Has Plenty of Ideas to Regulate A.I. Nearly All Are Stalled. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Tue, 15 Sep 2026 14:49:33 GMT"
+          },
+          {
+            "title": "‘Godfather of AI’ warns Congress has ‘maybe a year’ left to regulate AI - nbcnews.com",
+            "source": "nbcnews.com",
+            "pub_date": "Thu, 17 Sep 2026 19:45:09 GMT"
+          },
+          {
+            "title": "Opinion | A.I. Regulation May Finally Be Here. What Took So Long? - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Wed, 16 Sep 2026 19:44:29 GMT"
+          },
+          {
+            "title": "China edges US, EU on AI regulation trust in middle-income countries: Pew survey - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Thu, 17 Sep 2026 14:00:06 GMT"
+          },
+          {
+            "title": "Two camps have emerged in the debate over AI safety and regulation - CNBC",
+            "source": "CNBC",
+            "pub_date": "Tue, 15 Sep 2026 20:05:32 GMT"
+          },
+          {
+            "title": "Opinion | American AI Regulation Is Exactly What China Wants - WSJ",
+            "source": "WSJ",
+            "pub_date": "Thu, 17 Sep 2026 19:23:00 GMT"
+          },
+          {
+            "title": "United Nations Chief Calls for Coordinating Global AI Regulation - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Wed, 16 Sep 2026 15:10:28 GMT"
+          },
+          {
+            "title": "Anthropic CEO Dario Amodei has a flawed view of AI regulation, heavyweight tech investor Bill Gurley warns - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Wed, 16 Sep 2026 11:37:59 GMT"
+          },
+          {
+            "title": "AI Governance Experts React to Existential Warnings, Calls for Regulation - WTTW News",
+            "source": "WTTW News",
+            "pub_date": "Fri, 18 Sep 2026 00:29:00 GMT"
+          },
+          {
+            "title": "Leading AI labs may need to be nationalized because risks are so high, Palantir's Karp tells CNBC - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 17 Sep 2026 15:29:12 GMT"
+          },
+          {
+            "title": "EFF to Lawmakers: Ground AI Cybersecurity Rules in Best Practices - Electronic Frontier Foundation",
+            "source": "Electronic Frontier Foundation",
+            "pub_date": "Fri, 18 Sep 2026 01:16:10 GMT"
+          },
+          {
+            "title": "Do people trust China, the U.S. or the EU to regulate AI? - Pew Research Center",
+            "source": "Pew Research Center",
+            "pub_date": "Thu, 17 Sep 2026 13:59:59 GMT"
+          },
+          {
+            "title": "Congress Crawls Toward Higher-Ed AI Regulation - The Chronicle of Higher Education",
+            "source": "The Chronicle of Higher Education",
+            "pub_date": "Thu, 17 Sep 2026 21:44:07 GMT"
+          },
+          {
+            "title": "As AI CEOs clash over regulation, a new culture war is brewing - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 17 Sep 2026 19:20:00 GMT"
+          },
+          {
+            "title": "Countries must increase AI regulation to avoid ‘existential risks’: Türk - news.un.org",
+            "source": "news.un.org",
+            "pub_date": "Mon, 14 Sep 2026 16:12:05 GMT"
+          },
+          {
+            "title": "Trump tries to kill regulations on ‘HOAX’ AI dangers - Politico",
+            "source": "Politico",
+            "pub_date": "Mon, 14 Sep 2026 20:42:00 GMT"
+          },
+          {
+            "title": "How should AI be regulated? - Johns Hopkins University",
+            "source": "Johns Hopkins University",
+            "pub_date": "Fri, 18 Sep 2026 01:10:00 GMT"
+          },
+          {
+            "title": "Liability, regulation, and AI’s new false dichotomy - Marcus on AI",
+            "source": "Marcus on AI",
+            "pub_date": "Thu, 17 Sep 2026 21:50:14 GMT"
+          },
+          {
+            "title": "AI bosses say they can self-regulate and House passes Russia sanctions bill: Morning Rundown - nbcnews.com",
+            "source": "nbcnews.com",
+            "pub_date": "Thu, 17 Sep 2026 11:15:19 GMT"
+          },
+          {
+            "title": "Trump goes scorched earth on AI warnings, raging about data center opposition and regulation - CNBC",
+            "source": "CNBC",
+            "pub_date": "Mon, 14 Sep 2026 14:09:03 GMT"
+          },
+          {
+            "title": "Who should set the rules for AI? The UN is pushing for a safer digital future - news.un.org",
+            "source": "news.un.org",
+            "pub_date": "Wed, 16 Sep 2026 21:18:23 GMT"
+          }
+        ],
+        "semiconductor India": [
+          {
+            "title": "Applied Materials to invest $5 billion in India as Modi's flagship chip event kicks off - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 17 Sep 2026 12:50:12 GMT"
+          },
+          {
+            "title": "Applied Materials (AMAT) Plans $5 Billion India Semiconductor Research Park - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 17 Sep 2026 12:12:03 GMT"
+          },
+          {
+            "title": "India semiconductor sector boosted by new plants and investment - gasworld",
+            "source": "gasworld",
+            "pub_date": "Thu, 17 Sep 2026 08:19:24 GMT"
+          },
+          {
+            "title": "Nexperia and Tata Electronics announce strategic partnership across semiconductor manufacturing, technology, and innovation - Tata Electronics",
+            "source": "Tata Electronics",
+            "pub_date": "Thu, 17 Sep 2026 15:25:39 GMT"
+          },
+          {
+            "title": "Nexperia and Tata deepen India chip manufacturing ties - TNGlobal",
+            "source": "TNGlobal",
+            "pub_date": "Fri, 18 Sep 2026 02:58:58 GMT"
+          },
+          {
+            "title": "ASML reinforces support for India's semiconductor ambitions at SEMICON India 2026 - PR Newswire",
+            "source": "PR Newswire",
+            "pub_date": "Thu, 17 Sep 2026 13:54:00 GMT"
+          },
+          {
+            "title": "What does SEMICON’s global appeal mean for India’s semiconductor ecosystem? - Global Times",
+            "source": "Global Times",
+            "pub_date": "Thu, 17 Sep 2026 14:58:00 GMT"
+          },
+          {
+            "title": "Fujifilm to invest $83M in semiconductor materials facility in India - Evertiq",
+            "source": "Evertiq",
+            "pub_date": "Thu, 17 Sep 2026 12:06:06 GMT"
+          },
+          {
+            "title": "Semicon India 2026, an annual semiconductor conference, in New Delhi - galvnews.com",
+            "source": "galvnews.com",
+            "pub_date": "Thu, 17 Sep 2026 13:03:59 GMT"
+          },
+          {
+            "title": "Applied Materials plans $5 billion India semiconductor investment - grafa.com",
+            "source": "grafa.com",
+            "pub_date": "Thu, 17 Sep 2026 17:00:00 GMT"
+          },
+          {
+            "title": "India positioned to lead global semiconductor drive from the front: Intel - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 18 Sep 2026 01:25:05 GMT"
+          },
+          {
+            "title": "India Secures Up to $12 Billion in Semiconductor Investment Pledges Under Semicon 2.0 - INDIA New England News",
+            "source": "INDIA New England News",
+            "pub_date": "Thu, 17 Sep 2026 14:45:21 GMT"
+          },
+          {
+            "title": "Applied Materials to Invest $5 Bn in India to Expand Semiconductor R&D, Supply Chain - analyticsindiamag.com",
+            "source": "analyticsindiamag.com",
+            "pub_date": "Thu, 17 Sep 2026 17:01:32 GMT"
+          },
+          {
+            "title": "Modi draws U.S. chip leaders’ backing for $30 billion India bet - The Japan Times",
+            "source": "The Japan Times",
+            "pub_date": "Thu, 17 Sep 2026 10:00:00 GMT"
+          },
+          {
+            "title": "After fallout with Chinese parent, chipmaker Nexperia partners with India's Tata - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 17 Sep 2026 15:20:24 GMT"
+          },
+          {
+            "title": "Teradyne India Office Expands Semiconductor Manufacturing Support in Bengaluru - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 15 Sep 2026 14:50:41 GMT"
+          },
+          {
+            "title": "Tata Electronics and Besi Enter Strategic Partnership to Strengthen Advanced Packaging Capabilities - Tata Electronics",
+            "source": "Tata Electronics",
+            "pub_date": "Thu, 17 Sep 2026 13:35:38 GMT"
+          },
+          {
+            "title": "Centre bars selling chip plants till declaration of full commercial production under Semicon 2.0 scheme - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 18 Sep 2026 01:05:05 GMT"
+          },
+          {
+            "title": "Teradyne Opens Office in India, Deepening Commitment to the Country’s Growing Semiconductor Ecosystem - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 15 Sep 2026 03:30:00 GMT"
+          },
+          {
+            "title": "SEMICON India 2026: Applied Materials’ $5-billion Plan Leads Chip Supply-Chain Push - Open Magazine",
+            "source": "Open Magazine",
+            "pub_date": "Thu, 17 Sep 2026 11:44:25 GMT"
+          },
+          {
+            "title": "Semicon India 2026: Amid ‘weaponisation’ of supply chains, PM pitches India as a ‘trustworthy’ chipmaking destination - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Thu, 17 Sep 2026 07:22:16 GMT"
+          },
+          {
+            "title": "India's Tata reappoints chairman, backs listing in rift with controlling charity - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 17 Sep 2026 15:59:16 GMT"
+          },
+          {
+            "title": "India's Tata group shares rise on fresh term for Chair Chandrasekaran - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 17 Sep 2026 11:19:12 GMT"
+          },
+          {
+            "title": "India aims to be globally reliable semiconductor manufacturing hub: PM Narendra Modi - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Thu, 17 Sep 2026 11:26:02 GMT"
+          },
+          {
+            "title": "SEMICON India sees flurry of MoUs as chip supply chain expands - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Thu, 17 Sep 2026 15:42:16 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt zero",
+          "chatgpt desktop"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai news",
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA",
+      "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
+      "points": 539,
+      "comments": 205,
+      "created_at": "2026-09-15T17:28:38Z"
+    },
+    {
+      "title": "Hister: A private search engine for the pages you visit and the files you keep",
+      "url": "https://github.com/asciimoo/hister",
+      "points": 516,
+      "comments": 140,
+      "created_at": "2026-09-17T16:25:37Z"
+    },
+    {
+      "title": "Astra for Law",
+      "url": "https://openai.com/index/astra-for-law/",
+      "points": 395,
+      "comments": 426,
+      "created_at": "2026-09-17T20:17:48Z"
+    },
+    {
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "url": "https://bend-lang.com/",
+      "points": 361,
+      "comments": 182,
+      "created_at": "2026-09-17T20:36:13Z"
+    },
+    {
+      "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "points": 312,
+      "comments": 103,
+      "created_at": "2026-09-17T21:13:31Z"
+    },
+    {
+      "title": "Wax motor",
+      "url": "https://en.wikipedia.org/wiki/Wax_motor",
+      "points": 300,
+      "comments": 56,
+      "created_at": "2026-09-16T12:35:14Z"
+    },
+    {
+      "title": "Why I didn’t sign the Fields medallists’ letter",
+      "url": "https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/",
+      "points": 228,
+      "comments": 328,
+      "created_at": "2026-09-17T08:51:51Z"
+    },
+    {
+      "title": "The American Religion of Self-Storage Facilities",
+      "url": "https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities",
+      "points": 211,
+      "comments": 361,
+      "created_at": "2026-09-17T13:12:28Z"
+    },
+    {
+      "title": "Rate limits on GitLab.com are changing",
+      "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
+      "points": 161,
+      "comments": 109,
+      "created_at": "2026-09-17T15:33:54Z"
+    },
+    {
+      "title": "CrowdSec Source Code Leak",
+      "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure",
+      "points": 139,
+      "comments": 42,
+      "created_at": "2026-09-17T15:34:01Z"
+    },
+    {
+      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+      "url": "https://arxiv.org/abs/2609.18842",
+      "points": 123,
+      "comments": 38,
+      "created_at": "2026-09-17T16:55:14Z"
+    },
+    {
+      "title": "Alibaba releases Qwen 3.8 Omni Flash",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "points": 100,
+      "comments": 24,
+      "created_at": "2026-09-17T23:05:48Z"
+    },
+    {
+      "title": "Hacking OpenAI",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "points": 98,
+      "comments": 29,
+      "created_at": "2026-09-18T02:47:24Z"
+    },
+    {
+      "title": "How do we prevent mathemathics from devolving into the Medieval Era of secrecy?",
+      "url": "https://mathoverflow.net/questions/515260/how-do-we-prevent-mathematics-from-devolving-into-the-medieval-era-of-secrecy",
+      "points": 96,
+      "comments": 73,
+      "created_at": "2026-09-15T17:37:41Z"
+    },
+    {
+      "title": "Flet 1.0 – Build cross-platform apps in Python",
+      "url": "https://flet.dev/",
+      "points": 76,
+      "comments": 38,
+      "created_at": "2026-09-17T20:44:28Z"
+    },
+    {
+      "title": "The most important product decision is what you don't build",
+      "url": "https://liamnugent.me/posts/what-you-dont-build/",
+      "points": 72,
+      "comments": 20,
+      "created_at": "2026-09-17T20:52:36Z"
+    },
+    {
+      "title": "How Uber Protects Against Retry Storms",
+      "url": "https://www.uber.com/us/en/blog/protecting-against-retry-storms/",
+      "points": 70,
+      "comments": 30,
+      "created_at": "2026-09-17T21:14:32Z"
+    },
+    {
+      "title": "How to Write with an LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "points": 63,
+      "comments": 56,
+      "created_at": "2026-09-17T21:48:38Z"
+    },
+    {
+      "title": "Show HN: Snapdrop: Instantly share files between devices. No setup, no signup",
+      "url": "https://snapdrop.me",
+      "points": 45,
+      "comments": 26,
+      "created_at": "2026-09-17T20:48:04Z"
+    },
+    {
+      "title": "Diplodocus, Long Thought Exclusively American, Turns Up in Spain",
+      "url": "https://www.sci.news/paleontology/spanish-diplodocus-15064.html",
+      "points": 42,
+      "comments": 27,
+      "created_at": "2026-09-15T10:46:24Z"
+    },
+    {
+      "title": "Hacking OpenAI",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "points": 98,
+      "comments": 29,
+      "created_at": "2026-09-18T02:47:24Z"
+    },
+    {
+      "title": "Alibaba releases Qwen 3.8 Omni Flash",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "points": 100,
+      "comments": 24,
+      "created_at": "2026-09-17T23:05:48Z"
+    },
+    {
+      "title": "Sex, AI, and the Apocalypse",
+      "url": "https://www.iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse/",
+      "points": 173,
+      "comments": 178,
+      "created_at": "2026-09-17T21:15:52Z"
+    },
+    {
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "url": "https://bend-lang.com/",
+      "points": 361,
+      "comments": 182,
+      "created_at": "2026-09-17T20:36:13Z"
+    },
+    {
+      "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
+      "url": null,
+      "points": 54,
+      "comments": 52,
+      "created_at": "2026-09-17T16:22:15Z"
+    },
+    {
+      "title": "Show HN: Share your AI Setup, Learn from others",
+      "url": "https://mysetup.ai/",
+      "points": 203,
+      "comments": 114,
+      "created_at": "2026-09-17T13:01:44Z"
+    },
+    {
+      "title": "AI safety is mostly a sex cult",
+      "url": "https://skywriter.blue/@segyges.bsky.social/3mvom4b4dn22q",
+      "points": 284,
+      "comments": 232,
+      "created_at": "2026-09-17T08:36:37Z"
+    },
+    {
+      "title": "How GLM built its own inference infrastructure",
+      "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+      "points": 384,
+      "comments": 265,
+      "created_at": "2026-09-17T08:27:09Z"
+    },
+    {
+      "title": "OpenSpec – A lightweight and configurable AI spec framework",
+      "url": "https://openspec.dev/",
+      "points": 192,
+      "comments": 96,
+      "created_at": "2026-09-16T23:06:39Z"
+    },
+    {
+      "title": "A coffee shop owner used AI to make a menu poster. Then came the angry DMs",
+      "url": "https://www.businessinsider.com/coffee-shop-owner-ai-menu-backlash-2026-9",
+      "points": 80,
+      "comments": 308,
+      "created_at": "2026-09-16T18:59:42Z"
+    },
+    {
+      "title": "Berlin-based Langdock moves its parent company from the US to Germany",
+      "url": "https://www.euronews.com/business/2026/09/16/why-this-fast-growing-german-ai-start-up-is-moving-its-parent-company-from-the-us",
+      "points": 55,
+      "comments": 24,
+      "created_at": "2026-09-16T18:45:20Z"
+    },
+    {
+      "title": "Training Text-to-Image Models 3.6× Faster",
+      "url": "https://www.linum.ai/field-notes/jit-ddt",
+      "points": 55,
+      "comments": 10,
+      "created_at": "2026-09-16T16:58:13Z"
+    },
+    {
+      "title": "A warning about 'model welfare'",
+      "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+      "points": 237,
+      "comments": 672,
+      "created_at": "2026-09-16T14:27:47Z"
+    },
+    {
+      "title": "OpenAI expands ChatGPT ads with Sponsored Agents",
+      "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "points": 156,
+      "comments": 178,
+      "created_at": "2026-09-16T13:51:15Z"
+    },
+    {
+      "title": "Scaling Golang CI by Replacing actions/setup-go",
+      "url": "https://www.cloudx.ai/posts/setup-go",
+      "points": 72,
+      "comments": 24,
+      "created_at": "2026-09-16T13:02:14Z"
+    },
+    {
+      "title": "Show HN: How Stale Is Your AI? Release age and training cutoff for 20 models",
+      "url": "https://stale.jock.pl/",
+      "points": 78,
+      "comments": 46,
+      "created_at": "2026-09-16T13:01:52Z"
+    },
+    {
+      "title": "DeepSeek v4.1 Flash Is Now Our Best Hacking Model",
+      "url": "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
+      "points": 171,
+      "comments": 67,
+      "created_at": "2026-09-16T12:19:55Z"
+    },
+    {
+      "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
+      "url": "https://mistral.ai/news/mistral-x-mozilla/",
+      "points": 581,
+      "comments": 204,
+      "created_at": "2026-09-16T08:08:57Z"
+    },
+    {
+      "title": "Stay discoverable in search while disallowing AI training",
+      "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "points": 86,
+      "comments": 50,
+      "created_at": "2026-09-16T02:25:18Z"
+    },
+    {
+      "title": "Introducing System One Models and Jev",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "points": 1863,
+      "comments": 491,
+      "created_at": "2026-09-15T19:25:03Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6911414,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 911696,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 616132,
+      "rank": 3
+    },
+    {
+      "article": "Macklemore",
+      "views": 213767,
+      "rank": 4
+    },
+    {
+      "article": "Robert_Kraft",
+      "views": 196796,
+      "rank": 5
+    },
+    {
+      "article": "Lizzie_Borden",
+      "views": 164540,
+      "rank": 6
+    },
+    {
+      "article": "Ed_Sheeran",
+      "views": 155393,
+      "rank": 7
+    },
+    {
+      "article": "JJ_Gabriel",
+      "views": 146453,
+      "rank": 8
+    },
+    {
+      "article": "Dancing_with_the_Stars_(American_TV_series)_season_35",
+      "views": 141460,
+      "rank": 9
+    },
+    {
+      "article": "Jyothika",
+      "views": 137155,
+      "rank": 10
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 135040,
+      "rank": 11
+    },
+    {
+      "article": "Widow's_Bay",
+      "views": 130566,
+      "rank": 12
+    },
+    {
+      "article": "Resident_Evil_(2026_film)",
+      "views": 124267,
+      "rank": 13
+    },
+    {
+      "article": "Sydney_Sweeney",
+      "views": 109635,
+      "rank": 14
+    },
+    {
+      "article": "Matthew_Rhys",
+      "views": 106180,
+      "rank": 15
+    },
+    {
+      "article": "September_11_attacks",
+      "views": 102059,
+      "rank": 16
+    },
+    {
+      "article": "Harry_Shum_Jr.",
+      "views": 101733,
+      "rank": 17
+    },
+    {
+      "article": "List_of_Tim_Curry_performances",
+      "views": 98939,
+      "rank": 18
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 98180,
+      "rank": 19
+    },
+    {
+      "article": "Hanuman_Ansh",
+      "views": 95806,
+      "rank": 20
+    },
+    {
+      "article": "Killing_of_the_Clancy_children",
+      "views": 93697,
+      "rank": 21
+    },
+    {
+      "article": "Joe_O'Cearuill",
+      "views": 93473,
+      "rank": 22
+    },
+    {
+      "article": "Tom_Pelphrey",
+      "views": 90842,
+      "rank": 23
+    },
+    {
+      "article": "Taylor_Hanson",
+      "views": 89379,
+      "rank": 24
+    },
+    {
+      "article": "Marvel's_Wolverine",
+      "views": 88645,
+      "rank": 25
+    },
+    {
+      "article": "Kaley_Cuoco",
+      "views": 86022,
+      "rank": 26
+    },
+    {
+      "article": "Raheem_Sterling",
+      "views": 75713,
+      "rank": 27
+    },
+    {
+      "article": "Ezra_Frech",
+      "views": 74256,
+      "rank": 28
+    },
+    {
+      "article": "Tim_Curry",
+      "views": 72536,
+      "rank": 29
+    },
+    {
+      "article": "2026_Swedish_general_election",
+      "views": 69521,
+      "rank": 30
+    },
+    {
+      "article": "Lanterns_(TV_series)",
+      "views": 69448,
+      "rank": 31
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 67343,
+      "rank": 32
+    },
+    {
+      "article": "Suriya",
+      "views": 67044,
+      "rank": 33
+    },
+    {
+      "article": "Slow_Horses",
+      "views": 66241,
+      "rank": 34
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 64610,
+      "rank": 35
+    },
+    {
+      "article": "Limonene",
+      "views": 63259,
+      "rank": 36
+    },
+    {
+      "article": "ChatGPT",
+      "views": 62853,
+      "rank": 37
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 61024,
+      "rank": 38
+    },
+    {
+      "article": "Neagley",
+      "views": 59860,
+      "rank": 39
+    },
+    {
+      "article": "Keri_Russell",
+      "views": 59781,
+      "rank": 40
+    },
+    {
+      "article": "Reacher_season_4",
+      "views": 59402,
+      "rank": 41
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 59360,
+      "rank": 42
+    },
+    {
+      "article": "Dancing_with_the_Stars_(American_TV_series)",
+      "views": 56635,
+      "rank": 43
+    },
+    {
+      "article": "Houthis",
+      "views": 56300,
+      "rank": 44
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 55677,
+      "rank": 45
+    },
+    {
+      "article": ".xyz",
+      "views": 55581,
+      "rank": 46
+    },
+    {
+      "article": "West_African_CFA_franc",
+      "views": 54284,
+      "rank": 47
+    },
+    {
+      "article": "United_States",
+      "views": 53923,
+      "rank": 48
+    },
+    {
+      "article": "The_Gentlemen_(2024_TV_series)",
+      "views": 53857,
+      "rank": 49
+    },
+    {
+      "article": "Shailene_Woodley",
+      "views": 52821,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Khosla-backed Mazama Energy just raised $135M to drill deeper into super-hot-rock geothermal"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google DeepMind launches institute to widen the AGI debate"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Amazon-owned Zoox’s 100-robotaxi limit in Nevada is about to disappear"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "PrismML hopes its tiny LLM will change how we all use AI"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The FAA’s plan to fix air traffic? $875M worth of AI"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The fix for rogue AI agents could be more AI"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI caught its models leaving notes to successors to hide bad behavior"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Is the AI safety debate about safety or control?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "UN turns to Google to make its global data ready for AI agents"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Waymo restarts San Antonio service 5 months after flooding troubles"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Even the king of England has his hesitations about AI"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Base Labs launches an open-weight AI safety partnership with Hugging Face and Goodfire"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Pinterest teases a new ‘Restyle’ feature that lets you redesign your room with AI"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Waymo says Singapore will be its next international robotaxi city"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The AI Superintelligence Slowdown"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Save $30 or more on a refurbished Apple TV 4K"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Xbox’s clever disc-to-digital feature was 15 years in the making"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Camp Snap’s 110D gives slim retro film cameras a digital upgrade"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Your robotaxi might be a narc"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "AI is feared globally as the destroyer of jobs"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr. names 8 new members to influential preventive medicine task force"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Small AI models let drones autonomously identify and attack battlefield targets"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google announces new experimental \"CC\" AI agent for families"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Republican bill would order ISPs, DNS providers, and VPNs to block piracy sites"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "IV drips used for \"detoxification\" actually filled with toxins; dozens poisoned"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "2026 Hyundai Ioniq 5: Here's what we still like, here's what annoys us"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "EPA immediately sued over plans to repeal climate rules for power plants"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "After being sidelined, Boeing's Starliner to get starring role in NASA's spaceflight plans"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A dolphin named Bubbles makes other fish vomit, then eats it"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Hackers reveal how Flock cameras really track cars and people"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Apple reportedly building server packed with M-series Ultra chips for AI"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Epstein had huge cache of child sex pics; victims sue to find out who's in them"
+    }
+  ]
+}
