@@ -1,48 +1,7 @@
 {
-  "generated_at": "2026-09-18T10:08:05.753060+05:30",
-  "page_stats": {
-    "spot-ai-generated-images-videos": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 4
-    },
-    "on-device-ai-vs-cloud-ai": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "anthropic-q2-revenue-report": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "amazon-vs-perplexity-ruling": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "free-ai-tiers-compared": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "chinese-ai-models-surge-kimi-qwen": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    },
-    "codex-context-window-cut": {
-      "clicks": 0,
-      "impressions": 0,
-      "visits": 1
-    }
-  },
-  "hub_performance": {
-    "explainers": 6,
-    "big-tech": 2,
-    "ai-models": 1,
-    "ai-tools": 1
-  },
+  "generated_at": "2026-09-19T10:03:08.693805+05:30",
+  "page_stats": {},
+  "hub_performance": {},
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
