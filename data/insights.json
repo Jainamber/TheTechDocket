@@ -1,7 +1,53 @@
 {
-  "generated_at": "2026-09-21T10:20:23.336341+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-09-22T10:19:24.453644+05:30",
+  "page_stats": {
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "on-device-ai-vs-cloud-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "pwc-ai-hallucinations-big-four-pattern": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "explainers": 5,
+    "ai-models": 2,
+    "ai-tools": 2,
+    "hardware": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
