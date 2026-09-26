@@ -1,7 +1,43 @@
 {
-  "generated_at": "2026-09-25T10:22:24.917764+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-09-26T10:22:08.212995+05:30",
+  "page_stats": {
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "bonsai-27b-ai-model-phone": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "deepseek-v4-flash-0731": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "pwc-ai-hallucinations-big-four-pattern": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 2,
+    "explainers": 3,
+    "ai-models": 3,
+    "ai-tools": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
