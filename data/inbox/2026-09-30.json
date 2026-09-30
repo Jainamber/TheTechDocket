@@ -1,0 +1,1279 @@
+{
+  "date": "2026-09-30",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_AI India": "failed: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=AI%20India&hl=en-IN&gl=IN&ceid=IN:en",
+    "news_IN_new AI model": "failed: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=new%20AI%20model&hl=en-IN&gl=IN&ceid=IN:en",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI India": "failed: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=AI%20India&hl=en-US&gl=US&ceid=US:en",
+    "news_US_new AI model": "failed: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=new%20AI%20model&hl=en-US&gl=US&ceid=US:en",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "ಡಿ ಕೆ ಶಿವಕುಮಾರ್",
+          "approx_traffic": "5000+",
+          "pub_date": "Tue, 29 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "'ಸ್ವಂತ ಅಪ್ಪ, ಅಣ್ಣ-ತಮ್ಮಂದಿರನ್ನೇ ಜೀರ್ಣಿಸಿಕೊಳ್ಳದವರು ನಮ್ಮನ್ನು ಬಿಡುತ್ತಾರೆಯೇ? ಕಸ ಹೊಡೆದು ಸಂಪಾದಿಸಿದ ಹಣ ನನ್ನ ಬಳಿ ಇಲ್ಲ'",
+              "source": "Kannada Prabha Online",
+              "url": "https://www.kannadaprabha.com/politics/2026/Sep/30/yes-i-have-acquired-assets-within-the-legal-framework-cm-d-k-shivakumar"
+            },
+            {
+              "headline": "NICE ಯೋಜನೆ: 2 ಬಾರಿ ಸಿಎಂ ಆಗಿದ್ದಾಗ ಏನು ಮಾಡಿದ್ರಿ..? HDK ‘ದ್ವಿಮುಖ ನೀತಿ’ ವಿರುದ್ಧ ಸಚಿವ ಚಲುವರಾಯಸ್ವಾಮಿ ಕಿಡಿ",
+              "source": "Kannada Prabha Online",
+              "url": "https://www.kannadaprabha.com/politics/2026/Sep/30/nice-project-minister-cheluvarayaswamy-questions-hd-kumaraswamys-double-standards"
+            },
+            {
+              "headline": "ನೈಸ್ ಯೋಜನೆ ಲೂಟಿ ಬಹಿರಂಗ ಚರ್ಚೆಗೆ ಸಿದ್ಧ",
+              "source": "Sanjevani",
+              "url": "https://sanjevani.com/ready-for-open-debate-on-the-nice-project-loot/"
+            }
+          ]
+        },
+        {
+          "title": "october",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "October stock market holidays 2026: Will NSE, BSE be open on Gandhi Jayanti? Check full trading holiday...",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/markets/stock-market-holidays-in-october-2026-nse-and-bse-remain-closed-for-11-days-check-out-the-full-list-of-trading-market-holidays-14041649.html"
+            },
+            {
+              "headline": "Bank holidays in October 2026: Gandhi Jayanti, Dussehra, Durga Puja, and more; check full list",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/wealth/save/bank-holidays-in-october-2026-gandhi-jayanti-dussehra-durga-puja-and-more-check-full-list/articleshow/134560301.cms"
+            },
+            {
+              "headline": "October Bank Holidays 2026: Banks to remain closed for these many days this month; check RBI's full list",
+              "source": "India TV News",
+              "url": "https://www.indiatvnews.com/business/news/october-bank-holidays-2026-in-kerala-tamil-nadu-up-west-bengal-karnataka-and-other-states-full-rbi-list-2026-09-30-1055670"
+            }
+          ]
+        },
+        {
+          "title": "వీరమాచనేని రామకృష్ణ",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "వీరమాచినేని రామకృష్ణపై క్రిమినల్‌ కేసు",
+              "source": "Sakshi",
+              "url": "https://www.sakshi.com/telugu-news/telangana/case-registered-against-veeramachaneni-ramakrishna-2917728"
+            },
+            {
+              "headline": "వీఆర్కే డైట్ సృష్టికర్త వీరమాచనేని రామకృష్ణపై క్రిమినల్ కేసు",
+              "source": "AP7AM",
+              "url": "https://www.ap7am.com/tn/881862/criminal-case-filed-against-vrk-diet-creator-veeramachineni-ramakrishna"
+            },
+            {
+              "headline": "Veeramachaneni Ramakrishna: వీరమాచినేని రామకృష్ణపై కేసు",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/districts/hyderabad-case-against-veeramachaneni-ramakrishna/529/126176521"
+            }
+          ]
+        },
+        {
+          "title": "srit india ipo gmp",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "SRIT India IPO Date, Review, Price, Allotment Details",
+              "source": "IPO Watch",
+              "url": "https://ipowatch.in/srit-india-ipo/"
+            },
+            {
+              "headline": "IPO LIVE: SRIT India, Shah Investor, AceVector, German Green Steel, Runwal Enterprises, Orient Cables IPO Day 2 & 3 updates",
+              "source": "BusinessLine",
+              "url": "https://www.thehindubusinessline.com/markets/srit-india-shah-investor-home-ipo-day-2-acevector-german-green-steel-runwal-enterprises-orient-cables-ipo-day-3-live-updates/article71522474.ece"
+            },
+            {
+              "headline": "IPO GMP Today: SRIT India Vs Shah Investor's Home IPO: What GMP Signals, Which Has Highest Listing Gain Potential?",
+              "source": "NDTV Profit",
+              "url": "https://www.ndtvprofit.com/markets/ipo-gmp-today-srit-india-vs-shah-investors-home-ipo-what-gmp-signals-which-has-highest-listing-gain-potential-12116896"
+            }
+          ]
+        },
+        {
+          "title": "apple pay india",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Apple Starts India Payments Service to Take On Google, Paytm",
+              "source": "Bloomberg.com",
+              "url": "https://www.bloomberg.com/news/articles/2026-09-30/apple-starts-india-payments-service-to-take-on-google-paytm"
+            },
+            {
+              "headline": "Apple Pay goes live in India with Axis Bank-issued Visa and Mastercard cards",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/sci-tech/technology/apple-pay-goes-live-in-india-with-axis-bank-issued-visa-and-mastercard-cards/article71526771.ece"
+            },
+            {
+              "headline": "Apple Pay makes India debut with Axis Bank, enables card payments without PINs or OTPs",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/business/apple-pay-makes-india-debut-with-axis-bank-partnership-enables-card-payments-without-pins-or-otps/cid/2182362"
+            }
+          ]
+        },
+        {
+          "title": "india national cricket team vs west indies cricket team players",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Kohli savours challenge of playing with a free mind",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/news/kohli-savours-challenge-of-playing-with-a-free-mind"
+            },
+            {
+              "headline": "‘The goal is simple’: Kohli says making India win, not chasing numbers, kept him going",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/sports/the-goal-is-simple-virat-kohli-says-making-india-win-not-chasing-numbers-kept-him-going/cid/2182182"
+            },
+            {
+              "headline": "Indian cricket, in terms of fast bowling, is in good hands: Prasidh",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/sport/cricket/indian-cricket-in-terms-of-fast-bowling-is-in-good-hands-prasidh/article71521345.ece"
+            }
+          ]
+        },
+        {
+          "title": "kota news",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 20:10:00 -0700",
+          "news": [
+            {
+              "headline": "Rapid City man knocks himself out during foot chase following restaurant disturbance, police pursuit",
+              "source": "KOTA Territory News",
+              "url": "https://www.kotatv.com/2026/09/29/rapid-city-man-knocks-himself-out-during-foot-chase-following-restaurant-disturbance-police-pursuit/"
+            },
+            {
+              "headline": "Hectic night for 2 Rapid City men starts with driving the wrong way in a Taco Bell drive-thru, ends with jail",
+              "source": "Rapid City Journal",
+              "url": "https://rapidcityjournal.com/news/local/crime-courts/article_acff0311-94a2-4cdf-85ed-42823ed3b168.html"
+            },
+            {
+              "headline": "Baha Busted: Drive-Through Disturbance Leads to Pursuit and Arrest of Two Rapid City Men",
+              "source": "The Rapid City Post",
+              "url": "https://rapidcitypost.com/drive-through-disturbance-leads-to-pursuit-and-arrest-of-two-rapid-city-men/"
+            }
+          ]
+        },
+        {
+          "title": "asian games 2026 medal tally",
+          "approx_traffic": "5000+",
+          "pub_date": "Tue, 29 Sep 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "Double gold in archery: Indian compound teams rule Asian Games, mixed pair secure LA 2028 quota",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/sports/double-gold-in-archery-indian-compound-teams-rule-asian-games-mixed-pair-secure-la-2028-quota/cid/2182364"
+            },
+            {
+              "headline": "Asian Games 2026: Indian women’s compound team wins gold, matches world record",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/sport/asian-games-2026-indian-womens-compound-team-strikes-gold-with-world-record/article71526623.ece"
+            },
+            {
+              "headline": "Asian Games Live Updates Day 11 : India beat Korea in shoot-off to win compound mixed archery gold",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/news/newsblogs/asian-games-2026-live-updates-india-day-11-schedule-medal-tally-results-scores-latest-news-30-september-indias-womens-compound-archery-team-beats-south-korea-sets-up-gold-medal-clash-with-china/liveblog/134577512.cms"
+            }
+          ]
+        },
+        {
+          "title": "govinda",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 20:00:00 -0700",
+          "news": [
+            {
+              "headline": "'Woh Khush Rahe': Sunita Ahuja Breaks Silence On Govinda And Komal Rani Swarnkar's Lalbaugcha Raja Visit",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/entertainment/sunita-ahuja-on-govinda-komal-rani-swarnkar-s-lalbaugcha-raja-visit-god-bless-him-12109576"
+            },
+            {
+              "headline": "'Yuck For Us To Watch Such A Spectacle'",
+              "source": "Rediff",
+              "url": "https://www.rediff.com/movies/report/divya-khossla-yuck-for-us-to-watch-such-a-spectacle-govinda/20260929.htm"
+            },
+            {
+              "headline": "‘Govinda lost all respect’: Divya Khosla backs Sunita, slams actor’s appearance with Komal",
+              "source": "The Indian Express",
+              "url": "https://indianexpress.com/article/entertainment/bollywood/govinda-lost-respect-t-series-top-boss-wife-divya-khosla-backs-sunita-ahuja-actor-girlfriend-komal-10898787/"
+            }
+          ]
+        },
+        {
+          "title": "video film",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 19:20:00 -0700",
+          "news": [
+            {
+              "headline": "Vidyut’s Street Fighter Arrives: Games That Made It to the Big Screen",
+              "source": "Deccan Chronicle",
+              "url": "https://www.deccanchronicle.com/entertainment/vidyut-jammwals-street-fighter-arrives-resident-evil-angry-birds-sonic-the-hedgehog-more-games-that-made-it-to-the-big-screen-1991567"
+            },
+            {
+              "headline": "Licensable video: Here are five video game movie adaptations that were successful",
+              "source": "Reuters Connect",
+              "url": "https://www.reutersconnect.com/item/here-are-five-video-game-movie-adaptations-that-were-successful/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzExOTA0NDc"
+            },
+            {
+              "headline": "The 12 Best Movies About Video Games, Ranked",
+              "source": "Collider",
+              "url": "https://collider.com/best-movies-about-video-games-ranked/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI India": null,
+        "new AI model": null
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatpat astra",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt desktop",
+          "chatgpt astra 6",
+          "chatgpt download",
+          "chatgpt 6"
+        ],
+        "new phone": [
+          "new phone",
+          "new phones apple",
+          "new phone who dis",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai news",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "evan bouchard",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 29 Sep 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "Bouchard earns second hat trick",
+              "source": "NHL.com",
+              "url": "https://www.nhl.com/video/van-edm-bouchard-has-a-hat-trick-against-the-canucks-6405939435112"
+            },
+            {
+              "headline": "Oilers' Bouchard pots first hat trick by a defenceman in season opener since 1980",
+              "source": "Sportsnet.ca",
+              "url": "https://www.sportsnet.ca/nhl/article/oilers-bouchard-pots-first-hat-trick-by-a-defenceman-in-season-opener-since-1980/"
+            },
+            {
+              "headline": "Evan Bouchard lights the lamp for Canucks",
+              "source": "ESPN",
+              "url": "https://www.espn.co.uk/video/clip/_/id/50064351/evan-bouchard-lights-lamp-canucks"
+            }
+          ]
+        },
+        {
+          "title": "tommy paul",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 21:50:00 -0700",
+          "news": [
+            {
+              "headline": "Sports News, Transfers, Scores | Watch Live Sport",
+              "source": "Sky Sports",
+              "url": "https://www.skysports.com/tennis/watch/8440750305019955112/kinoshita-group-japan-open-tennis-championships-2026"
+            },
+            {
+              "headline": "ATP Tokyo Day 1 Predictions Including Alejandro Tabilo vs Tommy Paul",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/09/29/atp-tokyo-day-1-predictions-tabilo-paul/"
+            },
+            {
+              "headline": "Alejandro Tabilo vs. Tommy Paul prediction, odds, picks for ATP Japan Open 2026",
+              "source": "Dimers",
+              "url": "https://www.dimers.com/tennis/news/alejandro-tabilo-vs-tommy-paul-tennis-prediction-atp-japan-open-2026-ac"
+            }
+          ]
+        },
+        {
+          "title": "mason miller",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 29 Sep 2026 21:50:00 -0700",
+          "news": [
+            {
+              "headline": "Cubs Slugger Has Beaten Mason Miller’s Slider. Will He See It Again?",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/cubs-slugger-beaten-mason-miller-213604405.html"
+            },
+            {
+              "headline": "Ty France, Mason Miller Among 7 Padres' All-MLB Nominees",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/ty-france-mason-miller-among-110035018.html"
+            },
+            {
+              "headline": "MLB Wild Card Series Game 1: Cubs vs. Padres, Tuesday 9/29, 9 p.m CT live!",
+              "source": "Bleed Cubbie Blue",
+              "url": "https://www.bleedcubbieblue.com/chicago-cubs-discussion/234720/mlb-wild-card-series-game-1-cubs-padres-tuesday-live"
+            }
+          ]
+        },
+        {
+          "title": "maya joint",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 29 Sep 2026 21:50:00 -0700",
+          "news": [
+            {
+              "headline": "Maya Joint Secures Ambassador Role and Enters China Open",
+              "source": "SuaraGarut.ID",
+              "url": "https://suaragarut.id/en/maya-joint-secures-ambassador-role-china-open"
+            },
+            {
+              "headline": "WTA Beijing First Round Best Bets Including Maya Joint vs Sinja Kraus",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/09/29/wta-beijing-joint-kraus/"
+            },
+            {
+              "headline": "Maya Joint vs Sinja Kraus Prediction - WTA China Open 2026",
+              "source": "Stats Insider",
+              "url": "https://www.statsinsider.com.au/news/maya-joint-vs-sinja-kraus-prediction-wta-china-open-2026"
+            }
+          ]
+        },
+        {
+          "title": "sean burke",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 29 Sep 2026 21:40:00 -0700",
+          "news": [
+            {
+              "headline": "After a prospect path marked by injury, White Sox starter Sean Burke is grateful for postseason opportunity",
+              "source": "Chicago Sun-Times",
+              "url": "https://chicago.suntimes.com/white-sox/2026/09/29/after-a-prospect-path-marked-by-injury-white-sox-starter-sean-burke-is-grateful-for-postseason-opportunity-sam-antonacci-hagen-smith-will-venable-tristan-peters"
+            },
+            {
+              "headline": "Sean Burke against the Astros",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/whitesox/video/sean-burke-against-the-astros-x9873"
+            },
+            {
+              "headline": "White Sox's Sean Burke Drops Legendary Quote Ahead of MLB Wild Card Game 2 Start vs. Astros",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25504931-white-soxs-sean-burke-drops-legendary-quote-ahead-mlb-wild-card-game-2-start-vs-astros"
+            }
+          ]
+        },
+        {
+          "title": "casino",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 21:40:00 -0700",
+          "news": [
+            {
+              "headline": "NYC judge orders Mamdani to redo second-home tax rollout",
+              "source": "Fox News",
+              "url": "https://www.foxnews.com/politics/nyc-judge-orders-mamdani-redo-second-home-tax-rollout"
+            },
+            {
+              "headline": "Casino mogul and former Trump secretary join forces to take on NYC’s pied-à-terre tax",
+              "source": "AP News",
+              "url": "https://apnews.com/article/nyc-mamdani-tax-wynn-ross-86c57ed102e4988f971ae322f6f805ff"
+            },
+            {
+              "headline": "Mayor Mamdani Must Redo New York City Pied-à-Terre Tax, Judge Says",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/us-news/law/new-lawsuit-alleges-new-york-mayor-mamdanis-pied-a-terre-tax-is-illegal-285db949"
+            }
+          ]
+        },
+        {
+          "title": "joe musgrove",
+          "approx_traffic": "10000+",
+          "pub_date": "Tue, 29 Sep 2026 21:30:00 -0700",
+          "news": [
+            {
+              "headline": "Padres add Joe Musgrove, out since 2024, to wild-card roster",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/50059817/padres-add-joe-musgrove-2024-wild-card-roster"
+            },
+            {
+              "headline": "Padres' hometown hero Joe Musgrove pitches first game in two years",
+              "source": "USA Today",
+              "url": "https://www.usatoday.com/story/sports/mlb/playoffs/2026/09/30/joe-musgrove-padres-stats-injury-playoffs/92016955007/"
+            },
+            {
+              "headline": "Padres unveil postseason roster — and Joe Musgrove is on it",
+              "source": "San Diego Union-Tribune",
+              "url": "https://www.sandiegouniontribune.com/2026/09/29/wild-card-joe-musgrove-on-padres-roster-to-start-postseason/"
+            }
+          ]
+        },
+        {
+          "title": "hailee steinfeld",
+          "approx_traffic": "2000+",
+          "pub_date": "Tue, 29 Sep 2026 21:30:00 -0700",
+          "news": [
+            {
+              "headline": "Josh Allen’s Wife Hailee Steinfeld Shares Exciting News Before Bills-Chargers Game",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/josh-allen-wife-hailee-steinfeld-194157186.html"
+            },
+            {
+              "headline": "'Knocked me mentally and emotionally': Hailee Steinfeld opens up about mental struggle amid hectic week w",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/sports/nfl/news/knocked-me-mentally-and-emotionally-hailee-steinfeld-opens-up-about-mental-struggle-amid-hectic-week-with-josh-allens-family/articleshow/134498084.cms"
+            },
+            {
+              "headline": "Josh Allen's Wife, Hailee Steinfield, Announces Difficult Personal News Before Chargers-Bills",
+              "source": "Heavy.com",
+              "url": "https://heavy.com/sports/nfl/buffalo-bills/josh-allen-wife-girlfriend-hailee-steinfield-news-dog/"
+            }
+          ]
+        },
+        {
+          "title": "amy schumer",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Jimmy Kimmel Live Schedule for the Week of 9/28/2026",
+              "source": "ABC Network",
+              "url": "https://abc.com/news/0b85202d-7c21-4820-a51d-347f3b9ab699/category/154926"
+            },
+            {
+              "headline": "Bruce Springsteen to miss 'Jimmy Kimmel' appearance with Tom Morello",
+              "source": "Asbury Park Press",
+              "url": "https://www.app.com/story/entertainment/music/2026/09/28/bruce-springsteen-jimmy-kimmel-live-tom-morello/91989186007/"
+            },
+            {
+              "headline": "Paul McCartney, Howard Stern, Pete Davidson, TV on the Radio, Bernie Sanders and Goose to Join Jimmy Kimmel in Brooklyn This Week",
+              "source": "Jambands",
+              "url": "https://jambands.com/news/2026/09/28/paul-mccartney-howard-stern-pete-davidson-tv-on-the-radio-bernie-sanders-and-goose-to-join-jimmy-kimmel-in-brooklyn-this-week/"
+            }
+          ]
+        },
+        {
+          "title": "ty france",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 29 Sep 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Hampered by ankle injury, Arraez won't be on NL Wild Card Series roster",
+              "source": "MLB.com",
+              "url": "https://www.mlb.com/news/luis-arraez-2026-nl-wild-card-series-roster"
+            },
+            {
+              "headline": "Luis Arraez (ankle) won't be on Phillies' wild card roster",
+              "source": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/50055018/luis-arraez-ankle-phillies-wild-card-roster"
+            },
+            {
+              "headline": "Luis Arraez Will Not Be On Phillies’ Wild Card Roster",
+              "source": "MLB Trade Rumors",
+              "url": "https://www.mlbtraderumors.com/2026/09/luis-arraez-will-not-be-on-phillies-wild-card-roster.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI India": null,
+        "new AI model": null
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airpods 5",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "airfrance",
+          "air canada"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatpat astra",
+          "chatgpt images",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt astra 6",
+          "chatgpt download",
+          "chatgpt 6",
+          "chatgpt desktop"
+        ],
+        "new phone": [
+          "new phone",
+          "new phones apple",
+          "new phone who dis",
+          "new phones 2026",
+          "new phone deals",
+          "new phone 18",
+          "new phone who dis game",
+          "new phone iphone",
+          "new phone colors",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai news",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "points": 854,
+      "comments": 777,
+      "created_at": "2026-09-29T17:06:45Z"
+    },
+    {
+      "title": "Dots: Always-on agents",
+      "url": "https://openai.com/index/introducing-dots/",
+      "points": 518,
+      "comments": 393,
+      "created_at": "2026-09-29T17:07:57Z"
+    },
+    {
+      "title": "America.gov",
+      "url": "https://america.gov/",
+      "points": 478,
+      "comments": 383,
+      "created_at": "2026-09-29T14:04:57Z"
+    },
+    {
+      "title": "How Delhi cut electricity loss from 50 to 5 percent",
+      "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+      "points": 475,
+      "comments": 274,
+      "created_at": "2026-09-29T12:43:29Z"
+    },
+    {
+      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+      "url": "https://github.com/ninjahawk/livenerf",
+      "points": 404,
+      "comments": 162,
+      "created_at": "2026-09-29T22:36:14Z"
+    },
+    {
+      "title": "Phyllotaxis: An audio-reactive LED display",
+      "url": "https://jagi.studio/posts/phyllotaxis/",
+      "points": 271,
+      "comments": 45,
+      "created_at": "2026-09-28T16:18:57Z"
+    },
+    {
+      "title": "PS5 Relapse Exploit",
+      "url": "https://github.com/ntfargo/Relapse-Exploit",
+      "points": 267,
+      "comments": 150,
+      "created_at": "2026-09-29T15:44:41Z"
+    },
+    {
+      "title": "Tcl/Tk 9.1",
+      "url": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+      "points": 258,
+      "comments": 100,
+      "created_at": "2026-09-29T17:13:38Z"
+    },
+    {
+      "title": "A Staff Engineer's Guide to Inventing Work",
+      "url": "https://sujithjay.com/inventing-work",
+      "points": 230,
+      "comments": 45,
+      "created_at": "2026-09-28T14:46:07Z"
+    },
+    {
+      "title": "Ask HN: What are you reading?",
+      "url": null,
+      "points": 203,
+      "comments": 462,
+      "created_at": "2026-09-29T13:44:43Z"
+    },
+    {
+      "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+      "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
+      "points": 200,
+      "comments": 118,
+      "created_at": "2026-09-29T19:30:17Z"
+    },
+    {
+      "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+      "url": "https://space.bl2.net/",
+      "points": 173,
+      "comments": 39,
+      "created_at": "2026-09-29T19:08:01Z"
+    },
+    {
+      "title": "Vermont replacing power plants with home batteries",
+      "url": "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms",
+      "points": 135,
+      "comments": 113,
+      "created_at": "2026-09-29T18:19:02Z"
+    },
+    {
+      "title": "Backblaze drive stats for Q2 2026",
+      "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/",
+      "points": 133,
+      "comments": 31,
+      "created_at": "2026-09-29T13:34:20Z"
+    },
+    {
+      "title": "NAND-16: a computer built from 277,248 NAND gates",
+      "url": "https://somethingbig.ai/computer",
+      "points": 120,
+      "comments": 68,
+      "created_at": "2026-09-27T21:26:06Z"
+    },
+    {
+      "title": "We’re forgetting what darkness feels like",
+      "url": "https://www.theguardian.com/environment/2026/sep/29/night-sky-darkness-city-regulation",
+      "points": 115,
+      "comments": 67,
+      "created_at": "2026-09-29T18:22:40Z"
+    },
+    {
+      "title": "Show HN: NSL – WSL for Linux",
+      "url": "https://frostyard.github.io/nsl/",
+      "points": 108,
+      "comments": 74,
+      "created_at": "2026-09-29T14:51:36Z"
+    },
+    {
+      "title": "NASA asked several former SR-71A staffers to help secret restart",
+      "url": "https://aviationweek.com/defense/aircraft-propulsion/nasa-asked-several-former-sr-71a-staffers-help-secret-restart",
+      "points": 100,
+      "comments": 94,
+      "created_at": "2026-09-29T10:10:20Z"
+    },
+    {
+      "title": "Language models for text classification: From bag-of-words to Jev",
+      "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+      "points": 66,
+      "comments": 2,
+      "created_at": "2026-09-29T11:06:25Z"
+    },
+    {
+      "title": "Needed 1+1, built a functional programming language",
+      "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+      "points": 61,
+      "comments": 16,
+      "created_at": "2026-09-29T16:18:26Z"
+    },
+    {
+      "title": "McDonald's push to have AI price your Big Mac",
+      "url": "https://www.cnbc.com/2026/09/29/inside-mcdonalds-push-ai-price-big-mac.html",
+      "points": 50,
+      "comments": 23,
+      "created_at": "2026-09-29T19:58:50Z"
+    },
+    {
+      "title": "AI needs $6T in annual revenue to justify data centre boom",
+      "url": "https://www.thenationalnews.com/future/technology/2026/09/29/ai-industry-needs-to-earn-6-trillion-by-2031-to-justify-data-centres/",
+      "points": 199,
+      "comments": 291,
+      "created_at": "2026-09-29T19:21:25Z"
+    },
+    {
+      "title": "DraftKings is using AI to behaviorally target chronic gamblers",
+      "url": "https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+      "points": 535,
+      "comments": 387,
+      "created_at": "2026-09-29T16:30:48Z"
+    },
+    {
+      "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
+      "url": "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
+      "points": 154,
+      "comments": 40,
+      "created_at": "2026-09-29T14:15:24Z"
+    },
+    {
+      "title": "Sustainable energy without the hot air (2008)",
+      "url": "https://www.withouthotair.com/",
+      "points": 140,
+      "comments": 80,
+      "created_at": "2026-09-29T12:38:18Z"
+    },
+    {
+      "title": "Mistral CEO says U.S. AI safety debate masks competitors' 'negligence'",
+      "url": "https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html",
+      "points": 47,
+      "comments": 2,
+      "created_at": "2026-09-29T12:01:07Z"
+    },
+    {
+      "title": "NASA asked several former SR-71A staffers to help secret restart",
+      "url": "https://aviationweek.com/defense/aircraft-propulsion/nasa-asked-several-former-sr-71a-staffers-help-secret-restart",
+      "points": 100,
+      "comments": 94,
+      "created_at": "2026-09-29T10:10:20Z"
+    },
+    {
+      "title": "Show HN: Raven – The harness of harnesses, built for RSI",
+      "url": "https://github.com/EverMind-AI/Raven",
+      "points": 54,
+      "comments": 50,
+      "created_at": "2026-09-29T09:58:24Z"
+    },
+    {
+      "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+      "points": 413,
+      "comments": 130,
+      "created_at": "2026-09-29T09:03:41Z"
+    },
+    {
+      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+      "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+      "points": 134,
+      "comments": 138,
+      "created_at": "2026-09-28T23:40:59Z"
+    },
+    {
+      "title": "Pacing the Frontier is not the actual goal for AI labs",
+      "url": "https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs",
+      "points": 82,
+      "comments": 92,
+      "created_at": "2026-09-28T20:47:26Z"
+    },
+    {
+      "title": "World Labs is Joining AMD",
+      "url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "points": 304,
+      "comments": 118,
+      "created_at": "2026-09-28T20:18:05Z"
+    },
+    {
+      "title": "It's Time to Investigate the AI Labs",
+      "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+      "points": 600,
+      "comments": 266,
+      "created_at": "2026-09-28T19:53:35Z"
+    },
+    {
+      "title": "OpenAI still doesn't seem to have a handle on all of its rogue AI activity",
+      "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
+      "points": 108,
+      "comments": 112,
+      "created_at": "2026-09-28T17:33:34Z"
+    },
+    {
+      "title": "We Can't Let Enormous Weirdos Regulate AI",
+      "url": "https://little-flying-robots.ghost.io/why-we-cant-let-enormous-weirdos-regulate-ai/",
+      "points": 47,
+      "comments": 9,
+      "created_at": "2026-09-28T16:55:50Z"
+    },
+    {
+      "title": "The problem is not AI code, but not knowing about system architecture or intent",
+      "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+      "points": 382,
+      "comments": 239,
+      "created_at": "2026-09-28T16:11:42Z"
+    },
+    {
+      "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+      "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+      "points": 223,
+      "comments": 292,
+      "created_at": "2026-09-28T15:46:36Z"
+    },
+    {
+      "title": "Show HN: HN.watch – Videos of all Hacker News posts",
+      "url": "https://hn.watch/",
+      "points": 209,
+      "comments": 97,
+      "created_at": "2026-09-28T15:16:13Z"
+    },
+    {
+      "title": "Jensen Huang says AI distillation is 'competition.'",
+      "url": "https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html",
+      "points": 72,
+      "comments": 81,
+      "created_at": "2026-09-28T14:55:34Z"
+    },
+    {
+      "title": "What would a serious AI product look like?",
+      "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+      "points": 170,
+      "comments": 81,
+      "created_at": "2026-09-28T11:02:12Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6583076,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 963907,
+      "rank": 2
+    },
+    {
+      "article": "Pac_(wrestler)",
+      "views": 806988,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 592230,
+      "rank": 4
+    },
+    {
+      "article": "Lizzie_Borden",
+      "views": 326311,
+      "rank": 5
+    },
+    {
+      "article": "Ted_Kaczynski",
+      "views": 287676,
+      "rank": 6
+    },
+    {
+      "article": "2026_Asian_Games_medal_table",
+      "views": 221798,
+      "rank": 7
+    },
+    {
+      "article": "India_at_the_2026_Asian_Games",
+      "views": 204445,
+      "rank": 8
+    },
+    {
+      "article": "Kate_Upton",
+      "views": 191395,
+      "rank": 9
+    },
+    {
+      "article": "Christa_Pike",
+      "views": 190062,
+      "rank": 10
+    },
+    {
+      "article": "Justin_Verlander",
+      "views": 168628,
+      "rank": 11
+    },
+    {
+      "article": "2026_MTV_Video_Music_Awards",
+      "views": 165246,
+      "rank": 12
+    },
+    {
+      "article": "2026_Asian_Games",
+      "views": 164566,
+      "rank": 13
+    },
+    {
+      "article": "Madonna",
+      "views": 151742,
+      "rank": 14
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 145719,
+      "rank": 15
+    },
+    {
+      "article": "Lanterns_(TV_series)",
+      "views": 142341,
+      "rank": 16
+    },
+    {
+      "article": "The_Paradise_(2026_Indian_film)",
+      "views": 123346,
+      "rank": 17
+    },
+    {
+      "article": ".xxx",
+      "views": 119989,
+      "rank": 18
+    },
+    {
+      "article": "Aileen_Wuornos",
+      "views": 113113,
+      "rank": 19
+    },
+    {
+      "article": "Hunger_stone",
+      "views": 111489,
+      "rank": 20
+    },
+    {
+      "article": "George_Michael",
+      "views": 110276,
+      "rank": 21
+    },
+    {
+      "article": "Siti_Hasmah_Mohamad_Ali",
+      "views": 108027,
+      "rank": 22
+    },
+    {
+      "article": "Primetime_(film)",
+      "views": 106438,
+      "rank": 23
+    },
+    {
+      "article": "J._J._McCarthy",
+      "views": 104397,
+      "rank": 24
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 93633,
+      "rank": 25
+    },
+    {
+      "article": "Starship_flight_14",
+      "views": 92167,
+      "rank": 26
+    },
+    {
+      "article": "Orange_Order",
+      "views": 90218,
+      "rank": 27
+    },
+    {
+      "article": "Monster:_The_Lizzie_Borden_Story",
+      "views": 89338,
+      "rank": 28
+    },
+    {
+      "article": "Resident_Evil_(2026_film)",
+      "views": 88024,
+      "rank": 29
+    },
+    {
+      "article": "Lisa_(rapper)",
+      "views": 79154,
+      "rank": 30
+    },
+    {
+      "article": "Dorothy_(film)",
+      "views": 78994,
+      "rank": 31
+    },
+    {
+      "article": "Nirvana_(band)",
+      "views": 78711,
+      "rank": 32
+    },
+    {
+      "article": ".xyz",
+      "views": 76413,
+      "rank": 33
+    },
+    {
+      "article": "Limonene",
+      "views": 73464,
+      "rank": 34
+    },
+    {
+      "article": "Mahathir_Mohamad",
+      "views": 71970,
+      "rank": 35
+    },
+    {
+      "article": "Kurt_Cobain",
+      "views": 70217,
+      "rank": 36
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 68840,
+      "rank": 37
+    },
+    {
+      "article": "Avengers:_Endgame",
+      "views": 68038,
+      "rank": 38
+    },
+    {
+      "article": "Matthew_Stafford",
+      "views": 67254,
+      "rank": 39
+    },
+    {
+      "article": "Sienna_Spiro",
+      "views": 65543,
+      "rank": 40
+    },
+    {
+      "article": "Case_Keenum",
+      "views": 63657,
+      "rank": 41
+    },
+    {
+      "article": "Jackie_Chan",
+      "views": 63274,
+      "rank": 42
+    },
+    {
+      "article": "List_of_highest-grossing_films",
+      "views": 63261,
+      "rank": 43
+    },
+    {
+      "article": "Backrooms_(film)",
+      "views": 62593,
+      "rank": 44
+    },
+    {
+      "article": "Virat_Kohli",
+      "views": 62473,
+      "rank": 45
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 61933,
+      "rank": 46
+    },
+    {
+      "article": "Heart_of_the_Beast",
+      "views": 61741,
+      "rank": 47
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 61244,
+      "rank": 48
+    },
+    {
+      "article": "Forgotten_Island",
+      "views": 60059,
+      "rank": 49
+    },
+    {
+      "article": "Pat_Smear",
+      "views": 58643,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple Pay finally launches in India after years on the sidelines"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "America.gov gets really weird when you ask it about Minecraft, but it’s not a glitch"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Your car and its mobile app are probably handing over all kinds of data to tech companies"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "a16z-backed EliseAI raises $350M, doubles valuation to $4B"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Tesla secures $30B in new credit lines as it looks to scale Cybercab, Optimus"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s latest features take direct aim at the app store model"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "More Ways to Disrupt: New 2026 Side Events from KOTRA, WayFounder, Enterprise Ireland, SafetyWing + Descope"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI takes on Microsoft with the launch of what feels a whole lot like ChatGPT’s own office suite"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Dutch police arrest ShinyHunters hacker accused of planning two murders"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI-powered app maker Wabi pivots to a messaging experience"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI launches Dots, its bubbly agentic avatar"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI gives Codex reusable cloud environments that work across devices"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Sam Altman says OpenAI won’t go public until its models are safe"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trump orders US government to call AI ‘Super Intelligence’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "BMW’s revamped i3 boasts up to 468 miles of range"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Suspected ShinyHunters leader arrested in the Netherlands"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Elon Musk&#8217;s AI-powered Grokipedia is updating again"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "AI researchers put out videos saying superintelligence is ‘exactly as dangerous as it sounds’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Razer’s low-latency wireless gaming keyboard is almost half off"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "OpenAI launches Dots, its Muse competitor"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Protesters gather at OpenAI’s DevDay"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Xbox’s Mythic Achievements are here and they&#8217;re just like PlayStation Platinum trophies"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Most powerful obesity drug yet: People lost up to 25% of weight in trial"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Protests against OpenAI get increasingly creative"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AMD acquires World Labs AI startup, upping the ante against Nvidia"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump ads paid for by US government allegedly violate anti-propaganda laws"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "NASA has a Dragon dilemma, and there appear to be no good answers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Here's what actually happened in OpenAI's Australian gov't server hack"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Apple pressured to explain Trump role in ICE-tracking app removals"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "This study looks at how and with whom connected cars share your data"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Less protein for maggots means longer lives for fruit flies"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "OpenAI says planned GPT-6.1 is too insecure to release"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Anthropic’s IPO pitch includes a warning about human extinction"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Interview: Firefox's chief on why he hopes a redesign will help win users from Chrome"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Boeing \"incredibly excited\" to serve as nation's only astronaut transportation"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Experts worry about Nvidia's AI chip sales in China and influence over Trump"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX's Starship goes orbital, deploying first next-gen Starlinks"
+    }
+  ]
+}
