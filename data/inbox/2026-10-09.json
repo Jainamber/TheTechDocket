@@ -1,0 +1,1783 @@
+{
+  "date": "2026-10-09",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_new AI model": "ok",
+    "news_IN_tech layoffs": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_new AI model": "ok",
+    "news_US_tech layoffs": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "ajay devgn movie drishyam 3",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 8 Oct 2026 22:50:00 -0700",
+          "news": [
+            {
+              "headline": "Drishyam 3 Box Office Collection Day 7: Ajay Devgn's Film Becomes Highest-Grossing Of The Franchise With Rs 245 Crore In India",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/entertainment/drishyam-3-box-office-collection-day-7-ajay-devgns-film-becomes-highest-grossing-of-the-franchise-with-rs-245-crore-in-india-12159452"
+            },
+            {
+              "headline": "Drishyam: The Conclusion Movie Show Time in Bhiwadi | Drishyam: The Conclusion in Bhiwadi Theaters | eTimes",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/entertainment/hindi/movie-details/drishyam-3/movie-showtimes/bhiwadi/306/125381066"
+            },
+            {
+              "headline": "Drishyam 3 Box Office Day 6: Ajay Devgn film becomes 4th highest grosser, earns Rs 366.50 cr",
+              "source": "The Indian Express",
+              "url": "https://indianexpress.com/article/entertainment/bollywood/drishyam-3-box-office-day-6-ajay-devgn-film-earns-rs-366-crore-worldwide-10911992/"
+            }
+          ]
+        },
+        {
+          "title": "china vs hong kong",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 8 Oct 2026 22:40:00 -0700",
+          "news": [
+            {
+              "headline": "Malaysia v Hong Kong, China | Match Highlights | ICC Men's T20 WC Asia Sub Regional Qualifier B 2026",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/videos/malaysia-v-hong-kong-china-match-highlights-icc-men-s-t20-wc-asia-sub-regional-qualifier-b-2026"
+            },
+            {
+              "headline": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/player-match-performance/match/173727/player/1480377/batting?inningsId=1"
+            },
+            {
+              "headline": "ICC Men's T20 World Cup Asia Sub Regional Qualifier A, 2026",
+              "source": "NDTV Sports",
+              "url": "https://sports.ndtv.com/cricket/mng-vs-tha-scorecard-live-cricket-score-icc-men-s-t20-world-cup-asia-sub-regional-qualifier-a-2026-match-10-mgltha10092026274969"
+            }
+          ]
+        },
+        {
+          "title": "विप्रो",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 8 Oct 2026 22:40:00 -0700",
+          "news": [
+            {
+              "headline": "'हमारी हायरिंग स्ट्रैटेजी पर असर नहीं, 5 साल में करेंगे 15000 भर्तियां', अमेरिकी एक्शन पर आया TCS का जवाब",
+              "source": "Aaj Tak",
+              "url": "https://www.aajtak.in/business/news/story/us-perm-suspension-tcs-infosys-wipro-green-card-tata-consultancy-services-us-recruitment-strategy-dpmx-smsr-2665312-2026-10-09"
+            },
+            {
+              "headline": "अमेरिका के 'अड़ंगे' के बाद TCS का बयान, 15000 कर्मचारियों की भर्ती करेगी कंपनी",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/business/tcs-issues-statement-following-us-hurdles-company-to-hire-15000-employees-201791517921284.html"
+            },
+            {
+              "headline": "अमेरिका में ग्रीन कार्ड की राह और कठिन, विप्रो, इंफोसिस, टीसीएस समेत आठ आईटी कंपनियों को झटका",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/news/national-path-to-green-card-in-the-us-becomes-even-harder-setback-for-eight-it-companies-40398976.html"
+            }
+          ]
+        },
+        {
+          "title": "voter list",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 22:40:00 -0700",
+          "news": [
+            {
+              "headline": "Statewide special enrolment drive for electoral roll revision in Keralam from October 15",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/kerala/state-wide-special-enrolment-drive-for-electoral-roll-revision-in-keralam-from-october-15/article71560646.ece"
+            },
+            {
+              "headline": "West Bengal CEO Seeks Clarity on Re-Enrolling Voter Names Stuck in Tribunals, ECI Says To be Discussed Later: Report",
+              "source": "TheWire.in",
+              "url": "https://thewire.in/rights/west-bengal-ceo-seeks-clarity-on-re-enrolling-voter-names-stuck-in-tribunals-eci-says-to-be-discussed-later-report"
+            },
+            {
+              "headline": "Delhi SIR: EC holds special camps for persons ‘left out’ of draft rolls after their homes were razed",
+              "source": "Scroll.in",
+              "url": "https://scroll.in/latest/1096251/delhi-sir-ec-holds-special-camps-for-persons-left-out-of-draft-rolls-after-their-homes-were-razed"
+            }
+          ]
+        },
+        {
+          "title": "bangladesh vs afghanistan",
+          "approx_traffic": "50000+",
+          "pub_date": "Thu, 8 Oct 2026 22:30:00 -0700",
+          "news": [
+            {
+              "headline": "Afghanistan look to tick boxes in rare Test outing against confident Bangladesh",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/afghanistan-v-bangladesh-2026-27-1555106/afghanistan-vs-bangladesh-only-test-1555116/match-preview"
+            },
+            {
+              "headline": "Naveen-ul-Haq's commentary stint not an indication of his playing career - ACB",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/cricket-news/140434/naveen-ul-haqs-commentary-stint-not-an-indication-of-his-playing-career-acb"
+            },
+            {
+              "headline": "Bangladesh aim to keep progress going in Afghanistan Test",
+              "source": "Arab News",
+              "url": "https://www.arabnews.com/cricket/bangladesh-aim-to-keep-progress-going-in-afghanistan-test-3005354"
+            }
+          ]
+        },
+        {
+          "title": "വി ടി ബല്റാം",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 8 Oct 2026 22:30:00 -0700",
+          "news": [
+            {
+              "headline": "കേരളത്തിൽ സിപിമ്മിന്‍റെ പരാജയകാരണം വോട്ടർപട്ടിക പരിഷ്ക്കരണം ആണെന്ന് പറയാനാവില്ല, വലിയ അട്ടിമറി നടന്നിട്ടില്ലെന്ന് കെകെ ശൈലജ",
+              "source": "Asianet News Malayalam",
+              "url": "https://www.asianetnews.com/kerala-news/cpm-leader-kk-shailaja-said-that-sir-cannot-be-blamed-for-ldfs-defeat-in-kerala-articleshow-grggpz1"
+            },
+            {
+              "headline": "'ഈയാം പാറ്റകൾ; ഓവറാക്കി ചളമാക്കരുത്' സിജെപി നേതാവ് അഭിജിത് ദീപ്കെക്കെതിരെ വി ടി ബല്‍റാം",
+              "source": "News18 Malayalam",
+              "url": "https://malayalam.news18.com/news/kerala/vt-balram-hits-back-at-cjp-leader-abhijeet-dipke-over-claims-on-pinarayi-vijayan-and-2024-lok-sabha-polls-rv-791598.html"
+            },
+            {
+              "headline": "വോട്ട് കവർച്ച നടത്തിയാണ് മോദി പ്രധാനമന്ത്രിയായത്; ബിജെപി വിരുദ്ധരുടെ വോട്ടുകൾ കൂട്ടത്തോടെ...",
+              "source": "Media One",
+              "url": "https://www.mediaoneonline.com/india/modi-became-pm-by-stealing-votes-cjps-abhijeet-dipke-339808"
+            }
+          ]
+        },
+        {
+          "title": "उपचुनाव",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 8 Oct 2026 22:10:00 -0700",
+          "news": [
+            {
+              "headline": "उपचुनाव 2026: नंदीग्राम में बीजेपी आगे, रेजीनगर और दूसरी सीटों पर क्या हाल",
+              "source": "BBC",
+              "url": "https://www.bbc.com/hindi/live/c6lyknq20zk2t"
+            },
+            {
+              "headline": "By-Election Result 2026 Live: ममता-कांग्रेस को झटका, नंदीग्राम में BJP 41 हजार तो रेजीनगर में 20 हजार वोटों से आगे",
+              "source": "Aaj Tak",
+              "url": "https://www.aajtak.in/india/news/story/by-election-upchunav-2026-result-live-updates-parinam-west-bengal-nandigram-rejinagar-tamil-nadu-madurantakam-puducherry-nagaon-assam-bypoll-results-ntc-aktw-2664838-2026-10-09"
+            },
+            {
+              "headline": "बंगाल में टीएमसी-कांग्रेस साथ फिर भी भाजपा आगे: नंदीग्राम-रेजीनगर में बढ़त, तमिलनाडु की दोनों सीटों पर TVK ...",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/g/national/news/west-bengal-assam-tamil-nadu-puducherry-by-election-results-live-nandigram-rejinagar-nagaon-bjp-tmc-139288068.html"
+            }
+          ]
+        },
+        {
+          "title": "pakistan yemen",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "Pakistan walks a delicate line between Riyadh and Iran as Houthis ramp up attacks",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/world/pakistan-walks-a-delicate-line-between-riyadh-and-iran-as-houthis-ramp-up-attacks/cid/2183861"
+            },
+            {
+              "headline": "Pakistan reportedly joins air campaign against Houthis as missiles hit Riyadh airport",
+              "source": "Ynetnews",
+              "url": "https://www.ynetnews.com/article/h111z9vbjme"
+            },
+            {
+              "headline": "Pak jets strike Houthi targets in Yemen as part of Mecca Pact, 8,000 soldiers in Saudi Arabia too",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/world/story/pakistan-air-force-mecca-pact-houthi-strikes-saudi-arabia-8000-troops-dg-ispr-itspc-3012602-2026-10-08"
+            }
+          ]
+        },
+        {
+          "title": "aquarius horoscope today",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "Aquarius Horoscope Today: October 9, 2026",
+              "source": "Vogue India",
+              "url": "https://www.vogue.in/content/aquarius-horoscope-today-october-9-2026"
+            },
+            {
+              "headline": "Aquarius Shani Horoscope Today, 9 October 2026: Saturn Says Read the Fine Print on Shared Money; Uttara P",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/astrology/horoscope/aquarius-shani-horoscope-today-9-october-2026-saturn-says-read-the-fine-print-on-shared-money-uttara-phalguni-moon-opens-a-hidden-file/articleshow/134757494.cms"
+            },
+            {
+              "headline": "Aquarius Horoscope for October 3, 2026",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/lifestyle/articles/aquarius-horoscope-october-3-2026-000000325.html"
+            }
+          ]
+        },
+        {
+          "title": "v. d. satheesan",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "അടൂർ പ്രകാശിന്റെ പരാതി; കഴമ്പുണ്ടെന്ന് ഹൈക്കമാൻഡ്, 12 അംഗ ഏകോപനസമിതി ഉടൻ; പ്രതിപക്ഷനീക്കത്തിൽ ജാഗ്രത",
+              "source": "Mathrubhumi",
+              "url": "https://www.mathrubhumi.com/news/kerala/adoor-prakash-congress-high-command-directive-pp6w24ms"
+            },
+            {
+              "headline": "അടൂർ പ്രകാശ് വിവാദം, പുനഃസംഘടന: കെപിസിസി ഭാരവാഹികളുടെയും ഡിസിസി പ്രസിഡന്റുമാരുടെയും യോഗം 13ന്",
+              "source": "Manorama Online",
+              "url": "https://www.manoramaonline.com/news/latest-news/2026/10/07/kpcc-meeting-congress-udf-convener-criticism-vd-satheesan.html"
+            },
+            {
+              "headline": "കോൺഗ്രസിൽ ഭിന്നത നിലനിൽക്കെ 13ന് അടിയന്തര കെ.പി.സി.സി യോഗം; അടൂർ പ്രകാശിന്‍റെ പരാതി പരിഹാരത്തിന്...",
+              "source": "Madhyamam",
+              "url": "https://www.madhyamam.com/kerala/kpcc-meeting-scheduled-for-the-13th-1561641"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "Mistral to Release New AI Model to Better Compete With U.S. Rivals - WSJ",
+            "source": "WSJ",
+            "pub_date": "Tue, 06 Oct 2026 13:13:00 GMT"
+          },
+          {
+            "title": "Gemini 4 Argon: our next era of frontier intelligence - blog.google",
+            "source": "blog.google",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "This new AI model could help America close a technological gap with China - MarketWatch",
+            "source": "MarketWatch",
+            "pub_date": "Mon, 05 Oct 2026 21:43:00 GMT"
+          },
+          {
+            "title": "Z.ai shares surge 8% after releasing new AI model running only on Chinese chips - CNBC",
+            "source": "CNBC",
+            "pub_date": "Wed, 26 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Who’s behind the new ‘stealth model’ Ox Alpha? - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sun, 23 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Google Employees Are Already Testing the Next Gemini Flash AI Model - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Thu, 27 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI announces ‘dots’ agent after scrapping launch of new AI model over safety concerns - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Google Is Already Having Problems With Its Latest AI Model - Gizmodo",
+            "source": "Gizmodo",
+            "pub_date": "Thu, 01 Oct 2026 17:10:00 GMT"
+          },
+          {
+            "title": "Our framework for reporting model misalignment - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Wed, 16 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI Cancels Upcoming AI Model When It Shows Signs of Being Evil - Futurism",
+            "source": "Futurism",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Mistral unveils new AI model it says rivals best open systems from China - CNBC",
+            "source": "CNBC",
+            "pub_date": "Tue, 06 Oct 2026 13:00:01 GMT"
+          },
+          {
+            "title": "Sharing AI progress in mathematics - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Tue, 06 Oct 2026 22:21:50 GMT"
+          },
+          {
+            "title": "France's Mistral launches AI model it says outperforms some Chinese rivals - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 06 Oct 2026 15:44:15 GMT"
+          },
+          {
+            "title": "GST Council lauds AI model of Andhra Pradesh - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Fri, 09 Oct 2026 03:44:12 GMT"
+          },
+          {
+            "title": "Anthropic, Google and Mistral Unveil Their Latest AI Models: What’s New and Why It Matters - CNET",
+            "source": "CNET",
+            "pub_date": "Thu, 08 Oct 2026 21:11:11 GMT"
+          },
+          {
+            "title": "AI Is The New Censor: Surveillance And The Case For Open Models - Forbes",
+            "source": "Forbes",
+            "pub_date": "Thu, 08 Oct 2026 10:00:00 GMT"
+          },
+          {
+            "title": "Frances Mistral announces new AI model - Livemint",
+            "source": "Livemint",
+            "pub_date": "Tue, 06 Oct 2026 13:02:34 GMT"
+          },
+          {
+            "title": "New AI model detects heart transplant rejection without biopsies - News-Medical",
+            "source": "News-Medical",
+            "pub_date": "Tue, 06 Oct 2026 19:23:00 GMT"
+          },
+          {
+            "title": "Anthropic unveils Haiku 5.5, its third AI model in a month ahead of planned IPO - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Thu, 08 Oct 2026 08:34:10 GMT"
+          },
+          {
+            "title": "Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China - WIRED",
+            "source": "WIRED",
+            "pub_date": "Tue, 06 Oct 2026 13:15:00 GMT"
+          },
+          {
+            "title": "European AI flag bearer Mistral's new open weights model is 'Le Chonk' - The Register",
+            "source": "The Register",
+            "pub_date": "Tue, 06 Oct 2026 18:03:25 GMT"
+          },
+          {
+            "title": "Mistral AI unveils new AI model aimed at 'narrowing the gap' with top Chinese competitors - Le Monde.fr",
+            "source": "Le Monde.fr",
+            "pub_date": "Tue, 06 Oct 2026 14:48:08 GMT"
+          },
+          {
+            "title": "Mistral unveils ‘Le Chonk’ AI model, claims performance on par with proprietary models - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Tue, 06 Oct 2026 15:07:47 GMT"
+          },
+          {
+            "title": "Mistral: French AI firm announces Le Chonk, a new, private model - dw.com",
+            "source": "dw.com",
+            "pub_date": "Tue, 06 Oct 2026 19:57:35 GMT"
+          },
+          {
+            "title": "Mistral CEO says new AI model beats Chinese ones in some areas - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Tue, 06 Oct 2026 08:29:37 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "HubSpot, one of the UK's biggest technology companies, is cutting hundreds of jobs; CEO in 'layoff email' - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 08 Oct 2026 02:14:00 GMT"
+          },
+          {
+            "title": "Companies cutting jobs as investments shift toward AI - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 06 Oct 2026 22:35:23 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking all the job losses across Xbox, Apple, Oracle, Uber, TikTok, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 06 Oct 2026 12:36:54 GMT"
+          },
+          {
+            "title": "US suspends Microsoft and Adobe from visa programme amid fraud claims - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Thu, 08 Oct 2026 18:40:00 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - TradingView",
+            "source": "TradingView",
+            "pub_date": "Wed, 07 Oct 2026 23:09:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Outpace 2025 As Big Companies Shift Spending To AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "TCS Hiring: Amid AI Fears & Tech Layoffs, TCS Hires For Third Quarter Straight, 4,258 Jobs Added In Q2FY27 - Goodreturns",
+            "source": "Goodreturns",
+            "pub_date": "Thu, 08 Oct 2026 13:30:20 GMT"
+          },
+          {
+            "title": "Amazon layoffs: E-commerce giant cuts jobs in Stores business amid AI spending push - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Thu, 08 Oct 2026 05:52:34 GMT"
+          },
+          {
+            "title": "'Find Another Job By December 15': Inside Adidas India's Tech Layoffs In Gurugram - NDTV",
+            "source": "NDTV",
+            "pub_date": "Thu, 17 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Amazon layoffs: After 30,000 job cuts, company reduces workforce across retail unit - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Thu, 08 Oct 2026 02:33:53 GMT"
+          },
+          {
+            "title": "Amazon India layoffs: Pink slips handed to employees across retail, customer service functions - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Thu, 08 Oct 2026 06:20:53 GMT"
+          },
+          {
+            "title": "The bad — and unexpected good — of being in layoff limbo - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Tue, 06 Oct 2026 09:47:00 GMT"
+          },
+          {
+            "title": "Fear among techies unfounded, best time to be in IT: LTM CEO Venu Lambu - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Tue, 06 Oct 2026 16:21:44 GMT"
+          },
+          {
+            "title": "Amazon makes fresh job cuts, here's what messages from internal Slack groups 'tell' - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 08 Oct 2026 05:52:00 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 08 Oct 2026 06:09:21 GMT"
+          },
+          {
+            "title": "Norway's biggest bank DNB to lay off around 400 staff amid AI-driven changes - The Economic Times",
+            "source": "The Economic Times",
+            "pub_date": "Tue, 06 Oct 2026 08:09:48 GMT"
+          },
+          {
+            "title": "What Xbox CEO Asha Sharma told employees in first townhall since hundreds of layoffs at Microsoft's gamin - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 07 Oct 2026 13:48:00 GMT"
+          },
+          {
+            "title": "Just hours after Paramount completed $110 billion merger with Warner Bros; CEOs sent memo to employees wa - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 07 Oct 2026 09:00:00 GMT"
+          },
+          {
+            "title": "Mayor Zohran Mamdani wants AI to be regulated at every single level; does not agree with it being in an a - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 06 Oct 2026 14:27:00 GMT"
+          },
+          {
+            "title": "Microsoft-owned Ninja Theory layoffs begin as staff confirm job losses - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Tue, 06 Oct 2026 05:33:22 GMT"
+          },
+          {
+            "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 01 Oct 2026 12:49:33 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees - Livemint",
+            "source": "Livemint",
+            "pub_date": "Sat, 12 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026 - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs Returning In December? Buzz About Online Email Points To Wider Voluntary Exit Offer, Researcher Says - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 06 Oct 2026 05:02:00 GMT"
+          },
+          {
+            "title": "BBC Tech Teams Hit With Fresh $50M Round Of Cuts, Including 110 Compulsory Layoffs - Deadline",
+            "source": "Deadline",
+            "pub_date": "Mon, 28 Sep 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airport",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aileen wuornos",
+          "aion 2",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt zero",
+          "chatgpt dots",
+          "chatgpt desktop",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out",
+          "new phone apple"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "casey desantis",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 8 Oct 2026 22:40:00 -0700",
+          "news": [
+            {
+              "headline": "Hope Florida grand jury erred, judges rule, ordering report expunged",
+              "source": "Tampa Bay Times",
+              "url": "https://www.tampabay.com/news/florida-politics/2026/10/07/hope-florida-grand-jury-expunged-uthmeier-desantis/"
+            },
+            {
+              "headline": "DeSantis calls for accountability over leaked Hope Florida report",
+              "source": "Politico",
+              "url": "https://www.politico.com/news/2026/10/08/desantis-hope-florida-grand-jury-accountability-01111566"
+            },
+            {
+              "headline": "Florida Court Orders Expungement of Report Criticizing DeSantis Administration",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/10/07/us/hope-florida-casey-desantis-grand-jury-expunge.html"
+            }
+          ]
+        },
+        {
+          "title": "alexander blockx",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 22:40:00 -0700",
+          "news": [
+            {
+              "headline": "ATP Shanghai Best Bets Including Mariano Navone Vs Pablo Carreno-Busta",
+              "source": "Last Word On Sports",
+              "url": "https://lastwordonsports.com/tennis/2026/10/07/atp-shanghai-best-bets-navone-carreno-busta/"
+            },
+            {
+              "headline": "Sports News, Transfers, Scores | Watch Live Sport",
+              "source": "Sky Sports",
+              "url": "https://www.skysports.com/tennis/watch/6849909375547202112/rolex-shanghai-masters-2026"
+            },
+            {
+              "headline": "Hijikata vs. Safiullin Prediction at the Rolex Shanghai Masters – Wednesday, October 7",
+              "source": "Bleacher Nation",
+              "url": "https://www.bleachernation.com/picks/2026/10/06/hijikata-vs-safiullin-prediction-at-the-rolex-shanghai-masters-wednesday-october-7/"
+            }
+          ]
+        },
+        {
+          "title": "the new york times",
+          "approx_traffic": "100+",
+          "pub_date": "Thu, 8 Oct 2026 22:30:00 -0700",
+          "news": [
+            {
+              "headline": "Opinion | Here Is How to Bring Israel Out of Isolation",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/10/09/opinion/israel-elections-palestinians.html"
+            },
+            {
+              "headline": "Raymond J. de Souza: Netanyahu's post-October 7 strategy has made Israel safer, but not safe",
+              "source": "National Post",
+              "url": "https://nationalpost.com/opinion/netanyahus-post-october-7-strategy-has-made-israel-safer-but-not-safe"
+            },
+            {
+              "headline": "Israel’s Blank Check and the Alliance Leash That Trapped Washington",
+              "source": "Daily Kos",
+              "url": "https://www.dailykos.com/stories/2026/10/7/800108823/community/israels-blank-check-and-the-alliance-leash-that-trapped-washington/"
+            }
+          ]
+        },
+        {
+          "title": "new york times the",
+          "approx_traffic": "100+",
+          "pub_date": "Thu, 8 Oct 2026 22:30:00 -0700",
+          "news": [
+            {
+              "headline": "Opinion | That Daily Brain Rot Break Is Taking Us Back to the Dark Ages",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/10/08/opinion/interesting-times-podcast-mary-harrington-james-marriott.html"
+            },
+            {
+              "headline": "Opinion | Is society growing stupider? The clues are simple and repeated.",
+              "source": "The Washington Post",
+              "url": "https://www.washingtonpost.com/opinions/2026/10/07/culture-is-getting-simpler-that-should-worry-you/"
+            },
+            {
+              "headline": "‘The New Dark Ages’ Review: Is Reading a Dead Letter?",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/arts-culture/books/the-new-dark-ages-review-is-reading-a-dead-letter-2dc330ed"
+            }
+          ]
+        },
+        {
+          "title": "afg vs ban",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 8 Oct 2026 22:10:00 -0700",
+          "news": [
+            {
+              "headline": "Afghanistan look to tick boxes in rare Test outing against confident Bangladesh",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/afghanistan-v-bangladesh-2026-27-1555106/afghanistan-vs-bangladesh-only-test-1555116/match-preview"
+            },
+            {
+              "headline": "How to watch Afghanistan vs Bangladesh Test series 2026 live: Start time, TV channels and streaming details for AFG vs BAN in UAE",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/watch-afghanistan-vs-bangladesh-test-035733704.html"
+            },
+            {
+              "headline": "Shanto: Quality cricket on hot, slow Abu Dhabi pitch",
+              "source": "www.daily-sun.com",
+              "url": "http://www.daily-sun.com/winner/902402"
+            }
+          ]
+        },
+        {
+          "title": "james mcavoy",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "A Scottish Hip-Hop Hoax Helped James McAvoy Find His Movie-Making Voice",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/10/07/movies/james-mcavoy-california-schemin.html"
+            },
+            {
+              "headline": "James McAvoy's directorial debut, California Schemin' , is an impossibly Scottish comedy",
+              "source": "A.V. Club",
+              "url": "https://www.avclub.com/california-schemin-review-james-mcavoy-directorial-debut-silibil-n-brains-scottish-rap"
+            },
+            {
+              "headline": "California Schemin': Scottish Rappers Go Brogue-less-For-Success in James McAvoy's Sharp Directing Debut",
+              "source": "Original Cin",
+              "url": "https://www.original-cin.ca/posts/2026/10/8/california-schemin-scottish-rappers-go-brogue-less-for-success-in-james-mcavoys-directing-debut"
+            }
+          ]
+        },
+        {
+          "title": "spokesman review",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "Spokesman turmoil detailed, former intern buys newspaper and more",
+              "source": "The Seattle Times",
+              "url": "https://www.seattletimes.com/opinion/spokesman-turmoil-detailed-intern-buys-newspaper-and-more/"
+            },
+            {
+              "headline": "Slog AM: Oil Prices Show No Signs of Dropping, the Disney Adult Editor of Washington's Second-Biggest Newspaper is in Hot Water, Sailors Mutiny Suppressed in the Tsar's Salish Sea Fleet",
+              "source": "TheStranger.com",
+              "url": "https://www.thestranger.com/slog-am/slog-am-oil-prices-show-no-signs-of-dropping-the-disney-adult-editor-of-washingtons-second-biggest-newspaper-is-in-hot-water-sailors-mutiny-suppressed-in-the-tsars-salish-sea-fleet/"
+            },
+            {
+              "headline": "Spokesman-Review Targets October 30 Nonprofit Transfer Amid Turmoil",
+              "source": "SuaraGarut.ID",
+              "url": "https://suaragarut.id/en/spokesman-review-nonprofit-transfer-turmoil"
+            }
+          ]
+        },
+        {
+          "title": "dalton knecht",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "Robert Horry Believes Writing Is on the Wall for 2 Lakers Players",
+              "source": "Sports Illustrated",
+              "url": "https://www.si.com/nba/lakers/onsi/robert-horry-believes-writing-on-wall-for-2-lakers-players"
+            },
+            {
+              "headline": "'Ultimately I Think It Ruined Him': NBA All-Star Shares Harsh Words on Dalton Knecht's Representation",
+              "source": "Rocky Top Insider",
+              "url": "https://www.rockytopinsider.com/2026/10/07/ultimately-i-think-it-ruined-him-nba-all-star-shares-harsh-words-on-dalton-knechts-representation/"
+            },
+            {
+              "headline": "Dalton Knecht faces two crucial dates that could determine his Lakers future",
+              "source": "BasketNews.com",
+              "url": "https://basketnews.com/news-256925-dalton-knecht-faces-two-crucial-dates-that-could-determine-his-lakers-future.html"
+            }
+          ]
+        },
+        {
+          "title": "28 days later",
+          "approx_traffic": "100+",
+          "pub_date": "Thu, 8 Oct 2026 22:00:00 -0700",
+          "news": [
+            {
+              "headline": "'Saving Private Ryan' Meets '28 Days Later' in J.J. Abrams’ Cult Classic Sci-Fi Thriller Leaving Paramount+",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66048732/?ref_=ttnw_art_perm"
+            },
+            {
+              "headline": "The 4 Most Important Zombie Movies That Define the Genre",
+              "source": "Collider",
+              "url": "https://collider.com/most-important-zombie-movies/"
+            },
+            {
+              "headline": "10 Greatest Zombie Movies Of All Time",
+              "source": "Comic Book Resources",
+              "url": "https://www.cbr.com/best-zombie-movies-list/"
+            }
+          ]
+        },
+        {
+          "title": "jake laravia",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 8 Oct 2026 21:50:00 -0700",
+          "news": [
+            {
+              "headline": "Lakers' Jake LaRavia: Won't start Thursday",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-jake-laravia-wont-start-thursday/"
+            },
+            {
+              "headline": "Jake LaRavia News: Auditioning for starting role",
+              "source": "RotoWire",
+              "url": "https://www.rotowire.com/basketball/headlines/jake-laravia-news-auditioning-for-starting-role-533469"
+            },
+            {
+              "headline": "Jake LaRavia fills stat line in 21 minutes",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-06/jake-laravia-fills-stat-line-in-21-minutes"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "new AI model": [
+          {
+            "title": "Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China - WIRED",
+            "source": "WIRED",
+            "pub_date": "Tue, 06 Oct 2026 13:15:00 GMT"
+          },
+          {
+            "title": "France's Mistral launches AI model it says outperforms some Chinese rivals - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 06 Oct 2026 15:44:15 GMT"
+          },
+          {
+            "title": "Mistral to Release New AI Model to Better Compete With U.S. Rivals - WSJ",
+            "source": "WSJ",
+            "pub_date": "Tue, 06 Oct 2026 13:13:00 GMT"
+          },
+          {
+            "title": "Gemini 4 Argon: our next era of frontier intelligence - blog.google",
+            "source": "blog.google",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tropical Storm Isaias: How AI models have performed while tracking the storm - WDSU",
+            "source": "WDSU",
+            "pub_date": "Wed, 07 Oct 2026 22:00:00 GMT"
+          },
+          {
+            "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 05 Oct 2026 19:33:53 GMT"
+          },
+          {
+            "title": "Anthropic, Google and Mistral Unveil Their Latest AI Models: What’s New and Why It Matters - CNET",
+            "source": "CNET",
+            "pub_date": "Thu, 08 Oct 2026 21:11:11 GMT"
+          },
+          {
+            "title": "This new AI model could help America close a technological gap with China - MarketWatch",
+            "source": "MarketWatch",
+            "pub_date": "Mon, 05 Oct 2026 21:43:00 GMT"
+          },
+          {
+            "title": "A mysterious free AI model is impressing developers. And nobody knows who made it. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sat, 22 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI announces ‘dots’ agent after scrapping launch of new AI model over safety concerns - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI model may predict pancreatic cancer risk up to 5 years before diagnosis - MedicalNewsToday",
+            "source": "MedicalNewsToday",
+            "pub_date": "Sun, 04 Oct 2026 05:18:35 GMT"
+          },
+          {
+            "title": "OpenAI Ignored Employees Who Warned It Wasn’t Doing Enough About Security - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Mistral unveils new AI model it says rivals best open systems from China - CNBC",
+            "source": "CNBC",
+            "pub_date": "Tue, 06 Oct 2026 13:00:01 GMT"
+          },
+          {
+            "title": "How AI models have performed while tracking Isaias - WDSU",
+            "source": "WDSU",
+            "pub_date": "Thu, 08 Oct 2026 14:17:00 GMT"
+          },
+          {
+            "title": "Understanding Jev, the new model everyone is talking about - Understanding AI | Timothy B. Lee",
+            "source": "Understanding AI | Timothy B. Lee",
+            "pub_date": "Thu, 08 Oct 2026 13:14:53 GMT"
+          },
+          {
+            "title": "Sharing AI progress in mathematics - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Tue, 06 Oct 2026 22:21:50 GMT"
+          },
+          {
+            "title": "Hurricane forecasters get help from AI to track storms - WBRC",
+            "source": "WBRC",
+            "pub_date": "Fri, 09 Oct 2026 03:48:00 GMT"
+          },
+          {
+            "title": "As Suno Rolls Out Its New AI Models With Industry Licenses, What Does That Mean For the Music Business? - Billboard",
+            "source": "Billboard",
+            "pub_date": "Thu, 08 Oct 2026 05:42:52 GMT"
+          },
+          {
+            "title": "Mistral: French AI firm announces Le Chonk, a new, private model - dw.com",
+            "source": "dw.com",
+            "pub_date": "Tue, 06 Oct 2026 19:57:35 GMT"
+          },
+          {
+            "title": "New AI model detects heart transplant rejection without biopsies - News-Medical",
+            "source": "News-Medical",
+            "pub_date": "Tue, 06 Oct 2026 19:23:00 GMT"
+          },
+          {
+            "title": "European AI flag bearer Mistral's new open weights model is 'Le Chonk' - The Register",
+            "source": "The Register",
+            "pub_date": "Tue, 06 Oct 2026 18:03:25 GMT"
+          },
+          {
+            "title": "Religious Scholars Met With Anthropic. What They Heard Stunned Them. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Exclusive: Anthropic's new plan to protect critical infrastructure - Axios",
+            "source": "Axios",
+            "pub_date": "Thu, 08 Oct 2026 19:30:32 GMT"
+          },
+          {
+            "title": "Anthropic opens its most powerful AI models to more security teams - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 06 Oct 2026 20:37:46 GMT"
+          },
+          {
+            "title": "Exclusive | OpenAI Scraps Release of New AI Model Over Safety Concerns - WSJ",
+            "source": "WSJ",
+            "pub_date": "Mon, 28 Sep 2026 07:00:00 GMT"
+          }
+        ],
+        "tech layoffs": [
+          {
+            "title": "Pace of Bay Area tech layoffs slows as Workday reveals new job cuts - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Wed, 07 Oct 2026 15:36:05 GMT"
+          },
+          {
+            "title": "HubSpot layoffs: 660 jobs cut in AI restructuring - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 06 Oct 2026 18:10:29 GMT"
+          },
+          {
+            "title": "Companies cutting jobs as investments shift toward AI - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 06 Oct 2026 22:35:23 GMT"
+          },
+          {
+            "title": "HubSpot, one of the UK's biggest technology companies, is cutting hundreds of jobs; CEO in 'layoff email' - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 08 Oct 2026 02:14:00 GMT"
+          },
+          {
+            "title": "Apple lays off staffers ahead of CEO change - Fortune",
+            "source": "Fortune",
+            "pub_date": "Mon, 24 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs August 2026 update: Apple, TikTok, LinkedIn, Netflix join the list of companies slashing jobs - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Mon, 24 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking all the job losses across Xbox, Apple, Oracle, Uber, TikTok, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 06 Oct 2026 12:36:54 GMT"
+          },
+          {
+            "title": "In Austin, Texas, Tech Layoffs Are Reshaping Who Buys and What Sells - Green Bay Press Times",
+            "source": "Green Bay Press Times",
+            "pub_date": "Thu, 08 Oct 2026 14:08:03 GMT"
+          },
+          {
+            "title": "US suspends Microsoft and Adobe from visa programme amid fraud claims - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Thu, 08 Oct 2026 18:40:00 GMT"
+          },
+          {
+            "title": "Pace of Bay Area tech layoffs slows, but Workday reveals new job cuts - East Bay Times",
+            "source": "East Bay Times",
+            "pub_date": "Wed, 07 Oct 2026 15:36:05 GMT"
+          },
+          {
+            "title": "Seattle's smaller tech layoffs are adding up - Axios",
+            "source": "Axios",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - Stocktwits",
+            "source": "Stocktwits",
+            "pub_date": "Thu, 08 Oct 2026 06:13:59 GMT"
+          },
+          {
+            "title": "The bad — and unexpected good — of being in layoff limbo - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Tue, 06 Oct 2026 09:47:00 GMT"
+          },
+          {
+            "title": "NASA insourcing triggers Amentum layoffs at Kennedy Space Center - Florida Today",
+            "source": "Florida Today",
+            "pub_date": "Mon, 05 Oct 2026 15:56:00 GMT"
+          },
+          {
+            "title": "HubSpot layoffs to affect 660 employees at Cambridge-based company amid AI shift - CBS News",
+            "source": "CBS News",
+            "pub_date": "Tue, 06 Oct 2026 17:52:00 GMT"
+          },
+          {
+            "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 01 Oct 2026 12:49:33 GMT"
+          },
+          {
+            "title": "Tech Layoffs Outpace 2025 As Big Companies Shift Spending To AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI is upending Boston-area tech businesses, amid buyouts and job cuts - The Boston Globe",
+            "source": "The Boston Globe",
+            "pub_date": "Wed, 07 Oct 2026 23:39:59 GMT"
+          },
+          {
+            "title": "Mail’s Deep Dive drives new subs | Future layoffs as tech brands hurt by AI Overviews - Substack",
+            "source": "Substack",
+            "pub_date": "Tue, 06 Oct 2026 10:52:01 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - TradingView",
+            "source": "TradingView",
+            "pub_date": "Thu, 08 Oct 2026 06:09:00 GMT"
+          },
+          {
+            "title": "Cisco president Jeetu Patel says AI will create more jobs than it eliminates despite tech layoffs -- EXCLUSIVE - ABC7 San Francisco",
+            "source": "ABC7 San Francisco",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 08 Oct 2026 06:09:21 GMT"
+          },
+          {
+            "title": "Bay Area sees more than 1,000 tech layoff filings in September - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Wed, 23 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oracle Layoffs Returning In December? Buzz About Online Email Points To Wider Voluntary Exit Offer, Researcher Says - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 06 Oct 2026 05:02:00 GMT"
+          },
+          {
+            "title": "HubSpot layoffs: CEO says job cuts are not driven by AI 'efficiencies,' but AI is still behind the sweeping changes - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Tue, 06 Oct 2026 19:04:17 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "ai detector",
+          "airport",
+          "ai checker",
+          "ai mode",
+          "airpods",
+          "aileen wuornos",
+          "aion 2",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt login",
+          "chatgpt download",
+          "chatgpt free",
+          "chatgpt zero",
+          "chatgpt dots",
+          "chatgpt desktop",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out",
+          "new phone apple"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Tell HN: I've been paying for a rural Tanzanian's education for 10 years",
+      "url": null,
+      "points": 682,
+      "comments": 210,
+      "created_at": "2026-10-08T14:39:47Z"
+    },
+    {
+      "title": "Whistle: Speech to Text in 16.9 MB",
+      "url": "https://cactuscompute.com/blog/whistle",
+      "points": 675,
+      "comments": 143,
+      "created_at": "2026-10-08T16:59:39Z"
+    },
+    {
+      "title": "Man discovers his parents' coffee machine used 1TB of data in 10 days",
+      "url": "https://www.dexerto.com/entertainment/man-discovers-his-parents-coffee-machine-used-1tb-of-data-in-10-days-3416399/",
+      "points": 574,
+      "comments": 339,
+      "created_at": "2026-10-07T16:56:30Z"
+    },
+    {
+      "title": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+      "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "points": 543,
+      "comments": 449,
+      "created_at": "2026-10-08T00:14:48Z"
+    },
+    {
+      "title": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+      "url": "https://antonfrolov.substack.com/p/i-hired-an-illustrator-to-draw-my",
+      "points": 516,
+      "comments": 90,
+      "created_at": "2026-10-07T01:41:03Z"
+    },
+    {
+      "title": "Theranos.world",
+      "url": "https://www.theranos.world/",
+      "points": 376,
+      "comments": 134,
+      "created_at": "2026-10-08T17:51:49Z"
+    },
+    {
+      "title": "Yes, and",
+      "url": "https://htmx.org/essays/yes-and/",
+      "points": 317,
+      "comments": 86,
+      "created_at": "2026-10-08T09:48:18Z"
+    },
+    {
+      "title": "Beauty in DVD Menus",
+      "url": "https://vale.rocks/posts/dvd-menus",
+      "points": 287,
+      "comments": 155,
+      "created_at": "2026-10-08T13:22:01Z"
+    },
+    {
+      "title": "OpenAI withdraws three mathematical results",
+      "url": "https://twitter.com/danintheory/status/2108065033070789090",
+      "points": 276,
+      "comments": 557,
+      "created_at": "2026-10-08T07:05:40Z"
+    },
+    {
+      "title": "ADHD as a circadian rhythm disorder: evidence and implications for chronotherapy (2025)",
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+      "points": 250,
+      "comments": 146,
+      "created_at": "2026-10-08T20:42:16Z"
+    },
+    {
+      "title": "Ask HN: What do you run on a $5 VPS that's worth keeping online 24/7?",
+      "url": null,
+      "points": 179,
+      "comments": 267,
+      "created_at": "2026-10-06T23:16:56Z"
+    },
+    {
+      "title": "Orkut.com",
+      "url": "https://orkut.com/",
+      "points": 171,
+      "comments": 128,
+      "created_at": "2026-10-08T14:09:53Z"
+    },
+    {
+      "title": "US man given prison sentence for bot-farming music streams",
+      "url": "https://thequietus.com/news/us-man-given-prison-sentence-for-bot-farming-music-streams/",
+      "points": 158,
+      "comments": 250,
+      "created_at": "2026-10-08T01:33:17Z"
+    },
+    {
+      "title": "DuckDB Ducklake",
+      "url": "https://github.com/duckdb/ducklake",
+      "points": 155,
+      "comments": 20,
+      "created_at": "2026-10-07T17:40:23Z"
+    },
+    {
+      "title": "Show HN: Making a flexible \"neon\" t-shirt with LED filaments",
+      "url": "http://scottbezek.blogspot.com/2026/10/making-flexible-neon-t-shirt-with-leds.html",
+      "points": 144,
+      "comments": 28,
+      "created_at": "2026-10-08T16:37:24Z"
+    },
+    {
+      "title": "The value of not getting to the point (2015)",
+      "url": "https://ken.arneson.name/2015/11/the-value-of-not-getting-to-the-point/",
+      "points": 143,
+      "comments": 46,
+      "created_at": "2026-10-08T19:04:56Z"
+    },
+    {
+      "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+      "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+      "points": 132,
+      "comments": 58,
+      "created_at": "2026-10-08T07:07:34Z"
+    },
+    {
+      "title": "A Terminal Protocol for Program Status (OSC 7501)",
+      "url": "https://mitchellh.com/writing/program-status-osc7501",
+      "points": 130,
+      "comments": 44,
+      "created_at": "2026-10-06T21:08:00Z"
+    },
+    {
+      "title": "ETH-68: Ethernet Audio Interface for Linux",
+      "url": "https://naturalsystems.io/eth68",
+      "points": 128,
+      "comments": 77,
+      "created_at": "2026-10-07T13:58:05Z"
+    },
+    {
+      "title": "Archaeologists Are Reconstructing the 'Invisible' Technologies of the Stone Age",
+      "url": "https://www.smithsonianmag.com/science-nature/archaeologists-are-reconstructing-the-invisible-technologies-of-the-stone-age-from-rope-to-thread-and-twine-180989534/",
+      "points": 121,
+      "comments": 53,
+      "created_at": "2026-10-07T21:25:16Z"
+    },
+    {
+      "title": "Show HN: Free open source Adobe Lightroom alternative, completely local with AI",
+      "url": "https://github.com/thesnarkitecht/rembrandt",
+      "points": 42,
+      "comments": 51,
+      "created_at": "2026-10-08T21:00:55Z"
+    },
+    {
+      "title": "AI-ready biological data: $1.8B global commitment",
+      "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
+      "points": 105,
+      "comments": 14,
+      "created_at": "2026-10-08T20:46:25Z"
+    },
+    {
+      "title": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
+      "url": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+      "points": 60,
+      "comments": 59,
+      "created_at": "2026-10-08T19:17:51Z"
+    },
+    {
+      "title": "Anthropic bans 'abusive or cruel behavior' towards Claude",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "points": 68,
+      "comments": 161,
+      "created_at": "2026-10-08T17:08:02Z"
+    },
+    {
+      "title": "OpenAI annualised revenues $20B less than previously signalled",
+      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "points": 377,
+      "comments": 248,
+      "created_at": "2026-10-08T16:45:58Z"
+    },
+    {
+      "title": "Show HN: Jevman – AI decision models play Pac-Man",
+      "url": "https://opper.ai/jevman-benchmark/",
+      "points": 52,
+      "comments": 10,
+      "created_at": "2026-10-08T16:34:13Z"
+    },
+    {
+      "title": "Step 5 Preview, a 1M-context MoE from StepFun, shows up on OpenRouter",
+      "url": "https://openrouter.ai/stepfun/step-5-preview",
+      "points": 119,
+      "comments": 28,
+      "created_at": "2026-10-08T16:20:20Z"
+    },
+    {
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "points": 368,
+      "comments": 381,
+      "created_at": "2026-10-07T18:49:40Z"
+    },
+    {
+      "title": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
+      "url": "https://agent.reviews/",
+      "points": 68,
+      "comments": 48,
+      "created_at": "2026-10-07T16:59:11Z"
+    },
+    {
+      "title": "Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth",
+      "points": 97,
+      "comments": 39,
+      "created_at": "2026-10-07T16:07:08Z"
+    },
+    {
+      "title": "SynthID Detector",
+      "url": "https://synthid.com/",
+      "points": 124,
+      "comments": 98,
+      "created_at": "2026-10-07T14:16:44Z"
+    },
+    {
+      "title": "AI-assisted proof of optimal packing for 11 squares",
+      "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
+      "points": 117,
+      "comments": 54,
+      "created_at": "2026-10-07T14:10:55Z"
+    },
+    {
+      "title": "Google Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "points": 158,
+      "comments": 230,
+      "created_at": "2026-10-07T12:28:36Z"
+    },
+    {
+      "title": "Reasons to Dislike AI Coding",
+      "url": "https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/",
+      "points": 77,
+      "comments": 112,
+      "created_at": "2026-10-07T09:15:00Z"
+    },
+    {
+      "title": "Forever junior: Skills AI can't develop for you",
+      "url": "https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers/",
+      "points": 79,
+      "comments": 60,
+      "created_at": "2026-10-07T08:00:06Z"
+    },
+    {
+      "title": "Show HN: NanoMuse – An open-source AI agent for your phone and computer",
+      "url": "https://github.com/nano-muse/nanoMuse",
+      "points": 62,
+      "comments": 22,
+      "created_at": "2026-10-07T03:30:44Z"
+    },
+    {
+      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
+      "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
+      "points": 100,
+      "comments": 32,
+      "created_at": "2026-10-06T23:50:33Z"
+    },
+    {
+      "title": "Ask HN: What do you run on a $5 VPS that's worth keeping online 24/7?",
+      "url": null,
+      "points": 181,
+      "comments": 270,
+      "created_at": "2026-10-06T23:16:56Z"
+    },
+    {
+      "title": "An Open Letter to Steven Pinker on AI",
+      "url": "https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on",
+      "points": 46,
+      "comments": 3,
+      "created_at": "2026-10-06T22:19:38Z"
+    },
+    {
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "points": 1324,
+      "comments": 1507,
+      "created_at": "2026-10-06T22:17:21Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 6414236,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 899675,
+      "rank": 2
+    },
+    {
+      "article": "Christa_Pike",
+      "views": 643029,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 577165,
+      "rank": 4
+    },
+    {
+      "article": "Eva_Marie_Saint",
+      "views": 269275,
+      "rank": 5
+    },
+    {
+      "article": "Nidal_Hasan",
+      "views": 191307,
+      "rank": 6
+    },
+    {
+      "article": "Digger_(2026_film)",
+      "views": 148113,
+      "rank": 7
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 141112,
+      "rank": 8
+    },
+    {
+      "article": "East_of_Eden_(2026_miniseries)",
+      "views": 135532,
+      "rank": 9
+    },
+    {
+      "article": "East_of_Eden_(novel)",
+      "views": 134564,
+      "rank": 10
+    },
+    {
+      "article": "Drishyam:_The_Conclusion",
+      "views": 126192,
+      "rank": 11
+    },
+    {
+      "article": "Dancing_with_the_Stars_(American_TV_series)_season_35",
+      "views": 122159,
+      "rank": 12
+    },
+    {
+      "article": "Lionel_Messi",
+      "views": 119657,
+      "rank": 13
+    },
+    {
+      "article": "Freddie_Jackson",
+      "views": 110335,
+      "rank": 14
+    },
+    {
+      "article": "Steve_Gleason",
+      "views": 107839,
+      "rank": 15
+    },
+    {
+      "article": "Lizzie_Borden",
+      "views": 104573,
+      "rank": 16
+    },
+    {
+      "article": "Carrie_(miniseries)",
+      "views": 100004,
+      "rank": 17
+    },
+    {
+      "article": "October_7_attacks",
+      "views": 84084,
+      "rank": 18
+    },
+    {
+      "article": "Jim_Bakker",
+      "views": 82419,
+      "rank": 19
+    },
+    {
+      "article": "Neatsville,_Kentucky",
+      "views": 76612,
+      "rank": 20
+    },
+    {
+      "article": "Karl_Bushby",
+      "views": 76279,
+      "rank": 21
+    },
+    {
+      "article": "2024_Cornell_University_rape_allegations",
+      "views": 76099,
+      "rank": 22
+    },
+    {
+      "article": "Ted_Lasso",
+      "views": 72484,
+      "rank": 23
+    },
+    {
+      "article": "Ted_Kaczynski",
+      "views": 72397,
+      "rank": 24
+    },
+    {
+      "article": "Spider-Man:_Brand_New_Day",
+      "views": 69713,
+      "rank": 25
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 65071,
+      "rank": 26
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 63297,
+      "rank": 27
+    },
+    {
+      "article": "Jeffrey_Archer",
+      "views": 62654,
+      "rank": 28
+    },
+    {
+      "article": "Verity_(film)",
+      "views": 62579,
+      "rank": 29
+    },
+    {
+      "article": "Henri_B._Kagan",
+      "views": 62494,
+      "rank": 30
+    },
+    {
+      "article": "Anna's_Archive",
+      "views": 60518,
+      "rank": 31
+    },
+    {
+      "article": "Jeffrey_Hayden",
+      "views": 60287,
+      "rank": 32
+    },
+    {
+      "article": "Michael_Douglas",
+      "views": 60203,
+      "rank": 33
+    },
+    {
+      "article": "ChatGPT",
+      "views": 57391,
+      "rank": 34
+    },
+    {
+      "article": "Florence_Pugh",
+      "views": 57349,
+      "rank": 35
+    },
+    {
+      "article": "Lanterns_(TV_series)",
+      "views": 57244,
+      "rank": 36
+    },
+    {
+      "article": ".xyz",
+      "views": 54841,
+      "rank": 37
+    },
+    {
+      "article": "United_States",
+      "views": 53865,
+      "rank": 38
+    },
+    {
+      "article": "Karl_Deisseroth",
+      "views": 52273,
+      "rank": 39
+    },
+    {
+      "article": "List_of_S&P_500_companies",
+      "views": 52177,
+      "rank": 40
+    },
+    {
+      "article": "Kemi_Badenoch",
+      "views": 51970,
+      "rank": 41
+    },
+    {
+      "article": "Lane_Johnson",
+      "views": 51869,
+      "rank": 42
+    },
+    {
+      "article": "Slow_Horses",
+      "views": 48950,
+      "rank": 43
+    },
+    {
+      "article": "Cristiano_Ronaldo",
+      "views": 48799,
+      "rank": 44
+    },
+    {
+      "article": "Dakota_Johnson",
+      "views": 47814,
+      "rank": 45
+    },
+    {
+      "article": "Aileen_Wuornos",
+      "views": 47186,
+      "rank": 46
+    },
+    {
+      "article": "Kiara_Advani",
+      "views": 47089,
+      "rank": 47
+    },
+    {
+      "article": "Skydance_Corporation",
+      "views": 46693,
+      "rank": 48
+    },
+    {
+      "article": "The_Social_Reckoning",
+      "views": 46222,
+      "rank": 49
+    },
+    {
+      "article": "Catherine_Zeta-Jones",
+      "views": 45658,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "President Trump awards Big Tech donors with nation’s highest science prizes"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Watch the trailer for ‘The Altruists,’ Netflix’s show about the FTX scandal"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ben Affleck is an AI nerd, and the internet is impressed"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google brings agentic AI to Gemini, starting with businesses"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic changes usage policy to ban model abuse and election interference"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A startup founder who served time in prison is looking to court an untapped market: ex-cons"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Natura’s $99 smart ring puts AI agents on your finger"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Elon Musk questions Ambani’s influence as Starlink India launch stalls"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "US plans livestream of execution by firing squad"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Anthropic launches free AI security scans for open-source projects"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "SpaceX announces plan to become a ‘major mobile carrier’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "AMD will bring FSR 4 to handhelds by the end of 2026"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Apple will reportedly debut its first touchscreen MacBook in three weeks"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "California is trying to shut down robot vs. human cage matches"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "ICE detainees in Georgia used the facility’s video calling software to expose the conditions inside"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Microsoft’s new Windows Search is exactly what Windows 11 needs"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Paramount is making a Cyberpunk 2077 film"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Tim Cook says &#8216;I&#8217;m not meddling&#8217; in the new Apple CEO&#8217;s business"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Judge weighs if Trump can charge $100K for early access to Truth Social posts"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump Mobile hack and apparent lack of FCC authorization raise security alarms"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Feds get ready to rewrite car headlight rules"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RIP Margaret Hamilton, whose code saved the Apollo 11 Moon landing"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Let's Encrypt cuts certificate lifetimes to 64 days starting February 2027"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Driver wins $76 after ALPR led to bogus traffic stop, drug searches"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr. unveils sweeping federal initiative to find evidence of vaccine injuries"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "An experimental tour-de-force: Entanglement between glass bead and light"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Amazon's new Alexa Tablets drop the Fire branding but are more Android than ever"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Amazon builds 1,000th satellite, will launch space internet service by end of year"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Internal files add to evidence of an ExxonMobil climate deception campaign"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A senator tried to ban gambling on prediction markets—now she's a Kalshi lobbyist"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Microsoft event debuts new AI-friendly hardware and Windows changes"
+    }
+  ]
+}
