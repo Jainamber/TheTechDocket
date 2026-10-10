@@ -1,7 +1,44 @@
 {
-  "generated_at": "2026-10-09T11:32:56.536470+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-10-10T11:16:00.596638+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 6
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "openai-slows-ai-training": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "amazon-vs-perplexity-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "eu-google-android-ai-assistants": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 6,
+    "explainers": 4,
+    "ai-models": 1,
+    "big-tech": 1,
+    "policy": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
