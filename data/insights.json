@@ -1,7 +1,49 @@
 {
-  "generated_at": "2026-10-23T10:12:38.831300+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-10-24T10:00:06.885397+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 10
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "ai-chatbot-data-privacy": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "openai-jony-ive-device": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "amazon-vs-perplexity-ruling": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "chinese-ai-models-surge-kimi-qwen": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 11,
+    "explainers": 5,
+    "ai-tools": 4,
+    "big-tech": 1,
+    "ai-models": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
