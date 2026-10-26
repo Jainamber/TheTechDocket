@@ -1,0 +1,1511 @@
+{
+  "date": "2026-10-26",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "failed: HTTPError: 404 Client Error: Not Found for url: https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/10/24",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "serbian elections",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "How a movement of students brought down Serbia's Vučić",
+              "source": "BBC",
+              "url": "https://www.bbc.com/news/articles/c574pvy82k0mo"
+            },
+            {
+              "headline": "Serbian leader Aleksandar Vučić ousted by student movement in seismic election",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election"
+            },
+            {
+              "headline": "Serbia's student movement ousts longtime leader in Parliament poll",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/international/serbias-student-movement-ousts-longtime-leader-in-parliament-poll/article71624845.ece"
+            }
+          ]
+        },
+        {
+          "title": "நீதிபதி",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "நீதித்துறை விவகாரங்கள்:\n‘தேவைக்கும் அதிகமாக அரசுக்கு விட்டுக்கொடுத்த முன்னாள் உச்சநீதிமன்றத் தலைமை நீதிபதி’",
+              "source": "DinaMani",
+              "url": "https://www.dinamani.com/india/2026/Oct/25/judicial-affairs-a-former-chief-justice-of-the-supreme-court-who-conceded-more-than-necessary-to-the-government"
+            },
+            {
+              "headline": "\"மத்திய அரசுக்கு பணிந்துபோன சந்திரசூட்.. நீதித்துறையில் அழுத்தம்\" - முன்னாள் உச்சநீதிமன்ற நீதிபதி சுயசரிதையால் பரபரப்பு",
+              "source": "Maalai Malar",
+              "url": "https://www.maalaimalar.com/news/national/chandrachud-bowed-to-the-central-government-pressure-within-the-judiciary-autobiography-of-a-former-supreme-court-judge"
+            },
+            {
+              "headline": "நீதிபதிகள் நியமனத்தில் மோடி அரசு தலையீடு- கவுல்? Justice Sanjay Kishan Kaul: Modi Govt Role in Judges' Appointments?",
+              "source": "Minnambalam",
+              "url": "https://minnambalam.com/modi-govt-interference-judges-appointments-kaul-book/"
+            }
+          ]
+        },
+        {
+          "title": "sterlite technologies share",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Sterlite Tech shares: 95% upside? CLSA, Nomura, 2 others set targets on multibagger stock",
+              "source": "Business Today",
+              "url": "https://www.businesstoday.in/markets/stocks/story/sterlite-tech-shares-95-upside-clsa-nomura-2-others-set-targets-on-multibagger-stock-563533-2026-10-26"
+            },
+            {
+              "headline": "Here's Why Sterlite Technologies (NSE:STLTECH) Has Caught The Eye Of Investors",
+              "source": "Simply Wall Street",
+              "url": "https://simplywall.st/stocks/in/tech/nse-stltech/sterlite-technologies-shares/news/heres-why-sterlite-technologies-nsestltech-has-caught-the-ey"
+            },
+            {
+              "headline": "STL’s normalised net profit zooms 8,800% on-year to ₹356 crore in Q2FY27, reports highest-ever revenue",
+              "source": "ET Telecom",
+              "url": "https://telecom.economictimes.indiatimes.com/news/telecom-equipment/stls-net-profit-zooms-12825-on-year-to-517-crore-in-q2fy27-reports-highest-ever-revenue/135139450"
+            }
+          ]
+        },
+        {
+          "title": "ജാമ്യം",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "കസ്റ്റഡിയിലെടുത്ത പതിനേഴുകാരന് ജാമ്യം അനുവദിച്ച് ജുവനൈൽ ജസ്റ്റിസ് ബോർഡ്; തീരുമാനം അംഗീകരിക്കില്ലെന്ന് കുടുംബം",
+              "source": "Manorama Online",
+              "url": "https://www.manoramaonline.com/news/latest-news/2026/10/25/cheranalloor-car-crash-jayabalakrishnan-family-protest-police-station.html"
+            },
+            {
+              "headline": "ചേരാനെല്ലൂർ അപകടം: പ്രായപൂർത്തിയാവാത്ത മകന് വാഹനമോടിക്കാൻ കൊടുത്തു, പിതാവായ ജഡ്ജിക്കെതിരേ കേസെടുക്കും",
+              "source": "Mathrubhumi",
+              "url": "https://www.mathrubhumi.com/news/kerala/kochi-cheranalloor-car-accident-minor-driving-judge-case-b05138uq"
+            },
+            {
+              "headline": "'എന്റെ അച്ഛൻ തട്ടുകടക്കാരന്‍ അല്ലേ, അവൻ ജഡ്ജിയുടെ മകനല്ലേ'; സ്റ്റേഷന് മുന്നിൽ കുത്തിയിരിപ്പ് പ്രതിഷേധം",
+              "source": "Reporter Tv",
+              "url": "https://www.reporterlive.com/topnews/kerala/2026/10/25/cheranalloor-accident-jayabalakrishnan-family-protest"
+            }
+          ]
+        },
+        {
+          "title": "భారతీయ రిజర్వ్ బ్యాంక్",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": []
+        },
+        {
+          "title": "today gold rate chennai",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Gold and silver price today, October 26: Check rates of 24K, 22K gold in Delhi, Mumbai, Kolkata other cities",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/personal-finance/gold-and-silver-price-today-october-26-check-rates-of-24k-22k-gold-in-delhi-mumbai-kolkata-other-cities-14059747.html"
+            },
+            {
+              "headline": "Gold Rate Today, October 24: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+              "source": "The Indian Express",
+              "url": "https://indianexpress.com/article/india/gold-rate-today-october-24-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10934661/"
+            },
+            {
+              "headline": "Bullion extends losing streak to third day as crude tops $115 per barrel",
+              "source": "Daily Pioneer",
+              "url": "https://dailypioneer.com/business/bullion-extends-losing-streak-to-third-day-as-crude-tops-115-per-barrel"
+            }
+          ]
+        },
+        {
+          "title": "kotak bank share price",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "India's Kotak Bank Q2 profit rises 29%, beats estimates",
+              "source": "Reuters",
+              "url": "https://www.reuters.com/world/india/indias-kotak-bank-q2-profit-rises-29-beats-estimates-2026-10-24/"
+            },
+            {
+              "headline": "Weekly Recap: PAT +26%, loan growth and FCNR(B) ₹55,000cr pressures margins",
+              "source": "TradingView",
+              "url": "https://www.tradingview.com/news/tradingview:d2ae4863e32d3:0-weekly-recap-pat-26-loan-growth-and-fcnr-b-55-000cr-pressures-margins/"
+            },
+            {
+              "headline": "KMB’s Standalone PAT Up 2% QoQ At Rs4,212 Cr",
+              "source": "https://www.fintechbiznews.com/",
+              "url": "https://fintechbiznews.com/lenders-banks/kmbs-standalone-pat-up-2-qoq-at-rs4212-cr"
+            }
+          ]
+        },
+        {
+          "title": "dr reddy share price",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Dr. Reddy’s Q2 net dips 32% to ₹913 cr on lower revenue",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/business/dr-reddys-q2-net-dips-32-to-913-cr-on-lower-revenue/article71617256.ece"
+            },
+            {
+              "headline": "DRL says cap on trade margins a positive, posts 36% dip in Q2 PAT",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/earnings/drl-says-cap-on-trade-margins-a-positive-posts-36-dip-in-q2-pat/articleshow/135161325.cms"
+            },
+            {
+              "headline": "Neutral Dr Reddy's Labs Ltd For Target Rs.1,180 by Motilal Oswal Financial Services Ltd",
+              "source": "Investment Guru India",
+              "url": "https://investmentguruindia.com/newsdetail/neutral-dr-reddy-s-labs-ltd-for-target-rs-1-180-by-motilal-oswal-financial-services-ltd763558"
+            }
+          ]
+        },
+        {
+          "title": "ರಸ್ತೆ",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "ಉದ್ಘಾಟನೆ ಆದ 4 ತಿಂಗಳಲ್ಲೇ ಕೃಷ್ಣ ರಸ್ತೆ ಗುಂಡಿಮಯ",
+              "source": "Kannada Prabha",
+              "url": "https://www.kannadaprabha.in/karnataka-news/krishna-road-riddled-with-potholes-within-4-months-of-inauguration/articleshow-nyhuqe9"
+            },
+            {
+              "headline": "Road Condition: ಸತತ ಮಳೆಯಿಂದ ಸಂತೇಮರಹಳ್ಳಿ ನಾಡಕಚೇರಿ ರಸ್ತೆ ಕೆಸರುಮಯ",
+              "source": "Prajavani",
+              "url": "https://www.prajavani.net/district/chamarajanagara/santhamarahalli-nadakacheri-road-damaged-rain-chamarajanagara-4352623"
+            }
+          ]
+        },
+        {
+          "title": "manorama online",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "‘ലൂക്കാസിനെ’ വെടിവച്ചിട്ട് ഇറാൻ, സൗദിയിൽ തുടർച്ചയായ ആക്രമണം; ആശങ്ക പ്രകടിപ്പിച്ച് മാർപാപ്പ",
+              "source": "Manorama Online",
+              "url": "https://www.manoramaonline.com/global-malayali/gulf/2026/10/26/houthis-launch-attacks-across-saudi-arabia-two-injured-missile-debris.html"
+            },
+            {
+              "headline": "മുഖ്യമന്ത്രി ഇടപെട്ടു, സംഘർഷം നിലനിൽക്കുന്ന ഗൾഫ് മേഖലയിലെ മലയാളികൾക്കായി കേരള ഹൗസിൽ പ്രത്യേക കൺട്രോൾ റൂം തുറന്നു",
+              "source": "Asianet News Malayalam",
+              "url": "https://www.asianetnews.com/kerala-news/special-control-room-opened-at-kerala-house-for-malayalis-in-the-conflict-ridden-gulf-region-articleshow-8i0kssp"
+            },
+            {
+              "headline": "'മറ്റുള്ളവർക്കായി ജീവൻ ത്യജിച്ചവൻ, രക്തസാക്ഷി'; യാത്രക്കാരെ രക്ഷിക്കുന്നതിനിടെ ജീവൻ നഷ്ടമായ മകനെ ഓർത്ത് പിതാവ്",
+              "source": "Reporter Tv",
+              "url": "https://www.reporterlive.com/gulf/saudi-arabia/2026/10/24/saudi-airport-fire-father-pays-tribute-to-son-who-helped-rescue-passengers"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Airbnb CEO Brian Chesky to everyone: You will not survive AI layoffs if you are one of these - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 26 Oct 2026 04:06:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: 196,000 Workers Affected as Amazon, Meta, and Microsoft Cut Jobs - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Fri, 23 Oct 2026 19:38:06 GMT"
+          },
+          {
+            "title": "Nearly 1.96 lakh tech workers laid off globally so far this year | Top-tier firms have slowed fresher hiring | Inshorts - Inshorts",
+            "source": "Inshorts",
+            "pub_date": "Sun, 25 Oct 2026 15:52:35 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: Job cuts near 2 lakh globally as big tech like Microsoft, Google, Oracle, Meta & more pivot to AI - Livemint",
+            "source": "Livemint",
+            "pub_date": "Sun, 25 Oct 2026 09:27:13 GMT"
+          },
+          {
+            "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026 - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Nearly 1,96,000 tech employees laid off globally this year - NewsBytes",
+            "source": "NewsBytes",
+            "pub_date": "Sun, 25 Oct 2026 11:26:32 GMT"
+          },
+          {
+            "title": "Goldman Sachs predicted that AI could displace one in 11 workers, investment banker now gives a timeline - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 23 Oct 2026 10:47:00 GMT"
+          },
+          {
+            "title": "Companies cutting jobs as investments shift toward AI - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 22 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Netflix, Electronic Arts, eBay, Apple, TikTok, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 23 Oct 2026 12:44:04 GMT"
+          },
+          {
+            "title": "2026 tech company layoffs - Information Week",
+            "source": "Information Week",
+            "pub_date": "Thu, 22 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI could displace one in 11 workers, Goldman says, but the layoffs are likely waiting for a recession - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 22 Oct 2026 18:20:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Outpace 2025 As Big Companies Shift Spending To AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "'Find Another Job By December 15': Inside Adidas India's Tech Layoffs In Gurugram - NDTV",
+            "source": "NDTV",
+            "pub_date": "Thu, 17 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Automattic begins layoffs following board upheaval and executive departures - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Wed, 21 Oct 2026 20:15:00 GMT"
+          },
+          {
+            "title": "Barclays layoffs: Bank plans to cut 5,000 jobs by year-end to reduce costs - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Thu, 22 Oct 2026 08:53:46 GMT"
+          },
+          {
+            "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 01 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Barclays layoffs today: Bank slashes 5% of workforce, attributing 5,000 job cuts to AI - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 22 Oct 2026 17:23:12 GMT"
+          },
+          {
+            "title": "Qualcomm layoffs to hit employees worldwide; CEO Cristiano Amon says in memo: Job cuts are to address sit - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 23 Oct 2026 04:56:00 GMT"
+          },
+          {
+            "title": "UK's biggest bank Barclays to cut 5,000 jobs, and puts it on AI efficiency; here's what presentation to e - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 23 Oct 2026 10:20:00 GMT"
+          },
+          {
+            "title": "EBay layoffs: Online marketplace to cut 1,000 jobs; CEO says in memo: 'Our strategy is ​working', as Ebay - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 22 Oct 2026 06:24:00 GMT"
+          },
+          {
+            "title": "Xbox CEO is reportedly planning three more rounds of job cuts; starting this month, layoffs are part of w - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 21 Oct 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees - Livemint",
+            "source": "Livemint",
+            "pub_date": "Sat, 12 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Qualcomm to cut jobs worldwide in performance-focused layoffs - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Tue, 20 Oct 2026 11:03:04 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026 update: Job losses pile up at Netflix, HubSpot, Flock Safety, and others in October - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 16 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Amazon Reportedly Hands Pink Slips To 1,000 Workers As Big Tech Layoffs Continue - TradingView",
+            "source": "TradingView",
+            "pub_date": "Thu, 08 Oct 2026 07:00:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Redmi K100 early Geekbench scores revealed ahead of official launch - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 26 Oct 2026 04:21:54 GMT"
+          },
+          {
+            "title": "Karbonn Rebel 5G India Launch Teased via Amazon, Signalling the Homegrown Brand's Comeback - Gadgets 360",
+            "source": "Gadgets 360",
+            "pub_date": "Wed, 21 Oct 2026 07:55:55 GMT"
+          },
+          {
+            "title": "Vivo confirms launch date for its Y600 smartphone in China: Check expected specifications - CNBC TV18",
+            "source": "CNBC TV18",
+            "pub_date": "Thu, 22 Oct 2026 18:43:40 GMT"
+          },
+          {
+            "title": "Oppo targets premium smartphone growth with global Find X10 launch - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 23 Oct 2026 00:36:20 GMT"
+          },
+          {
+            "title": "Coolpad Cool X Wide Launches for Rs 15k: India Launch Soon? - TelecomTalk",
+            "source": "TelecomTalk",
+            "pub_date": "Fri, 23 Oct 2026 19:52:31 GMT"
+          },
+          {
+            "title": "OnePlus shows off Ace 7 and Ace 7 Pro colors ahead of launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Sun, 25 Oct 2026 11:37:00 GMT"
+          },
+          {
+            "title": "Phone With 10,000mAh Battery? Vivo Y600 To Launch Soon: Specs, Features - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Fri, 23 Oct 2026 07:50:54 GMT"
+          },
+          {
+            "title": "Rakuten Mobile and IIJmio announce Nothing Phone (4b) launch offers - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 22 Oct 2026 05:31:20 GMT"
+          },
+          {
+            "title": "Upcoming smartphones in October 2026: Vivo V80, Motorola Edge 70 Neo, Oppo F35 and more - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Thu, 01 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Global Smartphone Shipments Hit a New Low with 20% YoY Decline, Lowest in 14 Years as Continued Memory Constraints Tighten Supply - Counterpoint Research",
+            "source": "Counterpoint Research",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Redmi K100 launch date, camera and battery confirmed: What to expect from Xiaomi’s new smartphone - Livemint",
+            "source": "Livemint",
+            "pub_date": "Thu, 22 Oct 2026 07:00:27 GMT"
+          },
+          {
+            "title": "Apple’s two-iPhone purchase limit is a long-standing practice - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Thu, 22 Oct 2026 05:18:31 GMT"
+          },
+          {
+            "title": "Borussia Dortmund launch unusual Signal Iduna Park scheme to tackle smartphone use - Football Ground Guide",
+            "source": "Football Ground Guide",
+            "pub_date": "Sun, 25 Oct 2026 23:01:18 GMT"
+          },
+          {
+            "title": "Xiaomi to Launch Redmi Book 2027 and Redmi K100 on October 27 - Nokiamob",
+            "source": "Nokiamob",
+            "pub_date": "Thu, 22 Oct 2026 16:18:13 GMT"
+          },
+          {
+            "title": "Why the Oppo Find X10 – and 3 More Upcoming Phones – Will End the 2026 Snoozefest - Tech Advisor",
+            "source": "Tech Advisor",
+            "pub_date": "Tue, 20 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Infinix GT 50 Pro roundup: India launch date, expected price, specifications, and more - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Sun, 25 Oct 2026 08:30:09 GMT"
+          },
+          {
+            "title": "Vivo Y600 with Guinness record-holding 10,000mAh battery to launch next week: Check date, design and expected specs - Livemint",
+            "source": "Livemint",
+            "pub_date": "Fri, 23 Oct 2026 09:51:28 GMT"
+          },
+          {
+            "title": "Vivo Y600 launch officially confirmed for next week; 10,000mAh battery, design revealed - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Fri, 23 Oct 2026 07:01:18 GMT"
+          },
+          {
+            "title": "Infinix GT 50 Pro to launch in India with gaming controller, cooling accessory and more - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Wed, 21 Oct 2026 11:47:12 GMT"
+          },
+          {
+            "title": "Redmi K100 specs leaked ahead of its official October launch - Sportskeeda Tech",
+            "source": "Sportskeeda Tech",
+            "pub_date": "Sat, 24 Oct 2026 14:33:03 GMT"
+          },
+          {
+            "title": "Nothing’s brand chief is fed up of ‘boring and generic’ smartphone ads - Fortune",
+            "source": "Fortune",
+            "pub_date": "Tue, 20 Oct 2026 08:49:00 GMT"
+          },
+          {
+            "title": "Bathabile Moreki enters MVNO market with launch of TPC Africa Mobile - Business Day",
+            "source": "Business Day",
+            "pub_date": "Mon, 26 Oct 2026 03:00:00 GMT"
+          },
+          {
+            "title": "iPhone Duo Launches Worldwide as Apple Enters Foldables - INDToday",
+            "source": "INDToday",
+            "pub_date": "Sat, 24 Oct 2026 03:07:01 GMT"
+          },
+          {
+            "title": "OnePlus reveals a clever new feature ahead of its October 29 smartphone launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 22 Oct 2026 05:59:00 GMT"
+          },
+          {
+            "title": "Huawei Pura 90 Plus said to launch soon with 1-inch sensor and variable aperture - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 22 Oct 2026 20:25:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality spokane",
+          "ai detector",
+          "ai",
+          "ainsley earhardt",
+          "ai checker",
+          "air quality",
+          "air quality index",
+          "aileen wuornos",
+          "airway heights"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt login",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt down",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phones apple",
+          "new phone deals for new customers",
+          "new phones with headphone jack",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "cyclist",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:20:00 -0700",
+          "news": [
+            {
+              "headline": "Driver accused of DUI after striking 30-person Halloween bike ride, killing 2 in California",
+              "source": "KTLA",
+              "url": "https://ktla.com/news/california/2-killed-after-car-strikes-cyclists-drags-victim-over-a-mile-in-southern-california/"
+            },
+            {
+              "headline": "Driver plows into group of 30 bicyclists on Halloween-themed ride, killing 2 before fleeing",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/california/story/2026-10-25/two-bicyclists-killed-by-alleged-drunk-driver-during-pre-halloween-ride"
+            },
+            {
+              "headline": "Hit-and-run driver sought after group of bicyclists reportedly struck in Montclair",
+              "source": "ABC7 Los Angeles",
+              "url": "https://abc7.com/post/hit-run-driver-sought-group-bicyclists-reportedly-struck-montclair/19978158/"
+            }
+          ]
+        },
+        {
+          "title": "canelo fight",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Boxing schedule for Oct 30-31, 2026: Canelo Alvarez vs Mbilli and more",
+              "source": "Bad Left Hook",
+              "url": "https://www.badlefthook.com/boxing-schedule/119946/how-to-watch-canelo-alvarez-christian-mbilli-rafael-espinoza-jaime-munguia-streaming-tv-schedule-boxing-news-2026"
+            },
+            {
+              "headline": "Canelo Álvarez undercard trainer voices concerns over Riyadh fight taking place",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7713543/2026/10/22/canelo-alvarez-christian-mbilli-saudi-fight-safety/"
+            },
+            {
+              "headline": "Christian Mbilli vs Canelo Alvarez: Prediction and fight card for October 31",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/christian-mbilli-vs-canelo-alvarez-201612775.html"
+            }
+          ]
+        },
+        {
+          "title": "canelo",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:10:00 -0700",
+          "news": [
+            {
+              "headline": "Canelo llega a Arabia Saudita entre gritos de “México, México” para enfrentar a Mbilli",
+              "source": "Sports Illustrated",
+              "url": "https://www.si.com/mx/box/canelo-llega-a-arabia-saudita-entre-gritos-de-mexico-mexico-para-enfrentar-a-mbilli"
+            },
+            {
+              "headline": "Boxing News: Detrás de escena: Saúl “Canelo” Álvarez y Christian Mbilli con DAZN » October 25, 2026",
+              "source": "FightNews",
+              "url": "https://fightnews.com/detras-de-escena-saul-canelo-alvarez-y-christian-mbilli-con-dazn/199032"
+            },
+            {
+              "headline": "Canelo Álvarez ya llegó a Riad para su pelea ante Mbilli... ¡en medio de alertas de posibles ataques!",
+              "source": "Mediotiempo",
+              "url": "https://www.mediotiempo.com/mas-deportes/box/canelo-alvarez-ya-llego-riad-pelea-vs-christian-mbilli-en-medio-de-alertas-de-posibles-ataques"
+            }
+          ]
+        },
+        {
+          "title": "anaheim",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 21:00:00 -0700",
+          "news": [
+            {
+              "headline": "Man is found dead near entrance to Disneyland, police say",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/california/story/2026-10-25/man-is-found-dead-near-entrance-to-disneyland-police-say"
+            },
+            {
+              "headline": "Dead body found next to Disneyland Resort entrance",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/news/articles/dead-body-found-next-disneyland-005354044.html"
+            },
+            {
+              "headline": "Person Reportedly Found Dead near Disneyland",
+              "source": "MyNewsLA.com",
+              "url": "https://mynewsla.com/hollywood/2026/10/25/person-reportedly-found-dead-near-disneyland/"
+            }
+          ]
+        },
+        {
+          "title": "sports",
+          "approx_traffic": "10000+",
+          "pub_date": "Sun, 25 Oct 2026 20:50:00 -0700",
+          "news": [
+            {
+              "headline": "Time, place unclear for Game 6 of Valkyries-Dream WNBA Finals",
+              "source": "ESPN",
+              "url": "https://www.espn.com/wnba/story/_/id/50278436/place-unclear-game-6-valkyries-dream-wnba-finals"
+            },
+            {
+              "headline": "Atlanta Dream face another arena predicament for WNBA Finals Game 6",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7721369/2026/10/24/atlanta-dream-game-6-state-farm-arena-wnba-finals/"
+            },
+            {
+              "headline": "WNBA Finals: League reportedly unsure where or when Game 6 will be held due to fan demand, scheduling complications",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/wnba/breaking-news/article/wnba-finals-league-reportedly-unsure-where-or-when-game-6-will-be-held-due-to-fan-demand-scheduling-complications-185227169.html"
+            }
+          ]
+        },
+        {
+          "title": "talia gibson",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 25 Oct 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "October 26, 2026: Anastasia Zakharova vs Magda Linette: Total Games Tennis Prediction Market",
+              "source": "Robinhood",
+              "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/anastasia-zakharova-vs-magda-linette-total-games-oct-26-2026/"
+            },
+            {
+              "headline": "October 27, 2026: Novak Djokovic vs Ugo Humbert: Set 2 Winner Tennis Prediction Market",
+              "source": "Robinhood",
+              "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-ugo-humbert-set-2-winner-oct-27-2026/"
+            },
+            {
+              "headline": "October 27, 2026: Hubert Hurkacz vs Zizou Bergs: Set 1 Winner Tennis Prediction Market",
+              "source": "Robinhood",
+              "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/hubert-hurkacz-vs-zizou-bergs-set-1-winner-oct-27-2026/"
+            }
+          ]
+        },
+        {
+          "title": "taurean prince",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 25 Oct 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "LeBron James References Taurean Prince's Iconic Quotes to Try to Help Fix 76ers' Rebounding Issues",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25520384-lebron-james-references-taurean-princes-iconic-quotes-try-help-fix-76ers-rebounding-issues"
+            },
+            {
+              "headline": "NBA: LeBron James enjoys dream home debut in 76ers comeback win over Cleveland Cavaliers",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/basketball/articles/cqn73kr2k284o"
+            },
+            {
+              "headline": "Is this LeBron's best start with a new team?",
+              "source": "ESPN",
+              "url": "https://www.espn.com/video/clip/_/id/50257232/is-lebron-best-start-new-team"
+            }
+          ]
+        },
+        {
+          "title": "santos vs",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Caleb Williams, Bears find just enough to hold off Pats",
+              "source": "ESPN",
+              "url": "https://www.espn.com/nfl/story/_/id/50254157/bears-patriots-thursday-night-football-luther-burden"
+            },
+            {
+              "headline": "'He came through for us in a big way': Cairo Santos displays resilience with career-long 58-yard field goal vs. Patriots",
+              "source": "Chicago Bears",
+              "url": "https://www.chicagobears.com/news/he-came-through-for-us-in-a-big-way-cairo-santos-displays-resilience-with-career-long-58-yard-field-goal-vs-patriots"
+            },
+            {
+              "headline": "The Patriots have so little room for error. They made too many in Chicago - The Athletic",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7716272/2026/10/23/patriots-maye-vrabel-chicago/"
+            }
+          ]
+        },
+        {
+          "title": "santos",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 20:40:00 -0700",
+          "news": [
+            {
+              "headline": "Santos x Bahia: veja o que Neymar teria dito a Rodrigo Nestor em discussão",
+              "source": "ge",
+              "url": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/10/25/santos-x-bahia-veja-o-que-neymar-teria-dito-a-rodrigo-nestor-em-discussao.ghtml"
+            },
+            {
+              "headline": "Dublador faz leitura labial de discussão entre Neymar e Nestor",
+              "source": "UOL",
+              "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/10/25/dublador-faz-leitura-labial-de-discussao-entre-neymar-e-nestor.ghtm"
+            },
+            {
+              "headline": "Regra que expulsou Neymar é uma das mais estúpidas do futebol",
+              "source": "Estadão",
+              "url": "https://www.estadao.com.br/esportes/paulo-caravina/regra-que-expulsou-neymar-e-uma-das-mais-estupidas-do-futebol/"
+            }
+          ]
+        },
+        {
+          "title": "tijuana",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 25 Oct 2026 20:30:00 -0700",
+          "news": [
+            {
+              "headline": "¿Cuáles serán las carreteras afectadas por el Paro Nacional de Transportistas? | Lista completa de los posible",
+              "source": "Milenio",
+              "url": "https://www.milenio.com/estados/carreteras-afectadas-por-paro-transportistas-lista-completa"
+            },
+            {
+              "headline": "Gobernación llama a Canacar al diálogo y evitar bloqueos",
+              "source": "Cancha Política",
+              "url": "https://canchapolitica.com/gobernacion-llama-a-canacar-al-dialogo-y-evitar-bloqueos/"
+            },
+            {
+              "headline": "Pagar peaje para viajar con miedo",
+              "source": "Entorno Político",
+              "url": "https://www.entornopolitico.com/columna/76502/pagar-peaje-para-viajar-con-miedo/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Netflix, Electronic Arts, eBay, Apple, TikTok, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 23 Oct 2026 12:44:04 GMT"
+          },
+          {
+            "title": "AI Layoffs Tracker - Layoffs.fyi",
+            "source": "Layoffs.fyi",
+            "pub_date": "Sat, 24 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Companies cutting jobs as investments shift toward AI - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 22 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Automattic begins layoffs following board upheaval and executive departures - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Wed, 21 Oct 2026 20:15:00 GMT"
+          },
+          {
+            "title": "2026 tech company layoffs - Information Week",
+            "source": "Information Week",
+            "pub_date": "Thu, 22 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI could displace one in 11 workers, Goldman says, but the layoffs are likely waiting for a recession - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 22 Oct 2026 18:20:00 GMT"
+          },
+          {
+            "title": "A Colchester Tech Firm Has Been Leaning Into AI. It’s Laying Off 66 People. - Seven Days Vermont",
+            "source": "Seven Days Vermont",
+            "pub_date": "Tue, 20 Oct 2026 20:54:34 GMT"
+          },
+          {
+            "title": "Tech Layoffs Mount as Netflix and eBay Cut Around 2,000 Jobs - Newsweek",
+            "source": "Newsweek",
+            "pub_date": "Fri, 23 Oct 2026 17:33:00 GMT"
+          },
+          {
+            "title": "EBay to cut 9% of its workforce in latest Bay Area tech layoffs - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Wed, 21 Oct 2026 16:40:29 GMT"
+          },
+          {
+            "title": "Comcast Plans Restructure, Layoffs - TVTechnology",
+            "source": "TVTechnology",
+            "pub_date": "Thu, 22 Oct 2026 17:15:00 GMT"
+          },
+          {
+            "title": "Airbnb CEO Brian Chesky to everyone: You will not survive AI layoffs if you are one of these - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 26 Oct 2026 04:06:00 GMT"
+          },
+          {
+            "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 01 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Netflix, eBay reveal plans to cut hundreds of Bay Area jobs - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Thu, 22 Oct 2026 23:02:09 GMT"
+          },
+          {
+            "title": "eBay and Netflix layoffs to impact over 450 Bay Area workers - KRON4",
+            "source": "KRON4",
+            "pub_date": "Fri, 23 Oct 2026 19:26:01 GMT"
+          },
+          {
+            "title": "Cisco president Jeetu Patel says AI will create more jobs than it eliminates despite tech layoffs -- EXCLUSIVE - ABC7 Bay Area",
+            "source": "ABC7 Bay Area",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "American Express to slash 5% of workforce in latest AI-driven layoffs - New York Post",
+            "source": "New York Post",
+            "pub_date": "Fri, 23 Oct 2026 18:16:40 GMT"
+          },
+          {
+            "title": "Seattle's smaller tech layoffs are adding up - Axios",
+            "source": "Axios",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Barclays layoffs today: Bank slashes 5% of workforce, attributing 5,000 job cuts to AI - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 22 Oct 2026 17:23:12 GMT"
+          },
+          {
+            "title": "Netflix plans hundreds of layoffs at Bay Area headquarters - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 23 Oct 2026 04:33:02 GMT"
+          },
+          {
+            "title": "NASA contractor Aetos Systems warns 126 employees may be laid off at KSC - Florida Today",
+            "source": "Florida Today",
+            "pub_date": "Thu, 22 Oct 2026 12:21:00 GMT"
+          },
+          {
+            "title": "Qualcomm to cut jobs globally in 'performance-based' layoffs — CEO says move will build 'stronger performance culture' as company pivots to AI data center and edge products - Tom's Hardware",
+            "source": "Tom's Hardware",
+            "pub_date": "Wed, 21 Oct 2026 13:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: 196,000 Workers Affected as Amazon, Meta, and Microsoft Cut Jobs - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Fri, 23 Oct 2026 19:38:06 GMT"
+          },
+          {
+            "title": "Seattle company Carbon Robotics cuts jobs, citing 'broader economic conditions' - The Business Journals",
+            "source": "The Business Journals",
+            "pub_date": "Wed, 21 Oct 2026 03:59:00 GMT"
+          },
+          {
+            "title": "VIP layoffs raise questions about AI’s role in changing Vermont workforce - WCAX",
+            "source": "WCAX",
+            "pub_date": "Thu, 22 Oct 2026 21:26:00 GMT"
+          },
+          {
+            "title": "American Express layoffs: Thousands of roles slashed in AI push as job losses in financial services pile up - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 23 Oct 2026 15:52:32 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "New iPhone Duo: Fans camp out across Los Angeles for Apple's first foldable smartphone - ABC7 Los Angeles",
+            "source": "ABC7 Los Angeles",
+            "pub_date": "Fri, 23 Oct 2026 15:47:33 GMT"
+          },
+          {
+            "title": "AST SpaceMobile says initial satellite-to-smartphone service will launch by year-end - Telecompetitor",
+            "source": "Telecompetitor",
+            "pub_date": "Wed, 21 Oct 2026 15:30:00 GMT"
+          },
+          {
+            "title": "Borussia Dortmund launch unusual Signal Iduna Park scheme to tackle smartphone use - Football Ground Guide",
+            "source": "Football Ground Guide",
+            "pub_date": "Sun, 25 Oct 2026 23:01:18 GMT"
+          },
+          {
+            "title": "Nothing’s brand chief is fed up of ‘boring and generic’ smartphone ads - Fortune",
+            "source": "Fortune",
+            "pub_date": "Tue, 20 Oct 2026 08:49:00 GMT"
+          },
+          {
+            "title": "Kalshi Could Let You Wager on Admission Rates at 22 Colleges - Inside Higher Ed",
+            "source": "Inside Higher Ed",
+            "pub_date": "Fri, 23 Oct 2026 07:02:50 GMT"
+          },
+          {
+            "title": "Report: Apple gains ground in China as smartphone shipments hit 14-year low in Q3 - 9to5Mac",
+            "source": "9to5Mac",
+            "pub_date": "Fri, 23 Oct 2026 19:50:00 GMT"
+          },
+          {
+            "title": "OnePlus shows off Ace 7 and Ace 7 Pro colors ahead of launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Sun, 25 Oct 2026 11:37:00 GMT"
+          },
+          {
+            "title": "Oppo targets premium smartphone growth with global Find X10 launch - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 23 Oct 2026 00:36:20 GMT"
+          },
+          {
+            "title": "iQOO Neo12 gets official launch date to become the latest Snapdragon 8 Elite Gen 5 smartphone - PC Guide",
+            "source": "PC Guide",
+            "pub_date": "Mon, 19 Oct 2026 15:15:54 GMT"
+          },
+          {
+            "title": "Southwest Washington Leaders Launch Online Threat Safety Campaign - Campus Security Today",
+            "source": "Campus Security Today",
+            "pub_date": "Thu, 22 Oct 2026 23:41:41 GMT"
+          },
+          {
+            "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Serato DJ launches on mobile for the first time - DJ Mag",
+            "source": "DJ Mag",
+            "pub_date": "Fri, 23 Oct 2026 13:51:04 GMT"
+          },
+          {
+            "title": "Researchers launch smartphone platform to monitor senior safety - University of Florida",
+            "source": "University of Florida",
+            "pub_date": "Tue, 15 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Apple leads China smartphone sales after launch of iPhone 18 Pro. Can it last? - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Bathabile Moreki enters MVNO market with launch of TPC Africa Mobile - Business Day",
+            "source": "Business Day",
+            "pub_date": "Mon, 26 Oct 2026 03:00:00 GMT"
+          },
+          {
+            "title": "Why the Oppo Find X10 – and 3 More Upcoming Phones – Will End the 2026 Snoozefest - Tech Advisor",
+            "source": "Tech Advisor",
+            "pub_date": "Tue, 20 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Rakuten Mobile and IIJmio announce Nothing Phone (4b) launch offers - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 22 Oct 2026 05:31:20 GMT"
+          },
+          {
+            "title": "OnePlus reveals a clever new feature ahead of its October 29 smartphone launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 22 Oct 2026 05:59:00 GMT"
+          },
+          {
+            "title": "Global smartphone shipments record worst third quarter in 14 years amid memory shortage - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huawei Pura 90 Plus said to launch soon with 1-inch sensor and variable aperture - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 22 Oct 2026 20:25:00 GMT"
+          },
+          {
+            "title": "It’s a Real Shame the OnePlus 16 Is Launching Only in China - PetaPixel",
+            "source": "PetaPixel",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Redmi K100 early Geekbench scores revealed ahead of official launch - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 26 Oct 2026 04:21:54 GMT"
+          },
+          {
+            "title": "Global Smartphone Shipments Hit a New Low with 20% YoY Decline, Lowest in 14 Years as Continued Memory Constraints Tighten Supply - Counterpoint Research",
+            "source": "Counterpoint Research",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Google’s latest smartphone is already £130 cheaper just weeks after launch: Pixel 11 drops to new record-low price - Tech Advisor",
+            "source": "Tech Advisor",
+            "pub_date": "Sun, 18 Oct 2026 11:49:20 GMT"
+          },
+          {
+            "title": "First 2nm smartphone, 30x zoom, $899: what the Google Pixel 11 launch actually delivers - Martin Cid Magazine",
+            "source": "Martin Cid Magazine",
+            "pub_date": "Wed, 12 Aug 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality spokane",
+          "ai detector",
+          "ai",
+          "ainsley earhardt",
+          "ai checker",
+          "air quality",
+          "air quality index",
+          "aileen wuornos",
+          "airway heights"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt login",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt down",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phones apple",
+          "new phone deals for new customers",
+          "new phones with headphone jack",
+          "new phone plans",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "We should be more ambitious with the software we build",
+      "url": "https://danluu.com/ambitious/",
+      "points": 764,
+      "comments": 698,
+      "created_at": "2026-10-24T21:47:31Z"
+    },
+    {
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "points": 493,
+      "comments": 223,
+      "created_at": "2026-10-25T17:15:38Z"
+    },
+    {
+      "title": "Dolly Parton's Imagination Library",
+      "url": "https://imaginationlibrary.com/",
+      "points": 463,
+      "comments": 85,
+      "created_at": "2026-10-25T18:23:54Z"
+    },
+    {
+      "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+      "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+      "points": 436,
+      "comments": 118,
+      "created_at": "2026-10-25T18:04:11Z"
+    },
+    {
+      "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+      "url": "https://talkweb.eu/openweb/4558/",
+      "points": 429,
+      "comments": 207,
+      "created_at": "2026-10-25T17:30:55Z"
+    },
+    {
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "points": 213,
+      "comments": 240,
+      "created_at": "2026-10-25T21:11:31Z"
+    },
+    {
+      "title": "Overgrown, when plants invade your abandoned tabs",
+      "url": "https://charliegerard.dev/blog/overgrown-extension/",
+      "points": 200,
+      "comments": 59,
+      "created_at": "2026-10-22T15:52:21Z"
+    },
+    {
+      "title": "Why I Am a Programmer",
+      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "points": 168,
+      "comments": 57,
+      "created_at": "2026-10-25T19:11:31Z"
+    },
+    {
+      "title": "Amazon's \"digital pacifier\" for toddlers",
+      "url": "https://oligarchwatch.substack.com/p/amazons-digital-pacifier-for-toddlers",
+      "points": 128,
+      "comments": 190,
+      "created_at": "2026-10-21T18:37:48Z"
+    },
+    {
+      "title": "The State of Context Engineering",
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "points": 121,
+      "comments": 33,
+      "created_at": "2026-10-25T20:32:31Z"
+    },
+    {
+      "title": "What goes into making an animated film?",
+      "url": "https://www.disneyanimation.com/process/",
+      "points": 117,
+      "comments": 47,
+      "created_at": "2026-10-25T20:27:09Z"
+    },
+    {
+      "title": "IBM CEO says open weight models are now irresistibly good and cheap on-prem",
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "points": 97,
+      "comments": 52,
+      "created_at": "2026-10-26T01:47:46Z"
+    },
+    {
+      "title": "F-Zero X on Nintendo 3DS",
+      "url": "https://hypnotize.works/gdx-3ds/postmortem/index.html",
+      "points": 82,
+      "comments": 41,
+      "created_at": "2026-10-25T23:27:30Z"
+    },
+    {
+      "title": "Removing Next.js Got My Blog to 100 on Every Lighthouse Category",
+      "url": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "points": 80,
+      "comments": 35,
+      "created_at": "2026-10-26T01:03:39Z"
+    },
+    {
+      "title": "iPhone Duo Teardown",
+      "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
+      "points": 76,
+      "comments": 39,
+      "created_at": "2026-10-26T01:23:24Z"
+    },
+    {
+      "title": "Brazil elections: Lula secures fourth term after dramatic comeback",
+      "url": "https://www.bbc.com/news/articles/cmvg7p001qj9o",
+      "points": 63,
+      "comments": 7,
+      "created_at": "2026-10-26T03:04:08Z"
+    },
+    {
+      "title": "Attention Is Not What You Need (2025)",
+      "url": "https://arxiv.org/abs/2512.19428",
+      "points": 55,
+      "comments": 21,
+      "created_at": "2026-10-25T23:52:05Z"
+    },
+    {
+      "title": "Steal My Bitcoin CTF PoC",
+      "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
+      "points": 39,
+      "comments": 7,
+      "created_at": "2026-10-26T00:15:17Z"
+    },
+    {
+      "title": "Show HN: A Truly Modular Keyboard",
+      "url": "https://github.com/notaroomba/keybytes",
+      "points": 37,
+      "comments": 9,
+      "created_at": "2026-10-25T03:47:56Z"
+    },
+    {
+      "title": "Show HN: TitleArt – Make text like it's 1997",
+      "url": "https://titleart.dvy.io/",
+      "points": 37,
+      "comments": 8,
+      "created_at": "2026-10-26T03:23:57Z"
+    },
+    {
+      "title": "Apollo says AI has delivered 'zero financial payoff' outside the tech industry",
+      "url": "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10",
+      "points": 42,
+      "comments": 26,
+      "created_at": "2026-10-25T22:49:06Z"
+    },
+    {
+      "title": "A mathematician reads the AI future",
+      "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
+      "points": 55,
+      "comments": 78,
+      "created_at": "2026-10-25T16:31:21Z"
+    },
+    {
+      "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+      "points": 209,
+      "comments": 305,
+      "created_at": "2026-10-25T16:28:26Z"
+    },
+    {
+      "title": "R/open source bans all solo projects and projects using LLMs",
+      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+      "points": 84,
+      "comments": 109,
+      "created_at": "2026-10-25T14:05:03Z"
+    },
+    {
+      "title": "Imagine an AI future where being banned means you are now economically useless",
+      "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+      "points": 95,
+      "comments": 76,
+      "created_at": "2026-10-25T12:47:20Z"
+    },
+    {
+      "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "points": 138,
+      "comments": 75,
+      "created_at": "2026-10-25T09:51:17Z"
+    },
+    {
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "points": 354,
+      "comments": 131,
+      "created_at": "2026-10-25T01:33:49Z"
+    },
+    {
+      "title": "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English",
+      "url": "https://huggingface.co/destined/hurston-1",
+      "points": 56,
+      "comments": 25,
+      "created_at": "2026-10-25T01:30:13Z"
+    },
+    {
+      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "points": 514,
+      "comments": 550,
+      "created_at": "2026-10-24T23:11:54Z"
+    },
+    {
+      "title": "No signs of AI payoff outside the tech sector",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "points": 616,
+      "comments": 651,
+      "created_at": "2026-10-24T19:47:19Z"
+    },
+    {
+      "title": "Dream-1",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "points": 179,
+      "comments": 77,
+      "created_at": "2026-10-24T18:23:24Z"
+    },
+    {
+      "title": "Why is AI generated language so hard to understand?",
+      "url": "https://arxiv.org/abs/2610.29162",
+      "points": 243,
+      "comments": 197,
+      "created_at": "2026-10-24T18:04:57Z"
+    },
+    {
+      "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+      "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+      "points": 97,
+      "comments": 61,
+      "created_at": "2026-10-24T11:18:54Z"
+    },
+    {
+      "title": "ThinkRail from JetBrains",
+      "url": "https://thinkrail.ai/",
+      "points": 56,
+      "comments": 82,
+      "created_at": "2026-10-24T08:08:42Z"
+    },
+    {
+      "title": "Broccoli2Shell: Brotli decoder RCE in Node.js, Python and more",
+      "url": "https://broccoli2shell.com/",
+      "points": 393,
+      "comments": 211,
+      "created_at": "2026-10-24T08:06:39Z"
+    },
+    {
+      "title": "Evolving Threat: http2shell is an RCE in Node, Python, and more",
+      "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
+      "points": 186,
+      "comments": 95,
+      "created_at": "2026-10-23T23:30:17Z"
+    },
+    {
+      "title": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
+      "url": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
+      "points": 66,
+      "comments": 58,
+      "created_at": "2026-10-23T19:31:36Z"
+    },
+    {
+      "title": "Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line",
+      "url": "https://artificialanalysis.ai/models/kimi-k3-1-pro",
+      "points": 120,
+      "comments": 41,
+      "created_at": "2026-10-23T18:24:54Z"
+    },
+    {
+      "title": "Air Purifiers as White Noise Machines",
+      "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
+      "points": 176,
+      "comments": 169,
+      "created_at": "2026-10-23T17:28:36Z"
+    },
+    {
+      "title": "Kimi K3.1 Pro",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "points": 60,
+      "comments": 2,
+      "created_at": "2026-10-23T17:10:27Z"
+    }
+  ],
+  "wikipedia_top": null,
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "The best apps for tracking your reading and discovering new books"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "‘Cyberselfish’ author takes aim at techno-libertarianism as her book returns from the dead"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "TechCrunch Mobility: Blue-green is the color of autonomy"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The hottest AI wearables and gadgets you should know about"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Starlink seems to be working normally again in Ukraine"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Will AI expose the rickety infrastructure of the internet?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Instacart reportedly discussed selling itself with DoorDash and Uber"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Block’s new voice model sounds eerily human"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "PHP-ocalypse: How two critical web bugs almost broke the internet"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "These clever apps show off the iPhone Duo’s potential"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats."
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The Boox Palma 2 Pro finally got me to stop reading on my phone"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "iFixit&#8217;s look inside the iPhone Duo may explain those broken screens and hinges"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Scott Walker’s The Drift will get under your skin"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "A YouTuber dissected an iPhone Duo and thinks he found the cause of crackgate"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Zen Browser is the Arc replacement I was looking for"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "This Switch 2 sequel accessory was a few millimeters away from being good"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Now you can watch Instagram Reels on your Apple TV"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "r/opensource just banned AI, non-English speakers, and more"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Google’s AI search changes upended online publishing"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Pennsylvania will require labels on AI-generated ads"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ice sheet expansion may have started 2,000 years ago, but we canceled that"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Inside the Pentagon, the pressure is on to find a home for a new spaceport"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Spotify ramps up policy enforcement on family plans"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Crows can evaluate visual info twice as fast as mammals"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "RFK Jr.’s vaccine injury clinic could damage NIH hospital, board warns"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Knicks sent employees fake offer of championship rings in phishing test: Report"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Everybody panic: A Valve developer said \"HLX\" in public"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The reactor meant to showcase nuclear’s comeback keeps hitting problems"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Review: Crystal Lake suffers a bit from its obsession with Pam Voorhees"
+    }
+  ]
+}
