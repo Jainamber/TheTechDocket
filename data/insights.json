@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-11-03T12:11:24.513694+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-11-04T11:38:43.297156+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 9
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "amd-anthropic-deal-mi450": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 10,
+    "explainers": 2
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."

@@ -1,0 +1,1783 @@
+{
+  "date": "2026-11-04",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_smartphone l": "ok",
+    "news_IN_AI regulatio": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_smartphone l": "ok",
+    "news_US_AI regulatio": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "uidai aadhaar",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "‘Aadhaar App’ credentials valid ID proof: Nagaland Government",
+              "source": "MorungExpress",
+              "url": "https://www.morungexpress.com/aadhaar-app-credentials-valid-id-proof-nagaland-government"
+            },
+            {
+              "headline": "Nagaland directs depts to accept digital Aadhaar credentials as valid ID proof",
+              "source": "MokokchungTimes.com",
+              "url": "https://mokokchungtimes.com/nagaland-directs-depts-to-accept-digital-aadhaar-credentials-as-valid-id-proof/"
+            },
+            {
+              "headline": "Aadhaar App now valid ID proof in Nagaland",
+              "source": "Eastern Mirror",
+              "url": "https://www.easternmirrornagaland.com/aadhaar-app-now-valid-id-proof-in-nagaland"
+            }
+          ]
+        },
+        {
+          "title": "इज़राइल",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "इजरायल को अब नहीं मिलेगी अमेरिकी मदद? ट्रंप ने 4 अरब डॉलर की सालाना सहायता बंद करने का किया ऐलान",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/world/story/trump-announces-end-of-us-economic-aid-to-israel-midterm-elections-impact-ntc-acwi-dskc-2687690-2026-11-04"
+            },
+            {
+              "headline": "ट्रम्प की आपत्ति के बाद इजराइल को मिलने वाली अमेरिकी सहायता क्यों खतरे में है? 4 अरब डॉलर के सालाना पैकेज के पीछे की पूरी कहानी समझें!",
+              "source": "Prabhat Khabar",
+              "url": "https://www.prabhatkhabar.com/world/trump-israel-military-aid-2027"
+            },
+            {
+              "headline": "मिडटर्म चुनाव के दिन ट्रंप का बड़ा धमाका, अब इजरायल को सालाना 4 अरब डॉलर नहीं देगा अमेरिका",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/world/america-trump-will-halt-the-four-billion-dollars-in-aid-given-to-israel-40426719.html"
+            }
+          ]
+        },
+        {
+          "title": "elder scrolls vi",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "The Elder Scrolls VI officially has a name: Sentinel",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement"
+            },
+            {
+              "headline": "The Elder Scrolls VI is officially called Sentinel — and its title confirms Skyrim sequel's setting",
+              "source": "Empire",
+              "url": "https://www.empireonline.com/movies/news/the-elder-scrolls-vi-sentinel-title-confirmed-as-bethesda-celebrates-40th-anniversary/"
+            },
+            {
+              "headline": "Elder Scrolls 6 Gets Its First New Teaser Trailer In Over 8 Years, But Still No Release Date",
+              "source": "Kotaku",
+              "url": "https://kotaku.com/elder-scrolls-6-gets-a-new-teaser-confirming-its-name-but-still-no-release-date-2000752777"
+            }
+          ]
+        },
+        {
+          "title": "taran adarsh",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "'रामायण' की मुंबई स्क्रीनिंग में लगा सितारों का मेला, रणबीर कपूर-आलिया भट्ट से सनी देओल तक कई स्टार्स पहुंच",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/entertainment/bollywood/ramayana-mumbai-screening-ranbir-kapoor-alia-bhatt-to-sunny-deol-among-stars-in-attendance-2026-11-04-1252632"
+            },
+            {
+              "headline": "Ramayana Screening: रामायण की स्क्रीनिंग में लगा सितारों का मेला, रवि दुबे ने छुए सनी देओल के पैर, गायब दिखे यश-साई पल्लवी!",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/entertainment/bollywood-news/photo/ranbir-kapoor-sunny-deol-yash-alia-bhatt-neetu-kapoor-at-ramayana-special-screening-in-mumbai-tmovj-2687645-2026-11-03"
+            },
+            {
+              "headline": "रणवीर के आगे फीके पड़े रणबीर! Ramayana पर भारी पड़ी Dhurandhar 2; एडवांस बुकिंग नहीं तोड़ पाई रिकॉर्ड",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/entertainment/bollywood-ranbir-kapoor-ramayana-fails-to-break-ranveer-singh-dhurandhar-2-record-of-rs-50-crore-in-advance-booking-collection-40426273.html"
+            }
+          ]
+        },
+        {
+          "title": "susan collins",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Maine U.S. Senate Election 2026 Live Results: Susan Collins vs. Troy Jackson",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/politics/2026-elections/maine-senate-results"
+            },
+            {
+              "headline": "Democrat Troy Jackson Vies to Upend Maine Sen. Collins’s 30-Year Run",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/video/democrat-troy-jackson-vies-to-upend-maine-sen-collinss-30-year-run/E1157F41-50DB-488C-8DD2-73C5388FEE67"
+            },
+            {
+              "headline": "Maine Senator Susan Collins Concedes to Democrat Troy Jackson",
+              "source": "Time Magazine",
+              "url": "https://time.com/article/2026/11/04/maine-democrat-troy-jackson-defeats-republican-senator-susan-collins/"
+            }
+          ]
+        },
+        {
+          "title": "icc cwc league 2",
+          "approx_traffic": "20000+",
+          "pub_date": "Tue, 3 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "CWC League 2 top-four race reaches tense finish",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/tournaments/icc-cricket-world-cup-league-2/news/cwc-league-2-top-four-race-reaches-tense-finish"
+            },
+            {
+              "headline": "UAE vs OMAN, 145th Match, ICC Cricket World Cup League Two 2023-27 - Commentary",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/live-cricket-scores/176375/uae-vs-oman-145th-match-icc-cricket-world-cup-league-two-2023-27"
+            },
+            {
+              "headline": "United Arab Emirates vs Oman Match 145 ODI - ICC CWC League 2, 2023-27 Live Scorecard",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/live-score/cricket/united-arab-emirates-oman-live-cricket-scorecard-275772"
+            }
+          ]
+        },
+        {
+          "title": "nuke",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 3 Nov 2026 21:10:00 -0800",
+          "news": [
+            {
+              "headline": "Could fallout from potential nuke strike on Iran's Pickaxe Mountain reach India?",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/world/story/iran-war-us-trump-nuclear-strike-pickaxe-mountain-india-fallout-3031469-2026-11-04"
+            },
+            {
+              "headline": "Netanyahu pressing Trump to attack Iran after midterms, says officials",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/international/netanyahu-pressing-trump-to-attack-iran-after-midterms-says-officials/article71658356.ece"
+            },
+            {
+              "headline": "Israel denies pressing Trump for Iran strikes amid diplomatic push",
+              "source": "Iran International",
+              "url": "https://www.iranintl.com/en/202611029410"
+            }
+          ]
+        },
+        {
+          "title": "రాజస్థాన్",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:10:00 -0800",
+          "news": [
+            {
+              "headline": "Railway Track Blast: ప్యాసింజర్ రైలు వెళ్లిన కొన్నినిమిషాలకే భారీ పేలుడు.. భారత్‌-పాక్‌ సరిహద్దులో ఘటన",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/india/explosion-damaged-a-railway-track-in-rajasthan/0701/126200612"
+            },
+            {
+              "headline": "రైల్వే ట్రాక్ వద్ద పేలుడు.. RDXతో సంబంధం లేదు: ఎస్పీ (వీడియో)",
+              "source": "Lokal Telugu",
+              "url": "https://telugu.getlokalapp.com/telangana-news/explosion-at-railway-track-not-related-to-rdx-sp-video-17388093"
+            },
+            {
+              "headline": "రైల్వే ట్రాక్​పై భారీ పేలుడు- ట్రైన్ వెళ్లిన కాసేపటికే ఘోరం",
+              "source": "ETV Bharat",
+              "url": "https://www.etvbharat.com/te/bharat/suspicious-explosion-near-railway-track-on-anupgarh-suratgarh-rail-route-in-sri-ganganagar-in-rajasthan-ten26110400976"
+            }
+          ]
+        },
+        {
+          "title": "आयुष्मान खुराना",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:10:00 -0800",
+          "news": [
+            {
+              "headline": "Ott Watch : आयुष्मान खुराना की इस क्राइम थ्रिलर फिल्म को देख भूल जाएंगे दृश्यम, 8.2 है Imdb रेटिंग",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/entertainment/web-series/ott-watch-ayushmann-khurrana-this-crime-thriller-mystery-movie-will-shock-you-with-8-2-imdb-rating-201793726629267.html"
+            },
+            {
+              "headline": "OTT पर मौजूद ये फिल्म देखना शुरू किया तो पूरी देखे बिना उठ नहीं पाएंगे आप, Imdb पर मिली 8.2 रेटिंग, दृश्यम 3 की तरह निराश नहीं करेगी कहानी",
+              "source": "NDTV India",
+              "url": "https://ndtv.in/bollywood/ott-suspense-thriller-on-jio-hotstar-will-blow-your-mind-it-has-got-8-2-rating-12279621"
+            },
+            {
+              "headline": "सस्पेंस और थ्रिलर के शौकीन हैं तो जरूर देखें आयुष्मान खुराना की यह फिल्म, IMDb पर है 8.2 रेटिंग",
+              "source": "zoomtventertainment.com",
+              "url": "https://www.zoomtventertainment.com/hindi/bollywood-news/ayushmann-khurrana-andhadhun-movie-review-ott-streaming-article-156461099"
+            }
+          ]
+        },
+        {
+          "title": "life certificate",
+          "approx_traffic": "1000+",
+          "pub_date": "Tue, 3 Nov 2026 21:00:00 -0800",
+          "news": [
+            {
+              "headline": "Special Jeevan Pramaan 5.0 campaign to be held at five places in Mysuru Railway division",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/karnataka/special-jeevan-pramaan-50-campaign-to-be-held-at-five-places-in-mysuru-railway-division/article71660741.ece"
+            },
+            {
+              "headline": "Pensioners Urged to Opt for Digital Life Certificate",
+              "source": "Kashmir Observer",
+              "url": "https://kashmirobserver.net/2026/11/03/pensioners-urged-to-opt-for-digital-life-certificate/"
+            },
+            {
+              "headline": "How to submit Digital Life Certificate online through Jeevan Setu before November 30",
+              "source": "Moneycontrol.com",
+              "url": "https://www.moneycontrol.com/news/business/personal-finance/how-to-submit-digital-life-certificate-online-through-jeevan-setu-before-november-30-14066527.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "smartphone launch": [
+          {
+            "title": "iPhone 18 launch expected in 2027, tipped to get 120Hz display and price hike - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 04 Nov 2026 04:18:17 GMT"
+          },
+          {
+            "title": "Karbonn Rebel Pro and Rebel smartphones launched in India: check price, specs - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 02 Nov 2026 12:15:56 GMT"
+          },
+          {
+            "title": "OnePlus 16T And OnePlus 16 May Launch In India: Check Expected Specs And Price - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Wed, 04 Nov 2026 04:36:16 GMT"
+          },
+          {
+            "title": "Nothing Announces 2027 Product Roadmap, Plans to Launch Over Twice as Many Smartphones Next Year - Gadgets 360",
+            "source": "Gadgets 360",
+            "pub_date": "Fri, 30 Oct 2026 11:42:46 GMT"
+          },
+          {
+            "title": "November 2026 Smartphone Launches: Signature 27, iQOO 16 - https://tech-insider.org/",
+            "source": "https://tech-insider.org/",
+            "pub_date": "Tue, 03 Nov 2026 09:08:38 GMT"
+          },
+          {
+            "title": "Elliptic Labs' Device Launch Update for October 2026 - TradingView",
+            "source": "TradingView",
+            "pub_date": "Tue, 03 Nov 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Wobble to launch its second smartphone, the Speed 5G - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 29 Oct 2026 09:47:02 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 to Vivo X500: Smartphones expected to launch in India this November - Business Today",
+            "source": "Business Today",
+            "pub_date": "Mon, 02 Nov 2026 06:39:47 GMT"
+          },
+          {
+            "title": "OnePlus Turbo 7 tipped to launch in December with Snapdragon 8 Gen 6, 200MP camera and 185Hz display - Livemint",
+            "source": "Livemint",
+            "pub_date": "Tue, 03 Nov 2026 10:43:03 GMT"
+          },
+          {
+            "title": "Xiaomi 18 Pro, OnePlus 16R And More: Smartphones Expected To Launch In India In November - News18",
+            "source": "News18",
+            "pub_date": "Mon, 02 Nov 2026 08:45:07 GMT"
+          },
+          {
+            "title": "Karbonn 5G Phones Launch: 7,000mAh Battery, 120Hz Display And More; What We Know - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Mon, 02 Nov 2026 08:57:42 GMT"
+          },
+          {
+            "title": "Vivo X500 FE near launch as new certifications surface - Sportskeeda Tech",
+            "source": "Sportskeeda Tech",
+            "pub_date": "Tue, 03 Nov 2026 11:33:55 GMT"
+          },
+          {
+            "title": "Domestic sales of Samsung Galaxy Z Fold8 rises around 20% in wake of iPhone Duo’s launch - Korea JoongAng Daily",
+            "source": "Korea JoongAng Daily",
+            "pub_date": "Tue, 03 Nov 2026 02:38:41 GMT"
+          },
+          {
+            "title": "Wobble Speed 5G smartphone teased ahead of India launch - FoneArena.com",
+            "source": "FoneArena.com",
+            "pub_date": "Thu, 29 Oct 2026 05:54:58 GMT"
+          },
+          {
+            "title": "[Exclusive] Realme 17T 5G design revealed; launch appears to be in the works - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Tue, 03 Nov 2026 06:43:03 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 Launch: Expected Price, Camera, Chip, Battery, Features And Other Key Details - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Mon, 02 Nov 2026 09:15:27 GMT"
+          },
+          {
+            "title": "Oppo Reno 17 Series To Launch This Month: Check Leaked Specs And Features - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Tue, 03 Nov 2026 03:35:18 GMT"
+          },
+          {
+            "title": "Vivo Y32 5G goes official with 8,000mAh battery, Snapdragon 4 Gen 2, IP69 rating; India launch awaited - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 02 Nov 2026 06:59:54 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 hands-on video reveals display specs, design, and more - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 02 Nov 2026 06:13:08 GMT"
+          },
+          {
+            "title": "OnePlus 16 and OnePlus 16R both tipped to launch in India; flagship could cost up to Rs 1.4 lakh - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 02 Nov 2026 07:40:28 GMT"
+          },
+          {
+            "title": "Global smartphone shipments fall 14% as brands launch more 5G models - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 30 Oct 2026 23:30:43 GMT"
+          },
+          {
+            "title": "Vivo X500 FE Receives IMDA Certification in Singapore Ahead of Launch - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Tue, 03 Nov 2026 04:11:22 GMT"
+          },
+          {
+            "title": "He is already near: grim roguelike He is Coming to launch on smartphones in 2027 - iXBT.games",
+            "source": "iXBT.games",
+            "pub_date": "Sun, 01 Nov 2026 14:30:00 GMT"
+          },
+          {
+            "title": "OPPO Compact Phone With Dual 200MP Cameras Could Launch as OnePlus 16T - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Sat, 31 Oct 2026 17:17:22 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 Specs Leaked Ahead of November 5 Launch: 200MP Camera, Tandem OLED Display and More - My Mobile India",
+            "source": "My Mobile India",
+            "pub_date": "Sun, 01 Nov 2026 05:06:52 GMT"
+          }
+        ],
+        "AI regulation": [
+          {
+            "title": "Bill Gates says AI without regulation is ‘completely irresponsible’ - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Sun, 27 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The State of AI Global Governance and Its Implications for the U.S.-China Summit - CSIS | Center for Strategic and International Studies",
+            "source": "CSIS | Center for Strategic and International Studies",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "AI CEOs say they need to slow the pace of development. But will they? - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Mon, 14 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "From AI Regulation to Resilience Practice: What Continuity Teams Need to Do Next - The Business Continuity Institute (BCI)",
+            "source": "The Business Continuity Institute (BCI)",
+            "pub_date": "Tue, 03 Nov 2026 01:05:56 GMT"
+          },
+          {
+            "title": "OpenAI CEO Sam Altman says 'right to be afraid of AI' - but 'world should trust' tech firms - follow live - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 14 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI, Anthropic CEOs call for global AI regulation at UN - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Thu, 24 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "‘Godfather of AI’ says tech regulation is nearing Covid-style pivot moment - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 16 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "CERT-In Gets Mythos AI Access: Cautious Use for Cybersecurity - Rediff",
+            "source": "Rediff",
+            "pub_date": "Tue, 03 Nov 2026 17:20:19 GMT"
+          },
+          {
+            "title": "US tech stocks recover after selloff spooks investors over AI spending - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Tue, 03 Nov 2026 22:23:24 GMT"
+          },
+          {
+            "title": "The dark side of AI regulation is unrestrained government control - The Washington Post",
+            "source": "The Washington Post",
+            "pub_date": "Fri, 30 Oct 2026 23:15:03 GMT"
+          },
+          {
+            "title": "Google's New AI Rules For Schools Come With A Catch: No AI, No Google Search - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Tue, 03 Nov 2026 17:26:59 GMT"
+          },
+          {
+            "title": "Open-Weight Models Put AI Rules Out of the Regulator’s Reach - https://economy.ac/",
+            "source": "https://economy.ac/",
+            "pub_date": "Wed, 04 Nov 2026 05:13:32 GMT"
+          },
+          {
+            "title": "Setback for Google as EU court adviser warns AI chatbot may breach copyright rules - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 03 Nov 2026 19:16:17 GMT"
+          },
+          {
+            "title": "Tackling AI’s Labor Paradox - Global Finance Magazine",
+            "source": "Global Finance Magazine",
+            "pub_date": "Mon, 02 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "SANDERS WARNS OF AI OLIGARCHS: Trump’s Self-Regulation Claim Sparks Debate | US Midterms | News18 - News18",
+            "source": "News18",
+            "pub_date": "Tue, 03 Nov 2026 20:53:00 GMT"
+          },
+          {
+            "title": "How should the FDA regulate generative AI in medtech? Here are 5 takes - MedTech Dive",
+            "source": "MedTech Dive",
+            "pub_date": "Tue, 03 Nov 2026 17:21:50 GMT"
+          },
+          {
+            "title": "TRAI draft AI guidelines hold telcos accountable for vendor AI - MediaNama",
+            "source": "MediaNama",
+            "pub_date": "Mon, 02 Nov 2026 07:20:39 GMT"
+          },
+          {
+            "title": "AI laws developed ahead of the technology haven't worked out, UK minister says - MLex",
+            "source": "MLex",
+            "pub_date": "Tue, 03 Nov 2026 15:41:45 GMT"
+          },
+          {
+            "title": "This Simple Rule Can Keep AI From Doing All Your Thinking - Time Magazine",
+            "source": "Time Magazine",
+            "pub_date": "Tue, 03 Nov 2026 18:07:43 GMT"
+          },
+          {
+            "title": "AI is less regulated than milk, says Microsoft president - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Healthcare AI regulation must follow the product as it changes - Innovation News Network",
+            "source": "Innovation News Network",
+            "pub_date": "Fri, 30 Oct 2026 10:05:57 GMT"
+          },
+          {
+            "title": "Chiranjeevi, Ram Charan take deepfake concerns to Amit Shah: Are India’s AI laws enough? - Open Magazine",
+            "source": "Open Magazine",
+            "pub_date": "Tue, 03 Nov 2026 04:59:14 GMT"
+          },
+          {
+            "title": "Crypto’s next chapter: Regulatory sandboxes, AI co-pilots and the rise of derivatives - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Mon, 02 Nov 2026 10:23:44 GMT"
+          },
+          {
+            "title": "Rove and Axelrod doubt federal AI regulation over next two years - Intelligent Insurer",
+            "source": "Intelligent Insurer",
+            "pub_date": "Tue, 03 Nov 2026 10:06:24 GMT"
+          },
+          {
+            "title": "The Guardian view on AI safety: the push for global regulation must advance | Editorial - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Thu, 22 Oct 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality spokane",
+          "ai",
+          "ai detector",
+          "ai checker",
+          "air quality",
+          "air quality index",
+          "ai mode",
+          "aileen wuornos",
+          "airpods"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt down"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phones apple",
+          "new phone deals for new customers",
+          "new phones with headphone jack",
+          "new phone plans",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "riverside county election results",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "California General Election 2026: Riverside County Results",
+              "source": "The Riverside Record",
+              "url": "https://riversiderecord.org/california-general-election-2026-riverside-county-results/"
+            },
+            {
+              "headline": "Live election results for key Riverside County races",
+              "source": "The Desert Sun",
+              "url": "https://www.desertsun.com/story/news/politics/elections/2026/11/02/live-election-results-riverside-county-races/92487096007/"
+            },
+            {
+              "headline": "Election Day is here: what Coachella Valley voters need to know",
+              "source": "KESQ",
+              "url": "https://kesq.com/news/2026/11/03/election-day-is-here-what-coachella-valley-voters-need-to-know/"
+            }
+          ]
+        },
+        {
+          "title": "bill hill alaska",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Alaska At-Large Congressional District 2026: Live Election Results, Begich vs. Hafner",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-alaska-us-house-at-large.html"
+            },
+            {
+              "headline": "Alaska’s U.S. House election includes a last-days push against a candidate in federal prison",
+              "source": "Alaska Beacon",
+              "url": "https://alaskabeacon.com/2026/10/30/alaskas-u-s-house-election-includes-a-last-days-push-against-a-candidate-in-federal-prison/"
+            },
+            {
+              "headline": "Who Is Eric Hafner? Democrat on Alaska Ballot Accused of Being GOP Ploy",
+              "source": "Newsweek",
+              "url": "https://www.newsweek.com/eric-hafner-alaska-democrat-gop-ballot-mary-peltola-12638704"
+            }
+          ]
+        },
+        {
+          "title": "robert luna",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Sheriff Luna leads challenger Villanueva in early returns; Measure A ahead",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/california/story/2026-11-03/la-county-sheriff-robert-luna-alex-villanueva-returns-measure-a"
+            },
+            {
+              "headline": "Live election results: LA County sheriff",
+              "source": "LAist",
+              "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva"
+            },
+            {
+              "headline": "Live Election Results: 2026 LA County Sheriff race - Luna v Villanueva",
+              "source": "FOX 11 Los Angeles",
+              "url": "https://www.foxla.com/news/election-results-la-county-sheriff"
+            }
+          ]
+        },
+        {
+          "title": "chauna banks",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Louisiana House District 6 Midterm Election 2026: Live Results",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-6-results"
+            },
+            {
+              "headline": "Louisiana 6th Congressional District election results",
+              "source": "WDSU",
+              "url": "https://www.wdsu.com/article/louisiana-sixth-congressional-district-election-results-2026/74109238"
+            },
+            {
+              "headline": "State Sen. Blake Miguez, Chauna Banks headed to runoff for 6th Congressional District",
+              "source": "WBRZ",
+              "url": "https://www.wbrz.com/news/state-sen-blake-miguez-chauna-banks-headed-to-runoff-for-6th-congressional-district/"
+            }
+          ]
+        },
+        {
+          "title": "google android botnet takedown",
+          "approx_traffic": "500+",
+          "pub_date": "Tue, 3 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Shutting the Door on the XCPE Botnet",
+              "source": "Google Cloud",
+              "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet"
+            },
+            {
+              "headline": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
+            },
+            {
+              "headline": "A hidden backdoor put 1.3 million TV boxes to work for criminals",
+              "source": "Malwarebytes",
+              "url": "https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals"
+            }
+          ]
+        },
+        {
+          "title": "mark penn",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Stagwell (STGW): Chief Executive Officer Penn Mark Jeffery...",
+              "source": "Quantisnow",
+              "url": "https://www.quantisnow.com/insight/chief-executive-officer-penn-mark-jeffery-exercised-1000000-shares-at-6768010"
+            },
+            {
+              "headline": "Form 4 Stagwell Inc: Mark Jeffery Penn (Director, 10% Owner, CEO) For: 29 October",
+              "source": "Investing.com Canada",
+              "url": "https://ca.investing.com/news/stock-market-news/form-4-stagwell-inc-mark-jeffery-penn-director-10-owner-ceo-for-29-october-93CH-4923693"
+            },
+            {
+              "headline": "Insider Selling: Mark Penn Unloads $10.21M Of Stagwell Stock",
+              "source": "Benzinga",
+              "url": "https://www.benzinga.com/news/26/11/62824804/insider-selling-mark-penn-unloads-10-21m-stagwell-stock"
+            }
+          ]
+        },
+        {
+          "title": "cedrick frazier",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Live election results: Hennepin County Attorney",
+              "source": "FOX 9 Minneapolis-St. Paul",
+              "url": "https://www.fox9.com/news/hennepin-county-attorney-election-results-2026"
+            },
+            {
+              "headline": "Folk versus Frazier: The Hennepin County Attorney’s race could mean the difference between life and death",
+              "source": "The Minnesota Daily",
+              "url": "https://mndaily.com/city/folk-versus-frazier-the-hennepin-county-attorneys-race-could-mean-the-difference-between-life-and-death/11/02/2026/eicmndaily-com/"
+            },
+            {
+              "headline": "Hennepin County Attorney race: Ex-prosecutor or state lawmaker to succeed Moriarty",
+              "source": "5 EYEWITNESS NEWS",
+              "url": "https://kstp.com/politics/hennepin-county-attorney-race-ex-prosecutor-or-state-lawmaker-to-succeed-moriarty/"
+            }
+          ]
+        },
+        {
+          "title": "san diego county election results",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "San Diego County Measures | Live Election Results",
+              "source": "cbs8.com",
+              "url": "https://www.cbs8.com/article/news/politics/elections/san-diego-county-city-measures-live-election-results/509-a84dd703-0148-4d2c-bab9-f3d14fb5238a"
+            },
+            {
+              "headline": "Election results: City races in San Diego County",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/news/politics/articles/election-results-city-races-san-010500233.html"
+            },
+            {
+              "headline": "Who’s Funding the Measure B Campaign?",
+              "source": "Voice of San Diego",
+              "url": "https://voiceofsandiego.org/2026/10/30/whos-funding-the-measure-b-campaign/"
+            }
+          ]
+        },
+        {
+          "title": "adam gray",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:20:00 -0800",
+          "news": [
+            {
+              "headline": "Campaign spending surges in race for California's 13th Congressional District",
+              "source": "ABC30 Fresno",
+              "url": "https://abc30.com/post/adam-gray-maintains-fundraising-edge-californias-13th-congressional-district-race/19992058/"
+            },
+            {
+              "headline": "California 13th Congressional District election results 2026",
+              "source": "The Washington Post",
+              "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-13th-house-district-live-updates/"
+            },
+            {
+              "headline": "As progressive campaigns grow more popular, Democrat Adam Gray is focused on the center",
+              "source": "KVPR",
+              "url": "https://www.kvpr.org/government-politics/2026-11-02/as-progressive-campaigns-grow-more-popular-democrat-adam-gray-is-focused-on-the-center"
+            }
+          ]
+        },
+        {
+          "title": "utah amendment b",
+          "approx_traffic": "200+",
+          "pub_date": "Tue, 3 Nov 2026 21:20:00 -0800",
+          "news": [
+            {
+              "headline": "Votes against Amendment B outpacing votes for proposed measure on Utah ballots",
+              "source": "KSL News",
+              "url": "https://www.ksl.com/article/51643529/votes-against-amendment-b-outpacing-votes-for-proposed-measure-on-utah-ballots"
+            },
+            {
+              "headline": "Controversial Utah constitutional amendment losing big across the state",
+              "source": "The Salt Lake Tribune",
+              "url": "https://www.sltrib.com/news/politics/2026/11/03/utah-2026-election-results/"
+            },
+            {
+              "headline": "Amendments A & B ask Utah voters to evaluate ballot initiatives",
+              "source": "KPCW",
+              "url": "https://www.kpcw.org/state-regional/2026-11-02/amendments-a-b-ask-utah-voters-to-evaluate-ballot-initiatives"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "smartphone launch": [
+          {
+            "title": "November 2026 Smartphone Launches: Signature 27, iQOO 16 - https://tech-insider.org/",
+            "source": "https://tech-insider.org/",
+            "pub_date": "Tue, 03 Nov 2026 09:08:38 GMT"
+          },
+          {
+            "title": "Inside Musk’s plan to upend the wireless phone industry - The Washington Post",
+            "source": "The Washington Post",
+            "pub_date": "Mon, 02 Nov 2026 18:00:00 GMT"
+          },
+          {
+            "title": "Sky News to launch new apps, website in 2027 through expanded Arc XP partnership - TheDesk.net",
+            "source": "TheDesk.net",
+            "pub_date": "Tue, 03 Nov 2026 10:16:31 GMT"
+          },
+          {
+            "title": "Elliptic Labs' Device Launch Update for October 2026 - TradingView",
+            "source": "TradingView",
+            "pub_date": "Tue, 03 Nov 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Musk’s SpaceX could finally launch its carrier service after buying Boost Mobile - Digital Trends",
+            "source": "Digital Trends",
+            "pub_date": "Mon, 02 Nov 2026 19:28:25 GMT"
+          },
+          {
+            "title": "Sales of Galaxy Z Fold 8 increase following launch of Apple's 1st foldable smartphone - Yonhap News Agency",
+            "source": "Yonhap News Agency",
+            "pub_date": "Tue, 03 Nov 2026 01:13:36 GMT"
+          },
+          {
+            "title": "Global smartphone shipments fall 14% as brands launch more 5G models - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 30 Oct 2026 23:30:43 GMT"
+          },
+          {
+            "title": "Wobble to launch its second smartphone, the Speed 5G - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 29 Oct 2026 09:47:02 GMT"
+          },
+          {
+            "title": "Domestic sales of Samsung Galaxy Z Fold8 rises around 20% in wake of iPhone Duo’s launch - Korea JoongAng Daily",
+            "source": "Korea JoongAng Daily",
+            "pub_date": "Tue, 03 Nov 2026 02:38:41 GMT"
+          },
+          {
+            "title": "He is already near: grim roguelike He is Coming to launch on smartphones in 2027 - iXBT.games",
+            "source": "iXBT.games",
+            "pub_date": "Sun, 01 Nov 2026 14:30:00 GMT"
+          },
+          {
+            "title": "iPhone 18 launch expected in 2027, tipped to get 120Hz display and price hike - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 04 Nov 2026 04:18:17 GMT"
+          },
+          {
+            "title": "Major US Carriers Concerned About SpaceX's Plans to Launch Mobile Network - Mezha",
+            "source": "Mezha",
+            "pub_date": "Mon, 02 Nov 2026 16:25:00 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 Launch: Expected Price, Camera, Chip, Battery, Features And Other Key Details - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Mon, 02 Nov 2026 09:15:27 GMT"
+          },
+          {
+            "title": "Vivo X500 FE near launch as new certifications surface - Sportskeeda Tech",
+            "source": "Sportskeeda Tech",
+            "pub_date": "Tue, 03 Nov 2026 11:33:55 GMT"
+          },
+          {
+            "title": "Global smartphone shipments record worst third quarter in 14 years amid memory shortage - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OnePlus 16T And OnePlus 16 May Launch In India: Check Expected Specs And Price - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Wed, 04 Nov 2026 04:36:16 GMT"
+          },
+          {
+            "title": "Qualcomm launches two new smartphone chips with emphasis on AI - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Tue, 22 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Karbonn 5G Phones Launch: 7,000mAh Battery, 120Hz Display And More; What We Know - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Mon, 02 Nov 2026 08:57:42 GMT"
+          },
+          {
+            "title": "Meta launches AI gadget Charm as race for post-smartphone hardware heats up - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 24 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Oppo Reno 17 Series To Launch This Month: Check Leaked Specs And Features - Gizbot",
+            "source": "Gizbot",
+            "pub_date": "Tue, 03 Nov 2026 03:35:18 GMT"
+          },
+          {
+            "title": "Xiaomi 18 Pro, OnePlus 16R And More: Smartphones Expected To Launch In India In November - News18",
+            "source": "News18",
+            "pub_date": "Mon, 02 Nov 2026 08:45:07 GMT"
+          },
+          {
+            "title": "Screen cracks, iPhone Duo buyers 'fold'... Galaxy Z Fold8 sales surge - 머니투데이",
+            "source": "머니투데이",
+            "pub_date": "Tue, 03 Nov 2026 01:42:10 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 hands-on video reveals display specs, design, and more - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 02 Nov 2026 06:13:08 GMT"
+          },
+          {
+            "title": "Upcoming Phones We’re Still Expecting in 2026, Along With Some Heading to 2027 - CNET",
+            "source": "CNET",
+            "pub_date": "Tue, 06 Oct 2026 07:00:00 GMT"
+          }
+        ],
+        "AI regulation": [
+          {
+            "title": "What AI regulation to expect after the midterms - Goldman (AIQ:NASDAQ) - Seeking Alpha",
+            "source": "Seeking Alpha",
+            "pub_date": "Mon, 02 Nov 2026 13:34:33 GMT"
+          },
+          {
+            "title": "Bill Gates says unchecked AI could ‘cause a billion deaths’ in call for regulation - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Mon, 28 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Bill Gates says AI companies self-regulating isn’t enough and governments should be involved in monitoring - NBC News",
+            "source": "NBC News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "From AI Regulation to Resilience Practice: What Continuity Teams Need to Do Next - The Business Continuity Institute (BCI)",
+            "source": "The Business Continuity Institute (BCI)",
+            "pub_date": "Tue, 03 Nov 2026 01:05:56 GMT"
+          },
+          {
+            "title": "US, Chinese visions for AI regulation differ sharply at UN meeting - Politico",
+            "source": "Politico",
+            "pub_date": "Wed, 23 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "U.S., Russia stripped human oversight from global AI weapons pact - The Washington Post",
+            "source": "The Washington Post",
+            "pub_date": "Sat, 26 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Curious Left-Wing Argument Against New AI Regulations - The Atlantic",
+            "source": "The Atlantic",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI, Anthropic CEOs call for global AI regulation at UN - Al Jazeera",
+            "source": "Al Jazeera",
+            "pub_date": "Thu, 24 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Opinion | The Wild West of A.I. Needs to End. Here’s How. - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Thu, 24 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Nvidia's Jensen Huang says AI CEOs have 'ulterior reasons' for warning about doomsday - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sun, 20 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Setback for Google as EU court adviser warns AI chatbot may breach copyright rules - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 03 Nov 2026 19:16:17 GMT"
+          },
+          {
+            "title": "US tech stocks recover after selloff spooks investors over AI spending - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Tue, 03 Nov 2026 22:23:24 GMT"
+          },
+          {
+            "title": "This Simple Rule Can Keep AI From Doing All Your Thinking - Time Magazine",
+            "source": "Time Magazine",
+            "pub_date": "Tue, 03 Nov 2026 18:07:43 GMT"
+          },
+          {
+            "title": "Editorial: Virginia needs tougher rules to minimize AI risks - The Virginian-Pilot",
+            "source": "The Virginian-Pilot",
+            "pub_date": "Tue, 03 Nov 2026 23:16:27 GMT"
+          },
+          {
+            "title": "How should the FDA regulate generative AI in medtech? Here are 5 takes - MedTech Dive",
+            "source": "MedTech Dive",
+            "pub_date": "Tue, 03 Nov 2026 17:21:50 GMT"
+          },
+          {
+            "title": "As Congress Deliberates, States Lead the Way on AI Regulation - National Conference of State Legislatures",
+            "source": "National Conference of State Legislatures",
+            "pub_date": "Wed, 21 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Three questions that will define AI's political power - Axios",
+            "source": "Axios",
+            "pub_date": "Tue, 03 Nov 2026 10:01:02 GMT"
+          },
+          {
+            "title": "Open-Weight Models Put AI Rules Out of the Regulator’s Reach - https://economy.ac/",
+            "source": "https://economy.ac/",
+            "pub_date": "Wed, 04 Nov 2026 05:13:32 GMT"
+          },
+          {
+            "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings - STAT",
+            "source": "STAT",
+            "pub_date": "Fri, 30 Oct 2026 08:31:19 GMT"
+          },
+          {
+            "title": "Colorado’s AI Rules Come Into Focus: Draft Regulations Preview New Employer Duties - The National Law Review",
+            "source": "The National Law Review",
+            "pub_date": "Tue, 03 Nov 2026 18:52:29 GMT"
+          },
+          {
+            "title": "Transparent, approved and stoppable: A standard for government’s use of AI - The Hill",
+            "source": "The Hill",
+            "pub_date": "Tue, 03 Nov 2026 18:00:00 GMT"
+          },
+          {
+            "title": "NJ Democrats eye data center, AI regulation if Congress changes hands - New Jersey Monitor",
+            "source": "New Jersey Monitor",
+            "pub_date": "Mon, 26 Oct 2026 10:52:47 GMT"
+          },
+          {
+            "title": "AI regulation push gains steam ahead of midterms - CFO Dive",
+            "source": "CFO Dive",
+            "pub_date": "Tue, 27 Oct 2026 14:53:10 GMT"
+          },
+          {
+            "title": "Market Concerns Over AI Regulation Amid Midterm Election Dynamics - GuruFocus",
+            "source": "GuruFocus",
+            "pub_date": "Tue, 03 Nov 2026 19:23:47 GMT"
+          },
+          {
+            "title": "Argentina’s Milei pitches a regulation-free AI haven at the end of the world - AP News",
+            "source": "AP News",
+            "pub_date": "Mon, 02 Nov 2026 08:03:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality spokane",
+          "ai",
+          "ai detector",
+          "ai checker",
+          "air quality",
+          "air quality index",
+          "ai mode",
+          "aileen wuornos",
+          "airpods"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt down"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones coming out in 2026",
+          "new phones 2026",
+          "new phone who dis game",
+          "new phones apple",
+          "new phone deals for new customers",
+          "new phones with headphone jack",
+          "new phone plans"
+        ],
+        "tech & ai": [
+          "tech & ai",
+          "tech & ai mckinsey",
+          "tech & ai forum @ unga81",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "points": 1152,
+      "comments": 378,
+      "created_at": "2026-11-03T17:22:37Z"
+    },
+    {
+      "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "points": 949,
+      "comments": 197,
+      "created_at": "2026-11-03T12:21:17Z"
+    },
+    {
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+      "points": 708,
+      "comments": 292,
+      "created_at": "2026-11-02T16:29:19Z"
+    },
+    {
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "points": 553,
+      "comments": 172,
+      "created_at": "2026-11-03T17:40:00Z"
+    },
+    {
+      "title": "Stringman, an $800 open-source room scale gripper robot",
+      "url": "https://neufangled.com/",
+      "points": 484,
+      "comments": 169,
+      "created_at": "2026-11-03T16:47:29Z"
+    },
+    {
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "points": 431,
+      "comments": 181,
+      "created_at": "2026-11-02T14:02:42Z"
+    },
+    {
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "points": 376,
+      "comments": 206,
+      "created_at": "2026-11-03T21:39:05Z"
+    },
+    {
+      "title": "Mac at any scale",
+      "url": "https://namespace.so/blog/mac-at-any-scale",
+      "points": 353,
+      "comments": 202,
+      "created_at": "2026-11-03T14:53:42Z"
+    },
+    {
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "points": 293,
+      "comments": 49,
+      "created_at": "2026-11-03T21:40:53Z"
+    },
+    {
+      "title": "Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels",
+      "url": "https://hackertv.org",
+      "points": 261,
+      "comments": 54,
+      "created_at": "2026-11-03T01:18:09Z"
+    },
+    {
+      "title": "The Internals of PostgreSQL",
+      "url": "https://www.interdb.jp/pg/index.html",
+      "points": 207,
+      "comments": 13,
+      "created_at": "2026-11-03T21:51:06Z"
+    },
+    {
+      "title": "C++26 Disapproved",
+      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+      "points": 194,
+      "comments": 87,
+      "created_at": "2026-11-04T00:33:22Z"
+    },
+    {
+      "title": "Japan's Jimi 'Mundane' Halloween Costumes of 2026",
+      "url": "https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/",
+      "points": 157,
+      "comments": 26,
+      "created_at": "2026-11-02T04:31:20Z"
+    },
+    {
+      "title": "How I use AI (Oct 2026)",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "points": 124,
+      "comments": 108,
+      "created_at": "2026-11-03T18:11:11Z"
+    },
+    {
+      "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
+      "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+      "points": 124,
+      "comments": 17,
+      "created_at": "2026-11-02T19:18:46Z"
+    },
+    {
+      "title": "We're training a Figma-fluent editing model",
+      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "points": 98,
+      "comments": 44,
+      "created_at": "2026-11-01T04:05:23Z"
+    },
+    {
+      "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+      "url": "https://github.com/finic-ai/kairos",
+      "points": 82,
+      "comments": 17,
+      "created_at": "2026-11-03T21:16:48Z"
+    },
+    {
+      "title": "Introduction to Programming in ATS",
+      "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
+      "points": 65,
+      "comments": 9,
+      "created_at": "2026-11-03T19:25:18Z"
+    },
+    {
+      "title": "Curiosity Traps",
+      "url": "https://www.autodidacts.io/curiosity-traps/",
+      "points": 61,
+      "comments": 7,
+      "created_at": "2026-11-02T15:40:04Z"
+    },
+    {
+      "title": "Jelly Sheet",
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "points": 56,
+      "comments": 8,
+      "created_at": "2026-11-04T03:40:50Z"
+    },
+    {
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "points": 293,
+      "comments": 49,
+      "created_at": "2026-11-03T21:40:53Z"
+    },
+    {
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "points": 321,
+      "comments": 140,
+      "created_at": "2026-11-03T21:26:44Z"
+    },
+    {
+      "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
+      "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
+      "points": 72,
+      "comments": 73,
+      "created_at": "2026-11-03T21:25:48Z"
+    },
+    {
+      "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+      "url": "https://github.com/finic-ai/kairos",
+      "points": 82,
+      "comments": 17,
+      "created_at": "2026-11-03T21:16:48Z"
+    },
+    {
+      "title": "How I use AI (Oct 2026)",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "points": 125,
+      "comments": 108,
+      "created_at": "2026-11-03T18:11:11Z"
+    },
+    {
+      "title": "Google researchers demand freedom to tell the world what they know about AI",
+      "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
+      "points": 88,
+      "comments": 102,
+      "created_at": "2026-11-03T17:55:26Z"
+    },
+    {
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "points": 1155,
+      "comments": 378,
+      "created_at": "2026-11-03T17:22:37Z"
+    },
+    {
+      "title": "Gitbook Breached",
+      "url": null,
+      "points": 150,
+      "comments": 36,
+      "created_at": "2026-11-03T16:45:49Z"
+    },
+    {
+      "title": "Google Will Turn Off Search for Schools That Reject A.I",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "points": 45,
+      "comments": 15,
+      "created_at": "2026-11-03T16:15:53Z"
+    },
+    {
+      "title": "Quili AI",
+      "url": "https://www.quili.ai/",
+      "points": 97,
+      "comments": 64,
+      "created_at": "2026-11-03T15:49:02Z"
+    },
+    {
+      "title": "AI is destroying my CS degree",
+      "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
+      "points": 121,
+      "comments": 112,
+      "created_at": "2026-11-03T15:35:06Z"
+    },
+    {
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "points": 592,
+      "comments": 422,
+      "created_at": "2026-11-03T15:25:47Z"
+    },
+    {
+      "title": "Octomind – open-source AI harness that saves your tokens, static rust",
+      "url": "https://github.com/Muvon/octomind",
+      "points": 53,
+      "comments": 36,
+      "created_at": "2026-11-03T15:02:58Z"
+    },
+    {
+      "title": "The AI Bubble Monitor",
+      "url": "https://cepr.net/publications/ai-bubble-monitor/",
+      "points": 64,
+      "comments": 36,
+      "created_at": "2026-11-03T14:51:31Z"
+    },
+    {
+      "title": "There is no posttraining data commons",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "points": 53,
+      "comments": 16,
+      "created_at": "2026-11-03T14:45:47Z"
+    },
+    {
+      "title": "Just a little AI resistance, as a treat",
+      "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+      "points": 173,
+      "comments": 107,
+      "created_at": "2026-11-03T14:14:12Z"
+    },
+    {
+      "title": "WorkOS reports security breach",
+      "url": null,
+      "points": 77,
+      "comments": 11,
+      "created_at": "2026-11-02T23:30:59Z"
+    },
+    {
+      "title": "V100 SXM2 pinout and NVLink reference",
+      "url": "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
+      "points": 48,
+      "comments": 17,
+      "created_at": "2026-11-02T22:30:13Z"
+    },
+    {
+      "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
+      "url": "https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
+      "points": 74,
+      "comments": 44,
+      "created_at": "2026-11-02T19:36:37Z"
+    },
+    {
+      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "points": 197,
+      "comments": 173,
+      "created_at": "2026-11-02T19:27:37Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 4146037,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 762375,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 558870,
+      "rank": 3
+    },
+    {
+      "article": "Haley_Stevens",
+      "views": 548345,
+      "rank": 4
+    },
+    {
+      "article": "Learjet_60",
+      "views": 263003,
+      "rank": 5
+    },
+    {
+      "article": "Susan_Saint_James",
+      "views": 252010,
+      "rank": 6
+    },
+    {
+      "article": "Abdul_El-Sayed",
+      "views": 243340,
+      "rank": 7
+    },
+    {
+      "article": "2026_Palm_Beach_County_Learjet_60_crash",
+      "views": 220959,
+      "rank": 8
+    },
+    {
+      "article": "Kimi_Antonelli",
+      "views": 206706,
+      "rank": 9
+    },
+    {
+      "article": "2026_United_States_elections",
+      "views": 201102,
+      "rank": 10
+    },
+    {
+      "article": ".xxx",
+      "views": 172419,
+      "rank": 11
+    },
+    {
+      "article": "2026_Greenacres_Learjet_60_crash",
+      "views": 152110,
+      "rank": 12
+    },
+    {
+      "article": "Karl_Bushby",
+      "views": 147561,
+      "rank": 13
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 140295,
+      "rank": 14
+    },
+    {
+      "article": "Patrick_Stewart",
+      "views": 132688,
+      "rank": 15
+    },
+    {
+      "article": "United_States_midterm_election",
+      "views": 131229,
+      "rank": 16
+    },
+    {
+      "article": "Jack_Campbell_(American_football)",
+      "views": 128845,
+      "rank": 17
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 127361,
+      "rank": 18
+    },
+    {
+      "article": "Jailer_2",
+      "views": 111475,
+      "rank": 19
+    },
+    {
+      "article": "Dick_Ebersol",
+      "views": 106158,
+      "rank": 20
+    },
+    {
+      "article": "2026_Formula_One_World_Championship",
+      "views": 102533,
+      "rank": 21
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 99891,
+      "rank": 22
+    },
+    {
+      "article": "Tanner_McKee",
+      "views": 98327,
+      "rank": 23
+    },
+    {
+      "article": "XNXX",
+      "views": 97222,
+      "rank": 24
+    },
+    {
+      "article": "ChatGPT",
+      "views": 96729,
+      "rank": 25
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 84438,
+      "rank": 26
+    },
+    {
+      "article": "Archive_of_Our_Own",
+      "views": 78713,
+      "rank": 27
+    },
+    {
+      "article": "Mike_Rogers_(Michigan_politician)",
+      "views": 77353,
+      "rank": 28
+    },
+    {
+      "article": "Matthew_Perry",
+      "views": 75181,
+      "rank": 29
+    },
+    {
+      "article": "Clayface_(film)",
+      "views": 73486,
+      "rank": 30
+    },
+    {
+      "article": "Nidhi_Razdan",
+      "views": 72519,
+      "rank": 31
+    },
+    {
+      "article": "2026_Israeli_legislative_election",
+      "views": 71016,
+      "rank": 32
+    },
+    {
+      "article": "Storm_oil",
+      "views": 70742,
+      "rank": 33
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 70486,
+      "rank": 34
+    },
+    {
+      "article": "Wildwood_(film)",
+      "views": 69768,
+      "rank": 35
+    },
+    {
+      "article": "Inde_Navarrette",
+      "views": 69735,
+      "rank": 36
+    },
+    {
+      "article": "Chris_Murphy",
+      "views": 68807,
+      "rank": 37
+    },
+    {
+      "article": "Yaxel_Lendeborg",
+      "views": 67933,
+      "rank": 38
+    },
+    {
+      "article": "List_of_Formula_One_World_Drivers'_Champions",
+      "views": 67466,
+      "rank": 39
+    },
+    {
+      "article": ".xyz",
+      "views": 65692,
+      "rank": 40
+    },
+    {
+      "article": "Learjet",
+      "views": 64003,
+      "rank": 41
+    },
+    {
+      "article": "Day_of_the_Dead",
+      "views": 63975,
+      "rank": 42
+    },
+    {
+      "article": "James_Talarico",
+      "views": 62655,
+      "rank": 43
+    },
+    {
+      "article": "2026_United_States_Senate_elections",
+      "views": 61876,
+      "rank": 44
+    },
+    {
+      "article": "2026_United_States_Senate_election_in_Michigan",
+      "views": 60512,
+      "rank": 45
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 60024,
+      "rank": 46
+    },
+    {
+      "article": "Ciara_Mageean",
+      "views": 59386,
+      "rank": 47
+    },
+    {
+      "article": "Marco_Antonelli",
+      "views": 58642,
+      "rank": 48
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 58621,
+      "rank": 49
+    },
+    {
+      "article": "King_(2026_film)",
+      "views": 58142,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "India’s EloElo nabs $80M from NBCUniversal to bet on the country’s rising microdrama market"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic is working on a system to prove AI models’ identity"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Data centers are turning to old jet engines as the wait for power grows"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Orbital Matter 3D-printed the first rigid beam in the vacuum of space"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI inference startup Fal doubles its valuation to $16B as demand surges"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Reddit tests ads in search results as traffic declines and growth concerns mount"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ten years later, ‘Pokémon Go to the polls’ still haunts the internet"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Ferrari’s controversial Luce EV is sold out for 2027"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic is still grappling with the economics of compute"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Rivian spinout Also was working on an e-moto project in Kenya — until it walked away"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "AMD rides data center riches to &#8216;largest and most profitable&#8217; quarter in history"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "All the news about The Legend of Zelda: Ocarina of Time remake"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The biggest modding site in PC gaming is taking a stance on AI"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Please stop asking me when the AI bubble will pop"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Canva is announcing changes and layoffs affecting 22 percent of its staff"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Sonos adds new Presets and prepares for the 27voice AI beta"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Valve is making changes to deal with a ‘significant increase’ in Steam game submissions"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Here’s what it’s like to use Audio Intelligence on the Apple Watch"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Those Jeff Bezos hair transplant photos are very fake"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "California fights \"preposterous\" Trump admin demand to scrap state broadband laws"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ukraine’s drone strikes spur hasty Russian plans for underground data centers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "NYT demands Brave shut down its paywall blocker and end deals with AI firms"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Buttons are back and storage is king when it comes to car interiors"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google will let schools skip AI tools, but they have to give up search, too"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Another child dies of measles as CDC reportedly holds up health alert"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "This space company is betting its future on a propellant available everywhere"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump wanted to give No Kings no air. Then, Meta suspended its Instagram."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "EPA throws in the towel on policing air pollution from factory farms"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Beyond screens: Mercedes-Benz's new holographic heads-up display"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "\"At Home in Space\" opens, caps Air and Space Museum renovation"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Why large dogs age faster than small ones, and other October research highlights"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Third person dies of bird flu since virus started jumping to livestock"
+    }
+  ]
+}
