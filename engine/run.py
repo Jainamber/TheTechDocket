@@ -49,7 +49,9 @@ def main(argv=None):
     sh = sub.add_parser("share")
     sh.add_argument("--slug", default=None)
     sh.add_argument("--date", default=None)
+    sh.add_argument("--sub", default=None, help="Target subreddit (e.g. developersIndia, pcmasterrace, Windows11)")
     sh.add_argument("--open", action="store_true", help="Open submit pages in default browser and copy starter to clipboard")
+    sh.add_argument("--hn-warmup", action="store_true", help="Fetch live rising HN threads for karma building")
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -139,10 +141,14 @@ def main(argv=None):
 
     elif args.cmd == "share":
         from .share import build_share_kit
-        res = build_share_kit(slug=args.slug, date_str=args.date, open_browser=args.open)
+        res = build_share_kit(slug=args.slug, date_str=args.date,
+                              chosen_sub=args.sub,
+                              open_browser=args.open,
+                              include_hn_warmup=args.hn_warmup)
         print(f"share-kit written: {res['path']}")
+        print(f"Target Subreddit: r/{res['primary_sub']}")
         if res.get("opened"):
-            print("Opened submit tabs in browser; copied discussion starter to clipboard.")
+            print("Opened submit tabs in browser; copied human discussion starter to clipboard.")
 
     elif args.cmd == "status":
         cfg = load_config()

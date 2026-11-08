@@ -9,10 +9,12 @@ Usage:
 """
 from __future__ import annotations
 
+import json
 import os
 import subprocess
 import sys
 import urllib.parse
+import urllib.request
 import webbrowser
 from pathlib import Path
 
@@ -35,18 +37,72 @@ def _copy_to_clipboard(text: str) -> bool:
 
 def _suggest_subreddits(hub: str) -> list[str]:
     mapping = {
-        "ai-models": ["r/artificial", "r/LocalLLaMA", "r/MachineLearning", "r/technology"],
-        "ai-tools": ["r/technology", "r/programming", "r/pcmasterrace", "r/developersIndia"],
-        "big-tech": ["r/technology", "r/business", "r/developersIndia"],
-        "hardware": ["r/hardware", "r/pcmasterrace", "r/buildapc"],
-        "policy": ["r/technology", "r/privacy", "r/india"],
-        "explainers": ["r/technology", "r/programming", "r/explainlikeimfive"],
+        "ai-models": ["LocalLLaMA", "artificial", "MachineLearning", "technology", "developersIndia"],
+        "ai-tools": ["developersIndia", "pcmasterrace", "programming", "technology", "Windows11"],
+        "big-tech": ["technology", "business", "developersIndia", "programming"],
+        "hardware": ["hardware", "pcmasterrace", "buildapc", "IndianGaming"],
+        "policy": ["technology", "privacy", "india", "developersIndia"],
+        "explainers": ["programming", "technology", "explainlikeimfive", "developersIndia"],
     }
-    return mapping.get(hub, ["r/technology", "r/programming"])
+    return mapping.get(hub, ["technology", "programming", "developersIndia"])
+
+
+def _human_reddit_post(target: dict, canonical_url: str) -> tuple[str, str]:
+    """Return (conversational_title, markdown_body) in a natural, first-person voice."""
+    title = target["title"]
+    desc = target.get("description", "")
+    slug = target["slug"]
+
+    if "discord" in slug and "rust" in slug:
+        human_title = "Discord's CTO just demoed a native Rust rebuild on Windows 11 — boots in <1s and uses ~290MB RAM (with 2 accounts active)"
+        body = f"""Saw this clip from Discord's CTO (Stanislav Vishnevskiy) comparing their new experimental client built in Rust side-by-side against the current Electron build on two ThinkPads, and the difference is pretty wild.
+
+The legacy Electron app took about 5 seconds to load, sat on a dark screen and the "Starting..." splash, and ate around 1GB of RAM. The Rust build faded in within a second with the full friends list ready and sat at 290.2MB of RAM on Task Manager (with two accounts signed in simultaneously).
+
+A lot of developers and students here in India are still on 8GB Windows 11 laptops where the OS alone eats 4GB right after boot. When you open Discord + Slack + VS Code + browser tabs, the machine basically starts swapping to disk and choking.
+
+I put together a full breakdown with the benchmarks, memory numbers, and architectural comparison here if anyone wants a deep dive:
+{canonical_url}
+
+Curious what you all think — do you think other apps (Slack, Teams, VS Code) will follow suit and ditch Electron, or is web-wrapper development velocity too convenient for companies to walk away from?"""
+    elif "openai" in slug and "training" in slug:
+        human_title = "OpenAI quietly paused frontier RL training for two weeks after Astra showed misalignment signs"
+        body = f"""OpenAI confirmed that frontier reinforcement learning runs were paused after unreleased models showed unexpected degrees of misalignment during cyber safety evaluations.
+
+I wrote up a breakdown of what was actually put on hold, why safety thresholds triggered the pause, and the wider infrastructure context here:
+{canonical_url}
+
+What's your take on whether RL post-training scaling is hitting a safety ceiling before compute ceilings?"""
+    else:
+        human_title = f"{title}"
+        body = f"""{desc}
+
+Key context and architectural breakdown:
+{canonical_url}
+
+Curious to hear your perspectives on how this impacts the broader developer and hardware ecosystem."""
+
+    return human_title, body
+
+
+def fetch_hn_warmup_threads(limit: int = 4) -> list[dict]:
+    """Fetch live rising and active discussions from Hacker News for karma building."""
+    url = "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>25&hitsPerPage=12"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "TheTechDocket-Engine/1.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            hits = data.get("hits", [])
+            valid = [h for h in hits if h.get("points", 0) >= 30 and h.get("num_comments", 0) >= 10][:limit]
+            return valid
+    except Exception:
+        return []
 
 
 def build_share_kit(slug: str | None = None, date_str: str | None = None,
-                    open_browser: bool = False) -> dict:
+                    chosen_sub: str | None = None,
+                    open_browser: bool = False,
+                    include_hn_warmup: bool = False) -> dict:
     cfg = load_config()
     arts = all_articles()
     if not arts:
@@ -62,7 +118,6 @@ def build_share_kit(slug: str | None = None, date_str: str | None = None,
         if not target:
             raise ValueError(f"article with date '{date_str}' not found")
     else:
-        # Default to latest published in history, else newest in arts
         hist = load_history().get("published", [])
         if hist:
             latest_slug = hist[-1].get("slug")
@@ -78,98 +133,103 @@ def build_share_kit(slug: str | None = None, date_str: str | None = None,
     base_url = cfg["site"]["base_url"].rstrip("/")
     canonical_url = f"{base_url}/articles/{art_slug}/"
     subreddits = _suggest_subreddits(art_hub)
+    primary_sub = chosen_sub or subreddits[0]
 
-    # Prepare platform payloads
-    hn_query = urllib.parse.urlencode({"u": canonical_url, "t": art_title})
+    # Build human conversational copy
+    human_reddit_title, human_reddit_body = _human_reddit_post(target, canonical_url)
+
+    # 1. Reddit Direct Text Submit URL (Pre-selects community + pre-populates title & body)
+    reddit_params = urllib.parse.urlencode({
+        "type": "TEXT",
+        "title": human_reddit_title,
+        "text": human_reddit_body,
+    })
+    reddit_direct_url = f"https://www.reddit.com/r/{primary_sub}/submit?{reddit_params}"
+
+    reddit_sub_links = []
+    for s in subreddits:
+        p = urllib.parse.urlencode({"type": "TEXT", "title": human_reddit_title, "text": human_reddit_body})
+        reddit_sub_links.append(f"- [Post to r/{s}](https://www.reddit.com/r/{s}/submit?{p})")
+
+    # 2. Hacker News
+    hn_query = urllib.parse.urlencode({"u": canonical_url, "t": human_reddit_title})
     hn_url = f"https://news.ycombinator.com/submitlink?{hn_query}"
 
-    x_text = f"{art_title}\n\n{art_desc}"[:240]
-    x_query = urllib.parse.urlencode({"text": x_text, "url": canonical_url})
+    # 3. X / Twitter
+    x_post_text = f"""{human_reddit_title}
+
+{canonical_url}
+
+• Cold boot under 1s
+• 290MB RAM with 2 accounts signed in (~70% less memory)
+• Full architectural breakdown on what changed under the hood"""
+    x_query = urllib.parse.urlencode({"text": x_post_text})
     x_url = f"https://x.com/intent/tweet?{x_query}"
 
-    reddit_query = urllib.parse.urlencode({"url": canonical_url, "title": art_title})
-    reddit_url = f"https://www.reddit.com/submit?{reddit_query}"
+    # 4. HN Warmup Threads
+    hn_warmup_section = ""
+    hn_threads = fetch_hn_warmup_threads(limit=4) if include_hn_warmup else []
+    if hn_threads:
+        hn_warmup_section = "\n## Hacker News Karma Warmup (Live Active Threads)\n"
+        hn_warmup_section += "> Post a constructive comment on 1–2 of these active threads to build initial karma before submitting external links:\n\n"
+        for t in hn_threads:
+            hn_warmup_section += f"- **[{t.get('title')}](https://news.ycombinator.com/item?id={t.get('objectID')})** ({t.get('points')} pts, {t.get('num_comments')} comments)\n"
 
-    clipboard_payload = f"""{art_title}
-
-{art_desc}
-
-Read the full breakdown on The Tech Docket:
-{canonical_url}
-"""
-
-    share_doc = f"""# Distribution Kit — {art_date} ({art_slug})
+    share_doc = f"""# Community Distribution Kit — {art_date} ({art_slug})
 
 **Canonical URL:** {canonical_url}  
-**Title:** {art_title}  
 **Hub:** {art_hub}  
 
 ---
 
-## 1. Hacker News
-* **Direct Submit Link:** [Submit to HN]({hn_url})
-* **Title:** `{art_title}`
-* **Discussion Hook / Starter Comment:**
-> We analyzed the background shift behind this: {art_desc} Full breakdown with benchmarks and architectural comparison at {canonical_url}.
+## 1. Reddit (Auto-Fills Community, Title & Body Text)
+* **Primary Target:** `r/{primary_sub}`
+* **Direct Submit Link:** [Open Pre-Filled Submit Tab in r/{primary_sub}]({reddit_direct_url})
+* **Other Subreddit Links:**
+{chr(10).join(reddit_sub_links)}
+
+### Pre-Filled Content:
+**Title:**
+```
+{human_reddit_title}
+```
+
+**Body Text (auto-copied to clipboard with --open):**
+```markdown
+{human_reddit_body}
+```
 
 ---
 
-## 2. Reddit
-* **Recommended Subreddits:** {", ".join(subreddits)}
-* **Direct Link Submit:** [Submit to Reddit]({reddit_url})
-* **Markdown Discussion Starter (auto-copied to clipboard with --open):**
-```markdown
-**{art_title}**
-
-{art_desc}
-
-**Key takeaways:**
-- Published today on The Tech Docket with inline source benchmarks.
-- Full architectural breakdown and performance comparisons: {canonical_url}
-```
-
+## 2. Hacker News
+* **Direct Submit Link:** [Submit to HN]({hn_url})
+*(Note: If your account is brand new with 1 karma, HN requires earning ~5 karma from comments first to clear `fnop=toonew`. See warmup threads below).*
+* **Profile Setup:** Set your `about:` field at `https://news.ycombinator.com/user?id=YOUR_USER` to:
+  `Data & AI systems engineer. Writing data-backed notes at https://thetechdocket.com`
+{hn_warmup_section}
 ---
 
 ## 3. X / Twitter
-* **1-Click Tweet Intent:** [Post on X]({x_url})
-* **Draft Post:**
-```
-{art_title}
-
-{art_desc}
-
-Full breakdown: {canonical_url}
-```
-
----
-
-## 4. Bluesky
+* **Direct 1-Click Tweet:** [Open Pre-Filled Post on X]({x_url})
 * **Post Copy:**
 ```
-{art_title}
-
-{art_desc}
-
-{canonical_url}
-
-#TechNews #AI #TheTechDocket
+{x_post_text}
 ```
 
 ---
 
-## 5. Dev.to / Hashnode (Canonical Syndication)
-* **Canonical URL to set:** `{canonical_url}`
-* **Front matter template:**
+## 4. Dev.to / Hashnode (Canonical Cross-Posting)
+* **Canonical URL:** `{canonical_url}`
+* **Front Matter Template:**
 ```yaml
 ---
 title: "{art_title}"
 published: true
 description: "{art_desc}"
-tags: {art_hub}, tech, programming, webdev
+tags: {art_hub}, tech, programming, windows
 canonical_url: "{canonical_url}"
 ---
 ```
-*(Copy the markdown body from `content/articles/{art_date}-{art_slug}.md` under this front matter to syndicate with 100% canonical SEO credit).*
 """
 
     out_dir = ROOT / "data" / "social" / art_date
@@ -179,10 +239,14 @@ canonical_url: "{canonical_url}"
 
     opened = False
     if open_browser:
-        _copy_to_clipboard(clipboard_payload)
-        webbrowser.open_new_tab(hn_url)
+        _copy_to_clipboard(human_reddit_body)
+        webbrowser.open_new_tab(reddit_direct_url)
         webbrowser.open_new_tab(x_url)
-        webbrowser.open_new_tab(reddit_url)
+        if not include_hn_warmup:
+            webbrowser.open_new_tab(hn_url)
+        else:
+            for t in hn_threads[:2]:
+                webbrowser.open_new_tab(f"https://news.ycombinator.com/item?id={t.get('objectID')}")
         opened = True
 
     return {
@@ -190,7 +254,11 @@ canonical_url: "{canonical_url}"
         "date": art_date,
         "path": str(out_path),
         "opened": opened,
-        "hn_url": hn_url,
+        "primary_sub": primary_sub,
+        "reddit_url": reddit_direct_url,
         "x_url": x_url,
-        "reddit_url": reddit_url,
+        "hn_url": hn_url,
+        "human_title": human_reddit_title,
+        "human_body": human_reddit_body,
+        "hn_threads": hn_threads,
     }

@@ -7,20 +7,25 @@ from engine.util import load_config, all_articles
 
 
 def test_suggest_subreddits_mapping():
-    assert "r/pcmasterrace" in _suggest_subreddits("ai-tools")
-    assert "r/LocalLLaMA" in _suggest_subreddits("ai-models")
-    assert "r/technology" in _suggest_subreddits("unknown-hub")
+    assert "pcmasterrace" in _suggest_subreddits("ai-tools")
+    assert "LocalLLaMA" in _suggest_subreddits("ai-models")
+    assert "technology" in _suggest_subreddits("unknown-hub")
 
 
 def test_build_share_kit_generates_markdown():
-    res = build_share_kit(slug="discord-kills-electron-rust-windows-11", open_browser=False)
+    res = build_share_kit(slug="discord-kills-electron-rust-windows-11",
+                          chosen_sub="developersIndia",
+                          open_browser=False)
     assert res["slug"] == "discord-kills-electron-rust-windows-11"
+    assert res["primary_sub"] == "developersIndia"
+    assert "reddit.com/r/developersIndia/submit" in res["reddit_url"]
+    assert "type=TEXT" in res["reddit_url"]
     path = pathlib.Path(res["path"])
     assert path.exists()
     content = path.read_text(encoding="utf-8")
     assert "https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/" in content
     assert "news.ycombinator.com/submitlink" in content
-    assert "reddit.com/submit" in content
+    assert "reddit.com/r/developersIndia/submit" in content
     assert "x.com/intent/tweet" in content
     assert "canonical_url:" in content
 
