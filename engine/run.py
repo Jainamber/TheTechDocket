@@ -46,6 +46,10 @@ def main(argv=None):
     dp.add_argument("--no-push", action="store_true")
     so = sub.add_parser("social")
     so.add_argument("--date", default=None)
+    sh = sub.add_parser("share")
+    sh.add_argument("--slug", default=None)
+    sh.add_argument("--date", default=None)
+    sh.add_argument("--open", action="store_true", help="Open submit pages in default browser and copy starter to clipboard")
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -132,6 +136,13 @@ def main(argv=None):
             outdir, int(scfg.get("slide_w", 1080)),
             int(scfg.get("slide_h", 1350)), int(scfg.get("max_slides", 20)))
         print(f"social: {len(files)} slides + caption.txt -> {outdir}")
+
+    elif args.cmd == "share":
+        from .share import build_share_kit
+        res = build_share_kit(slug=args.slug, date_str=args.date, open_browser=args.open)
+        print(f"share-kit written: {res['path']}")
+        if res.get("opened"):
+            print("Opened submit tabs in browser; copied discussion starter to clipboard.")
 
     elif args.cmd == "status":
         cfg = load_config()

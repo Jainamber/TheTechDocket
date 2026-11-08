@@ -9,10 +9,10 @@ Before proposing, accepting, or executing any task, code edit, script, or config
 
 * **Current Season North Star Metric:** **Number of Visitors per Week (`Weekly Visitors`)** on `thetechdocket.com` (`mytechdocket.com`).
 * **Permitted Action Levers:**
-  1. **Lever 1: Indexation & Cadence** (Keeping daily publication alive, GSC/IndexNow indexing, fixing crawl bottlenecks)
-  2. **Lever 2: Topic Selection & CTR** (High search-demand topics, high-CTR titles, hero crops for Discover)
-  3. **Lever 3: External Distribution & Referrals** (Social posts, Reddit/HN value posts, carousel exports)
-  4. **Lever 4: Retention & Return Loops** (Newsletter capture, daily docket reading habits, internal links)
+  1. **Lever 1: Classic & AI Search Retrieval** (Daily publishing, GSC/IndexNow indexing, AI bot crawl access in robots.txt, machine-readable /llms.txt)
+  2. **Lever 2: Generative Engine Optimization (GEO) & SERP CTR** (Answer-first architecture, citation JSON-LD schemas, comparison tables, high-CTR titles)
+  3. **Lever 3: External Referrals & Syndication** (Dev.to/Hashnode canonical cross-posting, Reddit/HN community posts, 1-click browser share kit)
+  4. **Lever 4: Retention & Return Loops** (Newsletter capture, daily docket reading habits, internal cross-links)
   5. **Support Enabler:** Strictly necessary measurement/auth fixes (GA4, GSC, GCP Vertex AI auth)
 
 ## 2. Mandatory Pre-Action Impact Check

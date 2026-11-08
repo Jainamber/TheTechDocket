@@ -121,6 +121,8 @@ def article_context(cfg, a: dict, arts: list[dict]) -> dict:
                       "logo": {"@type": "ImageObject",
                                "url": abs_url(cfg, "assets/logo-112x112.png"),
                                "width": 112, "height": 112}},
+        "citation": [s["url"] for s in a.get("sources", []) if s.get("url")],
+        "keywords": ", ".join([k.strip() for k in ([a.get("keyword", "")] + a.get("tags", [])) if k.strip()]),
     }
     breadcrumb = {
         "@context": "https://schema.org",
@@ -606,8 +608,55 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 Sitemap: {abs_url(cfg, 'sitemap.xml')}
 """
+
+
+def _llms_txt(cfg, arts: list[dict]) -> str:
+    base = cfg["site"]["base_url"].rstrip("/")
+    hubs = cfg["content"]["hubs"]
+    lines = [
+        f"# {cfg['site']['name']}",
+        f"> {cfg['site']['tagline']}",
+        "",
+        "The Tech Docket is a daily, data-picked publication covering technology and artificial intelligence across India and globally. Every article is built on same-day search-demand data, thoroughly researched from verified primary sources, and published with machine-checked factual accuracy gates and zero affiliate links.",
+        "",
+        "## Core Feeds",
+        f"- [Sitemap]({base}/sitemap.xml): Full XML sitemap of all published articles and pages",
+        f"- [RSS Feed]({base}/feed.xml): Rolling RSS 2.0 feed of latest 20 articles with WebSub hub",
+        f"- [Today's Docket]({base}/docket/): 60-second daily briefing of verified tech developments",
+        f"- [The Deck]({base}/deck/): Browse-and-save archive of every daily card",
+        "",
+        "## Topic Hubs",
+    ]
+    for hslug, hname in hubs.items():
+        intro = (cfg["content"].get("hub_intros") or {}).get(hslug, hname)
+        lines.append(f"- [{hname}]({base}/topics/{hslug}/): {intro}")
+
+    lines.append("")
+    lines.append("## Published Articles")
+    for a in arts:
+        desc = a.get("description", "").strip()
+        pub_date = str(a.get("date", ""))
+        lines.append(f"- [{a['title']}]({base}/articles/{a['slug']}/): {desc} (Published: {pub_date})")
+
+    lines.append("")
+    return "\n".join(lines)
 
 
 # ---------------- main build ----------------
@@ -841,6 +890,7 @@ def build_site() -> Path:
     _write(out / "sitemap.xml", _sitemap_xml(cfg, arts))
     _write(out / "feed.xml", _feed_xml(cfg, arts))
     _write(out / "robots.txt", _robots_txt(cfg))
+    _write(out / "llms.txt", _llms_txt(cfg, arts))
     print(f"built {len(arts)} article(s) -> {out}")
     return out
 

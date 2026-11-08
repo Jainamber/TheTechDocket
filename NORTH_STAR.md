@@ -45,7 +45,7 @@ Any task, refactoring, re-architecture, cosmetic polish, speculative feature, or
 
 Weekly Visitors cannot be wished into existence; they are the mathematical result of exactly four levers:
 
-$$\text{Weekly Visitors} = \Big(\text{Search \& Discover Impressions} \times \text{SERP/Discover CTR}\Big) + \text{External Direct / Social Referrals} + \text{Returning Subscribed Readers}$$
+$$\text{Weekly Visitors} = \Big(\text{Classic \& AI Search Impressions} \times \text{SERP \& AI Citation CTR}\Big) + \text{Community \& Social Referrals} + \text{Returning Subscribed Readers}$$
 
 Therefore, **an action is ONLY valid if it directly impacts one of the following 4 levers or unblocks its measurement:**
 
@@ -55,35 +55,39 @@ Therefore, **an action is ONLY valid if it directly impacts one of the following
      ┌───────────────────┬───────────────┴───────────────┬───────────────────┐
      ▼                   ▼                               ▼                   ▼
  [LEVER 1]           [LEVER 2]                       [LEVER 3]           [LEVER 4]
-INDEXATION &        TOPIC DEMAND &                  DISTRIBUTION &       RETENTION &
-CADENCE             CLICK-THROUGH (CTR)             REFERRALS            RETURN VISITS
-- Daily publish     - Trending topic scoring        - Reddit / HN posts  - Newsletter capture
-- GSC index push    - Answer-first formatting       - LinkedIn / X posts - Daily /docket/ habit
-- Clean crawl paths - Compelling titles (no bait)   - Social carousels   - RSS & bookmark
+CLASSIC & AI        GEO & SERP                      COMMUNITY &         RETENTION &
+SEARCH RETRIEVAL    CITATION WINNING                REFERRAL REACH       RETURN LOOPS
+- Daily cadence     - Answer-first GEO format       - Dev.to/Hashnode    - Newsletter capture
+- GSC + IndexNow    - Citation JSON-LD schemas      - Hacker News / X    - Daily /docket/ habit
+- AI bots + llms.txt- Comparison tables & facts     - Reddit niche subs  - In-body cross-links
 ```
 
-### Lever 1: Indexation & Cadence (Eligible Impressions Pool)
-* Google cannot send visitors to URLs it has not indexed.
+### Lever 1: Classic & AI Search Retrieval (Google, Bing, ChatGPT, Perplexity, Claude, Gemini)
+* Search and AI answer engines cannot cite or direct visitors to pages they cannot retrieve.
 * **Permitted actions:**
   * Keeping the daily publication cadence alive (1 high-quality article/day without failure).
-  * Auto-submitting URLs to IndexNow (Bing/Copilot/Yandex) and Google Search Console (Sitemap + Request Indexing).
-  * Fixing any crawling/indexation bottleneck, sitemap error, or Google-policy compliance gate failure.
-  * Ensuring the autonomous pipeline (`daily-pipeline.yml`, local ADC runner) never misses a daily cycle.
+  * Auto-submitting URLs via IndexNow (feeds Bing, Microsoft Copilot, and ChatGPT Search) and Google Search Console (Sitemap + Request Indexing).
+  * Maintaining full open access for all AI search bots in `robots.txt` (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Google-Extended`, `Applebot-Extended`).
+  * Publishing `/llms.txt` and `/llms-full.txt` so AI agents and LLM research engines have a clean, token-efficient index of all articles and topics.
+  * Ensuring the autonomous publishing pipeline runs reliably every morning.
 
-### Lever 2: Topic Selection & CTR (Winning the Click)
-* High search demand + high click-through rate converts SERP impressions into site visitors.
+### Lever 2: Generative Engine Optimization (GEO) & SERP CTR (Winning the Citation & the Click)
+* Being retrieved is not enough; content must be selected by AI models as a primary cited source and clicked by readers on SERPs.
 * **Permitted actions:**
-  * Mining real same-day search demand via Google Trends (IN + US) and Google Autocomplete (`engine/fetchers.py`, `scoring.py`).
+  * Answer-first architecture (≥40-word direct-answer summary before first H2) to maximize extraction into Google AI Overviews, Perplexity answer cards, and ChatGPT Search citations.
+  * Structuring clean comparative data tables, bulleted takeaways, and `FAQPage` JSON-LD matching real search intents.
+  * Injecting explicit `citation` arrays into `BlogPosting` JSON-LD schemas so AI crawlers parse machine-verifiable primary sourcing.
   * Optimizing Title tags ({35–65} chars) and Meta Descriptions ({110–165} chars) for maximum organic CTR without clickbait.
   * Structuring hero cards and Discover-eligible image crops (16:9, 4:3, 1:1 ≥1200px) to trigger Google Discover feeds.
-  * Tuning `insights.json` and `feedback.py` to boost topic keywords that already bring verified clicks.
+  * Mining real same-day search demand via Google Trends (IN + US) and Google Autocomplete (`engine/fetchers.py`, `scoring.py`).
 
-### Lever 3: External Distribution & Referrals (Immediate Reach)
-* New domains have low initial crawl priority; external links provide immediate visits AND teach Google to crawl faster.
+### Lever 3: External Referrals & High-Authority Syndication (Immediate Reach)
+* New domains face initial crawl budget throttling; high-authority platforms provide immediate visitors AND signal legitimacy to AI retrieval models.
 * **Permitted actions:**
-  * Generating ready-to-share social text snippets, LinkedIn posts, and X/Twitter threads for published articles.
-  * Exporting high-engagement Instagram/LinkedIn carousel slides via `engine.run social` (`data/social/`).
-  * Seeding relevant articles into niche communities (Hacker News, Reddit r/technology, r/artificial, r/LocalLLaMA) where the content provides genuine answers.
+  * 1-click syndication to developer platforms (Dev.to, Hashnode) with `canonical_url` pointing back to `thetechdocket.com`.
+  * Seeding high-value, answer-focused discussion posts into Hacker News, Reddit (`r/technology`, `r/programming`, `r/LocalLLaMA`, `r/developersIndia`), and X/Twitter.
+  * Generating ready-to-share social text snippets and exporting Instagram/LinkedIn carousel slides via `engine.run social` (`data/social/`).
+  * Adding 1-click browser submission launcher (`python -m engine.run share --open`) to streamline human posting without API shadowban risks.
 
 ### Lever 4: Retention & Return Loops (Compounding Baseline)
 * Converting one-time searchers into recurring weekly visitors prevents the site from having to earn every single visit from scratch.
