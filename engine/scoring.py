@@ -38,6 +38,8 @@ def _intent_bonus(title: str) -> float:
     t = title.lower()
     if re.search(r"\b(how|why|what|which|vs|versus|best|explained|guide)\b", t):
         return 1.0
+    if re.search(r"\b(price|pricing|cost|costs|india|inr|tier|tiers|limit|limits|benchmark|calculator|duty|tax|gst|arbitrage|alternatives|open source|unreleased)\b", t):
+        return 0.75
     return 0.0
 
 

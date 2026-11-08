@@ -1,6 +1,6 @@
 {
   "slug": "discord-kills-electron-rust-windows-11",
-  "checked_at": "2026-11-08T12:16:18.248866+05:30",
+  "checked_at": "2026-11-08T19:40:03.697981+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -160,6 +160,12 @@
       "level": "hard",
       "ok": true,
       "detail": "single first-party byline only"
+    },
+    {
+      "gate": "G26-no-ai-slop",
+      "level": "hard",
+      "ok": true,
+      "detail": "banned AI slop / contrastive crutch found: "
     },
     {
       "gate": "S01-title-length",

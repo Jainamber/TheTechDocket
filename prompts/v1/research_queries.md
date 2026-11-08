@@ -24,6 +24,14 @@ Working slug/topic hint: {{slug_hint}}
 - Prefer primary sources: official announcements, vendor blogs, docs,
   filings, papers, government/regulator pages. Note when a page is
   primary vs. a secondary write-up.
+- Anti-leakage verification:
+  - Tag facts as CONFIRMED_PRIMARY (official filings, primary release) or
+    REPORTED_SECONDARY (trusted reporting).
+  - If a detail cannot be verified or is an uncorroborated leak, mark it
+    explicitly as [UNVERIFIED GAP: <reason>] — never invent or bridge gaps with guesses.
+- Focus on Differentiator EAVs: extract specific entity-attribute-value numbers
+  (exact landed prices in INR, percentage deltas, memory benchmarks, chip wattages)
+  that superficial competitor articles omit.
 - Verify specific numbers, dates and prices; do not round or estimate
   numbers you cannot find a source for.
 - No fabrication: if you cannot find something for this angle, say so

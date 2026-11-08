@@ -126,17 +126,20 @@ numbered list is rejected and sent back for one corrective rewrite.
    ends up with two `<h1>` elements and gate S03 (single-H1) hard-fails.
    Body headings start at `##` (H2); never emit a `# ` line.
 2. The **first line of the body** (before any `##`): a **2-4 sentence
-   direct answer/summary paragraph (>= 40 words)** that fully answers the
-   core question a reader arrives with.
+   direct answer/summary paragraph (>= 40 words, 45-word optimal GEO span)** that synthesizes the
+   core question, primary entity, key numerical delta, and practical takeaway.
 3. **3 or more `##` (H2) sections**, no skipped heading levels (no `####`
-   without a `###` first, etc.), short paragraphs throughout.
+   without a `###` first, etc.), short paragraphs throughout. **Every H2 section
+   must open with an extractable 35-55 word direct answer or verified metric** in its
+   first two sentences to optimize for AI search engine chunking.
 4. At least **one original-analysis H2** titled exactly one of: "What it
    means", "The India angle", "Our take", "What to watch".
 5. A dedicated **"The India angle"** section when the topic is global, or
    a **"Global context"** section when the topic is India-first (this can
-   double as the analysis H2 in #4 if titled "The India angle").
-6. A **comparison table** (Markdown table) wherever the material has
-   comparable data (pricing tiers, specs, timelines, before/after).
+   double as the analysis H2 in #4 if titled "The India angle"). Include real
+   landed-cost math, SaaS forex/GST pricing, or regulatory clauses where applicable.
+6. A **structured comparison table** (Markdown table with 4+ columns and explicit
+   headers) wherever the material has comparable data (pricing tiers, specs, timelines, before/after).
 7. **Stat-sourcing (gate G07 — checked mechanically, paragraph by
    paragraph):** any paragraph containing a percentage (e.g. "45%"), a
    currency amount (a `₹`/`$`/`€`/`£` symbol directly followed by a
@@ -158,6 +161,9 @@ numbered list is rejected and sent back for one corrective rewrite.
 11. **900-2200 words** total body.
 12. Explain jargon on first use; hedge only where genuinely uncertain; no
     fabricated numbers, quotes, or audience/demographic claims.
+13. **Anti-AI-slop & cadence compliance:** Zero occurrences of banned AI clichés
+    (`delve`, `testament to`, `paradigm shift`, `game-changer`, `tapestry`, etc.)
+    and zero `"It's not just X—it's Y"` crutches. Use em-dashes (`—`) with restraint.
 
 Write the complete article now, as the single fenced block described
 above.

@@ -47,19 +47,35 @@ def _suggest_subreddits(hub: str) -> list[str]:
     return mapping.get(hub, ["technology", "programming", "developersIndia"])
 
 
+def _extract_table(body_md: str) -> str:
+    """Extract the first Markdown table block from body text."""
+    lines = (body_md or "").splitlines()
+    table_lines = []
+    in_table = False
+    for line in lines:
+        s = line.strip()
+        if s.startswith("|") and s.endswith("|"):
+            in_table = True
+            table_lines.append(line)
+        elif in_table:
+            break
+    return "\n".join(table_lines)
+
+
 def _human_reddit_post(target: dict, canonical_url: str) -> tuple[str, str]:
     """Return (conversational_title, markdown_body) in a natural, first-person voice."""
     title = target["title"]
     desc = target.get("description", "")
     slug = target["slug"]
+    table = _extract_table(target.get("_body_md", ""))
+    table_block = f"\n\nHere's the benchmark comparison from the post:\n\n{table}\n\n" if table else "\n\n"
 
     if "discord" in slug and "rust" in slug:
         human_title = "Discord's CTO just demoed a native Rust rebuild on Windows 11 — boots in <1s and uses ~290MB RAM (with 2 accounts active)"
         body = f"""Saw this clip from Discord's CTO (Stanislav Vishnevskiy) comparing their new experimental client built in Rust side-by-side against the current Electron build on two ThinkPads, and the difference is pretty wild.
 
 The legacy Electron app took about 5 seconds to load, sat on a dark screen and the "Starting..." splash, and ate around 1GB of RAM. The Rust build faded in within a second with the full friends list ready and sat at 290.2MB of RAM on Task Manager (with two accounts signed in simultaneously).
-
-A lot of developers and students here in India are still on 8GB Windows 11 laptops where the OS alone eats 4GB right after boot. When you open Discord + Slack + VS Code + browser tabs, the machine basically starts swapping to disk and choking.
+{table_block}A lot of developers and students here in India are still on 8GB Windows 11 laptops where the OS alone eats 4GB right after boot. When you open Discord + Slack + VS Code + browser tabs, the machine basically starts swapping to disk and choking.
 
 I put together a full breakdown with the benchmarks, memory numbers, and architectural comparison here if anyone wants a deep dive:
 {canonical_url}
@@ -68,16 +84,14 @@ Curious what you all think — do you think other apps (Slack, Teams, VS Code) w
     elif "openai" in slug and "training" in slug:
         human_title = "OpenAI quietly paused frontier RL training for two weeks after Astra showed misalignment signs"
         body = f"""OpenAI confirmed that frontier reinforcement learning runs were paused after unreleased models showed unexpected degrees of misalignment during cyber safety evaluations.
-
-I wrote up a breakdown of what was actually put on hold, why safety thresholds triggered the pause, and the wider infrastructure context here:
+{table_block}I wrote up a breakdown of what was actually put on hold, why safety thresholds triggered the pause, and the wider infrastructure context here:
 {canonical_url}
 
 What's your take on whether RL post-training scaling is hitting a safety ceiling before compute ceilings?"""
     else:
         human_title = f"{title}"
         body = f"""{desc}
-
-Key context and architectural breakdown:
+{table_block}Key context and architectural breakdown:
 {canonical_url}
 
 Curious to hear your perspectives on how this impacts the broader developer and hardware ecosystem."""
@@ -204,7 +218,7 @@ def build_share_kit(slug: str | None = None, date_str: str | None = None,
 ## 2. Hacker News
 * **Direct Submit Link:** [Submit to HN]({hn_url})
 *(Note: If your account is brand new with 1 karma, HN requires earning ~5 karma from comments first to clear `fnop=toonew`. See warmup threads below).*
-* **Profile Setup:** Set your `about:` field at `https://news.ycombinator.com/user?id=YOUR_USER` to:
+* **Profile Setup:** Set your `about:` field at `https://news.ycombinator.com/user?id=Amber_Jain` to:
   `Data & AI systems engineer. Writing data-backed notes at https://thetechdocket.com`
 {hn_warmup_section}
 ---

@@ -32,6 +32,15 @@ STAT_RE = re.compile(
     r"(\d+(?:\.\d+)?\s?%)|([₹$€£]\s?\d)|(\b\d[\d,]*(?:\.\d+)?\s?"
     r"(?:crore|lakh|million|billion|trillion)\b)", re.I)
 
+SLOP_RE = re.compile(
+    r"\b(delve|testament to|underscores|in a move that signals|paradigm shift|"
+    r"game-changer|tapestry|beacon|double-edged sword|rapidly evolving landscape|"
+    r"only time will tell|buckle up|here's why that matters|watershed moment)\b|"
+    r"it(?:'|’)s not just [^\.\n]+(?:—|--|,\s*it(?:'|’)s)|this isn(?:'|’)t about [^\.\n]+\.\s*it(?:'|’)s about",
+    re.I,
+)
+
+
 
 class GateRunner:
     def __init__(self, slug: str):
@@ -317,6 +326,11 @@ class GateRunner:
         # G25 first-party only
         self.check("G25-first-party", HARD,
                    not a.get("guest_author"), "single first-party byline only")
+
+        # G26 anti-AI-slop & contrastive crutches
+        slop_hits = SLOP_RE.findall(a.get("_body_md", ""))
+        self.check("G26-no-ai-slop", HARD, not slop_hits,
+                   "banned AI slop / contrastive crutch found: " + ", ".join(slop_hits[:3]))
 
         # ---------- SEO gates ----------
         t = soup.title.get_text() if soup.title else ""

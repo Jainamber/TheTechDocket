@@ -40,11 +40,38 @@ Google Trends has no age/gender data — never fabricate audience
 statistics. When genuinely uncertain, hedge in plain language ("reports
 suggest", "has not confirmed") rather than asserting.
 
-## The two-market lens
+## The two-market lens & Quantitative "India Angle"
 Every piece needs a real **India angle** (pricing in ₹, availability,
 regulation, local players) when the topic is global, or a **global
 context** section when the topic is India-first. Do not bolt on a token
-paragraph — find the real, sourced local detail.
+paragraph — calculate the real math:
+- **Hardware landed cost vs. MRP:** calculate US MSRP * FX(USD/INR) * (1 + BCD_duty) * (1 + GST_18%)
+  to expose the true India brand markup % or grey-market arbitrage.
+- **SaaS & API math:** factor in 18% IGST and 3.5% bank forex markups on USD cards; compute
+  real per-1,000-query costs in INR.
+- **Regulation:** cite specific provisions of the DPDP Act rules, RBI payment/fraud guidelines,
+  CERT-In reporting windows, or the IndiaAI Mission GPU capacity outlays.
+
+## Generative Engine Optimization (GEO) & Section Chunking
+AI answer engines (ChatGPT Search, Perplexity, Claude, Google AI Overviews) chunk content
+by heading boundaries. To win primary source citations:
+- **Lead each H2 with an answer:** Open every `##` section with a self-contained 35-55 word direct
+  answer or dated verified metric in the first two sentences before expanding into detail.
+- **Structured comparison tables:** Include at least one 4-column Markdown table with explicit
+  column labels and source tags.
+- **Claim-evidence density:** Pair factual claims directly with their source rather than burying citations.
+
+## Anti-AI-Slop Standards (Strict Quality Gate)
+Write like an experienced practitioner, not default generative AI:
+- **Banned Lexicon (Zero Tolerance):**
+  Never use: `delve`, `testament to`, `underscores`, `in a move that signals`, `paradigm shift`,
+  `game-changer`, `tapestry`, `beacon`, `double-edged sword`, `rapidly evolving landscape`,
+  `only time will tell`, `buckle up`, `here's why that matters`, `watershed moment`.
+- **Banned Contrastive Crutches:**
+  Never use: "It's not just X—it's Y" or "This isn't about X. It's about Y."
+- **Burstiness & Rhythm:**
+  Vary sentence lengths naturally. Mix punchy short sentences with multi-clause technical explanations.
+  Use em-dashes (`—`) with restraint (target <= 1 per 250 words).
 
 ## YMYL caution
 Finance, health and security/safety topics get **extra care**: no advice,

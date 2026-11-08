@@ -41,7 +41,8 @@ author:
   photo_alt: "Saurab Jain, founder and editor of The Tech Docket"
   # Set true only after you confirm the bio above is accurate — compliance gate 13.
   bio_verified: true
-  sameAs: []                    # e.g. ["https://www.linkedin.com/in/...", "https://github.com/..."]
+  sameAs:
+    - "https://news.ycombinator.com/user?id=Amber_Jain"
 
 # --------------------------------------------------------------
 # THE BROAD TOPIC — this is the user-given niche the engine mines

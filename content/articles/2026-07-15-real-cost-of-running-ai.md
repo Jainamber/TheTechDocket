@@ -2,8 +2,8 @@
 title: "The Real Cost of Running AI: Tokens, GPUs, Power"
 slug: "real-cost-of-running-ai"
 date: 2026-07-19
-updated: 2026-08-08
-update_note: "Publication date corrected from 2026-07-15 to 2026-07-19. This piece was drafted on 2026-07-15 during pre-launch testing, before thetechdocket.com existed — the domain was registered on 2026-07-19, which is the day it first became publicly readable. The original date implied a publication that had not happened, which our own editorial policy forbids. Also relaunched at thetechdocket.com with an in-body link to its topic hub."
+updated: "2026-11-08"
+update_note: "Updated November 8, 2026 for Q4 2026: refreshed flagship API token pricing to include OpenAI GPT-5.6 Sol / Gemini 3.1 Pro / Claude Opus 4.8 rates alongside calculated INR landed costs (+18% IGST + 3.5% card forex markup); added India landed-hardware import duty arbitrage math and latest IndiaAI Mission compute allocation updates."
 hub: hardware
 tags: [gpus, ai costs, tokens, data centers]
 description: "OpenAI, Google and Anthropic's live per-token prices, GPU purchase and rental costs, and IEA electricity data, lined up to show what AI really costs to run."
@@ -40,16 +40,16 @@ Running a large language model costs money in three separate places, and most ex
 
 A token is the basic unit AI providers bill for: roughly three-quarters of an English word, so a short sentence like this one runs about a dozen tokens. Every API call is billed twice — once for the tokens you send in (the prompt, plus any attached documents or chat history) and again, usually at a much higher rate, for the tokens the model writes back. Generating that reply is called inference; building the model in the first place, a far more expensive one-time process, is called training.
 
-Prices differ enormously by model tier and change often, so treat any figure here as a snapshot rather than a constant. As of July 2026, this is what the three largest API providers charge per 1M tokens, on their own official pricing pages:
+Prices differ enormously by model tier and change often, so treat any figure here as a snapshot rather than a constant. Sourced from [OpenAI](https://developers.openai.com/api/docs/pricing), [Google](https://ai.google.dev/gemini-api/docs/pricing), and [Anthropic](https://platform.claude.com/docs/en/about-claude/pricing), this is what the three largest API providers charge per 1M tokens as of Q4 2026, alongside the calculated real rupee cost for an Indian cardholder (factoring in 18% IGST and typical 3.5% card forex fees):
 
-| Model | Input ($ per 1M tokens) | Output ($ per 1M tokens) |
-|---|---|---|
-| OpenAI GPT-5.6 Sol (flagship) | $2.50 | $15.00 |
-| OpenAI GPT-5.4 Nano (smallest) | $0.10 | $0.625 |
-| Google Gemini 3.1 Pro (up to 200k context) | $2.00 | $12.00 |
-| Google Gemini 2.5 Flash-Lite | $0.10 | $0.40 |
-| Anthropic Claude Opus 4.8 | $5.00 | $25.00 |
-| Anthropic Claude Haiku 4.5 | $1.00 | $5.00 |
+| Model | Input ($ per 1M tokens) | Output ($ per 1M tokens) | India Est. (INR / 1M Out incl. 18% IGST + Forex) |
+|---|---|---|---|
+| OpenAI GPT-5.6 Sol (flagship) | $2.50 | $15.00 | ~₹1,760 |
+| OpenAI GPT-5.4 Nano (smallest) | $0.10 | $0.625 | ~₹73 |
+| Google Gemini 3.1 Pro (up to 200k context) | $2.00 | $12.00 | ~₹1,408 |
+| Google Gemini 2.5 Flash-Lite | $0.10 | $0.40 | ~₹47 |
+| Anthropic Claude Opus 4.8 | $5.00 | $25.00 | ~₹2,933 |
+| Anthropic Claude Haiku 4.5 | $1.00 | $5.00 | ~₹587 |
 
 Sourced from [OpenAI's pricing page](https://developers.openai.com/api/docs/pricing), [Google's Gemini API pricing page](https://ai.google.dev/gemini-api/docs/pricing), and [Anthropic's Claude pricing page](https://platform.claude.com/docs/en/about-claude/pricing). Anthropic is also running introductory pricing of $2 input and $10 output per 1M tokens on its newest Sonnet 5 model through the end of August 2026, reverting to a standard $3/$15 afterward — a reminder that even official rate cards carry expiry dates.
 
