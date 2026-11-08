@@ -22,6 +22,7 @@ import shutil
 import subprocess
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -38,6 +39,11 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 TOKEN_CACHE_PATH = Path.home() / ".ttd" / "token_cache.json"
 VERTEX_CONFIG_PATH = Path.home() / ".ttd" / "vertex.json"
 TOKEN_TTL_S = 40 * 60  # ~40 min; bridge.py uses 45 min (2700s), kept slightly tighter here
+
+_ADC_PATHS = [
+    Path(os.path.expandvars(r"%APPDATA%\gcloud\application_default_credentials.json")),
+    Path.home() / ".config" / "gcloud" / "application_default_credentials.json",
+]
 
 RETRY_STATUSES = {408, 429, 500, 502, 503, 504, 529}
 MAX_ATTEMPTS = 3
@@ -77,6 +83,17 @@ def _resolve_project() -> str:
                 return data["project"]
         except Exception:
             pass
+    env_proj = os.environ.get("GOOGLE_CLOUD_PROJECT") or os.environ.get("CLOUDSDK_CORE_PROJECT")
+    if env_proj:
+        return env_proj
+    for p in _ADC_PATHS:
+        if p.exists():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if data.get("quota_project_id"):
+                    return data["quota_project_id"]
+            except Exception:
+                pass
     raise RuntimeError(
         "no GCP project configured: set env TTD_GCP_PROJECT, or write "
         f'{{"project": "..."}} to {VERTEX_CONFIG_PATH}')
@@ -101,6 +118,32 @@ def _thinking_config(thinking) -> dict:
     return {"thinkingLevel": t.lower()}
 
 
+def _adc_direct_token() -> str | None:
+    for p in _ADC_PATHS:
+        if p.exists():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if data.get("type") == "authorized_user" and data.get("refresh_token"):
+                    form = urllib.parse.urlencode({
+                        "client_id": data["client_id"],
+                        "client_secret": data["client_secret"],
+                        "refresh_token": data["refresh_token"],
+                        "grant_type": "refresh_token",
+                    }).encode()
+                    req = urllib.request.Request(
+                        "https://oauth2.googleapis.com/token",
+                        data=form,
+                        headers={"Content-Type": "application/x-www-form-urlencoded"},
+                    )
+                    with urllib.request.urlopen(req, timeout=30) as resp:
+                        res = json.loads(resp.read().decode("utf-8"))
+                        if res.get("access_token"):
+                            return res["access_token"]
+            except Exception:
+                continue
+    return None
+
+
 def _gcloud_token(force: bool = False) -> str:
     if not force and TOKEN_CACHE_PATH.exists():
         try:
@@ -109,18 +152,22 @@ def _gcloud_token(force: bool = False) -> str:
                 return cache["token"]
         except Exception:
             pass
-    exe = shutil.which("gcloud") or shutil.which("gcloud.cmd")
-    if not exe:
-        raise RuntimeError("gcloud CLI not found on PATH (needed for the ADC access token)")
-    p = subprocess.run(
-        [exe, "auth", "application-default", "print-access-token"],
-        capture_output=True, text=True, timeout=45,
-    )
-    if p.returncode != 0 or not p.stdout.strip():
-        raise RuntimeError(
-            "could not obtain an ADC access token — run "
-            "`gcloud auth application-default login`")
-    token = p.stdout.strip().splitlines()[-1].strip()
+
+    token = _adc_direct_token()
+    if not token:
+        exe = shutil.which("gcloud") or shutil.which("gcloud.cmd")
+        if not exe:
+            raise RuntimeError("gcloud CLI not found on PATH (needed for the ADC access token)")
+        p = subprocess.run(
+            [exe, "auth", "application-default", "print-access-token"],
+            capture_output=True, text=True, timeout=45,
+        )
+        if p.returncode != 0 or not p.stdout.strip():
+            raise RuntimeError(
+                "could not obtain an ADC access token — run "
+                "`gcloud auth application-default login`")
+        token = p.stdout.strip().splitlines()[-1].strip()
+
     try:
         TOKEN_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
         TOKEN_CACHE_PATH.write_text(json.dumps({"token": token, "ts": time.time()}), encoding="utf-8")
