@@ -465,10 +465,10 @@ class GateRunner:
             mark = "PASS" if r["ok"] else ("WARN" if r["level"] == SOFT else "FAIL")
             line = f"[{mark}] {r['gate']}"
             if not r["ok"] and r["detail"]:
-                line += f" — {r['detail']}"
+                line += f" - {r['detail']}"
             print(line)
         print(f"\n{'ALL HARD GATES PASSED' if rep['passed'] else 'HARD GATE FAILURES: ' + str(len(hard_fail))}"
-              f" ({len(soft_fail)} soft warnings) → {path}")
+              f" ({len(soft_fail)} soft warnings) -> {path}")
         return rep
 
 

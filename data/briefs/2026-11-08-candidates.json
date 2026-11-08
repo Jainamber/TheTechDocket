@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-08",
+  "candidates": [
+    {
+      "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9546404332511805,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 273,
+          "comments": 244,
+          "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/"
+        }
+      ],
+      "score": 0.6484,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 664,
+          "comments": 371,
+          "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+        },
+        {
+          "source": "hn",
+          "points": 665,
+          "comments": 371,
+          "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+        }
+      ],
+      "score": 0.64,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 430,
+          "comments": 255,
+          "url": "https://hunch.net/?p=13764006"
+        },
+        {
+          "source": "hn",
+          "points": 430,
+          "comments": 255,
+          "url": "https://hunch.net/?p=13764006"
+        }
+      ],
+      "score": 0.64,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 418,
+          "comments": 274,
+          "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you"
+        }
+      ],
+      "score": 0.64,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9413522123307682,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 361,
+          "comments": 251,
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        }
+      ],
+      "score": 0.6224,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.915058874561517,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 312,
+          "comments": 614,
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout"
+        }
+      ],
+      "score": 0.6145,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9975744256494079,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 255,
+          "comments": 72,
+          "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
+        },
+        {
+          "source": "hn",
+          "points": 255,
+          "comments": 72,
+          "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
+        }
+      ],
+      "score": 0.6073,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9355027434943962,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 209,
+          "comments": 46,
+          "url": "https://github.com/hedgerow-dev/coldframe"
+        }
+      ],
+      "score": 0.6047,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.6918883407343945,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 101,
+          "comments": 39,
+          "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+        }
+      ],
+      "score": 0.5976,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI is dramatically accelerating AI research",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9606263073889356,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 363,
+          "comments": 346,
+          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai"
+        }
+      ],
+      "score": 0.5962,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Goodbye Claude, Hello Pi",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8143962761811817,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 66,
+          "comments": 33,
+          "url": "https://caleb.software/posts/claude-to-pi.html"
+        }
+      ],
+      "score": 0.5843,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8973934884303211,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 281,
+          "comments": 133,
+          "url": "https://pwn.ai/blog/firecracker-escape"
+        }
+      ],
+      "score": 0.5772,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 0.9546404332511805,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 273,
+        "comments": 244,
+        "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/"
+      }
+    ],
+    "score": 0.6484,
+    "topic_fit": 0.86,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

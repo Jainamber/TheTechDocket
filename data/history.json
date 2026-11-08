@@ -737,6 +737,24 @@
       },
       "gate_report": "data/gate-reports/2026-08-20-openai-slows-ai-training.json",
       "url": "https://thetechdocket.com/articles/openai-slows-ai-training/"
+    },
+    {
+      "date": "2026-11-08",
+      "slug": "discord-kills-electron-rust-windows-11",
+      "title": "Discord Kills Electron: Inside the 70% Leaner Rust Rebuild",
+      "keyword": "discord rust client windows 11",
+      "hub": "ai-tools",
+      "published_at": "2026-11-08T12:16:19.059649+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-08T12:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-08-discord-kills-electron-rust-windows-11.json",
+      "url": "https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/"
     }
   ]
 }
