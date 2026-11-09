@@ -404,8 +404,8 @@ def run_catchup(force: bool = False, chosen_sub: str | None = None) -> dict | No
     unshared = [a for a in recent if a.get("slug") not in shared_slugs]
 
     if not unshared and not force:
-        print(f"[✓] All recent articles ({len(recent)}) have already been shared.")
-        print("    To re-launch today's distribution tabs anyway, pass --force.")
+        print(f"[OK] All recent articles ({len(recent)}) have already been shared.")
+        print("     To re-launch today's distribution tabs anyway, pass --force.")
         return None
 
     target = unshared[-1] if unshared else hist[-1]
