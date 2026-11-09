@@ -11,13 +11,23 @@ echo.
 
 cd /d "C:\NewStartsNov\TheTechDocket"
 
+if "%1"=="--report" (
+    echo [*] Opening visual analytics and North Star report...
+    .venv\Scripts\python.exe -m engine.run report --open
+    goto end
+)
+
 echo [*] Checking cloud sync and launching distribution flow...
 .venv\Scripts\python.exe -m engine.run share --catchup %*
 
 echo.
 echo ===================================================================
-echo [Tip] To re-launch today's tabs at any time, run:
+echo [Tip] To open your visual analytics dashboard at any time, run:
+echo       Share-Now.bat --report
+echo [Tip] To re-launch today's distribution tabs, run:
 echo       Share-Now.bat --force
 echo ===================================================================
+
+:end
 echo.
 pause

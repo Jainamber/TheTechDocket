@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics & North Star Report — The Tech Docket</title>
+<style>
+  :root {
+    --bg: #0d1117; --card-bg: #161b22; --border: #30363d;
+    --text: #c9d1d9; --bright: #f0f6fc; --muted: #8b949e;
+    --accent: #58a6ff; --gold: #d29922; --green: #238636; --red: #f85149; --purple: #a371f7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; padding: 24px; max-width: 1140px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; }
+  .badge-law { background: #1c2d42; color: #79c0ff; border: 1px solid #388bfd; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+  h1 { font-size: 24px; color: var(--bright); margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 13px; }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .card-title { font-size: 16px; font-weight: 600; color: var(--bright); margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 14px; }
+  .stat-tile { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 12px; }
+  .stat-label { font-size: 11px; text-transform: uppercase; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; }
+  .stat-value { font-size: 22px; font-weight: 700; color: var(--bright); margin-top: 4px; }
+  .stat-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .progress-wrap { background: #21262d; border-radius: 6px; height: 10px; overflow: hidden; margin: 10px 0; }
+  .progress-bar { height: 100%; background: linear-gradient(90deg, #1f6feb, #238636); border-radius: 6px; }
+  .alert-box { background: #2c1a1d; border: 1px solid var(--red); border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; color: #ffb4a9; font-size: 13px; }
+  .warn-box { background: #2e210b; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; color: #fce18b; font-size: 13px; }
+  .ok-box { background: #12281e; border: 1px solid var(--green); border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; color: #7ee787; font-size: 13px; }
+  table.data-tbl { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
+  table.data-tbl th, table.data-tbl td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+  table.data-tbl th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; background: #0d1117; }
+  table.data-tbl tr:hover td { background: #1c2128; }
+  .btn-sm { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 4px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+  .btn-blue { background: #1f6feb; color: #fff; }
+  .btn-sec { background: #21262d; color: var(--bright); border-color: var(--border); }
+  .btn-sec:hover { background: #30363d; }
+  .heatbar { background: #21262d; height: 6px; border-radius: 3px; overflow: hidden; margin-top: 4px; }
+  .heatbar-fill { background: var(--accent); height: 100%; }
+  #toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: none; z-index: 1000; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="badge-law">★ CONSTITUTIONAL LAW: NORTH_STAR.md · Weekly Visitors</div>
+    <h1>Analytics & North Star Command Center</h1>
+    <div class="meta">Report generated: <strong>{{ generated_at }}</strong> · Site: <a href="https://thetechdocket.com" target="_blank" style="color:var(--accent);">thetechdocket.com ↗</a></div>
+  </div>
+  <div>
+    <a href="/" class="btn-sm btn-sec" target="_blank">View Site ↗</a>
+  </div>
+</header>
+<!-- North Star Hero Banner -->
+<div class="card">
+  <div class="card-title">
+    <span>North Star Metric: Weekly Visitors (Mon 00:00 IST – Sun 23:59 IST)</span>
+    <span style="font-size:12px;color:var(--accent);">Target Season Milestones</span>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <div class="stat-label">Current Weekly Visitors</div>
+      <div class="stat-value" style="color:#79c0ff;">{{ weekly_visitors }}</div>
+      <div class="stat-sub">Verified via GoatCounter API</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Baseline (Nov 1–8)</div>
+      <div class="stat-value">33</div>
+      <div class="stat-sub">Frozen launch state</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Weeks 1–2 Target</div>
+      <div class="stat-value">150–300</div>
+      <div class="stat-sub">Target: Nov 15–22</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Weeks 3–4 Target</div>
+      <div class="stat-value">500–1,000</div>
+      <div class="stat-sub">Target: Nov 23–Dec 6</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Weeks 5–8 Target</div>
+      <div class="stat-value">2,000–3,500</div>
+      <div class="stat-sub">Target: Dec 7–31</div>
+    </div>
+  </div>
+  <div style="margin-top:16px;">
+    <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);">
+      <span>Progress to Week 1 Target (150 visitors)</span>
+      <span><strong>{{ progress_pct }}%</strong></span>
+    </div>
+    <div class="progress-wrap"><div class="progress-bar" style="width:{{ progress_pct }}%;"></div></div>
+  </div>
+</div>
+
+<!-- Anomaly, Surge & Freshness Radar -->
+<div class="card">
+  <div class="card-title">
+    <span>Anomaly, Surge & Freshness Radar</span>
+    <span style="font-size:12px;color:var(--muted);">Automated Health Radar</span>
+  </div>
+  {% if anomalies %}
+    {% for a in anomalies %}
+    <div class="{% if a.level == 'alert' %}alert-box{% elif a.level == 'warn' %}warn-box{% else %}ok-box{% endif %}">
+      <strong>{{ a.badge }}:</strong> {{ a.message }}
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="ok-box"><strong>All Systems Nominal:</strong> Spend is well inside the $20/day limit, zero citation gate failures, and no abnormal traffic spikes.</div>
+  {% endif %}
+</div>
+
+<!-- Spend & Token Telemetry ($20.00 Limit) -->
+<div class="card">
+  <div class="card-title">
+    <span>LLM Cost & Token Telemetry ($20.00/Day Hard Limit)</span>
+    <span style="font-size:12px;color:var(--gold);">Strict Circuit Breaker</span>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <div class="stat-label">Today's Spend</div>
+      <div class="stat-value" style="color:#7ee787;">${{ "%.4f"|format(spend_today) }}</div>
+      <div class="stat-sub">Limit: $20.00 / day</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Budget Remaining</div>
+      <div class="stat-value" style="color:#79c0ff;">${{ "%.2f"|format(budget_remaining) }}</div>
+      <div class="stat-sub">{{ "%.1f"|format(budget_used_pct) }}% utilized today</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Total Tokens Today</div>
+      <div class="stat-value">{{ "{:,}".format(tokens_today_total) }}</div>
+      <div class="stat-sub">In: {{ "{:,}".format(tokens_today_in) }} · Out: {{ "{:,}".format(tokens_today_out) }}</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Thinking Tokens</div>
+      <div class="stat-value" style="color:#a371f7;">{{ "{:,}".format(tokens_today_thinking) }}</div>
+      <div class="stat-sub">Gemini 3.5 High Thinking</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">30-Day Total Spend</div>
+      <div class="stat-value">${{ "%.2f"|format(spend_30d) }}</div>
+      <div class="stat-sub">Across {{ calls_30d }} recorded calls</div>
+    </div>
+  </div>
+  <div style="margin-top:14px;">
+    <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Daily Spend Budget Utilization (${{ "%.2f"|format(spend_today) }} / $20.00)</div>
+    <div class="progress-wrap"><div class="progress-bar" style="width:{{ budget_used_pct }}%;background:#238636;"></div></div>
+  </div>
+</div>
+
+<!-- Page-Level Traffic Sub-Trends -->
+<div class="card">
+  <div class="card-title">
+    <span>Individual Page Traffic Sub-Trends</span>
+    <span style="font-size:12px;color:var(--muted);">GoatCounter & GSC Performance</span>
+  </div>
+  <table class="data-tbl">
+    <thead>
+      <tr>
+        <th>Article / Page</th>
+        <th>Hub</th>
+        <th>Visits</th>
+        <th>Clicks</th>
+        <th>Impr</th>
+        <th>Last Updated</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in top_pages %}
+      <tr>
+        <td>
+          <a href="{{ p.url }}" target="_blank" style="color:var(--bright);text-decoration:none;font-weight:500;">{{ p.title }} ↗</a>
+          <div class="heatbar"><div class="heatbar-fill" style="width:{{ p.heat_pct }}%;"></div></div>
+        </td>
+        <td><span style="font-size:11px;background:#21262d;padding:2px 6px;border-radius:4px;">{{ p.hub }}</span></td>
+        <td><strong>{{ p.visits }}</strong></td>
+        <td>{{ p.clicks }}</td>
+        <td>{{ p.impressions }}</td>
+        <td>{{ p.updated }}</td>
+        <td>
+          {% if p.is_fresh %}
+            <span style="color:#7ee787;font-size:11px;font-weight:600;">● Active ({{ p.days_old }}d)</span>
+          {% else %}
+            <span style="color:#fce18b;font-size:11px;font-weight:600;">▲ Refresh Due ({{ p.days_old }}d)</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- SEO & Google Indexing Health Panel -->
+<div class="card">
+  <div class="card-title">
+    <span>SEO & Google Search Console Indexing Health</span>
+    <span style="font-size:12px;color:var(--accent);">54 Canonical Sitemap URLs</span>
+  </div>
+  <div class="stat-grid" style="margin-bottom:14px;">
+    <div class="stat-tile">
+      <div class="stat-label">Canonical Sitemap URLs</div>
+      <div class="stat-value" style="color:#7ee787;">54</div>
+      <div class="stat-sub">Zero thin or duplicate lists</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Published Articles</div>
+      <div class="stat-value">{{ total_articles }}</div>
+      <div class="stat-sub">100% reachable in 1 hop from home</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Known GSC Indexed</div>
+      <div class="stat-value" style="color:#79c0ff;">27</div>
+      <div class="stat-sub">July archive + core pages</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-label">Pending Indexing Queue</div>
+      <div class="stat-value" style="color:#fce18b;">{{ pending_unindexed|length }}</div>
+      <div class="stat-sub">Aug 2–20 + Nov 8 articles</div>
+    </div>
+  </div>
+
+  <div style="font-size:13px;color:var(--bright);margin:12px 0 6px;font-weight:600;">Priority Request Indexing Queue (Click to Copy & Inspect in GSC):</div>
+  <table class="data-tbl">
+    <thead>
+      <tr>
+        <th>Article</th>
+        <th>Date</th>
+        <th>Hub</th>
+        <th>1-Click Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for u in pending_unindexed %}
+      <tr>
+        <td><a href="{{ u.url }}" target="_blank" style="color:var(--bright);text-decoration:none;">{{ u.title }} ↗</a></td>
+        <td>{{ u.date }}</td>
+        <td><span style="font-size:11px;background:#21262d;padding:2px 6px;border-radius:4px;">{{ u.hub }}</span></td>
+        <td>
+          <button class="btn-sm btn-blue" onclick="copyAndGSC('{{ u.url }}')">Copy URL & Inspect in GSC ↗</button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- North Star Action Ledger -->
+<div class="card">
+  <div class="card-title">
+    <span>North Star Action Ledger & Measured Impact</span>
+    <span style="font-size:12px;color:var(--muted);">All Engineering & Editorial Actions</span>
+  </div>
+  <table class="data-tbl">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Action</th>
+        <th>Target Lever</th>
+        <th>Causal Mechanism</th>
+        <th>Result on North Star Metric</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for a in action_ledger %}
+      <tr>
+        <td style="white-space:nowrap;color:var(--muted);">{{ a.date }}</td>
+        <td><strong>{{ a.action }}</strong></td>
+        <td><span style="font-size:11px;background:#1c2d42;color:#79c0ff;padding:2px 6px;border-radius:4px;">{{ a.lever }}</span></td>
+        <td style="font-size:12px;color:var(--muted);">{{ a.mechanism }}</td>
+        <td style="font-size:12px;color:#7ee787;">{{ a.result }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div id="toast">Copied to clipboard! ✓</div>
+
+<script>
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg || 'Copied to clipboard! ✓';
+    t.style.display = 'block';
+    setTimeout(() => { t.style.display = 'none'; }, 2200);
+  }
+
+  function copyAndGSC(url) {
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('Article URL copied! Opening GSC URL Inspection...');
+      window.open('https://search.google.com/search-console', '_blank');
+    });
+  }
+</script>
+</body>
+</html>

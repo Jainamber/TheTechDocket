@@ -490,12 +490,17 @@ each with original analysis, is a deliberate quality choice.
 """
 
 
-def _author_md(cfg) -> str:
+def _author_md(cfg, arts: list[dict] | None = None) -> str:
     a = cfg["author"]
     links = "\n".join(f"- <{u}>" for u in a.get("sameAs", []))
     photo = (a.get("photo") or "").strip()
     img = (f'![{a.get("photo_alt") or a["name"]}]({photo})\n\n'
            if photo else "")
+    art_list = ""
+    if arts:
+        art_items = "\n".join(f"- [{art['title']}](/articles/{art['slug']}/) ({art.get('date', '')})"
+                              for art in arts)
+        art_list = f"\n\n## All Published Articles ({len(arts)})\n\n{art_items}"
     return f"""
 {img}{a['bio']}
 
@@ -504,10 +509,7 @@ All articles on {cfg['site']['name']} are published under
 [editorial policy](/editorial-policy/) for exactly how each piece is produced.
 
 {('## Elsewhere' + chr(10) + links) if links else ''}
-
-## Latest articles
-
-See [all articles](/sitemap/).
+{art_list}
 """
 
 
@@ -519,27 +521,20 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
         lastmod = str(a.get("updated") or a["date"])
         urls.append((abs_url(cfg, f"articles/{a['slug']}/"), lastmod))
     active = {a.get("hub") for a in arts}
+    # Topic hubs get lastmod of the newest article in that hub
     for hub in cfg["content"]["hubs"]:
-        if hub in active:  # empty hubs stay out of the sitemap until filled
-            urls.append((abs_url(cfg, f"topics/{hub}/"), None))
-    # dated docket pages are the canonical daily-shorts units
+        if hub in active:
+            hub_dates = [str(a.get("updated") or a["date"]) for a in arts if a.get("hub") == hub]
+            hub_lastmod = max(hub_dates) if hub_dates else now_ist().date().isoformat()
+            urls.append((abs_url(cfg, f"topics/{hub}/"), hub_lastmod))
+    # Emit only active Today's Docket unit (dated dockets stay noindexed archives)
     if (cfg.get("docket") or {}).get("enabled", True):
-        for d in all_dockets():
-            urls.append((abs_url(cfg, f"docket/{d['date']}/"), d["date"]))
-    # Deck pages (browse archive) — lastmod rides the newest docket
-    if ((cfg.get("deck") or {}).get("enabled")
-            and (cfg.get("docket") or {}).get("enabled", True)):
         dks = all_dockets()
         if dks:
-            urls.append((abs_url(cfg, "deck/"), dks[0]["date"]))
-            in_dockets = {str(it.get("hub") or "")
-                          for d in dks for it in d.get("items", [])}
-            for hub in cfg["content"]["hubs"]:
-                if hub in in_dockets:
-                    urls.append((abs_url(cfg, f"deck/{hub}/"), dks[0]["date"]))
+            urls.append((abs_url(cfg, "docket/"), dks[0]["date"]))
     for p in ("about/", "editorial-policy/", "sitemap/",
               f"authors/{cfg['author']['slug']}/"):
-        urls.append((abs_url(cfg, p), None))
+        urls.append((abs_url(cfg, p), now_ist().date().isoformat()))
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lastmod in urls:
@@ -723,6 +718,8 @@ def build_site() -> Path:
                 og_image_alt=f"Today's Docket — {ctx_d['date_human']}",
                 current_hub="_docket", dk=ctx_d, prev=prev,
                 canonical=abs_url(cfg, f"docket/{d['date']}/"))
+            if d["date"] != latest_date:
+                page_kw["robots_meta"] = "noindex, follow"
             _write(dk_dir_out / "index.html",
                    dk_tpl.render(**_common(cfg, **page_kw)))
             if d["date"] == latest_date:
@@ -775,6 +772,7 @@ def build_site() -> Path:
                     "source and its day's docket."),
                 canonical=abs_url(cfg, path), og_image=deck_og,
                 og_image_alt=heading, current_hub="_deck",
+                robots_meta="noindex, follow",
                 heading=heading, intro=deck_intro, cards=cards[:cap],
                 hub_filter=hub, deck_hubs=deck_hubs, total=len(cards))))
 
@@ -796,7 +794,7 @@ def build_site() -> Path:
         og_image_alt=cfg["site"]["name"],
         feature=summaries[0] if summaries else None,
         docket=docket_strip,
-        articles=summaries[1:13] if len(summaries) > 1 else [])))
+        articles=summaries[1:] if len(summaries) > 1 else [])))
 
     # Newdesign — PARALLEL design preview (/newdesign/, owner experiment
     # 2026-08-01). Standalone template (shares nothing with base.html),
@@ -863,7 +861,7 @@ def build_site() -> Path:
                canonical=abs_url(cfg, f"authors/{author['slug']}/"),
                og_image=home_img, og_image_alt=author["name"],
                heading=author["name"],
-               body_html=Markup(render_markdown(cfg, _author_md(cfg))),
+               body_html=Markup(render_markdown(cfg, _author_md(cfg, arts))),
                extra_jsonld=Markup(json.dumps(profile_jsonld, ensure_ascii=False)))))
 
     # HTML sitemap (orphan insurance)

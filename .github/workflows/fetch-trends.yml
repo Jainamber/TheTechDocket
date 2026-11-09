@@ -28,7 +28,9 @@ jobs:
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
         run: python -m engine.run feedback || true
-      - name: Commit inbox + insights
+      - name: Generate daily visual analytics report
+        run: python -m engine.run report || true
+      - name: Commit inbox + insights + report
         run: |
           git config user.name "content-engine"
           git config user.email "engine@users.noreply.github.com"

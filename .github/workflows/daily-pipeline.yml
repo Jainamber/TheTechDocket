@@ -80,6 +80,9 @@ jobs:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
         run: python -m engine.run feedback || true
 
+      - name: Generate daily visual analytics report
+        run: python -m engine.run report || true
+
       - name: Run AI writer pipeline (staging)
         if: steps.mode.outputs.mode != 'live'
         env:

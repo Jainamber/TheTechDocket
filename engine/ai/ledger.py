@@ -29,6 +29,9 @@ FIELDS = [
 # $0, so an unpriced model can never be used to silently blow the budget.
 UNKNOWN_COST_PLACEHOLDER_USD = 0.05
 
+# Hard circuit breaker ceiling: daily spend can NEVER exceed $20.00 USD
+HARD_MAX_DAILY_BUDGET_USD = 20.00
+
 
 class BudgetExceeded(RuntimeError):
     """Raised by Ledger.precheck() when the daily budget or a per-run cap
@@ -117,13 +120,13 @@ class Ledger:
         The daily USD budget check has no such scoping and always applies.
         """
         today = datetime.now(IST).strftime("%Y-%m-%d")
-        budget = self.config.get("daily_budget_usd")
-        if budget is not None:
-            spent = self.day_total(today)
-            if spent >= float(budget):
-                raise BudgetExceeded(
-                    f"daily budget ${budget} reached before step '{step}' "
-                    f"(spent ${spent} on {today})")
+        cfg_budget = self.config.get("daily_budget_usd")
+        budget = min(float(cfg_budget), HARD_MAX_DAILY_BUDGET_USD) if cfg_budget is not None else HARD_MAX_DAILY_BUDGET_USD
+        spent = self.day_total(today)
+        if spent >= float(budget):
+            raise BudgetExceeded(
+                f"daily budget ${budget:.2f} reached before step '{step}' "
+                f"(spent ${spent:.2f} on {today})")
         if uses_grounding:
             max_q = self.config.get("max_grounded_queries_per_run")
             if max_q is not None and self._grounded_queries_this_run >= int(max_q):

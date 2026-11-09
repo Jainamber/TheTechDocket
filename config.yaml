@@ -302,7 +302,7 @@ llm:
   model_research: gemini-3.7-flash
   model_research_fallbacks: [gemini-3.5-flash, gemini-2.5-flash]
   model_fast: gemini-2.5-flash-lite
-  daily_budget_usd: 2.00
+  daily_budget_usd: 20.00
   max_grounded_queries_per_run: 12
   max_url_fetches_per_run: 25
   # 1 -> 2: multi-defect drafts (citation fidelity + a compliance gate,

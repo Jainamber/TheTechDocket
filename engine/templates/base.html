@@ -16,7 +16,7 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ meta_description }}">
 <link rel="canonical" href="{{ canonical }}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="{{ robots_meta | default('index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1') }}">
 {{ analytics_head }}
 <link rel="icon" href="{{ base_path }}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{{ base_path }}assets/favicon-48.png" sizes="48x48">

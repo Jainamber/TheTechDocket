@@ -55,6 +55,8 @@ def main(argv=None):
     sh.add_argument("--force", action="store_true", help="Force re-launch even if already marked shared")
     sh.add_argument("--hn-warmup", action="store_true", help="Fetch live rising HN threads for karma building")
     sh.add_argument("--reddit-post", action="store_true", help="Post directly to Reddit via API with auto-attached flair")
+    rp = sub.add_parser("report", help="Generate visual HTML analytics and North Star report")
+    rp.add_argument("--open", action="store_true", help="Open analytics report in default browser")
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -166,6 +168,11 @@ def main(argv=None):
                 print(f"Reddit post live: {api_res['url']}")
             else:
                 print(f"Reddit API note: {api_res['error']}")
+
+    elif args.cmd == "report":
+        from .analytics_report import generate_analytics_report
+        res = generate_analytics_report(open_browser=args.open)
+        print(f"analytics report written: {res['latest_path']} (Spend today: ${res['spend_today']:.4f} / $20.00 limit)")
 
     elif args.cmd == "status":
         cfg = load_config()
