@@ -8,62 +8,124 @@
   :root {
     --bg: #0d1117; --card-bg: #161b22; --border: #30363d;
     --text: #c9d1d9; --bright: #f0f6fc; --muted: #8b949e;
-    --accent: #58a6ff; --gold: #d29922; --green: #238636;
+    --accent: #58a6ff; --gold: #d29922; --green: #238636; --bsky: #1185fe;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; padding: 24px; max-width: 1040px; margin: 0 auto; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; padding: 24px; max-width: 1080px; margin: 0 auto; }
   header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
   .north-star { display: inline-flex; align-items: center; gap: 6px; background: #1c2d42; color: #79c0ff; border: 1px solid #388bfd; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
   h1 { font-size: 22px; color: var(--bright); margin-bottom: 6px; }
   .meta { color: var(--muted); font-size: 14px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
   .meta a { color: var(--accent); text-decoration: none; }
-  .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
   .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
-  .card-title { font-size: 18px; font-weight: 600; color: var(--bright); margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+  .card-title { font-size: 18px; font-weight: 600; color: var(--bright); margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+  .card-desc { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
   .flair-callout { background: #2e210b; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; margin: 12px 0; color: #fae4a8; font-size: 14px; }
   .flair-tag { background: var(--gold); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; }
   .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
-  .btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; padding: 9px 18px; border-radius: 6px; text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: all 0.15s ease; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: all 0.15s ease; }
   .btn-reddit { background: #ff4500; color: #fff; }
   .btn-reddit:hover { background: #e03d00; }
   .btn-x { background: #21262d; color: #fff; border-color: #484f58; }
   .btn-x:hover { background: #30363d; }
+  .btn-bsky { background: var(--bsky); color: #fff; }
+  .btn-bsky:hover { background: #0a74e2; }
   .btn-hn { background: #ff6600; color: #fff; }
   .btn-hn:hover { background: #e65c00; }
+  .btn-devto { background: #0a0a0a; color: #f5f5f5; border: 1px solid #404040; }
+  .btn-devto:hover { background: #1c1c1c; }
+  .btn-li { background: #0a66c2; color: #fff; }
+  .btn-li:hover { background: #08529c; }
   .btn-gsc { background: #1f6feb; color: #fff; }
   .btn-gsc:hover { background: #388bfd; }
   .btn-sec { background: #21262d; color: var(--bright); border-color: var(--border); }
   .btn-sec:hover { background: #30363d; }
-  .sub-pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
-  .sub-pill { background: #21262d; border: 1px solid var(--border); color: var(--text); padding: 5px 12px; border-radius: 14px; font-size: 13px; cursor: pointer; }
-  .sub-pill.active { background: #1f6feb; color: #fff; border-color: #388bfd; font-weight: 600; }
-  .preview-box { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 12px; font-size: 13px; color: #8b949e; max-height: 140px; overflow-y: auto; white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, monospace; margin-top: 10px; }
-  .warmup-item { margin: 8px 0; padding: 8px 12px; background: #0d1117; border: 1px solid var(--border); border-radius: 6px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
-  .warmup-item a { color: var(--accent); text-decoration: none; }
-  .warmup-meta { color: var(--muted); font-size: 12px; }
-  #toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: none; z-index: 1000; }
-</style>
-</head>
-<body>
-<header>
-  <div class="north-star">★ NORTH STAR: Weekly Visitors · Guided Browser Flow</div>
-  <h1>{{ title }}</h1>
-  <div class="meta">
-    <span>Date: <strong>{{ date }}</strong></span>
-    <span>Hub: <strong>{{ hub }}</strong></span>
-    <span>Canonical: <a href="{{ canonical_url }}" target="_blank">{{ canonical_url }} ↗</a></span>
-  </div>
-</header>
-<div class="grid">
-  <!-- Reddit Card -->
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  .pill { background: #21262d; border: 1px solid var(--border); color: var(--text); padding: 4px 10px; border-radius: 12px; font-size: 12px; cursor: pointer; }
+  .pill.active { background: #1f6feb; color: #fff; border-color: #388bfd; font-weight: 600; }
+  .preview-box { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 12px; font-size: 13px; color: #8b949e; max-height: 140px; overflow-y: auto; white-space: pre-wrap; font-family: ui-monospace, monospace; margin-top: 10px; }
+  .warmup-block { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 12px; }
+  .warmup-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .warmup-title { font-weight: 600; font-size: 14px; color: var(--accent); text-decoration: none; }
+  .warmup-title:hover { text-decoration: underline; }
+  <!-- Card 1: Hacker News Warmup -->
   <div class="card">
     <div class="card-title">
-      <span>1. Reddit Community Distribution</span>
-      <span style="font-size:12px;color:var(--muted);">Authentic Human Voice + Benchmarks</span>
+      <span>1. Hacker News — Direct-Action Karma Building</span>
+      <span style="font-size:12px;color:var(--muted);">Account: Amber_Jain</span>
     </div>
-    <div class="sub-pills">
+    <div class="card-desc">
+      To clear HN's new-account filter (<code>fnop=toonew</code>), post 1–2 thoughtful comments below. Each thread has 3 ready-to-paste dev takes.
+    </div>
+    <div class="btn-row">
+      <a href="{{ hn_url }}" target="_blank" class="btn btn-hn">Submit Article to HN ↗</a>
+      <a href="https://news.ycombinator.com/user?id=Amber_Jain" target="_blank" class="btn btn-sec">Amber_Jain Profile ↗</a>
+    </div>
+
+    {% for t in hn_threads %}
+    <div class="warmup-block" id="hn-block-{{ loop.index0 }}">
+      <div class="warmup-head">
+        <a href="https://news.ycombinator.com/item?id={{ t.objectID }}" target="_blank" class="warmup-title">{{ t.title }} ↗</a>
+        <span class="warmup-stat">{{ t.points }} pts · {{ t.num_comments }} comments</span>
+      </div>
+      <div class="pills">
+        <button class="pill active" onclick="setHnAngle({{ loop.index0 }}, 0)">Take 1: Systems</button>
+        <button class="pill" onclick="setHnAngle({{ loop.index0 }}, 1)">Take 2: Trade-off</button>
+        <button class="pill" onclick="setHnAngle({{ loop.index0 }}, 2)">Take 3: Question</button>
+      </div>
+      <div class="comment-box" id="hn-comment-{{ loop.index0 }}" contenteditable="true">
+        {{ t.comments[0] if t.comments else "ngl the memory footprint difference here is night and day." }}
+      </div>
+      <button class="btn btn-sec" onclick="copyAndOpen('hn-comment-{{ loop.index0 }}', 'https://news.ycombinator.com/item?id={{ t.objectID }}')">
+        Copy Comment & Open HN Thread ↗
+      </button>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Card 2: Reddit Karma Warmup -->
+  <div class="card">
+    <div class="card-title">
+      <span>2. Reddit Karma Warmup (No Account Age Gate!)</span>
+      <span style="font-size:12px;color:var(--gold);">Build Footprint First</span>
+    </div>
+    <div class="card-desc">
+      Reddit AutoModerator blocks top-level submissions for new accounts, but <strong>commenting on rising threads is 100% open</strong>. Comment on 2–3 threads below to earn the 20–50 karma needed.
+    </div>
+    {% for r in reddit_warmup %}
+    <div class="warmup-block" id="rw-block-{{ loop.index0 }}">
+      <div class="warmup-head">
+        <a href="{{ r.url }}" target="_blank" class="warmup-title">r/{{ r.sub }}: {{ r.theme }} ↗</a>
+        <span class="warmup-stat">Active Discussion</span>
+      </div>
+      <div class="pills">
+        <button class="pill active" onclick="setRwAngle({{ loop.index0 }}, 0)">Take 1: Observant</button>
+        <button class="pill" onclick="setRwAngle({{ loop.index0 }}, 1)">Take 2: Systems</button>
+        <button class="pill" onclick="setRwAngle({{ loop.index0 }}, 2)">Take 3: Question</button>
+      </div>
+      <div class="comment-box" id="rw-comment-{{ loop.index0 }}" contenteditable="true">
+        {{ r.comments[0] if r.comments else "ngl having an 8GB machine right now is pure survival mode." }}
+      </div>
+      <button class="btn btn-reddit" onclick="copyAndOpen('rw-comment-{{ loop.index0 }}', '{{ r.url }}')">
+        Copy Comment & Open r/{{ r.sub }} ↗
+      </button>
+    </div>
+    {% endfor %}
+  </div>
+
+  .warmup-stat { font-size: 12px; color: var(--muted); }
+  .comment-box { background: #161b22; border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; font-size: 13px; color: var(--bright); line-height: 1.4; margin: 8px 0; min-height: 54px; }
+  #toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: none; z-index: 1000; }
+  <!-- Card 3: Reddit Top-Level Post -->
+  <div class="card">
+    <div class="card-title">
+      <span>3. Reddit Top-Level Discussion (For ~20+ Karma Accounts)</span>
+      <span style="font-size:12px;color:var(--muted);">Full Article Discussion</span>
+    </div>
+    <div class="pills">
       {% for s in subreddits %}
-      <button class="sub-pill {% if s == primary_sub %}active{% endif %}" onclick="switchSub('{{ s }}')">r/{{ s }}</button>
+      <button class="pill {% if s == primary_sub %}active{% endif %}" onclick="switchSub('{{ s }}')">r/{{ s }}</button>
       {% endfor %}
     </div>
     <div class="flair-callout">
@@ -78,44 +140,58 @@
     <div class="preview-box" id="reddit-preview">{{ human_body }}</div>
   </div>
 
-  <!-- X / Twitter Card -->
+  <!-- Card 4: X / Twitter & Bluesky -->
   <div class="card">
     <div class="card-title">
-      <span>2. X / Twitter Distribution</span>
-      <span style="font-size:12px;color:var(--muted);">1-Click Tweet Hook</span>
+      <span>4. X (Twitter) & Bluesky — Observant & Humorous Takes</span>
+      <span style="font-size:12px;color:var(--muted);">3 Vibe Options</span>
+    </div>
+    <div class="pills">
+      <button class="pill active" onclick="setVibe('humor')">Dry Dev Humor</button>
+      <button class="pill" onclick="setVibe('stats')">Punchy Stats</button>
+      <button class="pill" onclick="setVibe('debate')">Community Debate</button>
     </div>
     <div class="btn-row">
-      <a href="{{ x_url }}" target="_blank" class="btn btn-x">Post to X (Pre-Filled) ↗</a>
-      <button onclick="copyXPost()" class="btn btn-sec">Copy Tweet Text</button>
+      <a id="x-btn" href="{{ x_url }}" target="_blank" class="btn btn-x">Post to X (Pre-Filled) ↗</a>
+      <a id="bsky-btn" href="https://bsky.app/intent/compose?text={{ x_text|urlencode }}" target="_blank" class="btn btn-bsky">Post to Bluesky ↗</a>
+      <button onclick="copyCurrentX()" class="btn btn-sec">Copy Post Text</button>
     </div>
-    <div class="preview-box">{{ x_text }}</div>
+    <div class="preview-box" id="x-preview">{{ x_text }}</div>
   </div>
 
-  <!-- Hacker News Card -->
+  <!-- Card 5: Dev.to Syndication -->
   <div class="card">
     <div class="card-title">
-      <span>3. Hacker News (news.ycombinator.com)</span>
-      <span style="font-size:12px;color:var(--muted);">Account: Amber_Jain</span>
+      <span>5. Dev.to (Instant DA 85 Canonical Reach — No Age Gate!)</span>
+      <span style="font-size:12px;color:var(--green);">Zero Block · 100% SEO Canonical</span>
+    </div>
+    <div class="card-desc">
+      Dev.to has no account-age restrictions and ranks on Google in minutes. Google awards 100% canonical SEO authority back to <code>thetechdocket.com</code>.
     </div>
     <div class="btn-row">
-      <a href="{{ hn_url }}" target="_blank" class="btn btn-hn">Submit Link to Hacker News ↗</a>
-      <a href="https://news.ycombinator.com/user?id=Amber_Jain" target="_blank" class="btn btn-sec">Amber_Jain Profile ↗</a>
+      <button onclick="copyDevtoAndOpen()" class="btn btn-devto">Copy Full Article Markdown & Open dev.to/new ↗</button>
+      <button onclick="copyDevtoMarkdown()" class="btn btn-sec">Copy Markdown Only</button>
     </div>
-    <div style="font-size:13px;margin:8px 0;color:var(--muted);">
-      <em>Tip: If clearing <code>fnop=toonew</code>, post a thoughtful comment on 1–2 active threads first:</em>
-    </div>
-    {% for t in hn_threads %}
-    <div class="warmup-item">
-      <a href="https://news.ycombinator.com/item?id={{ t.objectID }}" target="_blank">{{ t.title }} ↗</a>
-      <span class="warmup-meta">{{ t.points }} pts · {{ t.num_comments }} comments</span>
-    </div>
-    {% endfor %}
+    <div class="preview-box">{{ devto_md[:300] }}...</div>
   </div>
 
-  <!-- Google Search Console Card -->
+  <!-- Card 6: LinkedIn -->
   <div class="card">
     <div class="card-title">
-      <span>4. Google Search Console (Fast Indexing)</span>
+      <span>6. LinkedIn Engineering Post (India Tech & Executive Reach)</span>
+      <span style="font-size:12px;color:var(--accent);">High Link CTR</span>
+    </div>
+    <div class="btn-row">
+      <a href="{{ linkedin_url }}" target="_blank" class="btn btn-li">Open LinkedIn Post Composer ↗</a>
+      <button onclick="copyLinkedInText()" class="btn btn-sec">Copy LinkedIn Copy</button>
+    </div>
+    <div class="preview-box">{{ linkedin_text }}</div>
+  </div>
+
+  <!-- Card 7: Google Search Console -->
+  <div class="card">
+    <div class="card-title">
+      <span>7. Google Search Console (Instant Crawl Request)</span>
       <span style="font-size:12px;color:var(--muted);">URL Inspection</span>
     </div>
     <div class="btn-row">
@@ -123,24 +199,77 @@
       <button onclick="copyCanonicalUrl()" class="btn btn-sec">Copy Canonical URL</button>
     </div>
     <div style="font-size:13px;color:var(--muted);">
-      Paste article URL into GSC top search bar → Click <strong>"Request Indexing"</strong>.
-    </div>
-  </div>
-</div>
-
 <div id="toast">Copied to clipboard! ✓</div>
 
 <script>
   const subData = {{ sub_data_json|safe }};
   let currentSub = "{{ primary_sub }}";
   const redditBody = {{ human_body_json|safe }};
-  const xText = {{ x_text_json|safe }};
-  const canonicalUrl = "{{ canonical_url }}";
   const redditTitle = {{ human_title_json|safe }};
+  const canonicalUrl = "{{ canonical_url }}";
+  const xPosts = {{ x_posts_json|safe }};
+  let currentVibe = "humor";
+  const liText = {{ linkedin_text_json|safe }};
+  const devtoMd = {{ devto_md_json|safe }};
+  const hnThreads = {{ hn_threads|tojson|safe }};
+  const redditWarmup = {{ reddit_warmup|tojson|safe }};
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg || 'Copied to clipboard! ✓';
+    t.style.display = 'block';
+    setTimeout(() => { t.style.display = 'none'; }, 2200);
+  }
+
+  function copyAndOpen(elemId, url) {
+    const el = document.getElementById(elemId);
+    const text = el ? (el.innerText || el.textContent).trim() : '';
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('Comment copied to clipboard! Opening thread...');
+      window.open(url, '_blank');
+    });
+  }
+
+  function setHnAngle(threadIdx, angleIdx) {
+    const block = document.getElementById('hn-block-' + threadIdx);
+    if (!block) return;
+    block.querySelectorAll('.pills .pill').forEach((p, idx) => {
+      p.classList.toggle('active', idx === angleIdx);
+    });
+    const thread = hnThreads[threadIdx];
+    if (thread && thread.comments && thread.comments[angleIdx]) {
+      document.getElementById('hn-comment-' + threadIdx).textContent = thread.comments[angleIdx];
+    }
+  }
+
+  function setRwAngle(topicIdx, angleIdx) {
+    const block = document.getElementById('rw-block-' + topicIdx);
+    if (!block) return;
+    block.querySelectorAll('.pills .pill').forEach((p, idx) => {
+      p.classList.toggle('active', idx === angleIdx);
+    });
+    const topic = redditWarmup[topicIdx];
+    if (topic && topic.comments && topic.comments[angleIdx]) {
+      document.getElementById('rw-comment-' + topicIdx).textContent = topic.comments[angleIdx];
+    }
+  }
+
+  function setVibe(vibe) {
+    currentVibe = vibe;
+    document.querySelectorAll('#x-btn').forEach(() => {});
+    const card = document.getElementById('x-preview').closest('.card');
+    card.querySelectorAll('.pills .pill').forEach(p => {
+      p.classList.toggle('active', p.textContent.toLowerCase().includes(vibe));
+    });
+    const text = xPosts[vibe] || xPosts.humor;
+    document.getElementById('x-preview').textContent = text;
+    document.getElementById('x-btn').href = xPosts.x_urls[vibe];
+    document.getElementById('bsky-btn').href = xPosts.bsky_urls[vibe];
+  }
 
   function switchSub(sub) {
     currentSub = sub;
-    document.querySelectorAll('.sub-pill').forEach(b => {
+    document.querySelectorAll('.pills .pill').forEach(b => {
       b.classList.toggle('active', b.textContent === 'r/' + sub);
     });
     const data = subData[sub] || { flair: 'Discussion', url: 'https://www.reddit.com/r/' + sub + '/submit' };
@@ -150,23 +279,32 @@
     document.getElementById('reddit-btn').href = data.url;
   }
 
-  function showToast(msg) {
-    const t = document.getElementById('toast');
-    t.textContent = msg || 'Copied to clipboard! ✓';
-    t.style.display = 'block';
-    setTimeout(() => { t.style.display = 'none'; }, 2200);
-  }
-
   function copyRedditTitle() {
     navigator.clipboard.writeText(redditTitle).then(() => showToast('Reddit title copied! ✓'));
   }
 
   function copyRedditBody() {
-    navigator.clipboard.writeText(redditBody).then(() => showToast('Reddit Markdown body copied! ✓'));
+    navigator.clipboard.writeText(redditBody).then(() => showToast('Reddit body copied! ✓'));
   }
 
-  function copyXPost() {
-    navigator.clipboard.writeText(xText).then(() => showToast('X post text copied! ✓'));
+  function copyCurrentX() {
+    const text = xPosts[currentVibe] || xPosts.humor;
+    navigator.clipboard.writeText(text).then(() => showToast('Post text copied! ✓'));
+  }
+
+  function copyLinkedInText() {
+    navigator.clipboard.writeText(liText).then(() => showToast('LinkedIn copy copied! ✓'));
+  }
+
+  function copyDevtoMarkdown() {
+    navigator.clipboard.writeText(devtoMd).then(() => showToast('Dev.to Markdown with canonical frontmatter copied! ✓'));
+  }
+
+  function copyDevtoAndOpen() {
+    navigator.clipboard.writeText(devtoMd).then(() => {
+      showToast('Dev.to Markdown copied! Opening dev.to/new...');
+      window.open('https://dev.to/new', '_blank');
+    });
   }
 
   function copyCanonicalUrl() {

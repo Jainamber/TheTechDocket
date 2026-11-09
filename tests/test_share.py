@@ -60,6 +60,45 @@ def test_build_share_kit_generates_launchpad_and_tracking():
     assert "test-slug-123" in get_shared_slugs()
 
 
+def test_human_comments_and_multiplatform_variants():
+    from engine.share import (
+        _generate_human_comments,
+        _generate_x_posts,
+        _generate_linkedin_post,
+        _generate_devto_markdown,
+        get_reddit_warmup_topics,
+    )
+    comments = _generate_human_comments("Discord rebuilds client in Rust on Windows 11")
+    assert len(comments) == 3
+    assert any("ngl" in c.lower() or "tbh" in c.lower() or "wild" in c.lower() for c in comments)
+
+    target = {
+        "title": "Test Title",
+        "slug": "discord-kills-electron-rust-windows-11",
+        "description": "Test Desc",
+        "hub": "ai-tools",
+        "_body_md": "Paragraph text here.",
+    }
+    canonical = "https://thetechdocket.com/articles/test/"
+    x = _generate_x_posts(target, canonical)
+    assert "humor" in x and "stats" in x and "debate" in x
+    assert "https://x.com/intent/tweet" in x["x_urls"]["humor"]
+    assert "https://bsky.app/intent/compose" in x["bsky_urls"]["humor"]
+
+    li = _generate_linkedin_post(target, canonical)
+    assert "https://www.linkedin.com/feed" in li["url"]
+    assert "Discord" in li["text"]
+
+    devto = _generate_devto_markdown(target, canonical)
+    assert "canonical_url: \"https://thetechdocket.com/articles/test/\"" in devto
+
+    rw = get_reddit_warmup_topics("ai-tools", target["title"])
+    assert len(rw) == 4
+    assert any(r["sub"] == "developersIndia" for r in rw)
+    assert len(rw[0]["comments"]) == 3
+
+
+
 
 def test_llms_txt_and_robots_txt_spec():
     cfg = load_config()

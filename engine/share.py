@@ -120,18 +120,208 @@ Curious to hear your perspectives on how this impacts the broader developer and 
     return human_title, body
 
 
+def _generate_human_comments(title: str, platform: str = "hn") -> list[str]:
+    """Generate 3 observant, natural comments with mild, respectful developer slang."""
+    t_lower = (title or "").lower()
+
+    if any(k in t_lower for k in ["rust", "c++", "memory", "electron", "native", "performance", "linux", "windows"]):
+        return [
+            "ngl the memory footprint difference between native tooling and Chromium wrappers is night and day. "
+            "Running multiple Electron apps on an 8GB machine basically turns the OS into a swap-file simulator. "
+            "Curious how much of the performance lift here is straight-up memory layout vs just not loading a browser engine.",
+
+            "Tbh this feels like the classic developer velocity pendulum swinging back. Teams defaulted to web wrappers "
+            "for rapid cross-platform shipping, but when a chat app idles at 1GB+ RAM, users definitely feel it. "
+            "Lowkey hope more desktop tools take note of this rebuild.",
+
+            "Wild how we just normalized 1GB idle RAM consumption for desktop chat apps over the last decade. "
+            "Sanity check for anyone maintaining native desktop GUIs in production though: how painful is cross-platform "
+            "UI state management once you need to support Windows, macOS, and Wayland together?"
+        ]
+
+    if any(k in t_lower for k in ["ai", "llm", "model", "gpt", "claude", "inference", "training", "tokens", "deepseek"]):
+        return [
+            "ngl the unit economics on frontier inference are wild once you factor in memory bandwidth and cache hit rates. "
+            "People compare headline list prices, but the real silent budget killer is context window expansion under sustained traffic.",
+
+            "Tbh the gap between synthetic benchmark hype and production reliability is still pretty stark. "
+            "You see these impressive eval scores, but honestly in real pipelines it usually boils down to latency jitter and token budget blowouts.",
+
+            "Lowkey feels like post-training curation and prompt alignment are doing 80% of the heavy lifting lately rather than raw parameter scaling. "
+            "Fair point though, curious what the actual inference cost per active user looks like once you factor in peak concurrency."
+        ]
+
+    # Universal / Systems takes
+    return [
+        "ngl this is a really clean breakdown of what's actually happening under the hood. Most discussions gloss over "
+        "the secondary trade-offs, but the architectural reality here is way more interesting than the surface headlines.",
+
+        "Tbh feels like a lot of teams run into this exact bottleneck once they hit real production scale. "
+        "Lowkey refreshing to see actual numbers attached instead of just vague hand-waving.",
+
+        "Honestly, the second-order effects here are what caught my attention. Fair point on the implementation complexity though—"
+        "curious how this holds up over a longer maintenance cycle once feature velocity ramps up."
+    ]
+
+
 def fetch_hn_warmup_threads(limit: int = 4) -> list[dict]:
     """Fetch live rising and active discussions from Hacker News for karma building."""
-    url = "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>25&hitsPerPage=12"
+    url = "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>20&hitsPerPage=15"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TheTechDocket-Engine/1.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             hits = data.get("hits", [])
-            valid = [h for h in hits if h.get("points", 0) >= 30 and h.get("num_comments", 0) >= 10][:limit]
+            valid = [h for h in hits if h.get("points", 0) >= 20 and h.get("num_comments", 0) >= 6][:limit]
+            for h in valid:
+                h["comments"] = _generate_human_comments(h.get("title", ""), platform="hn")
             return valid
     except Exception:
         return []
+
+
+def get_reddit_warmup_topics(hub: str, title: str) -> list[dict]:
+    """Provide 4 active discussion themes on high-velocity subreddits with pre-written comments for karma building."""
+    return [
+        {
+            "sub": "pcmasterrace",
+            "theme": "Desktop App RAM Bloat & Background Tasks on Windows 11",
+            "url": "https://www.reddit.com/r/pcmasterrace/rising/",
+            "comments": _generate_human_comments(f"Windows 11 desktop app memory consumption {title}", platform="reddit"),
+        },
+        {
+            "sub": "developersIndia",
+            "theme": "8GB RAM Laptops & Developer Tooling in India: Surviving Windows 11 + VS Code",
+            "url": "https://www.reddit.com/r/developersIndia/new/",
+            "comments": [
+                "ngl having an 8GB laptop in tech right now is pure survival mode. Windows 11 alone eats 4GB right after boot. "
+                "Open VS Code + browser tabs + Discord or Teams and the machine basically starts swapping to disk and choking. "
+                "Desktop apps desperately need to shed web-wrapper bloat.",
+
+                "Tbh this hits close to home for anyone coding on student or budget machines. You shouldn't need 32GB of RAM "
+                "just to have your IDE and chat client open without thermal throttling. Lowkey hope native desktop rebuilds become a real trend.",
+
+                "Wild how we went from lightweight native apps to shipping Chromium instances for every single utility. "
+                "Honestly, for teams targeting developers in India, keeping memory usage under 300MB makes a massive difference."
+            ],
+        },
+        {
+            "sub": "Windows11",
+            "theme": "Native WinUI / Rust Apps vs Electron on Windows 11",
+            "url": "https://www.reddit.com/r/Windows11/new/",
+            "comments": _generate_human_comments("Electron vs native apps memory on Windows 11", platform="reddit"),
+        },
+        {
+            "sub": "programming",
+            "theme": "Desktop GUI Architecture & Cross-Platform UI Frameworks",
+            "url": "https://www.reddit.com/r/programming/rising/",
+            "comments": _generate_human_comments("Cross platform native desktop GUI performance", platform="reddit"),
+        },
+    ]
+
+
+def _generate_x_posts(target: dict, canonical_url: str) -> dict:
+    title = target["title"]
+    slug = target["slug"]
+
+    if "discord" in slug and "rust" in slug:
+        humor = f"""Discord casually dropping RAM from 1GB to 290MB on Windows 11 just by ditching Electron for Rust.
+
+Turns out shipping an entire Chromium browser just to render a friends list was lowkey overkill. ngl my 8GB laptop fans just breathed a sigh of relief.
+
+{canonical_url}"""
+
+        stats = f"""5s cold boot -> <1s.
+1GB RAM -> 290MB (with 2 accounts active).
+
+Discord's experimental Rust client on Windows 11 is wild proof of how much Electron bloat we've normalized.
+
+Benchmark breakdown: {canonical_url}"""
+
+        debate = f"""Curious if Discord's 70% leaner Rust rebuild actually forces Slack and Teams to rethink Electron, or if shipping web wrappers is still too convenient for companies to walk away from.
+
+Deep dive on what changed under the hood:
+{canonical_url}"""
+    else:
+        humor = f"""ngl seeing teams actually care about desktop memory footprint in 2026 is wild.
+
+{title}
+
+Breakdown: {canonical_url}"""
+        stats = f"""Key architectural numbers and breakdown:
+
+{title}
+
+Read: {canonical_url}"""
+        debate = f"""What's your take on this?
+
+{title}
+
+Full analysis: {canonical_url}"""
+
+    return {
+        "humor": humor,
+        "stats": stats,
+        "debate": debate,
+        "x_urls": {
+            "humor": f"https://x.com/intent/tweet?text={urllib.parse.quote(humor)}",
+            "stats": f"https://x.com/intent/tweet?text={urllib.parse.quote(stats)}",
+            "debate": f"https://x.com/intent/tweet?text={urllib.parse.quote(debate)}",
+        },
+        "bsky_urls": {
+            "humor": f"https://bsky.app/intent/compose?text={urllib.parse.quote(humor)}",
+            "stats": f"https://bsky.app/intent/compose?text={urllib.parse.quote(stats)}",
+            "debate": f"https://bsky.app/intent/compose?text={urllib.parse.quote(debate)}",
+        },
+    }
+
+
+def _generate_linkedin_post(target: dict, canonical_url: str) -> dict:
+    title = target["title"]
+    slug = target["slug"]
+
+    if "discord" in slug and "rust" in slug:
+        post = f"""Discord's CTO just demoed an experimental desktop client rebuilt from scratch in Rust on Windows 11, replacing their legacy Electron stack.
+
+The key benchmark numbers:
+• Cold boot: ~5 seconds down to <1 second
+• Idle memory: ~1GB down to 290.2MB (with 2 accounts active)
+• A ~70% net reduction in RAM footprint
+
+For developers and students on 8GB machines, running multiple web-wrapped desktop apps (Discord + Slack + VS Code) often causes heavy disk swap thrashing. Ditching the Chromium wrapper changes the game.
+
+Full architectural breakdown and memory numbers here:
+{canonical_url}"""
+    else:
+        desc = target.get("description", "")
+        post = f"""{title}
+
+{desc}
+
+Key engineering insights and architectural analysis:
+{canonical_url}"""
+
+    return {
+        "text": post,
+        "url": f"https://www.linkedin.com/feed/?shareActive=true&text={urllib.parse.quote(post)}",
+    }
+
+
+def _generate_devto_markdown(target: dict, canonical_url: str) -> str:
+    title = target["title"]
+    desc = target.get("description", "")
+    hub = target.get("hub", "ai-tools")
+    body = target.get("_body_md", "")
+    tags = f"{hub}, tech, programming, windows"
+    return f"""---
+title: "{title}"
+published: true
+description: "{desc}"
+tags: {tags}
+canonical_url: "{canonical_url}"
+---
+
+{body}"""
 
 
 def build_share_kit(slug: str | None = None, date_str: str | None = None,
@@ -274,6 +464,13 @@ canonical_url: "{canonical_url}"
     out_path = out_dir / "share-kit.md"
     out_path.write_text(share_doc, encoding="utf-8")
 
+    # Generate multi-platform distribution variants
+    x_posts = _generate_x_posts(target, canonical_url)
+    linkedin = _generate_linkedin_post(target, canonical_url)
+    devto_md = _generate_devto_markdown(target, canonical_url)
+    reddit_warmup = get_reddit_warmup_topics(art_hub, art_title)
+    hn_threads = fetch_hn_warmup_threads(limit=4)
+
     # Render interactive distribution launchpad HTML
     launchpad_path = out_dir / "launchpad.html"
     try:
@@ -306,11 +503,17 @@ canonical_url: "{canonical_url}"
                 human_body=human_reddit_body,
                 human_title_json=json.dumps(human_reddit_title),
                 human_body_json=json.dumps(human_reddit_body),
-                x_url=x_url,
-                x_text=x_post_text,
-                x_text_json=json.dumps(x_post_text),
+                x_url=x_posts["x_urls"]["humor"],
+                x_text=x_posts["humor"],
+                x_posts_json=json.dumps(x_posts),
+                linkedin_text=linkedin["text"],
+                linkedin_url=linkedin["url"],
+                linkedin_text_json=json.dumps(linkedin["text"]),
+                devto_md=devto_md,
+                devto_md_json=json.dumps(devto_md),
                 hn_url=hn_url,
                 hn_threads=hn_threads,
+                reddit_warmup=reddit_warmup,
                 sub_data_json=json.dumps(sub_dict),
             )
             launchpad_path.write_text(html_content, encoding="utf-8")
@@ -345,11 +548,15 @@ canonical_url: "{canonical_url}"
         "primary_sub": primary_sub,
         "flair": primary_flair,
         "reddit_url": reddit_direct_url,
-        "x_url": x_url,
+        "x_url": x_posts["x_urls"]["humor"],
+        "x_posts": x_posts,
+        "linkedin": linkedin,
+        "devto_md": devto_md,
         "hn_url": hn_url,
         "human_title": human_reddit_title,
         "human_body": human_reddit_body,
         "hn_threads": hn_threads,
+        "reddit_warmup": reddit_warmup,
     }
 
 
