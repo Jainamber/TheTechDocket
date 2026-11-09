@@ -118,27 +118,35 @@ def _thinking_config(thinking) -> dict:
     return {"thinkingLevel": t.lower()}
 
 
+def _token_from_refresh(data: dict) -> str | None:
+    if data.get("client_id") and data.get("refresh_token"):
+        form = urllib.parse.urlencode({
+            "client_id": data["client_id"],
+            "client_secret": data.get("client_secret", ""),
+            "refresh_token": data["refresh_token"],
+            "grant_type": "refresh_token",
+        }).encode()
+        req = urllib.request.Request(
+            "https://oauth2.googleapis.com/token",
+            data=form,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            res = json.loads(resp.read().decode("utf-8"))
+            if res.get("access_token"):
+                return res["access_token"]
+    return None
+
+
 def _adc_direct_token() -> str | None:
     for p in _ADC_PATHS:
         if p.exists():
             try:
                 data = json.loads(p.read_text(encoding="utf-8"))
                 if data.get("type") == "authorized_user" and data.get("refresh_token"):
-                    form = urllib.parse.urlencode({
-                        "client_id": data["client_id"],
-                        "client_secret": data["client_secret"],
-                        "refresh_token": data["refresh_token"],
-                        "grant_type": "refresh_token",
-                    }).encode()
-                    req = urllib.request.Request(
-                        "https://oauth2.googleapis.com/token",
-                        data=form,
-                        headers={"Content-Type": "application/x-www-form-urlencoded"},
-                    )
-                    with urllib.request.urlopen(req, timeout=30) as resp:
-                        res = json.loads(resp.read().decode("utf-8"))
-                        if res.get("access_token"):
-                            return res["access_token"]
+                    tok = _token_from_refresh(data)
+                    if tok:
+                        return tok
             except Exception:
                 continue
     return None
@@ -177,9 +185,18 @@ def _gcloud_token(force: bool = False) -> str:
 
 
 def _sa_token() -> str:
-    """CI path: GOOGLE_APPLICATION_CREDENTIALS points at a service-account
-    key JSON file. Lazy-imported so local/gcloud-ADC usage never needs
-    google-auth installed."""
+    """CI path: GOOGLE_APPLICATION_CREDENTIALS points at either a
+    service-account key JSON file or an authorized_user OAuth JSON file."""
+    cred_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    if cred_path and Path(cred_path).exists():
+        try:
+            data = json.loads(Path(cred_path).read_text(encoding="utf-8"))
+            if data.get("type") == "authorized_user" and data.get("refresh_token"):
+                tok = _token_from_refresh(data)
+                if tok:
+                    return tok
+        except Exception:
+            pass
     try:
         from google.auth.transport.requests import Request
         from google.oauth2 import service_account

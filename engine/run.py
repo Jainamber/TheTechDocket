@@ -51,6 +51,8 @@ def main(argv=None):
     sh.add_argument("--date", default=None)
     sh.add_argument("--sub", default=None, help="Target subreddit (e.g. developersIndia, pcmasterrace, Windows11)")
     sh.add_argument("--open", action="store_true", help="Open submit pages in default browser and copy starter to clipboard")
+    sh.add_argument("--catchup", action="store_true", help="Pull latest cloud publishes and launch guided browser flow for unshared articles")
+    sh.add_argument("--force", action="store_true", help="Force re-launch even if already marked shared")
     sh.add_argument("--hn-warmup", action="store_true", help="Fetch live rising HN threads for karma building")
     sh.add_argument("--reddit-post", action="store_true", help="Post directly to Reddit via API with auto-attached flair")
     sub.add_parser("status")
@@ -141,12 +143,17 @@ def main(argv=None):
         print(f"social: {len(files)} slides + caption.txt -> {outdir}")
 
     elif args.cmd == "share":
-        from .share import build_share_kit
+        from .share import build_share_kit, run_catchup
+        if args.catchup:
+            run_catchup(force=args.force, chosen_sub=args.sub)
+            return
         res = build_share_kit(slug=args.slug, date_str=args.date,
                               chosen_sub=args.sub,
                               open_browser=args.open,
                               include_hn_warmup=args.hn_warmup)
         print(f"share-kit written: {res['path']}")
+        if res.get("launchpad_path"):
+            print(f"launchpad UI: {res['launchpad_path']}")
         print(f"Target Subreddit: r/{res['primary_sub']} (Mandatory Flair: '{res['flair']}')")
         if res.get("opened"):
             print(f"Action: Click 'Add flair and tags*' -> choose '{res['flair']}' -> Apply -> Post!")

@@ -273,3 +273,12 @@ jobs:
           print(f"duplicate-day guard OK: {date} not on origin/main, "
                 f"exactly 1 entry on the PR ref")
           EOF
+
+      - name: Auto-merge PR (live mode)
+        if: needs.run.outputs.mode == 'live'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "All compliance, SEO, citation, and duplicate-day gates passed for ${{ needs.run.outputs.slug }}."
+          echo "Merging PR ${{ needs.run.outputs.branch }} into main..."
+          gh pr merge "${{ needs.run.outputs.branch }}" --squash --delete-branch || true

@@ -274,9 +274,59 @@ canonical_url: "{canonical_url}"
     out_path = out_dir / "share-kit.md"
     out_path.write_text(share_doc, encoding="utf-8")
 
+    # Render interactive distribution launchpad HTML
+    launchpad_path = out_dir / "launchpad.html"
+    try:
+        from jinja2 import Environment, FileSystemLoader
+        tmpl_dir = ROOT / "engine" / "templates"
+        if (tmpl_dir / "launchpad.html").exists():
+            env = Environment(loader=FileSystemLoader(str(tmpl_dir)), autoescape=True)
+            template = env.get_template("launchpad.html")
+            sub_dict = {
+                s: {
+                    "flair": _get_flair(s),
+                    "url": f"https://www.reddit.com/r/{s}/submit?" + urllib.parse.urlencode({
+                        "type": "TEXT",
+                        "title": human_reddit_title,
+                        "text": human_reddit_body,
+                    })
+                } for s in subreddits
+            }
+            html_content = template.render(
+                title=art_title,
+                date=art_date,
+                slug=art_slug,
+                canonical_url=canonical_url,
+                hub=art_hub,
+                subreddits=subreddits,
+                primary_sub=primary_sub,
+                primary_flair=primary_flair,
+                reddit_url=reddit_direct_url,
+                human_title=human_reddit_title,
+                human_body=human_reddit_body,
+                human_title_json=json.dumps(human_reddit_title),
+                human_body_json=json.dumps(human_reddit_body),
+                x_url=x_url,
+                x_text=x_post_text,
+                x_text_json=json.dumps(x_post_text),
+                hn_url=hn_url,
+                hn_threads=hn_threads,
+                sub_data_json=json.dumps(sub_dict),
+            )
+            launchpad_path.write_text(html_content, encoding="utf-8")
+            latest_lp = ROOT / "data" / "social" / "latest_launchpad.html"
+            latest_lp.write_text(html_content, encoding="utf-8")
+    except Exception:
+        pass
+
     opened = False
     if open_browser:
         _copy_to_clipboard(human_reddit_body)
+        if launchpad_path.exists():
+            try:
+                webbrowser.open_new_tab(launchpad_path.resolve().as_uri())
+            except Exception:
+                pass
         webbrowser.open_new_tab(reddit_direct_url)
         webbrowser.open_new_tab(x_url)
         if not include_hn_warmup:
@@ -290,6 +340,7 @@ canonical_url: "{canonical_url}"
         "slug": art_slug,
         "date": art_date,
         "path": str(out_path),
+        "launchpad_path": str(launchpad_path) if launchpad_path.exists() else None,
         "opened": opened,
         "primary_sub": primary_sub,
         "flair": primary_flair,
@@ -300,3 +351,74 @@ canonical_url: "{canonical_url}"
         "human_body": human_reddit_body,
         "hn_threads": hn_threads,
     }
+
+
+SHARED_ARTICLES_FILE = Path.home() / ".ttd" / "shared_articles.json"
+REPO_SHARED_FILE = ROOT / "data" / "social" / "shared.json"
+
+
+def get_shared_slugs() -> set[str]:
+    """Retrieve set of slugs that have already been launched locally."""
+    slugs = set()
+    for p in [SHARED_ARTICLES_FILE, REPO_SHARED_FILE]:
+        if p.exists():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                for s in data.get("shared", []):
+                    slugs.add(s)
+            except Exception:
+                pass
+    return slugs
+
+
+def mark_as_shared(slug: str) -> None:
+    """Record that an article's distribution tabs have been launched locally."""
+    slugs = list(get_shared_slugs())
+    if slug not in slugs:
+        slugs.append(slug)
+    payload = {"shared": slugs, "last_shared_at": today_str()}
+    for p in [SHARED_ARTICLES_FILE, REPO_SHARED_FILE]:
+        try:
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+
+
+def run_catchup(force: bool = False, chosen_sub: str | None = None) -> dict | None:
+    """Pull remote publishes and launch the Guided Browser Flow for any unshared articles."""
+    print("[*] Checking for new publishes from cloud pipeline...")
+    try:
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"],
+                       cwd=str(ROOT), capture_output=True, timeout=15)
+    except Exception:
+        pass
+
+    hist = load_history().get("published", [])
+    if not hist:
+        print("[!] No published articles found in data/history.json.")
+        return None
+
+    shared_slugs = get_shared_slugs()
+    recent = hist[-7:]  # Evaluate last 7 days of publications
+    unshared = [a for a in recent if a.get("slug") not in shared_slugs]
+
+    if not unshared and not force:
+        print(f"[✓] All recent articles ({len(recent)}) have already been shared.")
+        print("    To re-launch today's distribution tabs anyway, pass --force.")
+        return None
+
+    target = unshared[-1] if unshared else hist[-1]
+    target_slug = target["slug"]
+    print(f"[*] Launching Guided Browser Flow for: '{target_slug}' ({target.get('date')})...")
+
+    res = build_share_kit(slug=target_slug, chosen_sub=chosen_sub,
+                          open_browser=True, include_hn_warmup=True)
+    mark_as_shared(target_slug)
+
+    print(f"[OK] Launched Launchpad UI + Reddit, X, and Hacker News tabs!")
+    print(f"     Target Subreddit: r/{res['primary_sub']} (Flair: {res['flair']})")
+    print(f"     Reddit body text has been copied to your system clipboard.")
+    if res.get("launchpad_path"):
+        print(f"     Launchpad Dashboard: {res['launchpad_path']}")
+    return res

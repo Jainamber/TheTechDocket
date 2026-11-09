@@ -358,6 +358,12 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
         _best_effort(lambda: r.ai_docket(date_ist, client, cfg), "docket")
         _best_effort(lambda: r.ai_social(date_ist, client, cfg), "social")
 
+        # (12) share kit + launchpad HTML — best-effort, pre-generates ready-to-use distribution
+        def _gen_share():
+            from ..share import build_share_kit
+            build_share_kit(slug=slug, date_str=date_ist, open_browser=False)
+        _best_effort(_gen_share, "share")
+
         if gate_ok and cit_ok:
             print(f"ok: {slug} passed gates + citations after {retries_used} retry(ies)")
             _write_run_state(root, date_ist, slug, "ok", recorded)

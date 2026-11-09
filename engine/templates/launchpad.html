@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Distribution Launchpad — {{ title }}</title>
+<style>
+  :root {
+    --bg: #0d1117; --card-bg: #161b22; --border: #30363d;
+    --text: #c9d1d9; --bright: #f0f6fc; --muted: #8b949e;
+    --accent: #58a6ff; --gold: #d29922; --green: #238636;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; padding: 24px; max-width: 1040px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+  .north-star { display: inline-flex; align-items: center; gap: 6px; background: #1c2d42; color: #79c0ff; border: 1px solid #388bfd; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+  h1 { font-size: 22px; color: var(--bright); margin-bottom: 6px; }
+  .meta { color: var(--muted); font-size: 14px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .card-title { font-size: 18px; font-weight: 600; color: var(--bright); margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+  .flair-callout { background: #2e210b; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; margin: 12px 0; color: #fae4a8; font-size: 14px; }
+  .flair-tag { background: var(--gold); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; padding: 9px 18px; border-radius: 6px; text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: all 0.15s ease; }
+  .btn-reddit { background: #ff4500; color: #fff; }
+  .btn-reddit:hover { background: #e03d00; }
+  .btn-x { background: #21262d; color: #fff; border-color: #484f58; }
+  .btn-x:hover { background: #30363d; }
+  .btn-hn { background: #ff6600; color: #fff; }
+  .btn-hn:hover { background: #e65c00; }
+  .btn-gsc { background: #1f6feb; color: #fff; }
+  .btn-gsc:hover { background: #388bfd; }
+  .btn-sec { background: #21262d; color: var(--bright); border-color: var(--border); }
+  .btn-sec:hover { background: #30363d; }
+  .sub-pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  .sub-pill { background: #21262d; border: 1px solid var(--border); color: var(--text); padding: 5px 12px; border-radius: 14px; font-size: 13px; cursor: pointer; }
+  .sub-pill.active { background: #1f6feb; color: #fff; border-color: #388bfd; font-weight: 600; }
+  .preview-box { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 12px; font-size: 13px; color: #8b949e; max-height: 140px; overflow-y: auto; white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, monospace; margin-top: 10px; }
+  .warmup-item { margin: 8px 0; padding: 8px 12px; background: #0d1117; border: 1px solid var(--border); border-radius: 6px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+  .warmup-item a { color: var(--accent); text-decoration: none; }
+  .warmup-meta { color: var(--muted); font-size: 12px; }
+  #toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: none; z-index: 1000; }
+</style>
+</head>
+<body>
+<header>
+  <div class="north-star">★ NORTH STAR: Weekly Visitors · Guided Browser Flow</div>
+  <h1>{{ title }}</h1>
+  <div class="meta">
+    <span>Date: <strong>{{ date }}</strong></span>
+    <span>Hub: <strong>{{ hub }}</strong></span>
+    <span>Canonical: <a href="{{ canonical_url }}" target="_blank">{{ canonical_url }} ↗</a></span>
+  </div>
+</header>
+<div class="grid">
+  <!-- Reddit Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>1. Reddit Community Distribution</span>
+      <span style="font-size:12px;color:var(--muted);">Authentic Human Voice + Benchmarks</span>
+    </div>
+    <div class="sub-pills">
+      {% for s in subreddits %}
+      <button class="sub-pill {% if s == primary_sub %}active{% endif %}" onclick="switchSub('{{ s }}')">r/{{ s }}</button>
+      {% endfor %}
+    </div>
+    <div class="flair-callout">
+      ⚠️ <strong>REQUIRED FLAIR:</strong> Select <span id="flair-badge" class="flair-tag">{{ primary_flair }}</span>
+      <div style="font-size:12px;margin-top:4px;color:#fce18b;">In Reddit submit composer: Click <strong>"Add flair and tags*"</strong> → Select <strong><span id="flair-name">{{ primary_flair }}</span></strong> → Click <strong>Apply</strong> → Click <strong>Post</strong>.</div>
+    </div>
+    <div class="btn-row">
+      <a id="reddit-btn" href="{{ reddit_url }}" target="_blank" class="btn btn-reddit">Open Pre-Filled Submit Tab in r/<span id="sub-label">{{ primary_sub }}</span> ↗</a>
+      <button onclick="copyRedditTitle()" class="btn btn-sec">Copy Title</button>
+      <button onclick="copyRedditBody()" class="btn btn-sec">Copy Markdown Body (with Table)</button>
+    </div>
+    <div class="preview-box" id="reddit-preview">{{ human_body }}</div>
+  </div>
+
+  <!-- X / Twitter Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>2. X / Twitter Distribution</span>
+      <span style="font-size:12px;color:var(--muted);">1-Click Tweet Hook</span>
+    </div>
+    <div class="btn-row">
+      <a href="{{ x_url }}" target="_blank" class="btn btn-x">Post to X (Pre-Filled) ↗</a>
+      <button onclick="copyXPost()" class="btn btn-sec">Copy Tweet Text</button>
+    </div>
+    <div class="preview-box">{{ x_text }}</div>
+  </div>
+
+  <!-- Hacker News Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>3. Hacker News (news.ycombinator.com)</span>
+      <span style="font-size:12px;color:var(--muted);">Account: Amber_Jain</span>
+    </div>
+    <div class="btn-row">
+      <a href="{{ hn_url }}" target="_blank" class="btn btn-hn">Submit Link to Hacker News ↗</a>
+      <a href="https://news.ycombinator.com/user?id=Amber_Jain" target="_blank" class="btn btn-sec">Amber_Jain Profile ↗</a>
+    </div>
+    <div style="font-size:13px;margin:8px 0;color:var(--muted);">
+      <em>Tip: If clearing <code>fnop=toonew</code>, post a thoughtful comment on 1–2 active threads first:</em>
+    </div>
+    {% for t in hn_threads %}
+    <div class="warmup-item">
+      <a href="https://news.ycombinator.com/item?id={{ t.objectID }}" target="_blank">{{ t.title }} ↗</a>
+      <span class="warmup-meta">{{ t.points }} pts · {{ t.num_comments }} comments</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Google Search Console Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>4. Google Search Console (Fast Indexing)</span>
+      <span style="font-size:12px;color:var(--muted);">URL Inspection</span>
+    </div>
+    <div class="btn-row">
+      <a href="https://search.google.com/search-console" target="_blank" class="btn btn-gsc">Open Google Search Console ↗</a>
+      <button onclick="copyCanonicalUrl()" class="btn btn-sec">Copy Canonical URL</button>
+    </div>
+    <div style="font-size:13px;color:var(--muted);">
+      Paste article URL into GSC top search bar → Click <strong>"Request Indexing"</strong>.
+    </div>
+  </div>
+</div>
+
+<div id="toast">Copied to clipboard! ✓</div>
+
+<script>
+  const subData = {{ sub_data_json|safe }};
+  let currentSub = "{{ primary_sub }}";
+  const redditBody = {{ human_body_json|safe }};
+  const xText = {{ x_text_json|safe }};
+  const canonicalUrl = "{{ canonical_url }}";
+  const redditTitle = {{ human_title_json|safe }};
+
+  function switchSub(sub) {
+    currentSub = sub;
+    document.querySelectorAll('.sub-pill').forEach(b => {
+      b.classList.toggle('active', b.textContent === 'r/' + sub);
+    });
+    const data = subData[sub] || { flair: 'Discussion', url: 'https://www.reddit.com/r/' + sub + '/submit' };
+    document.getElementById('flair-badge').textContent = data.flair;
+    document.getElementById('flair-name').textContent = data.flair;
+    document.getElementById('sub-label').textContent = sub;
+    document.getElementById('reddit-btn').href = data.url;
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg || 'Copied to clipboard! ✓';
+    t.style.display = 'block';
+    setTimeout(() => { t.style.display = 'none'; }, 2200);
+  }
+
+  function copyRedditTitle() {
+    navigator.clipboard.writeText(redditTitle).then(() => showToast('Reddit title copied! ✓'));
+  }
+
+  function copyRedditBody() {
+    navigator.clipboard.writeText(redditBody).then(() => showToast('Reddit Markdown body copied! ✓'));
+  }
+
+  function copyXPost() {
+    navigator.clipboard.writeText(xText).then(() => showToast('X post text copied! ✓'));
+  }
+
+  function copyCanonicalUrl() {
+    navigator.clipboard.writeText(canonicalUrl).then(() => showToast('Canonical URL copied! ✓'));
+  }
+</script>
+</body>
+</html>

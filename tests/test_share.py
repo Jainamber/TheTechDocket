@@ -42,6 +42,25 @@ def test_build_share_kit_generates_markdown():
     assert "canonical_url:" in content
 
 
+def test_build_share_kit_generates_launchpad_and_tracking():
+    from engine.share import get_shared_slugs, mark_as_shared
+    res = build_share_kit(slug="discord-kills-electron-rust-windows-11",
+                          chosen_sub="developersIndia",
+                          open_browser=False)
+    assert res.get("launchpad_path") is not None
+    lp_path = pathlib.Path(res["launchpad_path"])
+    assert lp_path.exists()
+    lp_content = lp_path.read_text(encoding="utf-8")
+    assert "Distribution Launchpad" in lp_content
+    assert "r/developersIndia" in lp_content
+    assert "REQUIRED FLAIR:" in lp_content
+    assert "x.com/intent/tweet" in lp_content
+
+    mark_as_shared("test-slug-123")
+    assert "test-slug-123" in get_shared_slugs()
+
+
+
 def test_llms_txt_and_robots_txt_spec():
     cfg = load_config()
     arts = all_articles()
