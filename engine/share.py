@@ -47,6 +47,27 @@ def _suggest_subreddits(hub: str) -> list[str]:
     return mapping.get(hub, ["technology", "programming", "developersIndia"])
 
 
+SUBREDDIT_FLAIRS = {
+    "developersIndia": "News",
+    "pcmasterrace": "Discussion",
+    "Windows11": "News / Discussion",
+    "programming": "Discussion",
+    "technology": "Discussion",
+    "LocalLLaMA": "Discussion",
+    "IndianGaming": "Discussion",
+    "hardware": "News",
+    "buildapc": "Discussion",
+    "artificial": "Discussion",
+    "MachineLearning": "Discussion",
+    "privacy": "News",
+    "india": "Non-Political",
+}
+
+
+def _get_flair(sub: str) -> str:
+    return SUBREDDIT_FLAIRS.get(sub, "Discussion")
+
+
 def _extract_table(body_md: str) -> str:
     """Extract the first Markdown table block from body text."""
     lines = (body_md or "").splitlines()
@@ -148,6 +169,7 @@ def build_share_kit(slug: str | None = None, date_str: str | None = None,
     canonical_url = f"{base_url}/articles/{art_slug}/"
     subreddits = _suggest_subreddits(art_hub)
     primary_sub = chosen_sub or subreddits[0]
+    primary_flair = _get_flair(primary_sub)
 
     # Build human conversational copy
     human_reddit_title, human_reddit_body = _human_reddit_post(target, canonical_url)
@@ -198,6 +220,7 @@ def build_share_kit(slug: str | None = None, date_str: str | None = None,
 
 ## 1. Reddit (Auto-Fills Community, Title & Body Text)
 * **Primary Target:** `r/{primary_sub}`
+* **Required Post Flair:** Select **`{primary_flair}`** (Click "Add flair and tags*" -> choose "{primary_flair}" -> Apply)
 * **Direct Submit Link:** [Open Pre-Filled Submit Tab in r/{primary_sub}]({reddit_direct_url})
 * **Other Subreddit Links:**
 {chr(10).join(reddit_sub_links)}
@@ -269,6 +292,7 @@ canonical_url: "{canonical_url}"
         "path": str(out_path),
         "opened": opened,
         "primary_sub": primary_sub,
+        "flair": primary_flair,
         "reddit_url": reddit_direct_url,
         "x_url": x_url,
         "hn_url": hn_url,

@@ -52,6 +52,7 @@ def main(argv=None):
     sh.add_argument("--sub", default=None, help="Target subreddit (e.g. developersIndia, pcmasterrace, Windows11)")
     sh.add_argument("--open", action="store_true", help="Open submit pages in default browser and copy starter to clipboard")
     sh.add_argument("--hn-warmup", action="store_true", help="Fetch live rising HN threads for karma building")
+    sh.add_argument("--reddit-post", action="store_true", help="Post directly to Reddit via API with auto-attached flair")
     sub.add_parser("status")
     args = ap.parse_args(argv)
 
@@ -146,9 +147,18 @@ def main(argv=None):
                               open_browser=args.open,
                               include_hn_warmup=args.hn_warmup)
         print(f"share-kit written: {res['path']}")
-        print(f"Target Subreddit: r/{res['primary_sub']}")
+        print(f"Target Subreddit: r/{res['primary_sub']} (Mandatory Flair: '{res['flair']}')")
         if res.get("opened"):
-            print("Opened submit tabs in browser; copied human discussion starter to clipboard.")
+            print(f"Action: Click 'Add flair and tags*' -> choose '{res['flair']}' -> Apply -> Post!")
+
+        if args.reddit_post:
+            from .reddit_api import submit_reddit_post
+            print(f"Submitting directly to Reddit r/{res['primary_sub']} with flair '{res['flair']}'...")
+            api_res = submit_reddit_post(res['primary_sub'], res['human_title'], res['human_body'], res['flair'])
+            if api_res.get("ok"):
+                print(f"Reddit post live: {api_res['url']}")
+            else:
+                print(f"Reddit API note: {api_res['error']}")
 
     elif args.cmd == "status":
         cfg = load_config()
