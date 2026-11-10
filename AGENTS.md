@@ -27,6 +27,8 @@ Every proposed plan or action must explicitly begin with:
 If an action is purely aesthetic, speculative, architectural without visitor impact, or internal-only, you must return **REJECT** and stop.
 
 ## 3. The Blacklist
+* ❌ NO long-running tasks or loops exceeding 45 minutes (target < 10 minutes).
+* ❌ NO polling remote GitHub Actions runs in sleep loops. Build, test, and validate locally in seconds; let remote CI run asynchronously.
 * ❌ NO CSS/styling overhauls or font redesigns without a measured CWV/bounce failure.
 * ❌ NO internal CLI/tool proliferation that does not publish or distribute content.
 * ❌ NO refactoring working code for cosmetic elegance.

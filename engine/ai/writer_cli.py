@@ -65,6 +65,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -332,6 +333,8 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
         retries_used = 0
         gate_ok = False
         cit_ok = False
+        start_time = time.time()
+        max_run_seconds = 20 * 60  # 20 minutes hard deadline to guarantee run < 25m
         while True:
             cit_ok, cit_feedback = r.citation_gate(date_ist, slug, client, cfg)
             gate_ok, gate_feedback = (False, None)
@@ -347,7 +350,9 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
             elif not gate_ok:
                 print(f"[retry {retries_used}/{max_retries}] compliance gates failed for {slug}:\n{gate_feedback}")
 
-            if retries_used >= max_retries:
+            if retries_used >= max_retries or (time.time() - start_time) > max_run_seconds:
+                if (time.time() - start_time) > max_run_seconds:
+                    print(f"timeout guard: run reached {max_run_seconds/60:.0f}m deadline — breaking retry loop")
                 break
             retries_used += 1
             feedback = cit_feedback if not cit_ok else gate_feedback
