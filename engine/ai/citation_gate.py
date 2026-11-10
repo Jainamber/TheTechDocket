@@ -186,14 +186,19 @@ def _sentence_containing(paragraph: str, match_start: int, match_end: int) -> st
     sentence-boundary detection can't cleanly map the span to exactly one
     sentence (ambiguous), per FIX G's explicit fallback rule.
 
-    Requires the FULL span (start AND end) to fit inside one sentence
-    chunk, not just the start — a naive split can false-trigger on an
-    abbreviation *inside* the link's own anchor text (e.g. "[Bloomberg
-    L.P. News](url)" — the "P. N" looks like a sentence boundary to the
-    naive regex). Checking only match_start there would return a
-    TRUNCATED sentence with a dangling, unclosed "[" and no matching
-    "](url)" — worse than just using the whole paragraph. Checking both
-    ends makes that case fall through to the paragraph fallback instead."""
+    If the paragraph is a Markdown table, isolate the exact table row
+    containing the link so competitor rows are never cross-contaminated."""
+    if "|" in paragraph:
+        lines = paragraph.splitlines()
+        pos = 0
+        for line in lines:
+            line_len = len(line) + 1  # include newline
+            if pos <= match_start and match_end <= pos + line_len:
+                clean_row = line.strip().strip("|").strip()
+                if clean_row and not clean_row.startswith("---"):
+                    return clean_row
+            pos += line_len
+
     sentences = _split_sentences(paragraph)
     if len(sentences) <= 1:
         return paragraph.strip()
@@ -259,6 +264,13 @@ def _fallback_claim(description: str, pool_entry: dict | None) -> str | None:
     description = (description or "").strip()
     title = ((pool_entry or {}).get("title") or "").strip()
     if not description or not title:
+        return None
+    # If the source pool entry shares no substantive tokens with description,
+    # pairing them produces an off-target claim (e.g. sending a Google Gemini claim
+    # to Apple's website) -> return None so it is handled via needs_corroboration.
+    dt = set(t.lower() for t in tokenize(description) if len(t) > 3)
+    tt = set(t.lower() for t in tokenize(title) if len(t) > 3)
+    if not (dt & tt):
         return None
     return f'{description} (source referenced for: "{title}")'
 
@@ -455,9 +467,6 @@ def run(date_ist: str, slug: str, client, cfg: dict,
                 primary_claim = fallback
                 claim_list = [fallback]
             else:
-                # FIX G: never invent a claim to send to the model — mark
-                # it and let Rule 3 (below) require independent
-                # corroboration from elsewhere in the article instead.
                 needs_corroboration = True
                 primary_claim = ""
 

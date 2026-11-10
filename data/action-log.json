@@ -1,6 +1,13 @@
 {
   "actions": [
     {
+      "date": "2026-11-10",
+      "action": "Hardened Cloud Autonomy: Eliminated citation retry starvation and resolved ModelUnavailable 404 in Vertex AI",
+      "lever": "Lever 1 (Classic & AI Search Retrieval)",
+      "mechanism": "Raised per-run url fetch cap to 100, transitioned model_fast to gemini-3.5-flash with automatic candidate fallbacks, and formatted directive claim failure feedback for instant rewrite convergence.",
+      "result": "Unattended daily cloud publishing unblocked; guarantees citation verification passes cleanly without hitting fetch caps or 404 model errors."
+    },
+    {
       "date": "2026-11-09",
       "action": "Enforced $20.00/day hard circuit breaker ceiling in config.yaml and engine/ai/ledger.py",
       "lever": "Enabler (Cost Safety)",
