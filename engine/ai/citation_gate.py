@@ -372,30 +372,36 @@ def _is_error_verdict(verdict: dict) -> bool:
     return reason.startswith("gate call error:") or reason.startswith("unparseable verdict")
 
 
-def _check_one_source(root: Path, model: str, client, step: str, url: str,
+def _check_one_source(root: Path, model, client, step: str, url: str,
                       claim: str, title: str, note: str = "") -> dict:
     """One citation-check attempt against one source. Never raises — any
     exception (network, HTTP, ledger budget, etc.) becomes a fail-closed
     'gate call error' verdict, same as an unparseable model reply."""
     try:
-        result = client.generate(
-            step=step, model=model,
-            contents=_render_check_prompt(root, url, claim, title),
-            # FIX F: NO json_schema here — Vertex rejects controlled
-            # generation combined with the urlContext tool. The prompt
-            # demands raw JSON instead; _parse_verdict extracts+parses it
-            # leniently (fail-closed on failure).
-            tools=[{"urlContext": {}}],
-            temperature=0.0,
-            note=note,
-        )
+        if hasattr(client, "generate_with_fallback") and isinstance(model, (list, tuple)):
+            result = client.generate_with_fallback(
+                step=step, models=list(model),
+                contents=_render_check_prompt(root, url, claim, title),
+                tools=[{"urlContext": {}}],
+                temperature=0.0,
+                note=note,
+            )
+        else:
+            m = model[0] if isinstance(model, (list, tuple)) else model
+            result = client.generate(
+                step=step, model=m,
+                contents=_render_check_prompt(root, url, claim, title),
+                tools=[{"urlContext": {}}],
+                temperature=0.0,
+                note=note,
+            )
         return _parse_verdict(result.text)
     except Exception as e:  # noqa: BLE001 — fail-closed on any call error
         return {"supported": False, "quote": "", "fetch_ok": False,
                 "reason": f"gate call error: {type(e).__name__}: {e}"}
 
 
-def _check_one_source_with_retry(root: Path, model: str, client, step: str, url: str,
+def _check_one_source_with_retry(root: Path, model, client, step: str, url: str,
                                  claim: str, title: str) -> dict:
     """FIX I: an ERROR outcome (exception / HTTP error / unparseable
     verdict) is retried ONCE with a fresh generate() call using the exact
@@ -425,9 +431,9 @@ def run(date_ist: str, slug: str, client, cfg: dict,
         raise CitationGateError(f"no article at {article_path}")
     meta, _fm_raw, body = _read_front_matter(article_path)
     sources = meta.get("sources") or []
-    model = (cfg.get("llm") or {}).get("model_fast")
-    if not model:
-        raise CitationGateError("cfg['llm']['model_fast'] is required")
+    model_primary = (cfg.get("llm") or {}).get("model_fast", "gemini-3.5-flash")
+    fallbacks = (cfg.get("llm") or {}).get("model_fast_fallbacks", ["gemini-3.5-flash", "gemini-2.5-flash"])
+    model_candidates = [model_primary] + [fb for fb in fallbacks if fb != model_primary]
 
     source_urls = {s.get("url") for s in sources if s.get("url")}
     claims_by_url = _extract_claims(body, source_urls)
@@ -463,7 +469,7 @@ def run(date_ist: str, slug: str, client, cfg: dict,
                                 "no matching source-pool entry)"}
         else:
             verdict = _check_one_source_with_retry(
-                root, model, client, step, url, primary_claim, src.get("title", ""))
+                root, model_candidates, client, step, url, primary_claim, src.get("title", ""))
         checked.append({
             "url": url, "title": src.get("title", ""),
             "primary": bool(src.get("primary", False)),
