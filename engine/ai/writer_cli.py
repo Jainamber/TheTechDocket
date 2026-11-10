@@ -329,8 +329,15 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
             if cit_ok:
                 r.engine_run("build")
                 gate_ok, gate_feedback = r.gate(slug, date_ist)
+
             if cit_ok and gate_ok:
                 break
+
+            if not cit_ok:
+                print(f"[retry {retries_used}/{max_retries}] citation_gate failed for {slug}:\n{cit_feedback}")
+            elif not gate_ok:
+                print(f"[retry {retries_used}/{max_retries}] compliance gates failed for {slug}:\n{gate_feedback}")
+
             if retries_used >= max_retries:
                 break
             retries_used += 1
