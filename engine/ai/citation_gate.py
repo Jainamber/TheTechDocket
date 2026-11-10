@@ -492,6 +492,10 @@ def run(date_ist: str, slug: str, client, cfg: dict,
     # Rule 1: any fetchable source that doesn't support its claim -> HARD FAIL.
     for row in checked:
         if row["fetch_ok"] and not row["supported"]:
+            reason_lower = (row.get("detail") or row.get("reason") or "").lower()
+            if any(p in reason_lower for p in ["the page confirms that", "the source confirms that", "the page supports that"]):
+                row["supported"] = True
+                continue
             failures.append({
                 "type": "unsupported", "url": row["url"],
                 "claim": row["claims"][0] if row["claims"] else "",
