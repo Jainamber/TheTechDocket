@@ -136,9 +136,18 @@ class Runner:
 
     def citation_gate(self, date_ist: str, slug: str, client, cfg) -> tuple[bool, str | None]:
         from .citation_gate import run as _run
-        passed, report = _run(date_ist, slug, client, cfg)
-        feedback = None if passed else json.dumps(report, ensure_ascii=False)
-        return passed, feedback
+        passed, report = _run(date_ist, slug, client, cfg, root=self.root)
+        if passed:
+            return True, None
+        fail_msgs = []
+        for f in report.get("failures", []):
+            u = f.get("url", "")
+            r = f.get("reason", "")
+            claims = f.get("claims", [])
+            claim_str = " ".join(claims)[:300] if claims else f.get("detail", "")
+            fail_msgs.append(f"- URL '{u}' DID NOT SUPPORT CLAIM: \"{claim_str}\". Reason: {r}. Either rephrase the claim to match what the source says, or replace the link with the correct source.")
+        feedback = "CITATION GATE FAILED — You must fix these claims in your draft:\n" + "\n".join(fail_msgs)
+        return False, feedback
 
     def ai_docket(self, date_ist: str, client, cfg):
         from .ai_docket import run as _run
