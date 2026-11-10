@@ -27,15 +27,21 @@ same subject:
 2. If the fetch fails (paywall, robots block, 404, timeout, or any other
    error), report `fetch_ok: false` and explain briefly in `reason` — this
    is not automatically a failure of the article, just this source.
-3. If the fetch succeeds, read the page and decide: does it actually
-   support the sentence above — its specific fact, number, date, or quote
-   — not just the general topic? A page about the same company or event
-   that does not contain that specific factual content does NOT support it.
+3. If the fetch succeeds, read the page and decide: does the page substantively
+   confirm the core factual claims in the sentence (its specific numbers, dates,
+   policies, or architectural facts)?
+   - Substantive truth vs exact wording: Journalistic paraphrasing of equivalent
+     concepts (e.g. "business/enterprise customers" vs "commercial organizations",
+     or "data access control" vs "data segregation") IS supported if the underlying
+     policy, rule, or technical fact is confirmed by the page.
+   - Do NOT reject an accurate summary over minor synonym variations unless the
+     article asserts a materially false, contradictory, or unmentioned claim
+     (such as attributing a policy to the wrong company or stating a fabricated number).
 4. If it supports the sentence, extract the exact sentence or phrase from
    the page that supports it as `quote` (verbatim, do not paraphrase).
-5. Be strict: a source that is merely related, or that reports a
-   different number, or that has since been updated to no longer say
-   this, must be marked `supported: false`.
+5. Be strict on real factual discrepancies: a source that is merely about the
+   same general company, or reports a different number, or lacks the cited fact
+   entirely, must be marked `supported: false`.
 
 ## Output format — RAW JSON ONLY, no exceptions
 Controlled generation (a forced response schema) is **not available** on

@@ -306,6 +306,5 @@ llm:
   daily_budget_usd: 20.00
   max_grounded_queries_per_run: 25
   max_url_fetches_per_run: 100
-  # 1 -> 2: multi-defect drafts (citation fidelity + a compliance gate,
-  # say) need two corrective rounds to converge; each retry costs ~$0.17.
-  max_retry_rewrites: 2
+  # 2 -> 3: multi-defect drafts need up to 3 corrective rounds to converge.
+  max_retry_rewrites: 3
