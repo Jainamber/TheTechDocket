@@ -37,6 +37,14 @@ same subject:
    - Do NOT reject an accurate summary over minor synonym variations unless the
      article asserts a materially false, contradictory, or unmentioned claim
      (such as attributing a policy to the wrong company or stating a fabricated number).
+   - Cited factual premise vs author analysis: Articles frequently combine a cited
+     factual premise with editorial analysis in the same sentence (e.g. "Under
+     [The DPDP Act](url), data fiduciaries must erase personal data upon consent
+     withdrawal, creating compliance friction for enterprise retention models").
+     You are verifying whether the source confirms the CITED FACTUAL PREMISE
+     (e.g. that the Act mandates data erasure), NOT whether the source itself
+     discusses or endorses the author's editorial synthesis or opinion ("creating friction").
+     If the source confirms the underlying law, metric, or policy, mark supported: true.
 4. If it supports the sentence, extract the exact sentence or phrase from
    the page that supports it as `quote` (verbatim, do not paraphrase).
 5. Be strict on real factual discrepancies: a source that is merely about the

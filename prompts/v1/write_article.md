@@ -97,6 +97,13 @@ fails the whole article. Therefore:
 - Never bundle an extra fact into a cited sentence unless the same page states
   that extra fact too — split it into its own sentence with its own source, or
   cut it.
+- Separate cited factual premises from your authorial analysis: when citing an official
+  law, vendor support doc, or court filing, state the exact factual rule it proves
+  in the cited clause, and put your analytical commentary in a separate following
+  sentence (e.g. "Section 12 of [the DPDP Act, 2023](url) mandates data erasure
+  upon consent withdrawal. In practice, this requirement creates operational friction
+  for enterprise retention workflows."). Do not wrap editorial opinion into the same
+  linked clause as the primary citation.
 - When unsure which source states a fact, check the research notes; if no
   listed source states it, CUT THE FACT. A shorter, fully-verified article
   always beats a richer one that fails verification.
