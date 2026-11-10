@@ -145,8 +145,8 @@ class Runner:
             r = f.get("reason", "")
             claims = f.get("claims", [])
             claim_str = " ".join(claims)[:300] if claims else f.get("detail", "")
-            fail_msgs.append(f"- URL '{u}' DID NOT SUPPORT CLAIM: \"{claim_str}\". Reason: {r}. Either rephrase the claim to match what the source says, or replace the link with the correct source.")
-        feedback = "CITATION GATE FAILED — You must fix these claims in your draft:\n" + "\n".join(fail_msgs)
+            fail_msgs.append(f"- URL '{u}' DID NOT SUPPORT CLAIM: \"{claim_str}\". Reason: {r}. Action: DELETE this sentence and its link from your draft, or rewrite it to assert ONLY what '{u}' explicitly confirms.")
+        feedback = "CITATION GATE FAILED — You must fix these claims in your draft (safest action is to DELETE the unverified sentence):\n" + "\n".join(fail_msgs)
         return False, feedback
 
     def ai_docket(self, date_ist: str, client, cfg):

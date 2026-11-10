@@ -339,7 +339,10 @@ def _build_prompt(date_ist: str, brief_text: str, research_text: str,
                 .replace("{{recent_articles}}", recent_lines))
     if retry_feedback:
         msg += ("\n\n## Gate-failure feedback from a previous attempt — fix these\n"
-               f"{retry_feedback}\n")
+                "CRITICAL: For any citation or claim below that failed, DO NOT invent workarounds or rephrase speculative claims into new unverified claims.\n"
+                "The cleanest and safest fix is to SIMPLY DELETE that problematic sentence and its link from your draft, or restrict it strictly to what the primary source explicitly confirms.\n"
+                "A concise, fully-verified article always beats keeping peripheral claims that fail verification:\n"
+                f"{retry_feedback}\n")
     if validation_errors:
         msg += ("\n\n## Your previous draft's front matter did not validate — "
                "fix exactly this and resend the COMPLETE article\n"
