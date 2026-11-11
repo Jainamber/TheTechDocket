@@ -123,6 +123,15 @@ copied **VERBATIM** from that list:
   by research.
 - **If a fact has no listed source to back it, cut the fact.** A vague or
   unsourced-but-plausible-sounding claim is worse than a shorter article.
+- **One link per factual clause (NO multi-link sentence bundling):** Attach each external link
+  directly to the specific fact, feature, metric, or entity it backs. Do NOT group 3 different
+  external links into a single multi-clause sentence where each link only covers one part of the
+  statement. Citing each source on its own distinct clause guarantees that automated citation
+  verifiers can verify each source cleanly.
+- **Landed-cost math & currency conversions:** When writing the India angle, cite the source
+  on the primary base price or subscription tier (e.g. $20/month or ₹1,950/month), and clearly
+  present your derived landed-cost math (such as adding India's 18% GST or applying prevailing
+  forex rates).
 A draft that cites a bare-domain homepage or any url not verbatim from the
 numbered list is rejected and sent back for one corrective rewrite.
 

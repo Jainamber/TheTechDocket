@@ -367,6 +367,47 @@ def test_ai_write_retry_feedback_is_included_in_prompt(tmp_path, monkeypatch):
     assert "S07-word-count: too short" in prompt_text
 
 
+def test_ai_write_prior_draft_is_included_in_prompt_on_retry(tmp_path, monkeypatch):
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+
+    # Pre-seed prior draft on disk
+    articles_dir = tmp_path / "content" / "articles"
+    articles_dir.mkdir(parents=True, exist_ok=True)
+    prior_path = articles_dir / f"{DATE}-existing-slug.md"
+    prior_content = "---\ntitle: \"Existing\"\nslug: \"existing-slug\"\n---\n\nInitial attempt body.\n"
+    prior_path.write_text(prior_content, encoding="utf-8")
+
+    captured = {}
+    real_generate_with_fallback = client.generate_with_fallback
+
+    def spy(step, models, **kw):
+        captured["contents"] = kw["contents"]
+        return real_generate_with_fallback(step, models, **kw)
+
+    monkeypatch.setattr(client, "generate_with_fallback", spy)
+
+    ai_write.run(DATE, client, _llm_cfg(), retry_feedback="Citation failed on line 2",
+                 root=tmp_path, reuse_slug="existing-slug")
+
+    prompt_text = captured["contents"][0]["parts"][0]["text"]
+    assert "Citation failed on line 2" in prompt_text
+    assert "Initial attempt body." in prompt_text
+    assert "Your previous draft" in prompt_text
+
+
+def test_ai_write_prunes_unlinked_sources_when_body_links_exist(tmp_path):
+    _seed_write_inputs(tmp_path)
+    client = _client(tmp_path)
+    out_path = ai_write.run(DATE, client, _llm_cfg(), root=tmp_path)
+    raw = out_path.read_text(encoding="utf-8")
+    meta = yaml.safe_load(ai_write.FM_RE.match(raw).group(1))
+    body = ai_write.FM_RE.match(raw).group(2)
+    body_links = {u for _a, u in ai_write._LINK_RE.findall(body)}
+    for s in meta["sources"]:
+        assert s.get("primary") or s.get("url") in body_links
+
+
 def test_ai_write_raises_after_bounded_reasks_on_bad_front_matter(tmp_path, monkeypatch):
     _seed_write_inputs(tmp_path)
     # A dedicated fixture dir whose write.json is structurally invalid

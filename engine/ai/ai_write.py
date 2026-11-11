@@ -329,7 +329,8 @@ def _dedupe_slug(base: str, existing: set[str]) -> str:
 
 def _build_prompt(date_ist: str, brief_text: str, research_text: str,
                   sources: list, recent_lines: str, style: str,
-                  retry_feedback: str | None, validation_errors: list | None) -> str:
+                  retry_feedback: str | None, validation_errors: list | None,
+                  prior_draft_text: str | None = None) -> str:
     tmpl = PROMPT_PATH.read_text(encoding="utf-8")
     msg = (tmpl.replace("{{style}}", style)
                 .replace("{{today_ist}}", date_ist)
@@ -343,6 +344,20 @@ def _build_prompt(date_ist: str, brief_text: str, research_text: str,
                 "The cleanest and safest fix is to SIMPLY DELETE that problematic sentence and its link from your draft, or restrict it strictly to what the primary source explicitly confirms.\n"
                 "A concise, fully-verified article always beats keeping peripheral claims that fail verification:\n"
                 f"{retry_feedback}\n")
+    if prior_draft_text:
+        msg += (
+            "\n\n## Your previous draft (EDIT this draft directly — DO NOT write a new article from scratch)\n"
+            "Below is the exact draft from your previous attempt. Preserve the existing title, structure, H2 headings, and all valid paragraphs intact.\n"
+            "Apply targeted edits ONLY to remove or fix the specific failed claims listed in the Gate-failure feedback above:\n\n"
+            "```markdown\n"
+            f"{prior_draft_text.strip()}\n"
+            "```\n\n"
+            "CRITICAL RETRY RULES:\n"
+            "- Keep the article coherent, professional, and compliant.\n"
+            "- If a sentence failed verification, DELETE that sentence or restrict it strictly to what the source confirmed.\n"
+            "- If you delete an inline link, remove that link's entry from front-matter `sources` as well.\n"
+            "- Return the COMPLETE revised article file (front matter and body) with these targeted fixes applied.\n"
+        )
     if validation_errors:
         msg += ("\n\n## Your previous draft's front matter did not validate — "
                "fix exactly this and resend the COMPLETE article\n"
@@ -355,6 +370,16 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
     root = root or ROOT
     if retry_feedback and not reuse_slug:
         reuse_slug = _reuse_slug_from_run_state(root, date_ist)
+
+    prior_draft_text: str | None = None
+    if retry_feedback and reuse_slug:
+        prior_draft_path = root / "content" / "articles" / f"{date_ist}-{reuse_slug}.md"
+        if prior_draft_path.exists():
+            try:
+                prior_draft_text = prior_draft_path.read_text(encoding="utf-8")
+            except Exception:
+                prior_draft_text = None
+
     briefs_dir = root / "data" / "briefs"
     brief_path = briefs_dir / f"{date_ist}.md"
     if not brief_path.exists():
@@ -377,7 +402,8 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
     for attempt in range(_PARSE_REASK_ATTEMPTS):
         user_msg = _build_prompt(
             date_ist, brief_text, research_text, sources, recent_lines, style,
-            retry_feedback if attempt == 0 else None, validation_errors)
+            retry_feedback if attempt == 0 else None, validation_errors,
+            prior_draft_text=prior_draft_text if attempt == 0 else None)
         res = client.generate_with_fallback(
             "write", models,
             contents=[{"role": "user", "parts": [{"text": user_msg}]}],
@@ -437,6 +463,32 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
             (warn_dir / f"{date_ist}-{slug}-link-warnings.json").write_text(
                 json.dumps(link_warnings, indent=2, ensure_ascii=False),
                 encoding="utf-8")
+
+        # Synchronize front-matter sources with inline body citations:
+        # If the author listed sources in front matter that were never cited inline,
+        # prune non-primary ones so they don't trigger orphaned verification failures,
+        # provided >= 2 valid sources remain to satisfy gate G06.
+        m_final = FM_RE.match(final_text)
+        if m_final:
+            try:
+                final_meta = yaml.safe_load(m_final.group(1)) or {}
+                final_body = m_final.group(2)
+                if isinstance(final_meta.get("sources"), list):
+                    body_urls = {
+                        u for _a, u in _LINK_RE.findall(final_body)
+                        if u.startswith("http://") or u.startswith("https://")
+                    }
+                    if body_urls:
+                        pruned = [
+                            s for s in final_meta["sources"]
+                            if s.get("url") in body_urls or s.get("primary")
+                        ]
+                        if len(pruned) >= 2 and len(pruned) < len(final_meta["sources"]):
+                            final_meta["sources"] = pruned
+                            fm_dump = yaml.safe_dump(final_meta, sort_keys=False, allow_unicode=True, width=100)
+                            final_text = f"---\n{fm_dump}---\n{final_body}"
+            except Exception:
+                pass
 
         out_dir = root / "content" / "articles"
         out_dir.mkdir(parents=True, exist_ok=True)

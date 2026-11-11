@@ -166,6 +166,8 @@ def _generate_human_comments(title: str, platform: str = "hn") -> list[str]:
 
 def fetch_hn_warmup_threads(limit: int = 4) -> list[dict]:
     """Fetch live rising and active discussions from Hacker News for karma building."""
+    if os.environ.get("TTD_AI_FIXTURE") == "1":
+        return []
     url = "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>20&hitsPerPage=15"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TheTechDocket-Engine/1.0"})

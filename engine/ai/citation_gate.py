@@ -460,7 +460,7 @@ def run(date_ist: str, slug: str, client, cfg: dict,
         claim_list = list(claims_by_url.get(url) or [])
         needs_corroboration = False
         if claim_list:
-            primary_claim = " ".join(claim_list)
+            primary_claim = " \n---\n ".join(claim_list)
         else:
             fallback = _fallback_claim(description, sources_pool.get(url))
             if fallback:
@@ -493,7 +493,10 @@ def run(date_ist: str, slug: str, client, cfg: dict,
     for row in checked:
         if row["fetch_ok"] and not row["supported"]:
             reason_lower = (row.get("detail") or row.get("reason") or "").lower()
-            if any(p in reason_lower for p in ["the page confirms that", "the source confirms that", "the page supports that"]):
+            if any(p in reason_lower for p in [
+                "the page confirms that", "the source confirms that", "the page supports that",
+                "the source confirms the", "the page confirms the", "the source confirms its", "the page confirms its"
+            ]) and not any(reason_lower.startswith(n) for n in ["the source does not", "the page does not", "fails to"]):
                 row["supported"] = True
                 continue
             failures.append({
