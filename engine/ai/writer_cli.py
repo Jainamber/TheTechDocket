@@ -143,10 +143,11 @@ class Runner:
         fail_msgs = []
         for f in report.get("failures", []):
             u = f.get("url", "")
-            r = f.get("reason", "")
-            claims = f.get("claims", [])
-            claim_str = " ".join(claims)[:300] if claims else f.get("detail", "")
-            fail_msgs.append(f"- URL '{u}' DID NOT SUPPORT CLAIM: \"{claim_str}\". Reason: {r}. Action: DELETE this sentence and its link from your draft, or rewrite it to assert ONLY what '{u}' explicitly confirms.")
+            r = f.get("detail") or f.get("reason") or ""
+            claim_str = f.get("claim") or ""
+            if not claim_str and f.get("claims"):
+                claim_str = " ".join(f.get("claims"))
+            fail_msgs.append(f"- URL '{u}' DID NOT SUPPORT CLAIM: \"{claim_str[:300]}\". Reason: {r}. Action: DELETE this sentence and its link from your draft, or rewrite it to assert ONLY what '{u}' explicitly confirms.")
         feedback = "CITATION GATE FAILED — You must fix these claims in your draft (safest action is to DELETE the unverified sentence):\n" + "\n".join(fail_msgs)
         return False, feedback
 
@@ -311,11 +312,11 @@ def run_all(date_ist: str, root: Path, cfg: dict, client, ledger, *,
             r.engine_run("fetch")
 
         # (2) + (3) select
-        r.engine_run("select")
+        r.engine_run("select", "--date", date_ist)
         r.ai_select(date_ist, client, cfg)
 
         # (4) + (5) brief + research
-        r.engine_run("brief")
+        r.engine_run("brief", "--date", date_ist)
         r.ai_research(date_ist, None, client, cfg)
 
         # (6) write

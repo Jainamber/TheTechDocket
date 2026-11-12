@@ -1,0 +1,150 @@
+{
+  "slug": "claude-code-pi-developers-swapping-terminal-agents",
+  "date": "2026-11-09",
+  "checked_at": "2026-11-12T11:05:58.766077+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "title": "Goodbye Claude, Hello Pi — Caleb's Blog",
+      "primary": true,
+      "claims": [
+        "The confusion started on September 21, 2026, when software engineer Caleb published a technical post titled \"Goodbye Claude, Hello Pi\" on caleb.software.",
+        "Claude Code underwent 244 releases in 2026 alone, with more than three-quarters of those updates modifying the core system prompt or tool descriptions.",
+        "Its default Bash tool description runs to nearly 3,000 tokens, detailing complex Git commands and GitHub pull request workflows that modern LLMs already understand."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "At the time of writing, there have been 244 releases to Claude Code this year; over 3/4 of these changed the system prompt or tool descriptions",
+      "fetch_ok": true,
+      "reason": "The source article confirms the publication date, title, author, the 244 releases in 2026 with over 3/4 changing system prompts/tool descriptions, and the nearly 3,000-token Bash tool description detailing git and GitHub PR workflows."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50410107",
+      "title": "Hacker News Discussion",
+      "primary": true,
+      "claims": [
+        "On November 8, 2026, a dormant blog post reached 811 points on Hacker News, triggering a wave of automated AI-generated news reports that hallucinated the core facts.",
+        "After sitting dormant for seven weeks, the article surged to the top of Hacker News, generating 449 comments from developers debating the merits of local AI tooling."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Goodbye Claude, hello Pi (caleb.software) 811 points by karagenit 2 days ago | hide | past | favorite | 489 comments",
+      "fetch_ok": true,
+      "reason": "The Hacker News page confirms the post reached 811 points and generated over 449 comments (currently 489) with developers actively debating local AI tooling."
+    },
+    {
+      "url": "https://felloai.com/claude-code-pricing/",
+      "title": "Claude Code Pricing — Fello AI",
+      "primary": false,
+      "claims": [
+        "While a standard Claude Pro subscription costs $20 monthly in the US, Indian developers pay a steep premium once local taxes and bank fees are calculated.",
+        "A standard Claude Pro subscription is priced at $20 per month in the US."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Your $20 Pro subscription still includes Claude Code as of November 2026.",
+      "fetch_ok": true,
+      "reason": "The source confirms that a standard Claude Pro subscription is priced at $20 per month."
+    },
+    {
+      "url": "https://www.faros.ai/blog/claude-code-pricing",
+      "title": "Claude Code Pricing Analysis — Faros AI",
+      "primary": false,
+      "claims": [
+        "Driven by high enterprise operational costs averaging $13 per developer daily and bloated system prompts, software engineers are opting for lightweight, model-agnostic terminal environments to regain control over local development workflows.",
+        "From an enterprise cost perspective, Anthropic's official documentation indicates that Claude Code deployments average $13 per developer per active day.",
+        "**Average Daily Cost** | $13 per active user | Model-dependent (User API key) | faros.ai / openrouter.ai"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Across enterprise deployments, Anthropic reports that Claude Code costs about $150 to $250 per developer per month and around $13 per developer per active day.",
+      "fetch_ok": true,
+      "reason": "The source confirms that Claude Code costs around $13 per developer per active day across enterprise deployments."
+    },
+    {
+      "url": "https://openrouter.ai/blog/insights/claude-code-cost/",
+      "title": "Claude Code Cost Insights — OpenRouter",
+      "primary": false,
+      "claims": [
+        "This translates to monthly estimates ranging from $17 to $306 per developer depending on the model and usage intensity.",
+        "**Average Daily Cost** | $13 per active user | Model-dependent (User API key) | faros.ai / openrouter.ai",
+        "This can translate to monthly costs ranging from $17 to $306 per developer depending on usage."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Light: 5 short sessions (2–9 turns) a workday $34 $17 Regular: 20 short sessions a workday $134 $68 Heavy: 10 long sessions (10–49 turns) a workday $306 $131",
+      "fetch_ok": true,
+      "reason": "The source confirms that monthly estimates for Claude Code range from $17 (light usage on Sonnet 5.5) to $306 (heavy usage on Opus 5.5) per developer."
+    },
+    {
+      "url": "https://www.oflight.co.jp/en/columns/pi-coding-agent-harness-earendil-1-0-guide-2026",
+      "title": "Pi Coding Agent Guide — Oflight",
+      "primary": false,
+      "claims": [
+        "Originally built by Mario Zechner, the creator of the popular libGDX game framework, the project was acquired on April 8, 2026, by Earendil Inc..",
+        "Pi, by contrast, operates with a system prompt of just 200 to 605 tokens.",
+        "**System Prompt Size** | ~3,000 tokens (Bash tool) | 200 to 605 tokens | caleb.software / oflight.co.jp"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "On April 8, 2026, Earendil announced the acquisition of the Pi open-source project, and Mario Zechner became a major stakeholder and team member at Earendil at the same time.",
+      "fetch_ok": true,
+      "reason": "The source confirms that Pi was created by Mario Zechner (author of libGDX) and acquired by Earendil Inc. on April 8, 2026."
+    },
+    {
+      "url": "https://agentic-ai.readthedocs.io/en/latest/AgentHarness/pi-dev/",
+      "title": "Pi Dev Harness Documentation — Readthedocs",
+      "primary": false,
+      "claims": [
+        "**License & Access** | Proprietary, tied to paid plans | Open-source, MIT licensed | agentic-ai.readthedocs.io"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Pi is a minimal, open-source terminal coding agent harness... Pi is published as an MIT-licensed monorepo",
+      "fetch_ok": true,
+      "reason": "The source confirms that Pi is an open-source, MIT-licensed coding agent harness, and lists Claude Code's license as Proprietary."
+    },
+    {
+      "url": "https://www.alexdunlop.com/writing/pi-vs-claude-code-which-ai-coding-agent-in-2026",
+      "title": "Pi vs Claude Code Comparison — Alex Dunlop",
+      "primary": false,
+      "claims": [
+        "**Core Toolset** | Complex multi-agent tools | 4 tools (read, write, edit, bash) | alexdunlop.com"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "The default tools are read, bash, edit, and write.",
+      "fetch_ok": true,
+      "reason": "The source confirms that Pi's default tools are read, bash, edit, and write, while Claude Code uses sub-agents and other built-in tools."
+    },
+    {
+      "url": "https://aipulsee.com/story/goodbye-claude-hello-pi-recBdsZ2fAXTguffz",
+      "title": "Goodbye Claude, Hello Pi AI Scraper — AIPulsee",
+      "primary": false,
+      "claims": [
+        "Articles published on AIPulsee and emergent.sh described a developer switching from Anthropic's conversational chatbot to Inflection AI's consumer assistant, Pi."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Goodbye Claude, hello Pi",
+      "fetch_ok": true,
+      "reason": "The fetched AIPulsee page confirms the article titled 'Goodbye Claude, hello Pi' which summarizes a post from caleb.software about transitioning from Claude to the Pi assistant."
+    },
+    {
+      "url": "https://emergent.sh/news/developer-switches-claude-pi-daily-ai",
+      "title": "Developer Switches to Pi — Emergent.sh",
+      "primary": false,
+      "claims": [
+        "Articles published on AIPulsee and emergent.sh described a developer switching from Anthropic's conversational chatbot to Inflection AI's consumer assistant, Pi."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "A software developer has publicly shared their decision to replace Anthropic's Claude with Inflection AI's Pi as their primary AI assistant, sparking discussion about what users truly value in daily AI interactions.",
+      "fetch_ok": true,
+      "reason": "The source article on emergent.sh confirms that a developer switched from Anthropic's Claude to Inflection AI's Pi as their primary AI assistant."
+    }
+  ],
+  "failures": []
+}

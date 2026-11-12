@@ -1,0 +1,267 @@
+{
+  "date": "2026-11-12",
+  "candidates": [
+    {
+      "title": "Smart home devices should work without the internet",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 822,
+          "comments": 296,
+          "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+        }
+      ],
+      "score": 0.6232,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Starlink Mini 2",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9558791247864161,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 353,
+          "comments": 353,
+          "url": "https://starlink.com/mini-2"
+        }
+      ],
+      "score": 0.6188,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9259279563193175,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 375,
+          "comments": 269,
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+        }
+      ],
+      "score": 0.6178,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Muse Ember: Our smallest, most efficient model",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.897202794440428,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 330,
+          "comments": 140,
+          "url": "https://research.meta.ai/blog/muse-ember"
+        }
+      ],
+      "score": 0.6092,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini 4 Carbon is now available",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8967203974569701,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 282,
+          "comments": 155,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        }
+      ],
+      "score": 0.609,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Foldable Flight: The Best Paper Airplanes",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1214,
+          "comments": 167,
+          "url": "https://www.foldableflight.com"
+        }
+      ],
+      "score": 0.5998,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "TPU 8tx and TPU 8i Max",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8517655970460335,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 257,
+          "comments": 76,
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        }
+      ],
+      "score": 0.5955,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Tracking Anthropic-discovered vulnerabilities",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9797510345077769,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 366,
+          "comments": 168,
+          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
+        }
+      ],
+      "score": 0.5899,
+      "topic_fit": 0.78,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AlphaProof Code",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 606,
+          "comments": 179,
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+        }
+      ],
+      "score": 0.584,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Process Explorer for macOS",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7773796725079933,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 171,
+          "comments": 57,
+          "url": "https://github.com/microsoft/Procexp-Mac"
+        }
+      ],
+      "score": 0.5692,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI usage generates a fragile codebase",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 460,
+          "comments": 454,
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
+        },
+        {
+          "source": "hn",
+          "points": 461,
+          "comments": 454,
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
+        }
+      ],
+      "score": 0.568,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7415229231044896,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 125,
+          "comments": 97,
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+        },
+        {
+          "source": "hn",
+          "points": 125,
+          "comments": 97,
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+        }
+      ],
+      "score": 0.5625,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Smart home devices should work without the internet",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 822,
+        "comments": 296,
+        "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+      }
+    ],
+    "score": 0.6232,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

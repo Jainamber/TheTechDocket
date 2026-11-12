@@ -29,7 +29,9 @@ def main(argv=None):
     sub.add_parser("fetch")
     sel = sub.add_parser("select")
     sel.add_argument("--inbox", type=Path, default=None)
-    sub.add_parser("brief")
+    sel.add_argument("--date", default=None)
+    br = sub.add_parser("brief")
+    br.add_argument("--date", default=None)
     sub.add_parser("build")
     g = sub.add_parser("gate")
     g.add_argument("--slug", required=True)
@@ -69,7 +71,7 @@ def main(argv=None):
 
     elif args.cmd == "select":
         from .scoring import select
-        res = select(args.inbox)
+        res = select(args.inbox, date_str=args.date)
         pick = res["pick"]
         print(json.dumps({"pick": pick["title"] if pick else None,
                           "score": pick["score"] if pick else None,
@@ -80,7 +82,7 @@ def main(argv=None):
 
     elif args.cmd == "brief":
         from .brief import build_brief
-        day = today_str()
+        day = args.date or today_str()
         sel_path = ROOT / "data" / "briefs" / f"{day}-candidates.json"
         inbox_path = ROOT / "data" / "inbox" / f"{day}.json"
         if not sel_path.exists():
@@ -88,7 +90,7 @@ def main(argv=None):
         selection = json.loads(sel_path.read_text(encoding="utf-8"))
         inbox = json.loads(inbox_path.read_text(encoding="utf-8")) \
             if inbox_path.exists() else {}
-        out = build_brief(selection, inbox)
+        out = build_brief(selection, inbox, date_str=day)
         print(f"brief: {out}")
 
     elif args.cmd == "build":

@@ -36,15 +36,28 @@ GROUNDING_REDIRECT_RE = re.compile(
 )
 
 
-def http_resolve(url: str, timeout: float = 15.0) -> str:
+def http_resolve(url: str, timeout: float = 4.0) -> str:
     """Default resolver: one GET following redirects, return the final
     landing url. Raises on any network/HTTP-level failure — the caller
     decides the fail-open policy (leave the original url, log a warning)."""
+    # Direct deep URLs do not need HTTP resolution
+    if not GROUNDING_REDIRECT_RE.match(url) and not url.startswith("http://localhost"):
+        return url
+
     import requests
 
-    resp = requests.get(url, timeout=timeout, allow_redirects=True)
+    try:
+        resp = requests.head(url, timeout=timeout, allow_redirects=True)
+        resp.close()
+        if resp.url:
+            return resp.url
+    except Exception:
+        pass
+
+    resp = requests.get(url, timeout=timeout, allow_redirects=True, stream=True)
+    final_url = resp.url
     resp.close()
-    return resp.url
+    return final_url
 
 
 def resolve_single(url: str, *, resolver=http_resolve,

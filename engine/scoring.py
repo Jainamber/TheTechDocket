@@ -189,9 +189,9 @@ def score_candidates(cands: list[dict], cfg: dict) -> list[dict]:
     return scored
 
 
-def select(inbox_path: Path | None = None) -> dict:
+def select(inbox_path: Path | None = None, date_str: str | None = None) -> dict:
     cfg = load_config()
-    day = today_str()
+    day = date_str or today_str()
     inbox_path = inbox_path or ROOT / "data" / "inbox" / f"{day}.json"
     if not inbox_path.exists():
         raise SystemExit(

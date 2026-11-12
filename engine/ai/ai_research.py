@@ -152,8 +152,10 @@ def run(date_ist: str, slug_hint: str | None, client, cfg: dict,
     seen_resolved_urls: set[str] = set()
 
     for angle_key, angle_instruction in QUERY_ANGLES[:max_calls]:
+        print(f"[{angle_key}] rendering prompt...", flush=True)
         user_msg = _render_prompt(date_ist, slug_hint, brief_text, angle_instruction)
         try:
+            print(f"[{angle_key}] calling client.generate...", flush=True)
             res = client.generate(
                 step="research",
                 model=llm_cfg["model_research"],
@@ -162,7 +164,9 @@ def run(date_ist: str, slug_hint: str | None, client, cfg: dict,
                 temperature=0.3,
                 max_output=4096,
             )
+            print(f"[{angle_key}] returned text len: {len(res.text or '')}", flush=True)
         except Exception as e:  # noqa: BLE001 — BudgetExceeded/ModelUnavailable/etc: stop, keep what we have
+            print(f"[{angle_key}] FAILED with {type(e).__name__}: {e}", flush=True)
             pack.note = (pack.note + f" | stopped at '{angle_key}': "
                         f"{type(e).__name__}: {e}").strip(" |")
             break

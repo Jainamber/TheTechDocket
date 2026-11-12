@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-09",
+  "candidates": [
+    {
+      "title": "Goodbye Claude, hello Pi",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 728,
+          "comments": 449,
+          "url": "https://caleb.software/posts/claude-to-pi.html"
+        }
+      ],
+      "score": 0.64,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 850,
+          "comments": 450,
+          "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+        }
+      ],
+      "score": 0.64,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 693,
+          "comments": 384,
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9125613989720174,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 402,
+          "comments": 180,
+          "url": "https://github.com/synchopate/llama-modchip"
+        }
+      ],
+      "score": 0.6138,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9606275677884647,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 494,
+          "comments": 536,
+          "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company"
+        }
+      ],
+      "score": 0.6122,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9464871144349938,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 500,
+          "comments": 309,
+          "url": "https://hunch.net/?p=13764006"
+        }
+      ],
+      "score": 0.6083,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8591146150345433,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 319,
+          "comments": 625,
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout"
+        }
+      ],
+      "score": 0.5977,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Declarative Dragging",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9100482987738944,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 451,
+          "comments": 59,
+          "url": "https://declarative-dragging.github.io/"
+        }
+      ],
+      "score": 0.597,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.897614918775334,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 359,
+          "comments": 95,
+          "url": "https://ketchup3d.github.io/app/"
+        }
+      ],
+      "score": 0.5948,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.901042442483068,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 392,
+          "comments": 105,
+          "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
+        }
+      ],
+      "score": 0.5783,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI is dramatically accelerating AI research",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8869996709952922,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 374,
+          "comments": 354,
+          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai"
+        }
+      ],
+      "score": 0.5741,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Outlook.com is rejecting email from domains without DMARC",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8829033198020019,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 335,
+          "comments": 253,
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc"
+        }
+      ],
+      "score": 0.5729,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Goodbye Claude, hello Pi",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 728,
+        "comments": 449,
+        "url": "https://caleb.software/posts/claude-to-pi.html"
+      }
+    ],
+    "score": 0.64,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

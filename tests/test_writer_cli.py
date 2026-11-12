@@ -203,8 +203,8 @@ def test_all_step_ordering_happy_path(tmp_path):
         "engine_run", "ai_select", "engine_run", "ai_research", "ai_write",
         "citation_gate", "engine_run", "gate", "ai_docket", "ai_social",
     ]
-    assert fake.calls[0] == ("engine_run", "select")
-    assert fake.calls[2] == ("engine_run", "brief")
+    assert fake.calls[0][:2] == ("engine_run", "select")
+    assert fake.calls[2][:2] == ("engine_run", "brief")
     assert fake.calls[6] == ("engine_run", "build")
 
 
@@ -218,7 +218,7 @@ def test_all_runs_fetch_when_inbox_missing(tmp_path):
                        ledger=None, runner=fake)
 
     assert fake.calls[0] == ("engine_run", "fetch")
-    assert fake.calls[1] == ("engine_run", "select")
+    assert fake.calls[1][:2] == ("engine_run", "select")
 
 
 # ---------------- retry budget ----------------

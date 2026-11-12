@@ -755,6 +755,24 @@
       },
       "gate_report": "data/gate-reports/2026-11-08-discord-kills-electron-rust-windows-11.json",
       "url": "https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/"
+    },
+    {
+      "date": "2026-11-09",
+      "slug": "claude-code-pi-developers-swapping-terminal-agents",
+      "title": "Claude Code vs Pi: Why Developers Are Swapping Terminal Agents",
+      "keyword": "Claude Code vs Pi",
+      "hub": "ai-tools",
+      "published_at": "2026-11-12T11:23:00.017120+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-09T18:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-12-claude-code-pi-developers-swapping-terminal-agents.json",
+      "url": "https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/"
     }
   ]
 }

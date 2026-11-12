@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>Claude Code vs Pi: Why Developers Are Swapping Terminal Agents</title>
+    <link>https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/</guid>
+    <pubDate>Mon, 09 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[A viral shift from Anthropic's Claude Code to the open-source Pi coding agent exposes developer frustration with tool bloat and high API token costs.]]></description>
+  </item>
+  <item>
     <title>Discord Kills Electron: Inside the 70% Leaner Rust Rebuild</title>
     <link>https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/</guid>
     <pubDate>Mon, 03 Aug 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[EU AI Act enforcement began August 2, 2026: chatbot and deepfake disclosure is law and GPAI fines are live, while high-risk rules wait until December 2027.]]></description>
-  </item>
-  <item>
-    <title>DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price</title>
-    <link>https://thetechdocket.com/articles/deepseek-v4-flash-0731/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/deepseek-v4-flash-0731/</guid>
-    <pubDate>Sun, 02 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[DeepSeek V4 Flash 0731 jumps 10 points on independent benchmarks and holds $0.14/$0.28 per million pricing. Verified scores, price-war context, India cost math.]]></description>
   </item>
 </channel>
 </rss>

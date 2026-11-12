@@ -57,9 +57,9 @@ def _internal_link_targets(hub_guess: str) -> str:
                      for a in pool)
 
 
-def build_brief(selection: dict, inbox: dict) -> Path:
+def build_brief(selection: dict, inbox: dict, date_str: str | None = None) -> Path:
     cfg = load_config()
-    day = today_str()
+    day = date_str or selection.get("date") or today_str()
     pick = selection.get("pick")
     evergreen = selection.get("use_evergreen")
     hubs = ", ".join(f"`{k}` ({v})" for k, v in cfg["content"]["hubs"].items())
