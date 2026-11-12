@@ -195,7 +195,7 @@ def generate_hero(title: str, slug: str, hub: str, site_name: str,
         img = _cover(w, h, hub, slug, motif=motif, icon=icon)
         base = outdir / f"{slug}-{label}"
         img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
-        img.save(f"{base}.webp", quality=84, method=6)
+        img.save(f"{base}.webp", quality=84, method=3)
         outputs.append({"label": label, "w": w, "h": h,
                         "jpg": f"{base.name}.jpg", "webp": f"{base.name}.webp"})
     return outputs
@@ -208,7 +208,7 @@ def generate_docket_card(date_str: str, date_human: str, site_name: str,
     img = _cover(1200, 675, "docket", date_str, motif="ticker", icon="news")
     base = outdir / f"docket-{date_str}-16x9"
     img.save(f"{base}.jpg", quality=88, optimize=True, progressive=True)
-    img.save(f"{base}.webp", quality=84, method=6)
+    img.save(f"{base}.webp", quality=84, method=3)
     return {"jpg": f"{base.name}.jpg", "webp": f"{base.name}.webp"}
 
 

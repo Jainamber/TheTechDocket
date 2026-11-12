@@ -1,0 +1,25 @@
+{
+  "slug": "termsheet-please-game-simulates-y-combinator-funding-decisions",
+  "date": "2026-11-12",
+  "checked_at": "2026-11-12T13:06:22.985376+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://termsheetplease.com/",
+      "title": "Termsheet Please — Interactive Game",
+      "primary": true,
+      "claims": [
+        "The newly launched browser game Termsheet Please recreates the high-pressure environment of venture capital screening by casting players as investment partners vetting startup applications.",
+        "Players in Termsheet Please must review pitch decks, founder resumes, and market sizes to approve or reject early-stage startups within a limited daily time limit.",
+        "While Termsheet Please exaggerates the venture capital screening process for comedic effect, its core mechanics accurately reflect the strict filtering criteria used by accelerators like Y Combinator."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Term Sheet, Please  NEXT  NEWEXTENDVERIFY  CALL THE NEXT FOUNDER  Elias Hart01  16:12 1 DAY AFTER DEMO DAY CASE 01  MAIL NOTES 17:00  PASS FUND HOLD  PLACE DECISION SHEET ON THE DESK",
+      "fetch_ok": true,
+      "reason": "The fetched page confirms the game's title, its VC screening premise ('CALL THE NEXT FOUNDER', 'PASS FUND HOLD', 'DECISION SHEET'), and its daily time-limit mechanic ('16:12', '17:00')."
+    }
+  ],
+  "failures": []
+}

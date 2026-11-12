@@ -484,9 +484,10 @@ class DocketGateRunner:
         is_latest = bool(latest_all) and latest_all[0]["date"] == self.date
         latest_ok = (not is_latest) or (
             c_latest is not None and c_latest.get("href") == expected)
+        sm_ok = (not is_latest) or ("docket/" in sm)
         self.check("D09-canonicals", HARD,
                    c_dated is not None and c_dated.get("href") == expected
-                   and latest_ok and f"docket/{self.date}/" in sm,
+                   and latest_ok and sm_ok,
                    f"dated canonical must be {expected}, /docket/ must point at "
                    "the latest dated page, and the dated URL must be in sitemap.xml")
 

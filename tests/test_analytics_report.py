@@ -39,9 +39,9 @@ def test_sitemap_tightened_to_54_canonical_urls():
     cfg = load_config()
     arts = all_articles()
     sitemap = _sitemap_xml(cfg, arts)
-    # Exactly 54 <url> entries
+    # Exactly len(arts) + 12 <url> entries (48 articles + 12 static/hubs/docket)
     url_count = sitemap.count("<url><loc>")
-    assert url_count == 54
+    assert url_count == len(arts) + 12
     # Dated dockets and deck sub-pages must be excluded from sitemap.xml
     assert "/docket/2026-07-19/" not in sitemap
     assert "/deck/ai-models/" not in sitemap

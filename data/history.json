@@ -773,6 +773,60 @@
       },
       "gate_report": "data/gate-reports/2026-11-12-claude-code-pi-developers-swapping-terminal-agents.json",
       "url": "https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/"
+    },
+    {
+      "date": "2026-11-10",
+      "slug": "google-gemini-routes-private-drive-files-human-annotators",
+      "title": "Google Gemini Routes Private Drive Files to Human Annotators",
+      "keyword": "Google Gemini",
+      "hub": "policy",
+      "published_at": "2026-11-12T13:30:14.563031+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-10T00:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-10-google-gemini-routes-private-drive-files-human-annotators.json",
+      "url": "https://thetechdocket.com/articles/google-gemini-routes-private-drive-files-human-annotators/"
+    },
+    {
+      "date": "2026-11-11",
+      "slug": "smart-home-local-control-your-devices-must-work",
+      "title": "Smart Home Local Control: Why Your Devices Must Work Offline",
+      "keyword": "smart home local control",
+      "hub": "hardware",
+      "published_at": "2026-11-12T14:16:14.086377+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-11T14:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-11-smart-home-local-control-your-devices-must-work.json",
+      "url": "https://thetechdocket.com/articles/smart-home-local-control-your-devices-must-work/"
+    },
+    {
+      "date": "2026-11-12",
+      "slug": "term-sheet-please-inside-yc-startup-funding-game",
+      "title": "Term Sheet, Please: Inside the YC Startup Funding Game",
+      "keyword": "Term Sheet, Please",
+      "hub": "ai-tools",
+      "published_at": "2026-11-12T14:09:40.111527+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-12T14:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-12-term-sheet-please-inside-yc-startup-funding-game.json",
+      "url": "https://thetechdocket.com/articles/term-sheet-please-inside-yc-startup-funding-game/"
     }
   ]
 }

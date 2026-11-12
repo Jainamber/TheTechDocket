@@ -1,6 +1,6 @@
 {
   "pick_rank": 0,
-  "reason": "ai_select failed (JSONDecodeError: Unterminated string starting at: line 1 column 28 (char 27)) — mechanical pick used",
+  "reason": "ai_select failed (JSONDecodeError: Unterminated string starting at: line 3 column 13 (char 32)) — mechanical pick used",
   "override": false,
-  "note": "ai_select failed (JSONDecodeError: Unterminated string starting at: line 1 column 28 (char 27)) — mechanical pick used"
+  "note": "ai_select failed (JSONDecodeError: Unterminated string starting at: line 3 column 13 (char 32)) — mechanical pick used"
 }

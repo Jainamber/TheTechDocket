@@ -7,7 +7,7 @@
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 1.0,
+      "momentum_raw": 0.9961466750942727,
       "evidence": [
         {
           "source": "hn",
@@ -16,33 +16,83 @@
           "url": "https://github.com/thisisme6598/gemini_files/"
         }
       ],
-      "score": 0.64,
+      "score": 0.6388,
       "topic_fit": 1.0,
       "corroboration": 0.0
     },
     {
-      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "title": "The end of Microsoft Research's AI Frontiers group",
       "sources": [
-        "hn",
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 1.0,
+      "momentum_raw": 0.9490688863820488,
       "evidence": [
         {
           "source": "hn",
-          "points": 335,
-          "comments": 242,
-          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
-        },
-        {
-          "source": "hn",
-          "points": 336,
-          "comments": 242,
-          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+          "points": 509,
+          "comments": 309,
+          "url": "https://hunch.net/?p=13764006"
         }
       ],
-      "score": 0.64,
+      "score": 0.6091,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9652269710928955,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 465,
+          "comments": 741,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ],
+      "score": 0.6047,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "I'm not convinced the AI bubble exists",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9827692180903251,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 550,
+          "comments": 943,
+          "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists"
+        }
+      ],
+      "score": 0.6025,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Semi-transparent, colored cadmium telluride photovoltaic panels in agrivoltaics",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8718021608041332,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 299,
+          "comments": 196,
+          "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/"
+        }
+      ],
+      "score": 0.6015,
       "topic_fit": 1.0,
       "corroboration": 0.0
     },
@@ -53,7 +103,7 @@
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 1.0,
+      "momentum_raw": 0.8665295218581561,
       "evidence": [
         {
           "source": "hn",
@@ -68,129 +118,8 @@
           "url": "https://research.meta.ai/blog/muse-ember"
         }
       ],
-      "score": 0.64,
+      "score": 0.6,
       "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "TPU 8tx and TPU 8i Max",
-      "sources": [
-        "hn",
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 243,
-          "comments": 73,
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
-        },
-        {
-          "source": "hn",
-          "points": 243,
-          "comments": 73,
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
-        }
-      ],
-      "score": 0.64,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Claude Fable 5.2 and Mythos 5.2",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 465,
-          "comments": 741,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-        }
-      ],
-      "score": 0.636,
-      "topic_fit": 0.98,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Show HN: Every satellite that passed over any place this week, and its photos",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 301,
-          "comments": 50,
-          "url": "https://www.watched.earth"
-        }
-      ],
-      "score": 0.636,
-      "topic_fit": 0.98,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Semi-transparent, colored cadmium telluride photovoltaic panels in agrivoltaics",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.9854048658255898,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 299,
-          "comments": 196,
-          "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/"
-        }
-      ],
-      "score": 0.6356,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "The end of Microsoft Research's AI Frontiers group",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.9830456830651686,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 509,
-          "comments": 309,
-          "url": "https://hunch.net/?p=13764006"
-        }
-      ],
-      "score": 0.619,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "I'm not convinced the AI bubble exists",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 550,
-          "comments": 943,
-          "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists"
-        }
-      ],
-      "score": 0.6076,
-      "topic_fit": 0.92,
       "corroboration": 0.0
     },
     {
@@ -220,12 +149,83 @@
       "corroboration": 0.0
     },
     {
+      "title": "Show HN: Every satellite that passed over any place this week, and its photos",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.875584375862002,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 301,
+          "comments": 50,
+          "url": "https://www.watched.earth"
+        }
+      ],
+      "score": 0.5987,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8991933727962729,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 335,
+          "comments": 242,
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+        },
+        {
+          "source": "hn",
+          "points": 336,
+          "comments": 242,
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+        }
+      ],
+      "score": 0.5952,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "TPU 8tx and TPU 8i Max",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8380984824237252,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 243,
+          "comments": 73,
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        },
+        {
+          "source": "hn",
+          "points": 243,
+          "comments": 73,
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        }
+      ],
+      "score": 0.5914,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
       "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
       "sources": [
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 0.9333680898852283,
+      "momentum_raw": 0.9067481547279281,
       "evidence": [
         {
           "source": "hn",
@@ -234,26 +234,26 @@
           "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
         }
       ],
-      "score": 0.588,
+      "score": 0.58,
       "topic_fit": 0.84,
       "corroboration": 0.0
     },
     {
-      "title": "How I'm fighting the AI brain fry",
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
       "sources": [
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 0.9089036629464474,
+      "momentum_raw": 0.9845935441707454,
       "evidence": [
         {
           "source": "hn",
-          "points": 304,
-          "comments": 212,
-          "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry"
+          "points": 513,
+          "comments": 281,
+          "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy"
         }
       ],
-      "score": 0.5751,
+      "score": 0.5634,
       "topic_fit": 0.64,
       "corroboration": 0.0
     }
@@ -264,7 +264,7 @@
       "hn"
     ],
     "geos": [],
-    "momentum_raw": 1.0,
+    "momentum_raw": 0.9961466750942727,
     "evidence": [
       {
         "source": "hn",
@@ -273,7 +273,7 @@
         "url": "https://github.com/thisisme6598/gemini_files/"
       }
     ],
-    "score": 0.64,
+    "score": 0.6388,
     "topic_fit": 1.0,
     "corroboration": 0.0
   },

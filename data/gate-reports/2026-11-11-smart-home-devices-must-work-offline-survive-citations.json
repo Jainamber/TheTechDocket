@@ -1,0 +1,24 @@
+{
+  "slug": "smart-home-devices-must-work-offline-survive",
+  "date": "2026-11-11",
+  "checked_at": "2026-11-12T13:03:32.947241+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "title": "Home Automation Overnight Success — Hacker News Case Study",
+      "primary": true,
+      "claims": [
+        "A detailed case study on building a self-hosted ecosystem shows how achieving home automation overnight success relies on removing external web dependencies.",
+        "The operational differences between cloud-reliant systems and local-first architectures highlight why developers seeking home automation overnight success are shifting toward offline-first setups:"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Nothing core in my house depends on a vendor's server. If the internet goes down, the house keeps running.",
+      "fetch_ok": true,
+      "reason": "The source is a detailed case study on building a self-hosted home automation setup that works offline without external web dependencies."
+    }
+  ],
+  "failures": []
+}

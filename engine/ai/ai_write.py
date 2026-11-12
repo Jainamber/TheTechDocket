@@ -468,11 +468,13 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
         # If the author listed sources in front matter that were never cited inline,
         # prune non-primary ones so they don't trigger orphaned verification failures,
         # provided >= 2 valid sources remain to satisfy gate G06.
+        # Also auto-clamp description to <= 165 chars if over length.
         m_final = FM_RE.match(final_text)
         if m_final:
             try:
                 final_meta = yaml.safe_load(m_final.group(1)) or {}
                 final_body = m_final.group(2)
+                changed = False
                 if isinstance(final_meta.get("sources"), list):
                     body_urls = {
                         u for _a, u in _LINK_RE.findall(final_body)
@@ -485,8 +487,15 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
                         ]
                         if len(pruned) >= 2 and len(pruned) < len(final_meta["sources"]):
                             final_meta["sources"] = pruned
-                            fm_dump = yaml.safe_dump(final_meta, sort_keys=False, allow_unicode=True, width=100)
-                            final_text = f"---\n{fm_dump}---\n{final_body}"
+                            changed = True
+                desc = final_meta.get("description")
+                if desc and len(desc) > 165:
+                    from ..build import _meta_desc
+                    final_meta["description"] = _meta_desc(desc, lo=110, hi=165)
+                    changed = True
+                if changed:
+                    fm_dump = yaml.safe_dump(final_meta, sort_keys=False, allow_unicode=True, width=100)
+                    final_text = f"---\n{fm_dump}---\n{final_body}"
             except Exception:
                 pass
 

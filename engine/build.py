@@ -657,13 +657,16 @@ def _llms_txt(cfg, arts: list[dict]) -> str:
 # ---------------- main build ----------------
 
 def build_site() -> Path:
+    print("build_site: loading config...", flush=True)
     cfg = load_config()
     env = _env()
     out = ROOT / cfg["publishing"]["output_dir"]
+    print("build_site: loading articles...", flush=True)
     arts = all_articles()
     author = cfg["author"]
 
     # ensure site assets
+    print("build_site: generating site assets...", flush=True)
     images.generate_site_assets(cfg["site"]["name"], out / "assets")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     key = cfg["seo"]["indexnow_key"]

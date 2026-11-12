@@ -304,7 +304,7 @@ llm:
   model_fast: gemini-3.5-flash
   model_fast_fallbacks: [gemini-2.5-flash]
   daily_budget_usd: 20.00
-  max_grounded_queries_per_run: 4
+  max_grounded_queries_per_run: 35
   max_url_fetches_per_run: 100
   # 1 retry rewrite max: draft converges in 1 corrective round (by deleting
   # unsupported claims per prompt instructions) or exits; keeps total run < 10 mins.

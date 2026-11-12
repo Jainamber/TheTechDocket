@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-11",
+  "candidates": [
+    {
+      "title": "Smart home devices should work without the internet",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 822,
+          "comments": 296,
+          "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+        }
+      ],
+      "score": 0.6232,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Starlink Mini 2",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9434025658365646,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 353,
+          "comments": 353,
+          "url": "https://starlink.com/mini-2"
+        }
+      ],
+      "score": 0.615,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Muse Ember: Our smallest, most efficient model",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8931208288536227,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 330,
+          "comments": 140,
+          "url": "https://research.meta.ai/blog/muse-ember"
+        }
+      ],
+      "score": 0.6079,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9209448974059538,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 375,
+          "comments": 269,
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+        }
+      ],
+      "score": 0.6016,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Foldable Flight: The Best Paper Airplanes",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1214,
+          "comments": 167,
+          "url": "https://www.foldableflight.com"
+        }
+      ],
+      "score": 0.5998,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "TPU 8tx and TPU 8i Max",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8481181103846788,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 257,
+          "comments": 76,
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        }
+      ],
+      "score": 0.5944,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Tracking Anthropic-discovered vulnerabilities",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9633778104527724,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 366,
+          "comments": 168,
+          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
+        }
+      ],
+      "score": 0.585,
+      "topic_fit": 0.78,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini 4 Carbon is now available",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.887913769357618,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 282,
+          "comments": 155,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        }
+      ],
+      "score": 0.5847,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Process Explorer for macOS",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7749030778587658,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 171,
+          "comments": 57,
+          "url": "https://github.com/microsoft/Procexp-Mac"
+        }
+      ],
+      "score": 0.5685,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI usage generates a fragile codebase",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9893055786201789,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 460,
+          "comments": 454,
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
+        },
+        {
+          "source": "hn",
+          "points": 461,
+          "comments": 454,
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
+        }
+      ],
+      "score": 0.5648,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "time",
+      "sources": [
+        "gtrends:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.7168419516408711,
+      "evidence": [
+        {
+          "source": "gtrends:IN",
+          "traffic": "20000+",
+          "news": [
+            {
+              "headline": "CISCE announces ICSE and ISC 2027 examination timetable",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/telangana/cisce-announces-icse-and-isc-2027-examination-timetable/article71685678.ece"
+            },
+            {
+              "headline": "CISCE announces ICSE and ISC 2027 examination schedules; tests to start in February",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/west-bengal/kolkata/cisce-announces-icse-and-isc-2027-examination-schedules-tests-to-start-in-february-prnt/cid/2188838"
+            },
+            {
+              "headline": "CBSE faces demands to reschedule 2027 Board exams clashing with Holi, Attukal Pongala",
+              "source": "Deccan Herald",
+              "url": "https://www.deccanherald.com/india/cbse-faces-demands-to-reschedule-2027-board-exams-clashing-with-holi-attukal-pongala-4213072"
+            }
+          ]
+        }
+      ],
+      "score": 0.5611,
+      "topic_fit": 0.88,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AlphaProof Code",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 606,
+          "comments": 179,
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+        }
+      ],
+      "score": 0.5575,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Smart home devices should work without the internet",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 822,
+        "comments": 296,
+        "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+      }
+    ],
+    "score": 0.6232,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

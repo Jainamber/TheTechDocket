@@ -1,0 +1,63 @@
+{
+  "slug": "smart-home-local-control-your-devices-must-work",
+  "date": "2026-11-11",
+  "checked_at": "2026-11-12T14:40:00.000000+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "title": "Smart home devices should work without the internet",
+      "primary": true,
+      "claims": [
+        "Spencer Kittleson's local-first architecture utilizes a GL.iNet Flint 2 router running OpenWrt as the local network's core docodethatmatters.com."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "GL.iNet Flint 2 router (GL-MT6000) Runs OpenWrt and an MQTT broker locally",
+      "fetch_ok": true,
+      "reason": "The source confirms Spencer Kittleson uses a GL.iNet Flint 2 router running OpenWrt to run his local MQTT broker."
+    },
+    {
+      "url": "https://csa-iot.org/newsroom/matter-1-4-enables-more-capable-smart-homes/",
+      "title": "Matter 1.4 Enables More Capable Smart Homes",
+      "primary": true,
+      "claims": [
+        "According to the Connectivity Standards Alliance, the Matter 1.4 update expands multi-admin and Home Router integration to unify device control across disparate vendor ecosystems csa-iot.org.",
+        "**Matter 1.4** | November 7, 2024 | Infrastructure & routing | Thread Border Router integration for home routers csa-iot.org"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Matter 1.4 Introduces Home Routers and Access Points (HRAP), Enhanced Multi-Admin",
+      "fetch_ok": true,
+      "reason": "The Connectivity Standards Alliance Matter 1.4 newsroom confirms Home Routers and Access Points (HRAP) support and Enhanced Multi-Admin."
+    },
+    {
+      "url": "https://coderlegion.com/34362/why-smart-home-devices-should-work-without-the-internet-and-how-to-design-one-that-does",
+      "title": "Why Smart Home Devices Should Work Without the Internet",
+      "primary": false,
+      "claims": [
+        "Local-first home networks offer distinct operational advantages over cloud-first systems coderlegion.com."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Designing Smart Home Devices that Work Offline",
+      "fetch_ok": true,
+      "reason": "The source supports the operational advantages and design principles of offline local-first smart home networks."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50441707",
+      "title": "Hacker News Discussion",
+      "primary": false,
+      "claims": [
+        "A community analysis detailing a ten-year retrospective in home automation accumulated over 1,100 points on Hacker News."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "1132 points by skittleson",
+      "fetch_ok": true,
+      "reason": "The fetched Hacker News page confirms the post by 'skittleson' reached 1132 points."
+    }
+  ],
+  "failures": []
+}

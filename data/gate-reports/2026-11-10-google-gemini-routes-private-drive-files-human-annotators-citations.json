@@ -1,0 +1,63 @@
+{
+  "slug": "google-gemini-routes-private-drive-files-human-annotators",
+  "date": "2026-11-10",
+  "checked_at": "2026-11-12T12:58:55.501211+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://blog.google/products-and-platforms/products/gemini/google-bard-new-features-update-sept-2023/",
+      "title": "Google Workspace Extensions Launch — Google Blog",
+      "primary": true,
+      "claims": [
+        "When Google first deployed its Workspace extensions on September 19, 2023, the official announcement explicitly promised that content from Gmail, Docs, and Drive would not be seen by human reviewers or used to train Google's models.",
+        "Cal.), alleging that the default-on change constituted unauthorized wiretapping under the California Invasion of Privacy Act (CIPA) (ClassAction.org).\n* **July 7, 2026:** Judge Noël Wise dismissed the initial complaint, ruling that the plaintiffs lacked Article III standing because they failed to demonstrate \"concrete harm\" beyond the mere capability of Google to track their data (Deep-Lex).\n* **August 18, 2026:** Plaintiffs filed an amended complaint to address the standing deficiencies.\n* **September 29, 2026:** Google filed a motion to dismiss the second amended complaint, which remains pending in federal court.\n* **October 16, 2026:** Google quietly edited its original September 2023 blog post, adding a dated footnote confirming that Workspace data is indeed processed to personalize other Google experiences, used to train generative models, and subjected to human review (Google Blog)."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "If you choose to use the Workspace extensions, your content from Gmail, Docs and Drive is not seen by human reviewers, used by Bard to show you ads or used to train the Bard model. (Update, October 16, 2026: You can view the latest about how some new features work here. As we've continued to make Google products more personalized and helpful, we've added features that enable users to choose to connect Workspace apps to other Google services. If users choose to enable these new features, data fro",
+      "fetch_ok": true,
+      "reason": "The blog post confirms both the original September 19, 2023 promise regarding Workspace extensions data privacy and the October 16, 2026 update footnote detailing changes to data processing, human review, and model training."
+    },
+    {
+      "url": "https://www.classaction.org/media/thele-v-google-complaint_2.pdf",
+      "title": "Thele v. Google LLC Amended Complaint — ClassAction.org",
+      "primary": true,
+      "claims": [
+        "Cal.), alleging that the default-on change constituted unauthorized wiretapping under the California Invasion of Privacy Act (CIPA) (ClassAction.org).\n* **July 7, 2026:** Judge Noël Wise dismissed the initial complaint, ruling that the plaintiffs lacked Article III standing because they failed to demonstrate \"concrete harm\" beyond the mere capability of Google to track their data (Deep-Lex).\n* **August 18, 2026:** Plaintiffs filed an amended complaint to address the standing deficiencies.\n* **September 29, 2026:** Google filed a motion to dismiss the second amended complaint, which remains pending in federal court.\n* **October 16, 2026:** Google quietly edited its original September 2023 blog post, adding a dated footnote confirming that Workspace data is indeed processed to personalize other Google experiences, used to train generative models, and subjected to human review (Google Blog)."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Google's conduct violates the California Invasion of Privacy Act (Cal. Pen. Code §§ 630, et seq. (“CIPA”))",
+      "fetch_ok": true,
+      "reason": "The fetched class action complaint confirms the lawsuit was filed in California alleging that Google's default-on Gemini tracking violates the California Invasion of Privacy Act (CIPA)."
+    },
+    {
+      "url": "https://dev.to/frankchu/googles-own-help-page-says-reviewers-can-read-your-gmail-3d42",
+      "title": "Google Gemini Human Review Help Page Analysis — Dev.to",
+      "primary": false,
+      "claims": [
+        "**Consumer (`@gmail.com`)** | Yes | Yes, selected subsets (Google Help) | Up to 3 years (36 months) (Gemini Privacy)"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "this applies to consumer (@gmail.com) accounts. ... a subset of Connected Apps data processed by Gemini is reviewed by human reviewers",
+      "fetch_ok": true,
+      "reason": "The source confirms that consumer (@gmail.com) accounts are subject to human review of a subset of Connected Apps data as stated in Google's help page."
+    },
+    {
+      "url": "https://consentaccess.in/compliance/dpdp-act",
+      "title": "Digital Personal Data Protection Act Compliance Overview — ConsentAccess",
+      "primary": false,
+      "claims": [
+        "Under Section 6 of the DPDP Act, consent must be free, specific, informed, unconditional, and unambiguous, requiring a clear affirmative action by the user (ConsentAccess)."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Section 6 | Collect valid consent | Free, specific, informed, unconditional and unambiguous, and as easy to withdraw as to give.",
+      "fetch_ok": true,
+      "reason": "The page confirms that under Section 6 of the DPDP Act, consent must be free, specific, informed, unconditional, and unambiguous."
+    }
+  ],
+  "failures": []
+}

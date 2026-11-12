@@ -1,0 +1,67 @@
+{
+  "slug": "term-sheet-please-inside-yc-startup-funding-game",
+  "date": "2026-11-12",
+  "checked_at": "2026-11-12T14:35:00.000000+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50457230",
+      "title": "Hacker News Thread — Term Sheet, Please",
+      "primary": true,
+      "claims": [
+        "The release of *Term Sheet, Please* sparked immediate controversy on Hacker News, accumulating over 210 points and 80 comments within its first day of launch, according to discussions on Hacker News.",
+        "The game garnered 213 points and 85 comments on Hacker News within 12 hours, with several prominent commenters urging the creator to add a clear credit line linking back to the original game's homepage.",
+        "Beyond the copyright debate, players offered significant technical and user interface feedback on the Hacker News discussion."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund (termsheetplease.com) 212 points by bolau 12 hours ago | hide | past | favorite | 84 comments",
+      "fetch_ok": true,
+      "reason": "The Hacker News thread confirms the game 'Term Sheet, Please' (termsheetplease.com) received 212 points and 84 comments within 12 hours, with users debating copyright/attribution and providing technical/UI feedback."
+    },
+    {
+      "url": "https://www.asiatechreview.com/p/y-combinator-reaps-big-rewards-in",
+      "title": "Asia Tech Review — YC Reaps Big Rewards",
+      "primary": true,
+      "claims": [
+        "In late 2025, YC secured nearly $200 million in cash through partial stake sales during the blockbuster public listings of its portfolio companies, as reported by Asia Tech Review.",
+        "Specifically, the public debut of the investment platform Groww in November 2025 netted YC approximately $117 million while leaving it with a 10% remaining stake worth roughly $1 billion, while the social commerce platform Meesho's transaction in December 2025 netted the accelerator about $10 million with $50 million in remaining stock, according to Asia Tech Review.",
+        "**Reported Financial Delta** | Not applicable (fictional seed stage) | Valued at $7.5 billion (Y Combinator) | Netted YC $117 million in partial sale (Asia Tech Review)"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "YC raked in close to $200 million when two of its portfolio companies from India went public in blockbuster listings. When fintech startup Groww held its IPO in November, YC banked an estimated $117 million from selling part of its stake. But there’s plenty more to come as it still owns 10% of the business. That’s worth around $1 billion at current prices. Groww was YC’s first India IPO, but it was quickly followed by a second when Meesho listed in December. YC cashed nearly $10 million from the",
+      "fetch_ok": true,
+      "reason": "The source fully confirms the dates, companies, and exact financial figures cited in the text."
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/razorpay",
+      "title": "Y Combinator — Razorpay Company Profile",
+      "primary": false,
+      "claims": [
+        "The accelerator has backed major domestic unicorns, including the payment gateway Razorpay, which joined in the Winter 2015 batch and reached a valuation of $7.5 billion, according to official records from Y Combinator.",
+        "**Reported Financial Delta** | Not applicable (fictional seed stage) | Valued at $7.5 billion (Y Combinator) | Netted YC $117 million in partial sale (Asia Tech Review)"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Over the years, Razorpay's valuation has jumped from $1 billion to $7.5 billion",
+      "fetch_ok": true,
+      "reason": "The official Y Combinator page confirms Razorpay was part of the Winter 2015 batch and reached a valuation of $7.5 billion."
+    },
+    {
+      "url": "https://www.reddit.com/r/StartUpIndia/comments/1pqsnxy/why_has_the_number_of_indian_startups_in_y/",
+      "title": "Reddit — Why Has the Number of Indian Startups in YC Declined?",
+      "primary": false,
+      "claims": [
+        "This dramatic shift, discussed widely on Reddit, reflects a broader pivot toward global software-as-a-service and artificial intelligence."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Why has the number of Indian startups in Y Combinator batches dropped so sharply—from 64 in 2021 to just 1 in 2025?",
+      "fetch_ok": true,
+      "reason": "The Reddit thread discusses the sharp drop in Indian startups in YC batches and attributes it to a shift in focus toward AI."
+    }
+  ],
+  "failures": []
+}

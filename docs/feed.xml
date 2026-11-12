@@ -8,6 +8,27 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>Term Sheet, Please: Inside the YC Startup Funding Game</title>
+    <link>https://thetechdocket.com/articles/term-sheet-please-inside-yc-startup-funding-game/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/term-sheet-please-inside-yc-startup-funding-game/</guid>
+    <pubDate>Thu, 12 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[An inside look at Term Sheet, Please, the browser game parodying Papers, Please, alongside an analysis of Y Combinator's shifting India footprint.]]></description>
+  </item>
+  <item>
+    <title>Smart Home Local Control: Why Your Devices Must Work Offline</title>
+    <link>https://thetechdocket.com/articles/smart-home-local-control-your-devices-must-work/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/smart-home-local-control-your-devices-must-work/</guid>
+    <pubDate>Wed, 11 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[A decade of smart home automation reveals why cloud-dependent devices fail and how local-first architectures like MQTT, Tasmota, and Matter 1.4 are fixing it.]]></description>
+  </item>
+  <item>
+    <title>Google Gemini Routes Private Drive Files to Human Annotators</title>
+    <link>https://thetechdocket.com/articles/google-gemini-routes-private-drive-files-human-annotators/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/google-gemini-routes-private-drive-files-human-annotators/</guid>
+    <pubDate>Tue, 10 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[Google updated its terms to confirm personal Gmail and Drive files processed by Gemini are routed to human reviewers and stored for up to three years.]]></description>
+  </item>
+  <item>
     <title>Claude Code vs Pi: Why Developers Are Swapping Terminal Agents</title>
     <link>https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/</guid>
@@ -125,27 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/google-deepmind-shake-up/</guid>
     <pubDate>Thu, 06 Aug 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[Hassabis moves to DeepMind Chair, Kavukcuoglu takes charge, and Jeff Dean exits with three peers to found Discovery Loop. What Aug 5 changes for Google and India.]]></description>
-  </item>
-  <item>
-    <title>Amazon vs Perplexity Ruling: AI Agents Can Shop, for Now</title>
-    <link>https://thetechdocket.com/articles/amazon-vs-perplexity-ruling/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/amazon-vs-perplexity-ruling/</guid>
-    <pubDate>Wed, 05 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[The Ninth Circuit lifted Amazon's block on Perplexity's Comet agent on August 4. What 'a tool, not a person' changes, who still blocks agents, and the India angle.]]></description>
-  </item>
-  <item>
-    <title>Qwen3.8-Max: What Alibaba Launched and What It Didn&#x27;t</title>
-    <link>https://thetechdocket.com/articles/qwen3-8-max-what-alibaba-launched/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/qwen3-8-max-what-alibaba-launched/</guid>
-    <pubDate>Tue, 04 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[Qwen3.8-Max is live with 2.4 trillion parameters and a 1M-token context. What's verified, what's vendor-claimed, the reported $2/$6 pricing, and the India angle.]]></description>
-  </item>
-  <item>
-    <title>EU AI Act: What Actually Changed on August 2, 2026</title>
-    <link>https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/</guid>
-    <pubDate>Mon, 03 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[EU AI Act enforcement began August 2, 2026: chatbot and deepfake disclosure is law and GPAI fines are live, while high-risk rules wait until December 2027.]]></description>
   </item>
 </channel>
 </rss>

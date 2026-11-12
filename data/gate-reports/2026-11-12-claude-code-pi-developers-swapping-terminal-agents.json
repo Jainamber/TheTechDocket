@@ -1,6 +1,6 @@
 {
   "slug": "claude-code-pi-developers-swapping-terminal-agents",
-  "checked_at": "2026-11-12T11:22:59.556112+05:30",
+  "checked_at": "2026-11-12T14:24:19.590999+05:30",
   "passed": true,
   "hard_failures": 0,
   "soft_warnings": 0,
@@ -63,7 +63,7 @@
       "gate": "G09-originality",
       "level": "hard",
       "ok": true,
-      "detail": "max 5-gram overlap 0.00 vs 'deepseek-api-price-hike' (limit .30)"
+      "detail": "max 5-gram overlap 0.00 vs 'term-sheet-please-inside-yc-startup-funding-game' (limit .30)"
     },
     {
       "gate": "G10-original-analysis",

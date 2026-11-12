@@ -2,7 +2,26 @@
   "date": "2026-11-12",
   "candidates": [
     {
-      "title": "Smart home devices should work without the internet",
+      "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9390609232112441,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 212,
+          "comments": 85,
+          "url": "https://termsheetplease.com/"
+        }
+      ],
+      "score": 0.6454,
+      "topic_fit": 0.94,
+      "corroboration": 0.0
+    },
+    {
+      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
       "sources": [
         "hn"
       ],
@@ -11,70 +30,212 @@
       "evidence": [
         {
           "source": "hn",
-          "points": 822,
-          "comments": 296,
-          "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+          "points": 468,
+          "comments": 236,
+          "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
         }
       ],
-      "score": 0.6232,
+      "score": 0.64,
       "topic_fit": 1.0,
       "corroboration": 0.0
     },
     {
-      "title": "Starlink Mini 2",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
       "sources": [
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 0.9558791247864161,
+      "momentum_raw": 1.0,
       "evidence": [
         {
           "source": "hn",
-          "points": 353,
-          "comments": 353,
-          "url": "https://starlink.com/mini-2"
+          "points": 528,
+          "comments": 535,
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
         }
       ],
-      "score": 0.6188,
-      "topic_fit": 0.96,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.9259279563193175,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 375,
-          "comments": 269,
-          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
-        }
-      ],
-      "score": 0.6178,
+      "score": 0.6248,
       "topic_fit": 1.0,
       "corroboration": 0.0
     },
     {
-      "title": "Muse Ember: Our smallest, most efficient model",
+      "title": "Can a Linear Program Do Weight-Space Programming?",
       "sources": [
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 0.897202794440428,
+      "momentum_raw": 0.9469259540666471,
       "evidence": [
         {
           "source": "hn",
-          "points": 330,
-          "comments": 140,
-          "url": "https://research.meta.ai/blog/muse-ember"
+          "points": 269,
+          "comments": 38,
+          "url": "https://nathan.rs/posts/weight-space-lp/"
         }
       ],
-      "score": 0.6092,
+      "score": 0.6241,
       "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AWS emulator",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 798,
+          "comments": 231,
+          "url": "https://github.com/aws/aws-emulator"
+        },
+        {
+          "source": "hn",
+          "points": 800,
+          "comments": 231,
+          "url": "https://github.com/aws/aws-emulator"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "My AI agents found an unmapped Maya site?",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 971,
+          "comments": 354,
+          "url": "https://pietromiotti.com/latest/maya-site"
+        },
+        {
+          "source": "hn",
+          "points": 972,
+          "comments": 354,
+          "url": "https://pietromiotti.com/latest/maya-site"
+        }
+      ],
+      "score": 0.6212,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini Decisions API",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 386,
+          "comments": 122,
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "source": "hn",
+          "points": 389,
+          "comments": 122,
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ],
+      "score": 0.6109,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Faster Retrieval for Better, More Efficient RAG",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8905303230024774,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 194,
+          "comments": 36,
+          "url": "https://machinelearning.apple.com/research/faster-retrieval"
+        }
+      ],
+      "score": 0.6072,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 517,
+          "comments": 506,
+          "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+        },
+        {
+          "source": "hn",
+          "points": 517,
+          "comments": 506,
+          "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+        }
+      ],
+      "score": 0.6052,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia is preparing to oust Jensen Huang",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 888,
+          "comments": 1241,
+          "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad"
+        }
+      ],
+      "score": 0.6032,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "93% of paint splatters are valid Perl programs (2019)",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 368,
+          "comments": 50,
+          "url": "https://www.mcmillen.dev/sigbovik/"
+        }
+      ],
+      "score": 0.5911,
+      "topic_fit": 0.84,
       "corroboration": 0.0
     },
     {
@@ -83,184 +244,37 @@
         "hn"
       ],
       "geos": [],
-      "momentum_raw": 0.8967203974569701,
+      "momentum_raw": 0.8965998864992788,
       "evidence": [
         {
           "source": "hn",
-          "points": 282,
-          "comments": 155,
+          "points": 294,
+          "comments": 164,
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
         }
       ],
-      "score": 0.609,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Foldable Flight: The Best Paper Airplanes",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 1214,
-          "comments": 167,
-          "url": "https://www.foldableflight.com"
-        }
-      ],
-      "score": 0.5998,
-      "topic_fit": 0.64,
-      "corroboration": 0.0
-    },
-    {
-      "title": "TPU 8tx and TPU 8i Max",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.8517655970460335,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 257,
-          "comments": 76,
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
-        }
-      ],
-      "score": 0.5955,
-      "topic_fit": 1.0,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Tracking Anthropic-discovered vulnerabilities",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.9797510345077769,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 366,
-          "comments": 168,
-          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
-        }
-      ],
-      "score": 0.5899,
-      "topic_fit": 0.78,
-      "corroboration": 0.0
-    },
-    {
-      "title": "AlphaProof Code",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 606,
-          "comments": 179,
-          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
-        }
-      ],
-      "score": 0.584,
-      "topic_fit": 0.72,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Process Explorer for macOS",
-      "sources": [
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.7773796725079933,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 171,
-          "comments": 57,
-          "url": "https://github.com/microsoft/Procexp-Mac"
-        }
-      ],
-      "score": 0.5692,
-      "topic_fit": 0.98,
-      "corroboration": 0.0
-    },
-    {
-      "title": "AI usage generates a fragile codebase",
-      "sources": [
-        "hn",
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 1.0,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 460,
-          "comments": 454,
-          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
-        },
-        {
-          "source": "hn",
-          "points": 461,
-          "comments": 454,
-          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
-        }
-      ],
-      "score": 0.568,
-      "topic_fit": 0.64,
-      "corroboration": 0.0
-    },
-    {
-      "title": "Apple has new Mac app coming to make running local AI models easy",
-      "sources": [
-        "hn",
-        "hn"
-      ],
-      "geos": [],
-      "momentum_raw": 0.7415229231044896,
-      "evidence": [
-        {
-          "source": "hn",
-          "points": 125,
-          "comments": 97,
-          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
-        },
-        {
-          "source": "hn",
-          "points": 125,
-          "comments": 97,
-          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
-        }
-      ],
-      "score": 0.5625,
+      "score": 0.5872,
       "topic_fit": 1.0,
       "corroboration": 0.0
     }
   ],
   "pick": {
-    "title": "Smart home devices should work without the internet",
+    "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
     "sources": [
       "hn"
     ],
     "geos": [],
-    "momentum_raw": 1.0,
+    "momentum_raw": 0.9390609232112441,
     "evidence": [
       {
         "source": "hn",
-        "points": 822,
-        "comments": 296,
-        "url": "https://docodethatmatters.com/home-automation-overnight-success/"
+        "points": 212,
+        "comments": 85,
+        "url": "https://termsheetplease.com/"
       }
     ],
-    "score": 0.6232,
-    "topic_fit": 1.0,
+    "score": 0.6454,
+    "topic_fit": 0.94,
     "corroboration": 0.0
   },
   "use_evergreen": false
