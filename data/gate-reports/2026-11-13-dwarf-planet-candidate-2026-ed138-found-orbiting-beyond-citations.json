@@ -1,0 +1,91 @@
+{
+  "slug": "dwarf-planet-candidate-2026-ed138-found-orbiting-beyond",
+  "date": "2026-11-13",
+  "checked_at": "2026-11-14T02:27:00.119320+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate",
+      "title": "Vera C. Rubin Observatory Announcement",
+      "primary": true,
+      "claims": [
+        "To overcome this, the Rubin Observatory utilizes its wide-field imaging capabilities to scan the southern sky, as detailed in its first official dwarf planet announcement."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Rubin Observatory's regular and continuous monitoring of the entire Southern Hemisphere sky, combined with powerful algorithms that sift through millions to billions of points of light to identify those corresponding to small moving objects, enabled the team to spot ED138 within the crowded field.",
+      "fetch_ok": true,
+      "reason": "The source confirms that Rubin Observatory's continuous monitoring of the Southern Hemisphere sky and its imaging capabilities enabled the discovery of its first dwarf planet candidate, ED138, in a crowded region of the sky."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.38693",
+      "title": "Holman et al. Discovery Paper on arXiv",
+      "primary": true,
+      "claims": [
+        "Taking approximately 282.68 years to complete a single trip around the Sun, this frozen world has spent the last three decades masked by the dense stellar background of the Milky Way.",
+        "This highly inclined trans-Neptunian object (TNO) orbits at an average distance of 43.09 Astronomical Units (AU) from the Sun, making it a strong candidate for dwarf planet status.",
+        "This average orbital distance translates to roughly 6.4 billion kilometers, placing it far beyond the average orbit of Pluto."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "2026 ED138 has absolute magnitude H_V=3.19, implying a diameter of 612-1530 km for geometric albedos between 0.25 and 0.04 and making it one of the ten intrinsically brightest known TNOs and a dwarf-planet candidate. ... Its orbit, with barycentric a=43.09 au ... 2026 ED138 was missed by earlier surveys because it lies far south and near the crowded regions of the Galactic plane.",
+      "fetch_ok": true,
+      "reason": "The source confirms the object is a TNO with a barycentric semi-major axis of 43.09 AU, is a dwarf-planet candidate, and was missed by previous surveys due to its location near the crowded Galactic plane."
+    },
+    {
+      "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+      "title": "Smithsonian Magazine Coverage",
+      "primary": false,
+      "claims": [
+        "Depending on its albedo, or surface reflectivity, its diameter is estimated to be between 600 and 1,500 kilometers.",
+        "**2026 ED138** | ~43.1 | ~282.7 | 600 to 1,500"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "estimates for its size currently range from 370 miles to 930 miles across. But astronomers will have to confirm that measurement, and from the object's brightness alone, that's impossible. A highly reflective, smaller object, perhaps covered in gleaming ice caps, might appear just as bright as a less reflective, duller body that's much larger.",
+      "fetch_ok": true,
+      "reason": "The source confirms the size estimates of 370 to 930 miles (which converts to approximately 600 to 1,500 km) and explains that the estimate depends on how reflective (albedo) the object is."
+    },
+    {
+      "url": "https://www.wionews.com/science/indian-scientists-are-part-of-rubin-observatory-s-legacy-survey-of-space-and-time-everything-you-need-to-know-1782984702513",
+      "title": "WION News Report on Indian Scientists",
+      "primary": false,
+      "claims": [
+        "Indian astronomers are participating directly in the Rubin Observatory's ten-year Legacy Survey of Space and Time (LSST), marking a significant milestone for the country's astrophysics community, as reported by WION News."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST) has kickstarted, and Indian scientists are contributing significantly to different projects, such as data collections and mapping dark matter.",
+      "fetch_ok": true,
+      "reason": "The article confirms that Indian scientists are playing a major role and contributing significantly to the Rubin Observatory's 10-year Legacy Survey of Space and Time (LSST)."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/3.6m_Devasthal_Optical_Telescope",
+      "title": "3.6m Devasthal Optical Telescope — Wikipedia",
+      "primary": false,
+      "claims": [
+        "Indian ground-based facilities, such as the 3.6-meter Devasthal Optical Telescope (DOT) in Nainital, which is currently the largest reflecting optical telescope in India, are preparing to conduct follow-up observations to characterize these newly discovered southern sky objects."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "The 3.6m Devasthal (Hindi: देवस्थल) Optical Telescope (DOT) is a clear-aperture Ritchey–Chrétien telescope built by Aryabhatta Research Institute of Observational Sciences (ARIES), located at the Devasthal Observatory site, near Nainital, Kumaon, India. ... The 3.6m DOT is currently the largest reflecting telescope in Asia.",
+      "fetch_ok": true,
+      "reason": "The source confirms that the 3.6-meter Devasthal Optical Telescope (DOT) is located near Nainital, India, and is the largest reflecting telescope in Asia (and thus India)."
+    },
+    {
+      "url": "https://www.shankariasparliament.com/current-affairs/gs-iii/2026-ed138-possible-new-dwarf-planet-beyond-pluto",
+      "title": "Shankar IAS Parliament UPSC Analysis",
+      "primary": false,
+      "claims": [
+        "The academic community has also taken notice; the discovery of 2026 ED138 has already become a key topic of study for competitive civil services examinations like the UPSC GS Paper III."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "2026 ED138 – Possible New Dwarf Planet Beyond Pluto | GS III | Current Affairs",
+      "fetch_ok": true,
+      "reason": "The source is a current affairs study article by Shankar IAS Academy that explicitly categorizes the discovery of 2026 ED138 under GS III for UPSC civil services preparation."
+    }
+  ],
+  "failures": []
+}

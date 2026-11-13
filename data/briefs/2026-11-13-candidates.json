@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-13",
+  "candidates": [
+    {
+      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9040662485115979,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 257,
+          "comments": 111,
+          "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/"
+        }
+      ],
+      "score": 0.6455,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Anthropic IPO",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 889,
+          "comments": 848,
+          "url": "https://ipo.anthropic.com/us/"
+        }
+      ],
+      "score": 0.636,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Service degradation on Microsoft 365",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 708,
+          "comments": 655,
+          "url": "https://status.cloud.microsoft/"
+        }
+      ],
+      "score": 0.636,
+      "topic_fit": 0.98,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Jensen Huang resigns",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 3292,
+          "comments": 3011,
+          "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 445,
+          "comments": 168,
+          "url": "https://github.com/simpsoka/zigzag"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AWS emulator",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 970,
+          "comments": 264,
+          "url": "https://github.com/aws/aws-emulator"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9928372232146518,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 555,
+          "comments": 552,
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+        }
+      ],
+      "score": 0.6227,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "My AI agents found an unmapped Maya site?",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1029,
+          "comments": 391,
+          "url": "https://pietromiotti.com/latest/maya-site"
+        }
+      ],
+      "score": 0.6212,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini 4 Hydrogen",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 506,
+          "comments": 322,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "source": "hn",
+          "points": 506,
+          "comments": 322,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ],
+      "score": 0.6109,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini Decisions API",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 557,
+          "comments": 157,
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ],
+      "score": 0.6109,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 669,
+          "comments": 694,
+          "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+        }
+      ],
+      "score": 0.6052,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 378,
+          "comments": 102,
+          "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/"
+        }
+      ],
+      "score": 0.6,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 0.9040662485115979,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 257,
+        "comments": 111,
+        "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/"
+      }
+    ],
+    "score": 0.6455,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}
