@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-14",
+  "candidates": [
+    {
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 342,
+          "comments": 175,
+          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+        },
+        {
+          "source": "hn",
+          "points": 351,
+          "comments": 180,
+          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+        }
+      ],
+      "score": 0.624,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8730176160596634,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 183,
+          "comments": 173,
+          "url": "https://text.npr.org/nx-s1-6029408"
+        }
+      ],
+      "score": 0.6223,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI is destroying the trust between writers and readers",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 332,
+          "comments": 203,
+          "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+        }
+      ],
+      "score": 0.6212,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9593193363451359,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 357,
+          "comments": 152,
+          "url": "https://unemploymentlabs.com/checkpoint-forensics"
+        }
+      ],
+      "score": 0.6113,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 173,
+          "comments": 34,
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html"
+        }
+      ],
+      "score": 0.6091,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 335,
+          "comments": 185,
+          "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas"
+        }
+      ],
+      "score": 0.6084,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 731,
+          "comments": 211,
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/"
+        },
+        {
+          "source": "hn",
+          "points": 732,
+          "comments": 211,
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/"
+        }
+      ],
+      "score": 0.6028,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 370,
+          "comments": 96,
+          "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+        }
+      ],
+      "score": 0.5935,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "What Happened to 3Com?",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8379295870271398,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 111,
+          "comments": 61,
+          "url": "https://dfarq.homeip.net/what-happened-to-3com/"
+        }
+      ],
+      "score": 0.5878,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 488,
+          "comments": 383,
+          "url": "https://status.claude.com/incidents/nn11wk485zfn"
+        }
+      ],
+      "score": 0.5873,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Ggml v1.0.0",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 163,
+          "comments": 28,
+          "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0"
+        }
+      ],
+      "score": 0.584,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "All US airports are currently ground stopped",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9634066177923574,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 196,
+          "comments": 36,
+          "url": "https://twitter.com/flightradar24/status/2121347654714077605"
+        }
+      ],
+      "score": 0.5784,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+    "sources": [
+      "hn",
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 342,
+        "comments": 175,
+        "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+      },
+      {
+        "source": "hn",
+        "points": 351,
+        "comments": 180,
+        "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+      }
+    ],
+    "score": 0.624,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

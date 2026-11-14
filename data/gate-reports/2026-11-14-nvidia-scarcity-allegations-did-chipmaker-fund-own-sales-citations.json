@@ -1,0 +1,36 @@
+{
+  "slug": "nvidia-scarcity-allegations-did-chipmaker-fund-own-sales",
+  "date": "2026-11-14",
+  "checked_at": "2026-11-14T12:34:56.363111+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://indiaai.gov.in/hub/indiaai-compute-capacity",
+      "title": "IndiaAI Compute Capacity — Government of India",
+      "primary": true,
+      "claims": [
+        "As outlined on the official IndiaAI compute portal [55], the initiative aims to democratize access to high-performance computing for domestic researchers and startups."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "Under the IndiaAI Compute Pillar, the Mission is developing a scalable AI computing ecosystem to support India's growing AI startup and research community.",
+      "fetch_ok": true,
+      "reason": "The page confirms that the IndiaAI Compute Pillar is developing scalable AI computing infrastructure to support India's AI startup and research community."
+    },
+    {
+      "url": "https://www.unite.ai/nvidia-guarantees-up-to-105b-for-8-gw-ohio-ai-campus-leased-by-openai/",
+      "title": "Nvidia OpenAI Lease Guarantee — Unite.ai",
+      "primary": false,
+      "claims": [
+        "OpenAI Ohio Project | Data Center Lease Guarantee | $105 Billion | Unite.ai"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "NVIDIA has agreed to guarantee up to $105 billion in lease obligations at a planned 8-gigawatt AI data center campus in Pike County, Ohio, in a deal that makes the chipmaker the financial backstop for one of the largest single compute buildouts yet disclosed.",
+      "fetch_ok": true,
+      "reason": "The source confirms that NVIDIA is guaranteeing up to $105 billion in lease obligations for an 8-GW Ohio AI data center campus leased by OpenAI."
+    }
+  ],
+  "failures": []
+}
