@@ -1,0 +1,1778 @@
+{
+  "date": "2026-11-14",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_semiconducto": "ok",
+    "news_IN_AI startup f": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_semiconducto": "ok",
+    "news_US_AI startup f": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "bhavish aggarwal",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Bhavish Aggarwal now turns to dealerships to rescue Ola Electric",
+              "source": "The Morning Context",
+              "url": "https://themorningcontext.com/business/bhavish-aggarwal-now-turns-to-dealerships-to-rescue-ola-electric"
+            },
+            {
+              "headline": "India's Ola Electric quarterly loss narrows on cost cuts",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/business/indias-ola-electric-quarterly-loss-narrows-on-cost-cuts/article71695154.ece"
+            },
+            {
+              "headline": "Ola Electric narrows loss to ₹362 crore in Q2",
+              "source": "ET Auto",
+              "url": "https://auto.economictimes.indiatimes.com/news/two-wheelers/ola-electric-narrows-loss-to-362-crore-in-q2/135769231"
+            }
+          ]
+        },
+        {
+          "title": "jaydev unadkat",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Jaydev Unadkat Is the Most Sold Player in IPL History, Bought 13 Times Across 15 Seasons",
+              "source": "theopenpress.in",
+              "url": "https://theopenpress.in/article/jaydev-unadkat-most-sold-player-ipl-history-13-times-auction-record"
+            },
+            {
+              "headline": "पैट कमिंस समेत इन 4 खिलाड़ियों को रिलीज कर सकती है सनराइजर्स हैदराबाद, देखें लिस्ट",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/sports/cricket/sunrisers-hyderabad-srh-may-release-these-4-players-including-pat-cummins-see-the-list-3213665"
+            },
+            {
+              "headline": "आईपीएल इतिहास में सबसे ज्यादा बार बिकने वाले खिलाड़ी, 13 बार सोल्ड हुए हैं जयदेव उनादकट",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/sports/cricket/iplt20/news/ipl-2027-most-sold-players-in-ipl-history-jaydev-unadkat-on-top-sold-13-times/articleshow/135765024.cms"
+            }
+          ]
+        },
+        {
+          "title": "घड़ी",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "सोने की घड़ी पहनते हैं धनुष, पूरी दुनिया में सिर्फ 25 यूनिट",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/visualstories/technology/dhanush-wears-vanguart-orb-flying-tourbillon-luxury-watch-ttecr-287478-14-11-2026"
+            },
+            {
+              "headline": "वियतनाम में सीमित संस्करण की मिडो घड़ी खरीदने वाले पहले ग्राहक।",
+              "source": "Vietnam.vn",
+              "url": "https://www.vietnam.vn/hi/khach-hang-dau-tien-tai-viet-nam-so-huu-dong-ho-mido-phien-ban-gioi-han"
+            }
+          ]
+        },
+        {
+          "title": "बहरीन",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "ईरान की मिसाइल सिटी से अमेरिका में हलचल! यूरोप तक हमले की धमकी, क्या बढ़ेगी जंग?",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/short-videos/video/iran-underground-missile-city-america-trump-europe-warning-details-explained-mmtm-2694826-2026-11-12"
+            },
+            {
+              "headline": "ईरान ने बहरीन में तबाह कर दिया अमेरिकी रडार! अमेरिका को दी और बड़े हमले की चेतावनी",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/world/asia/iran-claims-destruction-of-us-early-warning-radar-in-bahrain-warns-america-of-harsher-attacks-2026-11-13-1254204"
+            },
+            {
+              "headline": "ईरान ने स्वदेशी रूप से विकसित मिसाइलों और ड्रोन का प्रदर्शन किया।",
+              "source": "Vietnam.vn",
+              "url": "https://www.vietnam.vn/hi/iran-trung-bay-ten-lua-may-bay-khong-nguoi-lai-tu-phat-trien"
+            }
+          ]
+        },
+        {
+          "title": "വി.ഡി. സതീശന്",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "മന്നം ജയന്തി ഉദ്ഘാടനത്തിന് വി.ഡി.സതീശൻ പെരുന്നയിലേക്ക്; എൻഎസ്എസ് ആസ്ഥാനത്ത് എത്തുന്നത് 5 വർഷത്തിനു ശേഷം",
+              "source": "Manorama Online",
+              "url": "https://www.manoramaonline.com/news/latest-news/2026/11/13/vd-satheesan-perunna-nss-visit-mannam-jayanthi-2027.html"
+            },
+            {
+              "headline": "മഞ്ഞുരുക്കാൻ ഇരുകൂട്ടരും; അഞ്ച് വർഷത്തിന് ശേഷം വി ഡി സതീശൻ പെരുന്നയിലേക്ക്, മന്നം ജയന്തി ആഘോഷം ഉദ്ഘാടനം ചെയ്യും",
+              "source": "Asianet News Malayalam",
+              "url": "https://www.asianetnews.com/kerala-news/after-five-years-v-d-satheesan-returns-to-perunna-inaugurate-the-mannam-jayanthi-celebrations-articleshow-i30807q"
+            },
+            {
+              "headline": "മുഖ്യമന്ത്രി പെരുന്നയിലേക്ക്; പ്രശ്നങ്ങള്‍ പറഞ്ഞുതീര്‍ത്തെന്ന് സുകുമാരന്‍ നായര്‍; മഞ്ഞുരുക്കം",
+              "source": "Manorama News",
+              "url": "https://www.manoramanews.com/kerala/politics/2026/11/13/kerala-cm-vd-satheesan-and-nss-cheif-sukumaran-nair-talk.html"
+            }
+          ]
+        },
+        {
+          "title": "ఇల్లు ఇల్లాలు పిల్లలు",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "Illu Illalu Pillalu Today నవంబర్ 14 ఎపిసోడ్: రౌడీలను తరిమితరిమి కొట్టిన రామరాజు సన్స్.. కన్నీళ్లు పెట్టించిన వల్లీ.. చిక్కుల్లో నర్మద",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/tv/news/dheeraj-battles-bhadravati-goons-in-illu-illalu-pillalu-2026-november-14-episode-preview/articleshow/135823548.cms"
+            },
+            {
+              "headline": "Illu Illalu Pillalu November 13 Episode: ఇల్లు ఇల్లాలు పిల్లలు-రౌడీలతో భద్రావతి డీల్-ప్రేమను మోసం చేసిన ధీరజ్-చందు ఫైర్! | Hindustan Times Telugu",
+              "source": "Hindustan Times",
+              "url": "https://www.hindustantimes.com/telugu/entertainment/illu-illalu-pillalu-today-episode-november-13th-2026-bhadravathi-cunning-dhiraj-shock-to-prema-valli-star-maa-jiohotstar-261794532684609.html"
+            },
+            {
+              "headline": "Illu Illalu Pillalu Today Episodes: ధీరజ్ ఫుల్ హ్యాపీ.. భద్ర, భాగ్యం ప్లాన్ సక్సెస్..? వల్లికి ఘోర అవమానం..",
+              "source": "BigTvLive",
+              "url": "https://www.bigtvlive.com/tv/illu-illalu-pillalu-today-episode-november-13th-2026-written-update-in-telugu.html"
+            }
+          ]
+        },
+        {
+          "title": "prabhsimran singh",
+          "approx_traffic": "1000+",
+          "pub_date": "Fri, 13 Nov 2026 21:20:00 -0800",
+          "news": [
+            {
+              "headline": "Punjab vs Haryana SMAT Live Streaming: Prabhsimran Singh, Umesh Yadav in Action",
+              "source": "Sportsdunia",
+              "url": "https://www.sportsdunia.com/cricket-news/punjab-vs-haryana-smat-live-streaming-elite-group-b-2026"
+            },
+            {
+              "headline": "Punjab vs Haryana Live Scorecard: Live Cricket Score PUN vs HAR, Match 5, Syed Mushtaq Ali Trophy, 2026",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/live-score/cricket/punjab-haryana-live-cricket-scorecard-272923"
+            },
+            {
+              "headline": "Punjab squad for SMAT 2026-27: Ramandeep Singh named captain; Salil, Prabhsimran also included",
+              "source": "Sportstar",
+              "url": "https://sportstar.thehindu.com/cricket/punjab-squad-syed-mushtaq-ali-trophy-2026-27-smat-update-ramandeep-singh-captain/article71690372.ece"
+            }
+          ]
+        },
+        {
+          "title": "संजय दत्त",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 13 Nov 2026 21:20:00 -0800",
+          "news": [
+            {
+              "headline": "23 साल पुराना संजय दत्त का ये गाना आज भी है सुपरहिट, पिता सुनील दत्त के साथ आखिरी फिल्म में आए थे नजर, राहत इंदौरी ने लिखे थे बोल",
+              "source": "NDTV India",
+              "url": "https://ndtv.in/bollywood/23-year-old-song-sanjay-dutt-seen-last-time-with-father-sunil-dutt-on-screen-rahat-indori-lyrics-vinod-rathod-voice-made-it-evergreen-12312961"
+            },
+            {
+              "headline": "'सजा भुगत रहा हूं', पिछले जन्म में राजा थे संजय दत्त, पत्नी ने की थी बेवफाई, धोखे ने बनाया था कातिल!",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/entertainment/bollywood-news/story/sanjay-dutt-wife-cheated-on-him-murdered-several-people-pujari-revealed-past-life-was-king-of-ashoka-dynasty-tmova-dskc-2694880-2026-11-13"
+            },
+            {
+              "headline": "पुजारी ने संजय दत्त से कहा था- पिछले जन्म में अशोक वंश के राजा थे एक्टर, पत्नी ने मंत्री संग अफेयर कर दिया धोखा",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/entertainment/news-from-bollywood/priest-told-sanjay-dutt-he-was-ashoka-dynasty-king-in-past-life-wife-betrayed-actor/articleshow/135771695.cms"
+            }
+          ]
+        },
+        {
+          "title": "epfo",
+          "approx_traffic": "20000+",
+          "pub_date": "Fri, 13 Nov 2026 21:10:00 -0800",
+          "news": [
+            {
+              "headline": "EPFO CBT meeting on Nov 19 may discuss hike in minimum EPS pension to Rs 3,000",
+              "source": "ETHRWorld.com",
+              "url": "https://hr.economictimes.indiatimes.com/news/industry/epfo-cbt-meeting-on-nov-19-may-discuss-hike-in-minimum-eps-pension-to-rs-3000/135726531?utm_source=portal_category_widget&utm_medium=homepage"
+            },
+            {
+              "headline": "SAIL and Other Public Sector Pensioners Appeal to Govt: Stop Denying Us Our Rightful Dues",
+              "source": "TheWire.in",
+              "url": "https://thewire.in/rights/sail-and-other-public-sector-pensioners-appeal-to-govt-stop-denying-us-our-rightful-dues"
+            },
+            {
+              "headline": "EPS-95 Minimum Pension: ₹7,500 Demand Back in Focus",
+              "source": "Kalkine India",
+              "url": "https://www.kalkine.co.in/article/retirement-planning/eps-95-minimum-pension-labour-body-pushes-for-7500-a-month-ahead-of-epfo-board-meeting"
+            }
+          ]
+        },
+        {
+          "title": "under 19 world cup",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:10:00 -0800",
+          "news": [
+            {
+              "headline": "Raichandani and Sood set up India-Pakistan final",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/afghanistan-under-19s-vs-india-under-19s-2nd-semi-final-1558443/match-report"
+            },
+            {
+              "headline": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece"
+            },
+            {
+              "headline": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+              "source": "Cricbuzz",
+              "url": "https://m.cricbuzz.com/player-match-performance/match/175710/player/1476493/bowling?inningsId=1"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "semiconductor India": [
+          {
+            "title": "Visakhapatnam's semiconductor SEZ: Can India move beyond assembly to advanced chip packaging? - ET Government",
+            "source": "ET Government",
+            "pub_date": "Sat, 14 Nov 2026 02:25:30 GMT"
+          },
+          {
+            "title": "Nvidia episode prods India to speed up its semiconductor mission - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Fri, 13 Nov 2026 18:40:31 GMT"
+          },
+          {
+            "title": "'Half The Global Semiconductor CEOs Now Believe In India': Rajan Anandan - NDTV",
+            "source": "NDTV",
+            "pub_date": "Thu, 12 Nov 2026 17:50:27 GMT"
+          },
+          {
+            "title": "SubscriberWrites: Semiconductors Are India’s Next Strategic Vulnerability – New Delhi Must Prepare for Resilience - ThePrint",
+            "source": "ThePrint",
+            "pub_date": "Wed, 11 Nov 2026 10:49:18 GMT"
+          },
+          {
+            "title": "IIT Bombay targets India's semiconductor ambitions with new startup acceleration programme - ET Education",
+            "source": "ET Education",
+            "pub_date": "Wed, 11 Nov 2026 16:28:46 GMT"
+          },
+          {
+            "title": "India must leverage data centre boom to build globally competitive chip companies: Karthikeya Misra - ET Manufacturing",
+            "source": "ET Manufacturing",
+            "pub_date": "Fri, 13 Nov 2026 12:33:46 GMT"
+          },
+          {
+            "title": "India Seeks Comfort on Tata’s $14 Billion Chip Plans Amid Boardroom Battle - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Opinion | India’s Big Semiconductor Bet - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 04 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Sabotage Attempts On India's Semiconductor Push? What Ashwini Vaishnaw Said - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sun, 20 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Vizag Adds Semiconductor Manufacturing SEZ to Its Industrial Base - India Briefing",
+            "source": "India Briefing",
+            "pub_date": "Fri, 13 Nov 2026 14:14:51 GMT"
+          },
+          {
+            "title": "Electronics over engines: Is India's next automotive growth story being written in semiconductors? - Manufacturing Today India",
+            "source": "Manufacturing Today India",
+            "pub_date": "Fri, 13 Nov 2026 11:19:48 GMT"
+          },
+          {
+            "title": "India's semiconductor ecosystem: From fabs to ecosystem leadership - EY",
+            "source": "EY",
+            "pub_date": "Sun, 20 Sep 2026 16:36:41 GMT"
+          },
+          {
+            "title": "Vishay Intertechnology to form semiconductor joint venture with Kaynes Technology in India By Investing.com - Investing.com India",
+            "source": "Investing.com India",
+            "pub_date": "Thu, 12 Nov 2026 14:30:10 GMT"
+          },
+          {
+            "title": "Semicon 2.0 to deepen India’s semiconductor ecosystem with focus on design, equipment, fabs, advanced packaging, R&D and talent - www.pib.gov.in",
+            "source": "www.pib.gov.in",
+            "pub_date": "Thu, 17 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Japan’s chemical giants boost earnings on semiconductor boom: growth opportunities for India’s specialty.. - Indiatimes",
+            "source": "Indiatimes",
+            "pub_date": "Fri, 13 Nov 2026 15:45:59 GMT"
+          },
+          {
+            "title": "Bridging the Silicon Gap: Why Post-Silicon Validation Holds the Key to India’s Semiconductor Ambitions - Bisinfotech",
+            "source": "Bisinfotech",
+            "pub_date": "Thu, 12 Nov 2026 08:54:15 GMT"
+          },
+          {
+            "title": "India’s semiconductor market projected to grow threefold to US$200 billion by 2035: EY-IESA report - EY",
+            "source": "EY",
+            "pub_date": "Sat, 19 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Semiconductor and AI Revolution - www.pib.gov.in",
+            "source": "www.pib.gov.in",
+            "pub_date": "Thu, 13 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "SMIC says AI chip supply chain will remain tight through 2027 - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 13 Nov 2026 15:02:32 GMT"
+          },
+          {
+            "title": "India needs new generation of semiconductor systems engineers: Lam Research - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Tue, 10 Nov 2026 18:45:38 GMT"
+          },
+          {
+            "title": "US' Vishay Intertechnology, Kaynes Semicon form India JV for chip manufacturing - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 13 Nov 2026 02:57:25 GMT"
+          },
+          {
+            "title": "India's ₹127500 crore semiconductor push: Can Semicon 2.0 overcome decades of missed opportunities? - ET Government",
+            "source": "ET Government",
+            "pub_date": "Wed, 11 Nov 2026 02:48:45 GMT"
+          },
+          {
+            "title": "$11.6 bn Mitsui Chemicals–JSR deal signals global consolidation in semiconductor chemicals - Indiatimes",
+            "source": "Indiatimes",
+            "pub_date": "Fri, 13 Nov 2026 01:53:12 GMT"
+          },
+          {
+            "title": "Semiconductor stocks enter oversold territory: Goldman Sachs - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Thu, 12 Nov 2026 01:11:16 GMT"
+          },
+          {
+            "title": "Nvidia CEO Jensen Huang quits: 7 Indian AI, semiconductor and data-centre stocks that could be in focus - Upstox",
+            "source": "Upstox",
+            "pub_date": "Fri, 13 Nov 2026 03:40:49 GMT"
+          }
+        ],
+        "AI startup funding": [
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 22:43:00 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Nvidia’s Startup Funding Deals Hit A Record. What’s Next After Huang? - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 13 Nov 2026 20:32:55 GMT"
+          },
+          {
+            "title": "This Startup Raised $1 Billion to Build AI Faster and With Fewer Humans - WSJ",
+            "source": "WSJ",
+            "pub_date": "Fri, 13 Nov 2026 01:29:00 GMT"
+          },
+          {
+            "title": "U.S. AI startups dominate biggest funding rounds of the week - Traders Union",
+            "source": "Traders Union",
+            "pub_date": "Fri, 13 Nov 2026 19:41:46 GMT"
+          },
+          {
+            "title": "AI training startup Mercor valued at $20 billion in latest funding round - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 10 Nov 2026 17:29:28 GMT"
+          },
+          {
+            "title": "Half of AI startup Parallel Loop's team had funding offers to launch own ventures, says founder - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Thu, 12 Nov 2026 05:07:56 GMT"
+          },
+          {
+            "title": "Seed funding’s new reality check in the age of AI - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Wed, 11 Nov 2026 07:01:03 GMT"
+          },
+          {
+            "title": "Czech startup ValkaAI extends pre-Seed round to €13 million to bring AI personas to live events at scale - EU-Startups",
+            "source": "EU-Startups",
+            "pub_date": "Fri, 13 Nov 2026 12:12:51 GMT"
+          },
+          {
+            "title": "Will Nvidia keep funding AI startups without Jensen Huang? Signed deals are expected to hold - Nacionale",
+            "source": "Nacionale",
+            "pub_date": "Fri, 13 Nov 2026 17:46:38 GMT"
+          },
+          {
+            "title": "Voice AI Startup Hits $100 Million Run Rate With $4.6 Million Funding - Forbes",
+            "source": "Forbes",
+            "pub_date": "Thu, 12 Nov 2026 14:00:00 GMT"
+          },
+          {
+            "title": "CEE Startup & Tech Weekly: UFORCE’s €630M Round, AI Deals & New Funds - The Recursive",
+            "source": "The Recursive",
+            "pub_date": "Fri, 13 Nov 2026 12:09:07 GMT"
+          },
+          {
+            "title": "Kutlerri.ai Raises $4 Mn to Scale AI Agents for Restaurant Businesses - https://ascendants.in/",
+            "source": "https://ascendants.in/",
+            "pub_date": "Fri, 13 Nov 2026 13:11:11 GMT"
+          },
+          {
+            "title": "Kenya’s Financial Centre Plans $500m Fund, With Half for Tech and AI Startups - iAfrica.com",
+            "source": "iAfrica.com",
+            "pub_date": "Fri, 13 Nov 2026 13:49:35 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Agentic AI And Infrastructure Are Still On A Roll - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 13 Nov 2026 19:20:04 GMT"
+          },
+          {
+            "title": "OpenAI, Anthropic Valuations Fuel VC Fears of Startup Correction - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Wed, 11 Nov 2026 21:39:14 GMT"
+          },
+          {
+            "title": "UK-backed AI chip startup Fractile hits $7 billion valuation in funding round - Reuters",
+            "source": "Reuters",
+            "pub_date": "Wed, 11 Nov 2026 17:12:38 GMT"
+          },
+          {
+            "title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Tue, 10 Nov 2026 20:47:05 GMT"
+          },
+          {
+            "title": "Exclusive | AI Startup LangChain More Than Doubles Its Valuation to $3 Billion - WSJ",
+            "source": "WSJ",
+            "pub_date": "Thu, 12 Nov 2026 14:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: AI Drives A Varied Lineup Of Large Financings - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 23 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 05 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Almost All About AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 02 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Space Tech Startup Astrome Bags ₹64 Cr RDI Fund for AI Satellite Network - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Thu, 12 Nov 2026 12:23:04 GMT"
+          },
+          {
+            "title": "Exclusive: SE3, a German startup building ‘spatial intelligence’ for military drones, gets $30 million in Series A funding - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 12 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "The AI Startup Funding Boom Is Not A Global Phenomenon - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 15 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Norwest Announces $4B Fund with AI Among Its Investment Priorities - Unite.AI",
+            "source": "Unite.AI",
+            "pub_date": "Thu, 12 Nov 2026 15:36:04 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airports",
+          "airbnb",
+          "airports shut down",
+          "airplanes grounded",
+          "air traffic control",
+          "airlines",
+          "airlines grounded",
+          "ai",
+          "ai detector",
+          "airplane"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt desktop",
+          "chatgpt gpt",
+          "chatgpt plans",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone find my friends not working",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "shai gilgeous-alexander",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "NBA Star Shai Gilgeous-Alexander Brings the Heat as Spotify’s First Guest Editor",
+              "source": "Spotify",
+              "url": "https://newsroom.spotify.com/2026-11-12/shai-gilgeous-alexander-heat-check/"
+            },
+            {
+              "headline": "SGA Hypes Drake as GOAT Rapper, Thunder Star Ranks Favorite Albums in Spotify Interview",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25532669-sga-hypes-drake-goat-rapper-thunder-star-ranks-favorite-albums-spotify-interview"
+            },
+            {
+              "headline": "“This is just a heat check”, Spotify teases new project from SGA coming soon",
+              "source": "KFOR",
+              "url": "https://kfor.com/news/this-is-just-a-heat-check-spotify-teases-new-project-from-sga-coming-soon/"
+            }
+          ]
+        },
+        {
+          "title": "aday mara",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "OKC starts SGA, McCain, Kenrich, Mara, Hartenstein",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/okc-starts-sga-mccain-kenrich-mara-hartenstein"
+            },
+            {
+              "headline": "Aday Mara’s Strong Development Defends Against OKC Injuries",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/aday-mara-strong-development-defends-174307229.html"
+            },
+            {
+              "headline": "Aday Mara continues to be huge help as Thunder get easy win over Wizards",
+              "source": "OKC Thunder Wire",
+              "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/aday-mara-continues-to-be-huge-help-as-thunder-get-easy-win-over-wizards/92677433007/"
+            }
+          ]
+        },
+        {
+          "title": "ncaaf",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Georgia football injury report vs. Missouri",
+              "source": "247Sports",
+              "url": "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-missouri-tigers-drew-bobo-josh-horton-ellis-robinson-kirby-smart-sec-292623864/"
+            },
+            {
+              "headline": "No. 22 Tigers Geared Up for Road Test at No. 1 Georgia",
+              "source": "Mizzou Athletics",
+              "url": "https://mutigers.com/news/2026/11/12/no-22-tigers-geared-up-for-road-test-at-no-1-georgia"
+            },
+            {
+              "headline": "Georgia vs. Missouri prediction, pick, odds, spread: Bulldogs look to keep rolling against Tigers",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/college-football/news/georgia-missouri-prediction-picks-odds-spread-where-to-watch-live/"
+            }
+          ]
+        },
+        {
+          "title": "houston colorado",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Houston vs. Colorado (Nov 13, 2026) Live Score",
+              "source": "ESPN",
+              "url": "https://www.espn.com/college-football/game/_/gameId/401856860"
+            },
+            {
+              "headline": "Houston vs. Colorado (14 Nov, 2026) Live Score",
+              "source": "ESPN",
+              "url": "https://www.espn.com.au/college-football/game?gameId=401856860"
+            },
+            {
+              "headline": "CU Buffs vs. Houston football: How to watch, keys to the game, odds, staff predictions",
+              "source": "The Denver Post",
+              "url": "https://www.denverpost.com/2026/11/12/cu-buffs-houston-football-2026-tv-predictions/"
+            }
+          ]
+        },
+        {
+          "title": "cj mccollum",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "CJ McCollum joins NBA on Prime as a player contributor",
+              "source": "Awful Announcing",
+              "url": "https://awfulannouncing.com/amazon/cj-mccollum-nba-on-prime-player-contributor.html"
+            },
+            {
+              "headline": "Hawks’ CJ McCollum taking his talents to TV amid rough start to season",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/hawks-cj-mccollum-taking-talents-204810797.html"
+            },
+            {
+              "headline": "CJ McCollum, who you may know as a guard for the …",
+              "source": "HoopsHype",
+              "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/12/cj-mccollum-who-you-may-know-as-a-guard-for-the/92745382007/"
+            }
+          ]
+        },
+        {
+          "title": "portland state football",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Vikings Host Southern Utah Friday Night for Final Home Game of 2026 Season",
+              "source": "Portland State University Athletics",
+              "url": "https://goviks.com/story.aspx?filename=FB_20261109&file_date=11-9-2026"
+            },
+            {
+              "headline": "PSU Vikings prep for final two games in first season under new head coach",
+              "source": "KPTV",
+              "url": "https://www.kptv.com/2026/11/13/psu-vikings-prep-final-two-games-first-season-under-new-head-coach/"
+            },
+            {
+              "headline": "Watch Southern Utah vs Portland State Live Stream Free College Football on TV and Online",
+              "source": "Fine Homebuilding",
+              "url": "https://www.finehomebuilding.com/forum/southern-utah-vs-portland-state-college-football"
+            }
+          ]
+        },
+        {
+          "title": "cher",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Cher, Autotune and the song that changed music forever",
+              "source": "The Independent",
+              "url": "https://www.the-independent.com/arts-entertainment/music/features/cher-believe-autotune-how-it-was-made-b3082433.html"
+            },
+            {
+              "headline": "The ground breaking science behind an iconic Cher hit",
+              "source": "The Independent",
+              "url": "https://www.the-independent.com/bulletin/culture/cher-effect-autotune-believe-music-b3083792.html"
+            },
+            {
+              "headline": "55 Years Ago Today, Cher Scored Her First Solo No. 1 Hit",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/music/new-albums/articles/55-years-ago-today-cher-002526278.html"
+            }
+          ]
+        },
+        {
+          "title": "justine lupe",
+          "approx_traffic": "500+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Justine Lupe Thinks Shep Rose and Taylor Ann Green Should Get Married",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/news/videos/justine-lupe-thinks-shep-rose-034608440.html"
+            },
+            {
+              "headline": "‘Nobody Wants This’ Star Timothy Simons Reveals Biggest Season 3 Concern and Looks to Season 4: “They Burned One Another — So They’re Even”",
+              "source": "The Hollywood Reporter",
+              "url": "https://www.hollywoodreporter.com/tv/tv-features/nobody-wants-this-timothy-simons-adam-brody-sasha-morgan-s4-1236751303/"
+            },
+            {
+              "headline": "The Nobody Wants This Cast Proposed A New Lead For Season 4 (I Need This To Happen)",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/nobody-wants-cast-proposed-lead-002100778.html"
+            }
+          ]
+        },
+        {
+          "title": "colorado",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Trump-backed Maga firebrand Lauren Boebert defeated in Colorado congressional race",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/us-news/2026/nov/13/trump-maga-lauren-boebert-colorado"
+            },
+            {
+              "headline": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html"
+            },
+            {
+              "headline": "Rep. Lauren Boebert ousted in Colorado’s conservative 4th District",
+              "source": "The Washington Post",
+              "url": "https://www.washingtonpost.com/politics/2026/11/13/lauren-boebert-loses-colorado-4th-district-election-eileen-laubacher/"
+            }
+          ]
+        },
+        {
+          "title": "isaiah hartenstein",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 13 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Thunder’s Isaiah Hartenstein, Nikola Topic connect for textbook alley-oop dunk vs. Clippers",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/thunder-isaiah-hartenstein-nikola-topic-052320218.html"
+            },
+            {
+              "headline": "Kingston Flemings (back) will not return Friday",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/kingston-flemings-back-will-not-return-friday"
+            },
+            {
+              "headline": "Kenrich Williams News: Starting Friday",
+              "source": "RotoWire",
+              "url": "https://www.rotowire.com/basketball/headlines/kenrich-williams-news-starting-friday-538980"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "semiconductor India": [
+          {
+            "title": "Vishay Intertechnology Plans Semiconductor Joint Venture in India - The Globe and Mail",
+            "source": "The Globe and Mail",
+            "pub_date": "Fri, 13 Nov 2026 15:16:51 GMT"
+          },
+          {
+            "title": "Visakhapatnam's semiconductor SEZ: Can India move beyond assembly to advanced chip packaging? - ET Government",
+            "source": "ET Government",
+            "pub_date": "Sat, 14 Nov 2026 02:25:30 GMT"
+          },
+          {
+            "title": "Applied Materials forecasts quarterly revenue above estimates on strong AI chip demand - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 12 Nov 2026 23:44:38 GMT"
+          },
+          {
+            "title": "Can India become the next semiconductor hub after Taiwan? - DW.com",
+            "source": "DW.com",
+            "pub_date": "Wed, 22 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Vizag Adds Semiconductor Manufacturing SEZ to Its Industrial Base - India Briefing",
+            "source": "India Briefing",
+            "pub_date": "Fri, 13 Nov 2026 14:14:51 GMT"
+          },
+          {
+            "title": "Nvidia episode prods India to speed up its semiconductor mission - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Fri, 13 Nov 2026 18:40:31 GMT"
+          },
+          {
+            "title": "INOX Air Products plans 27% capacity expansion on buoyant demand - TradingView",
+            "source": "TradingView",
+            "pub_date": "Fri, 13 Nov 2026 12:02:25 GMT"
+          },
+          {
+            "title": "India’s semiconductor market projected to grow threefold to US$200 billion by 2035: EY-IESA report - EY",
+            "source": "EY",
+            "pub_date": "Sat, 19 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Electronics over engines: Is India's next automotive growth story being written in semiconductors? - Manufacturing Today India",
+            "source": "Manufacturing Today India",
+            "pub_date": "Fri, 13 Nov 2026 11:19:48 GMT"
+          },
+          {
+            "title": "Japan’s chemical giants boost earnings on semiconductor boom: growth opportunities for India’s specialty.. - Indiatimes",
+            "source": "Indiatimes",
+            "pub_date": "Fri, 13 Nov 2026 15:45:59 GMT"
+          },
+          {
+            "title": "Vishay and Kaynes to Form in a JV in India - Electronics For You BUSINESS",
+            "source": "Electronics For You BUSINESS",
+            "pub_date": "Fri, 13 Nov 2026 07:15:34 GMT"
+          },
+          {
+            "title": "Semiconductor Industry in India: Incentives and Key Players - India Briefing",
+            "source": "India Briefing",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "India's semiconductor ecosystem: From fabs to ecosystem leadership - EY",
+            "source": "EY",
+            "pub_date": "Sun, 20 Sep 2026 16:36:41 GMT"
+          },
+          {
+            "title": "India approves $13.3 billion for fresh semiconductor push - Reuters",
+            "source": "Reuters",
+            "pub_date": "Wed, 15 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "SMIC says AI chip supply chain will remain tight through 2027 - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 13 Nov 2026 15:02:32 GMT"
+          },
+          {
+            "title": "India needs new generation of semiconductor systems engineers: Lam Research - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Tue, 10 Nov 2026 18:45:38 GMT"
+          },
+          {
+            "title": "US' Vishay Intertechnology, Kaynes Semicon form India JV for chip manufacturing - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 13 Nov 2026 02:57:25 GMT"
+          },
+          {
+            "title": "India's ₹127500 crore semiconductor push: Can Semicon 2.0 overcome decades of missed opportunities? - ET Government",
+            "source": "ET Government",
+            "pub_date": "Wed, 11 Nov 2026 02:48:45 GMT"
+          },
+          {
+            "title": "Semiconductor companies struggle to measure business value of AI: HTEC - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Tue, 10 Nov 2026 03:27:05 GMT"
+          },
+          {
+            "title": "India must leverage data centre boom to build globally competitive chip companies: Karthikeya Misra - ET Manufacturing",
+            "source": "ET Manufacturing",
+            "pub_date": "Fri, 13 Nov 2026 12:33:46 GMT"
+          },
+          {
+            "title": "Vishay Intertechnology to form semiconductor joint venture with Kaynes Technology in India By Investing.com - Investing.com India",
+            "source": "Investing.com India",
+            "pub_date": "Thu, 12 Nov 2026 14:30:10 GMT"
+          },
+          {
+            "title": "Siemens to acquire Lauterbach to expand semiconductor design capabilities - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Wed, 11 Nov 2026 01:40:48 GMT"
+          },
+          {
+            "title": "'Half The Global Semiconductor CEOs Now Believe In India': Rajan Anandan - NDTV",
+            "source": "NDTV",
+            "pub_date": "Thu, 12 Nov 2026 17:50:27 GMT"
+          },
+          {
+            "title": "India’s Semiconductor Ecosystem Is Maturing—and ASML Is Taking Notice - Carnegie Endowment for International Peace",
+            "source": "Carnegie Endowment for International Peace",
+            "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Qualcomm layoffs 1,500 employees in India amid restructuring - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 12 Nov 2026 03:25:00 GMT"
+          }
+        ],
+        "AI startup funding": [
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 22:43:00 GMT"
+          },
+          {
+            "title": "AI training startup Mercor valued at $20 billion in latest funding round - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 10 Nov 2026 17:29:28 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Agentic AI And Infrastructure Are Still On A Roll - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 13 Nov 2026 19:20:04 GMT"
+          },
+          {
+            "title": "This Startup Raised $1 Billion to Build AI Faster and With Fewer Humans - WSJ",
+            "source": "WSJ",
+            "pub_date": "Fri, 13 Nov 2026 01:29:00 GMT"
+          },
+          {
+            "title": "Voice AI Startup Hits $100 Million Run Rate With $4.6 Million Funding - Forbes",
+            "source": "Forbes",
+            "pub_date": "Thu, 12 Nov 2026 14:00:00 GMT"
+          },
+          {
+            "title": "Will Nvidia keep funding AI startups without Jensen Huang? Signed deals are expected to hold - Nacionale",
+            "source": "Nacionale",
+            "pub_date": "Fri, 13 Nov 2026 17:46:38 GMT"
+          },
+          {
+            "title": "U.S. AI startups dominate biggest funding rounds of the week - Traders Union",
+            "source": "Traders Union",
+            "pub_date": "Fri, 13 Nov 2026 19:41:46 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Nvidia’s Startup Funding Deals Hit A Record. What’s Next After Huang? - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 13 Nov 2026 20:32:55 GMT"
+          },
+          {
+            "title": "OpenAI, Anthropic Valuations Fuel VC Fears of Startup Correction - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Wed, 11 Nov 2026 21:39:14 GMT"
+          },
+          {
+            "title": "Czech startup ValkaAI extends pre-Seed round to €13 million to bring AI personas to live events at scale - EU-Startups",
+            "source": "EU-Startups",
+            "pub_date": "Fri, 13 Nov 2026 12:12:51 GMT"
+          },
+          {
+            "title": "Exclusive: SE3, a German startup building ‘spatial intelligence’ for military drones, gets $30 million in Series A funding - Fortune",
+            "source": "Fortune",
+            "pub_date": "Thu, 12 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "With $23M in funding, Luminal is the latest startup to put Nvidia's CUDA moat in its crosshairs - SiliconANGLE",
+            "source": "SiliconANGLE",
+            "pub_date": "Thu, 12 Nov 2026 15:00:00 GMT"
+          },
+          {
+            "title": "Exclusive | AI Startup LangChain More Than Doubles Its Valuation to $3 Billion - WSJ",
+            "source": "WSJ",
+            "pub_date": "Thu, 12 Nov 2026 14:00:00 GMT"
+          },
+          {
+            "title": "UK-backed AI chip startup Fractile hits $7 billion valuation in funding round - Reuters",
+            "source": "Reuters",
+            "pub_date": "Wed, 11 Nov 2026 17:12:38 GMT"
+          },
+          {
+            "title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Tue, 10 Nov 2026 20:47:05 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: AI Drives A Varied Lineup Of Large Financings - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 23 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Norwest pushes deeper into AI with new $4B fund - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Thu, 12 Nov 2026 15:18:14 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Almost All About AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 02 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 05 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Intel (INTC) Joined A $700 Million AI Startup Funding Round - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 02 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "North America’s Startup Funding Falls In Q3 As AI Giants Eye The Public Markets - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Wed, 07 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI Snaps Up AI Travel Startup Odessia - WSJ",
+            "source": "WSJ",
+            "pub_date": "Tue, 10 Nov 2026 22:36:00 GMT"
+          },
+          {
+            "title": "Norwest Announces $4B Fund with AI Among Its Investment Priorities - Unite.AI",
+            "source": "Unite.AI",
+            "pub_date": "Thu, 12 Nov 2026 15:36:04 GMT"
+          },
+          {
+            "title": "Enza Capital Closes $21M For African AI Fund As Startup Investment Slows - Tech Build Africa",
+            "source": "Tech Build Africa",
+            "pub_date": "Thu, 12 Nov 2026 11:08:44 GMT"
+          },
+          {
+            "title": "Meet Rox, the $1.3 billion AI sales startup betting it can take on Salesforce - Fortune",
+            "source": "Fortune",
+            "pub_date": "Wed, 11 Nov 2026 12:56:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airports",
+          "airbnb",
+          "airports shut down",
+          "airplanes grounded",
+          "air traffic control",
+          "airlines",
+          "airlines grounded",
+          "ai",
+          "ai detector",
+          "airplane"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt wallet"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone find my friends not working",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "FAA issues national ground stop – lifted 4.5 hours later",
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "points": 1462,
+      "comments": 1128,
+      "created_at": "2026-11-13T21:05:53Z"
+    },
+    {
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "points": 727,
+      "comments": 209,
+      "created_at": "2026-11-12T22:03:09Z"
+    },
+    {
+      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+      "points": 329,
+      "comments": 182,
+      "created_at": "2026-11-13T18:40:44Z"
+    },
+    {
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "points": 261,
+      "comments": 135,
+      "created_at": "2026-11-14T02:52:59Z"
+    },
+    {
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "url": "https://orcasairband.com/",
+      "points": 245,
+      "comments": 56,
+      "created_at": "2026-11-13T22:04:24Z"
+    },
+    {
+      "title": "After 600 experiments, here's what I discovered about JEPA world models",
+      "url": "https://haddyalchaer.com/jepa",
+      "points": 238,
+      "comments": 37,
+      "created_at": "2026-11-13T17:55:28Z"
+    },
+    {
+      "title": "FM-1 Workbench",
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "points": 212,
+      "comments": 137,
+      "created_at": "2026-11-13T19:14:02Z"
+    },
+    {
+      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "points": 205,
+      "comments": 204,
+      "created_at": "2026-11-13T15:08:44Z"
+    },
+    {
+      "title": "A technical vision for the Haskell ecosystem",
+      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+      "points": 190,
+      "comments": 104,
+      "created_at": "2026-11-13T14:43:12Z"
+    },
+    {
+      "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+      "url": "https://isometricsf.com/",
+      "points": 182,
+      "comments": 69,
+      "created_at": "2026-11-13T17:58:37Z"
+    },
+    {
+      "title": "Terminal borders that don't cost a cell",
+      "url": "https://www.joshka.net/cell-borders/",
+      "points": 171,
+      "comments": 79,
+      "created_at": "2026-11-13T23:06:40Z"
+    },
+    {
+      "title": "Found: A protein that drives ageing without unleashing inflammation",
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "points": 168,
+      "comments": 26,
+      "created_at": "2026-11-13T19:25:21Z"
+    },
+    {
+      "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
+      "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+      "points": 160,
+      "comments": 91,
+      "created_at": "2026-11-13T15:08:07Z"
+    },
+    {
+      "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
+      "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
+      "points": 151,
+      "comments": 47,
+      "created_at": "2026-11-14T00:52:29Z"
+    },
+    {
+      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+      "points": 148,
+      "comments": 30,
+      "created_at": "2026-11-14T02:21:36Z"
+    },
+    {
+      "title": "Ggml v1.0.0",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "points": 135,
+      "comments": 25,
+      "created_at": "2026-11-14T02:28:29Z"
+    },
+    {
+      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+      "points": 116,
+      "comments": 21,
+      "created_at": "2026-11-13T19:24:47Z"
+    },
+    {
+      "title": "What Happened to 3Com?",
+      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+      "points": 103,
+      "comments": 57,
+      "created_at": "2026-11-13T23:48:59Z"
+    },
+    {
+      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
+      "url": "https://grounds.top/",
+      "points": 101,
+      "comments": 11,
+      "created_at": "2026-11-13T23:17:39Z"
+    },
+    {
+      "title": "Elephants found to be increasingly isolated leading to fractured social networks",
+      "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
+      "points": 99,
+      "comments": 18,
+      "created_at": "2026-11-14T02:02:42Z"
+    },
+    {
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "points": 265,
+      "comments": 136,
+      "created_at": "2026-11-14T02:52:59Z"
+    },
+    {
+      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+      "url": "https://claude.com/resources/articles/projects-redesigned",
+      "points": 75,
+      "comments": 72,
+      "created_at": "2026-11-14T00:28:11Z"
+    },
+    {
+      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "points": 78,
+      "comments": 11,
+      "created_at": "2026-11-14T00:06:04Z"
+    },
+    {
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "url": "https://orcasairband.com/",
+      "points": 246,
+      "comments": 56,
+      "created_at": "2026-11-13T22:04:24Z"
+    },
+    {
+      "title": "All US airports are currently ground stopped",
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "points": 195,
+      "comments": 35,
+      "created_at": "2026-11-13T21:06:52Z"
+    },
+    {
+      "title": "No AI Slop: A Manifesto",
+      "url": "https://www.slopmanifesto.com/",
+      "points": 190,
+      "comments": 112,
+      "created_at": "2026-11-13T19:51:56Z"
+    },
+    {
+      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+      "points": 116,
+      "comments": 21,
+      "created_at": "2026-11-13T19:24:47Z"
+    },
+    {
+      "title": "The avalanche that hit math is coming for AI development",
+      "url": "https://www.dwarkesh.com/p/rsi",
+      "points": 61,
+      "comments": 101,
+      "created_at": "2026-11-13T18:39:42Z"
+    },
+    {
+      "title": "Are we just going to ignore that books are destroyed for AI?",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/",
+      "points": 55,
+      "comments": 61,
+      "created_at": "2026-11-13T18:14:38Z"
+    },
+    {
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "points": 366,
+      "comments": 96,
+      "created_at": "2026-11-13T17:30:10Z"
+    },
+    {
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "url": "https://text.npr.org/nx-s1-6029408",
+      "points": 181,
+      "comments": 171,
+      "created_at": "2026-11-13T15:29:10Z"
+    },
+    {
+      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "points": 206,
+      "comments": 205,
+      "created_at": "2026-11-13T15:08:44Z"
+    },
+    {
+      "title": "AI is destroying the trust between writers and readers",
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+      "points": 329,
+      "comments": 203,
+      "created_at": "2026-11-13T11:13:46Z"
+    },
+    {
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "points": 488,
+      "comments": 383,
+      "created_at": "2026-11-13T10:18:13Z"
+    },
+    {
+      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
+      "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+      "points": 89,
+      "comments": 29,
+      "created_at": "2026-11-13T00:38:41Z"
+    },
+    {
+      "title": "Why You Should Expect an AI Crash",
+      "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "points": 101,
+      "comments": 84,
+      "created_at": "2026-11-12T23:08:31Z"
+    },
+    {
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "points": 343,
+      "comments": 104,
+      "created_at": "2026-11-12T23:06:17Z"
+    },
+    {
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "points": 727,
+      "comments": 209,
+      "created_at": "2026-11-12T22:03:09Z"
+    },
+    {
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "points": 357,
+      "comments": 152,
+      "created_at": "2026-11-12T21:56:11Z"
+    },
+    {
+      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "points": 197,
+      "comments": 232,
+      "created_at": "2026-11-12T21:09:49Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 4142452,
+      "rank": 1
+    },
+    {
+      "article": "Jensen_Huang",
+      "views": 1072168,
+      "rank": 2
+    },
+    {
+      "article": "Special:Search",
+      "views": 849642,
+      "rank": 3
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 735438,
+      "rank": 4
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 553699,
+      "rank": 5
+    },
+    {
+      "article": "Colette_Kress",
+      "views": 463931,
+      "rank": 6
+    },
+    {
+      "article": "Anthony_Clark_(actor)",
+      "views": 374893,
+      "rank": 7
+    },
+    {
+      "article": "Nvidia",
+      "views": 366417,
+      "rank": 8
+    },
+    {
+      "article": ".xxx",
+      "views": 257723,
+      "rank": 9
+    },
+    {
+      "article": "SS_United_States",
+      "views": 241627,
+      "rank": 10
+    },
+    {
+      "article": "Scott_Colom",
+      "views": 235409,
+      "rank": 11
+    },
+    {
+      "article": "Mauricio_Pochettino",
+      "views": 168183,
+      "rank": 12
+    },
+    {
+      "article": "Alice_Huang_(executive)",
+      "views": 160121,
+      "rank": 13
+    },
+    {
+      "article": "Dan_Hicks_(sportscaster)",
+      "views": 157094,
+      "rank": 14
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 146689,
+      "rank": 15
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 143795,
+      "rank": 16
+    },
+    {
+      "article": "Stacy_Keach",
+      "views": 142036,
+      "rank": 17
+    },
+    {
+      "article": "David_Walliams",
+      "views": 138004,
+      "rank": 18
+    },
+    {
+      "article": "Tomb_of_the_Unknown_Soldier_(Arlington_National_Cemetery)",
+      "views": 137779,
+      "rank": 19
+    },
+    {
+      "article": "Lisa_Su",
+      "views": 136248,
+      "rank": 20
+    },
+    {
+      "article": "Hannah_Storm",
+      "views": 127755,
+      "rank": 21
+    },
+    {
+      "article": "Kaviya_Maran",
+      "views": 123707,
+      "rank": 22
+    },
+    {
+      "article": "Russell_Brand",
+      "views": 116285,
+      "rank": 23
+    },
+    {
+      "article": "Cindy_Hyde-Smith",
+      "views": 111477,
+      "rank": 24
+    },
+    {
+      "article": "Pete_Hegseth",
+      "views": 107688,
+      "rank": 25
+    },
+    {
+      "article": "Jailer_2",
+      "views": 107131,
+      "rank": 26
+    },
+    {
+      "article": "Anirudh_Ravichander",
+      "views": 102669,
+      "rank": 27
+    },
+    {
+      "article": "VisionQuest",
+      "views": 102126,
+      "rank": 28
+    },
+    {
+      "article": "Chris_Malachowsky",
+      "views": 100152,
+      "rank": 29
+    },
+    {
+      "article": "Archive_of_Our_Own",
+      "views": 99746,
+      "rank": 30
+    },
+    {
+      "article": "Scene_(2026_film)",
+      "views": 98310,
+      "rank": 31
+    },
+    {
+      "article": "Jensen_Huang_spying_scandal",
+      "views": 97209,
+      "rank": 32
+    },
+    {
+      "article": "Yella_Beezy",
+      "views": 96701,
+      "rank": 33
+    },
+    {
+      "article": "Usman_Nurmagomedov",
+      "views": 83175,
+      "rank": 34
+    },
+    {
+      "article": "2026_United_States_elections",
+      "views": 83151,
+      "rank": 35
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 82122,
+      "rank": 36
+    },
+    {
+      "article": "Curtis_Priem",
+      "views": 79910,
+      "rank": 37
+    },
+    {
+      "article": "XNXX",
+      "views": 78187,
+      "rank": 38
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 77242,
+      "rank": 39
+    },
+    {
+      "article": "2026_United_States_Senate_elections",
+      "views": 75912,
+      "rank": 40
+    },
+    {
+      "article": "Godzilla_Minus_Zero",
+      "views": 75047,
+      "rank": 41
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 74462,
+      "rank": 42
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 73992,
+      "rank": 43
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 73739,
+      "rank": 44
+    },
+    {
+      "article": "2026_United_States_Senate_election_in_Mississippi",
+      "views": 70088,
+      "rank": 45
+    },
+    {
+      "article": "Kirk_Cousins",
+      "views": 67992,
+      "rank": 46
+    },
+    {
+      "article": "Michael_Carrick",
+      "views": 67479,
+      "rank": 47
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 64942,
+      "rank": 48
+    },
+    {
+      "article": "Abu_Ghraib_torture_and_prisoner_abuse",
+      "views": 64718,
+      "rank": 49
+    },
+    {
+      "article": "Abdul_El-Sayed",
+      "views": 63490,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Amazon’s new Kindle Colorsoft is a premium e-reader with a premium price"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "US government grounds all flights across the United States ‘due to extraordinary circumstances’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI agent startup LangChain hits $3B valuation"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The unfolding Jensen Huang scandal: a timeline"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft’s latest email outage turned into a full-blown global cloud crisis"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Jensen Huang didn’t show confidence in his successor, report says"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Muse can now place calls to US businesses — if you pay"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "FAA lifts nationwide ground stop that blocked takeoffs for hours"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Amazon has a plan to index the world’s online shopping data"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "CMF’s milk carton-shaped Bluetooth speaker is down to a new low price"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Here’s how you can save on your GTA VI preorder ahead of launch"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "You can adjust the position of the trackball on Keychron’s new wireless mouse"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Jensen Huang was reckless with the environment, too"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The smallest version of Camp Snap’s retro digital camcorder fits on your keychain"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The new Apple TV has a YouTube problem"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Microsoft&#8217;s massive Outlook outage might be over"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Starship flight 15 powers to orbit—setting up a possible catch on Saturday"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "FAA has lifted its third-ever nationwide ground stop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Millions of Americans are not taking their GLP-1 drugs as prescribed"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "In elephants, the resilience of communities has its limits"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Kalshi ditches Trump Jr. as advisor; CEO admitted \"optics\" weren't good"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "OpenAI board member worries an AI \"takeover\" of society could be months away"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Microsoft’s global outage may be worse than Amazon's or CrowdStrike's, expert says"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "It's the end of the world as we know it, per a physicist's 1960 prediction"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Screenless GPS: Slate Auto says, \"Remember the road atlas\""
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Scientists warn 1.5°C climate change threshold could arrive by 2029"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rocket Report: Starship set for historic test flight; a century of Electron"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Specialized’s Tarmac SL9 S-Level is built to wreck your Zone 2 ride"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "In reversal, American Cancer Society urges routine prostate cancer screening"
+    }
+  ]
+}
