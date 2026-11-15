@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-15",
+  "candidates": [
+    {
+      "title": "NVIDIA Allegedly Engineered Scarcity By Funding AI Startups To Buy Its GPUs - TechPowerUp",
+      "sources": [
+        "gnews:IN",
+        "gnews:US",
+        "hn"
+      ],
+      "geos": [
+        "IN",
+        "US"
+      ],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "gnews:IN",
+          "query": "AI startup funding",
+          "outlet": "TechPowerUp"
+        },
+        {
+          "source": "gnews:US",
+          "query": "AI startup funding",
+          "outlet": "TechPowerUp"
+        },
+        {
+          "source": "hn",
+          "points": 1054,
+          "comments": 624,
+          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+        }
+      ],
+      "score": 0.7631,
+      "topic_fit": 1.0,
+      "corroboration": 0.5
+    },
+    {
+      "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9579863567172442,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 151,
+          "comments": 55,
+          "url": "https://retrocomputing.stackexchange.com/questions/17957"
+        }
+      ],
+      "score": 0.6401,
+      "topic_fit": 0.9,
+      "corroboration": 0.0
+    },
+    {
+      "title": "A family tree of software job titles",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 248,
+          "comments": 119,
+          "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/"
+        }
+      ],
+      "score": 0.632,
+      "topic_fit": 0.96,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Lovable apps expose passport details and more than 200K private messages",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 714,
+          "comments": 289,
+          "url": "https://www.crissyfield.de/research/lovable-en/"
+        }
+      ],
+      "score": 0.6232,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9178281888587272,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 204,
+          "comments": 11,
+          "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
+        }
+      ],
+      "score": 0.6153,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8131354228266838,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 192,
+          "comments": 193,
+          "url": "https://text.npr.org/nx-s1-6029408"
+        }
+      ],
+      "score": 0.6051,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "SpaceX catches the Starship to end Flight 15",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 914,
+          "comments": 630,
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ],
+      "score": 0.6045,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 343,
+          "comments": 180,
+          "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html"
+        }
+      ],
+      "score": 0.6044,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI is destroying the trust between writers and readers",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9420321019021871,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 365,
+          "comments": 228,
+          "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+        }
+      ],
+      "score": 0.6043,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "storm",
+      "sources": [
+        "gtrends:IN"
+      ],
+      "geos": [
+        "IN"
+      ],
+      "momentum_raw": 0.8835053611884937,
+      "evidence": [
+        {
+          "source": "gtrends:IN",
+          "traffic": "200000+",
+          "news": [
+            {
+              "headline": "Tamil Nadu unlikely to see significant impact of severe cyclonic storm brewing over Bay of Bengal",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/cities/chennai/tamil-nadu-unlikely-to-see-significant-impact-of-severe-cyclonic-storm-brewing-over-bay-of-bengal/article71701906.ece"
+            },
+            {
+              "headline": "Bay of Bengal system likely to intensify into cyclone by November 16, says IMD",
+              "source": "The New Indian Express",
+              "url": "https://www.newindianexpress.com/india/2026/Nov/14/bay-of-bengal-system-likely-to-intensify-into-cyclone-by-november-16-says-imd"
+            },
+            {
+              "headline": "Days after Murasu, third cyclone brews over Bay of Bengal; 'Akvan' landfall location remains uncertain",
+              "source": "Deccan Herald",
+              "url": "https://www.deccanherald.com/india/days-after-murasu-third-cyclone-brews-over-bay-of-bengal-akvan-landfall-location-remains-uncertain-4218494"
+            }
+          ]
+        }
+      ],
+      "score": 0.6031,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9978072283874118,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 123,
+          "comments": 24,
+          "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches"
+        }
+      ],
+      "score": 0.5968,
+      "topic_fit": 0.86,
+      "corroboration": 0.0
+    },
+    {
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9970713254881741,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 426,
+          "comments": 108,
+          "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+        }
+      ],
+      "score": 0.5927,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "NVIDIA Allegedly Engineered Scarcity By Funding AI Startups To Buy Its GPUs - TechPowerUp",
+    "sources": [
+      "gnews:IN",
+      "gnews:US",
+      "hn"
+    ],
+    "geos": [
+      "IN",
+      "US"
+    ],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "gnews:IN",
+        "query": "AI startup funding",
+        "outlet": "TechPowerUp"
+      },
+      {
+        "source": "gnews:US",
+        "query": "AI startup funding",
+        "outlet": "TechPowerUp"
+      },
+      {
+        "source": "hn",
+        "points": 1054,
+        "comments": 624,
+        "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+      }
+    ],
+    "score": 0.7631,
+    "topic_fit": 1.0,
+    "corroboration": 0.5
+  },
+  "use_evergreen": false
+}
