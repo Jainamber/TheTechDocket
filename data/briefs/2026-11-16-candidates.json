@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-16",
+  "candidates": [
+    {
+      "title": "All AI-generated code should be Open Source",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1118,
+          "comments": 602,
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/"
+        }
+      ],
+      "score": 0.6576,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 498,
+          "comments": 219,
+          "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal"
+        }
+      ],
+      "score": 0.6265,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "What's Next for Nvidia?",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 139,
+          "comments": 170,
+          "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/"
+        }
+      ],
+      "score": 0.6076,
+      "topic_fit": 0.72,
+      "corroboration": 0.0
+    },
+    {
+      "title": "A short explainer on how El Niño works [video]",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9622888640853294,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 199,
+          "comments": 86,
+          "url": "https://www.youtube.com/watch?v=7_JF3etiAv8"
+        }
+      ],
+      "score": 0.6067,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Crows make decisions faster than we can",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.9398092259534119,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 191,
+          "comments": 141,
+          "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html"
+        }
+      ],
+      "score": 0.5899,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 1101,
+          "comments": 649,
+          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+        }
+      ],
+      "score": 0.5895,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Eclipse Mosquitto – An open source MQTT broker",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.7021740268326273,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 75,
+          "comments": 29,
+          "url": "https://github.com/eclipse-mosquitto/mosquitto"
+        }
+      ],
+      "score": 0.5882,
+      "topic_fit": 1.0,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 447,
+          "comments": 193,
+          "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html"
+        }
+      ],
+      "score": 0.5811,
+      "topic_fit": 0.78,
+      "corroboration": 0.0
+    },
+    {
+      "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8827669989504934,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 77,
+          "comments": 66,
+          "url": "https://www.hntrends.com/2026/november.html"
+        }
+      ],
+      "score": 0.5728,
+      "topic_fit": 0.84,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 0.8983220528678779,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 376,
+          "comments": 191,
+          "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI"
+        }
+      ],
+      "score": 0.5688,
+      "topic_fit": 0.92,
+      "corroboration": 0.0
+    },
+    {
+      "title": "Qwen4-Max",
+      "sources": [
+        "hn",
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 205,
+          "comments": 65,
+          "url": "https://qwen.ai/blog?id=qwen4-max"
+        },
+        {
+          "source": "hn",
+          "points": 205,
+          "comments": 65,
+          "url": "https://qwen.ai/blog?id=qwen4-max"
+        }
+      ],
+      "score": 0.568,
+      "topic_fit": 0.64,
+      "corroboration": 0.0
+    },
+    {
+      "title": "The MacBook Pro's OLED PWM problem",
+      "sources": [
+        "hn"
+      ],
+      "geos": [],
+      "momentum_raw": 1.0,
+      "evidence": [
+        {
+          "source": "hn",
+          "points": 438,
+          "comments": 248,
+          "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/"
+        }
+      ],
+      "score": 0.567,
+      "topic_fit": 0.74,
+      "corroboration": 0.0
+    }
+  ],
+  "pick": {
+    "title": "All AI-generated code should be Open Source",
+    "sources": [
+      "hn"
+    ],
+    "geos": [],
+    "momentum_raw": 1.0,
+    "evidence": [
+      {
+        "source": "hn",
+        "points": 1118,
+        "comments": 602,
+        "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/"
+      }
+    ],
+    "score": 0.6576,
+    "topic_fit": 1.0,
+    "corroboration": 0.0
+  },
+  "use_evergreen": false
+}

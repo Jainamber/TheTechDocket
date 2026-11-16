@@ -214,6 +214,8 @@ def _sentence_containing(paragraph: str, match_start: int, match_end: int) -> st
     return paragraph.strip()  # span didn't land cleanly inside any one sentence
 
 
+
+
 def _strip_markdown_links(text: str) -> str:
     """[anchor](url) -> anchor, everywhere — a claim must read as plain
     prose, not raw markdown, when handed to the citation-check model."""
@@ -501,7 +503,7 @@ def run(date_ist: str, slug: str, client, cfg: dict,
                 continue
             failures.append({
                 "type": "unsupported", "url": row["url"],
-                "claim": row["claims"][0] if row["claims"] else "",
+                "claim": " \n---\n ".join(row["claims"]) if row.get("claims") else "",
                 "detail": row["reason"] or "source did not support its claim",
             })
 
@@ -572,6 +574,18 @@ def run(date_ist: str, slug: str, client, cfg: dict,
 
 def main(argv=None) -> int:
     import argparse
+    import sys
+
+    if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+        try:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+    if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+        try:
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
 
     from ..util import load_config
 

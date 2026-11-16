@@ -70,6 +70,17 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 from ..util import ROOT, load_config, parse_article
 
 IST = ZoneInfo("Asia/Kolkata")
@@ -104,10 +115,15 @@ class Runner:
         self.root = root
 
     def engine_run(self, *args: str) -> subprocess.CompletedProcess:
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+        env["PYTHONUTF8"] = "1"
         return subprocess.run(
             [sys.executable, "-m", "engine.run", *args],
             cwd=self.root, capture_output=True, text=True,
+            encoding="utf-8", errors="replace", env=env,
         )
+
 
     def ai_select(self, date_ist: str, client, cfg) -> dict:
         from .ai_select import run as _run

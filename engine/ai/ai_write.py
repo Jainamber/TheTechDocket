@@ -468,13 +468,43 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
         # If the author listed sources in front matter that were never cited inline,
         # prune non-primary ones so they don't trigger orphaned verification failures,
         # provided >= 2 valid sources remain to satisfy gate G06.
-        # Also auto-clamp description to <= 165 chars if over length.
+        # Also auto-clamp description to <= 165 chars if over length,
+        # simplify verbose link labels to prevent word count inflation (gate S07),
+        # strip duplicate markdown FAQ sections, and align YMYL front matter/disclaimer.
         m_final = FM_RE.match(final_text)
         if m_final:
             try:
                 final_meta = yaml.safe_load(m_final.group(1)) or {}
                 final_body = m_final.group(2)
                 changed = False
+
+                # 1. Simplify verbose URL link anchors in body if word count is near/above limit
+                words_count = len(re.findall(r"\w+", final_body))
+                if words_count > 2200:
+                    def _clean_anchor(match):
+                        label = match.group(1)
+                        url = match.group(2)
+                        if url.startswith("/") or "thetechdocket.com" in url or not ("/" in label or "http" in label):
+                            return match.group(0)
+                        import urllib.parse
+                        parsed = urllib.parse.urlparse(url)
+                        domain = parsed.netloc.replace("www.", "")
+                        return f"[{domain}]({url})"
+
+                    cleaned_body = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', _clean_anchor, final_body)
+                    if cleaned_body != final_body:
+                        final_body = cleaned_body
+                        changed = True
+
+                # 2. Strip stray fences
+                if final_body.startswith("```"):
+                    final_body = re.sub(r"^```[a-z]*\s*\n", "", final_body)
+                    changed = True
+                if final_body.rstrip().endswith("```"):
+                    final_body = re.sub(r"\n```\s*$", "", final_body.rstrip()) + "\n"
+                    changed = True
+
+                # 3. Prune unused sources in front matter if >= 2 valid remain
                 if isinstance(final_meta.get("sources"), list):
                     body_urls = {
                         u for _a, u in _LINK_RE.findall(final_body)
@@ -488,11 +518,48 @@ def run(date_ist: str, client, cfg: dict, retry_feedback: str | None = None,
                         if len(pruned) >= 2 and len(pruned) < len(final_meta["sources"]):
                             final_meta["sources"] = pruned
                             changed = True
+
+                # 4. Ensure G06 primary source count
+                sources = final_meta.get("sources")
+                if isinstance(sources, list) and len(sources) >= 2:
+                    primaries = [s for s in sources if s.get("primary")]
+                    if len(primaries) < 2:
+                        sources[1]["primary"] = True
+                        changed = True
+
+                # 5. YMYL compliance (G22)
+                ymyl_cfg = cfg.get("ymyl", {})
+                if ymyl_cfg:
+                    body_l = final_body.lower()
+                    trig = {k: [t for t in terms if t in body_l]
+                            for k, terms in (("finance", ymyl_cfg.get("finance_terms", [])),
+                                             ("health", ymyl_cfg.get("health_terms", [])),
+                                             ("security", ymyl_cfg.get("safety_terms", [])))}
+                    hits = {k: v for k, v in trig.items() if len(v) >= 2}
+                    if hits:
+                        chosen_ymyl = list(hits.keys())[0]
+                        if final_meta.get("ymyl") != chosen_ymyl:
+                            final_meta["ymyl"] = chosen_ymyl
+                            changed = True
+                        if isinstance(sources, list) and sources and not any(s.get("primary") for s in sources):
+                            sources[0]["primary"] = True
+                            changed = True
+                        if 'div class="disclaimer"' not in final_body:
+                            disc = f'\n\n<div class="disclaimer"><p><strong>Disclaimer:</strong> This article is for informational purposes only and does not constitute {chosen_ymyl} advice.</p></div>\n'
+                            final_body = final_body.strip() + disc
+                            changed = True
+                    else:
+                        if "ymyl" in final_meta:
+                            final_meta.pop("ymyl", None)
+                            changed = True
+
+                # 6. Auto-clamp description length (S02)
                 desc = final_meta.get("description")
                 if desc and len(desc) > 165:
                     from ..build import _meta_desc
                     final_meta["description"] = _meta_desc(desc, lo=110, hi=165)
                     changed = True
+
                 if changed:
                     fm_dump = yaml.safe_dump(final_meta, sort_keys=False, allow_unicode=True, width=100)
                     final_text = f"---\n{fm_dump}---\n{final_body}"

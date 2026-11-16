@@ -1,0 +1,51 @@
+{
+  "slug": "ai-generated-code-critics-say-must-be-open",
+  "date": "2026-11-16",
+  "checked_at": "2026-11-16T13:32:02.816858+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "sources": [
+    {
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "title": "All AI-code should be Open Source — Jankiewicz",
+      "primary": true,
+      "claims": [
+        "The core of the argument rests on \"training debt\" or \"license laundering.\" Frontier AI models were trained by scraping billions of lines of open-source code (including copyleft repositories and platforms like Stack Overflow) without preserving the required attribution or licensing terms jakub.jankiewicz.org."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "That code was simply scraped from the internet and used without permission or proper attribution. The models were also trained on Stack Overflow and Stack Exchange sister projects, which are released under Creative Commons licenses that legally require attribution. Turning this collective knowledge into proprietary, closed-source code feels like license laundering.",
+      "fetch_ok": true,
+      "reason": "The source confirms that AI models were trained by scraping open-source code and Stack Overflow without proper attribution, calling it 'license laundering'."
+    },
+    {
+      "url": "https://law.justia.com/cases/federal/appellate-courts/cadc/23-5233/23-5233-2025-03-18.html",
+      "title": "Thaler v. Perlmutter — Justia",
+      "primary": true,
+      "claims": [
+        "Copyright Office's denial of Stephen Thaler's registration for an AI-generated artwork law.justia.com.",
+        "**United States** | 17 U.S.C. § 102 | Strict human authorship required law.justia.com | Public Domain (Uncopyrightable)"
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "The Creativity Machine cannot be the recognized author of a copyrighted work because the Copyright Act of 1976 requires all eligible work to be authored in the first instance by a human being.",
+      "fetch_ok": true,
+      "reason": "The court opinion confirms the Copyright Office's denial of Stephen Thaler's AI-generated artwork registration, citing 17 U.S.C. § 102(a) and holding that the Copyright Act requires human authorship."
+    },
+    {
+      "url": "https://github.com/arbazkhan971/bharatcode-cli",
+      "title": "BharatCode CLI — GitHub",
+      "primary": false,
+      "claims": [
+        "This represents a true brand markup of 21.5% over the nominal exchange rate, making open-source, local-first tools like BharatCode highly attractive github.com.",
+        "BharatCode is an open-source, local-first, Rust-powered terminal AI coding agent built specifically for Indian developers and enterprises github.com."
+      ],
+      "needs_corroboration": false,
+      "supported": true,
+      "quote": "A local-first, Apache-2.0, Rust terminal AI coding agent — built for India.",
+      "fetch_ok": true,
+      "reason": "The source confirms that BharatCode is an open-source, local-first, Rust-powered terminal AI coding agent built for India."
+    }
+  ],
+  "failures": []
+}
