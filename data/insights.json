@@ -1,7 +1,47 @@
 {
-  "generated_at": "2026-11-15T11:49:56.134339+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-11-16T11:49:00.350958+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 7
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "dwarf-planet-candidate-2026-ed138-found-orbiting-beyond": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "term-sheet-please-inside-yc-startup-funding-game": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "discord-kills-electron-rust-windows-11": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-chatbot-data-privacy": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 8,
+    "explainers": 3,
+    "ai-tools": 3
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
