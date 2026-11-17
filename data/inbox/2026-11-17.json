@@ -1,0 +1,1647 @@
+{
+  "date": "2026-11-17",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_AI India": "ok",
+    "news_IN_new AI model": "failed: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=new%20AI%20model&hl=en-IN&gl=IN&ceid=IN:en",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI India": "ok",
+    "news_US_new AI model": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "libra horoscope today",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 16 Nov 2026 23:30:00 -0800",
+          "news": [
+            {
+              "headline": "Libra Horoscope Today: November 17, 2026",
+              "source": "Vogue India",
+              "url": "https://www.vogue.in/content/libra-horoscope-today-november-17-2026"
+            },
+            {
+              "headline": "Libra, Weekly Horoscope, November 15 to November 21, 2026: Embrace family happiness, romantic development",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/astrology/horoscope/libra-weekly-horoscope-november-15-to-november-21-2026-embrace-family-happiness-romantic-developments-and-career-recognition-while-managing-spending-wisely/articleshow/135805264.cms"
+            },
+            {
+              "headline": "Libra Horoscope Today, November 15, 2026",
+              "source": "News18",
+              "url": "https://www.news18.com/astrology/horoscope/libra-daily-horoscope-today-tula-rashifal-astrological-predictions-on-november-15-2026-10426030.html"
+            }
+          ]
+        },
+        {
+          "title": "बातमी",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 16 Nov 2026 23:30:00 -0800",
+          "news": [
+            {
+              "headline": "Video | उपमुख्यमंत्री सुनेत्रा पवार यांच्या कार्यालयातून NCP आमदारांना फोन, विलिनीकरणाला वेग? | NCP Merger",
+              "source": "NDTV Marathi",
+              "url": "https://marathi.ndtv.com/videos/deputy-cm-sunetra-pawar-s-office-calls-ncp-mlas-accelerating-ncp-merger-process-1190402"
+            },
+            {
+              "headline": "NCP Merger Update | राष्ट्रवादीचं विलीनीकरण होणार की नाही? Suraj Chavan स्पष्टच बोलले",
+              "source": "News18 Marathi",
+              "url": "https://news18marathi.com/videos/maharashtra/ncp-merger-update-suraj-chavan-1826798.html"
+            }
+          ]
+        },
+        {
+          "title": "bangladesh cricket",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 23:20:00 -0800",
+          "news": [
+            {
+              "headline": "Bangladesh batter explains emotional century celebration",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/tournaments/world-test-championship/news/bangladesh-batter-explains-emotional-century-celebration"
+            },
+            {
+              "headline": "Litton: 'I always see crisis situations as opportunities'",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/story/sa-vs-ban-1st-test-litton-das-i-always-see-crisis-situations-as-opportunities-1562885"
+            },
+            {
+              "headline": "Tanzid Tamim rues 'unlucky' last-ball dismissal for Towhid Hridoy",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/cricket-news/140923/tanzid-tamim-rues-unlucky-last-ball-dismissal-for-towhid-hridoy-cricbuzzcom"
+            }
+          ]
+        },
+        {
+          "title": "சின்ன வெங்காயம்",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 23:20:00 -0800",
+          "news": [
+            {
+              "headline": "கோயம்பேடு மார்க்கெட்டில் காய்கறி விலைகள் கிடு கிடு உயர்வு: சின்ன வெங்காயம் கிலோ ரூ.200க்கு விற்பனை",
+              "source": "Makkal Kural",
+              "url": "https://makkalkural.net/%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%87%E0%AE%9F%E0%AF%81-%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF%E0%AE%B2/"
+            },
+            {
+              "headline": "மழை காரணமாக உற்பத்தி பாதிப்பு: சின்ன வெங்காயம் கிலோ ரூ.210 ஆக உயர்வு",
+              "source": "Hindu Tamil Thisai",
+              "url": "https://www.hindutamil.in/news/business/small-onion-price-rises-to-rs-210-per-kg"
+            },
+            {
+              "headline": "Vegetables Price Hike| காய்கறிகள் விலை உயர்வு - பொதுமக்கள் கருத்து",
+              "source": "Thanthi TV",
+              "url": "https://www.thanthitv.com/news/tamilnadu/vegetable-price-hike-what-do-the-public-have-to-say"
+            }
+          ]
+        },
+        {
+          "title": "नागालैंड",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 23:20:00 -0800",
+          "news": [
+            {
+              "headline": "नागालैंड में विदेशी पर्यटकों के लिए संरक्षित क्षेत्र परमिट में ढील, पर्यटन को मिलेगा बढ़ावा",
+              "source": "Lokmat News Hindi",
+              "url": "https://www.lokmatnews.in/india/nagaland-relaxes-protected-area-permit-for-foreign-tourists-boosts-tourism-a001-w01/"
+            },
+            {
+              "headline": "जनजाति विकास समिति ने नागालैंड में मुफ्त डेंटल कैंप चलाया, 368 मरीजों का इलाज",
+              "source": "Panchjanya",
+              "url": "https://panchjanya.com/2026/11/17/499150/bharat/janjati-vikas-samiti-nagaland-free-dental-camp/"
+            }
+          ]
+        },
+        {
+          "title": "ఇల్లు ఇల్లాలు పిల్లలు",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 23:20:00 -0800",
+          "news": [
+            {
+              "headline": "Illu Illalu Pillalu Today నవంబర్ 17 ఎపిసోడ్: కూరగాయలు అమ్ముతున్న వల్లీ.. నేరుగా అత్తింటికి!! కెమెరాకి చిక్కిన లంచావతారం సాగర్",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/tv/news/chandu-accuses-srivalli-of-orchestrating-the-vegetable-vender-in-illu-illalu-pillalu-2026-november-17-episode-preview/articleshow/135908368.cms"
+            },
+            {
+              "headline": "Illu Illalu Pillalu Serial Today November 17th: ఇల్లు ఇల్లాలు పిల్లలు: నెత్తిన బుట్ట పెట్టి కూరగాయలు అమ్ముతున్న",
+              "source": "ABP Desam",
+              "url": "https://telugu.abplive.com/entertainment/tv/illu-illalu-pillalu-serial-today-november-17th-2026-written-update-in-telugu-in-star-maa-jio-hotstar-263830"
+            },
+            {
+              "headline": "Illu Illalu Pillalu Today నవంబర్ 09 ఎపిసోడ్: భాగ్యం రక్తం కళ్లచూసిన ధీరజ్.. రామరాజు కాళ్లపై పడి క్షమాపణ.. పగతో రగిలిపోయిన భాగ్యం",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/tv/news/bhagyam-apologies-to-ramaraju-for-insulting-in-illu-illalu-pillalu-2026-november-09-episode-preview/articleshow/135669762.cms"
+            }
+          ]
+        },
+        {
+          "title": "বালিগঞ্জ",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "Kolkata News : বালিগঞ্জ থেকে একাধিক রুটে অটো বন্ধ, চরম উত্তেজনা ভোগান্তি যাত্রীদের",
+              "source": "ABP Ananda",
+              "url": "https://bengali.abplive.com/district/kolkata-news-auto-services-on-several-routes-from-ballygunge-have-been-stopped-leading-to-high-tension-and-causing-hardship-for-passengers-1199564"
+            },
+            {
+              "headline": "Kolkata News: বালিগঞ্জে অটো রুট বন্ধ করা নিয়ে উত্তেজনা ছড়াল এলাকায় | ABP Ananda",
+              "source": "ABP Ananda",
+              "url": "https://bengali.abplive.com/videos/district/kolkata-news-tension-flared-in-the-ballygunge-area-over-the-closure-of-an-auto-rickshaw-route-watch-video-1199570"
+            },
+            {
+              "headline": "অটো বন্ধে সমস্য়ায় যাত্রীরা",
+              "source": "Aaro Ananda",
+              "url": "https://www.aaroananda.com/story/news/in-focus/ballygunge-auto-strike-causes-severe-commuter-distress-in-kolkata/11028738"
+            }
+          ]
+        },
+        {
+          "title": "सनी",
+          "approx_traffic": "2000+",
+          "pub_date": "Mon, 16 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "सनी देओल की सूर्या हुई पोस्टपोन, डॉक्टरों की आपत्ति का हुआ असर! सेंसर सर्टिफिकेट मिलने में हुई देरी",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/entertainment/bollywood-news/story/sunny-deol-ravi-kishan-starrer-suryaa-postponed-cbfc-delay-doctors-controversy-producer-reacts-tmovj-dskc-2698348-2026-11-17"
+            },
+            {
+              "headline": "राजस्थान हाईकोर्ट ने सनी देओल की सूर्या को लेकर जारी किया नोटिस, 3 दिनों में मांगा",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/entertainment/bollywood/rajasthan-high-court-issues-notice-to-sunny-deol-film-surya-seeks-reply-in-3-days-3215735"
+            },
+            {
+              "headline": "सनी देओल की 'सूर्या' पर लगा ब्रेक, IMA की शिकायत के बाद टली फिल्म की रिलीज",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/news/entertainment/bollywood-sunny-deol-much-awaited-film-suryaa-postponed-to-2027-ima-objection-film-content-release-date-ws-kl-10991375.html"
+            }
+          ]
+        },
+        {
+          "title": "chase bank outages",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 16 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "US bank outage: What caused Chase problems and Zelle payment delays?",
+              "source": "Al Jazeera",
+              "url": "https://www.aljazeera.com/news/2026/11/17/us-bank-outage-what-caused-chase-problems-and-zelle-payment-delays"
+            },
+            {
+              "headline": "Widespread service outages at major U.S. banks appear to be over",
+              "source": "CBS News",
+              "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/"
+            },
+            {
+              "headline": "JP Morgan Resolves \"Technical Issue\" That Delayed Customers' Transactions",
+              "source": "NDTV",
+              "url": "https://www.ndtv.com/world-news/jp-morgan-chase-resolves-technical-issue-that-delayed-customers-transactions-us-12336396"
+            }
+          ]
+        },
+        {
+          "title": "नरेन्द्र मोदी",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 16 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "NITI Aayog 5 Workshops: PM मोदी के 25 साल के काम से सीखेंगे लोग",
+              "source": "Prabhat Khabar",
+              "url": "https://www.prabhatkhabar.com/education/niti-aayog-five-national-workshops-pm-modi-leadership-2026"
+            },
+            {
+              "headline": "नीति आयोग प्रधानमंत्री मोदी के 25 वर्षों के शासन अनुभव को दर्ज करने के लिए 5 कार्यशालाओं की एक श्रृंखला शुरू करेगा",
+              "source": "DD News",
+              "url": "https://ddnews.gov.in/niti-aayog-will-launch-a-series-of-5-workshops-to-document-prime-minister-modis-25-years-of-governance-experience/"
+            },
+            {
+              "headline": "पीएम मोदी के नेतृत्व के 25 वर्षों के अनुभवों से सीख के लिए नीति आयोग शुरू करेगा राष्ट्रीय कार्यशालाओं की श्रृंखला",
+              "source": "IANS LIVE",
+              "url": "https://hindi.ianslive.in/hindi-niti-aayog-to-launch-national-workshop-series-on-lessons-from-25-years-of-pm-modis-leadership--20261115125703-20261115131646"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI India": [
+          {
+            "title": "India joins US-led AI supply chain alliance: Can it break China's grip on AI and semiconductor supply chains.. - ET Government",
+            "source": "ET Government",
+            "pub_date": "Tue, 17 Nov 2026 03:33:43 GMT"
+          },
+          {
+            "title": "What the AI Boom Is Made Of: The Role Canada’s Critical Minerals Can Play in India - India's World",
+            "source": "India's World",
+            "pub_date": "Tue, 17 Nov 2026 00:25:40 GMT"
+          },
+          {
+            "title": "AI to reshape, not replace, jobs in India’s design and manufacturing sectors: Autodesk - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Tue, 17 Nov 2026 01:02:00 GMT"
+          },
+          {
+            "title": "India ETFs among global winners in October as AI-hardware sell-off hits Taiwan, Korea - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Tue, 17 Nov 2026 04:22:31 GMT"
+          },
+          {
+            "title": "India, U.S. and eight other nations sign declaration to safeguard AI supply chains - News On AIR",
+            "source": "News On AIR",
+            "pub_date": "Mon, 16 Nov 2026 11:55:43 GMT"
+          },
+          {
+            "title": "Indian AI infra provider Meganet files for $78.6 million IPO - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 16 Nov 2026 15:42:48 GMT"
+          },
+          {
+            "title": "India & Nine Other Nations Sign Joint Declaration To Safeguard AI Supply Chains - Inc42",
+            "source": "Inc42",
+            "pub_date": "Mon, 16 Nov 2026 21:44:01 GMT"
+          },
+          {
+            "title": "From royalty gaps to AI risks: India’s music industry flags key challenges facing creators - Exchange4Media",
+            "source": "Exchange4Media",
+            "pub_date": "Tue, 17 Nov 2026 06:54:44 GMT"
+          },
+          {
+            "title": "Can Indian hospitals make AI investments pay? - Healthcare Asia Magazine",
+            "source": "Healthcare Asia Magazine",
+            "pub_date": "Tue, 17 Nov 2026 02:44:51 GMT"
+          },
+          {
+            "title": "Australia Signs US-Led AI Security Pact Alongside India - The 420.in",
+            "source": "The 420.in",
+            "pub_date": "Tue, 17 Nov 2026 05:22:25 GMT"
+          },
+          {
+            "title": "Culture ministry launches new AI search engine. Next target: AI-led tracking of stolen antiquities - ThePrint",
+            "source": "ThePrint",
+            "pub_date": "Tue, 17 Nov 2026 05:17:44 GMT"
+          },
+          {
+            "title": "Sarvam opens AI token factory, India's answer to OpenRouter and Hugging Face - India Today",
+            "source": "India Today",
+            "pub_date": "Tue, 17 Nov 2026 06:20:09 GMT"
+          },
+          {
+            "title": "AI adoption, weak demand to keep India's IT services revenue growth subdued in FY27: Report - BusinessLine",
+            "source": "BusinessLine",
+            "pub_date": "Tue, 17 Nov 2026 04:17:30 GMT"
+          },
+          {
+            "title": "Indian rupee claims seven-month peak on inflows, dollar and oil retreat - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 17 Nov 2026 02:56:00 GMT"
+          },
+          {
+            "title": "Amid China rivalry, India joins move to shield AI tech chain - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Mon, 16 Nov 2026 21:04:00 GMT"
+          },
+          {
+            "title": "India's Fractal in talks with up to 25 AI startups for acquisitions, CEO says - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 16 Nov 2026 11:09:26 GMT"
+          },
+          {
+            "title": "FBI warns companies in the US and across the world; names AI hacking tool criminals are using to attack f - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 17 Nov 2026 01:49:00 GMT"
+          },
+          {
+            "title": "NIELIT launches indigenous cybersecurity tools, plans Quantum and AI University Campus in Amaravati - ET Government",
+            "source": "ET Government",
+            "pub_date": "Tue, 17 Nov 2026 03:24:24 GMT"
+          },
+          {
+            "title": "US tightens AI chip curbs: How Trump plans to block China's indirect access to American technology - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 17 Nov 2026 00:46:00 GMT"
+          },
+          {
+            "title": "India has ordered over 1,200 planes, ready to order another 1,000: Piyush Goyal - ET Infra",
+            "source": "ET Infra",
+            "pub_date": "Tue, 17 Nov 2026 06:28:52 GMT"
+          },
+          {
+            "title": "Instagram tightens content recommendations in India to limit sexual, violent material - Telegraph India",
+            "source": "Telegraph India",
+            "pub_date": "Tue, 17 Nov 2026 06:59:56 GMT"
+          },
+          {
+            "title": "The Open Group INITIATE Explores the Future of Enterprise Architecture and AI at Bengaluru, India - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Tue, 17 Nov 2026 07:30:27 GMT"
+          },
+          {
+            "title": "Amid Nvidia Row, India Joins US Push To Secure AI Supply Chains From China: Report - NDTV",
+            "source": "NDTV",
+            "pub_date": "Mon, 16 Nov 2026 04:53:02 GMT"
+          },
+          {
+            "title": "OPINION | Indian equities provide shelter from an AI rout but other risks haven’t disappeared - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Tue, 17 Nov 2026 06:40:02 GMT"
+          },
+          {
+            "title": "India’s Rise: From Promise to Platform for Global Growth - SAP News Center",
+            "source": "SAP News Center",
+            "pub_date": "Mon, 16 Nov 2026 05:18:31 GMT"
+          }
+        ],
+        "new AI model": null
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "aidan hutchinson",
+          "ai detector",
+          "ai",
+          "aiden hutchinson injury",
+          "ai checker",
+          "airpods",
+          "ai mode",
+          "aileen wuornos",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt down",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt gpt",
+          "chatgpt desktop"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone find my friends not working",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "tahiti",
+          "approx_traffic": "100+",
+          "pub_date": "Mon, 16 Nov 2026 23:20:00 -0800",
+          "news": [
+            {
+              "headline": "Épidémie de grippe : le service de réanimation en Polynésie française sature face à l'arrivée précoce du virus d'un virus précoce",
+              "source": "Outre-mer La 1ère",
+              "url": "https://la1ere.franceinfo.fr/polynesie/epidemie-de-grippe-le-service-de-reanimation-en-polynesie-francaise-sature-face-a-l-arrivee-d-un-virus-precoce-1757355.html"
+            },
+            {
+              "headline": "Grippe : l’épidémie s’intensifie, les cas de varicelle également en hausse à Tahiti",
+              "source": "TNTV News",
+              "url": "https://www.tntvnews.pf/polynesie/sante/grippe-lepidemie-sintensifie-les-cas-de-varicelle-egalement-en-hausse-a-tahiti/"
+            },
+            {
+              "headline": "Déjà 155 cas de grippe, 55 hospitalisations et 3 morts",
+              "source": "Radio1 Tahiti",
+              "url": "https://www.radio1.pf/deja-155-cas-de-grippe-55-hospitalisations-et-3-morts/"
+            }
+          ]
+        },
+        {
+          "title": "los angeles weather",
+          "approx_traffic": "100+",
+          "pub_date": "Mon, 16 Nov 2026 23:10:00 -0800",
+          "news": [
+            {
+              "headline": "SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week"
+            },
+            {
+              "headline": "Atmospheric river takes aim at Southern California with heavy rain, coastal flooding and mountain snow",
+              "source": "KTLA",
+              "url": "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/"
+            },
+            {
+              "headline": "Wet weather and dangerous surf continue in SoCal ahead of potential midweek storm",
+              "source": "FOX 11 Los Angeles",
+              "url": "https://www.foxla.com/news/rain-la-weather-high-surf-storm-november-16"
+            }
+          ]
+        },
+        {
+          "title": "fox news politics",
+          "approx_traffic": "100+",
+          "pub_date": "Mon, 16 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "Pete Buttigieg fires back at Trump blaming him for FAA ground stop",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/11/16/politics/buttigieg-trump-faa-groundstop"
+            },
+            {
+              "headline": "Even High-Flying Democrats Found Themselves Grounded in the Mile High City",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flights-democrats-denver.html"
+            },
+            {
+              "headline": "Buttigieg fires back at Trump over FAA outage blame",
+              "source": "The Hill",
+              "url": "https://thehill.com/policy/transportation/6223723-buttigieg-trump-faa-groundstop/"
+            }
+          ]
+        },
+        {
+          "title": "axios",
+          "approx_traffic": "100+",
+          "pub_date": "Mon, 16 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "Jordan inherits House GOP fight over punishing rebels",
+              "source": "Axios",
+              "url": "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules"
+            },
+            {
+              "headline": "House Republicans push for new rules targeting maverick holdouts",
+              "source": "Politico",
+              "url": "https://www.politico.com/live-updates/2026/11/13/congress/house-gop-debates-disclipline-01164854"
+            },
+            {
+              "headline": "Jim Jordan has lesson for Sherrod Brown and other Democrats | Opinion",
+              "source": "The Columbus Dispatch",
+              "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/11/11/jim-jordan-sherrod-brown-ohio-senate-chuck-schumer/92707490007/"
+            }
+          ]
+        },
+        {
+          "title": "san diego",
+          "approx_traffic": "100+",
+          "pub_date": "Mon, 16 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "San Diego City Council votes to remove controversial license plate reader cameras",
+              "source": "cbs8.com",
+              "url": "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5"
+            },
+            {
+              "headline": "Gloria Won’t Veto Flock Contract Cancellation",
+              "source": "Voice of San Diego",
+              "url": "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/"
+            },
+            {
+              "headline": "San Diego City Council votes to end Flock contract, turn off ALPR cameras",
+              "source": "NBC 7 San Diego",
+              "url": "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/"
+            }
+          ]
+        },
+        {
+          "title": "apec",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 16 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Chinese, US business leaders to attend APEC summit in Shenzhen",
+              "source": "Reuters",
+              "url": "https://www.reuters.com/world/asia-pacific/chinese-us-business-leaders-attend-apec-summit-shenzhen-2026-11-16/"
+            },
+            {
+              "headline": "Foreign Ministry Spokesperson Mao Ning’s Regular Press Conference on November 13, 2026",
+              "source": "中华人民共和国外交部",
+              "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261113_12059012.html"
+            },
+            {
+              "headline": "China APEC",
+              "source": "WV News",
+              "url": "https://www.wvnews.com/newsfeed/world/china-apec/image_e9883f6f-b4c8-59f2-b051-ee5af7ccd003.html"
+            }
+          ]
+        },
+        {
+          "title": "john kiriakou",
+          "approx_traffic": "1000+",
+          "pub_date": "Mon, 16 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Alice Huang’s Husband Built a Data-Center Empire Backed by the Chinese State",
+              "source": "WSJ",
+              "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a"
+            },
+            {
+              "headline": "The critical new geopolitical truth that explains Trump’s defense of ex-Nvidia chief",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/11/17/politics/trump-nvidia-jensen-huang-china"
+            },
+            {
+              "headline": "NVIDIA Announces CEO Transition",
+              "source": "NVIDIA Newsroom",
+              "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+            }
+          ]
+        },
+        {
+          "title": "tahiti vs cook islands soccer",
+          "approx_traffic": "500+",
+          "pub_date": "Mon, 16 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Tahiti vs Cook Islands: First Half Total",
+              "source": "Coinbase",
+              "url": "https://www.coinbase.com/en-nl/predictions/event/KXINTLFRIENDLY1HTOTAL-26NOV14TAHCOK"
+            },
+            {
+              "headline": "Tahiti - Cook Islands prediction & picks 17.11.2026",
+              "source": "www.transfermarkt.us",
+              "url": "https://www.transfermarkt.us/online-betting/picks/tahiti-vs-cook-islands-picks-17-11-2026/"
+            },
+            {
+              "headline": "Tahiti vs Cook Islands Preview & Prediction | 2026 International Friendly",
+              "source": "The Stats Zone",
+              "url": "https://www.thestatszone.com/tahiti-vs-cook-islands-preview-prediction-2026-international-friendly-239324"
+            }
+          ]
+        },
+        {
+          "title": "gta 6 ultimate edition",
+          "approx_traffic": "20000+",
+          "pub_date": "Mon, 16 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "The biggest entertainment event of the year isn’t a movie — it’s ‘Grand Theft Auto VI’",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/11/16/media/grand-theft-auto-gta-vi-entertainment-media"
+            },
+            {
+              "headline": "All tech eyes on Grand Theft Auto VI release Thursday",
+              "source": "Audacy",
+              "url": "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday"
+            },
+            {
+              "headline": "Sensor Tower: GTA 6 pre-orders exceed $1.4bn, with 87% for the Ultimate Edition",
+              "source": "GamesIndustry.biz",
+              "url": "https://www.gamesindustry.biz/sensor-tower-gta-6-pre-orders-exceed-14bn-with-87-for-the-ultimate-edition"
+            }
+          ]
+        },
+        {
+          "title": "magic johnson",
+          "approx_traffic": "200+",
+          "pub_date": "Mon, 16 Nov 2026 22:00:00 -0800",
+          "news": [
+            {
+              "headline": "“Slam the Door Three Times”: Ex-Laker Recalls Furious Magic Johnson Kicking His Locker After Larry Bird Taunt",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/slam-door-three-times-ex-162652000.html"
+            },
+            {
+              "headline": "Heat 137-117 Pistons (Nov 14, 2026) Game Recap",
+              "source": "ESPN",
+              "url": "https://www.espn.com/nba/recap/_/gameId/401909982"
+            },
+            {
+              "headline": "Starting 5: Heat roll, Sixers rise, KD vs. AJ",
+              "source": "NBA.com",
+              "url": "https://www.nba.com/news/starting-5-november-15-2026"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI India": [
+          {
+            "title": "Landeed, Fractal Analytics: The AI start-ups fixing India's broken roads and messy land records - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 16 Nov 2026 23:25:53 GMT"
+          },
+          {
+            "title": "India feels less threatened by AI than the US, official says - Semafor",
+            "source": "Semafor",
+            "pub_date": "Sun, 15 Nov 2026 06:14:00 GMT"
+          },
+          {
+            "title": "India's Fractal in talks with up to 25 AI startups for acquisitions, CEO says - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 16 Nov 2026 11:09:26 GMT"
+          },
+          {
+            "title": "AI Retreat Fuels India Stock Comeback in Great Rotation Trade - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 16 Nov 2026 05:59:00 GMT"
+          },
+          {
+            "title": "India pins hopes on AI start-up to avoid becoming ‘digital colony’ - Financial Times",
+            "source": "Financial Times",
+            "pub_date": "Sat, 14 Nov 2026 01:00:57 GMT"
+          },
+          {
+            "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Sun, 15 Nov 2026 23:30:00 GMT"
+          },
+          {
+            "title": "Amid Nvidia Row, India Joins US Push To Secure AI Supply Chains From China: Report - NDTV",
+            "source": "NDTV",
+            "pub_date": "Mon, 16 Nov 2026 04:53:02 GMT"
+          },
+          {
+            "title": "India stands to gain as investors look beyond AI, Jefferies’ Wood says (INDA:BATS) - Seeking Alpha",
+            "source": "Seeking Alpha",
+            "pub_date": "Sun, 15 Nov 2026 17:42:47 GMT"
+          },
+          {
+            "title": "India's Mphasis Says Clients Boost Cybersecurity Spending as AI-Driven Threats Rise - US News Money",
+            "source": "US News Money",
+            "pub_date": "Mon, 16 Nov 2026 06:31:00 GMT"
+          },
+          {
+            "title": "India Joins US-Led Pact on AI Supply Chains - Deccan Chronicle",
+            "source": "Deccan Chronicle",
+            "pub_date": "Mon, 16 Nov 2026 15:05:31 GMT"
+          },
+          {
+            "title": "Aerospace Stocks Shine as Anti-AI Flows Pour Into India - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Mon, 16 Nov 2026 08:11:06 GMT"
+          },
+          {
+            "title": "Havells India Launches Super Hi-Speed BLDC+ and Agentic AI Fans; Shares Rise Nearly 1.2% - HDFC Sky",
+            "source": "HDFC Sky",
+            "pub_date": "Tue, 17 Nov 2026 06:27:14 GMT"
+          },
+          {
+            "title": "GPU supply chains can hit timelines of Indian cos that procure AI - TradingView",
+            "source": "TradingView",
+            "pub_date": "Tue, 17 Nov 2026 04:12:29 GMT"
+          },
+          {
+            "title": "FBI warns companies in the US and across the world; names AI hacking tool criminals are using to attack f - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 17 Nov 2026 01:49:00 GMT"
+          },
+          {
+            "title": "Indian AI video startup Lemonpeel raises $1m pre-seed round - Tech in Asia",
+            "source": "Tech in Asia",
+            "pub_date": "Tue, 17 Nov 2026 06:39:00 GMT"
+          },
+          {
+            "title": "Indian Rupee strengthens on lower oil prices, AI unwinding - FXStreet",
+            "source": "FXStreet",
+            "pub_date": "Tue, 17 Nov 2026 05:38:38 GMT"
+          },
+          {
+            "title": "Landeed, Fractal Analytics: The AI start-ups fixing India's broken roads and messy land records - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 16 Nov 2026 23:25:53 GMT"
+          },
+          {
+            "title": "The Indian Rupee Gets A Lift From AI Trade Unwinding - Finimize",
+            "source": "Finimize",
+            "pub_date": "Tue, 17 Nov 2026 00:07:55 GMT"
+          },
+          {
+            "title": "What the AI Boom Is Made Of: The Role Canada’s Critical Minerals Can Play in India - India's World",
+            "source": "India's World",
+            "pub_date": "Tue, 17 Nov 2026 00:25:40 GMT"
+          },
+          {
+            "title": "Indian rupee claims seven-month peak on inflows, dollar and oil retreat - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 17 Nov 2026 02:56:00 GMT"
+          },
+          {
+            "title": "India to Benefit From Unwinding of AI Trade, Top Official Says - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 16 Nov 2026 04:32:00 GMT"
+          },
+          {
+            "title": "US tightens AI chip curbs: How Trump plans to block China's indirect access to American technology - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 17 Nov 2026 00:46:00 GMT"
+          },
+          {
+            "title": "India's Mphasis says clients boost cybersecurity spending as AI-driven threats rise - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 16 Nov 2026 06:31:00 GMT"
+          },
+          {
+            "title": "India joins US-led AI supply chain alliance: Can it break China's grip on AI and semiconductor supply chains.. - ET Government",
+            "source": "ET Government",
+            "pub_date": "Tue, 17 Nov 2026 03:33:43 GMT"
+          },
+          {
+            "title": "Watch Global Investors Return to Indian Stocks After AI Trade Woes - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 16 Nov 2026 06:31:23 GMT"
+          }
+        ],
+        "new AI model": [
+          {
+            "title": "Alibaba details new AI safeguards as Chinese developers step up test disclosures - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 16 Nov 2026 04:29:00 GMT"
+          },
+          {
+            "title": "Alibaba Takes on Anthropic With New Qwen AI Model - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Mon, 16 Nov 2026 21:32:28 GMT"
+          },
+          {
+            "title": "Gemini 4 Argon: our next era of frontier intelligence - blog.google",
+            "source": "blog.google",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI scraps rollout of new model over safety concerns - BBC",
+            "source": "BBC",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI announces ‘dots’ agent after scrapping launch of new AI model over safety concerns - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The cheap new AI model taking aim at OpenAI and Anthropic - Financial Times",
+            "source": "Financial Times",
+            "pub_date": "Thu, 24 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "How a new AI model could help crushed rock fight climate change - Microsoft Source",
+            "source": "Microsoft Source",
+            "pub_date": "Thu, 12 Nov 2026 18:38:57 GMT"
+          },
+          {
+            "title": "An updated Model Spec for more capable and beneficial AI - OpenAI",
+            "source": "OpenAI",
+            "pub_date": "Thu, 29 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Anthropic Releases Its Second New AI Model in Less Than a Week - Gizmodo",
+            "source": "Gizmodo",
+            "pub_date": "Mon, 28 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "OpenAI Cancels Upcoming AI Model When It Shows Signs of Being Evil - Futurism",
+            "source": "Futurism",
+            "pub_date": "Tue, 29 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Google unveils Gemini 4 Hydrogen, its new AI model built for speed - Mashable",
+            "source": "Mashable",
+            "pub_date": "Fri, 13 Nov 2026 07:14:21 GMT"
+          },
+          {
+            "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 16 Nov 2026 02:00:00 GMT"
+          },
+          {
+            "title": "Lawsuit Seeks to Block New AI Models, Citing Hacking Risks - GovInfoSecurity",
+            "source": "GovInfoSecurity",
+            "pub_date": "Mon, 16 Nov 2026 20:45:01 GMT"
+          },
+          {
+            "title": "Alibaba's new Qwen AI model poses challenge for Anthropic - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 16 Nov 2026 22:01:00 GMT"
+          },
+          {
+            "title": "Alibaba launches Qwen4-Max model with strict cybersecurity guardrails - South China Morning Post",
+            "source": "South China Morning Post",
+            "pub_date": "Mon, 16 Nov 2026 03:56:53 GMT"
+          },
+          {
+            "title": "Qwen4-Max is China's newest flagship AI model, and it makes GPT and Claude look expensive - Digital Trends",
+            "source": "Digital Trends",
+            "pub_date": "Mon, 16 Nov 2026 13:16:37 GMT"
+          },
+          {
+            "title": "Alibaba is launching a new flagship AI model, claiming to rival U.S. leaders - Quartz",
+            "source": "Quartz",
+            "pub_date": "Mon, 16 Nov 2026 13:25:03 GMT"
+          },
+          {
+            "title": "AI models ‘weak and fallible’ on climate science, UN-backed study reports - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Mon, 16 Nov 2026 16:07:00 GMT"
+          },
+          {
+            "title": "Less data, faster discovery: Researchers rethink AI's role in developing new materials - Tech Xplore",
+            "source": "Tech Xplore",
+            "pub_date": "Mon, 16 Nov 2026 14:30:01 GMT"
+          },
+          {
+            "title": "GPT-6 Astra Reads and Edits Another AI Model’s Weights in MIT Study - Technology Org",
+            "source": "Technology Org",
+            "pub_date": "Mon, 16 Nov 2026 12:34:00 GMT"
+          },
+          {
+            "title": "New FLAIR-Only AI Model Achieves Precise Brain Tumor Segmentation Accuracy - Bioengineer.org",
+            "source": "Bioengineer.org",
+            "pub_date": "Mon, 16 Nov 2026 20:41:37 GMT"
+          },
+          {
+            "title": "AI Companies Develop Decision Models to Avoid Hallucinations - IEEE Spectrum",
+            "source": "IEEE Spectrum",
+            "pub_date": "Sun, 15 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Alibaba’s New AI Model Is Two-Thirds Cheaper. What Does It Mean for the Stock? - BeInCrypto",
+            "source": "BeInCrypto",
+            "pub_date": "Sat, 14 Nov 2026 10:00:00 GMT"
+          },
+          {
+            "title": "Wall Street Braces for Anthropic’s Aggressive Spending - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Sun, 15 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Google Debuts New AI Models, Genie 4 and Gemini 4 Carbon: What You Need to Know - CNET",
+            "source": "CNET",
+            "pub_date": "Wed, 28 Oct 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "aidan hutchinson",
+          "ai detector",
+          "ai",
+          "aiden hutchinson injury",
+          "ai checker",
+          "airpods",
+          "ai mode",
+          "aileen wuornos",
+          "ai humanizer"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt down",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt gpt",
+          "chatgpt desktop"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "points": 1306,
+      "comments": 181,
+      "created_at": "2026-11-16T20:43:36Z"
+    },
+    {
+      "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+      "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+      "points": 758,
+      "comments": 633,
+      "created_at": "2026-11-16T18:31:30Z"
+    },
+    {
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "points": 524,
+      "comments": 359,
+      "created_at": "2026-11-16T22:58:20Z"
+    },
+    {
+      "title": "BugMeNot has closed",
+      "url": "https://www.bugmenot.com/",
+      "points": 485,
+      "comments": 223,
+      "created_at": "2026-11-16T21:32:17Z"
+    },
+    {
+      "title": "Frame – 31.5\" color ePaper display",
+      "url": "https://trmnl.com/blog/introducing-frame",
+      "points": 383,
+      "comments": 269,
+      "created_at": "2026-11-16T16:23:22Z"
+    },
+    {
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "url": "https://burntsushi.net/jiff/",
+      "points": 366,
+      "comments": 81,
+      "created_at": "2026-11-16T16:53:39Z"
+    },
+    {
+      "title": "What is w2rt6byl5nf1opmc-a.com?",
+      "url": "https://jack.cab/blog/siterate",
+      "points": 326,
+      "comments": 143,
+      "created_at": "2026-11-16T13:51:38Z"
+    },
+    {
+      "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "points": 297,
+      "comments": 205,
+      "created_at": "2026-11-16T13:18:22Z"
+    },
+    {
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "points": 283,
+      "comments": 119,
+      "created_at": "2026-11-16T23:00:34Z"
+    },
+    {
+      "title": "Grazing sheep in fields with solar arrays",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "points": 259,
+      "comments": 247,
+      "created_at": "2026-11-16T17:27:46Z"
+    },
+    {
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
+      "points": 220,
+      "comments": 116,
+      "created_at": "2026-11-16T21:20:37Z"
+    },
+    {
+      "title": "Chemistry is Actually Geometry",
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "points": 203,
+      "comments": 103,
+      "created_at": "2026-11-16T20:22:18Z"
+    },
+    {
+      "title": "Squircles",
+      "url": "https://linebender.org/wiki/curves/squircle/",
+      "points": 178,
+      "comments": 46,
+      "created_at": "2026-11-16T07:55:10Z"
+    },
+    {
+      "title": "My Quest to push native Three.js quality match AAA Game Engines",
+      "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+      "points": 133,
+      "comments": 55,
+      "created_at": "2026-11-16T21:07:43Z"
+    },
+    {
+      "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+      "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+      "points": 126,
+      "comments": 108,
+      "created_at": "2026-11-16T20:48:08Z"
+    },
+    {
+      "title": "Formal Verification Is Not Verifiable",
+      "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
+      "points": 107,
+      "comments": 37,
+      "created_at": "2026-11-14T15:07:48Z"
+    },
+    {
+      "title": "How to Break into Security, Ptacek Edition (2012)",
+      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
+      "points": 101,
+      "comments": 24,
+      "created_at": "2026-11-16T22:19:23Z"
+    },
+    {
+      "title": "Running coding agents without handing them my credentials",
+      "url": "https://blog.antonio.cx/running-agents-with-lend",
+      "points": 99,
+      "comments": 55,
+      "created_at": "2026-11-17T01:18:56Z"
+    },
+    {
+      "title": "Spamhaus new email sender requirements in November",
+      "url": "https://www.spamhaus.org/sender-guidelines/",
+      "points": 97,
+      "comments": 86,
+      "created_at": "2026-11-16T21:47:19Z"
+    },
+    {
+      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+      "url": "https://support.apple.com/en-us/149699",
+      "points": 97,
+      "comments": 53,
+      "created_at": "2026-11-17T02:17:04Z"
+    },
+    {
+      "title": "Mem Is Shutting Down",
+      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
+      "points": 48,
+      "comments": 62,
+      "created_at": "2026-11-17T02:13:41Z"
+    },
+    {
+      "title": "United Airlines has a widespread system outage",
+      "url": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
+      "points": 48,
+      "comments": 12,
+      "created_at": "2026-11-16T22:22:18Z"
+    },
+    {
+      "title": "United Airlines experiencing a widespread system outage, airline says",
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "points": 234,
+      "comments": 119,
+      "created_at": "2026-11-16T22:14:38Z"
+    },
+    {
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
+      "points": 222,
+      "comments": 117,
+      "created_at": "2026-11-16T21:20:37Z"
+    },
+    {
+      "title": "Caltech professor no longer grades homework's because everyone uses AI",
+      "url": "https://www.businessinsider.com/ai-math-class-university-homework-caltech-careers-2026-11",
+      "points": 47,
+      "comments": 59,
+      "created_at": "2026-11-16T20:47:53Z"
+    },
+    {
+      "title": "FBI says Artex AI open-source hacking tool used to breach networks",
+      "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+      "points": 45,
+      "comments": 9,
+      "created_at": "2026-11-16T18:12:21Z"
+    },
+    {
+      "title": "How Billions in Safe Insurance Money Is Being Bet on A.I. Debt",
+      "url": "https://www.nytimes.com/2026/11/16/business/insurance-ai-debt.html",
+      "points": 85,
+      "comments": 45,
+      "created_at": "2026-11-16T17:25:35Z"
+    },
+    {
+      "title": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
+      "url": null,
+      "points": 49,
+      "comments": 73,
+      "created_at": "2026-11-16T17:20:28Z"
+    },
+    {
+      "title": "Generative AI Usage in the Games Industry",
+      "url": "https://www.gameworkers.co.uk/ai-manifesto/",
+      "points": 42,
+      "comments": 93,
+      "created_at": "2026-11-16T15:59:48Z"
+    },
+    {
+      "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
+      "url": "https://github.com/withcoral/coral",
+      "points": 52,
+      "comments": 24,
+      "created_at": "2026-11-16T14:14:51Z"
+    },
+    {
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "points": 860,
+      "comments": 477,
+      "created_at": "2026-11-16T02:14:44Z"
+    },
+    {
+      "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+      "url": "https://www.hntrends.com/2026/november.html",
+      "points": 94,
+      "comments": 86,
+      "created_at": "2026-11-16T01:31:30Z"
+    },
+    {
+      "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+      "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+      "points": 247,
+      "comments": 67,
+      "created_at": "2026-11-16T00:21:54Z"
+    },
+    {
+      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+      "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+      "points": 69,
+      "comments": 67,
+      "created_at": "2026-11-15T19:39:46Z"
+    },
+    {
+      "title": "All AI-generated code should be Open Source",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "points": 1270,
+      "comments": 660,
+      "created_at": "2026-11-15T14:46:58Z"
+    },
+    {
+      "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+      "url": "https://github.com/db-branch/db-branch",
+      "points": 45,
+      "comments": 16,
+      "created_at": "2026-11-15T13:50:51Z"
+    },
+    {
+      "title": "Jensen Huang allegedly manufactured the GPU shortage",
+      "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon/",
+      "points": 64,
+      "comments": 64,
+      "created_at": "2026-11-15T10:53:50Z"
+    },
+    {
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "points": 89,
+      "comments": 60,
+      "created_at": "2026-11-15T03:05:54Z"
+    },
+    {
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "points": 532,
+      "comments": 234,
+      "created_at": "2026-11-15T01:18:36Z"
+    },
+    {
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "points": 51,
+      "comments": 75,
+      "created_at": "2026-11-14T17:51:13Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 3926310,
+      "rank": 1
+    },
+    {
+      "article": "Archive_of_Our_Own",
+      "views": 860729,
+      "rank": 2
+    },
+    {
+      "article": "Special:Search",
+      "views": 730091,
+      "rank": 3
+    },
+    {
+      "article": "9/11",
+      "views": 673012,
+      "rank": 4
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 591692,
+      "rank": 5
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 537414,
+      "rank": 6
+    },
+    {
+      "article": "List_of_Nazi_concentration_camps",
+      "views": 534193,
+      "rank": 7
+    },
+    {
+      "article": "UFC_334",
+      "views": 321149,
+      "rank": 8
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 214408,
+      "rank": 9
+    },
+    {
+      "article": "Jensen_Huang",
+      "views": 194070,
+      "rank": 10
+    },
+    {
+      "article": "Full_Gear_(2026)",
+      "views": 175811,
+      "rank": 11
+    },
+    {
+      "article": "Josh_Hokit",
+      "views": 168260,
+      "rank": 12
+    },
+    {
+      "article": "Sean_Duffy",
+      "views": 161039,
+      "rank": 13
+    },
+    {
+      "article": "Kayla_Harrison",
+      "views": 145493,
+      "rank": 14
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 127367,
+      "rank": 15
+    },
+    {
+      "article": "Kirk_Cousins",
+      "views": 121498,
+      "rank": 16
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 120538,
+      "rank": 17
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 115753,
+      "rank": 18
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 115262,
+      "rank": 19
+    },
+    {
+      "article": "Amon-Ra_St._Brown",
+      "views": 112331,
+      "rank": 20
+    },
+    {
+      "article": "Russell_Brand",
+      "views": 109938,
+      "rank": 21
+    },
+    {
+      "article": "Stephen_Thompson_(fighter)",
+      "views": 106236,
+      "rank": 22
+    },
+    {
+      "article": ".xxx",
+      "views": 105406,
+      "rank": 23
+    },
+    {
+      "article": "Ebenezer_(2026_film)",
+      "views": 98174,
+      "rank": 24
+    },
+    {
+      "article": "Richard_Sterban",
+      "views": 96199,
+      "rank": 25
+    },
+    {
+      "article": "Amanda_Nunes",
+      "views": 95411,
+      "rank": 26
+    },
+    {
+      "article": "Ciryl_Gane",
+      "views": 90061,
+      "rank": 27
+    },
+    {
+      "article": "John_Mulaney",
+      "views": 89468,
+      "rank": 28
+    },
+    {
+      "article": "Arch_Manning",
+      "views": 83253,
+      "rank": 29
+    },
+    {
+      "article": "Jailer_2",
+      "views": 82569,
+      "rank": 30
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 82149,
+      "rank": 31
+    },
+    {
+      "article": "2026–27_UEFA_Nations_League",
+      "views": 79669,
+      "rank": 32
+    },
+    {
+      "article": "Adolf_Hitler",
+      "views": 77931,
+      "rank": 33
+    },
+    {
+      "article": "The_End_of_Oak_Street",
+      "views": 77707,
+      "rank": 34
+    },
+    {
+      "article": "Phil_Collins",
+      "views": 75595,
+      "rank": 35
+    },
+    {
+      "article": "Scene_(2026_film)",
+      "views": 75488,
+      "rank": 36
+    },
+    {
+      "article": "Alice_Huang_(executive)",
+      "views": 71596,
+      "rank": 37
+    },
+    {
+      "article": "Sara_Boustany",
+      "views": 69765,
+      "rank": 38
+    },
+    {
+      "article": "Godzilla_Minus_Zero",
+      "views": 69353,
+      "rank": 39
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 69140,
+      "rank": 40
+    },
+    {
+      "article": "James_Trafford",
+      "views": 68822,
+      "rank": 41
+    },
+    {
+      "article": "Phoebe_Bridgers",
+      "views": 66489,
+      "rank": 42
+    },
+    {
+      "article": "Empress_Elisabeth_of_Austria",
+      "views": 66052,
+      "rank": 43
+    },
+    {
+      "article": "Ronaldinho",
+      "views": 65734,
+      "rank": 44
+    },
+    {
+      "article": "Hannah_Fry",
+      "views": 65480,
+      "rank": 45
+    },
+    {
+      "article": "Nvidia",
+      "views": 65277,
+      "rank": 46
+    },
+    {
+      "article": "UEFA_Nations_League",
+      "views": 64739,
+      "rank": 47
+    },
+    {
+      "article": "2026_United_States_elections",
+      "views": 58863,
+      "rank": 48
+    },
+    {
+      "article": "Fernando_Mendoza",
+      "views": 58053,
+      "rank": 49
+    },
+    {
+      "article": "Heartland_(2026_film)",
+      "views": 58016,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Cyber giant Infoblox confirms security incident after hackers access ‘company information’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "All the questions Nvidia should answer on Tuesday — but probably won’t"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple reveals new Mac security controls as AI agents raise privacy risks"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "California state AG sues OpenAI over rogue agent incidents"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Uber says hackers stole information on close to 150,000 driver’s licenses during data breach"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple adds ‘face unlock’ to the iPhone Duo, but it’s not Face ID"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Island is a new screen-time app that turns staying off your phone into a game"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Tesla goes all-in on the Cybercab with upcoming €3B Berlin gigafactory expansion"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI will embed safety researchers to investigate AI subversion"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Hacker behind 2022 GTA VI leaks pleads guilty"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "United Airlines system outage disrupts departures just days after the big ground stop"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "In Get Huge, the manosphere is here to make friends — with deadly consequences"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "California sues OpenAI over rogue AI hacking incidents"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Some of our favorite PlayStation games are steeply discounted for Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Big Nuclear isn’t worried about the Democrats stopping data centers"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "US data centers now burn more electricity than a midsized country"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Apple Watch Series 12 is cheaper than ever ahead of Black Friday"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Robo-soldier startup backed by Eric Trump misses payroll, may collapse"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Three small failures combined to take down Microsoft 365"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Hyperscale data centers use 2% of US electricity"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Shareholders sue Intel, its CEO, and CFO after stock drops 28.6 percent in one day"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Comcast's \"fiber-powered Wi-Fi\" is just cable, AT&T says in false advertising case"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Supreme Court keeps injunction against DEI grant defunding in place"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "When will humans actually fly on Starship?"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Meet the new James Bond: Robert Pattinson"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US moves to cut China’s remote access to AI chips"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US now \"comfortable\" with children dying of measles as death toll hits 10"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Jensen Huang allies build a \"war room\" to get him back at Nvidia"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Mercedes' clever new driving assist handles complex traffic like a champ"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Delivery drones are coming. For some with PTSD, that's a terrifying prospect."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "How the world’s fires changed while humanity hit pause"
+    }
+  ]
+}
