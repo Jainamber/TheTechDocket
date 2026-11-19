@@ -1,0 +1,1641 @@
+{
+  "date": "2026-11-19",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "failed: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=smartphone%20launch&hl=en-IN&gl=IN&ceid=IN:en",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "एकादशी",
+          "approx_traffic": "2000+",
+          "pub_date": "Wed, 18 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "Dev Uthani Ekadashi 2026: विष्णु के जागते ही खुलेगी इन 3 राशियों की किस्मत, बनेगा धन लाभ का योग",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/religion/news/story/dev-uthani-ekadashi-2026-rashifal-dhan-yog-lucky-zodiac-signs-prediction-tvisu-dskc-2699808-2026-11-18"
+            },
+            {
+              "headline": "देवउठनी यानी प्रबोधिनी एकादशी कब है, 20 या 21 नवंबर? इस दिन करें ये 5 अचूक उपाय, सौभाग्य और सुख-समृद्धि में",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/religion/news-dev-uthani-ekadashi-2026-date-prabodhini-ekadashi-ke-5-upay-for-good-fortune-happiness-and-prosperity-2026-11-16-1254662"
+            },
+            {
+              "headline": "देवउठनी एकादशी पर इस खास गीत को गाकर जगाए जाते हैं सोए हुए देवता, जानिए क्या है परंपरा",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/spiritual/religion-why-is-a-special-song-sung-to-wake-up-sleeping-gods-on-devuthani-ekadashi-know-the-tradition-behind-it-40440862.html"
+            }
+          ]
+        },
+        {
+          "title": "रीनियम",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "BIS हॉलमार्क सोने की शुद्धता की गारंटी नहीं, CAG की रिपोर्ट में बड़ा खुलासा; जांच पर उठे गंभीर सवाल",
+              "source": "Navbharat Live",
+              "url": "https://navbharatlive.com/business/cag-report-on-bis-hallmark-gold-purity-inspection-questions-maa19"
+            },
+            {
+              "headline": "सोने में मिलाया जा रहा चीन का 'रेनियम पाउडर', 24 कैरेट की शुद्धता में भी पास; हॉल​मार्किंग पर उठे सवाल",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/news/national-china-rhenium-powder-is-being-mixed-into-gold-40441205.html"
+            },
+            {
+              "headline": "Gold Buying: सोना खरीदते समय सिर्फ दुकानदार की बात पर न करें भरोसा, BIS हॉलमार्क और HUID नंबर से ऐसे जांचें...",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/news/lifestyle/tips-and-tricks-how-to-check-gold-purity-bis-hallmark-huid-number-and-bis-care-app-sone-ki-pehchan-kaise-karen-local18-10995729.html"
+            }
+          ]
+        },
+        {
+          "title": "kospi",
+          "approx_traffic": "2000+",
+          "pub_date": "Wed, 18 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "Goldman Sachs Cuts KOSPI Target Again to 7,500 — a 37.5% Reduction in Five Months",
+              "source": "BigGo Finance",
+              "url": "https://finance.biggo.com/news/ca576661-1629-46c8-9a4d-98ce93d4270f"
+            },
+            {
+              "headline": "“They Said the KOSPI Would Hit 12,000”... Goldman Sachs Cuts Target Again, Forecasts 7,500",
+              "source": "파이낸셜뉴스",
+              "url": "https://en.fnnews.com/news/202611190922582374"
+            },
+            {
+              "headline": "Goldman cuts KOSPI target to 7,500 but says gloom is overdone, sees 48% upside",
+              "source": "investingLive",
+              "url": "https://investinglive.com/stock-market-update/goldman-cuts-kospi-target-to-7-500-but-says-gloom-is-overdone-sees-48-upside/"
+            }
+          ]
+        },
+        {
+          "title": "kospi moneycontrol",
+          "approx_traffic": "1000+",
+          "pub_date": "Wed, 18 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "जापान की Datasection के शेयरों में भारी गिरावट, AI चिप विवाद के बीच गाइडेंस में भारी कटौती",
+              "source": "Investing.com भारत",
+              "url": "https://hi.investing.com/news/stock-market-news/article-771623"
+            },
+            {
+              "headline": "Asian Market Today: एशिया में मिला-जुला कारोबार, कोस्पी 1.5% टूटा, निक्केई में भी दबाव",
+              "source": "Moneycontrol Hindi",
+              "url": "https://hindi.moneycontrol.com/news/markets/asian-market-today-mixed-trading-in-asia-kospi-fell-1-percent-pressure-on-nikkei-too-2470464.html"
+            },
+            {
+              "headline": "AI की चिंताओं के बीच जापान के निक्केई ने गंवाई बढ़त",
+              "source": "NewsBytes",
+              "url": "https://hindi.newsbytesapp.com/news/business/amid-concerns-over-ai-and-nvidias-leadership-a-072-decline-was-recorded-in-the-nikkei-225/tldr"
+            }
+          ]
+        },
+        {
+          "title": "ముస్లిం జనాభా పెరుగుదల",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "ప్రపంచంలో 2035 కల్లా అతిపెద్ద మతంగా ఇస్లాం",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/world/general/0899/126210354"
+            },
+            {
+              "headline": "Pew Research religion report: 2035 నాటికి ప్రపంచంలో అతిపెద్ద మతం అదే.. ప్యూ రీసెర్చ్ సంచలన రిపోర్ట్!",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/news/national-international/islam-set-to-surpass-christianity-as-world-s-largest-religion-by-2035-pakistan-to-have-largest-muslim-population-by-2070-pew-research-center-report-sjn-ws-n-3268909.html"
+            },
+            {
+              "headline": "2035 నాటికి అతిపెద్ద మతంగా ఇస్లాం-క్రైస్తవం వెనక్కి-హిందూమతంలో..! తాజా రిపోర్ట్..!",
+              "source": "Oneindia Telugu",
+              "url": "https://telugu.oneindia.com/news/international/islam-set-to-surpass-christianity-by-2035-pew-highlights-global-demographic-shift-515603.html"
+            }
+          ]
+        },
+        {
+          "title": "kospi index",
+          "approx_traffic": "2000+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Asia stocks mixed as Nvidia optimism offsets Wall Street rout, Fed mins in focus By Investing.com",
+              "source": "Investing.com South Africa",
+              "url": "https://za.investing.com/news/stock-market-news/asia-stocks-mixed-as-nvidia-optimism-offsets-wall-street-rout-fed-mins-in-focus-4582443"
+            },
+            {
+              "headline": "South Korean shares fall over 1% as hawkish Fed remarks weigh on sentiment",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/us-stocks/news/south-korean-shares-fall-over-1-as-hawkish-fed-remarks-weigh-on-sentiment/articleshow/135977259.cms"
+            },
+            {
+              "headline": "Kospi Reclaims 5,000 as SK Hynix Surges 4%, SoftBank Gains 3%; Samsung Electronics, Kioxia Follow",
+              "source": "TradingKey",
+              "url": "https://www.tradingkey.com/analysis/stocks/more/262310459-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-nvda-apec-tradingkey"
+            }
+          ]
+        },
+        {
+          "title": "പാര്ലമെന്റ്",
+          "approx_traffic": "500+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": []
+        },
+        {
+          "title": "दिसंबर",
+          "approx_traffic": "500+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "December Grah Gochar: 2026 जाते-जाते इन 5 राशियों पर बरसाएगा धन! दिसंबर में 4 बड़े ग्रहों का होगा महागोचर",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/religion/news/story/december-2026-mein-4-grah-gochar-rahu-ketu-shani-guru-surya-rashi-parivartan-lucky-rashi-tviss-dskc-2699670-2026-11-18"
+            },
+            {
+              "headline": "राहु-केतु, शनि अगले 30 दिनों में तीन बड़े बदलाव, चार राशियां रहेंगी लकी",
+              "source": "Hindustan",
+              "url": "https://www.livehindustan.com/astrology/december-big-planet-change-rahu-ketu-shani-4-zodiac-that-get-good-change-201794985558177.html"
+            },
+            {
+              "headline": "Astro Tips : 18 महीने बाद राहु बदलने जा रहे चाल, मेष को मिलेगी नई जिम्मेदारी, मीन को परेशानियों से छुटकारा,...",
+              "source": "News18 Hindi",
+              "url": "https://hindi.news18.com/news/dharm/rahu-change-course-after-18-months-benefit-for-pisces-scorpio-leo-aries-local18-10992796.html"
+            }
+          ]
+        },
+        {
+          "title": "gst payment",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "To soon issue draft framework for centralised assessment of CGST taxpayers: CBIC chief",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/business/too-soon-issue-draft-framework-for-centralised-assessment-of-cgst-taxpayers-cbic-chief/article71714986.ece"
+            },
+            {
+              "headline": "PHDCCI seeks to protect buyers' GST credit when suppliers fail to pay tax",
+              "source": "bfsi.economictimes.indiatimes.com",
+              "url": "https://bfsi.economictimes.indiatimes.com/articles/phdcci-seeks-to-protect-buyers-gst-credit-when-suppliers-fail-to-pay-tax/135962478"
+            },
+            {
+              "headline": "CBIC Chairman inaugurates GST & Customs Pavilion at 45th India International Trade Fair (IITF) 2026, New Delhi",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/content/press-releases-ani/cbic-chairman-inaugurates-gst-customs-pavilion-at-45th-india-international-trade-fair-iitf-2026-new-delhi-126111900003_1.html"
+            }
+          ]
+        },
+        {
+          "title": "இறக்குமதி",
+          "approx_traffic": "500+",
+          "pub_date": "Wed, 18 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "பண்டிகைக்கால தங்க விற்பனை 15 முதல் 25% அதிகரிப்பு: உலக தங்க கவுன்சில்",
+              "source": "Dinamani",
+              "url": "https://www.dinamani.com/trade/2026/Nov/18/festive-gold-sales-value-jumps-15-25-pc-despite-high-prices"
+            },
+            {
+              "headline": "வரி உயா்வு: தங்கம் இறக்குமதி சரிய வாய்ப்பு",
+              "source": "Dinamani",
+              "url": "https://www.dinamani.com/india/2026/Nov/18/gold-imports-likely-to-decline-following-duty-hike"
+            },
+            {
+              "headline": "மாஸ் காட்டிய இந்தியர்கள்..!! ரூ.72,000 கோடிக்கு தங்கத்தை வாங்கி குவித்த இந்தியர்கள்!",
+              "source": "Top Tamil News",
+              "url": "https://www.toptamilnews.com/thamizhagam/indians-show-their-mass!!-indians-buy-gold-worth-rs-72000/cid19528097.htm"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Salesforce layoffs reach India as restructuring continues - HR Katha",
+            "source": "HR Katha",
+            "pub_date": "Thu, 19 Nov 2026 04:18:35 GMT"
+          },
+          {
+            "title": "Intel is laying off employees again - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 18 Nov 2026 02:00:00 GMT"
+          },
+          {
+            "title": "Qualcomm trims South Bay jobs as pace of Bay Area tech layoffs slows - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Wed, 18 Nov 2026 13:00:13 GMT"
+          },
+          {
+            "title": "Tech layoffs flare up in San Diego with hundreds of layoffs at chipmaker - Los Angeles Times",
+            "source": "Los Angeles Times",
+            "pub_date": "Wed, 18 Nov 2026 20:45:23 GMT"
+          },
+          {
+            "title": "Tipalti cuts staff again as fintech shifts focus to AI and mid-market customers - CTech",
+            "source": "CTech",
+            "pub_date": "Wed, 18 Nov 2026 18:07:00 GMT"
+          },
+          {
+            "title": "INTC Stock Gains Overnight Amid Fresh Layoffs Buzz - TradingView",
+            "source": "TradingView",
+            "pub_date": "Wed, 18 Nov 2026 08:43:22 GMT"
+          },
+          {
+            "title": "Major tech layoffs in history: 10 cases from IBM to Meta - qz.com",
+            "source": "qz.com",
+            "pub_date": "Mon, 09 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Disney, Amazon, Microsoft, Apple, Meta and more - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 13 Nov 2026 17:02:05 GMT"
+          },
+          {
+            "title": "Goldman says AI layoffs are starting to leave a 'long-lasting' scar, just like the last 40 years of history - Fortune",
+            "source": "Fortune",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs November update: Job cuts hit workers at Amazon, Angi, Block, Canva, and Squarespace - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 06 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: More than 200K jobs cut amid AI investment - Beinsure",
+            "source": "Beinsure",
+            "pub_date": "Fri, 13 Nov 2026 15:24:04 GMT"
+          },
+          {
+            "title": "Tech Layoffs Outpace 2025 As Big Companies Shift Spending To AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Hit 206,817 as AI Spend Estimate Nears $700B - shattered.io",
+            "source": "shattered.io",
+            "pub_date": "Sat, 14 Nov 2026 19:19:24 GMT"
+          },
+          {
+            "title": "Tech layoffs mounting: Nearly 2,000 since start of October - Globes - Israel Business News",
+            "source": "Globes - Israel Business News",
+            "pub_date": "Tue, 17 Nov 2026 11:15:12 GMT"
+          },
+          {
+            "title": "Intel lays off more employees as CEO Lip-Bu Tan continues restructuring drive - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 18 Nov 2026 04:47:52 GMT"
+          },
+          {
+            "title": "eToro set for another round of layoffs as profits plunge and valuation slides - CTech",
+            "source": "CTech",
+            "pub_date": "Sun, 15 Nov 2026 08:27:00 GMT"
+          },
+          {
+            "title": "I was laid off, and job hunting felt like being on a dating app. Here's how I found the right match. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 18 Nov 2026 10:05:00 GMT"
+          },
+          {
+            "title": "Firaxis Cuts 60 Jobs, a Third of Staff, as XCOM Slips - shattered.io",
+            "source": "shattered.io",
+            "pub_date": "Wed, 18 Nov 2026 09:49:16 GMT"
+          },
+          {
+            "title": "Is Tech On It’s Way To 500,000 Layoffs? - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 27 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Intel's Global IT Department Hit by Fresh Layoffs as Headcount Shrinks by 4,000 in a Year - BigGo Finance",
+            "source": "BigGo Finance",
+            "pub_date": "Wed, 18 Nov 2026 11:35:00 GMT"
+          },
+          {
+            "title": "Companies laying off staff this year include Meta, Amazon, and Dropbox — see the list - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 11 Nov 2026 18:40:00 GMT"
+          },
+          {
+            "title": "Tech layoffs: A 2026 timeline - Computerworld",
+            "source": "Computerworld",
+            "pub_date": "Wed, 04 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Intel conducts another round of layoffs as part of ‘broader strategy,’ company says - KOIN.com",
+            "source": "KOIN.com",
+            "pub_date": "Wed, 18 Nov 2026 21:05:25 GMT"
+          },
+          {
+            "title": "Cellebrite to lay off dozens of employees amid management shake-up - CTech",
+            "source": "CTech",
+            "pub_date": "Mon, 16 Nov 2026 07:34:00 GMT"
+          },
+          {
+            "title": "Disney is planning more layoffs under CEO Josh D'Amaro's cost-cutting program - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Tue, 17 Nov 2026 12:43:00 GMT"
+          }
+        ],
+        "smartphone launch": null
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "aileen wuornos",
+          "ai humanizer",
+          "airfrance"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt gpt",
+          "chatgpt desktop",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone policy in schools 2026",
+          "new phones coming out in 2026",
+          "new phones apple",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "unwanted attention gta 6",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "GTA 6 Unwanted Attention Mission Walkthrough",
+              "source": "Video Games Chronicle",
+              "url": "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/"
+            },
+            {
+              "headline": "Article (spoilers)",
+              "source": "GTA BOOM",
+              "url": "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae"
+            },
+            {
+              "headline": "GTA 6 Unwanted Attention walkthrough",
+              "source": "Eurogamer.net",
+              "url": "https://www.eurogamer.net/gta-6-unwanted-attention-walkthrough"
+            }
+          ]
+        },
+        {
+          "title": "truck accident lawyer",
+          "approx_traffic": "500+",
+          "pub_date": "Wed, 18 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "Best Car Accident Lawyers in Sacramento for 2026",
+              "source": "Lawyer Monthly",
+              "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/"
+            },
+            {
+              "headline": "El Paso police: man died after fleeing traffic stop and crashing on I-10",
+              "source": "KFOX",
+              "url": "https://kfoxtv.com/news/local/el-paso-police-confirm-man-died-after-fleeing-traffic-stop-and-crashing-on-i-10"
+            },
+            {
+              "headline": "Man dead after fleeing from police, rollover on I-10 in West El Paso",
+              "source": "KTSM 9 News",
+              "url": "https://www.ktsm.com/news/national/1-person-seriously-hurt-in-rollover-on-i-10-in-west-el-paso/"
+            }
+          ]
+        },
+        {
+          "title": "weather los angeles",
+          "approx_traffic": "1000+",
+          "pub_date": "Wed, 18 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "L.A. County issues evacuation warnings as storm nears; snow, flooding expected",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/california/story/2026-11-18/la-county-issues-evacuation-warnings-as-storm-nears-snow-flooding-expected"
+            },
+            {
+              "headline": "Atmospheric river could drop an inch of rain per hour across Los Angeles County, flood watch issued",
+              "source": "KTLA",
+              "url": "https://ktla.com/news/local-news/atmospheric-river-could-drop-an-inch-of-rain-per-hour-across-los-angeles-county-flood-watch-issued/"
+            },
+            {
+              "headline": "California Faces Flood Risks and Heavy Snow From Pacific Storm",
+              "source": "Bloomberg.com",
+              "url": "https://www.bloomberg.com/news/articles/2026-11-18/california-faces-flood-risks-and-heavy-snow-from-pacific-storm"
+            }
+          ]
+        },
+        {
+          "title": "qatar airways",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "Qatar Airways flight lands safely in Chicago after altercation breaks out between 2 passengers",
+              "source": "WGN-TV",
+              "url": "https://wgntv.com/news/chicago-news/qatar-airways-flight-lands-safely-in-chicago-after-altercation-breaks-out-between-2-passengers/"
+            },
+            {
+              "headline": "2 passengers taken into custody after fight on Qatar Airways flight to Chicago",
+              "source": "CBS News",
+              "url": "https://www.cbsnews.com/chicago/news/qatar-airways-dohar-chicago-fight/"
+            },
+            {
+              "headline": "FBI Awaits Qatar Airways Boeing 777 At Chicago O’Hare After Midair Attack On Passenger",
+              "source": "Simple Flying",
+              "url": "https://simpleflying.com/fbi-qatar-airways-boeing-777-chicago-ohare-attack-passenger/"
+            }
+          ]
+        },
+        {
+          "title": "tv",
+          "approx_traffic": "200+",
+          "pub_date": "Wed, 18 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
+              "source": "BBC",
+              "url": "https://www.bbc.com/culture/article/20261117-10-of-the-best-tv-shows-to-watch-this-december"
+            },
+            {
+              "headline": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
+              "source": "Yahoo News Canada",
+              "url": "https://ca.news.yahoo.com/harry-potter-pride-prejudice-10-103600746.html"
+            },
+            {
+              "headline": "Skydance shakes up TV by collapsing two prominent studios into one",
+              "source": "Los Angeles Times",
+              "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-18/skydance-shakes-up-tv-by-collapsing-two-prominent-studios-into-one"
+            }
+          ]
+        },
+        {
+          "title": "artificial",
+          "approx_traffic": "100+",
+          "pub_date": "Wed, 18 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "The restaurants Monica Barbaro hits when she returns home to Mill Valley",
+              "source": "SFGATE",
+              "url": "https://www.sfgate.com/sf-culture/article/artificial-premiere-22538453.php"
+            },
+            {
+              "headline": "Sam Altman says his life is so weird that he's unfazed by Andrew Garfield portraying him in upcoming movie",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/"
+            },
+            {
+              "headline": "Why Andrew Garfield calls Sam Altman ‘frightening’ and tech bros ‘adolescent’",
+              "source": "San Francisco Chronicle",
+              "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/andrew-garfield-artificial-tech-bros-22532080.php"
+            }
+          ]
+        },
+        {
+          "title": "quinnen williams press conference response",
+          "approx_traffic": "10000+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Sources: Pettine to take over defensive playcalling for Cowboys; Parker still DC",
+              "source": "ESPN",
+              "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys"
+            },
+            {
+              "headline": "‘Hates it here’ – NFL fans in awe as Dallas Cowboys star repeats answer 12 times in press conference",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html"
+            },
+            {
+              "headline": "Zero to 100: Boosted sack numbers in last 5 games",
+              "source": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+              "url": "https://www.dallascowboys.com/news/zero-to-100-boosted-sack-numbers-in-last-5-games"
+            }
+          ]
+        },
+        {
+          "title": "high school student",
+          "approx_traffic": "100+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit"
+            },
+            {
+              "headline": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html"
+            },
+            {
+              "headline": "Teens say AI surveillance system at Baltimore school mistook Doritos bag for a gun",
+              "source": "NBC News",
+              "url": "https://www.nbcnews.com/news/us-news/baltimore-police-handcuffed-teens-school-ai-mistook-potato-chips-gun-l-rcna610019"
+            }
+          ]
+        },
+        {
+          "title": "david montgomery",
+          "approx_traffic": "1000+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "David Montgomery has no injury designation for Thursday; Woody Marks ruled out",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-montgomery-has-no-injury-designation-for-thursday-woody-marks-ruled-out"
+            },
+            {
+              "headline": "David Montgomery ready to play in Week 11",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/david-montgomery-ready-play-week-210053548.html"
+            },
+            {
+              "headline": "Texans Getting RB David Montgomery Back In Week 11; Rule Out Marvin Harrison, Danielle Hunter",
+              "source": "ProFootballRumors.com",
+              "url": "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter"
+            }
+          ]
+        },
+        {
+          "title": "fresno weather",
+          "approx_traffic": "100+",
+          "pub_date": "Wed, 18 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "DAILY DIGEST, 11/16: Soaking California storms continue this week; Delta levees may be tested from multiple sides this winter; Plastic waste study shows long paths through waterways; Dangerous surf persists in OC, LA, with more expected this week; and m",
+              "source": "Maven's Notebook",
+              "url": "https://mavensnotebook.com/2026/11/16/daily-digest-11-16-soaking-california-storms-continue-this-week-delta-levees-may-be-tested-from-multiple-sides-this-winter-plastic-waste-study-shows-long-paths-through-waterways-dangerous-surf-pe/"
+            },
+            {
+              "headline": "Storm brings hazardous road conditions as local agencies prepare across Fresno County",
+              "source": "ABC30 Fresno",
+              "url": "https://abc30.com/post/storm-brings-hazardous-road-conditions-local-agencies-prepare-fresno-county/20039286/"
+            },
+            {
+              "headline": "How much rain has fallen in Modesto? Area braces for more with ‘stronger storm’",
+              "source": "Modesto Bee",
+              "url": "https://www.modbee.com/news/weather-news/article318102868.html"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs flare up in San Diego with hundreds of layoffs at chipmaker - Los Angeles Times",
+            "source": "Los Angeles Times",
+            "pub_date": "Wed, 18 Nov 2026 20:45:23 GMT"
+          },
+          {
+            "title": "Qualcomm trims South Bay jobs as pace of Bay Area tech layoffs slows - The Mercury News",
+            "source": "The Mercury News",
+            "pub_date": "Wed, 18 Nov 2026 13:00:13 GMT"
+          },
+          {
+            "title": "Intel conducts another round of layoffs as part of ‘broader strategy,’ company says - KOIN.com",
+            "source": "KOIN.com",
+            "pub_date": "Wed, 18 Nov 2026 21:05:25 GMT"
+          },
+          {
+            "title": "Tech layoffs tracker 2026: All the job losses across Disney, Amazon, Microsoft, Apple, Meta and more - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Fri, 13 Nov 2026 17:02:05 GMT"
+          },
+          {
+            "title": "Intel is laying off employees again - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 18 Nov 2026 02:00:00 GMT"
+          },
+          {
+            "title": "Tech job postings plunge 44% in the Seattle area as competition surges - Axios",
+            "source": "Axios",
+            "pub_date": "Tue, 17 Nov 2026 21:56:19 GMT"
+          },
+          {
+            "title": "Tipalti cuts staff again as fintech shifts focus to AI and mid-market customers - CTech",
+            "source": "CTech",
+            "pub_date": "Wed, 18 Nov 2026 18:07:00 GMT"
+          },
+          {
+            "title": "Tech giant worth $170B axes hundreds of California jobs as CEO demands ‘the right people’ in ruthless cull - New York Post",
+            "source": "New York Post",
+            "pub_date": "Wed, 18 Nov 2026 20:38:00 GMT"
+          },
+          {
+            "title": "Goldman says AI layoffs are starting to leave a 'long-lasting' scar, just like the last 40 years of history - Fortune",
+            "source": "Fortune",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "10 tech layoffs in 2026 and what drove the job cuts at each company - qz.com",
+            "source": "qz.com",
+            "pub_date": "Fri, 13 Nov 2026 18:15:35 GMT"
+          },
+          {
+            "title": "Tech Layoffs Hit 206,817 as AI Spend Estimate Nears $700B - shattered.io",
+            "source": "shattered.io",
+            "pub_date": "Sat, 14 Nov 2026 19:19:24 GMT"
+          },
+          {
+            "title": "Salesforce layoffs reach India as restructuring continues - HR Katha",
+            "source": "HR Katha",
+            "pub_date": "Thu, 19 Nov 2026 04:18:35 GMT"
+          },
+          {
+            "title": "INTC Stock Gains Overnight Amid Fresh Layoffs Buzz - TradingView",
+            "source": "TradingView",
+            "pub_date": "Wed, 18 Nov 2026 08:43:22 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: More than 200K jobs cut amid AI investment - Beinsure",
+            "source": "Beinsure",
+            "pub_date": "Fri, 13 Nov 2026 15:24:04 GMT"
+          },
+          {
+            "title": "I was laid off, and job hunting felt like being on a dating app. Here's how I found the right match. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 18 Nov 2026 10:05:00 GMT"
+          },
+          {
+            "title": "Firaxis Cuts 60 Jobs, a Third of Staff, as XCOM Slips - shattered.io",
+            "source": "shattered.io",
+            "pub_date": "Wed, 18 Nov 2026 09:49:16 GMT"
+          },
+          {
+            "title": "Major tech layoffs in history: 10 cases from IBM to Meta - qz.com",
+            "source": "qz.com",
+            "pub_date": "Mon, 09 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs piling up as Bay Area companies slash 100+ workers - New York Post",
+            "source": "New York Post",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Cellebrite to lay off dozens of employees amid management shake-up - CTech",
+            "source": "CTech",
+            "pub_date": "Mon, 16 Nov 2026 07:34:00 GMT"
+          },
+          {
+            "title": "Disney is planning more layoffs under CEO Josh D'Amaro's cost-cutting program - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Tue, 17 Nov 2026 12:43:00 GMT"
+          },
+          {
+            "title": "‘Incredibly painful day’: 2 San Francisco tech companies cut more than 100 jobs - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Disney says more layoffs are on the way as company announces double-digit Q4 revenue growth - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Tue, 17 Nov 2026 13:24:51 GMT"
+          },
+          {
+            "title": "eToro set for another round of layoffs as profits plunge and valuation slides - CTech",
+            "source": "CTech",
+            "pub_date": "Sun, 15 Nov 2026 08:27:00 GMT"
+          },
+          {
+            "title": "Is Tech On It’s Way To 500,000 Layoffs? - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Tue, 27 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huge chipmaker to cut 517 California jobs, including 75 in Bay Area - San Francisco Chronicle",
+            "source": "San Francisco Chronicle",
+            "pub_date": "Tue, 17 Nov 2026 21:16:55 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Connecticut launches mobile ID - WFSB",
+            "source": "WFSB",
+            "pub_date": "Wed, 18 Nov 2026 10:10:00 GMT"
+          },
+          {
+            "title": "Huawei shows off wide smartphone from brand-new series just ahead of launch - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Wed, 18 Nov 2026 21:11:00 GMT"
+          },
+          {
+            "title": "Billables AI Launches Mobile App, Bringing AI Timekeeping to Attorneys On the Go - LawSites | by Robert Ambrogi",
+            "source": "LawSites | by Robert Ambrogi",
+            "pub_date": "Mon, 16 Nov 2026 16:51:35 GMT"
+          },
+          {
+            "title": "Michigan Police Launch Campaign Against Online Impersonation Scams - Security Today",
+            "source": "Security Today",
+            "pub_date": "Mon, 16 Nov 2026 22:10:28 GMT"
+          },
+          {
+            "title": "KDDI to launch simplified Infobar Zero mobile phone in December - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Wed, 18 Nov 2026 05:16:32 GMT"
+          },
+          {
+            "title": "More Than a Swap: PancakeSwap Rebrands as Pancake Ahead of Mobile App Launch By Chainwire - Investing.com",
+            "source": "Investing.com",
+            "pub_date": "Wed, 18 Nov 2026 10:04:13 GMT"
+          },
+          {
+            "title": "ENHYPEN's JUNGWON, JAKE & SUNGHOON shine as vivo Friends for V80 smartphone launch - Bandwagon",
+            "source": "Bandwagon",
+            "pub_date": "Mon, 16 Nov 2026 08:31:00 GMT"
+          },
+          {
+            "title": "Aave App Launches on TRON, Bringing USDT Deposits to Mobile Users on Android and iOS - The Block",
+            "source": "The Block",
+            "pub_date": "Tue, 17 Nov 2026 17:01:00 GMT"
+          },
+          {
+            "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Researchers launch smartphone platform to monitor senior safety - University of Florida",
+            "source": "University of Florida",
+            "pub_date": "Tue, 15 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Watch the Xiaomi 18 Pro and Xiaomi 18 Pro Max global launch event here - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Mon, 16 Nov 2026 17:27:40 GMT"
+          },
+          {
+            "title": "SmartTouch® Interactive Launches NexGen Mobile for New Home Builder Sales - PRWeb",
+            "source": "PRWeb",
+            "pub_date": "Wed, 18 Nov 2026 14:00:00 GMT"
+          },
+          {
+            "title": "Giffgaff launch various UK mobile data discounts for Black Friday - ISPreview UK",
+            "source": "ISPreview UK",
+            "pub_date": "Wed, 18 Nov 2026 10:59:00 GMT"
+          },
+          {
+            "title": "Upcoming Phones We’re Still Expecting in 2026, Along With Some Heading to 2027 - CNET",
+            "source": "CNET",
+            "pub_date": "Tue, 06 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Nothing says it plans to release six smartphones next year, ‘wider range’ of devices - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Thu, 06 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Huawei showcases Mate X8 in five versions, confirms launch date - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 16 Nov 2026 22:39:00 GMT"
+          },
+          {
+            "title": "MediaTek launches new mobile chip using TSMC's most advanced technology - Reuters",
+            "source": "Reuters",
+            "pub_date": "Tue, 15 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Trump Phone Looks Different, Has No Launch Date, Isn’t Made in America - CNET",
+            "source": "CNET",
+            "pub_date": "Sun, 10 May 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Global smartphone shipments record worst third quarter in 14 years amid memory shortage - Reuters",
+            "source": "Reuters",
+            "pub_date": "Mon, 12 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Wobble to launch its second smartphone, the Speed 5G - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Thu, 29 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "49ers Launch Innovative Mobile App with Support from Digital Consulting Partner PwC - San Francisco 49ers",
+            "source": "San Francisco 49ers",
+            "pub_date": "Thu, 09 Apr 2026 07:00:00 GMT"
+          },
+          {
+            "title": "1p Mobile launches UK customer rewards scheme called 1pRewards - ISPreview UK",
+            "source": "ISPreview UK",
+            "pub_date": "Tue, 17 Nov 2026 09:00:00 GMT"
+          },
+          {
+            "title": "Xiaomi launches 18 Pro series smartphones from RM4,799, featuring two 200-megapixel Leica cameras - The Star",
+            "source": "The Star",
+            "pub_date": "Wed, 18 Nov 2026 05:35:00 GMT"
+          },
+          {
+            "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Xiaomi, Huawei launch new foldable mobile flagships, with Apple's debut expected in two days - Global Times",
+            "source": "Global Times",
+            "pub_date": "Tue, 08 Sep 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "ai checker",
+          "air and space museum",
+          "ai mode",
+          "airpods",
+          "aileen wuornos",
+          "ai humanizer",
+          "airfrance"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt gpt",
+          "chatgpt desktop",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals",
+          "new phones coming out"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Unauthenticated remote code execution in Nginx",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "points": 1289,
+      "comments": 564,
+      "created_at": "2026-11-18T15:19:55Z"
+    },
+    {
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "points": 708,
+      "comments": 600,
+      "created_at": "2026-11-18T21:34:07Z"
+    },
+    {
+      "title": "DNS resolvers are the wrong place to fight piracy",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "points": 651,
+      "comments": 257,
+      "created_at": "2026-11-18T13:18:02Z"
+    },
+    {
+      "title": "Inside Deutsche Bank",
+      "url": "https://www.inside-db.com/",
+      "points": 642,
+      "comments": 206,
+      "created_at": "2026-11-18T15:38:33Z"
+    },
+    {
+      "title": "Seven new models at scalable price-performance",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "points": 513,
+      "comments": 338,
+      "created_at": "2026-11-18T16:08:24Z"
+    },
+    {
+      "title": "We need smart people who give a shit",
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "points": 447,
+      "comments": 228,
+      "created_at": "2026-11-18T23:53:49Z"
+    },
+    {
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "points": 441,
+      "comments": 190,
+      "created_at": "2026-11-18T15:49:34Z"
+    },
+    {
+      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "points": 268,
+      "comments": 193,
+      "created_at": "2026-11-18T14:43:52Z"
+    },
+    {
+      "title": "Genie 4 is now available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "points": 231,
+      "comments": 156,
+      "created_at": "2026-11-18T18:49:51Z"
+    },
+    {
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+      "points": 209,
+      "comments": 67,
+      "created_at": "2026-11-19T00:29:45Z"
+    },
+    {
+      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "points": 202,
+      "comments": 60,
+      "created_at": "2026-11-18T16:04:43Z"
+    },
+    {
+      "title": "Advancing chip design with OpenAI models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "points": 199,
+      "comments": 127,
+      "created_at": "2026-11-18T17:45:47Z"
+    },
+    {
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "points": 198,
+      "comments": 63,
+      "created_at": "2026-11-18T23:52:50Z"
+    },
+    {
+      "title": "DaisyRose-27B",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "points": 185,
+      "comments": 59,
+      "created_at": "2026-11-18T19:39:16Z"
+    },
+    {
+      "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+      "url": "https://rshekhar.com/voyager/",
+      "points": 183,
+      "comments": 46,
+      "created_at": "2026-11-18T16:18:51Z"
+    },
+    {
+      "title": "F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)",
+      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+      "points": 166,
+      "comments": 106,
+      "created_at": "2026-11-18T15:35:44Z"
+    },
+    {
+      "title": "LLM assisted reverse engineering",
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "points": 160,
+      "comments": 39,
+      "created_at": "2026-11-18T22:29:13Z"
+    },
+    {
+      "title": "Anthropic prices initial public offering",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "points": 147,
+      "comments": 127,
+      "created_at": "2026-11-18T23:30:09Z"
+    },
+    {
+      "title": "Unreal Tournament 2004 in the Browser",
+      "url": "https://ut2004.dev/",
+      "points": 139,
+      "comments": 58,
+      "created_at": "2026-11-19T01:29:29Z"
+    },
+    {
+      "title": "Dumping an AES key from a MyQ garage opener to stop rebooting when offline",
+      "url": "https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/",
+      "points": 106,
+      "comments": 36,
+      "created_at": "2026-11-16T23:47:26Z"
+    },
+    {
+      "title": "AI will not make you rich (2025)",
+      "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
+      "points": 91,
+      "comments": 53,
+      "created_at": "2026-11-19T01:51:28Z"
+    },
+    {
+      "title": "Black high school students sue after AI mistakes Doritos bag for gun",
+      "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+      "points": 79,
+      "comments": 40,
+      "created_at": "2026-11-19T00:57:20Z"
+    },
+    {
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "points": 713,
+      "comments": 600,
+      "created_at": "2026-11-18T21:34:07Z"
+    },
+    {
+      "title": "Google Gemini's \"Tasks\" Personal Assistant Is Now Free",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "points": 52,
+      "comments": 70,
+      "created_at": "2026-11-18T20:20:17Z"
+    },
+    {
+      "title": "Genie 4 is now available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "points": 233,
+      "comments": 158,
+      "created_at": "2026-11-18T18:49:51Z"
+    },
+    {
+      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+      "url": null,
+      "points": 51,
+      "comments": 44,
+      "created_at": "2026-11-18T17:26:28Z"
+    },
+    {
+      "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+      "url": null,
+      "points": 90,
+      "comments": 31,
+      "created_at": "2026-11-18T16:53:42Z"
+    },
+    {
+      "title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
+      "url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
+      "points": 130,
+      "comments": 77,
+      "created_at": "2026-11-18T16:41:22Z"
+    },
+    {
+      "title": "Seven new models at scalable price-performance",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "points": 513,
+      "comments": 340,
+      "created_at": "2026-11-18T16:08:24Z"
+    },
+    {
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "points": 441,
+      "comments": 190,
+      "created_at": "2026-11-18T15:49:34Z"
+    },
+    {
+      "title": "Can Peer Review Survive AI-Generated Text? [pdf]",
+      "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
+      "points": 67,
+      "comments": 80,
+      "created_at": "2026-11-18T13:51:03Z"
+    },
+    {
+      "title": "AI is killing All About Berlin",
+      "url": "https://nicolasbouliane.com/blog/death-by-ai",
+      "points": 776,
+      "comments": 692,
+      "created_at": "2026-11-18T06:47:26Z"
+    },
+    {
+      "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
+      "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
+      "points": 96,
+      "comments": 57,
+      "created_at": "2026-11-18T01:45:11Z"
+    },
+    {
+      "title": "Cerebras Disaggregated Inference",
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "points": 106,
+      "comments": 26,
+      "created_at": "2026-11-18T00:56:23Z"
+    },
+    {
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "points": 697,
+      "comments": 544,
+      "created_at": "2026-11-18T00:17:58Z"
+    },
+    {
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "points": 320,
+      "comments": 441,
+      "created_at": "2026-11-17T21:16:12Z"
+    },
+    {
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "points": 170,
+      "comments": 27,
+      "created_at": "2026-11-17T21:06:08Z"
+    },
+    {
+      "title": "Human.md",
+      "url": "https://www.human-md.ai/",
+      "points": 120,
+      "comments": 77,
+      "created_at": "2026-11-17T20:47:36Z"
+    },
+    {
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "url": null,
+      "points": 87,
+      "comments": 48,
+      "created_at": "2026-11-17T19:01:43Z"
+    },
+    {
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "points": 418,
+      "comments": 169,
+      "created_at": "2026-11-17T18:25:13Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 3824106,
+      "rank": 1
+    },
+    {
+      "article": "Robert_Pattinson",
+      "views": 840972,
+      "rank": 2
+    },
+    {
+      "article": "Special:Search",
+      "views": 818326,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 540185,
+      "rank": 4
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 452299,
+      "rank": 5
+    },
+    {
+      "article": "Suki_Waterhouse",
+      "views": 297037,
+      "rank": 6
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 153338,
+      "rank": 7
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 153037,
+      "rank": 8
+    },
+    {
+      "article": "Jensen_Huang",
+      "views": 144823,
+      "rank": 9
+    },
+    {
+      "article": ".xxx",
+      "views": 144538,
+      "rank": 10
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 136111,
+      "rank": 11
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 127281,
+      "rank": 12
+    },
+    {
+      "article": "Robert_Pattinson_filmography",
+      "views": 127113,
+      "rank": 13
+    },
+    {
+      "article": "List_of_James_Bond_films",
+      "views": 120511,
+      "rank": 14
+    },
+    {
+      "article": "Saturn_Devouring_His_Son",
+      "views": 108660,
+      "rank": 15
+    },
+    {
+      "article": "Daniel_Craig",
+      "views": 101483,
+      "rank": 16
+    },
+    {
+      "article": "Ray_Tintori",
+      "views": 98033,
+      "rank": 17
+    },
+    {
+      "article": "Jacoby_Brissett",
+      "views": 95821,
+      "rank": 18
+    },
+    {
+      "article": "2026–27_UEFA_Nations_League",
+      "views": 93874,
+      "rank": 19
+    },
+    {
+      "article": "Sean_Duffy",
+      "views": 93303,
+      "rank": 20
+    },
+    {
+      "article": "The_Hunger_Games:_Sunrise_on_the_Reaping",
+      "views": 92631,
+      "rank": 21
+    },
+    {
+      "article": "Russell_Brand",
+      "views": 86201,
+      "rank": 22
+    },
+    {
+      "article": "Mariella_Frostrup",
+      "views": 85178,
+      "rank": 23
+    },
+    {
+      "article": "Heidi_Gardner",
+      "views": 83061,
+      "rank": 24
+    },
+    {
+      "article": "James_Bond",
+      "views": 75962,
+      "rank": 25
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 74933,
+      "rank": 26
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 71643,
+      "rank": 27
+    },
+    {
+      "article": "Ade_Adepitan",
+      "views": 70088,
+      "rank": 28
+    },
+    {
+      "article": "John_Christ",
+      "views": 69141,
+      "rank": 29
+    },
+    {
+      "article": "List_of_songs_recorded_by_the_Beatles",
+      "views": 68112,
+      "rank": 30
+    },
+    {
+      "article": "Sara_Boustany",
+      "views": 66243,
+      "rank": 31
+    },
+    {
+      "article": "Pierce_Brosnan",
+      "views": 65735,
+      "rank": 32
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 64269,
+      "rank": 33
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 64085,
+      "rank": 34
+    },
+    {
+      "article": "Crimean_Bridge",
+      "views": 63755,
+      "rank": 35
+    },
+    {
+      "article": "Kristen_Stewart",
+      "views": 62210,
+      "rank": 36
+    },
+    {
+      "article": "Sharad_Kapoor",
+      "views": 61729,
+      "rank": 37
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 61162,
+      "rank": 38
+    },
+    {
+      "article": "UEFA_Nations_League",
+      "views": 60085,
+      "rank": 39
+    },
+    {
+      "article": "Sean_Connery",
+      "views": 59397,
+      "rank": 40
+    },
+    {
+      "article": "No_Time_to_Die",
+      "views": 58952,
+      "rank": 41
+    },
+    {
+      "article": "Portrayal_of_James_Bond_in_film",
+      "views": 58500,
+      "rank": 42
+    },
+    {
+      "article": "Lizzy_Pattinson",
+      "views": 57081,
+      "rank": 43
+    },
+    {
+      "article": "Denis_Villeneuve",
+      "views": 56409,
+      "rank": 44
+    },
+    {
+      "article": "Lee_Reeves_(boxer)",
+      "views": 56310,
+      "rank": 45
+    },
+    {
+      "article": "Ebenezer_(2026_film)",
+      "views": 54833,
+      "rank": 46
+    },
+    {
+      "article": "Survivor_Series:_WarGames_(2026)",
+      "views": 54386,
+      "rank": 47
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 53963,
+      "rank": 48
+    },
+    {
+      "article": "Sing_a_Song_of_Sixpence",
+      "views": 53058,
+      "rank": 49
+    },
+    {
+      "article": "Nvidia",
+      "views": 52812,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Elon Musk says: ‘I’m not MAGA’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic prices IPO at $83 a share, above projected range"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Palmer Luckey doesn’t deny that he’s a prepper"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Sam Altman says his life is so weird that he’s unfazed by Andrew Garfield portraying him in upcoming movie"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Spend management platform Payhawk announces $280M raise, 2B valuation"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Google’s AI feature in Search gets its own incognito mode"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Elon Musk tries to explain what&#8217;s going on with Ukraine and Starlink"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The nation’s largest school districts consider ditching Google Search"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Democrats skip a vote on adding Brendan Carr’s adviser to the FCC"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Absolute Batman can save DC Studios"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Trump’s latest land grab is an AI hub in the Philippines"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Nvidia’s rise, visualized"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Sony’s impressive Bravia 8 II OLED hits a new low price ahead of Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Instagram now lets you edit your stories after you post them"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The leaked Lenovo Legion Go Beam could be the affordable handheld we need"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Tech lawsuits defined 2026 — and lawmakers want more"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ted Cruz-led committee approves Trump FCC nominee 15-0 as Democrats boycott vote"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ukraine blew up Putin’s bridge using relay drones to bypass Starlink limits"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump abandons his FDA nominee, and Senate scraps vote on his NSF pick"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Netflix CEO admits app may bury stuff you want to watch under stuff you don’t"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Windows Server 2028 trades compatibility for out-of-the-box security"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Best Buy sells Blu-rays online and in-store again"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Muse privacy invasions are freaking out Meta staffers, internal chats show"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump admin orders Kalshi to halt wagers on what words Trump will say"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The \"shameful\" measles data that lost the US its elimination status"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Will Wright's next simulation will use AI to mine content from your memories"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "It shouldn’t be this easy to pedal 25 mph: Specialized’s Turbo Vado 3 Evo"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Vulcan failure caused by inadequate fuel supply to engines, ULA says"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Waymo has stopped its robotaxis from driving on the freeway—here’s why"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Tesla’s $30,000 Cybercab comes with a $299 monthly catch"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Voyager 1 at one light-day: Historian revisits Golden Record's forgotten details"
+    }
+  ]
+}

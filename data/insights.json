@@ -1,7 +1,53 @@
 {
-  "generated_at": "2026-11-18T12:49:15.625472+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-11-19T12:46:36.963588+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "claude-code-pi-developers-swapping-terminal-agents": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "ai-generated-code-critics-say-must-be-open": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "dwarf-planet-candidate-2026-ed138-found-orbiting-beyond": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "term-sheet-please-inside-yc-startup-funding-game": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 6,
+    "explainers": 5,
+    "ai-tools": 3,
+    "policy": 1
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."
