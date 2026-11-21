@@ -1,9 +1,9 @@
 {
   "slug": "docket-2026-11-21",
-  "checked_at": "2026-11-21T22:44:19.915261+05:30",
-  "passed": false,
-  "hard_failures": 1,
-  "soft_warnings": 1,
+  "checked_at": "2026-11-21T23:00:27.817162+05:30",
+  "passed": true,
+  "hard_failures": 0,
+  "soft_warnings": 0,
   "results": [
     {
       "gate": "D01-docket-built",
@@ -62,14 +62,14 @@
     {
       "gate": "D10-tags-picks",
       "level": "hard",
-      "ok": false,
-      "detail": "item 6: unknown tag 'in'"
+      "ok": true,
+      "detail": ""
     },
     {
       "gate": "D11-watch-quota",
       "level": "soft",
       "ok": true,
-      "detail": "4/6 entries tagged (target >=half; wildcards are allowed and encouraged)"
+      "detail": "3/6 entries tagged (target >=half; wildcards are allowed and encouraged)"
     },
     {
       "gate": "D12-stakes-line",
@@ -80,8 +80,8 @@
     {
       "gate": "D14-stat-line",
       "level": "soft",
-      "ok": false,
-      "detail": "item 3: stat_line 13w (max 12); item 5: stat_line 16w (max 12)"
+      "ok": true,
+      "detail": ""
     },
     {
       "gate": "D15-community-read",
