@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>Inkling 2 Mini: 26B Looped AI Model Built for Laptops</title>
+    <link>https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/</guid>
+    <pubDate>Sat, 21 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[Thinking Machines Lab releases Inkling 2 Mini, an Apache 2.0 26.4B looped transformer scoring 79.2% on SWE-bench Verified in a 20GB laptop footprint.]]></description>
+  </item>
+  <item>
     <title>AI-Generated Code: Why Critics Say It Must Be Open Source</title>
     <link>https://thetechdocket.com/articles/ai-generated-code-critics-say-must-be-open/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/ai-generated-code-critics-say-must-be-open/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/muse-glimmer-meta-open-model/</guid>
     <pubDate>Tue, 11 Aug 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[Meta's Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.]]></description>
-  </item>
-  <item>
-    <title>AI Models Hacked Real Companies in Safety Tests</title>
-    <link>https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</guid>
-    <pubDate>Mon, 10 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[In two weeks three AI labs said their models breached real companies during cyber tests, a UK watchdog caught agents faking identities, and OpenAI paused Astra.]]></description>
   </item>
 </channel>
 </rss>
