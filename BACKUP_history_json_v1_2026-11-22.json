@@ -1,0 +1,994 @@
+{
+  "published": [
+    {
+      "date": "2026-07-15",
+      "slug": "ai-chatbot-data-privacy",
+      "title": "AI Chatbot Data Privacy: What Happens to Your Chats",
+      "keyword": "ai chatbot data privacy",
+      "hub": "ai-tools",
+      "published_at": "2026-07-15T12:11:11.944329+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-15T15:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-15-ai-chatbot-data-privacy.json",
+      "url": "https://thetechdocket.com/articles/ai-chatbot-data-privacy/"
+    },
+    {
+      "date": "2026-07-15",
+      "slug": "real-cost-of-running-ai",
+      "title": "The Real Cost of Running AI: Tokens, GPUs, Power",
+      "keyword": "cost of running ai",
+      "hub": "hardware",
+      "published_at": "2026-07-15T12:11:12.454213+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-15T16:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-15-real-cost-of-running-ai.json",
+      "url": "https://thetechdocket.com/articles/real-cost-of-running-ai/"
+    },
+    {
+      "date": "2026-07-15",
+      "slug": "spot-ai-generated-images-videos",
+      "title": "How to Spot AI-Generated Images and Videos in 2026",
+      "keyword": "how to spot ai generated images",
+      "hub": "explainers",
+      "published_at": "2026-07-15T12:11:12.799539+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-15T17:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-15-spot-ai-generated-images-videos.json",
+      "url": "https://thetechdocket.com/articles/spot-ai-generated-images-videos/"
+    },
+    {
+      "date": "2026-07-15",
+      "slug": "bonsai-27b-ai-model-phone",
+      "title": "Bonsai 27B: The 27B AI Model That Runs on a Phone, Explained",
+      "keyword": "bonsai 27b",
+      "hub": "ai-models",
+      "published_at": "2026-07-15T12:12:15.608950+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-15T13:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-15-bonsai-27b-ai-model-phone.json",
+      "url": "https://thetechdocket.com/articles/bonsai-27b-ai-model-phone/"
+    },
+    {
+      "date": "2026-07-19",
+      "slug": "codex-context-window-cut",
+      "title": "Codex Context Window Cut to 272K: What OpenAI Rolled Back",
+      "keyword": "codex context window",
+      "hub": "ai-tools",
+      "published_at": "2026-07-19T23:06:14.557301+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-19T23:35:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-19-codex-context-window-cut.json",
+      "url": "https://thetechdocket.com/articles/codex-context-window-cut/"
+    },
+    {
+      "date": "2026-07-20",
+      "slug": "eu-google-android-ai-assistants",
+      "title": "EU Orders Google to Open Android to Rival AI Assistants",
+      "keyword": "eu google android ai assistants",
+      "hub": "policy",
+      "published_at": "2026-07-20T07:08:47.833079+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-20T07:45:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-20-eu-google-android-ai-assistants.json",
+      "url": "https://thetechdocket.com/articles/eu-google-android-ai-assistants/"
+    },
+    {
+      "date": "2026-07-22",
+      "slug": "gemini-3-6-flash-what-google-launched",
+      "title": "Gemini 3.6 Flash: What Google Launched and What It Skipped",
+      "keyword": "gemini 3.6 flash",
+      "hub": "ai-models",
+      "published_at": "2026-07-22T07:37:29.191583+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-22T07:37:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-22-gemini-3-6-flash-what-google-launched.json",
+      "url": "https://thetechdocket.com/articles/gemini-3-6-flash-what-google-launched/"
+    },
+    {
+      "date": "2026-07-23",
+      "slug": "chinese-ai-models-surge-kimi-qwen",
+      "title": "Chinese AI Models Surge: Kimi K3, Qwen 3.8, US Sanctions Threat",
+      "keyword": "chinese ai models",
+      "hub": "ai-models",
+      "published_at": "2026-07-23T07:38:09.886444+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-23T07:37:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-23-chinese-ai-models-surge-kimi-qwen.json",
+      "url": "https://thetechdocket.com/articles/chinese-ai-models-surge-kimi-qwen/"
+    },
+    {
+      "date": "2026-07-24",
+      "slug": "amd-anthropic-deal-mi450",
+      "title": "AMD's $5B Anthropic Deal: 2GW of MI450 Chips, Explained",
+      "keyword": "amd anthropic deal",
+      "hub": "hardware",
+      "published_at": "2026-07-24T07:27:40.967335+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-24T08:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-24-amd-anthropic-deal-mi450.json",
+      "url": "https://thetechdocket.com/articles/amd-anthropic-deal-mi450/"
+    },
+    {
+      "date": "2026-07-25",
+      "slug": "ani-vs-openai-fair-dealing-ruling",
+      "title": "ANI vs OpenAI: Delhi HC Calls ChatGPT Training Fair Dealing",
+      "keyword": "ani vs openai",
+      "hub": "policy",
+      "published_at": "2026-07-25T07:00:55.643276+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-25T07:25:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-25-ani-vs-openai-fair-dealing-ruling.json",
+      "url": "https://thetechdocket.com/articles/ani-vs-openai-fair-dealing-ruling/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "qualcomm-snapdragon-price-hike",
+      "title": "Qualcomm Snapdragon Price Hike: What It Means for Phone Prices",
+      "keyword": "qualcomm snapdragon price hike",
+      "hub": "hardware",
+      "published_at": "2026-07-26T07:20:45.366980+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T07:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-qualcomm-snapdragon-price-hike.json",
+      "url": "https://thetechdocket.com/articles/qualcomm-snapdragon-price-hike/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "india-dpdp-act-explained",
+      "title": "India's DPDP Act: What Actually Changes for You, and When",
+      "keyword": "dpdp act explained",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:04.919407+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T21:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-india-dpdp-act-explained.json",
+      "url": "https://thetechdocket.com/articles/india-dpdp-act-explained/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "on-device-ai-vs-cloud-ai",
+      "title": "On-Device AI vs Cloud AI: What Your Phone Really Shares",
+      "keyword": "on device ai vs cloud ai",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:05.721726+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T21:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-on-device-ai-vs-cloud-ai.json",
+      "url": "https://thetechdocket.com/articles/on-device-ai-vs-cloud-ai/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "free-ai-tiers-compared",
+      "title": "Free AI in 2026: ChatGPT, Gemini, Claude and Copilot Compared",
+      "keyword": "free ai chatbot comparison",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:06.440395+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T21:35:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-free-ai-tiers-compared.json",
+      "url": "https://thetechdocket.com/articles/free-ai-tiers-compared/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "context-windows-explained",
+      "title": "Context Windows Explained: What the Token Number Means",
+      "keyword": "context window explained",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:07.126041+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T21:50:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-context-windows-explained.json",
+      "url": "https://thetechdocket.com/articles/context-windows-explained/"
+    },
+    {
+      "date": "2026-07-26",
+      "slug": "ai-voice-clone-scam-protection",
+      "title": "AI Voice-Clone Call Scams: How They Work, How to Respond",
+      "keyword": "ai voice cloning scam",
+      "hub": "explainers",
+      "published_at": "2026-07-26T20:26:07.847536+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-26T22:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-26-ai-voice-clone-scam-protection.json",
+      "url": "https://thetechdocket.com/articles/ai-voice-clone-scam-protection/"
+    },
+    {
+      "date": "2026-07-27",
+      "slug": "claude-for-small-business-explained",
+      "title": "Claude for Small Business: What It Is and What It Costs",
+      "keyword": "claude for small business",
+      "hub": "ai-tools",
+      "published_at": "2026-07-27T15:08:54.144905+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-27T08:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-27-claude-for-small-business-explained.json",
+      "url": "https://thetechdocket.com/articles/claude-for-small-business-explained/"
+    },
+    {
+      "date": "2026-07-28",
+      "slug": "google-spacex-stake-94-billion",
+      "title": "Google's SpaceX Stake: What the $94.1 Billion Filing Shows",
+      "keyword": "google spacex stake",
+      "hub": "big-tech",
+      "published_at": "2026-07-28T07:24:27.107408+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-28T08:40:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-28-google-spacex-stake-94-billion.json",
+      "url": "https://thetechdocket.com/articles/google-spacex-stake-94-billion/"
+    },
+    {
+      "date": "2026-07-29",
+      "slug": "us-border-phone-search-grapheneos-case",
+      "title": "US Border Phone Searches: The GrapheneOS Wipe Case, Explained",
+      "keyword": "us border phone search",
+      "hub": "policy",
+      "published_at": "2026-07-29T07:16:32.458146+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-29T07:16:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-29-us-border-phone-search-grapheneos-case.json",
+      "url": "https://thetechdocket.com/articles/us-border-phone-search-grapheneos-case/"
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "pwc-ai-hallucinations-big-four-pattern",
+      "title": "PwC AI Hallucinations: Four Reports and a Big Four Pattern",
+      "keyword": "PwC AI hallucinations",
+      "hub": "ai-tools",
+      "published_at": "2026-07-30T07:14:11.850440+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-30T07:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-30-pwc-ai-hallucinations-big-four-pattern.json",
+      "url": "https://thetechdocket.com/articles/pwc-ai-hallucinations-big-four-pattern/"
+    },
+    {
+      "date": "2026-07-31",
+      "slug": "openai-agent-hugging-face-breach",
+      "title": "AI Agent Security: The OpenAI-Hugging Face Breach",
+      "keyword": "ai agent security",
+      "hub": "policy",
+      "published_at": "2026-07-31T07:09:17.468416+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-07-31T07:06:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-07-31-openai-agent-hugging-face-breach.json",
+      "url": "https://thetechdocket.com/articles/openai-agent-hugging-face-breach/"
+    },
+    {
+      "date": "2026-08-01",
+      "slug": "gpt-5-6-luna-price-cut",
+      "title": "GPT-5.6 Luna Price Cut: OpenAI Slashes API Rates by 80%",
+      "keyword": "gpt-5.6 price cut",
+      "hub": "ai-models",
+      "published_at": "2026-08-01T07:17:56.648187+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-01T08:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-01-gpt-5-6-luna-price-cut.json",
+      "url": "https://thetechdocket.com/articles/gpt-5-6-luna-price-cut/"
+    },
+    {
+      "date": "2026-08-02",
+      "slug": "deepseek-v4-flash-0731",
+      "title": "DeepSeek V4 Flash 0731: Big Benchmark Jump, Same $0.28 Price",
+      "keyword": "deepseek v4 flash",
+      "hub": "ai-models",
+      "published_at": "2026-08-02T07:46:20.683202+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-02T07:46:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-02-deepseek-v4-flash-0731.json",
+      "url": "https://thetechdocket.com/articles/deepseek-v4-flash-0731/"
+    },
+    {
+      "date": "2026-08-03",
+      "slug": "eu-ai-act-august-2026-what-changed",
+      "title": "EU AI Act: What Actually Changed on August 2, 2026",
+      "keyword": "eu ai act august 2026",
+      "hub": "policy",
+      "published_at": "2026-08-03T08:04:56.869150+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-03T08:04:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-03-eu-ai-act-august-2026-what-changed.json",
+      "url": "https://thetechdocket.com/articles/eu-ai-act-august-2026-what-changed/"
+    },
+    {
+      "date": "2026-08-04",
+      "slug": "qwen3-8-max-what-alibaba-launched",
+      "title": "Qwen3.8-Max: What Alibaba Launched and What It Didn't",
+      "keyword": "qwen3.8-max",
+      "hub": "ai-models",
+      "published_at": "2026-08-04T07:23:09.524500+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-04T08:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-04-qwen3-8-max-what-alibaba-launched.json",
+      "url": "https://thetechdocket.com/articles/qwen3-8-max-what-alibaba-launched/"
+    },
+    {
+      "date": "2026-08-05",
+      "slug": "amazon-vs-perplexity-ruling",
+      "title": "Amazon vs Perplexity Ruling: AI Agents Can Shop, for Now",
+      "keyword": "amazon vs perplexity ruling",
+      "hub": "big-tech",
+      "published_at": "2026-08-10T15:07:09.890916+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-05T11:35:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-10-amazon-vs-perplexity-ruling.json",
+      "url": "https://thetechdocket.com/articles/amazon-vs-perplexity-ruling/"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "google-deepmind-shake-up",
+      "title": "Google DeepMind Shake-Up: Hassabis to Chair, Jeff Dean Exits",
+      "keyword": "google deepmind shake-up",
+      "hub": "big-tech",
+      "published_at": "2026-08-10T15:07:13.778934+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-06T08:55:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-10-google-deepmind-shake-up.json",
+      "url": "https://thetechdocket.com/articles/google-deepmind-shake-up/"
+    },
+    {
+      "date": "2026-08-07",
+      "slug": "ai-data-center-backlash-nashville-vizag",
+      "title": "AI Data Center Backlash: Nashville to Vizag, Cities Push Back",
+      "keyword": "ai data center backlash",
+      "hub": "policy",
+      "published_at": "2026-08-10T15:07:16.553895+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-07T07:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-10-ai-data-center-backlash-nashville-vizag.json",
+      "url": "https://thetechdocket.com/articles/ai-data-center-backlash-nashville-vizag/"
+    },
+    {
+      "date": "2026-08-08",
+      "slug": "openai-jony-ive-device",
+      "title": "OpenAI Jony Ive Device: $300-400 Speaker Reported for 2027",
+      "keyword": "openai jony ive device",
+      "hub": "hardware",
+      "published_at": "2026-08-10T15:07:19.243111+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-08T07:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-10-openai-jony-ive-device.json",
+      "url": "https://thetechdocket.com/articles/openai-jony-ive-device/"
+    },
+    {
+      "date": "2026-08-09",
+      "slug": "weathernext-cyclones-extra-day",
+      "title": "WeatherNext: Google's Cyclone AI Adds a Day of Lead Time",
+      "keyword": "weathernext",
+      "hub": "ai-models",
+      "published_at": "2026-08-09T17:08:25.452212+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-09T08:20:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-09-weathernext-cyclones-extra-day.json",
+      "url": "https://thetechdocket.com/articles/weathernext-cyclones-extra-day/"
+    },
+    {
+      "date": "2026-08-10",
+      "slug": "ai-models-hacking-companies-safety-tests",
+      "title": "AI Models Hacked Real Companies in Safety Tests",
+      "keyword": "ai models hacking companies",
+      "hub": "policy",
+      "published_at": "2026-08-10T07:10:08.587913+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-10T07:25:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-10-ai-models-hacking-companies-safety-tests.json",
+      "url": "https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/"
+    },
+    {
+      "date": "2026-08-11",
+      "slug": "muse-glimmer-meta-open-model",
+      "title": "Muse Glimmer: Meta's Open 30B Model, and the U-Turn Behind It",
+      "keyword": "muse glimmer",
+      "hub": "ai-models",
+      "published_at": "2026-08-11T07:01:18.654985+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-11T08:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-11-muse-glimmer-meta-open-model.json",
+      "url": "https://thetechdocket.com/articles/muse-glimmer-meta-open-model/"
+    },
+    {
+      "date": "2026-08-12",
+      "slug": "gpt-5-6-cyber",
+      "title": "GPT-5.6-Cyber: OpenAI's Gated Hacking Model",
+      "keyword": "gpt-5.6-cyber",
+      "hub": "policy",
+      "published_at": "2026-08-12T07:01:29.450241+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-12T07:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-12-gpt-5-6-cyber.json",
+      "url": "https://thetechdocket.com/articles/gpt-5-6-cyber/"
+    },
+    {
+      "date": "2026-08-13",
+      "slug": "pixel-11-india-price",
+      "title": "Pixel 11 India Prices: Full List, Hikes and the AI Catch",
+      "keyword": "pixel 11 price in india",
+      "hub": "hardware",
+      "published_at": "2026-08-13T07:01:06.688162+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-13T07:10:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-13-pixel-11-india-price.json",
+      "url": "https://thetechdocket.com/articles/pixel-11-india-price/"
+    },
+    {
+      "date": "2026-08-14",
+      "slug": "gpt-5-6-sol-ultrafast",
+      "title": "GPT-5.6 Sol Ultrafast: OpenAI's 14x Speed Mode on Cerebras",
+      "keyword": "gpt-5.6 sol ultrafast",
+      "hub": "ai-models",
+      "published_at": "2026-08-14T07:06:02.912949+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-14T07:05:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-14-gpt-5-6-sol-ultrafast.json",
+      "url": "https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/"
+    },
+    {
+      "date": "2026-08-15",
+      "slug": "fuse-energy-neutron-record",
+      "title": "Fuse Energy's Neutron Record: A Fusion First, Not Net Power",
+      "keyword": "fuse energy neutron record",
+      "hub": "hardware",
+      "published_at": "2026-08-15T07:06:42.988682+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-15T07:06:10+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-15-fuse-energy-neutron-record.json",
+      "url": "https://thetechdocket.com/articles/fuse-energy-neutron-record/"
+    },
+    {
+      "date": "2026-08-16",
+      "slug": "deepseek-api-price-hike",
+      "title": "DeepSeek API Price Hike: New Rates, Peak Hours, Real Math",
+      "keyword": "deepseek api price increase",
+      "hub": "ai-models",
+      "published_at": "2026-08-16T07:00:54.658842+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-16T07:00:26+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-16-deepseek-api-price-hike.json",
+      "url": "https://thetechdocket.com/articles/deepseek-api-price-hike/"
+    },
+    {
+      "date": "2026-08-17",
+      "slug": "anthropic-q2-revenue-report",
+      "title": "Anthropic Revenue: $11.5B Q2 Report, 14x Growth, IPO Stakes",
+      "keyword": "anthropic revenue",
+      "hub": "big-tech",
+      "published_at": "2026-08-17T07:14:20.909781+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-17T07:13:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-17-anthropic-q2-revenue-report.json",
+      "url": "https://thetechdocket.com/articles/anthropic-q2-revenue-report/"
+    },
+    {
+      "date": "2026-08-18",
+      "slug": "nvidia-openai-105b-ohio-deal",
+      "title": "Nvidia's $105B OpenAI Deal: The Ohio Guarantee, Explained",
+      "keyword": "nvidia openai deal",
+      "hub": "big-tech",
+      "published_at": "2026-08-18T07:01:54.265058+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-18T07:01:04+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-18-nvidia-openai-105b-ohio-deal.json",
+      "url": "https://thetechdocket.com/articles/nvidia-openai-105b-ohio-deal/"
+    },
+    {
+      "date": "2026-08-19",
+      "slug": "chatgpt-for-teens",
+      "title": "ChatGPT for Teens: What It Blocks, and How It Knows Your Age",
+      "keyword": "chatgpt for teens",
+      "hub": "ai-tools",
+      "published_at": "2026-08-19T06:58:01.066293+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-19T06:53:47+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-19-chatgpt-for-teens.json",
+      "url": "https://thetechdocket.com/articles/chatgpt-for-teens/"
+    },
+    {
+      "date": "2026-08-20",
+      "slug": "openai-slows-ai-training",
+      "title": "OpenAI Slows Down AI Training: What's Actually Paused, and Why",
+      "keyword": "openai slowing down ai training",
+      "hub": "ai-models",
+      "published_at": "2026-08-20T07:08:48.244198+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-08-20T07:03:55+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-08-20-openai-slows-ai-training.json",
+      "url": "https://thetechdocket.com/articles/openai-slows-ai-training/"
+    },
+    {
+      "date": "2026-11-08",
+      "slug": "discord-kills-electron-rust-windows-11",
+      "title": "Discord Kills Electron: Inside the 70% Leaner Rust Rebuild",
+      "keyword": "discord rust client windows 11",
+      "hub": "ai-tools",
+      "published_at": "2026-11-08T12:16:19.059649+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-08T12:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-08-discord-kills-electron-rust-windows-11.json",
+      "url": "https://thetechdocket.com/articles/discord-kills-electron-rust-windows-11/"
+    },
+    {
+      "date": "2026-11-09",
+      "slug": "claude-code-pi-developers-swapping-terminal-agents",
+      "title": "Claude Code vs Pi: Why Developers Are Swapping Terminal Agents",
+      "keyword": "Claude Code vs Pi",
+      "hub": "ai-tools",
+      "published_at": "2026-11-12T11:23:00.017120+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-09T18:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-12-claude-code-pi-developers-swapping-terminal-agents.json",
+      "url": "https://thetechdocket.com/articles/claude-code-pi-developers-swapping-terminal-agents/"
+    },
+    {
+      "date": "2026-11-10",
+      "slug": "google-gemini-routes-private-drive-files-human-annotators",
+      "title": "Google Gemini Routes Private Drive Files to Human Annotators",
+      "keyword": "Google Gemini",
+      "hub": "policy",
+      "published_at": "2026-11-12T13:30:14.563031+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-10T00:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-10-google-gemini-routes-private-drive-files-human-annotators.json",
+      "url": "https://thetechdocket.com/articles/google-gemini-routes-private-drive-files-human-annotators/"
+    },
+    {
+      "date": "2026-11-11",
+      "slug": "smart-home-local-control-your-devices-must-work",
+      "title": "Smart Home Local Control: Why Your Devices Must Work Offline",
+      "keyword": "smart home local control",
+      "hub": "hardware",
+      "published_at": "2026-11-12T14:16:14.086377+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-11T14:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-11-smart-home-local-control-your-devices-must-work.json",
+      "url": "https://thetechdocket.com/articles/smart-home-local-control-your-devices-must-work/"
+    },
+    {
+      "date": "2026-11-12",
+      "slug": "term-sheet-please-inside-yc-startup-funding-game",
+      "title": "Term Sheet, Please: Inside the YC Startup Funding Game",
+      "keyword": "Term Sheet, Please",
+      "hub": "ai-tools",
+      "published_at": "2026-11-12T14:09:40.111527+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-12T14:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-12-term-sheet-please-inside-yc-startup-funding-game.json",
+      "url": "https://thetechdocket.com/articles/term-sheet-please-inside-yc-startup-funding-game/"
+    },
+    {
+      "date": "2026-11-13",
+      "slug": "dwarf-planet-candidate-2026-ed138-found-orbiting-beyond",
+      "title": "Dwarf Planet Candidate 2026 ED138 Found Orbiting Beyond Pluto",
+      "keyword": "dwarf planet candidate",
+      "hub": "hardware",
+      "published_at": "2026-11-14T02:34:40.690409+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-13T10:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-13-dwarf-planet-candidate-2026-ed138-found-orbiting-beyond.json",
+      "url": "https://thetechdocket.com/articles/dwarf-planet-candidate-2026-ed138-found-orbiting-beyond/"
+    },
+    {
+      "date": "2026-11-14",
+      "slug": "nvidia-scarcity-allegations-did-chipmaker-fund-own-sales",
+      "title": "Nvidia Scarcity Allegations: Did It Fund Its Own GPU Sales?",
+      "keyword": "Nvidia Scarcity Allegations",
+      "hub": "hardware",
+      "published_at": "2026-11-14T13:02:04.519861+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-14T14:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-14-nvidia-scarcity-allegations-did-chipmaker-fund-own-sales.json",
+      "url": "https://thetechdocket.com/articles/nvidia-scarcity-allegations-did-chipmaker-fund-own-sales/"
+    },
+    {
+      "date": "2026-11-15",
+      "slug": "nvidia-circular-financing-inside-530b-demand-engine",
+      "title": "Nvidia Circular Financing: Inside the $530B Demand Engine",
+      "keyword": "NVIDIA Circular Financing",
+      "hub": "hardware",
+      "published_at": "2026-11-15T10:39:22.084589+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-15T12:00:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-15-nvidia-circular-financing-inside-530b-demand-engine.json",
+      "url": "https://thetechdocket.com/articles/nvidia-circular-financing-inside-530b-demand-engine/"
+    },
+    {
+      "date": "2026-11-16",
+      "slug": "ai-generated-code-critics-say-must-be-open",
+      "title": "AI-Generated Code: Why Critics Say It Must Be Open Source",
+      "keyword": "AI-generated code",
+      "hub": "policy",
+      "published_at": "2026-11-16T10:17:35.727561+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-16T10:30:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-16-ai-generated-code-critics-say-must-be-open.json",
+      "url": "https://thetechdocket.com/articles/ai-generated-code-critics-say-must-be-open/"
+    },
+    {
+      "date": "2026-11-21",
+      "slug": "inkling-2-mini-looped-transformer-laptops",
+      "title": "Inkling 2 Mini: 26B Looped AI Model Built for Laptops",
+      "keyword": "Inkling 2 Mini",
+      "hub": "ai-models",
+      "published_at": "2026-11-21T22:55:31.787972+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-21T22:52:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-21-inkling-2-mini-looped-transformer-laptops.json",
+      "url": "https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "java4shell-cve-2026-114938-openjdk-patch-guide",
+      "title": "Java4Shell (CVE-2026-114938): Affected Java Builds & Fix",
+      "keyword": "Java4Shell CVE-2026-114938",
+      "hub": "cybersecurity",
+      "published_at": "2026-11-22T11:12:23.108744+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T10:45:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-java4shell-cve-2026-114938-openjdk-patch-guide.json",
+      "url": "https://thetechdocket.com/articles/java4shell-cve-2026-114938-openjdk-patch-guide/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents",
+      "title": "CERT-In CIAD-2026-0062: AI Agents & Payment Workflow Fraud",
+      "keyword": "CERT-In CIAD-2026-0062",
+      "hub": "cybersecurity",
+      "published_at": "2026-11-22T11:12:35.071776+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T10:48:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents.json",
+      "url": "https://thetechdocket.com/articles/cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "india-it-headcount-gcc-hiring-2026-divergence",
+      "title": "India IT Headcount vs. GCC Hiring in 2026: The Real Split",
+      "keyword": "india it hiring gcc 2026",
+      "hub": "jobs",
+      "published_at": "2026-11-22T19:17:16.054735+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T19:18:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-india-it-headcount-gcc-hiring-2026-divergence.json",
+      "url": "https://thetechdocket.com/articles/india-it-headcount-gcc-hiring-2026-divergence/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "global-tech-layoffs-2026-filings-vs-headlines",
+      "title": "Global Tech Layoffs 2026: Statutory Filings vs. Headlines",
+      "keyword": "global tech layoffs 2026",
+      "hub": "jobs",
+      "published_at": "2026-11-22T19:19:14.132211+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T19:15:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-global-tech-layoffs-2026-filings-vs-headlines.json",
+      "url": "https://thetechdocket.com/articles/global-tech-layoffs-2026-filings-vs-headlines/"
+    }
+  ]
+}

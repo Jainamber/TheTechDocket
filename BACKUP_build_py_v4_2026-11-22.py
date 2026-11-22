@@ -1,0 +1,1185 @@
+"""Static site builder — renders content/ into docs/ (GitHub Pages root).
+
+Implements the July-2026 SEO checklist: full meta/OG/Twitter sets,
+BlogPosting + BreadcrumbList + Organization + ProfilePage JSON-LD,
+max-image-preview:large, 3-crop hero images, sitemap.xml (lastmod only),
+RSS feed with WebSub hub, robots.txt with explicit AI-crawler policy,
+inline critical CSS, system fonts, zero JavaScript.
+"""
+from __future__ import annotations
+
+import html
+import json
+import re
+import shutil
+from datetime import datetime
+from email.utils import format_datetime
+from pathlib import Path
+from urllib.parse import quote, urlparse
+
+import markdown as md
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
+
+from . import icons, images
+from .docket import all_dockets
+from .util import IST, ROOT, all_articles, load_config, now_ist
+
+MD = md.Markdown(extensions=["tables", "fenced_code", "sane_lists", "smarty", "toc"])
+
+
+def _env() -> Environment:
+    env = Environment(
+        loader=FileSystemLoader(ROOT / "engine" / "templates"),
+        autoescape=select_autoescape(["html"]))
+    return env
+
+
+def base_path(cfg) -> str:
+    p = urlparse(cfg["site"]["base_url"]).path or "/"
+    return p if p.endswith("/") else p + "/"
+
+
+def abs_url(cfg, path: str) -> str:
+    return cfg["site"]["base_url"].rstrip("/") + "/" + path.lstrip("/")
+
+
+def _publish_dt(cfg, a: dict, key: str = "date") -> datetime:
+    d = a[key] if key in a and a[key] else a["date"]
+    if isinstance(d, str):
+        d = datetime.strptime(d, "%Y-%m-%d").date()
+    return datetime(d.year, d.month, d.day,
+                    cfg["publishing"]["publish_hour_ist"], 0, 0, tzinfo=IST)
+
+
+def _human(dt: datetime) -> str:
+    # NB: no %-d — that strftime flag is glibc-only and raises ValueError on
+    # Windows (review finding F2a, 2026-07-16). Compose portably instead.
+    return f"{dt.strftime('%B')} {dt.day}, {dt.year}"
+
+
+def _meta_desc(text: str, lo: int = 110, hi: int = 165) -> str:
+    """Sentence-aware meta description within [lo, hi] chars.
+
+    Replaces blind [:160] slices that produced mid-sentence truncation and
+    sub-minimum descriptions on static pages (review finding F3d, 2026-07-16).
+    Strips markdown markers, joins whole text, cuts at the last sentence end
+    past `lo` when possible, else at a word boundary with an ellipsis.
+    """
+    plain = re.sub(r"[*_`#>\[\]]+", " ", text or "")
+    plain = re.sub(r"\s+", " ", plain).strip()
+    if len(plain) <= hi:
+        return plain
+    cut = plain[: hi]
+    sentence_end = max((m.end() for m in re.finditer(r"[.!?](?=\s|$)", cut)),
+                       default=0)
+    if sentence_end >= lo:
+        return cut[:sentence_end].strip()
+    space = cut[: hi - 1].rfind(" ")
+    return (cut[: space] if space >= lo else cut[: hi - 1]).rstrip(" ,;:") + "…"
+
+
+def render_markdown(cfg, text: str) -> str:
+    MD.reset()
+    out = MD.convert(text)
+    bp = base_path(cfg)
+    # root-relative internal links -> project base path
+    out = re.sub(r'(href|src)="/(?!/)', rf'\1="{bp}', out)
+    # external links: open safely
+    out = re.sub(r'<a href="(https?://[^"]+)"',
+                 r'<a href="\1" rel="noopener" target="_blank"', out)
+    return out
+
+
+def article_context(cfg, a: dict, arts: list[dict]) -> dict:
+    hubs = cfg["content"]["hubs"]
+    slug = a["slug"]
+    hub = a.get("hub", "ai-models")
+    published = _publish_dt(cfg, a)
+    modified = _publish_dt(cfg, a, "updated") if a.get("updated") else published
+    canonical = abs_url(cfg, f"articles/{slug}/")
+    author = cfg["author"]
+    author_url = abs_url(cfg, f"authors/{author['slug']}/")
+    img_base = f"articles/{slug}/{slug}"
+    image_abs = [abs_url(cfg, f"{img_base}-16x9.jpg"),
+                 abs_url(cfg, f"{img_base}-4x3.jpg"),
+                 abs_url(cfg, f"{img_base}-1x1.jpg")]
+
+    blogposting = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
+        "headline": a["title"][:110],
+        "description": a["description"],
+        "image": image_abs,
+        "datePublished": published.isoformat(),
+        "dateModified": modified.isoformat(),
+        "author": {"@type": "Person", "name": author["name"],
+                   "url": author_url, "sameAs": author.get("sameAs", [])},
+        "publisher": {"@type": "Organization", "name": cfg["site"]["name"],
+                      "url": cfg["site"]["base_url"],
+                      "logo": {"@type": "ImageObject",
+                               "url": abs_url(cfg, "assets/logo-112x112.png"),
+                               "width": 112, "height": 112}},
+        "citation": [s["url"] for s in a.get("sources", []) if s.get("url")],
+        "keywords": ", ".join([k.strip() for k in ([a.get("keyword", "")] + a.get("tags", [])) if k.strip()]),
+    }
+    breadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home",
+             "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": hubs.get(hub, hub),
+             "item": abs_url(cfg, f"topics/{hub}/")},
+            {"@type": "ListItem", "position": 3, "name": a["title"]},
+        ],
+    }
+    faq_jsonld = None
+    if a.get("faq"):
+        faq_jsonld = {
+            "@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": f["q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
+                           for f in a["faq"]]}
+
+    _body_html = render_markdown(cfg, a["_body_md"])
+    _words = len(a["_body_md"].split())
+    _toc = None
+    if _words > 1200:
+        _toc = [{"id": m.group(1),
+                 "text": html.unescape(re.sub(r"<[^>]+>", "", m.group(2)))}
+                for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', _body_html)]
+        if len(_toc) < 3:
+            _toc = None
+
+    related = [r for r in arts
+               if r["slug"] != slug and r.get("hub") == hub][:3]
+    if len(related) < 3:
+        seen = {r["slug"] for r in related} | {slug}
+        related += [r for r in arts if r["slug"] not in seen][:3 - len(related)]
+
+    ymyl_map = {
+        "finance": ("This article covers financial technology for general "
+                    "information only — it is not investment, tax or financial "
+                    "advice. Consult a qualified adviser before financial decisions."),
+        "health": ("This article covers health technology for general information "
+                   "only — it is not medical advice. Consult a qualified medical "
+                   "professional for health decisions."),
+        "security": ("This article discusses security topics for awareness and "
+                     "defense only. Follow official vendor advisories for "
+                     "remediation steps."),
+    }
+
+    return {
+        "title": a["title"], "slug": slug, "hub": hub,
+        "hub_name": hubs.get(hub, hub),
+        "tags": a.get("tags", []),
+        "description": a["description"],
+        "page_title": f"{a['title']}",
+        "meta_description": a["description"],
+        "canonical": canonical, "og_type": "article",
+        "og_title": a["title"],
+        "og_image": image_abs[0], "og_image_alt": a.get("hero_alt", a["title"]),
+        "published_iso": published.isoformat(),
+        "modified_iso": modified.isoformat(),
+        "published_human": _human(published),
+        "updated_human": _human(modified) if a.get("updated") else None,
+        "date_human": _human(published),
+        "author_url": author_url,
+        "hero_jpg": abs_url(cfg, f"{img_base}-16x9.jpg"),
+        "hero_webp": abs_url(cfg, f"{img_base}-16x9.webp"),
+        "hero_alt": a.get("hero_alt", a["title"]),
+        "icon": _icon_name(a),
+        "icon_svg": icons.svg_icon(_icon_name(a)),
+        "sources": a.get("sources", []),
+        "faq": a.get("faq"),
+        "ymyl_disclaimer": ymyl_map.get(a.get("ymyl")) if a.get("ymyl") else None,
+        "blogposting_jsonld": Markup(json.dumps(blogposting, ensure_ascii=False)),
+        "breadcrumb_jsonld": Markup(json.dumps(breadcrumb, ensure_ascii=False)),
+        "faq_jsonld": Markup(json.dumps(faq_jsonld, ensure_ascii=False)) if faq_jsonld else None,
+        "body_html": Markup(_body_html),
+        "read_min": max(2, round(_words / 220)),
+        "toc": _toc,
+        "related": [article_summary(cfg, r) for r in related],
+    }
+
+
+def article_summary(cfg, a: dict) -> dict:
+    slug = a["slug"]
+    published = _publish_dt(cfg, a)
+    return {"slug": slug, "title": a["title"],
+            "description": a.get("description", ""),
+            "hub": a.get("hub"), "hub_name":
+                cfg["content"]["hubs"].get(a.get("hub"), a.get("hub")),
+            "date_human": _human(published),
+            "hero_jpg": abs_url(cfg, f"articles/{slug}/{slug}-16x9.jpg"),
+            "hero_webp": abs_url(cfg, f"articles/{slug}/{slug}-16x9.webp"),
+            "hero_alt": a.get("hero_alt", a["title"]),
+            "icon": _icon_name(a),
+            "icon_svg": icons.svg_icon(_icon_name(a))}
+
+
+def _icon_name(a: dict) -> str:
+    """Editorial `hero_icon` from front matter, else the v3 motif keyword
+    fallback (so older/unlabelled articles still get a meaningful icon)."""
+    motif = images.pick_motif(f"{a.get('title', '')} {a.get('slug', '').replace('-', ' ')}",
+                              a.get("hub", ""))
+    return icons.resolve_icon(a.get("hero_icon"), motif, a.get("hub"))
+
+
+def _date_dt(cfg, date_str: str) -> datetime:
+    d = datetime.strptime(date_str, "%Y-%m-%d").date()
+    return datetime(d.year, d.month, d.day,
+                    cfg["publishing"]["publish_hour_ist"], 0, 0, tzinfo=IST)
+
+
+def _dek_html(text: str) -> Markup:
+    """Escape a docket dek, then honour a single **bold** lead-in span.
+
+    The daily session marks the story-at-a-glance lead-in with **…** (Smart
+    Brevity style); nothing else is interpreted, so this stays injection-safe
+    and zero-markdown-surprise. Autoescape is preserved via html.escape().
+    """
+    esc = html.escape(text or "")
+    esc = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", esc)
+    return Markup(esc)
+
+
+def docket_context(cfg, d: dict) -> dict:
+    """Render-ready context for one docket day (Today's Docket)."""
+    hubs = cfg["content"]["hubs"]
+    dk_cfg = cfg.get("docket") or {}
+    watchlist = dk_cfg.get("watchlist") or {}
+    items = []
+    for idx, it in enumerate(d.get("items", []), start=1):
+        url = str(it.get("url") or "")
+        external = url.startswith("http")
+        href = url if external else base_path(cfg) + url.lstrip("/")
+        tag = str(it.get("tag") or "").strip()
+        headline = str(it.get("headline") or "")
+        # per-card share targets (proposal 2026-07-23): the anchor matches the
+        # template's stable id (d1..dN); pin/wa/mail links are plain URLs, so
+        # the whole share row stays zero-JS
+        share_url = abs_url(cfg, f"docket/{d['date']}/") + f"#d{idx}"
+        media = abs_url(cfg, f"docket/{d['date']}/docket-{d['date']}-16x9.jpg")
+        items.append({
+            "anchor": f"d{idx}",
+            "share_url": share_url,
+            "pin_url": ("https://www.pinterest.com/pin/create/button/"
+                        "?url=" + quote(share_url, safe="")
+                        + "&media=" + quote(media, safe="")
+                        + "&description=" + quote(headline[:200], safe="")),
+            "wa_url": "https://wa.me/?text="
+                      + quote(f"{headline} — {share_url}", safe=""),
+            "mail_url": ("mailto:?subject=" + quote(headline, safe="")
+                         + "&body=" + quote(share_url, safe="")),
+            "stat_line": str(it.get("stat_line") or "").strip(),
+            "community_read": str(it.get("community_read") or "").strip(),
+            "community_attr": str(it.get("community_attr") or "").strip(),
+            "save_worthy": bool(it.get("save_worthy")),
+            "hub": it.get("hub", "explainers"),
+            "hub_name": hubs.get(it.get("hub"), it.get("hub", "")),
+            "headline": str(it.get("headline") or ""),
+            "dek": str(it.get("dek") or ""),
+            "dek_html": _dek_html(str(it.get("dek") or "")),
+            "why": str(it.get("why") or "").strip(),
+            "why_html": _dek_html(str(it.get("why") or "").strip()),
+            "counterpoint": str(it.get("counterpoint") or "").strip(),
+            "counterpoint_html": _dek_html(str(it.get("counterpoint") or "").strip()),
+            "source": str(it.get("source") or ""),
+            "lead": bool(it.get("lead")),
+            "pick": bool(it.get("pick")),
+            "tag": tag,
+            "tag_label": (watchlist.get(tag) or {}).get("label", "") if tag else "",
+            "rank": it.get("rank"),
+            "external": external,
+            "href": href,
+            "abs_url": url if external else abs_url(cfg, url),
+        })
+    date_human = _human(_date_dt(cfg, d["date"]))
+    itemlist = {
+        "@context": "https://schema.org", "@type": "ItemList",
+        "name": f"Today's Docket — {date_human}",
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "name": e["headline"], "url": e["abs_url"]}
+            for i, e in enumerate(items)],
+    }
+    # NB key is "entries", not "items" — dict.items collides with the method
+    # under Jinja attribute lookup
+    return {"date": d["date"], "date_human": date_human, "entries": items,
+            "pool": int(d.get("pool") or 12),
+            "show_chips": bool(dk_cfg.get("show_chips")),
+            "itemlist_jsonld": Markup(json.dumps(itemlist, ensure_ascii=False))}
+
+
+def _analytics_head(cfg) -> Markup:
+    """The two <head> measurement tags: the GA4 loader and our own
+    docs/assets/analytics.js (which configures GA4, boots PostHog and fires
+    scroll_75). Both external — the site permits exactly one inline script,
+    the pre-paint theme toggle, and this must not spend it."""
+    a = cfg.get("analytics") or {}
+    gid = (a.get("head_ga4_id") or "").strip()
+    src = (a.get("head_script") or "").strip()
+    if not gid or not src:
+        return Markup("")
+    return Markup(
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}">'
+        f'</script>\n'
+        f'<script src="{base_path(cfg)}{src}" defer></script>')
+
+
+def _analytics_snippet(cfg) -> Markup:
+    a = cfg.get("analytics") or {}
+    if a.get("provider") == "goatcounter" and a.get("goatcounter_code"):
+        return Markup(
+            f'<script data-goatcounter="https://{a["goatcounter_code"]}'
+            f'.goatcounter.com/count" async src="https://gc.zgo.at/count.js">'
+            f'</script>')
+    if a.get("provider") == "ga4" and a.get("ga4_id"):
+        gid = a["ga4_id"]
+        return Markup(
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}"></script>'
+            f'<script>window.dataLayer=window.dataLayer||[];function gtag()'
+            f'{{dataLayer.push(arguments);}}gtag("js",new Date());'
+            f'gtag("config","{gid}");</script>')
+    return Markup("")
+
+
+def _common(cfg, nav_hubs=None, **kw) -> dict:
+    org = {"@context": "https://schema.org", "@type": "Organization",
+           "name": cfg["site"]["name"], "url": cfg["site"]["base_url"],
+           "logo": abs_url(cfg, "assets/logo-112x112.png"),
+           "email": cfg["site"]["contact_email"],
+           "sameAs": cfg["site"].get("social_profiles", [])}
+    if nav_hubs is None:  # nav shows only hubs that actually have articles
+        active = {a.get("hub") for a in all_articles()}
+        has_jobs_map = (ROOT / "data" / "jobs-map.json").exists()
+        nav_hubs = {h: n for h, n in cfg["content"]["hubs"].items()
+                    if h in active or (h == "jobs" and has_jobs_map)}
+    # brand wordmark: split CamelCase site name for the two-tone logo text
+    _name = cfg["site"]["name"]
+    if " " in _name:
+        _head, _, _tail = _name.rpartition(" ")
+        brand_a, brand_b = _head + " ", _tail
+    else:
+        m = re.match(r"^([A-Z][a-z0-9]+)([A-Z].*)$", _name)
+        brand_a, brand_b = (m.group(1), m.group(2)) if m else (_name, "")
+    dk_dir = ROOT / "data" / "docket"
+    has_docket = (bool((cfg.get("docket") or {}).get("enabled", True))
+                  and dk_dir.exists()
+                  and any(re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)
+                          for p in dk_dir.glob("*.md")))
+    has_deck = has_docket and bool((cfg.get("deck") or {}).get("enabled"))
+    d = {"site": cfg["site"], "author": cfg["author"],
+         "hubs": cfg["content"]["hubs"],
+         "hubs_short": cfg["content"].get("hubs_short") or {},
+         "nav_hubs": nav_hubs,
+         "has_docket": has_docket,
+         "has_deck": has_deck,
+         "brand_a": brand_a, "brand_b": brand_b,
+         "base_path": base_path(cfg), "year": now_ist().year,
+         "analytics_snippet": _analytics_snippet(cfg),
+         "analytics_head": _analytics_head(cfg),
+         "newsletter": _newsletter_ctx(cfg),
+         "org_jsonld": Markup(json.dumps(org, ensure_ascii=False))}
+    d.update(kw)
+    return d
+
+
+def _newsletter_ctx(cfg):
+    """None unless a provider AND a username are both configured, so the
+    subscribe form can never render pointing at nothing."""
+    n = cfg.get("newsletter") or {}
+    user = (n.get("username") or "").strip()
+    if n.get("provider") != "buttondown" or not user:
+        return None
+    return {
+        "action": f"https://buttondown.com/api/emails/embed-subscribe/{user}",
+        "heading": n.get("heading") or "Get the Docket by email",
+        "blurb": (n.get("blurb") or "").strip(),
+        "button": n.get("button") or "Subscribe",
+    }
+
+
+def _write(out: Path, content: str) -> None:
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(content, encoding="utf-8")
+
+
+# ---------------- static page bodies ----------------
+
+def _about_md(cfg) -> str:
+    return f"""
+**{cfg['site']['name']}** is an independent publication covering
+**{cfg['topic']['name']}** for readers in India and worldwide:
+{cfg['topic']['description']}
+
+We publish a new Docket most days — one carefully researched article at a\ntime. What we cover is chosen
+from real, same-day search-demand and community-interest data — so we write
+about what people are actually trying to understand right now, and we add the
+context, comparisons and India-vs-global perspective that a search results
+page can't.
+
+## Who is behind this site
+
+{cfg['site']['name']} is written and edited by **[{cfg['author']['name']}](/authors/{cfg['author']['slug']}/)**.
+{cfg['author']['bio']}
+
+## Contact
+
+- Email: [{cfg['site']['contact_email']}](mailto:{cfg['site']['contact_email']})
+- Corrections: email with subject "Correction" — see our [editorial policy](/editorial-policy/).
+
+*Publisher information: {cfg['site']['name']} is a first-party publication;
+all articles are produced under our own editorial process. We currently run
+no advertising, sponsored content, or affiliate links.*
+"""
+
+
+def _policy_md(cfg) -> str:
+    return f"""
+This page explains **who** produces {cfg['site']['name']}, **how** every
+article is made, and **why** — following Google's people-first
+"Who, How, Why" disclosure framework.
+
+## Who
+
+Every article is published under the byline of
+[{cfg['author']['name']}](/authors/{cfg['author']['slug']}/), who sets the
+editorial standards, owns the site, and is accountable for its accuracy.
+
+## How our articles are made (AI disclosure)
+
+We are transparent about our process, which combines data, AI assistance and
+defined quality gates:
+
+1. **Topic selection is data-driven.** Each morning the engine collects
+   same-day search-trend data (Google Trends for India and the US), news
+   headlines, and tech-community momentum signals (e.g. Hacker News). Topics
+   are scored for relevance, corroboration across independent sources, and
+   India + global interest. We cover the strongest genuine trend — we do not
+   manufacture urgency.
+2. **Research and drafting use AI assistance.** Articles are researched and
+   drafted with AI tools working from the day's verified sources. Every
+   statistic must carry an inline citation to its source; fabricating numbers,
+   quotes or "audience data" is prohibited by our gates.
+3. **Automated editorial gates run before publish.** Each draft must pass
+   checks for: source citations (minimum two primary/authoritative sources),
+   originality against our own archive, headline-to-body accuracy (no
+   clickbait), disclosure requirements, and sensitive-topic (finance/health/
+   security) handling with disclaimers. Failing drafts are not published.
+4. **Corrections.** If we get something wrong, email
+   [{cfg['site']['contact_email']}](mailto:{cfg['site']['contact_email']})
+   with subject "Correction". Substantive fixes are made in the article with a
+   visible "Updated" date; we never bump dates without a real change.
+
+## Why
+
+We publish to help readers quickly understand what's moving in tech and AI and
+what it means for them — not to game search rankings. A new Docket most days,
+each with original analysis, is a deliberate quality choice.
+
+## What we don't do
+
+- No sponsored posts, affiliate links or third-party contributed content.
+- No health, financial or legal advice — sensitive topics carry disclaimers
+  and rely on primary sources.
+- No recycled or scraped content; no date-bumping without substantive updates.
+"""
+
+
+def _author_md(cfg, arts: list[dict] | None = None) -> str:
+    a = cfg["author"]
+    links = "\n".join(f"- <{u}>" for u in a.get("sameAs", []))
+    photo = (a.get("photo") or "").strip()
+    img = (f'![{a.get("photo_alt") or a["name"]}]({photo})\n\n'
+           if photo else "")
+    art_list = ""
+    if arts:
+        art_items = "\n".join(f"- [{art['title']}](/articles/{art['slug']}/) ({art.get('date', '')})"
+                              for art in arts)
+        art_list = f"\n\n## All Published Articles ({len(arts)})\n\n{art_items}"
+    return f"""
+{img}{a['bio']}
+
+All articles on {cfg['site']['name']} are published under
+{a['name']}'s editorial standards — see the
+[editorial policy](/editorial-policy/) for exactly how each piece is produced.
+
+{('## Elsewhere' + chr(10) + links) if links else ''}
+{art_list}
+"""
+
+
+# ---------------- feeds / sitemap / robots ----------------
+
+
+def _jobs_is_macro(ev: dict) -> bool:
+    if ev.get("id") == "EVT-2025-001":
+        return True
+    return ev.get("confidence_tier") == "Tier 1" and bool(
+        re.search(r"nonfarm|payroll", ev.get("company") or "", re.I)
+    )
+
+
+def _jobs_fmt_headcount(ev: dict) -> str:
+    exact = ev.get("headcount_exact")
+    if exact is not None:
+        n = int(exact)
+        if _jobs_is_macro(ev):
+            return f"{'+' if n >= 0 else ''}{n:,} (Macro)"
+        if ev.get("event_type") == "net_headcount_change":
+            return f"{'-' if n < 0 else '+'}{abs(n):,} (Net)"
+        return f"{n:,}"
+    lo, hi = ev.get("headcount_min"), ev.get("headcount_max")
+    if lo is not None and hi is not None:
+        return f"{int(lo):,}–{int(hi):,}"
+    if hi is not None:
+        return f"Up to {int(hi):,}"
+    if lo is not None:
+        return f"{int(lo):,}+"
+    if ev.get("headcount") is not None:
+        return f"{int(ev['headcount']):,}"
+    return "Undisclosed"
+
+
+def _jobs_map_seo(cfg: dict, jobs_map: dict) -> dict:
+    """Compute SSR stats, pre-rendered Tier 1-2 rows, and Schema.org JSON-LD for /topics/jobs/."""
+    events = jobs_map.get("events") or []
+    countries = jobs_map.get("countries") or []
+    confirmed = [e for e in events if not e.get("quarantined")]
+    confirmed.sort(key=lambda e: str(e.get("date") or ""), reverse=True)
+    quar_count = len(events) - len(confirmed)
+
+    sum_f = cnt_f = sum_h = cnt_h = 0
+    macro_h = None
+    for ev in confirmed:
+        if _jobs_is_macro(ev):
+            macro_h = ev.get("headcount_exact")
+            continue
+        exact = ev.get("headcount_exact")
+        if ev.get("type") == "hiring" and exact is not None:
+            sum_h += int(exact)
+            cnt_h += 1
+        elif ev.get("type") == "firing" and ev.get("event_type") == "involuntary_layoff" and exact is not None:
+            sum_f += int(exact)
+            cnt_f += 1
+
+    ssr_rows = []
+    for ev in confirmed:
+        a_date = ev.get("announcement_date") or ev.get("date") or "—"
+        d_parts = [a_date]
+        if ev.get("effective_date") and ev["effective_date"] != a_date:
+            d_parts.append(f"Eff: {ev['effective_date']}")
+        if ev.get("filing_date") and ev["filing_date"] != a_date:
+            d_parts.append(f"Filed: {ev['filing_date']}")
+        tier = ev.get("confidence_tier") or "Tier 2"
+        ssr_rows.append({
+            "company": ev.get("company") or "",
+            "type": ev.get("type") or "firing",
+            "tier": tier,
+            "tier_cls": "tier1" if tier == "Tier 1" else "tier2",
+            "stage": str(ev.get("execution_stage") or "").replace("_", " "),
+            "event_type": str(ev.get("event_type") or "").replace("_", " "),
+            "headcount_display": _jobs_fmt_headcount(ev),
+            "location": f"{ev.get('city', '')}, {ev.get('country', '')}".strip(", "),
+            "dates_html": "<br>".join(d_parts),
+            "reason": ev.get("reason") or "",
+            "source_name": ev.get("source_name") or "Source",
+            "source_url": ev.get("source_url") or "",
+        })
+
+    updated = str(jobs_map.get("updated_at") or now_ist().date().isoformat())
+    canonical = abs_url(cfg, "topics/jobs/")
+    json_url = abs_url(cfg, "data/jobs-map.json")
+    stats = {
+        "confirmed_layoffs": sum_f,
+        "confirmed_layoffs_fmt": f"{sum_f:,}",
+        "confirmed_layoff_count": cnt_f,
+        "confirmed_hiring": sum_h,
+        "confirmed_hiring_fmt": f"{sum_h:,}",
+        "confirmed_hiring_count": cnt_h,
+        "macro_h": macro_h,
+        "macro_h_fmt": f"{int(macro_h):,}" if macro_h is not None else "",
+        "confirmed_events": len(confirmed),
+        "quarantined_events": quar_count,
+        "total_events": len(events),
+        "country_count": len(countries),
+    }
+
+    dataset_ld = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Global Tech Layoffs & Hiring Intelligence Dataset (2024–2026)",
+        "description": (
+            f"Audited 2024–2026 tracker of {len(events)} global tech layoff and hiring events "
+            f"({sum_f:,} confirmed involuntary cuts and {sum_h:,} confirmed company hires across Tier 1–2 sources) "
+            f"plus a {len(countries)}-economy statutory observability and news distortion audit."
+        ),
+        "url": canonical,
+        "identifier": canonical,
+        "dateModified": updated,
+        "temporalCoverage": f"2024-01-01/{updated}",
+        "spatialCoverage": "Global (United States, India, Europe, Asia-Pacific, Latin America)",
+        "isAccessibleForFree": True,
+        "creator": {
+            "@type": "Organization",
+            "name": cfg["site"]["name"],
+            "url": cfg["site"]["base_url"],
+        },
+        "variableMeasured": [
+            "Confirmed Involuntary Tech Layoffs (Tier 1-2)",
+            "Confirmed Tech Hiring Expansions (Tier 1-2)",
+            "Country Workforce Observability Score (0-100)",
+            "News Distortion Index (0-100)",
+        ],
+        "distribution": [{
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": json_url,
+        }],
+    }
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": "Tech Jobs & Layoffs", "item": canonical},
+        ],
+    }
+    faqs = [
+        {
+            "q": "How are confirmed tech layoffs and hiring numbers verified on this map?",
+            "a": "Confirmed headline totals include only non-quarantined Tier 1 statutory filings (such as US BLS, State WARN notices, SEC Form 8-K, and SEBI disclosures) and Tier 2 audited corporate announcements. Single-source media estimates, voluntary buyout eligibility pools, and national macro payroll series are separated so they never distort company-level totals.",
+        },
+        {
+            "q": "Why do public layoff trackers disagree with US BLS and India EPFO payroll data?",
+            "a": "Media layoff trackers aggregate multi-quarter restructuring plans and global announcements, whereas statutory payroll surveys measure completed domestic separations after notice periods close. In India, raising the mandatory EPFO wage ceiling from Rs. 15,000 to Rs. 25,000 on September 17, 2026 also introduced a structural break that inflates raw gross additions unless newly mandated existing staff are separated from fresh hires.",
+        },
+        {
+            "q": "How should I interpret Country Observability Grades (A–D) and Practicality Scores (0–100)?",
+            "a": "Practicality Scores estimate how much real hiring and firing is verifiable through public statutory filings. Grade A (80–100, e.g. US at 84/100) indicates strong advance layoff and payroll visibility; Grade B (65–79, e.g. Canada at 74/100) reflects solid macro coverage with moderate blind spots; Grade C (45–64, e.g. India at 52/100) means formal macro payrolls exist but private white-collar exits largely stay internal; Grade D (0–44) indicates severe opacity.",
+        },
+    ]
+    faq_ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": item["q"],
+                "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+            }
+            for item in faqs
+        ],
+    }
+    return {
+        "jobs_stats": stats,
+        "jobs_ssr_events": ssr_rows,
+        "jobs_faqs": faqs,
+        "jobs_dataset_jsonld": Markup(json.dumps(dataset_ld, ensure_ascii=False)),
+        "jobs_breadcrumb_jsonld": Markup(json.dumps(breadcrumb_ld, ensure_ascii=False)),
+        "jobs_faq_jsonld": Markup(json.dumps(faq_ld, ensure_ascii=False)),
+        "page_title": f"Global Tech Layoffs & Hiring Tracker (2024–2026) — {cfg['site']['name']}",
+        "meta_description": (
+            f"Live 2024–2026 global tech layoffs ({sum_f:,} confirmed cuts) and hiring "
+            f"({sum_h:,} company additions) map, timeline, and {len(countries)}-country statutory audit."
+        ),
+    }
+
+
+def _sitemap_xml(cfg, arts: list[dict]) -> str:
+    urls = [(cfg["site"]["base_url"], now_ist().date().isoformat())]
+    for a in arts:
+        lastmod = str(a.get("updated") or a["date"])
+        urls.append((abs_url(cfg, f"articles/{a['slug']}/"), lastmod))
+    active = {a.get("hub") for a in arts}
+    # Topic hubs get lastmod of the newest article in that hub
+    jobs_map_updated = None
+    _jm_path = ROOT / "data" / "jobs-map.json"
+    if _jm_path.exists():
+        try:
+            jobs_map_updated = str(json.loads(_jm_path.read_text(encoding="utf-8")).get("updated_at") or "")
+        except Exception:
+            jobs_map_updated = None
+    for hub in cfg["content"]["hubs"]:
+        if hub in active or (hub == "jobs" and jobs_map_updated):
+            hub_dates = [str(a.get("updated") or a["date"]) for a in arts if a.get("hub") == hub]
+            if hub == "jobs" and jobs_map_updated:
+                hub_dates.append(jobs_map_updated)
+            hub_lastmod = max(hub_dates) if hub_dates else now_ist().date().isoformat()
+            urls.append((abs_url(cfg, f"topics/{hub}/"), hub_lastmod))
+    _op_path = ROOT / "data" / "openings.json"
+    _op_lastmod = now_ist().date().isoformat()
+    if _op_path.exists():
+        try:
+            _op_lastmod = str(json.loads(_op_path.read_text(encoding="utf-8")).get("updated_at") or _op_lastmod)
+        except Exception:
+            pass
+    urls.append((abs_url(cfg, "topics/jobs/openings/"), _op_lastmod))
+    # Emit only active Today's Docket unit (dated dockets stay noindexed archives)
+    if (cfg.get("docket") or {}).get("enabled", True):
+        dks = all_dockets()
+        if dks:
+            urls.append((abs_url(cfg, "docket/"), dks[0]["date"]))
+    for p in ("about/", "editorial-policy/", "sitemap/",
+              f"authors/{cfg['author']['slug']}/"):
+        urls.append((abs_url(cfg, p), now_ist().date().isoformat()))
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, lastmod in urls:
+        e = f"  <url><loc>{html.escape(loc)}</loc>"
+        if lastmod:
+            e += f"<lastmod>{lastmod}</lastmod>"
+        parts.append(e + "</url>")
+    parts.append("</urlset>")
+    return "\n".join(parts)
+
+
+FEED_MAX_ITEMS = 20  # RSS windows; the sitemap is the complete record.
+
+
+def _feed_xml(cfg, arts: list[dict]) -> str:
+    items = []
+    for a in arts[:FEED_MAX_ITEMS]:
+        pub = format_datetime(_publish_dt(cfg, a))
+        link = abs_url(cfg, f"articles/{a['slug']}/")
+        items.append(f"""  <item>
+    <title>{html.escape(a['title'])}</title>
+    <link>{link}</link>
+    <guid isPermaLink="true">{link}</guid>
+    <pubDate>{pub}</pubDate>
+    <description><![CDATA[{a['description']}]]></description>
+  </item>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{html.escape(cfg['site']['name'])}</title>
+  <link>{cfg['site']['base_url']}</link>
+  <description>{html.escape(cfg['site']['tagline'])}</description>
+  <language>{cfg['site']['language']}</language>
+  <atom:link href="{abs_url(cfg, 'feed.xml')}" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+{chr(10).join(items)}
+</channel>
+</rss>
+"""
+
+
+def _robots_txt(cfg) -> str:
+    return f"""# {cfg['site']['name']} — maximum-reach crawler policy.
+# Classic search + AI citation/search crawlers are all welcome.
+# (Training-only crawlers are also allowed by choice; blocking them would not
+#  affect AI-search citation visibility — see editorial policy.)
+
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+Sitemap: {abs_url(cfg, 'sitemap.xml')}
+"""
+
+
+def _llms_txt(cfg, arts: list[dict]) -> str:
+    base = cfg["site"]["base_url"].rstrip("/")
+    hubs = cfg["content"]["hubs"]
+    lines = [
+        f"# {cfg['site']['name']}",
+        f"> {cfg['site']['tagline']}",
+        "",
+        "The Tech Docket is a daily, data-picked publication covering technology and artificial intelligence across India and globally. Every article is built on same-day search-demand data, thoroughly researched from verified primary sources, and published with machine-checked factual accuracy gates and zero affiliate links.",
+        "",
+        "## Core Feeds",
+        f"- [Sitemap]({base}/sitemap.xml): Full XML sitemap of all published articles and pages",
+        f"- [RSS Feed]({base}/feed.xml): Rolling RSS 2.0 feed of latest 20 articles with WebSub hub",
+        f"- [Today's Docket]({base}/docket/): 60-second daily briefing of verified tech developments",
+        f"- [The Deck]({base}/deck/): Browse-and-save archive of every daily card",
+        "",
+        "## Live Datasets & Trackers",
+        f"- [Global Tech Layoffs & Hiring Tracker (2024–2026)]({base}/topics/jobs/): Interactive map, chronological timeline, Tier 1–3 audited company ledger, and 10-country statutory observability & news distortion audit (updated weekly)",
+        f"- [Workforce Intelligence JSON Dataset]({base}/data/jobs-map.json): Machine-readable JSON feed of all audited global tech layoff/hiring events, country observability grades, and practicality matrix",
+        f"- [Fresh Global Tech & AI Openings (<=25 Days)]({base}/topics/jobs/openings/): Weekly-refreshed direct-apply tech and AI openings filtered by Country, Years of Experience, and AI Tools (JSON: {base}/data/openings.json)",
+        "",
+        "## Topic Hubs",
+    ]
+    for hslug, hname in hubs.items():
+        intro = (cfg["content"].get("hub_intros") or {}).get(hslug, hname)
+        lines.append(f"- [{hname}]({base}/topics/{hslug}/): {intro}")
+
+    lines.append("")
+    lines.append("## Published Articles")
+    for a in arts:
+        desc = a.get("description", "").strip()
+        pub_date = str(a.get("date", ""))
+        lines.append(f"- [{a['title']}]({base}/articles/{a['slug']}/): {desc} (Published: {pub_date})")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
+# ---------------- main build ----------------
+
+def build_site() -> Path:
+    print("build_site: loading config...", flush=True)
+    cfg = load_config()
+    env = _env()
+    out = ROOT / cfg["publishing"]["output_dir"]
+    print("build_site: loading articles...", flush=True)
+    arts = all_articles()
+    author = cfg["author"]
+
+    # ensure site assets
+    print("build_site: generating site assets...", flush=True)
+    images.generate_site_assets(cfg["site"]["name"], out / "assets")
+    (out / ".nojekyll").write_text("", encoding="utf-8")
+    key = cfg["seo"]["indexnow_key"]
+    if key and key != "REPLACED_AT_SETUP":
+        (out / f"{key}.txt").write_text(key, encoding="utf-8")
+    cname = cfg["site"].get("cname", "")
+    if cname:
+        (out / "CNAME").write_text(cname.strip() + "\n", encoding="utf-8")
+
+    # articles
+    tpl = env.get_template("article.html")
+    for a in arts:
+        slug = a["slug"]
+        art_dir = out / "articles" / slug
+        hero16 = art_dir / f"{slug}-16x9.jpg"
+        if not hero16.exists():
+            images.generate_hero(a["title"], slug, a.get("hub", "ai-models"),
+                                 cfg["site"]["name"], art_dir,
+                                 icon=_icon_name(a))
+        ctx = _common(cfg, current_hub=a.get("hub"),
+                      **article_context(cfg, a, arts))
+        _write(art_dir / "index.html", tpl.render(**ctx))
+
+    summaries = [article_summary(cfg, a) for a in arts]
+
+    # Today's Docket — daily shorts strip (/docket/<date>/ canonical,
+    # /docket/ = latest alias, homepage strip). Separate content class:
+    # never touches history.json, never counts as the daily article.
+    dockets = all_dockets() if (cfg.get("docket") or {}).get("enabled", True) else []
+    docket_strip = None
+    if dockets:
+        dk_tpl = env.get_template("docket.html")
+        latest_date = dockets[0]["date"]
+        for d in dockets:
+            ctx_d = docket_context(cfg, d)
+            dk_dir_out = out / "docket" / d["date"]
+            card16 = dk_dir_out / f"docket-{d['date']}-16x9.jpg"
+            if not card16.exists():
+                images.generate_docket_card(d["date"], ctx_d["date_human"],
+                                            cfg["site"]["name"], dk_dir_out)
+            prev = [{"date": x["date"],
+                     "date_human": _human(_date_dt(cfg, x["date"]))}
+                    for x in dockets if x["date"] != d["date"]][:14]
+            meta = _meta_desc(
+                f"Today in tech, {ctx_d['date_human']}: "
+                + " · ".join(e["headline"] for e in ctx_d["entries"][:4]))
+            page_kw = dict(
+                page_title=(f"Today's Docket, {ctx_d['date_human']} — "
+                            f"{cfg['site']['name']}"),
+                meta_description=meta,
+                og_image=abs_url(cfg, f"docket/{d['date']}/docket-{d['date']}-16x9.jpg"),
+                og_image_alt=f"Today's Docket — {ctx_d['date_human']}",
+                current_hub="_docket", dk=ctx_d, prev=prev,
+                canonical=abs_url(cfg, f"docket/{d['date']}/"))
+            if d["date"] != latest_date:
+                page_kw["robots_meta"] = "noindex, follow"
+            _write(dk_dir_out / "index.html",
+                   dk_tpl.render(**_common(cfg, **page_kw)))
+            if d["date"] == latest_date:
+                # /docket/ serves the same content; canonical stays on the
+                # dated page (GitHub Pages cannot 301)
+                _write(out / "docket" / "index.html",
+                       dk_tpl.render(**_common(cfg, **page_kw)))
+                docket_strip = {
+                    "date_human": ctx_d["date_human"],
+                    "entries": [e for e in ctx_d["entries"]
+                                if not e["lead"]][:4]}
+
+    # The Deck — masonry browse/save archive of every docket card
+    # (/deck/ + /deck/<hub>/; proposal 2026-07-23). Cards are the entries of
+    # the dated dockets — no per-card URLs, no new content class, zero new
+    # data collection (the docket pattern, one level up).
+    deck_cfg = cfg.get("deck") or {}
+    all_cards: list[dict] = []          # also feeds /newdesign/ below
+    latest_docket_ctx = None            # also feeds /newdesign/ below
+    if dockets:
+        latest_docket_ctx = docket_context(cfg, dockets[0])
+    if dockets and deck_cfg.get("enabled"):
+        deck_tpl = env.get_template("deck.html")
+        cap = int(deck_cfg.get("max_cards", 90))
+        for d in dockets:  # all_dockets() is newest-first already
+            ctx_d = docket_context(cfg, d)
+            for e in ctx_d["entries"]:
+                c = dict(e)
+                c["date"] = d["date"]
+                c["date_human"] = ctx_d["date_human"]
+                c["docket_href"] = (base_path(cfg)
+                                    + f"docket/{d['date']}/#{e['anchor']}")
+                all_cards.append(c)
+        deck_hubs = {h: n for h, n in cfg["content"]["hubs"].items()
+                     if any(c["hub"] == h for c in all_cards)}
+        deck_og = abs_url(cfg, f"docket/{dockets[0]['date']}/"
+                               f"docket-{dockets[0]['date']}-16x9.jpg")
+        deck_intro = ("Every card from every Today's Docket — built to be "
+                      "saved and come back to. A card's date opens that "
+                      "day's full docket; its headline opens the source.")
+
+        def _deck_page(path: str, heading: str, cards: list[dict],
+                       hub: str | None = None) -> None:
+            _write(out / path / "index.html", deck_tpl.render(**_common(
+                cfg,
+                page_title=f"{heading} — {cfg['site']['name']}",
+                meta_description=_meta_desc(
+                    f"{heading}: the browse-and-save archive of Today's "
+                    "Docket — every card, newest first, each linked to its "
+                    "source and its day's docket."),
+                canonical=abs_url(cfg, path), og_image=deck_og,
+                og_image_alt=heading, current_hub="_deck",
+                robots_meta="noindex, follow",
+                heading=heading, intro=deck_intro, cards=cards[:cap],
+                hub_filter=hub, deck_hubs=deck_hubs, total=len(cards))))
+
+        _deck_page("deck/", "The Deck", all_cards)
+        for hslug, hname in deck_hubs.items():
+            _deck_page(f"deck/{hslug}/", f"The Deck — {hname}",
+                       [c for c in all_cards if c["hub"] == hslug], hub=hslug)
+
+    # home
+    home_img = (summaries[0]["hero_jpg"] if summaries
+                else abs_url(cfg, "assets/logo-512.png"))
+    _write(out / "index.html", env.get_template("index.html").render(**_common(
+        cfg,
+        page_title=(cfg["site"].get("home_title")
+                    or f"{cfg['site']['name']} — {cfg['site']['tagline']}"),
+        meta_description=(cfg["site"].get("home_description")
+                          or f"{cfg['site']['name']}: {cfg['topic']['description']}"),
+        canonical=cfg["site"]["base_url"], og_image=home_img,
+        og_image_alt=cfg["site"]["name"],
+        feature=summaries[0] if summaries else None,
+        docket=docket_strip,
+        articles=summaries[1:] if len(summaries) > 1 else [])))
+
+    # Newdesign — PARALLEL design preview (/newdesign/, owner experiment
+    # 2026-08-01). Standalone template (shares nothing with base.html),
+    # noindexed via meta robots, deliberately EXCLUDED from sitemap.xml,
+    # zero-JS, no webfonts, reuses existing cover JPGs. Renders live from
+    # the same data as the classic design; never replaces it. Reached only
+    # via the footer "Newdesign" link.
+    nd_hub_counts = {h: sum(1 for s in summaries if s["hub"] == h)
+                     for h in cfg["content"]["hubs"]}
+    _write(out / "newdesign" / "index.html",
+           env.get_template("newdesign.html").render(**_common(
+               cfg,
+               page_title=f"Newdesign preview — {cfg['site']['name']}",
+               meta_description=("An experimental parallel design for "
+                                 f"{cfg['site']['name']}. Same journalism, "
+                                 "different look; noindexed preview."),
+               canonical=abs_url(cfg, "newdesign/"),
+               og_image=home_img, og_image_alt="Newdesign preview",
+               feature=summaries[0] if summaries else None,
+               nd_docket=latest_docket_ctx,
+               nd_cards=all_cards[:12],
+               nd_hub_counts=nd_hub_counts,
+               nd_today=now_ist().strftime("%A, %d %B %Y"))))
+
+    # hubs
+    jobs_map_path = ROOT / "data" / "jobs-map.json"
+    jobs_map_data = None
+    if jobs_map_path.exists():
+        try:
+            jobs_map_data = json.loads(jobs_map_path.read_text(encoding="utf-8"))
+        except Exception:
+            jobs_map_data = None
+    for hslug, hname in cfg["content"]["hubs"].items():
+        hub_arts = [s for s in summaries if s["hub"] == hslug]
+        tpl = "jobs_hub.html" if (hslug == "jobs" and jobs_map_data) else "list.html"
+        extra = {}
+        hub_title = f"{hname} — {cfg['site']['name']}"
+        hub_desc = f"All {cfg['site']['name']} coverage of {hname}: daily, data-picked articles for India and the world."
+        if tpl == "jobs_hub.html":
+            seo_ctx = _jobs_map_seo(cfg, jobs_map_data)
+            hub_title = seo_ctx.pop("page_title")
+            hub_desc = seo_ctx.pop("meta_description")
+            extra = {
+                "jobs_map": jobs_map_data,
+                "jobs_map_json": json.dumps(jobs_map_data, ensure_ascii=False),
+                **seo_ctx,
+            }
+            _write(out / "data" / "jobs-map.json",
+                   json.dumps(jobs_map_data, indent=2, ensure_ascii=False))
+        _write(out / "topics" / hslug / "index.html",
+               env.get_template(tpl).render(**_common(
+                   cfg, current_hub=hslug,
+                   page_title=hub_title,
+                   meta_description=hub_desc,
+                   canonical=abs_url(cfg, f"topics/{hslug}/"),
+                   og_image=home_img, og_image_alt=hub_title,
+                   heading=hname,
+                   intro=(cfg["content"].get("hub_intros") or {}).get(hslug),
+                   articles=hub_arts, **extra)))
+
+    # Tech Jobs & Layoffs -> Openings subsection (/topics/jobs/openings/)
+    openings_path = ROOT / "data" / "openings.json"
+    openings_data = {"updated_at": now_ist().date().isoformat(), "max_age_days": 25, "total_openings": 0, "countries": [], "ai_tools": [], "openings": []}
+    if openings_path.exists():
+        try:
+            openings_data = json.loads(openings_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    _write(out / "data" / "openings.json", json.dumps(openings_data, indent=2, ensure_ascii=False))
+    op_canonical = abs_url(cfg, "topics/jobs/openings/")
+    op_items = openings_data.get("openings") or []
+    op_ai_count = sum(1 for j in op_items if j.get("is_ai_role"))
+    op_bc = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": "Tech Jobs & Layoffs", "item": abs_url(cfg, "topics/jobs/")},
+            {"@type": "ListItem", "position": 3, "name": "Fresh Openings", "item": op_canonical},
+        ],
+    }
+    op_il = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Fresh Global Tech & AI Job Openings (Posted Within 25 Days)",
+        "numberOfItems": len(op_items),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": idx + 1,
+                "item": {
+                    "@type": "JobPosting",
+                    "title": j.get("title", ""),
+                    "datePosted": j.get("posted_date", openings_data.get("updated_at")),
+                    "validThrough": j.get("valid_through", ""),
+                    "hiringOrganization": {"@type": "Organization", "name": j.get("company", "")},
+                    "jobLocationType": "TELECOMMUTE" if j.get("work_mode") == "Remote" else None,
+                    "applicantLocationRequirements": {"@type": "Country", "name": j.get("country", "Global")},
+                    "url": j.get("apply_url", ""),
+                },
+            }
+            for idx, j in enumerate(op_items[:25])
+        ],
+    }
+    # Strip None values cleanly from JobPosting entries
+    for el in op_il["itemListElement"]:
+        el["item"] = {k: v for k, v in el["item"].items() if v is not None}
+    _write(
+        out / "topics" / "jobs" / "openings" / "index.html",
+        env.get_template("jobs_openings.html").render(**_common(
+            cfg, current_hub="jobs",
+            page_title=f"Fresh Global Tech & AI Job Openings (<=25 Days) — {cfg['site']['name']}",
+            meta_description=f"Browse {len(op_items)} fresh global tech and AI job openings posted within the last 25 days. Filter by Country, Years of Experience, and AI Tools with direct apply links.",
+            canonical=op_canonical,
+            og_image=home_img, og_image_alt="Fresh Global Tech & AI Job Openings",
+            heading="Fresh Global Tech & AI Openings",
+            intro="Direct-apply roles posted within the last 25 days from 64 curated AI & tech ATS boards plus global remote feeds, refreshed every week.",
+            openings_data=openings_data,
+            openings_json=json.dumps(openings_data, ensure_ascii=False),
+            openings_ai_count=op_ai_count,
+            openings_breadcrumb_jsonld=Markup(json.dumps(op_bc, ensure_ascii=False)),
+            openings_itemlist_jsonld=Markup(json.dumps(op_il, ensure_ascii=False)),
+        )),
+    )
+
+    # static pages
+    pages = [
+        ("about/", "About", _about_md(cfg), None),
+        ("editorial-policy/", "Editorial policy: who, how and why",
+         _policy_md(cfg), None),
+    ]
+    profile_jsonld = {
+        "@context": "https://schema.org", "@type": "ProfilePage",
+        "dateModified": now_ist().date().isoformat(),
+        "mainEntity": {"@type": "Person", "name": author["name"],
+                       "description": author["bio"],
+                       "url": abs_url(cfg, f"authors/{author['slug']}/"),
+                       "sameAs": author.get("sameAs", [])}}
+    for path, heading, body_md, extra in pages:
+        _write(out / path / "index.html", env.get_template("page.html").render(
+            **_common(cfg, page_title=f"{heading} — {cfg['site']['name']}",
+                      meta_description=_meta_desc(body_md),
+                      canonical=abs_url(cfg, path), og_image=home_img,
+                      og_image_alt=heading, heading=heading,
+                      body_html=Markup(render_markdown(cfg, body_md)),
+                      extra_jsonld=extra)))
+    _write(out / "authors" / author["slug"] / "index.html",
+           env.get_template("page.html").render(**_common(
+               cfg, page_title=f"{author['name']} — {cfg['site']['name']}",
+               meta_description=_meta_desc(author["bio"]),
+               canonical=abs_url(cfg, f"authors/{author['slug']}/"),
+               og_image=home_img, og_image_alt=author["name"],
+               heading=author["name"],
+               body_html=Markup(render_markdown(cfg, _author_md(cfg, arts))),
+               extra_jsonld=Markup(json.dumps(profile_jsonld, ensure_ascii=False)))))
+
+    # HTML sitemap (orphan insurance)
+    _write(out / "sitemap" / "index.html", env.get_template("list.html").render(
+        **_common(cfg, page_title=f"All articles — {cfg['site']['name']}",
+                  meta_description=f"Complete archive of {cfg['site']['name']} articles.",
+                  canonical=abs_url(cfg, "sitemap/"), og_image=home_img,
+                  og_image_alt="All articles", heading="All articles",
+                  intro="Every article we've published, newest first.",
+                  articles=summaries)))
+
+    # 404
+    _write(out / "404.html", env.get_template("page.html").render(**_common(
+        cfg, page_title=f"Page not found — {cfg['site']['name']}",
+        meta_description="Page not found.", canonical=cfg["site"]["base_url"],
+        og_image=home_img, og_image_alt=cfg["site"]["name"],
+        heading="That page doesn't exist",
+        body_html=Markup(
+            f'<p>The link may be old or mistyped. Try the '
+            f'<a href="{base_path(cfg)}">homepage</a> or the '
+            f'<a href="{base_path(cfg)}sitemap/">full article list</a>.</p>'))))
+
+    # machine files
+    _write(out / "sitemap.xml", _sitemap_xml(cfg, arts))
+    _write(out / "feed.xml", _feed_xml(cfg, arts))
+    _write(out / "robots.txt", _robots_txt(cfg))
+    _write(out / "llms.txt", _llms_txt(cfg, arts))
+    print(f"built {len(arts)} article(s) -> {out}")
+    return out
+
+
+if __name__ == "__main__":
+    build_site()

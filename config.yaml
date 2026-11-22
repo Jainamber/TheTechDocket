@@ -126,11 +126,9 @@ evergreen_backlog:
 content:
   hubs:
     ai-models:   "AI Models"
-    ai-tools:    "AI Tools & Apps"
     big-tech:    "Big Tech"
     hardware:    "Chips & Hardware"
     policy:      "Policy & Society"
-    explainers:  "How-To & Explainers"
     cybersecurity: "Cybersecurity & Breaches"
     jobs: "Tech Jobs & Layoffs"
   # Short display labels for tight surfaces ONLY (mobile nav rail ≤719px,
@@ -138,11 +136,9 @@ content:
   # full names above. (Owner-approved N1 + short labels, 2026-07-24.)
   hubs_short:
     ai-models:   "AI Models"
-    ai-tools:    "AI Tools"
     big-tech:    "Big Tech"
     hardware:    "Chips"
     policy:      "Policy"
-    explainers:  "How-To"
     cybersecurity: "Security"
     jobs: "Jobs"
   # One-paragraph intro per hub page. Previously these pages were a bare
@@ -153,10 +149,6 @@ content:
       and the last. We report benchmarks with the caveats attached, and lead
       with the question most readers arrive with: does this change anything
       about the way you already work?
-    ai-tools: >-
-      The AI apps and tools people are actively searching for, weighed against
-      what they claim to do. Pricing, real usage limits, and the gap between a
-      launch demo and a week of daily use.
     big-tech: >-
       What Google, Microsoft, Apple, Meta, OpenAI, Amazon and Nvidia ship, buy
       and quietly retire — and how those decisions reach the people who will
@@ -169,10 +161,6 @@ content:
       Rules, courts, regulators and the social consequences of technology, with
       a standing eye on how decisions made in Brussels, Washington or Beijing
       land on Indian users, workers and companies.
-    explainers: >-
-      Plain-language answers to the questions people search for most: how a
-      thing works, whether you actually need it, and what to do next. No
-      assumed background.
     cybersecurity: >-
       Data breaches, zero-day exploits, ransomware and AI-driven attacks,
       stripped of vendor FUD. What actually broke, who is exposed, and what
