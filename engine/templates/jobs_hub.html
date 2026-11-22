@@ -60,6 +60,34 @@
 .jm-note{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.5}
 .jm-sec-h2{margin:34px 0 8px;font-size:22px;letter-spacing:-.3px}
 .jm-sec-sub{margin:0 0 10px;font-size:14px;color:var(--muted)}
+
+.jm-canvas-scroll{width:100%}
+.jm-canvas-inner{width:100%}
+.jm-swipe-hint{display:none;font-family:var(--fm);font-size:11px;color:var(--muted);margin:0 0 8px}
+@media (max-width:719px){
+  .jm-wrap{margin:12px 0 26px}
+  .jm-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+  .jm-kpi{padding:10px 12px}
+  .jm-kpi-lab{font-size:10px}
+  .jm-kpi-val{font-size:20px}
+  .jm-kpi-sub{font-size:11px}
+  .jm-controls{flex-direction:column;align-items:stretch;gap:8px;margin:12px 0}
+  .jm-pills{gap:5px}
+  .jm-pill{font-size:12px;padding:6px 10px}
+  .jm-search{width:100%;min-width:0;font-size:14px;padding:8px 11px}
+  .jm-mapcard{padding:10px}
+  .jm-legend{gap:6px 12px;font-size:11.5px;margin-bottom:8px}
+  .jm-leg-items{gap:8px 12px}
+  .jm-swipe-hint{display:block}
+  .jm-canvas-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:8px}
+  .jm-canvas-inner{min-width:640px}
+  .jm-detail{flex-direction:column;align-items:flex-start;gap:8px;font-size:13px;padding:10px 12px}
+  .jm-tblwrap{-webkit-overflow-scrolling:touch}
+  .jm-tbl{font-size:12.5px}
+  .jm-tbl th,.jm-tbl td{padding:7px 9px}
+  .jm-sec-h2{font-size:19px;margin:26px 0 6px}
+  .jm-sec-sub{font-size:13px}
+}
 </style>
 
 <h1 class="listh1">{{ heading }}</h1>
@@ -120,6 +148,8 @@
       <span>Hover or click timeline &amp; map markers to cross-highlight</span>
     </div>
 
+    <div class="jm-swipe-hint">Swipe map &amp; timeline &#8592; &#8594; · Tap any bubble or dot (tap outside to clear)</div>
+    <div class="jm-canvas-scroll"><div class="jm-canvas-inner">
     <svg id="jm-svg" class="jm-svg" viewBox="0 0 1000 450" role="img" aria-label="World map of global tech hiring in green and layoffs in red">
       <!-- Subtle equirectangular graticule -->
       <g class="jm-grid">
@@ -169,6 +199,7 @@
         <g id="jm-tl-events"></g>
       </svg>
     </div>
+    </div></div>
 
     <div class="jm-detail" id="jm-detail">
       <div><strong>Select a red or green marker on the map or timeline</strong> to inspect the company, verification tier, execution stage, dates, and primary source.</div>

@@ -57,7 +57,7 @@ try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
 <style>
-:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--k-cybersecurity:#b91c1c;--k-jobs:#0369a1;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--t-cybersecurity:#fee2e2;--t-jobs:#e0f2fe;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:var(--accent-ink)}
@@ -87,7 +87,7 @@ html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);fon
 main{padding:32px 0 46px}
 .kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
 a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
-.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}.k-cybersecurity{color:var(--k-cybersecurity)}.k-jobs{color:var(--k-jobs)}
 .dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
 .no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
 .home .tagline{display:none}
@@ -96,7 +96,7 @@ a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
 .hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
 .itile{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:14px;background:var(--tile-bg,var(--soft));color:var(--tile-ink,var(--accent));box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 16%,transparent);text-decoration:none}
 .itile svg{width:46%;height:46%;display:block}
-.i-ai-models{--tile-bg:var(--t-ai-models);--tile-ink:var(--k-ai-models)}.i-ai-tools{--tile-bg:var(--t-ai-tools);--tile-ink:var(--k-ai-tools)}.i-big-tech{--tile-bg:var(--t-big-tech);--tile-ink:var(--k-big-tech)}.i-hardware{--tile-bg:var(--t-hardware);--tile-ink:var(--k-hardware)}.i-policy{--tile-bg:var(--t-policy);--tile-ink:var(--k-policy)}.i-explainers{--tile-bg:var(--t-explainers);--tile-ink:var(--k-explainers)}
+.i-ai-models{--tile-bg:var(--t-ai-models);--tile-ink:var(--k-ai-models)}.i-ai-tools{--tile-bg:var(--t-ai-tools);--tile-ink:var(--k-ai-tools)}.i-big-tech{--tile-bg:var(--t-big-tech);--tile-ink:var(--k-big-tech)}.i-hardware{--tile-bg:var(--t-hardware);--tile-ink:var(--k-hardware)}.i-policy{--tile-bg:var(--t-policy);--tile-ink:var(--k-policy)}.i-explainers{--tile-bg:var(--t-explainers);--tile-ink:var(--k-explainers)}.i-cybersecurity{--tile-bg:var(--t-cybersecurity);--tile-ink:var(--k-cybersecurity)}.i-jobs{--tile-bg:var(--t-jobs);--tile-ink:var(--k-jobs)}
 .feature{display:grid;grid-template-columns:1fr;gap:18px 34px;margin:0 0 16px;align-items:center;padding:22px 22px 24px;border-radius:18px;background:color-mix(in srgb,var(--tile-bg,var(--soft)) 55%,var(--bg))}
 .feature .itile{width:72px;height:72px;border-radius:18px}
 .feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
@@ -219,9 +219,8 @@ h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-
 .deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
 .deckcard .dcdate:hover{color:var(--accent-ink)}
 @media (max-width:719px){
-nav.hubs{flex-wrap:nowrap;overflow-x:auto;gap:0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 91%,transparent)}
-nav.hubs::-webkit-scrollbar{display:none}
-nav.hubs a{flex:0 0 auto;white-space:nowrap}
+nav.hubs{flex-wrap:wrap;overflow-x:visible;gap:2px 14px;padding:6px 0 8px;mask-image:none;-webkit-mask-image:none;font-size:12.5px}
+nav.hubs a{flex:0 0 auto;white-space:nowrap;padding:4px 0 6px;margin-bottom:0}
 .nl-full{display:none}
 .nl-short{display:inline}
 .docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
@@ -268,7 +267,7 @@ footer.site p a{text-decoration:underline}
 .docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
 .docketstrip::-webkit-scrollbar-track{background:transparent}
 @media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
-html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--keep-bg:#2c2612;--keep-ink:#e3c76a;--t-ai-models:#1c1f36;--t-ai-tools:#0f2624;--t-big-tech:#241b38;--t-hardware:#2d2113;--t-policy:#24221f;--t-explainers:#0f2820}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--k-cybersecurity:#f87171;--k-jobs:#38bdf8;--keep-bg:#2c2612;--keep-ink:#e3c76a;--t-ai-models:#1c1f36;--t-ai-tools:#0f2624;--t-big-tech:#241b38;--t-hardware:#2d2113;--t-policy:#24221f;--t-explainers:#0f2820}
 html[data-theme=dark] .skip{color:#0d0f14}
 .nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
 .nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
@@ -293,7 +292,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
       <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/" aria-current="page"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a><a href="/topics/cybersecurity/"><span class="nl-full">Cybersecurity &amp; Breaches</span><span class="nl-short">Security</span></a><a href="/topics/jobs/"><span class="nl-full">Tech Jobs &amp; Layoffs</span><span class="nl-short">Jobs</span></a>
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/ai-tools/"><span class="nl-full">AI Tools &amp; Apps</span><span class="nl-short">AI Tools</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/" aria-current="page"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/explainers/"><span class="nl-full">How-To &amp; Explainers</span><span class="nl-short">How-To</span></a><a href="/topics/cybersecurity/"><span class="nl-full">Cybersecurity &amp; Breaches</span><span class="nl-short">Cybersecurity &amp; Breaches</span></a><a href="/topics/jobs/"><span class="nl-full">Tech Jobs &amp; Layoffs</span><span class="nl-short">Tech Jobs &amp; Layoffs</span></a>
     </nav>
   </div>
 </header>
