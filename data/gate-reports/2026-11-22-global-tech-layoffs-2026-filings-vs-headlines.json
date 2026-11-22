@@ -1,8 +1,8 @@
 {
   "slug": "global-tech-layoffs-2026-filings-vs-headlines",
-  "checked_at": "2026-11-22T19:14:22.076731+05:30",
-  "passed": false,
-  "hard_failures": 2,
+  "checked_at": "2026-11-22T19:19:13.774365+05:30",
+  "passed": true,
+  "hard_failures": 0,
   "soft_warnings": 0,
   "results": [
     {
@@ -50,8 +50,8 @@
     {
       "gate": "G07-stats-sourced",
       "level": "hard",
-      "ok": false,
-      "detail": "stat paragraphs missing inline source link: That pattern mirrors the massive infrastructure buildout driving chipmakers and hyperscale"
+      "ok": true,
+      "detail": "stat paragraphs missing inline source link: "
     },
     {
       "gate": "G08-no-clickbait",
@@ -134,7 +134,7 @@
     {
       "gate": "G22-ymyl",
       "level": "hard",
-      "ok": false,
+      "ok": true,
       "detail": "YMYL terms {'finance': ['invest', 'investment']} → front-matter ymyl: finance, a primary:true source and rendered disclaimer are required"
     },
     {
@@ -207,7 +207,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1837 words (need 900–2200)"
+      "detail": "1835 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",
