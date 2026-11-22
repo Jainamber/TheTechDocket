@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block jsonld %}
+{% if jobs_dataset_jsonld %}<script type="application/ld+json">{{ jobs_dataset_jsonld }}</script>{% endif %}
+{% if jobs_breadcrumb_jsonld %}<script type="application/ld+json">{{ jobs_breadcrumb_jsonld }}</script>{% endif %}
+{% if jobs_faq_jsonld %}<script type="application/ld+json">{{ jobs_faq_jsonld }}</script>{% endif %}
+{% endblock %}
 {% block content %}
 <style>
 .jm-wrap{margin:18px 0 34px}
@@ -98,18 +103,18 @@
   <div class="jm-kpis">
     <div class="jm-kpi">
       <div class="jm-kpi-lab">Confirmed Layoffs (Red)</div>
-      <div class="jm-kpi-val red" id="jm-kpi-firing">—</div>
-      <div class="jm-kpi-sub" id="jm-kpi-firing-sub">Tier 1–2 involuntary cuts</div>
+      <div class="jm-kpi-val red" id="jm-kpi-firing">{{ jobs_stats.confirmed_layoffs_fmt if jobs_stats else '—' }}</div>
+      <div class="jm-kpi-sub" id="jm-kpi-firing-sub">{% if jobs_stats %}{{ jobs_stats.confirmed_layoff_count }} confirmed layoff events (excl. net/buyouts){% else %}Tier 1–2 involuntary cuts{% endif %}</div>
     </div>
     <div class="jm-kpi">
       <div class="jm-kpi-lab">Confirmed Hiring (Green)</div>
-      <div class="jm-kpi-val green" id="jm-kpi-hiring">—</div>
-      <div class="jm-kpi-sub" id="jm-kpi-hiring-sub">Tier 1–2 company additions</div>
+      <div class="jm-kpi-val green" id="jm-kpi-hiring">{{ jobs_stats.confirmed_hiring_fmt if jobs_stats else '—' }}</div>
+      <div class="jm-kpi-sub" id="jm-kpi-hiring-sub">{% if jobs_stats %}{{ jobs_stats.confirmed_hiring_count }} company expansions{% if jobs_stats.macro_h_fmt %} · US BLS +{{ jobs_stats.macro_h_fmt }}{% endif %}{% else %}Tier 1–2 company additions{% endif %}</div>
     </div>
     <div class="jm-kpi">
       <div class="jm-kpi-lab">Audited Events</div>
-      <div class="jm-kpi-val" id="jm-kpi-count">—</div>
-      <div class="jm-kpi-sub" id="jm-kpi-count-sub">{{ jobs_map.window }}</div>
+      <div class="jm-kpi-val" id="jm-kpi-count">{{ jobs_stats.confirmed_events if jobs_stats else '—' }}</div>
+      <div class="jm-kpi-sub" id="jm-kpi-count-sub">{% if jobs_stats %}{{ jobs_stats.confirmed_events }} Tier 1–2 shown · {{ jobs_stats.quarantined_events }} Tier 3 quarantined{% else %}{{ jobs_map.window }}{% endif %}</div>
     </div>
     <div class="jm-kpi">
       <div class="jm-kpi-lab">Map Refresh</div>
@@ -220,10 +225,23 @@
           <th>Source</th>
         </tr>
       </thead>
-      <tbody id="jm-tbody"></tbody>
+      <tbody id="jm-tbody">
+        {% for ev in jobs_ssr_events | default([]) %}
+        <tr>
+          <td><strong>{{ ev.company }}</strong></td>
+          <td style="white-space:nowrap"><span class="jm-badge {{ ev.type }}">{{ 'Hiring' if ev.type == 'hiring' else 'Firing' }}</span><div style="margin-top:4px"><span class="jm-badge {{ ev.tier_cls }}">{{ ev.tier }}</span></div></td>
+          <td style="font-family:var(--fm);font-size:11.5px">{{ ev.stage }}<span class="jm-meta-tag">{{ ev.event_type }}</span></td>
+          <td style="white-space:nowrap;font-family:var(--fm)">{{ ev.headcount_display }}</td>
+          <td style="white-space:nowrap">{{ ev.location }}</td>
+          <td style="white-space:nowrap;font-family:var(--fm);font-size:12px">{{ ev.dates_html | safe }}</td>
+          <td>{{ ev.reason }}</td>
+          <td style="white-space:nowrap"><a href="{{ ev.source_url }}" target="_blank" rel="noopener">{{ ev.source_name }} &#8599;</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </div>
-  <p class="jm-note"><strong>Audit Guardrails:</strong> Confirmed KPI totals include only non-quarantined Tier 1 &amp; Tier 2 company rows (excluding Tier 3 leads, voluntary buyout eligibility pools, net headcount blends like TCS FY26, and national macro payroll totals like US BLS +885,000). Ranges are never averaged into midpoints.</p>
+  <p class="jm-note"><strong>Audit Guardrails:</strong> Confirmed KPI totals include only non-quarantined Tier 1 &amp; Tier 2 company rows (excluding Tier 3 leads, voluntary buyout eligibility pools, net headcount blends like TCS FY26, and national macro payroll totals like US BLS +885,000). Ranges are never averaged into midpoints. Machine-readable feed: <a href="{{ base_path }}data/jobs-map.json">jobs-map.json</a>.</p>
 
   {% if jobs_map.countries %}
   <h2 class="jm-sec-h2">Country Observability &amp; News Distortion Audit</h2>
@@ -351,6 +369,16 @@
       </tbody>
     </table>
   </div>
+
+  {% if jobs_faqs %}
+  <h2 class="jm-sec-h2" id="faq">Frequently Asked Questions</h2>
+  <div class="jm-tblwrap" style="padding:14px 16px;background:var(--bg)">
+    {% for item in jobs_faqs %}
+    <h3 style="margin:{{ '0' if loop.first else '14px' }} 0 4px;font-size:16px">{{ item.q }}</h3>
+    <p style="margin:0;font-size:14px;color:var(--ink2);line-height:1.55">{{ item.a }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
 </section>
 
 <script>

@@ -516,6 +516,181 @@ All articles on {cfg['site']['name']} are published under
 
 # ---------------- feeds / sitemap / robots ----------------
 
+
+def _jobs_is_macro(ev: dict) -> bool:
+    if ev.get("id") == "EVT-2025-001":
+        return True
+    return ev.get("confidence_tier") == "Tier 1" and bool(
+        re.search(r"nonfarm|payroll", ev.get("company") or "", re.I)
+    )
+
+
+def _jobs_fmt_headcount(ev: dict) -> str:
+    exact = ev.get("headcount_exact")
+    if exact is not None:
+        n = int(exact)
+        if _jobs_is_macro(ev):
+            return f"{'+' if n >= 0 else ''}{n:,} (Macro)"
+        if ev.get("event_type") == "net_headcount_change":
+            return f"{'-' if n < 0 else '+'}{abs(n):,} (Net)"
+        return f"{n:,}"
+    lo, hi = ev.get("headcount_min"), ev.get("headcount_max")
+    if lo is not None and hi is not None:
+        return f"{int(lo):,}–{int(hi):,}"
+    if hi is not None:
+        return f"Up to {int(hi):,}"
+    if lo is not None:
+        return f"{int(lo):,}+"
+    if ev.get("headcount") is not None:
+        return f"{int(ev['headcount']):,}"
+    return "Undisclosed"
+
+
+def _jobs_map_seo(cfg: dict, jobs_map: dict) -> dict:
+    """Compute SSR stats, pre-rendered Tier 1-2 rows, and Schema.org JSON-LD for /topics/jobs/."""
+    events = jobs_map.get("events") or []
+    countries = jobs_map.get("countries") or []
+    confirmed = [e for e in events if not e.get("quarantined")]
+    confirmed.sort(key=lambda e: str(e.get("date") or ""), reverse=True)
+    quar_count = len(events) - len(confirmed)
+
+    sum_f = cnt_f = sum_h = cnt_h = 0
+    macro_h = None
+    for ev in confirmed:
+        if _jobs_is_macro(ev):
+            macro_h = ev.get("headcount_exact")
+            continue
+        exact = ev.get("headcount_exact")
+        if ev.get("type") == "hiring" and exact is not None:
+            sum_h += int(exact)
+            cnt_h += 1
+        elif ev.get("type") == "firing" and ev.get("event_type") == "involuntary_layoff" and exact is not None:
+            sum_f += int(exact)
+            cnt_f += 1
+
+    ssr_rows = []
+    for ev in confirmed:
+        a_date = ev.get("announcement_date") or ev.get("date") or "—"
+        d_parts = [a_date]
+        if ev.get("effective_date") and ev["effective_date"] != a_date:
+            d_parts.append(f"Eff: {ev['effective_date']}")
+        if ev.get("filing_date") and ev["filing_date"] != a_date:
+            d_parts.append(f"Filed: {ev['filing_date']}")
+        tier = ev.get("confidence_tier") or "Tier 2"
+        ssr_rows.append({
+            "company": ev.get("company") or "",
+            "type": ev.get("type") or "firing",
+            "tier": tier,
+            "tier_cls": "tier1" if tier == "Tier 1" else "tier2",
+            "stage": str(ev.get("execution_stage") or "").replace("_", " "),
+            "event_type": str(ev.get("event_type") or "").replace("_", " "),
+            "headcount_display": _jobs_fmt_headcount(ev),
+            "location": f"{ev.get('city', '')}, {ev.get('country', '')}".strip(", "),
+            "dates_html": "<br>".join(d_parts),
+            "reason": ev.get("reason") or "",
+            "source_name": ev.get("source_name") or "Source",
+            "source_url": ev.get("source_url") or "",
+        })
+
+    updated = str(jobs_map.get("updated_at") or now_ist().date().isoformat())
+    canonical = abs_url(cfg, "topics/jobs/")
+    json_url = abs_url(cfg, "data/jobs-map.json")
+    stats = {
+        "confirmed_layoffs": sum_f,
+        "confirmed_layoffs_fmt": f"{sum_f:,}",
+        "confirmed_layoff_count": cnt_f,
+        "confirmed_hiring": sum_h,
+        "confirmed_hiring_fmt": f"{sum_h:,}",
+        "confirmed_hiring_count": cnt_h,
+        "macro_h": macro_h,
+        "macro_h_fmt": f"{int(macro_h):,}" if macro_h is not None else "",
+        "confirmed_events": len(confirmed),
+        "quarantined_events": quar_count,
+        "total_events": len(events),
+        "country_count": len(countries),
+    }
+
+    dataset_ld = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Global Tech Layoffs & Hiring Intelligence Dataset (2024–2026)",
+        "description": (
+            f"Audited 2024–2026 tracker of {len(events)} global tech layoff and hiring events "
+            f"({sum_f:,} confirmed involuntary cuts and {sum_h:,} confirmed company hires across Tier 1–2 sources) "
+            f"plus a {len(countries)}-economy statutory observability and news distortion audit."
+        ),
+        "url": canonical,
+        "identifier": canonical,
+        "dateModified": updated,
+        "temporalCoverage": f"2024-01-01/{updated}",
+        "spatialCoverage": "Global (United States, India, Europe, Asia-Pacific, Latin America)",
+        "isAccessibleForFree": True,
+        "creator": {
+            "@type": "Organization",
+            "name": cfg["site"]["name"],
+            "url": cfg["site"]["base_url"],
+        },
+        "variableMeasured": [
+            "Confirmed Involuntary Tech Layoffs (Tier 1-2)",
+            "Confirmed Tech Hiring Expansions (Tier 1-2)",
+            "Country Workforce Observability Score (0-100)",
+            "News Distortion Index (0-100)",
+        ],
+        "distribution": [{
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": json_url,
+        }],
+    }
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": "Tech Jobs & Layoffs", "item": canonical},
+        ],
+    }
+    faqs = [
+        {
+            "q": "How are confirmed tech layoffs and hiring numbers verified on this map?",
+            "a": "Confirmed headline totals include only non-quarantined Tier 1 statutory filings (such as US BLS, State WARN notices, SEC Form 8-K, and SEBI disclosures) and Tier 2 audited corporate announcements. Single-source media estimates, voluntary buyout eligibility pools, and national macro payroll series are separated so they never distort company-level totals.",
+        },
+        {
+            "q": "Why do public layoff trackers disagree with US BLS and India EPFO payroll data?",
+            "a": "Media layoff trackers aggregate multi-quarter restructuring plans and global announcements, whereas statutory payroll surveys measure completed domestic separations after notice periods close. In India, raising the mandatory EPFO wage ceiling from Rs. 15,000 to Rs. 25,000 on September 17, 2026 also introduced a structural break that inflates raw gross additions unless newly mandated existing staff are separated from fresh hires.",
+        },
+        {
+            "q": "How should I interpret Country Observability Grades (A–D) and Practicality Scores (0–100)?",
+            "a": "Practicality Scores estimate how much real hiring and firing is verifiable through public statutory filings. Grade A (80–100, e.g. US at 84/100) indicates strong advance layoff and payroll visibility; Grade B (65–79, e.g. Canada at 74/100) reflects solid macro coverage with moderate blind spots; Grade C (45–64, e.g. India at 52/100) means formal macro payrolls exist but private white-collar exits largely stay internal; Grade D (0–44) indicates severe opacity.",
+        },
+    ]
+    faq_ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": item["q"],
+                "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+            }
+            for item in faqs
+        ],
+    }
+    return {
+        "jobs_stats": stats,
+        "jobs_ssr_events": ssr_rows,
+        "jobs_faqs": faqs,
+        "jobs_dataset_jsonld": Markup(json.dumps(dataset_ld, ensure_ascii=False)),
+        "jobs_breadcrumb_jsonld": Markup(json.dumps(breadcrumb_ld, ensure_ascii=False)),
+        "jobs_faq_jsonld": Markup(json.dumps(faq_ld, ensure_ascii=False)),
+        "page_title": f"Global Tech Layoffs & Hiring Tracker (2024–2026) — {cfg['site']['name']}",
+        "meta_description": (
+            f"Live 2024–2026 global tech layoffs ({sum_f:,} confirmed cuts) and hiring "
+            f"({sum_h:,} company additions) map, timeline, and {len(countries)}-country statutory audit."
+        ),
+    }
+
+
 def _sitemap_xml(cfg, arts: list[dict]) -> str:
     urls = [(cfg["site"]["base_url"], now_ist().date().isoformat())]
     for a in arts:
@@ -523,9 +698,18 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
         urls.append((abs_url(cfg, f"articles/{a['slug']}/"), lastmod))
     active = {a.get("hub") for a in arts}
     # Topic hubs get lastmod of the newest article in that hub
+    jobs_map_updated = None
+    _jm_path = ROOT / "data" / "jobs-map.json"
+    if _jm_path.exists():
+        try:
+            jobs_map_updated = str(json.loads(_jm_path.read_text(encoding="utf-8")).get("updated_at") or "")
+        except Exception:
+            jobs_map_updated = None
     for hub in cfg["content"]["hubs"]:
-        if hub in active:
+        if hub in active or (hub == "jobs" and jobs_map_updated):
             hub_dates = [str(a.get("updated") or a["date"]) for a in arts if a.get("hub") == hub]
+            if hub == "jobs" and jobs_map_updated:
+                hub_dates.append(jobs_map_updated)
             hub_lastmod = max(hub_dates) if hub_dates else now_ist().date().isoformat()
             urls.append((abs_url(cfg, f"topics/{hub}/"), hub_lastmod))
     # Emit only active Today's Docket unit (dated dockets stay noindexed archives)
@@ -637,6 +821,10 @@ def _llms_txt(cfg, arts: list[dict]) -> str:
         f"- [RSS Feed]({base}/feed.xml): Rolling RSS 2.0 feed of latest 20 articles with WebSub hub",
         f"- [Today's Docket]({base}/docket/): 60-second daily briefing of verified tech developments",
         f"- [The Deck]({base}/deck/): Browse-and-save archive of every daily card",
+        "",
+        "## Live Datasets & Trackers",
+        f"- [Global Tech Layoffs & Hiring Tracker (2024–2026)]({base}/topics/jobs/): Interactive map, chronological timeline, Tier 1–3 audited company ledger, and 10-country statutory observability & news distortion audit (updated weekly)",
+        f"- [Workforce Intelligence JSON Dataset]({base}/data/jobs-map.json): Machine-readable JSON feed of all audited global tech layoff/hiring events, country observability grades, and practicality matrix",
         "",
         "## Topic Hubs",
     ]
@@ -835,18 +1023,26 @@ def build_site() -> Path:
         hub_arts = [s for s in summaries if s["hub"] == hslug]
         tpl = "jobs_hub.html" if (hslug == "jobs" and jobs_map_data) else "list.html"
         extra = {}
+        hub_title = f"{hname} — {cfg['site']['name']}"
+        hub_desc = f"All {cfg['site']['name']} coverage of {hname}: daily, data-picked articles for India and the world."
         if tpl == "jobs_hub.html":
+            seo_ctx = _jobs_map_seo(cfg, jobs_map_data)
+            hub_title = seo_ctx.pop("page_title")
+            hub_desc = seo_ctx.pop("meta_description")
             extra = {
                 "jobs_map": jobs_map_data,
                 "jobs_map_json": json.dumps(jobs_map_data, ensure_ascii=False),
+                **seo_ctx,
             }
+            _write(out / "data" / "jobs-map.json",
+                   json.dumps(jobs_map_data, indent=2, ensure_ascii=False))
         _write(out / "topics" / hslug / "index.html",
                env.get_template(tpl).render(**_common(
                    cfg, current_hub=hslug,
-                   page_title=f"{hname} — {cfg['site']['name']}",
-                   meta_description=f"All {cfg['site']['name']} coverage of {hname}: daily, data-picked articles for India and the world.",
+                   page_title=hub_title,
+                   meta_description=hub_desc,
                    canonical=abs_url(cfg, f"topics/{hslug}/"),
-                   og_image=home_img, og_image_alt=hname,
+                   og_image=home_img, og_image_alt=hub_title,
                    heading=hname,
                    intro=(cfg["content"].get("hub_intros") or {}).get(hslug),
                    articles=hub_arts, **extra)))
