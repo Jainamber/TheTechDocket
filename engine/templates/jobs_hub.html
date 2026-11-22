@@ -734,9 +734,17 @@
     else if (list.length) showDetail(list[0]);
   }
 
-  mapSvg.addEventListener('click', () => { if (pinnedId) { pinnedId = null; applyHighlight(null); } });
-  tlSvg.addEventListener('click', () => { if (pinnedId) { pinnedId = null; applyHighlight(null); } });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && pinnedId) { pinnedId = null; applyHighlight(null); } });
+  function clearSelection(){
+    if (pinnedId || activeId){
+      pinnedId = null;
+      applyHighlight(null);
+    }
+  }
+  document.addEventListener('click', e => {
+    if (e.target.closest('.jm-bubble, .jm-tl-ev, #jm-detail a')) return;
+    clearSelection();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') clearSelection(); });
 
   document.querySelectorAll('.jm-pill[data-type]').forEach(btn => {
     btn.addEventListener('click', () => {
