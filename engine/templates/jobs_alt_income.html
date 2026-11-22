@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block jsonld %}
+{% if alt_breadcrumb_jsonld %}<script type="application/ld+json">{{ alt_breadcrumb_jsonld }}</script>{% endif %}
+{% if alt_itemlist_jsonld %}<script type="application/ld+json">{{ alt_itemlist_jsonld }}</script>{% endif %}
+{% endblock %}
+{% block content %}
+<style>
+.ja-subnav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.ja-tab{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13.5px;font-weight:700;text-decoration:none}
+.ja-tab:hover{border-color:var(--accent);color:var(--accent-ink)}
+.ja-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ja-tab.cta{background:var(--bg);color:var(--ink);border:1.5px solid #059669;box-shadow:0 1px 6px rgba(5,150,105,.14)}
+.ja-tab.cta:hover{background:linear-gradient(135deg,#059669,#047857);color:#fff;border-color:#047857}
+.ja-tab.cta:hover .ja-live-dot{background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.32)}
+.ja-live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.25)}
+.ja-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:16px 0 24px}
+.ja-kpi{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.ja-kpi-lab{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.ja-kpi-val{font-size:22px;font-weight:800;letter-spacing:-.4px;margin-top:4px;color:var(--ink)}
+.ja-kpi-sub{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.35}
+.ja-sec-h2{margin:28px 0 8px;font-size:21px;letter-spacing:-.3px}
+.ja-sec-sub{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.ja-tblwrap{margin:14px 0 28px;overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.ja-tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.ja-tbl th,.ja-tbl td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.ja-tbl th{background:var(--soft);font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.ja-tbl tr:last-child td{border-bottom:none}
+.ja-tbl tr:hover td{background:var(--soft)}
+@media (max-width:719px){
+  .ja-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .ja-kpi{padding:10px 12px}
+  .ja-kpi-val{font-size:19px}
+  .ja-tbl{font-size:12.5px}
+  .ja-tbl th,.ja-tbl td{padding:7px 9px}
+}
+</style>
+
+<h1 class="listh1">{{ heading }}</h1>
+<p class="intro">{{ intro }}</p>
+
+<nav class="ja-subnav" aria-label="Tech Jobs &amp; Layoffs sections">
+  <a class="ja-tab" href="{{ base_path }}topics/jobs/">&#8592; Layoffs &amp; Hiring Map</a>
+  <a class="ja-tab cta" href="{{ base_path }}topics/jobs/openings/"><span class="ja-live-dot" aria-hidden="true"></span>Fresh Openings{% if openings_count %} ({{ openings_count }} Live){% else %} (&le;25 Days){% endif %} &#8594;</a>
+  <a class="ja-tab active" href="{{ base_path }}topics/jobs/alternative-income/" aria-current="page">Alternative Income Stream</a>
+</nav>
+
+<div class="ja-kpis">
+  <div class="ja-kpi">
+    <div class="ja-kpi-lab">Solo-Founded Startups</div>
+    <div class="ja-kpi-val" style="color:var(--accent-ink)">36% / 40%</div>
+    <div class="ja-kpi-sub">US (36%) &amp; APAC/MEA (40%) startups led by 1 founder (Carta 2026)</div>
+  </div>
+  <div class="ja-kpi">
+    <div class="ja-kpi-lab">AI Orchestrator Pay</div>
+    <div class="ja-kpi-val" style="color:#059669">+34% to +45%</div>
+    <div class="ja-kpi-sub">Hourly &amp; complex AI earnings premium vs non-AI work (Upwork 2026)</div>
+  </div>
+  <div class="ja-kpi">
+    <div class="ja-kpi-lab">Micro-SaaS Economy</div>
+    <div class="ja-kpi-val">$8.7B</div>
+    <div class="ja-kpi-sub">2026E solo-founder (&lt;$10k MRR) ARR segment (IdeaProof)</div>
+  </div>
+  <div class="ja-kpi">
+    <div class="ja-kpi-lab">India Gig Workforce</div>
+    <div class="ja-kpi-val">1.2 Crore</div>
+    <div class="ja-kpi-sub">Up 55% since FY21 (Economic Survey 2025–26)</div>
+  </div>
+</div>
+
+<h2 class="ja-sec-h2">2027 Playbooks &amp; Market Shifts</h2>
+<p class="ja-sec-sub">Data-backed guides for tech workers building independent revenue streams when traditional headcount contracts.</p>
+
+<ul class="cardlist" style="margin-top:12px">
+  {% for a in articles %}
+  <li><a class="itile i-{{ a.hub }}" href="{{ base_path }}articles/{{ a.slug }}/" aria-hidden="true" tabindex="-1">{{ a.icon_svg }}</a><div>
+    <div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
+    <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
+    <div class="m">{{ a.description }}</div></div></li>
+  {% endfor %}
+</ul>
+{% if not articles %}<p class="empty">Alternative income guides publishing shortly.</p>{% endif %}
+
+<h2 class="ja-sec-h2">Quick Reference: Where Value Moves When Tech Payrolls Shrink</h2>
+<div class="ja-tblwrap">
+  <table class="ja-tbl">
+    <thead>
+      <tr>
+        <th>Shift / Income Path</th>
+        <th>2026 Evidence Signal</th>
+        <th>Why It Rises During Layoffs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>AI Workflow &amp; Agent Orchestration</strong></td>
+        <td>+72% YoY demand; +22% to +45% earnings (Upwork 2026)</td>
+        <td>Companies freeze full-time headcount but pay specialists to wire AI agents into revenue and ops.</td>
+      </tr>
+      <tr>
+        <td><strong>Vertical Micro-SaaS</strong></td>
+        <td>$8.7B solo-founder ARR; 36%–40% solo startups (Carta)</td>
+        <td>One engineer with AI coding tools ships B2B compliance, billing, or ops tools at near-zero burn.</td>
+      </tr>
+      <tr>
+        <td><strong>Fractional &amp; Contract Engineering</strong></td>
+        <td>+269,000 US Prof. &amp; Business Services jobs (BLS Oct 2026)</td>
+        <td>Firms replace permanent fixed payroll with flexible retainers and project-based pods.</td>
+      </tr>
+      <tr>
+        <td><strong>India Cross-Border Tech Exports</strong></td>
+        <td>19.2M sq ft GCC leasing; 1.2 cr gig base (Fortune/Econ Survey)</td>
+        <td>USD/EUR retainers at ₹92.68/USD turn mid-market US/EU contracts into high-margin local income.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

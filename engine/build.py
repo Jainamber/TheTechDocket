@@ -720,6 +720,7 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
         except Exception:
             pass
     urls.append((abs_url(cfg, "topics/jobs/openings/"), _op_lastmod))
+    urls.append((abs_url(cfg, "topics/jobs/alternative-income/"), now_ist().date().isoformat()))
     # Emit only active Today's Docket unit (dated dockets stay noindexed archives)
     if (cfg.get("docket") or {}).get("enabled", True):
         dks = all_dockets()
@@ -834,6 +835,7 @@ def _llms_txt(cfg, arts: list[dict]) -> str:
         f"- [Global Tech Layoffs & Hiring Tracker (2024–2026)]({base}/topics/jobs/): Interactive map, chronological timeline, Tier 1–3 audited company ledger, and 10-country statutory observability & news distortion audit (updated weekly)",
         f"- [Workforce Intelligence JSON Dataset]({base}/data/jobs-map.json): Machine-readable JSON feed of all audited global tech layoff/hiring events, country observability grades, and practicality matrix",
         f"- [Fresh Global Tech & AI Openings (<=25 Days)]({base}/topics/jobs/openings/): Weekly-refreshed direct-apply tech and AI openings filtered by Country, Years of Experience, and AI Tools (JSON: {base}/data/openings.json)",
+        f"- [Alternative Income Stream (2027 Playbooks)]({base}/topics/jobs/alternative-income/): Solopreneur micro-businesses, AI-orchestrator economics, and growth shifts when tech payrolls contract",
         "",
         "## Topic Hubs",
     ]
@@ -1128,6 +1130,47 @@ def build_site() -> Path:
             openings_remote_count=op_remote_count,
             openings_breadcrumb_jsonld=Markup(json.dumps(op_bc, ensure_ascii=False)),
             openings_itemlist_jsonld=Markup(json.dumps(op_il, ensure_ascii=False)),
+        )),
+    )
+
+    # Tech Jobs & Layoffs -> Alternative Income Stream (/topics/jobs/alternative-income/)
+    alt_arts = [s for s in summaries if s["hub"] == "jobs" and "alternative-income" in (s.get("tags") or [])]
+    if not alt_arts:
+        alt_arts = [s for s in summaries if s["hub"] == "jobs"]
+    alt_canonical = abs_url(cfg, "topics/jobs/alternative-income/")
+    alt_bc = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": "Tech Jobs & Layoffs", "item": abs_url(cfg, "topics/jobs/")},
+            {"@type": "ListItem", "position": 3, "name": "Alternative Income Stream", "item": alt_canonical},
+        ],
+    }
+    alt_il = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Alternative Income Streams & 2027 Tech Shifts",
+        "numberOfItems": len(alt_arts),
+        "itemListElement": [
+            {"@type": "ListItem", "position": idx + 1, "url": abs_url(cfg, f"articles/{a['slug']}/"), "name": a["title"]}
+            for idx, a in enumerate(alt_arts)
+        ],
+    }
+    _write(
+        out / "topics" / "jobs" / "alternative-income" / "index.html",
+        env.get_template("jobs_alt_income.html").render(**_common(
+            cfg, current_hub="jobs",
+            page_title=f"Alternative Income Stream: 2027 Micro-Businesses & Shifts — {cfg['site']['name']}",
+            meta_description="Data-backed 2027 micro-business playbooks, AI-orchestrator income premiums, and sectors rising when big-tech payrolls contract.",
+            canonical=alt_canonical,
+            og_image=home_img, og_image_alt="Alternative Income Stream — The Tech Docket",
+            heading="Alternative Income Stream",
+            intro="Where capital, independent revenue, and solo-founder micro-businesses rise when traditional tech payrolls contract.",
+            articles=alt_arts,
+            openings_count=len(op_items),
+            alt_breadcrumb_jsonld=Markup(json.dumps(alt_bc, ensure_ascii=False)),
+            alt_itemlist_jsonld=Markup(json.dumps(alt_il, ensure_ascii=False)),
         )),
     )
 
