@@ -712,6 +712,14 @@ def _sitemap_xml(cfg, arts: list[dict]) -> str:
                 hub_dates.append(jobs_map_updated)
             hub_lastmod = max(hub_dates) if hub_dates else now_ist().date().isoformat()
             urls.append((abs_url(cfg, f"topics/{hub}/"), hub_lastmod))
+    _op_path = ROOT / "data" / "openings.json"
+    _op_lastmod = now_ist().date().isoformat()
+    if _op_path.exists():
+        try:
+            _op_lastmod = str(json.loads(_op_path.read_text(encoding="utf-8")).get("updated_at") or _op_lastmod)
+        except Exception:
+            pass
+    urls.append((abs_url(cfg, "topics/jobs/openings/"), _op_lastmod))
     # Emit only active Today's Docket unit (dated dockets stay noindexed archives)
     if (cfg.get("docket") or {}).get("enabled", True):
         dks = all_dockets()
@@ -825,6 +833,7 @@ def _llms_txt(cfg, arts: list[dict]) -> str:
         "## Live Datasets & Trackers",
         f"- [Global Tech Layoffs & Hiring Tracker (2024–2026)]({base}/topics/jobs/): Interactive map, chronological timeline, Tier 1–3 audited company ledger, and 10-country statutory observability & news distortion audit (updated weekly)",
         f"- [Workforce Intelligence JSON Dataset]({base}/data/jobs-map.json): Machine-readable JSON feed of all audited global tech layoff/hiring events, country observability grades, and practicality matrix",
+        f"- [Fresh Global Tech & AI Openings (<=25 Days)]({base}/topics/jobs/openings/): Weekly-refreshed direct-apply tech and AI openings filtered by Country, Years of Experience, and AI Tools (JSON: {base}/data/openings.json)",
         "",
         "## Topic Hubs",
     ]
@@ -1046,6 +1055,71 @@ def build_site() -> Path:
                    heading=hname,
                    intro=(cfg["content"].get("hub_intros") or {}).get(hslug),
                    articles=hub_arts, **extra)))
+
+    # Tech Jobs & Layoffs -> Openings subsection (/topics/jobs/openings/)
+    openings_path = ROOT / "data" / "openings.json"
+    openings_data = {"updated_at": now_ist().date().isoformat(), "max_age_days": 25, "total_openings": 0, "countries": [], "ai_tools": [], "openings": []}
+    if openings_path.exists():
+        try:
+            openings_data = json.loads(openings_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    _write(out / "data" / "openings.json", json.dumps(openings_data, indent=2, ensure_ascii=False))
+    op_canonical = abs_url(cfg, "topics/jobs/openings/")
+    op_items = openings_data.get("openings") or []
+    op_ai_count = sum(1 for j in op_items if j.get("is_ai_role"))
+    op_bc = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": cfg["site"]["base_url"]},
+            {"@type": "ListItem", "position": 2, "name": "Tech Jobs & Layoffs", "item": abs_url(cfg, "topics/jobs/")},
+            {"@type": "ListItem", "position": 3, "name": "Fresh Openings", "item": op_canonical},
+        ],
+    }
+    op_il = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Fresh Global Tech & AI Job Openings (Posted Within 25 Days)",
+        "numberOfItems": len(op_items),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": idx + 1,
+                "item": {
+                    "@type": "JobPosting",
+                    "title": j.get("title", ""),
+                    "datePosted": j.get("posted_date", openings_data.get("updated_at")),
+                    "validThrough": j.get("valid_through", ""),
+                    "hiringOrganization": {"@type": "Organization", "name": j.get("company", "")},
+                    "jobLocationType": "TELECOMMUTE" if j.get("work_mode") == "Remote" else None,
+                    "applicantLocationRequirements": {"@type": "Country", "name": j.get("country", "Global")},
+                    "url": j.get("apply_url", ""),
+                },
+            }
+            for idx, j in enumerate(op_items[:25])
+        ],
+    }
+    # Strip None values cleanly from JobPosting entries
+    for el in op_il["itemListElement"]:
+        el["item"] = {k: v for k, v in el["item"].items() if v is not None}
+    _write(
+        out / "topics" / "jobs" / "openings" / "index.html",
+        env.get_template("jobs_openings.html").render(**_common(
+            cfg, current_hub="jobs",
+            page_title=f"Fresh Global Tech & AI Job Openings (<=25 Days) — {cfg['site']['name']}",
+            meta_description=f"Browse {len(op_items)} fresh global tech and AI job openings posted within the last 25 days. Filter by Country, Years of Experience, and AI Tools with direct apply links.",
+            canonical=op_canonical,
+            og_image=home_img, og_image_alt="Fresh Global Tech & AI Job Openings",
+            heading="Fresh Global Tech & AI Openings",
+            intro="Direct-apply roles posted within the last 25 days from 64 curated AI & tech ATS boards plus global remote feeds, refreshed every week.",
+            openings_data=openings_data,
+            openings_json=json.dumps(openings_data, ensure_ascii=False),
+            openings_ai_count=op_ai_count,
+            openings_breadcrumb_jsonld=Markup(json.dumps(op_bc, ensure_ascii=False)),
+            openings_itemlist_jsonld=Markup(json.dumps(op_il, ensure_ascii=False)),
+        )),
+    )
 
     # static pages
     pages = [

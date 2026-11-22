@@ -12,6 +12,7 @@ The Tech Docket is a daily, data-picked publication covering technology and arti
 ## Live Datasets & Trackers
 - [Global Tech Layoffs & Hiring Tracker (2024–2026)](https://thetechdocket.com/topics/jobs/): Interactive map, chronological timeline, Tier 1–3 audited company ledger, and 10-country statutory observability & news distortion audit (updated weekly)
 - [Workforce Intelligence JSON Dataset](https://thetechdocket.com/data/jobs-map.json): Machine-readable JSON feed of all audited global tech layoff/hiring events, country observability grades, and practicality matrix
+- [Fresh Global Tech & AI Openings (<=25 Days)](https://thetechdocket.com/topics/jobs/openings/): Weekly-refreshed direct-apply tech and AI openings filtered by Country, Years of Experience, and AI Tools (JSON: https://thetechdocket.com/data/openings.json)
 
 ## Topic Hubs
 - [AI Models](https://thetechdocket.com/topics/ai-models/): New and updated AI models, and what actually changed between one release and the last. We report benchmarks with the caveats attached, and lead with the question most readers arrive with: does this change anything about the way you already work?

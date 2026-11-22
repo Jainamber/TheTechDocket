@@ -6,6 +6,10 @@
 {% endblock %}
 {% block content %}
 <style>
+.jm-subnav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.jm-tab{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13.5px;font-weight:700;text-decoration:none}
+.jm-tab:hover{border-color:var(--accent);color:var(--accent-ink)}
+.jm-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .jm-wrap{margin:18px 0 34px}
 .jm-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:18px 0}
 .jm-kpi{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
@@ -97,6 +101,10 @@
 
 <h1 class="listh1">{{ heading }}</h1>
 {% if intro %}<p class="intro">{{ intro }}</p>{% endif %}
+<nav class="jm-subnav" aria-label="Tech Jobs &amp; Layoffs sections">
+  <a class="jm-tab active" href="{{ base_path }}topics/jobs/" aria-current="page">Layoffs &amp; Hiring Map</a>
+  <a class="jm-tab" href="{{ base_path }}topics/jobs/openings/">Fresh Openings (&le;25 Days) &#8594;</a>
+</nav>
 
 {% if jobs_map %}
 <section class="jm-wrap" aria-label="Global Tech Hiring and Layoffs Map">
