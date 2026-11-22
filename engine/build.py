@@ -956,8 +956,7 @@ def build_site() -> Path:
                 c["docket_href"] = (base_path(cfg)
                                     + f"docket/{d['date']}/#{e['anchor']}")
                 all_cards.append(c)
-        deck_hubs = {h: n for h, n in cfg["content"]["hubs"].items()
-                     if any(c["hub"] == h for c in all_cards)}
+        deck_hubs = dict(cfg["content"]["hubs"])
         deck_og = abs_url(cfg, f"docket/{dockets[0]['date']}/"
                                f"docket-{dockets[0]['date']}-16x9.jpg")
         deck_intro = ("Every card from every Today's Docket — built to be "

@@ -3,7 +3,7 @@
 {% block content %}
 <section class="deckpage">
   <h1 class="listh1 dockh1"><span class="dash" aria-hidden="true"></span>{{ heading }}</h1>
-  <nav class="showrow" aria-label="Filter cards by hub"><span class="lab">{{ total }} card{{ 's' if total != 1 else '' }} · newest first</span> <a href="{{ base_path }}deck/"{% if not hub_filter %} class="on" aria-current="page"{% endif %}>All</a>{% for hslug, hname in deck_hubs.items() %} · <a href="{{ base_path }}deck/{{ hslug }}/"{% if hub_filter == hslug %} class="on" aria-current="page"{% endif %}>{{ hubs_short.get(hslug, hname) }}</a>{% endfor %}</nav>
+  <nav class="showrow" aria-label="Filter cards by hub"><span class="lab">{{ total }} card{{ 's' if total != 1 else '' }} · newest first</span> <a href="{{ base_path }}deck/"{% if not hub_filter %} class="on" aria-current="page"{% endif %}>All</a>{% for hslug, hname in deck_hubs.items() %} · <a href="{{ base_path }}deck/{{ hslug }}/"{% if hub_filter == hslug %} class="on" aria-current="page"{% endif %}>{% if hslug == "cybersecurity" %}Cybersecurity{% elif hslug == "jobs" %}Tech Jobs &amp; Layoffs{% else %}{{ hubs_short.get(hslug, hname) }}{% endif %}</a>{% endfor %}</nav>
   <p class="intro">{{ intro }}</p>
   <div class="deckgrid">
     {%- for c in cards %}
@@ -16,6 +16,7 @@
     </article>
     {%- endfor %}
   </div>
+  {% if not cards %}<p class="empty">No cards in this topic yet — check back soon.</p>{% endif %}
   <p class="dfoot">The Deck is the browse-and-save archive of <a href="{{ base_path }}docket/">Today's Docket</a> — every card keeps its link back to that day's docket and to its original source. Older cards beyond the cap stay reachable through their hub pages and the dated dockets. New cards land every morning.</p>
 </section>
 {% endblock %}
