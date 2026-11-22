@@ -1038,9 +1038,17 @@ def build_site() -> Path:
             seo_ctx = _jobs_map_seo(cfg, jobs_map_data)
             hub_title = seo_ctx.pop("page_title")
             hub_desc = seo_ctx.pop("meta_description")
+            _op_cnt = 0
+            _op_p = ROOT / "data" / "openings.json"
+            if _op_p.exists():
+                try:
+                    _op_cnt = int(json.loads(_op_p.read_text(encoding="utf-8")).get("total_openings") or 0)
+                except Exception:
+                    _op_cnt = 0
             extra = {
                 "jobs_map": jobs_map_data,
                 "jobs_map_json": json.dumps(jobs_map_data, ensure_ascii=False),
+                "openings_count": _op_cnt,
                 **seo_ctx,
             }
             _write(out / "data" / "jobs-map.json",
@@ -1068,6 +1076,7 @@ def build_site() -> Path:
     op_canonical = abs_url(cfg, "topics/jobs/openings/")
     op_items = openings_data.get("openings") or []
     op_ai_count = sum(1 for j in op_items if j.get("is_ai_role"))
+    op_remote_count = sum(1 for j in op_items if j.get("work_mode") == "Remote")
     op_bc = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -1116,6 +1125,7 @@ def build_site() -> Path:
             openings_data=openings_data,
             openings_json=json.dumps(openings_data, ensure_ascii=False),
             openings_ai_count=op_ai_count,
+            openings_remote_count=op_remote_count,
             openings_breadcrumb_jsonld=Markup(json.dumps(op_bc, ensure_ascii=False)),
             openings_itemlist_jsonld=Markup(json.dumps(op_il, ensure_ascii=False)),
         )),

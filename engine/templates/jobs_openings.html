@@ -8,40 +8,69 @@
 .jo-subnav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
 .jo-tab{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13.5px;font-weight:700;text-decoration:none}
 .jo-tab:hover{border-color:var(--accent);color:var(--accent-ink)}
-.jo-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.jo-tab.active{background:linear-gradient(135deg,#059669,#047857);color:#fff;border-color:#047857;box-shadow:0 2px 10px rgba(5,150,105,.24)}
+.jo-live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#a7f3d0;box-shadow:0 0 0 3px rgba(167,243,208,.35)}
 .jo-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin:16px 0}
 .jo-kpi{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
 .jo-kpi-lab{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .jo-kpi-val{font-size:22px;font-weight:800;letter-spacing:-.4px;margin-top:4px;color:var(--ink)}
 .jo-kpi-sub{font-size:12px;color:var(--muted);margin-top:2px}
-.jo-filters{display:grid;grid-template-columns:repeat(3,minmax(160px,1fr)) minmax(220px,1.4fr);gap:10px;margin:16px 0;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px}
+
+/* Filter shell: sleek desktop bar + collapsible mobile drawer */
+.jo-filter-shell{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin:16px 0}
+.jo-search-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.jo-search{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:9px 14px;font-size:14px;font-family:var(--fu)}
+.jo-search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(67,72,200,.14)}
+.jo-quick-pill{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.jo-quick-pill:hover{border-color:#0f766e;color:#0f766e}
+.jo-quick-pill.active{background:#0f766e;color:#fff;border-color:#0f766e}
+.jo-filter-toggle{display:none;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--fu);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.jo-filter-toggle.has-active{border-color:var(--accent);color:var(--accent-ink);background:rgba(67,72,200,.08)}
+.jo-dropdowns{display:grid;grid-template-columns:repeat(3,minmax(160px,1fr));gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .jo-fgroup{display:flex;flex-direction:column;gap:4px}
 .jo-fgroup label{font-family:var(--fm);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
-.jo-select,.jo-search{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:8px 10px;font-size:13.5px;font-family:var(--fu)}
+.jo-select{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:8px 10px;font-size:13.5px;font-family:var(--fu)}
+
 .jo-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin:8px 0 12px;font-size:13px;color:var(--muted)}
 .jo-reset{border:1px solid var(--line);background:var(--bg);color:var(--ink2);border-radius:999px;padding:4px 11px;font-size:12px;font-weight:600;cursor:pointer}
 .jo-reset:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+/* Job cards */
 .jo-list{display:grid;grid-template-columns:1fr;gap:10px;margin:0 0 28px}
-.jo-card{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.jo-card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.jo-card.is-remote{border-left:3.5px solid #0d9488}
 .jo-card:hover{border-color:var(--accent);background:var(--soft)}
 .jo-main{min-width:0;flex:1}
-.jo-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 4px;line-height:1.3}
-.jo-meta{font-size:13px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.jo-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 4px}
+.jo-title{font-size:16px;font-weight:700;color:var(--ink);margin:0;line-height:1.3}
+.jo-meta{font-size:13px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
 .jo-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .jo-tag{display:inline-block;font-family:var(--fm);font-size:11px;padding:2px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--ink2)}
+.jo-tag.remote{background:rgba(13,148,136,.14);border-color:rgba(13,148,136,.35);color:#0f766e;font-weight:700}
 .jo-tag.ai{background:rgba(67,72,200,.12);border-color:rgba(67,72,200,.25);color:var(--accent-ink);font-weight:600}
 .jo-tag.sal{background:rgba(5,150,105,.12);border-color:rgba(5,150,105,.25);color:#059669;font-weight:600}
-.jo-tag.fresh{background:rgba(217,119,6,.12);border-color:rgba(217,119,6,.25);color:#b45309}
-.jo-apply{display:inline-flex;align-items:center;gap:4px;padding:8px 14px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap;flex-shrink:0}
-.jo-apply:hover{background:var(--accent);color:#fff}
+.jo-tag.fresh{background:rgba(217,119,6,.12);border-color:rgba(217,119,6,.25);color:#b45309;font-weight:600}
+.jo-foot{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-shrink:0}
+.jo-foot-meta{display:none;font-family:var(--fm);font-size:11.5px;color:var(--muted)}
+.jo-apply{display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap;box-shadow:0 2px 6px rgba(67,72,200,.22)}
+.jo-apply:hover{background:var(--accent-ink);color:#fff}
 .jo-empty{padding:24px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);text-align:center;font-size:14px}
+
 @media (max-width:719px){
-  .jo-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .jo-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
   .jo-kpi{padding:10px 12px}
+  .jo-kpi-lab{font-size:10px}
   .jo-kpi-val{font-size:19px}
-  .jo-filters{grid-template-columns:1fr;gap:8px;padding:10px}
-  .jo-card{flex-direction:column;padding:12px 13px;gap:10px}
-  .jo-apply{width:100%;justify-content:center}
+  .jo-kpi-sub{font-size:11px}
+  .jo-filter-shell{padding:10px;margin:12px 0}
+  .jo-search{flex:1 1 100%;font-size:14px;padding:8px 13px}
+  .jo-filter-toggle{display:inline-flex}
+  .jo-dropdowns{display:none;grid-template-columns:1fr;gap:8px}
+  .jo-dropdowns.open{display:grid}
+  .jo-card{flex-direction:column;align-items:stretch;padding:12px 13px;gap:10px}
+  .jo-foot{justify-content:space-between;padding-top:9px;border-top:1px solid var(--line)}
+  .jo-foot-meta{display:inline}
+  .jo-apply{padding:7px 16px;font-size:13px}
 }
 </style>
 
@@ -50,7 +79,7 @@
 
 <nav class="jo-subnav" aria-label="Tech Jobs &amp; Layoffs sections">
   <a class="jo-tab" href="{{ base_path }}topics/jobs/">&#8592; Layoffs &amp; Hiring Map</a>
-  <a class="jo-tab active" href="{{ base_path }}topics/jobs/openings/" aria-current="page">Fresh Openings (&le;25 Days)</a>
+  <a class="jo-tab active" href="{{ base_path }}topics/jobs/openings/" aria-current="page"><span class="jo-live-dot" aria-hidden="true"></span>Fresh Openings (&le;25 Days)</a>
 </nav>
 
 <div class="jo-kpis">
@@ -60,14 +89,14 @@
     <div class="jo-kpi-sub">Posted within last {{ openings_data.max_age_days if openings_data else 25 }} days</div>
   </div>
   <div class="jo-kpi">
+    <div class="jo-kpi-lab">Remote Roles</div>
+    <div class="jo-kpi-val" id="jo-kpi-remote" style="color:#0f766e">{{ openings_remote_count | default(0) }}</div>
+    <div class="jo-kpi-sub">Highlighted with teal badge</div>
+  </div>
+  <div class="jo-kpi">
     <div class="jo-kpi-lab">AI &amp; ML Roles</div>
     <div class="jo-kpi-val" id="jo-kpi-ai" style="color:var(--accent-ink)">{{ openings_ai_count | default(0) }}</div>
     <div class="jo-kpi-sub">Tagged with AI tools/stack</div>
-  </div>
-  <div class="jo-kpi">
-    <div class="jo-kpi-lab">Countries / Hubs</div>
-    <div class="jo-kpi-val" id="jo-kpi-countries">{{ (openings_data.countries | length) if openings_data else 0 }}</div>
-    <div class="jo-kpi-sub">Direct ATS + remote feeds</div>
   </div>
   <div class="jo-kpi">
     <div class="jo-kpi-lab">Last Refresh</div>
@@ -76,40 +105,43 @@
   </div>
 </div>
 
-<div class="jo-filters" role="search" aria-label="Filter fresh job openings">
-  <div class="jo-fgroup">
-    <label for="jo-country">Country</label>
-    <select id="jo-country" class="jo-select">
-      <option value="all">All Countries</option>
-      {% for c in (openings_data.countries if openings_data else []) %}
-      <option value="{{ c }}">{{ c }}</option>
-      {% endfor %}
-    </select>
+<div class="jo-filter-shell" role="search" aria-label="Filter fresh job openings">
+  <div class="jo-search-row">
+    <input type="search" id="jo-search" class="jo-search" placeholder="Search role, company, city, AI tool, salary…" aria-label="Search fresh job openings">
+    <button type="button" id="jo-remote-btn" class="jo-quick-pill" aria-pressed="false">&#9679; Remote Only</button>
+    <button type="button" id="jo-filter-toggle" class="jo-filter-toggle" aria-expanded="false" aria-controls="jo-dropdowns">Filters &#9662;</button>
   </div>
-  <div class="jo-fgroup">
-    <label for="jo-exp">Years of Experience</label>
-    <select id="jo-exp" class="jo-select">
-      <option value="all">All Experience Levels</option>
-      <option value="0–2 yrs">0–2 yrs (Entry / Intern)</option>
-      <option value="2–5 yrs">2–5 yrs (Mid-Level)</option>
-      <option value="5–8 yrs">5–8 yrs (Senior)</option>
-      <option value="8+ yrs">8+ yrs (Staff / Principal / Lead)</option>
-      <option value="Not specified">Not specified</option>
-    </select>
-  </div>
-  <div class="jo-fgroup">
-    <label for="jo-ai">AI Experience &amp; Tools</label>
-    <select id="jo-ai" class="jo-select">
-      <option value="all">All Roles</option>
-      <option value="__any_ai__">Any AI / ML Role</option>
-      {% for t in (openings_data.ai_tools if openings_data else []) %}
-      <option value="{{ t }}">{{ t }}</option>
-      {% endfor %}
-    </select>
-  </div>
-  <div class="jo-fgroup">
-    <label for="jo-search">Open Search</label>
-    <input type="search" id="jo-search" class="jo-search" placeholder="Search title, company, city, tool, salary…" aria-label="Search fresh job openings">
+  <div class="jo-dropdowns" id="jo-dropdowns">
+    <div class="jo-fgroup">
+      <label for="jo-country">Country</label>
+      <select id="jo-country" class="jo-select">
+        <option value="all">All Countries</option>
+        {% for c in (openings_data.countries if openings_data else []) %}
+        <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="jo-fgroup">
+      <label for="jo-exp">Years of Experience</label>
+      <select id="jo-exp" class="jo-select">
+        <option value="all">All Experience Levels</option>
+        <option value="0–2 yrs">0–2 yrs (Entry / Intern)</option>
+        <option value="2–5 yrs">2–5 yrs (Mid-Level)</option>
+        <option value="5–8 yrs">5–8 yrs (Senior)</option>
+        <option value="8+ yrs">8+ yrs (Staff / Principal / Lead)</option>
+        <option value="Not specified">Not specified</option>
+      </select>
+    </div>
+    <div class="jo-fgroup">
+      <label for="jo-ai">AI Experience &amp; Tools</label>
+      <select id="jo-ai" class="jo-select">
+        <option value="all">All Roles</option>
+        <option value="__any_ai__">Any AI / ML Role</option>
+        {% for t in (openings_data.ai_tools if openings_data else []) %}
+        <option value="{{ t }}">{{ t }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
 </div>
 
@@ -117,20 +149,23 @@
   <span id="jo-count">Showing {{ (openings_data.openings | length) if openings_data else 0 }} fresh openings (max 25 days old)</span>
   <div style="display:flex;gap:8px;align-items:center">
     <a href="{{ base_path }}data/openings.json" style="font-family:var(--fm);font-size:12px">JSON feed</a>
-    <button type="button" id="jo-reset" class="jo-reset">Reset filters</button>
+    <button type="button" id="jo-reset" class="jo-reset">Reset</button>
   </div>
 </div>
 
 <div class="jo-list" id="jo-list">
   {% if openings_data and openings_data.openings %}
     {% for j in openings_data.openings %}
-    <article class="jo-card">
+    <article class="jo-card{% if j.work_mode == 'Remote' %} is-remote{% endif %}">
       <div class="jo-main">
-        <h2 class="jo-title">{{ j.title }}</h2>
+        <div class="jo-title-row">
+          <h2 class="jo-title">{{ j.title }}</h2>
+          {% if j.work_mode == 'Remote' %}<span class="jo-tag remote">&#9679; Remote</span>{% endif %}
+        </div>
         <div class="jo-meta">
           <strong>{{ j.company }}</strong>
           <span>{{ j.location }} ({{ j.country }})</span>
-          <span>{{ j.work_mode }}</span>
+          {% if j.work_mode != 'Remote' %}<span>{{ j.work_mode }}</span>{% endif %}
           <span>Exp: {{ j.exp_bucket }}</span>
           <span>Posted {{ j.posted_date }} ({{ j.age_days }}d ago)</span>
         </div>
@@ -141,7 +176,10 @@
           <span class="jo-tag">{{ j.source }}</span>
         </div>
       </div>
-      <a class="jo-apply" href="{{ j.apply_url }}" target="_blank" rel="noopener">Apply &#8599;</a>
+      <div class="jo-foot">
+        <span class="jo-foot-meta">{{ j.age_days }}d ago · {{ j.source }}</span>
+        <a class="jo-apply" href="{{ j.apply_url }}" target="_blank" rel="noopener">Apply &#8599;</a>
+      </div>
     </article>
     {% endfor %}
   {% else %}
@@ -157,13 +195,28 @@
   const elExp = document.getElementById('jo-exp');
   const elAi = document.getElementById('jo-ai');
   const elSearch = document.getElementById('jo-search');
+  const elRemoteBtn = document.getElementById('jo-remote-btn');
+  const elFilterToggle = document.getElementById('jo-filter-toggle');
+  const elDropdowns = document.getElementById('jo-dropdowns');
   const elList = document.getElementById('jo-list');
   const elCount = document.getElementById('jo-count');
   const elKpiTotal = document.getElementById('jo-kpi-total');
+  const elKpiRemote = document.getElementById('jo-kpi-remote');
   const elKpiAi = document.getElementById('jo-kpi-ai');
+  let remoteOnly = false;
 
   function esc(s){
     return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function updateToggleLabel(){
+    let active = 0;
+    if (elCountry.value !== 'all') active++;
+    if (elExp.value !== 'all') active++;
+    if (elAi.value !== 'all') active++;
+    const isOpen = elDropdowns.classList.contains('open');
+    elFilterToggle.classList.toggle('has-active', active > 0);
+    elFilterToggle.innerHTML = 'Filters' + (active ? ' (' + active + ')' : '') + (isOpen ? ' &#9652;' : ' &#9662;');
   }
 
   function render(){
@@ -173,6 +226,7 @@
     const q = elSearch.value.trim().toLowerCase();
 
     const filtered = items.filter(j => {
+      if (remoteOnly && j.work_mode !== 'Remote') return false;
       if (c !== 'all' && j.country !== c) return false;
       if (ex !== 'all' && j.exp_bucket !== ex) return false;
       if (ai === '__any_ai__' && !j.is_ai_role) return false;
@@ -187,8 +241,10 @@
     });
 
     elKpiTotal.textContent = String(filtered.length);
+    elKpiRemote.textContent = String(filtered.filter(j => j.work_mode === 'Remote').length);
     elKpiAi.textContent = String(filtered.filter(j => j.is_ai_role).length);
     elCount.textContent = 'Showing ' + filtered.length + ' of ' + items.length + ' fresh openings (max 25 days old)';
+    updateToggleLabel();
 
     if (!filtered.length){
       elList.innerHTML = '<div class="jo-empty">No openings match your current filters. Try broadening Country, Experience, or AI Tools.</div>';
@@ -196,37 +252,60 @@
     }
 
     elList.innerHTML = filtered.map(j => {
+      const isRem = j.work_mode === 'Remote';
       const tags = [];
       if (j.age_days <= 7) tags.push('<span class="jo-tag fresh">New (' + j.age_days + 'd)</span>');
       if (j.salary) tags.push('<span class="jo-tag sal">' + esc(j.salary) + '</span>');
       (j.ai_tools || []).forEach(t => tags.push('<span class="jo-tag ai">' + esc(t) + '</span>'));
       tags.push('<span class="jo-tag">' + esc(j.source) + '</span>');
-      return '<article class="jo-card">' +
+      return '<article class="jo-card' + (isRem ? ' is-remote' : '') + '">' +
         '<div class="jo-main">' +
-          '<h2 class="jo-title">' + esc(j.title) + '</h2>' +
+          '<div class="jo-title-row">' +
+            '<h2 class="jo-title">' + esc(j.title) + '</h2>' +
+            (isRem ? '<span class="jo-tag remote">&#9679; Remote</span>' : '') +
+          '</div>' +
           '<div class="jo-meta">' +
             '<strong>' + esc(j.company) + '</strong>' +
             '<span>' + esc(j.location) + ' (' + esc(j.country) + ')</span>' +
-            '<span>' + esc(j.work_mode) + '</span>' +
+            (!isRem ? '<span>' + esc(j.work_mode) + '</span>' : '') +
             '<span>Exp: ' + esc(j.exp_bucket) + '</span>' +
             '<span>Posted ' + esc(j.posted_date) + ' (' + j.age_days + 'd ago)</span>' +
           '</div>' +
           '<div class="jo-tags">' + tags.join('') + '</div>' +
         '</div>' +
-        '<a class="jo-apply" href="' + esc(j.apply_url) + '" target="_blank" rel="noopener">Apply &#8599;</a>' +
+        '<div class="jo-foot">' +
+          '<span class="jo-foot-meta">' + j.age_days + 'd ago · ' + esc(j.source) + '</span>' +
+          '<a class="jo-apply" href="' + esc(j.apply_url) + '" target="_blank" rel="noopener">Apply &#8599;</a>' +
+        '</div>' +
       '</article>';
     }).join('');
   }
 
+  elRemoteBtn.addEventListener('click', () => {
+    remoteOnly = !remoteOnly;
+    elRemoteBtn.classList.toggle('active', remoteOnly);
+    elRemoteBtn.setAttribute('aria-pressed', remoteOnly ? 'true' : 'false');
+    render();
+  });
+  elFilterToggle.addEventListener('click', () => {
+    const isOpen = elDropdowns.classList.toggle('open');
+    elFilterToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    updateToggleLabel();
+  });
   [elCountry, elExp, elAi].forEach(el => el.addEventListener('change', render));
   elSearch.addEventListener('input', render);
   document.getElementById('jo-reset').addEventListener('click', () => {
+    remoteOnly = false;
+    elRemoteBtn.classList.remove('active');
+    elRemoteBtn.setAttribute('aria-pressed', 'false');
     elCountry.value = 'all';
     elExp.value = 'all';
     elAi.value = 'all';
     elSearch.value = '';
     render();
   });
+
+  render();
 })();
 </script>
 {% endblock %}

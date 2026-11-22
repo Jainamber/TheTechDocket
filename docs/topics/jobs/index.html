@@ -292,6 +292,9 @@ html[data-theme=dark] .nl button{color:#0d0f14}
 .jm-tab{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13.5px;font-weight:700;text-decoration:none}
 .jm-tab:hover{border-color:var(--accent);color:var(--accent-ink)}
 .jm-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.jm-tab.cta{background:linear-gradient(135deg,#059669,#047857);color:#fff;border-color:#047857;box-shadow:0 2px 10px rgba(5,150,105,.26)}
+.jm-tab.cta:hover{background:linear-gradient(135deg,#047857,#065f46);color:#fff;border-color:#065f46;transform:translateY(-1px)}
+.jm-live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#a7f3d0;box-shadow:0 0 0 3px rgba(167,243,208,.35)}
 .jm-wrap{margin:18px 0 34px}
 .jm-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:18px 0}
 .jm-kpi{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
@@ -385,7 +388,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
 <p class="intro">Global tech layoffs, hiring freezes and expansion trackers across the US, India and Europe. Which companies are cutting headcount, who is actively hiring, and the financial or AI shifts behind every move.</p>
 <nav class="jm-subnav" aria-label="Tech Jobs &amp; Layoffs sections">
   <a class="jm-tab active" href="/topics/jobs/" aria-current="page">Layoffs &amp; Hiring Map</a>
-  <a class="jm-tab" href="/topics/jobs/openings/">Fresh Openings (&le;25 Days) &#8594;</a>
+  <a class="jm-tab cta" href="/topics/jobs/openings/"><span class="jm-live-dot" aria-hidden="true"></span>Fresh Openings (300 Live) &#8594;</a>
 </nav>
 
 
