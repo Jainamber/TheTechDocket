@@ -131,6 +131,8 @@ content:
     hardware:    "Chips & Hardware"
     policy:      "Policy & Society"
     explainers:  "How-To & Explainers"
+    cybersecurity: "Cybersecurity & Breaches"
+    jobs: "Tech Jobs & Layoffs"
   # Short display labels for tight surfaces ONLY (mobile nav rail ≤719px,
   # deck SHOW row). Display-only: slugs, URLs, hub-page titles keep the
   # full names above. (Owner-approved N1 + short labels, 2026-07-24.)
@@ -141,6 +143,8 @@ content:
     hardware:    "Chips"
     policy:      "Policy"
     explainers:  "How-To"
+    cybersecurity: "Security"
+    jobs: "Jobs"
   # One-paragraph intro per hub page. Previously these pages were a bare
   # heading plus a list of cards, which is what made them read as thin.
   hub_intros:
@@ -169,6 +173,14 @@ content:
       Plain-language answers to the questions people search for most: how a
       thing works, whether you actually need it, and what to do next. No
       assumed background.
+    cybersecurity: >-
+      Data breaches, zero-day exploits, ransomware and AI-driven attacks,
+      stripped of vendor FUD. What actually broke, who is exposed, and what
+      Indian and global engineering teams need to patch or verify.
+    jobs: >-
+      Global tech layoffs, hiring freezes and expansion trackers across the
+      US, India and Europe. Which companies are cutting headcount, who is
+      actively hiring, and the financial or AI shifts behind every move.
   min_words: 900
   max_words: 2200
   # Analysis sections at least one of which must appear (compliance gate 10)

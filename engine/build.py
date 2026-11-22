@@ -356,8 +356,9 @@ def _common(cfg, nav_hubs=None, **kw) -> dict:
            "sameAs": cfg["site"].get("social_profiles", [])}
     if nav_hubs is None:  # nav shows only hubs that actually have articles
         active = {a.get("hub") for a in all_articles()}
+        has_jobs_map = (ROOT / "data" / "jobs-map.json").exists()
         nav_hubs = {h: n for h, n in cfg["content"]["hubs"].items()
-                    if h in active}
+                    if h in active or (h == "jobs" and has_jobs_map)}
     # brand wordmark: split CamelCase site name for the two-tone logo text
     _name = cfg["site"]["name"]
     if " " in _name:
@@ -823,10 +824,24 @@ def build_site() -> Path:
                nd_today=now_ist().strftime("%A, %d %B %Y"))))
 
     # hubs
+    jobs_map_path = ROOT / "data" / "jobs-map.json"
+    jobs_map_data = None
+    if jobs_map_path.exists():
+        try:
+            jobs_map_data = json.loads(jobs_map_path.read_text(encoding="utf-8"))
+        except Exception:
+            jobs_map_data = None
     for hslug, hname in cfg["content"]["hubs"].items():
         hub_arts = [s for s in summaries if s["hub"] == hslug]
+        tpl = "jobs_hub.html" if (hslug == "jobs" and jobs_map_data) else "list.html"
+        extra = {}
+        if tpl == "jobs_hub.html":
+            extra = {
+                "jobs_map": jobs_map_data,
+                "jobs_map_json": json.dumps(jobs_map_data, ensure_ascii=False),
+            }
         _write(out / "topics" / hslug / "index.html",
-               env.get_template("list.html").render(**_common(
+               env.get_template(tpl).render(**_common(
                    cfg, current_hub=hslug,
                    page_title=f"{hname} — {cfg['site']['name']}",
                    meta_description=f"All {cfg['site']['name']} coverage of {hname}: daily, data-picked articles for India and the world.",
@@ -834,7 +849,7 @@ def build_site() -> Path:
                    og_image=home_img, og_image_alt=hname,
                    heading=hname,
                    intro=(cfg["content"].get("hub_intros") or {}).get(hslug),
-                   articles=hub_arts)))
+                   articles=hub_arts, **extra)))
 
     # static pages
     pages = [

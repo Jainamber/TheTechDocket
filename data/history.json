@@ -917,6 +917,24 @@
       },
       "gate_report": "data/gate-reports/2026-11-21-inkling-2-mini-looped-transformer-laptops.json",
       "url": "https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "java4shell-cve-2026-114938-openjdk-patch-guide",
+      "title": "Java4Shell (CVE-2026-114938): Affected Java Builds & Fix",
+      "keyword": "Java4Shell CVE-2026-114938",
+      "hub": "cybersecurity",
+      "published_at": "2026-11-22T11:12:23.108744+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T10:45:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-java4shell-cve-2026-114938-openjdk-patch-guide.json",
+      "url": "https://thetechdocket.com/articles/java4shell-cve-2026-114938-openjdk-patch-guide/"
     }
   ]
 }

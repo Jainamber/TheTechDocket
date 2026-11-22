@@ -8,6 +8,27 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>CERT-In CIAD-2026-0062: AI Agents &amp; Payment Workflow Fraud</title>
+    <link>https://thetechdocket.com/articles/cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents/</guid>
+    <pubDate>Sun, 22 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[CERT-In critical advisory CIAD-2026-0062 warns of payment workflow manipulation and AI-driven agentic attacks across Indian banks, fintechs, and vendors.]]></description>
+  </item>
+  <item>
+    <title>Cursor Weighs Dropping Chinese AI as Sarvam Sells DeepSeek</title>
+    <link>https://thetechdocket.com/articles/cursor-chinese-open-weight-models-sarvam-deepseek/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/cursor-chinese-open-weight-models-sarvam-deepseek/</guid>
+    <pubDate>Sun, 22 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[A 50-page US House report reveals Cursor, Airbnb, and DoorDash rely on Chinese open-weight models, even as India's Sarvam hosts DeepSeek at 450B tokens daily.]]></description>
+  </item>
+  <item>
+    <title>Java4Shell (CVE-2026-114938): Affected Java Builds &amp; Fix</title>
+    <link>https://thetechdocket.com/articles/java4shell-cve-2026-114938-openjdk-patch-guide/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/java4shell-cve-2026-114938-openjdk-patch-guide/</guid>
+    <pubDate>Sun, 22 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[Oracle Java SE 17–27 and GraalVM face CVE-2026-114938 (Java4Shell) on AVX-512 x86-64 CPUs. Affected builds, JVM flags, and CERT-In CIAD-2026-0061 fixes.]]></description>
+  </item>
+  <item>
     <title>Inkling 2 Mini: 26B Looped AI Model Built for Laptops</title>
     <link>https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/inkling-2-mini-looped-transformer-laptops/</guid>
@@ -125,27 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/gpt-5-6-sol-ultrafast/</guid>
     <pubDate>Fri, 14 Aug 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[OpenAI's new Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens a second on Cerebras wafer chips. What's verified, what's vendor claim, and who gets access.]]></description>
-  </item>
-  <item>
-    <title>Pixel 11 India Prices: Full List, Hikes and the AI Catch</title>
-    <link>https://thetechdocket.com/articles/pixel-11-india-price/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/pixel-11-india-price/</guid>
-    <pubDate>Thu, 13 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[Official India prices for every Pixel 11 model, the ₹10,000 hikes over Pixel 10, sale dates and offers — and the Google AI Pro freebie Google just halved.]]></description>
-  </item>
-  <item>
-    <title>GPT-5.6-Cyber: OpenAI&#x27;s Gated Hacking Model</title>
-    <link>https://thetechdocket.com/articles/gpt-5-6-cyber/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/gpt-5-6-cyber/</guid>
-    <pubDate>Wed, 12 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[OpenAI's GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here's the bet.]]></description>
-  </item>
-  <item>
-    <title>Muse Glimmer: Meta&#x27;s Open 30B Model, and the U-Turn Behind It</title>
-    <link>https://thetechdocket.com/articles/muse-glimmer-meta-open-model/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/muse-glimmer-meta-open-model/</guid>
-    <pubDate>Tue, 11 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[Meta's Muse Glimmer puts a 30B open-weight agent model on one consumer GPU, under Apache 2.0. What shipped, what the benchmarks hide, and why Meta flipped back.]]></description>
   </item>
 </channel>
 </rss>
