@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.language }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,34 +13,33 @@ function cur(){return document.documentElement.getAttribute("data-theme")==="dar
 function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
 b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
 try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
-<title>Saurab Jain — The Tech Docket</title>
-<meta name="description" content="Saurab Jain is the founder and editor of The Tech Docket, which he launched in July 2026. He tracks global and Indian technology and AI trends daily, using…">
-<link rel="canonical" href="https://thetechdocket.com/authors/saurab-jain/">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
-<script src="/assets/analytics.js" defer></script>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="The Tech Docket">
-<meta property="og:title" content="Saurab Jain — The Tech Docket">
-<meta property="og:description" content="Saurab Jain is the founder and editor of The Tech Docket, which he launched in July 2026. He tracks global and Indian technology and AI trends daily, using…">
-<meta property="og:url" content="https://thetechdocket.com/authors/saurab-jain/">
-<meta property="og:image" content="https://thetechdocket.com/articles/10-ai-micro-businesses-replace-tech-job-2027/10-ai-micro-businesses-replace-tech-job-2027-16x9.jpg">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ meta_description }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="robots" content="{{ robots_meta | default('index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1') }}">
+{{ analytics_head }}
+<link rel="icon" href="{{ base_path }}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{ base_path }}assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="{{ base_path }}assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.base_url }}feed.xml">
+<meta property="og:type" content="{{ og_type | default('website') }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ og_title | default(page_title) }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ og_image }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="Saurab Jain">
-<meta property="og:locale" content="en_US">
-
+<meta property="og:image:alt" content="{{ og_image_alt }}">
+<meta property="og:locale" content="{{ site.locale }}">
+{% block og_extra %}{% endblock %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Saurab Jain — The Tech Docket">
-<meta name="twitter:description" content="Saurab Jain is the founder and editor of The Tech Docket, which he launched in July 2026. He tracks global and Indian technology and AI trends daily, using…">
-<meta name="twitter:image" content="https://thetechdocket.com/articles/10-ai-micro-businesses-replace-tech-job-2027/10-ai-micro-businesses-replace-tech-job-2027-16x9.jpg">
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfilePage", "dateModified": "2026-11-23", "mainEntity": {"@type": "Person", "name": "Saurab Jain", "description": "Saurab Jain is the founder and editor of The Tech Docket, which he launched in July 2026. He tracks global and Indian technology and AI trends daily, using search-demand data to decide what to cover and first-party analysis to explain why it matters. Every article on the site is produced under an editorial process he set and publishes openly: sources cited inline, no affiliate links, no sponsored placement, and corrections logged on the page itself. He writes from India, and covers the Indian market as a first-class subject rather than a footnote to the US technology cycle.", "url": "https://thetechdocket.com/authors/saurab-jain/", "sameAs": ["https://news.ycombinator.com/user?id=Amber_Jain"]}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<meta name="twitter:title" content="{{ og_title | default(page_title) }}">
+<meta name="twitter:description" content="{{ meta_description }}">
+<meta name="twitter:image" content="{{ og_image }}">
+{% if site.twitter_handle %}<meta name="twitter:site" content="{{ site.twitter_handle }}">{% endif %}
+{% block jsonld %}{% endblock %}
+<script type="application/ld+json">{{ org_jsonld }}</script>
 <style>
 :root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--k-cybersecurity:#b91c1c;--k-jobs:#0369a1;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--t-cybersecurity:#fee2e2;--t-jobs:#e0f2fe;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
@@ -267,84 +266,36 @@ html[data-theme=dark] .skip{color:#0d0f14}
 html[data-theme=dark] .nl button{color:#0d0f14}
 </style>
 </head>
-<body class="">
+<body class="{% block bodyclass %}{% endblock %}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="wrap">
     <div class="brandbar">
-      <a class="brand" href="/">The Tech <b>Docket</b></a>
-      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <a class="brand" href="{{ base_path }}">{{ brand_a }}<b>{{ brand_b }}</b></a>
+      <span class="tagline">{{ site.tagline }}</span>
       <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
     </div>
     <nav class="hubs" aria-label="Topics">
-      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/ai-models/"><span class="nl-full">AI Models</span><span class="nl-short">AI Models</span></a><a href="/topics/big-tech/"><span class="nl-full">Big Tech</span><span class="nl-short">Big Tech</span></a><a href="/topics/hardware/"><span class="nl-full">Chips &amp; Hardware</span><span class="nl-short">Chips</span></a><a href="/topics/policy/"><span class="nl-full">Policy &amp; Society</span><span class="nl-short">Policy</span></a><a href="/topics/cybersecurity/"><span class="nl-full">Cybersecurity &amp; Breaches</span><span class="nl-short">Cybersecurity &amp; Breaches</span></a><a href="/topics/jobs/"><span class="nl-full">Tech Jobs &amp; Layoffs</span><span class="nl-short">Tech Jobs &amp; Layoffs</span></a>
+      {% if has_docket %}<a class="navdocket" href="{{ base_path }}docket/"{% if current_hub == '_docket' %} aria-current="page"{% endif %}>Today's Docket</a>{% endif %}{% if has_deck %}<a class="navdeck" href="{{ base_path }}deck/"{% if current_hub == '_deck' %} aria-current="page"{% endif %}>The Deck</a>{% endif %}{% for hslug, hname in nav_hubs.items() %}<a href="{{ base_path }}topics/{{ hslug }}/"{% if current_hub == hslug %} aria-current="page"{% endif %}><span class="nl-full">{{ hname }}</span><span class="nl-short">{% if hslug in ["cybersecurity", "jobs"] %}{{ hname }}{% else %}{{ hubs_short.get(hslug, hname) }}{% endif %}</span></a>{% endfor %}
     </nav>
   </div>
 </header>
 <main class="wrap" id="main">
-
-<article class="post">
-  <h1>Saurab Jain</h1>
-  <p>Saurab Jain is the founder and editor of The Tech Docket, which he launched in July 2026. He tracks global and Indian technology and AI trends daily, using search-demand data to decide what to cover and first-party analysis to explain why it matters. Every article on the site is produced under an editorial process he set and publishes openly: sources cited inline, no affiliate links, no sponsored placement, and corrections logged on the page itself. He writes from India, and covers the Indian market as a first-class subject rather than a footnote to the US technology cycle.</p>
-<p>All articles on The Tech Docket are published under
-Saurab Jain&rsquo;s editorial standards — see the
-<a href="/editorial-policy/">editorial policy</a> for exactly how each piece is produced.</p>
-<h2 id="elsewhere">Elsewhere</h2>
-<ul>
-<li><a href="https://news.ycombinator.com/user?id=Amber_Jain" rel="noopener" target="_blank">https://news.ycombinator.com/user?id=Amber_Jain</a></li>
-</ul>
-<h2 id="all-published-articles-33">All Published Articles (33)</h2>
-<ul>
-<li><a href="/articles/10-ai-micro-businesses-replace-tech-job-2027/">10 Micro-Businesses to Replace a Tech Job in 2027 (With Math)</a> (2026-11-22)</li>
-<li><a href="/articles/cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents/">CERT-In CIAD-2026-0062: AI Agents &amp; Payment Workflow Fraud</a> (2026-11-22)</li>
-<li><a href="/articles/cursor-chinese-open-weight-models-sarvam-deepseek/">Cursor Weighs Dropping Chinese AI as Sarvam Sells DeepSeek</a> (2026-11-22)</li>
-<li><a href="/articles/global-tech-layoffs-2026-filings-vs-headlines/">Global Tech Layoffs 2026: Statutory Filings vs. Headlines</a> (2026-11-22)</li>
-<li><a href="/articles/india-it-headcount-gcc-hiring-2026-divergence/">India IT Headcount vs. GCC Hiring in 2026: The Real Split</a> (2026-11-22)</li>
-<li><a href="/articles/java4shell-cve-2026-114938-openjdk-patch-guide/">Java4Shell (CVE-2026-114938): Affected Java Builds &amp; Fix</a> (2026-11-22)</li>
-<li><a href="/articles/what-rises-when-tech-jobs-fall-2027-shifts/">What Rises When Tech Jobs Fall: 5 Shifts Paying in 2027</a> (2026-11-22)</li>
-<li><a href="/articles/inkling-2-mini-looped-transformer-laptops/">Inkling 2 Mini: 26B Looped AI Model Built for Laptops</a> (2026-11-21)</li>
-<li><a href="/articles/ai-generated-code-critics-say-must-be-open/">AI-Generated Code: Why Critics Say It Must Be Open Source</a> (2026-11-16)</li>
-<li><a href="/articles/nvidia-circular-financing-inside-530b-demand-engine/">Nvidia Circular Financing: Inside the $530B Demand Engine</a> (2026-11-15)</li>
-<li><a href="/articles/nvidia-scarcity-allegations-did-chipmaker-fund-own-sales/">Nvidia Scarcity Allegations: Did It Fund Its Own GPU Sales?</a> (2026-11-14)</li>
-<li><a href="/articles/dwarf-planet-candidate-2026-ed138-found-orbiting-beyond/">Dwarf Planet Candidate 2026 ED138 Found Orbiting Beyond Pluto</a> (2026-11-13)</li>
-<li><a href="/articles/smart-home-local-control-your-devices-must-work/">Smart Home Local Control: Why Your Devices Must Work Offline</a> (2026-11-11)</li>
-<li><a href="/articles/google-gemini-routes-private-drive-files-human-annotators/">Google Gemini Routes Private Drive Files to Human Annotators</a> (2026-11-10)</li>
-<li><a href="/articles/nvidia-openai-105b-ohio-deal/">Nvidia&rsquo;s $105B OpenAI Deal: The Ohio Guarantee, Explained</a> (2026-08-18)</li>
-<li><a href="/articles/anthropic-q2-revenue-report/">Anthropic Revenue: $11.5B Q2 Report, 14x Growth, IPO Stakes</a> (2026-08-17)</li>
-<li><a href="/articles/fuse-energy-neutron-record/">Fuse Energy&rsquo;s Neutron Record: A Fusion First, Not Net Power</a> (2026-08-15)</li>
-<li><a href="/articles/pixel-11-india-price/">Pixel 11 India Prices: Full List, Hikes and the AI Catch</a> (2026-08-13)</li>
-<li><a href="/articles/gpt-5-6-cyber/">GPT-5.6-Cyber: OpenAI&rsquo;s Gated Hacking Model</a> (2026-08-12)</li>
-<li><a href="/articles/ai-models-hacking-companies-safety-tests/">AI Models Hacked Real Companies in Safety Tests</a> (2026-08-10)</li>
-<li><a href="/articles/openai-jony-ive-device/">OpenAI Jony Ive Device: $300-400 Speaker Reported for 2027</a> (2026-08-08)</li>
-<li><a href="/articles/ai-data-center-backlash-nashville-vizag/">AI Data Center Backlash: Nashville to Vizag, Cities Push Back</a> (2026-08-07)</li>
-<li><a href="/articles/google-deepmind-shake-up/">Google DeepMind Shake-Up: Hassabis to Chair, Jeff Dean Exits</a> (2026-08-06)</li>
-<li><a href="/articles/amazon-vs-perplexity-ruling/">Amazon vs Perplexity Ruling: AI Agents Can Shop, for Now</a> (2026-08-05)</li>
-<li><a href="/articles/eu-ai-act-august-2026-what-changed/">EU AI Act: What Actually Changed on August 2, 2026</a> (2026-08-03)</li>
-<li><a href="/articles/openai-agent-hugging-face-breach/">AI Agent Security: The OpenAI-Hugging Face Breach</a> (2026-07-31)</li>
-<li><a href="/articles/us-border-phone-search-grapheneos-case/">US Border Phone Searches: The GrapheneOS Wipe Case, Explained</a> (2026-07-29)</li>
-<li><a href="/articles/google-spacex-stake-94-billion/">Google&rsquo;s SpaceX Stake: What the $94.1 Billion Filing Shows</a> (2026-07-28)</li>
-<li><a href="/articles/qualcomm-snapdragon-price-hike/">Qualcomm Snapdragon Price Hike: What It Means for Phone Prices</a> (2026-07-26)</li>
-<li><a href="/articles/ani-vs-openai-fair-dealing-ruling/">ANI vs OpenAI: Delhi HC Calls ChatGPT Training Fair Dealing</a> (2026-07-25)</li>
-<li><a href="/articles/amd-anthropic-deal-mi450/">AMD&rsquo;s $5B Anthropic Deal: 2GW of MI450 Chips, Explained</a> (2026-07-24)</li>
-<li><a href="/articles/eu-google-android-ai-assistants/">EU Orders Google to Open Android to Rival AI Assistants</a> (2026-07-20)</li>
-<li><a href="/articles/real-cost-of-running-ai/">The Real Cost of Running AI: Tokens, GPUs, Power</a> (2026-07-19)</li>
-</ul>
-</article>
-
+{% block content %}{% endblock %}
 </main>
 <footer class="site">
   <div class="wrap">
     <nav>
-      <a href="/about/">About</a>
-      <a href="/editorial-policy/">Editorial policy</a>
-      <a href="/authors/saurab-jain/">Author</a>
-      <a href="/sitemap/">All articles</a>
-      <a href="https://thetechdocket.com/feed.xml">RSS</a>
-      <a href="mailto:jainamber88@gmail.com">Contact</a>
+      <a href="{{ base_path }}about/">About</a>
+      <a href="{{ base_path }}editorial-policy/">Editorial policy</a>
+      <a href="{{ base_path }}authors/{{ author.slug }}/">Author</a>
+      <a href="{{ base_path }}sitemap/">All articles</a>
+      <a href="{{ site.base_url }}feed.xml">RSS</a>
+      <a href="mailto:{{ site.contact_email }}">Contact</a>
     </nav>
-    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+    <p>© {{ year }} {{ site.name }}. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="{{ base_path }}editorial-policy/">editorial policy</a>.</p>
   </div>
 </footer>
-<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{{ analytics_snippet }}
 </body>
 </html>

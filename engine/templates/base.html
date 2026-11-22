@@ -276,7 +276,7 @@ html[data-theme=dark] .nl button{color:#0d0f14}
       <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
     </div>
     <nav class="hubs" aria-label="Topics">
-      {% if has_docket %}<a class="navdocket" href="{{ base_path }}docket/"{% if current_hub == '_docket' %} aria-current="page"{% endif %}>Today's Docket</a>{% endif %}{% if has_deck %}<a class="navdeck" href="{{ base_path }}deck/"{% if current_hub == '_deck' %} aria-current="page"{% endif %}>The Deck</a>{% endif %}{% for hslug, hname in nav_hubs.items() %}<a href="{{ base_path }}topics/{{ hslug }}/"{% if current_hub == hslug %} aria-current="page"{% endif %}><span class="nl-full">{{ hname }}</span><span class="nl-short">{% if hslug in ["cybersecurity", "jobs"] %}{{ hname }}{% else %}{{ hubs_short.get(hslug, hname) }}{% endif %}</span></a>{% endfor %}
+      {% if has_docket %}<a class="navdocket" href="{{ base_path }}docket/"{% if current_hub == '_docket' %} aria-current="page"{% endif %}>Today's Docket</a>{% endif %}{% if has_deck %}<a class="navdeck" href="{{ base_path }}deck/"{% if current_hub == '_deck' %} aria-current="page"{% endif %}>The Deck</a>{% endif %}{% for hslug, hname in nav_hubs.items() if hslug == "jobs" %}<a href="{{ base_path }}topics/{{ hslug }}/"{% if current_hub == hslug %} aria-current="page"{% endif %}><span class="nl-full">{{ hname }}</span><span class="nl-short">{% if hslug in ["cybersecurity", "jobs"] %}{{ hname }}{% else %}{{ hubs_short.get(hslug, hname) }}{% endif %}</span></a>{% endfor %}
     </nav>
   </div>
 </header>

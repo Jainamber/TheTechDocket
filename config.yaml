@@ -24,21 +24,21 @@ site:
   social_profiles: []           # sameAs links for Organization JSON-LD, e.g. ["https://x.com/...", "https://www.linkedin.com/company/..."]
 
 author:
-  name: "Saurab Jain"
-  slug: "saurab-jain"
+  name: "Amber Jain"
+  slug: "amber-jain"
   bio: >-
-    Saurab Jain is the founder and editor of The Tech Docket, which he launched
-    in July 2026. He tracks global and Indian technology and AI trends daily,
-    using search-demand data to decide what to cover and first-party analysis to
-    explain why it matters. Every article on the site is produced under an
-    editorial process he set and publishes openly: sources cited inline, no
-    affiliate links, no sponsored placement, and corrections logged on the page
-    itself. He writes from India, and covers the Indian market as a first-class
-    subject rather than a footnote to the US technology cycle.
+    Amber Jain is the founder and editor of The Tech Docket, launched in July
+    2026. Amber tracks global and Indian technology and AI trends daily, using
+    search-demand data to decide what to cover and first-party analysis to
+    explain why it matters. Every article on the site is produced under an open
+    editorial process: sources cited inline, no affiliate links, no sponsored
+    placement, and corrections logged on the page itself. Writing from India,
+    Amber covers the Indian market as a first-class subject rather than a
+    footnote to the US technology cycle.
   # Author photo, served from docs/assets/. Leave empty and no image renders —
   # the page degrades cleanly. A real photograph only; never a generated one.
   photo: ""
-  photo_alt: "Saurab Jain, founder and editor of The Tech Docket"
+  photo_alt: "Amber Jain, founder and editor of The Tech Docket"
   # Set true only after you confirm the bio above is accurate — compliance gate 13.
   bio_verified: true
   sameAs:
