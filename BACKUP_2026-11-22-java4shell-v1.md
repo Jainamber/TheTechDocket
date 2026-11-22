@@ -1,0 +1,78 @@
+---
+title: 'Java4Shell (CVE-2026-114938): Affected Java Builds & Fix'
+slug: java4shell-cve-2026-114938-openjdk-patch-guide
+date: '2026-11-22'
+hub: cybersecurity
+tags: [cybersecurity, java, zero-day, enterprise-security]
+description: Oracle Java SE 17–27 and GraalVM face CVE-2026-114938 (Java4Shell) on AVX-512 x86-64 CPUs. Affected builds, JVM flags, and CERT-In CIAD-2026-0061 fixes.
+hero_alt: Technical diagram of OpenJDK HotSpot JVM Base64 AVX-512 memory corruption vulnerability CVE-2026-114938
+hero_icon: shield
+keyword: Java4Shell CVE-2026-114938
+ymyl: security
+original_value: Breaks down the exact AVX-512 VBMI hardware requirement behind Java4Shell (CVE-2026-114938), compares patched builds across Oracle Java SE, Eclipse Temurin, and Amazon Corretto, and details CERT-In CIAD-2026-0061 compliance steps for Indian engineering teams.
+selection_note: ''
+sources:
+- {title: 'Critical Java Vulnerability Requires Immediate Patching — CISA', url: 'https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching', primary: true}
+- {title: 'Oracle Critical Security Patch Update Advisory — November 2026', url: 'https://www.oracle.com/security-alerts/cspunov2026.html', primary: true}
+- {title: 'Java4Shell: Remote Code Execution in OpenJDK (CVE-2026-114938) — Datadog Security Labs', url: 'https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/'}
+- {title: 'Java4Shell RCE: Affected Versions & Fix (CVE-2026-114938) — Aikido Security', url: 'https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938'}
+- {title: 'CERT-In Advisory CIAD-2026-0061 Summary — Complied AI', url: 'https://www.compliedai.com/updates/cert-in/ciad-2026-0061-remote-code-execution-vulnerability-in-oracle-java-se-and-93t9ig'}
+faq:
+- {q: 'What is Java4Shell and which hardware is exposed?', a: 'Java4Shell is a memory corruption vulnerability in the optimized Base64 decoder inside OpenJDK HotSpot JVM. Systems are only exposed when running an unpatched Java build on x86-64 processors that support AVX-512 VBMI instructions and passing untrusted input to the affected decoder. Native ARM64 servers are unaffected.'}
+- {q: 'Are standard Java 8 and Java 11 deployments vulnerable?', a: 'Standard Oracle Java SE 8 and Java 11 releases are not affected by this flaw. The main legacy exception is Oracle Java SE 8 Enterprise Performance Pack, which Oracle lists in its November advisory alongside Java 17 and newer release lines.'}
+- {q: 'What is the fastest temporary mitigation before upgrading the JDK?', a: 'Operations teams that cannot immediately rebuild containers or upgrade runtimes can start affected JVMs with the flag -XX:-UseBASE64Intrinsics to disable the vulnerable native decoder path. On x86-64 hosts only, -XX:UseAVX=2 also blocks the vulnerable instruction path until full patching completes.'}
+review: {facts_verified: true, sources_checked: true, title_promise_check: true, no_fabrication: true, policy_pass: true, reviewed_at: '2026-11-22T10:45:00+05:30'}
+---
+
+Oracle has shipped emergency fixes for [CVE-2026-114938](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching), dubbed Java4Shell, a critical memory-corruption flaw in the x86-64 HotSpot Java Virtual Machine Base64 decoder that can crash services or enable unauthenticated remote code execution. Issued on November 17, 2026 alongside advisories from CISA and India's CERT-In, the flaw affects Java 17, 21, 25, and 27 builds running on AVX-512 VBMI processors, making immediate runtime patching a priority for internet-facing backends.
+
+## How the HotSpot Base64 Bug Triggers Heap Corruption
+
+Java4Shell stems from an integer underflow inside the JIT-compiled native intrinsic used by `java.util.Base64.Decoder` on x86-64 CPUs with AVX-512 Vector Byte Manipulation Instructions (VBMI), according to [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/). When an application passes malformed Base64 input with trailing padding to `Base64.getDecoder()` or `Base64.getUrlDecoder()`, HotSpot's C2 compiler routes the tail fragment into an optimized native handler that miscalculates the remaining output length.
+
+In Datadog's technical reproduction, a 129-byte payload consisting of 128 valid `A` characters followed by a single invalid `=` padding character causes the fragment length calculation to decrement from zero to `-1`, per [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/). The native routine feeds that negative value into the x86 `BZHI` instruction to build a 64-bit AVX-512 store mask; because the low byte of `-1` is `255`, the instruction leaves every bit set and writes 62 bytes past the end of a 98-byte destination array.
+
+Even though Java subsequently throws an `IllegalArgumentException`, the out-of-bounds heap write has already occurred and can corrupt adjacent object headers before garbage collection triggers a crash, as explained by [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/). Security firm Calif, which co-reported the flaw alongside Albert Yang in Oracle's [November 2026 Critical Security Patch Update](https://www.oracle.com/security-alerts/cspunov2026.html), rated CVE-2026-114938 at 9.2 (Critical) under CVSS 4.0, whereas Oracle scored it 8.1 under CVSS 3.1 due to high attack complexity, per [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938).
+
+Calif reported achieving unauthenticated remote code execution against default configurations of Keycloak, Atlassian Jira, Atlassian Confluence, JFrog Artifactory, Jenkins, and PingFederate, plus authenticated code execution against Apache Kafka, Solr, Elasticsearch, Gerrit, and Spinnaker, according to [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938). Because each target requires a custom heap-shaping chain, there is no single universal exploit payload yet, and independent researchers have so far replicated crashes and memory leaks while Calif withholds product-specific exploit code to give defenders patching time.
+
+## Affected Java Distributions and Patched Builds
+
+Exposure requires three conditions simultaneously: a vulnerable Java runtime, an x86-64 processor supporting AVX-512 VBMI (such as Intel Xeon Ice Lake or AMD Zen 4 and newer), and attacker-controlled data reaching the basic or URL Base64 decoder, according to [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938). Native ARM64 servers—including AWS Graviton and Apple Silicon hosts—do not execute the vulnerable x86 AVX-512 decoding path, and `Base64.getMimeDecoder()` bypasses it as well, per [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/).
+
+| Java Distribution | Affected Version Range | First Patched Release / Upgrade Target | Hardware & Notes |
+| :--- | :--- | :--- | :--- |
+| **Oracle Java SE 17** | 17.0.6 through builds before 17.0.21.1 | `17.0.21.1` (`17.0.21.1+4`) | x86-64 with AVX-512 VBMI only ([Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/)) |
+| **Oracle Java SE 21 / 25 / 27** | All builds before Nov 17 patches | `21.0.13.1`, `25.0.5.1`, `27.0.1.1` | EOL lines 18–20, 22–24, 26 must upgrade to active LTS ([Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938)) |
+| **Eclipse Temurin** | `17–17.0.21+9`, `21–21.0.13+9`, `25–25.0.5+8`, `27–27.0.1.0.2+1` | `17.0.21.1+2`, `21.0.13.1+2`, `25.0.5.1+2`, `27.0.1.1+4` | Rebuild container base images after rollout ([Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938)) |
+| **Amazon Corretto** | `17–17.0.21.0.11`, `21–21.0.13.0.11`, `25–25.0.5.0.10`, `27–27.0.1.0.11` | `17.0.21.1.2`, `21.0.13.1.2`, `25.0.5.1.2`, `27.0.1.1.4` | Standard Java 8 and 11 unaffected ([Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938)) |
+| **Oracle GraalVM** | GraalVM for JDK `17.0.21.0.3`, `21.0.13.0.3`; EE `21.3.20.0.3` | Oracle Nov 17 CSPU patches | Also affects `8u511b33-perf` Enterprise pack ([Complied AI / CERT-In](https://www.compliedai.com/updates/cert-in/ciad-2026-0061-remote-code-execution-vulnerability-in-oracle-java-se-and-93t9ig)) |
+
+*Source: Consolidated patch matrix from [Oracle's November 2026 CSPU](https://www.oracle.com/security-alerts/cspunov2026.html), [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/), and [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938).*
+
+Notice the subtle trap for legacy environments: standard Oracle Java SE 8 and Java 11 are not vulnerable, but Oracle's Java SE 8 Enterprise Performance Pack (`8u511b33-perf`) is explicitly listed as affected in Oracle's [November 2026 advisory](https://www.oracle.com/security-alerts/cspunov2026.html) and India's [CERT-In CIAD-2026-0061](https://www.compliedai.com/updates/cert-in/ciad-2026-0061-remote-code-execution-vulnerability-in-oracle-java-se-and-93t9ig). Teams running end-of-life feature releases—Java 18, 19, 20, 22, 23, 24, and 26—receive no standalone patch and must migrate up to a supported LTS build such as 21.0.13.1 or 25.0.5.1, per [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938).
+
+## Immediate Verification Commands and Workarounds
+
+Before pushing emergency weekend restarts across every microservice, Linux infrastructure teams can triage host exposure in seconds by checking CPU flags with `grep -om1 -E 'avx512[_]?vbmi' /proc/cpuinfo`, as recommended by [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/). If that command produces no output, the host lacks AVX-512 VBMI support and cannot execute the faulty HotSpot intrinsic, allowing teams to prioritize internet-facing x86-64 clusters running login portals, SAML handlers, or API gateways.
+
+Where immediate runtime upgrades or Docker base-image rebuilds are blocked by change freezes, [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/) confirmed two JVM startup flags that stop the out-of-bounds write in testing:
+
+* **Narrowest fix (`-XX:-UseBASE64Intrinsics`)**: Disables only the native Base64 intrinsic across both x86-64 and ARM64 fleets without breaking container startup scripts, exchanging minor Base64 decoding throughput for safety.
+* **x86-only fallback (`-XX:UseAVX=2`)**: Restricts HotSpot to AVX2 instructions on Intel and AMD servers, though [Datadog Security Labs](https://securitylabs.datadoghq.com/articles/java4shell-remote-code-execution-in-openjdk-cve-2026-114938/) cautions against adding it to shared cross-architecture manifests because native ARM64 JVMs reject the flag and refuse to boot.
+
+After restarting services, operators should verify the running process directly—not just the shell's default `java -version`—using `jcmd <PID> VM.version` and `jcmd <PID> VM.flags -all`, since bundled JREs inside vendor appliances often stay hidden from OS package managers, as flagged by [CISA](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching). In our broader [Cybersecurity & Breaches](/cybersecurity/) coverage, hidden bundled runtimes remain the top reason patches miss production appliances days after disclosure.
+
+## The India Angle
+
+India's Computer Emergency Response Team (CERT-In) moved within 24 hours of Oracle's release, issuing [Advisory CIAD-2026-0061](https://www.compliedai.com/updates/cert-in/ciad-2026-0061-remote-code-execution-vulnerability-in-oracle-java-se-and-93t9ig) on November 18, 2026 covering Oracle Java SE (`8u511b33-perf`, `17.0.21.0.3`, `21.0.13.0.3`, `25.0.5.0.3`, `27.0.1.0.3`), Oracle GraalVM for JDK (`17.0.21.0.3`, `21.0.13.0.3`), and Oracle GraalVM Enterprise Edition (`21.3.20.0.3`). The advisory applies to all Indian organizations and end-user enterprises running affected runtimes, explicitly citing remote code execution via specially crafted malformed Base64 requests.
+
+For Indian IT services firms, SaaS exporters, and banking-tech stacks in Bengaluru, Hyderabad, Pune, and NCR, Java 17 and Java 21 power core Spring Boot microservices, Kafka event pipelines, Jenkins CI/CD runners, and Keycloak identity servers. Unlike US enterprises that may have migrated larger workloads to ARM64 Graviton instances, a heavy share of Indian on-premise data centers and Mumbai/Hyderabad cloud regions still run Intel Xeon Ice Lake and AMD EPYC Zen 4 nodes where AVX-512 VBMI is enabled by default.
+
+Operational timing also intersects with India's regulatory posture. Under CERT-In's standing cyber incident reporting rules—which mandate reporting covered intrusions within six hours—and India's data-protection obligations that we examined in [India's DPDP Act Explained](/articles/india-dpdp-act-explained/), an unpatched internet-facing Keycloak or Jira server creates immediate compliance exposure alongside downtime risk. Teams already running automated local security audits or developer agents like those compared in [Claude Code vs Pi](/articles/claude-code-pi-developers-swapping-terminal-agents/) should scan Dockerfiles, Maven/Gradle build images, and Helm charts for pinned `eclipse-temurin:17` or `corretto:21` tags rather than assuming base OS updates cover bundled JDKs.
+
+## What to Watch
+
+First, watch CISA's Known Exploited Vulnerabilities (KEV) catalog over the next two weeks. As of November 18, [Aikido Security](https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938) noted no confirmed in-the-wild exploitation, but once product-specific proof-of-concept chains for Jenkins, Keycloak, or Jira become public—especially as automated offensive models like those we analyzed in [GPT-5.6-Cyber](/articles/gpt-5-6-cyber/) lower exploit-engineering friction—mass scanning typically begins within 48 to 72 hours.
+
+Second, track downstream enterprise appliance advisories beyond Oracle's own [655-patch November 2026 CSPU](https://www.oracle.com/security-alerts/cspunov2026.html). Vendors shipping embedded JVMs inside gateways, analytics platforms, and CI tools are still publishing staggered minor-version updates, meaning security teams should treat `-XX:-UseBASE64Intrinsics` as a bridge while monitoring vendor SBOMs and container registries through Oracle's next scheduled patch window on December 15, 2026.

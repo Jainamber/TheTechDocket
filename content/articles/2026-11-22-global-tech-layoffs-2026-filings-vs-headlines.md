@@ -63,7 +63,7 @@ Three practical verification checks eliminate most reporting errors before a hea
 * **Watch for double-counting across waves:** Multi-year restructurings often trigger a global announcement in Q1 followed by state-level WARN notices in Q2 and Q3. Summing both turns one 10,000-person program into 15,000 imaginary cuts.
 * **Distinguish net headcount drops from involuntary layoffs:** A public IT firm whose quarterly employee count drops by 5,000 may have let natural attrition run unfilled rather than firing 5,000 people. Checking voluntary attrition rates alongside total headcount prevents confusing hiring freezes with mass terminations.
 
-Teams tracking AI's real impact on engineering workflows—such as the shift toward terminal coding agents we covered in [Claude Code vs Pi](/articles/claude-code-pi-developers-swapping-terminal-agents/)—should apply the same rigor to hiring pledges. Multi-year state investment MoUs and CEO hiring targets frequently change with macro demand, whereas quarterly net headcount filings and physical office leases reflect committed spend.
+Teams tracking AI's real impact on engineering workflows—such as the shift toward terminal coding agents we covered in [open-source AI coding debates](/articles/ai-generated-code-critics-say-must-be-open/)—should apply the same rigor to hiring pledges. Multi-year state investment MoUs and CEO hiring targets frequently change with macro demand, whereas quarterly net headcount filings and physical office leases reflect committed spend.
 
 ## The India Angle
 

@@ -1,0 +1,45 @@
+name: Refresh Fresh Openings Weekly
+
+on:
+  schedule:
+    # Every Sunday at 02:30 UTC (08:00 IST)
+    - cron: '30 2 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-openings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install build dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml jinja2 markdown pillow markupsafe
+
+      - name: Fetch fresh openings (max 25 days old)
+        run: python -m engine.openings_fetch
+
+      - name: Rebuild static site
+        run: python -m engine.run build
+
+      - name: Commit and push updated openings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/openings.json docs/
+          if git diff --cached --quiet; then
+            echo "No openings or site changes to commit."
+          else
+            git commit -m "chore: weekly refresh of fresh tech openings (<=25d)"
+            git push
+          fi
