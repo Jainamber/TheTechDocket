@@ -8,7 +8,7 @@
 .jm-kpi-val{font-size:24px;font-weight:800;letter-spacing:-.5px;margin-top:4px;color:var(--ink)}
 .jm-kpi-val.red{color:#dc2626}
 .jm-kpi-val.green{color:#059669}
-.jm-kpi-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.jm-kpi-sub{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.35}
 .jm-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin:14px 0}
 .jm-pills{display:flex;flex-wrap:wrap;gap:6px}
 .jm-pill{border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;cursor:pointer}
@@ -16,29 +16,40 @@
 .jm-pill.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .jm-pill.active-red{background:#dc2626;color:#fff;border-color:#dc2626}
 .jm-pill.active-green{background:#059669;color:#fff;border-color:#059669}
-.jm-search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:7px 12px;font-size:13.5px;min-width:220px}
+.jm-pill.active-amber{background:#d97706;color:#fff;border-color:#d97706}
+.jm-search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:7px 12px;font-size:13.5px;min-width:210px}
 .jm-mapcard{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px;position:relative;overflow:hidden}
 .jm-legend{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--muted);margin-bottom:10px}
 .jm-leg-items{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 .jm-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .jm-dot.red{background:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,.22)}
 .jm-dot.green{background:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.22)}
+.jm-dot.quar{background:transparent;border:2px dashed #d97706}
 .jm-svg{width:100%;height:auto;display:block;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
 .jm-land{fill:var(--soft);stroke:var(--line);stroke-width:1.1}
 .jm-grid{stroke:var(--line);stroke-width:.55;stroke-dasharray:3 4;opacity:.65}
 .jm-bubble{cursor:pointer;transition:transform .12s ease,opacity .12s ease}
 .jm-bubble:hover{opacity:1}
 .jm-detail{margin-top:12px;padding:12px 14px;border-radius:8px;background:var(--bg);border:1px solid var(--line);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-.jm-badge{display:inline-block;font-family:var(--fm);font-size:11px;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-right:6px}
+.jm-badge{display:inline-block;font-family:var(--fm);font-size:11px;font-weight:700;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-right:5px;white-space:nowrap}
 .jm-badge.firing{background:rgba(220,38,38,.14);color:#dc2626}
 .jm-badge.hiring{background:rgba(5,150,105,.14);color:#059669}
+.jm-badge.tier1{background:rgba(37,99,235,.14);color:#2563eb}
+.jm-badge.tier2{background:rgba(100,116,139,.16);color:var(--ink2)}
+.jm-badge.quar{background:rgba(217,119,6,.16);color:#b45309}
+.jm-badge.grade-a{background:rgba(5,150,105,.14);color:#059669}
+.jm-badge.grade-b{background:rgba(37,99,235,.14);color:#2563eb}
+.jm-badge.grade-c{background:rgba(217,119,6,.16);color:#b45309}
+.jm-meta-tag{font-family:var(--fm);font-size:11px;color:var(--muted);display:block;margin-top:3px}
 .jm-tblwrap{margin-top:18px;overflow-x:auto;border:1px solid var(--line);border-radius:10px}
 .jm-tbl{width:100%;border-collapse:collapse;font-size:13.5px}
 .jm-tbl th,.jm-tbl td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
 .jm-tbl th{background:var(--soft);font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .jm-tbl tr:last-child td{border-bottom:none}
 .jm-tbl tr:hover td{background:var(--soft)}
+.jm-note{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.5}
 .jm-sec-h2{margin:34px 0 8px;font-size:22px;letter-spacing:-.3px}
+.jm-sec-sub{margin:0 0 10px;font-size:14px;color:var(--muted)}
 </style>
 
 <h1 class="listh1">{{ heading }}</h1>
@@ -48,19 +59,19 @@
 <section class="jm-wrap" aria-label="Global Tech Hiring and Layoffs Map">
   <div class="jm-kpis">
     <div class="jm-kpi">
-      <div class="jm-kpi-lab">Firing / Layoffs (Red)</div>
+      <div class="jm-kpi-lab">Confirmed Layoffs (Red)</div>
       <div class="jm-kpi-val red" id="jm-kpi-firing">—</div>
-      <div class="jm-kpi-sub" id="jm-kpi-firing-sub">Tracked cuts in filter</div>
+      <div class="jm-kpi-sub" id="jm-kpi-firing-sub">Tier 1–2 involuntary cuts</div>
     </div>
     <div class="jm-kpi">
-      <div class="jm-kpi-lab">Hiring / Expansion (Green)</div>
+      <div class="jm-kpi-lab">Confirmed Hiring (Green)</div>
       <div class="jm-kpi-val green" id="jm-kpi-hiring">—</div>
-      <div class="jm-kpi-sub" id="jm-kpi-hiring-sub">Tracked additions in filter</div>
+      <div class="jm-kpi-sub" id="jm-kpi-hiring-sub">Tier 1–2 company additions</div>
     </div>
     <div class="jm-kpi">
-      <div class="jm-kpi-lab">Tracked Events</div>
+      <div class="jm-kpi-lab">Audited Events</div>
       <div class="jm-kpi-val" id="jm-kpi-count">—</div>
-      <div class="jm-kpi-sub">{{ jobs_map.window }}</div>
+      <div class="jm-kpi-sub" id="jm-kpi-count-sub">{{ jobs_map.window }}</div>
     </div>
     <div class="jm-kpi">
       <div class="jm-kpi-lab">Map Refresh</div>
@@ -75,13 +86,17 @@
       <button type="button" class="jm-pill" data-type="firing">Firing (Red)</button>
       <button type="button" class="jm-pill" data-type="hiring">Hiring (Green)</button>
     </div>
+    <div class="jm-pills" role="group" aria-label="Filter by verification tier">
+      <button type="button" class="jm-pill active" data-verify="confirmed">Confirmed (Tier 1–2)</button>
+      <button type="button" class="jm-pill" data-verify="all">All (+ Quarantined)</button>
+    </div>
     <div class="jm-pills" role="group" aria-label="Filter by year">
       <button type="button" class="jm-pill active" data-year="all">Last 2 Years</button>
       <button type="button" class="jm-pill" data-year="2026">2026</button>
       <button type="button" class="jm-pill" data-year="2025">2025</button>
       <button type="button" class="jm-pill" data-year="2024">2024</button>
     </div>
-    <input type="search" id="jm-search" class="jm-search" placeholder="Search company, city, country…" aria-label="Search companies or locations">
+    <input type="search" id="jm-search" class="jm-search" placeholder="Search company, city, country, tier…" aria-label="Search companies or locations">
   </div>
 
   <div class="jm-mapcard">
@@ -89,9 +104,10 @@
       <div class="jm-leg-items">
         <span><i class="jm-dot red"></i><strong>Red:</strong> Firing / Layoffs</span>
         <span><i class="jm-dot green"></i><strong>Green:</strong> Hiring / Expansion</span>
+        <span><i class="jm-dot quar"></i><strong>Dashed:</strong> Quarantined (Tier 3)</span>
         <span>Bubble size = headcount</span>
       </div>
-      <span>Click any marker for full details &amp; source</span>
+      <span>Click any marker for tier, stage, dates &amp; source</span>
     </div>
 
     <svg id="jm-svg" class="jm-svg" viewBox="0 0 1000 500" role="img" aria-label="World map of global tech hiring in green and layoffs in red">
@@ -134,7 +150,7 @@
     </svg>
 
     <div class="jm-detail" id="jm-detail">
-      <div><strong>Select a red or green marker on the map</strong> to inspect the company, headcount, rationale, and primary source.</div>
+      <div><strong>Select a red or green marker on the map</strong> to inspect the company, verification tier, execution stage, dates, and primary source.</div>
     </div>
   </div>
 
@@ -142,25 +158,88 @@
     <table class="jm-tbl">
       <thead>
         <tr>
-          <th>Company</th>
-          <th>Signal</th>
+          <th>Company / Entity</th>
+          <th>Signal &amp; Tier</th>
+          <th>Stage / Metric</th>
           <th>Headcount</th>
           <th>Location</th>
-          <th>Date</th>
-          <th>Why / Rationale</th>
+          <th>Dates</th>
+          <th>Why / Audit Notes</th>
           <th>Source</th>
         </tr>
       </thead>
       <tbody id="jm-tbody"></tbody>
     </table>
   </div>
+  <p class="jm-note"><strong>Audit Guardrails:</strong> Confirmed KPI totals include only non-quarantined Tier 1 &amp; Tier 2 company rows (excluding Tier 3 leads, voluntary buyout eligibility pools, net headcount blends like TCS FY26, and national macro payroll totals like US BLS +885,000). Ranges are never averaged into midpoints.</p>
+
+  {% if jobs_map.countries %}
+  <h2 class="jm-sec-h2">Country Observability &amp; News Distortion Audit</h2>
+  <p class="jm-sec-sub">How reliably actual hiring and firing can be observed via statutory payrolls versus media headlines across 10 tracked economies (scores 0–100).</p>
+  <div class="jm-tblwrap">
+    <table class="jm-tbl">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Grade / Score</th>
+          <th>Firing (Obs / Noise)</th>
+          <th>Hiring (Obs / Noise)</th>
+          <th>Verified 2025–2026 Observations</th>
+          <th>Hidden Internal Blind Spots</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in jobs_map.countries %}
+        <tr>
+          <td style="white-space:nowrap"><strong>{{ c.country_name }}</strong><span class="jm-meta-tag">{{ c.country_code }} · {{ c.region }}</span></td>
+          <td style="white-space:nowrap">
+            <span class="jm-badge grade-{{ c.observability_grade | lower }}">Grade {{ c.observability_grade }}</span>
+            <span class="jm-meta-tag">{{ c.practicality_score }}/100</span>
+          </td>
+          <td style="white-space:nowrap;font-family:var(--fm)">{{ c.firing_actual_obs_score }} / {{ c.firing_news_distortion_index }}</td>
+          <td style="white-space:nowrap;font-family:var(--fm)">{{ c.hiring_actual_obs_score }} / {{ c.hiring_news_distortion_index }}</td>
+          <td>{{ c.verified_2yr_observations }}</td>
+          <td>{{ c.hidden_internal_gap }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  {% if jobs_map.practicality_matrix %}
+  <h2 class="jm-sec-h2">Methodology: Practically Observable vs. Structurally Hidden</h2>
+  <p class="jm-sec-sub">Where public statutory filings capture real payroll movement and where internal company dynamics remain opaque.</p>
+  <div class="jm-tblwrap">
+    <table class="jm-tbl">
+      <thead>
+        <tr>
+          <th>Workforce Dimension</th>
+          <th>Observability</th>
+          <th>Best Statutory &amp; Payroll Sources</th>
+          <th>Key Structural Limitation</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in jobs_map.practicality_matrix %}
+        <tr>
+          <td><strong>{{ p.dimension }}</strong></td>
+          <td style="white-space:nowrap">{{ p.practicality }}</td>
+          <td>{{ p.best_sources }}</td>
+          <td>{{ p.key_limitation }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
 </section>
 
 <script>
 (function(){
   const DATA = {{ jobs_map_json | safe }};
   const events = (DATA && DATA.events) ? DATA.events : [];
-  let fType = 'all', fYear = 'all', fQuery = '';
+  let fType = 'all', fVerify = 'confirmed', fYear = 'all', fQuery = '';
 
   const svgNs = 'http://www.w3.org/2000/svg';
   const markersG = document.getElementById('jm-markers');
@@ -171,25 +250,72 @@
   const kpiC = document.getElementById('jm-kpi-count');
   const kpiFS = document.getElementById('jm-kpi-firing-sub');
   const kpiHS = document.getElementById('jm-kpi-hiring-sub');
+  const kpiCS = document.getElementById('jm-kpi-count-sub');
 
   function proj(lat, lon){
     return { x: (lon + 180) * (1000 / 360), y: (90 - lat) * (500 / 180) };
   }
-  function radius(n){
-    return Math.max(5.5, Math.min(22, Math.sqrt(Math.max(n, 100)) * 0.145 + 3.5));
+  function numForSize(ev){
+    const v = ev.headcount_exact != null ? Math.abs(ev.headcount_exact)
+      : (ev.headcount_max != null ? Math.abs(ev.headcount_max)
+      : (ev.headcount_min != null ? Math.abs(ev.headcount_min) : Number(ev.headcount || 500)));
+    return Math.max(v, 100);
+  }
+  function radius(ev){
+    return Math.max(5.5, Math.min(22, Math.sqrt(numForSize(ev)) * 0.145 + 3.5));
   }
   function fmt(n){ return Number(n || 0).toLocaleString('en-US'); }
   function esc(s){
     return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function fmtHeadcount(ev){
+    if (ev.headcount_exact != null){
+      const n = Number(ev.headcount_exact);
+      if (ev.event_type === 'realized_payroll_hires_net_change') return (n >= 0 ? '+' : '') + fmt(n) + ' (Macro)';
+      if (ev.event_type === 'net_headcount_change') return (n < 0 ? '-' : '+') + fmt(Math.abs(n)) + ' (Net)';
+      return fmt(n);
+    }
+    if (ev.headcount_min != null && ev.headcount_max != null){
+      return fmt(ev.headcount_min) + '–' + fmt(ev.headcount_max);
+    }
+    if (ev.headcount_max != null) return 'Up to ' + fmt(ev.headcount_max);
+    if (ev.headcount_min != null) return fmt(ev.headcount_min) + '+';
+    if (ev.headcount != null) return fmt(ev.headcount);
+    return 'Undisclosed';
+  }
+  function fmtStage(s){
+    return String(s || '').replace(/_/g, ' ');
+  }
+  function fmtEventType(s){
+    return String(s || '').replace(/_/g, ' ');
+  }
+  function tierBadge(ev){
+    const t = ev.confidence_tier || 'Tier 2';
+    const cls = t === 'Tier 1' ? 'tier1' : (ev.quarantined ? 'quar' : 'tier2');
+    let out = '<span class="jm-badge ' + cls + '">' + esc(t) + '</span>';
+    if (ev.quarantined) out += '<span class="jm-badge quar">Quarantined</span>';
+    return out;
+  }
+  function fmtDates(ev){
+    const a = ev.announcement_date || ev.date || '—';
+    const parts = [a];
+    if (ev.effective_date && ev.effective_date !== a) parts.push('Eff: ' + ev.effective_date);
+    if (ev.filing_date && ev.filing_date !== a) parts.push('Filed: ' + ev.filing_date);
+    return parts.join('<br>');
   }
 
   function showDetail(ev){
     const badge = ev.type === 'hiring'
       ? '<span class="jm-badge hiring">Hiring</span>'
       : '<span class="jm-badge firing">Firing</span>';
+    const datesLine = 'Announced: ' + esc(ev.announcement_date || ev.date || '—') +
+      (ev.effective_date ? ' · Effective: ' + esc(ev.effective_date) : '') +
+      (ev.filing_date ? ' · Filed: ' + esc(ev.filing_date) : '');
     detail.innerHTML =
-      '<div>' + badge + '<strong>' + esc(ev.company) + '</strong> · ' +
-      fmt(ev.headcount) + ' roles · ' + esc(ev.city) + ', ' + esc(ev.country) + ' (' + esc(ev.date) + ')<br>' +
+      '<div>' + badge + tierBadge(ev) + '<strong>' + esc(ev.company) + '</strong> · ' +
+      esc(fmtHeadcount(ev)) + ' · ' + esc(ev.city) + ', ' + esc(ev.country) + '<br>' +
+      '<span style="color:var(--muted);font-size:12.5px;font-family:var(--fm)">' +
+      esc(fmtStage(ev.execution_stage)) + ' · ' + esc(fmtEventType(ev.event_type)) + ' · ' + datesLine + '</span><br>' +
       '<span style="color:var(--muted);font-size:13px">' + esc(ev.reason) + '</span></div>' +
       '<div><a href="' + esc(ev.source_url) + '" target="_blank" rel="noopener" style="font-weight:700;white-space:nowrap">' +
       esc(ev.source_name || 'Source') + ' &#8599;</a></div>';
@@ -199,54 +325,69 @@
     const q = fQuery.trim().toLowerCase();
     const list = events.filter(ev => {
       if (fType !== 'all' && ev.type !== fType) return false;
+      if (fVerify === 'confirmed' && ev.quarantined) return false;
       if (fYear !== 'all' && String(ev.year) !== fYear) return false;
-      if (q && !(ev.company + ' ' + ev.city + ' ' + ev.country + ' ' + ev.reason).toLowerCase().includes(q)) return false;
+      if (q){
+        const hay = (ev.company + ' ' + ev.city + ' ' + ev.country + ' ' + ev.reason + ' ' +
+          (ev.confidence_tier || '') + ' ' + (ev.execution_stage || '') + ' ' + (ev.event_type || '')).toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
       return true;
     }).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-    let sumF = 0, cntF = 0, sumH = 0, cntH = 0;
+    let sumF = 0, cntF = 0, sumH = 0, cntH = 0, cntQ = 0, macroH = null;
     list.forEach(ev => {
-      if (ev.type === 'hiring') { sumH += ev.headcount; cntH++; }
-      else { sumF += ev.headcount; cntF++; }
+      if (ev.quarantined) { cntQ++; return; }
+      if (ev.event_type === 'realized_payroll_hires_net_change') { macroH = ev.headcount_exact; return; }
+      if (ev.type === 'hiring' && ev.headcount_exact != null) { sumH += Number(ev.headcount_exact); cntH++; }
+      else if (ev.type === 'firing' && ev.event_type === 'involuntary_layoff' && ev.headcount_exact != null) {
+        sumF += Number(ev.headcount_exact); cntF++;
+      }
     });
+
+    const totalQuarAll = events.filter(e => e.quarantined).length;
     kpiF.textContent = fmt(sumF);
-    kpiFS.textContent = cntF + ' layoff event' + (cntF === 1 ? '' : 's');
+    kpiFS.textContent = cntF + ' confirmed layoff event' + (cntF === 1 ? '' : 's') + ' (excl. net/buyouts)';
     kpiH.textContent = fmt(sumH);
-    kpiHS.textContent = cntH + ' hiring expansion' + (cntH === 1 ? '' : 's');
+    kpiHS.textContent = cntH + ' company expansion' + (cntH === 1 ? '' : 's') + (macroH != null ? ' · US BLS +' + fmt(macroH) : '');
     kpiC.textContent = String(list.length);
+    kpiCS.textContent = fVerify === 'confirmed'
+      ? (list.length + ' Tier 1–2 shown · ' + totalQuarAll + ' Tier 3 quarantined')
+      : ((list.length - cntQ) + ' Tier 1–2 · ' + cntQ + ' Tier 3 quarantined');
 
     markersG.innerHTML = '';
     list.forEach(ev => {
       const p = proj(ev.lat, ev.lon);
-      const r = radius(ev.headcount);
+      const r = radius(ev);
       const isH = ev.type === 'hiring';
       const fill = isH ? '#10b981' : '#ef4444';
-      const stroke = isH ? '#047857' : '#b91c1c';
+      const stroke = ev.quarantined ? '#d97706' : (isH ? '#047857' : '#b91c1c');
 
       const g = document.createElementNS(svgNs, 'g');
       g.setAttribute('class', 'jm-bubble');
       g.setAttribute('tabindex', '0');
       g.setAttribute('role', 'button');
-      g.setAttribute('aria-label', ev.company + ' ' + ev.type + ' ' + fmt(ev.headcount));
+      g.setAttribute('aria-label', ev.company + ' ' + ev.type + ' ' + fmtHeadcount(ev));
 
       const halo = document.createElementNS(svgNs, 'circle');
       halo.setAttribute('cx', p.x.toFixed(1));
       halo.setAttribute('cy', p.y.toFixed(1));
       halo.setAttribute('r', (r + 3.5).toFixed(1));
       halo.setAttribute('fill', fill);
-      halo.setAttribute('fill-opacity', '0.18');
+      halo.setAttribute('fill-opacity', ev.quarantined ? '0.10' : '0.18');
 
       const c = document.createElementNS(svgNs, 'circle');
       c.setAttribute('cx', p.x.toFixed(1));
       c.setAttribute('cy', p.y.toFixed(1));
       c.setAttribute('r', r.toFixed(1));
       c.setAttribute('fill', fill);
-      c.setAttribute('fill-opacity', '0.78');
+      c.setAttribute('fill-opacity', ev.quarantined ? '0.45' : '0.78');
       c.setAttribute('stroke', stroke);
-      c.setAttribute('stroke-width', '1.4');
+      c.setAttribute('stroke-width', ev.quarantined ? '1.8' : '1.4');
+      if (ev.quarantined) c.setAttribute('stroke-dasharray', '3 2');
 
       const title = document.createElementNS(svgNs, 'title');
-      title.textContent = ev.company + ' (' + (isH ? 'Hiring' : 'Firing') + ': ' + fmt(ev.headcount) + ') — ' + ev.city + ', ' + ev.country;
+      title.textContent = ev.company + ' (' + (ev.confidence_tier || 'Tier 2') + ' · ' + fmtHeadcount(ev) + ') — ' + ev.city + ', ' + ev.country;
 
       g.appendChild(halo);
       g.appendChild(c);
@@ -263,14 +404,16 @@
         : '<span class="jm-badge firing">Firing</span>';
       return '<tr>' +
         '<td><strong>' + esc(ev.company) + '</strong></td>' +
-        '<td>' + badge + '</td>' +
-        '<td style="white-space:nowrap;font-family:var(--fm)">' + fmt(ev.headcount) + '</td>' +
+        '<td style="white-space:nowrap">' + badge + '<div style="margin-top:4px">' + tierBadge(ev) + '</div></td>' +
+        '<td style="font-family:var(--fm);font-size:11.5px">' + esc(fmtStage(ev.execution_stage)) +
+          '<span class="jm-meta-tag">' + esc(fmtEventType(ev.event_type)) + '</span></td>' +
+        '<td style="white-space:nowrap;font-family:var(--fm)">' + esc(fmtHeadcount(ev)) + '</td>' +
         '<td style="white-space:nowrap">' + esc(ev.city) + ', ' + esc(ev.country) + '</td>' +
-        '<td style="white-space:nowrap;font-family:var(--fm)">' + esc(ev.date) + '</td>' +
+        '<td style="white-space:nowrap;font-family:var(--fm);font-size:12px">' + fmtDates(ev) + '</td>' +
         '<td>' + esc(ev.reason) + '</td>' +
         '<td style="white-space:nowrap"><a href="' + esc(ev.source_url) + '" target="_blank" rel="noopener">' + esc(ev.source_name || 'Source') + ' &#8599;</a></td>' +
       '</tr>';
-    }).join('') || '<tr><td colspan="7" style="color:var(--muted)">No matching entries for this filter.</td></tr>';
+    }).join('') || '<tr><td colspan="8" style="color:var(--muted)">No matching entries for this filter.</td></tr>';
 
     if (list.length) showDetail(list[0]);
   }
@@ -280,6 +423,14 @@
       fType = btn.dataset.type;
       document.querySelectorAll('.jm-pill[data-type]').forEach(b => b.classList.remove('active','active-red','active-green'));
       btn.classList.add(fType === 'firing' ? 'active-red' : fType === 'hiring' ? 'active-green' : 'active');
+      render();
+    });
+  });
+  document.querySelectorAll('.jm-pill[data-verify]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      fVerify = btn.dataset.verify;
+      document.querySelectorAll('.jm-pill[data-verify]').forEach(b => b.classList.remove('active','active-amber'));
+      btn.classList.add(fVerify === 'all' ? 'active-amber' : 'active');
       render();
     });
   });

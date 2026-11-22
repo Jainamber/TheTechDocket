@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+.jm-wrap{margin:18px 0 34px}
+.jm-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:18px 0}
+.jm-kpi{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.jm-kpi-lab{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.jm-kpi-val{font-size:24px;font-weight:800;letter-spacing:-.5px;margin-top:4px;color:var(--ink)}
+.jm-kpi-val.red{color:#dc2626}
+.jm-kpi-val.green{color:#059669}
+.jm-kpi-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.jm-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin:14px 0}
+.jm-pills{display:flex;flex-wrap:wrap;gap:6px}
+.jm-pill{border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-family:var(--fu);font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;cursor:pointer}
+.jm-pill:hover{border-color:var(--accent)}
+.jm-pill.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.jm-pill.active-red{background:#dc2626;color:#fff;border-color:#dc2626}
+.jm-pill.active-green{background:#059669;color:#fff;border-color:#059669}
+.jm-search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:7px 12px;font-size:13.5px;min-width:220px}
+.jm-mapcard{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px;position:relative;overflow:hidden}
+.jm-legend{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.jm-leg-items{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.jm-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.jm-dot.red{background:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,.22)}
+.jm-dot.green{background:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.22)}
+.jm-svg{width:100%;height:auto;display:block;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+.jm-land{fill:var(--soft);stroke:var(--line);stroke-width:1.1}
+.jm-grid{stroke:var(--line);stroke-width:.55;stroke-dasharray:3 4;opacity:.65}
+.jm-bubble{cursor:pointer;transition:transform .12s ease,opacity .12s ease}
+.jm-bubble:hover{opacity:1}
+.jm-detail{margin-top:12px;padding:12px 14px;border-radius:8px;background:var(--bg);border:1px solid var(--line);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.jm-badge{display:inline-block;font-family:var(--fm);font-size:11px;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-right:6px}
+.jm-badge.firing{background:rgba(220,38,38,.14);color:#dc2626}
+.jm-badge.hiring{background:rgba(5,150,105,.14);color:#059669}
+.jm-tblwrap{margin-top:18px;overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.jm-tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.jm-tbl th,.jm-tbl td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.jm-tbl th{background:var(--soft);font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.jm-tbl tr:last-child td{border-bottom:none}
+.jm-tbl tr:hover td{background:var(--soft)}
+.jm-sec-h2{margin:34px 0 8px;font-size:22px;letter-spacing:-.3px}
+</style>
+
+<h1 class="listh1">{{ heading }}</h1>
+{% if intro %}<p class="intro">{{ intro }}</p>{% endif %}
+
+{% if jobs_map %}
+<section class="jm-wrap" aria-label="Global Tech Hiring and Layoffs Map">
+  <div class="jm-kpis">
+    <div class="jm-kpi">
+      <div class="jm-kpi-lab">Firing / Layoffs (Red)</div>
+      <div class="jm-kpi-val red" id="jm-kpi-firing">—</div>
+      <div class="jm-kpi-sub" id="jm-kpi-firing-sub">Tracked cuts in filter</div>
+    </div>
+    <div class="jm-kpi">
+      <div class="jm-kpi-lab">Hiring / Expansion (Green)</div>
+      <div class="jm-kpi-val green" id="jm-kpi-hiring">—</div>
+      <div class="jm-kpi-sub" id="jm-kpi-hiring-sub">Tracked additions in filter</div>
+    </div>
+    <div class="jm-kpi">
+      <div class="jm-kpi-lab">Tracked Events</div>
+      <div class="jm-kpi-val" id="jm-kpi-count">—</div>
+      <div class="jm-kpi-sub">{{ jobs_map.window }}</div>
+    </div>
+    <div class="jm-kpi">
+      <div class="jm-kpi-lab">Map Refresh</div>
+      <div class="jm-kpi-val" style="font-size:18px;padding-top:4px">{{ jobs_map.updated_at }}</div>
+      <div class="jm-kpi-sub">{{ jobs_map.update_cadence }}</div>
+    </div>
+  </div>
+
+  <div class="jm-controls">
+    <div class="jm-pills" role="group" aria-label="Filter by signal">
+      <button type="button" class="jm-pill active" data-type="all">All Signals</button>
+      <button type="button" class="jm-pill" data-type="firing">Firing (Red)</button>
+      <button type="button" class="jm-pill" data-type="hiring">Hiring (Green)</button>
+    </div>
+    <div class="jm-pills" role="group" aria-label="Filter by year">
+      <button type="button" class="jm-pill active" data-year="all">Last 2 Years</button>
+      <button type="button" class="jm-pill" data-year="2026">2026</button>
+      <button type="button" class="jm-pill" data-year="2025">2025</button>
+      <button type="button" class="jm-pill" data-year="2024">2024</button>
+    </div>
+    <input type="search" id="jm-search" class="jm-search" placeholder="Search company, city, country…" aria-label="Search companies or locations">
+  </div>
+
+  <div class="jm-mapcard">
+    <div class="jm-legend">
+      <div class="jm-leg-items">
+        <span><i class="jm-dot red"></i><strong>Red:</strong> Firing / Layoffs</span>
+        <span><i class="jm-dot green"></i><strong>Green:</strong> Hiring / Expansion</span>
+        <span>Bubble size = headcount</span>
+      </div>
+      <span>Click any marker for full details &amp; source</span>
+    </div>
+
+    <svg id="jm-svg" class="jm-svg" viewBox="0 0 1000 500" role="img" aria-label="World map of global tech hiring in green and layoffs in red">
+      <!-- Subtle equirectangular graticule -->
+      <g class="jm-grid">
+        <line x1="0" y1="125" x2="1000" y2="125"/>
+        <line x1="0" y1="250" x2="1000" y2="250"/>
+        <line x1="0" y1="375" x2="1000" y2="375"/>
+        <line x1="250" y1="0" x2="250" y2="500"/>
+        <line x1="500" y1="0" x2="500" y2="500"/>
+        <line x1="750" y1="0" x2="750" y2="500"/>
+      </g>
+      <!-- Simplified world continent outlines (equirectangular 1000x500) -->
+      <g class="jm-land">
+        <!-- North America -->
+        <path d="M55,75 L145,55 L235,62 L295,88 L335,120 L292,155 L270,185 L232,202 L212,232 L188,225 L168,195 L138,165 L110,128 L72,110 Z"/>
+        <!-- Greenland -->
+        <path d="M350,30 L415,24 L438,52 L405,82 L365,75 Z"/>
+        <!-- South America -->
+        <path d="M235,248 L285,252 L338,288 L352,332 L322,388 L292,438 L272,442 L265,392 L248,332 L226,282 Z"/>
+        <!-- Europe -->
+        <path d="M462,135 L485,102 L520,76 L568,72 L608,88 L602,132 L572,148 L538,152 L508,148 L474,152 Z"/>
+        <!-- UK & Ireland -->
+        <path d="M466,104 L484,100 L488,120 L468,122 Z"/>
+        <!-- Africa -->
+        <path d="M465,168 L525,162 L578,176 L615,222 L624,265 L592,332 L558,382 L525,378 L508,325 L482,272 L452,226 Z"/>
+        <!-- Asia & Middle East -->
+        <path d="M598,90 L675,68 L785,68 L885,84 L922,112 L882,148 L848,176 L822,212 L785,222 L752,195 L728,226 L702,224 L682,192 L646,198 L612,178 L588,154 Z"/>
+        <!-- Japan / Taiwan / Islands -->
+        <path d="M876,142 L898,136 L904,162 L882,170 Z"/>
+        <path d="M832,175 L846,175 L846,192 L832,192 Z"/>
+        <!-- SE Asia Archipelago -->
+        <path d="M775,248 L835,252 L878,266 L855,280 L792,272 Z"/>
+        <!-- Australia -->
+        <path d="M808,318 L882,306 L932,338 L924,394 L868,402 L812,374 Z"/>
+        <!-- New Zealand -->
+        <path d="M950,398 L968,388 L972,418 L954,424 Z"/>
+      </g>
+      <g id="jm-markers"></g>
+    </svg>
+
+    <div class="jm-detail" id="jm-detail">
+      <div><strong>Select a red or green marker on the map</strong> to inspect the company, headcount, rationale, and primary source.</div>
+    </div>
+  </div>
+
+  <div class="jm-tblwrap">
+    <table class="jm-tbl">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Signal</th>
+          <th>Headcount</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Why / Rationale</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody id="jm-tbody"></tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+(function(){
+  const DATA = {{ jobs_map_json | safe }};
+  const events = (DATA && DATA.events) ? DATA.events : [];
+  let fType = 'all', fYear = 'all', fQuery = '';
+
+  const svgNs = 'http://www.w3.org/2000/svg';
+  const markersG = document.getElementById('jm-markers');
+  const tbody = document.getElementById('jm-tbody');
+  const detail = document.getElementById('jm-detail');
+  const kpiF = document.getElementById('jm-kpi-firing');
+  const kpiH = document.getElementById('jm-kpi-hiring');
+  const kpiC = document.getElementById('jm-kpi-count');
+  const kpiFS = document.getElementById('jm-kpi-firing-sub');
+  const kpiHS = document.getElementById('jm-kpi-hiring-sub');
+
+  function proj(lat, lon){
+    return { x: (lon + 180) * (1000 / 360), y: (90 - lat) * (500 / 180) };
+  }
+  function radius(n){
+    return Math.max(5.5, Math.min(22, Math.sqrt(Math.max(n, 100)) * 0.145 + 3.5));
+  }
+  function fmt(n){ return Number(n || 0).toLocaleString('en-US'); }
+  function esc(s){
+    return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function showDetail(ev){
+    const badge = ev.type === 'hiring'
+      ? '<span class="jm-badge hiring">Hiring</span>'
+      : '<span class="jm-badge firing">Firing</span>';
+    detail.innerHTML =
+      '<div>' + badge + '<strong>' + esc(ev.company) + '</strong> · ' +
+      fmt(ev.headcount) + ' roles · ' + esc(ev.city) + ', ' + esc(ev.country) + ' (' + esc(ev.date) + ')<br>' +
+      '<span style="color:var(--muted);font-size:13px">' + esc(ev.reason) + '</span></div>' +
+      '<div><a href="' + esc(ev.source_url) + '" target="_blank" rel="noopener" style="font-weight:700;white-space:nowrap">' +
+      esc(ev.source_name || 'Source') + ' &#8599;</a></div>';
+  }
+
+  function render(){
+    const q = fQuery.trim().toLowerCase();
+    const list = events.filter(ev => {
+      if (fType !== 'all' && ev.type !== fType) return false;
+      if (fYear !== 'all' && String(ev.year) !== fYear) return false;
+      if (q && !(ev.company + ' ' + ev.city + ' ' + ev.country + ' ' + ev.reason).toLowerCase().includes(q)) return false;
+      return true;
+    }).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    let sumF = 0, cntF = 0, sumH = 0, cntH = 0;
+    list.forEach(ev => {
+      if (ev.type === 'hiring') { sumH += ev.headcount; cntH++; }
+      else { sumF += ev.headcount; cntF++; }
+    });
+    kpiF.textContent = fmt(sumF);
+    kpiFS.textContent = cntF + ' layoff event' + (cntF === 1 ? '' : 's');
+    kpiH.textContent = fmt(sumH);
+    kpiHS.textContent = cntH + ' hiring expansion' + (cntH === 1 ? '' : 's');
+    kpiC.textContent = String(list.length);
+
+    markersG.innerHTML = '';
+    list.forEach(ev => {
+      const p = proj(ev.lat, ev.lon);
+      const r = radius(ev.headcount);
+      const isH = ev.type === 'hiring';
+      const fill = isH ? '#10b981' : '#ef4444';
+      const stroke = isH ? '#047857' : '#b91c1c';
+
+      const g = document.createElementNS(svgNs, 'g');
+      g.setAttribute('class', 'jm-bubble');
+      g.setAttribute('tabindex', '0');
+      g.setAttribute('role', 'button');
+      g.setAttribute('aria-label', ev.company + ' ' + ev.type + ' ' + fmt(ev.headcount));
+
+      const halo = document.createElementNS(svgNs, 'circle');
+      halo.setAttribute('cx', p.x.toFixed(1));
+      halo.setAttribute('cy', p.y.toFixed(1));
+      halo.setAttribute('r', (r + 3.5).toFixed(1));
+      halo.setAttribute('fill', fill);
+      halo.setAttribute('fill-opacity', '0.18');
+
+      const c = document.createElementNS(svgNs, 'circle');
+      c.setAttribute('cx', p.x.toFixed(1));
+      c.setAttribute('cy', p.y.toFixed(1));
+      c.setAttribute('r', r.toFixed(1));
+      c.setAttribute('fill', fill);
+      c.setAttribute('fill-opacity', '0.78');
+      c.setAttribute('stroke', stroke);
+      c.setAttribute('stroke-width', '1.4');
+
+      const title = document.createElementNS(svgNs, 'title');
+      title.textContent = ev.company + ' (' + (isH ? 'Hiring' : 'Firing') + ': ' + fmt(ev.headcount) + ') — ' + ev.city + ', ' + ev.country;
+
+      g.appendChild(halo);
+      g.appendChild(c);
+      g.appendChild(title);
+      g.addEventListener('mouseenter', () => showDetail(ev));
+      g.addEventListener('click', () => showDetail(ev));
+      g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showDetail(ev); } });
+      markersG.appendChild(g);
+    });
+
+    tbody.innerHTML = list.map(ev => {
+      const badge = ev.type === 'hiring'
+        ? '<span class="jm-badge hiring">Hiring</span>'
+        : '<span class="jm-badge firing">Firing</span>';
+      return '<tr>' +
+        '<td><strong>' + esc(ev.company) + '</strong></td>' +
+        '<td>' + badge + '</td>' +
+        '<td style="white-space:nowrap;font-family:var(--fm)">' + fmt(ev.headcount) + '</td>' +
+        '<td style="white-space:nowrap">' + esc(ev.city) + ', ' + esc(ev.country) + '</td>' +
+        '<td style="white-space:nowrap;font-family:var(--fm)">' + esc(ev.date) + '</td>' +
+        '<td>' + esc(ev.reason) + '</td>' +
+        '<td style="white-space:nowrap"><a href="' + esc(ev.source_url) + '" target="_blank" rel="noopener">' + esc(ev.source_name || 'Source') + ' &#8599;</a></td>' +
+      '</tr>';
+    }).join('') || '<tr><td colspan="7" style="color:var(--muted)">No matching entries for this filter.</td></tr>';
+
+    if (list.length) showDetail(list[0]);
+  }
+
+  document.querySelectorAll('.jm-pill[data-type]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      fType = btn.dataset.type;
+      document.querySelectorAll('.jm-pill[data-type]').forEach(b => b.classList.remove('active','active-red','active-green'));
+      btn.classList.add(fType === 'firing' ? 'active-red' : fType === 'hiring' ? 'active-green' : 'active');
+      render();
+    });
+  });
+  document.querySelectorAll('.jm-pill[data-year]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      fYear = btn.dataset.year;
+      document.querySelectorAll('.jm-pill[data-year]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+  });
+  document.getElementById('jm-search').addEventListener('input', e => {
+    fQuery = e.target.value;
+    render();
+  });
+
+  render();
+})();
+</script>
+{% endif %}
+
+<h2 class="jm-sec-h2">Latest Tech Jobs &amp; Layoffs Coverage</h2>
+<ul class="cardlist" style="margin-top:16px">
+  {% for a in articles %}
+  <li><a class="itile i-{{ a.hub }}" href="{{ base_path }}articles/{{ a.slug }}/" aria-hidden="true" tabindex="-1">{{ a.icon_svg }}</a><div>
+    <div class="kline"><a class="kicker k-{{ a.hub }}" href="{{ base_path }}topics/{{ a.hub }}/">{{ a.hub_name }}</a> <span class="dt">· {{ a.date_human }}</span></div>
+    <a class="t" href="{{ base_path }}articles/{{ a.slug }}/">{{ a.title }}</a>
+    <div class="m">{{ a.description }}</div></div></li>
+  {% endfor %}
+</ul>
+{% if not articles %}<p class="empty">Layoff deep-dive articles coming next — the global map above updates weekly.</p>{% endif %}
+{% endblock %}
