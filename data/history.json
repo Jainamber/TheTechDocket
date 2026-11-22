@@ -935,6 +935,24 @@
       },
       "gate_report": "data/gate-reports/2026-11-22-java4shell-cve-2026-114938-openjdk-patch-guide.json",
       "url": "https://thetechdocket.com/articles/java4shell-cve-2026-114938-openjdk-patch-guide/"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents",
+      "title": "CERT-In CIAD-2026-0062: AI Agents & Payment Workflow Fraud",
+      "keyword": "CERT-In CIAD-2026-0062",
+      "hub": "cybersecurity",
+      "published_at": "2026-11-22T11:12:35.071776+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-22T10:48:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-22-cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents.json",
+      "url": "https://thetechdocket.com/articles/cert-in-ciad-2026-0062-payment-workflow-fraud-ai-agents/"
     }
   ]
 }
