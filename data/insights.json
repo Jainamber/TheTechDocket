@@ -1,7 +1,48 @@
 {
-  "generated_at": "2026-11-21T12:28:36.872752+05:30",
-  "page_stats": {},
-  "hub_performance": {},
+  "generated_at": "2026-11-22T12:08:52.659816+05:30",
+  "page_stats": {
+    "real-cost-of-running-ai": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 7
+    },
+    "free-ai-tiers-compared": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 5
+    },
+    "ai-generated-code-critics-say-must-be-open": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 3
+    },
+    "nvidia-circular-financing-inside-530b-demand-engine": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 2
+    },
+    "claude-code-pi-developers-swapping-terminal-agents": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "spot-ai-generated-images-videos": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    },
+    "codex-context-window-cut": {
+      "clicks": 0,
+      "impressions": 0,
+      "visits": 1
+    }
+  },
+  "hub_performance": {
+    "hardware": 9,
+    "explainers": 6,
+    "policy": 3,
+    "ai-tools": 2
+  },
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."

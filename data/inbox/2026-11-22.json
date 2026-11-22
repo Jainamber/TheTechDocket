@@ -1,0 +1,1783 @@
+{
+  "date": "2026-11-22",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_semiconducto": "ok",
+    "news_IN_AI startup f": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_semiconducto": "ok",
+    "news_US_AI startup f": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "रामायण",
+          "approx_traffic": "2000+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Ramayana Box Office Day 17: बॉक्स ऑफिस पर फिर रामायण ने दिखाया दम, तीसरे वीकेंड कमाई में आया जबरदस्त उछाल",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/entertainment/bollywood-news/story/ramayana-box-office-collection-day-17-ranbir-kapoor-yash-third-week-growth-tmovj-dskc-2702605-2026-11-22"
+            },
+            {
+              "headline": "17वें दिन रामायण का तूफान, धुरंधर 2 को पछाड़ा, बनाया ये रिकॉर्ड",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/entertainment/bollywood/ramayan-box-office-day-17-saturday-27-cr-collection-record-ranbir-kapoor-movie-3217901"
+            },
+            {
+              "headline": "दुनियाभर में गूंजा 'रामायण' का जयघोष, बॉक्स ऑफिस पर रणबीर कपूर बने रिकॉर्ड मशीन, 14 दिन में कमाई 1500 करोड़",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/entertainment/bollywood/ramayana-gets-worldwide-recognition-ranbir-kapoor-breaks-several-records-collection-1500-crore-in-14-days-2026-11-19-1255119"
+            }
+          ]
+        },
+        {
+          "title": "sridevi",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "फिल्म 'Lamhe' का सदाबहार गीत 'Morni Baga Ma Bole': 35 साल बाद भी बरकरार है जादू",
+              "source": "Zoom TV",
+              "url": "https://www.zoomtventertainment.com/hindi/bollywood-news/lamhe-movie-morni-baga-ma-bole-song-legacy-article-156541995"
+            },
+            {
+              "headline": "35 साल पुराना लता मंगेशकर-इला अरुण का वो गाना, राजस्थान की मिट्टी से निकल हुआ अमर, श्रीदेवी ने बनाया सुपरहिट",
+              "source": "NDTV India",
+              "url": "https://ndtv.in/bollywood/35-year-old-lata-mangeshkar-ila-arun-song-morni-baga-me-bole-inspired-from-rajasthan-folk-tradition-sridevi-made-it-superhit-12353765"
+            },
+            {
+              "headline": "35 साल पुराना राजस्थान की मिट्टी से निकला गीत, लता मंगेशकर ने दी आवाज; श्रीदेवी की वजह से हुआ अमर",
+              "source": "Jagran",
+              "url": "https://www.jagran.com/entertainment/bollywood-lata-mangeshkar-ila-arun-morni-baga-me-bole-sridevi-anil-kapoor-lamhe-rajasthani-folk-culture-40444474.html"
+            }
+          ]
+        },
+        {
+          "title": "leandro paredes",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Leandro Paredes se descompensó en medio de una entrevista tras ganar la Copa Sudamericana con Boca Juniors en Barranquilla",
+              "source": "Infobae",
+              "url": "https://www.infobae.com/deportes/2026/11/22/leandro-paredes-se-descompenso-en-medio-de-una-entrevista-tras-ganar-la-copa-sudamericana-con-boca-juniors-en-barranquilla/"
+            },
+            {
+              "headline": "Las voces de los jugadores de Boca tras ser campeones de la Copa Sudamericana: \"Es algo muy grande para la ...",
+              "source": "DSports",
+              "url": "https://www.directvsports.com/futbol/las-voces-de-los-jugadores-de-boca-tras-ser-campeones-de-la-copa-sudamericana-es-algo-muy-grande-para-la-institucion-20261121-0045.html"
+            },
+            {
+              "headline": "¡Tremendo susto en Barranquilla! Leandro Paredes se desmaya en medio de los festejos de Boca Juniors",
+              "source": "Claro Sports",
+              "url": "https://www.clarosports.com/futbol/copa-sudamericana/tremendo-susto-en-barranquilla-leandor-paredes-se-desmaya-en-medio-de-los-festejos-de-boca-juniors/"
+            }
+          ]
+        },
+        {
+          "title": "traffic",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Most flights at Brussels Airport to be canceled Monday amid national strike",
+              "source": "Xinhua",
+              "url": "https://english.news.cn/20261122/32a67b109b5f4b82a3e037b7e5ddd5bc/c.html"
+            },
+            {
+              "headline": "Charleroi warns of flight halt on 23 November as skeyes cannot provide ATC",
+              "source": "Aviation24.be",
+              "url": "https://www.aviation24.be/airports/brussels-south-charleroi-crl/charleroi-warns-of-flight-halt-on-23-november-as-skeyes-cannot-provide-atc/"
+            },
+            {
+              "headline": "Brussels Airport expects majority of flights to be cancelled on Monday",
+              "source": "TradingView",
+              "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4720JL:0-brussels-airport-expects-majority-of-flights-to-be-cancelled-on-monday/"
+            }
+          ]
+        },
+        {
+          "title": "police",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Why dismiss ‘reel-makers’ when police rely on reels: women media professionals ask in Supreme Court",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/why-dismiss-reel-makers-when-police-rely-on-reels-women-media-professionals-ask-in-supreme-court/article71728484.ece"
+            },
+            {
+              "headline": "Police cannot justify restraining journalists by calling it crowd control: Media organisation to SC",
+              "source": "Scroll.in",
+              "url": "https://scroll.in/latest/1097231/police-cannot-justify-restraining-journalists-by-calling-it-crowd-control-media-organisation-to-sc"
+            },
+            {
+              "headline": "Journalists' freedom cannot be curtailed in name of law and order, petitioners tell Supreme Court",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/india/journalists-freedom-cannot-be-curtailed-in-name-of-law-and-order-petitioners-tell-supreme-court/cid/2190639"
+            }
+          ]
+        },
+        {
+          "title": "kerala cricket team vs pondicherry cricket team match scorecard",
+          "approx_traffic": "500+",
+          "pub_date": "Sat, 21 Nov 2026 22:00:00 -0800",
+          "news": [
+            {
+              "headline": "Kerala vs Puducherry Live Scorecard: Live Cricket Score KER vs PUD, Match 83, Syed Mushtaq Ali Trophy, 2026",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/live-score/cricket/kerala-puducherry-live-cricket-scorecard-273288"
+            },
+            {
+              "headline": "Kerala vs Puducherry 72nd Match 2026 Full Scorecard & Updates",
+              "source": "CricTracker",
+              "url": "https://www.crictracker.com/live-scores/ker-vs-pud-72nd-match-t20-syed-mushtaq-ali-trophy-elite-22-nov-2026/full-scorecard/"
+            },
+            {
+              "headline": "KER:0/0 (0.0) | Live Cricket Score | KER vs PUD | smat 2026 | Cricket Scoreboard",
+              "source": "NDTV Sports",
+              "url": "https://sports.ndtv.com/cricket/ker-vs-pud-scorecard-live-cricket-score-syed-mushtaq-ali-trophy-2026-match-83-klpud11222026273288"
+            }
+          ]
+        },
+        {
+          "title": "सोना",
+          "approx_traffic": "20000+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "विश्व की ‘स्किल कैपिटल’ बनने की दिशा में आगे बढ़ रहा भारत: लखनऊ में पीएम मोदी",
+              "source": "NarendraModi.in",
+              "url": "https://www.narendramodi.in/hi/text-of-prime-minister-narendra-modi-s-address-during-participation-in-kaushal-deekshant-samaroh-in-lucknow-uttar-pradesh-21st-november-twenty-twenty-six"
+            },
+            {
+              "headline": "प्रधानमंत्री श्री नरेन्द्र मोदी ने लखनऊ, उत्तर प्रदेश में 5वें कौशल दीक्षांत समारोह में भाग लिया",
+              "source": "PM India",
+              "url": "https://www.pmindia.gov.in/hi/news_updates/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A7%E0%A4%BE%E0%A4%A8%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%A8%E0%A4%B0%E0%A5%87%E0%A4%A8%E0%A5%8D-1301/?comment=disable"
+            },
+            {
+              "headline": "मेरी बात देशवासियों ने मान ली, पैसे बचे और....पीएम मोदी ने बताया-GOLD के दाम कैसे घटे?",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/india/national/people-heeded-my-words-and-the-result-pm-modi-explained-how-did-gold-prices-fall-2026-11-21-1255609"
+            }
+          ]
+        },
+        {
+          "title": "vikalp tiwari",
+          "approx_traffic": "1000+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Vikalp Tiwari: the 17-year-old captain who is already thinking several moves ahead",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/story/syed-mushtaq-ali-trophy-vikalp-tiwari-the-17-year-old-captain-who-is-already-thinking-several-moves-ahead-1563250"
+            },
+            {
+              "headline": "Vikalp Tiwari: Another teenage sensation primed for the step up",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/cricket-news/140968/vikalp-tiwari-another-teenage-sensation-primed-for-the-step-up-cricbuzzcom"
+            },
+            {
+              "headline": "Who is 17-year-old Vikalp Tiwari, who set 2 world records in his first 3 T20 matches? | He dropped out of school in Class 12 | Inshorts",
+              "source": "Inshorts",
+              "url": "https://inshorts.com/en/news/who-is-17-year-old-vikalp-tiwari--who-set-2-world-records-in-his-first-3-t20-matches--1795263737926"
+            }
+          ]
+        },
+        {
+          "title": "सचिन तेंदुलकर",
+          "approx_traffic": "500+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "ग्लोबल पीस ऑनर्स में रणवीर सिंह ने सचिन तेंदुलकर को किया सम्मानित, शाहरुख खान",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/entertainment/bollywood/ranveer-singh-honours-sachin-tendulkar-at-global-peace-honours-shah-rukh-khan-emotional-speech-steals-the-show-3217943"
+            },
+            {
+              "headline": "रणवीर सिंह ने ग्लोबल पीस ऑनर्स में सचिन तेंदुलकर की 'मास्टर ब्लास्टर' पारी को सराहा",
+              "source": "Lokmat News Hindi",
+              "url": "https://www.lokmatnews.in/bollywood/ranveer-singh-praises-sachin-tendulkars-enduring-innings-beyond-cricket-at-global-peace-honours-a001-w01/"
+            },
+            {
+              "headline": "Global Peace Honours 2026: 'आप क्रीज पर रहें...', तेंदुलकर को याद कर भावुक हुए रणवीर सिंह",
+              "source": "Prabhat Khabar",
+              "url": "https://www.prabhatkhabar.com/sports/ranveer-singh-honors-sachin-tendulkar-at-global-peace-honours-2026"
+            }
+          ]
+        },
+        {
+          "title": "కొనుగోలు",
+          "approx_traffic": "500+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Harish Rao | తుఫాన్ ముప్పు పొంచి ఉంది.. కల్లాల్లో ఉన్న వడ్లను వెంటనే కొనాలి: మాజీ మంత్రి హరీశ్ రావు",
+              "source": "Namasthe Telangana",
+              "url": "https://www.ntnews.com/telangana/the-threat-of-typhoon-is-looming-the-wood-in-the-coals-should-be-bought-immediately-former-minister-harish-rao-2565966"
+            },
+            {
+              "headline": "నేను రాను బిడ్డో..కొనుగోలు కేంద్రాలకు",
+              "source": "మన తెలంగాణ",
+              "url": "https://www.manatelangana.news/amp/telangana-breaking-news/paddy-procurement-1653402"
+            },
+            {
+              "headline": "ధర తెగ్గొట్టి.. నగదు ఎగ్గొట్టి?",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/telugu-news/districts/mahbubnagar-news/532/126209528"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "semiconductor India": [
+          {
+            "title": "Four semiconductor plants to be ready in India this year, says Ashwini Vaishnaw - DD News",
+            "source": "DD News",
+            "pub_date": "Sat, 21 Nov 2026 06:08:41 GMT"
+          },
+          {
+            "title": "Lam Research intensifies focus on Indian semiconductor mart as local fab discussions gather momentum - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Sat, 21 Nov 2026 16:35:29 GMT"
+          },
+          {
+            "title": "Smart Silicon: Building India’s Semiconductor Capabilities Through AI - orfonline.org",
+            "source": "orfonline.org",
+            "pub_date": "Wed, 18 Nov 2026 12:02:49 GMT"
+          },
+          {
+            "title": "'Should India sit idle forever?': PM Modi recalls doubts over semiconductor mission - The Federal",
+            "source": "The Federal",
+            "pub_date": "Sat, 21 Nov 2026 09:53:47 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors secures $10 million investment from GlobalFoundries - Manufacturing Today India",
+            "source": "Manufacturing Today India",
+            "pub_date": "Sat, 21 Nov 2026 12:09:20 GMT"
+          },
+          {
+            "title": "Opinion | India’s Big Semiconductor Bet - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 04 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "At IIT, PM Narendra Modi raises chip 'red flag' over lost semiconductor plant - Telegraph India",
+            "source": "Telegraph India",
+            "pub_date": "Sun, 22 Nov 2026 01:44:55 GMT"
+          },
+          {
+            "title": "Andhra launches semiconductor policy, offering up to 80% capital support - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Wed, 18 Nov 2026 08:22:37 GMT"
+          },
+          {
+            "title": "Editorial: Big dream, bigger challenges for India’s semiconductor ambitions - Telangana Today",
+            "source": "Telangana Today",
+            "pub_date": "Thu, 19 Nov 2026 16:46:48 GMT"
+          },
+          {
+            "title": "Why AI and Semiconductor Manufacturing Matter More Than Ever for India - India Narrative",
+            "source": "India Narrative",
+            "pub_date": "Fri, 20 Nov 2026 00:30:00 GMT"
+          },
+          {
+            "title": "Can India Build the Machines Behind Its $1.2 Trillion Industrial Boom by 2047? Data Centres, Semiconductors Drive Demand - Open Magazine",
+            "source": "Open Magazine",
+            "pub_date": "Fri, 20 Nov 2026 10:42:52 GMT"
+          },
+          {
+            "title": "India's semiconductor ecosystem: From fabs to ecosystem leadership - EY",
+            "source": "EY",
+            "pub_date": "Sun, 20 Sep 2026 16:36:41 GMT"
+          },
+          {
+            "title": "Video | PM Modi Lauds India's Semiconductor Mission, Cites Progress Made Over The Last 4 Years - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 21 Nov 2026 07:02:41 GMT"
+          },
+          {
+            "title": "PM Modi pitches India as semiconductor and aerospace hub to resonate with IIT Kharagpur students - The Week",
+            "source": "The Week",
+            "pub_date": "Sat, 21 Nov 2026 07:49:47 GMT"
+          },
+          {
+            "title": "Modi targets Left-era trade unionism, says India has made major strides in semiconductor manufacturing - The CSR Journal",
+            "source": "The CSR Journal",
+            "pub_date": "Sat, 21 Nov 2026 12:18:43 GMT"
+          },
+          {
+            "title": "\"Main chunauti ko chunauti diye bina reh nahi sakta\": PM Modi cites semiconductor push, poverty reduction to underline India's ability to challenge limits - ANI News",
+            "source": "ANI News",
+            "pub_date": "Sat, 21 Nov 2026 07:14:00 GMT"
+          },
+          {
+            "title": "Semicon 2.0 to deepen India’s semiconductor ecosystem with focus on design, equipment, fabs, advanced packaging, R&D and talent - www.pib.gov.in",
+            "source": "www.pib.gov.in",
+            "pub_date": "Thu, 17 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Karnataka aims to become global hub for AI, deeptech and semiconductor manufacturing, says state’s chief minister - tele.net",
+            "source": "tele.net",
+            "pub_date": "Thu, 19 Nov 2026 05:19:57 GMT"
+          },
+          {
+            "title": "India’s semiconductor market projected to grow threefold to US$200 billion by 2035: EY-IESA report - EY",
+            "source": "EY",
+            "pub_date": "Sat, 19 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Vertiv signs three-year power semiconductor supply agreement with Infineon - Manufacturing Today India",
+            "source": "Manufacturing Today India",
+            "pub_date": "Sat, 21 Nov 2026 10:29:37 GMT"
+          },
+          {
+            "title": "Linde Advanced Material Technologies mulls semiconductor materials plant in Karnataka: Patil - ET Manufacturing",
+            "source": "ET Manufacturing",
+            "pub_date": "Fri, 20 Nov 2026 21:43:51 GMT"
+          },
+          {
+            "title": "Why India Needs to Be a Nation of Tinkerers - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Wed, 18 Nov 2026 11:30:31 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors Secures $10 Mn Investment From GlobalFoundries - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Thu, 19 Nov 2026 14:07:46 GMT"
+          },
+          {
+            "title": "AI, semiconductor manufacturing take centre stage at Bengaluru Tech Summit - The News Minute",
+            "source": "The News Minute",
+            "pub_date": "Wed, 18 Nov 2026 03:27:17 GMT"
+          },
+          {
+            "title": "Karnataka Leads India's AI and Semiconductor Push - var india",
+            "source": "var india",
+            "pub_date": "Thu, 19 Nov 2026 12:55:53 GMT"
+          }
+        ],
+        "AI startup funding": [
+          {
+            "title": "Bengaluru leads India in AI startup funding: Innovation Report 2026 - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Wed, 18 Nov 2026 13:41:16 GMT"
+          },
+          {
+            "title": "Bengaluru accounts for 36.3 pc of India’s native AI startup funding: report - People Matters - HR News",
+            "source": "People Matters - HR News",
+            "pub_date": "Thu, 19 Nov 2026 02:14:47 GMT"
+          },
+          {
+            "title": "Bengaluru accounts for 36.3% of India's native AI startup funding: Report - ETHRWorld.com",
+            "source": "ETHRWorld.com",
+            "pub_date": "Wed, 18 Nov 2026 17:40:47 GMT"
+          },
+          {
+            "title": "Bengaluru emerges as second largest AI startup cluster in Asia - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Wed, 18 Nov 2026 22:46:44 GMT"
+          },
+          {
+            "title": "AI startup Humyn Labs raises $47 million in Series A funding round - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Wed, 18 Nov 2026 12:00:36 GMT"
+          },
+          {
+            "title": "Bengaluru accounts for 36 per cent of funding raised by India's AI startups - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Thu, 19 Nov 2026 06:07:00 GMT"
+          },
+          {
+            "title": "Bengaluru captures 36.3% of India’s homegrown AI startup funding, new report says - Superpower Daily",
+            "source": "Superpower Daily",
+            "pub_date": "Wed, 18 Nov 2026 15:17:12 GMT"
+          },
+          {
+            "title": "America is Flooding AI With Billions. Indian Startups are Fighting for Survival - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Thu, 19 Nov 2026 12:12:46 GMT"
+          },
+          {
+            "title": "Bengaluru consolidates position as India’s AI capital, dominates funding - The South First",
+            "source": "The South First",
+            "pub_date": "Wed, 18 Nov 2026 15:48:53 GMT"
+          },
+          {
+            "title": "Disseqt AI Raises $8 Mn Led By Gresham House Ventures; Rahul Dravid Among Angel Investors - BW Disrupt",
+            "source": "BW Disrupt",
+            "pub_date": "Fri, 20 Nov 2026 04:47:29 GMT"
+          },
+          {
+            "title": "Cognition in Talks for $75 Billion Value With New Funding - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Fri, 20 Nov 2026 22:12:11 GMT"
+          },
+          {
+            "title": "AI Startup Disseqt AI Raises $8 Mn To Scale International Operations - Inc42",
+            "source": "Inc42",
+            "pub_date": "Thu, 19 Nov 2026 15:16:49 GMT"
+          },
+          {
+            "title": "Funding and acquisitions in Indian startups this week [Nov 16- Nov 21] - Entrackr",
+            "source": "Entrackr",
+            "pub_date": "Sat, 21 Nov 2026 11:56:03 GMT"
+          },
+          {
+            "title": "Bengaluru Accounts For 36.3% Of India's AI Startup Funding, Hosts 71% of New AI And Deep-Tech Unicorns - CIOL",
+            "source": "CIOL",
+            "pub_date": "Wed, 18 Nov 2026 18:51:38 GMT"
+          },
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Bengaluru leads India in AI startup funding, report finds - TechGig",
+            "source": "TechGig",
+            "pub_date": "Thu, 19 Nov 2026 01:41:49 GMT"
+          },
+          {
+            "title": "Bengaluru emerges as second largest AI startup cluster in Asia - Mangalore Today",
+            "source": "Mangalore Today",
+            "pub_date": "Thu, 19 Nov 2026 04:28:25 GMT"
+          },
+          {
+            "title": "Unsiloed AI secures $7.5 million in seed funding to scale document models - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 20 Nov 2026 10:13:50 GMT"
+          },
+          {
+            "title": "B’luru ranks second in Asia among AI startup clusters; K’taka ecosystem valued at $153bn: Report - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Wed, 18 Nov 2026 15:01:00 GMT"
+          },
+          {
+            "title": "Nvidia’s startup investments soar to $65.5 billion amid questions over future funding - ET Enterprise AI",
+            "source": "ET Enterprise AI",
+            "pub_date": "Wed, 18 Nov 2026 05:46:41 GMT"
+          },
+          {
+            "title": "Ex-Alibaba Star’s AI Startup Doubles Valuation to $5 Billion - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 13:48:07 GMT"
+          },
+          {
+            "title": "Bengaluru leads India's deep-tech startup funding with $3.77 billion, twice Delhi-NCR's tally:... - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 18 Nov 2026 12:42:08 GMT"
+          },
+          {
+            "title": "Google announces $5 mn funding for IIT Kharagpur for advanced AI research - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Sat, 21 Nov 2026 08:31:48 GMT"
+          },
+          {
+            "title": "Cognition in talks for new funding at $75 billion valuation, Bloomberg News reports - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 20 Nov 2026 21:32:07 GMT"
+          },
+          {
+            "title": "Egyptian AI startup Chipverse raises pre-seed funding - Condia",
+            "source": "Condia",
+            "pub_date": "Thu, 19 Nov 2026 11:39:49 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality spokane",
+          "ai",
+          "air quality",
+          "air quality index",
+          "ai detector",
+          "ai checker",
+          "airpods",
+          "aileen wuornos",
+          "air quality map"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt image generator"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phone who dis game",
+          "new phones with headphone jack",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "wsu basketball",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Resolve and timely stops powers WSU to much-needed 79-63 victory over Hawaii",
+              "source": "247Sports",
+              "url": "https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/"
+            },
+            {
+              "headline": "Men's Basketball Heads To Pacific Northwest For First Road Trip",
+              "source": "Hawaii athletics",
+              "url": "https://hawaiiathletics.com/news/2026/11/16/mens-basketball-heads-to-pacific-northwest-for-first-road-trip.aspx"
+            },
+            {
+              "headline": "Washington State holds off Trujillo, hands Hawai‘i second straight loss",
+              "source": "The Sporting Tribune",
+              "url": "https://www.thesportingtribune.com/2026/11/19/washington-state-holds-off-hawaii"
+            }
+          ]
+        },
+        {
+          "title": "john wick",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "John Wick Franchise Officially Returning In New Prequel Set Years Before The Impossible Task",
+              "source": "IMDb",
+              "url": "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm"
+            },
+            {
+              "headline": "Keanu Reeves returns in Saber’s John Wick prequel game",
+              "source": "Tbreak UAE",
+              "url": "https://tbreak.com/john-wick-prequel-game-keanu-reeves/"
+            },
+            {
+              "headline": "John Wick Returning In New Prequel Game Set Years Before The Impossible Task",
+              "source": "OpenCritic",
+              "url": "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task"
+            }
+          ]
+        },
+        {
+          "title": "donnie gta 6",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise",
+              "source": "SVG",
+              "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/"
+            },
+            {
+              "headline": "Who Plays Donnie In GTA 6?",
+              "source": "Yahoo Tech",
+              "url": "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html"
+            },
+            {
+              "headline": "Can you save Donnie in GTA 6?",
+              "source": "GamesRadar+",
+              "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/"
+            }
+          ]
+        },
+        {
+          "title": "washington state basketball",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Late-night test: Duke looks for a response against Washington State",
+              "source": "247Sports",
+              "url": "https://247sports.com/college/duke/article/late-night-test-duke-looks-for-a-response-against-washington-state-293027554/"
+            },
+            {
+              "headline": "How to watch Duke vs Washington State: Live stream College Basketball, TV channel",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html"
+            },
+            {
+              "headline": "Duke Opens West Coast Trip against Washington State on Saturday Night - Duke University",
+              "source": "GoDuke.com",
+              "url": "https://goduke.com/news/2026/11/20/mens-basketball-duke-opens-west-coast-trip-against-washington-state-on-saturday-night"
+            }
+          ]
+        },
+        {
+          "title": "pac 12 championship game",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Pac-12 Championship Game scenarios: Three teams alive for a date with No. 1 seed Boise State",
+              "source": "CBS Sports",
+              "url": "https://www.cbssports.com/college-football/news/pac-12-championship-game-scenarios-boise-state-texas-state-oregon-state-san-diego-state/"
+            },
+            {
+              "headline": "MWCConnection Reacts Results: Texas State to the Pac-12 Championship",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/mwcconnection-reacts-results-texas-state-140000503.html"
+            },
+            {
+              "headline": "A spot in the Pac-12 football title game is on the line",
+              "source": "Corvallis Gazette-Times",
+              "url": "https://gazettetimes.com/sports/beavers-sports/football/article_1839ab93-6254-4374-b0c2-442423debe92.html"
+            }
+          ]
+        },
+        {
+          "title": "brandin cooks",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "49ers waive ex-Bills, Saints WR with 9,869 career receiving yards",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html"
+            },
+            {
+              "headline": "49ers waive WR Brandin Cooks",
+              "source": "NBC Sports",
+              "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks"
+            },
+            {
+              "headline": "49ers waive Brandin Cooks, activate C.J. West",
+              "source": "Niners Nation",
+              "url": "https://www.ninersnation.com/san-francisco-roster/166100/49ers-waive-brandin-cooks-activate-c-j-west"
+            }
+          ]
+        },
+        {
+          "title": "minnesota wild",
+          "approx_traffic": "2000+",
+          "pub_date": "Sat, 21 Nov 2026 22:00:00 -0800",
+          "news": [
+            {
+              "headline": "NHL On Tap: White-hot Wild eye sixth win in row, point in 14th straight",
+              "source": "NHL.com",
+              "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026"
+            },
+            {
+              "headline": "Minnesota Wild vs Vancouver Canucks Prediction, Picks & Odds | 21 Nov 2026",
+              "source": "Sportsgambler",
+              "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-vancouver-canucks-prediction-odds-2026-11-21/"
+            },
+            {
+              "headline": "Brock Boeser November 21 Preview vs. the Wild",
+              "source": "FOX SPORTS 550 The ZONE",
+              "url": "https://550thezone.iheart.com/content/2026-11-21-brock-boeser-november-21-preview-vs-the-wild/"
+            }
+          ]
+        },
+        {
+          "title": "heisman odds",
+          "approx_traffic": "20000+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls",
+              "source": "Bleacher Report",
+              "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls"
+            },
+            {
+              "headline": "Ranking the top Heisman trophy contenders with 3 weeks to play",
+              "source": "NCAA.com",
+              "url": "https://www.ncaa.com/news/football/article/2026-11-18/ranking-top-heisman-trophy-contenders-3-weeks-play"
+            },
+            {
+              "headline": "Ohio State's Jeremiah Smith becomes first Big Ten receiver to reach 4,000 career yards",
+              "source": "247Sports",
+              "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-jeremiah-smith-becomes-first-big-ten-receiver-to-reach-4000-career-yards-293050161/"
+            }
+          ]
+        },
+        {
+          "title": "wild hockey",
+          "approx_traffic": "2000+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Hughes to miss remainder of Wild road trip with injury",
+              "source": "NHL.com",
+              "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026"
+            },
+            {
+              "headline": "Quinn Hughes out for rest of Wild road trip with undisclosed injury",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/athletic/7800922/2026/11/21/quinn-hughes-injury-wild-road-trip/"
+            },
+            {
+              "headline": "Live: Last place Canucks putting up a fight against Minnesota Wild",
+              "source": "Star Tribune",
+              "url": "https://www.startribune.com/quinn-hughes-injury-update-minnesota-wild-vancouver-canucks-score-today-kirill-kaprizov-stats-points/601921253"
+            }
+          ]
+        },
+        {
+          "title": "stevie wonder",
+          "approx_traffic": "200+",
+          "pub_date": "Sat, 21 Nov 2026 21:50:00 -0800",
+          "news": [
+            {
+              "headline": "Playing ‘Key of Life,’ Stevie Wonder Invites All to Match His Joy",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html"
+            },
+            {
+              "headline": "Stevie Wonder covers Bruce Springsteen, Beatles at MSG 'Songs' concert",
+              "source": "Asbury Park Press",
+              "url": "https://www.app.com/story/entertainment/music/2026/11/21/stevie-wonder-msg-bruce-springsteen-paul-mccartney-beatles/92899915007/"
+            },
+            {
+              "headline": "Stevie Wonder to take over UMusic Shop NY",
+              "source": "The Music Universe",
+              "url": "https://themusicuniverse.com/stevie-wonder-to-take-over-umusic-shop-ny/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "semiconductor India": [
+          {
+            "title": "Opinion | India’s Big Semiconductor Bet - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 04 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Lam Research intensifies focus on Indian semiconductor mart as local fab discussions gather momentum - The Hindu",
+            "source": "The Hindu",
+            "pub_date": "Sat, 21 Nov 2026 16:35:29 GMT"
+          },
+          {
+            "title": "Smart Silicon: Building India’s Semiconductor Capabilities Through AI - orfonline.org",
+            "source": "orfonline.org",
+            "pub_date": "Wed, 18 Nov 2026 12:02:49 GMT"
+          },
+          {
+            "title": "Four semiconductor plants to be ready in India this year, says Ashwini Vaishnaw - DD News",
+            "source": "DD News",
+            "pub_date": "Sat, 21 Nov 2026 06:08:41 GMT"
+          },
+          {
+            "title": "'Should India sit idle forever?': PM Modi recalls doubts over semiconductor mission - The Federal",
+            "source": "The Federal",
+            "pub_date": "Sat, 21 Nov 2026 09:53:47 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors secures $10 million investment from GlobalFoundries - Manufacturing Today India",
+            "source": "Manufacturing Today India",
+            "pub_date": "Sat, 21 Nov 2026 12:09:20 GMT"
+          },
+          {
+            "title": "Can India become the next semiconductor hub after Taiwan? - DW.com",
+            "source": "DW.com",
+            "pub_date": "Wed, 22 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "At IIT, PM Narendra Modi raises chip 'red flag' over lost semiconductor plant - Telegraph India",
+            "source": "Telegraph India",
+            "pub_date": "Sun, 22 Nov 2026 01:44:55 GMT"
+          },
+          {
+            "title": "India faces test of customer confidence as it challenges Southeast Asia in chip packaging - digitimes",
+            "source": "digitimes",
+            "pub_date": "Wed, 18 Nov 2026 04:38:02 GMT"
+          },
+          {
+            "title": "Modi’s Manufacturing Mission Is Only Half Done - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Thu, 19 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Can India Build the Machines Behind Its $1.2 Trillion Industrial Boom by 2047? Data Centres, Semiconductors Drive Demand - Open Magazine",
+            "source": "Open Magazine",
+            "pub_date": "Fri, 20 Nov 2026 10:42:52 GMT"
+          },
+          {
+            "title": "Why AI and Semiconductor Manufacturing Matter More Than Ever for India - India Narrative",
+            "source": "India Narrative",
+            "pub_date": "Fri, 20 Nov 2026 00:30:00 GMT"
+          },
+          {
+            "title": "Semiconductor Industry in India: Incentives and Key Players - India Briefing",
+            "source": "India Briefing",
+            "pub_date": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Video | PM Modi Lauds India's Semiconductor Mission, Cites Progress Made Over The Last 4 Years - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 21 Nov 2026 07:02:41 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors secures $10 million investment from GlobalFoundries - ET Manufacturing",
+            "source": "ET Manufacturing",
+            "pub_date": "Thu, 19 Nov 2026 11:02:49 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors Secures $10 Mn Investment From GlobalFoundries - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Thu, 19 Nov 2026 14:07:46 GMT"
+          },
+          {
+            "title": "India's semiconductor ecosystem: From fabs to ecosystem leadership - EY",
+            "source": "EY",
+            "pub_date": "Sun, 20 Sep 2026 16:36:41 GMT"
+          },
+          {
+            "title": "GlobalFoundries invests US$10 million in India-based Cyient Semiconductors - digitimes",
+            "source": "digitimes",
+            "pub_date": "Thu, 19 Nov 2026 03:54:19 GMT"
+          },
+          {
+            "title": "Linde Advanced Material Technologies mulls semiconductor materials plant in Karnataka: Patil - ET Manufacturing",
+            "source": "ET Manufacturing",
+            "pub_date": "Fri, 20 Nov 2026 21:43:51 GMT"
+          },
+          {
+            "title": "India’s semiconductor market projected to grow threefold to US$200 billion by 2035: EY-IESA report - EY",
+            "source": "EY",
+            "pub_date": "Sat, 19 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "TSMC tightens China AI chip curbs after new US rules: Report - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 20 Nov 2026 02:26:23 GMT"
+          },
+          {
+            "title": "PM Modi Hails India's Semiconductor Mission, Cites Progress Made Over The Last 4 Years - NDTV",
+            "source": "NDTV",
+            "pub_date": "Sat, 21 Nov 2026 08:03:23 GMT"
+          },
+          {
+            "title": "AI, semiconductor manufacturing take centre stage at Bengaluru Tech Summit - The News Minute",
+            "source": "The News Minute",
+            "pub_date": "Wed, 18 Nov 2026 03:27:17 GMT"
+          },
+          {
+            "title": "Cyient Semiconductors bags $10M from GlobalFoundries - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Thu, 19 Nov 2026 06:35:51 GMT"
+          },
+          {
+            "title": "India’s Semiconductor Ecosystem Is Maturing—and ASML Is Taking Notice - Carnegie Endowment for International Peace",
+            "source": "Carnegie Endowment for International Peace",
+            "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT"
+          }
+        ],
+        "AI startup funding": [
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Cognition in talks for new funding at $75 billion valuation, Bloomberg News reports - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 20 Nov 2026 21:32:07 GMT"
+          },
+          {
+            "title": "Cognition in Talks for $75 Billion Value With New Funding - Bloomberg",
+            "source": "Bloomberg",
+            "pub_date": "Fri, 20 Nov 2026 22:12:11 GMT"
+          },
+          {
+            "title": "Cognition in Talks for $75 Billion Value With New Funding - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Fri, 20 Nov 2026 20:47:55 GMT"
+          },
+          {
+            "title": "Bengaluru captures 36.3% of India’s homegrown AI startup funding, new report says - Superpower Daily",
+            "source": "Superpower Daily",
+            "pub_date": "Wed, 18 Nov 2026 15:17:12 GMT"
+          },
+          {
+            "title": "AI Customer Support Startup Sierra Eyes $30 Billion Valuation - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Thu, 19 Nov 2026 20:08:38 GMT"
+          },
+          {
+            "title": "Egyptian AI startup Chipverse raises pre-seed funding - Condia",
+            "source": "Condia",
+            "pub_date": "Thu, 19 Nov 2026 11:39:49 GMT"
+          },
+          {
+            "title": "Report: Nvidia in advanced talks to acquire Stanford-led diffusion AI startup Inception for $500M+ - Tech Funding News",
+            "source": "Tech Funding News",
+            "pub_date": "Fri, 20 Nov 2026 10:42:47 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 05 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Meta Agrees to Pause Class C Issuance During AI Funding Lawsuit - Unite.AI",
+            "source": "Unite.AI",
+            "pub_date": "Wed, 18 Nov 2026 22:02:03 GMT"
+          },
+          {
+            "title": "Egyptian AI Startup Chipverse Secures Pre-Seed Funding to Expand GPU Infrastructure and Launch AI Tools - Tech In Africa",
+            "source": "Tech In Africa",
+            "pub_date": "Fri, 20 Nov 2026 12:14:20 GMT"
+          },
+          {
+            "title": "Physical AI startup Humyn Labs raises $47 million in Series A funding to expand global operations - TradingView",
+            "source": "TradingView",
+            "pub_date": "Wed, 18 Nov 2026 15:04:45 GMT"
+          },
+          {
+            "title": "[Korean Startup Weekly News #145] Medical Device Rounds Surge as Korea Posts Record Venture Funding - Wowtale",
+            "source": "Wowtale",
+            "pub_date": "Sat, 21 Nov 2026 15:00:51 GMT"
+          },
+          {
+            "title": "Aschenbrenner plots Situational Awareness 2.0 after his AI fund lost 67% in July - Startup Fortune",
+            "source": "Startup Fortune",
+            "pub_date": "Wed, 18 Nov 2026 23:03:57 GMT"
+          },
+          {
+            "title": "Lin Junyang's Pragmatik Labs closed funding at $5 billion valuation - Quartz",
+            "source": "Quartz",
+            "pub_date": "Fri, 20 Nov 2026 12:34:42 GMT"
+          },
+          {
+            "title": "Ex-Alibaba Star’s AI Startup Doubles Valuation to $5 Billion - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 13:48:07 GMT"
+          },
+          {
+            "title": "Anthropic's meteoric rise from AI startup to $2 trillion market debut - Reuters",
+            "source": "Reuters",
+            "pub_date": "Thu, 19 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Almost All About AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 02 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Chipverse raises pre-seed funding to add AI computing capacity and develop creative tools - Superpower Daily",
+            "source": "Superpower Daily",
+            "pub_date": "Fri, 20 Nov 2026 09:34:22 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: AI And Energy Top A Busy Lineup Of Large Rounds - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 09 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Intel (INTC) Joined A $700 Million AI Startup Funding Round - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 02 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "North American Startup Funding Shattered Records In First Half Of 2026, Driven By AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Tue, 07 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The AI Startup Funding Boom Is Not A Global Phenomenon - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 15 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Deutsche Telekom is investing about $110 million in French AI startup Mistral AI - Quartz",
+            "source": "Quartz",
+            "pub_date": "Thu, 19 Nov 2026 13:56:48 GMT"
+          },
+          {
+            "title": "AI startup Manus raises $500 million in first funding round since Meta breakup - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 08 Oct 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "air quality index",
+          "air quality spokane",
+          "ai",
+          "ai detector",
+          "airnow gov",
+          "ai checker",
+          "airpods",
+          "aileen wuornos",
+          "air quality map"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt free",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt image generator"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phone who dis game",
+          "new phones with headphone jack",
+          "new phone plans",
+          "new phone number",
+          "new phone plan deals"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Lean verification of the Riemann Hypothesis",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "points": 942,
+      "comments": 804,
+      "created_at": "2026-11-21T14:36:45Z"
+    },
+    {
+      "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+      "points": 864,
+      "comments": 201,
+      "created_at": "2026-11-20T21:03:12Z"
+    },
+    {
+      "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+      "url": null,
+      "points": 665,
+      "comments": 761,
+      "created_at": "2026-11-20T23:18:32Z"
+    },
+    {
+      "title": "Detonating a pile of lead azide",
+      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "points": 582,
+      "comments": 377,
+      "created_at": "2026-11-21T13:23:14Z"
+    },
+    {
+      "title": "My monitor was cutting my download speed by 75%",
+      "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+      "points": 549,
+      "comments": 264,
+      "created_at": "2026-11-21T10:36:32Z"
+    },
+    {
+      "title": "Why there are still no non-WebKit browsers on iOS",
+      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+      "points": 540,
+      "comments": 289,
+      "created_at": "2026-11-20T15:03:31Z"
+    },
+    {
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "points": 424,
+      "comments": 107,
+      "created_at": "2026-11-21T18:02:19Z"
+    },
+    {
+      "title": "GnuPG Security Advisory for GPGME",
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "points": 247,
+      "comments": 98,
+      "created_at": "2026-11-21T08:32:58Z"
+    },
+    {
+      "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "points": 236,
+      "comments": 115,
+      "created_at": "2026-11-22T04:04:56Z"
+    },
+    {
+      "title": "Getting the mind to steer the body to steer you",
+      "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
+      "points": 227,
+      "comments": 72,
+      "created_at": "2026-11-20T22:11:05Z"
+    },
+    {
+      "title": "LLMs can read and write executables byte by byte from a hex dump",
+      "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+      "points": 226,
+      "comments": 146,
+      "created_at": "2026-11-18T14:15:58Z"
+    },
+    {
+      "title": "Show HN: Zero C# – C# without a runtime or GC",
+      "url": "https://onurgumus.github.io/zero-csharp/index.html",
+      "points": 149,
+      "comments": 104,
+      "created_at": "2026-11-21T15:39:09Z"
+    },
+    {
+      "title": "Sandwich Simulator",
+      "url": "https://stulle.app/",
+      "points": 134,
+      "comments": 52,
+      "created_at": "2026-11-22T00:07:59Z"
+    },
+    {
+      "title": "PostgreSQL Extensions in Go",
+      "url": "https://jespino.github.io/gopgext/",
+      "points": 134,
+      "comments": 23,
+      "created_at": "2026-11-21T17:08:04Z"
+    },
+    {
+      "title": "Advice for the next 100 Rust GUIs",
+      "url": "https://linebender.org/blog/next-100-guis/",
+      "points": 130,
+      "comments": 34,
+      "created_at": "2026-11-21T21:17:53Z"
+    },
+    {
+      "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
+      "url": "https://github.com/ItsNotRexed/Leonida",
+      "points": 118,
+      "comments": 79,
+      "created_at": "2026-11-22T00:57:26Z"
+    },
+    {
+      "title": "Verification files for the Lean proof of the Riemann Hypothesis",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "points": 108,
+      "comments": 38,
+      "created_at": "2026-11-21T15:54:34Z"
+    },
+    {
+      "title": "Upload2Shell (CVE-2026-125396)",
+      "url": "https://pwn.ai/upload2shell",
+      "points": 104,
+      "comments": 47,
+      "created_at": "2026-11-21T18:29:29Z"
+    },
+    {
+      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+      "points": 98,
+      "comments": 9,
+      "created_at": "2026-11-21T22:09:58Z"
+    },
+    {
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "points": 89,
+      "comments": 32,
+      "created_at": "2026-11-22T02:14:14Z"
+    },
+    {
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "points": 91,
+      "comments": 32,
+      "created_at": "2026-11-22T02:14:14Z"
+    },
+    {
+      "title": "International UN talks on controlling use of autonomous weapons collapse",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+      "points": 41,
+      "comments": 25,
+      "created_at": "2026-11-21T23:10:21Z"
+    },
+    {
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "url": "https://www.pandex.io",
+      "points": 61,
+      "comments": 11,
+      "created_at": "2026-11-21T20:47:41Z"
+    },
+    {
+      "title": "Upload2Shell (CVE-2026-125396)",
+      "url": "https://pwn.ai/upload2shell",
+      "points": 104,
+      "comments": 47,
+      "created_at": "2026-11-21T18:29:29Z"
+    },
+    {
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "url": "http://ricapar.net/ClawDOS/",
+      "points": 162,
+      "comments": 51,
+      "created_at": "2026-11-21T05:38:01Z"
+    },
+    {
+      "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+      "url": null,
+      "points": 666,
+      "comments": 762,
+      "created_at": "2026-11-20T23:18:32Z"
+    },
+    {
+      "title": "Leaky AI supply chain is exposing secret user data at an alarming rate",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "points": 53,
+      "comments": 6,
+      "created_at": "2026-11-20T21:53:39Z"
+    },
+    {
+      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+      "url": "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90",
+      "points": 66,
+      "comments": 5,
+      "created_at": "2026-11-20T21:18:46Z"
+    },
+    {
+      "title": "Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "points": 1400,
+      "comments": 286,
+      "created_at": "2026-11-20T20:12:19Z"
+    },
+    {
+      "title": "Google workers tell their employer not to punish schools that don't want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "points": 281,
+      "comments": 228,
+      "created_at": "2026-11-20T16:59:27Z"
+    },
+    {
+      "title": "AI is giving everyone the same advice",
+      "url": "https://a90.com/experiments/same-advice/",
+      "points": 122,
+      "comments": 50,
+      "created_at": "2026-11-20T16:58:05Z"
+    },
+    {
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "points": 509,
+      "comments": 890,
+      "created_at": "2026-11-20T13:29:59Z"
+    },
+    {
+      "title": "Epic Games Turns to AI Coding for the Unreal Engine",
+      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "points": 58,
+      "comments": 60,
+      "created_at": "2026-11-20T12:16:36Z"
+    },
+    {
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "points": 670,
+      "comments": 357,
+      "created_at": "2026-11-20T10:01:41Z"
+    },
+    {
+      "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "points": 573,
+      "comments": 336,
+      "created_at": "2026-11-20T09:42:16Z"
+    },
+    {
+      "title": "Court: 4th Amendment Disallows Use Of AI-Generated 'Probable Cause'",
+      "url": "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/",
+      "points": 70,
+      "comments": 21,
+      "created_at": "2026-11-19T22:56:59Z"
+    },
+    {
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "points": 115,
+      "comments": 258,
+      "created_at": "2026-11-19T18:47:16Z"
+    },
+    {
+      "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
+      "url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
+      "points": 51,
+      "comments": 36,
+      "created_at": "2026-11-19T18:42:13Z"
+    },
+    {
+      "title": "AI came for the coders. Understanding why tells us who's next",
+      "url": "https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html",
+      "points": 68,
+      "comments": 82,
+      "created_at": "2026-11-19T17:43:38Z"
+    },
+    {
+      "title": "Anthropic’s Nasdaq debut",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "points": 1139,
+      "comments": 2320,
+      "created_at": "2026-11-19T17:02:40Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 3835173,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 717706,
+      "rank": 2
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 540793,
+      "rank": 3
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 517149,
+      "rank": 4
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 329248,
+      "rank": 5
+    },
+    {
+      "article": "Riemann_hypothesis",
+      "views": 295157,
+      "rank": 6
+    },
+    {
+      "article": "The_Hunger_Games:_Sunrise_on_the_Reaping",
+      "views": 174063,
+      "rank": 7
+    },
+    {
+      "article": "Ken_McElroy",
+      "views": 158096,
+      "rank": 8
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 132581,
+      "rank": 9
+    },
+    {
+      "article": "Grand_Theft_Auto",
+      "views": 129311,
+      "rank": 10
+    },
+    {
+      "article": "Levent_Alpöge",
+      "views": 124632,
+      "rank": 11
+    },
+    {
+      "article": "Fiona_(hippopotamus)",
+      "views": 124449,
+      "rank": 12
+    },
+    {
+      "article": "Robert_Pattinson",
+      "views": 124262,
+      "rank": 13
+    },
+    {
+      "article": ".xxx",
+      "views": 122207,
+      "rank": 14
+    },
+    {
+      "article": "Dario_Amodei",
+      "views": 121762,
+      "rank": 15
+    },
+    {
+      "article": "O.M:_Operation_Mole",
+      "views": 119692,
+      "rank": 16
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 106047,
+      "rank": 17
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 100239,
+      "rank": 18
+    },
+    {
+      "article": "Rockstar_Games",
+      "views": 91847,
+      "rank": 19
+    },
+    {
+      "article": "Anthropic",
+      "views": 89567,
+      "rank": 20
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 85168,
+      "rank": 21
+    },
+    {
+      "article": "Grand_Theft_Auto_V",
+      "views": 82987,
+      "rank": 22
+    },
+    {
+      "article": "Lance_Broadway",
+      "views": 79751,
+      "rank": 23
+    },
+    {
+      "article": "privacy_policy",
+      "views": 78955,
+      "rank": 24
+    },
+    {
+      "article": "John_Madden",
+      "views": 76841,
+      "rank": 25
+    },
+    {
+      "article": "List_of_best-selling_video_games",
+      "views": 69466,
+      "rank": 26
+    },
+    {
+      "article": "Harambe",
+      "views": 67020,
+      "rank": 27
+    },
+    {
+      "article": "Stephen_Wilson_Jr.",
+      "views": 64007,
+      "rank": 28
+    },
+    {
+      "article": "The_Traitors:_New_Blood",
+      "views": 63853,
+      "rank": 29
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 63190,
+      "rank": 30
+    },
+    {
+      "article": "XXX_(Kendrick_Lamar_song)",
+      "views": 62233,
+      "rank": 31
+    },
+    {
+      "article": "MobLand",
+      "views": 61030,
+      "rank": 32
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 61003,
+      "rank": 33
+    },
+    {
+      "article": "Bruno_Mars",
+      "views": 60612,
+      "rank": 34
+    },
+    {
+      "article": "Sunrise_on_the_Reaping",
+      "views": 60334,
+      "rank": 35
+    },
+    {
+      "article": "XXX_(soundtrack)",
+      "views": 60318,
+      "rank": 36
+    },
+    {
+      "article": "Daniela_Amodei",
+      "views": 60132,
+      "rank": 37
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 60035,
+      "rank": 38
+    },
+    {
+      "article": "XXX_(film_series)",
+      "views": 58700,
+      "rank": 39
+    },
+    {
+      "article": "Joseph_Zada",
+      "views": 57846,
+      "rank": 40
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 57628,
+      "rank": 41
+    },
+    {
+      "article": "Ella_Langley",
+      "views": 56528,
+      "rank": 42
+    },
+    {
+      "article": "Manni_L._Perez",
+      "views": 56461,
+      "rank": 43
+    },
+    {
+      "article": "XXX:_Return_of_Xander_Cage",
+      "views": 54947,
+      "rank": 44
+    },
+    {
+      "article": "Suki_Waterhouse",
+      "views": 53002,
+      "rank": 45
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 52739,
+      "rank": 46
+    },
+    {
+      "article": "2026_MAMA_Awards",
+      "views": 52630,
+      "rank": 47
+    },
+    {
+      "article": "Mckenna_Grace",
+      "views": 51548,
+      "rank": 48
+    },
+    {
+      "article": "Larry_Poindexter",
+      "views": 51192,
+      "rank": 49
+    },
+    {
+      "article": "Susan_Smith",
+      "views": 50620,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A tale of two Nvidias"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Trump says reported FBI database hack is ‘not good’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Here are the top AI agents that can live in your text messages"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Alaska, your next governor is a Wikipedia nerd"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Startup sues Apple in India over tap-to-share contacts feature"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Experts warn: Nearly everyone in AI is susceptible to a honey-trap scheme right now"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building."
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Super-hot rock geothermal could end data center energy woes"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Chips can survive the space environment — can their financing?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Bending Spoons buys Mailchimp for $3.68B"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A transcription firm used by police, prosecutors, and tech giants exposed customer data online"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Six AI-powered gadgets that could make your home office smarter"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Amazon is complaining about NYC Council on shipping labels, too"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The FBI and USDA were reportedly hacked"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "John Roberts, the voice of Linda Belcher, is just happy to finish a thing"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Amazon’s first digital photo frame is up to 50 percent off for Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Can Anthropic afford to put safety first?"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Our go-to earbuds for taking calls have fallen to their lowest price to date"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Xiaomi 18 Pro proves two screens aren’t better than one"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The game of the year is finally here"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Review: Godzilla Minus Zero joins the list of truly stellar sequels"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "“Race realism” isn’t realistic—and it isn’t good science"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump FCC declares California isn't allowed to enforce phone service rules"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX's Starshield troubles in Ukraine could threaten its broader military business"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google rolls out new search homepage with AI chat history and no search button"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Watching as a giant star swallowed its neighbor and exploded"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "NASA’s new Moon plan is taking shape, but some big questions remain"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Prisons get OK to jam contraband phones. CTIA says nearby phones will be jammed too."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Army delays detonating \"catastrophically hazardous\" lead azide amid fear, anger"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Valve says it might have to raise the price of supply-limited Steam Machines"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US will soon announce root cause behind FAA nationwide ground stop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX lenders don’t want Elon Musk launching their collateral into space"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Rocket Report: A weekend of ups and downs; Stoke celebrates engine milestone"
+    }
+  ]
+}
