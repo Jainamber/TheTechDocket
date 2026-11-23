@@ -138,6 +138,10 @@
   </div>
 
   <div class="jm-controls">
+    <div class="jm-pills" role="group" aria-label="Filter by region scope">
+      <button type="button" class="jm-pill active" data-scope="global">Global</button>
+      <button type="button" class="jm-pill" data-scope="india">India Only</button>
+    </div>
     <div class="jm-pills" role="group" aria-label="Filter by signal">
       <button type="button" class="jm-pill active" data-type="all">All Signals</button>
       <button type="button" class="jm-pill" data-type="firing">Firing (Red)</button>
@@ -403,7 +407,8 @@
 (function(){
   const DATA = {{ jobs_map_json | safe }};
   const events = (DATA && DATA.events) ? DATA.events : [];
-  let fType = 'all', fVerify = 'confirmed', fYear = 'all', fQuery = '';
+  let fScope = 'global', fType = 'all', fVerify = 'confirmed', fYear = 'all', fQuery = '';
+  const byIdAll = new Map(events.map(e => [e.id, e]));
   let pinnedId = null, activeId = null;
 
   const svgNs = 'http://www.w3.org/2000/svg';
@@ -686,6 +691,7 @@
   function render(){
     const q = fQuery.trim().toLowerCase();
     const list = events.filter(ev => {
+      if (fScope === 'india' && ev.country_code !== 'IN') return false;
       if (fType !== 'all' && ev.type !== fType) return false;
       if (fVerify === 'confirmed' && ev.quarantined) return false;
       if (fYear !== 'all' && String(ev.year) !== fYear) return false;
@@ -705,8 +711,16 @@
     list.forEach(ev => {
       if (ev.quarantined) { cntQ++; return; }
       if (isMacro(ev)) { macroH = ev.headcount_exact; return; }
-      if (ev.type === 'hiring' && ev.headcount_exact != null) { sumH += Number(ev.headcount_exact); cntH++; }
-      else if (ev.type === 'firing' && ev.event_type === 'involuntary_layoff' && ev.headcount_exact != null) {
+      if (fScope === 'india') {
+        if (ev.country_code !== 'IN') return;
+        const parentEv = ev.parent_event_id ? byIdAll.get(ev.parent_event_id) : null;
+        if (parentEv && parentEv.country_code === 'IN') return;
+      } else {
+        if (ev.parent_event_id != null) return;
+      }
+      if (ev.event_type === 'realized_payroll_hires_net_change' && ev.execution_stage === 'REALIZED_ACTUAL' && ev.headcount_exact != null) {
+        sumH += Number(ev.headcount_exact); cntH++;
+      } else if (ev.event_type === 'involuntary_layoff' && ev.headcount_exact != null) {
         sumF += Number(ev.headcount_exact); cntF++;
       }
     });
@@ -823,6 +837,14 @@
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') clearSelection(); });
 
+  document.querySelectorAll('.jm-pill[data-scope]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      fScope = btn.dataset.scope;
+      document.querySelectorAll('.jm-pill[data-scope]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+  });
   document.querySelectorAll('.jm-pill[data-type]').forEach(btn => {
     btn.addEventListener('click', () => {
       fType = btn.dataset.type;

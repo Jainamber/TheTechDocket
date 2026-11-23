@@ -992,5 +992,50 @@
     "note": "Iconic open-source engineering brand with a long-standing remote org, though current reqs skew US/EU-only",
     "segment": "remote-first",
     "verified_on": "2026-07-11"
+  },
+  {
+    "name": "ServiceNow",
+    "ats": "smartrecruiters",
+    "token": "servicenow",
+    "watchlist_slug": "servicenow",
+    "job_count_at_curation": 100,
+    "segment": "Big Tech & Cloud",
+    "verified_on": "2026-11-23"
+  },
+  {
+    "name": "xAI",
+    "ats": "greenhouse",
+    "token": "xai",
+    "watchlist_slug": "xai",
+    "job_count_at_curation": 299,
+    "segment": "AI Frontier & Infra",
+    "verified_on": "2026-11-23"
+  },
+  {
+    "name": "Palantir",
+    "ats": "lever",
+    "token": "palantir",
+    "watchlist_slug": "palantir",
+    "job_count_at_curation": 308,
+    "segment": "AI Frontier & Infra",
+    "verified_on": "2026-11-23"
+  },
+  {
+    "name": "Perplexity",
+    "ats": "ashby",
+    "token": "perplexity",
+    "watchlist_slug": "perplexity",
+    "job_count_at_curation": 151,
+    "segment": "AI Frontier & Infra",
+    "verified_on": "2026-11-23"
+  },
+  {
+    "name": "Canva",
+    "ats": "smartrecruiters",
+    "token": "canva",
+    "watchlist_slug": "canva",
+    "job_count_at_curation": 30,
+    "segment": "SaaS & Security",
+    "verified_on": "2026-11-23"
   }
 ]

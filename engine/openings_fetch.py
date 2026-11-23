@@ -3,11 +3,24 @@
 Ported from JobEngine's read-only ATS (Greenhouse, Ashby, Lever, SmartRecruiters, Workable),
 Himalayas, and Jobicy fetchers — zero external pip dependencies (Python stdlib only).
 
+Phase 1A additions:
+- Loads `data/watchlist-100.json` (50 Global + 50 India) and tags every opening with `watchlist_slug`
+  when its company matches the Top 100 Watchlist.
+- Persists requisition-age tracking in `data/openings-history.json` (`id -> {first_seen_date,
+  last_seen_date, company, watchlist_slug, title, source}`) across all live fetched reqs,
+  computes weekly `ghost_job_ratio` (% of active watchlist reqs open >90 days), and keeps the
+  public `/topics/jobs/openings/` feed strictly capped at `max_age_days: 25`.
+- Supports `--validate-watchlist` to live-probe Greenhouse, Lever, Ashby, and SmartRecruiters
+  tokens from `data/watchlist-100.json` and append ONLY tokens returning HTTP 200 with real jobs
+  into `data/openings-watchlist.json` (preserving all existing working sources intact).
+
 Usage:
     python -m engine.openings_fetch
+    python -m engine.openings_fetch --validate-watchlist
 """
 from __future__ import annotations
 
+import argparse
 import concurrent.futures
 import hashlib
 import html
@@ -15,15 +28,18 @@ import json
 import re
 import urllib.error
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WATCHLIST_PATH = ROOT / "data" / "openings-watchlist.json"
+TOP100_PATH = ROOT / "data" / "watchlist-100.json"
+HISTORY_PATH = ROOT / "data" / "openings-history.json"
 OUT_PATH = ROOT / "data" / "openings.json"
 
 MAX_AGE_DAYS = 25
+GHOST_JOB_THRESHOLD_DAYS = 90
 MAX_OPENINGS = 300
 TIMEOUT_S = 14
 UA = "TheTechDocket-OpeningsBot/1.0 (+https://thetechdocket.com/topics/jobs/openings/)"
@@ -35,6 +51,7 @@ ATS_ENDPOINTS = {
     "smartrecruiters": "https://api.smartrecruiters.com/v1/companies/%s/postings",
     "workable": "https://apply.workable.com/api/v1/widget/accounts/%s?details=true",
 }
+VALIDATABLE_ATS = ("greenhouse", "lever", "ashby", "smartrecruiters")
 HIMALAYAS_API = "https://himalayas.app/jobs/api?limit=100"
 JOBICY_API = "https://jobicy.com/api/v2/remote-jobs?count=50"
 
@@ -42,6 +59,10 @@ TAG_RE = re.compile(r"<[^>]+>")
 EXP_RANGE_RE = re.compile(r"\b(\d{1,2})\s*(?:\+|to|-|–)\s*(\d{1,2})?\s*\+?\s*(?:years?|yrs?)\b", re.I)
 EXP_MIN_RE = re.compile(r"\b(\d{1,2})\s*\+\s*(?:years?|yrs?)\b", re.I)
 EXP_PLAIN_RE = re.compile(r"\b(?:minimum|at least|requires?)\s+(\d{1,2})\s*(?:years?|yrs?)\b", re.I)
+CORP_SUFFIX_RE = re.compile(
+    r"\b(inc|corp|corporation|ltd|limited|llc|plc|co|company|technologies|technology|systems|solutions|services|platforms|holdings|group|labs|software|india|global)\b",
+    re.I,
+)
 
 COUNTRY_PATTERNS = [
     ("India", r"\b(india|bengaluru|bangalore|hyderabad|pune|mumbai|chennai|noida|gurgaon|gurugram|delhi|ncr|kolkata)\b"),
@@ -83,13 +104,181 @@ AI_TOOL_PATTERNS = [
 ]
 
 
-def _fetch_json(url: str):
+def _norm_company(text: str) -> str:
+    s = re.sub(r"\([^)]*\)", " ", text or "")
+    s = re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+    return s
+
+
+def _norm_company_core(text: str) -> str:
+    s = _norm_company(text)
+    s = CORP_SUFFIX_RE.sub(" ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def load_top100_watchlist(path: Path = TOP100_PATH) -> tuple[list[dict], dict[str, str]]:
+    """Load data/watchlist-100.json and return (entries, normalized_name_to_slug_map)."""
+    if not path.exists():
+        return [], {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return [], {}
+    entries = list(raw.get("global_watchlist") or []) + list(raw.get("india_watchlist") or [])
+    lookup: dict[str, str] = {}
+    for item in entries:
+        slug = (item.get("slug") or "").strip().lower()
+        comp = (item.get("company") or "").strip()
+        if not slug:
+            continue
+        candidates = {slug, slug.replace("-", " "), slug.replace("-", "")}
+        if comp:
+            candidates.add(_norm_company(comp))
+            core = _norm_company_core(comp)
+            if len(core) >= 3:
+                candidates.add(core)
+            # Extract parenthetical aliases like "(TCS)", "(AWS)", "(Google)", "(Devin)"
+            for paren in re.findall(r"\(([^)]+)\)", comp):
+                for part in re.split(r"[/,]", paren):
+                    p = re.sub(r"[^a-z0-9]+", " ", part.lower()).strip()
+                    if len(p) >= 2:
+                        candidates.add(p)
+            # Split slash-separated brand names like "Alphabet (Google)" or "Zomato / Eternal"
+            for part in re.split(r"[/|]", re.sub(r"\([^)]*\)", "", comp)):
+                p = re.sub(r"[^a-z0-9]+", " ", part.lower()).strip()
+                if len(p) >= 3:
+                    candidates.add(p)
+        for key in candidates:
+            if key and key not in lookup:
+                lookup[key] = slug
+    return entries, lookup
+
+
+def match_watchlist_slug(company: str, token: str = "", lookup: dict[str, str] | None = None) -> str | None:
+    """Return canonical watchlist_slug from data/watchlist-100.json if matched, else None."""
+    if not lookup:
+        return None
+    probes = []
+    if token:
+        t = token.strip().lower()
+        probes.extend([t, t.replace("-", " "), t.replace("_", " ")])
+    if company:
+        probes.append(_norm_company(company))
+        probes.append(_norm_company_core(company))
+        for paren in re.findall(r"\(([^)]+)\)", company):
+            probes.append(re.sub(r"[^a-z0-9]+", " ", paren.lower()).strip())
+    for p in probes:
+        if p and p in lookup:
+            return lookup[p]
+    return None
+
+
+def _fetch_json_with_status(url: str) -> tuple[int, object | None]:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT_S) as resp:
-            return json.loads(resp.read().decode("utf-8", "replace"))
+            status = getattr(resp, "status", 200)
+            return status, json.loads(resp.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        return e.code, None
     except Exception:
-        return None
+        return 0, None
+
+
+def _fetch_json(url: str):
+    status, data = _fetch_json_with_status(url)
+    return data if status == 200 else None
+
+
+def _count_ats_jobs(ats: str, data: object) -> int:
+    if not data:
+        return 0
+    if ats == "greenhouse" and isinstance(data, dict):
+        return len(data.get("jobs") or [])
+    if ats == "ashby" and isinstance(data, dict):
+        return len(data.get("jobs") or [])
+    if ats == "lever" and isinstance(data, list):
+        return len(data)
+    if ats == "smartrecruiters" and isinstance(data, dict):
+        return len(data.get("content") or [])
+    if ats == "workable" and isinstance(data, dict):
+        return len(data.get("jobs") or [])
+    return 0
+
+
+def validate_watchlist_tokens(
+    top100_path: Path = TOP100_PATH,
+    watchlist_path: Path = WATCHLIST_PATH,
+    write: bool = True,
+) -> dict:
+    """Live-probe candidate ATS tokens from watchlist-100.json before enabling any new board.
+
+    Preserves all existing working entries in data/openings-watchlist.json intact.
+    Appends ONLY Greenhouse, Lever, Ashby, or SmartRecruiters boards returning HTTP 200
+    with >= 1 real job.
+    """
+    top100_entries, _ = load_top100_watchlist(top100_path)
+    existing: list[dict] = []
+    if watchlist_path.exists():
+        existing = json.loads(watchlist_path.read_text(encoding="utf-8"))
+    existing_keys = {(str(e.get("ats") or "").lower(), str(e.get("token") or "").lower()) for e in existing}
+
+    candidates = []
+    for item in top100_entries:
+        ats = (item.get("ats_provider") or "").strip().lower()
+        if ats not in VALIDATABLE_ATS:
+            continue
+        token = (item.get("ats_token") or item.get("slug") or "").strip().lower()
+        if not token or (ats, token) in existing_keys:
+            continue
+        candidates.append((item, ats, token))
+
+    added: list[dict] = []
+    rejected: list[dict] = []
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    def _probe(cand):
+        item, ats, token = cand
+        url = ATS_ENDPOINTS[ats] % token
+        status, data = _fetch_json_with_status(url)
+        job_count = _count_ats_jobs(ats, data) if status == 200 else 0
+        return item, ats, token, status, job_count
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        for item, ats, token, status, job_count in pool.map(_probe, candidates):
+            if status == 200 and job_count > 0:
+                entry = {
+                    "name": item["company"],
+                    "ats": ats,
+                    "token": token,
+                    "watchlist_slug": item["slug"],
+                    "job_count_at_curation": job_count,
+                    "segment": item.get("sector", "watchlist-100"),
+                    "verified_on": today_iso,
+                }
+                existing.append(entry)
+                existing_keys.add((ats, token))
+                added.append({"slug": item["slug"], "ats": ats, "token": token, "jobs": job_count})
+            else:
+                rejected.append({"slug": item["slug"], "ats": ats, "token": token, "http_status": status, "jobs": job_count})
+
+    if write and added:
+        watchlist_path.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    summary = {
+        "existing_before": len(existing) - len(added),
+        "probed": len(candidates),
+        "added_count": len(added),
+        "rejected_count": len(rejected),
+        "total_watchlist_boards": len(existing),
+        "added": added,
+        "rejected": rejected,
+    }
+    print(
+        f"ATS Validation: probed {len(candidates)} watchlist-100 candidates -> "
+        f"added {len(added)} (HTTP 200 w/ jobs), skipped {len(rejected)}, total boards={len(existing)}"
+    )
+    return summary
 
 
 def _strip_html(text: str) -> str:
@@ -169,14 +358,25 @@ def _detect_ai_tools(title: str, desc: str, tags: list[str]) -> list[str]:
     return found
 
 
-def _make_record(source: str, company: str, title: str, url: str, posted_dt: datetime | None,
-                 location: str, salary: str, tags: list[str], desc: str, workplace: str = "") -> dict | None:
+def _make_record(
+    source: str,
+    company: str,
+    title: str,
+    url: str,
+    posted_dt: datetime | None,
+    location: str,
+    salary: str,
+    tags: list[str],
+    desc: str,
+    workplace: str = "",
+    watchlist_slug: str | None = None,
+    now_dt: datetime | None = None,
+) -> dict | None:
+    """Build a normalized opening record (does NOT drop >25d reqs yet so history tracks age >90d)."""
     if not title or not url or not posted_dt:
         return None
-    now = datetime.now(timezone.utc)
+    now = now_dt or datetime.now(timezone.utc)
     age_days = max(0, int((now - posted_dt).total_seconds() // 86400))
-    if age_days > MAX_AGE_DAYS:
-        return None
     clean_title = re.sub(r"\s+", " ", title).strip()[:140]
     clean_co = re.sub(r"\s+", " ", company).strip()[:80]
     clean_loc = re.sub(r"\s+", " ", location or "Remote").strip()[:90]
@@ -187,6 +387,7 @@ def _make_record(source: str, company: str, title: str, url: str, posted_dt: dat
         "id": jid,
         "source": source,
         "company": clean_co,
+        "watchlist_slug": watchlist_slug,
         "title": clean_title,
         "apply_url": url,
         "posted_at": posted_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -205,7 +406,92 @@ def _make_record(source: str, company: str, title: str, url: str, posted_dt: dat
     }
 
 
-def _fetch_ats_company(entry: dict) -> list[dict]:
+def update_openings_history(
+    live_jobs: list[dict],
+    history_path: Path = HISTORY_PATH,
+    today: date | None = None,
+    ghost_threshold_days: int = GHOST_JOB_THRESHOLD_DAYS,
+) -> tuple[dict[str, dict], dict]:
+    """Persist `id -> {first_seen_date, last_seen_date, ...}` and compute ghost_job_ratio.
+
+    Ghost Job Ratio = % of currently active Top-100 watchlist requisitions whose observed open
+    duration `(today - first_seen_date)` exceeds `ghost_threshold_days` (default 90 days).
+    """
+    today_d = today or datetime.now(timezone.utc).date()
+    today_iso = today_d.isoformat()
+
+    history: dict[str, dict] = {}
+    if history_path.exists():
+        try:
+            loaded = json.loads(history_path.read_text(encoding="utf-8"))
+            if isinstance(loaded, dict):
+                history = loaded.get("requisitions", loaded) if "requisitions" in loaded else loaded
+        except Exception:
+            history = {}
+
+    active_ids: set[str] = set()
+    active_watchlist_ids: set[str] = set()
+    ghost_watchlist_ids: set[str] = set()
+
+    for j in live_jobs:
+        jid = j["id"]
+        active_ids.add(jid)
+        prev = history.get(jid)
+        if prev and prev.get("first_seen_date"):
+            first_seen = prev["first_seen_date"]
+        else:
+            first_seen = today_iso
+        try:
+            first_d = date.fromisoformat(first_seen)
+            tracked_days = max(0, (today_d - first_d).days)
+        except ValueError:
+            first_seen = today_iso
+            tracked_days = 0
+
+        history[jid] = {
+            "first_seen_date": first_seen,
+            "last_seen_date": today_iso,
+            "company": j.get("company") or "",
+            "watchlist_slug": j.get("watchlist_slug"),
+            "title": j.get("title") or "",
+            "source": j.get("source") or "",
+        }
+        j["first_seen_date"] = first_seen
+        j["tracked_age_days"] = tracked_days
+
+        if j.get("watchlist_slug"):
+            active_watchlist_ids.add(jid)
+            if tracked_days > ghost_threshold_days:
+                ghost_watchlist_ids.add(jid)
+
+    active_wl_count = len(active_watchlist_ids)
+    ghost_count = len(ghost_watchlist_ids)
+    ghost_ratio = round((ghost_count / active_wl_count) * 100.0, 2) if active_wl_count > 0 else 0.0
+    first_dates = [v.get("first_seen_date") for v in history.values() if v.get("first_seen_date")]
+    tracking_since = min(first_dates) if first_dates else today_iso
+
+    history_payload = {
+        "schema_version": "1.0",
+        "updated_at": today_iso,
+        "ghost_threshold_days": ghost_threshold_days,
+        "requisitions": history,
+    }
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+    history_path.write_text(json.dumps(history_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    ghost_stats = {
+        "threshold_days": ghost_threshold_days,
+        "active_watchlist_reqs": active_wl_count,
+        "ghost_reqs_over_90d": ghost_count,
+        "ghost_job_ratio_pct": ghost_ratio,
+        "active_total_reqs": len(active_ids),
+        "history_tracked_total": len(history),
+        "tracking_since": tracking_since,
+    }
+    return history, ghost_stats
+
+
+def _fetch_ats_company(entry: dict, wl_lookup: dict[str, str]) -> list[dict]:
     ats = entry.get("ats")
     token = entry.get("token")
     name = entry.get("name") or token
@@ -214,6 +500,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
     data = _fetch_json(ATS_ENDPOINTS[ats] % token)
     if not data:
         return []
+    wslug = entry.get("watchlist_slug") or match_watchlist_slug(name, token, wl_lookup)
     out = []
     try:
         if ats == "greenhouse":
@@ -224,6 +511,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
                     (j.get("location") or {}).get("name") or "", "",
                     [(d or {}).get("name", "") for d in (j.get("departments") or [])],
                     _strip_html(j.get("content") or ""),
+                    watchlist_slug=wslug,
                 )
                 if rec:
                     out.append(rec)
@@ -237,6 +525,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
                     [j.get("department") or "", j.get("team") or ""],
                     _strip_html(j.get("descriptionHtml") or ""),
                     "remote" if j.get("isRemote") else "",
+                    watchlist_slug=wslug,
                 )
                 if rec:
                     out.append(rec)
@@ -248,6 +537,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
                     _parse_when(j.get("createdAt")), cats.get("location") or "", "",
                     [cats.get(k) or "" for k in ("team", "department", "commitment")],
                     j.get("descriptionPlain") or "", (j.get("workplaceType") or "").lower(),
+                    watchlist_slug=wslug,
                 )
                 if rec:
                     out.append(rec)
@@ -259,6 +549,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
                     _parse_when(j.get("published_on")), loc, "",
                     [j.get("department") or ""], _strip_html(j.get("description") or ""),
                     "remote" if j.get("telecommuting") else "",
+                    watchlist_slug=wslug,
                 )
                 if rec:
                     out.append(rec)
@@ -275,6 +566,7 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
                     _parse_when(j.get("releasedDate")), loc_str, "",
                     [(j.get("department") or {}).get("label", "")], "",
                     "remote" if loc.get("remote") else "",
+                    watchlist_slug=wslug,
                 )
                 if rec:
                     out.append(rec)
@@ -283,12 +575,13 @@ def _fetch_ats_company(entry: dict) -> list[dict]:
     return out
 
 
-def _fetch_himalayas() -> list[dict]:
+def _fetch_himalayas(wl_lookup: dict[str, str]) -> list[dict]:
     data = _fetch_json(HIMALAYAS_API)
     if not data or "jobs" not in data:
         return []
     out = []
     for it in data["jobs"]:
+        co = it.get("companyName") or ""
         locs = it.get("locationRestrictions")
         loc = "Worldwide" if (isinstance(locs, list) and not locs) else ", ".join(locs or [])
         lo, hi = it.get("minSalary"), it.get("maxSalary")
@@ -298,23 +591,25 @@ def _fetch_himalayas() -> list[dict]:
             hi = hi or lo
             sal = f"${int(lo):,}–${int(hi):,}" if cur == "USD" else f"{cur} {int(lo):,}–{int(hi):,}"
         rec = _make_record(
-            "himalayas", it.get("companyName") or "", it.get("title") or "",
+            "himalayas", co, it.get("title") or "",
             it.get("applicationLink") or it.get("guid") or "",
             _parse_when(it.get("pubDate")), loc or "Worldwide", sal,
             list(it.get("categories") or []) + list(it.get("seniority") or []),
             _strip_html(it.get("description") or it.get("excerpt") or ""), "remote",
+            watchlist_slug=match_watchlist_slug(co, "", wl_lookup),
         )
         if rec:
             out.append(rec)
     return out
 
 
-def _fetch_jobicy() -> list[dict]:
+def _fetch_jobicy(wl_lookup: dict[str, str]) -> list[dict]:
     data = _fetch_json(JOBICY_API)
     if not data or "jobs" not in data:
         return []
     out = []
     for it in data["jobs"]:
+        co = it.get("companyName") or ""
         sal = ""
         if it.get("annualSalaryMin"):
             lo = int(it["annualSalaryMin"])
@@ -322,11 +617,12 @@ def _fetch_jobicy() -> list[dict]:
             cur = it.get("salaryCurrency") or "USD"
             sal = f"${lo:,}–${hi:,}" if cur == "USD" else f"{cur} {lo:,}–{hi:,}"
         rec = _make_record(
-            "jobicy", it.get("companyName") or "", it.get("jobTitle") or "",
+            "jobicy", co, it.get("jobTitle") or "",
             it.get("url") or "", _parse_when(it.get("pubDate")),
             it.get("jobGeo") or "Remote", sal,
             list(it.get("jobIndustry") or []) + list(it.get("jobType") or []),
             _strip_html(it.get("jobExcerpt") or ""), "remote",
+            watchlist_slug=match_watchlist_slug(co, "", wl_lookup),
         )
         if rec:
             out.append(rec)
@@ -337,21 +633,28 @@ def run() -> dict:
     watchlist = []
     if WATCHLIST_PATH.exists():
         watchlist = json.loads(WATCHLIST_PATH.read_text(encoding="utf-8"))
+    _, wl_lookup = load_top100_watchlist(TOP100_PATH)
 
-    all_jobs: list[dict] = []
+    all_live_jobs: list[dict] = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
-        futs = [pool.submit(_fetch_ats_company, entry) for entry in watchlist]
-        futs.append(pool.submit(_fetch_himalayas))
-        futs.append(pool.submit(_fetch_jobicy))
+        futs = [pool.submit(_fetch_ats_company, entry, wl_lookup) for entry in watchlist]
+        futs.append(pool.submit(_fetch_himalayas, wl_lookup))
+        futs.append(pool.submit(_fetch_jobicy, wl_lookup))
         for f in concurrent.futures.as_completed(futs):
             try:
-                all_jobs.extend(f.result())
+                all_live_jobs.extend(f.result())
             except Exception:
                 pass
 
+    # Persist requisition-age history across ALL live reqs & compute >90d ghost_job_ratio
+    _, ghost_stats = update_openings_history(all_live_jobs, HISTORY_PATH)
+
+    # Public /topics/jobs/openings/ feed remains strictly capped at MAX_AGE_DAYS (25 days)
+    fresh_jobs = [j for j in all_live_jobs if j["age_days"] <= MAX_AGE_DAYS]
+
     # Deduplicate by apply_url and (company, title, country)
     seen_urls, seen_keys, deduped = set(), set(), []
-    for j in sorted(all_jobs, key=lambda x: (x["age_days"], not x["is_ai_role"], not bool(x["salary"]))):
+    for j in sorted(fresh_jobs, key=lambda x: (x["age_days"], not x["is_ai_role"], not bool(x["salary"]))):
         u = j["apply_url"].split("?")[0].rstrip("/").lower()
         k = (j["company"].lower(), j["title"].lower(), j["country"].lower())
         if u in seen_urls or k in seen_keys:
@@ -363,21 +666,48 @@ def run() -> dict:
     trimmed = deduped[:MAX_OPENINGS]
     countries = sorted({j["country"] for j in trimmed})
     ai_tools = sorted({t for j in trimmed for t in j["ai_tools"]})
+    watchlist_matched = sum(1 for j in trimmed if j.get("watchlist_slug"))
     payload = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "max_age_days": MAX_AGE_DAYS,
         "update_cadence": "Refreshed weekly (roles older than 25 days auto-expire)",
         "sources_polled": len(watchlist) + 2,
         "total_openings": len(trimmed),
+        "watchlist_100_matched": watchlist_matched,
+        "ghost_job_ratio": ghost_stats["ghost_job_ratio_pct"],
+        "ghost_job_stats": ghost_stats,
         "countries": countries,
         "ai_tools": ai_tools,
         "openings": trimmed,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUT_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Saved {len(trimmed)} fresh openings (<= {MAX_AGE_DAYS}d) from {len(watchlist)+2} sources -> {OUT_PATH}")
+    OUT_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(
+        f"Saved {len(trimmed)} fresh openings (<= {MAX_AGE_DAYS}d, {watchlist_matched} watchlist-100 matched, "
+        f"ghost_job_ratio={ghost_stats['ghost_job_ratio_pct']}%) from {len(watchlist)+2} sources -> {OUT_PATH}"
+    )
     return payload
 
 
-if __name__ == "__main__":
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Fetch fresh tech/AI openings & track watchlist-100 ghost-job ratio.")
+    parser.add_argument(
+        "--validate-watchlist",
+        action="store_true",
+        help="Live-probe Greenhouse/Lever/Ashby/SmartRecruiters tokens from data/watchlist-100.json and add only HTTP 200 boards with real jobs.",
+    )
+    parser.add_argument(
+        "--dry-run-validate",
+        action="store_true",
+        help="Probe candidate tokens from data/watchlist-100.json without modifying data/openings-watchlist.json.",
+    )
+    args = parser.parse_args()
+    if args.validate_watchlist or args.dry_run_validate:
+        validate_watchlist_tokens(write=not args.dry_run_validate)
+        if args.dry_run_validate:
+            return
     run()
+
+
+if __name__ == "__main__":
+    main()

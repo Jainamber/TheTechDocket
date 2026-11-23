@@ -1,0 +1,1355 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-23",
+  "rule": "Top 100 Watchlist (50 Global Bellwethers + 50 India Bellwethers / GCCs / Staffing Proxies)",
+  "integrity_rules": {
+    "confirmed_tiers_only": [
+      "Tier 1",
+      "Tier 2"
+    ],
+    "quarantine_tiers": [
+      "Tier 3",
+      "Tier 4"
+    ],
+    "never_average_ranges": true,
+    "parent_child_dedup": "Global totals sum ONLY parent_event_id == null. India totals sum ALL country_code == 'IN' rows (standalone + linked MNC India slices). Never create an IN child under an IN parent.",
+    "india_epfo_regime_break_date": "2026-09-17",
+    "ats_ghost_job_threshold_days": 90,
+    "openings_freshness_window_days": 25,
+    "affiliate_links_forbidden_gate": "G23-no-affiliate"
+  },
+  "global_watchlist": [
+    {
+      "slug": "apple",
+      "company": "Apple",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NASDAQ:AAPL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "microsoft",
+      "company": "Microsoft",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NASDAQ:MSFT",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "WA_WARN",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "alphabet",
+      "company": "Alphabet (Google)",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NASDAQ:GOOGL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "amazon",
+      "company": "Amazon",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NASDAQ:AMZN",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "WA_WARN",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "meta",
+      "company": "Meta Platforms",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NASDAQ:META",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "oracle",
+      "company": "Oracle",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NYSE:ORCL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN",
+        "TX_WARN"
+      ]
+    },
+    {
+      "slug": "ibm",
+      "company": "IBM",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NYSE:IBM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "NY_WARN",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "salesforce",
+      "company": "Salesforce",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NYSE:CRM",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "sap",
+      "company": "SAP SE",
+      "sector": "Big Tech & Cloud",
+      "country_code": "DE",
+      "listing": "NYSE:SAP",
+      "ats_provider": "successfactors",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "EUROFOUND_ERM"
+      ]
+    },
+    {
+      "slug": "servicenow",
+      "company": "ServiceNow",
+      "sector": "Big Tech & Cloud",
+      "country_code": "US",
+      "listing": "NYSE:NOW",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "openai",
+      "company": "OpenAI",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "anthropic",
+      "company": "Anthropic",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "xai",
+      "company": "xAI",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "databricks",
+      "company": "Databricks",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "snowflake",
+      "company": "Snowflake",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "NYSE:SNOW",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "palantir",
+      "company": "Palantir",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "NASDAQ:PLTR",
+      "ats_provider": "lever",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "scale-ai",
+      "company": "Scale AI",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "company": "Perplexity",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "together-ai",
+      "company": "Together AI",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "cohere",
+      "company": "Cohere",
+      "sector": "AI Frontier & Infra",
+      "country_code": "CA",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CANADA_PROVINCIAL"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "company": "ElevenLabs",
+      "sector": "AI Frontier & Infra",
+      "country_code": "GB",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "UK_HR1"
+      ]
+    },
+    {
+      "slug": "harvey",
+      "company": "Harvey",
+      "sector": "AI Frontier & Infra",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "nvidia",
+      "company": "NVIDIA",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:NVDA",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "intel",
+      "company": "Intel",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:INTC",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN",
+        "OR_WARN"
+      ]
+    },
+    {
+      "slug": "amd",
+      "company": "AMD",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:AMD",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN",
+        "TX_WARN"
+      ]
+    },
+    {
+      "slug": "qualcomm",
+      "company": "Qualcomm",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:QCOM",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "broadcom",
+      "company": "Broadcom",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:AVGO",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "cisco",
+      "company": "Cisco Systems",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NASDAQ:CSCO",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "hpe",
+      "company": "Hewlett Packard Enterprise",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NYSE:HPE",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "TX_WARN",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "dell",
+      "company": "Dell Technologies",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "US",
+      "listing": "NYSE:DELL",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "TX_WARN"
+      ]
+    },
+    {
+      "slug": "tsmc",
+      "company": "TSMC",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "TW",
+      "listing": "NYSE:TSM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "CORP_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "asml",
+      "company": "ASML",
+      "sector": "Semiconductors & Hardware",
+      "country_code": "NL",
+      "listing": "NASDAQ:ASML",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "EUROFOUND_ERM"
+      ]
+    },
+    {
+      "slug": "cloudflare",
+      "company": "Cloudflare",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NYSE:NET",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "datadog",
+      "company": "Datadog",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NASDAQ:DDOG",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ATS_VELOCITY",
+        "NY_WARN"
+      ]
+    },
+    {
+      "slug": "crowdstrike",
+      "company": "CrowdStrike",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NASDAQ:CRWD",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "TX_WARN"
+      ]
+    },
+    {
+      "slug": "palo-alto-networks",
+      "company": "Palo Alto Networks",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NASDAQ:PANW",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "workday",
+      "company": "Workday",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NASDAQ:WDAY",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "atlassian",
+      "company": "Atlassian",
+      "sector": "SaaS & Security",
+      "country_code": "AU",
+      "listing": "NASDAQ:TEAM",
+      "ats_provider": "lever",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ASX_OR_CORP"
+      ]
+    },
+    {
+      "slug": "figma",
+      "company": "Figma",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "PRIVATE_OR_US",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "canva",
+      "company": "Canva",
+      "sector": "SaaS & Security",
+      "country_code": "AU",
+      "listing": "PRIVATE",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CORP_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "monday",
+      "company": "Monday.com",
+      "sector": "SaaS & Security",
+      "country_code": "IL",
+      "listing": "NASDAQ:MNDY",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "ATS_VELOCITY"
+      ]
+    },
+    {
+      "slug": "adobe",
+      "company": "Adobe",
+      "sector": "SaaS & Security",
+      "country_code": "US",
+      "listing": "NASDAQ:ADBE",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "stripe",
+      "company": "Stripe",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "block",
+      "company": "Block (Square/Cash App)",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "NYSE:XYZ",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "paypal",
+      "company": "PayPal",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "NASDAQ:PYPL",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "shopify",
+      "company": "Shopify",
+      "sector": "Fintech & Platforms",
+      "country_code": "CA",
+      "listing": "NYSE:SHOP",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "CANADA_PROVINCIAL"
+      ]
+    },
+    {
+      "slug": "uber",
+      "company": "Uber",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "NYSE:UBER",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "netflix",
+      "company": "Netflix",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "NASDAQ:NFLX",
+      "ats_provider": "lever",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "ebay",
+      "company": "eBay",
+      "sector": "Fintech & Platforms",
+      "country_code": "US",
+      "listing": "NASDAQ:EBAY",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "CA_WARN"
+      ]
+    },
+    {
+      "slug": "ericsson",
+      "company": "Ericsson",
+      "sector": "Telecom & Hardware",
+      "country_code": "SE",
+      "listing": "NASDAQ:ERIC",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_6K",
+        "EUROFOUND_ERM"
+      ]
+    }
+  ],
+  "india_watchlist": [
+    {
+      "slug": "tcs",
+      "company": "Tata Consultancy Services (TCS)",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:TCS",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "infosys",
+      "company": "Infosys",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:INFY",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "SEC_6K",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "wipro",
+      "company": "Wipro",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:WIPRO",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "SEC_6K",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "hcltech",
+      "company": "HCLTech",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:HCLTECH",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "tech-mahindra",
+      "company": "Tech Mahindra",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:TECHM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "ltimindtree",
+      "company": "LTIMindtree",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:LTIM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "mphasis",
+      "company": "Mphasis",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:MPHASIS",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "persistent",
+      "company": "Persistent Systems",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:PERSISTENT",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "coforge",
+      "company": "Coforge",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:COFORGE",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "kpit",
+      "company": "KPIT Technologies",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:KPITTECH",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "tata-elxsi",
+      "company": "Tata Elxsi",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:TATAELXSI",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "ltts",
+      "company": "L&T Technology Services",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:LTTS",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "hexaware",
+      "company": "Hexaware Technologies",
+      "sector": "Indian IT Services",
+      "country_code": "IN",
+      "listing": "NSE:HEXT",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT"
+      ]
+    },
+    {
+      "slug": "cognizant-india",
+      "company": "Cognizant India",
+      "sector": "Global IT / India Heavy",
+      "country_code": "IN",
+      "listing": "NASDAQ:CTSH",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "INDIA_HEADCOUNT_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "accenture-india",
+      "company": "Accenture India",
+      "sector": "Global IT / India Heavy",
+      "country_code": "IN",
+      "listing": "NYSE:ACN",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "INDIA_HEADCOUNT_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "eternal-zomato",
+      "company": "Eternal (Zomato / Blinkit)",
+      "sector": "Indian Consumer Tech",
+      "country_code": "IN",
+      "listing": "NSE:ETERNAL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "MCA_ANNUAL",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "swiggy",
+      "company": "Swiggy",
+      "sector": "Indian Consumer Tech",
+      "country_code": "IN",
+      "listing": "NSE:SWIGGY",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "paytm",
+      "company": "One97 Communications (Paytm)",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "NSE:PAYTM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "policybazaar",
+      "company": "PB Fintech (Policybazaar)",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "NSE:POLICYBZR",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "ola-electric",
+      "company": "Ola Electric",
+      "sector": "Indian EV & Mobility",
+      "country_code": "IN",
+      "listing": "NSE:OLAELEC",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "delhivery",
+      "company": "Delhivery",
+      "sector": "Indian Logistics Tech",
+      "country_code": "IN",
+      "listing": "NSE:DELHIVERY",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "nykaa",
+      "company": "FSN E-Commerce (Nykaa)",
+      "sector": "Indian Consumer Tech",
+      "country_code": "IN",
+      "listing": "NSE:NYKAA",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "freshworks-india",
+      "company": "Freshworks (India Ops)",
+      "sector": "Indian-Origin SaaS",
+      "country_code": "IN",
+      "listing": "NASDAQ:FRSH",
+      "ats_provider": "smartrecruiters",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_ITEM_205",
+        "ATS_VELOCITY",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "zoho",
+      "company": "Zoho Corporation",
+      "sector": "Indian-Origin SaaS",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "zoho_recruit",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT",
+        "CORP_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "flipkart",
+      "company": "Flipkart",
+      "sector": "Indian Consumer Tech",
+      "country_code": "IN",
+      "listing": "PRIVATE_WALMART",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT",
+        "CRE_LEASES"
+      ]
+    },
+    {
+      "slug": "phonepe",
+      "company": "PhonePe",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "PRIVATE_WALMART",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "razorpay",
+      "company": "Razorpay",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "cred",
+      "company": "CRED",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "lever",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "groww",
+      "company": "Groww",
+      "sector": "Indian Fintech",
+      "country_code": "IN",
+      "listing": "PRIVATE_OR_NSE",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_OR_MCA",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "zepto",
+      "company": "Zepto",
+      "sector": "Indian Quick Commerce",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT",
+        "CRE_LEASES"
+      ]
+    },
+    {
+      "slug": "meesho",
+      "company": "Meesho",
+      "sector": "Indian Consumer Tech",
+      "country_code": "IN",
+      "listing": "PRIVATE_OR_NSE",
+      "ats_provider": "lever",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "SEBI_OR_MCA",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "postman",
+      "company": "Postman (India Ops)",
+      "sector": "Indian-Origin SaaS",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "browserstack",
+      "company": "BrowserStack",
+      "sector": "Indian-Origin SaaS",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "greenhouse",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "sarvam-ai",
+      "company": "Sarvam AI",
+      "sector": "Indian AI Frontier",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "ashby",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "ATS_VELOCITY",
+        "CORP_DISCLOSURE"
+      ]
+    },
+    {
+      "slug": "krutrim",
+      "company": "Krutrim AI",
+      "sector": "Indian AI Frontier",
+      "country_code": "IN",
+      "listing": "PRIVATE",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "MCA_AOC4_MGT7",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "google-india-gcc",
+      "company": "Google India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:GOOGL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:alphabet",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "microsoft-india-gcc",
+      "company": "Microsoft India (IDC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:MSFT",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:microsoft",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "amazon-india-gcc",
+      "company": "Amazon India (Dev Centers)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:AMZN",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:amazon",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "oracle-india-gcc",
+      "company": "Oracle India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:ORCL",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:oracle",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "qualcomm-india-gcc",
+      "company": "Qualcomm India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:QCOM",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:qualcomm",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "nvidia-india-gcc",
+      "company": "NVIDIA India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:NVDA",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:nvidia",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "sap-labs-india",
+      "company": "SAP Labs India",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:SAP",
+      "ats_provider": "successfactors",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:sap",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "walmart-global-tech-india",
+      "company": "Walmart Global Tech India",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:WMT",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_PARENT",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "jpmorgan-india-gcc",
+      "company": "JPMorgan Chase India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:JPM",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_PARENT",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "goldman-sachs-india-gcc",
+      "company": "Goldman Sachs India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:GS",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_PARENT",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "cisco-india-gcc",
+      "company": "Cisco India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:CSCO",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:cisco",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "adobe-india-gcc",
+      "company": "Adobe India (GCC)",
+      "sector": "India MNC GCC",
+      "country_code": "IN",
+      "listing": "PARENT:ADBE",
+      "ats_provider": "workday",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "PARENT_LINK:adobe",
+        "CRE_LEASES",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    },
+    {
+      "slug": "quess-corp",
+      "company": "Quess Corp (IT Staffing Proxy)",
+      "sector": "India Staffing EOR Proxy",
+      "country_code": "IN",
+      "listing": "NSE:QUESS",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT_EOR"
+      ]
+    },
+    {
+      "slug": "teamlease",
+      "company": "TeamLease Services (Staffing Proxy)",
+      "sector": "India Staffing EOR Proxy",
+      "country_code": "IN",
+      "listing": "NSE:TEAMLEASE",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEBI_REG_30",
+        "QUARTERLY_HEADCOUNT_EOR"
+      ]
+    },
+    {
+      "slug": "innodata-india",
+      "company": "Innodata India (AI Data Ops)",
+      "sector": "India AI Data Services",
+      "country_code": "IN",
+      "listing": "PARENT:INOD",
+      "ats_provider": "custom_portal",
+      "ats_token_status": "VERIFY_LIVE_BEFORE_POLL",
+      "primary_signals": [
+        "SEC_8K_PARENT",
+        "EPFO_MONTHLY_AUDIT"
+      ]
+    }
+  ]
+}

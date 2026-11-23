@@ -560,11 +560,17 @@ def _jobs_map_seo(cfg: dict, jobs_map: dict) -> dict:
         if _jobs_is_macro(ev):
             macro_h = ev.get("headcount_exact")
             continue
+        if ev.get("parent_event_id") is not None:
+            continue
         exact = ev.get("headcount_exact")
-        if ev.get("type") == "hiring" and exact is not None:
+        if (
+            ev.get("event_type") == "realized_payroll_hires_net_change"
+            and ev.get("execution_stage") == "REALIZED_ACTUAL"
+            and exact is not None
+        ):
             sum_h += int(exact)
             cnt_h += 1
-        elif ev.get("type") == "firing" and ev.get("event_type") == "involuntary_layoff" and exact is not None:
+        elif ev.get("event_type") == "involuntary_layoff" and exact is not None:
             sum_f += int(exact)
             cnt_f += 1
 

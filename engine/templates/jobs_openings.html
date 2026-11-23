@@ -100,6 +100,12 @@
     <div class="jo-kpi-sub">Tagged with AI tools/stack</div>
   </div>
   <div class="jo-kpi">
+    <div class="jo-kpi-lab">Ghost Job Ratio (&gt;90d)</div>
+    {% set gs = openings_data.ghost_job_stats if (openings_data and openings_data.ghost_job_stats) else none %}
+    <div class="jo-kpi-val" id="jo-kpi-ghost" style="color:#b45309">{{ ('%.1f%%' % gs.ghost_job_ratio_pct) if gs else '0.0%' }}</div>
+    <div class="jo-kpi-sub">{% if gs and gs.active_watchlist_reqs %}{{ gs.ghost_reqs_over_90d }} of {{ gs.active_watchlist_reqs }} watchlist reqs &gt;90d{% else %}Tracking Top-100 req age{% endif %}</div>
+  </div>
+  <div class="jo-kpi">
     <div class="jo-kpi-lab">Last Refresh</div>
     <div class="jo-kpi-val" style="font-size:17px;padding-top:4px">{{ openings_data.updated_at if openings_data else 'Pending' }}</div>
     <div class="jo-kpi-sub">Refreshed weekly · auto-expires &gt;25d</div>
