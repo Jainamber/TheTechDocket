@@ -1,8 +1,8 @@
 {
   "slug": "watchlist-100-ats-hiring-velocity-vs-layoff-headlines-2026",
-  "checked_at": "2026-11-23T13:15:22.702502+05:30",
-  "passed": false,
-  "hard_failures": 1,
+  "checked_at": "2026-11-23T13:22:59.385153+05:30",
+  "passed": true,
+  "hard_failures": 0,
   "soft_warnings": 0,
   "results": [
     {
@@ -45,13 +45,13 @@
       "gate": "G06-citations",
       "level": "hard",
       "ok": true,
-      "detail": "5 external citation domains, 7 listed sources (need ≥2)"
+      "detail": "9 external citation domains, 7 listed sources (need ≥2)"
     },
     {
       "gate": "G07-stats-sourced",
       "level": "hard",
-      "ok": false,
-      "detail": "stat paragraphs missing inline source link: Across the 300 freshest roles posted within 25 days in our November 23 openings dataset, W | This split explains why job seekers report whiplash. Frontier AI labs and cloud-security v | India accounted for 24 of the 300 freshest sub-25-day roles (8.0%) in "
+      "ok": true,
+      "detail": "stat paragraphs missing inline source link: "
     },
     {
       "gate": "G08-no-clickbait",
@@ -129,7 +129,7 @@
       "gate": "G21-page-weight",
       "level": "soft",
       "ok": true,
-      "detail": "html 53KB (<=90), hero 27KB (<=320)"
+      "detail": "html 54KB (<=90), hero 27KB (<=320)"
     },
     {
       "gate": "G22-ymyl",
@@ -189,7 +189,7 @@
       "gate": "S04-answer-first",
       "level": "hard",
       "ok": true,
-      "detail": "first paragraph 57 words (need ≥40 before any H2)"
+      "detail": "first paragraph 58 words (need ≥40 before any H2)"
     },
     {
       "gate": "S05-h2-count",
@@ -207,7 +207,7 @@
       "gate": "S07-word-count",
       "level": "hard",
       "ok": true,
-      "detail": "1463 words (need 900–2200)"
+      "detail": "1615 words (need 900–2200)"
     },
     {
       "gate": "S08-slug",
