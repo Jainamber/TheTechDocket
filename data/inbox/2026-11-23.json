@@ -1,0 +1,1783 @@
+{
+  "date": "2026-11-23",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_AI startup f": "ok",
+    "news_IN_artificial i": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_AI startup f": "ok",
+    "news_US_artificial i": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "sa vs ban",
+          "approx_traffic": "5000+",
+          "pub_date": "Sun, 22 Nov 2026 23:10:00 -0800",
+          "news": [
+            {
+              "headline": "'It's quite a smooth transition'- Markram on stepping in for Bavuma",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/story/aiden-markram-says-it-s-quite-a-smooth-transition-to-be-leading-south-africa-again-1563619"
+            },
+            {
+              "headline": "South Africa vs Bangladesh, 2nd Test: Injuries won't take the sting out of Centurion Test",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/cricket-news/141019/south-africa-vs-bangladesh-2nd-test-injuries-wont-take-the-sting-out-of-centurion-test-cricbuzzcom"
+            },
+            {
+              "headline": "Proteas confirm stand-in captain for second Bangladesh Test",
+              "source": "ICC",
+              "url": "https://www.icc-cricket.com/tournaments/world-test-championship/news/proteas-confirm-stand-in-captain-for-second-bangladesh-test"
+            }
+          ]
+        },
+        {
+          "title": "విజయ్",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "ఘనంగా అనిరుధ్ - కావ్య మారన్ వివాహ రిసెప్షన్‌.. వేడుకలో సినీ, రాజకీయ ప్రముఖుల సందడి",
+              "source": "Andhrajyothy",
+              "url": "https://www.andhrajyothy.com/2026/photogallery/national/anirudh-ravichander-and-kavya-maran-wedding-reception-held-grandly-in-chennai-vk-4911.html"
+            },
+            {
+              "headline": "Ajith-MS Dhoni: ఒకే ఫ్రేమ్⁬లో ఇద్దరు 'తలా'లు.. మధ్యలో సూపర్ స్టార్.. పిక్స్ అదిరిపోలా!",
+              "source": "NTV Telugu",
+              "url": "https://ntvtelugu.com/movie-news/cinema-news/ms-dhoni-ajith-kumar-and-rajinikanth-share-a-frame-at-kavya-anirudh-reception-1037983.html"
+            },
+            {
+              "headline": "Anirudh: అనిరుధ్, కావ్య మారన్ గ్రాండ్ రిసెప్షన్... స్పెషల్ అట్రాక్షన్‌గా విజయ్ దేవరకొండ, రష్మిక..!",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/news/movies/vijay-deverakonda-and-rashmika-mandanna-steal-the-show-at-anirudhs-wedding-reception-bh-3271270.html"
+            }
+          ]
+        },
+        {
+          "title": "भारत",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "एशिया पावर इंडेक्स में भारत का दबदबा बढ़ा, तीसरा सबसे शक्तिशाली देश बना, रूस और जापान को छोड़ा पीछे",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/india/national/india-ranks-on-third-position-in-asia-power-index-2026-surpassing-russia-and-japan-know-details-here-2026-11-23-1255862"
+            },
+            {
+              "headline": "भारत-चीन में कड़ी टक्कर, रूस-जापान पीछे, पावर इंडेक्स में कौन नंबर वन?",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/news/world/india-rank-score-compare-to-china-power-gap-asia-power-index-2026-see-full-list-3218272"
+            },
+            {
+              "headline": "'राहुल गांधी का राजनीतिक करियर खत्म, लेकिन आगे बढ़ रही भारतीय अर्थव्यवस्था' ; बीजेपी ने इस रिपोर्ट का दिया हवाला",
+              "source": "Navbharat Times",
+              "url": "https://navbharattimes.indiatimes.com/india/lowy-institute-asia-power-index-2026-bjp-pradeep-bhandari-rahul-gandhi-congress/articleshow/136092492.cms"
+            }
+          ]
+        },
+        {
+          "title": "pm svanidhi",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "Andhra Pradesh bags seven national awards under PM SVANidhi scheme",
+              "source": "The Hindu",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-bags-seven-national-awards-under-pm-svanidhi-scheme/article71725081.ece"
+            },
+            {
+              "headline": "Kashi bags national honour for empowering street vendors",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/city/varanasi/kashi-bags-national-honour-for-empowering-street-vendors/articleshow/136062387.cms"
+            },
+            {
+              "headline": "Odisha Bags Third Rank in PM SVANidhi Awards for Fastest Progress",
+              "source": "Deccan Chronicle",
+              "url": "https://www.deccanchronicle.com/nation/odisha-bags-third-rank-in-pm-svanidhi-awards-for-fastest-progress-2006917"
+            }
+          ]
+        },
+        {
+          "title": "dario amodei",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "AI godfather says Dario Amodei has medieval mindset, left OpenAI when things went out of control",
+              "source": "India Today",
+              "url": "https://www.indiatoday.in/technology/news/story/ai-godfather-says-dario-amodei-has-medieval-mindset-left-openai-when-things-went-out-of-control-3044733-2026-11-23"
+            },
+            {
+              "headline": "Will Open Technology or Restrictions Shape the Future of AI? Yann LeCun Calls Out Amodei’s Stance as ‘Medieval’",
+              "source": "The 420.in",
+              "url": "https://the420.in/will-open-technology-or-restrictions-shape-the-future-of-ai-yann-lecun-calls-out-amodeis-stance-as-medieval/"
+            },
+            {
+              "headline": "Yann LeCun vs Dario Amodei: AI Godfather Slams Anthropic CEO",
+              "source": "theopenpress.in",
+              "url": "https://theopenpress.in/article/lecun-amodei-medieval-mindset-openai"
+            }
+          ]
+        },
+        {
+          "title": "వెల్లింగ్టన్ క్రికెట్ జట్టు",
+          "approx_traffic": "1000+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "కేఎల్ రాహుల్ సెంచరీ: ఆడిన బంతుల కంటే వదిలేసినవే ఎక్కువ, ఈ ఆటగాడిలో వచ్చిన మార్పేంటి?",
+              "source": "BBC",
+              "url": "https://www.bbc.com/telugu/articles/ck9q8wezzj4po"
+            },
+            {
+              "headline": "‘గెలుస్తామనుకున్నాం.. ఇలా జరుగుతుందని ఊహించలేదు’",
+              "source": "Sakshi",
+              "url": "https://www.sakshi.com/telugu-news/sports/shubman-gill-says-tough-get-10-wkts-pitch-after-1st-test-drawn-2968018"
+            },
+            {
+              "headline": "IND vs NZ 1st Test: కివీస్ బ్యాటర్ల వీరోచిత పోరాటం.. తొలి టెస్టు డ్రా.. WTC పాయింట్ల పట్టికలో మారిన లెక్కలు",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/news/sports/india-vs-new-zealand-1st-test-ends-in-thrilling-draw-in-wellington-as-daryl-mitchell-and-glenn-phillips-rescue-kiwis-check-updated-wtc-points-table-sjn-3271343.html"
+            }
+          ]
+        },
+        {
+          "title": "क्रिकेट",
+          "approx_traffic": "100000+",
+          "pub_date": "Sun, 22 Nov 2026 22:40:00 -0800",
+          "news": [
+            {
+              "headline": "एशिया कप राइजिंग स्टार्स: पाकिस्तान के हाथों भारत की हार से ज़्यादा चर्चा मैच के दौरान हुए तनाव की",
+              "source": "BBC",
+              "url": "https://www.bbc.com/hindi/articles/cmvg25p9qxvpo"
+            },
+            {
+              "headline": "तिलक वर्मा की एक गलती से मचा बवाल, मैदान पर अंपायर्स से भिड़ गए पाकिस्तानी खिलाड़ी, VIDEO",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/sports/cricket/story/ind-a-vs-pak-a-dead-ball-controversy-tilak-varma-position-abdul-samad-argues-with-umpire-asia-cup-rising-stars-2026-tspoa-dskc-2703189-2026-11-23"
+            },
+            {
+              "headline": "इंडिया-ए के कप्तान तिलक वर्मा को मैच फिनिश न कर पाने का है मलाल, कहा - मुझे कप्तानी का बोझ और जिम्मेदारी उठ",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/sports/cricket/indian-a-team-captain-tilak-varma-regrets-not-being-able-to-finish-match-against-pakistan-says-he-enjoys-the-burden-and-responsibility-of-captaincy-2026-11-23-1255819"
+            }
+          ]
+        },
+        {
+          "title": "secure",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Democrats Clinch 258 House Seats, an Election-Year Record This Century",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html"
+            },
+            {
+              "headline": "Chuck Hubbard defeats Rep. Virginia Foxx after a recount in their North Carolina House race",
+              "source": "AP News",
+              "url": "https://apnews.com/article/chuck-hubbard-virginia-foxx-north-carolina-23732afcd78a853e98acd9b72d0cbd14"
+            },
+            {
+              "headline": "Rep. Virginia Foxx loses reelection bid after 11 terms",
+              "source": "Politico",
+              "url": "https://www.politico.com/news/2026/11/22/rep-virginia-foxx-loses-reelection-01180093"
+            }
+          ]
+        },
+        {
+          "title": "డింపుల్ హయాతి",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Sampath Nandi: డింపుల్‌ హయాతికి క్షమాపణలు చెప్పిన దర్శకుడు సంపత్‌ నంది",
+              "source": "Eenadu",
+              "url": "https://www.eenadu.net/videos/playvideo/bhogi-director-publicly-apologises-to-dimple-hayathi/2/82802"
+            },
+            {
+              "headline": "Dimple Hayathi | ‘భోగి’ మూవీలో నా కొత్త రూపాన్ని చూస్తారు: సంపత్ నంది",
+              "source": "News18 Telugu",
+              "url": "https://telugu.news18.com/videos/movies/dimple-hayathi-emotional-speech-at-bhogi-event-3271287.html"
+            },
+            {
+              "headline": "శర్వానంద్ భుజంపై వాలిపోయిన డింపుల్.. వైరల్ వీడియోతో నెట్టింట కొత్త రూమర్స్, అసలు నిజమేంటి?",
+              "source": "Samayam Telugu",
+              "url": "https://telugu.samayam.com/telugu-movies/cinema-news/viral-video-of-dimple-hayathi-leaning-on-sharwanand-shoulder-fuels-speculation-amid-actor-personal-life-rumours/articleshow/136090280.cms"
+            }
+          ]
+        },
+        {
+          "title": "apl apollo tubes tata steel",
+          "approx_traffic": "20000+",
+          "pub_date": "Sun, 22 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Tata Steel and Promoters of APL Apollo Enter into a Comprehensive Agreement to Build an Indian Steel Tubes and Colour Coated Products Powerhouse Targeting 15.5 Million Tonnes of Capacity",
+              "source": "Tata Steel",
+              "url": "https://www.tatasteel.com/newsroom/press-releases/india/2026/tata-steel-and-promoters-of-apl-apollo-enter-into-a-comprehensive-agreement-to-build-an-indian-steel-tubes-and-colour-coated-products-powerhouse-targeting-155-million-tonnes-of-capacity/"
+            },
+            {
+              "headline": "Tata Steel strikes Rs 28,000-crore deal with APL Apollo to transfer tubes business",
+              "source": "Telegraph India",
+              "url": "https://www.telegraphindia.com/business/tata-steel-to-sell-tubes-and-pipes-business-to-apl-apollo-in-rs-28000-crore-deal-prnt/cid/2190770"
+            },
+            {
+              "headline": "Tata Steel shares fall 5% as investors assess the impact of APL Apollo buyout",
+              "source": "The Economic Times",
+              "url": "https://m.economictimes.com/markets/stocks/news/tata-steel-shares-fall-5-as-investors-assess-the-impact-of-apl-apollo-buyout/articleshow/136089097.cms"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI startup funding": [
+          {
+            "title": "VC funding rebounds as startups raise $255M; Women founders driving social change - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Mon, 23 Nov 2026 02:11:37 GMT"
+          },
+          {
+            "title": "Bengaluru accounts for 36.3 pc of India's native AI startup funding: Report - ET CIO",
+            "source": "ET CIO",
+            "pub_date": "Wed, 18 Nov 2026 13:07:58 GMT"
+          },
+          {
+            "title": "UK defense AI startup Agon raises $70 million in Series A funding - Traders Union",
+            "source": "Traders Union",
+            "pub_date": "Mon, 23 Nov 2026 07:10:27 GMT"
+          },
+          {
+            "title": "United States tops global tech startup funding with $244 billion - سانا",
+            "source": "سانا",
+            "pub_date": "Sun, 22 Nov 2026 20:15:00 GMT"
+          },
+          {
+            "title": "Bengaluru emerges as second largest AI startup cluster in Asia - Deccan Herald",
+            "source": "Deccan Herald",
+            "pub_date": "Wed, 18 Nov 2026 22:46:44 GMT"
+          },
+          {
+            "title": "Bengaluru accounts for 36 per cent of funding raised by India's AI startups - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Thu, 19 Nov 2026 06:07:00 GMT"
+          },
+          {
+            "title": "Former Alibaba exec's AI powered startup Everful bags funding to connect retailers with Chinese factories - Retail Technology Innovation Hub",
+            "source": "Retail Technology Innovation Hub",
+            "pub_date": "Mon, 23 Nov 2026 06:07:43 GMT"
+          },
+          {
+            "title": "America is Flooding AI With Billions. Indian Startups are Fighting for Survival - Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "pub_date": "Thu, 19 Nov 2026 12:12:46 GMT"
+          },
+          {
+            "title": "Cognition in Talks for $75 Billion Value With New Funding - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 22:12:11 GMT"
+          },
+          {
+            "title": "Unsiloed AI secures $7.5 million in seed funding to scale document models - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Fri, 20 Nov 2026 10:13:50 GMT"
+          },
+          {
+            "title": "Disseqt AI Raises $8 Mn Led By Gresham House Ventures; Rahul Dravid Among Angel Investors - BW Disrupt",
+            "source": "BW Disrupt",
+            "pub_date": "Fri, 20 Nov 2026 04:47:29 GMT"
+          },
+          {
+            "title": "Bengaluru Accounts For 36.3% Of India's AI Startup Funding, Hosts 71% of New AI And Deep-Tech Unicorns - CIOL",
+            "source": "CIOL",
+            "pub_date": "Wed, 18 Nov 2026 18:51:38 GMT"
+          },
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Bengaluru leads India in AI startup funding, report finds - TechGig",
+            "source": "TechGig",
+            "pub_date": "Thu, 19 Nov 2026 01:41:49 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: $400M For Neurotech Leads, Followed By Big Deals For AI, Fintech, Biotech And More - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 20 Nov 2026 20:15:54 GMT"
+          },
+          {
+            "title": "Cognition in talks for new funding at $75 billion valuation, Bloomberg News reports - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 20 Nov 2026 21:32:07 GMT"
+          },
+          {
+            "title": "Bengaluru leads India in AI startup funding: Innovation Report 2026 - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Wed, 18 Nov 2026 13:41:16 GMT"
+          },
+          {
+            "title": "Startup Roundup: Ecosystem, Mergers, Acquisitions and Funding News this week - Local Samosa",
+            "source": "Local Samosa",
+            "pub_date": "Fri, 20 Nov 2026 06:03:40 GMT"
+          },
+          {
+            "title": "Ex-Alibaba Star’s AI Startup Doubles Valuation to $5 Billion - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 13:48:07 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 05 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Funding and acquisitions in Indian startups this week [Nov 16- Nov 21] - Entrackr",
+            "source": "Entrackr",
+            "pub_date": "Sat, 21 Nov 2026 11:56:03 GMT"
+          },
+          {
+            "title": "Google announces $5 mn funding for IIT Kharagpur for advanced AI research - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Sat, 21 Nov 2026 08:31:48 GMT"
+          },
+          {
+            "title": "AI Customer Support Startup Sierra Eyes $30 Billion Valuation - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Thu, 19 Nov 2026 20:08:38 GMT"
+          },
+          {
+            "title": "The AI Startup Funding Boom Is Not A Global Phenomenon - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 15 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Sarvam AI in talks to raise up to $300 million at $3 billion valuation - ET Enterprise AI",
+            "source": "ET Enterprise AI",
+            "pub_date": "Tue, 13 Oct 2026 07:00:00 GMT"
+          }
+        ],
+        "artificial intelligence": [
+          {
+            "title": "AI may not work like the human brain after all, scientists discover - ScienceDaily",
+            "source": "ScienceDaily",
+            "pub_date": "Sat, 21 Nov 2026 15:25:56 GMT"
+          },
+          {
+            "title": "'My driving instructor videos were replicated by an AI deepfake account' - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 23 Nov 2026 05:57:43 GMT"
+          },
+          {
+            "title": "Behind China’s A.I. Anxieties, Fear of a Nuclear Checkmate - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 23 Nov 2026 05:49:03 GMT"
+          },
+          {
+            "title": "When AI Conquers the Riemann Hypothesis: Is Humanity Losing Control of Its Future? - semivision",
+            "source": "semivision",
+            "pub_date": "Mon, 23 Nov 2026 05:34:50 GMT"
+          },
+          {
+            "title": "How much more air can come out of the AI trade? - The Economist",
+            "source": "The Economist",
+            "pub_date": "Sun, 22 Nov 2026 19:44:21 GMT"
+          },
+          {
+            "title": "AI nudges PR practitioners toward Intelligence-Led Communications - ET BrandEquity",
+            "source": "ET BrandEquity",
+            "pub_date": "Mon, 23 Nov 2026 03:03:26 GMT"
+          },
+          {
+            "title": "Is the fear of an AI takeover real? - Telegraph India",
+            "source": "Telegraph India",
+            "pub_date": "Mon, 23 Nov 2026 04:00:22 GMT"
+          },
+          {
+            "title": "Artificial Intelligence to take the wheel at 429 traffic signals in Hyderabad - The New Indian Express",
+            "source": "The New Indian Express",
+            "pub_date": "Mon, 23 Nov 2026 02:15:56 GMT"
+          },
+          {
+            "title": "OpenAI's chief scientist proposes industry limits on AI development - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Mon, 23 Nov 2026 02:15:12 GMT"
+          },
+          {
+            "title": "Can Companies Use Your Personal Data To Train AI Models? What Law Says - NDTV",
+            "source": "NDTV",
+            "pub_date": "Mon, 23 Nov 2026 01:18:11 GMT"
+          },
+          {
+            "title": "Superintelligence is arriving: Meta AI chief urges rethink of AI future - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Mon, 23 Nov 2026 06:08:56 GMT"
+          },
+          {
+            "title": "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks - Forbes",
+            "source": "Forbes",
+            "pub_date": "Mon, 23 Nov 2026 01:55:26 GMT"
+          },
+          {
+            "title": "PODCAST | The Real-World Application of Artificial Intelligence in Manufacturing - Assembly Magazine",
+            "source": "Assembly Magazine",
+            "pub_date": "Mon, 23 Nov 2026 04:09:58 GMT"
+          },
+          {
+            "title": "Before and after artificial intelligence: The second Big Bang - CNBC TV18",
+            "source": "CNBC TV18",
+            "pub_date": "Mon, 23 Nov 2026 04:03:30 GMT"
+          },
+          {
+            "title": "Thematic Brief on AI Capacity-Building - Welcome to the United Nations",
+            "source": "Welcome to the United Nations",
+            "pub_date": "Mon, 23 Nov 2026 00:40:24 GMT"
+          },
+          {
+            "title": "AI-driven technique could help engineers design analog chips faster and with less expense - MIT News",
+            "source": "MIT News",
+            "pub_date": "Mon, 23 Nov 2026 05:00:00 GMT"
+          },
+          {
+            "title": "Gaming giant NC’s AI unit doubles external revenue target on physical AI push - KED Global",
+            "source": "KED Global",
+            "pub_date": "Mon, 23 Nov 2026 02:00:36 GMT"
+          },
+          {
+            "title": "Hyring Insight Reports 10x Revenue Growth in 3 months - CIO",
+            "source": "CIO",
+            "pub_date": "Mon, 23 Nov 2026 05:53:08 GMT"
+          },
+          {
+            "title": "AI has transformed maths — this is how we got here - Nature",
+            "source": "Nature",
+            "pub_date": "Mon, 09 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Meta ads is now available in AWS Quick | Amazon Web Services - Amazon Web Services",
+            "source": "Amazon Web Services",
+            "pub_date": "Sun, 22 Nov 2026 01:59:13 GMT"
+          },
+          {
+            "title": "Worried About Nvidia? Buy This Fantastic Artificial Intelligence (AI) Stock Instead - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 23 Nov 2026 03:20:00 GMT"
+          },
+          {
+            "title": "Artificial Intelligence for Cardiovascular Disease Prevention in Resource-Limited Settings: A Review of the Literature - Cureus",
+            "source": "Cureus",
+            "pub_date": "Fri, 20 Nov 2026 10:46:54 GMT"
+          },
+          {
+            "title": "OpenAI scientist proposes industry AI limits tied to model intelligence metric - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Mon, 23 Nov 2026 02:37:15 GMT"
+          },
+          {
+            "title": "Jack Ma's Ant Group bets on Simplexity Robotics in China's humanoid race - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Mon, 23 Nov 2026 06:00:20 GMT"
+          },
+          {
+            "title": "Algo Rhythm: As AI risks mount, 2027 set to reshape cybersecurity budgets - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Sun, 22 Nov 2026 16:27:13 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "ai checker",
+          "airpods",
+          "aileen wuornos",
+          "ai mode",
+          "ai humanizer",
+          "airpods pro 3",
+          "aidvantage"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt desktop",
+          "chatgpt plans",
+          "chatgpt gpt"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phone find my friends not working",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "iowa",
+          "approx_traffic": "5000+",
+          "pub_date": "Sun, 22 Nov 2026 23:10:00 -0800",
+          "news": [
+            {
+              "headline": "US Army intends to detonate bomb-making material in Iowa on Wednesday despite a court pause. Here’s what we know",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know"
+            },
+            {
+              "headline": "UPDATE: Army says lead azide detonation will take place Wednesday",
+              "source": "KCRG",
+              "url": "https://www.kcrg.com/2026/11/22/lead-explosion-experts-question-emergency-army-vows-blast-will-proceed/"
+            },
+            {
+              "headline": "Army update on Iowa Army Ammunition Plant",
+              "source": "Army.mil",
+              "url": "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
+            }
+          ]
+        },
+        {
+          "title": "og anunoby",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 22 Nov 2026 23:10:00 -0800",
+          "news": [
+            {
+              "headline": "Game Preview: Knicks vs Trail Blazers, November 21, 2026",
+              "source": "Posting and Toasting",
+              "url": "https://www.postingandtoasting.com/knicks-game-previews/91455/game-preview-knicks-vs-trail-blazers-november-21-2026"
+            },
+            {
+              "headline": "Injury Notes: Knicks, Hawks, Mathurin, Murray-Boyles",
+              "source": "Hoops Rumors",
+              "url": "https://www.hoopsrumors.com/2026/11/injury-notes-knicks-hawks-mathurin-murray-boyles.html"
+            },
+            {
+              "headline": "Knicks on the Court: Thursday, November 21 vs. Portland Trail Blazers",
+              "source": "NBA.com",
+              "url": "https://www.nba.com/knicks/photos/knicks-on-the-court-thursday-november-21-vs-portland-trail-blazers"
+            }
+          ]
+        },
+        {
+          "title": "elon musk net worth",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 22 Nov 2026 23:00:00 -0800",
+          "news": [
+            {
+              "headline": "Elon Musk's Net Worth Takes a $64 Billion Hit in a Day as Tesla and SpaceX Falter Amid AI Bubble Risks",
+              "source": "Benzinga",
+              "url": "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks"
+            },
+            {
+              "headline": "World’s five richest lose $146B as Nasdaq falls 5.3%",
+              "source": "Billionaires.Africa",
+              "url": "https://www.billionaires.africa/2026/11/21/american-billionaire-elon-musk-loses-73-8-billion-in-a-day-as-worlds-five-richest-shed-146-billion/"
+            },
+            {
+              "headline": "Musk’s political spending raises business questions",
+              "source": "Modern Ghana",
+              "url": "https://www.modernghana.com/videonews/cgtn/2/755195"
+            }
+          ]
+        },
+        {
+          "title": "la noire",
+          "approx_traffic": "100+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "Rockstar Games' next game revealed as GTA 6 ending confirms long-standing theory",
+              "source": "GAMINGbible",
+              "url": "https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121"
+            },
+            {
+              "headline": "Rockstar Australia is reportedly working on a sequel to LA Noire.",
+              "source": "GameGPU",
+              "url": "https://en.gamegpu.com/news/igry/rockstar-australia-predpolozhitelno-rabotaet-nad-prodolzheniem-l-a-noire"
+            },
+            {
+              "headline": "Rockstar LA Noire 2 Leak Points to Zodiac Killer Story",
+              "source": "bsinews.id",
+              "url": "https://bsinews.id/en/rockstar-la-noire-zodiac-sequel"
+            }
+          ]
+        },
+        {
+          "title": "last mission of chapter 1 gta 6",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:50:00 -0800",
+          "news": [
+            {
+              "headline": "GTA 6 beginner’s guide: Essential tips and hidden mechanics",
+              "source": "Red Bull",
+              "url": "https://www.redbull.com/int-en/gta-6-beginners-guide"
+            },
+            {
+              "headline": "GTA 6 guides and walkthroughs",
+              "source": "Polygon.com",
+              "url": "https://www.polygon.com/gta-6-guides-walkthroughs-tips/"
+            },
+            {
+              "headline": "How Long Is Chapter 1 in GTA 6? Final Mission and Missable Content",
+              "source": "VICE",
+              "url": "https://www.vice.com/en/article/gta-6-chapter-1-length-missions-missable-content/"
+            }
+          ]
+        },
+        {
+          "title": "spacex",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 22 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Elon Musk's Tesla and SpaceX Each Formed a Special Committee to Explore a Merger as His AI Spending Accelerates. Here's Why Combining Them Could Reshape How Investors Value Tesla's Robotaxi Business.",
+              "source": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/technology/ai/articles/elon-musks-tesla-spacex-formed-102000717.html"
+            },
+            {
+              "headline": "Is SpaceX-Tesla Merger Imminent?",
+              "source": "Puck",
+              "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent"
+            },
+            {
+              "headline": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
+              "source": "The Motley Fool",
+              "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
+            }
+          ]
+        },
+        {
+          "title": "ben wang",
+          "approx_traffic": "2000+",
+          "pub_date": "Sun, 22 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "‘Hunger Games’ Rebounds With $120 Million Opening for ‘Sunrise on the Reaping’ at Box Office",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html"
+            },
+            {
+              "headline": "‘Hunger Games’ Prequel Snags $120 Million in Domestic Debut",
+              "source": "Bloomberg.com",
+              "url": "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut"
+            },
+            {
+              "headline": "Box Office: How Lionsgate Marketing Reignited 'Hunger Games: Sunrise on Reaping'",
+              "source": "Deadline",
+              "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-marketing-1237231246/"
+            }
+          ]
+        },
+        {
+          "title": "enrique peña nieto",
+          "approx_traffic": "500+",
+          "pub_date": "Sun, 22 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Vicente Fox, Felipe Calderón y Enrique Peña Nieto, los presidentes más viajeros de México",
+              "source": "PolíticoMX",
+              "url": "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/"
+            },
+            {
+              "headline": "La caída del Chapo Isidro afianza la ofensiva de Sheinbaum contra los cárteles en México",
+              "source": "EL PAÍS",
+              "url": "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html"
+            },
+            {
+              "headline": "Antes de ser detenido, el líder criminal mexicano “El Chapo Isidro” pasó de narco menor a capo",
+              "source": "AP News",
+              "url": "https://apnews.com/article/mexico-capo-captura-chapo-isidro-historial-4833e5a93c3bdbc7def3ea466e954c7a"
+            }
+          ]
+        },
+        {
+          "title": "ign gta 6 map",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:00:00 -0800",
+          "news": [
+            {
+              "headline": "GTA 6 Dev Honors Late Mother With In-Game Memorial That Players Can Visit",
+              "source": "IGN",
+              "url": "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit"
+            },
+            {
+              "headline": "Grand Theft Auto 6 Has Beautiful Tribute",
+              "source": "OpenCritic",
+              "url": "https://opencritic.com/news/40157/grand-theft-auto-6-has-beautiful-tribute"
+            },
+            {
+              "headline": "GTA 6 hidden memorial: Rockstar developer honors late mother who bought him Vice City",
+              "source": "AOL.com",
+              "url": "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html"
+            }
+          ]
+        },
+        {
+          "title": "gta 6 chapter 2 mission list",
+          "approx_traffic": "200+",
+          "pub_date": "Sun, 22 Nov 2026 22:00:00 -0800",
+          "news": [
+            {
+              "headline": "GTA 6: A guide to every mission and chapter",
+              "source": "Red Bull",
+              "url": "https://www.redbull.com/us-en/gta-6-complete-mission-list"
+            },
+            {
+              "headline": "Here's every GTA 6 mission and chapter",
+              "source": "PC Gamer",
+              "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/"
+            },
+            {
+              "headline": "GTA 6: All 55 Trophies and How to Unlock Them",
+              "source": "space4games",
+              "url": "https://space4games.com/en/games-en/gta-6-trophy-guide/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "AI startup funding": [
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say - TechCrunch",
+            "source": "TechCrunch",
+            "pub_date": "Fri, 13 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: $400M For Neurotech Leads, Followed By Big Deals For AI, Fintech, Biotech And More - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 20 Nov 2026 20:15:54 GMT"
+          },
+          {
+            "title": "Cognition in talks for new funding at $75 billion valuation, Bloomberg News reports - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 20 Nov 2026 21:32:07 GMT"
+          },
+          {
+            "title": "Cognition in Talks for $75 Billion Value With New Funding - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 22:12:11 GMT"
+          },
+          {
+            "title": "United States tops global tech startup funding with $244 billion - سانا",
+            "source": "سانا",
+            "pub_date": "Sun, 22 Nov 2026 20:15:00 GMT"
+          },
+          {
+            "title": "Former Alibaba exec's AI powered startup Everful bags funding to connect retailers with Chinese factories - Retail Technology Innovation Hub",
+            "source": "Retail Technology Innovation Hub",
+            "pub_date": "Mon, 23 Nov 2026 06:07:43 GMT"
+          },
+          {
+            "title": "UK defense AI startup Agon raises $70 million in Series A funding - Traders Union",
+            "source": "Traders Union",
+            "pub_date": "Mon, 23 Nov 2026 07:10:27 GMT"
+          },
+          {
+            "title": "Bengaluru captures 36.3% of India’s homegrown AI startup funding, new report says - Superpower Daily",
+            "source": "Superpower Daily",
+            "pub_date": "Wed, 18 Nov 2026 15:17:12 GMT"
+          },
+          {
+            "title": "AI Customer Support Startup Sierra Eyes $30 Billion Valuation - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Thu, 19 Nov 2026 20:08:38 GMT"
+          },
+          {
+            "title": "Eric Trump-Backed Robot Startup Cuts Employee Health Benefits - The Tech Buzz",
+            "source": "The Tech Buzz",
+            "pub_date": "Sun, 22 Nov 2026 19:31:07 GMT"
+          },
+          {
+            "title": "VC funding rebounds as startups raise $255M; Women founders driving social change - YourStory.com",
+            "source": "YourStory.com",
+            "pub_date": "Mon, 23 Nov 2026 02:11:37 GMT"
+          },
+          {
+            "title": "Report: Nvidia in advanced talks to acquire Stanford-led diffusion AI startup Inception for $500M+ - Tech Funding News",
+            "source": "Tech Funding News",
+            "pub_date": "Fri, 20 Nov 2026 10:42:47 GMT"
+          },
+          {
+            "title": "Sam Blond Met 200+ AI Sales Startups at Founders Fund, Then Built Monaco: Why Most Get It Wrong, Where AI Beats Your Reps, and the $15,000 Plane - saastr.com",
+            "source": "saastr.com",
+            "pub_date": "Wed, 18 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "K4Connect Raises $8M Funding Round to Expand Senior Living AI Tools - Unite.AI",
+            "source": "Unite.AI",
+            "pub_date": "Thu, 19 Nov 2026 15:10:02 GMT"
+          },
+          {
+            "title": "Ex-Alibaba Star’s AI Startup Doubles Valuation to $5 Billion - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Fri, 20 Nov 2026 13:48:07 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 05 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: Almost All About AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 02 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Week’s 10 Biggest Funding Rounds: AI And Energy Top A Busy Lineup Of Large Rounds - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 09 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "North American Startup Funding Shattered Records In First Half Of 2026, Driven By AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Tue, 07 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The AI Startup Funding Boom Is Not A Global Phenomenon - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Mon, 15 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Intel (INTC) Joined A $700 Million AI Startup Funding Round - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 02 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "AI startup Manus raises $500 million in first funding round since Meta breakup - CNBC",
+            "source": "CNBC",
+            "pub_date": "Thu, 08 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Lin Junyang's Pragmatik Labs closed funding at $5 billion valuation - Quartz",
+            "source": "Quartz",
+            "pub_date": "Fri, 20 Nov 2026 12:34:42 GMT"
+          },
+          {
+            "title": "Crunchbase Data: Global Startup Investment Hit Record $510B In H1 2026 As AI Boom Accelerates Funding And Exits - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Thu, 02 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Asia’s Startup Funding At Near Record High In Q3, Driven By AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 16 Oct 2026 07:00:00 GMT"
+          }
+        ],
+        "artificial intelligence": [
+          {
+            "title": "AI may not work like the human brain after all, scientists discover - ScienceDaily",
+            "source": "ScienceDaily",
+            "pub_date": "Sat, 21 Nov 2026 15:25:56 GMT"
+          },
+          {
+            "title": "‘The doom of humanity’: will the quest to make robotic hands render us obsolete? | AI (artificial intelligence) - The Guardian",
+            "source": "The Guardian",
+            "pub_date": "Sat, 21 Nov 2026 19:15:00 GMT"
+          },
+          {
+            "title": "AI helps us spot possible lung cancer, says medic - BBC",
+            "source": "BBC",
+            "pub_date": "Mon, 23 Nov 2026 06:38:37 GMT"
+          },
+          {
+            "title": "Behind China’s A.I. Anxieties, Fear of a Nuclear Checkmate - The New York Times",
+            "source": "The New York Times",
+            "pub_date": "Mon, 23 Nov 2026 05:49:03 GMT"
+          },
+          {
+            "title": "Hyring Insight Reports 10x Revenue Growth in 3 months - Computerworld",
+            "source": "Computerworld",
+            "pub_date": "Mon, 23 Nov 2026 06:00:48 GMT"
+          },
+          {
+            "title": "How much more air can come out of the AI trade? - The Economist",
+            "source": "The Economist",
+            "pub_date": "Sun, 22 Nov 2026 19:44:21 GMT"
+          },
+          {
+            "title": "Nvidia Just Delivered Incredible Results. Buy This Artificial Intelligence (AI) Stock Instead If You’re Still Worried About the Semiconductor Giant’s Future - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Sun, 22 Nov 2026 09:34:02 GMT"
+          },
+          {
+            "title": "We May Be Witnessing Wall Street's Biggest Bubble Burst in Real Time (and I'm Not Talking About Artificial Intelligence) - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Sat, 21 Nov 2026 14:06:02 GMT"
+          },
+          {
+            "title": "COMMENTARY: AI bust hurts Chinese stocks far more than GDP - Reuters",
+            "source": "Reuters",
+            "pub_date": "Sun, 22 Nov 2026 23:00:00 GMT"
+          },
+          {
+            "title": "Amazon Nears $7.5 Billion Deal for AI Startup Decart - PYMNTS.com",
+            "source": "PYMNTS.com",
+            "pub_date": "Sun, 22 Nov 2026 22:41:29 GMT"
+          },
+          {
+            "title": "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks - Forbes",
+            "source": "Forbes",
+            "pub_date": "Mon, 23 Nov 2026 01:55:26 GMT"
+          },
+          {
+            "title": "Artificial Intelligence: Covert Testing Used Common Platforms to Create Viable Attack Plans - U.S. Government Accountability Office (.gov)",
+            "source": "U.S. Government Accountability Office (.gov)",
+            "pub_date": "Wed, 18 Nov 2026 13:03:42 GMT"
+          },
+          {
+            "title": "A December to remember for artificial intelligence - Punchbowl News",
+            "source": "Punchbowl News",
+            "pub_date": "Sun, 22 Nov 2026 22:19:25 GMT"
+          },
+          {
+            "title": "41.6% of Berkshire Hathaway's $358 Billion Portfolio Is Parked in 3 Artificial Intelligence (AI) Stocks - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Sun, 22 Nov 2026 10:51:02 GMT"
+          },
+          {
+            "title": "Worried About Nvidia? Buy This Fantastic Artificial Intelligence (AI) Stock Instead - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Mon, 23 Nov 2026 03:20:00 GMT"
+          },
+          {
+            "title": "A New Framework for AI Governance by Organizations - The Regulatory Review",
+            "source": "The Regulatory Review",
+            "pub_date": "Mon, 23 Nov 2026 05:16:20 GMT"
+          },
+          {
+            "title": "PODCAST | The Real-World Application of Artificial Intelligence in Manufacturing - Assembly Magazine",
+            "source": "Assembly Magazine",
+            "pub_date": "Mon, 23 Nov 2026 04:09:58 GMT"
+          },
+          {
+            "title": "Opinion | Artificial intelligence flourished in California election advertising — and divided voters - CalMatters",
+            "source": "CalMatters",
+            "pub_date": "Fri, 20 Nov 2026 13:00:00 GMT"
+          },
+          {
+            "title": "AI-driven technique could help engineers design analog chips faster and with less expense - MIT News",
+            "source": "MIT News",
+            "pub_date": "Mon, 23 Nov 2026 05:00:00 GMT"
+          },
+          {
+            "title": "What AI scribes mean for Cleveland patients - Signal Cleveland",
+            "source": "Signal Cleveland",
+            "pub_date": "Mon, 23 Nov 2026 05:04:00 GMT"
+          },
+          {
+            "title": "Building better artificial intelligence requires people willing to do meticulous work at scale - Federal News Network",
+            "source": "Federal News Network",
+            "pub_date": "Fri, 20 Nov 2026 16:59:12 GMT"
+          },
+          {
+            "title": "Urban Study Analyzes Coming Artificial Intelligence Realignment Across United States Cities - Bioengineer.org",
+            "source": "Bioengineer.org",
+            "pub_date": "Mon, 23 Nov 2026 07:04:52 GMT"
+          },
+          {
+            "title": "Hyring Insight Reports 10x Revenue Growth in 3 months - CIO",
+            "source": "CIO",
+            "pub_date": "Mon, 23 Nov 2026 05:53:08 GMT"
+          },
+          {
+            "title": "Thematic Brief on AI Capacity-Building - Welcome to the United Nations",
+            "source": "Welcome to the United Nations",
+            "pub_date": "Mon, 23 Nov 2026 00:40:24 GMT"
+          },
+          {
+            "title": "Arm vs. Marvell Technology: Which Artificial Intelligence Stock Is a Better Buy for 2027? - The Motley Fool",
+            "source": "The Motley Fool",
+            "pub_date": "Sun, 22 Nov 2026 23:50:05 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai detector",
+          "ai",
+          "ai checker",
+          "airpods",
+          "aileen wuornos",
+          "ai mode",
+          "ai humanizer",
+          "airpods pro 3",
+          "aidvantage"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt app",
+          "chatgpt free",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt zero",
+          "chatgpt gpt",
+          "chatgpt desktop",
+          "chatpat astra"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phone plan deals",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone who dis game",
+          "new phone plans",
+          "new phones coming out"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai forum @ unga81",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "points": 1272,
+      "comments": 697,
+      "created_at": "2026-11-22T04:04:56Z"
+    },
+    {
+      "title": "What Happened to Silicon Valley?",
+      "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+      "points": 594,
+      "comments": 317,
+      "created_at": "2026-11-22T19:20:15Z"
+    },
+    {
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "points": 557,
+      "comments": 380,
+      "created_at": "2026-11-22T17:06:27Z"
+    },
+    {
+      "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+      "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+      "points": 450,
+      "comments": 228,
+      "created_at": "2026-11-22T19:10:34Z"
+    },
+    {
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "points": 424,
+      "comments": 173,
+      "created_at": "2026-11-22T21:01:16Z"
+    },
+    {
+      "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "url": "https://spelunkr.tv",
+      "points": 407,
+      "comments": 58,
+      "created_at": "2026-11-23T01:13:51Z"
+    },
+    {
+      "title": "Show HN: I built a game where you are an LLM's subagent",
+      "url": "https://github.com/gulivan/worker755",
+      "points": 309,
+      "comments": 74,
+      "created_at": "2026-11-22T13:56:58Z"
+    },
+    {
+      "title": "A miniature San Francisco with live buses, planes and boats",
+      "url": "https://smallsf.com/",
+      "points": 237,
+      "comments": 88,
+      "created_at": "2026-11-22T20:33:23Z"
+    },
+    {
+      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "points": 213,
+      "comments": 159,
+      "created_at": "2026-11-22T23:12:10Z"
+    },
+    {
+      "title": "Cathedral floor emerges in Sudan, revealing one of the biggest medieval churches",
+      "url": "https://apnews.com/article/sudan-antiquities-nubia-cathedral-1b16f67da881ee5592de4481ee55c527",
+      "points": 197,
+      "comments": 49,
+      "created_at": "2026-11-18T15:43:29Z"
+    },
+    {
+      "title": "Masullo on the Riemann Hypothesis",
+      "url": "https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/",
+      "points": 184,
+      "comments": 97,
+      "created_at": "2026-11-22T10:59:56Z"
+    },
+    {
+      "title": "GL.iNet Security Notice 2026-11-20",
+      "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+      "points": 170,
+      "comments": 80,
+      "created_at": "2026-11-22T23:06:37Z"
+    },
+    {
+      "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "points": 167,
+      "comments": 74,
+      "created_at": "2026-11-23T03:49:24Z"
+    },
+    {
+      "title": "Assume People Are Not Interested in Your Blog Post",
+      "url": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/",
+      "points": 157,
+      "comments": 82,
+      "created_at": "2026-11-22T19:41:30Z"
+    },
+    {
+      "title": "I joined the NTP Pool, but not with my Stratum 1 Pi",
+      "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
+      "points": 151,
+      "comments": 54,
+      "created_at": "2026-11-22T15:35:24Z"
+    },
+    {
+      "title": "Nyx, the Oldest Internet Service Provider",
+      "url": "https://nyx.net/",
+      "points": 126,
+      "comments": 18,
+      "created_at": "2026-11-22T20:15:59Z"
+    },
+    {
+      "title": "The Usefulness of Useless Knowledge [pdf] (1939)",
+      "url": "https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf",
+      "points": 106,
+      "comments": 19,
+      "created_at": "2026-11-22T22:10:58Z"
+    },
+    {
+      "title": "DeFlock Amerca Facebook Group Suspended as a Dangerous Organization",
+      "url": "https://www.facebook.com/shugvermonte/posts/the-deflock-america-group-with-over-840k-members-has-been-suspended-by-meta-what/10165140280736049/",
+      "points": 103,
+      "comments": 26,
+      "created_at": "2026-11-23T04:31:32Z"
+    },
+    {
+      "title": "The struggle for freedom: How BSD escaped AT&T licensing",
+      "url": "https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/",
+      "points": 100,
+      "comments": 35,
+      "created_at": "2026-11-22T21:33:12Z"
+    },
+    {
+      "title": "Localcode, open source agentic coding on your Mac with one command",
+      "url": "https://github.com/mjwsolo/localcode",
+      "points": 52,
+      "comments": 13,
+      "created_at": "2026-11-22T22:18:48Z"
+    },
+    {
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "url": "https://0rwx.com/",
+      "points": 43,
+      "comments": 10,
+      "created_at": "2026-11-22T23:53:00Z"
+    },
+    {
+      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "points": 213,
+      "comments": 159,
+      "created_at": "2026-11-22T23:12:10Z"
+    },
+    {
+      "title": "Do Not Accept",
+      "url": "https://donotaccept.ai/",
+      "points": 49,
+      "comments": 57,
+      "created_at": "2026-11-22T23:02:20Z"
+    },
+    {
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "points": 425,
+      "comments": 174,
+      "created_at": "2026-11-22T21:01:16Z"
+    },
+    {
+      "title": "Harvard CS 2881R AI Safety",
+      "url": "https://boazbk.github.io/mltheoryseminar/",
+      "points": 64,
+      "comments": 8,
+      "created_at": "2026-11-22T18:01:54Z"
+    },
+    {
+      "title": "Ask HN: Are the trades a safe career transition?",
+      "url": null,
+      "points": 42,
+      "comments": 70,
+      "created_at": "2026-11-22T15:52:33Z"
+    },
+    {
+      "title": "AI is becoming a disaster for the climate",
+      "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
+      "points": 118,
+      "comments": 48,
+      "created_at": "2026-11-22T12:19:46Z"
+    },
+    {
+      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "points": 75,
+      "comments": 11,
+      "created_at": "2026-11-22T09:57:01Z"
+    },
+    {
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "points": 951,
+      "comments": 944,
+      "created_at": "2026-11-22T08:57:34Z"
+    },
+    {
+      "title": "AI Supply Chain Security: What Canary Tokens Found",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "points": 103,
+      "comments": 22,
+      "created_at": "2026-11-22T05:11:43Z"
+    },
+    {
+      "title": "Together.ai: Prompt Leakage for Requests",
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "points": 48,
+      "comments": 11,
+      "created_at": "2026-11-22T03:07:27Z"
+    },
+    {
+      "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
+      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+      "points": 48,
+      "comments": 18,
+      "created_at": "2026-11-22T03:06:35Z"
+    },
+    {
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "points": 284,
+      "comments": 99,
+      "created_at": "2026-11-22T02:14:14Z"
+    },
+    {
+      "title": "The Mythology of Conscious AI",
+      "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+      "points": 173,
+      "comments": 504,
+      "created_at": "2026-11-22T02:10:02Z"
+    },
+    {
+      "title": "International UN talks on controlling use of autonomous weapons collapse",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+      "points": 48,
+      "comments": 35,
+      "created_at": "2026-11-21T23:10:21Z"
+    },
+    {
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "url": "https://www.pandex.io",
+      "points": 139,
+      "comments": 33,
+      "created_at": "2026-11-21T20:47:41Z"
+    },
+    {
+      "title": "Upload2Shell (CVE-2026-125396)",
+      "url": "https://pwn.ai/upload2shell",
+      "points": 151,
+      "comments": 77,
+      "created_at": "2026-11-21T18:29:29Z"
+    },
+    {
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "url": "http://ricapar.net/ClawDOS/",
+      "points": 175,
+      "comments": 52,
+      "created_at": "2026-11-21T05:38:01Z"
+    },
+    {
+      "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+      "url": null,
+      "points": 734,
+      "comments": 828,
+      "created_at": "2026-11-20T23:18:32Z"
+    },
+    {
+      "title": "Leaky AI supply chain is exposing secret user data at an alarming rate",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "points": 64,
+      "comments": 8,
+      "created_at": "2026-11-20T21:53:39Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 3801116,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 616789,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 516059,
+      "rank": 3
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 393338,
+      "rank": 4
+    },
+    {
+      "article": "Riemann_hypothesis",
+      "views": 388288,
+      "rank": 5
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 357351,
+      "rank": 6
+    },
+    {
+      "article": "The_Hunger_Games:_Sunrise_on_the_Reaping",
+      "views": 204097,
+      "rank": 7
+    },
+    {
+      "article": ".xxx",
+      "views": 148049,
+      "rank": 8
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 124212,
+      "rank": 9
+    },
+    {
+      "article": "O.M:_Operation_Mole",
+      "views": 123978,
+      "rank": 10
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 122695,
+      "rank": 11
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 121328,
+      "rank": 12
+    },
+    {
+      "article": "Robert_Pattinson",
+      "views": 119357,
+      "rank": 13
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 109819,
+      "rank": 14
+    },
+    {
+      "article": "Grand_Theft_Auto",
+      "views": 103318,
+      "rank": 15
+    },
+    {
+      "article": "Levent_Alpöge",
+      "views": 102891,
+      "rank": 16
+    },
+    {
+      "article": "UFC_Fight_Night:_Procházka_vs._Stirling",
+      "views": 102387,
+      "rank": 17
+    },
+    {
+      "article": "Nikhil_Chaudhary_(cricketer)",
+      "views": 100364,
+      "rank": 18
+    },
+    {
+      "article": "XXX_(2002_film)",
+      "views": 92338,
+      "rank": 19
+    },
+    {
+      "article": "Jeff_Bezos",
+      "views": 86703,
+      "rank": 20
+    },
+    {
+      "article": "Joseph_Zada",
+      "views": 82604,
+      "rank": 21
+    },
+    {
+      "article": "Survivor_Series:_WarGames_(2026)",
+      "views": 82093,
+      "rank": 22
+    },
+    {
+      "article": "Rockstar_Games",
+      "views": 77791,
+      "rank": 23
+    },
+    {
+      "article": "XXX:_State_of_the_Union",
+      "views": 76640,
+      "rank": 24
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 76587,
+      "rank": 25
+    },
+    {
+      "article": "John_Madden",
+      "views": 74612,
+      "rank": 26
+    },
+    {
+      "article": "The_Odyssey_(2026_film)",
+      "views": 73833,
+      "rank": 27
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 71854,
+      "rank": 28
+    },
+    {
+      "article": "Sunrise_on_the_Reaping",
+      "views": 71460,
+      "rank": 29
+    },
+    {
+      "article": "Mckenna_Grace",
+      "views": 69610,
+      "rank": 30
+    },
+    {
+      "article": "Lewis_Moody",
+      "views": 69243,
+      "rank": 31
+    },
+    {
+      "article": "Grand_Theft_Auto_V",
+      "views": 67990,
+      "rank": 32
+    },
+    {
+      "article": "Steps_(film)",
+      "views": 67976,
+      "rank": 33
+    },
+    {
+      "article": "XXX_(Kendrick_Lamar_song)",
+      "views": 63707,
+      "rank": 34
+    },
+    {
+      "article": "Mariella_Frostrup",
+      "views": 63411,
+      "rank": 35
+    },
+    {
+      "article": "XXX:_Return_of_Xander_Cage",
+      "views": 62709,
+      "rank": 36
+    },
+    {
+      "article": "XXX_(film_series)",
+      "views": 61892,
+      "rank": 37
+    },
+    {
+      "article": "List_of_best-selling_video_games",
+      "views": 61237,
+      "rank": 38
+    },
+    {
+      "article": "The_Hunger_Games:_The_Ballad_of_Songbirds_&_Snakes",
+      "views": 61181,
+      "rank": 39
+    },
+    {
+      "article": "Sam_Bankman-Fried",
+      "views": 55395,
+      "rank": 40
+    },
+    {
+      "article": "MobLand",
+      "views": 55363,
+      "rank": 41
+    },
+    {
+      "article": "2026_MAMA_Awards",
+      "views": 54813,
+      "rank": 42
+    },
+    {
+      "article": "Fiona_(hippopotamus)",
+      "views": 53636,
+      "rank": 43
+    },
+    {
+      "article": "Sylvester_Stallone",
+      "views": 53337,
+      "rank": 44
+    },
+    {
+      "article": "Suki_Waterhouse",
+      "views": 53266,
+      "rank": 45
+    },
+    {
+      "article": "Jennifer_Lawrence",
+      "views": 52822,
+      "rank": 46
+    },
+    {
+      "article": "Navajo_Stirling",
+      "views": 52558,
+      "rank": 47
+    },
+    {
+      "article": "Dario_Amodei",
+      "views": 51985,
+      "rank": 48
+    },
+    {
+      "article": "Sara_Boustany",
+      "views": 50900,
+      "rank": 49
+    },
+    {
+      "article": "Dwayne_Johnson",
+      "views": 50388,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "‘You Can See Everything’ has made more than $100M worldwide"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The best apps to make new friends right now"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Why data centers are at the center of the Big Tech backlash"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "TechCrunch Mobility: A/B testing robots vs. humans"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Can a TV be too large? An investigation"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A tale of two Nvidias"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Trump says reported FBI database hack is ‘not good’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Here are the top AI agents that can live in your text messages"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Alaska, your next governor is a Wikipedia nerd"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Startup sues Apple in India over tap-to-share contacts feature"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Experts warn: Nearly everyone in AI is susceptible to a honey-trap scheme right now"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Kodak’s next collectible is a tiny digital photo frame that doubles as a tracker"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "We haven’t seen the last of the major tech outages"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Delta flights in and out of Atlanta delayed due to system outage"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Binding of Isaac developer removes AI music from Repentance Plus"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Some of our favorite Switch 2 games are cheaper through Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Sheherazaad’s Khudgarzi is gorgeous, ‘genre-chaotic’ South Asian folk"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Protesters storm Meta offices in India"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Nintendo’s Switch 2 console is $50 off for Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "‘The show is starting soon. Please turn on your headphones.’"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "How Tamagotchis got us hooked on digital pets"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "GLP-1 drugs could have a surprisingly large environmental payoff"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Review: Godzilla Minus Zero joins the list of truly stellar sequels"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "“Race realism” isn’t realistic—and it isn’t good science"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Trump FCC declares California isn't allowed to enforce phone service rules"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX's Starshield troubles in Ukraine could threaten its broader military business"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google rolls out new search homepage with AI chat history and no search button"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Watching as a giant star swallowed its neighbor and exploded"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "NASA’s new Moon plan is taking shape, but some big questions remain"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Prisons get OK to jam contraband phones. CTIA says nearby phones will be jammed too."
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Army delays detonating \"catastrophically hazardous\" lead azide amid fear, anger"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Valve says it might have to raise the price of supply-limited Steam Machines"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "US will soon announce root cause behind FAA nationwide ground stop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "SpaceX lenders don’t want Elon Musk launching their collateral into space"
+    }
+  ]
+}
