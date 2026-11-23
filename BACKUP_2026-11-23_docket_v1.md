@@ -1,0 +1,59 @@
+---
+date: 2026-11-23
+items:
+  - hub: ai-models
+    lead: true
+    rank: 1
+    tag: "google"
+    headline: "Gemini 4 Neon benchmarks: 2x faster than Carbon, blocked on Jio Pro"
+    dek: "**Fastest Gemini 4 meets IDE lockouts.** Google DeepMind's Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users fight entitlement desyncs."
+    url: /articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/
+    source: "The Tech Docket"
+  - hub: cybersecurity
+    rank: 2
+    pick: true
+    save_worthy: true
+    tag: ""
+    headline: "PHP patches phpAfterShell and six other critical RCEs across 8.2 to 8.5"
+    dek: "**Interrupted session writes turn into RCE.** PHP 8.2.36, 8.3.37, 8.4.28, and 8.5.13 patch 17 flaws, including seven CVSS 9.2 critical bugs led by phpAfterShell (CVE-2026-126714) and PHP-FPM request smuggling."
+    stat_line: "7 critical CVSS 9.2 flaws patched across PHP 8.2–8.5"
+    why: "October's PHP2Shell patch level leaves servers exposed to PHP-FPM request smuggling and session file corruption. Engineering teams must upgrade binaries and disable FastCGI connection reuse."
+    url: https://blog.cloudflare.com/phpaftershell-waf-protection/
+    source: "Cloudflare Blog"
+  - hub: hardware
+    rank: 3
+    tag: ""
+    headline: "Dell, HPE, Lenovo, and Supermicro demand 25% to 45% AI server price hikes"
+    dek: "**Mid-contract memory shock.** Major server vendors sent renegotiation notices on November 22 seeking 25% to 45% price increases on signed AI server orders as HBM and DDR5 memory reaches 40% of bill-of-materials."
+    stat_line: "25%–45% price hikes demanded on signed AI server contracts"
+    why: "Enterprises refusing mid-contract price revisions risk delivery delays into 2027, squeezing capital budgets for Indian data centers and private cloud deployments."
+    url: https://emergent.sh/news/ai-server-prices-jump-45-dell-hpe-demand
+    source: "Emergent News"
+  - hub: policy
+    rank: 4
+    tag: "google"
+    headline: "Turkey gives Google 60 days to let news publishers exit AI Overviews"
+    dek: "**Unbundling AI summaries from Search.** Turkey's competition authority ordered Google to build separate meta tags and Search Console controls within 60 days so publishers can block AI Overviews while keeping organic rankings."
+    stat_line: "60-day mandate after publishers report 20%–35% click drops"
+    why: "Mandating a split opt-out breaks Google's all-or-nothing crawling policy and gives Indian and European regulators a live technical blueprint for publisher protection."
+    url: https://emergent.sh/news/turkey-forces-google-let-news-sites-exit-ai
+    source: "Emergent News"
+  - hub: policy
+    rank: 5
+    tag: ""
+    headline: "BHASHINI deploys multilingual voice AI across AIIMS, JIPMER, and Army hospitals"
+    dek: "**Voice-to-prescription in 23 Indian languages.** At GDHS 2026 in New Delhi, MeitY's BHASHINI showcased live clinical transcription across AIIMS eHospital, JIPMER e-Sushrut, and Army Dhanwantri systems as daily volume hit 24M inferences."
+    stat_line: "11B total inferences and 24M daily across 36 Indian languages"
+    why: "Embedding regional speech-to-text directly inside public hospital HMIS software cuts OPD prescription typing overhead while generating clinical evaluation roles across India."
+    url: https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2339441
+    source: "PIB India"
+  - hub: hardware
+    rank: 6
+    tag: ""
+    headline: "Intel debuts GPU D270 and air-cooled SambaRack token factories at SC26"
+    dek: "**Heterogeneous HPC challenges closed clusters.** At Supercomputing 2026 in Chicago, Intel unveiled its GPU D270 accelerator and paired D-Series GPUs with SambaRack SN50 systems to pitch open, air-cooled AI inference."
+    stat_line: "Intel GPU D270 + SambaRack SN50 air-cooled inference at SC26"
+    why: "Air-cooled heterogeneous racks avoid the plumbing retrofits required by liquid-cooled GPU clusters, offering a practical upgrade path for mid-tier enterprise data centers."
+    url: https://www.intel.com/content/www/us/en/newsroom/news/client-computing/supercomputing-2026.html
+    source: "Intel Newsroom"
+---

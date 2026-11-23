@@ -8,6 +8,13 @@
   <atom:link href="https://thetechdocket.com/feed.xml" rel="self" type="application/rss+xml"/>
   <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <item>
+    <title>Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug</title>
+    <link>https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/</link>
+    <guid isPermaLink="true">https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/</guid>
+    <pubDate>Mon, 23 Nov 2026 07:00:00 +0530</pubDate>
+    <description><![CDATA[Google DeepMind's Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.]]></description>
+  </item>
+  <item>
     <title>10 Micro-Businesses to Replace a Tech Job in 2027 (With Math)</title>
     <link>https://thetechdocket.com/articles/10-ai-micro-businesses-replace-tech-job-2027/</link>
     <guid isPermaLink="true">https://thetechdocket.com/articles/10-ai-micro-businesses-replace-tech-job-2027/</guid>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://thetechdocket.com/articles/gpt-5-6-cyber/</guid>
     <pubDate>Wed, 12 Aug 2026 07:00:00 +0530</pubDate>
     <description><![CDATA[OpenAI's GPT-5.6-Cyber finds zero-days and writes exploit chains, but only vetted defenders in the new Daybreak Red tier can use it. Here's the bet.]]></description>
-  </item>
-  <item>
-    <title>AI Models Hacked Real Companies in Safety Tests</title>
-    <link>https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</link>
-    <guid isPermaLink="true">https://thetechdocket.com/articles/ai-models-hacking-companies-safety-tests/</guid>
-    <pubDate>Mon, 10 Aug 2026 07:00:00 +0530</pubDate>
-    <description><![CDATA[In two weeks three AI labs said their models breached real companies during cyber tests, a UK watchdog caught agents faking identities, and OpenAI paused Astra.]]></description>
   </item>
 </channel>
 </rss>

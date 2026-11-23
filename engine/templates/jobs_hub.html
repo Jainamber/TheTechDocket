@@ -71,6 +71,7 @@
 .jm-tbl tr:last-child td{border-bottom:none}
 .jm-tbl tr:hover td{background:var(--soft)}
 .jm-note{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.5}
+.jm-legal-note{margin:14px 0 0;padding:11px 14px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;background:var(--soft);font-size:12.5px;color:var(--ink2);line-height:1.5}
 .jm-sec-h2{margin:34px 0 8px;font-size:22px;letter-spacing:-.3px}
 .jm-sec-sub{margin:0 0 10px;font-size:14px;color:var(--muted)}
 
@@ -224,6 +225,10 @@
     </div>
   </div>
 
+  <div class="jm-legal-note" role="note">
+    <strong>Source Attribution &amp; Corrections Policy:</strong> Every figure in this ledger is compiled strictly from publicly filed statutory disclosures (SEC Form 8-K/10-K/6-K, US BLS, UK ONS, EPFO/SEBI), official company announcements, or explicitly labeled third-party reporting (quarantined as <em>Tier 3</em> and excluded from confirmed totals). Inclusion reflects public records as of the cited date and does not constitute an independent allegation by {{ site.name }}. Company representatives or readers with updated filings or corrections may <a href="mailto:{{ site.contact_email }}?subject=Jobs%20Tracker%20Correction">submit an official correction</a> for prompt review.
+  </div>
+
   <div class="jm-tblwrap">
     <table class="jm-tbl">
       <thead>
@@ -281,7 +286,7 @@
           </td>
           <td style="white-space:nowrap;font-family:var(--fm)">{{ c.firing_actual_obs_score }} / {{ c.firing_news_distortion_index }}</td>
           <td style="white-space:nowrap;font-family:var(--fm)">{{ c.hiring_actual_obs_score }} / {{ c.hiring_news_distortion_index }}</td>
-          <td>{{ c.verified_2yr_observations }}</td>
+          <td>{{ c.verified_2yr_observations }}{% if c.official_sources %}<div class="jm-meta-tag" style="margin-top:5px">Sources: {% for s in c.official_sources %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }} &#8599;</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}</td>
           <td>{{ c.hidden_internal_gap }}</td>
         </tr>
         {% endfor %}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "window": "2024–2026 (2-Year Reality vs. News Audit)",
   "update_cadence": "Weekly Sun (Company) + Monthly 15th (Macro)",
   "strict_rules": {
@@ -33,7 +33,17 @@
       "primary_hiring_sources": "EPFO Payroll (Fresh UAN vs Re-joined); ESIC; MoSPI PLFS; SEBI IT Disclosures; CRE Leases",
       "verified_2yr_observations": "TCS FY26 net headcount fell by 23,460 to 584,519 (mix of restructuring, attrition & tighter bench rules); Indian startup layoffs estimated ~9,500 in 2025 (Inc42); Oracle & Qualcomm 2026 India cuts reported as unconfirmed/estimated ranges",
       "hidden_internal_gap": "Industrial Relations Code, 2020 (300-worker approval threshold; >Rs. 18,000/mo supervisory exclusion) drives silent PIPs/resignations; Sept 17, 2026 EPFO wage-ceiling jump (Rs. 15k to Rs. 25k) creates a regime break; off-roll staffing vendors obscure GCC cuts",
-      "practical_verdict": "Macro formal payroll trends are observable via EPFO/ESIC/PLFS with regime-break adjustments; company-level silent layoffs and GCC vendor off-boarding often remain internal or estimated."
+      "practical_verdict": "Macro formal payroll trends are observable via EPFO/ESIC/PLFS with regime-break adjustments; company-level silent layoffs and GCC vendor off-boarding often remain internal or estimated.",
+      "official_sources": [
+        {
+          "label": "EPFO Payroll & Scheme",
+          "url": "https://www.epfo.gov.in/epf-scheme/"
+        },
+        {
+          "label": "TCS FY26 Annual Report",
+          "url": "https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf"
+        }
+      ]
     },
     {
       "country_code": "US",
@@ -51,7 +61,17 @@
       "primary_hiring_sources": "BLS JOLTS Actual Hires; BLS CES Nonfarm Payrolls (+885k YoY Oct 2025-Oct 2026); US DOL OFLC LCA/PERM; Direct ATS",
       "verified_2yr_observations": "BLS nonfarm payrolls rose +885,000 over 12 months ending Oct 2026 (private +943,000; Information -119,000, Financial Activities -99,000); major 2026 corporate restructurings & VEPs (e.g., Microsoft VEP up to 60,000 eligible; separate from actual departures)",
       "hidden_internal_gap": "Remote workers across states, sub-threshold site cuts (<50 or <33%), state mini-WARN rules (NY 90-day/25+ vs CA 50+ no 33% rule), and 'ghost jobs' inflating advertised openings above realized hires",
-      "practical_verdict": "High statutory observability via SEC 8-K Item 2.05, WARN, and BLS JOLTS/CES; requires strict separation of VEP eligibility, remote/mini-WARN rules, and ghost postings."
+      "practical_verdict": "High statutory observability via SEC 8-K Item 2.05, WARN, and BLS JOLTS/CES; requires strict separation of VEP eligibility, remote/mini-WARN rules, and ghost postings.",
+      "official_sources": [
+        {
+          "label": "US BLS CES Payrolls",
+          "url": "https://www.bls.gov/opub/ted/2026/payroll-employment-increased-by-885000-from-october-2025-to-october-2026.htm"
+        },
+        {
+          "label": "BLS Turnover Reference",
+          "url": "https://www.bls.gov/opub/mlr/2015/article/pdf/comparison-of-u-s-and-international-labor-turnover-statistics.pdf"
+        }
+      ]
     },
     {
       "country_code": "GB",
@@ -69,7 +89,13 @@
       "primary_hiring_sources": "ONS PAYE Real Time Information (RTI) Payroll; ONS Vacancies; Direct ATS & Financial Disclosures",
       "verified_2yr_observations": "Structured UK restructuring and cross-border MNC cuts (e.g., Flutter UK/Ireland restructuring plans up to 1,400 roles at risk alongside European hubs) tracked against ONS payroll and vacancy series",
       "hidden_internal_gap": "HR1 triggers at 20+ proposed redundancies at one establishment; settlement agreements/voluntary exits and internal role shifts are not separately itemized in public aggregate tables",
-      "practical_verdict": "Strong macro payroll and vacancy series via ONS; company-specific figures require cross-checking corporate disclosures, HR1 filings, and settlement nuances."
+      "practical_verdict": "Strong macro payroll and vacancy series via ONS; company-specific figures require cross-checking corporate disclosures, HR1 filings, and settlement nuances.",
+      "official_sources": [
+        {
+          "label": "UK ONS PAYE RTI (Nov 2026)",
+          "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/november2026"
+        }
+      ]
     },
     {
       "country_code": "DE",
@@ -87,7 +113,13 @@
       "primary_hiring_sources": "Eurostat Job Vacancy Statistics (JVS); Destatis & BA Employment Series; Direct Corporate Disclosures",
       "verified_2yr_observations": "Industrial and automotive restructuring headlines (including large multi-year targets such as Volkswagen's reported restructuring plans) alongside Eurofound ERM and BA reporting",
       "hidden_internal_gap": "Works council negotiations, phased multi-year social plans (Sozialplan), and short-time work/transfer companies stretch execution across years, while media headlines often merge multi-year targets into single-year numbers",
-      "practical_verdict": "Good institutional and macro tracking, but multi-year phased execution and headline aggregation require separating announced multi-year plans from actual annual exits."
+      "practical_verdict": "Good institutional and macro tracking, but multi-year phased execution and headline aggregation require separating announced multi-year plans from actual annual exits.",
+      "official_sources": [
+        {
+          "label": "Eurofound ERM Restructuring",
+          "url": "https://apps.eurofound.europa.eu/restructuring-events/types/Internal_restructuring"
+        }
+      ]
     },
     {
       "country_code": "SG",
@@ -105,7 +137,13 @@
       "primary_hiring_sources": "MOM Labour Market & Employment Change Statistics; Employment Pass / Job Vacancies Series",
       "verified_2yr_observations": "MOM publishes quarterly retrenchment aggregates across sectors while MNC regional hub cuts are frequently announced globally without country-level breakdowns",
       "hidden_internal_gap": "MOM reports aggregate retrenchment counts rather than full firm-by-firm public lists for smaller cuts; APAC regional hub reductions often remain bundled inside global MNC announcements",
-      "practical_verdict": "Reliable aggregate quarterly statistics from MOM; firm-level APAC hub cuts require parent-child linking to avoid double-counting global announcements."
+      "practical_verdict": "Reliable aggregate quarterly statistics from MOM; firm-level APAC hub cuts require parent-child linking to avoid double-counting global announcements.",
+      "official_sources": [
+        {
+          "label": "BLS Intl. Labor Ref (MOM SG)",
+          "url": "https://www.bls.gov/opub/mlr/2015/article/pdf/comparison-of-u-s-and-international-labor-turnover-statistics.pdf"
+        }
+      ]
     },
     {
       "country_code": "JP",
@@ -123,7 +161,13 @@
       "primary_hiring_sources": "MHLW Labour Force Survey & Job Openings-to-Applicants Ratio; Corporate Recruiting & Campus Disclosures",
       "verified_2yr_observations": "Lower headline layoff volatility due to labor protections; workforce adjustments often occur via voluntary early retirement programs (kibo taishoku), internal transfers, or hiring moderation",
       "hidden_internal_gap": "Voluntary early retirement programs and internal reassignments are distinct from involuntary layoffs and can be misread if not tagged as voluntary_buyout_offer or net_headcount_change",
-      "practical_verdict": "High corporate disclosure discipline on TSE for material restructurings; requires strict event-type separation between voluntary retirement offers and forced cuts."
+      "practical_verdict": "High corporate disclosure discipline on TSE for material restructurings; requires strict event-type separation between voluntary retirement offers and forced cuts.",
+      "official_sources": [
+        {
+          "label": "BLS Intl. Labor Ref (MHLW JP)",
+          "url": "https://www.bls.gov/opub/mlr/2015/article/pdf/comparison-of-u-s-and-international-labor-turnover-statistics.pdf"
+        }
+      ]
     },
     {
       "country_code": "CA",
@@ -141,7 +185,13 @@
       "primary_hiring_sources": "Statistics Canada Labour Force Survey & Job Vacancy and Wage Survey (JVWS); Direct ATS",
       "verified_2yr_observations": "Provincial group termination disclosures and cross-listed corporate updates complement Statistics Canada payroll/vacancy releases, while global tech/MNC cuts affect Canadian hubs",
       "hidden_internal_gap": "Group termination thresholds vary by province (typically 50+ employees at a single establishment over 4 weeks), leaving smaller or dispersed cuts outside statutory group lists",
-      "practical_verdict": "Solid macro statistics from Statistics Canada and provincial termination notices for larger site cuts; dispersed and small cuts require corporate-level verification."
+      "practical_verdict": "Solid macro statistics from Statistics Canada and provincial termination notices for larger site cuts; dispersed and small cuts require corporate-level verification.",
+      "official_sources": [
+        {
+          "label": "StatCan Labour Force Survey",
+          "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260710/dq260710a-eng.htm"
+        }
+      ]
     },
     {
       "country_code": "AU",
@@ -159,7 +209,13 @@
       "primary_hiring_sources": "Australian Bureau of Statistics (ABS) Labour Force & Job Vacancies; Direct ATS & Corporate Filings",
       "verified_2yr_observations": "ASX-listed company restructurings and local branches of global firms tracked alongside ABS employment and job vacancy releases",
       "hidden_internal_gap": "No single centralized national layoff registry for all private redundancies; smaller internal restructurings may not meet ASX materiality thresholds",
-      "practical_verdict": "Clear macro ABS series and ASX disclosures for material listed-company events; granular private-firm cuts have uneven public visibility."
+      "practical_verdict": "Clear macro ABS series and ASX disclosures for material listed-company events; granular private-firm cuts have uneven public visibility.",
+      "official_sources": [
+        {
+          "label": "BLS Intl. Labor Ref (ABS AU)",
+          "url": "https://www.bls.gov/opub/mlr/2015/article/pdf/comparison-of-u-s-and-international-labor-turnover-statistics.pdf"
+        }
+      ]
     },
     {
       "country_code": "FR",
@@ -177,7 +233,13 @@
       "primary_hiring_sources": "INSEE Employment & Payroll Series; DARES / France Travail Job Market Indicators; Eurostat JVS",
       "verified_2yr_observations": "Large collective redundancies in France (such as industrial and automotive restructuring plans reported in late 2026) involve formal consultation processes and Eurofound/public reporting",
       "hidden_internal_gap": "Formal consultation/PSE timelines span months and can be revised downward before execution; early media figures often reflect initial proposals rather than finalized departures",
-      "practical_verdict": "Formal collective-redundancy processes create structured documentation, but proposals frequently evolve—requiring range logging and announcement vs. effective dates."
+      "practical_verdict": "Formal collective-redundancy processes create structured documentation, but proposals frequently evolve—requiring range logging and announcement vs. effective dates.",
+      "official_sources": [
+        {
+          "label": "Eurofound ERM Restructuring",
+          "url": "https://apps.eurofound.europa.eu/restructuring-events/types/Internal_restructuring"
+        }
+      ]
     },
     {
       "country_code": "BR",
@@ -195,7 +257,13 @@
       "primary_hiring_sources": "Novo CAGED Net Formal Employment; IBGE PNAD Continua Household Survey; Direct ATS",
       "verified_2yr_observations": "Novo CAGED captures formal admissions and dismissals monthly across registered firms, while corporate-level tech/LATAM cuts are often reported only as broad regional ranges",
       "hidden_internal_gap": "Informal work and contractor arrangements sit outside formal CAGED payroll records, and regional LATAM layoff estimates are frequently bundled or approximated in media reports",
-      "practical_verdict": "Novo CAGED gives strong monthly formal-sector turnover signals at the macro/sector level, but company-specific cuts outside formal filings remain partially opaque."
+      "practical_verdict": "Novo CAGED gives strong monthly formal-sector turnover signals at the macro/sector level, but company-specific cuts outside formal filings remain partially opaque.",
+      "official_sources": [
+        {
+          "label": "SEC EDGAR Filings (Cross-Listed)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm"
+        }
+      ]
     }
   ],
   "practicality_matrix": [
@@ -236,9 +304,9 @@
       "parent_event_id": null,
       "company": "Oracle",
       "type": "firing",
-      "execution_stage": "COMMITTED_PLAN",
+      "execution_stage": "EXECUTED_ACTUAL",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 21000,
       "headcount_min": 21000,
@@ -254,9 +322,9 @@
       "region": "North America",
       "lat": 30.27,
       "lon": -97.74,
-      "reason": "Largest workforce reduction in company history amid $2.8B AI and cloud restructuring.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Oracle's FY2026 SEC Form 10-K (year ended May 31, 2026), global headcount declined by ~21,000 (~13%) amid AI and cloud restructuring.",
+      "source_name": "Oracle SEC Form 10-K (FY26)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -282,9 +350,9 @@
       "region": "North America",
       "lat": 47.61,
       "lon": -122.33,
-      "reason": "Corporate and AWS cuts to flatten layers and shift capital toward AI infrastructure.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Amazon's January 28, 2026 corporate announcement, approximately 16,000 corporate roles reduced to flatten organizational layers.",
+      "source_name": "Amazon Newsroom (Jan 2026)",
+      "source_url": "https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -310,9 +378,9 @@
       "region": "North America",
       "lat": 37.35,
       "lon": -121.95,
-      "reason": "15% workforce reduction following Q2 revenue stagnation and margin squeeze.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Intel CEO Pat Gelsinger's August 1, 2024 employee memo, >15% (~15,000) workforce reduction under cost-reduction plan.",
+      "source_name": "Intel Newsroom (Aug 2024)",
+      "source_url": "https://www.intel.com/content/www/us/en/newsroom/news/actions-accelerate-our-progress.html",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -338,9 +406,9 @@
       "region": "North America",
       "lat": 47.05,
       "lon": -121.5,
-      "reason": "Management-layer reductions to streamline corporate operations and fund core AI bets.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Amazon's October 28, 2025 official blog post, ~14,000 corporate role reductions to streamline management layers.",
+      "source_name": "Amazon Newsroom (Oct 2025)",
+      "source_url": "https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -366,9 +434,9 @@
       "region": "North America",
       "lat": 47.67,
       "lon": -122.12,
-      "reason": "Under 4% global headcount reduction across multiple product divisions and regions.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Microsoft's July 2, 2025 confirmation reported by AP News, under 4% (~9,000) global workforce reduction across Xbox, sales, and product divisions.",
+      "source_name": "AP News (citing Microsoft)",
+      "source_url": "https://apnews.com/article/microsoft-layoffs-xbox-f44079957b12370f72e24edebe9fcc6b",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -376,10 +444,10 @@
       "parent_event_id": null,
       "company": "Meta",
       "type": "firing",
-      "execution_stage": "COMMITTED_PLAN",
-      "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "execution_stage": "NEWS_OR_RUMOR",
+      "event_type": "unconfirmed_estimate",
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 8000,
       "headcount_min": 8000,
       "headcount_max": 8000,
@@ -394,9 +462,9 @@
       "region": "North America",
       "lat": 37.45,
       "lon": -122.18,
-      "reason": "Roughly 10% workforce cut hitting engineering and product teams amid AI efficiency pivot.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Reported by Reuters (Aug 2026) as ~8,000 roles affected in May 2026 restructuring; quarantined as Tier 3 pending formal SEC headcount filing.",
+      "source_name": "Reuters (via MLQ.ai)",
+      "source_url": "https://mlq.ai/news/meta-abandoned-a-plan-to-cut-some-teams-by-60-after-ai-agents-fell-short/",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -406,7 +474,7 @@
       "type": "firing",
       "execution_stage": "EXECUTED_ACTUAL",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 6000,
       "headcount_min": 6000,
@@ -422,9 +490,9 @@
       "region": "North America",
       "lat": 36.9,
       "lon": -121.4,
-      "reason": "7% global workforce reduction including Talos Security threat-intelligence staff.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Cisco's August 14, 2024 SEC Form 8-K, restructuring plan impacting ~7% of global workforce (~6,000 roles).",
+      "source_name": "Cisco SEC Form 8-K (Aug 2024)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000119312524200636/d878533d8k.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -450,9 +518,9 @@
       "region": "North America",
       "lat": 48.2,
       "lon": -121.3,
-      "reason": "2% cut primarily in sales and Xbox teams while redirecting spend to AI infrastructure.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Microsoft's July 6, 2026 statement reported by Reuters, ~4,800 job cuts (~2%) primarily affecting sales and Xbox units.",
+      "source_name": "Reuters (Jul 2026)",
+      "source_url": "https://www.investing.com/news/stock-market-news/microsoft-joins-aidriven-tech-layoff-wave-with-4800-job-cuts-4776805",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -478,7 +546,7 @@
       "region": "North America",
       "lat": 37.95,
       "lon": -122.42,
-      "reason": "2026 fintech and payments restructuring to curb operating costs.",
+      "reason": "Media-reported 2026 fintech restructuring (~4,080 roles) via TechRepublic; quarantined as Tier 3 pending primary SEC 8-K confirmation.",
       "source_name": "TechRepublic",
       "source_url": "https://www.techrepublic.com/article/news-tech-layoffs-2026-companies-cutting-jobs/",
       "archive_status": "ARCHIVE_PENDING"
@@ -490,7 +558,7 @@
       "type": "firing",
       "execution_stage": "COMMITTED_PLAN",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 4000,
       "headcount_min": 4000,
@@ -506,9 +574,9 @@
       "region": "North America",
       "lat": 37.15,
       "lon": -121.89,
-      "reason": "AI-driven restructuring cuts announced despite record $15.8B Q3 revenue.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Cisco's May 13, 2026 SEC Form 8-K, restructuring plan disclosed with up to $1B charge (press estimates ~4,000 roles).",
+      "source_name": "Cisco SEC Form 8-K (May 2026)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000075/csco-20260513.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -534,9 +602,9 @@
       "region": "North America",
       "lat": 37.65,
       "lon": -121.7,
-      "reason": "5% performance-based cuts alongside sunsetting US fact-checking operations.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Meta CEO Mark Zuckerberg's January 2025 internal memo reported by AP News and Bloomberg, ~5% (~3,600) performance-based workforce cuts.",
+      "source_name": "AP News (citing Meta Memo)",
+      "source_url": "https://apnews.com/article/meta-layoffs-ebf95196598467c9ddf175571eecaa98",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -562,7 +630,7 @@
       "region": "North America",
       "lat": 43.04,
       "lon": -87.91,
-      "reason": "November 2026 financial-technology workforce reduction.",
+      "reason": "Commercial tracker report (~3,000 roles) via Intellizence; quarantined as Tier 3 pending primary SEC 8-K or company confirmation.",
       "source_name": "Intellizence",
       "source_url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
       "archive_status": "ARCHIVE_PENDING"
@@ -590,9 +658,9 @@
       "region": "North America",
       "lat": 29.76,
       "lon": -95.37,
-      "reason": "18-month cost-reduction program ahead of Juniper Networks integration.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per HPE's March 2025 earnings announcement cited by CNBC and Fast Company, ~2,500 roles (~5%) cut over 18 months for $350M in gross savings.",
+      "source_name": "Fast Company (citing HPE Earnings)",
+      "source_url": "https://www.fastcompany.com/91306126/tech-layoffs-update-march-2025-block-hellofresh-tiktok-wayfair-hpe-cut-jobs",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -600,13 +668,13 @@
       "parent_event_id": null,
       "company": "Oracle (India)",
       "type": "firing",
-      "execution_stage": "COMMITTED_PLAN",
-      "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
-      "headcount_exact": 2000,
-      "headcount_min": 2000,
-      "headcount_max": 2000,
+      "execution_stage": "NEWS_OR_RUMOR",
+      "event_type": "unconfirmed_estimate",
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
+      "headcount_exact": null,
+      "headcount_min": 1000,
+      "headcount_max": 3000,
       "date": "2026-09-15",
       "announcement_date": "2026-09-15",
       "effective_date": null,
@@ -618,9 +686,9 @@
       "region": "Asia-Pacific",
       "lat": 12.97,
       "lon": 77.59,
-      "reason": "India leg of Oracle's September 2026 round (1,000–3,000 estimated), mainly product engineering.",
-      "source_name": "Weekday India Tracker",
-      "source_url": "https://www.weekday.works/post/india-layoffs-tracker-2026",
+      "reason": "Media-reported India slice (1,000–3,000 estimated); Oracle has not confirmed India-specific figures (quarantined as Tier 3).",
+      "source_name": "Weekday Tracker (Unconfirmed)",
+      "source_url": "https://www.weekday.works/post/oracle-layoffs-2026",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -630,7 +698,7 @@
       "type": "firing",
       "execution_stage": "EXECUTED_ACTUAL",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 1750,
       "headcount_min": 1750,
@@ -646,9 +714,9 @@
       "region": "North America",
       "lat": 37.66,
       "lon": -121.87,
-      "reason": "8.5% cut to reallocate operating budget into AI products and international markets.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Workday's February 5, 2025 SEC Form 8-K, restructuring plan eliminating approximately 1,750 positions (~8.5% of workforce).",
+      "source_name": "Workday SEC Form 8-K (Feb 2025)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781125000030/wday-20250205.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -674,9 +742,9 @@
       "region": "Europe",
       "lat": 59.33,
       "lon": 18.07,
-      "reason": "Sweden cost-saving cuts amid prolonged global telecom capital-spending downturn.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Ericsson's January 15, 2026 press release and Swedish Public Employment Service notice, proposed reduction of ~1,600 roles in Sweden.",
+      "source_name": "Ericsson Press Release (Jan 2026)",
+      "source_url": "https://www.ericsson.com/en/press-releases/2026/1/ericsson-announces-proposed-headcount-reduction-in-sweden",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -702,9 +770,9 @@
       "region": "Asia-Pacific",
       "lat": -33.87,
       "lon": 151.21,
-      "reason": "10% global workforce cut to redirect capital into AI engineering and enterprise sales.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Atlassian's March 2026 official team update, ~10% (~1,600) global workforce reduction to reallocate spend toward AI engineering.",
+      "source_name": "Atlassian Blog (Mar 2026)",
+      "source_url": "https://www.atlassian.com/blog/company-news/atlassian-team-update-march-2026",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -730,9 +798,9 @@
       "region": "Asia-Pacific",
       "lat": -34.5,
       "lon": 150.4,
-      "reason": "22% workforce cut flattening middle management and consolidating product teams in Sydney.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Canva CEO Melanie Perkins' November 3, 2026 statement, ~1,271 roles (~22%) affected across redundancies, role changes, and relocations (ceiling, not pure layoffs).",
+      "source_name": "Canva Newsroom (Nov 2026)",
+      "source_url": "https://www.canva.com/newsroom/news/canva-team-update/",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -758,9 +826,9 @@
       "region": "North America",
       "lat": 38.2,
       "lon": -122.0,
-      "reason": "Roughly 20% global workforce cut in AI-focused restructuring for agentic workflows.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Cloudflare's May 7, 2026 official statement and SEC filing, ~1,100 roles (~20%) reduced amid AI workflow restructuring.",
+      "source_name": "Cloudflare Blog (May 2026)",
+      "source_url": "https://blog.cloudflare.com/building-for-the-future/",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -786,9 +854,9 @@
       "region": "North America",
       "lat": 36.7,
       "lon": -122.1,
-      "reason": "4% global workforce cut to pivot engineering resources toward AI accelerators.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per AMD spokesperson statement to Reuters (Nov 2024), ~4% global workforce reduction (~1,000 roles) to align resources with AI chip growth.",
+      "source_name": "Reuters / The Hindu (citing AMD)",
+      "source_url": "https://www.thehindu.com/sci-tech/technology/amd-to-cut-4-of-global-workforce-as-it-focuses-on-ai-chip-development/article68866599.ece",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -798,7 +866,7 @@
       "type": "firing",
       "execution_stage": "EXECUTED_ACTUAL",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 660,
       "headcount_min": 660,
@@ -814,9 +882,9 @@
       "region": "Asia-Pacific",
       "lat": 13.08,
       "lon": 80.27,
-      "reason": "13% global workforce realignment despite rising quarterly revenue and profit.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Freshworks' SEC restructuring disclosures, ~13% global workforce realignment (~660 roles).",
+      "source_name": "Freshworks SEC Form 10-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -826,7 +894,7 @@
       "type": "firing",
       "execution_stage": "COMMITTED_PLAN",
       "event_type": "involuntary_layoff",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 620,
       "headcount_min": 620,
@@ -842,9 +910,9 @@
       "region": "EMEA",
       "lat": 32.09,
       "lon": 34.78,
-      "reason": "20% workforce cut to rebuild around flatter autonomous teams and AI agents.",
-      "source_name": "Computerworld",
-      "source_url": "https://www.computerworld.com/article/3816579/tech-layoffs-this-year-a-timeline.html",
+      "reason": "Per Monday.com's July 22, 2026 SEC Form 6-K, ~20% global workforce reduction (~620 roles) in AI-platform reorganization.",
+      "source_name": "Monday.com SEC Form 6-K (Jul 2026)",
+      "source_url": "https://www.stocktitan.net/sec-filings/MNDY/6-k-monday-com-ltd-current-report-foreign-issuer-766551d8723d.html",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -870,9 +938,9 @@
       "region": "Asia-Pacific",
       "lat": 17.39,
       "lon": 78.49,
-      "reason": "25,000 fresher campus offers made by April 2026 alongside 44,000 FY26 trainee onboardings.",
-      "source_name": "Weekday India Tracker",
-      "source_url": "https://www.weekday.works/post/india-layoffs-tracker-2026",
+      "reason": "Per TCS FY2025–26 corporate disclosures, fresher campus offers and trainee onboarding programs across India.",
+      "source_name": "TCS Annual Report FY25–26",
+      "source_url": "https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -898,9 +966,9 @@
       "region": "Asia-Pacific",
       "lat": 12.4,
       "lon": 80.1,
-      "reason": "Targeting ~25,000 fresher campus hires across the FY26–27 hiring cycle.",
-      "source_name": "Weekday India Tracker",
-      "source_url": "https://www.weekday.works/post/india-layoffs-tracker-2026",
+      "reason": "Per Cognizant 2026 investor disclosures and earnings calls, campus hiring target (~20,000–25,000 global freshers; hiring pledge, not realized headcount).",
+      "source_name": "Cognizant Investor Relations",
+      "source_url": "https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-Reports-Third-Quarter-2026-Results/default.aspx",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -926,9 +994,9 @@
       "region": "Asia-Pacific",
       "lat": 13.7,
       "lon": 77.2,
-      "reason": "Confirmed zero layoffs and plans to onboard ~20,000 freshers across 2026.",
-      "source_name": "Weekday India Tracker",
-      "source_url": "https://www.weekday.works/post/india-layoffs-tracker-2026",
+      "reason": "Per Infosys FY2025–26 annual report and earnings guidance, planned ~20,000 fresher onboarding target (hiring pledge).",
+      "source_name": "Infosys Annual Report FY25–26",
+      "source_url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -938,7 +1006,7 @@
       "type": "hiring",
       "execution_stage": "REALIZED_ACTUAL",
       "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 6400,
       "headcount_min": 6400,
@@ -954,9 +1022,9 @@
       "region": "North America",
       "lat": 36.2,
       "lon": -120.8,
-      "reason": "Net headcount grew 21.6% from 29,600 to 36,000 to scale AI compute R&D.",
-      "source_name": "Macrotrends / SQ Magazine",
-      "source_url": "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/number-of-employees",
+      "reason": "Per NVIDIA's FY2025 SEC Form 10-K (ended Jan 26, 2025), global headcount rose 21.6% from 29,600 to 36,000.",
+      "source_name": "NVIDIA SEC Form 10-K (FY25)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -966,7 +1034,7 @@
       "type": "hiring",
       "execution_stage": "REALIZED_ACTUAL",
       "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
+      "confidence_tier": "Tier 1",
       "quarantined": false,
       "headcount_exact": 6000,
       "headcount_min": 6000,
@@ -982,9 +1050,9 @@
       "region": "North America",
       "lat": 38.6,
       "lon": -120.5,
-      "reason": "Net headcount grew 16.7% from 36,000 to 42,000 across 38 countries with zero layoffs.",
-      "source_name": "Macrotrends / SQ Magazine",
-      "source_url": "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/number-of-employees",
+      "reason": "Per NVIDIA's FY2026 SEC Form 10-K (ended Jan 25, 2026), global headcount rose 16.7% from 36,000 to 42,000 across 38 countries.",
+      "source_name": "NVIDIA SEC Form 10-K (FY26)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -1020,10 +1088,10 @@
       "parent_event_id": null,
       "company": "Anthropic (Global Expansion)",
       "type": "hiring",
-      "execution_stage": "REALIZED_ACTUAL",
-      "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "execution_stage": "NEWS_OR_RUMOR",
+      "event_type": "unconfirmed_estimate",
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 4360,
       "headcount_min": 4360,
       "headcount_max": 4360,
@@ -1038,7 +1106,7 @@
       "region": "North America",
       "lat": 39.2,
       "lon": -121.6,
-      "reason": "Grew from ~940 employees at end-2024 to ~5,300 by Sep 2026 per IPO S-1; 674 open roles in Nov 2026.",
+      "reason": "Third-party recruitment estimate of Anthropic global headcount growth (~940 to ~5,300); quarantined as Tier 3 pending primary SEC filing.",
       "source_name": "The Undercover Recruiter (S-1)",
       "source_url": "https://theundercoverrecruiter.com/anthropic-careers/",
       "archive_status": "ARCHIVE_PENDING"
@@ -1066,9 +1134,9 @@
       "region": "Europe",
       "lat": 53.35,
       "lon": -6.26,
-      "reason": "200 new roles planned in Ireland by 2027 plus active London, Paris, and Munich hiring surge.",
-      "source_name": "Worktugal / IDA Ireland",
-      "source_url": "https://blog.worktugal.com/anthropic-hiring-europe-2026/",
+      "reason": "Per IDA Ireland's March 13, 2026 press release, Anthropic plans to create 200 new roles in Dublin by 2027 (hiring pledge).",
+      "source_name": "IDA Ireland Press Release (Mar 2026)",
+      "source_url": "https://www.idaireland.in/latest-news/press-release/anthropic-announces-200-new-jobs-in-ireland",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -1076,10 +1144,10 @@
       "parent_event_id": null,
       "company": "NVIDIA (Taiwan)",
       "type": "hiring",
-      "execution_stage": "REALIZED_ACTUAL",
-      "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "execution_stage": "NEWS_OR_RUMOR",
+      "event_type": "unconfirmed_estimate",
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 150,
       "headcount_min": 150,
       "headcount_max": 150,
@@ -1094,7 +1162,7 @@
       "region": "Asia-Pacific",
       "lat": 25.03,
       "lon": 121.57,
-      "reason": "14.8% YoY headcount growth to 1,164 employees supporting chip-supply and AI systems.",
+      "reason": "Third-party Revelio Labs modeled estimate (+14.8% YoY to ~1,164 in Taiwan); quarantined as Tier 3 (not a company statutory disclosure).",
       "source_name": "Revelio Labs",
       "source_url": "https://www.reveliolabs.com/companies/nvidia-taiwan/employees",
       "archive_status": "ARCHIVE_PENDING"
@@ -1150,9 +1218,9 @@
       "region": "Asia-Pacific",
       "lat": 19.08,
       "lon": 72.88,
-      "reason": "Net headcount drop includes voluntary attrition, bench rules, and July 2025 ~2% restructuring (~12,000); must NOT be treated solely as involuntary layoffs.",
-      "source_name": "Corporate Disclosure / Reported FY26 Headcount (584,519)",
-      "source_url": "https://www.weekday.works/post/india-layoffs-tracker-2026",
+      "reason": "Per TCS FY2025–26 annual disclosures, net headcount change reflects voluntary attrition, bench rules, and restructuring — NOT solely involuntary layoffs.",
+      "source_name": "TCS Annual Report FY25–26",
+      "source_url": "https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf",
       "archive_status": "ARCHIVE_PENDING"
     },
     {
@@ -1346,7 +1414,7 @@
       "region": "Europe",
       "lat": 48.78,
       "lon": 9.18,
-      "reason": "Mobility, automotive software, and hardware cost-restructuring plan across Germany and global sites.",
+      "reason": "Per Reuters report on Bosch's restructuring announcement (Sep 2025), planned 13,000-role cost restructuring across Mobility and global sites.",
       "source_name": "Reuters / Investing.com",
       "source_url": "https://www.investing.com/news/stock-market-news/bosch-to-cut-13000-jobs-to-bring-down-costs-in-tough-autos-market-4255750",
       "archive_status": "ARCHIVE_PENDING"
@@ -1374,7 +1442,7 @@
       "region": "Europe",
       "lat": 49.3,
       "lon": 8.64,
-      "reason": "Expanded €2B+ Business AI restructuring program (buyouts and retraining; ~3,500 roles impacted in Germany).",
+      "reason": "Per SAP Q2 2024 earnings disclosures reported by CRN, expanded €2B+ Business AI restructuring program impacting 8,000–10,000 roles via buyouts and retraining.",
       "source_name": "CRN / SAP Q2 Earnings",
       "source_url": "https://www.crn.com/news/software/2024/sap-restructuring-now-expected-to-impact-up-to-10-000-jobs",
       "archive_status": "ARCHIVE_PENDING"
@@ -1402,7 +1470,7 @@
       "region": "Europe",
       "lat": 46.2,
       "lon": 6.14,
-      "reason": "Semiconductor manufacturing overhaul targeting up to 2,800 voluntary departures globally (~1,000 in France) over three years.",
+      "reason": "Per STMicroelectronics' April 2025 manufacturing overhaul announcement cited by Evertiq, targeting up to 2,800 voluntary departures globally over three years.",
       "source_name": "Evertiq / Company Release",
       "source_url": "https://evertiq.com/design/2025-04-10-st-to-cut-up-to-2800-jobs-in-major-manufacturing-overhaul",
       "archive_status": "ARCHIVE_PENDING"
@@ -1430,7 +1498,7 @@
       "region": "Asia-Pacific",
       "lat": 34.69,
       "lon": 135.5,
-      "reason": "¥130B global structural reform cutting 5,000 roles in Japan and 5,000 overseas (~4% of workforce).",
+      "reason": "Per Panasonic Holdings' May 2025 FY25 filing cited by Business Insider, ¥130B global structural reform targeting 10,000 roles (~4% of workforce).",
       "source_name": "Business Insider / Panasonic FY25 Filing",
       "source_url": "https://www.businessinsider.com/panasonic-layoffs-workers-boost-efficiency-japan-2025-5",
       "archive_status": "ARCHIVE_PENDING"
@@ -1458,7 +1526,7 @@
       "region": "Asia-Pacific",
       "lat": 35.68,
       "lon": 139.69,
-      "reason": "Voluntary early-retirement restructuring targeting up to 4,000 domestic roles in Japan following privatization.",
+      "reason": "Per Toshiba's May 2024 restructuring plan reported by HR Economic Times, voluntary early-retirement program targeting up to 4,000 roles in Japan.",
       "source_name": "HR Economic Times",
       "source_url": "https://hr.economictimes.indiatimes.com/news/workplace-4-0/talent-management/toshiba-to-cut-up-to-4000-jobs-in-japan/110192035",
       "archive_status": "ARCHIVE_PENDING"
@@ -1468,10 +1536,10 @@
       "parent_event_id": null,
       "company": "Samsung Group",
       "type": "hiring",
-      "execution_stage": "VERIFIED_DEMAND",
+      "execution_stage": "HIRING_NEWS_PLEDGE",
       "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 10000,
       "headcount_min": 10000,
       "headcount_max": 10000,
@@ -1486,7 +1554,7 @@
       "region": "Asia-Pacific",
       "lat": 37.57,
       "lon": 126.98,
-      "reason": "2025 recruitment drive across semiconductors, AI, and IT (part of 80,000 five-year hiring commitment).",
+      "reason": "Media-reported 2025 recruitment target (~10,000 roles) via HRKatha; quarantined as Tier 3 hiring pledge pending audited onboarding data.",
       "source_name": "HRKatha",
       "source_url": "https://www.hrkatha.com/global-hr-news/samsung-to-hire-over-10000-employees-in-2025-amid-global-tech-layoffs/",
       "archive_status": "ARCHIVE_PENDING"
@@ -1496,10 +1564,10 @@
       "parent_event_id": null,
       "company": "MercadoLibre",
       "type": "hiring",
-      "execution_stage": "REALIZED_ACTUAL",
-      "event_type": "realized_payroll_hires_net_change",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "execution_stage": "NEWS_OR_RUMOR",
+      "event_type": "unconfirmed_estimate",
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 15885,
       "headcount_min": 15885,
       "headcount_max": 15885,
@@ -1514,7 +1582,7 @@
       "region": "Latin America",
       "lat": -23.55,
       "lon": -46.63,
-      "reason": "Net headcount expanded +15.2% YoY to 120,297 employees by June 2026 amid $15B+ regional tech and logistics expansion.",
+      "reason": "Third-party Revelio Labs modeled headcount estimate (+15.2% YoY to ~120,297); quarantined as Tier 3 pending primary SEC 10-Q/10-K verification.",
       "source_name": "Revelio Labs / MELI Filings",
       "source_url": "https://www.reveliolabs.com/companies/mercadolibre/employees",
       "archive_status": "ARCHIVE_PENDING"
@@ -1524,10 +1592,10 @@
       "parent_event_id": null,
       "company": "Alibaba Group",
       "type": "firing",
-      "execution_stage": "EXECUTED_ACTUAL",
+      "execution_stage": "NEWS_OR_RUMOR",
       "event_type": "net_headcount_change",
-      "confidence_tier": "Tier 2",
-      "quarantined": false,
+      "confidence_tier": "Tier 3",
+      "quarantined": true,
       "headcount_exact": 2317,
       "headcount_min": 2317,
       "headcount_max": 2317,
@@ -1542,7 +1610,7 @@
       "region": "Asia-Pacific",
       "lat": 30.27,
       "lon": 120.15,
-      "reason": "Net headcount declined 2,317 (-1.7% YoY) to 134,286 as of June 2026 amid ongoing AI and cloud restructuring (mix of attrition & cuts; excluded from involuntary totals).",
+      "reason": "Third-party Revelio Labs estimate of net headcount decline (-2,317 YoY); mix of attrition and restructuring, quarantined as Tier 3.",
       "source_name": "Revelio Labs / Alibaba 20-F",
       "source_url": "https://www.reveliolabs.com/companies/alibaba-group-holding/employees",
       "archive_status": "ARCHIVE_PENDING"

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="ttd-theme">/* Theme toggle (T1) - the ONE approved inline script: light is the
+default for everyone; dark only by reader choice, remembered in localStorage.
+Owner-approved 2026-07-24. Gates D07/D18 pin it: this id, inline-only,
+under 1500 chars, no network. Runs pre-paint so there is no flash. */
+(function(){try{if(localStorage.getItem("ttd-theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}
+document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themepill");if(!b){return}
+function cur(){return document.documentElement.getAttribute("data-theme")==="dark"}
+function paint(){b.setAttribute("aria-pressed",cur()?"true":"false")}
+b.addEventListener("click",function(){var d=!cur();if(d){document.documentElement.setAttribute("data-theme","dark")}else{document.documentElement.removeAttribute("data-theme")}
+try{localStorage.setItem("ttd-theme",d?"dark":"light")}catch(e){}paint()});paint()})}catch(e){}})()</script>
+<title>Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug</title>
+<meta name="description" content="Google DeepMind&#39;s Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.">
+<link rel="canonical" href="https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M4KPLZK1B"></script>
+<script src="/assets/analytics.js" defer></script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Tech Docket" href="https://thetechdocket.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Tech Docket">
+<meta property="og:title" content="Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug">
+<meta property="og:description" content="Google DeepMind&#39;s Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.">
+<meta property="og:url" content="https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/">
+<meta property="og:image" content="https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/gemini-4-neon-benchmarks-pricing-antigravity-desync-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Benchmark and pricing comparison of Google DeepMind Gemini 4 Neon against Claude Fable 5.2 and GPT-6.2 Astra">
+<meta property="og:locale" content="en_US">
+
+<meta property="article:published_time" content="2026-11-23T07:00:00+05:30">
+<meta property="article:modified_time" content="2026-11-23T07:00:00+05:30">
+<meta property="article:author" content="https://thetechdocket.com/authors/amber-jain/">
+<meta property="article:section" content="AI Models">
+<meta property="article:tag" content="gemini-4-neon">
+<meta property="article:tag" content="google-deepmind">
+<meta property="article:tag" content="ai-benchmarks">
+<meta property="article:tag" content="coding-agents">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug">
+<meta name="twitter:description" content="Google DeepMind&#39;s Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.">
+<meta name="twitter:image" content="https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/gemini-4-neon-benchmarks-pricing-antigravity-desync-16x9.jpg">
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/"}, "headline": "Gemini 4 Neon Benchmarks: Speed, API Cost & Antigravity Bug", "description": "Google DeepMind's Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.", "image": ["https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/gemini-4-neon-benchmarks-pricing-antigravity-desync-16x9.jpg", "https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/gemini-4-neon-benchmarks-pricing-antigravity-desync-4x3.jpg", "https://thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/gemini-4-neon-benchmarks-pricing-antigravity-desync-1x1.jpg"], "datePublished": "2026-11-23T07:00:00+05:30", "dateModified": "2026-11-23T07:00:00+05:30", "author": {"@type": "Person", "name": "Amber Jain", "url": "https://thetechdocket.com/authors/amber-jain/", "sameAs": ["https://news.ycombinator.com/user?id=Amber_Jain"]}, "publisher": {"@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": {"@type": "ImageObject", "url": "https://thetechdocket.com/assets/logo-112x112.png", "width": 112, "height": 112}}, "citation": ["https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain", "https://artificialanalysis.ai/models/gemini-4-neon", "https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/", "https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675", "https://discuss.ai.google.dev/t/entitlement-desync-gemini-4-argon-hydrogen-neon-unavailable-despite-active-google-ai-pro-subscription/203774", "https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824"], "keywords": "Gemini 4 Neon, gemini-4-neon, google-deepmind, ai-benchmarks, coding-agents"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thetechdocket.com/"}, {"@type": "ListItem", "position": 2, "name": "AI Models", "item": "https://thetechdocket.com/topics/ai-models/"}, {"@type": "ListItem", "position": 3, "name": "Gemini 4 Neon Benchmarks: Speed, API Cost & Antigravity Bug"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Gemini 4 Neon and how does it differ from Gemini 4 Carbon?", "acceptedAnswer": {"@type": "Answer", "text": "Gemini 4 Neon is Google DeepMind fourth frontier release in seven weeks, offering a full multimodal input pipeline across text, image, audio, and video with four configurable reasoning effort tiers. Compared with Gemini 4 Carbon, Neon cuts standard token pricing, doubles generation throughput, and finishes complex agentic evaluations faster."}}, {"@type": "Question", "name": "Why are Gemini 4 models showing as unavailable in Google Antigravity on Jio Pro plans?", "acceptedAnswer": {"@type": "Answer", "text": "Google support confirmed on the developer forum that partner promotional bundles such as the Reliance Jio Google AI Pro offer grant higher quotas on Gemini 3.8 Flash without unlocking the Gemini 4 family inside Antigravity IDE. In addition, direct-paid Google AI Pro subscribers have reported backend account-tier synchronization failures."}}, {"@type": "Question", "name": "Why do multi-turn coding sessions in Antigravity burn through weekly quota so quickly?", "acceptedAnswer": {"@type": "Answer", "text": "Telemetry logs shared by developers on the Google AI Developers Forum show that long-context conversations frequently suffer full server-side prompt cache misses on unchanged prefixes. When a cache read drops to zero on a large repository context, the entire prompt is re-billed as uncached input tokens."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "The Tech Docket", "url": "https://thetechdocket.com/", "logo": "https://thetechdocket.com/assets/logo-112x112.png", "email": "jainamber88@gmail.com", "sameAs": []}</script>
+<style>
+:root{--ink:#131519;--ink2:#3b414d;--muted:#646c7c;--bg:#ffffff;--soft:#f4f6fa;--line:#e4e8ef;--accent:#4348c8;--accent-ink:#32379e;--k-ai-models:#4338ca;--k-ai-tools:#0f766e;--k-big-tech:#7c3aed;--k-hardware:#b45309;--k-policy:#57534e;--k-explainers:#047857;--k-cybersecurity:#b91c1c;--k-jobs:#0369a1;--keep-bg:#fdf3d7;--keep-ink:#7a5c00;--t-ai-models:#ecedfb;--t-ai-tools:#e2f3f1;--t-big-tech:#f1e9fd;--t-hardware:#fbeedd;--t-policy:#efeeec;--t-explainers:#e1f4ec;--t-cybersecurity:#fee2e2;--t-jobs:#e0f2fe;--fu:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--fs:Georgia,"Iowan Old Style","Times New Roman",serif;--fm:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fu);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent-ink)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){a,nav.hubs a,.share a{transition:color .12s ease,background-color .12s ease,border-color .12s ease}}
+.skip{position:absolute;left:-999px;top:0;z-index:9;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:0 0 10px 0;text-decoration:none}
+.skip:focus{left:0}
+header.site{border-bottom:1px solid var(--line);background:var(--bg)}
+header.site::before{content:"";display:block;height:3px;background:linear-gradient(90deg,#4348c8,#818cf8 22%,#5eead4 42%,#c4b5fd 60%,#fbbf24 79%,#34d399 100%)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.brandbar{display:flex;align-items:baseline;gap:14px;padding:21px 0 4px;flex-wrap:wrap}
+.brand{font-size:29px;font-weight:800;letter-spacing:-.7px;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent)}
+.tagline{color:var(--muted);font-family:var(--fm);font-size:11.5px;letter-spacing:.01em}
+nav.hubs{display:flex;gap:0 24px;flex-wrap:wrap;padding:4px 0 0;font-family:var(--fm);font-size:13px}
+nav.hubs a{text-decoration:none;color:var(--ink2);font-weight:500;padding:6px 0 11px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.hubs a:hover{color:var(--accent-ink);border-color:var(--line)}
+nav.hubs a[aria-current]{color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.nl-short{display:none}
+.themepill{margin-left:auto;display:inline-flex;align-self:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;cursor:pointer;font-family:var(--fm);font-size:10.5px;background:transparent;padding:0;line-height:1}
+.themepill span{padding:6px 12px;color:var(--muted)}
+.themepill .tp-l{background:var(--ink);color:var(--bg);font-weight:700}
+html[data-theme=dark] .themepill .tp-l{background:transparent;color:var(--muted);font-weight:400}
+html[data-theme=dark] .themepill .tp-d{background:var(--ink);color:var(--bg);font-weight:700}
+@media (max-width:560px){.brandbar{position:relative;padding-right:86px}.brand{font-size:23.5px}.themepill{position:absolute;right:0;top:21px;margin-left:0}.themepill span{padding:5px 9px;font-size:9.5px}}
+main{padding:32px 0 46px}
+.kicker{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);text-decoration:none}
+a.kicker:hover{text-decoration:underline;text-decoration-thickness:2px}
+.k-ai-models{color:var(--k-ai-models)}.k-ai-tools{color:var(--k-ai-tools)}.k-big-tech{color:var(--k-big-tech)}.k-hardware{color:var(--k-hardware)}.k-policy{color:var(--k-policy)}.k-explainers{color:var(--k-explainers)}.k-cybersecurity{color:var(--k-cybersecurity)}.k-jobs{color:var(--k-jobs)}
+.dt{color:var(--muted);font-family:var(--fm);font-size:11.5px;font-weight:400}
+.no{font-family:var(--fm);font-size:12px;font-weight:400;color:var(--muted);padding-top:3px}
+.home .tagline{display:none}
+.home-h1{margin:6px 0 34px;max-width:58ch}
+.hh-name{display:block;font-family:var(--fm);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.hh-tag{display:block;font-family:var(--fs);font-size:clamp(22px,3vw,29px);font-weight:700;letter-spacing:-.2px;line-height:1.22;color:var(--ink)}
+.itile{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:14px;background:var(--tile-bg,var(--soft));color:var(--tile-ink,var(--accent));box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 16%,transparent);text-decoration:none}
+.itile svg{width:46%;height:46%;display:block}
+.i-ai-models{--tile-bg:var(--t-ai-models);--tile-ink:var(--k-ai-models)}.i-ai-tools{--tile-bg:var(--t-ai-tools);--tile-ink:var(--k-ai-tools)}.i-big-tech{--tile-bg:var(--t-big-tech);--tile-ink:var(--k-big-tech)}.i-hardware{--tile-bg:var(--t-hardware);--tile-ink:var(--k-hardware)}.i-policy{--tile-bg:var(--t-policy);--tile-ink:var(--k-policy)}.i-explainers{--tile-bg:var(--t-explainers);--tile-ink:var(--k-explainers)}.i-cybersecurity{--tile-bg:var(--t-cybersecurity);--tile-ink:var(--k-cybersecurity)}.i-jobs{--tile-bg:var(--t-jobs);--tile-ink:var(--k-jobs)}
+.feature{display:grid;grid-template-columns:1fr;gap:18px 34px;margin:0 0 16px;align-items:center;padding:22px 22px 24px;border-radius:18px;background:color-mix(in srgb,var(--tile-bg,var(--soft)) 55%,var(--bg))}
+.feature .itile{width:72px;height:72px;border-radius:18px}
+.feature a.t{display:block;font-family:var(--fs);font-size:clamp(26px,3.5vw,37px);font-weight:700;letter-spacing:-.3px;line-height:1.13;color:var(--ink);text-decoration:none;margin:10px 0 0}
+.feature a.t:hover{color:var(--accent-ink)}
+.feature .dek{color:var(--ink2);font-family:var(--fs);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:56ch}
+@media (min-width:860px){.feature{grid-template-columns:1fr auto;padding:30px 36px 32px}.feature .f-text{order:-1}.feature .itile{width:132px;height:132px;border-radius:30px}.feature .itile svg{width:50%;height:50%}}
+h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:40px 0 4px}
+h2.sect::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.grid{display:grid;grid-template-columns:1fr}
+.card{display:grid;grid-template-columns:26px 64px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.card .itile{width:64px;height:64px;border-radius:15px}
+.kline{display:block;margin:0 0 7px}
+.card a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;line-height:1.28;letter-spacing:-.2px;display:block}
+.card a.t:hover{color:var(--accent-ink)}
+.card .d{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){.card{grid-template-columns:44px 1fr;gap:6px 14px;padding:17px 0}.card .no{display:none}.card .itile{width:44px;height:44px;border-radius:11px}.card a.t{font-size:18.5px;line-height:1.28}.card .d{display:-webkit-box;margin-top:7px}.card .kline{margin-bottom:6px}}
+.alllink{display:inline-block;margin:20px 0 0;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink);text-decoration:none}
+.alllink:hover{text-decoration:underline}
+article.post{max-width:660px;margin:0 auto}
+.crumbs{font-family:var(--fm);font-size:11.5px;color:var(--muted);margin:0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent-ink)}
+.postkick{display:inline-block;margin:0 0 10px}
+h1{font-family:var(--fs);font-size:clamp(31px,5vw,44px);line-height:1.14;letter-spacing:-.4px;margin:.15em 0 .4em}
+.byline{display:flex;gap:9px;align-items:center;color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 26px;flex-wrap:wrap}
+.byline a{font-weight:600;color:var(--ink2)}
+.hero-ico{margin:0 0 14px}
+.hero-ico .itile{width:60px;height:60px;border-radius:16px}
+.post h2{font-family:var(--fs);font-size:25.5px;margin:1.7em 0 .5em;letter-spacing:-.2px;line-height:1.25}
+.post h3{font-family:var(--fs);font-size:20px;margin:1.4em 0 .4em}
+.post p,.post li{font-family:var(--fs);font-size:17.5px;line-height:1.78}
+.post p{text-wrap:pretty}
+.post li{margin-bottom:.35em}
+.post a{text-underline-offset:3px;text-decoration-thickness:1px}
+.post img{max-width:100%;height:auto;border-radius:10px}
+.post table{border-collapse:collapse;width:100%;font-family:var(--fu);font-size:14.5px;margin:1.4em 0;line-height:1.5}
+.post th,.post td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.post th{background:var(--soft);font-family:var(--fm);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.post blockquote{border-left:3px solid var(--accent);margin:1.4em 0;padding:.5em 1.2em;color:var(--ink2);background:var(--soft);border-radius:0 10px 10px 0;font-style:italic}
+.answer-first{font-size:18px;line-height:1.68;color:var(--ink2);background:var(--soft);border-left:4px solid var(--accent);padding:16px 20px 17px;border-radius:0 12px 12px 0}
+.answer-first::before{content:"The Signal";display:block;font:700 10.5px/1 var(--fm);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 9px;font-style:normal}
+.disclaimer,.methodology{font-family:var(--fu);font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:26px 0;line-height:1.6}
+.sources{margin-top:36px;border-top:1px solid var(--line);padding-top:18px}
+.sources h2,.post h2#faq,.related h2.sect{font-family:var(--fm);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:.2em 0 .8em;line-height:1.4}
+.sources h2::before,.post h2#faq::before{content:"";display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:3px}
+.post h2#faq{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sources ol{padding-left:20px;font-family:var(--fu);font-size:14.5px;line-height:1.7;color:var(--ink2)}
+.sources li{margin-bottom:5px}
+.share{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0;font-family:var(--fm);font-size:12px}
+.share a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;font-weight:500;color:var(--ink2);background:transparent}
+.share a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.related{margin-top:8px}
+.cardlist{list-style:none;padding:0;margin:0;display:block}
+.cardlist li{border-bottom:1px solid var(--line);padding:15px 2px;display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.cardlist .itile{width:44px;height:44px;border-radius:11px}
+.related .cardlist li{display:block}
+.cardlist a.t{font-family:var(--fs);font-weight:700;text-decoration:none;color:var(--ink);font-size:18px;line-height:1.32}
+.cardlist a.t:hover{color:var(--accent-ink)}
+.cardlist .m{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.listh1{font-size:clamp(26px,4vw,34px)}
+.intro{color:var(--muted);font-family:var(--fs);max-width:660px;margin:.2em 0 0;font-size:16.5px}
+.empty{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);max-width:560px}
+.docketstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,262px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:16px 2px 18px;margin:0 -2px}
+.docketstrip .dcard{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:14px 16px 15px;text-decoration:none;min-height:120px}
+.dcard .dtt{font-family:var(--fs);font-weight:700;color:var(--ink);font-size:16.5px;line-height:1.32;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .dsrc{margin-top:auto;color:var(--muted);font-family:var(--fm);font-size:11px}
+.dcard:hover{border-bottom-color:var(--accent)}
+.dcard.dmore{justify-content:center;border-top-color:var(--line);background:transparent;font-family:var(--fm);font-weight:700;font-size:13px;color:var(--accent-ink)}
+.docketpage .dockh1{margin:.1em 0 .3em}
+.dockh1 .dash{display:inline-block;width:26px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--k-ai-models),var(--k-hardware),var(--k-explainers));margin-right:12px;vertical-align:8px}
+.docketpage .dateline{color:var(--muted);font-family:var(--fm);font-size:12px;margin:0 0 8px}
+.docketlist{list-style:none;margin:24px 0 0;padding:0}
+.dentry{position:relative;border-top:1px solid var(--line);padding:22px 8px 22px 74px}
+.docketlist.show-mom .dentry{padding-right:96px}
+.dentry:first-child{border-top:0}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;background:var(--rail,var(--accent))}
+.dentry .dno{position:absolute;left:16px;top:22px;font-family:var(--fm);font-size:27px;font-weight:400;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--rail,var(--muted))}
+.dentry h2{font-family:var(--fs);font-size:21px;line-height:1.26;margin:0 0 8px;letter-spacing:-.2px}
+.dentry h2 a{text-decoration:none;color:var(--ink)}
+.dentry h2 a:hover{color:var(--accent-ink)}
+.dentry .ddek{margin:0 0 9px;font-family:var(--fs);font-size:16.5px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.dentry .ddek strong{color:var(--ink);font-weight:700}
+.dwhy{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:var(--ink2);max-width:64ch}
+.dwhy .lab{font-family:var(--fm);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink);margin-right:8px}
+.dwhy.cp .lab{color:var(--k-hardware)}
+.dentry .dmeta{margin:0;color:var(--muted);font-family:var(--fm);font-size:11.5px}
+.dentry .dmeta a{color:var(--muted)}
+.dmom{position:absolute;right:6px;top:23px;font-family:var(--fm);font-size:11px;color:var(--k-explainers);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.dlead{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--accent);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dtag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dpick{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dfoot{color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:28px;padding:16px 2px 0;max-width:76ch;line-height:1.65}
+.dfoot a{color:var(--muted);text-decoration:underline}
+.swipehint{display:none;color:var(--muted);font-family:var(--fm);font-size:11px;margin:4px 0 0}
+.docketline{font-family:var(--fm);font-size:12.5px;font-weight:700;margin:24px 0 0}
+.dstat{margin:0 0 9px;font-family:var(--fm);font-size:19px;font-weight:700;letter-spacing:-.4px;color:var(--rail,var(--accent-ink));font-variant-numeric:tabular-nums}
+.dcomm{margin:0 0 8px;font-family:var(--fs);font-style:italic;font-size:14px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;max-width:60ch}
+.dcomm .dattr{font-family:var(--fm);font-size:10.5px;font-style:normal;white-space:nowrap}
+.dkeep{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--keep-ink);background:var(--keep-bg);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:1px;display:inline-block;white-space:nowrap}
+.dshare{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;font-family:var(--fm);font-size:10.5px}
+.dshare a{border:1px solid var(--line);border-radius:99px;padding:4px 11px;text-decoration:none;font-weight:500;color:var(--muted)}
+.dshare a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.showrow{color:var(--muted);font-family:var(--fm);font-size:11.5px;margin:2px 0 8px;line-height:1.95}
+.showrow .lab{letter-spacing:.09em;text-transform:uppercase;font-size:10.5px}
+.showrow a{color:var(--muted);text-decoration:none}
+.showrow a:hover{color:var(--accent-ink)}
+.showrow a.on{color:var(--accent-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.deckgrid{columns:3 260px;column-gap:16px;margin:16px 0 0}
+.deckcard{break-inside:avoid;border:1px solid var(--line);border-top:3px solid var(--rail,var(--accent));border-radius:12px;background:var(--soft);padding:15px 17px 13px;margin:0 0 16px}
+.deckcard .kline{margin:0 0 4px}
+.deckcard h2{font-family:var(--fs);font-size:18.5px;line-height:1.3;margin:6px 0 8px;letter-spacing:-.2px}
+.deckcard h2 a{text-decoration:none;color:var(--ink)}
+.deckcard h2 a:hover{color:var(--accent-ink)}
+.deckcard .ddek{font-family:var(--fs);font-size:14.5px;line-height:1.55;margin:0 0 9px;color:var(--ink2)}
+.deckcard .ddek strong{color:var(--ink)}
+.deckcard .dstat{font-size:17px;margin:0 0 7px}
+.deckcard .dmeta{color:var(--muted);font-family:var(--fm);font-size:10.5px;margin:0;line-height:1.6}
+.deckcard .dmeta a{color:var(--muted)}
+.deckcard .dcdate{float:right;font-family:var(--fm);font-size:10.5px;color:var(--muted);text-decoration:none;font-variant-numeric:tabular-nums}
+.deckcard .dcdate:hover{color:var(--accent-ink)}
+@media (max-width:719px){
+nav.hubs{flex-wrap:wrap;overflow-x:visible;gap:2px 14px;padding:6px 0 8px;mask-image:none;-webkit-mask-image:none;font-size:12.5px}
+nav.hubs a{flex:0 0 auto;white-space:nowrap;padding:4px 0 6px;margin-bottom:0}
+.nl-full{display:none}
+.nl-short{display:inline}
+.docketlist{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-padding-left:2px;padding:10px 2px 16px}
+.dentry{flex:0 0 88%;scroll-snap-align:start;scroll-snap-stop:always;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:16px 17px 18px;overflow:hidden;min-height:min(66svh,560px);display:flex;flex-direction:column}
+.dentry>div{display:flex;flex-direction:column;flex:1;min-height:0}
+.dentry .dshare{margin-top:auto;padding-top:12px}
+.dentry:last-child{border-bottom:1px solid var(--line)}
+.dentry::before{left:0;right:0;top:0;bottom:auto;width:auto;height:5px;border-radius:0}
+.dentry .dno{position:static;display:block;font-size:30px;margin:0 0 8px}
+.dentry h2{font-size:19px}
+.dentry .ddek,.dwhy{max-width:none}
+.dmom{position:static;display:inline-block;margin:6px 0 0}
+.swipehint{display:block}
+}
+@supports selector(::scroll-marker){
+@media (max-width:719px){
+.docketlist{scroll-marker-group:after}
+.docketlist::scroll-marker-group{display:flex;justify-content:center;gap:7px;padding:12px 0 2px}
+.dentry::scroll-marker{content:"";width:7px;height:7px;border-radius:99px;background:var(--line)}
+.dentry::scroll-marker:target-current{background:var(--accent);width:16px}
+.dentry::scroll-marker:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swipehint{display:none}
+}
+}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 48px;color:var(--muted);font-size:13.5px}
+footer.site nav{display:flex;gap:8px 24px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--fm);font-size:12.5px}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent-ink);text-decoration:underline}
+footer.site p{margin:0;max-width:74ch;line-height:1.65}
+footer.site p a{text-decoration:underline}
+.standfirst{font-family:var(--fs);font-size:19px;line-height:1.56;color:var(--ink2);margin:2px 0 18px;max-width:33em}
+.toc{margin:0 0 28px;padding:15px 19px 13px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.toclabel{display:block;font-family:var(--fm);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t;column-width:250px;column-gap:28px}
+.toc li{counter-increment:t;margin:0 0 6px;font-size:14px;line-height:1.45;break-inside:avoid}
+.toc li::before{content:counter(t,decimal-leading-zero);font-family:var(--fm);font-size:10.5px;color:var(--muted);margin-right:8px}
+.toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--accent-ink);text-decoration:underline}
+.post h2[id]{scroll-margin-top:14px}
+.body>p:first-of-type::first-letter{font-family:var(--fs);float:left;font-size:3.1em;line-height:.82;padding:5px 9px 0 0;font-weight:700;color:var(--ink)}
+.body>p:last-child::after{content:" ■";color:var(--accent);font-size:.7em;vertical-align:1px}
+.docketstrip{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.docketstrip::-webkit-scrollbar{height:8px}
+.docketstrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.docketstrip::-webkit-scrollbar-track{background:transparent}
+@media (max-width:560px){.post table{display:block;overflow-x:auto}.post th,.post td{min-width:118px}}
+html[data-theme=dark]{--ink:#e9ebf2;--ink2:#c4cad7;--muted:#98a1b3;--bg:#0d0f14;--soft:#161a22;--line:#252b37;--accent:#818cf8;--accent-ink:#a5b0ff;--k-ai-models:#a5b0ff;--k-ai-tools:#5eead4;--k-big-tech:#c4b5fd;--k-hardware:#fbbf24;--k-policy:#b8b2ab;--k-explainers:#6ee7b7;--k-cybersecurity:#f87171;--k-jobs:#38bdf8;--keep-bg:#2c2612;--keep-ink:#e3c76a;--t-ai-models:#1c1f36;--t-ai-tools:#0f2624;--t-big-tech:#241b38;--t-hardware:#2d2113;--t-policy:#24221f;--t-explainers:#0f2820}
+html[data-theme=dark] .skip{color:#0d0f14}
+.nl{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:20px 22px;margin:40px 0}
+.nl h2{margin:0 0 5px;font-family:var(--fs);font-size:20px;letter-spacing:-.2px;line-height:1.25}
+.nl p{margin:0 0 14px;color:var(--ink2);font-size:14.5px;max-width:60ch}
+.nl form{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.nl label{font-family:var(--fm);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);flex:1 0 100%}
+.nl input[type=email]{flex:1 1 250px;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.nl input[type=email]::placeholder{color:var(--muted)}
+.nl button{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:11px 20px;cursor:pointer}
+.nl button:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nl .fine{margin:11px 0 0;font-family:var(--fm);font-size:11px;color:var(--muted)}
+html[data-theme=dark] .nl button{color:#0d0f14}
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="brand" href="/">The Tech <b>Docket</b></a>
+      <span class="tagline">Daily signal on tech &amp; AI — what the world is searching, and why</span>
+      <button id="themepill" class="themepill" type="button" aria-pressed="false" aria-label="Toggle dark theme"><span class="tp-l">Light</span><span class="tp-d">Dark</span></button>
+    </div>
+    <nav class="hubs" aria-label="Topics">
+      <a class="navdocket" href="/docket/">Today's Docket</a><a class="navdeck" href="/deck/">The Deck</a><a href="/topics/jobs/"><span class="nl-full">Tech Jobs &amp; Layoffs</span><span class="nl-short">Tech Jobs &amp; Layoffs</span></a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<article class="post">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> / <a href="/topics/ai-models/">AI Models</a> / <span>Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug</span>
+  </nav>
+  <div class="hero-ico"><span class="itile i-ai-models"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1l0 -12"/><path d="M9 9h6v6h-6l0 -6"/><path d="M3 10h2"/><path d="M3 14h2"/><path d="M10 3v2"/><path d="M14 3v2"/><path d="M21 10h-2"/><path d="M21 14h-2"/><path d="M14 21v-2"/><path d="M10 21v-2"/></svg></span></div>
+  <a class="kicker postkick k-ai-models" href="/topics/ai-models/">AI Models</a>
+  <h1>Gemini 4 Neon Benchmarks: Speed, API Cost &amp; Antigravity Bug</h1>
+  <div class="standfirst">Google DeepMind&#39;s Gemini 4 Neon scores 61 on Artificial Analysis and 87.4 on LiveBench 2.0 at $3/$15 per 1M tokens, while Antigravity Pro users hit desyncs.</div>
+  <div class="byline">
+    <span>By <a href="https://thetechdocket.com/authors/amber-jain/">Amber Jain</a></span>
+    <span>·</span>
+    <time datetime="2026-11-23T07:00:00+05:30">Published November 23, 2026</time>
+    
+    <span>·</span><span>8 min read</span>
+  </div>
+  
+
+  
+  <nav class="toc" aria-label="Contents">
+    <span class="toclabel">Contents</span>
+    <ol><li><a href="#how-gemini-4-neon-scores-across-frontier-benchmarks">How Gemini 4 Neon Scores Across Frontier Benchmarks</a></li><li><a href="#coding-agents-visual-reasoning-and-verbosity-trade-offs">Coding Agents, Visual Reasoning, and Verbosity Trade-Offs</a></li><li><a href="#inside-the-antigravity-entitlement-desync-and-cache-eviction-bugs">Inside the Antigravity Entitlement Desync and Cache Eviction Bugs</a></li><li><a href="#the-india-angle">The India Angle</a></li><li><a href="#what-to-watch">What to Watch</a></li></ol>
+  </nav>
+  
+
+  <div class="body"><p>Google DeepMind has released <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Gemini 4 Neon</a>, its fourth frontier model in seven weeks, scoring 61 on the Artificial Analysis Intelligence Index and 87.4 on LiveBench 2.0 at $3 per million input tokens and $15 per million output tokens. While Neon cuts task costs by 17% below Gemini 4 Carbon, Google AI Pro subscribers report Antigravity IDE entitlement lockouts and cache-miss quota drain.</p>
+<h2 id="how-gemini-4-neon-scores-across-frontier-benchmarks">How Gemini 4 Neon Scores Across Frontier Benchmarks</h2>
+<p>Independent evaluations published through November 22, 2026 show Gemini 4 Neon ranking first on LiveBench 2.0 at 87.4 overall and third on the Artificial Analysis Intelligence Index at 61, trailing only Anthropic&rsquo;s Claude Fable 5.2 and OpenAI&rsquo;s GPT-6.2 Astra per <a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a> and <a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD&rsquo;s AI SiteFlow review</a>.</p>
+<p>Rather than a single vendor sweeping every evaluation, the late November 2026 leaderboard divides across three distinct domains, per <a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD&rsquo;s analysis of 17 frontier models</a>. Google&rsquo;s Gemini 4 Neon leads browser automation at 95.6 and research synthesis at 94.5 on LiveBench 2.0, completing runs in 22.3 minutes at an average cost of $2.654 per task. Anthropic&rsquo;s Claude Fable 5.2 leads the LMSYS Chatbot Arena at 1,448 Elo and tops the nine-benchmark Artificial Analysis Intelligence Index v5.0.1 at 65 in Max Effort mode ($26.54 per task, 42.7 minutes). OpenAI&rsquo;s GPT-6.2 Astra leads LiveBench 2.0 software engineering with a 91.9 coding score, finishing tasks in 15.1 minutes at $1.941 per run.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Model &amp; Effort Tier</th>
+<th style="text-align: left;">Artificial Analysis Index</th>
+<th style="text-align: left;">LiveBench 2.0 / Arena Highlight</th>
+<th style="text-align: left;">Avg Task Cost &amp; Runtime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Gemini 4 Neon (xhigh)</strong></td>
+<td style="text-align: left;">61 (#3 overall; 60 at high)</td>
+<td style="text-align: left;">87.4 LiveBench overall; 95.6 browser; 94.5 research</td>
+<td style="text-align: left;">$6.44 on AA Index (22.8 min); $2.654 on LiveBench (22.3 min) (<a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Claude Fable 5.2 (max)</strong></td>
+<td style="text-align: left;">65 (#1 overall; 54 at low)</td>
+<td style="text-align: left;">1,448 LMSYS Chatbot Arena Elo; 57% MKA Climb WSR</td>
+<td style="text-align: left;">$26.54 at max effort (42.7 min); $3.10 at low effort (5.6 min) (<a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GPT-6.2 Astra (max)</strong></td>
+<td style="text-align: left;">62 (#2 overall; 60 at high)</td>
+<td style="text-align: left;">91.9 LiveBench 2.0 coding; 1,291 Arena Elo</td>
+<td style="text-align: left;">$4.00 on AA Index (14.9 min); $1.941 on LiveBench (15.1 min) (<a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini 4 Carbon (high)</strong></td>
+<td style="text-align: left;">60 (58 at medium; 54 at low)</td>
+<td style="text-align: left;">28.4% GDP.pdf; 54% MKA Climb WSR</td>
+<td style="text-align: left;">$7.76 standard AA Index cost (~36 min at ~57 tok/s) (<a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Claude Opus 5.5 (max)</strong></td>
+<td style="text-align: left;">59 (57 at xhigh; 52 at high)</td>
+<td style="text-align: left;">58 on AA Coding Agent Index</td>
+<td style="text-align: left;">$10.04 on AA Index (25.3 min); $12.61 on Coding Agent Index (<a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GPT-6.2 Sol (max)</strong></td>
+<td style="text-align: left;">57 (56 at xhigh and high)</td>
+<td style="text-align: left;">80.3 LiveBench overall; 90.6 reasoning</td>
+<td style="text-align: left;">$1.01 on AA Index (10.1 min); $0.523 on LiveBench (<a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DeepSeek V4.1 Flash 1017</strong></td>
+<td style="text-align: left;">Open-weights tier</td>
+<td style="text-align: left;">80.4 LiveBench coding; 89.1 reasoning</td>
+<td style="text-align: left;">$0.195 per LiveBench task (<a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Inside Google&rsquo;s own lineup across our <a href="/topics/ai-models/">AI Models hub</a>, Gemini 4 Neon eliminates the generation bottleneck that slowed Gemini 4 Carbon. According to <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis benchmark testing</a>, Neon streams 104 to 110 output tokens per second versus Carbon&rsquo;s 57 tokens per second, trimming average Intelligence Index task time by 40% from 36 minutes down to 21 to 22.8 minutes. Even though Neon emits roughly 15% more output tokens per task than Carbon (283 million total output tokens across the suite versus the 65.4 million peer median), its 25% lower standard token pricing ($3/$15 per million tokens versus Carbon&rsquo;s $4/$20 standard rate) cuts average evaluation cost by 17% from $7.76 to $6.44 per task, per the <a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis model page</a>. Carbon&rsquo;s temporary $2/$10 promotional pricing expires on November 30, 2026.</p>
+<h2 id="coding-agents-visual-reasoning-and-verbosity-trade-offs">Coding Agents, Visual Reasoning, and Verbosity Trade-Offs</h2>
+<p>Tested inside Google&rsquo;s Antigravity CLI, Gemini 4 Neon (xhigh) scores 59 on the Artificial Analysis Coding Agent Index at $6.86 per task, beating Gemini 4 Carbon (55) and matching Claude Fable 5.2 (58) and Claude Opus 5.5 (58) at less than half their execution cost per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>.</p>
+<p>For engineering teams automating multi-file refactoring and test generation, per-task completion cost matters more than raw token prices—a dynamic we detailed in <a href="/articles/real-cost-of-running-ai/">the real cost of running AI</a>. Running the same Coding Agent Index in Claude Code costs $12.61 per task on Claude Opus 5.5 (max) and $15.47 per task on Claude Fable 5.2 (xhigh), meaning Gemini 4 Neon ($6.86) lowers agentic coding spend by 45.6% against Opus 5.5 and 55.7% against Fable 5.2, per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>. Neon offers a 1-million-token context window with text, image, audio, and video inputs across four effort settings (<code>low</code>, <code>medium</code>, <code>high</code>, and <code>xhigh</code>), where <code>low</code> costs $0.75 per task in 3.7 minutes and <code>high</code> scores 60 at $3.74 in 14.8 minutes (<a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a>).</p>
+<p>Visual reasoning and document presentation show the largest gains over earlier releases like <a href="/articles/gemini-3-6-flash-what-google-launched/">Gemini 3.6 Flash</a>. On <code>GDP.pdf</code>, Gemini 4 Neon (high) scores 33.4%, jumping 5 percentage points above Gemini 4 Carbon (high, 28.4%), while reaching 1,700 Elo overall and 1,771 Elo for Presentation Quality on <code>AA-Briefcase</code>—45 points ahead of prior leader Claude Sonnet 5.5 (max, 1,726 Elo), per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>. On Google&rsquo;s Multimodal Knowledge Agent (<code>MKA</code>) benchmark, Neon hits a 56% Climb Win-Stay Rate, matching Claude Fable 5.2 (57%). The main trade-off at <code>xhigh</code> effort is a 59.30-second time to first token and high verbosity (3.482% output-to-input ratio across 8.12 billion input tokens), making local models like <a href="/articles/inkling-2-mini-looped-transformer-laptops/">Inkling 2 Mini</a> faster for small inner-loop edits (<a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Artificial Analysis</a>).</p>
+<h2 id="inside-the-antigravity-entitlement-desync-and-cache-eviction-bugs">Inside the Antigravity Entitlement Desync and Cache Eviction Bugs</h2>
+<p>Despite Google advertising Gemini 4 Neon across Antigravity IDE for Pro and Ultra plans, developer threads from November 19 to November 23, 2026 document server-side entitlement lockouts and a prompt-cache eviction bug that burns 58% of weekly quota in three hours, per the <a href="https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824" rel="noopener" target="_blank">Google AI Developers Forum</a>.</p>
+<p>Three distinct server-side issues affect developers on Antigravity <code>v1.5.14</code>:</p>
+<ol>
+<li><strong>Direct-Paid Pro Entitlement Desync:</strong> Paid Google AI Pro subscribers (including 5 TB Google One plans) report that while Gemini 4 Neon, Hydrogen, and Argon work on <code>gemini.google.com</code>, the desktop Antigravity IDE grays out all Gemini 4 models as <code>Unavailable</code> and restricts sessions to Gemini 3.8 Flash, per <a href="https://discuss.ai.google.dev/t/entitlement-desync-gemini-4-argon-hydrogen-neon-unavailable-despite-active-google-ai-pro-subscription/203774" rel="noopener" target="_blank">November 22 forum bug reports</a>. Re-authenticating OAuth and resetting onboarding do not fix the stalled backend <code>userTier</code> sync.</li>
+<li><strong>Reliance Jio Partner Bundle Exclusion &amp; Third-Party Sunset:</strong> Indian subscribers on the Reliance Jio Google AI Pro bundle found all Gemini 4 models blocked in Antigravity alongside a notice that third-party models—Claude Sonnet 4.6 (Thinking), Claude Opus 4.6 (Thinking), and GPT-OSS 120B (Medium)—will be removed on November 30, 2026, per the <a href="https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675" rel="noopener" target="_blank">Jio bundle thread</a>. On November 20, 2026, Google support confirmed that the Jio bundle only grants Pro&rsquo;s 5-hour refreshing quota on Gemini 3.8 Flash and excludes Gemini 4 unless users supply a paid <code>GEMINI_API_KEY</code> in Antigravity CLI (<code>v1.5.13+</code>).</li>
+<li><strong>Unchanged-Prefix Cache Collapse Above 250K Context:</strong> SQLite logs from <code>~/.gemini/antigravity/conversations/*.db</code> on November 22, 2026—after Google&rsquo;s November 21 cache patch—reveal severe server-side cache eviction (<code>antigravity-cli</code> Issue #1720), per <a href="https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824" rel="noopener" target="_blank">developer telemetry</a>. Across 385 calls (48.7 million uncached input tokens, 39.6 million cache-read tokens), 141 calls above 50K context suffered zero cache reads, generating 45.1 million uncached tokens. Miss rates jump from 10% at 50K–100K tokens (92 calls) and 29% at 100K–250K (100 calls) to 43% at 250K–300K (51 calls) and 65% at 300K–500K (123 calls), multiplying input token costs 20x from the $0.15 cached rate to the $3.00 uncached rate (<a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>).</li>
+</ol>
+<h2 id="the-india-angle">The India Angle</h2>
+<p>For Indian engineering teams billing in USD at ₹92.61 per dollar, adding a 3.5% forex markup and 18% IGST brings 1,000 Gemini 4 Neon coding tasks ($6,860 list) to ₹7,75,913 landed—saving ₹9,73,849 over Claude Fable 5.2 ($15,470 list) per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>.</p>
+<p>Whether building internal enterprise tools or launching <a href="/articles/10-ai-micro-businesses-replace-tech-job-2027/">AI micro-businesses in 2027</a> tracked on our <a href="/topics/jobs/">Tech Jobs &amp; Layoffs hub</a>, Indian teams pay 22.13% above headline USD API pricing on cross-border corporate cards. At the November 23, 2026 exchange rate of ₹92.61 per USD, a 3.5% forex fee adds ₹3.24 per dollar (to ₹95.85) and 18% IGST adds ₹17.25 per dollar, creating an effective landed multiplier of ₹113.11 per $1.00 of API spend. Across 1,000 agentic tasks, verified task averages from <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a> and <a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD</a> translate into four rupee budgets:</p>
+<ul>
+<li><strong>Gemini 4 Neon in Antigravity CLI ($6.86/task):</strong> $6,860 list spend equals ₹6,35,305 at spot plus ₹22,236 forex and ₹1,18,372 IGST, totaling <strong>₹7,75,913 landed</strong> (₹775.91 per task, per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>).</li>
+<li><strong>Claude Opus 5.5 in Claude Code ($12.61/task):</strong> $12,610 list spend equals <strong>₹14,26,277 landed</strong> (₹1,426.28 per task), costing ₹6,50,364 more per 1,000 tasks than Neon (<a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>).</li>
+<li><strong>Claude Fable 5.2 in Claude Code ($15.47/task):</strong> $15,470 list spend reaches <strong>₹17,49,762 landed</strong> (₹1,749.76 per task, per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>).</li>
+<li><strong>DeepSeek V4.1 Flash 1017 on LiveBench ($0.195/task):</strong> 1,000 coding and reasoning tasks cost $195 list or <strong>₹22,056 landed</strong> (₹22.06 per task), continuing the unit-cost split we tracked after the <a href="/articles/deepseek-api-price-hike/">DeepSeek API price hike</a> and <a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD&rsquo;s November 2026 report</a>.</li>
+</ul>
+<p>For Indian developers on the Reliance Jio Google AI Pro plan, plugging a metered <code>GEMINI_API_KEY</code> into Antigravity CLI to bypass the Jio Gemini 4 block carries financial exposure while <code>antigravity-cli</code> Issue #1720 remains open, per the <a href="https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675" rel="noopener" target="_blank">Jio bundle thread</a>. Because 65% of calls at 300K–500K context miss the cache and bill at $3.00 (₹339.32 landed) instead of $0.15 (₹16.97 landed) per million input tokens (<a href="https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824" rel="noopener" target="_blank">developer telemetry</a>), teams using metered keys should cap session context below 200K tokens or run local edits on <a href="/articles/inkling-2-mini-looped-transformer-laptops/">Inkling 2 Mini</a>.</p>
+<h2 id="what-to-watch">What to Watch</h2>
+<p>Three late-November 2026 milestones over the coming week will decide whether Gemini 4 Neon becomes the default enterprise agentic backbone or stalls on IDE billing friction, per <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis pricing schedules</a> and <a href="https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675" rel="noopener" target="_blank">Google AI Developers Forum disclosures</a>:</p>
+<ul>
+<li><strong>November 30 Pricing &amp; Model Cutoff:</strong> Gemini 4 Carbon&rsquo;s $2/$10 promotional pricing reverts to $4/$20 on November 30, 2026 (<a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Artificial Analysis</a>), the same day Antigravity removes third-party Claude 4.6 and GPT-OSS 120B access (<a href="https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675" rel="noopener" target="_blank">Google AI Developers Forum</a>).</li>
+<li><strong>Antigravity KV-Cache Patch (<code>Issue #1720</code>):</strong> Watch whether Google&rsquo;s next server-side caching fix brings 300K–500K context miss rates down from 65% so long-horizon agent sessions stop draining weekly quotas in three hours (<a href="https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824" rel="noopener" target="_blank">Google AI Developers Forum</a>).</li>
+<li><strong>Task-Specific Multi-Model Routing:</strong> With Gemini 4 Neon leading browser automation (95.6), GPT-6.2 Astra leading coding (91.9), and Claude Fable 5.2 leading human preference (1,448 Elo), production AI gateways will increasingly route sub-tasks across all three APIs (<a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">AIFOD</a>).</li>
+</ul></div>
+
+  
+  <h2 id="faq">Frequently asked questions</h2>
+  
+  <h3>What is Gemini 4 Neon and how does it differ from Gemini 4 Carbon?</h3>
+  <p>Gemini 4 Neon is Google DeepMind fourth frontier release in seven weeks, offering a full multimodal input pipeline across text, image, audio, and video with four configurable reasoning effort tiers. Compared with Gemini 4 Carbon, Neon cuts standard token pricing, doubles generation throughput, and finishes complex agentic evaluations faster.</p>
+  
+  <h3>Why are Gemini 4 models showing as unavailable in Google Antigravity on Jio Pro plans?</h3>
+  <p>Google support confirmed on the developer forum that partner promotional bundles such as the Reliance Jio Google AI Pro offer grant higher quotas on Gemini 3.8 Flash without unlocking the Gemini 4 family inside Antigravity IDE. In addition, direct-paid Google AI Pro subscribers have reported backend account-tier synchronization failures.</p>
+  
+  <h3>Why do multi-turn coding sessions in Antigravity burn through weekly quota so quickly?</h3>
+  <p>Telemetry logs shared by developers on the Google AI Developers Forum show that long-context conversations frequently suffer full server-side prompt cache misses on unchanged prefixes. When a cache read drops to zero on a large repository context, the entire prompt is re-billed as uncached input tokens.</p>
+  
+  
+
+  <div class="share" aria-label="Share this article">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/&text=Gemini%204%20Neon%20Benchmarks%3A%20Speed%2C%20API%20Cost%20%26%20Antigravity%20Bug" rel="noopener" target="_blank">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/?text=Gemini%204%20Neon%20Benchmarks%3A%20Speed%2C%20API%20Cost%20%26%20Antigravity%20Bug%20https%3A//thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/" rel="noopener" target="_blank">WhatsApp</a>
+    <a href="https://www.reddit.com/submit?url=https%3A//thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/&title=Gemini%204%20Neon%20Benchmarks%3A%20Speed%2C%20API%20Cost%20%26%20Antigravity%20Bug" rel="noopener" target="_blank">Reddit</a>
+    <a href="https://news.ycombinator.com/submitlink?u=https%3A//thetechdocket.com/articles/gemini-4-neon-benchmarks-pricing-antigravity-desync/&t=Gemini%204%20Neon%20Benchmarks%3A%20Speed%2C%20API%20Cost%20%26%20Antigravity%20Bug" rel="noopener" target="_blank">Hacker News</a>
+  </div>
+
+  <section class="sources">
+    <h2 id="sources">Sources &amp; further reading</h2>
+    <ol>
+      <li><a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener" target="_blank">Google continues to accelerate its release cadence with Gemini 4 Neon — Artificial Analysis</a> <em>(primary source)</em></li>
+      <li><a href="https://artificialanalysis.ai/models/gemini-4-neon" rel="noopener" target="_blank">Gemini 4 Neon: Intelligence, Performance &amp; Price Analysis — Artificial Analysis</a> <em>(primary source)</em></li>
+      <li><a href="https://af.net/realtime/gemini-4-neon-claude-fable-5-2-and-gpt-6-2-divide-2026-ai-benchmarks/" rel="noopener" target="_blank">Gemini 4 Neon, Claude Fable 5.2 and GPT-6.2 Divide 2026 AI Benchmarks — AIFOD / AI SiteFlow</a> <em>(primary source)</em></li>
+      <li><a href="https://discuss.ai.google.dev/t/google-ai-pro-jio-bundle-all-gemini-4-models-including-hydrogen-neon-marked-unavailable-in-antigravity/202675" rel="noopener" target="_blank">Google AI Pro (Jio bundle): All Gemini 4 models marked Unavailable in Antigravity — Google AI Developers Forum</a> <em>(primary source)</em></li>
+      <li><a href="https://discuss.ai.google.dev/t/entitlement-desync-gemini-4-argon-hydrogen-neon-unavailable-despite-active-google-ai-pro-subscription/203774" rel="noopener" target="_blank">Entitlement Desync: Gemini 4 Unavailable Despite Active Google AI Pro Subscription — Google AI Developers Forum</a> <em>(primary source)</em></li>
+      <li><a href="https://discuss.ai.google.dev/t/gemini-4-neon-high-cache-misses-on-unchanged-prefix-still-burn-quota-after-nov-21-fix-data-from-nov-22/203824" rel="noopener" target="_blank">Gemini 4 Neon High: Cache Misses on Unchanged Prefix Still Burn Quota — Google AI Developers Forum</a> <em>(primary source)</em></li>
+      
+    </ol>
+  </section>
+
+  <div class="methodology">
+    <strong>How this article was made:</strong> topic selected from same-day search-trend
+    and community-momentum data across India and the US; researched, drafted and
+    fact-checked with AI assistance under the site's automated quality gates
+    (source citations, originality, no-clickbait and accuracy checks), on the
+    editorial standards set by Amber Jain. Details in our
+    <a href="/editorial-policy/">editorial policy</a>.
+    Spotted an error? <a href="mailto:jainamber88@gmail.com?subject=Correction: gemini-4-neon-benchmarks-pricing-antigravity-desync">Email a correction</a>.
+  </div>
+
+  <p class="docketline">More of today, in 60 seconds: <a href="/docket/">Today's Docket →</a></p>
+
+  
+
+
+  
+  <section class="related">
+    <h2 class="sect">Related on The Tech Docket</h2>
+    <ul class="cardlist">
+      
+      <li><a class="t" href="/articles/cursor-chinese-open-weight-models-sarvam-deepseek/">Cursor Weighs Dropping Chinese AI as Sarvam Sells DeepSeek</a>
+        <div class="m">AI Models · November 22, 2026</div></li>
+      
+      <li><a class="t" href="/articles/inkling-2-mini-looped-transformer-laptops/">Inkling 2 Mini: 26B Looped AI Model Built for Laptops</a>
+        <div class="m">AI Models · November 21, 2026</div></li>
+      
+      <li><a class="t" href="/articles/10-ai-micro-businesses-replace-tech-job-2027/">10 Micro-Businesses to Replace a Tech Job in 2027 (With Math)</a>
+        <div class="m">Tech Jobs &amp; Layoffs · November 22, 2026</div></li>
+      
+    </ul>
+  </section>
+  
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial policy</a>
+      <a href="/authors/amber-jain/">Author</a>
+      <a href="/sitemap/">All articles</a>
+      <a href="https://thetechdocket.com/feed.xml">RSS</a>
+      <a href="mailto:jainamber88@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 The Tech Docket. Independent, first-party publication. Search-demand data informs what we cover; a disclosed human + AI editorial process produces it — see our <a href="/editorial-policy/">editorial policy</a>.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://thetechdocket.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
