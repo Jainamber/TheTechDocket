@@ -303,3 +303,28 @@ ALL HARD GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\ga
 pushed ΓåÆ https://thetechdocket.com/articles/cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide/
 2026-11-24 13:50:51 | Article publish finished (build=0, gate=0, publish=0)
 2026-11-24 13:50:51 | Publishing docket for 2026-11-24
+[PASS] D01-docket-built
+[PASS] D02-item-count
+[PASS] D03-item-sources
+[PASS] D04-no-clickbait
+[PASS] D05-tiny-format
+[PASS] D06-lead-is-article
+[PASS] D07-zero-js
+[PASS] D08-page-weight
+[PASS] D13-hub-valid
+[PASS] D10-tags-picks
+[PASS] D11-watch-quota
+[PASS] D12-stakes-line
+[PASS] D14-stat-line
+[PASS] D15-community-read
+[PASS] D16-save-worthy
+[PASS] D17-card-anchors
+[PASS] D18-deck-integrity
+[PASS] D19-social-slides
+[PASS] D09-canonicals
+
+ALL DOCKET GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-24-docket.json
+pushed ΓåÆ https://thetechdocket.com/docket/2026-11-24/
+2026-11-24 13:50:57 | Docket publish finished (exit=0)
+Everything up-to-date
+2026-11-24 13:50:59 | git push exit=0
