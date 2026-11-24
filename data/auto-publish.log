@@ -160,3 +160,98 @@ build_site: loading articles...
 build_site: generating site assets...
 built 36 article(s) -> C:\NewStartsNov\TheTechDocket\docs
 2026-11-24 12:09:00 | Publishing docket for 2026-11-24
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\NewStartsNov\TheTechDocket\engine\run.py", line 198, in <module>
+    main()
+    ~~~~^^
+  File "C:\NewStartsNov\TheTechDocket\engine\run.py", line 124, in main
+    docket_publish(args.date, push=not args.no_push)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\NewStartsNov\TheTechDocket\engine\docket.py", line 555, in docket_publish
+    print(f"pushed \u2192 {cfg['site']['base_url'].rstrip('/')}/docket/{day}/")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 7: character maps to <undefined>
+[PASS] D01-docket-built
+[PASS] D02-item-count
+[PASS] D03-item-sources
+[PASS] D04-no-clickbait
+[PASS] D05-tiny-format
+[PASS] D06-lead-is-article
+[PASS] D07-zero-js
+[PASS] D08-page-weight
+[PASS] D13-hub-valid
+[PASS] D10-tags-picks
+[PASS] D11-watch-quota
+[PASS] D12-stakes-line
+[PASS] D14-stat-line
+[PASS] D15-community-read
+[PASS] D16-save-worthy
+[PASS] D17-card-anchors
+[PASS] D18-deck-integrity
+[PASS] D19-social-slides
+[PASS] D09-canonicals
+
+ALL DOCKET GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-24-docket.json
+2026-11-24 12:09:10 | Docket publish finished (exit=1)
+Everything up-to-date
+2026-11-24 12:09:12 | git push exit=0
+2026-11-24 13:50:18 | === Auto-Publish check for 2026-11-24 (Python: C:\NewStartsNov\TheTechDocket\.venv\Scripts\python.exe) ===
+From https://github.com/jainamber/thetechdocket
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2026-11-24 13:50:19 | git pull exit=0
+2026-11-24 13:50:19 | Building & gating article: cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide
+build_site: loading config...
+build_site: loading articles...
+build_site: generating site assets...
+built 36 article(s) -> C:\NewStartsNov\TheTechDocket\docs
+[PASS] G01-byline
+[PASS] G02-author-name-plain
+[PASS] G03-author-page
+[PASS] G13-bio-verified
+[PASS] G04-date-valid
+[PASS] G05-real-update
+[PASS] G06-citations
+[PASS] G07-stats-sourced
+[PASS] G08-no-clickbait
+[PASS] G09-originality
+[PASS] G10-original-analysis
+[PASS] G11-review-log
+[PASS] G12-ai-disclosure
+[PASS] G14-hero-crops
+[PASS] G16-hero-img-tag
+[PASS] G15-max-image-preview
+[PASS] G17-og-image
+[PASS] G18-below-fold-lazy
+[PASS] G19-jsonld
+[PASS] G20-indexable
+[PASS] G21-page-weight
+[PASS] G22-ymyl
+[PASS] G23-no-affiliate
+[PASS] G24-site-pages
+[PASS] P01-static-meta
+[PASS] G25-first-party
+[PASS] G26-no-ai-slop
+[PASS] S01-title-length
+[PASS] S02-meta-desc
+[PASS] S03-single-h1
+[PASS] S04-answer-first
+[PASS] S05-h2-count
+[PASS] S06-heading-hierarchy
+[PASS] S07-word-count
+[PASS] S08-slug
+[PASS] S08b-slug-stable
+[PASS] S09-internal-links
+[PASS] S10-hub-link
+[PASS] S11-open-graph
+[PASS] S12-twitter-card
+[PASS] S13-img-alts
+[PASS] S14-in-sitemap-feed
+[PASS] S15-desc-not-title
+
+ALL HARD GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-24-cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide.json

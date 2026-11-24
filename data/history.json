@@ -575,6 +575,24 @@
       },
       "gate_report": "data/gate-reports/2026-11-23-watchlist-100-ats-hiring-velocity-vs-layoff-headlines-2026.json",
       "url": "https://thetechdocket.com/articles/watchlist-100-ats-hiring-velocity-vs-layoff-headlines-2026/"
+    },
+    {
+      "date": "2026-11-24",
+      "slug": "cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide",
+      "title": "Cisco Expressway CVE-2026-76466: Root RCE Exploited & Patch",
+      "keyword": "cisco expressway cve-2026-76466 patch",
+      "hub": "cybersecurity",
+      "published_at": "2026-11-24T13:50:46.214243+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-24T06:18:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-24-cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide.json",
+      "url": "https://thetechdocket.com/articles/cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide/"
     }
   ]
 }

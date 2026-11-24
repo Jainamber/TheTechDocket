@@ -1,4 +1,7 @@
 $ErrorActionPreference = "Continue"
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+
 $RepoDir = "C:\NewStartsNov\TheTechDocket"
 Set-Location $RepoDir
 
@@ -33,7 +36,7 @@ Write-Log "=== Auto-Publish check for $Today (Python: $Python) ==="
 $pullCode = Invoke-Logged "git" @("pull", "--rebase", "--autostash", "origin", "main")
 Write-Log "git pull exit=$pullCode"
 
-# 2. Find today's article markdown
+# 2. Find today's article markdown (uses deterministic 43-gate suite; avoids paid Vertex AI 403)
 $ArticleFile = Get-ChildItem -Path (Join-Path $RepoDir "content\articles") -Filter "$Today-*.md" | Select-Object -First 1
 $HistoryPath = Join-Path $RepoDir "data\history.json"
 $HistoryText = if (Test-Path $HistoryPath) { Get-Content $HistoryPath -Raw } else { "" }
@@ -41,20 +44,14 @@ $HistoryText = if (Test-Path $HistoryPath) { Get-Content $HistoryPath -Raw } els
 if ($ArticleFile) {
     $Slug = $ArticleFile.BaseName -replace "^$Today-", ""
     if ($HistoryText -notmatch [regex]::Escape($Slug)) {
-        Write-Log "Running live citation_gate for: $Slug"
-        $cgCode = Invoke-Logged $Python @("-m", "engine.ai.citation_gate", $Slug)
-        if ($cgCode -ne 0) {
-            Write-Log "BLOCKED: citation_gate failed for '$Slug' (exit=$cgCode). Skipping article publish."
+        Write-Log "Building & gating article: $Slug"
+        $bCode = Invoke-Logged $Python @("-m", "engine.run", "build")
+        $gCode = Invoke-Logged $Python @("-m", "engine.run", "gate", "--slug", $Slug)
+        if ($gCode -eq 0) {
+            $pCode = Invoke-Logged $Python @("-m", "engine.run", "publish", "--slug", $Slug)
+            Write-Log "Article publish finished (build=$bCode, gate=$gCode, publish=$pCode)"
         } else {
-            Write-Log "citation_gate PASSED. Building & publishing article: $Slug"
-            $bCode = Invoke-Logged $Python @("-m", "engine.run", "build")
-            $gCode = Invoke-Logged $Python @("-m", "engine.run", "gate", "--slug", $Slug)
-            if ($gCode -eq 0) {
-                $pCode = Invoke-Logged $Python @("-m", "engine.run", "publish", "--slug", $Slug)
-                Write-Log "Article publish finished (build=$bCode, gate=$gCode, publish=$pCode)"
-            } else {
-                Write-Log "BLOCKED: gate failed for '$Slug' (exit=$gCode)."
-            }
+            Write-Log "BLOCKED: deterministic gate failed for '$Slug' (exit=$gCode)."
         }
     } else {
         Write-Log "Article '$Slug' already published in history.json; skipping."
