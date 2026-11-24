@@ -1,2 +1,162 @@
 ﻿2026-11-22 10:40:37 | === Auto-Publish check for 2026-11-22 ===
 2026-11-23 08:00:05 | === Auto-Publish check for 2026-11-23 ===
+2026-11-24 10:38:32 | === Auto-Publish check for 2026-11-24 ===
+2026-11-24 12:08:17 | === Auto-Publish check for 2026-11-24 (Python: C:\NewStartsNov\TheTechDocket\.venv\Scripts\python.exe) ===
+From https://github.com/jainamber/thetechdocket
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2026-11-24 12:08:19 | git pull exit=0
+2026-11-24 12:08:19 | Running live citation_gate for: cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide
+{
+  "slug": "cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide",
+  "date": "2026-11-24",
+  "checked_at": "2026-11-24T12:08:29.079820+05:30",
+  "passed": false,
+  "hard_failures": 11,
+  "sources": [
+    {
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "title": "Cisco Expressway Series Remote Code Execution Vulnerability (cisco-sa-vcs-static-cred-hr7EWZ8t) ΓÇö Cisco PSIRT",
+      "primary": true,
+      "claims": [
+        "Unauthenticated attackers are actively exploiting CVE-2026-76466, a CVSS 9.8 hard-coded credential and certificate-validation flaw in clustered Cisco Expressway-C and Expressway-E gateways, to execute root commands and pivot into internal networks, prompting an urgent Cisco PSIRT advisory update on November 23, 2026.",
+        "Rated CVSS 9.8 under CWE-798, CVE-2026-76466 allows an unauthenticated remote attacker to invoke database remote procedure calls as `root` across clustered Cisco Expressway appliances running release X15.5.3 or earlier, according to Cisco's official security advisory.",
+        "Second, even when an administrator explicitly sets `TLS Verify Mode` to `Enabled` for clustering, the gateway fails to validate client certificates presented during the database handshake, as detailed in Cisco PSIRT advisory cisco-sa-vcs-static-cred-hr7EWZ8t."
+      ],
+      "needs_corroboration": false,
+      "supported": false,
+      "quote": "",
+      "fetch_ok": false,
+      "reason": "gate call error: RuntimeError: HTTP 403 from gemini-3.5-flash@global: {\"code\": 403, \"message\": \"This API method requires billing to be enabled. Please enable billing on project #project-ae910c49-44ae-4e3e-bcd by visiting https://console.developers.google.com/billing/enable?project=project-ae910c49-44ae-4e3e-bcd then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\", \"status\": \"PERMISSIO"
+    },
+    {
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "title": "Known Exploited Vulnerabilities Catalog ΓÇö CISA",
+      "primary": true,
+      "claims": [
+        "Cybersecurity and Infrastructure Security Agency to add CVE-2026-76466 to the CISA Known Exploited Vulnerabilities catalog on November 20, 2026 alongside a November 23 federal remediation deadline.",
+        "Over the next 72 hours, network defenders should expect automated ransomware and credential-harvesting botnets to incorporate CVE-2026-76466 scans alongside the nine other exploited flaws added this week to the CISA KEV catalog."
+      ],
+      "needs_corroboration": false,
+      "supported": false,
+      "quote": "",
+      "fetch_ok": false,
+      "reason": "gate call error: RuntimeError: HTTP 403 from gemini-3.5-flash@global: {\"code\": 403, \"message\": \"This API method requires billing to be enabled. Please enable billing on project #project-ae910c49-44ae-4e3e-bcd by visiting https://console.developers.google.com/billing/enable?project=project-ae910c49-44ae-4e3e-bcd then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\", \"status\": \"PERMISSIO"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "title": "Cisco Expressway vulnerability exploited to breach internal networks (CVE-2026-76466) ΓÇö Help Net Security",
+      "primary": false,
+      "claims": [
+        "In the first documented intrusion analyzed by Help Net Security and threat researchers at F6, attackers compromised two internet-facing Expressway gateways, pivoted to two internal cluster nodes, and deployed custom Python scripts to scan SMB shares, SQL Server, WinRM, and GitLab repositories.",
+        "Root Exploit Mechanism | Persistent cookies + missing client-cert validation when cluster `TLS Verify Mode` is `Enabled` | Apply X15.5.20 patch; restrict ports `TCP/4371ΓÇô4372` at firewall to trusted peer IPs | Help Net Security",
+        "Host & Network IOCs | Erlang log `nodeup 'wombat@127.0.0.1'`; scripts in `/mnt/harddisk/i{0-9}{4}[a-zA-Z]?/*.py`; IPs `66.179.31.32`, `18.130.47.116` | Hunt Erlang logs, inspect `/mnt/harddisk/`, and rotate GitLab/SQL/AD credentials if hit | Help Net Security"
+      ],
+      "needs_corroboration": false,
+      "supported": false,
+      "quote": "",
+      "fetch_ok": false,
+      "reason": "gate call error: RuntimeError: HTTP 403 from gemini-3.5-flash@global: {\"code\": 403, \"message\": \"This API method requires billing to be enabled. Please enable billing on project #project-ae910c49-44ae-4e3e-bcd by visiting https://console.developers.google.com/billing/enable?project=project-ae910c49-44ae-4e3e-bcd then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\", \"status\": \"PERMISSIO"
+    },
+    {
+      "url": "https://mlq.ai/news/cisa-adds-exploited-cisco-expressway-sap-netweaver-vmware-vcenter-and-apache-roller-flaws-to-its-kev-list/",
+      "title": "CISA adds exploited Cisco Expressway, SAP NetWeaver, VMware vCenter flaws to KEV ΓÇö MLQ.ai",
+      "primary": false,
+      "claims": [],
+      "needs_corroboration": true,
+      "supported": false,
+      "quote": "",
+      "fetch_ok": false,
+      "reason": "needs_corroboration: no claim could be constructed (not cited inline in the body, no matching source-pool entry)"
+    },
+    {
+      "url": "https://tradingeconomics.com/india/currency",
+      "title": "USD/INR Live Exchange Rate ΓÇö Trading Economics (Nov 24, 2026)",
+      "primary": true,
+      "claims": [
+        "For India's 2,100-plus Global Capability Centres and BFSI enterprises running hybrid Cisco Webex and Jabber clusters, an unpatched Expressway-E gateway exposes core source-code repositories to significant regulatory and incident-response costs at today's Γé╣93.02/USD exchange rate on Trading Economics.",
+        "Procuring an external 40-hour emergency threat-hunting and forensic retainer priced at $15,000 from a global incident-response firm costs Γé╣13,95,360 at Γé╣93.024/USD per Trading Economics; adding a 3.5% cross-border payment markup (Γé╣48,838) and 18% IGST under reverse-charge rules (Γé╣2,59,956) pushes the landed containment bill to Γé╣17,04,154ΓÇöbefore accounting for mandatory 6-hour CERT-In breach reporting deadlines or DPDP Act penalty exposure."
+      ],
+      "needs_corroboration": false,
+      "supported": false,
+      "quote": "",
+      "fetch_ok": false,
+      "reason": "gate call error: RuntimeError: HTTP 403 from gemini-3.5-flash@global: {\"code\": 403, \"message\": \"This API method requires billing to be enabled. Please enable billing on project #project-ae910c49-44ae-4e3e-bcd by visiting https://console.developers.google.com/billing/enable?project=project-ae910c49-44ae-4e3e-bcd then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\", \"status\": \"PERMISSIO"
+    }
+  ],
+  "failures": [
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "claim": "Unauthenticated attackers are actively exploiting CVE-2026-76466, a CVSS 9.8 hard-coded credential and certificate-validation flaw in clustered Cisco Expressway-C and Expressway-E gateways, to execute root commands and pivot into internal networks, prompting an urgent Cisco PSIRT advisory update on November 23, 2026.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "claim": "Rated CVSS 9.8 under CWE-798, CVE-2026-76466 allows an unauthenticated remote attacker to invoke database remote procedure calls as `root` across clustered Cisco Expressway appliances running release X15.5.3 or earlier, according to Cisco's official security advisory.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "claim": "Second, even when an administrator explicitly sets `TLS Verify Mode` to `Enabled` for clustering, the gateway fails to validate client certificates presented during the database handshake, as detailed in Cisco PSIRT advisory cisco-sa-vcs-static-cred-hr7EWZ8t.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "claim": "Cybersecurity and Infrastructure Security Agency to add CVE-2026-76466 to the CISA Known Exploited Vulnerabilities catalog on November 20, 2026 alongside a November 23 federal remediation deadline.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "claim": "Over the next 72 hours, network defenders should expect automated ransomware and credential-harvesting botnets to incorporate CVE-2026-76466 scans alongside the nine other exploited flaws added this week to the CISA KEV catalog.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "claim": "In the first documented intrusion analyzed by Help Net Security and threat researchers at F6, attackers compromised two internet-facing Expressway gateways, pivoted to two internal cluster nodes, and deployed custom Python scripts to scan SMB shares, SQL Server, WinRM, and GitLab repositories.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "claim": "Root Exploit Mechanism | Persistent cookies + missing client-cert validation when cluster `TLS Verify Mode` is `Enabled` | Apply X15.5.20 patch; restrict ports `TCP/4371ΓÇô4372` at firewall to trusted peer IPs | Help Net Security",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "claim": "Host & Network IOCs | Erlang log `nodeup 'wombat@127.0.0.1'`; scripts in `/mnt/harddisk/i{0-9}{4}[a-zA-Z]?/*.py`; IPs `66.179.31.32`, `18.130.47.116` | Hunt Erlang logs, inspect `/mnt/harddisk/`, and rotate GitLab/SQL/AD credentials if hit | Help Net Security",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://tradingeconomics.com/india/currency",
+      "claim": "For India's 2,100-plus Global Capability Centres and BFSI enterprises running hybrid Cisco Webex and Jabber clusters, an unpatched Expressway-E gateway exposes core source-code repositories to significant regulatory and incident-response costs at today's Γé╣93.02/USD exchange rate on Trading Economics.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "uncorroborated_paywalled",
+      "url": "https://tradingeconomics.com/india/currency",
+      "claim": "Procuring an external 40-hour emergency threat-hunting and forensic retainer priced at $15,000 from a global incident-response firm costs Γé╣13,95,360 at Γé╣93.024/USD per Trading Economics; adding a 3.5% cross-border payment markup (Γé╣48,838) and 18% IGST under reverse-charge rules (Γé╣2,59,956) pushes the landed containment bill to Γé╣17,04,154ΓÇöbefore accounting for mandatory 6-hour CERT-In breach reporting deadlines or DPDP Act penalty exposure.",
+      "detail": "no fetchable+supported source corroborates this claim, and its only source is unfetchable"
+    },
+    {
+      "type": "needs_corroboration_unmet",
+      "url": "https://mlq.ai/news/cisa-adds-exploited-cisco-expressway-sap-netweaver-vmware-vcenter-and-apache-roller-flaws-to-its-kev-list/",
+      "claim": "",
+      "detail": "no extractable claim for this source (not cited inline, no source-pool match) and no other source in the article is independently verified"
+    }
+  ]
+}
+2026-11-24 12:08:29 | BLOCKED: citation_gate failed for 'cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide' (exit=1). Skipping article publish.
+2026-11-24 12:08:29 | Building site for docket 2026-11-24
+build_site: loading config...
+build_site: loading articles...
+build_site: generating site assets...
+built 36 article(s) -> C:\NewStartsNov\TheTechDocket\docs
+2026-11-24 12:09:00 | Publishing docket for 2026-11-24

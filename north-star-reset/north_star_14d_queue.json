@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0",
+  "project": "The Tech Docket (thetechdocket.com)",
+  "owner": "Amber Jain",
+  "canonical_author": {
+    "name": "Amber Jain",
+    "slug": "amber-jain",
+    "email": "jainamber88@gmail.com",
+    "retired_slug_redirect_from": "saurab-jain"
+  },
+  "north_star_metric": "Weekly Visitors (Mon 00:00 IST - Sun 23:59 IST)",
+  "season_window": "2026-11-23 to 2026-12-06 (Weeks 3-4 Milestone: 500-1,000 visitors/week)",
+  "freeze_rules": [
+    "ZERO new UI/CSS redesigns or layout tweaks for 14 days",
+    "ZERO new topic hubs or Phase 2 Ex-Tech Bench build until >=5,000 monthly visitors OR >=1,000 Buttondown subs",
+    "STRICT 1 article/day cap (no multi-article bursts)",
+    "NEVER delete indexed articles (prune-old-content.yml cron disabled)"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-11-23",
+      "weekday": "Monday",
+      "phase": "Stop SEO Bleeding & Unify Identity",
+      "target_lever": "Lever 1 (Retrieval) + Enabler (Telemetry)",
+      "mode": "HYBRID (Auto-Script + 15-min Human Approval)",
+      "automated_actions": [
+        "Execute TASK_01_TECH_CLEANUP_AND_AMBER_JAIN_FIX.md against repo",
+        "Replace 'Saurab Jain' with 'Amber Jain' across NORTH_STAR.md, STRATEGY-90D.md, config.yaml, and active templates",
+        "Create HTML meta-refresh + canonical redirect stubs at docs/authors/saurab-jain/index.html -> /authors/amber-jain/ and docs/topics/ai-tools/index.html -> /topics/ai-models/",
+        "Disable weekly cron in .github/workflows/prune-old-content.yml (keep workflow_dispatch only) and restore high-traffic deleted slugs (e.g., free-ai-tiers-compared) from git history",
+        "Fix G22-ymyl hard failure on 2026-11-22-what-rises-when-tech-jobs-fall-2027-shifts.md and re-sync data/history.json with all live articles",
+        "Trim data/openings-history.json to Watchlist-100 reqs only and move root BACKUP_* files out of git tracking"
+      ],
+      "manual_owner_actions": [
+        "Enable 'Always Use HTTPS' in Cloudflare DNS + GitHub Pages settings (fixes http://thetechdocket.com/docket/ leak)",
+        "Export Pages.csv and Queries.csv from Google Search Console into data/search-console/ and run python -m engine.feedback",
+        "Review and push the cleanup PR/commit"
+      ],
+      "expected_nsm_impact": "Stops 404 crawl-budget bleed, restores #2 traffic page, unifies Amber Jain E-E-A-T entity, and turns on GSC feedback loop.",
+      "status": "PENDING"
+    },
+    {
+      "day": 2,
+      "date": "2026-11-24",
+      "weekday": "Tuesday",
+      "phase": "Entity Signals & Syndication Setup",
+      "target_lever": "Lever 3 (Referrals) + Lever 1 (Entity Authority)",
+      "mode": "MANUAL_OWNER (20 mins) + AUTO_BUILD",
+      "automated_actions": [
+        "Draft 1 daily article strictly within 1/day cap (enforce deny_keywords so off-topic stories never pass)",
+        "After owner fills twitter_handle and social_profiles in config.yaml, run python -m engine.run build to emit updated Organization & ProfilePage JSON-LD for Amber Jain"
+      ],
+      "manual_owner_actions": [
+        "Create/align official handles for The Tech Docket + Amber Jain on LinkedIn Page, X/Twitter, Dev.to, and Hashnode",
+        "Populate twitter_handle and social_profiles in config.yaml",
+        "Request Indexing in GSC for the 5 newest /topics/jobs/ articles published Nov 22-23"
+      ],
+      "expected_nsm_impact": "Establishes verified off-site entity sameAs graph and triggers immediate Google crawling on new Watchlist-100 pages.",
+      "status": "PENDING"
+    },
+    {
+      "day": 3,
+      "date": "2026-11-25",
+      "weekday": "Wednesday",
+      "phase": "First Major Referral Drop (Hacker News)",
+      "target_lever": "Lever 3 (External Referrals)",
+      "mode": "HYBRID (Auto-Prep + Human Post)",
+      "automated_actions": [
+        "Verify https://thetechdocket.com/topics/jobs/ and /topics/jobs/openings/ load fast (<90KB core, 0 console errors)",
+        "Generate fresh stats callout from data/openings.json for Show HN founder comment (authored as Amber Jain)"
+      ],
+      "manual_owner_actions": [
+        "Post 'Show HN' from LAUNCH_POSTS_SHOW_HN_REDDIT_SYNDICATION.md around 18:30-20:30 IST (8:00-10:00 AM EST)",
+        "Reply genuinely to every technical question in the first 2 hours (methodology, ATS endpoints, zero-JS architecture)"
+      ],
+      "expected_nsm_impact": "Single highest-leverage spike toward the 500-1,000 weekly visitors milestone + organic developer backlinks.",
+      "status": "PENDING"
+    },
+    {
+      "day": 4,
+      "date": "2026-11-26",
+      "weekday": "Thursday",
+      "phase": "Canonical Syndication Wave 1 (Dev.to + Hashnode)",
+      "target_lever": "Lever 3 (Syndication) + Lever 1 (DA 80+ Crawl Signals)",
+      "mode": "HYBRID (Auto-Format + 5-min Manual Paste)",
+      "automated_actions": [
+        "Generate canonical-ready Markdown exports (with canonical_url front-matter) for: (1) watchlist-100-ats-hiring-velocity-vs-layoff-headlines-2026 and (2) real-cost-of-running-ai"
+      ],
+      "manual_owner_actions": [
+        "Publish Article #1 on Dev.to and Hashnode with canonical_url set to thetechdocket.com",
+        "Share a 1-chart LinkedIn post by Amber Jain linking back to the Watchlist-100 dossier"
+      ],
+      "expected_nsm_impact": "Zero duplicate-content risk; creates immediate DA 80+ referral links and accelerates AI-search citation indexing.",
+      "status": "PENDING"
+    },
+    {
+      "day": 5,
+      "date": "2026-11-27",
+      "weekday": "Friday",
+      "phase": "India Community Referral Drop (r/developersIndia)",
+      "target_lever": "Lever 3 (External Referrals)",
+      "mode": "HYBRID (Auto-Prep + Human Post)",
+      "automated_actions": [
+        "Verify India numbers in india-it-headcount-gcc-hiring-2026-divergence (top 5 IT net -6,981 FY26, GCC 19.2M sq ft H1 2026, Sept 17 2026 EPFO Rs 15k->25k ceiling break)",
+        "Prepare clean native Markdown table for Reddit (no promotional fluff)"
+      ],
+      "manual_owner_actions": [
+        "Post native data breakdown from LAUNCH_POSTS_SHOW_HN_REDDIT_SYNDICATION.md into r/developersIndia between 10:00-12:00 IST",
+        "Engage in comments with verifiable methodology (no self-promo spam)"
+      ],
+      "expected_nsm_impact": "Captures high-intent Indian engineering traffic and drives newsletter signups from readers tracking IT vs. GCC hiring.",
+      "status": "PENDING"
+    },
+    {
+      "day": 6,
+      "date": "2026-11-28",
+      "weekday": "Saturday",
+      "phase": "GEO Refresh on Top Historical Traffic Earner",
+      "target_lever": "Lever 2 (GEO Recency Window & CTR)",
+      "mode": "AUTOMATED_DRAFT + OWNER_APPROVAL",
+      "automated_actions": [
+        "Read updated data/insights.json to identify top 2 articles with highest GSC impressions or visits older than 25 days",
+        "Draft substantive Q4 2026 refresh for #1 candidate (e.g., free-ai-tiers-compared once restored) with updated pricing/dates, updated: 2026-11-28, and update_note (satisfies G05-real-update)"
+      ],
+      "manual_owner_actions": [
+        "Approve and publish refreshed article; request re-indexing in GSC"
+      ],
+      "expected_nsm_impact": "Re-enters 30-day ChatGPT Search / Perplexity recency window on proven traffic winners.",
+      "status": "PENDING"
+    },
+    {
+      "day": 7,
+      "date": "2026-11-29",
+      "weekday": "Sunday",
+      "phase": "Weekly Watchlist-100 Refresh + First Buttondown Digest",
+      "target_lever": "Lever 4 (Retention) + Lever 1 (Fresh Dataset)",
+      "mode": "HYBRID (Auto-Pipeline + 10-min Send)",
+      "automated_actions": [
+        "08:00 IST: GitHub Action refresh-openings.yml updates data/openings.json and openings-history.json",
+        "08:30 IST: Run Phase 1B Watchlist-100 weekly audit (SEC 8-K Item 2.05, CA/TX/WA/NY WARN, BSE/NSE Reg 30) and update data/jobs-map.json",
+        "Draft Buttondown Issue #1 ('The Tech Docket — Weekly Verified Signal') summarizing confirmed layoffs, top surging ATS companies, and top 3 articles by Amber Jain"
+      ],
+      "manual_owner_actions": [
+        "Review and send Buttondown Issue #1 at 19:00 IST",
+        "Record Week 1 Reset NSM tally (Mon-Sun GoatCounter + GA4 weekly visitors)"
+      ],
+      "expected_nsm_impact": "Converts Week 1 referral spikes into recurring weekly returning readers (Lever 4).",
+      "status": "PENDING"
+    },
+    {
+      "day": 8,
+      "date": "2026-11-30",
+      "weekday": "Monday",
+      "phase": "Week 1 NSM Audit & GSC Query Mining",
+      "target_lever": "Enabler (Measurement) + Lever 2 (CTR Optimization)",
+      "mode": "HYBRID (10-min Export + Auto-Analysis)",
+      "automated_actions": [
+        "Re-run python -m engine.feedback after GSC CSV drop and regenerate data/reports/analytics-latest.html",
+        "Identify top 5 queries with high impressions and low CTR (<3%) for title/meta-description optimization"
+      ],
+      "manual_owner_actions": [
+        "Export fresh 7-day GSC Pages.csv and Queries.csv into data/search-console/",
+        "Verify North Star progress vs. 500-1,000 weekly visitors target"
+      ],
+      "expected_nsm_impact": "Replaces guesswork with real query-level demand feeding engine/scoring.py.",
+      "status": "PENDING"
+    },
+    {
+      "day": 9,
+      "date": "2026-12-01",
+      "weekday": "Tuesday",
+      "phase": "Canonical Syndication Wave 2 (Dev.to + Hashnode)",
+      "target_lever": "Lever 3 (Syndication & Backlinks)",
+      "mode": "HYBRID (Auto-Format + 5-min Paste)",
+      "automated_actions": [
+        "Generate canonical-ready Markdown exports for: (1) global-tech-layoffs-2026-filings-vs-headlines and (2) india-it-headcount-gcc-hiring-2026-divergence"
+      ],
+      "manual_owner_actions": [
+        "Publish both with canonical_url on Dev.to / Hashnode",
+        "Post a short X/LinkedIn thread contrasting statutory filings vs. viral layoff trackers"
+      ],
+      "expected_nsm_impact": "Compounds domain authority and referral inflow on your core Jobs/India moat.",
+      "status": "PENDING"
+    },
+    {
+      "day": 10,
+      "date": "2026-12-02",
+      "weekday": "Wednesday",
+      "phase": "Flagship First-Party Data Audit #2",
+      "target_lever": "Lever 2 (GEO Citation Winning) + Lever 3 (Shareable Asset)",
+      "mode": "HYBRID (Auto-Data Pull + Editorial Review)",
+      "automated_actions": [
+        "Run Phase 1C: generate 1 flagship 'Reality vs. Headline' article using Week 2 Watchlist-100 ATS diffs (net new roles added vs. stale reqs) or a viral layoff/VEP debunk",
+        "Run full gate suite (G01-G26, S01-S14) with zero hard failures"
+      ],
+      "manual_owner_actions": [
+        "Review factual accuracy, publish, and request GSC indexing"
+      ],
+      "expected_nsm_impact": "Creates another original primary-data URL that journalists, newsletters, and LLMs cite.",
+      "status": "PENDING"
+    },
+    {
+      "day": 11,
+      "date": "2026-12-03",
+      "weekday": "Thursday",
+      "phase": "Community Distribution Drop #3 (r/cscareerquestions or LinkedIn Carousel)",
+      "target_lever": "Lever 3 (External Referrals)",
+      "mode": "HYBRID (Auto-Draft + Human Post)",
+      "automated_actions": [
+        "Export 1-chart summary + 5-slide carousel via python -m engine.run social from Wednesday's Watchlist-100 audit"
+      ],
+      "manual_owner_actions": [
+        "Post native data takeaway + chart to LinkedIn (as Amber Jain) and one targeted subreddit (r/cscareerquestions or r/tech) following sub rules"
+      ],
+      "expected_nsm_impact": "Drives high-RPM US/UK traffic (3-4x higher monetization value per STRATEGY-90D.md).",
+      "status": "PENDING"
+    },
+    {
+      "day": 12,
+      "date": "2026-12-04",
+      "weekday": "Friday",
+      "phase": "CTR & Internal-Linking Precision Pass",
+      "target_lever": "Lever 2 (SERP CTR) + Lever 4 (Pages/Session)",
+      "mode": "AUTOMATED_AUDIT + OWNER_APPROVAL",
+      "automated_actions": [
+        "Audit top 10 articles from GSC impressions: tighten titles (35-65 chars) and meta descriptions (110-165 chars) without changing slugs (S08b-slug-stable)",
+        "Ensure every Jobs/AI Economics article links naturally in-body to /topics/jobs/ and /topics/jobs/openings/"
+      ],
+      "manual_owner_actions": [
+        "Approve title/meta diffs, rebuild, and push"
+      ],
+      "expected_nsm_impact": "Lifts organic CTR on existing impressions and routes article readers into sticky tracker pages.",
+      "status": "PENDING"
+    },
+    {
+      "day": 13,
+      "date": "2026-12-05",
+      "weekday": "Saturday",
+      "phase": "GEO Refresh #2 & Exclusion-List Audit",
+      "target_lever": "Lever 2 (AI Citation Trust) + Data Integrity",
+      "mode": "AUTOMATED_AUDIT",
+      "automated_actions": [
+        "Run 8-Point SOP Audit across all rows in data/jobs-map.json (confirm zero Hard-Ban sources, zero averaged ranges, zero pledges in realized hiring totals)",
+        "Refresh 1 aged high-potential article in place (with updated: and update_note:)"
+      ],
+      "manual_owner_actions": [
+        "Quick 5-minute review and push"
+      ],
+      "expected_nsm_impact": "Preserves domain trust and AI-citation eligibility while keeping archive evergreen.",
+      "status": "PENDING"
+    },
+    {
+      "day": 14,
+      "date": "2026-12-06",
+      "weekday": "Sunday",
+      "phase": "Week 2 Checkpoint & Phase 2 Gate Check",
+      "target_lever": "All 4 Levers + Phase 2 Unlock Gate",
+      "mode": "HYBRID (Auto-Report + Owner Decision)",
+      "automated_actions": [
+        "08:00 IST: refresh-openings.yml runs; 08:30 IST: weekly Watchlist-100 jobs-map refresh",
+        "Compile 14-day North Star Scorecard comparing Nov 23-Dec 6 Weekly Visitors against the 500-1,000 target and Phase 2 Bench unlock gate (>=5,000 monthly visitors OR >=1,000 Buttondown subs)",
+        "Draft Buttondown Issue #2"
+      ],
+      "manual_owner_actions": [
+        "Send Buttondown Issue #2",
+        "Review 14-day Scorecard: keep Phase 2 (Ex-Tech Bench) locked until unlock threshold is met; double down on whichever channel (HN/Reddit/Dev.to/Search) produced highest weekly visitors"
+      ],
+      "expected_nsm_impact": "Enforces NORTH_STAR.md discipline and locks in the highest-ROI solo loop for Weeks 5-8 (2,000-3,500 visitors/wk).",
+      "status": "PENDING"
+    }
+  ]
+}
