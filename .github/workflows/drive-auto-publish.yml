@@ -1,0 +1,145 @@
+name: Cloud Auto-Publish from Drive (3-Day Trial)
+
+on:
+  schedule:
+    # Daily at 02:00 UTC (07:30 AM IST — 30 min before local Auto-Publish.ps1 fallback)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Optional IST date override (YYYY-MM-DD)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloud-auto-publish
+  cancel-in-progress: false
+
+jobs:
+  cloud-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install build & Drive auth dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml jinja2 markdown pillow markupsafe google-auth
+
+      - name: Resolve IST date & check 3-day trial circuit breaker
+        id: trial
+        run: |
+          if [ -n "${{ inputs.target_date }}" ]; then
+            TODAY="${{ inputs.target_date }}"
+          else
+            TODAY=$(TZ=Asia/Kolkata date +%Y-%m-%d)
+          fi
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+
+          set +e
+          python -m engine.drive_sync check-trial --date "$TODAY"
+          CODE=$?
+          set -e
+          if [ "$CODE" -eq 2 ]; then
+            echo "allowed=false" >> "$GITHUB_OUTPUT"
+            # Commit halted state once so future runs skip cleanly
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/cloud-publish-trial.json || true
+            git diff --cached --quiet || (git commit -m "chore: halt cloud auto-publish after 3-day trial" && git push)
+          else
+            echo "allowed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pull today's article & docket from Google Drive
+        if: steps.trial.outputs.allowed == 'true'
+        id: pull
+        env:
+          GDRIVE_SA_KEY: ${{ secrets.GDRIVE_SA_KEY }}
+          VERTEX_SA_KEY: ${{ secrets.VERTEX_SA_KEY }}
+        run: |
+          TODAY="${{ steps.trial.outputs.today }}"
+          set +e
+          python -m engine.drive_sync pull --date "$TODAY"
+          PULL_CODE=$?
+          set -e
+          echo "pull_code=$PULL_CODE" >> "$GITHUB_OUTPUT"
+
+      - name: Build, gate, and publish article & docket
+        if: steps.trial.outputs.allowed == 'true' && steps.pull.outputs.pull_code == '0'
+        id: pub
+        run: |
+          TODAY="${{ steps.trial.outputs.today }}"
+          PUBLISHED_ANY=0
+          FAILED_ANY=0
+
+          # 1. Article publish (idempotent via history.json)
+          for f in content/articles/${TODAY}-*.md; do
+            [ -e "$f" ] || continue
+            BASE=$(basename "$f" .md)
+            SLUG="${BASE#${TODAY}-}"
+            if grep -q "\"$SLUG\"" data/history.json 2>/dev/null; then
+              echo "Article $SLUG already in history.json; skipping."
+              PUBLISHED_ANY=1
+              continue
+            fi
+            echo "Running build + gate + publish for $SLUG..."
+            if python -m engine.run build \
+              && python -m engine.run gate --slug "$SLUG" \
+              && python -m engine.run publish --slug "$SLUG"; then
+              PUBLISHED_ANY=1
+            else
+              echo "Article gate/publish failed for $SLUG"
+              FAILED_ANY=1
+            fi
+          done
+
+          # 2. Docket publish (idempotent via docs/docket/YYYY-MM-DD/index.html)
+          if [ -f "data/docket/${TODAY}.md" ]; then
+            if [ ! -f "docs/docket/${TODAY}/index.html" ]; then
+              python -m engine.run build
+            fi
+            if python -m engine.run docket-publish --date "$TODAY"; then
+              PUBLISHED_ANY=1
+            else
+              echo "Docket publish failed for $TODAY"
+              FAILED_ANY=1
+            fi
+          fi
+
+          echo "published_any=$PUBLISHED_ANY" >> "$GITHUB_OUTPUT"
+          echo "failed_any=$FAILED_ANY" >> "$GITHUB_OUTPUT"
+
+      - name: Record trial outcome & push to main
+        if: steps.trial.outputs.allowed == 'true'
+        run: |
+          TODAY="${{ steps.trial.outputs.today }}"
+          if [ "${{ steps.pull.outputs.pull_code }}" != "0" ]; then
+            python -m engine.drive_sync record --date "$TODAY" --status failed --note "Drive pull failed (check GDRIVE_SA_KEY secret & folder sharing)"
+          elif [ "${{ steps.pub.outputs.failed_any }}" = "1" ] || [ "${{ steps.pub.outputs.published_any }}" = "0" ]; then
+            python -m engine.drive_sync record --date "$TODAY" --status failed --note "No files published or gate failed"
+          else
+            python -m engine.drive_sync record --date "$TODAY" --status success --note "Cloud auto-publish succeeded"
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/articles/ data/ docs/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "auto: cloud publish for ${TODAY}"
+            git pull --rebase origin main
+            git push origin main
+          fi
