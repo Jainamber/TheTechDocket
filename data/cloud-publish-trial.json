@@ -1,0 +1,13 @@
+{
+  "trial_start": "2026-11-25",
+  "trial_end": "2026-11-27",
+  "min_successes_required": 2,
+  "halted": false,
+  "runs": {
+    "2026-11-25": {
+      "status": "failed",
+      "recorded_at_ist": "2026-11-25T16:28:13+05:30",
+      "note": "Drive pull failed (check GDRIVE_SA_KEY secret & folder sharing)"
+    }
+  }
+}
