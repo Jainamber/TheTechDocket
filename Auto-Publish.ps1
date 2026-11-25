@@ -40,9 +40,11 @@ Write-Log "git pull exit=$pullCode"
 $ArticleFile = Get-ChildItem -Path (Join-Path $RepoDir "content\articles") -Filter "$Today-*.md" | Select-Object -First 1
 $HistoryPath = Join-Path $RepoDir "data\history.json"
 $HistoryText = if (Test-Path $HistoryPath) { Get-Content $HistoryPath -Raw } else { "" }
+$PublishedSlug = $null
 
 if ($ArticleFile) {
     $Slug = $ArticleFile.BaseName -replace "^$Today-", ""
+    $PublishedSlug = $Slug
     if ($HistoryText -notmatch [regex]::Escape($Slug)) {
         Write-Log "Building & gating article: $Slug"
         $bCode = Invoke-Logged $Python @("-m", "engine.run", "build")
@@ -75,6 +77,19 @@ if (Test-Path $DocketFile) {
     Write-Log "No docket file found for $Today yet."
 }
 
-# 4. Ensure any new commits are pushed to origin/main
+# 4. Daily Launchpad refresh (non-fatal; updates distribution launchpad for today's article)
+if ($PublishedSlug) {
+    Write-Log "Refreshing Launchpad share-kit for: $PublishedSlug"
+    $shCode = Invoke-Logged $Python @("-m", "engine.run", "share", "--slug", $PublishedSlug)
+    Write-Log "Launchpad refresh finished (exit=$shCode)"
+}
+
+# 5. Daily Analytics & North Star report refresh (non-fatal)
+Write-Log "Refreshing Analytics feedback & North Star HTML report"
+$fbCode = Invoke-Logged $Python @("-m", "engine.run", "feedback")
+$rpCode = Invoke-Logged $Python @("-m", "engine.run", "report")
+Write-Log "Analytics refresh finished (feedback=$fbCode, report=$rpCode)"
+
+# 6. Ensure any new commits are pushed to origin/main
 $pushCode = Invoke-Logged "git" @("push", "origin", "main")
 Write-Log "git push exit=$pushCode"

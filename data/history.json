@@ -593,6 +593,24 @@
       },
       "gate_report": "data/gate-reports/2026-11-24-cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide.json",
       "url": "https://thetechdocket.com/articles/cisco-expressway-cve-2026-76466-root-rce-exploited-patch-guide/"
+    },
+    {
+      "date": "2026-11-25",
+      "slug": "deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x",
+      "title": "DeepMind Gemini 4 Carbon Cuts Quantum Costs 290x in Lean 4",
+      "keyword": "deepmind gemini 4 carbon lean 4 quantum",
+      "hub": "ai-models",
+      "published_at": "2026-11-25T10:18:23.512273+05:30",
+      "review": {
+        "facts_verified": true,
+        "sources_checked": true,
+        "title_promise_check": true,
+        "no_fabrication": true,
+        "policy_pass": true,
+        "reviewed_at": "2026-11-25T06:26:00+05:30"
+      },
+      "gate_report": "data/gate-reports/2026-11-25-deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x.json",
+      "url": "https://thetechdocket.com/articles/deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x/"
     }
   ]
 }

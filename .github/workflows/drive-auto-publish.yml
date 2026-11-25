@@ -76,19 +76,23 @@ jobs:
           set -e
           echo "pull_code=$PULL_CODE" >> "$GITHUB_OUTPUT"
 
-      - name: Build, gate, and publish article & docket
+      - name: Build, gate, and publish article & docket + refresh Launchpad & Analytics
         if: steps.trial.outputs.allowed == 'true' && steps.pull.outputs.pull_code == '0'
         id: pub
+        env:
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
         run: |
           TODAY="${{ steps.trial.outputs.today }}"
           PUBLISHED_ANY=0
           FAILED_ANY=0
+          LATEST_SLUG=""
 
           # 1. Article publish (idempotent via history.json)
           for f in content/articles/${TODAY}-*.md; do
             [ -e "$f" ] || continue
             BASE=$(basename "$f" .md)
             SLUG="${BASE#${TODAY}-}"
+            LATEST_SLUG="$SLUG"
             if grep -q "\"$SLUG\"" data/history.json 2>/dev/null; then
               echo "Article $SLUG already in history.json; skipping."
               PUBLISHED_ANY=1
@@ -118,6 +122,13 @@ jobs:
             fi
           fi
 
+          # 3. Daily Launchpad & Analytics refresh (non-fatal)
+          if [ -n "$LATEST_SLUG" ]; then
+            python -m engine.run share --slug "$LATEST_SLUG" || true
+          fi
+          python -m engine.run feedback || true
+          python -m engine.run report || true
+
           echo "published_any=$PUBLISHED_ANY" >> "$GITHUB_OUTPUT"
           echo "failed_any=$FAILED_ANY" >> "$GITHUB_OUTPUT"
 
@@ -139,7 +150,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "auto: cloud publish for ${TODAY}"
+            git commit -m "auto: cloud publish, launchpad & analytics for ${TODAY}"
             git pull --rebase origin main
             git push origin main
           fi

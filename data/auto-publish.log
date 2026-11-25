@@ -328,3 +328,75 @@ pushed ΓåÆ https://thetechdocket.com/docket/2026-11-24/
 2026-11-24 13:50:57 | Docket publish finished (exit=0)
 Everything up-to-date
 2026-11-24 13:50:59 | git push exit=0
+2026-11-25 08:04:21 | === Auto-Publish check for 2026-11-25 (Python: C:\NewStartsNov\TheTechDocket\.venv\Scripts\python.exe) ===
+From https://github.com/jainamber/thetechdocket
+ * branch            main       -> FETCH_HEAD
+   12a780f..32eb08c  main       -> origin/main
+Updating 12a780f..32eb08c
+Created autostash: 46ee9c9
+Fast-forward
+ data/inbox/2026-11-24.json | 1783 ++++++++++++++++++++++++++++++++++++++++++++
+ data/insights.json         |   31 +-
+ 2 files changed, 1801 insertions(+), 13 deletions(-)
+ create mode 100644 data/inbox/2026-11-24.json
+Applied autostash.
+2026-11-25 08:04:23 | git pull exit=0
+2026-11-25 08:04:23 | No article file found for 2026-11-25 yet.
+2026-11-25 08:04:23 | No docket file found for 2026-11-25 yet.
+Everything up-to-date
+2026-11-25 08:04:25 | git push exit=0
+2026-11-25 10:17:09 | === Auto-Publish check for 2026-11-25 (Python: C:\NewStartsNov\TheTechDocket\.venv\Scripts\python.exe) ===
+From https://github.com/jainamber/thetechdocket
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2026-11-25 10:17:10 | git pull exit=0
+2026-11-25 10:17:10 | Building & gating article: deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x
+build_site: loading config...
+build_site: loading articles...
+build_site: generating site assets...
+built 37 article(s) -> C:\NewStartsNov\TheTechDocket\docs
+[PASS] G01-byline
+[PASS] G02-author-name-plain
+[PASS] G03-author-page
+[PASS] G13-bio-verified
+[PASS] G04-date-valid
+[PASS] G05-real-update
+[PASS] G06-citations
+[PASS] G07-stats-sourced
+[PASS] G08-no-clickbait
+[PASS] G09-originality
+[PASS] G10-original-analysis
+[PASS] G11-review-log
+[PASS] G12-ai-disclosure
+[PASS] G14-hero-crops
+[PASS] G16-hero-img-tag
+[PASS] G15-max-image-preview
+[PASS] G17-og-image
+[PASS] G18-below-fold-lazy
+[PASS] G19-jsonld
+[PASS] G20-indexable
+[PASS] G21-page-weight
+[PASS] G22-ymyl
+[PASS] G23-no-affiliate
+[PASS] G24-site-pages
+[PASS] P01-static-meta
+[PASS] G25-first-party
+[PASS] G26-no-ai-slop
+[PASS] S01-title-length
+[PASS] S02-meta-desc
+[PASS] S03-single-h1
+[PASS] S04-answer-first
+[PASS] S05-h2-count
+[PASS] S06-heading-hierarchy
+[PASS] S07-word-count
+[PASS] S08-slug
+[PASS] S08b-slug-stable
+[PASS] S09-internal-links
+[PASS] S10-hub-link
+[PASS] S11-open-graph
+[PASS] S12-twitter-card
+[PASS] S13-img-alts
+[PASS] S14-in-sitemap-feed
+[PASS] S15-desc-not-title
+
+ALL HARD GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-25-deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x.json
