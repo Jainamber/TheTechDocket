@@ -400,3 +400,85 @@ built 37 article(s) -> C:\NewStartsNov\TheTechDocket\docs
 [PASS] S15-desc-not-title
 
 ALL HARD GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-25-deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x.json
+[PASS] G01-byline
+[PASS] G02-author-name-plain
+[PASS] G03-author-page
+[PASS] G13-bio-verified
+[PASS] G04-date-valid
+[PASS] G05-real-update
+[PASS] G06-citations
+[PASS] G07-stats-sourced
+[PASS] G08-no-clickbait
+[PASS] G09-originality
+[PASS] G10-original-analysis
+[PASS] G11-review-log
+[PASS] G12-ai-disclosure
+[PASS] G14-hero-crops
+[PASS] G16-hero-img-tag
+[PASS] G15-max-image-preview
+[PASS] G17-og-image
+[PASS] G18-below-fold-lazy
+[PASS] G19-jsonld
+[PASS] G20-indexable
+[PASS] G21-page-weight
+[PASS] G22-ymyl
+[PASS] G23-no-affiliate
+[PASS] G24-site-pages
+[PASS] P01-static-meta
+[PASS] G25-first-party
+[PASS] G26-no-ai-slop
+[PASS] S01-title-length
+[PASS] S02-meta-desc
+[PASS] S03-single-h1
+[PASS] S04-answer-first
+[PASS] S05-h2-count
+[PASS] S06-heading-hierarchy
+[PASS] S07-word-count
+[PASS] S08-slug
+[PASS] S08b-slug-stable
+[PASS] S09-internal-links
+[PASS] S10-hub-link
+[PASS] S11-open-graph
+[PASS] S12-twitter-card
+[PASS] S13-img-alts
+[PASS] S14-in-sitemap-feed
+[PASS] S15-desc-not-title
+
+ALL HARD GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-25-deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x.json
+pushed ΓåÆ https://thetechdocket.com/articles/deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x/
+2026-11-25 10:18:30 | Article publish finished (build=0, gate=0, publish=0)
+2026-11-25 10:18:30 | Publishing docket for 2026-11-25
+DOCKET hard-gate failures ΓÇö refusing to publish the docket. The article publish is unaffected.
+[PASS] D01-docket-built
+[PASS] D02-item-count
+[PASS] D03-item-sources
+[FAIL] D04-no-clickbait - clickbait/caps headlines: item 3
+[PASS] D05-tiny-format
+[PASS] D06-lead-is-article
+[PASS] D07-zero-js
+[PASS] D08-page-weight
+[PASS] D13-hub-valid
+[PASS] D10-tags-picks
+[PASS] D11-watch-quota
+[PASS] D12-stakes-line
+[PASS] D14-stat-line
+[PASS] D15-community-read
+[PASS] D16-save-worthy
+[PASS] D17-card-anchors
+[PASS] D18-deck-integrity
+[PASS] D19-social-slides
+[PASS] D09-canonicals
+
+DOCKET GATE FAILURES: 1 (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-25-docket.json
+2026-11-25 10:18:31 | Docket publish finished (exit=1)
+2026-11-25 10:18:31 | Refreshing Launchpad share-kit for: deepmind-gemini-4-carbon-lean-4-quantum-circuits-290x
+share-kit written: C:\NewStartsNov\TheTechDocket\data\social\2026-11-25\share-kit.md
+launchpad UI: C:\NewStartsNov\TheTechDocket\data\social\2026-11-25\launchpad.html
+Target Subreddit: r/LocalLLaMA (Mandatory Flair: 'Discussion')
+2026-11-25 10:18:33 | Launchpad refresh finished (exit=0)
+2026-11-25 10:18:33 | Refreshing Analytics feedback & North Star HTML report
+insights: C:\NewStartsNov\TheTechDocket\data\insights.json (pages=0, queries=0, boost_terms=0)
+analytics report written: C:\NewStartsNov\TheTechDocket\data\reports\analytics-latest.html (Spend today: $0.0000 / $20.00 limit)
+2026-11-25 10:18:34 | Analytics refresh finished (feedback=0, report=0)
+Everything up-to-date
+2026-11-25 10:18:36 | git push exit=0
