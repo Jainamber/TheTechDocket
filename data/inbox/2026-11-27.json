@@ -1,0 +1,1783 @@
+{
+  "date": "2026-11-27",
+  "generated_by": "engine.fetchers",
+  "sources_status": {
+    "trends_rss_IN": "ok",
+    "news_IN_tech layoffs": "ok",
+    "news_IN_smartphone l": "ok",
+    "suggest_IN_ai": "ok",
+    "suggest_IN_chatgpt": "ok",
+    "suggest_IN_new phone": "ok",
+    "suggest_IN_tech & ai": "ok",
+    "trends_rss_US": "ok",
+    "news_US_tech layoffs": "ok",
+    "news_US_smartphone l": "ok",
+    "suggest_US_ai": "ok",
+    "suggest_US_chatgpt": "ok",
+    "suggest_US_new phone": "ok",
+    "suggest_US_tech & ai": "ok",
+    "hn": "ok",
+    "wiki_en": "ok",
+    "outlets": "ok"
+  },
+  "markets": {
+    "IN": {
+      "label": "India",
+      "trends_rss": [
+        {
+          "title": "brisbane weather",
+          "approx_traffic": "200+",
+          "pub_date": "Fri, 27 Nov 2026 00:00:00 -0800",
+          "news": [
+            {
+              "headline": "Weather report for Brisbane",
+              "source": "The Courier Mail",
+              "url": "https://www.couriermail.com.au/questnews/hyperlocal/heres-what-you-can-expect-with-todays-brisbane-weather/news-story/8938902011403f076fa507108a5398ac"
+            },
+            {
+              "headline": "Weather report for Redlands Coast",
+              "source": "The Courier Mail",
+              "url": "https://www.couriermail.com.au/questnews/redlands/hyperlocal/heres-what-you-can-expect-with-todays-redlands-coast-weather/news-story/f1173b60e5b5a37c80419999c75c64d1"
+            },
+            {
+              "headline": "Weather report for Brisbane Southwest",
+              "source": "The Courier Mail",
+              "url": "https://www.couriermail.com.au/questnews/southwest/hyperlocal/heres-what-you-can-expect-with-todays-brisbane-southwest-weather/news-story/7591e4431985b63d8325f1b85eab4f69"
+            }
+          ]
+        },
+        {
+          "title": "बारिश",
+          "approx_traffic": "5000+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "उत्तर भारत में सर्दी की दस्तक... दिल्ली-NCR में अगले 2 दिन रहेगा घना कोहरा, सुबह-रात बढ़ेगी ठंड",
+              "source": "AajTak",
+              "url": "https://www.aajtak.in/india/news/story/delhi-ncr-weather-update-fog-alert-25-to-27-nov-punjab-temprature-ntc-drmt-rptc-2705260-2026-11-25"
+            },
+            {
+              "headline": "दक्षिण भारत में बारिश, उत्तर भारत में बढ़ेगी ठंड! जानें दिल्ली-UP समेत अन्य राज्यों के मौसम का हाल",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/india/national/rain-alert-cold-wave-fog-delhi-up-bihar-and-other-states-weather-update-today-2026-11-25-1256231"
+            },
+            {
+              "headline": "राजस्थान में पारा 5°C पहुंचा, 7 राज्यों में घना कोहरा: जम्मू-कश्मीर में पारा माइनस में; जानें देशभर का मौसम...",
+              "source": "Dainik Bhaskar",
+              "url": "https://www.bhaskar.com/g/g/national/news/weather-update-november-cold-fog-jammu-kashmir-rajasthan-health-tips-139798124.html"
+            }
+          ]
+        },
+        {
+          "title": "ऑस्ट्रेलिया राष्ट्रीय क्रिकेट टीम बनाम इंग्लैंड क्रिकेट टीम के मैच का स्कोरकार्ड",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "England return to the Gabbatoir with onus on Australia to bounce back",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview"
+            },
+            {
+              "headline": "Australia v England: third men’s Twenty20 international – live",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/sport/live/2026/nov/27/australia-v-england-third-mens-twenty20-international-live"
+            },
+            {
+              "headline": "The England opening batting pair made in Wales",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/cricket/articles/cw1mdzn9dzpzo"
+            }
+          ]
+        },
+        {
+          "title": "விஜய்",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "“முதல்வர் விஜய்யின் மனு தள்ளுபடி” - உயர்நீதிமன்றம் உத்தரவு!",
+              "source": "Nakkheeran",
+              "url": "https://www.nakkheeran.in/24-by-7-news/vijay-petition-dismissed-high-court-order-12844949"
+            },
+            {
+              "headline": "பெரம்பூர் தேர்தல் வழக்கு: முதல்வர் விஜய் மனுவை தள்ளுபடி செய்தது சென்னை உயர்நீதிமன்றம்!",
+              "source": "DinaMani",
+              "url": "https://www.dinamani.com/tamilnadu/2026/Nov/27/chief-minister-vijays-petition-in-the-perambur-election-case-dismissed-madras-high-court-order"
+            },
+            {
+              "headline": "CM Vijay | ``பண்ருட்டியில் ரூ.30 கோடிக்கு நிலம்.. மறைத்த CM விஜய்’’-கோர்ட் வாசலில் வெடித்த இன்பதுரை",
+              "source": "Thanthi TV",
+              "url": "https://www.thanthitv.com/news/politics/land-worth-rs-30-crore-in-panruti-cm-vijay-hid-it-inbadurai-exploded-at-the-court-door"
+            }
+          ]
+        },
+        {
+          "title": "பணவீக்கம்",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "உணவுப் பணவீக்கம் 8.94 சதவீதமாக உயர்வு",
+              "source": "Erithazhal News",
+              "url": "https://erithazhal.com/news/52763?lang=ta"
+            },
+            {
+              "headline": "அரிசி, பருப்பு, சமையல் எண்ணெய் விலை உயர்வு: இந்தியாவில் உணவுப் பணவீக்கத்தைக் கட்டுப்படுத்த முடியாதது ஏன்?",
+              "source": "BBC",
+              "url": "https://www.bbc.com/tamil/articles/cx24ez3400q2o"
+            },
+            {
+              "headline": "முன்னோட்டம்: அண்மைச் செய்திகள் - Quick News & Shorts by Tamil Murasu",
+              "source": "Tamil Murasu",
+              "url": "https://www.tamilmurasu.com.sg/quick-news/10066170"
+            }
+          ]
+        },
+        {
+          "title": "পাকিস্তান",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "চিনা কায়দায় ইসলামাবাদকে উপগ্রহের সাহায্য! ‘বন্ধু’ ভারতের পিঠে ছুরি মেরে পাকিস্তানের সঙ্গে সই পাতাচ্ছেন পুতিন?",
+              "source": "Anandabazar Patrika",
+              "url": "https://www.anandabazar.com/photogallery/russia-is-going-to-share-satellite-navigation-and-communications-expertise-with-pakistan-a-big-concern-for-india-dgtl-photogallery-prnt/cid/1729260"
+            },
+            {
+              "headline": "আগামী সপ্তাহে রাশিয়া সফরে যাচ্ছেন পাকিস্তানের প্রধানমন্ত্রী শাহবাজ শরিফ",
+              "source": "দৈনিক ইনকিলাব",
+              "url": "https://dailyinqilab.com/international/news/966214"
+            },
+            {
+              "headline": "রাশিয়া সফরে যাচ্ছেন পাক প্রধানমন্ত্রী শরিফ",
+              "source": "Aaro Ananda",
+              "url": "https://www.aaroananda.com/story/news/in-focus/shehbaz-sharif-russia-visit-putin-bilateral-talks-deal/11029516"
+            }
+          ]
+        },
+        {
+          "title": "aus vs eng",
+          "approx_traffic": "100000+",
+          "pub_date": "Thu, 26 Nov 2026 23:40:00 -0800",
+          "news": [
+            {
+              "headline": "England in Australia: Harry Brook's side win decider for statement series win",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/cricket/articles/c6vg28end00xo"
+            },
+            {
+              "headline": "Duckett century, Baker four-for seal series win for England",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-odi-1528705/match-report"
+            },
+            {
+              "headline": "Australia’s Cameron Green left bloodied and concussed by fierce Gus Atkinson ball in ODI decider",
+              "source": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/australia-cameron-green-left-bloodied-103914019.html"
+            }
+          ]
+        },
+        {
+          "title": "billy stanlake",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 26 Nov 2026 23:40:00 -0800",
+          "news": [
+            {
+              "headline": "Australia make two changes, seek to rebound in third T20I",
+              "source": "cricket.com.au",
+              "url": "https://www.cricket.com.au/news/4615337/toss-teams-news-australia-england-third-t20-international-gabba-xi-stanlake-owen-edwards-shaw"
+            },
+            {
+              "headline": "Bartlett sidelined for up to six weeks after undergoing knee surgery",
+              "source": "Cricbuzz",
+              "url": "https://www.cricbuzz.com/cricket-news/141050/bartlett-sidelined-for-six-weeks-after-undergoing-knee-surgery-cricbuzzcom"
+            },
+            {
+              "headline": "Bartlett to miss start of BBL after knee surgery",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/story/xavier-bartlett-to-miss-start-of-bbl-after-knee-surgery-1563870"
+            }
+          ]
+        },
+        {
+          "title": "horoscope today",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 26 Nov 2026 23:40:00 -0800",
+          "news": [
+            {
+              "headline": "Horoscope Today: November 27, 2026",
+              "source": "Vogue India",
+              "url": "https://www.vogue.in/content/horoscope-today-november-27-2026"
+            },
+            {
+              "headline": "Gemini Shani Horoscope Today, 27 November 2026: Sun in Anuradha as Shani Rewards a Calm Approach to a Lon",
+              "source": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com/astrology/horoscope/gemini-shani-horoscope-today-27-november-2026-sun-in-anuradha-as-shani-rewards-a-calm-approach-to-a-long-term-wish/articleshow/136104500.cms"
+            },
+            {
+              "headline": "Today's Horoscope - November 27, 2026: Check horoscope for all sun signs",
+              "source": "Deccan Herald",
+              "url": "https://www.deccanherald.com/astrology/todays-horoscope-november-27-2026-check-horoscope-for-all-sun-signs-2-4232770"
+            }
+          ]
+        },
+        {
+          "title": "aus बनाम eng",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 26 Nov 2026 23:40:00 -0800",
+          "news": [
+            {
+              "headline": "निखिल चौधरीः बर्थडे मनाने गए थे, कोविड में फंसे और फिर ऑस्ट्रेलिया के स्टार ऑलराउंडर बन गए",
+              "source": "BBC",
+              "url": "https://www.bbc.com/hindi/articles/ckqx54qeew3zo"
+            },
+            {
+              "headline": "आईसीसी टी20 रैंकिंग में फिर से उठापटक, टीम इंडिया से आगे निकले अंग्रेज",
+              "source": "India TV Hindi",
+              "url": "https://www.indiatv.in/sports/cricket/icc-t20i-rankings-rating-change-england-overtakes-indian-team-2026-11-25-1256221"
+            },
+            {
+              "headline": "इंग्लैंड की बड़ी जीत, 13.1 में 188 रन बनाकर जीता मैच ऑस्ट्रेलिया को चटाई धूल",
+              "source": "ABP News",
+              "url": "https://www.abplive.com/sports/cricket/england-defeat-australia-by-8-wickets-eng-vs-aus-2nd-t20i-aneurin-donald-philip-salt-3219010"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Another Tech Layoff Wave? Software Giant SAP Plans 10,000 Job Cuts - NDTV",
+            "source": "NDTV",
+            "pub_date": "Fri, 27 Nov 2026 05:23:41 GMT"
+          },
+          {
+            "title": "Europe's biggest technology company SAP is planning to cut 10,000 jobs, as it prepares for ... - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 27 Nov 2026 02:35:00 GMT"
+          },
+          {
+            "title": "SAP layoffs: German company may cut 10,000 jobs across engineering, sales and product teams - Firstpost",
+            "source": "Firstpost",
+            "pub_date": "Fri, 27 Nov 2026 02:33:42 GMT"
+          },
+          {
+            "title": "SAP may lay off 10,000 employees in AI-led restructuring, report says - India Today",
+            "source": "India Today",
+            "pub_date": "Fri, 27 Nov 2026 02:53:32 GMT"
+          },
+          {
+            "title": "Is A Fresh Wave Of Tech Layoffs Coming To India? Viral Posts Point To Google, Microsoft - NDTV Profit",
+            "source": "NDTV Profit",
+            "pub_date": "Tue, 24 Nov 2026 17:19:07 GMT"
+          },
+          {
+            "title": "IT industry body seeks policy to protect employees from AI-driven layoffs - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Thu, 26 Nov 2026 14:28:21 GMT"
+          },
+          {
+            "title": "Zoho halts 2026 salary hikes, looks to ‘avoid mass layoffs’ amid surging AI costs - The Indian Express",
+            "source": "The Indian Express",
+            "pub_date": "Thu, 15 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: 196,000 Workers Affected as Amazon, Meta, and Microsoft Cut Jobs - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Fri, 23 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "SAP Layoffs 2026: Europe's biggest tech company may cut 10,000 jobs amid AI push - Education Times",
+            "source": "Education Times",
+            "pub_date": "Fri, 27 Nov 2026 05:49:00 GMT"
+          },
+          {
+            "title": "New Layoff Data Show Job Cuts Down 41% So Far This Year - WSJ",
+            "source": "WSJ",
+            "pub_date": "Wed, 25 Nov 2026 23:05:43 GMT"
+          },
+          {
+            "title": "Layoffs and AI fears: 72% of India's tech workers want to switch careers - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Mon, 23 Nov 2026 07:08:17 GMT"
+          },
+          {
+            "title": "SAP layoffs: Company plans to 10,000 jobs as AI push triggers major workforce restructuring - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Fri, 27 Nov 2026 03:33:02 GMT"
+          },
+          {
+            "title": "72% of India’s tech workers want to quit industry, survey finds - ThePrint",
+            "source": "ThePrint",
+            "pub_date": "Wed, 25 Nov 2026 13:51:51 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking the job losses across Disney, Intel, Amazon, Microsoft, Apple, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 24 Nov 2026 13:08:17 GMT"
+          },
+          {
+            "title": "Google quells layoff buzz, highlights need for accurate workforce communication - HR Katha",
+            "source": "HR Katha",
+            "pub_date": "Wed, 25 Nov 2026 03:48:59 GMT"
+          },
+          {
+            "title": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses - CNET",
+            "source": "CNET",
+            "pub_date": "Thu, 12 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "SAP layoffs: 10,000 jobs at risk as software giant accelerates AI push - Gulf News",
+            "source": "Gulf News",
+            "pub_date": "Fri, 27 Nov 2026 06:34:05 GMT"
+          },
+          {
+            "title": "IT sector employees seek national AI layoff policy as automation threatens jobs; unions and experts want - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 26 Nov 2026 10:31:00 GMT"
+          },
+          {
+            "title": "Relief amid tech layoffs: EPFO cuts waiting period for full EPF withdrawal to two months - Upstox",
+            "source": "Upstox",
+            "pub_date": "Sun, 22 Nov 2026 03:15:16 GMT"
+          },
+          {
+            "title": "EPFO's new withdrawal plan likely to offer financial relief amid rising layoffs; 2 lakh tech employees lose jobs in 2026 - Livemint",
+            "source": "Livemint",
+            "pub_date": "Mon, 23 Nov 2026 05:52:33 GMT"
+          },
+          {
+            "title": "IT buzz: Google and Microsoft freezing hiring in India in 2027, Google eyes fresh layoffs - India Today",
+            "source": "India Today",
+            "pub_date": "Mon, 23 Nov 2026 11:23:47 GMT"
+          },
+          {
+            "title": "Tech manager who sat in AI layoff meetings reveals what gets said behind closed doors - Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "pub_date": "Wed, 25 Nov 2026 15:35:46 GMT"
+          },
+          {
+            "title": "Google Cloud cuts 30 jobs in India, dismisses wider layoff speculation - Business Standard",
+            "source": "Business Standard",
+            "pub_date": "Tue, 24 Nov 2026 07:36:52 GMT"
+          },
+          {
+            "title": "Google responds to 'huge layoffs' in India report; says: Last week Google Cloud made … - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 24 Nov 2026 04:54:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs Outpace 2025 As Big Companies Shift Spending To AI - Crunchbase News",
+            "source": "Crunchbase News",
+            "pub_date": "Fri, 25 Sep 2026 07:00:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "MediaTek confirms 2027 flagship mobile SoC launch, dismisses cancellation rumors - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 27 Nov 2026 01:23:21 GMT"
+          },
+          {
+            "title": "Motorola's 2027 Pantone smartphone could get this refreshing new color - Android Authority",
+            "source": "Android Authority",
+            "pub_date": "Fri, 27 Nov 2026 04:11:00 GMT"
+          },
+          {
+            "title": "Japanese brand unveils 5G smartphone for seniors with physical buttons and AI scam call detection - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 26 Nov 2026 23:50:00 GMT"
+          },
+          {
+            "title": "Sharp's \"Simple Smartphone 8\" Uses On-Device AI to Detect Scam Calls in Real Time; SoftBank to Launch in Japan on December 4 - BigGo Finance",
+            "source": "BigGo Finance",
+            "pub_date": "Thu, 26 Nov 2026 02:56:00 GMT"
+          },
+          {
+            "title": "NTT Docomo to launch FCNT's F-53G senior smartphone in January - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 26 Nov 2026 06:24:53 GMT"
+          },
+          {
+            "title": "Nothing confirms ‘aggressive’ smartphone release schedule for 2027 with US focus - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Tue, 24 Nov 2026 12:00:00 GMT"
+          },
+          {
+            "title": "vivo X500 Series Debuts in India: Price - Features - and more! - vivo Newsroom India",
+            "source": "vivo Newsroom India",
+            "pub_date": "Thu, 26 Nov 2026 10:02:50 GMT"
+          },
+          {
+            "title": "Vivo V80 FE tipped to launch in India soon; could come in an exclusive red colour - 91Mobiles",
+            "source": "91Mobiles",
+            "pub_date": "Mon, 23 Nov 2026 06:10:55 GMT"
+          },
+          {
+            "title": "MTN Uganda and Mogo launch smartphone financing - socialnetlink.org",
+            "source": "socialnetlink.org",
+            "pub_date": "Thu, 26 Nov 2026 18:47:19 GMT"
+          },
+          {
+            "title": "vivo also reportedly developing a wide-screen phone for 2027 launch - GSMArena.com news - GSMArena.com",
+            "source": "GSMArena.com",
+            "pub_date": "Fri, 06 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "iQOO 16 India launch expected in December, Snapdragon 8 Elite Gen 6 SoC confirmed - MobiGyaan",
+            "source": "MobiGyaan",
+            "pub_date": "Mon, 23 Nov 2026 05:08:34 GMT"
+          },
+          {
+            "title": "Motorola Edge 70 Neo with 50MP camera, 7,000mAh battery launched in India: Price, specs and more - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Tue, 24 Nov 2026 10:16:00 GMT"
+          },
+          {
+            "title": "Phone Maker Nothing to Launch Earbuds and Case With AI Recording - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 23 Nov 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Red Magic launches transparent smartphone with liquid cooling - mobidevices.com",
+            "source": "mobidevices.com",
+            "pub_date": "Tue, 24 Nov 2026 14:53:36 GMT"
+          },
+          {
+            "title": "Titan 2 Elite: Unihertz releases new version of compact smartphone globally - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 26 Nov 2026 15:36:00 GMT"
+          },
+          {
+            "title": "UK MVNO Rebel Telecom launches child-friendly smartphone - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 26 Nov 2026 12:39:22 GMT"
+          },
+          {
+            "title": "Honor’s new flagship camera smartphone debuts globally with 8,000 mAh battery and Arri cinema features - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 09:54:00 GMT"
+          },
+          {
+            "title": "Motorola Edge 70 Neo launches with 7,000 mAh battery and 5,200 nits display - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 23:36:00 GMT"
+          },
+          {
+            "title": "HMD said to launch flagship with cameras from German lens specialist \"very soon\" - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 13:07:00 GMT"
+          },
+          {
+            "title": "Leak reveals mid-range Honor smartphone with 9,530 mAh battery and 108 MP camera - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 13:16:00 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 launches in Germany cheaper than expected - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 15:01:00 GMT"
+          },
+          {
+            "title": "Huawei unveils 15:9 flagship with 200 MP camera and 7,000 mAh battery - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 13:45:00 GMT"
+          },
+          {
+            "title": "Leak: Huawei Mate 90 Air launching soon with triple camera and 106% larger battery than iPhone Air - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 13:30:00 GMT"
+          },
+          {
+            "title": "Government Notifies ₹62,500 Cr Mobile Phone Manufacturing Scheme to Boost Global Competitiveness and Deepen Domestic Value Addition - www.pib.gov.in",
+            "source": "www.pib.gov.in",
+            "pub_date": "Fri, 21 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Vivo, Dixon Technologies receive Centre’s nod to form JV to make smartphones in India - electronics.economictimes.indiatimes.com",
+            "source": "electronics.economictimes.indiatimes.com",
+            "pub_date": "Fri, 10 Jul 2026 07:00:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "airpods",
+          "ai detector",
+          "ai checker",
+          "airpods pro 3",
+          "aileen wuornos",
+          "ai mode",
+          "aircraft carrier",
+          "airway heights"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt desktop",
+          "chatgpt down",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone find my friends not working",
+          "new phone plans",
+          "new phone who dis game",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    },
+    "US": {
+      "label": "Global (US proxy)",
+      "trends_rss": [
+        {
+          "title": "aus vs eng",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "England return to the Gabbatoir with onus on Australia to bounce back",
+              "source": "Cricinfo",
+              "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview"
+            },
+            {
+              "headline": "Australia v England: third men’s Twenty20 international – live",
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/sport/live/2026/nov/27/australia-v-england-third-mens-twenty20-international-live"
+            },
+            {
+              "headline": "The England opening batting pair made in Wales",
+              "source": "BBC",
+              "url": "https://www.bbc.com/sport/cricket/articles/cw1mdzn9dzpzo"
+            }
+          ]
+        },
+        {
+          "title": "best tv prices",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 26 Nov 2026 23:50:00 -0800",
+          "news": [
+            {
+              "headline": "I test TVs for a living. These are my 10 favorite Black Friday TV deals",
+              "source": "CNN",
+              "url": "https://www.cnn.com/cnn-underscored/deals/black-friday-tv-deals-2026-11-24"
+            },
+            {
+              "headline": "17 best Black Friday TV deals 2026: OLED TVs start at $799",
+              "source": "Mashable",
+              "url": "https://mashable.com/tech/best-black-friday-tv-deals-2026"
+            },
+            {
+              "headline": "100-inch Costco-exclusive Hisense TVs are under $1,000 for members",
+              "source": "USA Today",
+              "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/26/costco-black-friday-hisense-tv-deals-2026/92911222007/"
+            }
+          ]
+        },
+        {
+          "title": "gta6 pc port",
+          "approx_traffic": "1000+",
+          "pub_date": "Thu, 26 Nov 2026 23:30:00 -0800",
+          "news": [
+            {
+              "headline": "Rockstar Squashes \"Leonida,\" the Biggest GTA 6 PC Recompilation Effort",
+              "source": "TechPowerUp",
+              "url": "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort"
+            },
+            {
+              "headline": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+              "source": "IGN",
+              "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner"
+            },
+            {
+              "headline": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
+              "source": "Decrypt",
+              "url": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown"
+            }
+          ]
+        },
+        {
+          "title": "daycare",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 26 Nov 2026 23:10:00 -0800",
+          "news": [
+            {
+              "headline": "Ex-Broward daycare worker confesses to touching 7-year-old girl’s vagina, deputies say",
+              "source": "WPLG Local 10",
+              "url": "https://www.local10.com/news/local/2026/11/24/ex-broward-daycare-worker-confesses-to-touching-7-year-old-girls-vagina-deputies-say/"
+            },
+            {
+              "headline": "Former worker at Pompano Beach day care arrested after 7-year-old girl reports abuse, deputies say",
+              "source": "WSVN",
+              "url": "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/"
+            },
+            {
+              "headline": "Former Pompano Beach Daycare Worker Arrested on Child Molestation Charges",
+              "source": "TAPinto",
+              "url": "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges"
+            }
+          ]
+        },
+        {
+          "title": "iran attacks kuwait",
+          "approx_traffic": "10000+",
+          "pub_date": "Thu, 26 Nov 2026 22:30:00 -0800",
+          "news": [
+            {
+              "headline": "Iran’s Araghchi calls Kuwait attack ‘suspicious’, offers cooperation",
+              "source": "Al Jazeera",
+              "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious"
+            },
+            {
+              "headline": "Live Updates: Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran",
+              "source": "CBS News",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
+            },
+            {
+              "headline": "Two Italians killed in alleged Iranian drone attack on Kuwait; Tehran denies involvement",
+              "source": "CNN",
+              "url": "https://www.cnn.com/2026/11/26/middleeast/italians-killed-iranian-attack-kuwait-intl"
+            }
+          ]
+        },
+        {
+          "title": "seth meyers",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 26 Nov 2026 22:20:00 -0800",
+          "news": [
+            {
+              "headline": "Seth Meyers Drags Jensen Huang’s Daily 90-Minute Therapy Sessions",
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/26/arts/television/late-night-meyers-huang-therapy-fallon.html"
+            },
+            {
+              "headline": "I’m a Silicon Valley couples therapist. Here’s what Jensen Huang's daily therapy sessions might entail.",
+              "source": "Business Insider",
+              "url": "https://www.businessinsider.com/jensen-huang-therapy-silicon-valley-couples-therapist-ceo-nvidia-2026-11"
+            },
+            {
+              "headline": "Rabbi Schonbuch to Newsmax: Nvidia CEO Faces Long Road to Rebuilding Trust",
+              "source": "Yahoo",
+              "url": "https://www.yahoo.com/news/us/articles/rabbi-schonbuch-newsmax-nvidia-ceo-160549558.html"
+            }
+          ]
+        },
+        {
+          "title": "ocelot jugular gta 6",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 26 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Here's where you can steal the Ocelot Bloodless Jugular for Randy in GTA 6",
+              "source": "PC Gamer",
+              "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/"
+            },
+            {
+              "headline": "How to get Ocelot Jugular in GTA 6 explained",
+              "source": "Radio Times",
+              "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/"
+            },
+            {
+              "headline": "How to get Ocelot Jugular for Randy's Wish List in GTA 6. Location of Bloodless Jugular, how to keep this car version",
+              "source": "escorenews.com",
+              "url": "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version"
+            }
+          ]
+        },
+        {
+          "title": "justin bieber",
+          "approx_traffic": "200+",
+          "pub_date": "Thu, 26 Nov 2026 22:10:00 -0800",
+          "news": [
+            {
+              "headline": "Hailey Bieber Celebrates 30th Birthday in Daring Green Lace-Up Top and Animal-Print Pants",
+              "source": "People.com",
+              "url": "https://people.com/hailey-bieber-celebrates-30th-birthday-daring-green-lace-up-top-animal-print-pants-12274005"
+            },
+            {
+              "headline": "Inside Hailey Bieber’s tropical 30th birthday getaway with Justin, Kendall and Kylie Jenner",
+              "source": "Page Six",
+              "url": "https://pagesix.com/2026/11/25/celebrity-news/hailey-bieber-celebrates-milestone-30th-birthday-with-justin-bieber-and-celebrity-friends/"
+            },
+            {
+              "headline": "Hailey Bieber Celebrates Her 30th Birthday in a Micro Metallic Gold Bikini on Sun-Soaked Yacht Day",
+              "source": "InStyle",
+              "url": "https://www.instyle.com/hailey-bieber-30th-birthday-metallic-gold-bikini-bahamas-12279471"
+            }
+          ]
+        },
+        {
+          "title": "michael douglas",
+          "approx_traffic": "500+",
+          "pub_date": "Thu, 26 Nov 2026 21:40:00 -0800",
+          "news": [
+            {
+              "headline": "Michael Douglas Reveals Family Struggles in Memoir",
+              "source": "Demokratis.co.id",
+              "url": "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir"
+            },
+            {
+              "headline": "Michael Douglas' health after stage-four cancer diagnosis",
+              "source": "Daily Express",
+              "url": "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer"
+            },
+            {
+              "headline": "Michael Douglas Reveals Family Struggles and Cameron's Recovery",
+              "source": "SuaraGarut.ID",
+              "url": "https://suaragarut.id/en/michael-douglas-family-struggles"
+            }
+          ]
+        },
+        {
+          "title": "jessica biel",
+          "approx_traffic": "2000+",
+          "pub_date": "Thu, 26 Nov 2026 21:30:00 -0800",
+          "news": [
+            {
+              "headline": "Justin Timberlake Documentary Trailer: “He’s Not Who I Thought He Was”",
+              "source": "The Hollywood Reporter",
+              "url": "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/"
+            },
+            {
+              "headline": "Apple TV announces four-part documentary event “TIMBERLAKE”",
+              "source": "Apple",
+              "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/"
+            },
+            {
+              "headline": "Justin Timberlake shares rare insight into bitter Britney Spears breakup: ‘Really hard to talk about’",
+              "source": "Page Six",
+              "url": "https://pagesix.com/2026/11/23/celebrity-news/justin-timberlake-shares-rare-insight-into-bitter-britney-spears-breakup/"
+            }
+          ]
+        }
+      ],
+      "news": {
+        "tech layoffs": [
+          {
+            "title": "Tech layoffs November update: Job cuts hit workers at Amazon, Angi, Block, Canva, and Squarespace - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Fri, 06 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Tech selloff wipes out hedge fund gains, prompting risk cuts and layoffs - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 06 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Another Tech Layoff Wave? Software Giant SAP Plans 10,000 Job Cuts - NDTV",
+            "source": "NDTV",
+            "pub_date": "Fri, 27 Nov 2026 05:23:41 GMT"
+          },
+          {
+            "title": "Europe's biggest technology company SAP is planning to cut 10,000 jobs, as it prepares for ... - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Fri, 27 Nov 2026 02:35:00 GMT"
+          },
+          {
+            "title": "Goldman says AI layoffs are starting to leave a 'long-lasting' scar, just like the last 40 years of history - Fortune",
+            "source": "Fortune",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Disney is paying $60 million to hire 66 Character.AI staffers - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Fri, 16 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "In Europe’s tech capital, Irish labor unions are booming amid AI-driven layoffs - POLITICO.eu",
+            "source": "POLITICO.eu",
+            "pub_date": "Fri, 16 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs piling up as Bay Area companies slash 100+ workers - New York Post",
+            "source": "New York Post",
+            "pub_date": "Fri, 30 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech Layoffs 2026: 196,000 Workers Affected as Amazon, Meta, and Microsoft Cut Jobs - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Fri, 23 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "California tech giant plots massive layoffs as industry sheds 14,000 jobs - New York Post",
+            "source": "New York Post",
+            "pub_date": "Wed, 14 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Tech layoffs 2026: Tracking the job losses across Disney, Intel, Amazon, Microsoft, Apple, Meta and others - Yahoo Tech",
+            "source": "Yahoo Tech",
+            "pub_date": "Tue, 24 Nov 2026 13:08:17 GMT"
+          },
+          {
+            "title": "AI Layoffs Risk Triggering 1.6 Million More US Job Losses - CNET",
+            "source": "CNET",
+            "pub_date": "Thu, 12 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "New round of layoffs at Philly tech unicorn Gopuff, cutting IT and people ops - Technical.ly",
+            "source": "Technical.ly",
+            "pub_date": "Mon, 23 Nov 2026 14:45:00 GMT"
+          },
+          {
+            "title": "HII loses Navy contract, plans 58 Virginia Beach layoffs - Virginia Business",
+            "source": "Virginia Business",
+            "pub_date": "Tue, 24 Nov 2026 15:10:57 GMT"
+          },
+          {
+            "title": "I lost my tech job and couldn't afford my mortgage. Now I live in a 100-square-foot shed in the yard. - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Sun, 08 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Seattle's smaller tech layoffs are adding up - Axios",
+            "source": "Axios",
+            "pub_date": "Mon, 21 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "SAP Layoffs 2026: Europe's biggest tech company may cut 10,000 jobs amid AI push - Education Times",
+            "source": "Education Times",
+            "pub_date": "Fri, 27 Nov 2026 05:49:00 GMT"
+          },
+          {
+            "title": "Big Tech Wanted to Make the World a Better Place. So What Happened? - Counterpunch",
+            "source": "Counterpunch",
+            "pub_date": "Tue, 24 Nov 2026 07:09:35 GMT"
+          },
+          {
+            "title": "Cuts continue: Intel launches another layoff wave - The Jerusalem Post",
+            "source": "The Jerusalem Post",
+            "pub_date": "Sun, 22 Nov 2026 14:45:00 GMT"
+          },
+          {
+            "title": "SAP reportedly weighs cutting at least 10,000 jobs in fresh restructuring - Crypto Briefing",
+            "source": "Crypto Briefing",
+            "pub_date": "Thu, 26 Nov 2026 16:22:01 GMT"
+          },
+          {
+            "title": "SAP layoffs: 10,000 jobs at risk as software giant accelerates AI push - Gulf News",
+            "source": "Gulf News",
+            "pub_date": "Fri, 27 Nov 2026 06:34:05 GMT"
+          },
+          {
+            "title": "Tech layoff announcements increase in September as industry slashes 165,925 jobs in 2026 so far - Fast Company",
+            "source": "Fast Company",
+            "pub_date": "Thu, 01 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Companies laying off staff this year include Meta, Amazon, and Dropbox — see the list - Business Insider",
+            "source": "Business Insider",
+            "pub_date": "Wed, 11 Nov 2026 08:00:00 GMT"
+          },
+          {
+            "title": "IT sector employees seek national AI layoff policy as automation threatens jobs; unions and experts want - The Times of India",
+            "source": "The Times of India",
+            "pub_date": "Thu, 26 Nov 2026 10:31:00 GMT"
+          },
+          {
+            "title": "Google Joins The Surge Of Tech Layoffs - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "pub_date": "Thu, 05 Nov 2026 08:00:00 GMT"
+          }
+        ],
+        "smartphone launch": [
+          {
+            "title": "Japanese brand unveils 5G smartphone for seniors with physical buttons and AI scam call detection - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 26 Nov 2026 23:50:00 GMT"
+          },
+          {
+            "title": "MediaTek confirms 2027 flagship mobile SoC launch, dismisses cancellation rumors - digitimes",
+            "source": "digitimes",
+            "pub_date": "Fri, 27 Nov 2026 01:23:21 GMT"
+          },
+          {
+            "title": "Motorola's 2027 Pantone smartphone could get this refreshing new color - Android Authority",
+            "source": "Android Authority",
+            "pub_date": "Fri, 27 Nov 2026 04:11:00 GMT"
+          },
+          {
+            "title": "Nothing confirms ‘aggressive’ smartphone release schedule for 2027 with US focus - 9to5Google",
+            "source": "9to5Google",
+            "pub_date": "Tue, 24 Nov 2026 12:00:00 GMT"
+          },
+          {
+            "title": "T-Mobile Is Offering a $1,200 Off Discount on the New Apple iPhone 18 Pro Smartphone for Black Friday - IGN",
+            "source": "IGN",
+            "pub_date": "Thu, 26 Nov 2026 19:15:42 GMT"
+          },
+          {
+            "title": "Connecticut Launches Mobile ID - Insurance Journal",
+            "source": "Insurance Journal",
+            "pub_date": "Wed, 25 Nov 2026 18:59:10 GMT"
+          },
+          {
+            "title": "MTN Uganda and Mogo launch smartphone financing - socialnetlink.org",
+            "source": "socialnetlink.org",
+            "pub_date": "Thu, 26 Nov 2026 18:47:19 GMT"
+          },
+          {
+            "title": "NTT Docomo to launch FCNT's F-53G senior smartphone in January - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 26 Nov 2026 06:24:53 GMT"
+          },
+          {
+            "title": "Idemia-backed Connecticut mobile ID tops 10,000 downloads after launch - Biometric Update",
+            "source": "Biometric Update",
+            "pub_date": "Wed, 25 Nov 2026 15:40:00 GMT"
+          },
+          {
+            "title": "Sharp's \"Simple Smartphone 8\" Uses On-Device AI to Detect Scam Calls in Real Time; SoftBank to Launch in Japan on December 4 - BigGo Finance",
+            "source": "BigGo Finance",
+            "pub_date": "Thu, 26 Nov 2026 02:56:00 GMT"
+          },
+          {
+            "title": "UofL Health to launch Kentucky’s first mobile lung cancer screening unit - FOX 56 News",
+            "source": "FOX 56 News",
+            "pub_date": "Tue, 24 Nov 2026 14:22:28 GMT"
+          },
+          {
+            "title": "Phone Maker Nothing to Launch Earbuds and Case With AI Recording - Bloomberg.com",
+            "source": "Bloomberg.com",
+            "pub_date": "Mon, 23 Nov 2026 17:00:00 GMT"
+          },
+          {
+            "title": "Huawei Launches OSTA Brand With First HarmonyOS AI Smartphone - Channel Insider",
+            "source": "Channel Insider",
+            "pub_date": "Tue, 24 Nov 2026 10:49:34 GMT"
+          },
+          {
+            "title": "Red Magic launches transparent smartphone with liquid cooling - mobidevices.com",
+            "source": "mobidevices.com",
+            "pub_date": "Tue, 24 Nov 2026 14:53:36 GMT"
+          },
+          {
+            "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event - Reuters",
+            "source": "Reuters",
+            "pub_date": "Fri, 11 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Titan 2 Elite: Unihertz releases new version of compact smartphone globally - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Thu, 26 Nov 2026 15:36:00 GMT"
+          },
+          {
+            "title": "UK MVNO Rebel Telecom launches child-friendly smartphone - Telecompaper",
+            "source": "Telecompaper",
+            "pub_date": "Thu, 26 Nov 2026 12:39:22 GMT"
+          },
+          {
+            "title": "HMD said to launch flagship with cameras from German lens specialist \"very soon\" - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 13:07:00 GMT"
+          },
+          {
+            "title": "Motorola Signature 27 launches in Germany cheaper than expected - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 15:01:00 GMT"
+          },
+          {
+            "title": "Honor’s new flagship camera smartphone debuts globally with 8,000 mAh battery and Arri cinema features - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 09:54:00 GMT"
+          },
+          {
+            "title": "Motorola Edge 70 Neo launches with 7,000 mAh battery and 5,200 nits display - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 23:36:00 GMT"
+          },
+          {
+            "title": "Researchers launch smartphone platform to monitor senior safety - University of Florida",
+            "source": "University of Florida",
+            "pub_date": "Tue, 15 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Leak: Huawei Mate 90 Air launching soon with triple camera and 106% larger battery than iPhone Air - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Mon, 23 Nov 2026 13:30:00 GMT"
+          },
+          {
+            "title": "Honor 700, 700 Pro and 700S Launch in China: Prices, Features & Specs - TechRepublic",
+            "source": "TechRepublic",
+            "pub_date": "Mon, 23 Nov 2026 20:18:30 GMT"
+          },
+          {
+            "title": "Leak reveals mid-range Honor smartphone with 9,530 mAh battery and 108 MP camera - Notebookcheck",
+            "source": "Notebookcheck",
+            "pub_date": "Tue, 24 Nov 2026 13:16:00 GMT"
+          }
+        ]
+      },
+      "autocomplete": {
+        "ai": [
+          "airbnb",
+          "ai",
+          "airpods",
+          "ai detector",
+          "ai checker",
+          "airpods pro 3",
+          "aileen wuornos",
+          "ai mode",
+          "aircraft carrier",
+          "airway heights"
+        ],
+        "chatgpt": [
+          "chatgpt",
+          "chatgpt login",
+          "chatgpt free",
+          "chatgpt app",
+          "chatgpt images",
+          "chatgpt download",
+          "chatgpt gpt",
+          "chatgpt desktop",
+          "chatgpt down",
+          "chatgpt zero"
+        ],
+        "new phone": [
+          "new phone",
+          "new phone who dis",
+          "new phone deals",
+          "new phones 2026",
+          "new phones apple",
+          "new phones coming out in 2026",
+          "new phone find my friends not working",
+          "new phone plans",
+          "new phone who dis game",
+          "new phone number"
+        ],
+        "tech & ai": [
+          "tech & ai mckinsey",
+          "tech & ai",
+          "tech & ai the toyota way",
+          "tech air 5 plasma",
+          "tech air 5",
+          "tech air",
+          "tech ai tools",
+          "tech air 7x",
+          "tech air 10",
+          "tech air 3"
+        ]
+      }
+    }
+  },
+  "hacker_news": [
+    {
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "points": 1660,
+      "comments": 712,
+      "created_at": "2026-11-25T17:18:26Z"
+    },
+    {
+      "title": "Tell HN: Happy Thanksgiving",
+      "url": null,
+      "points": 687,
+      "comments": 144,
+      "created_at": "2026-11-26T14:26:54Z"
+    },
+    {
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "points": 602,
+      "comments": 311,
+      "created_at": "2026-11-26T21:47:45Z"
+    },
+    {
+      "title": "Intel One Mono font (2023)",
+      "url": "https://github.com/intel/intel-one-mono",
+      "points": 514,
+      "comments": 249,
+      "created_at": "2026-11-26T10:11:01Z"
+    },
+    {
+      "title": "Nextcloud Office Desktop app",
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "points": 426,
+      "comments": 219,
+      "created_at": "2026-11-26T11:50:49Z"
+    },
+    {
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "url": "https://github.com/antonpictures/youtube-punisher",
+      "points": 368,
+      "comments": 442,
+      "created_at": "2026-11-26T17:36:47Z"
+    },
+    {
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "points": 346,
+      "comments": 82,
+      "created_at": "2026-11-26T21:08:05Z"
+    },
+    {
+      "title": "AMD-specific fork of llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "points": 339,
+      "comments": 82,
+      "created_at": "2026-11-26T17:11:29Z"
+    },
+    {
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "points": 322,
+      "comments": 280,
+      "created_at": "2026-11-26T09:44:23Z"
+    },
+    {
+      "title": "Hard Drive pricing has gotten bad",
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "points": 308,
+      "comments": 203,
+      "created_at": "2026-11-27T01:13:49Z"
+    },
+    {
+      "title": "Company Culture = Slack Emoji ÷ √Headcount",
+      "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+      "points": 298,
+      "comments": 128,
+      "created_at": "2026-11-26T20:49:49Z"
+    },
+    {
+      "title": "Moat: OpenRouter replacement",
+      "url": "https://commandcode.ai/moat",
+      "points": 279,
+      "comments": 154,
+      "created_at": "2026-11-26T06:32:48Z"
+    },
+    {
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "points": 252,
+      "comments": 129,
+      "created_at": "2026-11-26T17:47:45Z"
+    },
+    {
+      "title": "The USAID Files",
+      "url": "https://reclaimthenet.org/usaid-files",
+      "points": 242,
+      "comments": 294,
+      "created_at": "2026-11-25T23:15:52Z"
+    },
+    {
+      "title": "An algebraic quantization of gravity from the null cone",
+      "url": "https://arxiv.org/abs/2611.34924",
+      "points": 236,
+      "comments": 92,
+      "created_at": "2026-11-26T05:37:51Z"
+    },
+    {
+      "title": "Curiosity Is No Solo Act",
+      "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+      "points": 148,
+      "comments": 37,
+      "created_at": "2026-11-25T00:37:07Z"
+    },
+    {
+      "title": "Show HN: I wrote an entire Vim manual over 4 years",
+      "url": "http://themouseless.dev/vim/",
+      "points": 146,
+      "comments": 45,
+      "created_at": "2026-11-26T14:44:22Z"
+    },
+    {
+      "title": "Rvoip: VoIP stack in Rust",
+      "url": "https://github.com/eisenzopf/rvoip",
+      "points": 120,
+      "comments": 24,
+      "created_at": "2026-11-26T19:18:09Z"
+    },
+    {
+      "title": "The need for a formally verifiable mainstream programming language",
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "points": 108,
+      "comments": 78,
+      "created_at": "2026-11-27T05:22:06Z"
+    },
+    {
+      "title": "NormalScript: A perfectly normal scripting language",
+      "url": "https://psychoscript.com/",
+      "points": 102,
+      "comments": 25,
+      "created_at": "2026-11-26T04:32:26Z"
+    },
+    {
+      "title": "The group chat where your AI talks behind your back",
+      "url": "https://construct22.com/",
+      "points": 101,
+      "comments": 28,
+      "created_at": "2026-11-27T06:44:34Z"
+    },
+    {
+      "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
+      "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+      "points": 53,
+      "comments": 27,
+      "created_at": "2026-11-27T00:03:18Z"
+    },
+    {
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "points": 602,
+      "comments": 311,
+      "created_at": "2026-11-26T21:47:45Z"
+    },
+    {
+      "title": "The USA as a Civilizations-esque map",
+      "url": "https://karpathy.ai/usaciv/",
+      "points": 70,
+      "comments": 57,
+      "created_at": "2026-11-26T19:53:58Z"
+    },
+    {
+      "title": "Top-cited AI scientists at four US companies compared",
+      "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/",
+      "points": 41,
+      "comments": 23,
+      "created_at": "2026-11-26T19:44:31Z"
+    },
+    {
+      "title": "Ask HN: How do you find meaning of life at 41?",
+      "url": null,
+      "points": 59,
+      "comments": 103,
+      "created_at": "2026-11-26T18:14:53Z"
+    },
+    {
+      "title": "Tracking Diseases Cured by AI",
+      "url": "https://diseasescuredbyai.com/",
+      "points": 309,
+      "comments": 189,
+      "created_at": "2026-11-26T17:16:41Z"
+    },
+    {
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "points": 322,
+      "comments": 280,
+      "created_at": "2026-11-26T09:44:23Z"
+    },
+    {
+      "title": "Moat: OpenRouter replacement",
+      "url": "https://commandcode.ai/moat",
+      "points": 279,
+      "comments": 154,
+      "created_at": "2026-11-26T06:32:48Z"
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "points": 670,
+      "comments": 527,
+      "created_at": "2026-11-25T21:18:02Z"
+    },
+    {
+      "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
+      "url": "https://danprice.ai/blog/opus-symphony",
+      "points": 57,
+      "comments": 69,
+      "created_at": "2026-11-25T19:57:08Z"
+    },
+    {
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "points": 55,
+      "comments": 14,
+      "created_at": "2026-11-25T17:27:05Z"
+    },
+    {
+      "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+      "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+      "points": 224,
+      "comments": 85,
+      "created_at": "2026-11-25T03:47:42Z"
+    },
+    {
+      "title": "Top open problems in mathematics ranked by LLM-assessed importance",
+      "url": "https://www.proofatlas.ai/open-problems/",
+      "points": 105,
+      "comments": 53,
+      "created_at": "2026-11-25T03:01:36Z"
+    },
+    {
+      "title": "Working with AI",
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "points": 90,
+      "comments": 78,
+      "created_at": "2026-11-24T21:07:38Z"
+    },
+    {
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "url": null,
+      "points": 106,
+      "comments": 109,
+      "created_at": "2026-11-24T20:44:15Z"
+    },
+    {
+      "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": null,
+      "points": 467,
+      "comments": 358,
+      "created_at": "2026-11-24T16:45:44Z"
+    },
+    {
+      "title": "Tidal bans AI-generated music",
+      "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+      "points": 337,
+      "comments": 344,
+      "created_at": "2026-11-24T16:12:38Z"
+    },
+    {
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "points": 109,
+      "comments": 21,
+      "created_at": "2026-11-24T16:11:52Z"
+    },
+    {
+      "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
+      "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/",
+      "points": 82,
+      "comments": 40,
+      "created_at": "2026-11-24T09:39:50Z"
+    }
+  ],
+  "wikipedia_top": [
+    {
+      "article": "Main_Page",
+      "views": 3808242,
+      "rank": 1
+    },
+    {
+      "article": "Special:Search",
+      "views": 661343,
+      "rank": 2
+    },
+    {
+      "article": "Wikipedia:Featured_pictures",
+      "views": 527248,
+      "rank": 3
+    },
+    {
+      "article": "Miss_Universe_2026",
+      "views": 394056,
+      "rank": 4
+    },
+    {
+      "article": "Ramayana:_Part_1",
+      "views": 268083,
+      "rank": 5
+    },
+    {
+      "article": "Ezra_Frech",
+      "views": 260732,
+      "rank": 6
+    },
+    {
+      "article": "Dancing_with_the_Stars_(American_TV_series)_season_35",
+      "views": 205438,
+      "rank": 7
+    },
+    {
+      "article": "Grand_Theft_Auto_VI",
+      "views": 151092,
+      "rank": 8
+    },
+    {
+      "article": "Jennifer_Barreto",
+      "views": 149785,
+      "rank": 9
+    },
+    {
+      "article": "Deaths_in_2026",
+      "views": 136608,
+      "rank": 10
+    },
+    {
+      "article": "Andy_Taylor_(guitarist)",
+      "views": 135665,
+      "rank": 11
+    },
+    {
+      "article": "Mike_McCarthy",
+      "views": 128019,
+      "rank": 12
+    },
+    {
+      "article": "List_of_highest-grossing_Indian_films",
+      "views": 127151,
+      "rank": 13
+    },
+    {
+      "article": "Aaron_Rodgers",
+      "views": 120910,
+      "rank": 14
+    },
+    {
+      "article": "Lead(II)_azide",
+      "views": 119831,
+      "rank": 15
+    },
+    {
+      "article": "Martha_Firestone_Ford",
+      "views": 111793,
+      "rank": 16
+    },
+    {
+      "article": "Elizabeth_Holmes",
+      "views": 111592,
+      "rank": 17
+    },
+    {
+      "article": "The_Hunger_Games:_Sunrise_on_the_Reaping",
+      "views": 111396,
+      "rank": 18
+    },
+    {
+      "article": "Jensen_Huang",
+      "views": 110888,
+      "rank": 19
+    },
+    {
+      "article": "You_Can_See_Everything",
+      "views": 106458,
+      "rank": 20
+    },
+    {
+      "article": "Miss_International_2026",
+      "views": 93312,
+      "rank": 21
+    },
+    {
+      "article": "Daniella_Karagach",
+      "views": 86573,
+      "rank": 22
+    },
+    {
+      "article": "Blade_Runner_2099",
+      "views": 86001,
+      "rank": 23
+    },
+    {
+      "article": "Avengers:_Doomsday",
+      "views": 81398,
+      "rank": 24
+    },
+    {
+      "article": "Ansel_Adams",
+      "views": 80686,
+      "rank": 25
+    },
+    {
+      "article": "Iowa_lead_azide_detonation",
+      "views": 78852,
+      "rank": 26
+    },
+    {
+      "article": "Tatyana_Ali",
+      "views": 78391,
+      "rank": 27
+    },
+    {
+      "article": "Ade_Adepitan",
+      "views": 72731,
+      "rank": 28
+    },
+    {
+      "article": "Zyri",
+      "views": 72484,
+      "rank": 29
+    },
+    {
+      "article": "The_Body_(TV_series)",
+      "views": 72249,
+      "rank": 30
+    },
+    {
+      "article": "Raheem_Sterling",
+      "views": 71889,
+      "rank": 31
+    },
+    {
+      "article": "Rob_Lowe",
+      "views": 70671,
+      "rank": 32
+    },
+    {
+      "article": "Connor_Wood_(comedian)",
+      "views": 69185,
+      "rank": 33
+    },
+    {
+      "article": "Riemann_hypothesis",
+      "views": 65023,
+      "rank": 34
+    },
+    {
+      "article": "Duran_Duran",
+      "views": 63746,
+      "rank": 35
+    },
+    {
+      "article": "Dancing_with_the_Stars_(American_TV_series)",
+      "views": 61956,
+      "rank": 36
+    },
+    {
+      "article": "Bea_Millan-Windorski",
+      "views": 61208,
+      "rank": 37
+    },
+    {
+      "article": "Pete_Edochie",
+      "views": 61123,
+      "rank": 38
+    },
+    {
+      "article": "Sam_Bankman-Fried",
+      "views": 59401,
+      "rank": 39
+    },
+    {
+      "article": "Vaibhav_Sooryavanshi",
+      "views": 59042,
+      "rank": 40
+    },
+    {
+      "article": "The_Lord_of_the_Rings:_The_Rings_of_Power_season_3",
+      "views": 58918,
+      "rank": 41
+    },
+    {
+      "article": "Hunter_Schafer",
+      "views": 57970,
+      "rank": 42
+    },
+    {
+      "article": "Focker-in-Law",
+      "views": 56221,
+      "rank": 43
+    },
+    {
+      "article": "Soham_murders",
+      "views": 56184,
+      "rank": 44
+    },
+    {
+      "article": "Hexed_(2026_film)",
+      "views": 55545,
+      "rank": 45
+    },
+    {
+      "article": "Billy_Evans_(businessman)",
+      "views": 55544,
+      "rank": 46
+    },
+    {
+      "article": "Joseph_Zada",
+      "views": 55336,
+      "rank": 47
+    },
+    {
+      "article": "Mckenna_Grace",
+      "views": 54806,
+      "rank": 48
+    },
+    {
+      "article": "XXX_(2002_film)",
+      "views": 53637,
+      "rank": 49
+    },
+    {
+      "article": "Portal:Current_events",
+      "views": 53586,
+      "rank": 50
+    }
+  ],
+  "outlet_headlines": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Is Alice Huang a spy or not?"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "X finally gets parental controls after 20 years"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "A month with the iPhone Duo has changed how I use my phone"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "FCC approves SpaceX plan to put AI data centers in space"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "The canceled Tesla Cybertruck is the fastest-selling used truck in America"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "1Password said hackers broke into its internal systems, but customer passwords are safe"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "DOJ accuses former cyber executive of defrauding ransomware victims by secretly paying hackers"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Netflix’s coziest show has made a very quiet return"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The Garmin Forerunner 265S is down to $300, its best price of the year"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The MacBook Neo is receiving a rare $100 discount for Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Android app developers will soon have to share their address publicly"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "The best Black Friday deals we’ve already found"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Federal judge blocks the FCC from reviewing ABC’s licenses early"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Disney Plus, Hulu, and HBO Max are all over 50 percent off for Black Friday"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "GTA VI developers vote against unionization"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Why GTA VI’s version of Florida feels so real"
+    },
+    {
+      "outlet": "The Verge",
+      "title": "Here’s where you can save (a little) on the Ocarina of Time remake"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Volvo's big batteries: We drive its updated 2028 plug-in hybrids"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ford unveils the GT41 as it hopes to win Le Mans again"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Draining peatlands is responsible for a few percent of our global warming"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "From minimalist to maximalist: Ars staffers show off their home offices"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "European spacecraft finds chaotic scene after asteroid deflection experiment"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Google search alternative Kagi launches Gmail rival"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Backblaze explains why it's sharing customer information with advertisers"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "The FCC has authorized SpaceX to deploy 1 million satellites"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ladybird browser's first downloadable alpha is surprisingly capable"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Etsy clarifies AI terms after seller backlash"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Ars Live recap: Don’t expect military attacks on data centers to stop"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Guilty: Huawei faces steep penalties for stealing T-Mobile, Cisco trade secrets"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "Lead azide detonation sends clouds over Iowa as questions of health risks swirl"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "A familiar Iranian hacking group has found a new way to cause chaos"
+    },
+    {
+      "outlet": "Ars Technica",
+      "title": "AI may soon change what it means to be a theoretical physicist"
+    }
+  ]
+}
