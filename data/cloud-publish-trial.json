@@ -13,6 +13,11 @@
       "status": "failed",
       "recorded_at_ist": "2026-11-26T16:05:25+05:30",
       "note": "Drive pull failed (check GDRIVE_SA_KEY secret & folder sharing)"
+    },
+    "2026-11-27": {
+      "status": "failed",
+      "recorded_at_ist": "2026-11-27T16:08:31+05:30",
+      "note": "Drive pull failed (check GDRIVE_SA_KEY secret & folder sharing)"
     }
   }
 }
