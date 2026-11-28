@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "generated_at": "2026-11-27T13:47:46.958463+05:30",
   "page_stats": {
     "real-cost-of-running-ai": {
@@ -109,6 +110,11 @@
     "big-tech": 3,
     "policy": 1
   },
+=======
+  "generated_at": "2026-11-26T08:13:13.099186+05:30",
+  "page_stats": {},
+  "hub_performance": {},
+>>>>>>> Stashed changes
   "winning_queries": [],
   "keyword_boost": {},
   "notes": "keyword_boost feeds engine/scoring.py; winning_queries and top pages feed the daily brief's performance section."

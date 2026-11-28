@@ -549,3 +549,107 @@ built 38 article(s) -> C:\NewStartsNov\TheTechDocket\docs
 HARD GATE FAILURES: 4 (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-26-openai-medchembench-gpt-6-astra-drug-discovery-benchmarks.json
 2026-11-26 08:13:04 | BLOCKED: deterministic gate failed for 'openai-medchembench-gpt-6-astra-drug-discovery-benchmarks' (exit=1).
 2026-11-26 08:13:04 | Publishing docket for 2026-11-26
+[PASS] D01-docket-built
+[PASS] D02-item-count
+[PASS] D03-item-sources
+[PASS] D04-no-clickbait
+[PASS] D05-tiny-format
+[PASS] D06-lead-is-article
+[PASS] D07-zero-js
+[PASS] D08-page-weight
+[PASS] D13-hub-valid
+[PASS] D10-tags-picks
+[PASS] D11-watch-quota
+[PASS] D12-stakes-line
+[PASS] D14-stat-line
+[PASS] D15-community-read
+[PASS] D16-save-worthy
+[PASS] D17-card-anchors
+[PASS] D18-deck-integrity
+[PASS] D19-social-slides
+[PASS] D09-canonicals
+
+ALL DOCKET GATES PASSED (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-26-docket.json
+pushed ΓåÆ https://thetechdocket.com/docket/2026-11-26/
+2026-11-26 08:13:11 | Docket publish finished (exit=0)
+2026-11-26 08:13:11 | Refreshing Launchpad share-kit for: openai-medchembench-gpt-6-astra-drug-discovery-benchmarks
+share-kit written: C:\NewStartsNov\TheTechDocket\data\social\2026-11-26\share-kit.md
+launchpad UI: C:\NewStartsNov\TheTechDocket\data\social\2026-11-26\launchpad.html
+Target Subreddit: r/LocalLLaMA (Mandatory Flair: 'Discussion')
+2026-11-26 08:13:12 | Launchpad refresh finished (exit=0)
+2026-11-26 08:13:12 | Refreshing Analytics feedback & North Star HTML report
+insights: C:\NewStartsNov\TheTechDocket\data\insights.json (pages=0, queries=0, boost_terms=0)
+analytics report written: C:\NewStartsNov\TheTechDocket\data\reports\analytics-latest.html (Spend today: $0.0000 / $20.00 limit)
+2026-11-26 08:13:14 | Analytics refresh finished (feedback=0, report=0)
+Everything up-to-date
+2026-11-26 08:13:15 | git push exit=0
+2026-11-28 08:42:26 | === Auto-Publish check for 2026-11-28 (Python: C:\NewStartsNov\TheTechDocket\.venv\Scripts\python.exe) ===
+From https://github.com/jainamber/thetechdocket
+ * branch            main       -> FETCH_HEAD
+   19fd4cf..c2dbdde  main       -> origin/main
+Updating 19fd4cf..c2dbdde
+Created autostash: 0880bdc
+Fast-forward
+ data/cloud-publish-trial.json |   10 +
+ data/inbox/2026-11-26.json    | 1747 ++++++++++++++++++++++++++++++++++++++++
+ data/inbox/2026-11-27.json    | 1783 +++++++++++++++++++++++++++++++++++++++++
+ data/insights.json            |  113 ++-
+ 4 files changed, 3650 insertions(+), 3 deletions(-)
+ create mode 100644 data/inbox/2026-11-26.json
+ create mode 100644 data/inbox/2026-11-27.json
+Applying autostash resulted in conflicts.
+Your changes are safe in the stash.
+You can run "git stash pop" or "git stash drop" at any time.
+2026-11-28 08:42:29 | git pull exit=0
+2026-11-28 08:42:29 | Building & gating article: anthropic-claude-rust-messages-api-rewrite-70-percent-cpu-cut
+build_site: loading config...
+build_site: loading articles...
+build_site: generating site assets...
+built 40 article(s) -> C:\NewStartsNov\TheTechDocket\docs
+[PASS] G01-byline
+[PASS] G02-author-name-plain
+[PASS] G03-author-page
+[PASS] G13-bio-verified
+[PASS] G04-date-valid
+[PASS] G05-real-update
+[PASS] G06-citations
+[PASS] G07-stats-sourced
+[FAIL] G08-no-clickbait - clickbait pattern / caps / missing review.title_promise_check
+[PASS] G09-originality
+[PASS] G10-original-analysis
+[FAIL] G11-review-log - front-matter review block needs ['facts_verified', 'sources_checked', 'title_promise_check', 'no_fabrication', 'policy_pass'] + reviewed_at
+[PASS] G12-ai-disclosure
+[PASS] G14-hero-crops
+[PASS] G16-hero-img-tag
+[PASS] G15-max-image-preview
+[PASS] G17-og-image
+[PASS] G18-below-fold-lazy
+[PASS] G19-jsonld
+[PASS] G20-indexable
+[PASS] G21-page-weight
+[FAIL] G22-ymyl - YMYL terms {'finance': ['invest', 'investment', 'trading']} ΓåÆ front-matter ymyl: finance, a primary:true source and rendered disclaimer are required
+[PASS] G23-no-affiliate
+[PASS] G24-site-pages
+[PASS] P01-static-meta
+[PASS] G25-first-party
+[PASS] G26-no-ai-slop
+[PASS] S01-title-length
+[PASS] S02-meta-desc
+[PASS] S03-single-h1
+[PASS] S04-answer-first
+[PASS] S05-h2-count
+[PASS] S06-heading-hierarchy
+[FAIL] S07-word-count - 2290 words (need 900ΓÇô2200)
+[PASS] S08-slug
+[PASS] S08b-slug-stable
+[PASS] S09-internal-links
+[PASS] S10-hub-link
+[PASS] S11-open-graph
+[PASS] S12-twitter-card
+[PASS] S13-img-alts
+[PASS] S14-in-sitemap-feed
+[PASS] S15-desc-not-title
+
+HARD GATE FAILURES: 4 (0 soft warnings) -> C:\NewStartsNov\TheTechDocket\data\gate-reports\2026-11-28-anthropic-claude-rust-messages-api-rewrite-70-percent-cpu-cut.json
+2026-11-28 08:43:48 | BLOCKED: deterministic gate failed for 'anthropic-claude-rust-messages-api-rewrite-70-percent-cpu-cut' (exit=1).
+2026-11-28 08:43:48 | Publishing docket for 2026-11-28
